@@ -24,6 +24,7 @@ from datetime import datetime, timedelta
 import requests
 import wxc_scraper as w
 import wxc_tg_bot as b
+import wxc_blog as blog
 
 TOKEN = os.getenv("TG_BOT_TOKEN", "")
 OWNER = str(os.getenv("TG_CHAT_ID", ""))
@@ -40,10 +41,12 @@ MAX_PUSH_IMAGES = 10     # 订阅推送时最多发几张图
 JOBS_DIR = os.getenv("JOBS_DIR", os.path.join(DATA, "jobs"))
 job_lock = threading.Lock()
 
-HELP = ("我可以帮你抓取文学城「财富智汇」博主的发言:\n"
+HELP = ("我可以帮你抓取文学城论坛和博客:\n"
         "• 抓一下三心三意最近3天的发言\n"
         "• 下载三心三意最近30页,只要长文\n"
         "• 订阅 三心三意(有新发言自动推送),可以一次订阅多位:订阅 yifan99 和 我是一只井底蛙\n"
+        "• 下载 BrightLine 博客最近30天\n"
+        "• 下载 BrightLine 博客 2026年6月\n"
         "• 取消订阅 三心三意 / 订阅列表")
 
 # ---------- Telegram ----------
@@ -223,6 +226,60 @@ def make_zip(outdir, name):
                 z.write(os.path.join(imgdir, fn), "images/" + fn)
     return zp
 
+def parse_blog_request(text):
+    """博客下载指令优先于论坛自然语言解析，避免把“博客”当作者名。"""
+    if "博客" not in text:
+        return None
+    profile = None
+    for p in blog.PROFILES.values():
+        names = [p["author"]] + p.get("aliases", [])
+        if any(n.casefold() in text.casefold() for n in names):
+            profile = dict(p); break
+    if not profile:
+        return None
+    m = re.search(r"(20\\d{2})年(1[0-2]|0?[1-9])月", text)
+    if m:
+        year, month = int(m.group(1)), int(m.group(2))
+        start = datetime(year, month, 1)
+        if month == 12:
+            end = datetime(year + 1, 1, 1) - timedelta(seconds=1)
+        else:
+            end = datetime(year, month + 1, 1) - timedelta(seconds=1)
+        return {"profile": profile, "start": start, "end": end, "label": f"{year}年{month}月"}
+    m = re.search(r"(\\d+)\\s*天", text)
+    days = int(m.group(1)) if m else (90 if "90天" in text else 30)
+    end = datetime.now()
+    start = end - timedelta(days=days)
+    return {"profile": profile, "start": start, "end": end, "label": f"最近{days}天"}
+
+
+def run_blog_fetch(req):
+    p, start, end, label = req["profile"], req["start"], req["end"], req["label"]
+    say(f"收到，开始下载「{p['author']}」博客 {label}，会按月低频扫描并整理正文与图片。")
+    outdir = os.path.join(JOBS_DIR, f"blog_{p['author']}_{datetime.now():%Y%m%d_%H%M%S}")
+    result = blog.collect(p, start, end, outdir)
+    posts = result["posts"]
+    if not posts:
+        say("没有抓到符合时间范围的博客文章。可能是该月份无文章，或文学城暂时限制访问。")
+        return
+    zp = os.path.join(outdir, f"{p['author']}_blog_{datetime.now():%Y%m%d}.zip")
+    with zipfile.ZipFile(zp, "w", zipfile.ZIP_DEFLATED) as z:
+        for fn in ("posts.md", "index.csv", "posts.json"):
+            fp = os.path.join(outdir, fn)
+            if os.path.exists(fp):
+                z.write(fp, fn)
+        imgdir = os.path.join(outdir, "images")
+        if os.path.isdir(imgdir):
+            for fn in sorted(os.listdir(imgdir)):
+                z.write(os.path.join(imgdir, fn), "images/" + fn)
+    say(f"✅ BrightLine 博客下载完成：{len(posts)} 篇，归档月份 {result['archive_months']}，发现文章链接 {result['article_links_found']}，下载图片 {result['images_downloaded']} 张。")
+    if os.path.getsize(zp) < 45 * 1024 * 1024:
+        send_doc(zp, "BrightLine 博客整理包：posts.md + index.csv + posts.json + 图片")
+    else:
+        send_doc(os.path.join(outdir, "posts.md"), "BrightLine 博客正文合集")
+        send_doc(os.path.join(outdir, "index.csv"), "BrightLine 博客索引")
+
+
 def run_fetch(author, days=None, pages=None, min_chars=0):
     if not days and not pages:
         days = 3
@@ -331,6 +388,10 @@ def run_fetch_many(authors, days, pages, min_chars):
 MAX_WATCH = 10
 
 def handle(text, sync=False):
+    blog_req = parse_blog_request(text)
+    if blog_req:
+        dispatch(run_blog_fetch, blog_req, sync=sync)
+        return
     watch = load_watch()
     it = parse_intent(text, [DEFAULT_AUTHOR] + watch)
     act = it.get("action")
