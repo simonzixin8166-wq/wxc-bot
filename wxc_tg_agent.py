@@ -25,6 +25,7 @@ import requests
 import wxc_scraper as w
 import wxc_tg_bot as b
 import wxc_blog as blog
+import research_feed as rf
 
 TOKEN = os.getenv("TG_BOT_TOKEN", "")
 OWNER = str(os.getenv("TG_CHAT_ID", ""))
@@ -351,6 +352,7 @@ def check_watch(authors):
         posts = fetch_posts(new, ids, state)
         if not posts:
             continue
+        rf.add_forum_posts(au, posts)
         say(f"📌 {au} 新发言 {len(posts)} 条 ({datetime.now():%m-%d %H:%M})\n\n" + digest_text(posts, au))
         seen.update(p["id"] for p in posts); save_seen(au, seen)
         sent = 0  # 带图的帖子:把图片直接发到聊天里
