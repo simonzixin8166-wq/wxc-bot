@@ -162,7 +162,12 @@ def digest_text(posts, author, big_limit=6000):
 def run_fetch(author, days=None, pages=None, min_chars=0):
     if not days and not pages:
         days = 3
-    since = datetime.now() - timedelta(days=days) if days else None
+    since = None
+    if days:
+        # 以论坛自己的时钟为基准(取列表页最新帖子的时间),不用服务器时间,避免时区差导致漏帖
+        r0 = b.fetch(f"{w.BASE}?page=1", {})
+        ref = (w.list_latest(r0.text) if r0 else None) or datetime.now()
+        since = ref - timedelta(days=days)
     say(f"收到,开始抓取「{author}」" + (f"最近 {days} 天" if days else f"前 {pages} 页") + "的发言,请稍等…")
     state = {}
     ids = collect_ids(author, pages or 60, since, state)

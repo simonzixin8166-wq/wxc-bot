@@ -64,6 +64,17 @@ def parse_list(html, author):
         out.append((m.group(1), urljoin(BASE, a["href"]), a.get_text(strip=True), ""))
     return out
 
+def list_latest(html):
+    """列表页里最新一条帖子的时间(论坛自己的时钟),用来计算"最近N天",避免服务器时区差异"""
+    text = BeautifulSoup(html, "html.parser").get_text(" ")
+    ts = []
+    for d, t in re.findall(r"(\d{2}/\d{2}/\d{4})\s*(?:postreply)?\s*(\d{2}:\d{2}:\d{2})", text):
+        try:
+            ts.append(datetime.strptime(f"{d} {t}", "%m/%d/%Y %H:%M:%S"))
+        except ValueError:
+            pass
+    return max(ts) if ts else None
+
 def list_dates(html):
     return [datetime.strptime(d, "%m/%d/%Y") for d in re.findall(r"(\d{2}/\d{2}/\d{4})", html)]
 
