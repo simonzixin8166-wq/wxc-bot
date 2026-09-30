@@ -83,11 +83,31 @@ def _sentences(text: str) -> list[str]:
             out.extend(x.strip() for x in re.split(r"(?<=[。！？；])", line) if x.strip())
     return out
 
+def classify_attribution(title: str, unit: str, context: str) -> tuple[str, str]:
+    third_names = ("段永平","巴菲特","德鲁肯米勒","斯坦利","芒格","Burry","伯里")
+    third = any(name.lower() in (title + " " + unit).lower() for name in third_names)
+    first = bool(re.search(r"(^|[，。；：\\s])(我|我的|我在|我已经|我现在|我会|我不|我只|我买|我卖|我加|我减|我持有|我清仓|我重仓|我准备)", context))
+    plan = bool(re.search(r"预设点位|现在的做法|第一档|第二档|目标区|卖出线|才考虑|接到货再说", context))
+    if first and plan:
+        return "author_plan", "high"
+    if first:
+        return "author_action", "high"
+    if third:
+        return "third_party_example", "high"
+    if plan:
+        return "author_plan", "medium"
+    return "unconfirmed_author_context", "needs_review"
+
+
 def extract_structured_learning(text: str) -> dict:
     operations = []
     portfolio_rules = []
     lessons = []
-    for unit in _sentences(text):
+    units = _sentences(text)
+    title = units[0] if units else ""
+    for i, unit in enumerate(units):
+        context = " ".join(units[max(0, i-3):i+1])
+        attribution, attribution_confidence = classify_attribution(title, unit, context)
         syms = detect_symbols(unit)
         op = {"symbols": syms} if syms else None
         if op:
@@ -121,6 +141,8 @@ def extract_structured_learning(text: str) -> dict:
             if "接到货再说" in unit: cond.append("accept_assignment_then_reassess")
             if cond: op["conditions"] = cond
             if len(op) > 1 and (acts or any(k in op for k in ("entry_1","entry_2","exit_line","target_range","sell_put_strike","entry_below"))):
+                op["attribution"] = attribution
+                op["attribution_confidence"] = attribution_confidence
                 operations.append(op)
 
         for typ, pat in [
