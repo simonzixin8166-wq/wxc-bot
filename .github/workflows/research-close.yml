@@ -1,0 +1,51 @@
+name: research-close
+
+on:
+  schedule:
+    # 22:30 UTC is safely after the regular US close in both DST and winter time.
+    - cron: "30 22 * * 1-5"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: wxc-research-close
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Validate source intelligence
+        run: |
+          python -m py_compile research_feed.py daily_close_research.py wxc_tg_agent.py wxc_blog.py wxc_scraper.py
+          PYTHONPATH=. python tests/test_research_feed.py
+
+      - name: Collect post-close research sources
+        env:
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          DATA_DIR: state
+          JOBS_DIR: /tmp/jobs
+          WATCH_MINUTES: "30"
+        run: python daily_close_research.py
+
+      - name: Save research feed and seen state
+        if: always()
+        run: |
+          git config user.name "wxc-bot"
+          git config user.email "wxc-bot@users.noreply.github.com"
+          git add state
+          git diff --cached --quiet || (git commit -m "update research source feed" && git pull --rebase origin main && git push origin HEAD:main)
