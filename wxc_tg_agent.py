@@ -237,7 +237,7 @@ def parse_blog_request(text):
             profile = dict(p); break
     if not profile:
         return None
-    m = re.search(r"(20\\d{2})年(1[0-2]|0?[1-9])月", text)
+    m = re.search(r"(20\d{2})年(1[0-2]|0?[1-9])月", text)
     if m:
         year, month = int(m.group(1)), int(m.group(2))
         start = datetime(year, month, 1)
@@ -246,7 +246,7 @@ def parse_blog_request(text):
         else:
             end = datetime(year, month + 1, 1) - timedelta(seconds=1)
         return {"profile": profile, "start": start, "end": end, "label": f"{year}年{month}月"}
-    m = re.search(r"(\\d+)\\s*天", text)
+    m = re.search(r"(\d+)\s*天", text)
     days = int(m.group(1)) if m else (90 if "90天" in text else 30)
     end = datetime.now()
     start = end - timedelta(days=days)
