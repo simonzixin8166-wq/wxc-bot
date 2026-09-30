@@ -56,7 +56,7 @@ def parse_list(html, author):
         if nxt is not None and (sp.sourceline, sp.sourcepos) > (nxt.sourceline, nxt.sourcepos):
             continue  # 该帖没有作者标签,别误取下一帖的
         au = sp.find("a")
-        if not au or au.get_text(strip=True) != author:
+        if not au or au.get_text(strip=True).casefold() != author.casefold():
             continue
         m = re.search(r"(\d+)\.html", a.get("href", ""))
         if not m:
@@ -94,7 +94,16 @@ def parse_post(html, url, with_comments=False):
     if tip:
         m = re.search(r"(\d+)", tip.get_text())
         likes = m.group(1) if m else ""
-    images = [urljoin(url, im.get("src")) for im in body.find_all("img") if im.get("src")]
+    images = []
+    for im in body.find_all("img"):
+        src = im.get("data-src") or im.get("data-original") or im.get("src")
+        par = im.find_parent("a")
+        if par and re.search(r"\.(?:jpe?g|png|gif|webp)(?:\?|$)", par.get("href", ""), re.I):
+            src = par["href"]  # 缩略图外面套着原图链接时,取原图
+        if src and not src.startswith("data:"):
+            full = urljoin(url, src)
+            if full not in images:
+                images.append(full)
     for br in body.find_all("br"):
         br.replace_with("\n")
     text = body.get_text()
@@ -117,18 +126,25 @@ def parse_post(html, url, with_comments=False):
         post["comments"] = cs
     return post
 
-def download_image(url, imgdir):
+def download_image(url, imgdir, min_bytes=3000, max_bytes=15_000_000):
+    """下载一张图片,返回文件名;失败或是小图标(表情等)返回 None"""
     os.makedirs(imgdir, exist_ok=True)
-    ext = os.path.splitext(url.split("?")[0])[1] or ".jpg"
-    name = hashlib.md5(url.encode()).hexdigest()[:12] + ext
-    path = os.path.join(imgdir, name)
-    if os.path.exists(path):
-        return name
-    r = get(url, retries=2, delay=1)
-    if r is None:
+    stem = hashlib.md5(url.encode()).hexdigest()[:12]
+    for f in os.listdir(imgdir):
+        if f.startswith(stem):
+            return f
+    try:
+        r = sess.get(url, timeout=25, headers={"Referer": BASE})
+    except requests.RequestException:
         return None
-    with open(path, "wb") as f:
+    ct = r.headers.get("Content-Type", "").split(";")[0].strip().lower()
+    if r.status_code != 200 or not ct.startswith("image") or not (min_bytes <= len(r.content) <= max_bytes):
+        return None
+    ext = {"image/jpeg": ".jpg", "image/png": ".png", "image/gif": ".gif", "image/webp": ".webp"}.get(ct, ".jpg")
+    name = stem + ext
+    with open(os.path.join(imgdir, name), "wb") as f:
         f.write(r.content)
+    time.sleep(1)
     return name
 
 def tickers(text):
@@ -148,6 +164,8 @@ def build(outdir, min_chars):
             md.write(f"原帖: {p['url']}  阅读 {p['reads']}  点赞 {p['likes']}\n\n{p['text']}\n\n")
             for im in p.get("local_images", []):
                 md.write(f"![](images/{im})\n\n")
+            if p.get("images") and not p.get("local_images"):
+                md.write("图片链接: " + " ".join(p["images"]) + "\n\n")
             md.write("---\n\n")
     with open(os.path.join(outdir, "index.csv"), "w", encoding="utf-8-sig", newline="") as f:
         w = csv.writer(f)

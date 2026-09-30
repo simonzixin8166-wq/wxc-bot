@@ -37,6 +37,9 @@ def fetch(url, state):
 def tickers(text):
     return [t for t in w.tickers(text) if t not in EXTRA_STOP]
 
+def img_tag(p):
+    return f" 🖼×{len(p['images'])}" if p.get("images") else ""
+
 def build_raw_digest(posts):
     longs = [p for p in posts if len(p["text"]) >= LONG_CHARS]
     shorts = [p for p in posts if len(p["text"]) < LONG_CHARS]
@@ -45,7 +48,7 @@ def build_raw_digest(posts):
         lines.append("【长文】")
         for p in longs:
             body = p["text"] if len(p["text"]) <= 700 else p["text"][:700] + "…"
-            lines.append(f"▪ {p['date'][5:16]} {p['title']}\n{body}\n{p['url']}")
+            lines.append(f"▪ {p['date'][5:16]} {p['title']}{img_tag(p)}\n{body}\n{p['url']}")
     by_tk, other = {}, []
     for p in shorts:
         content = p["title"] + (" " + p["text"] if p["text"] else "")
@@ -60,11 +63,11 @@ def build_raw_digest(posts):
         for t, ps in sorted(by_tk.items(), key=lambda x: -len(x[1])):
             lines.append(f"# {t}")
             for p in ps:
-                lines.append(f"  · {p['date'][5:16]} {p['title']}")
+                lines.append(f"  · {p['date'][5:16]} {p['title']}{img_tag(p)}")
     if other:
         lines.append("\n【其他短评】")
         for p in other:
-            lines.append(f"  · {p['date'][5:16]} {p['title']}")
+            lines.append(f"  · {p['date'][5:16]} {p['title']}{img_tag(p)}")
     return "\n".join(lines)
 
 def ai_summary(raw, author):

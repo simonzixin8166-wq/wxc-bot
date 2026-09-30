@@ -19,7 +19,7 @@ Telegram 对话式抓取机器人(常驻运行)
   下载三心三意最近30页,只要长文
   订阅 三心三意 / 取消订阅 三心三意 / 订阅列表
 """
-import json, os, re, threading, time
+import json, os, re, shutil, threading, time, zipfile
 from datetime import datetime, timedelta
 import requests
 import wxc_scraper as w
@@ -34,13 +34,16 @@ os.makedirs(DATA, exist_ok=True)
 API = f"https://api.telegram.org/bot{TOKEN}"
 WATCH_F = os.path.join(DATA, "watch.json")
 MAX_JOB_POSTS = 150
+MAX_IMAGES_JOB = 80      # 单次抓取最多下载的图片数
+MAX_IMAGES_PER_POST = 12
+MAX_PUSH_IMAGES = 10     # 订阅推送时最多发几张图
 JOBS_DIR = os.getenv("JOBS_DIR", os.path.join(DATA, "jobs"))
 job_lock = threading.Lock()
 
 HELP = ("我可以帮你抓取文学城「财富智汇」博主的发言:\n"
         "• 抓一下三心三意最近3天的发言\n"
         "• 下载三心三意最近30页,只要长文\n"
-        "• 订阅 三心三意(有新发言自动推送)\n"
+        "• 订阅 三心三意(有新发言自动推送),可以一次订阅多位:订阅 yifan99 和 我是一只井底蛙\n"
         "• 取消订阅 三心三意 / 订阅列表")
 
 # ---------- Telegram ----------
@@ -54,6 +57,12 @@ def send_doc(path, caption=""):
     with open(path, "rb") as f:
         requests.post(API + "/sendDocument", timeout=120,
                       data={"chat_id": OWNER, "caption": caption}, files={"document": f})
+
+def send_image(path, caption=""):
+    with open(path, "rb") as f:
+        r = requests.post(API + "/sendPhoto", timeout=90, data={"chat_id": OWNER, "caption": caption[:1000]}, files={"photo": f})
+    if not r.ok:  # 图片尺寸/大小不合规时,改用文件形式发送
+        send_doc(path, caption)
 
 # ---------- 状态 ----------
 def load_watch():
@@ -73,21 +82,49 @@ def save_seen(author, seen):
     json.dump(sorted(seen), open(seen_path(author), "w"))
 
 # ---------- 意图理解 ----------
+VERBS = ["取消订阅", "订阅列表", "订阅", "取消", "停止", "不再", "退订", "监控", "关注", "盯着", "盯",
+         "抓一下", "抓取", "下载", "整理一下", "整理", "总结一下", "总结下", "总结", "获取", "拉取",
+         "帮我", "麻烦", "请", "看看", "看下", "发我", "发给我"]
+NOT_NAMES = {"帮助", "你好", "怎么用", "help", "start", "订阅列表"}
+
+def extract_authors(text, known):
+    """从一句话里找出博主名:先匹配已知名单,再取动作词之外的名字,支持多个(用 和/、/逗号/空格 分隔)"""
+    t = text.strip()
+    found = [k for k in known if k.casefold() in t.casefold()]
+    body = t
+    for v in sorted(VERBS, key=len, reverse=True):
+        body = body.replace(v, " ")
+    body = re.sub(r"(?:最近|近)?\s*\d+\s*[天页]", " ", body)
+    body = re.sub(r"最近|今天|今日|昨天|一周|本周|这周|一个月|本月|只要长文|长文|长帖|的发言|的帖子|的帖|的文章|的观点|发言", " ", body)
+    for tok in re.split(r"[\s、,，。;；和及与跟&+]+", body):
+        tok = tok.strip()
+        if len(tok) < 2 or tok.isdigit() or tok.casefold() in NOT_NAMES:
+            continue
+        if not re.fullmatch(r"[A-Za-z0-9_\u4e00-\u9fff]{2,20}", tok):
+            continue
+        if any(tok.casefold() == f.casefold() for f in found):
+            continue
+        if any(tok.casefold() in f.casefold() for f in found):
+            continue
+        found.append(tok)
+    # 已知名单用其规范写法
+    canon = {k.casefold(): k for k in known}
+    out = []
+    for f in found:
+        f = canon.get(f.casefold(), f)
+        if f not in out:
+            out.append(f)
+    return out
+
 def rule_intent(text, known):
     t = text.strip()
-    author = next((k for k in known if k in t), None)
-    if not author:
-        m = re.search(r"[「“\"]?([A-Za-z0-9_\u4e00-\u9fff]{2,12})[」”\"]?的(?:发言|帖|文章|观点)", t)
-        author = m.group(1) if m else None
-        if author:  # 去掉前面的动词和时间词,只留博主名
-            author = re.sub(r"^(?:请|帮我|帮忙|麻烦)?(?:抓一下|抓取|抓|下载|整理一下|整理|总结一下|总结下|总结|获取|拉取|看看|看下)", "", author)
-            author = re.sub(r"(?:今天|昨天|今日|最近\d*[天页]?|\d+[天页])$", "", author) or None
-    it = {"action": "chat", "author": author, "days": None, "pages": None, "min_chars": 0}
-    if re.search(r"取消|停止|不再|退订", t): it["action"] = "watch_remove"
-    elif re.search(r"订阅列表|订阅了|监控列表", t): it["action"] = "watch_list"
+    it = {"action": "chat", "authors": [], "days": None, "pages": None, "min_chars": 0}
+    if re.search(r"订阅列表|订阅了|监控列表", t): it["action"] = "watch_list"
+    elif re.search(r"取消|停止|不再|退订", t): it["action"] = "watch_remove"
     elif re.search(r"订阅|监控|关注|盯", t): it["action"] = "watch_add"
     elif re.search(r"抓|下载|整理|获取|拉取|发我|发给我|最近|总结", t): it["action"] = "fetch"
-    elif re.search(r"帮助|help|怎么用|/start|/help", t, re.I): it["action"] = "help"
+    if it["action"] in ("fetch", "watch_add", "watch_remove"):
+        it["authors"] = extract_authors(t, known)
     m = re.search(r"(\d+)\s*天", t)
     if m: it["days"] = int(m.group(1))
     elif "今天" in t or "今日" in t: it["days"] = 1
@@ -105,15 +142,18 @@ def parse_intent(text, known):
         try:
             r = requests.post("https://api.anthropic.com/v1/messages", timeout=40,
                 headers={"x-api-key": key, "anthropic-version": "2023-06-01", "content-type": "application/json"},
-                json={"model": "claude-sonnet-5-5", "max_tokens": 200,
+                json={"model": "claude-sonnet-5-5", "max_tokens": 250,
                       "system": ("把用户消息解析成 JSON,只输出 JSON。字段: action(fetch|watch_add|watch_remove|watch_list|help|chat), "
-                                 "author(博主名或null), days(整数或null), pages(整数或null), min_chars(整数,只要长文时150,否则0)。"
-                                 f"已知博主: {known}。用户想下载/整理/总结某博主发言=fetch;订阅/监控=watch_add;取消订阅=watch_remove。"),
+                                 "authors(博主名数组,可以有多个,没有则空数组;名字必须原样保留,大小写不改), days(整数或null), pages(整数或null), "
+                                 "min_chars(整数,只要长文时150,否则0)。"
+                                 f"已知博主: {known}。用户想下载/整理/总结某些博主发言=fetch;订阅/监控=watch_add;取消订阅=watch_remove;查看订阅=watch_list。"),
                       "messages": [{"role": "user", "content": text}]})
             r.raise_for_status()
             raw = "".join(x.get("text", "") for x in r.json()["content"])
             it = json.loads(re.search(r"\{.*\}", raw, re.S).group(0))
             it.setdefault("min_chars", 0)
+            if not it.get("authors") and it.get("author"):
+                it["authors"] = [it["author"]]
             return it
         except Exception as e:
             print("意图解析失败,改用规则:", e)
@@ -159,6 +199,30 @@ def digest_text(posts, author, big_limit=6000):
         return "🧠 要点\n" + summary
     return raw if len(raw) < big_limit else f"共 {len(posts)} 条,内容较多,请看附件。"
 
+def fetch_images(posts, outdir):
+    imgdir = os.path.join(outdir, "images")
+    total = 0
+    for p in posts:
+        p["local_images"] = []
+        for u in p.get("images", [])[:MAX_IMAGES_PER_POST]:
+            if total >= MAX_IMAGES_JOB:
+                return total
+            name = w.download_image(u, imgdir)
+            if name:
+                p["local_images"].append(name); total += 1
+    return total
+
+def make_zip(outdir, name):
+    zp = os.path.join(outdir, name)
+    with zipfile.ZipFile(zp, "w", zipfile.ZIP_DEFLATED) as z:
+        for f in ("posts.md", "index.csv"):
+            z.write(os.path.join(outdir, f), f)
+        imgdir = os.path.join(outdir, "images")
+        if os.path.isdir(imgdir):
+            for fn in sorted(os.listdir(imgdir)):
+                z.write(os.path.join(imgdir, fn), "images/" + fn)
+    return zp
+
 def run_fetch(author, days=None, pages=None, min_chars=0):
     if not days and not pages:
         days = 3
@@ -179,31 +243,68 @@ def run_fetch(author, days=None, pages=None, min_chars=0):
         say("这个时间范围内没有发言。"); return
     outdir = os.path.join(JOBS_DIR, f"{author}_{datetime.now():%Y%m%d_%H%M%S}")
     os.makedirs(os.path.join(outdir, "posts"), exist_ok=True)
+    n_have = sum(len(p.get("images", [])) for p in posts)
+    n_img = fetch_images(posts, outdir) if n_have else 0
     for p in posts:
         json.dump(p, open(os.path.join(outdir, "posts", f"{p['id']}.json"), "w", encoding="utf-8"), ensure_ascii=False)
     w.build(outdir, min_chars)
-    say(f"✅ 抓到 {len(posts)} 条({posts[0]['date'][:10]} ~ {posts[-1]['date'][:10]})\n\n" + digest_text(posts, author))
-    send_doc(os.path.join(outdir, "posts.md"), "完整发言合集")
-    send_doc(os.path.join(outdir, "index.csv"), "索引表")
+    img_note = ""
+    if n_have:
+        img_note = f",图片 {n_img}/{n_have} 张已下载" + ("(其余下载失败或被过滤,posts.md 里保留了链接)" if n_img < n_have else "")
+    say(f"✅ 抓到 {len(posts)} 条({posts[0]['date'][:10]} ~ {posts[-1]['date'][:10]}){img_note}\n\n" + digest_text(posts, author))
+    zp = make_zip(outdir, f"{author}_{datetime.now():%Y%m%d}.zip") if n_img else None
+    if zp and os.path.getsize(zp) < 45 * 1024 * 1024:
+        send_doc(zp, f"整理包:posts.md + index.csv + {n_img} 张图片")
+    else:
+        if zp:
+            say("图片打包后超过 Telegram 50MB 上限,只发送文本。")
+        send_doc(os.path.join(outdir, "posts.md"), "完整发言合集")
+        send_doc(os.path.join(outdir, "index.csv"), "索引表")
 
-def baseline(author):
+def list_pages(n, state):
+    htmls = []
+    for pg in range(1, n + 1):
+        r = b.fetch(f"{w.BASE}?page={pg}", state)
+        if r:
+            htmls.append(r.text)
+    return htmls
+
+def ids_for(author, htmls):
+    ids = {}
+    for h in htmls:
+        for pid, href, _, _ in w.parse_list(h, author):
+            ids[pid] = href
+    return ids
+
+def baseline(authors):
     """订阅时先把现有帖子标记为已读,避免一次性刷屏"""
-    state = {}
-    ids = collect_ids(author, 3, None, state)
-    seen = load_seen(author); seen.update(ids); save_seen(author, seen)
+    htmls = list_pages(3, {})
+    for au in authors:
+        seen = load_seen(au); seen.update(ids_for(au, htmls)); save_seen(au, seen)
 
-def check_watch(author):
+def check_watch(authors):
     state = {}
-    ids = collect_ids(author, 3, None, state)
-    seen = load_seen(author)
-    new = sorted((i for i in ids if i not in seen), key=int, reverse=True)[:40]
-    if not new:
-        return
-    posts = fetch_posts(new, ids, state)
-    if not posts:
-        return
-    say(f"📌 {author} 新发言 {len(posts)} 条 ({datetime.now():%m-%d %H:%M})\n\n" + digest_text(posts, author))
-    seen.update(p["id"] for p in posts); save_seen(author, seen)
+    htmls = list_pages(3, state)  # 所有博主共用这几页,不重复请求
+    for au in authors:
+        ids = ids_for(au, htmls)
+        seen = load_seen(au)
+        new = sorted((i for i in ids if i not in seen), key=int, reverse=True)[:40]
+        if not new:
+            continue
+        posts = fetch_posts(new, ids, state)
+        if not posts:
+            continue
+        say(f"📌 {au} 新发言 {len(posts)} 条 ({datetime.now():%m-%d %H:%M})\n\n" + digest_text(posts, au))
+        seen.update(p["id"] for p in posts); save_seen(au, seen)
+        sent = 0  # 带图的帖子:把图片直接发到聊天里
+        for p in posts:
+            for u in p.get("images", [])[:4]:
+                if sent >= MAX_PUSH_IMAGES:
+                    break
+                name = w.download_image(u, os.path.join(JOBS_DIR, "push"))
+                if name:
+                    send_image(os.path.join(JOBS_DIR, "push", name), f"{au} · {p['title'][:60]}\n{p['url']}")
+                    sent += 1
 
 def guarded(fn, *args):
     if not job_lock.acquire(blocking=False):
@@ -223,21 +324,40 @@ def dispatch(fn, *args, sync=False):
     else:
         threading.Thread(target=guarded, args=(fn,) + args, daemon=True).start()
 
+def run_fetch_many(authors, days, pages, min_chars):
+    for au in authors:
+        run_fetch(au, days, pages, min_chars)
+
+MAX_WATCH = 10
+
 def handle(text, sync=False):
     watch = load_watch()
     it = parse_intent(text, [DEFAULT_AUTHOR] + watch)
-    act, author = it.get("action"), it.get("author") or DEFAULT_AUTHOR
+    act = it.get("action")
+    authors = it.get("authors") or []
     if act == "fetch":
-        dispatch(run_fetch, author, it.get("days"), it.get("pages"), it.get("min_chars") or 0, sync=sync)
+        authors = authors or [DEFAULT_AUTHOR]
+        dispatch(run_fetch_many, authors, it.get("days"), it.get("pages"), it.get("min_chars") or 0, sync=sync)
     elif act == "watch_add":
-        if author not in watch:
-            watch.append(author); save_watch(watch)
-        say(f"已订阅「{author}」,大约每 {WATCH_EVERY // 60} 分钟检查一次,有新发言会推送给你。")
-        dispatch(baseline, author, sync=sync)
+        if not authors:
+            say("请告诉我要订阅谁,例如:订阅 三心三意"); return
+        added = []
+        for au in authors:
+            if au.casefold() not in [x.casefold() for x in watch] and len(watch) < MAX_WATCH:
+                watch.append(au); added.append(au)
+        save_watch(watch)
+        if len(added) < len(authors):
+            say(f"部分博主已在订阅里或超过上限({MAX_WATCH} 个)。")
+        say(f"已订阅:{'、'.join(added) or '无新增'}\n当前共订阅 {len(watch)} 位,大约每 {WATCH_EVERY // 60} 分钟检查一次,有新发言会推送给你。")
+        if added:
+            dispatch(baseline, added, sync=sync)
     elif act == "watch_remove":
-        if author in watch:
-            watch.remove(author); save_watch(watch)
-        say(f"已取消订阅「{author}」。")
+        if not authors:
+            say("请告诉我要取消谁,例如:取消订阅 yifan99"); return
+        keep = [x for x in watch if x.casefold() not in [a_.casefold() for a_ in authors]]
+        removed = [x for x in watch if x not in keep]
+        save_watch(keep)
+        say(f"已取消订阅:{'、'.join(removed)}" if removed else "订阅里没有这位博主。")
     elif act == "watch_list":
         say("当前订阅: " + ("、".join(watch) if watch else "无"))
     else:
@@ -246,8 +366,8 @@ def handle(text, sync=False):
 def watch_loop():
     time.sleep(60)
     while True:
-        for au in load_watch():
-            guarded(check_watch, au)
+        if load_watch():
+            guarded(check_watch, load_watch())
         time.sleep(WATCH_EVERY)
 
 def main():
