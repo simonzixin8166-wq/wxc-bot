@@ -17,7 +17,7 @@ DATA_DIR = Path(os.getenv("DATA_DIR", "state"))
 FEED_PATH = DATA_DIR / "research_feed.json"
 BLOG_SEEN = DATA_DIR / "seen_blog_BrightLine.json"
 MAX_FEED = 1200
-MAX_EXCERPT = 2400
+MAX_EXCERPT = 360
 
 THEMES = {
     "Sell Put": ["sell put", "sp ", "卖put", "卖 put", "put"],
@@ -71,7 +71,7 @@ def normalize(source_kind: str, author: str, post: dict) -> dict:
         "images_count": len(post.get("images") or []),
         "themes_hint": detect_themes(joined),
         "captured_at": datetime.utcnow().replace(microsecond=0).isoformat() + "Z",
-        "source_notice": "作者原始观点/操作记录，仅作研究来源；MyAlpha需独立验证后才形成本站判断。",
+        "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
     }
 
 def append_records(records: list[dict]) -> int:
