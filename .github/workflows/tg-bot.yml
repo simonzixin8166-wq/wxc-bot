@@ -29,7 +29,7 @@ jobs:
       - name: Validate collector code
         run: |
           python -m py_compile wxc_actions.py wxc_scraper.py wxc_tg_agent.py wxc_tg_bot.py wxc_blog.py
-          python tests/test_blog_collector.py
+          PYTHONPATH=. python tests/test_blog_collector.py
 
       - name: Run bot
         env:
