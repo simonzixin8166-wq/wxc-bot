@@ -36,8 +36,9 @@ def main():
     # 无状态的"到点"判断:每个 WATCH_MINUTES 周期的前 7 分钟内检查(cron 每 5 分钟一次,保证至少命中一次)
     gap = max(a.WATCH_EVERY // 60, 10)
     if int(time.time() // 60) % gap < 7:
-        for au in a.load_watch():
-            a.guarded(a.check_watch, au)
+        authors = a.load_watch()
+        if authors:
+            a.guarded(a.check_watch, authors)
 
     if offset is not None:
         meta["offset"] = offset
