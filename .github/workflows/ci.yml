@@ -1,0 +1,27 @@
+name: collector-ci
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Validate collector and learning extraction
+        run: |
+          python -m py_compile wxc_actions.py wxc_scraper.py wxc_tg_agent.py wxc_tg_bot.py wxc_blog.py research_feed.py daily_close_research.py
+          PYTHONPATH=. python tests/test_blog_collector.py
+          PYTHONPATH=. python tests/test_research_feed.py

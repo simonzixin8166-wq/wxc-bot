@@ -28,3 +28,18 @@ with tempfile.TemporaryDirectory() as td:
         rf.FEED_PATH = old
 
 print("PASS source intelligence research feed")
+
+
+sample = """NBIS：第一档 180，第二档 150，卖出线 250。
+QCOM：不直接买股票，先卖 150 行权价的现金担保 put，140 是第二档。接到货再说。
+现金底线不破，核心仓位不上杠杆。每次只用一档，不允许一次打完。
+这不是我预判精准，这是运气。7月加得太快太猛，子弹在半山腰就打光。过程是错的。"""
+learning = rf.extract_structured_learning(sample)
+assert any(x.get("entry_1") == 180 for x in learning["operations"])
+assert any(x.get("sell_put_strike") == 150 for x in learning["operations"])
+assert "cash_floor" in learning["portfolio_rules"]
+assert "no_core_leverage" in learning["portfolio_rules"]
+assert "one_tranche_at_a_time" in learning["portfolio_rules"]
+assert "luck_not_skill" in learning["lessons"]
+assert "cash_too_early" in learning["lessons"]
+assert "process_wrong" in learning["lessons"]
