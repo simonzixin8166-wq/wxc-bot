@@ -14,7 +14,7 @@ import os
 import re
 import time
 from datetime import datetime
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlsplit, urlunsplit
 
 import requests
 from bs4 import BeautifulSoup
@@ -86,7 +86,9 @@ def parse_archive(html: str, blog_id: str):
         href = a.get("href", "")
         if not any(p.search(href) for p in patterns):
             continue
-        url = urljoin(BLOG_ROOT, href)
+        raw_url = urljoin(BLOG_ROOT, href)
+        p = urlsplit(raw_url)
+        url = urlunsplit((p.scheme, p.netloc, p.path, p.query, ""))
         if url in seen:
             continue
         seen.add(url)
