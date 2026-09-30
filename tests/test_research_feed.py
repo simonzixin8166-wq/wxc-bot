@@ -43,3 +43,18 @@ assert "one_tranche_at_a_time" in learning["portfolio_rules"]
 assert "luck_not_skill" in learning["lessons"]
 assert "cash_too_early" in learning["lessons"]
 assert "process_wrong" in learning["lessons"]
+
+
+attr_sample = """子弹与耐心
+我在跌之前卖了一批。
+现在的做法是：在跌之前把点位写下来。
+NBIS：第一档 180，第二档 150，卖出线 250。"""
+al = rf.extract_structured_learning(attr_sample)
+nb = [x for x in al["operations"] if "NBIS" in (x.get("symbols") or [])][0]
+assert nb["attribution"] == "author_plan"
+
+third_sample = """段永平的93条语录
+2025年3月，他以116.7美元买入10万股英伟达。"""
+tl = rf.extract_structured_learning(third_sample)
+if tl["operations"]:
+    assert all(x["attribution"] == "third_party_example" for x in tl["operations"])
