@@ -219,3 +219,71 @@ def build(outdir: str, posts: list[dict]):
 
     with open(os.path.join(outdir, "posts.json"), "w", encoding="utf-8") as f:
         json.dump(posts, f, ensure_ascii=False, indent=2)
+
+
+def month_range(start: datetime, end: datetime):
+    y, m = start.year, start.month
+    out = []
+    while (y, m) <= (end.year, end.month):
+        out.append((y, m))
+        if m == 12:
+            y, m = y + 1, 1
+        else:
+            m += 1
+    return out
+
+
+def collect(profile: dict, start: datetime, end: datetime, outdir: str, delay: float = 2.5,
+            max_articles: int = 180, max_images: int = 80, per_post_images: int = 12):
+    os.makedirs(os.path.join(outdir, "posts"), exist_ok=True)
+    os.makedirs(os.path.join(outdir, "images"), exist_ok=True)
+
+    links = {}
+    for year, month in month_range(start, end):
+        url = archive_url(profile["blog_id"], year, month)
+        print(f"[博客归档] {year:04d}-{month:02d} {url}")
+        r = get(url, delay=delay)
+        if not r:
+            continue
+        for row in parse_archive(r.text, profile["blog_id"]):
+            links[row["url"]] = row
+
+    posts = []
+    image_count = 0
+    for i, row in enumerate(list(links.values())[:max_articles], 1):
+        url = row["url"]
+        print(f"[博客文章] {i}/{min(len(links), max_articles)} {url}")
+        r = get(url, delay=delay)
+        if not r:
+            continue
+        p = parse_article(r.text, url, profile["author"])
+        if not p:
+            print("  ! 文章解析失败")
+            continue
+        try:
+            dt = datetime.strptime(p.get("date", ""), "%Y-%m-%d")
+        except ValueError:
+            dt = None
+        if dt and not (start.date() <= dt.date() <= end.date()):
+            continue
+
+        p["local_images"] = []
+        for img in p.get("images", [])[:per_post_images]:
+            if image_count >= max_images:
+                break
+            name = download_image(img, os.path.join(outdir, "images"))
+            if name:
+                p["local_images"].append(name)
+                image_count += 1
+
+        with open(os.path.join(outdir, "posts", f"{p['id']}.json"), "w", encoding="utf-8") as fh:
+            json.dump(p, fh, ensure_ascii=False, indent=2)
+        posts.append(p)
+
+    build(outdir, posts)
+    return {
+        "posts": posts,
+        "images_downloaded": image_count,
+        "archive_months": len(month_range(start, end)),
+        "article_links_found": len(links),
+    }
