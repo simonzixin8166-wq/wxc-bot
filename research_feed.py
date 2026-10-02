@@ -7,7 +7,7 @@ Collector responsibility only:
 - never convert an author's opinion into a trade instruction
 """
 from __future__ import annotations
-import hashlib, json, os, re
+import hashlib, json, os, re, shutil, tempfile
 from datetime import datetime, timedelta
 from pathlib import Path
 
@@ -22,9 +22,12 @@ MAX_EXCERPT = 360
 THEMES = {
     "Sell Put": ["sell put", "sp ", "卖put", "卖 put", "put"],
     "LEAPS": ["leap", "leaps", "长期期权"],
-    "风险管理": ["风险", "回撤", "现金", "保险", "对冲", "止损", "爆仓"],
-    "失败复盘": ["认错", "失败", "亏", "割肉", "复盘", "看错"],
+    "风险管理": ["风险", "回撤", "现金", "保险", "对冲", "止损", "爆仓", "stop loss", "mental stop", "risk management"],
+    "失败复盘": ["认错", "失败", "亏", "割肉", "复盘", "看错", "wrong", "mistake"],
     "长期持有纪律": ["长期", "长持", "定投", "time in the market", "纪律"],
+    "趋势确认": ["突破", "breakout", "strong close", "hold above", "technical analysis", " ta "],
+    "逆向交易": ["恐慌时买", "恐慌买入", "buy when they are panic", "buy when they panic", "panic"],
+    "止损纪律": ["止损", "stop loss", "mental stop"],
     "INTC": ["intc", "intel", "英特尔"],
     "IREN": ["iren"],
     "TSLA": ["tsla", "tesla", "特斯拉"],
@@ -49,26 +52,44 @@ def _key(author: str, url: str, published: str, title: str) -> str:
 
 
 SYMBOL_ALIASES = {
-    "英特尔":"INTC","intel":"INTC","intc":"INTC",
-    "iren":"IREN","特斯拉":"TSLA","tesla":"TSLA","tsla":"TSLA",
-    "nebius":"NBIS","nbis":"NBIS","coreweave":"CRWV","crwv":"CRWV",
-    "meta":"META","qcom":"QCOM","mrvl":"MRVL","marvell":"MRVL",
-    "nvda":"NVDA","英伟达":"NVDA","mu":"MU","美光":"MU",
-    "now":"NOW","servicenow":"NOW","pypl":"PYPL","paypal":"PYPL",
-    "coin":"COIN","aapl":"AAPL","amzn":"AMZN","goog":"GOOG","googl":"GOOGL",
-    "qqq":"QQQ","tqqq":"TQQQ","smh":"SMH","spy":"SPY","voo":"VOO","qld":"QLD","vgt":"VGT",
+    "英特尔":"INTC","intel":"INTC",
+    "iren":"IREN","特斯拉":"TSLA","tesla":"TSLA",
+    "nebius":"NBIS","coreweave":"CRWV",
+    "marvell":"MRVL","英伟达":"NVDA","美光":"MU",
+    "servicenow":"NOW","paypal":"PYPL",
 }
+
+TICKER_WHITELIST = {
+    "INTC","IREN","TSLA","NBIS","CRWV","META","QCOM","MRVL","NVDA","MU","NOW",
+    "PYPL","COIN","AAPL","AMZN","GOOG","GOOGL","QQQ","TQQQ","SMH","SPY","VOO","QLD","VGT"
+}
+AMBIGUOUS_TICKERS = {"NOW","MU","META","COIN"}
+
+def _has_ascii_word(text: str, token: str) -> bool:
+    return bool(re.search(rf"(?<![A-Za-z0-9]){re.escape(token)}(?![A-Za-z0-9])", text, re.I))
 
 def detect_symbols(text: str) -> list[str]:
     raw = text or ""
     low = raw.lower()
     out = []
+
+    # Company names / Chinese aliases are safe to match case-insensitively.
     for alias in sorted(SYMBOL_ALIASES, key=len, reverse=True):
-        hit = alias in low if alias.isascii() else alias in raw
+        hit = _has_ascii_word(raw, alias) if alias.isascii() else alias in raw
         if hit:
             sym = SYMBOL_ALIASES[alias]
             if sym not in out:
                 out.append(sym)
+
+    # Tickers must be standalone tokens. Ambiguous English words require uppercase/cashtag form.
+    for sym in sorted(TICKER_WHITELIST, key=len, reverse=True):
+        pattern = rf"(?<![A-Za-z0-9])\\$?{re.escape(sym)}(?![A-Za-z0-9])"
+        if sym in AMBIGUOUS_TICKERS:
+            hit = bool(re.search(pattern, raw))
+        else:
+            hit = bool(re.search(pattern, raw, re.I))
+        if hit and sym not in out:
+            out.append(sym)
     return out[:12]
 
 def _sentences(text: str) -> list[str]:
@@ -237,18 +258,21 @@ def capture_brightline(days: int = 2) -> list[dict]:
     profile = blog.resolve_profile("BrightLine")
     end = datetime.now()
     start = end - timedelta(days=days)
-    outdir = str(DATA_DIR / "_blog_daily_tmp")
-    result = blog.collect(profile, start, end, outdir, delay=2.5, max_articles=30, max_images=0)
-    seen = set(_read(BLOG_SEEN, []))
-    fresh = []
-    for post in result.get("posts", []):
-        pid = post.get("id")
-        if pid and pid not in seen:
-            fresh.append(normalize("blog", "BrightLine", post))
-            seen.add(pid)
-    _write(BLOG_SEEN, sorted(seen))
-    append_records(fresh)
-    return fresh
+    outdir = tempfile.mkdtemp(prefix="wxc_blog_daily_")
+    try:
+        result = blog.collect(profile, start, end, outdir, delay=2.5, max_articles=30, max_images=0)
+        seen = set(_read(BLOG_SEEN, []))
+        fresh = []
+        for post in result.get("posts", []):
+            pid = post.get("id")
+            if pid and pid not in seen:
+                fresh.append(normalize("blog", "BrightLine", post))
+                seen.add(pid)
+        _write(BLOG_SEEN, sorted(seen))
+        append_records(fresh)
+        return fresh
+    finally:
+        shutil.rmtree(outdir, ignore_errors=True)
 
 def records_for_day(day: str) -> list[dict]:
     feed = _read(FEED_PATH, {"records": []})
