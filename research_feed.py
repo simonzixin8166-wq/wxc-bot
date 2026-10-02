@@ -83,7 +83,7 @@ def detect_symbols(text: str) -> list[str]:
 
     # Tickers must be standalone tokens. Ambiguous English words require uppercase/cashtag form.
     for sym in sorted(TICKER_WHITELIST, key=len, reverse=True):
-        pattern = rf"(?<![A-Za-z0-9])\\$?{re.escape(sym)}(?![A-Za-z0-9])"
+        pattern = rf"(?<![A-Za-z0-9])\$?{re.escape(sym)}(?![A-Za-z0-9])"
         if sym in AMBIGUOUS_TICKERS:
             hit = bool(re.search(pattern, raw))
         else:
