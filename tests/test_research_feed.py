@@ -58,3 +58,18 @@ third_sample = """段永平的93条语录
 tl = rf.extract_structured_learning(third_sample)
 if tl["operations"]:
     assert all(x["attribution"] == "third_party_example" for x in tl["operations"])
+
+
+# Ticker hygiene: English prose must not create false positives.
+assert "NOW" not in rf.detect_symbols("SMH also flying, 620 now!")
+assert "MU" not in rf.detect_symbols('RSP "must" hold above it or dead :)')
+assert "NOW" in rf.detect_symbols("ServiceNow looks extended")
+assert "NOW" in rf.detect_symbols("NOW is breaking out")
+assert "MU" in rf.detect_symbols("MU up 30, told u guys don't panic")
+
+# English method routing.
+themes = rf.detect_themes("We buy when they panic, but with very clear stop loss in place. Need a strong close.")
+assert "逆向交易" in themes
+assert "止损纪律" in themes
+assert "风险管理" in themes
+assert "趋势确认" in themes
