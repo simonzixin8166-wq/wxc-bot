@@ -31,12 +31,15 @@ def backfill(author: str, days: int, max_pages: int):
             continue
         for pid, href, _, _ in w.parse_list(r.text, author):
             ids[pid] = href
+        if pg == 1 or pg % 25 == 0:
+            print(json.dumps({"stage":"scan_pages","page":pg,"matched_ids":len(ids)}, ensure_ascii=False), flush=True)
         ds = w.list_dates(r.text)
         if ds and max(ds) < cutoff.replace(hour=0, minute=0, second=0, microsecond=0):
             reached_cutoff = True
             break
 
     ordered = sorted(ids, key=int, reverse=True)
+    print(json.dumps({"stage":"fetch_posts","matched_ids":len(ordered)}, ensure_ascii=False), flush=True)
     posts = agent.fetch_posts(ordered, ids, state, since=cutoff)
     added = rf.add_forum_posts(author, posts)
 
