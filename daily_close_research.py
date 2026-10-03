@@ -3,7 +3,7 @@
 
 Collects:
 - BrightLine blog additions from the recent window
-- new forum posts from the three currently subscribed authors
+- new forum posts from the currently subscribed authors
 Then sends one TG digest and leaves normalized records in state/research_feed.json.
 """
 from __future__ import annotations

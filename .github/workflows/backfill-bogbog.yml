@@ -1,0 +1,41 @@
+name: backfill-bogbog-research
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/backfill-bogbog.trigger"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: backfill-bogbog-research
+  cancel-in-progress: false
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Validate collectors
+        run: |
+          python -m py_compile backfill_forum_author.py research_feed.py daily_close_research.py wxc_tg_agent.py wxc_tg_bot.py wxc_scraper.py
+          PYTHONPATH=. python tests/test_research_feed.py
+      - name: Backfill bogbog recent three months
+        env:
+          DATA_DIR: state
+        run: python backfill_forum_author.py --author bogbog --days 92 --max-pages 400
+      - name: Save source feed and seen state
+        run: |
+          git config user.name "wxc-bot"
+          git config user.email "wxc-bot@users.noreply.github.com"
+          git add state/research_feed.json state/seen_bogbog.json
+          git diff --cached --quiet || (git commit -m "backfill bogbog recent research source" && git pull --rebase origin main && git push origin HEAD:main)
