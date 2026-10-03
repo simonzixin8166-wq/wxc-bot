@@ -17,7 +17,7 @@ concurrency:
 jobs:
   backfill:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 180
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -32,6 +32,7 @@ jobs:
       - name: Backfill bogbog recent three months
         env:
           DATA_DIR: state
+          PYTHONUNBUFFERED: "1"
         run: python backfill_forum_author.py --author bogbog --days 92 --max-pages 400
       - name: Save source feed and seen state
         run: |
