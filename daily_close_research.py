@@ -8,13 +8,17 @@ Then sends one TG digest and leaves normalized records in state/research_feed.js
 """
 from __future__ import annotations
 from datetime import datetime
+import os
 import wxc_tg_agent as agent
 import research_feed as rf
+
+FORUM_DAILY_PAGES = int(os.getenv("FORUM_DAILY_PAGES", "8"))
 
 def collect_forum():
     authors = agent.load_watch()
     state = {}
-    htmls = agent.list_pages(4, state)
+    # Shared scan: one set of list pages serves every subscribed author.
+    htmls = agent.list_pages(FORUM_DAILY_PAGES, state)
     added = 0
     for author in authors:
         ids = agent.ids_for(author, htmls)
