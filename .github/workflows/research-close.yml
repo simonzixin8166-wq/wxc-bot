@@ -40,6 +40,7 @@ jobs:
           DATA_DIR: state
           JOBS_DIR: /tmp/jobs
           WATCH_MINUTES: "30"
+          FORUM_DAILY_PAGES: "8"
         run: python daily_close_research.py
 
       - name: Save research feed and seen state
