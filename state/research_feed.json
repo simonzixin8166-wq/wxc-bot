@@ -23111,7 +23111,582 @@
       "lessons": [],
       "captured_at": "2026-10-03T17:34:22Z",
       "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。"
+    },
+    {
+      "id": "2f5509961ee37fcef544",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-03 10:48:34",
+      "title": "我看了下面很多关于TA的讨论，还是太多人在寻找“确定”的信号",
+      "url": "https://bbs.wenxuecity.com/cfzh/113358.html",
+      "excerpt": "1: 没有任何TA系统能告诉你股票能够“一定”走什么方向\n2: 要有效的应用TA，一定要调整自己的心态，把亏损看成正常的交易，而不是“失败”的交易\n3: 关键的关健，是找到那些“概率”高的TA信号，比如说，如果你能做到2/3的成功概率，假以时日，回报自然是越积越多。\n4: 不要希望只在坛子里找到答案，自己要不断尝试，花时间去做backtest，用真金白银去锻炼\n5: 最后，也是最重要的，TA有上百上千种，一定要找到适合自己的。比如说我自己，对短线的TA把握水平一般，没有找到一套consistent的系统，但对长线和大波段的把握，目前在文学城里还看不到对手：）",
+      "content_chars": 282,
+      "images_count": 0,
+      "themes_hint": [
+        "失败复盘"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-04T02:31:49Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。"
+    },
+    {
+      "id": "ae4394611bc152f738c3",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-03 10:59:15",
+      "title": "I dont recall anyone was doing iron condor back then",
+      "url": "https://bbs.wenxuecity.com/cfzh/113359.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-04T02:31:49Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。"
+    },
+    {
+      "id": "2d0e2e120abecb9f8b87",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-03 11:53:47",
+      "title": "Anyone researched Blue Origin？What's its investment thesis?",
+      "url": "https://bbs.wenxuecity.com/cfzh/113367.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-04T02:31:49Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。"
+    },
+    {
+      "id": "c6ceff20c01ad334775f",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-03 12:00:16",
+      "title": "嗯？buy in panic 为什么跟我的观点不一致？",
+      "url": "https://bbs.wenxuecity.com/cfzh/113369.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "逆向交易"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-04T02:31:49Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。"
+    },
+    {
+      "id": "2c608b390035bfaa4d8c",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-03 12:06:13",
+      "title": "oh, 但我会在FOMO晚期hedge， 本质差不多。hedge能保证吃到继续FOMO的红利：）",
+      "url": "https://bbs.wenxuecity.com/cfzh/113373.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-04T02:31:49Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。"
+    },
+    {
+      "id": "4ad7de7c4a9f03f380e8",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-03 12:17:30",
+      "title": "为什么不要？把他dump了，还能拿走500米 ：）",
+      "url": "https://bbs.wenxuecity.com/cfzh/113376.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-04T02:31:49Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。"
+    },
+    {
+      "id": "efadc46d45c280bec195",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-03 12:45:00",
+      "title": "aloe 美眉说的对",
+      "url": "https://bbs.wenxuecity.com/cfzh/113382.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-04T02:31:49Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。"
+    },
+    {
+      "id": "abeaf9b91e8303361ec7",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-03 16:16:00",
+      "title": "market breadth has been going down since June",
+      "url": "https://bbs.wenxuecity.com/cfzh/113417.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-04T02:31:49Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。"
+    },
+    {
+      "id": "2400524c50b0af6a0f8e",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-03 16:17:00",
+      "title": "even Aug rally didn’t bring it up",
+      "url": "https://bbs.wenxuecity.com/cfzh/113418.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-04T02:31:49Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。"
+    },
+    {
+      "id": "3995b3c09b1b33bd0618",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-03 16:28:00",
+      "title": "我不是直仅仅这个指标，而是说所有和breadth有关的技术指标，6月后都一直是下降趋势",
+      "url": "https://bbs.wenxuecity.com/cfzh/113423.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-04T02:31:49Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。"
+    },
+    {
+      "id": "59e846ef91666a93ef0b",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-03 16:29:00",
+      "title": "if FOMO never come, then sell if market breakdown",
+      "url": "https://bbs.wenxuecity.com/cfzh/113425.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-04T02:31:49Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。"
+    },
+    {
+      "id": "26b32610f4264f0b3ce1",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-03 16:29:00",
+      "title": "hold until FOMO starts and then hedge :)",
+      "url": "https://bbs.wenxuecity.com/cfzh/113424.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-04T02:31:49Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。"
+    },
+    {
+      "id": "7b65c9d81d9a30c671bc",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-03 19:09:30",
+      "title": "稍微改一下，Breadth 是必要条件，但不是充分条件",
+      "url": "https://bbs.wenxuecity.com/cfzh/113442.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-04T02:31:49Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。"
+    },
+    {
+      "id": "7979e9bd3b6dc52cfe60",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-03 19:10:30",
+      "title": "You can trade, but new position \"must\" have tight stop loss",
+      "url": "https://bbs.wenxuecity.com/cfzh/113443.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "风险管理",
+        "止损纪律"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-04T02:31:49Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。"
+    },
+    {
+      "id": "4eedb09df4b018ff3139",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "yifan99",
+      "published_at": "2026-10-03 19:01:46",
+      "title": "科技股反弹是真修复，还是 2000 年式背离？",
+      "url": "https://bbs.wenxuecity.com/cfzh/113441.html",
+      "excerpt": "科技股反弹是真修复，还是 2000 年式背离？\nCore Index 走强、Broad Regime 仍低迷：DeepWave 市场复盘 · 基于 2026-10-02 本地扫描 · 非投资建议\n核心观点：Core Index 的修复已经发生，但 Broad Regime 尚未确认。这不是“科技股必然崩盘”的结论，而是未来数周最重要的验证问题：核心指数的强势能否扩散为更广泛的参与和更低的离场压力？\n论证链：数据证明什么，又不能证明什么\n\n命题\n可验证证据\n合理结论\n不能直接推出\n\n当前存在指数与广度背离\n2026-10-02：Core Index Recovery 89.2，Broad Regime 15.6，二者相差 73.6 分；SPY/QQQ 位于重建 20 日均线上方约 0.6% / 3.0%。\n核心指",
+      "content_chars": 4395,
+      "images_count": 4,
+      "themes_hint": [
+        "风险管理",
+        "失败复盘"
+      ],
+      "symbols": [
+        "QQQ",
+        "SPY"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-04T02:31:53Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。"
+    },
+    {
+      "id": "08b89c2430a4bc07337b",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "bogbog",
+      "published_at": "2026-10-03 15:29:33",
+      "title": "只有我一个人晒， lol, 其实没晒， 但经常被三心惦记， :-D, 不过这些年的股市easily massive",
+      "url": "https://bbs.wenxuecity.com/cfzh/113397.html",
+      "excerpt": "Gains,  我认为只是很多人不晒而已",
+      "content_chars": 20,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-04T02:32:41Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。"
+    },
+    {
+      "id": "9b556f95d8d9bc007c69",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "bogbog",
+      "published_at": "2026-10-03 15:31:19",
+      "title": "我觉的大盘没调整的话， 应该能到700-800。 长期会到1000左右",
+      "url": "https://bbs.wenxuecity.com/cfzh/113398.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "长期持有纪律"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-04T02:32:41Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。"
+    },
+    {
+      "id": "d23bfa8dc30c4be429a1",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "bogbog",
+      "published_at": "2026-10-03 15:37:26",
+      "title": "我只是猜的783-785左右会有major resistance,. 即使突破应该在1-2quarter or",
+      "url": "https://bbs.wenxuecity.com/cfzh/113400.html",
+      "excerpt": "Sooner会有个good correction.\n\r\n \n\"猜的\"meaning I could be totally wrong. Haha.\n \n至于具体什么时候几月份会调整，nobody knows",
+      "content_chars": 103,
+      "images_count": 0,
+      "themes_hint": [
+        "失败复盘",
+        "趋势确认"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-04T02:32:41Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。"
+    },
+    {
+      "id": "d2867fcff8110140de93",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "bogbog",
+      "published_at": "2026-10-03 15:44:00",
+      "title": "是的",
+      "url": "https://bbs.wenxuecity.com/cfzh/113402.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-04T02:32:41Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。"
+    },
+    {
+      "id": "3fd6a174e8d84a2a2951",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "bogbog",
+      "published_at": "2026-10-03 15:57:04",
+      "title": "我一般都不猜local高，因为我基本都不会去卖。 但前阵子",
+      "url": "https://bbs.wenxuecity.com/cfzh/113408.html",
+      "excerpt": "在大家都看涨的时候猜了个local top, 然后在大家有点panic 时都开始卖时猜了个Local bottom, 只是比较明显， 所以猜对了。lol",
+      "content_chars": 76,
+      "images_count": 0,
+      "themes_hint": [
+        "逆向交易"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-04T02:32:41Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。"
+    },
+    {
+      "id": "b1851562f167519636bd",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "bogbog",
+      "published_at": "2026-10-03 15:57:35",
+      "title": "Masking",
+      "url": "https://bbs.wenxuecity.com/cfzh/113409.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-04T02:32:41Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。"
+    },
+    {
+      "id": "011766aa5bf6458281a8",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "bogbog",
+      "published_at": "2026-10-03 16:08:47",
+      "title": "不知道哈哈。 但我觉的在1-2quarter or sooner会有一个good correction",
+      "url": "https://bbs.wenxuecity.com/cfzh/113411.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-04T02:32:41Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。"
+    },
+    {
+      "id": "f1419082464af27e6f8e",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "bogbog",
+      "published_at": "2026-10-03 16:13:54",
+      "title": "只有我一个人觉得应该defensive谨慎的时候， 哈哈，象个 outlier",
+      "url": "https://bbs.wenxuecity.com/cfzh/113414.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-04T02:32:41Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。"
+    },
+    {
+      "id": "2c646679ef65d18db16d",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "bogbog",
+      "published_at": "2026-10-03 16:15:02",
+      "title": "Yes that’s what I said the other day. Narrower market can",
+      "url": "https://bbs.wenxuecity.com/cfzh/113416.html",
+      "excerpt": "stay narrow longer than people expect.  It's not proof of a top, but it justifies a defensive posture",
+      "content_chars": 101,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-04T02:32:41Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。"
+    },
+    {
+      "id": "7ddf4898a6ec29f1e7ee",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "bogbog",
+      "published_at": "2026-10-03 16:31:14",
+      "title": "Yes, 我觉的it’s not a market",
+      "url": "https://bbs.wenxuecity.com/cfzh/113427.html",
+      "excerpt": "I would chase aggressively. 如果long term, sit tight. 如果是tech momentum trader, qqq more constructive些但肯定得关注利率",
+      "content_chars": 107,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [
+        "QQQ"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-04T02:32:41Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。"
+    },
+    {
+      "id": "1aa13725843be92e57be",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "bogbog",
+      "published_at": "2026-10-03 16:45:41",
+      "title": "Yes",
+      "url": "https://bbs.wenxuecity.com/cfzh/113433.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-04T02:32:41Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。"
+    },
+    {
+      "id": "0076531373f3e5a05445",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "bogbog",
+      "published_at": "2026-10-03 19:25:53",
+      "title": "The Nasdaq is going up but it's a narrow leadership story.",
+      "url": "https://bbs.wenxuecity.com/cfzh/113446.html",
+      "excerpt": "Small caps are struggling under high rates. Treasury yields sitting at 24-year highs are the elephant in the room, they ultimately determine the ceiling for equities.",
+      "content_chars": 166,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-04T02:32:41Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。"
     }
   ],
-  "updated_at": "2026-10-03T17:34:22Z"
+  "updated_at": "2026-10-04T02:32:41Z"
 }
