@@ -78,6 +78,7 @@ def _entry_metadata(entry:dict)->dict:
         "id":vid,
         "title":entry.get("title") or "",
         "webpage_url":entry.get("webpage_url") or _canonical_video_url(vid),
+        "rss_published_at":entry.get("rss_published_at"),
         "upload_date":entry.get("upload_date"),
         "timestamp":entry.get("timestamp"),
         "release_timestamp":entry.get("release_timestamp"),
