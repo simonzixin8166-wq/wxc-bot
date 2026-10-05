@@ -66,16 +66,3 @@ jobs:
           git add state
           git diff --cached --quiet || (git commit -m "update forward research source feed" && git pull --rebase origin main && git push origin HEAD:main)
 
-      - name: Build historical YouTube learning archive + provider health
-        continue-on-error: true
-        env:
-          DATA_DIR: state
-        run: timeout 8m python youtube_learning_archive.py
-
-      - name: Save non-gating historical YouTube state
-        if: always()
-        run: |
-          git config user.name "wxc-bot"
-          git config user.email "wxc-bot@users.noreply.github.com"
-          git add state/youtube_provider_health.json state/youtube_learning_archive.json
-          git diff --cached --quiet || (git commit -m "update non-gating historical youtube learning" && git pull --rebase origin main && git push origin HEAD:main)
