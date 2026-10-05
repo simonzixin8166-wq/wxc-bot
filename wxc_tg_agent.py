@@ -42,6 +42,24 @@ MAX_PUSH_IMAGES = 10     # 订阅推送时最多发几张图
 JOBS_DIR = os.getenv("JOBS_DIR", os.path.join(DATA, "jobs"))
 job_lock = threading.Lock()
 
+REQUEST_LEDGER_F = os.path.join(DATA, "request_ledger.json")
+
+def record_request(provider, kind, count=1, paid=False):
+    """Small rolling operational ledger; counts only, never stores prompt/content."""
+    try:
+        today=datetime.now().strftime("%Y-%m-%d")
+        doc=json.load(open(REQUEST_LEDGER_F,encoding="utf-8")) if os.path.exists(REQUEST_LEDGER_F) else {"days":{}}
+        day=doc.setdefault("days",{}).setdefault(today,{})
+        key=str(provider)+":"+str(kind)
+        row=day.setdefault(key,{"count":0,"paid":bool(paid)})
+        row["count"]=int(row.get("count") or 0)+int(count)
+        row["paid"]=bool(row.get("paid") or paid)
+        for d in sorted(list(doc["days"]))[:-45]:
+            doc["days"].pop(d,None)
+        json.dump(doc,open(REQUEST_LEDGER_F,"w",encoding="utf-8"),ensure_ascii=False,indent=2)
+    except Exception:
+        pass
+
 HELP = ("我可以帮你抓取文学城论坛和博客:\n"
         "• 抓一下三心三意最近3天的发言\n"
         "• 下载三心三意最近30页,只要长文\n"
@@ -53,6 +71,7 @@ HELP = ("我可以帮你抓取文学城论坛和博客:\n"
 # ---------- Telegram ----------
 def say(text):
     for part in b.split_msg(text):
+        record_request("telegram","send_message")
         requests.post(API + "/sendMessage", timeout=30, json={
             "chat_id": OWNER, "text": part, "disable_web_page_preview": True})
         time.sleep(0.5)
@@ -145,6 +164,7 @@ def parse_intent(text, known):
     use_paid = os.getenv("USE_ANTHROPIC_INTENT","0").strip().lower() in {"1","true","yes","on"}
     if key and use_paid:
         try:
+            record_request("anthropic","intent_parse",1,paid=True)
             r = requests.post("https://api.anthropic.com/v1/messages", timeout=40,
                 headers={"x-api-key": key, "anthropic-version": "2023-06-01", "content-type": "application/json"},
                 json={"model": "claude-sonnet-5-5", "max_tokens": 250,
