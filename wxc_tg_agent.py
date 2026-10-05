@@ -142,7 +142,8 @@ def rule_intent(text, known):
 
 def parse_intent(text, known):
     key = os.getenv("ANTHROPIC_API_KEY")
-    if key:
+    use_paid = os.getenv("USE_ANTHROPIC_INTENT","0").strip().lower() in {"1","true","yes","on"}
+    if key and use_paid:
         try:
             r = requests.post("https://api.anthropic.com/v1/messages", timeout=40,
                 headers={"x-api-key": key, "anthropic-version": "2023-06-01", "content-type": "application/json"},
