@@ -178,7 +178,8 @@ def _xgoose_native(video_id:str,title:str,author:str)->Acquisition|None:
                     headers=UA,timeout=TIMEOUT,
                 )
                 if not rr.ok:continue
-                for row in rr.json() if isinstance(rr.json(),list) else []:
+                rr_rows=rr.json()
+                for row in rr_rows if isinstance(rr_rows,list) else []:
                     if _source_video_id(str(row.get("source_url") or ""))==video_id:
                         match=row;break
                 if match is not None:break
@@ -222,6 +223,66 @@ def _xgoose_native(video_id:str,title:str,author:str)->Acquisition|None:
             )
     except Exception:
         return None
+    return None
+
+def discover_xgoose_author_sample(author_terms:list[str], queries:list[str]|None=None)->dict|None:
+    """Find one recent public Q2 YouTube transcript for an author.
+
+    Historical-diagnostic helper only. The returned item is identified by the
+    provider's stored original YouTube URL and never enters the live feed by
+    itself.
+    """
+    terms=[str(x or "").strip().lower() for x in author_terms if str(x or "").strip()]
+    if not terms:
+        return None
+    for query in (queries or ["美股","QQQ","NVDA"]):
+        try:
+            r=requests.get(
+                "https://reducer.xgoose.org/api/items",
+                params={"platform":"youtube","q":query,"limit":500,"offset":0,"sort":"published","order":"desc"},
+                headers=UA,timeout=TIMEOUT,
+            )
+            if not r.ok:
+                continue
+            rows=r.json()
+            if not isinstance(rows,list):
+                continue
+            for row in rows:
+                author=str(row.get("author") or "").lower()
+                if not any(t in author for t in terms):
+                    continue
+                vid=_source_video_id(str(row.get("source_url") or ""))
+                if not vid or not row.get("id"):
+                    continue
+                detail=requests.get(
+                    f"https://reducer.xgoose.org/api/items/{int(row['id'])}",
+                    headers=UA,timeout=TIMEOUT,
+                )
+                if not detail.ok:
+                    continue
+                data=detail.json()
+                transcript=(data.get("transcript") or {}) if isinstance(data,dict) else {}
+                text=_clean_text(str(transcript.get("text") or ""))
+                source_url=str(data.get("source_url") or row.get("source_url") or "")
+                if _source_video_id(source_url)!=vid or len(text)<1800:
+                    continue
+                return {
+                    "video_id":vid,
+                    "title":str(data.get("title") or row.get("title") or ""),
+                    "author":str(data.get("author") or row.get("author") or ""),
+                    "published_at":str(data.get("published_at") or row.get("published_at") or ""),
+                    "acquisition":Acquisition(
+                        text=text[:MAX_TEXT],status="available",quality="Q2",
+                        provider="reducer.xgoose.org",
+                        provider_url=f"https://reducer.xgoose.org/items/{int(row['id'])}",
+                        content_origin="third_party_transcript",
+                        timestamp_evidence=bool(transcript.get("segments")),
+                        rule_candidate_allowed=True,
+                        note="Historical public stream-reducer transcript discovered by author; exact original YouTube URL preserved.",
+                    ).to_dict(),
+                }
+        except Exception:
+            continue
     return None
 
 def _direct_pickscribe(video_id:str,title:str,author:str)->Acquisition|None:
