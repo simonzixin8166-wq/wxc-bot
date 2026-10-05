@@ -1,0 +1,52 @@
+import transcript_router as tr
+
+def official_ok(video_id):
+    return ("这是完整字幕 "*120, "youtube_transcript_api")
+
+q1=tr.acquire("abc","标题","作者",official_fetcher=official_ok)
+assert q1["quality"]=="Q1"
+assert q1["provider"]=="youtube_official"
+assert q1["rule_candidate_allowed"] is True
+assert q1["chars"]>=500
+
+def official_fail(video_id):
+    return ("","unavailable:RequestBlocked")
+
+# Fail-closed when no provider is found.
+old_direct=tr._direct_pickscribe
+old_search=tr._duckduckgo_links
+try:
+    tr._direct_pickscribe=lambda *args,**kwargs: None
+    tr._duckduckgo_links=lambda *args,**kwargs: []
+    q5=tr.acquire("none","No transcript","Author",official_fetcher=official_fail)
+    assert q5["quality"]=="Q5"
+    assert q5["provider"]=="metadata_only"
+    assert q5["rule_candidate_allowed"] is False
+    assert q5["text"]==""
+finally:
+    tr._direct_pickscribe=old_direct
+    tr._duckduckgo_links=old_search
+
+# Quality policy: structured summaries remain thesis-only.
+text="Detailed brief\nOriginal source\n原片 · 跳到 5:47\n"+"投资观点与条件。"*180
+quality,ts,allowed=tr._quality_for("stockvoice.cmoney.tw",text)
+assert quality=="Q3"
+assert allowed is False
+
+# Full third-party transcript can form a candidate, but provenance remains third-party.
+full="Transcript\n00:01 "+"This is a full transcript with investment reasoning. "*100
+quality,ts,allowed=tr._quality_for("pickscribe.com",full)
+assert quality=="Q2"
+assert allowed is True
+assert ts is True
+
+pub=tr.public_view({
+    "status":"available","quality":"Q2","provider":"pickscribe.com",
+    "provider_url":"https://pickscribe.com/v/x/","content_origin":"third_party_transcript",
+    "timestamp_evidence":True,"rule_candidate_allowed":True,"chars":3000,
+    "note":"test","text":"DO NOT EXPOSE"
+})
+assert "text" not in pub
+assert pub["quality"]=="Q2"
+
+print("PASS transcript acquisition router quality/provenance/fail-closed")
