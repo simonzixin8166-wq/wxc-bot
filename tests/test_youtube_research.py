@@ -24,9 +24,10 @@ def transcript(vid):
 
 with tempfile.TemporaryDirectory() as td:
     td=Path(td)
-    old_seen,old_status,old_feed=yt.SEEN_PATH,yt.STATUS_PATH,rf.FEED_PATH
+    old_seen,old_status,old_pending,old_feed=yt.SEEN_PATH,yt.STATUS_PATH,yt.PENDING_PATH,rf.FEED_PATH
     yt.SEEN_PATH=td/"seen_youtube.json"
     yt.STATUS_PATH=td/"youtube_source_status.json"
+    yt.PENDING_PATH=td/"pending_youtube.json"
     rf.FEED_PATH=td/"research_feed.json"
     try:
         # Initial deployment is baseline-only; old/current videos never enter feed.
@@ -66,7 +67,7 @@ with tempfile.TemporaryDirectory() as td:
         assert out4["feed_records_added"]==0
         assert len(rf._read(rf.FEED_PATH,{"records":[]})["records"])==1
     finally:
-        yt.SEEN_PATH,yt.STATUS_PATH,rf.FEED_PATH=old_seen,old_status,old_feed
+        yt.SEEN_PATH,yt.STATUS_PATH,yt.PENDING_PATH,rf.FEED_PATH=old_seen,old_status,old_pending,old_feed
 
 print("PASS youtube source pool baseline/forward-only/idempotency/transcript fallback")
 
@@ -94,3 +95,83 @@ assert q3row["operations"]==[]
 assert q3row["portfolio_rules"]==[]
 assert q3row["rule_candidate_allowed"] is False
 print("PASS Q3-Q5 no formal rule extraction")
+
+
+# Content admission: metadata-only discovery stays outside research_feed, then
+# enters exactly once when Q2 text becomes available on a later run.
+with tempfile.TemporaryDirectory() as td:
+    td=Path(td)
+    old_seen,old_status,old_pending,old_feed=yt.SEEN_PATH,yt.STATUS_PATH,yt.PENDING_PATH,rf.FEED_PATH
+    yt.SEEN_PATH=td/"seen_youtube.json"
+    yt.STATUS_PATH=td/"youtube_source_status.json"
+    yt.PENDING_PATH=td/"pending_youtube.json"
+    rf.FEED_PATH=td/"research_feed.json"
+
+    local_entries={
+      "@RhinoFinance":[{"id":"rb","title":"baseline"}],
+      "@老李玩钱":[{"id":"lb","title":"baseline"}],
+      "@AndreiJikh":[{"id":"ab","title":"baseline"}],
+    }
+    phase={"ready":False}
+    def local_list(url):
+        for handle,rows in local_entries.items():
+            if handle in url:return rows
+        return []
+    def local_meta(url):
+        vid=url.split("v=")[-1]
+        return {"id":vid,"title":"TITLE "+vid,"webpage_url":url,"upload_date":"20261006"}
+    def routed(vid,title="",author=""):
+        if vid=="lnew" and phase["ready"]:
+            return {
+              "text":"00:01 "+"完整转录与明确条件。"*250,
+              "status":"available","quality":"Q2","provider":"reducer.xgoose.org",
+              "provider_url":"https://reducer.xgoose.org/items/999",
+              "content_origin":"third_party_transcript","timestamp_evidence":True,
+              "rule_candidate_allowed":True,
+            }
+        return {
+          "text":"","status":"metadata_only","quality":"Q5","provider":"metadata_only",
+          "provider_url":"","content_origin":"metadata_only","timestamp_evidence":False,
+          "rule_candidate_allowed":False,
+        }
+
+    try:
+        base=yt.collect(local_list,local_meta,routed)
+        assert base["first_run"] is True
+        assert base["feed_records_added"]==0
+        assert base["pending_total"]==0
+
+        local_entries["@老李玩钱"].insert(0,{
+          "id":"lnew","title":"新视频：QQQ分批计划","rss_published_at":"2026-10-06T01:00:00Z"
+        })
+        q5=yt.collect(local_list,local_meta,routed)
+        assert q5["discovered_new_videos"]==1
+        assert q5["feed_records_added"]==0
+        assert q5["pending_total"]==1
+        assert not rf.FEED_PATH.exists()
+        pending=yt._read(yt.PENDING_PATH,{"records":[]})["records"]
+        assert pending[0]["video_id"]=="lnew"
+        assert pending[0]["published_at"]=="2026-10-06"
+
+        # Same video is already seen but is explicitly retried from pending.
+        phase["ready"]=True
+        q2=yt.collect(local_list,local_meta,routed)
+        assert q2["discovered_new_videos"]==0
+        assert q2["pending_retried"]==1
+        assert q2["admitted_from_pending"]==1
+        assert q2["feed_records_added"]==1
+        assert q2["pending_total"]==0
+        feed=yt._read(rf.FEED_PATH,{"records":[]})["records"]
+        assert len(feed)==1
+        assert feed[0]["content_quality"]=="Q2"
+        assert feed[0]["content_provider"]=="reducer.xgoose.org"
+        assert feed[0]["published_at"]=="2026-10-06"
+
+        # No duplicate admission on subsequent run.
+        again=yt.collect(local_list,local_meta,routed)
+        assert again["feed_records_added"]==0
+        assert len(yt._read(rf.FEED_PATH,{"records":[]})["records"])==1
+    finally:
+        yt.SEEN_PATH,yt.STATUS_PATH,yt.PENDING_PATH,rf.FEED_PATH=old_seen,old_status,old_pending,old_feed
+
+print("PASS pending-content first-admission gate")
