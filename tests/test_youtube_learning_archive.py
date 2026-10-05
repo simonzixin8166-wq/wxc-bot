@@ -34,7 +34,7 @@ try:
     assert r["promotion_eligible"] is False
     assert r["event_score_eligible"] is False
     assert r["text_hash"]
-    assert len(r["excerpt"])<=360
+    assert r["excerpt"]==""
 
     m=yla.build_probe({"author":"B","video_id":"macro","title":"Fed","role":"market_context"})
     assert m["historical_learning_eligible"] is True
@@ -79,10 +79,33 @@ try:
     x=yla.build_probe({"author":"A","video_id":"x","title":"x","role":"rule_supply"})
     assert len(x["operations"])==1
     assert x["operations"][0]["attribution"]=="author_plan"
-    assert len(x["excerpt"])<=240
-    assert all(len(s)<=120 for s in x["representative_points"])
+    assert x["excerpt"]==""
+    assert x["representative_points"]==[]
 finally:
     yla.tr.acquire=old_acquire
     yla.rf.extract_structured_learning=old_extract
 
 print("PASS historical YouTube archive quality cleanup")
+
+
+# Market-context archive filters ambiguous English ticker NOW unless ServiceNow is explicit.
+old_acquire=yla.tr.acquire
+old_extract=yla.rf.extract_structured_learning
+try:
+    yla.tr.acquire=lambda *args,**kwargs:{
+        "text":"The Fed changed everything NOW and Tesla was mentioned. "*60,
+        "quality":"Q2","provider":"test","provider_url":"u",
+        "content_origin":"third_party_transcript","timestamp_evidence":True,
+        "rule_candidate_allowed":True,
+    }
+    yla.rf.extract_structured_learning=lambda text:{
+        "symbols":["NOW","TSLA"],"operations":[],"portfolio_rules":[],"lessons":[]
+    }
+    m=yla.build_probe({"author":"Andrei Jikh","video_id":"m","title":"Macro","role":"market_context"})
+    assert "NOW" not in m["symbols"]
+    assert "TSLA" in m["symbols"]
+finally:
+    yla.tr.acquire=old_acquire
+    yla.rf.extract_structured_learning=old_extract
+
+print("PASS structured-only historical learning persistence")

@@ -24,7 +24,7 @@ import youtube_provider_health as health
 
 DATA_DIR=Path(os.getenv("DATA_DIR","state"))
 OUT=DATA_DIR/"youtube_learning_archive.json"
-MAX_EXCERPT=240
+MAX_EXCERPT=0
 
 MACRO_TOPICS={
     "利率/Fed":["federal reserve","fed ","interest rate","rate cut","rate hike","yield","treasury","fomc"],
@@ -129,14 +129,17 @@ def build_probe(p:dict)->dict:
         "historical_learning_eligible":eligible,
         "text_chars_seen":len(text),
         "text_hash":_hash(text) if text else None,
-        "excerpt":text[:MAX_EXCERPT] if text else "",
-        "symbols":learning["symbols"] if eligible else [],
+        "excerpt":"",
+        "symbols":[
+            s for s in (learning["symbols"] if eligible else [])
+            if not (p.get("role")=="market_context" and s=="NOW" and "servicenow" not in text.lower() and "$NOW" not in text)
+        ],
         "themes":themes,
         "macro_topics":macro,
         "operations":learning["operations"] if eligible else [],
         "portfolio_rules":learning["portfolio_rules"] if eligible else [],
         "lessons":learning["lessons"] if eligible else [],
-        "representative_points":points,
+        "representative_points":[],
         "forward_evidence_eligible":False,
         "promotion_eligible":False,
         "event_score_eligible":False,
@@ -164,7 +167,7 @@ def main():
             "This archive is never appended to research_feed.",
             "These historical videos never enter Source Store, Rule Registry, EventScore, Promotion, Readiness, or Planner gating.",
             "Only Q1/Q2 text is semantically extracted; Q3/Q4/Q5 remain descriptive/context-only.",
-            "Full third-party transcripts are not stored; only hashes, bounded excerpts, and structured learning are persisted.",
+            "Third-party transcripts are processed in-memory only; persisted records keep hashes, text length and structured learning, not transcript excerpts.",
         ],
     }
     OUT.parent.mkdir(parents=True,exist_ok=True)
