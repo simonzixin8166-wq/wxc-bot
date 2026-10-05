@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "generated_at": "2026-10-05T11:28:47+00:00",
+  "generated_at": "2026-10-05T11:40:35+00:00",
   "non_gating": true,
   "historical_diagnostic_only": true,
   "probe_count": 15,
-  "available_count": 2,
-  "rule_candidate_capable_count": 2,
+  "available_count": 5,
+  "rule_candidate_capable_count": 4,
   "probes": [
     {
       "author": "RhinoFinance / 视野环球财经",
@@ -20,7 +20,7 @@
       "timestamp_evidence": false,
       "rule_candidate_allowed": false,
       "chars": 0,
-      "note": "No allowlisted public transcript/summary provider matched this video."
+      "note": "Derived from the same historical acquisition pass; no second provider request."
     },
     {
       "author": "老李玩钱",
@@ -35,7 +35,7 @@
       "timestamp_evidence": true,
       "rule_candidate_allowed": true,
       "chars": 3529,
-      "note": "Public stream-reducer transcript; exact YouTube video-id matched."
+      "note": "Derived from the same historical acquisition pass; no second provider request."
     },
     {
       "author": "Andrei Jikh",
@@ -49,8 +49,8 @@
       "content_origin": "third_party_transcript",
       "timestamp_evidence": true,
       "rule_candidate_allowed": true,
-      "chars": 12000,
-      "note": "Public third-party text; MyAlpha preserves provider provenance and does not treat it as primary-source fact."
+      "chars": 11602,
+      "note": "Derived from the same historical acquisition pass; no second provider request."
     },
     {
       "author": "老李玩钱",
@@ -65,7 +65,7 @@
       "timestamp_evidence": false,
       "rule_candidate_allowed": false,
       "chars": 0,
-      "note": "No allowlisted public transcript/summary provider matched this video."
+      "note": "Derived from the same historical acquisition pass; no second provider request."
     },
     {
       "author": "老李玩钱",
@@ -80,7 +80,7 @@
       "timestamp_evidence": false,
       "rule_candidate_allowed": false,
       "chars": 0,
-      "note": "No allowlisted public transcript/summary provider matched this video."
+      "note": "Derived from the same historical acquisition pass; no second provider request."
     },
     {
       "author": "老李玩钱",
@@ -95,7 +95,7 @@
       "timestamp_evidence": false,
       "rule_candidate_allowed": false,
       "chars": 0,
-      "note": "No allowlisted public transcript/summary provider matched this video."
+      "note": "Derived from the same historical acquisition pass; no second provider request."
     },
     {
       "author": "Andrei Jikh",
@@ -110,22 +110,22 @@
       "timestamp_evidence": false,
       "rule_candidate_allowed": false,
       "chars": 0,
-      "note": "No allowlisted public transcript/summary provider matched this video."
+      "note": "Derived from the same historical acquisition pass; no second provider request."
     },
     {
       "author": "Andrei Jikh",
       "video_id": "tTaIuYhWloE",
       "title": "How The Fed Is Crashing The Market",
       "role": "market_context",
-      "status": "metadata_only",
-      "quality": "Q5",
-      "provider": "metadata_only",
-      "provider_url": "",
-      "content_origin": "metadata_only",
+      "status": "available",
+      "quality": "Q4",
+      "provider": "pickscribe.com",
+      "provider_url": "https://pickscribe.com/v/tTaIuYhWloE/",
+      "content_origin": "third_party_transcript",
       "timestamp_evidence": false,
       "rule_candidate_allowed": false,
-      "chars": 0,
-      "note": "No allowlisted public transcript/summary provider matched this video."
+      "chars": 338,
+      "note": "Derived from the same historical acquisition pass; no second provider request."
     },
     {
       "author": "Andrei Jikh",
@@ -140,22 +140,22 @@
       "timestamp_evidence": false,
       "rule_candidate_allowed": false,
       "chars": 0,
-      "note": "No allowlisted public transcript/summary provider matched this video."
+      "note": "Derived from the same historical acquisition pass; no second provider request."
     },
     {
       "author": "Andrei Jikh",
       "video_id": "3FZipnSI_po",
       "title": "Japan Just Broke the Global Economy (Worse Than Greece)",
       "role": "market_context",
-      "status": "metadata_only",
-      "quality": "Q5",
-      "provider": "metadata_only",
-      "provider_url": "",
-      "content_origin": "metadata_only",
-      "timestamp_evidence": false,
-      "rule_candidate_allowed": false,
-      "chars": 0,
-      "note": "No allowlisted public transcript/summary provider matched this video."
+      "status": "available",
+      "quality": "Q2",
+      "provider": "pickscribe.com",
+      "provider_url": "https://pickscribe.com/v/3FZipnSI_po/",
+      "content_origin": "third_party_transcript",
+      "timestamp_evidence": true,
+      "rule_candidate_allowed": true,
+      "chars": 11562,
+      "note": "Derived from the same historical acquisition pass; no second provider request."
     },
     {
       "author": "Andrei Jikh",
@@ -170,7 +170,7 @@
       "timestamp_evidence": false,
       "rule_candidate_allowed": false,
       "chars": 0,
-      "note": "No allowlisted public transcript/summary provider matched this video."
+      "note": "Derived from the same historical acquisition pass; no second provider request."
     },
     {
       "author": "Andrei Jikh",
@@ -185,22 +185,22 @@
       "timestamp_evidence": false,
       "rule_candidate_allowed": false,
       "chars": 0,
-      "note": "No allowlisted public transcript/summary provider matched this video."
+      "note": "Derived from the same historical acquisition pass; no second provider request."
     },
     {
       "author": "Andrei Jikh",
       "video_id": "nY234RoQeHw",
       "title": "I Asked ChatGPT To Make Me As Much Money As Possible",
       "role": "market_context",
-      "status": "metadata_only",
-      "quality": "Q5",
-      "provider": "metadata_only",
-      "provider_url": "",
-      "content_origin": "metadata_only",
-      "timestamp_evidence": false,
-      "rule_candidate_allowed": false,
-      "chars": 0,
-      "note": "No allowlisted public transcript/summary provider matched this video."
+      "status": "available",
+      "quality": "Q2",
+      "provider": "pickscribe.com",
+      "provider_url": "https://pickscribe.com/v/nY234RoQeHw/",
+      "content_origin": "third_party_transcript",
+      "timestamp_evidence": true,
+      "rule_candidate_allowed": true,
+      "chars": 11602,
+      "note": "Derived from the same historical acquisition pass; no second provider request."
     },
     {
       "author": "老李玩钱",
@@ -215,7 +215,7 @@
       "timestamp_evidence": false,
       "rule_candidate_allowed": false,
       "chars": 0,
-      "note": "No allowlisted public transcript/summary provider matched this video."
+      "note": "Derived from the same historical acquisition pass; no second provider request."
     },
     {
       "author": "老李玩钱",
@@ -230,8 +230,8 @@
       "timestamp_evidence": false,
       "rule_candidate_allowed": false,
       "chars": 0,
-      "note": "No allowlisted public transcript/summary provider matched this video."
+      "note": "Derived from the same historical acquisition pass; no second provider request."
     }
   ],
-  "guardrail": "Diagnostic probes never enter research_feed, Source Store, Rule Registry, EventScore, Promotion, or Readiness."
+  "guardrail": "Derived from historical archive acquisition; never enters research_feed, Source Store, Rule Registry, EventScore, Promotion, or Readiness."
 }

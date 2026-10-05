@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-10-05T11:22:54+00:00",
+  "generated_at": "2026-10-05T11:40:35+00:00",
   "mode": "historical_observational_learning_only",
   "non_gating": true,
   "result_blind": true,
@@ -32,7 +32,9 @@
       "forward_evidence_eligible": false,
       "promotion_eligible": false,
       "event_score_eligible": false,
-      "note": "Historical observational learning only; never admitted to forward evidence or Promotion."
+      "note": "Historical observational learning only; never admitted to forward evidence or Promotion.",
+      "last_probe_at": "2026-10-05T11:22:54+00:00",
+      "probe_skipped_backoff": true
     },
     {
       "archive_id": "yt_hist_58b3ef66c6c5d7ab",
@@ -73,7 +75,9 @@
       "forward_evidence_eligible": false,
       "promotion_eligible": false,
       "event_score_eligible": false,
-      "note": "Historical observational learning only; never admitted to forward evidence or Promotion."
+      "note": "Historical observational learning only; never admitted to forward evidence or Promotion.",
+      "last_probe_at": "2026-10-05T11:22:54+00:00",
+      "probe_skipped_backoff": true
     },
     {
       "archive_id": "yt_hist_391ac7253bc35036",
@@ -117,7 +121,9 @@
       "note": "Historical observational learning only; restored from previously persisted Q2 snapshot after transient provider degradation. Never admitted to forward evidence or Promotion.",
       "retained_prior_best_quality": true,
       "last_probe_quality": "Q5",
-      "last_probe_provider": "metadata_only"
+      "last_probe_provider": "metadata_only",
+      "last_probe_at": "2026-10-05T11:22:54+00:00",
+      "probe_skipped_backoff": true
     },
     {
       "archive_id": "yt_hist_3d3b40d0b65152ff",
@@ -146,7 +152,9 @@
       "forward_evidence_eligible": false,
       "promotion_eligible": false,
       "event_score_eligible": false,
-      "note": "Historical observational learning only; never admitted to forward evidence or Promotion."
+      "note": "Historical observational learning only; never admitted to forward evidence or Promotion.",
+      "last_probe_at": "2026-10-05T11:22:54+00:00",
+      "probe_skipped_backoff": true
     },
     {
       "archive_id": "yt_hist_1bb847d3923b3543",
@@ -175,7 +183,9 @@
       "forward_evidence_eligible": false,
       "promotion_eligible": false,
       "event_score_eligible": false,
-      "note": "Historical observational learning only; never admitted to forward evidence or Promotion."
+      "note": "Historical observational learning only; never admitted to forward evidence or Promotion.",
+      "last_probe_at": "2026-10-05T11:22:54+00:00",
+      "probe_skipped_backoff": true
     },
     {
       "archive_id": "yt_hist_8eb11bcd35844155",
@@ -204,7 +214,9 @@
       "forward_evidence_eligible": false,
       "promotion_eligible": false,
       "event_score_eligible": false,
-      "note": "Historical observational learning only; never admitted to forward evidence or Promotion."
+      "note": "Historical observational learning only; never admitted to forward evidence or Promotion.",
+      "last_probe_at": "2026-10-05T11:22:54+00:00",
+      "probe_skipped_backoff": true
     },
     {
       "archive_id": "yt_hist_df0026934f3eb818",
@@ -233,7 +245,9 @@
       "forward_evidence_eligible": false,
       "promotion_eligible": false,
       "event_score_eligible": false,
-      "note": "Historical observational learning only; never admitted to forward evidence or Promotion."
+      "note": "Historical observational learning only; never admitted to forward evidence or Promotion.",
+      "last_probe_at": "2026-10-05T11:22:54+00:00",
+      "probe_skipped_backoff": true
     },
     {
       "archive_id": "yt_hist_088409f0909fa17b",
@@ -262,7 +276,9 @@
       "forward_evidence_eligible": false,
       "promotion_eligible": false,
       "event_score_eligible": false,
-      "note": "Historical observational learning only; never admitted to forward evidence or Promotion."
+      "note": "Historical observational learning only; never admitted to forward evidence or Promotion.",
+      "last_probe_at": "2026-10-05T11:22:54+00:00",
+      "probe_skipped_backoff": true
     },
     {
       "archive_id": "yt_hist_3a90a1972c0a9127",
@@ -291,15 +307,215 @@
       "forward_evidence_eligible": false,
       "promotion_eligible": false,
       "event_score_eligible": false,
-      "note": "Historical observational learning only; never admitted to forward evidence or Promotion."
+      "note": "Historical observational learning only; never admitted to forward evidence or Promotion.",
+      "last_probe_at": "2026-10-05T11:22:54+00:00",
+      "probe_skipped_backoff": true
+    },
+    {
+      "archive_id": "yt_hist_3e534dd4ab6f287c",
+      "author": "Andrei Jikh",
+      "video_id": "3FZipnSI_po",
+      "title": "Japan Just Broke the Global Economy (Worse Than Greece)",
+      "role": "market_context",
+      "url": "https://www.youtube.com/watch?v=3FZipnSI_po",
+      "quality": "Q2",
+      "provider": "pickscribe.com",
+      "provider_url": "https://pickscribe.com/v/3FZipnSI_po/",
+      "content_origin": "third_party_transcript",
+      "timestamp_evidence": true,
+      "rule_candidate_capable_at_source": true,
+      "historical_learning_eligible": true,
+      "text_chars_seen": 11562,
+      "text_hash": "04d1ec88efbe2a62244def5375506ad4afd08b679de775f5bea1116226f5e065",
+      "excerpt": "",
+      "symbols": [],
+      "themes": [
+        "Sell Put"
+      ],
+      "macro_topics": [
+        "利率/Fed",
+        "美元",
+        "加密资产",
+        "经济周期"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "representative_points": [],
+      "forward_evidence_eligible": false,
+      "promotion_eligible": false,
+      "event_score_eligible": false,
+      "note": "Historical observational learning only; never admitted to forward evidence or Promotion.",
+      "last_probe_at": "2026-10-05T11:38:54+00:00"
+    },
+    {
+      "archive_id": "yt_hist_338824bdf8e5f04c",
+      "author": "Andrei Jikh",
+      "video_id": "9X3h3swRftY",
+      "title": "BREAKING: The Bond Market Is Collapsing (JPMorgan’s Final Warning)",
+      "role": "market_context",
+      "url": "https://www.youtube.com/watch?v=9X3h3swRftY",
+      "quality": "Q5",
+      "provider": "metadata_only",
+      "provider_url": "",
+      "content_origin": "metadata_only",
+      "timestamp_evidence": false,
+      "rule_candidate_capable_at_source": false,
+      "historical_learning_eligible": false,
+      "text_chars_seen": 0,
+      "text_hash": null,
+      "excerpt": "",
+      "symbols": [],
+      "themes": [],
+      "macro_topics": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "representative_points": [],
+      "forward_evidence_eligible": false,
+      "promotion_eligible": false,
+      "event_score_eligible": false,
+      "note": "Historical observational learning only; never admitted to forward evidence or Promotion.",
+      "last_probe_at": "2026-10-05T11:39:25+00:00"
+    },
+    {
+      "archive_id": "yt_hist_f21cfe3237c5fd7c",
+      "author": "Andrei Jikh",
+      "video_id": "T9h9BMhpdaA",
+      "title": "The Tariffs Just Broke the System (And It's All On Purpose)",
+      "role": "market_context",
+      "url": "https://www.youtube.com/watch?v=T9h9BMhpdaA",
+      "quality": "Q5",
+      "provider": "metadata_only",
+      "provider_url": "",
+      "content_origin": "metadata_only",
+      "timestamp_evidence": false,
+      "rule_candidate_capable_at_source": false,
+      "historical_learning_eligible": false,
+      "text_chars_seen": 0,
+      "text_hash": null,
+      "excerpt": "",
+      "symbols": [],
+      "themes": [],
+      "macro_topics": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "representative_points": [],
+      "forward_evidence_eligible": false,
+      "promotion_eligible": false,
+      "event_score_eligible": false,
+      "note": "Historical observational learning only; never admitted to forward evidence or Promotion.",
+      "last_probe_at": "2026-10-05T11:39:56+00:00"
+    },
+    {
+      "archive_id": "yt_hist_4512706b3e68eac2",
+      "author": "Andrei Jikh",
+      "video_id": "nY234RoQeHw",
+      "title": "I Asked ChatGPT To Make Me As Much Money As Possible",
+      "role": "market_context",
+      "url": "https://www.youtube.com/watch?v=nY234RoQeHw",
+      "quality": "Q2",
+      "provider": "pickscribe.com",
+      "provider_url": "https://pickscribe.com/v/nY234RoQeHw/",
+      "content_origin": "third_party_transcript",
+      "timestamp_evidence": true,
+      "rule_candidate_capable_at_source": true,
+      "historical_learning_eligible": true,
+      "text_chars_seen": 11602,
+      "text_hash": "98cd4b67037546ecd38abdc3279ec88bf7ea0211d8c1881bfaaf4f88afc702bd",
+      "excerpt": "",
+      "symbols": [
+        "TSLA",
+        "QQQ"
+      ],
+      "themes": [
+        "Sell Put",
+        "TSLA"
+      ],
+      "macro_topics": [
+        "利率/Fed",
+        "通胀",
+        "美元",
+        "加密资产"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "representative_points": [],
+      "forward_evidence_eligible": false,
+      "promotion_eligible": false,
+      "event_score_eligible": false,
+      "note": "Historical observational learning only; never admitted to forward evidence or Promotion.",
+      "last_probe_at": "2026-10-05T11:40:04+00:00"
+    },
+    {
+      "archive_id": "yt_hist_29f76dccda3d444a",
+      "author": "老李玩钱",
+      "video_id": "5382scR8EJ8",
+      "title": "12月美股：需谨慎！我的买卖、操作计划",
+      "role": "rule_supply",
+      "url": "https://www.youtube.com/watch?v=5382scR8EJ8",
+      "quality": "Q5",
+      "provider": "metadata_only",
+      "provider_url": "",
+      "content_origin": "metadata_only",
+      "timestamp_evidence": false,
+      "rule_candidate_capable_at_source": false,
+      "historical_learning_eligible": false,
+      "text_chars_seen": 0,
+      "text_hash": null,
+      "excerpt": "",
+      "symbols": [],
+      "themes": [],
+      "macro_topics": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "representative_points": [],
+      "forward_evidence_eligible": false,
+      "promotion_eligible": false,
+      "event_score_eligible": false,
+      "note": "Historical observational learning only; never admitted to forward evidence or Promotion.",
+      "last_probe_at": "2026-10-05T11:40:20+00:00"
+    },
+    {
+      "archive_id": "yt_hist_62e5d086de149e44",
+      "author": "老李玩钱",
+      "video_id": "A4Nl1xhmlqo",
+      "title": "20万美股账户，2025复盘总结，我的经验教训！2026股票持仓计划",
+      "role": "rule_supply",
+      "url": "https://www.youtube.com/watch?v=A4Nl1xhmlqo",
+      "quality": "Q5",
+      "provider": "metadata_only",
+      "provider_url": "",
+      "content_origin": "metadata_only",
+      "timestamp_evidence": false,
+      "rule_candidate_capable_at_source": false,
+      "historical_learning_eligible": false,
+      "text_chars_seen": 0,
+      "text_hash": null,
+      "excerpt": "",
+      "symbols": [],
+      "themes": [],
+      "macro_topics": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "representative_points": [],
+      "forward_evidence_eligible": false,
+      "promotion_eligible": false,
+      "event_score_eligible": false,
+      "note": "Historical observational learning only; never admitted to forward evidence or Promotion.",
+      "last_probe_at": "2026-10-05T11:40:35+00:00"
     }
   ],
   "counts": {
-    "records": 9,
-    "q1_q2_learning_eligible": 2,
-    "q5_metadata_only": 6,
-    "rule_supply_records": 5,
-    "market_context_records": 4,
+    "records": 15,
+    "q1_q2_learning_eligible": 4,
+    "q5_metadata_only": 10,
+    "rule_supply_records": 7,
+    "market_context_records": 8,
     "structured_operations": 0
   },
   "guardrails": [
@@ -308,6 +524,6 @@
     "Only Q1/Q2 text is semantically extracted; Q3/Q4/Q5 remain descriptive/context-only.",
     "Third-party transcripts are processed in-memory only; persisted records keep hashes, text length and structured learning, not transcript excerpts.",
     "Historical learning quality is monotonic: a temporary weaker provider result cannot erase a prior stronger Q1/Q2 snapshot.",
-    "Previously persisted higher-quality historical snapshots are recoverable from repository history and must not be silently discarded."
+    "Static historical probes use quality-aware retry backoff; YOUTUBE_HISTORICAL_FORCE_REFRESH=1 overrides it for explicit refresh."
   ]
 }
