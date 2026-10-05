@@ -24,6 +24,7 @@ import youtube_provider_health as health
 
 DATA_DIR=Path(os.getenv("DATA_DIR","state"))
 OUT=DATA_DIR/"youtube_learning_archive.json"
+HEALTH_OUT=DATA_DIR/"youtube_provider_health.json"
 MAX_EXCERPT=0
 
 QUALITY_RANK={"Q1":5,"Q2":4,"Q3":3,"Q4":2,"Q5":1}
@@ -179,6 +180,28 @@ def build_probe(p:dict)->dict:
         "note":"Historical observational learning only; never admitted to forward evidence or Promotion.",
     }
 
+def provider_health_from_rows(rows:list[dict])->dict:
+    probes=[]
+    for r in rows:
+        probes.append({
+            "author":r.get("author"),"video_id":r.get("video_id"),"title":r.get("title"),"role":r.get("role"),
+            "status":"available" if str(r.get("quality") or "Q5")!="Q5" else "metadata_only",
+            "quality":r.get("quality") or "Q5","provider":r.get("provider") or "metadata_only",
+            "provider_url":r.get("provider_url") or "","content_origin":r.get("content_origin") or "metadata_only",
+            "timestamp_evidence":bool(r.get("timestamp_evidence")),
+            "rule_candidate_allowed":bool(r.get("rule_candidate_capable_at_source")),
+            "chars":int(r.get("text_chars_seen") or 0),
+            "note":"Derived from the same historical acquisition pass; no second provider request.",
+        })
+    return {
+        "version":1,"generated_at":_now(),"non_gating":True,"historical_diagnostic_only":True,
+        "probe_count":len(probes),
+        "available_count":sum(1 for r in probes if r.get("quality")!="Q5"),
+        "rule_candidate_capable_count":sum(1 for r in probes if r.get("rule_candidate_allowed")),
+        "probes":probes,
+        "guardrail":"Derived from historical archive acquisition; never enters research_feed, Source Store, Rule Registry, EventScore, Promotion, or Readiness.",
+    }
+
 def main():
     prior_doc={}
     try:
@@ -212,7 +235,9 @@ def main():
     }
     OUT.parent.mkdir(parents=True,exist_ok=True)
     OUT.write_text(json.dumps(out,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
-    print(json.dumps(out["counts"],ensure_ascii=False))
+    health_out=provider_health_from_rows(rows)
+    HEALTH_OUT.write_text(json.dumps(health_out,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    print(json.dumps({**out["counts"],"provider_available":health_out["available_count"]},ensure_ascii=False))
 
 if __name__=="__main__":
     main()
