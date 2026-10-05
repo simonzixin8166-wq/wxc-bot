@@ -26,6 +26,39 @@ DATA_DIR=Path(os.getenv("DATA_DIR","state"))
 OUT=DATA_DIR/"youtube_learning_archive.json"
 MAX_EXCERPT=0
 
+QUALITY_RANK={"Q1":5,"Q2":4,"Q3":3,"Q4":2,"Q5":1}
+
+def merge_with_prior(current:dict, prior:dict|None)->dict:
+    """Historical memory is monotonic in evidence quality.
+
+    A temporary provider outage must not erase a previously acquired Q1/Q2
+    learning snapshot. Metadata fields may refresh, but the highest-quality
+    persisted semantic learning is retained until a strictly better snapshot
+    is acquired.
+    """
+    if not prior:
+        return current
+    cq=str(current.get("quality") or "Q5").upper()
+    pq=str(prior.get("quality") or "Q5").upper()
+    if QUALITY_RANK.get(pq,0) <= QUALITY_RANK.get(cq,0):
+        return current
+    keep=dict(current)
+    for key in [
+        "quality","provider","provider_url","content_origin","timestamp_evidence",
+        "rule_candidate_capable_at_source","historical_learning_eligible",
+        "text_chars_seen","text_hash","symbols","themes","macro_topics","operations",
+        "portfolio_rules","lessons","representative_points",
+    ]:
+        keep[key]=prior.get(key)
+    keep["retained_prior_best_quality"]=True
+    keep["last_probe_quality"]=cq
+    keep["last_probe_provider"]=current.get("provider")
+    keep["note"]="Historical observational learning only; retained prior best-quality snapshot after a weaker provider probe. Never admitted to forward evidence or Promotion."
+    keep["forward_evidence_eligible"]=False
+    keep["promotion_eligible"]=False
+    keep["event_score_eligible"]=False
+    return keep
+
 MACRO_TOPICS={
     "利率/Fed":["federal reserve","fed ","interest rate","rate cut","rate hike","yield","treasury","fomc"],
     "通胀":["inflation","cpi","ppi"],
@@ -147,7 +180,13 @@ def build_probe(p:dict)->dict:
     }
 
 def main():
-    rows=[build_probe(p) for p in health.PROBES]
+    prior_doc={}
+    try:
+        prior_doc=json.loads(OUT.read_text(encoding="utf-8"))
+    except Exception:
+        prior_doc={}
+    prior_by_video={str(x.get("video_id")):x for x in (prior_doc.get("records") or []) if x.get("video_id")}
+    rows=[merge_with_prior(build_probe(p),prior_by_video.get(str(p.get("video_id")))) for p in health.PROBES]
     out={
         "version":1,
         "generated_at":_now(),
@@ -168,6 +207,7 @@ def main():
             "These historical videos never enter Source Store, Rule Registry, EventScore, Promotion, Readiness, or Planner gating.",
             "Only Q1/Q2 text is semantically extracted; Q3/Q4/Q5 remain descriptive/context-only.",
             "Third-party transcripts are processed in-memory only; persisted records keep hashes, text length and structured learning, not transcript excerpts.",
+            "Historical learning quality is monotonic: a temporary weaker provider result cannot erase a prior stronger Q1/Q2 snapshot.",
         ],
     }
     OUT.parent.mkdir(parents=True,exist_ok=True)
