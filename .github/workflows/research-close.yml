@@ -29,8 +29,9 @@ jobs:
 
       - name: Validate source intelligence
         run: |
-          python -m py_compile research_feed.py daily_close_research.py wxc_tg_agent.py wxc_blog.py wxc_scraper.py
+          python -m py_compile research_feed.py youtube_research.py daily_close_research.py wxc_tg_agent.py wxc_blog.py wxc_scraper.py
           PYTHONPATH=. python tests/test_research_feed.py
+          PYTHONPATH=. python tests/test_youtube_research.py
 
       - name: Collect post-close research sources
         env:
