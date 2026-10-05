@@ -50,3 +50,44 @@ assert "text" not in pub
 assert pub["quality"]=="Q2"
 
 print("PASS transcript acquisition router quality/provenance/fail-closed")
+
+
+# Provider-native xgoose lookup requires exact source YouTube video id.
+class FakeResp:
+    def __init__(self,data,ok=True): self._data=data; self.ok=ok
+    def json(self): return self._data
+
+old_get=tr.requests.get
+try:
+    def fake_get(url,params=None,headers=None,timeout=None,allow_redirects=True):
+        if url.endswith("/api/items"):
+            return FakeResp([{
+                "id":4008,
+                "title":"10月必买3支股票",
+                "source_url":"https://www.youtube.com/watch?v=qVSoCX8pVDg",
+            }])
+        if url.endswith("/api/items/4008"):
+            return FakeResp({
+                "id":4008,
+                "source_url":"https://www.youtube.com/watch?v=qVSoCX8pVDg",
+                "transcript":{"text":"00:01 "+"完整视频转录内容。"*500,"segments":[{"start":1,"text":"x"}]},
+                "summary":{"markdown":"summary"}
+            })
+        return FakeResp({},False)
+    tr.requests.get=fake_get
+    got=tr._xgoose_native("qVSoCX8pVDg","10月必买3支股票","老李玩钱")
+    assert got is not None
+    assert got.quality=="Q2"
+    assert got.provider=="reducer.xgoose.org"
+    assert got.rule_candidate_allowed is True
+    assert got.timestamp_evidence is True
+
+    # Similar title but wrong original video id must not match.
+    miss=tr._xgoose_native("WRONGID","10月必买3支股票","老李玩钱")
+    assert miss is None
+finally:
+    tr.requests.get=old_get
+
+assert tr._source_video_id("https://www.youtube.com/watch?v=abc123&t=10")=="abc123"
+assert tr._source_video_id("https://youtu.be/xyz987")=="xyz987"
+print("PASS xgoose provider-native exact-video-id transcript lookup")
