@@ -109,3 +109,30 @@ finally:
     yla.rf.extract_structured_learning=old_extract
 
 print("PASS structured-only historical learning persistence")
+
+
+# Historical learning quality must be monotonic across provider outages.
+prior={
+    "video_id":"keep-q2","quality":"Q2","provider":"good-provider",
+    "provider_url":"https://example/q2","content_origin":"third_party_transcript",
+    "timestamp_evidence":True,"rule_candidate_capable_at_source":True,
+    "historical_learning_eligible":True,"text_chars_seen":5000,"text_hash":"abc",
+    "symbols":["QQQ"],"themes":["风险管理"],"macro_topics":["利率/Fed"],
+    "operations":[],"portfolio_rules":[],"lessons":[],"representative_points":[],
+}
+current={
+    "video_id":"keep-q2","quality":"Q5","provider":"metadata_only",
+    "provider_url":"","content_origin":"metadata_only","timestamp_evidence":False,
+    "rule_candidate_capable_at_source":False,"historical_learning_eligible":False,
+    "text_chars_seen":0,"text_hash":None,"symbols":[],"themes":[],"macro_topics":[],
+    "operations":[],"portfolio_rules":[],"lessons":[],"representative_points":[],
+    "forward_evidence_eligible":False,"promotion_eligible":False,"event_score_eligible":False,
+}
+merged=yla.merge_with_prior(current,prior)
+assert merged["quality"]=="Q2"
+assert merged["provider"]=="good-provider"
+assert merged["historical_learning_eligible"] is True
+assert merged["retained_prior_best_quality"] is True
+assert merged["last_probe_quality"]=="Q5"
+assert merged["forward_evidence_eligible"] is False
+print("PASS historical YouTube best-quality retention")
