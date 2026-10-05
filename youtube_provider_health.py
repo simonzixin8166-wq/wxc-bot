@@ -32,6 +32,42 @@ PROBES=[
         "title":"Federal Reserve",
         "role":"market_context",
     },
+    {
+        "author":"老李玩钱",
+        "video_id":"PQTHnECMKkQ",
+        "title":"2025年底前，我打算卖出和买入的5支股票",
+        "role":"rule_supply",
+    },
+    {
+        "author":"老李玩钱",
+        "video_id":"-Wz5ML0OMMk",
+        "title":"2026存储和太空两大热门板块！如何布局，买入什么股票",
+        "role":"rule_supply",
+    },
+    {
+        "author":"老李玩钱",
+        "video_id":"FqN2N9NJ00M",
+        "title":"美股：TSLA，GOOG！财报解读，操作建议",
+        "role":"rule_supply",
+    },
+    {
+        "author":"Andrei Jikh",
+        "video_id":"gRrHFoDzRHs",
+        "title":"The Stock Market Is About To Flip",
+        "role":"market_context",
+    },
+    {
+        "author":"Andrei Jikh",
+        "video_id":"tTaIuYhWloE",
+        "title":"How The Fed Is Crashing The Market",
+        "role":"market_context",
+    },
+    {
+        "author":"Andrei Jikh",
+        "video_id":"W9If7NZiTDU",
+        "title":"Official Announcement: Recession Is Here",
+        "role":"market_context",
+    },
 ]
 
 def main():
