@@ -10,6 +10,35 @@ import requests
 import wxc_tg_agent as a
 
 META = os.path.join(a.DATA, "meta.json")
+SERVER_ACTION_URL = os.getenv("MYALPHA_SERVER_ACTION_URL", "https://myalphaview.com/research/server_action_status.json")
+
+
+def check_myalpha_server_action(meta):
+    """Bridge sanitized MyAlpha server status to the existing private Telegram channel."""
+    try:
+        a.record_request("myalphaview","server_action_status")
+        r=requests.get(SERVER_ACTION_URL,params={"t":int(time.time())},timeout=20)
+        r.raise_for_status()
+        s=r.json()
+        fp=str(s.get("alert_fingerprint") or "")
+        status=str(s.get("status") or "")
+        trust=((s.get("data_trust") or {}).get("overall") or "")
+        should=status=="action_required" or (status=="cannot_judge" and trust=="attention")
+        if should and fp and fp!=meta.get("myalpha_action_fingerprint"):
+            counts=s.get("action_counts") or {}
+            if status=="action_required":
+                msg=("⚠️ MyAlpha 有需要处理的事项\n"
+                     f"L3 {counts.get('l3',0)} · L2 {counts.get('l2',0)} · Thesis复核 {counts.get('thesis_review',0)}\n"
+                     "详细私有仓位未写入公开状态，请打开 MyAlpha 查看。")
+            else:
+                msg=("⚠️ MyAlpha 当前无法可靠判断\n"
+                     "关键数据状态异常，系统已停止给出“无需操作”结论。请打开系统状态查看。")
+            a.say(msg)
+            meta["myalpha_action_fingerprint"]=fp
+        return meta
+    except Exception as exc:
+        print("MyAlpha alert bridge skipped:",exc)
+        return meta
 
 def main():
     if not a.TOKEN or not a.OWNER:
@@ -40,6 +69,8 @@ def main():
         authors = a.load_watch()
         if authors:
             a.guarded(a.check_watch, authors)
+
+    meta = check_myalpha_server_action(meta)
 
     if offset is not None:
         meta["offset"] = offset
