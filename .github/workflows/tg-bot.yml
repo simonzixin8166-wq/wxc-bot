@@ -30,6 +30,7 @@ jobs:
         run: |
           python -m py_compile wxc_actions.py wxc_scraper.py wxc_tg_agent.py wxc_tg_bot.py wxc_blog.py
           PYTHONPATH=. python tests/test_blog_collector.py
+          PYTHONPATH=. python tests/test_free_first_forward_gate.py
 
       - name: Run bot
         env:
