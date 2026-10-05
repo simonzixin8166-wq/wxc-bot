@@ -118,7 +118,7 @@ def make_feed_row(channel:dict, meta:dict, transcript:str, transcript_status:str
     vid=str(meta.get("id") or "")
     title=str(meta.get("title") or "").strip()
     url=str(meta.get("webpage_url") or _canonical_video_url(vid))
-    published=_date(meta.get("upload_date"))
+    published=_entry_published(meta)
     text=(transcript or "").strip()
     joined=(title+"\n"+text).strip()
     learning=rf.extract_structured_learning(joined) if text else {
