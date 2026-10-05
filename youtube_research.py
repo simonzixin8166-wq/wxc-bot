@@ -369,7 +369,8 @@ def collect(
                     except Exception:
                         pass
                 aq=_acq(transcript_fetcher,vid,str(meta.get("title") or ""),ch["author"])
-                ready=_content_ready(ch,aq)
+                published=_entry_published(meta)
+                ready=_content_ready(ch,aq) and bool(published)
                 if ready:
                     row=make_feed_row(ch,meta,aq)
                     rows.append(row)
@@ -394,6 +395,7 @@ def collect(
                         "content_provider":aq.get("provider","metadata_only"),
                         "rule_candidate_allowed":bool(aq.get("rule_candidate_allowed")),
                         "admission":"pending_content","was_pending":was_pending,
+                        "pending_reason":"missing_published_at" if not _entry_published(meta) else "insufficient_content",
                     })
             except Exception as exc:
                 fallback_meta={
@@ -433,7 +435,7 @@ def collect(
         "new_video_diagnostics":appended,
         "guardrails":[
             "Initial run only establishes a seen-video baseline; existing videos are not inserted into forward research feed.",
-            "New videos with insufficient learning text remain pending and do not enter Source Store or formal forward evidence.",
+            "New videos with insufficient learning text or missing reliable published_at remain pending and do not enter Source Store or formal forward evidence.",
             "Rule-supply sources require Q1/Q2 rule-eligible text for first research-feed admission.",
             "Market-context sources may enter with Q1-Q4 text; Q3/Q4 remain non-rule-eligible.",
             "Collector never downloads video/audio and stores only bounded transcript excerpts.",
