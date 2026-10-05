@@ -5,8 +5,6 @@ import research_feed as rf
 
 entries={
  "@RhinoFinance":[{"id":"r2","title":"new"},{"id":"r1","title":"old"}],
- "@TianCompounding":[{"id":"t1","title":"t"}],
- "@NaNaShuoMeiGu":[{"id":"n1","title":"n"}],
  "@老李玩钱":[{"id":"l1","title":"l"}],
  "@AndreiJikh":[{"id":"a1","title":"a"}],
 }
@@ -37,7 +35,7 @@ with tempfile.TemporaryDirectory() as td:
         assert out["feed_records_added"]==0
         assert out["discovered_new_videos"]==0
         assert not rf.FEED_PATH.exists()
-        assert len(out["channels"])==5
+        assert len(out["channels"])==3
         andrei=[x for x in out["channels"] if x["handle"]=="@AndreiJikh"][0]
         assert andrei["role"]=="market_context"
         assert andrei["latest"]["transcript_available"] is False
@@ -76,3 +74,11 @@ print("PASS youtube source pool baseline/forward-only/idempotency/transcript fal
 # RSS publication date is preferred when flat yt-dlp metadata lacks upload_date/timestamp.
 assert yt._entry_published({"rss_published_at":"2026-10-05T12:34:56+00:00"})=="2026-10-05"
 print("PASS YouTube RSS publication-date fallback")
+
+
+# Active pool deliberately excludes sources without a reliable learning-text path.
+handles={x["handle"] for x in yt.CHANNELS}
+assert handles=={"@RhinoFinance","@老李玩钱","@AndreiJikh"}
+assert "@TianCompounding" not in handles
+assert "@NaNaShuoMeiGu" not in handles
+print("PASS focused three-author YouTube pool")
