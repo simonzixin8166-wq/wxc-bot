@@ -136,3 +136,16 @@ assert merged["retained_prior_best_quality"] is True
 assert merged["last_probe_quality"]=="Q5"
 assert merged["forward_evidence_eligible"] is False
 print("PASS historical YouTube best-quality retention")
+
+
+# One acquisition pass also derives non-gating provider health.
+health=yla.provider_health_from_rows([
+    {"author":"A","video_id":"x","title":"x","role":"rule_supply","quality":"Q2","provider":"pickscribe.com","provider_url":"u","content_origin":"third_party_transcript","timestamp_evidence":True,"rule_candidate_capable_at_source":True,"text_chars_seen":2500},
+    {"author":"B","video_id":"y","title":"y","role":"market_context","quality":"Q5","provider":"metadata_only","provider_url":"","content_origin":"metadata_only","timestamp_evidence":False,"rule_candidate_capable_at_source":False,"text_chars_seen":0},
+])
+assert health["non_gating"] is True
+assert health["probe_count"]==2
+assert health["available_count"]==1
+assert health["rule_candidate_capable_count"]==1
+assert all("text" not in x for x in health["probes"])
+print("PASS single-pass provider health derivation")
