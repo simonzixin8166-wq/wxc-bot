@@ -31,8 +31,6 @@ MAX_EXCERPT=360
 
 CHANNELS=[
     {"handle":"@RhinoFinance","author":"RhinoFinance / 视野环球财经","role":"rule_supply"},
-    {"handle":"@TianCompounding","author":"TianCompounding","role":"research_thesis"},
-    {"handle":"@NaNaShuoMeiGu","author":"NaNa说美股","role":"rule_supply"},
     {"handle":"@老李玩钱","author":"老李玩钱","role":"rule_supply"},
     {"handle":"@AndreiJikh","author":"Andrei Jikh","role":"market_context"},
 ]
