@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "generated_at": "2026-10-05T10:25:48+00:00",
+  "generated_at": "2026-10-05T10:34:03+00:00",
   "non_gating": true,
   "historical_diagnostic_only": true,
   "probe_count": 3,
-  "available_count": 2,
-  "rule_candidate_capable_count": 2,
+  "available_count": 1,
+  "rule_candidate_capable_count": 1,
   "probes": [
     {
       "author": "RhinoFinance / 视野环球财经",
@@ -42,15 +42,15 @@
       "video_id": "5E-9UYj7mqo",
       "title": "Federal Reserve",
       "role": "market_context",
-      "status": "available",
-      "quality": "Q2",
-      "provider": "pickscribe.com",
-      "provider_url": "https://pickscribe.com/v/5E-9UYj7mqo/",
-      "content_origin": "third_party_transcript",
-      "timestamp_evidence": true,
-      "rule_candidate_allowed": true,
-      "chars": 12000,
-      "note": "Public third-party text; MyAlpha preserves provider provenance and does not treat it as primary-source fact."
+      "status": "metadata_only",
+      "quality": "Q5",
+      "provider": "metadata_only",
+      "provider_url": "",
+      "content_origin": "metadata_only",
+      "timestamp_evidence": false,
+      "rule_candidate_allowed": false,
+      "chars": 0,
+      "note": "No allowlisted public transcript/summary provider matched this video."
     }
   ],
   "guardrail": "Diagnostic probes never enter research_feed, Source Store, Rule Registry, EventScore, Promotion, or Readiness."

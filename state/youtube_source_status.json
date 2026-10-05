@@ -1,6 +1,6 @@
 {
-  "version": 1,
-  "generated_at": "2026-10-05T10:28:07Z",
+  "version": 2,
+  "generated_at": "2026-10-05T10:36:28Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -76,12 +76,16 @@
     }
   ],
   "discovered_new_videos": 0,
+  "pending_retried": 0,
+  "pending_total": 0,
+  "admitted_from_pending": 0,
   "feed_records_added": 0,
   "new_video_diagnostics": [],
   "guardrails": [
     "Initial run only establishes a seen-video baseline; existing videos are not inserted into forward research feed.",
-    "Collector never downloads video/audio and stores only bounded transcript excerpts.",
-    "Transcript absence is metadata_only, not a reason to invent operations or testable rules.",
-    "Channel role controls interpretation: market_context sources may legitimately produce no testable rule."
+    "New videos with insufficient learning text remain pending and do not enter Source Store or formal forward evidence.",
+    "Rule-supply sources require Q1/Q2 rule-eligible text for first research-feed admission.",
+    "Market-context sources may enter with Q1-Q4 text; Q3/Q4 remain non-rule-eligible.",
+    "Collector never downloads video/audio and stores only bounded transcript excerpts."
   ]
 }
