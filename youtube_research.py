@@ -14,10 +14,12 @@ from __future__ import annotations
 import hashlib
 import json
 import os
+import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Callable, Any
 
+import requests
 import research_feed as rf
 
 DATA_DIR=Path(os.getenv("DATA_DIR","state"))
@@ -63,7 +65,8 @@ def _date(upload_date)->str:
 
 def _entry_published(entry:dict)->str:
     return (
-        _date(entry.get("upload_date"))
+        str(entry.get("rss_published_at") or "")[:10]
+        or _date(entry.get("upload_date"))
         or _date(entry.get("timestamp"))
         or _date(entry.get("release_timestamp"))
     )
@@ -79,16 +82,51 @@ def _entry_metadata(entry:dict)->dict:
         "release_timestamp":entry.get("release_timestamp"),
     }
 
+def _rss_entries(channel_id:str)->dict[str,dict]:
+    if not channel_id:
+        return {}
+    try:
+        r=requests.get(
+            f"https://www.youtube.com/feeds/videos.xml?channel_id={channel_id}",
+            timeout=15,
+            headers={"User-Agent":"MyAlphaView/YouTubeResearch"},
+        )
+        r.raise_for_status()
+        root=ET.fromstring(r.text)
+        ns={"atom":"http://www.w3.org/2005/Atom","yt":"http://www.youtube.com/xml/schemas/2015"}
+        out={}
+        for e in root.findall("atom:entry",ns):
+            vid=e.findtext("yt:videoId",default="",namespaces=ns)
+            if not vid:continue
+            out[vid]={
+                "rss_published_at":e.findtext("atom:published",default="",namespaces=ns),
+                "rss_updated_at":e.findtext("atom:updated",default="",namespaces=ns),
+                "rss_title":e.findtext("atom:title",default="",namespaces=ns),
+            }
+        return out
+    except Exception:
+        return {}
+
 def default_list_channel(channel_url:str)->list[dict]:
     import yt_dlp
     opts={
         "quiet":True,"no_warnings":True,"skip_download":True,
         "extract_flat":"in_playlist","playlistend":MAX_LIST_PER_CHANNEL,
-        "ignoreerrors":True,
+        "ignoreerrors":True,"socket_timeout":15,"retries":1,"extractor_retries":1,
     }
     with yt_dlp.YoutubeDL(opts) as ydl:
         info=ydl.extract_info(channel_url,download=False) or {}
-    return [x for x in (info.get("entries") or []) if isinstance(x,dict)]
+    channel_id=str(info.get("channel_id") or info.get("uploader_id") or "")
+    rss=_rss_entries(channel_id)
+    rows=[]
+    for x in (info.get("entries") or []):
+        if not isinstance(x,dict):continue
+        row=dict(x)
+        if channel_id and not row.get("channel_id"):row["channel_id"]=channel_id
+        rid=_video_id(row)
+        if rid in rss:row.update(rss[rid])
+        rows.append(row)
+    return rows
 
 def default_video_metadata(video_url:str)->dict:
     import yt_dlp
@@ -170,7 +208,7 @@ def collect(
                 "url":_canonical_video_url(_video_id(newest)) if _video_id(newest) else None,
                 "published_at":_entry_published(newest),
                 "flat_metadata_keys":sorted(
-                    k for k in ("upload_date","timestamp","release_timestamp","duration","channel_id")
+                    k for k in ("rss_published_at","upload_date","timestamp","release_timestamp","duration","channel_id")
                     if newest.get(k) is not None
                 ),
             }
