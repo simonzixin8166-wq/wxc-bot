@@ -13,3 +13,11 @@ assert 'REQUEST_LEDGER_F' in agent
 assert 'cron: "*/30 * * * *"' in wf
 assert 'USE_ANTHROPIC_INTENT: "0"' in wf
 print("PASS free-first Telegram + YouTube forward published_at gate")
+
+actions=(ROOT/"wxc_actions.py").read_text(encoding="utf-8")
+assert "SERVER_ACTION_URL" in actions
+assert "check_myalpha_server_action" in actions
+assert 'status=="action_required"' in actions
+assert 'fp!=meta.get("myalpha_action_fingerprint")' in actions
+assert "详细私有仓位未写入公开状态" in actions
+print("PASS sanitized MyAlpha -> Telegram action bridge")
