@@ -4,9 +4,10 @@
 Design:
 - metadata/transcript only; never downloads video/audio;
 - first run establishes a seen-video baseline and publishes diagnostics only;
-- only videos first observed after baseline are appended to research_feed.json;
-- transcript is best-effort. Metadata-only records are allowed but never
-  fabricated into operations/rules;
+- after baseline, new videos are discovered immediately but are admitted to
+  research_feed only when enough learning text is available;
+- content-insufficient videos remain in a persistent pending queue and are
+  retried on later research runs; metadata-only never enters formal evidence;
 - stores only a bounded excerpt, not full copyrighted transcripts.
 """
 from __future__ import annotations
@@ -26,6 +27,7 @@ import transcript_router as tr
 DATA_DIR=Path(os.getenv("DATA_DIR","state"))
 SEEN_PATH=DATA_DIR/"seen_youtube.json"
 STATUS_PATH=DATA_DIR/"youtube_source_status.json"
+PENDING_PATH=DATA_DIR/"pending_youtube.json"
 MAX_LIST_PER_CHANNEL=10
 MAX_TRANSCRIPT_CHARS=12000
 MAX_EXCERPT=360
@@ -182,6 +184,43 @@ def _key(author:str,url:str,published:str,title:str)->str:
     raw="|".join([author,url,published,title])
     return hashlib.sha1(raw.encode("utf-8")).hexdigest()[:20]
 
+def _content_ready(channel:dict, acquisition:dict)->bool:
+    """Gate first admission by role and content quality.
+
+    Rule-supply sources need Q1/Q2 text that is eligible for proposition/rule
+    extraction. Market-context sources may enter with Q1-Q4 text, but Q3/Q4
+    remain explicitly non-rule-eligible downstream.
+    """
+    quality=str(acquisition.get("quality") or "Q5").upper()
+    has_text=bool((acquisition.get("text") or "").strip())
+    if not has_text:
+        return False
+    if channel.get("role")=="rule_supply":
+        return quality in {"Q1","Q2"} and bool(acquisition.get("rule_candidate_allowed"))
+    if channel.get("role")=="market_context":
+        return quality in {"Q1","Q2","Q3","Q4"}
+    return quality in {"Q1","Q2"}
+
+def _pending_record(channel:dict, meta:dict, acquisition:dict, prior:dict|None=None, error:str|None=None)->dict:
+    prior=prior or {}
+    now=_now()
+    return {
+        "video_id":str(meta.get("id") or prior.get("video_id") or ""),
+        "handle":channel.get("handle") or prior.get("handle"),
+        "author":channel.get("author") or prior.get("author"),
+        "role":channel.get("role") or prior.get("role"),
+        "title":str(meta.get("title") or prior.get("title") or ""),
+        "url":str(meta.get("webpage_url") or prior.get("url") or ""),
+        "published_at":_entry_published(meta) or prior.get("published_at") or "",
+        "first_discovered_at":prior.get("first_discovered_at") or now,
+        "last_checked_at":now,
+        "retry_count":int(prior.get("retry_count") or 0)+1,
+        "last_quality":acquisition.get("quality","Q5"),
+        "last_provider":acquisition.get("provider","metadata_only"),
+        "last_status":acquisition.get("status","metadata_only"),
+        "last_error":error,
+    }
+
 def make_feed_row(channel:dict, meta:dict, acquisition:dict)->dict:
     vid=str(meta.get("id") or "")
     title=str(meta.get("title") or "").strip()
@@ -236,9 +275,18 @@ def collect(
     seen_doc=_read(SEEN_PATH,None)
     first_run=not isinstance(seen_doc,dict) or "video_ids" not in seen_doc
     seen=set((seen_doc or {}).get("video_ids") or [])
+
+    pending_doc=_read(PENDING_PATH,{"version":1,"records":[]})
+    pending={
+        str(x.get("video_id")):dict(x)
+        for x in (pending_doc.get("records") or [])
+        if x.get("video_id")
+    }
+    channels_by_handle={x["handle"]:x for x in CHANNELS}
+    channels_by_author={x["author"]:x for x in CHANNELS}
+
     discovered=[]
     channel_status=[]
-
     for ch in CHANNELS:
         handle=ch["handle"]
         url=f"https://www.youtube.com/{handle}/videos"
@@ -284,17 +332,34 @@ def collect(
                 "status":"error","error":f"{type(exc).__name__}: {exc}",
             })
 
+    # Newly discovered videos plus unresolved pending videos form this run's
+    # content-acquisition worklist. Pending rows are retried even after they
+    # disappear from the latest-10 channel window.
+    work={}
+    for vid,old in pending.items():
+        ch=channels_by_handle.get(old.get("handle")) or channels_by_author.get(old.get("author"))
+        if not ch:
+            continue
+        work[vid]=(ch,{
+            "id":vid,
+            "title":old.get("title") or "",
+            "webpage_url":old.get("url") or _canonical_video_url(vid),
+            "rss_published_at":old.get("published_at") or "",
+        },old,True)
+    for ch,entry in discovered:
+        vid=_video_id(entry)
+        work[vid]=(ch,entry,pending.get(vid),False)
+
     added=0
     appended=[]
+    admitted_from_pending=0
+    rows=[]
+    next_pending=dict(pending)
+
     if not first_run:
-        rows=[]
-        for ch,entry in discovered:
-            vid=_video_id(entry)
+        for vid,(ch,entry,prior_pending,was_pending) in work.items():
             try:
                 meta=_entry_metadata(entry)
-                # Flat playlist metadata is the primary path. A full detail
-                # lookup is only a best-effort enhancement because YouTube may
-                # block datacenter IPs even when channel listing works.
                 if not _entry_published(entry):
                     try:
                         full=video_metadata(_canonical_video_url(vid))
@@ -303,40 +368,77 @@ def collect(
                     except Exception:
                         pass
                 aq=_acq(transcript_fetcher,vid,str(meta.get("title") or ""),ch["author"])
-                row=make_feed_row(ch,meta,aq)
-                rows.append(row)
-                appended.append({
-                    "author":row["author"],"video_id":vid,"title":row["title"],
-                    "published_at":row["published_at"],"transcript_status":row["transcript_status"],
-                    "content_quality":row["content_quality"],"content_provider":row["content_provider"],
-                    "rule_candidate_allowed":row["rule_candidate_allowed"],
-                    "content_chars":row["content_chars"],"symbols":row["symbols"],
-                    "operations":len(row["operations"]),
-                })
+                ready=_content_ready(ch,aq)
+                if ready:
+                    row=make_feed_row(ch,meta,aq)
+                    rows.append(row)
+                    next_pending.pop(vid,None)
+                    if was_pending:
+                        admitted_from_pending+=1
+                    appended.append({
+                        "author":row["author"],"video_id":vid,"title":row["title"],
+                        "published_at":row["published_at"],"transcript_status":row["transcript_status"],
+                        "content_quality":row["content_quality"],"content_provider":row["content_provider"],
+                        "rule_candidate_allowed":row["rule_candidate_allowed"],
+                        "content_chars":row["content_chars"],"symbols":row["symbols"],
+                        "operations":len(row["operations"]),"admission":"research_feed",
+                        "was_pending":was_pending,
+                    })
+                else:
+                    next_pending[vid]=_pending_record(ch,meta,aq,prior_pending)
+                    appended.append({
+                        "author":ch["author"],"video_id":vid,
+                        "title":str(meta.get("title") or ""),
+                        "content_quality":aq.get("quality","Q5"),
+                        "content_provider":aq.get("provider","metadata_only"),
+                        "rule_candidate_allowed":bool(aq.get("rule_candidate_allowed")),
+                        "admission":"pending_content","was_pending":was_pending,
+                    })
             except Exception as exc:
+                fallback_meta={
+                    "id":vid,
+                    "title":str(entry.get("title") or (prior_pending or {}).get("title") or ""),
+                    "webpage_url":str(entry.get("webpage_url") or (prior_pending or {}).get("url") or _canonical_video_url(vid)),
+                    "rss_published_at":_entry_published(entry) or (prior_pending or {}).get("published_at") or "",
+                }
+                aq={"quality":"Q5","provider":"metadata_only","status":"error"}
+                next_pending[vid]=_pending_record(ch,fallback_meta,aq,prior_pending,error=f"{type(exc).__name__}: {exc}")
                 appended.append({
                     "author":ch["author"],"video_id":vid,
                     "error":f"{type(exc).__name__}: {exc}",
+                    "admission":"pending_content","was_pending":was_pending,
                 })
         added=rf.append_records(rows)
 
-    status={
+    generated=_now()
+    pending_rows=sorted(next_pending.values(),key=lambda x:(x.get("first_discovered_at") or "",x.get("video_id") or ""))
+    _write(PENDING_PATH,{
         "version":1,
-        "generated_at":_now(),
+        "updated_at":generated,
+        "records":pending_rows,
+        "guardrail":"Pending discovery state is outside Source Store/Rule Registry/EventScore. First formal admission occurs only after role-appropriate content quality is available.",
+    })
+    status={
+        "version":2,
+        "generated_at":generated,
         "status":"baseline_established" if first_run else "ok",
         "first_run":first_run,
         "channels":channel_status,
         "discovered_new_videos":0 if first_run else len(discovered),
+        "pending_retried":0 if first_run else sum(1 for _,_,_,was_pending in work.values() if was_pending),
+        "pending_total":len(pending_rows),
+        "admitted_from_pending":admitted_from_pending,
         "feed_records_added":added,
         "new_video_diagnostics":appended,
         "guardrails":[
             "Initial run only establishes a seen-video baseline; existing videos are not inserted into forward research feed.",
+            "New videos with insufficient learning text remain pending and do not enter Source Store or formal forward evidence.",
+            "Rule-supply sources require Q1/Q2 rule-eligible text for first research-feed admission.",
+            "Market-context sources may enter with Q1-Q4 text; Q3/Q4 remain non-rule-eligible.",
             "Collector never downloads video/audio and stores only bounded transcript excerpts.",
-            "Transcript absence is metadata_only, not a reason to invent operations or testable rules.",
-            "Channel role controls interpretation: market_context sources may legitimately produce no testable rule.",
         ],
     }
-    _write(SEEN_PATH,{"version":1,"updated_at":status["generated_at"],"video_ids":sorted(seen)})
+    _write(SEEN_PATH,{"version":1,"updated_at":generated,"video_ids":sorted(seen)})
     _write(STATUS_PATH,status)
     return status
 
