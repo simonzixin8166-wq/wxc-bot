@@ -5,6 +5,9 @@ on:
     branches: [main]
     paths:
       - "youtube_research.py"
+      - "transcript_router.py"
+      - "youtube_provider_health.py"
+      - "youtube_learning_archive.py"
       - "requirements.txt"
       - ".github/workflows/research-close.yml"
   schedule:
