@@ -18,6 +18,7 @@ def main():
     params = {"timeout": 0, "limit": 50}
     if meta.get("offset"):
         params["offset"] = meta["offset"]  # 只确认已经处理并提交过的消息
+    a.record_request("telegram","get_updates")
     res = requests.get(a.API + "/getUpdates", params=params, timeout=30).json()
     if not res.get("ok"):
         raise SystemExit(f"getUpdates 失败: {res}")
