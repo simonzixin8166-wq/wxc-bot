@@ -121,7 +121,57 @@ def build_probe(p:dict)->dict:
     }
 
 def main():
-    rows=[build_probe(p) for p in health.PROBES]
+    rows=[]
+    for p in health.PROBES:
+        row=build_probe(p)
+        # Rhino's specific latest public probe may not yet be indexed by xgoose.
+        # For historical learning only, fall back to a recent Q2 sample from the
+        # same author, identified by provider author metadata + original YouTube URL.
+        if row.get("quality")=="Q5" and p.get("author","").startswith("RhinoFinance"):
+            sample=tr.discover_xgoose_author_sample(
+                ["视野环球财经","rhinofinance"],
+                queries=["美股","QQQ","NVDA","TSLA"],
+            )
+            if sample and sample.get("acquisition"):
+                alt={
+                    "author":p["author"],
+                    "video_id":sample["video_id"],
+                    "title":sample.get("title") or p["title"],
+                    "role":p["role"],
+                }
+                result=sample["acquisition"]
+                text=str(result.get("text") or "")
+                learning=rf.extract_structured_learning(text)
+                row={
+                    "archive_id":"yt_hist_"+_hash(alt["video_id"])[:16],
+                    "author":alt["author"],
+                    "video_id":alt["video_id"],
+                    "title":alt["title"],
+                    "role":alt["role"],
+                    "url":f"https://www.youtube.com/watch?v={alt['video_id']}",
+                    "quality":"Q2",
+                    "provider":result.get("provider"),
+                    "provider_url":result.get("provider_url"),
+                    "content_origin":result.get("content_origin"),
+                    "timestamp_evidence":bool(result.get("timestamp_evidence")),
+                    "rule_candidate_capable_at_source":True,
+                    "historical_learning_eligible":True,
+                    "text_chars_seen":len(text),
+                    "text_hash":_hash(text),
+                    "excerpt":text[:MAX_EXCERPT],
+                    "symbols":learning["symbols"],
+                    "themes":rf.detect_themes((alt["title"] or "")+"\n"+text),
+                    "macro_topics":macro_topics(text),
+                    "operations":learning["operations"],
+                    "portfolio_rules":learning["portfolio_rules"],
+                    "lessons":learning["lessons"],
+                    "representative_points":representative_points(text,alt["role"]),
+                    "forward_evidence_eligible":False,
+                    "promotion_eligible":False,
+                    "event_score_eligible":False,
+                    "note":"Historical observational learning only; author-matched Q2 fallback from public xgoose catalog; never admitted to forward evidence.",
+                }
+        rows.append(row)
     out={
         "version":1,
         "generated_at":_now(),
