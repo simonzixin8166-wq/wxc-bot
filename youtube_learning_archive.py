@@ -238,7 +238,15 @@ def main():
         prior_doc=json.loads(OUT.read_text(encoding="utf-8"))
     except Exception:
         prior_doc={}
-    prior_by_video={str(x.get("video_id")):x for x in (prior_doc.get("records") or []) if x.get("video_id")}
+    prior_generated_at=prior_doc.get("generated_at")
+    prior_by_video={}
+    for x in (prior_doc.get("records") or []):
+        if not x.get("video_id"):
+            continue
+        row=dict(x)
+        if not row.get("last_probe_at") and prior_generated_at:
+            row["last_probe_at"]=prior_generated_at
+        prior_by_video[str(row.get("video_id"))]=row
     now=datetime.now(timezone.utc)
     rows=[]
     for p in health.PROBES:
