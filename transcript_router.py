@@ -257,11 +257,17 @@ def _duckduckgo_links(query:str)->list[str]:
         return []
 
 def acquire_third_party(video_id:str,title:str,author:str)->Acquisition:
-    # Prefer provider-native catalogs with exact original-video identity.
+    # English channels with stable PickScribe video-id pages should go direct
+    # first. This avoids expensive title-search fallbacks and reduces transient
+    # provider failures. Chinese rule-supply sources still prefer xgoose's
+    # exact original-video-id catalog match.
+    if "andrei jikh" in (author or "").lower():
+        direct=_direct_pickscribe(video_id,title,author)
+        if direct:
+            return direct
     native=_xgoose_native(video_id,title,author)
     if native:
         return native
-    # PickScribe has stable video-id URLs for some English channels.
     direct=_direct_pickscribe(video_id,title,author)
     if direct:
         return direct
