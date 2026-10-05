@@ -161,3 +161,10 @@ kept=yla.reuse_prior_probe({"video_id":"x","quality":"Q2","historical_learning_e
 assert kept["probe_skipped_backoff"] is True
 assert kept["historical_learning_eligible"] is True
 print("PASS historical YouTube retry backoff")
+
+
+# Legacy archive rows can inherit document generated_at for retry backoff migration.
+legacy_doc={"generated_at":datetime.now(timezone.utc).isoformat(),"records":[{"video_id":"legacy","quality":"Q2","historical_learning_eligible":True}]}
+row=dict(legacy_doc["records"][0]);row["last_probe_at"]=legacy_doc["generated_at"]
+assert yla.should_probe(row,datetime.now(timezone.utc)) is False
+print("PASS legacy generated_at retry migration")
