@@ -149,3 +149,15 @@ assert health["available_count"]==1
 assert health["rule_candidate_capable_count"]==1
 assert all("text" not in x for x in health["probes"])
 print("PASS single-pass provider health derivation")
+
+
+# Static historical probes use retry backoff; explicit force refresh overrides.
+from datetime import datetime, timezone, timedelta
+recent={"quality":"Q5","last_probe_at":datetime.now(timezone.utc).isoformat()}
+assert yla.should_probe(recent,datetime.now(timezone.utc)) is False
+old={"quality":"Q5","last_probe_at":(datetime.now(timezone.utc)-timedelta(days=8)).isoformat()}
+assert yla.should_probe(old,datetime.now(timezone.utc)) is True
+kept=yla.reuse_prior_probe({"video_id":"x","quality":"Q2","historical_learning_eligible":True,"forward_evidence_eligible":False,"promotion_eligible":False,"event_score_eligible":False})
+assert kept["probe_skipped_backoff"] is True
+assert kept["historical_learning_eligible"] is True
+print("PASS historical YouTube retry backoff")
