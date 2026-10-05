@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-10-05T10:05:22Z",
+  "generated_at": "2026-10-05T10:13:14Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -20,9 +20,12 @@
           "duration"
         ],
         "transcript_available": false,
-        "transcript_chars": 0
+        "transcript_chars": 0,
+        "content_quality": "Q5",
+        "content_provider": "metadata_only",
+        "rule_candidate_allowed": false
       },
-      "transcript_probe": "unavailable:VideoUnplayable"
+      "transcript_probe": "metadata_only"
     },
     {
       "handle": "@老李玩钱",
@@ -41,9 +44,12 @@
           "rss_published_at"
         ],
         "transcript_available": false,
-        "transcript_chars": 0
+        "transcript_chars": 0,
+        "content_quality": "Q5",
+        "content_provider": "metadata_only",
+        "rule_candidate_allowed": false
       },
-      "transcript_probe": "unavailable:RequestBlocked"
+      "transcript_probe": "metadata_only"
     },
     {
       "handle": "@AndreiJikh",
@@ -61,9 +67,12 @@
           "duration"
         ],
         "transcript_available": false,
-        "transcript_chars": 0
+        "transcript_chars": 0,
+        "content_quality": "Q5",
+        "content_provider": "metadata_only",
+        "rule_candidate_allowed": false
       },
-      "transcript_probe": "unavailable:VideoUnplayable"
+      "transcript_probe": "metadata_only"
     }
   ],
   "discovered_new_videos": 0,
