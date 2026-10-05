@@ -15,7 +15,7 @@ import hashlib
 import json
 import os
 import re
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
 import research_feed as rf
@@ -26,6 +26,7 @@ DATA_DIR=Path(os.getenv("DATA_DIR","state"))
 OUT=DATA_DIR/"youtube_learning_archive.json"
 HEALTH_OUT=DATA_DIR/"youtube_provider_health.json"
 MAX_EXCERPT=0
+RETRY_DAYS={"Q1":30,"Q2":30,"Q3":7,"Q4":7,"Q5":7}
 
 QUALITY_RANK={"Q1":5,"Q2":4,"Q3":3,"Q4":2,"Q5":1}
 
@@ -119,6 +120,34 @@ def representative_points(text:str,role:str,limit:int=3)->list[str]:
             break
     return out
 
+def _parse_dt(v):
+    try:
+        dt=datetime.fromisoformat(str(v or "").replace("Z","+00:00"))
+        return dt if dt.tzinfo else dt.replace(tzinfo=timezone.utc)
+    except Exception:
+        return None
+
+def should_probe(prior:dict|None, now=None)->bool:
+    """Low-frequency retry policy for static historical videos."""
+    if os.getenv("YOUTUBE_HISTORICAL_FORCE_REFRESH","").strip().lower() in {"1","true","yes"}:
+        return True
+    if not prior:
+        return True
+    last=_parse_dt(prior.get("last_probe_at") or prior.get("generated_at"))
+    if last is None:
+        return True
+    now=now or datetime.now(timezone.utc)
+    days=RETRY_DAYS.get(str(prior.get("quality") or "Q5").upper(),7)
+    return now-last >= timedelta(days=days)
+
+def reuse_prior_probe(prior:dict)->dict:
+    row=dict(prior)
+    row["probe_skipped_backoff"]=True
+    row["forward_evidence_eligible"]=False
+    row["promotion_eligible"]=False
+    row["event_score_eligible"]=False
+    return row
+
 def build_probe(p:dict)->dict:
     result=tr.acquire(p["video_id"],p["title"],p["author"])
     raw_text=str(result.get("text") or "")
@@ -178,6 +207,7 @@ def build_probe(p:dict)->dict:
         "promotion_eligible":False,
         "event_score_eligible":False,
         "note":"Historical observational learning only; never admitted to forward evidence or Promotion.",
+        "last_probe_at":_now(),
     }
 
 def provider_health_from_rows(rows:list[dict])->dict:
@@ -209,7 +239,14 @@ def main():
     except Exception:
         prior_doc={}
     prior_by_video={str(x.get("video_id")):x for x in (prior_doc.get("records") or []) if x.get("video_id")}
-    rows=[merge_with_prior(build_probe(p),prior_by_video.get(str(p.get("video_id")))) for p in health.PROBES]
+    now=datetime.now(timezone.utc)
+    rows=[]
+    for p in health.PROBES:
+        prior=prior_by_video.get(str(p.get("video_id")))
+        if should_probe(prior,now):
+            rows.append(merge_with_prior(build_probe(p),prior))
+        else:
+            rows.append(reuse_prior_probe(prior))
     out={
         "version":1,
         "generated_at":_now(),
@@ -231,6 +268,7 @@ def main():
             "Only Q1/Q2 text is semantically extracted; Q3/Q4/Q5 remain descriptive/context-only.",
             "Third-party transcripts are processed in-memory only; persisted records keep hashes, text length and structured learning, not transcript excerpts.",
             "Historical learning quality is monotonic: a temporary weaker provider result cannot erase a prior stronger Q1/Q2 snapshot.",
+            "Static historical probes use quality-aware retry backoff; YOUTUBE_HISTORICAL_FORCE_REFRESH=1 overrides it for explicit refresh.",
         ],
     }
     OUT.parent.mkdir(parents=True,exist_ok=True)
