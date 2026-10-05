@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-10-05T11:09:09+00:00",
+  "generated_at": "2026-10-05T11:22:54+00:00",
   "mode": "historical_observational_learning_only",
   "non_gating": true,
   "result_blind": true,
@@ -291,6 +291,7 @@
     "This archive is never appended to research_feed.",
     "These historical videos never enter Source Store, Rule Registry, EventScore, Promotion, Readiness, or Planner gating.",
     "Only Q1/Q2 text is semantically extracted; Q3/Q4/Q5 remain descriptive/context-only.",
-    "Third-party transcripts are processed in-memory only; persisted records keep hashes, text length and structured learning, not transcript excerpts."
+    "Third-party transcripts are processed in-memory only; persisted records keep hashes, text length and structured learning, not transcript excerpts.",
+    "Historical learning quality is monotonic: a temporary weaker provider result cannot erase a prior stronger Q1/Q2 snapshot."
   ]
 }
