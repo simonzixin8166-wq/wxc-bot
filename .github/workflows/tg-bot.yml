@@ -2,7 +2,7 @@ name: tg-bot
 
 on:
   schedule:
-    - cron: "*/5 * * * *"   # 每 5 分钟检查一次 Telegram 指令(GitHub 可能延迟几分钟)
+    - cron: "*/30 * * * *"  # 每30分钟轮询；重要市场风险由主站 Server Action Watch 负责
   workflow_dispatch:         # 也可以在 Actions 页面手动点 Run workflow
 
 permissions:
@@ -36,6 +36,7 @@ jobs:
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
           TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          USE_ANTHROPIC_INTENT: "0"  # 免费优先；如明确需要自然语言解析再手动启用
           DATA_DIR: state
           JOBS_DIR: /tmp/jobs
           WATCH_MINUTES: "30"
