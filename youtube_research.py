@@ -189,9 +189,17 @@ def make_feed_row(channel:dict, meta:dict, acquisition:dict)->dict:
     published=_entry_published(meta)
     text=(acquisition.get("text") or "").strip()
     joined=(title+"\n"+text).strip()
-    learning=rf.extract_structured_learning(joined) if text else {
-        "symbols":rf.detect_symbols(title),"operations":[],"portfolio_rules":[],"lessons":[]
-    }
+    if text and acquisition.get("rule_candidate_allowed"):
+        learning=rf.extract_structured_learning(joined)
+    else:
+        # Q3/Q4/Q5 may still provide topic/symbol context, but must not fabricate
+        # formal operations/rules from incomplete or secondary text.
+        learning={
+            "symbols":rf.detect_symbols(joined),
+            "operations":[],
+            "portfolio_rules":[],
+            "lessons":[],
+        }
     return {
         "id":_key(channel["author"],url,published,title),
         "source":"youtube",
