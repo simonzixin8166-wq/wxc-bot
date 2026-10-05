@@ -82,3 +82,15 @@ assert handles=={"@RhinoFinance","@老李玩钱","@AndreiJikh"}
 assert "@TianCompounding" not in handles
 assert "@NaNaShuoMeiGu" not in handles
 print("PASS focused three-author YouTube pool")
+
+
+# Q3/Q4/Q5 text is context-only and must not create formal operations/rules.
+q3row=yt.make_feed_row(
+ {"author":"老李玩钱","role":"rule_supply"},
+ {"id":"q3","title":"测试","webpage_url":"https://www.youtube.com/watch?v=q3","upload_date":"20261005"},
+ {"text":"QQQ 第一档 700，第二档 680。","status":"available","quality":"Q3","provider":"stockvoice.cmoney.tw","provider_url":"x","content_origin":"structured_summary","timestamp_evidence":True,"rule_candidate_allowed":False}
+)
+assert q3row["operations"]==[]
+assert q3row["portfolio_rules"]==[]
+assert q3row["rule_candidate_allowed"] is False
+print("PASS Q3-Q5 no formal rule extraction")
