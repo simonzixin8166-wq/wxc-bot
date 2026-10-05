@@ -71,3 +71,8 @@ with tempfile.TemporaryDirectory() as td:
         yt.SEEN_PATH,yt.STATUS_PATH,rf.FEED_PATH=old_seen,old_status,old_feed
 
 print("PASS youtube source pool baseline/forward-only/idempotency/transcript fallback")
+
+
+# RSS publication date is preferred when flat yt-dlp metadata lacks upload_date/timestamp.
+assert yt._entry_published({"rss_published_at":"2026-10-05T12:34:56+00:00"})=="2026-10-05"
+print("PASS YouTube RSS publication-date fallback")
