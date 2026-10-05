@@ -91,3 +91,31 @@ finally:
 assert tr._source_video_id("https://www.youtube.com/watch?v=abc123&t=10")=="abc123"
 assert tr._source_video_id("https://youtu.be/xyz987")=="xyz987"
 print("PASS xgoose provider-native exact-video-id transcript lookup")
+
+
+# Historical author discovery accepts only rows whose provider author identity matches.
+old_get=tr.requests.get
+try:
+    def fake_author_get(url,params=None,headers=None,timeout=None,allow_redirects=True):
+        if url.endswith("/api/items"):
+            return FakeResp([
+                {"id":1,"author":"Other","title":"美股","source_url":"https://www.youtube.com/watch?v=wrong"},
+                {"id":2,"author":"视野环球财经","title":"美股 QQQ","source_url":"https://www.youtube.com/watch?v=rhino1","published_at":"2026-09-22"},
+            ])
+        if url.endswith("/api/items/2"):
+            return FakeResp({
+                "id":2,"author":"视野环球财经","title":"美股 QQQ",
+                "source_url":"https://www.youtube.com/watch?v=rhino1",
+                "published_at":"2026-09-22",
+                "transcript":{"text":"00:01 "+"完整公开视频转录。"*500,"segments":[{"start":1,"text":"x"}]},
+            })
+        return FakeResp({},False)
+    tr.requests.get=fake_author_get
+    sample=tr.discover_xgoose_author_sample(["视野环球财经","rhinofinance"],["美股"])
+    assert sample is not None
+    assert sample["video_id"]=="rhino1"
+    assert sample["acquisition"]["quality"]=="Q2"
+    assert sample["acquisition"]["provider"]=="reducer.xgoose.org"
+finally:
+    tr.requests.get=old_get
+print("PASS xgoose historical author Q2 discovery")
