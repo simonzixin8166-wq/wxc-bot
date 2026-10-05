@@ -91,3 +91,25 @@ finally:
 assert tr._source_video_id("https://www.youtube.com/watch?v=abc123&t=10")=="abc123"
 assert tr._source_video_id("https://youtu.be/xyz987")=="xyz987"
 print("PASS xgoose provider-native exact-video-id transcript lookup")
+
+
+# Andrei uses stable PickScribe direct route before xgoose discovery.
+old_direct=tr._direct_pickscribe
+old_xgoose=tr._xgoose_native
+try:
+    calls=[]
+    def fake_direct(video_id,title,author):
+        calls.append("direct")
+        return tr.Acquisition(text="Transcript\n00:01 "+"macro context "*200,status="available",quality="Q2",provider="pickscribe.com",provider_url="u",content_origin="third_party_transcript",timestamp_evidence=True,rule_candidate_allowed=True)
+    def fake_xgoose(*args,**kwargs):
+        calls.append("xgoose")
+        return None
+    tr._direct_pickscribe=fake_direct
+    tr._xgoose_native=fake_xgoose
+    got=tr.acquire_third_party("x","Macro","Andrei Jikh")
+    assert got.provider=="pickscribe.com"
+    assert calls==["direct"], calls
+finally:
+    tr._direct_pickscribe=old_direct
+    tr._xgoose_native=old_xgoose
+print("PASS Andrei direct PickScribe routing")
