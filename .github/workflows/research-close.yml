@@ -1,6 +1,12 @@
 name: research-close
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - "youtube_research.py"
+      - "requirements.txt"
+      - ".github/workflows/research-close.yml"
   schedule:
     # 22:30 UTC is safely after the regular US close in both DST and winter time.
     - cron: "30 22 * * 1-5"
