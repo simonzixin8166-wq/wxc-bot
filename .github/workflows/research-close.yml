@@ -66,13 +66,7 @@ jobs:
           git add state
           git diff --cached --quiet || (git commit -m "update forward research source feed" && git pull --rebase origin main && git push origin HEAD:main)
 
-      - name: Probe YouTube transcript providers
-        continue-on-error: true
-        env:
-          DATA_DIR: state
-        run: timeout 8m python youtube_provider_health.py
-
-      - name: Build historical YouTube learning archive
+      - name: Build historical YouTube learning archive + provider health
         continue-on-error: true
         env:
           DATA_DIR: state
