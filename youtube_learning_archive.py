@@ -24,7 +24,7 @@ import youtube_provider_health as health
 
 DATA_DIR=Path(os.getenv("DATA_DIR","state"))
 OUT=DATA_DIR/"youtube_learning_archive.json"
-MAX_EXCERPT=360
+MAX_EXCERPT=240
 
 MACRO_TOPICS={
     "利率/Fed":["federal reserve","fed ","interest rate","rate cut","rate hike","yield","treasury","fomc"],
@@ -46,11 +46,27 @@ def macro_topics(text:str)->list[str]:
     low=(text or "").lower()
     return [name for name,keys in MACRO_TOPICS.items() if any(k in low for k in keys)]
 
+NOISE_LINES={
+    "scribe","like it? make scribe even better by","leaving a review","get chrome extension",
+    "browse","popular videos","recent videos","all channels","free tools",
+    "video subtitle downloader","video timestamp generator","video summarizer",
+    "video word counter","video title analyzer","video transcript search","video analytics",
+    "video chapters creator","video quiz generator","chat with video",
+}
+def clean_learning_text(text:str)->str:
+    lines=[]
+    for raw in (text or "").splitlines():
+        line=re.sub(r"\s+"," ",raw).strip()
+        if not line: continue
+        if line.lower() in NOISE_LINES: continue
+        lines.append(line)
+    return "\n".join(lines)
+
 def _sentences(text:str)->list[str]:
     chunks=re.split(r"(?<=[。！？.!?])\s+|\n+",text or "")
     return [re.sub(r"\s+"," ",x).strip() for x in chunks if len(re.sub(r"\s+"," ",x).strip())>=25]
 
-def representative_points(text:str,role:str,limit:int=5)->list[str]:
+def representative_points(text:str,role:str,limit:int=3)->list[str]:
     """Select bounded diagnostic snippets; no long transcript reproduction."""
     keys = (
         ["support","resistance","buy","sell","entry","break","hold","target","risk","止损","支撑","阻力","买","卖","突破","风险"]
@@ -62,7 +78,7 @@ def representative_points(text:str,role:str,limit:int=5)->list[str]:
         low=s.lower()
         if any(k in low for k in keys):
             # Keep short, non-contiguous snippets for internal research review.
-            s=s[:180]
+            s=s[:120]
             if s not in out:
                 out.append(s)
         if len(out)>=limit:
@@ -71,7 +87,8 @@ def representative_points(text:str,role:str,limit:int=5)->list[str]:
 
 def build_probe(p:dict)->dict:
     result=tr.acquire(p["video_id"],p["title"],p["author"])
-    text=str(result.get("text") or "")
+    raw_text=str(result.get("text") or "")
+    text=clean_learning_text(raw_text)
     quality=result.get("quality") or "Q5"
     eligible=quality in {"Q1","Q2"} and bool(text)
 
@@ -86,6 +103,12 @@ def build_probe(p:dict)->dict:
     points=[]
     if eligible:
         learning=rf.extract_structured_learning(text)
+        # Historical archive keeps only author-owned actions/plans. Third-party
+        # examples mentioned inside a video are context, not the creator's own operation.
+        learning["operations"]=[
+            op for op in learning["operations"]
+            if op.get("attribution") in {"author_action","author_plan"}
+        ]
         themes=rf.detect_themes((p.get("title") or "")+"\n"+text)
         macro=macro_topics(text)
         points=representative_points(text,p.get("role") or "")
