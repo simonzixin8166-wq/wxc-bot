@@ -52,9 +52,32 @@ def _video_id(entry:dict)->str:
 def _canonical_video_url(video_id:str)->str:
     return f"https://www.youtube.com/watch?v={video_id}"
 
-def _date(upload_date:str|None)->str:
+def _date(upload_date)->str:
+    if isinstance(upload_date,(int,float)):
+        try:
+            return datetime.fromtimestamp(upload_date,timezone.utc).date().isoformat()
+        except Exception:
+            return ""
     s=str(upload_date or "")
     return f"{s[:4]}-{s[4:6]}-{s[6:8]}" if len(s)>=8 and s[:8].isdigit() else ""
+
+def _entry_published(entry:dict)->str:
+    return (
+        _date(entry.get("upload_date"))
+        or _date(entry.get("timestamp"))
+        or _date(entry.get("release_timestamp"))
+    )
+
+def _entry_metadata(entry:dict)->dict:
+    vid=_video_id(entry)
+    return {
+        "id":vid,
+        "title":entry.get("title") or "",
+        "webpage_url":entry.get("webpage_url") or _canonical_video_url(vid),
+        "upload_date":entry.get("upload_date"),
+        "timestamp":entry.get("timestamp"),
+        "release_timestamp":entry.get("release_timestamp"),
+    }
 
 def default_list_channel(channel_url:str)->list[dict]:
     import yt_dlp
@@ -95,7 +118,7 @@ def make_feed_row(channel:dict, meta:dict, transcript:str, transcript_status:str
     vid=str(meta.get("id") or "")
     title=str(meta.get("title") or "").strip()
     url=str(meta.get("webpage_url") or _canonical_video_url(vid))
-    published=_date(meta.get("upload_date"))
+    published=_entry_published(meta)
     text=(transcript or "").strip()
     joined=(title+"\n"+text).strip()
     learning=rf.extract_structured_learning(joined) if text else {
@@ -145,21 +168,18 @@ def collect(
                 "video_id":_video_id(newest) or None,
                 "title":newest.get("title"),
                 "url":_canonical_video_url(_video_id(newest)) if _video_id(newest) else None,
+                "published_at":_entry_published(newest),
+                "flat_metadata_keys":sorted(
+                    k for k in ("upload_date","timestamp","release_timestamp","duration","channel_id")
+                    if newest.get(k) is not None
+                ),
             }
             transcript_probe="not_probed"
             if sample["video_id"]:
-                try:
-                    meta=video_metadata(sample["url"])
-                    sample["title"]=meta.get("title") or sample["title"]
-                    sample["published_at"]=_date(meta.get("upload_date"))
-                    tr,ts=transcript_fetcher(sample["video_id"])
-                    transcript_probe=ts
-                    sample["transcript_available"]=bool(tr)
-                    sample["transcript_chars"]=len(tr)
-                except Exception as exc:
-                    transcript_probe=f"metadata_error:{type(exc).__name__}"
-                    sample["transcript_available"]=False
-                    sample["transcript_chars"]=0
+                tr,ts=transcript_fetcher(sample["video_id"])
+                transcript_probe=ts
+                sample["transcript_available"]=bool(tr)
+                sample["transcript_chars"]=len(tr)
 
             channel_status.append({
                 "handle":handle,"author":ch["author"],"role":ch["role"],
@@ -171,7 +191,7 @@ def collect(
                 for e in entries:
                     vid=_video_id(e)
                     if vid and vid not in seen:
-                        discovered.append((ch,vid))
+                        discovered.append((ch,e))
             seen.update(ids)
         except Exception as exc:
             channel_status.append({
@@ -183,10 +203,20 @@ def collect(
     appended=[]
     if not first_run:
         rows=[]
-        for ch,vid in discovered:
-            url=_canonical_video_url(vid)
+        for ch,entry in discovered:
+            vid=_video_id(entry)
             try:
-                meta=video_metadata(url)
+                meta=_entry_metadata(entry)
+                # Flat playlist metadata is the primary path. A full detail
+                # lookup is only a best-effort enhancement because YouTube may
+                # block datacenter IPs even when channel listing works.
+                if not _entry_published(entry):
+                    try:
+                        full=video_metadata(_canonical_video_url(vid))
+                        if full:
+                            meta.update({k:v for k,v in full.items() if v is not None})
+                    except Exception:
+                        pass
                 tr,ts=transcript_fetcher(vid)
                 row=make_feed_row(ch,meta,tr,ts)
                 rows.append(row)
