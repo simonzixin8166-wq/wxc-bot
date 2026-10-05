@@ -128,6 +128,102 @@ def _candidate_from_url(url:str,title:str,author:str)->Acquisition|None:
     except Exception:
         return None
 
+def _source_video_id(url:str)->str:
+    try:
+        p=urlparse(url or "")
+        host=(p.hostname or "").lower()
+        if host=="youtu.be":
+            return p.path.strip("/").split("/")[0]
+        if host.endswith("youtube.com"):
+            if p.path=="/watch":
+                return parse_qs(p.query).get("v",[""])[0]
+            m=re.search(r"/(?:shorts|embed|live)/([^/?#]+)",p.path)
+            if m:return m.group(1)
+    except Exception:
+        pass
+    return ""
+
+def _xgoose_native(video_id:str,title:str,author:str)->Acquisition|None:
+    """Use stream-reducer's public catalog API, matching the original YouTube id.
+
+    The catalog lookup is title-assisted only; the final identity check is the
+    source_url video id, so a same/similar title cannot contaminate attribution.
+    """
+    if not video_id or not title:
+        return None
+    try:
+        query=(title or "").strip()[:120]
+        r=requests.get(
+            "https://reducer.xgoose.org/api/items",
+            params={"platform":"youtube","q":query,"limit":20,"offset":0},
+            headers=UA,timeout=TIMEOUT,
+        )
+        if not r.ok:
+            return None
+        rows=r.json()
+        if not isinstance(rows,list):
+            return None
+        match=None
+        for row in rows:
+            if _source_video_id(str(row.get("source_url") or ""))==video_id:
+                match=row;break
+        # Title search can be punctuation-sensitive. Fall back to a few
+        # discriminative title tokens, but still require exact video id.
+        if match is None:
+            tokens=re.findall(r"[A-Za-z0-9\u4e00-\u9fff]{2,}",title or "")
+            for token in tokens[:5]:
+                rr=requests.get(
+                    "https://reducer.xgoose.org/api/items",
+                    params={"platform":"youtube","q":token,"limit":100,"offset":0},
+                    headers=UA,timeout=TIMEOUT,
+                )
+                if not rr.ok:continue
+                for row in rr.json() if isinstance(rr.json(),list) else []:
+                    if _source_video_id(str(row.get("source_url") or ""))==video_id:
+                        match=row;break
+                if match is not None:break
+        if match is None or not match.get("id"):
+            return None
+        detail=requests.get(
+            f"https://reducer.xgoose.org/api/items/{int(match['id'])}",
+            headers=UA,timeout=TIMEOUT,
+        )
+        if not detail.ok:
+            return None
+        data=detail.json()
+        transcript=(data.get("transcript") or {}) if isinstance(data,dict) else {}
+        text=_clean_text(str(transcript.get("text") or ""))
+        source_url=str(data.get("source_url") or match.get("source_url") or "")
+        if _source_video_id(source_url)!=video_id:
+            return None
+        if len(text)>=1800:
+            return Acquisition(
+                text=text[:MAX_TEXT],status="available",quality="Q2",
+                provider="reducer.xgoose.org",
+                provider_url=f"https://reducer.xgoose.org/items/{int(match['id'])}",
+                content_origin="third_party_transcript",
+                timestamp_evidence=bool(transcript.get("segments")),
+                rule_candidate_allowed=True,
+                note="Public stream-reducer transcript; exact YouTube video-id matched.",
+            )
+        # If no near-full transcript is public, use the structured summary only
+        # as Q3 context. It is never rule-eligible.
+        summary=(data.get("summary") or {}) if isinstance(data,dict) else {}
+        summary_text=_clean_text(str(summary.get("markdown") or ""))
+        if len(summary_text)>=650:
+            return Acquisition(
+                text=summary_text[:MAX_TEXT],status="available",quality="Q3",
+                provider="reducer.xgoose.org",
+                provider_url=f"https://reducer.xgoose.org/items/{int(match['id'])}",
+                content_origin="structured_summary",
+                timestamp_evidence=True,
+                rule_candidate_allowed=False,
+                note="Public stream-reducer structured summary; exact YouTube video-id matched.",
+            )
+    except Exception:
+        return None
+    return None
+
 def _direct_pickscribe(video_id:str,title:str,author:str)->Acquisition|None:
     if not video_id:
         return None
@@ -161,8 +257,11 @@ def _duckduckgo_links(query:str)->list[str]:
         return []
 
 def acquire_third_party(video_id:str,title:str,author:str)->Acquisition:
-    # Andrei has a stable video-id URL on PickScribe; try it first for all videos
-    # because a miss is harmless and avoids search-engine dependency when available.
+    # Prefer provider-native catalogs with exact original-video identity.
+    native=_xgoose_native(video_id,title,author)
+    if native:
+        return native
+    # PickScribe has stable video-id URLs for some English channels.
     direct=_direct_pickscribe(video_id,title,author)
     if direct:
         return direct
