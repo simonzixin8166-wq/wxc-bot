@@ -1,0 +1,173 @@
+{
+  "version": 1,
+  "generated_at": "2026-10-05T10:37:41+00:00",
+  "mode": "historical_observational_learning_only",
+  "non_gating": true,
+  "result_blind": true,
+  "records": [
+    {
+      "archive_id": "yt_hist_0893fff08937fd37",
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "gm7968MOWmo",
+      "title": "美股 QQQ收盘新高！AMZN出售芯片不过了？SOXX跟随SMH突破！TSLA交付超预期！APP下个避险位置！",
+      "role": "rule_supply",
+      "url": "https://www.youtube.com/watch?v=gm7968MOWmo",
+      "quality": "Q5",
+      "provider": "metadata_only",
+      "provider_url": "",
+      "content_origin": "metadata_only",
+      "timestamp_evidence": false,
+      "rule_candidate_capable_at_source": false,
+      "historical_learning_eligible": false,
+      "text_chars_seen": 0,
+      "text_hash": null,
+      "excerpt": "",
+      "symbols": [],
+      "themes": [],
+      "macro_topics": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "representative_points": [],
+      "forward_evidence_eligible": false,
+      "promotion_eligible": false,
+      "event_score_eligible": false,
+      "note": "Historical observational learning only; never admitted to forward evidence or Promotion."
+    },
+    {
+      "archive_id": "yt_hist_58b3ef66c6c5d7ab",
+      "author": "老李玩钱",
+      "video_id": "qVSoCX8pVDg",
+      "title": "10月必买3支股票",
+      "role": "rule_supply",
+      "url": "https://www.youtube.com/watch?v=qVSoCX8pVDg",
+      "quality": "Q2",
+      "provider": "reducer.xgoose.org",
+      "provider_url": "https://reducer.xgoose.org/items/4008",
+      "content_origin": "third_party_transcript",
+      "timestamp_evidence": true,
+      "rule_candidate_capable_at_source": true,
+      "historical_learning_eligible": true,
+      "text_chars_seen": 3529,
+      "text_hash": "6185204e6ab1e6c57aed1522168007f58f55993807b286e608970fccaaf35db1",
+      "excerpt": "大家好,我是老李今天是10月1号10月的第一天来给大家推荐在10月份可以考虑买入的三支股票咱们说正事之前依照国际惯例还是先来跟大家亮账户今天美股比较平淡收盘时三大指数都是微率我的账户整体没涨没跌原地踏步账户总资产还是在33万1千多今天咱们要说的第一只股票就是谷歌GOG谷歌的股价在今年5月份的时候达到了历史新高403之后5、6、7、3个月回调这波回调之后再往下就是最近这两个月的时间里其实股价就是一直在上上下下横盘震荡就在昨天有一条关于谷歌的重大新闻那就是谷歌宣布了他们最新的AI模型Germini for Argon这款新的AI模型咱朋友们看到这条消息啊就想让我做一个解读首先呢这条消息对谷歌来说呢还肯定是一个好事但是呢他能带来多大的利好我觉得这个利好消息有限 为什么说他带来的利好有限呢 因为谷歌这个Gimni4R港",
+      "symbols": [
+        "TSLA",
+        "NVDA",
+        "MU",
+        "META",
+        "AMZN"
+      ],
+      "themes": [
+        "风险管理",
+        "长期持有纪律",
+        "TSLA"
+      ],
+      "macro_topics": [
+        "黄金"
+      ],
+      "operations": [
+        {
+          "symbols": [
+            "MU",
+            "AMZN"
+          ],
+          "actions": [
+            "add",
+            "buy",
+            "hold"
+          ],
+          "attribution": "third_party_example",
+          "attribution_confidence": "high"
+        },
+        {
+          "symbols": [
+            "NVDA",
+            "MU",
+            "META"
+          ],
+          "actions": [
+            "add",
+            "buy",
+            "hold"
+          ],
+          "attribution": "third_party_example",
+          "attribution_confidence": "high"
+        }
+      ],
+      "portfolio_rules": [],
+      "lessons": [],
+      "representative_points": [
+        "大家好,我是老李今天是10月1号10月的第一天来给大家推荐在10月份可以考虑买入的三支股票咱们说正事之前依照国际惯例还是先来跟大家亮账户今天美股比较平淡收盘时三大指数都是微率我的账户整体没涨没跌原地踏步账户总资产还是在33万1千多今天咱们要说的第一只股票就是谷歌GOG谷歌的股价在今年5月份的时候达到了历史新高403之后5、6、7、3个月回调这波回调之后再往下",
+        "成为了巴菲特伯克希尔哈萨维公司的主力持仓股大家看这个仓位占比的时候要注意巴菲特他们公司是持有谷歌A类股GOGL和谷歌的C类股GOG这两个是同时持有的那么如果把这两个的仓位给加起来的话整个谷歌在巴菲特投资组合中的持仓占比是达到了10%以上的谷歌的仓位已经是超越了巴菲特钟爱的可乌可乐苹果依然还是伯克希尔哈萨维公司的第一大仓位然后第二大仓位是美国运通接下来第三大仓",
+        "它是一个非常好的去打压股价的一个利器就是我什么时候都可以把AI资本支出拿出来我只要一说华尔街只要开始担忧了那么你的股价就得承压从估值上来看亚马逊当前的Tilling PE是20.05Forward PE前瞻适应率是23.64这个估值水平也并不算高我倒是觉得亚马逊最近这波的回调下跌想买入进行长期布局的一个不错的机会上一次我跟大家更新的亚马逊开仓以及加仓的价格点"
+      ],
+      "forward_evidence_eligible": false,
+      "promotion_eligible": false,
+      "event_score_eligible": false,
+      "note": "Historical observational learning only; never admitted to forward evidence or Promotion."
+    },
+    {
+      "archive_id": "yt_hist_391ac7253bc35036",
+      "author": "Andrei Jikh",
+      "video_id": "5E-9UYj7mqo",
+      "title": "Federal Reserve",
+      "role": "market_context",
+      "url": "https://www.youtube.com/watch?v=5E-9UYj7mqo",
+      "quality": "Q2",
+      "provider": "pickscribe.com",
+      "provider_url": "https://pickscribe.com/v/5E-9UYj7mqo/",
+      "content_origin": "third_party_transcript",
+      "timestamp_evidence": true,
+      "rule_candidate_capable_at_source": true,
+      "historical_learning_eligible": true,
+      "text_chars_seen": 12000,
+      "text_hash": "9e85fe9bb391b5c1ab11d8c31a1a650a1861ae59c9a131a99a196fb47ca131f7",
+      "excerpt": "Scribe\n \n \nScribe\nLike it? Make Scribe even better by\n \nleaving a review\nGet Chrome Extension\nBrowse\nPopular Videos\nRecent Videos\nAll Channels\nFree Tools\nVideo Subtitle Downloader\nVideo Timestamp Generator\nVideo Summarizer\nVideo Word Counter\nVideo Title Analyzer\nVideo Transcript Search\nVideo Analytics\nVideo Chapters Creator\nVideo Quiz Generator\nChat with Vid",
+      "symbols": [
+        "TSLA",
+        "NOW"
+      ],
+      "themes": [
+        "TSLA"
+      ],
+      "macro_topics": [
+        "利率/Fed",
+        "通胀",
+        "美元",
+        "黄金",
+        "加密资产",
+        "经济周期",
+        "流动性"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "representative_points": [
+        "The Fed Just Changed Everything - What You Need To Know NOW!",
+        "so the economy just flipped because the Federal Reserve just announced that they're cutting interest rates by half a per.",
+        "and I know that sounds like a really small number but this will have a huge impact on the economy the stock market and your money and if you're wondering how I was able to release ",
+        "1% in June of 2022 that was all thanks to the money printer inflation at that level was comparable to the late 1970s and early 80s when the FED also raised their rates under their ",
+        "5% and this cooling off inflation is one of the main reasons why the FED has decided it was safe to Pivot and lower interest rates specifically something called the federal funds r"
+      ],
+      "forward_evidence_eligible": false,
+      "promotion_eligible": false,
+      "event_score_eligible": false,
+      "note": "Historical observational learning only; never admitted to forward evidence or Promotion."
+    }
+  ],
+  "counts": {
+    "records": 3,
+    "q1_q2_learning_eligible": 2,
+    "q5_metadata_only": 1,
+    "rule_supply_records": 2,
+    "market_context_records": 1,
+    "structured_operations": 2
+  },
+  "guardrails": [
+    "This archive is never appended to research_feed.",
+    "These historical videos never enter Source Store, Rule Registry, EventScore, Promotion, Readiness, or Planner gating.",
+    "Only Q1/Q2 text is semantically extracted; Q3/Q4/Q5 remain descriptive/context-only.",
+    "Full third-party transcripts are not stored; only hashes, bounded excerpts, and structured learning are persisted."
+  ]
+}
