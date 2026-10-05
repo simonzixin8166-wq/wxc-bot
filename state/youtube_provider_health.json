@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "generated_at": "2026-10-05T10:25:48+00:00",
+  "non_gating": true,
+  "historical_diagnostic_only": true,
+  "probe_count": 3,
+  "available_count": 2,
+  "rule_candidate_capable_count": 2,
+  "probes": [
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "gm7968MOWmo",
+      "title": "美股 QQQ收盘新高！AMZN出售芯片不过了？SOXX跟随SMH突破！TSLA交付超预期！APP下个避险位置！",
+      "role": "rule_supply",
+      "status": "metadata_only",
+      "quality": "Q5",
+      "provider": "metadata_only",
+      "provider_url": "",
+      "content_origin": "metadata_only",
+      "timestamp_evidence": false,
+      "rule_candidate_allowed": false,
+      "chars": 0,
+      "note": "No allowlisted public transcript/summary provider matched this video."
+    },
+    {
+      "author": "老李玩钱",
+      "video_id": "qVSoCX8pVDg",
+      "title": "10月必买3支股票",
+      "role": "rule_supply",
+      "status": "available",
+      "quality": "Q2",
+      "provider": "reducer.xgoose.org",
+      "provider_url": "https://reducer.xgoose.org/items/4008",
+      "content_origin": "third_party_transcript",
+      "timestamp_evidence": true,
+      "rule_candidate_allowed": true,
+      "chars": 3529,
+      "note": "Public stream-reducer transcript; exact YouTube video-id matched."
+    },
+    {
+      "author": "Andrei Jikh",
+      "video_id": "5E-9UYj7mqo",
+      "title": "Federal Reserve",
+      "role": "market_context",
+      "status": "available",
+      "quality": "Q2",
+      "provider": "pickscribe.com",
+      "provider_url": "https://pickscribe.com/v/5E-9UYj7mqo/",
+      "content_origin": "third_party_transcript",
+      "timestamp_evidence": true,
+      "rule_candidate_allowed": true,
+      "chars": 12000,
+      "note": "Public third-party text; MyAlpha preserves provider provenance and does not treat it as primary-source fact."
+    }
+  ],
+  "guardrail": "Diagnostic probes never enter research_feed, Source Store, Rule Registry, EventScore, Promotion, or Readiness."
+}

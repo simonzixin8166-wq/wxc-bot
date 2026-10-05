@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-10-05T10:21:38Z",
+  "generated_at": "2026-10-05T10:28:07Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -43,13 +43,13 @@
           "duration",
           "rss_published_at"
         ],
-        "transcript_available": false,
-        "transcript_chars": 0,
-        "content_quality": "Q5",
-        "content_provider": "metadata_only",
-        "rule_candidate_allowed": false
+        "transcript_available": true,
+        "transcript_chars": 3529,
+        "content_quality": "Q2",
+        "content_provider": "reducer.xgoose.org",
+        "rule_candidate_allowed": true
       },
-      "transcript_probe": "metadata_only"
+      "transcript_probe": "available"
     },
     {
       "handle": "@AndreiJikh",
