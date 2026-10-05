@@ -1,0 +1,92 @@
+{
+  "version": 1,
+  "generated_at": "2026-10-05T09:43:16Z",
+  "status": "baseline_established",
+  "first_run": true,
+  "channels": [
+    {
+      "handle": "@RhinoFinance",
+      "author": "RhinoFinance / 视野环球财经",
+      "role": "rule_supply",
+      "status": "ok",
+      "listed_videos": 10,
+      "latest": {
+        "video_id": "V11vKrhYRpI",
+        "title": "（会员第304期）标普SPX重要路径前瞻：2026-2028几个潜在触顶“摔杯”爆发点，对应触发条件！大盘为何和多个关联指标脱敏！（10年期国债收益、风险溢价ERP、债券波动MOVE指数）",
+        "url": "https://www.youtube.com/watch?v=V11vKrhYRpI",
+        "transcript_available": false,
+        "transcript_chars": 0
+      },
+      "transcript_probe": "metadata_error:DownloadError"
+    },
+    {
+      "handle": "@TianCompounding",
+      "author": "TianCompounding",
+      "role": "research_thesis",
+      "status": "ok",
+      "listed_videos": 10,
+      "latest": {
+        "video_id": "Iv5V74WB6uo",
+        "title": "Applovin持续暴跌，为什么我不清仓？卖掉一个半年盈利750%的合成多头！| 百万之路EP26",
+        "url": "https://www.youtube.com/watch?v=Iv5V74WB6uo",
+        "transcript_available": false,
+        "transcript_chars": 0
+      },
+      "transcript_probe": "metadata_error:DownloadError"
+    },
+    {
+      "handle": "@NaNaShuoMeiGu",
+      "author": "NaNa说美股",
+      "role": "rule_supply",
+      "status": "ok",
+      "listed_videos": 10,
+      "latest": {
+        "video_id": "khnPevsQ_TE",
+        "title": "放弃做空，皈依神教🤓！NaNa说美股(2026.10.02)",
+        "url": "https://www.youtube.com/watch?v=khnPevsQ_TE",
+        "transcript_available": false,
+        "transcript_chars": 0
+      },
+      "transcript_probe": "metadata_error:DownloadError"
+    },
+    {
+      "handle": "@老李玩钱",
+      "author": "老李玩钱",
+      "role": "rule_supply",
+      "status": "ok",
+      "listed_videos": 10,
+      "latest": {
+        "video_id": "qVSoCX8pVDg",
+        "title": "10月必买3支股票",
+        "url": "https://www.youtube.com/watch?v=qVSoCX8pVDg",
+        "transcript_available": false,
+        "transcript_chars": 0
+      },
+      "transcript_probe": "metadata_error:DownloadError"
+    },
+    {
+      "handle": "@AndreiJikh",
+      "author": "Andrei Jikh",
+      "role": "market_context",
+      "status": "ok",
+      "listed_videos": 10,
+      "latest": {
+        "video_id": "pO1eGLrl1lw",
+        "title": "How I'm Investing",
+        "url": "https://www.youtube.com/watch?v=pO1eGLrl1lw",
+        "transcript_available": false,
+        "transcript_chars": 0
+      },
+      "transcript_probe": "metadata_error:DownloadError"
+    }
+  ],
+  "discovered_new_videos": 0,
+  "feed_records_added": 0,
+  "new_video_diagnostics": [],
+  "guardrails": [
+    "Initial run only establishes a seen-video baseline; existing videos are not inserted into forward research feed.",
+    "Collector never downloads video/audio and stores only bounded transcript excerpts.",
+    "Transcript absence is metadata_only, not a reason to invent operations or testable rules.",
+    "Channel role controls interpretation: market_context sources may legitimately produce no testable rule."
+  ]
+}
