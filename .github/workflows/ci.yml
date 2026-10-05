@@ -22,7 +22,7 @@ jobs:
       - run: pip install -r requirements.txt
       - name: Validate collector and learning extraction
         run: |
-          python -m py_compile wxc_actions.py wxc_scraper.py wxc_tg_agent.py wxc_tg_bot.py wxc_blog.py research_feed.py transcript_router.py youtube_research.py daily_close_research.py
+          python -m py_compile wxc_actions.py wxc_scraper.py wxc_tg_agent.py wxc_tg_bot.py wxc_blog.py research_feed.py transcript_router.py youtube_research.py youtube_provider_health.py daily_close_research.py
           PYTHONPATH=. python tests/test_blog_collector.py
           PYTHONPATH=. python tests/test_research_feed.py
           PYTHONPATH=. python tests/test_youtube_research.py
