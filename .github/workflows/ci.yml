@@ -27,3 +27,4 @@ jobs:
           PYTHONPATH=. python tests/test_research_feed.py
           PYTHONPATH=. python tests/test_youtube_research.py
           PYTHONPATH=. python tests/test_transcript_router.py
+          PYTHONPATH=. python tests/test_youtube_learning_archive.py
