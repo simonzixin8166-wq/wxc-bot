@@ -21,6 +21,7 @@ from typing import Callable, Any
 
 import requests
 import research_feed as rf
+import transcript_router as tr
 
 DATA_DIR=Path(os.getenv("DATA_DIR","state"))
 SEEN_PATH=DATA_DIR/"seen_youtube.json"
@@ -132,7 +133,7 @@ def default_video_metadata(video_url:str)->dict:
     with yt_dlp.YoutubeDL(opts) as ydl:
         return ydl.extract_info(video_url,download=False) or {}
 
-def default_transcript(video_id:str)->tuple[str,str]:
+def youtube_official_transcript(video_id:str)->tuple[str,str]:
     try:
         from youtube_transcript_api import YouTubeTranscriptApi
         api=YouTubeTranscriptApi()
@@ -146,16 +147,47 @@ def default_transcript(video_id:str)->tuple[str,str]:
     except Exception as exc:
         return "",f"unavailable:{type(exc).__name__}"
 
+def default_transcript(video_id:str,title:str="",author:str="")->dict:
+    return tr.acquire(video_id,title,author,official_fetcher=youtube_official_transcript)
+
+def _acq(fetcher,video_id,title,author):
+    """Normalize injected legacy tuple fetchers and router dict results."""
+    try:
+        value=fetcher(video_id,title,author)
+    except TypeError:
+        value=fetcher(video_id)
+    if isinstance(value,dict):
+        out=dict(value)
+        out.setdefault("text","")
+        out.setdefault("status","metadata_only")
+        out.setdefault("quality","Q5")
+        out.setdefault("provider","metadata_only")
+        out.setdefault("content_origin","metadata_only")
+        out.setdefault("rule_candidate_allowed",False)
+        out.setdefault("timestamp_evidence",False)
+        out.setdefault("provider_url","")
+        out.setdefault("chars",len(out.get("text") or ""))
+        return out
+    text,status=value if isinstance(value,tuple) and len(value)>=2 else ("","metadata_only")
+    return {
+        "text":text or "","status":status or "metadata_only",
+        "quality":"Q1" if text else "Q5",
+        "provider":"injected_test" if text else "metadata_only",
+        "provider_url":"","content_origin":"test_transcript" if text else "metadata_only",
+        "rule_candidate_allowed":bool(text),"timestamp_evidence":False,
+        "chars":len(text or ""),
+    }
+
 def _key(author:str,url:str,published:str,title:str)->str:
     raw="|".join([author,url,published,title])
     return hashlib.sha1(raw.encode("utf-8")).hexdigest()[:20]
 
-def make_feed_row(channel:dict, meta:dict, transcript:str, transcript_status:str)->dict:
+def make_feed_row(channel:dict, meta:dict, acquisition:dict)->dict:
     vid=str(meta.get("id") or "")
     title=str(meta.get("title") or "").strip()
     url=str(meta.get("webpage_url") or _canonical_video_url(vid))
     published=_entry_published(meta)
-    text=(transcript or "").strip()
+    text=(acquisition.get("text") or "").strip()
     joined=(title+"\n"+text).strip()
     learning=rf.extract_structured_learning(joined) if text else {
         "symbols":rf.detect_symbols(title),"operations":[],"portfolio_rules":[],"lessons":[]
@@ -178,7 +210,13 @@ def make_feed_row(channel:dict, meta:dict, transcript:str, transcript_status:str
         "lessons":learning["lessons"],
         "captured_at":_now(),
         "source_role":channel["role"],
-        "transcript_status":transcript_status,
+        "transcript_status":acquisition.get("status"),
+        "content_quality":acquisition.get("quality","Q5"),
+        "content_provider":acquisition.get("provider","metadata_only"),
+        "content_provider_url":acquisition.get("provider_url",""),
+        "content_origin":acquisition.get("content_origin","metadata_only"),
+        "timestamp_evidence":bool(acquisition.get("timestamp_evidence")),
+        "rule_candidate_allowed":bool(acquisition.get("rule_candidate_allowed")),
         "source_notice":"公开视频研究来源；仅保存短摘录与原视频链接。作者观点属于未验证假设，MyAlpha需独立验证后才可进入正式证据。",
     }
 
@@ -212,10 +250,13 @@ def collect(
             }
             transcript_probe="not_probed"
             if sample["video_id"]:
-                tr,ts=transcript_fetcher(sample["video_id"])
-                transcript_probe=ts
-                sample["transcript_available"]=bool(tr)
-                sample["transcript_chars"]=len(tr)
+                aq=_acq(transcript_fetcher,sample["video_id"],sample.get("title") or "",ch["author"])
+                transcript_probe=aq.get("status")
+                sample["transcript_available"]=bool(aq.get("text"))
+                sample["transcript_chars"]=len(aq.get("text") or "")
+                sample["content_quality"]=aq.get("quality","Q5")
+                sample["content_provider"]=aq.get("provider","metadata_only")
+                sample["rule_candidate_allowed"]=bool(aq.get("rule_candidate_allowed"))
 
             channel_status.append({
                 "handle":handle,"author":ch["author"],"role":ch["role"],
@@ -253,12 +294,14 @@ def collect(
                             meta.update({k:v for k,v in full.items() if v is not None})
                     except Exception:
                         pass
-                tr,ts=transcript_fetcher(vid)
-                row=make_feed_row(ch,meta,tr,ts)
+                aq=_acq(transcript_fetcher,vid,str(meta.get("title") or ""),ch["author"])
+                row=make_feed_row(ch,meta,aq)
                 rows.append(row)
                 appended.append({
                     "author":row["author"],"video_id":vid,"title":row["title"],
-                    "published_at":row["published_at"],"transcript_status":ts,
+                    "published_at":row["published_at"],"transcript_status":row["transcript_status"],
+                    "content_quality":row["content_quality"],"content_provider":row["content_provider"],
+                    "rule_candidate_allowed":row["rule_candidate_allowed"],
                     "content_chars":row["content_chars"],"symbols":row["symbols"],
                     "operations":len(row["operations"]),
                 })
