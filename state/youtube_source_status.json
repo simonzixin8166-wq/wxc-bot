@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generated_at": "2026-10-05T09:43:16Z",
-  "status": "baseline_established",
-  "first_run": true,
+  "generated_at": "2026-10-05T09:47:27Z",
+  "status": "ok",
+  "first_run": false,
   "channels": [
     {
       "handle": "@RhinoFinance",
@@ -14,10 +14,14 @@
         "video_id": "V11vKrhYRpI",
         "title": "（会员第304期）标普SPX重要路径前瞻：2026-2028几个潜在触顶“摔杯”爆发点，对应触发条件！大盘为何和多个关联指标脱敏！（10年期国债收益、风险溢价ERP、债券波动MOVE指数）",
         "url": "https://www.youtube.com/watch?v=V11vKrhYRpI",
+        "published_at": "",
+        "flat_metadata_keys": [
+          "duration"
+        ],
         "transcript_available": false,
         "transcript_chars": 0
       },
-      "transcript_probe": "metadata_error:DownloadError"
+      "transcript_probe": "unavailable:VideoUnplayable"
     },
     {
       "handle": "@TianCompounding",
@@ -29,10 +33,14 @@
         "video_id": "Iv5V74WB6uo",
         "title": "Applovin持续暴跌，为什么我不清仓？卖掉一个半年盈利750%的合成多头！| 百万之路EP26",
         "url": "https://www.youtube.com/watch?v=Iv5V74WB6uo",
+        "published_at": "",
+        "flat_metadata_keys": [
+          "duration"
+        ],
         "transcript_available": false,
         "transcript_chars": 0
       },
-      "transcript_probe": "metadata_error:DownloadError"
+      "transcript_probe": "unavailable:RequestBlocked"
     },
     {
       "handle": "@NaNaShuoMeiGu",
@@ -44,10 +52,14 @@
         "video_id": "khnPevsQ_TE",
         "title": "放弃做空，皈依神教🤓！NaNa说美股(2026.10.02)",
         "url": "https://www.youtube.com/watch?v=khnPevsQ_TE",
+        "published_at": "",
+        "flat_metadata_keys": [
+          "duration"
+        ],
         "transcript_available": false,
         "transcript_chars": 0
       },
-      "transcript_probe": "metadata_error:DownloadError"
+      "transcript_probe": "unavailable:RequestBlocked"
     },
     {
       "handle": "@老李玩钱",
@@ -59,10 +71,14 @@
         "video_id": "qVSoCX8pVDg",
         "title": "10月必买3支股票",
         "url": "https://www.youtube.com/watch?v=qVSoCX8pVDg",
+        "published_at": "",
+        "flat_metadata_keys": [
+          "duration"
+        ],
         "transcript_available": false,
         "transcript_chars": 0
       },
-      "transcript_probe": "metadata_error:DownloadError"
+      "transcript_probe": "unavailable:RequestBlocked"
     },
     {
       "handle": "@AndreiJikh",
@@ -74,10 +90,14 @@
         "video_id": "pO1eGLrl1lw",
         "title": "How I'm Investing",
         "url": "https://www.youtube.com/watch?v=pO1eGLrl1lw",
+        "published_at": "",
+        "flat_metadata_keys": [
+          "duration"
+        ],
         "transcript_available": false,
         "transcript_chars": 0
       },
-      "transcript_probe": "metadata_error:DownloadError"
+      "transcript_probe": "unavailable:VideoUnplayable"
     }
   ],
   "discovered_new_videos": 0,
