@@ -82,19 +82,31 @@
       "title": "Federal Reserve",
       "role": "market_context",
       "url": "https://www.youtube.com/watch?v=5E-9UYj7mqo",
-      "quality": "Q5",
-      "provider": "metadata_only",
-      "provider_url": "",
-      "content_origin": "metadata_only",
-      "timestamp_evidence": false,
-      "rule_candidate_capable_at_source": false,
-      "historical_learning_eligible": false,
-      "text_chars_seen": 0,
-      "text_hash": null,
+      "quality": "Q2",
+      "provider": "pickscribe.com",
+      "provider_url": "https://pickscribe.com/v/5E-9UYj7mqo/",
+      "content_origin": "third_party_transcript",
+      "timestamp_evidence": true,
+      "rule_candidate_capable_at_source": true,
+      "historical_learning_eligible": true,
+      "text_chars_seen": 11602,
+      "text_hash": "a7815d6405f419abaea83e92cbd2e1e82311ea9a8d6c57665b6907ac2ab018b7",
       "excerpt": "",
-      "symbols": [],
-      "themes": [],
-      "macro_topics": [],
+      "symbols": [
+        "TSLA"
+      ],
+      "themes": [
+        "TSLA"
+      ],
+      "macro_topics": [
+        "利率/Fed",
+        "通胀",
+        "美元",
+        "黄金",
+        "加密资产",
+        "经济周期",
+        "流动性"
+      ],
       "operations": [],
       "portfolio_rules": [],
       "lessons": [],
@@ -102,7 +114,10 @@
       "forward_evidence_eligible": false,
       "promotion_eligible": false,
       "event_score_eligible": false,
-      "note": "Historical observational learning only; never admitted to forward evidence or Promotion."
+      "note": "Historical observational learning only; restored from previously persisted Q2 snapshot after transient provider degradation. Never admitted to forward evidence or Promotion.",
+      "retained_prior_best_quality": true,
+      "last_probe_quality": "Q5",
+      "last_probe_provider": "metadata_only"
     },
     {
       "archive_id": "yt_hist_3d3b40d0b65152ff",
@@ -281,8 +296,8 @@
   ],
   "counts": {
     "records": 9,
-    "q1_q2_learning_eligible": 1,
-    "q5_metadata_only": 7,
+    "q1_q2_learning_eligible": 2,
+    "q5_metadata_only": 6,
     "rule_supply_records": 5,
     "market_context_records": 4,
     "structured_operations": 0
@@ -292,6 +307,7 @@
     "These historical videos never enter Source Store, Rule Registry, EventScore, Promotion, Readiness, or Planner gating.",
     "Only Q1/Q2 text is semantically extracted; Q3/Q4/Q5 remain descriptive/context-only.",
     "Third-party transcripts are processed in-memory only; persisted records keep hashes, text length and structured learning, not transcript excerpts.",
-    "Historical learning quality is monotonic: a temporary weaker provider result cannot erase a prior stronger Q1/Q2 snapshot."
+    "Historical learning quality is monotonic: a temporary weaker provider result cannot erase a prior stronger Q1/Q2 snapshot.",
+    "Previously persisted higher-quality historical snapshots are recoverable from repository history and must not be silently discarded."
   ]
 }
