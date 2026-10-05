@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T12:55:57Z",
+  "updated_at": "2026-10-05T13:02:56Z",
   "records": [],
   "guardrail": "Pending discovery state is outside Source Store/Rule Registry/EventScore. First formal admission occurs only after role-appropriate content quality is available."
 }

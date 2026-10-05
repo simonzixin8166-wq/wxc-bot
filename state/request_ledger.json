@@ -1,0 +1,10 @@
+{
+  "days": {
+    "2026-10-05": {
+      "telegram:send_message": {
+        "count": 1,
+        "paid": false
+      }
+    }
+  }
+}
