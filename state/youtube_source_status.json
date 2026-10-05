@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-05T11:43:04Z",
+  "generated_at": "2026-10-05T12:55:57Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -83,7 +83,7 @@
   "new_video_diagnostics": [],
   "guardrails": [
     "Initial run only establishes a seen-video baseline; existing videos are not inserted into forward research feed.",
-    "New videos with insufficient learning text remain pending and do not enter Source Store or formal forward evidence.",
+    "New videos with insufficient learning text or missing reliable published_at remain pending and do not enter Source Store or formal forward evidence.",
     "Rule-supply sources require Q1/Q2 rule-eligible text for first research-feed admission.",
     "Market-context sources may enter with Q1-Q4 text; Q3/Q4 remain non-rule-eligible.",
     "Collector never downloads video/audio and stores only bounded transcript excerpts."
