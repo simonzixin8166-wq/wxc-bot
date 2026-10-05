@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-10-05T09:51:44Z",
+  "generated_at": "2026-10-05T10:05:22Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -23,48 +23,6 @@
         "transcript_chars": 0
       },
       "transcript_probe": "unavailable:VideoUnplayable"
-    },
-    {
-      "handle": "@TianCompounding",
-      "author": "TianCompounding",
-      "role": "research_thesis",
-      "status": "ok",
-      "listed_videos": 10,
-      "latest": {
-        "video_id": "Iv5V74WB6uo",
-        "title": "Applovin持续暴跌，为什么我不清仓？卖掉一个半年盈利750%的合成多头！| 百万之路EP26",
-        "url": "https://www.youtube.com/watch?v=Iv5V74WB6uo",
-        "published_at": "2026-10-03",
-        "flat_metadata_keys": [
-          "channel_id",
-          "duration",
-          "rss_published_at"
-        ],
-        "transcript_available": false,
-        "transcript_chars": 0
-      },
-      "transcript_probe": "unavailable:RequestBlocked"
-    },
-    {
-      "handle": "@NaNaShuoMeiGu",
-      "author": "NaNa说美股",
-      "role": "rule_supply",
-      "status": "ok",
-      "listed_videos": 10,
-      "latest": {
-        "video_id": "khnPevsQ_TE",
-        "title": "放弃做空，皈依神教🤓！NaNa说美股(2026.10.02)",
-        "url": "https://www.youtube.com/watch?v=khnPevsQ_TE",
-        "published_at": "2026-10-02",
-        "flat_metadata_keys": [
-          "channel_id",
-          "duration",
-          "rss_published_at"
-        ],
-        "transcript_available": false,
-        "transcript_chars": 0
-      },
-      "transcript_probe": "unavailable:RequestBlocked"
     },
     {
       "handle": "@老李玩钱",
