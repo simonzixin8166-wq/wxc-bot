@@ -68,6 +68,42 @@ PROBES=[
         "title":"Official Announcement: Recession Is Here",
         "role":"market_context",
     },
+    {
+        "author":"Andrei Jikh",
+        "video_id":"3FZipnSI_po",
+        "title":"Japan Just Broke the Global Economy (Worse Than Greece)",
+        "role":"market_context",
+    },
+    {
+        "author":"Andrei Jikh",
+        "video_id":"9X3h3swRftY",
+        "title":"BREAKING: The Bond Market Is Collapsing (JPMorgan’s Final Warning)",
+        "role":"market_context",
+    },
+    {
+        "author":"Andrei Jikh",
+        "video_id":"T9h9BMhpdaA",
+        "title":"The Tariffs Just Broke the System (And It's All On Purpose)",
+        "role":"market_context",
+    },
+    {
+        "author":"Andrei Jikh",
+        "video_id":"nY234RoQeHw",
+        "title":"I Asked ChatGPT To Make Me As Much Money As Possible",
+        "role":"market_context",
+    },
+    {
+        "author":"老李玩钱",
+        "video_id":"5382scR8EJ8",
+        "title":"12月美股：需谨慎！我的买卖、操作计划",
+        "role":"rule_supply",
+    },
+    {
+        "author":"老李玩钱",
+        "video_id":"A4Nl1xhmlqo",
+        "title":"20万美股账户，2025复盘总结，我的经验教训！2026股票持仓计划",
+        "role":"rule_supply",
+    },
 ]
 
 def main():
