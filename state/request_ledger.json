@@ -12,7 +12,7 @@
         "paid": false
       },
       "telegram:send_message": {
-        "count": 4,
+        "count": 5,
         "paid": false
       },
       "myalphaview:server_action_status": {

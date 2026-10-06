@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-05T13:02:56Z",
+  "generated_at": "2026-10-06T02:27:06Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -11,9 +11,9 @@
       "status": "ok",
       "listed_videos": 10,
       "latest": {
-        "video_id": "V11vKrhYRpI",
-        "title": "（会员第304期）标普SPX重要路径前瞻：2026-2028几个潜在触顶“摔杯”爆发点，对应触发条件！大盘为何和多个关联指标脱敏！（10年期国债收益、风险溢价ERP、债券波动MOVE指数）",
-        "url": "https://www.youtube.com/watch?v=V11vKrhYRpI",
+        "video_id": "lWd7zsWV-4I",
+        "title": "美股 NVDA、TSM、MSFT！对冲基金：不加仓，等抬轿子！标普各种相关性瓦解！",
+        "url": "https://www.youtube.com/watch?v=lWd7zsWV-4I",
         "published_at": "",
         "flat_metadata_keys": [
           "channel_id",
@@ -34,17 +34,16 @@
       "status": "ok",
       "listed_videos": 10,
       "latest": {
-        "video_id": "qVSoCX8pVDg",
-        "title": "10月必买3支股票",
-        "url": "https://www.youtube.com/watch?v=qVSoCX8pVDg",
-        "published_at": "2026-10-01",
+        "video_id": "XW0RpReUUbk",
+        "title": "2支暴跌老牌传统股！可以买入了？",
+        "url": "https://www.youtube.com/watch?v=XW0RpReUUbk",
+        "published_at": "",
         "flat_metadata_keys": [
           "channel_id",
-          "duration",
-          "rss_published_at"
+          "duration"
         ],
         "transcript_available": true,
-        "transcript_chars": 3529,
+        "transcript_chars": 3457,
         "content_quality": "Q2",
         "content_provider": "reducer.xgoose.org",
         "rule_candidate_allowed": true
@@ -75,12 +74,35 @@
       "transcript_probe": "metadata_only"
     }
   ],
-  "discovered_new_videos": 0,
+  "discovered_new_videos": 2,
   "pending_retried": 0,
-  "pending_total": 0,
+  "pending_total": 2,
   "admitted_from_pending": 0,
   "feed_records_added": 0,
-  "new_video_diagnostics": [],
+  "new_video_diagnostics": [
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "lWd7zsWV-4I",
+      "title": "美股 NVDA、TSM、MSFT！对冲基金：不加仓，等抬轿子！标普各种相关性瓦解！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": false,
+      "pending_reason": "missing_published_at"
+    },
+    {
+      "author": "老李玩钱",
+      "video_id": "XW0RpReUUbk",
+      "title": "2支暴跌老牌传统股！可以买入了？",
+      "content_quality": "Q2",
+      "content_provider": "reducer.xgoose.org",
+      "rule_candidate_allowed": true,
+      "admission": "pending_content",
+      "was_pending": false,
+      "pending_reason": "missing_published_at"
+    }
+  ],
   "guardrails": [
     "Initial run only establishes a seen-video baseline; existing videos are not inserted into forward research feed.",
     "New videos with insufficient learning text or missing reliable published_at remain pending and do not enter Source Store or formal forward evidence.",

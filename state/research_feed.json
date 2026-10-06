@@ -25058,7 +25058,112 @@
       "lessons": [],
       "captured_at": "2026-10-06T01:36:15Z",
       "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。"
+    },
+    {
+      "id": "a4c3c2398e0632376d1e",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "yifan99",
+      "published_at": "2026-10-05 18:40:18",
+      "title": "互相学习，共同致富！",
+      "url": "https://bbs.wenxuecity.com/cfzh/113727.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-06T02:24:58Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。"
+    },
+    {
+      "id": "9de10b593d73f6932b30",
+      "source": "wenxuecity",
+      "source_kind": "blog",
+      "author": "BrightLine",
+      "published_at": "2026-10-05",
+      "title": "再谈PYPL：求婚者走了，新娘还在",
+      "url": "https://blog.wenxuecity.com/myblog/82458/202610/3150.html",
+      "excerpt": "八月底写过一篇PayPal，当时Stripe和Advent正在追求，股价六十出头。现在求婚者走了，股价跌回五十出头，有人问我怎么看。我的看法是：求婚者走了，新娘还是那个新娘，而且彩礼价已经报出来了。\n先把这两个月的事捋一遍。\n7月15日，Stripe联合Advent报价每股60.5美元现金，总价530多亿，摩根大通和摩根士丹利承诺了约500亿的融资。第二天PayPal董事会回复：价格不够（inadequate），据报道董事会的心理价位是70一股。8月14日华尔街日报说双方还在谈，价格在往上走，交易可能几周内敲定。8月27日盘后，Bloomberg报道Stripe和Advent停止追求，股价盘后从61.47跌到53.97，一夜跌掉12%。9月30日又冒出一条未经证实的消息，说一家西海岸科技公司在考虑全股票收购Pa",
+      "content_chars": 1898,
+      "images_count": 0,
+      "themes_hint": [
+        "风险管理"
+      ],
+      "symbols": [
+        "PYPL"
+      ],
+      "operations": [
+        {
+          "symbols": [
+            "PYPL"
+          ],
+          "actions": [
+            "trim"
+          ],
+          "attribution": "unconfirmed_author_context",
+          "attribution_confidence": "needs_review"
+        }
+      ],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-06T02:26:19Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。"
+    },
+    {
+      "id": "b69e8e9034ba83ad2444",
+      "source": "wenxuecity",
+      "source_kind": "blog",
+      "author": "BrightLine",
+      "published_at": "2026-10-05",
+      "title": "IREN - 我写了一个论点，然后等市场来验证",
+      "url": "https://blog.wenxuecity.com/myblog/82458/202610/3062.html",
+      "excerpt": "7 月 30 日那天，Situational Awareness 那位天才的基金被强平，neocloud 整个板块被砸到地板上。我在 29、30、31 加了 IREN。8 月 27 日财报之后，股价掉到 35 附近，我按事先定好的位置又加了一次，35 和 36.5。\n今天 IREN 在 40 上下。两个多月，两次加仓，股价比我的加仓位高一点，比它 7 月的高点低一半。CRWV 从 180 跌到 80，IREN 从 70 跌到 40。要说不痛，那是假的。\n痛的不是亏钱。痛的是基本面每个季度都在往上走，股价不动。\n这两个月基本面发生了什么\n三年期合同的价格，去年 11 月是每 MW 970 万，今年 5 月 1130 万，8 月财报说最新签的已经超过 2000 万，在谈的到了 2500 万。公司自己的说法是，200",
+      "content_chars": 3637,
+      "images_count": 0,
+      "themes_hint": [
+        "LEAPS",
+        "失败复盘",
+        "IREN"
+      ],
+      "symbols": [
+        "NBIS",
+        "IREN",
+        "CRWV",
+        "META"
+      ],
+      "operations": [
+        {
+          "symbols": [
+            "IREN",
+            "CRWV"
+          ],
+          "actions": [
+            "add"
+          ],
+          "attribution": "author_action",
+          "attribution_confidence": "high"
+        },
+        {
+          "symbols": [
+            "IREN"
+          ],
+          "actions": [
+            "add"
+          ],
+          "attribution": "author_action",
+          "attribution_confidence": "high"
+        }
+      ],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-06T02:26:19Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。"
     }
   ],
-  "updated_at": "2026-10-06T01:36:15Z"
+  "updated_at": "2026-10-06T02:26:19Z"
 }

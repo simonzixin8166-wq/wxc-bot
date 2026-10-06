@@ -1,6 +1,39 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T13:02:56Z",
-  "records": [],
+  "updated_at": "2026-10-06T02:27:06Z",
+  "records": [
+    {
+      "video_id": "lWd7zsWV-4I",
+      "handle": "@RhinoFinance",
+      "author": "RhinoFinance / 视野环球财经",
+      "role": "rule_supply",
+      "title": "美股 NVDA、TSM、MSFT！对冲基金：不加仓，等抬轿子！标普各种相关性瓦解！",
+      "url": "https://www.youtube.com/watch?v=lWd7zsWV-4I",
+      "published_at": "",
+      "first_discovered_at": "2026-10-06T02:27:04Z",
+      "last_checked_at": "2026-10-06T02:27:04Z",
+      "retry_count": 1,
+      "last_quality": "Q5",
+      "last_provider": "metadata_only",
+      "last_status": "metadata_only",
+      "last_error": null
+    },
+    {
+      "video_id": "XW0RpReUUbk",
+      "handle": "@老李玩钱",
+      "author": "老李玩钱",
+      "role": "rule_supply",
+      "title": "2支暴跌老牌传统股！可以买入了？",
+      "url": "https://www.youtube.com/watch?v=XW0RpReUUbk",
+      "published_at": "",
+      "first_discovered_at": "2026-10-06T02:27:06Z",
+      "last_checked_at": "2026-10-06T02:27:06Z",
+      "retry_count": 1,
+      "last_quality": "Q2",
+      "last_provider": "reducer.xgoose.org",
+      "last_status": "available",
+      "last_error": null
+    }
+  ],
   "guardrail": "Pending discovery state is outside Source Store/Rule Registry/EventScore. First formal admission occurs only after role-appropriate content quality is available."
 }
