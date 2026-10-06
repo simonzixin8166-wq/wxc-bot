@@ -8,7 +8,7 @@
     },
     "2026-10-06": {
       "telegram:get_updates": {
-        "count": 1,
+        "count": 2,
         "paid": false
       },
       "telegram:send_message": {
@@ -16,7 +16,7 @@
         "paid": false
       },
       "myalphaview:server_action_status": {
-        "count": 1,
+        "count": 2,
         "paid": false
       }
     }
