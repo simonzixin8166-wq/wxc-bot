@@ -299,15 +299,36 @@ def append_records(records: list[dict]) -> int:
     if not records:
         return 0
     feed = _read(FEED_PATH, {"version": 1, "records": []})
-    existing = {x.get("id") for x in feed.get("records", [])}
+    current = {x.get("id"):x for x in feed.get("records", []) if x.get("id")}
     added = 0
+    changed = False
+    now = datetime.utcnow().replace(microsecond=0).isoformat() + "Z"
     for row in records:
-        if row.get("id") and row["id"] not in existing:
+        rid=row.get("id")
+        if not rid:
+            continue
+        if rid not in current:
             feed.setdefault("records", []).append(row)
-            existing.add(row["id"]); added += 1
-    feed["records"] = sorted(feed["records"], key=lambda x: x.get("captured_at", ""))[-MAX_FEED:]
-    feed["updated_at"] = datetime.utcnow().replace(microsecond=0).isoformat() + "Z"
-    _write(FEED_PATH, feed)
+            current[rid]=row
+            added += 1
+            changed = True
+            continue
+
+        # Enrichment of an already-seen source is deliberately narrow.
+        # Never rewrite captured_at, published_at, intake provenance or make an
+        # old source look newly observed. Only add bounded learning metadata
+        # derived from the same source text.
+        cur=current[rid]
+        incoming_signals=row.get("method_signals") or []
+        if incoming_signals and incoming_signals != (cur.get("method_signals") or []):
+            cur["method_signals"]=incoming_signals[:12]
+            cur["method_signals_enriched_at"]=now
+            changed=True
+
+    if changed:
+        feed["records"] = sorted(feed["records"], key=lambda x: x.get("captured_at", ""))[-MAX_FEED:]
+        feed["updated_at"] = now
+        _write(FEED_PATH, feed)
     return added
 
 def add_forum_posts(author: str, posts: list[dict]) -> int:
@@ -334,16 +355,24 @@ def capture_blog_profile(name: str, days: int = 2) -> list[dict]:
         bootstrap_backfill = not seen_path.exists()
         seen = set(_read(seen_path, []))
         fresh = []
+        enrich = []
         for post in result.get("posts", []):
             pid = post.get("id")
-            if pid and pid not in seen:
-                row = normalize("blog", author, post)
+            if not pid:
+                continue
+            row = normalize("blog", author, post)
+            if pid not in seen:
                 row["intake_class_hint"] = "backfill" if bootstrap_backfill else "live_candidate"
                 row["capture_mode"] = "initial_blog_profile_backfill" if bootstrap_backfill else "scheduled_blog_scan"
                 fresh.append(row)
                 seen.add(pid)
+            elif row.get("method_signals"):
+                # Re-reading a recent already-seen article may enrich the
+                # research representation, but append_records preserves the
+                # original observation/provenance timestamps.
+                enrich.append(row)
         _write(seen_path, sorted(seen))
-        append_records(fresh)
+        append_records(fresh + enrich)
         return fresh
     finally:
         shutil.rmtree(outdir, ignore_errors=True)
