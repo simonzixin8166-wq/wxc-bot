@@ -219,11 +219,11 @@ def extract_method_signals(text: str) -> list[dict]:
     units=_sentences(text)
     patterns=[
         ("tcds_cross_zero", r"tcds.{0,48}(?:回到\s*(?:0|零)|=\s*0|转正|由负(?:值)?(?:持续)?回升)", False),
-        ("ppo_above_signal", r"ppo.{0,96}(?:上穿|向上交叉|向上超过|高于|超过|金叉|cross(?:es|ed)?\\s+above).{0,48}(?:signal|信号线)", False),
+        ("ppo_above_signal", r"ppo.{0,96}(?:上穿|向上交叉|向上超过|高于|超过|金叉|cross(?:es|ed)?\s+above).{0,48}(?:signal|信号线)", False),
         ("ppo_hist_positive", r"(?:ppo.{0,40})?(?:histogram|柱状图|柱线).{0,40}(?:负转正|转正|positive)", False),
         ("price_above_ma50", r"(?:价格|股价|price)?.{0,36}(?:站上|突破|高于|above).{0,18}ma\s*50", True),
         ("price_below_ma50", r"(?:价格|股价|price)?.{0,36}(?:跌破|低于|below).{0,18}ma\s*50", True),
-        ("ma50_hold_two_sessions", r"(?:连续\\s*(?:两|2)\\s*(?:个)?(?:交易日|天).{0,36}(?:站上|守住|高于).{0,18}ma\\s*50|ma\\s*50.{0,64}连续\\s*(?:两|2)\\s*(?:个)?(?:交易日|天).{0,24}(?:站上|守住|高于)?)", True),
+        ("ma50_hold_two_sessions", r"(?:连续\s*(?:两|2)\s*(?:个)?(?:交易日|天).{0,36}(?:站上|守住|高于).{0,18}ma\s*50|ma\s*50.{0,64}连续\s*(?:两|2)\s*(?:个)?(?:交易日|天).{0,24}(?:站上|守住|高于)?)", True),
         ("supertrend_bullish", r"supertrend.{0,40}(?:翻多|转多|bull)", True),
         ("macd_hist_positive", r"macd.{0,80}(?:柱状图|柱线|histogram).{0,40}(?:负转正|转正|positive)", True),
     ]
