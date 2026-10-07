@@ -1,4 +1,5 @@
 name: research-close
+# Research-close contract refresh: 2026-10-07T03:05Z
 
 on:
   push:
@@ -11,6 +12,7 @@ on:
       - "wxc_blog.py"
       - "tests/test_blog_collector.py"
       - "tests/test_research_feed.py"
+      - "tests/test_free_first_forward_gate.py"
       - "requirements.txt"
       - ".github/workflows/research-close.yml"
   schedule:
