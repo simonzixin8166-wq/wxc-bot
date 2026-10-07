@@ -1,0 +1,62 @@
+name: Recover Research Feed History
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "recover_research_feed_history.py"
+      - ".github/workflows/recover-research-feed-history.yml"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: wxc-research-feed-recovery
+  cancel-in-progress: false
+
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Recover every historical research feed record
+        run: python recover_research_feed_history.py
+
+      - name: Validate recovered feed
+        run: |
+          python -m py_compile research_feed.py recover_research_feed_history.py
+          PYTHONPATH=. python tests/test_research_feed.py
+          python - <<'PY'
+          import json
+          p=json.load(open("state/research_feed.json",encoding="utf-8"))
+          r=json.load(open("state/research_feed_recovery_report.json",encoding="utf-8"))
+          assert p.get("retention_policy")=="append_only_no_record_count_cap"
+          assert len(p.get("records") or [])==r["current_after"]
+          assert r["current_after"]>=r["current_before"]
+          for x in p.get("records") or []:
+              if x.get("recovered_from_git_history"):
+                  assert x.get("intake_class_hint")=="backfill"
+                  assert x.get("capture_mode")=="recovered_git_history"
+                  assert x.get("forward_evidence_eligible") is False
+          print(r)
+          PY
+
+      - name: Commit recovered canonical feed
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add state/research_feed.json state/research_feed_recovery_report.json
+          if ! git diff --cached --quiet; then
+            git commit -m "recover historical research feed records"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
