@@ -24,7 +24,7 @@ def collect_forum():
     for author in authors:
         ids = agent.ids_for(author, htmls)
         seen = agent.load_seen(author)
-        new = sorted((i for i in ids if i not in seen), key=int, reverse=True)[:60]
+        new = sorted((i for i in ids if i not in seen), key=int, reverse=True)
         if not new:
             continue
         posts = agent.fetch_posts(new, ids, state)
