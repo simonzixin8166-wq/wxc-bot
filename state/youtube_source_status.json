@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-07T01:37:03Z",
+  "generated_at": "2026-10-07T01:49:07Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -38,11 +38,10 @@
         "video_id": "XW0RpReUUbk",
         "title": "2支暴跌老牌传统股！可以买入了？",
         "url": "https://www.youtube.com/watch?v=XW0RpReUUbk",
-        "published_at": "2026-10-05",
+        "published_at": "",
         "flat_metadata_keys": [
           "channel_id",
-          "duration",
-          "rss_published_at"
+          "duration"
         ],
         "transcript_available": true,
         "transcript_chars": 3457,

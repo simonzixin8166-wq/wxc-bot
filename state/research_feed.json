@@ -2,27 +2,6 @@
   "version": 1,
   "records": [
     {
-      "id": "b6e14b13ad686a5d7174",
-      "source": "wenxuecity",
-      "source_kind": "forum",
-      "author": "三心三意",
-      "published_at": "2026-10-01 08:23:48",
-      "title": "研究股票，要把这些花街模糊的预期放到你的估值里。如果只要PE这个谁都能算出来的数去可以投资，人人都是亿万富翁",
-      "url": "https://bbs.wenxuecity.com/cfzh/112832.html",
-      "excerpt": "",
-      "content_chars": 0,
-      "images_count": 0,
-      "themes_hint": [
-        "其他研究"
-      ],
-      "symbols": [],
-      "operations": [],
-      "portfolio_rules": [],
-      "lessons": [],
-      "captured_at": "2026-10-01T23:38:33Z",
-      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。"
-    },
-    {
       "id": "d0a89a91d7da0604eb72",
       "source": "wenxuecity",
       "source_kind": "forum",
@@ -26082,7 +26061,32 @@
       "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
       "intake_class_hint": "backfill",
       "capture_mode": "initial_blog_profile_backfill"
+    },
+    {
+      "id": "a3629377f8d3e3fc0f63",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-06 18:35:00",
+      "title": "关于振臂一挥",
+      "url": "https://bbs.wenxuecity.com/cfzh/113990.html",
+      "excerpt": "在大型企业和行业里投资，需要透过”振臂一挥”的故事里掌握长期发展的方向，同时要认识到短期情绪化带来的溢价风险\n\n一个大的科技公司，它的业务和长期趋势不会在短短几个月里就发生了天翻地覆的变化，所以当听到英伟达上个财报说明年revenue要增长70%，AVGO说FY28年要翻倍，今天MRVL又直接把FY31revenue提高到原来预期的2倍， 这后面都是在告诉我们一件我们一直都知道的事： 那就是AI demand毫无减缓的信号， 任何包括所有过去的预期都在不断被翻新。\n\n但具体到股价， 就要有清醒和坚定的态度。 清醒是说， 无论未来多么美好，现在的业务都还没有达到那水平，所以任何FOMO追高都要有足够下跌的思想准备。 坚定是说， 花街叙事肯定会变的， 在以后一定会来的回调中，坚定不移的买入合理估值区间的股票\n\n做到",
+      "content_chars": 395,
+      "images_count": 0,
+      "themes_hint": [
+        "风险管理",
+        "长期持有纪律"
+      ],
+      "symbols": [
+        "NVDA",
+        "MRVL"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-07T01:44:23Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。"
     }
   ],
-  "updated_at": "2026-10-07T01:19:19Z"
+  "updated_at": "2026-10-07T01:44:23Z"
 }
