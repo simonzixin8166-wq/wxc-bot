@@ -25660,7 +25660,42 @@
       "captured_at": "2026-10-07T01:19:19Z",
       "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
       "intake_class_hint": "backfill",
-      "capture_mode": "initial_blog_profile_backfill"
+      "capture_mode": "initial_blog_profile_backfill",
+      "method_signals": [
+        {
+          "condition_id": "tcds_cross_zero",
+          "machine_ready": false,
+          "evidence_excerpt": "。不过真正让我注意的，并不是这 1.95%，而是价格背后的几个信号开始同时转向。 Amazon DeepWave：价格、MA21/MA50、Supertrend、TCDS-D/MACD 与 PPO TCDS终于回到0",
+          "evidence_hash": "2469e7e0beaa9f5383bdbe29cd49efd120daa6e582856f1156ba80491527a634",
+          "source_derived_only": true,
+          "state_hint": "EARLY_ENTRY"
+        },
+        {
+          "condition_id": "ppo_hist_positive",
+          "machine_ready": false,
+          "evidence_excerpt": "PPO = -0.532 ｜ Signal = -0.768 ｜ Histogram = +0.237 PPO 本身还在零轴以下，所以 Amazon 还不能算真正进入强趋势。但是一个重要变化已经出现： PPO 已经向上超过 Signal，Histogram 也由负转正。",
+          "evidence_hash": "7df412d613cfd78b4b369be48ea5d1870788eaab17df03caa0290d875a6b3847",
+          "source_derived_only": true,
+          "state_hint": "EARLY_ENTRY"
+        },
+        {
+          "condition_id": "macd_hist_positive",
+          "machine_ready": true,
+          "evidence_excerpt": "PPO = -0.532 ｜ Signal = -0.768 ｜ Histogram = +0.237 PPO 本身还在零轴以下，所以 Amazon 还不能算真正进入强趋势。但是一个重要变化已经出现： PPO 已经向上超过 Signal，Histogram 也由负转正。",
+          "evidence_hash": "7df412d613cfd78b4b369be48ea5d1870788eaab17df03caa0290d875a6b3847",
+          "source_derived_only": true,
+          "state_hint": "EARLY_ENTRY"
+        },
+        {
+          "condition_id": "price_above_ma50",
+          "machine_ready": true,
+          "evidence_excerpt": "。这也是为什么我还不会说：“Amazon 已经突破，可以追了。” Early Entry → 等待 MA50 确认 如果接下来价格真正站上 MA50，而且能够连续两天守住，同时 TCDS 从 0 继续转正、PPO Histogram 继续扩大，那么性质就不一样了。",
+          "evidence_hash": "0d51291a9e9cc97a8b716f4a17fc63919f5c967b45d972ac8d745055af125b1a",
+          "source_derived_only": true,
+          "state_hint": "EARLY_ENTRY"
+        }
+      ],
+      "method_signals_enriched_at": "2026-10-07T03:26:29Z"
     },
     {
       "id": "5377eb61a5db0e089b1c",
@@ -25684,7 +25719,18 @@
       "captured_at": "2026-10-07T01:19:19Z",
       "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
       "intake_class_hint": "backfill",
-      "capture_mode": "initial_blog_profile_backfill"
+      "capture_mode": "initial_blog_profile_backfill",
+      "method_signals": [
+        {
+          "condition_id": "price_above_ma50",
+          "machine_ready": true,
+          "evidence_excerpt": "Ride with the Wave 的趋势？ AVGO 已经出现明显的底部修复信号，但与已经突破 MA50 的 CIEN 相比，它目前仍然少了最后一道价格确认。",
+          "evidence_hash": "67fca709d42ff2ef525d996ec39c563c733c8cb13ea6864b882c53251f3ec086",
+          "source_derived_only": true,
+          "state_hint": "EARLY_ENTRY"
+        }
+      ],
+      "method_signals_enriched_at": "2026-10-07T03:26:29Z"
     },
     {
       "id": "8d9e6281e5fe0a41bf7f",
@@ -25707,7 +25753,42 @@
       "captured_at": "2026-10-07T01:19:19Z",
       "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
       "intake_class_hint": "backfill",
-      "capture_mode": "initial_blog_profile_backfill"
+      "capture_mode": "initial_blog_profile_backfill",
+      "method_signals": [
+        {
+          "condition_id": "price_above_ma50",
+          "machine_ready": true,
+          "evidence_excerpt": "从 AAOI 和 CIEN 看“左侧发现，右侧确认” AI时代的交易，也许不必在“抄底”和“追涨”之间二选一。 最近我一直confirm交易系统。原因很简单：如果严格等价格站上 MA50 才买，虽然比较安全，但一段反弹可能已经走掉不少；如果看到指标刚刚转头就重仓，又很容易变成抄底。",
+          "evidence_hash": "570604aae4f1f5c7ef208982558f483796793d7a5ed6aa58e54a751659883465",
+          "source_derived_only": true,
+          "state_hint": "EARLY_ENTRY"
+        },
+        {
+          "condition_id": "tcds_cross_zero",
+          "machine_ready": false,
+          "evidence_excerpt": "14.6% 。 CIEN 前面经历明显下跌，但在价格真正突破 MA50 以前，DeepWave 已经开始出现修复：Early Entry 出现，TCDS 从负值区域恢复，MACD histogram 转正，价格逐渐收复 MA21，随后才突破 MA50。",
+          "evidence_hash": "a83af1e7ee20615c971b890b9131277b4e0df26dd60b3966f86f07c352761af1",
+          "source_derived_only": true,
+          "state_hint": "EARLY_ENTRY"
+        },
+        {
+          "condition_id": "ppo_hist_positive",
+          "machine_ready": false,
+          "evidence_excerpt": "14.6% 。 CIEN 前面经历明显下跌，但在价格真正突破 MA50 以前，DeepWave 已经开始出现修复：Early Entry 出现，TCDS 从负值区域恢复，MACD histogram 转正，价格逐渐收复 MA21，随后才突破 MA50。",
+          "evidence_hash": "a83af1e7ee20615c971b890b9131277b4e0df26dd60b3966f86f07c352761af1",
+          "source_derived_only": true,
+          "state_hint": "EARLY_ENTRY"
+        },
+        {
+          "condition_id": "macd_hist_positive",
+          "machine_ready": true,
+          "evidence_excerpt": "14.6% 。 CIEN 前面经历明显下跌，但在价格真正突破 MA50 以前，DeepWave 已经开始出现修复：Early Entry 出现，TCDS 从负值区域恢复，MACD histogram 转正，价格逐渐收复 MA21，随后才突破 MA50。",
+          "evidence_hash": "a83af1e7ee20615c971b890b9131277b4e0df26dd60b3966f86f07c352761af1",
+          "source_derived_only": true,
+          "state_hint": "EARLY_ENTRY"
+        }
+      ],
+      "method_signals_enriched_at": "2026-10-07T03:26:29Z"
     },
     {
       "id": "9666f1f9a28236f6b04d",
@@ -25759,7 +25840,24 @@
       "captured_at": "2026-10-07T01:19:19Z",
       "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
       "intake_class_hint": "backfill",
-      "capture_mode": "initial_blog_profile_backfill"
+      "capture_mode": "initial_blog_profile_backfill",
+      "method_signals": [
+        {
+          "condition_id": "ppo_hist_positive",
+          "machine_ready": false,
+          "evidence_excerpt": "CIEN 的技术修复更完整，AAOI 的上涨弹性更大、波动也更高 整体看，两只股票都在经历“中期下跌后的短线反弹”，但 CIEN 的技术修复更完整，AAOI 的上涨弹性更大、波动也更高。 CIEN：短线已经明显转强。 4月至6月快速上涨，随后持续回落；9月在约310–350美元区域企稳。10月1日放量上涨7.77%，收379.14美元，重新站上短期均线及Su",
+          "evidence_hash": "6dd8cb66241c3d50d1ed301a85ab813c55124354a7a65d46388795c1b030872f",
+          "source_derived_only": true
+        },
+        {
+          "condition_id": "macd_hist_positive",
+          "machine_ready": true,
+          "evidence_excerpt": "CIEN 的技术修复更完整，AAOI 的上涨弹性更大、波动也更高 整体看，两只股票都在经历“中期下跌后的短线反弹”，但 CIEN 的技术修复更完整，AAOI 的上涨弹性更大、波动也更高。 CIEN：短线已经明显转强。 4月至6月快速上涨，随后持续回落；9月在约310–350美元区域企稳。10月1日放量上涨7.77%，收379.14美元，重新站上短期均线及Su",
+          "evidence_hash": "6dd8cb66241c3d50d1ed301a85ab813c55124354a7a65d46388795c1b030872f",
+          "source_derived_only": true
+        }
+      ],
+      "method_signals_enriched_at": "2026-10-07T03:26:29Z"
     },
     {
       "id": "9ae79b7468ca2e7f8f75",
@@ -25786,7 +25884,24 @@
       "captured_at": "2026-10-07T01:19:19Z",
       "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
       "intake_class_hint": "backfill",
-      "capture_mode": "initial_blog_profile_backfill"
+      "capture_mode": "initial_blog_profile_backfill",
+      "method_signals": [
+        {
+          "condition_id": "price_above_ma50",
+          "machine_ready": true,
+          "evidence_excerpt": "把行权价放在 MA50 或 Supertrend 附近(约 800–860),相当于给自己留出约 12–18% 的缓冲。 趋势结构偏多。 价格在 MA21、MA50 之上,MA21 高于 MA50,Supertrend 已经翻多并逐级抬高。8 月初的 Entry(E)信号之后,右侧几次 ADD 都落在 MA50 附近,说明回踩均线有承接。",
+          "evidence_hash": "88c449b461a29dea091e396db5186d6853c38bf163d29bf2fa4df170fcf2e7ea",
+          "source_derived_only": true
+        },
+        {
+          "condition_id": "supertrend_bullish",
+          "machine_ready": true,
+          "evidence_excerpt": "把行权价放在 MA50 或 Supertrend 附近(约 800–860),相当于给自己留出约 12–18% 的缓冲。 趋势结构偏多。 价格在 MA21、MA50 之上,MA21 高于 MA50,Supertrend 已经翻多并逐级抬高。8 月初的 Entry(E)信号之后,右侧几次 ADD 都落在 MA50 附近,说明回踩均线有承接。",
+          "evidence_hash": "88c449b461a29dea091e396db5186d6853c38bf163d29bf2fa4df170fcf2e7ea",
+          "source_derived_only": true
+        }
+      ],
+      "method_signals_enriched_at": "2026-10-07T03:26:29Z"
     },
     {
       "id": "d5b6b9842d3e2a1cd49f",
@@ -25812,7 +25927,26 @@
       "captured_at": "2026-10-07T01:19:19Z",
       "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
       "intake_class_hint": "backfill",
-      "capture_mode": "initial_blog_profile_backfill"
+      "capture_mode": "initial_blog_profile_backfill",
+      "method_signals": [
+        {
+          "condition_id": "price_above_ma50",
+          "machine_ready": true,
+          "evidence_excerpt": "从这张 AMZN 截至 9/29 的日线图看，把最近这一段更新为： AMZN：更像是一次向上 False Break（假突破），目前重新回到偏弱区间。 关键原因是：前几天价格一度重新站上 MA21 / MA50 附近，并出现绿色 E / E+ 信号，但随后没有形成持续上攻，反而又跌回两条均线下方。今天收在 246.67，而短期均线大约仍在 250–253 区",
+          "evidence_hash": "059f9fd32dd7d4e7ad984292c031f47e38bbd637244900e17ef9b9d916df8084",
+          "source_derived_only": true,
+          "state_hint": "EARLY_ENTRY"
+        },
+        {
+          "condition_id": "price_below_ma50",
+          "machine_ready": true,
+          "evidence_excerpt": "这套系统里，暂时把 AMZN 的信号写成： AMZN 9/29: FALSE BREAK ? Price 246.67 | Below MA21/MA50 | TCDS -65 | MACD 0",
+          "evidence_hash": "f713fd184eafd848c56c2488e9ca775d6cba0fa25193ac5e60d035dddc49bd29",
+          "source_derived_only": true,
+          "state_hint": "EARLY_ENTRY"
+        }
+      ],
+      "method_signals_enriched_at": "2026-10-07T03:26:29Z"
     },
     {
       "id": "e115e9890dd8407ffaac",
@@ -25835,7 +25969,42 @@
       "captured_at": "2026-10-07T01:19:19Z",
       "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
       "intake_class_hint": "backfill",
-      "capture_mode": "initial_blog_profile_backfill"
+      "capture_mode": "initial_blog_profile_backfill",
+      "method_signals": [
+        {
+          "condition_id": "tcds_cross_zero",
+          "machine_ready": false,
+          "evidence_excerpt": "GLW：TCDS开始转正，但上涨趋势尚未确认 GLW（Corning）这张图很有代表性。经历6月底的高点和随后大幅调整之后，股价进入了较长时间的横盘整理。目前短期动能开始改善，但整体仍处于趋势转换的早期阶段。",
+          "evidence_hash": "cf529a9ea81c4c62ba4b9e56df2ba72a4acc9ff2688b7d4c89e513b0fddfeb17",
+          "source_derived_only": true,
+          "state_hint": "EARLY_ENTRY"
+        },
+        {
+          "condition_id": "ppo_hist_positive",
+          "machine_ready": false,
+          "evidence_excerpt": "从图中可以看到，三个变化值得关注： TCDS由负转正： 从近期的弱势区域快速恢复至+15，说明短期方向开始改善，但目前仍属于初步转强。 MACD同步改善： 柱状图重新转正，显示短期上涨动能开始恢复。",
+          "evidence_hash": "749cb03a1101e752102d5a9ebd6493b484673ce06ccaed77c0bed03b2db662ed",
+          "source_derived_only": true,
+          "state_hint": "EARLY_ENTRY"
+        },
+        {
+          "condition_id": "macd_hist_positive",
+          "machine_ready": true,
+          "evidence_excerpt": "从图中可以看到，三个变化值得关注： TCDS由负转正： 从近期的弱势区域快速恢复至+15，说明短期方向开始改善，但目前仍属于初步转强。 MACD同步改善： 柱状图重新转正，显示短期上涨动能开始恢复。",
+          "evidence_hash": "749cb03a1101e752102d5a9ebd6493b484673ce06ccaed77c0bed03b2db662ed",
+          "source_derived_only": true,
+          "state_hint": "EARLY_ENTRY"
+        },
+        {
+          "condition_id": "price_above_ma50",
+          "machine_ready": true,
+          "evidence_excerpt": "TCDS由负转正： 从近期的弱势区域快速恢复至+15，说明短期方向开始改善，但目前仍属于初步转强。 MACD同步改善： 柱状图重新转正，显示短期上涨动能开始恢复。 价格尚未突破关键压力： 当前股价仍在MA50下方附近运行，上方Supertrend压力尚未有效突破，因此不能认定主要上涨趋势已经形成。",
+          "evidence_hash": "52bd9bae00b13439ece6a2811b40e05939a08c248e4a50437299adcd9a780fcc",
+          "source_derived_only": true,
+          "state_hint": "EARLY_ENTRY"
+        }
+      ],
+      "method_signals_enriched_at": "2026-10-07T03:26:29Z"
     },
     {
       "id": "05ad2b7fa3b169d67736",
@@ -25862,7 +26031,42 @@
       "captured_at": "2026-10-07T01:19:19Z",
       "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
       "intake_class_hint": "backfill",
-      "capture_mode": "initial_blog_profile_backfill"
+      "capture_mode": "initial_blog_profile_backfill",
+      "method_signals": [
+        {
+          "condition_id": "tcds_cross_zero",
+          "machine_ready": false,
+          "evidence_excerpt": "从图中可以看到，WDC经历了前期的大幅上涨、6月底的高位回落，以及随后数月的震荡整理。近期出现了几个值得关注的变化： TCDS： 从负值区域快速回升，重新进入正值区域，提示短期动能正在改善。 MACD： 柱状图由负转正，反映下跌动能减弱、上涨动能开始恢复。",
+          "evidence_hash": "6259671e2ea6ab967e59dc0a121f2e3a672c218bc58b17e0fc802d44916dc892",
+          "source_derived_only": true,
+          "state_hint": "CONFIRMATION"
+        },
+        {
+          "condition_id": "ppo_hist_positive",
+          "machine_ready": false,
+          "evidence_excerpt": "从图中可以看到，WDC经历了前期的大幅上涨、6月底的高位回落，以及随后数月的震荡整理。近期出现了几个值得关注的变化： TCDS： 从负值区域快速回升，重新进入正值区域，提示短期动能正在改善。 MACD： 柱状图由负转正，反映下跌动能减弱、上涨动能开始恢复。",
+          "evidence_hash": "6259671e2ea6ab967e59dc0a121f2e3a672c218bc58b17e0fc802d44916dc892",
+          "source_derived_only": true,
+          "state_hint": "CONFIRMATION"
+        },
+        {
+          "condition_id": "macd_hist_positive",
+          "machine_ready": true,
+          "evidence_excerpt": "从图中可以看到，WDC经历了前期的大幅上涨、6月底的高位回落，以及随后数月的震荡整理。近期出现了几个值得关注的变化： TCDS： 从负值区域快速回升，重新进入正值区域，提示短期动能正在改善。 MACD： 柱状图由负转正，反映下跌动能减弱、上涨动能开始恢复。",
+          "evidence_hash": "6259671e2ea6ab967e59dc0a121f2e3a672c218bc58b17e0fc802d44916dc892",
+          "source_derived_only": true,
+          "state_hint": "CONFIRMATION"
+        },
+        {
+          "condition_id": "price_above_ma50",
+          "machine_ready": true,
+          "evidence_excerpt": "趋势确认： 短期指标率先改善，但中长期趋势尚未完全同步。 这与此前GOOG、AMZN的情况有些相似：价格还在整理，TCDS却开始提前反映方向的变化。 不过，TCDS转正只是早期信号，并不等于上涨趋势已经确认。如果后续股价能够突破MA50和Supertrend压力，同时TCDS持续保持正值，才意味着多周期趋势进一步改善。",
+          "evidence_hash": "3dc6b3d59c8664e4ee171e6fe02983e5cff726eece0f103dd0e2a40cc5155603",
+          "source_derived_only": true,
+          "state_hint": "CONFIRMATION"
+        }
+      ],
+      "method_signals_enriched_at": "2026-10-07T03:26:29Z"
     },
     {
       "id": "4e9807fbebe47c32a5f4",
@@ -26125,5 +26329,5 @@
       "source_notice": "公开视频研究来源；仅保存短摘录与原视频链接。作者观点属于未验证假设，MyAlpha需独立验证后才可进入正式证据。"
     }
   ],
-  "updated_at": "2026-10-07T02:59:22Z"
+  "updated_at": "2026-10-07T03:26:29Z"
 }
