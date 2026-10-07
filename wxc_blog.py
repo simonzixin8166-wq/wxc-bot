@@ -269,7 +269,8 @@ def collect(profile: dict, start: datetime, end: datetime, outdir: str, delay: f
 
     posts = []
     image_count = 0
-    selected_links=list(links.values()) if max_articles is None else list(links.values())[:max_articles]\n    for i, row in enumerate(selected_links, 1):
+    selected_links=list(links.values()) if max_articles is None else list(links.values())[:max_articles]
+    for i, row in enumerate(selected_links, 1):
         url = row["url"]
         print(f"[博客文章] {i}/{len(selected_links)} {url}")
         r = get(url, delay=delay)
