@@ -142,3 +142,18 @@ assert "price_above_ma50" in real_ids
 assert "ma50_hold_two_sessions" in real_ids
 assert "macd_hist_positive" not in real_ids
 print("PASS realistic PPO/MA50 extraction precision")
+
+
+# YouTube sponsor/promotional units must not contaminate investment symbols/actions.
+promo_text = """开户福利：入金1000美元送NVDA和TSLA免费股票。
+今天正文第一只股票是谷歌 GOOG，我会在335附近开始建仓。
+第二只是亚马逊 AMZN，239附近再加仓。"""
+filtered,meta=rf.filter_youtube_promotion_noise(promo_text)
+assert meta["promotion_noise_detected"] is True
+assert "NVDA" not in rf.detect_symbols(filtered)
+assert "TSLA" not in rf.detect_symbols(filtered)
+assert "GOOG" in rf.detect_symbols(filtered)
+assert "AMZN" in rf.detect_symbols(filtered)
+learning=rf.extract_structured_learning(filtered)
+assert all("NVDA" not in (x.get("symbols") or []) and "TSLA" not in (x.get("symbols") or []) for x in learning["operations"])
+print("PASS YouTube promotion noise filter")
