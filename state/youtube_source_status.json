@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-07T01:49:07Z",
+  "generated_at": "2026-10-07T02:54:14Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -14,19 +14,18 @@
         "video_id": "wxKcxcjSq5o",
         "title": "美股 MRVL、AMD、ISRG、CEG！三季度财报看什么？10大公司EPS贡献超过490！",
         "url": "https://www.youtube.com/watch?v=wxKcxcjSq5o",
-        "published_at": "2026-10-07",
+        "published_at": "",
         "flat_metadata_keys": [
           "channel_id",
-          "duration",
-          "rss_published_at"
+          "duration"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
-        "content_quality": "Q5",
-        "content_provider": "metadata_only",
+        "content_quality": "unknown_until_needed",
+        "content_provider": "not_probed",
         "rule_candidate_allowed": false
       },
-      "transcript_probe": "metadata_only"
+      "transcript_probe": "deferred_to_worklist"
     },
     {
       "handle": "@老李玩钱",
@@ -43,13 +42,13 @@
           "channel_id",
           "duration"
         ],
-        "transcript_available": true,
-        "transcript_chars": 3457,
-        "content_quality": "Q2",
-        "content_provider": "reducer.xgoose.org",
-        "rule_candidate_allowed": true
+        "transcript_available": false,
+        "transcript_chars": 0,
+        "content_quality": "unknown_until_needed",
+        "content_provider": "not_probed",
+        "rule_candidate_allowed": false
       },
-      "transcript_probe": "available"
+      "transcript_probe": "deferred_to_worklist"
     },
     {
       "handle": "@AndreiJikh",
@@ -68,11 +67,11 @@
         ],
         "transcript_available": false,
         "transcript_chars": 0,
-        "content_quality": "Q5",
-        "content_provider": "metadata_only",
+        "content_quality": "unknown_until_needed",
+        "content_provider": "not_probed",
         "rule_candidate_allowed": false
       },
-      "transcript_probe": "metadata_only"
+      "transcript_probe": "deferred_to_worklist"
     }
   ],
   "discovered_new_videos": 0,

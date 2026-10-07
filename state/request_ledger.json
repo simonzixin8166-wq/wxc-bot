@@ -22,7 +22,7 @@
     },
     "2026-10-07": {
       "telegram:send_message": {
-        "count": 3,
+        "count": 4,
         "paid": false
       },
       "telegram:get_updates": {
