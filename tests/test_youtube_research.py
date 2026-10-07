@@ -61,6 +61,7 @@ with tempfile.TemporaryDirectory() as td:
         assert len(row["excerpt"])<=360
         assert "QQQ" in row["symbols"]
         assert row["source_role"]=="rule_supply"
+        assert row["content_filtering"]["filter"]=="youtube_promotion_noise_v1"
 
         # Same video cannot be appended again.
         out4=yt.collect(list_channel,meta,transcript)
