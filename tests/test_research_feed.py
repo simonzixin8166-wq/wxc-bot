@@ -23,7 +23,21 @@ with tempfile.TemporaryDirectory() as td:
     rf.FEED_PATH = Path(td) / "research_feed.json"
     try:
         assert rf.append_records([row]) == 1
-        assert rf.append_records([row]) == 0
+        original=rf._read(rf.FEED_PATH,{"records":[]})["records"][0]
+        original_captured=original["captured_at"]
+        enriched=dict(row)
+        enriched["captured_at"]="2099-01-01T00:00:00Z"
+        enriched["method_signals"]=[{
+            "condition_id":"price_above_ma50","machine_ready":True,
+            "evidence_excerpt":"价格站上 MA50","evidence_hash":"a"*64,
+            "source_derived_only":True
+        }]
+        assert rf.append_records([enriched]) == 0
+        after=rf._read(rf.FEED_PATH,{"records":[]})["records"][0]
+        assert after["captured_at"]==original_captured
+        assert after["published_at"]==row["published_at"]
+        assert after["method_signals"][0]["condition_id"]=="price_above_ma50"
+        assert rf.append_records([enriched]) == 0
     finally:
         rf.FEED_PATH = old
 
