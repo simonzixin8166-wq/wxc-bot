@@ -151,7 +151,8 @@ def reuse_prior_probe(prior:dict)->dict:
 def build_probe(p:dict)->dict:
     result=tr.acquire(p["video_id"],p["title"],p["author"])
     raw_text=str(result.get("text") or "")
-    text=clean_learning_text(raw_text)
+    cleaned=clean_learning_text(raw_text)
+    text,filter_meta=rf.filter_youtube_promotion_noise(cleaned)
     quality=result.get("quality") or "Q5"
     eligible=quality in {"Q1","Q2"} and bool(text)
 
@@ -192,6 +193,7 @@ def build_probe(p:dict)->dict:
         "historical_learning_eligible":eligible,
         "text_chars_seen":len(text),
         "text_hash":_hash(text) if text else None,
+        "content_filtering":filter_meta,
         "excerpt":"",
         "symbols":[
             s for s in (learning["symbols"] if eligible else [])
