@@ -2,69 +2,6 @@
   "version": 1,
   "records": [
     {
-      "id": "5fb99a42ef203bcaa0f8",
-      "source": "wenxuecity",
-      "source_kind": "forum",
-      "author": "三心三意",
-      "published_at": "2026-10-01 09:22:03",
-      "title": "me too, lol, bought almost at lowest point",
-      "url": "https://bbs.wenxuecity.com/cfzh/112843.html",
-      "excerpt": "",
-      "content_chars": 0,
-      "images_count": 0,
-      "themes_hint": [
-        "其他研究"
-      ],
-      "symbols": [],
-      "operations": [],
-      "portfolio_rules": [],
-      "lessons": [],
-      "captured_at": "2026-10-01T23:38:33Z",
-      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。"
-    },
-    {
-      "id": "a9e1db90e326efa73b59",
-      "source": "wenxuecity",
-      "source_kind": "forum",
-      "author": "三心三意",
-      "published_at": "2026-10-01 09:22:24",
-      "title": "can't resist :)",
-      "url": "https://bbs.wenxuecity.com/cfzh/112844.html",
-      "excerpt": "",
-      "content_chars": 0,
-      "images_count": 0,
-      "themes_hint": [
-        "其他研究"
-      ],
-      "symbols": [],
-      "operations": [],
-      "portfolio_rules": [],
-      "lessons": [],
-      "captured_at": "2026-10-01T23:38:33Z",
-      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。"
-    },
-    {
-      "id": "82133bbf4e6ddcd5b77e",
-      "source": "wenxuecity",
-      "source_kind": "forum",
-      "author": "三心三意",
-      "published_at": "2026-10-01 09:28:30",
-      "title": "chyang98 是我们的CMO --- chief marketing officer :)",
-      "url": "https://bbs.wenxuecity.com/cfzh/112846.html",
-      "excerpt": "",
-      "content_chars": 0,
-      "images_count": 0,
-      "themes_hint": [
-        "其他研究"
-      ],
-      "symbols": [],
-      "operations": [],
-      "portfolio_rules": [],
-      "lessons": [],
-      "captured_at": "2026-10-01T23:38:33Z",
-      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。"
-    },
-    {
       "id": "6b9d23e8eea34fcdd529",
       "source": "wenxuecity",
       "source_kind": "forum",
@@ -26351,7 +26288,95 @@
       "timestamp_evidence": true,
       "rule_candidate_allowed": true,
       "source_notice": "公开视频研究来源；仅保存短摘录与原视频链接。作者观点属于未验证假设，MyAlpha需独立验证后才可进入正式证据。"
+    },
+    {
+      "id": "131abbcbfbed59c480d6",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-06 20:49:00",
+      "title": "应该说有两种可能： 一个是再去新低完成扩展型3角；第二种可能是已经牛市开始，下面是2浪回调",
+      "url": "https://bbs.wenxuecity.com/cfzh/114020.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "captured_at": "2026-10-07T07:21:55Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。"
+    },
+    {
+      "id": "51e11a777fbddd5d65cd",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-06 20:52:00",
+      "title": "在7/8月突破时就说了，下面这个回调将决定是牛还是熊。守住突破瓶颈线是牛，否者继续熊市",
+      "url": "https://bbs.wenxuecity.com/cfzh/114021.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "趋势确认"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "captured_at": "2026-10-07T07:21:55Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。"
+    },
+    {
+      "id": "091e103b50dfc7e60232",
+      "source": "wenxuecity",
+      "source_kind": "blog",
+      "author": "BrightLine",
+      "published_at": "2026-10-06",
+      "title": "投资逻辑写好了，剩下的就是等：三周纹丝不动，两天暴涨15%，熬不住的人正好完美错过",
+      "url": "https://blog.wenxuecity.com/myblog/82458/202610/4050.html",
+      "excerpt": "最近几笔交易都有了结果。七月底那轮踩踏里160买的Marvell，今天收在287，涨了将近八成。同一时间段60左右接的CoreWeave，现在92，五成多。九月底140左右加的Vistra，今天一天涨了10.8%，收在160.5。\n账面好看，但我想写的不是赚了多少。每一笔买之前，投资逻辑都写好了：为什么买，值多少，什么情况下认错。这部分其实不难，查资料、读财报、算估值，都是体力活。难的是逻辑写好之后的事，就一个字：等。\n而等待，是投资里最难熬的部分。\n先说Vistra。九月二十八号那天，十年期国债冲上5.2%，AI板块又被砸了一轮，我把ARKK全卖了，转手加了Vistra。然后呢？然后什么都没发生。接下来五个交易日，股价在138到141之间来回晃，像心电图拉平了一样。再往前看，从九月中旬开始它就一直在138到1",
+      "content_chars": 3014,
+      "images_count": 0,
+      "themes_hint": [
+        "Sell Put",
+        "风险管理",
+        "失败复盘",
+        "长期持有纪律"
+      ],
+      "symbols": [
+        "CRWV",
+        "MRVL"
+      ],
+      "operations": [
+        {
+          "symbols": [
+            "CRWV",
+            "MRVL"
+          ],
+          "actions": [
+            "sell"
+          ],
+          "attribution": "author_plan",
+          "attribution_confidence": "high"
+        }
+      ],
+      "portfolio_rules": [],
+      "lessons": [
+        "admit_wrong"
+      ],
+      "method_signals": [],
+      "captured_at": "2026-10-07T07:23:52Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "scheduled_blog_scan"
     }
   ],
-  "updated_at": "2026-10-07T03:36:10Z"
+  "updated_at": "2026-10-07T07:23:52Z"
 }
