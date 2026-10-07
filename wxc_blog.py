@@ -25,7 +25,12 @@ PROFILES = {
         "author": "BrightLine",
         "blog_id": "82458",
         "aliases": ["brightline", "brghtline", "亮线留痕"],
-    }
+    },
+    "yifan99": {
+        "author": "yifan99",
+        "blog_id": "31983",
+        "aliases": ["yifan99", "yifan"],
+    },
 }
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Apple Silicon Mac OS X) AppleWebKit/537.36 Chrome/124 Safari/537.36"
