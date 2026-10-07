@@ -209,6 +209,58 @@ def extract_structured_learning(text: str) -> dict:
         "lessons": list(dict.fromkeys(lessons))[:12],
     }
 
+def extract_method_signals(text: str) -> list[dict]:
+    """Extract bounded, source-derived method signals from full text.
+
+    This runs before excerpt truncation so later method details are not lost.
+    It stores only normalized condition IDs plus a short evidence snippet/hash,
+    never the full article/transcript.
+    """
+    units=_sentences(text)
+    patterns=[
+        ("tcds_cross_zero", r"tcds.{0,48}(?:回到\s*(?:0|零)|=\s*0|转正|由负(?:值)?(?:持续)?回升)", False),
+        ("ppo_above_signal", r"ppo.{0,80}(?:上穿|向上交叉|金叉|cross(?:es|ed)?\s+above).{0,36}(?:signal|信号线)?", False),
+        ("ppo_hist_positive", r"(?:ppo.{0,40})?(?:histogram|柱状图|柱线).{0,40}(?:负转正|转正|positive)", False),
+        ("price_above_ma50", r"(?:价格|股价|price)?.{0,36}(?:站上|突破|高于|above).{0,18}ma\s*50", True),
+        ("price_below_ma50", r"(?:价格|股价|price)?.{0,36}(?:跌破|低于|below).{0,18}ma\s*50", True),
+        ("ma50_hold_two_sessions", r"连续\s*(?:两|2)\s*(?:个)?(?:交易日|天).{0,36}(?:站上|守住|高于).{0,18}ma\s*50", True),
+        ("supertrend_bullish", r"supertrend.{0,40}(?:翻多|转多|bull)", True),
+        ("macd_hist_positive", r"(?:macd.{0,40})?(?:柱状图|柱线|histogram).{0,40}(?:负转正|转正|positive)", True),
+    ]
+    out=[]
+    seen=set()
+    for i,unit in enumerate(units):
+        # Adjacent sentences are included because authors often describe the
+        # crossover and the Signal/Histogram values in consecutive sentences.
+        context=" ".join(units[max(0,i-1):min(len(units),i+2)])
+        low=context.lower()
+        for condition_id,pat,machine_ready in patterns:
+            if condition_id in seen or not re.search(pat,low,re.I):
+                continue
+            snippet=re.sub(r"\s+"," ",context).strip()[:180]
+            if not snippet:
+                continue
+            out.append({
+                "condition_id":condition_id,
+                "machine_ready":bool(machine_ready),
+                "evidence_excerpt":snippet,
+                "evidence_hash":hashlib.sha256(snippet.encode("utf-8")).hexdigest(),
+                "source_derived_only":True,
+            })
+            seen.add(condition_id)
+    joined=" ".join(units).lower()
+    state_hint=None
+    if "early entry" in joined or "早期介入" in joined or "早期阶段" in joined:
+        state_hint="EARLY_ENTRY"
+    elif "confirmed entry" in joined or "确认突破" in joined or "趋势确认" in joined:
+        state_hint="CONFIRMATION"
+    elif "false break" in joined or "假突破" in joined:
+        state_hint="RISK"
+    if state_hint:
+        for row in out:
+            row["state_hint"]=state_hint
+    return out[:12]
+
 def detect_themes(text: str) -> list[str]:
     low = (text or "").lower()
     found = [name for name, keys in THEMES.items() if any(k in low for k in keys)]
@@ -221,6 +273,7 @@ def normalize(source_kind: str, author: str, post: dict) -> dict:
     published = str(post.get("date") or post.get("published_at") or "")
     joined = f"{title}\n{text}"
     learning = extract_structured_learning(joined)
+    method_signals = extract_method_signals(joined)
     return {
         "id": _key(author, url, published, title),
         "source": "wenxuecity",
@@ -237,6 +290,7 @@ def normalize(source_kind: str, author: str, post: dict) -> dict:
         "operations": learning["operations"],
         "portfolio_rules": learning["portfolio_rules"],
         "lessons": learning["lessons"],
+        "method_signals": method_signals,
         "captured_at": datetime.utcnow().replace(microsecond=0).isoformat() + "Z",
         "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
     }
