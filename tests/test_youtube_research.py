@@ -175,3 +175,62 @@ with tempfile.TemporaryDirectory() as td:
         yt.SEEN_PATH,yt.STATUS_PATH,yt.PENDING_PATH,rf.FEED_PATH=old_seen,old_status,old_pending,old_feed
 
 print("PASS pending-content first-admission gate")
+
+
+# Pending videos must recover when a later channel/RSS listing supplies a
+# publication date that was missing at first discovery.
+with tempfile.TemporaryDirectory() as td:
+    td=Path(td)
+    old_seen,old_status,old_pending,old_feed=yt.SEEN_PATH,yt.STATUS_PATH,yt.PENDING_PATH,rf.FEED_PATH
+    yt.SEEN_PATH=td/"seen_youtube.json"
+    yt.STATUS_PATH=td/"youtube_source_status.json"
+    yt.PENDING_PATH=td/"pending_youtube.json"
+    rf.FEED_PATH=td/"research_feed.json"
+
+    refresh_entries={
+      "@RhinoFinance":[{"id":"rr0","title":"baseline"}],
+      "@老李玩钱":[{"id":"ll0","title":"baseline"}],
+      "@AndreiJikh":[{"id":"aa0","title":"baseline"}],
+    }
+    def refresh_list(url):
+        for handle,rows in refresh_entries.items():
+            if handle in url:return rows
+        return []
+    def refresh_meta(url):
+        vid=url.split("v=")[-1]
+        return {"id":vid,"title":"TITLE "+vid,"webpage_url":url}
+    def refresh_transcript(vid,title="",author=""):
+        if vid=="recover1":
+            return {
+              "text":"00:01 "+"完整转录与明确条件。"*250,
+              "status":"available","quality":"Q2","provider":"reducer.xgoose.org",
+              "provider_url":"https://reducer.xgoose.org/items/recover1",
+              "content_origin":"third_party_transcript","timestamp_evidence":True,
+              "rule_candidate_allowed":True,
+            }
+        return {"text":"","status":"metadata_only","quality":"Q5","provider":"metadata_only",
+                "provider_url":"","content_origin":"metadata_only","timestamp_evidence":False,
+                "rule_candidate_allowed":False}
+    try:
+        yt.collect(refresh_list,refresh_meta,refresh_transcript)
+        refresh_entries["@老李玩钱"].insert(0,{"id":"recover1","title":"新视频，无日期"})
+        first=yt.collect(refresh_list,refresh_meta,refresh_transcript)
+        assert first["pending_total"]==1
+        assert first["feed_records_added"]==0
+
+        # Same seen video now has RSS publication metadata. It must be retried
+        # with the refreshed entry rather than stale pending metadata.
+        refresh_entries["@老李玩钱"][0]["rss_published_at"]="2026-10-07T01:00:00Z"
+        recovered=yt.collect(refresh_list,refresh_meta,refresh_transcript)
+        assert recovered["discovered_new_videos"]==0
+        assert recovered["pending_retried"]==1
+        assert recovered["admitted_from_pending"]==1
+        assert recovered["pending_total"]==0
+        assert recovered["feed_records_added"]==1
+        feed=yt._read(rf.FEED_PATH,{"records":[]})["records"]
+        assert feed[-1]["published_at"]=="2026-10-07"
+        assert feed[-1]["content_quality"]=="Q2"
+    finally:
+        yt.SEEN_PATH,yt.STATUS_PATH,yt.PENDING_PATH,rf.FEED_PATH=old_seen,old_status,old_pending,old_feed
+
+print("PASS pending YouTube metadata refresh from live listing")
