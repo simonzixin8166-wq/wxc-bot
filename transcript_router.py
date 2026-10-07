@@ -13,6 +13,7 @@ observed videos or explicit health probes. The router never downloads video/audi
 from __future__ import annotations
 
 import html
+import os
 import re
 from dataclasses import dataclass, asdict
 from urllib.parse import quote, urlparse, parse_qs, unquote
@@ -21,7 +22,8 @@ import requests
 from bs4 import BeautifulSoup
 
 UA={"User-Agent":"Mozilla/5.0 (compatible; MyAlphaView/1.0; +research)"}
-TIMEOUT=15
+FAST_MODE=os.getenv("TRANSCRIPT_FAST_MODE","0")=="1"
+TIMEOUT=8 if FAST_MODE else 15
 MAX_TEXT=12000
 
 ALLOWLIST={
@@ -171,7 +173,7 @@ def _xgoose_native(video_id:str,title:str,author:str)->Acquisition|None:
         # discriminative title tokens, but still require exact video id.
         if match is None:
             tokens=re.findall(r"[A-Za-z0-9\u4e00-\u9fff]{2,}",title or "")
-            for token in tokens[:5]:
+            for token in tokens[:2 if FAST_MODE else 5]:
                 rr=requests.get(
                     "https://reducer.xgoose.org/api/items",
                     params={"platform":"youtube","q":token,"limit":100,"offset":0},
@@ -271,6 +273,11 @@ def acquire_third_party(video_id:str,title:str,author:str)->Acquisition:
     direct=_direct_pickscribe(video_id,title,author)
     if direct:
         return direct
+    if FAST_MODE:
+        # New-video collection is latency-sensitive. If exact providers have
+        # not indexed the video yet, persist it in pending and retry later
+        # rather than fan out to broad web discovery in the same daily run.
+        return Acquisition(note="Fast mode: exact providers not ready; retry from pending on a later run.")
 
     queries=[
         f'"{video_id}" transcript',
