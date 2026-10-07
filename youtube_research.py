@@ -268,6 +268,27 @@ def make_feed_row(channel:dict, meta:dict, acquisition:dict)->dict:
         "source_notice":"公开视频研究来源；仅保存短摘录与原视频链接。作者观点属于未验证假设，MyAlpha需独立验证后才可进入正式证据。",
     }
 
+def _intake_health(pending_rows:list[dict], channel_status:list[dict])->dict:
+    channel_errors=[x for x in channel_status if x.get("status")!="ok"]
+    stuck_high_quality=[
+        x for x in pending_rows
+        if str(x.get("last_quality") or "").upper() in {"Q1","Q2"}
+        and int(x.get("retry_count") or 0)>=2
+    ]
+    provider_waiting=[
+        x for x in pending_rows
+        if str(x.get("last_quality") or "").upper() in {"Q3","Q4","Q5",""}
+    ]
+    attention=bool(channel_errors or stuck_high_quality)
+    return {
+        "status":"attention" if attention else "ok",
+        "channel_errors":len(channel_errors),
+        "stuck_high_quality_pending":len(stuck_high_quality),
+        "provider_waiting_pending":len(provider_waiting),
+        "stuck_video_ids":[x.get("video_id") for x in stuck_high_quality if x.get("video_id")],
+        "meaning":"Q1/Q2 text must not remain stuck in pending; Q3-Q5 may legitimately wait for better learning text.",
+    }
+
 def collect(
     list_channel:Callable[[str],list[dict]]=default_list_channel,
     video_metadata:Callable[[str],dict]=default_video_metadata,
@@ -452,10 +473,11 @@ def collect(
         "records":pending_rows,
         "guardrail":"Pending discovery state is outside Source Store/Rule Registry/EventScore. First formal admission occurs only after role-appropriate content quality is available.",
     })
+    health=_intake_health(pending_rows,channel_status)
     status={
-        "version":2,
+        "version":3,
         "generated_at":generated,
-        "status":"baseline_established" if first_run else "ok",
+        "status":"baseline_established" if first_run else health["status"],
         "first_run":first_run,
         "channels":channel_status,
         "discovered_new_videos":0 if first_run else len(discovered),
@@ -465,6 +487,7 @@ def collect(
         "nonforward_timestamp_unknown_admitted":sum(1 for x in appended if x.get("admission")=="research_feed_nonforward_timestamp_unknown"),
         "feed_records_added":added,
         "new_video_diagnostics":appended,
+        "intake_health":health,
         "guardrails":[
             "Initial run only establishes a seen-video baseline; existing videos are not inserted into forward research feed.",
             "New videos with insufficient learning text remain pending; Q1/Q2 text with missing reliable published_at may enter backfill-only semantic learning but can never count as Forward/Promotion.",
@@ -485,6 +508,8 @@ def main():
         "new":out["discovered_new_videos"],
         "added":out["feed_records_added"],
         "errors":sum(1 for x in out["channels"] if x.get("status")!="ok"),
+        "intake_health":out.get("intake_health",{}).get("status"),
+        "stuck_high_quality":out.get("intake_health",{}).get("stuck_high_quality_pending",0),
     },ensure_ascii=False))
 
 if __name__=="__main__":
