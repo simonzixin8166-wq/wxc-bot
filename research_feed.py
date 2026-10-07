@@ -273,12 +273,20 @@ def capture_blog_profile(name: str, days: int = 2) -> list[dict]:
         # Preserve BrightLine's original state filename for backward compatibility.
         if author == "BrightLine" and BLOG_SEEN.exists() and not seen_path.exists():
             seen_path = BLOG_SEEN
+        # If this author has never had a blog seen-state before, the first
+        # successful scan is a recovery/bootstrap of pre-existing material.
+        # Mark it explicitly so downstream Forward Evidence cannot mistake a
+        # collector rollout/backfill for a genuine point-in-time observation.
+        bootstrap_backfill = not seen_path.exists()
         seen = set(_read(seen_path, []))
         fresh = []
         for post in result.get("posts", []):
             pid = post.get("id")
             if pid and pid not in seen:
-                fresh.append(normalize("blog", author, post))
+                row = normalize("blog", author, post)
+                row["intake_class_hint"] = "backfill" if bootstrap_backfill else "live_candidate"
+                row["capture_mode"] = "initial_blog_profile_backfill" if bootstrap_backfill else "scheduled_blog_scan"
+                fresh.append(row)
                 seen.add(pid)
         _write(seen_path, sorted(seen))
         append_records(fresh)
