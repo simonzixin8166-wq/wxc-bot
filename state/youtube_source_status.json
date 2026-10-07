@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "generated_at": "2026-10-07T03:02:28Z",
+  "generated_at": "2026-10-07T07:26:13Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -14,10 +14,11 @@
         "video_id": "wxKcxcjSq5o",
         "title": "美股 MRVL、AMD、ISRG、CEG！三季度财报看什么？10大公司EPS贡献超过490！",
         "url": "https://www.youtube.com/watch?v=wxKcxcjSq5o",
-        "published_at": "",
+        "published_at": "2026-10-07",
         "flat_metadata_keys": [
           "channel_id",
-          "duration"
+          "duration",
+          "rss_published_at"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -37,10 +38,11 @@
         "video_id": "XW0RpReUUbk",
         "title": "2支暴跌老牌传统股！可以买入了？",
         "url": "https://www.youtube.com/watch?v=XW0RpReUUbk",
-        "published_at": "",
+        "published_at": "2026-10-05",
         "flat_metadata_keys": [
           "channel_id",
-          "duration"
+          "duration",
+          "rss_published_at"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -58,7 +60,7 @@
       "listed_videos": 10,
       "latest": {
         "video_id": "pO1eGLrl1lw",
-        "title": "How I've Invested To Build Wealth",
+        "title": "How I'm Investing",
         "url": "https://www.youtube.com/watch?v=pO1eGLrl1lw",
         "published_at": "",
         "flat_metadata_keys": [
