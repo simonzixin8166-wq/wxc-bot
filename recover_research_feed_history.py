@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Recover every research_feed record that ever existed in Git history.
+"""Recover every research_feed record that ever existed in Git history.\n\n# recovery-trigger: 2026-10-07
 
 Safety:
 - current records win;
