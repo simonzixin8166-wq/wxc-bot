@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "generated_at": "2026-10-07T03:01:49Z",
+  "generated_at": "2026-10-07T03:02:28Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -14,11 +14,10 @@
         "video_id": "wxKcxcjSq5o",
         "title": "美股 MRVL、AMD、ISRG、CEG！三季度财报看什么？10大公司EPS贡献超过490！",
         "url": "https://www.youtube.com/watch?v=wxKcxcjSq5o",
-        "published_at": "2026-10-07",
+        "published_at": "",
         "flat_metadata_keys": [
           "channel_id",
-          "duration",
-          "rss_published_at"
+          "duration"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -56,13 +55,16 @@
       "author": "Andrei Jikh",
       "role": "market_context",
       "status": "ok",
-      "listed_videos": 0,
+      "listed_videos": 10,
       "latest": {
-        "video_id": null,
-        "title": null,
-        "url": null,
+        "video_id": "pO1eGLrl1lw",
+        "title": "How I've Invested To Build Wealth",
+        "url": "https://www.youtube.com/watch?v=pO1eGLrl1lw",
         "published_at": "",
-        "flat_metadata_keys": [],
+        "flat_metadata_keys": [
+          "channel_id",
+          "duration"
+        ],
         "transcript_available": false,
         "transcript_chars": 0,
         "content_quality": "unknown_until_needed",
