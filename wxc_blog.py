@@ -243,7 +243,7 @@ def month_range(start: datetime, end: datetime):
 
 
 def collect(profile: dict, start: datetime, end: datetime, outdir: str, delay: float = 2.5,
-            max_articles: int = 180, max_images: int = 80, per_post_images: int = 12):
+            max_articles: int | None = None, max_images: int = 80, per_post_images: int = 12):
     os.makedirs(os.path.join(outdir, "posts"), exist_ok=True)
     os.makedirs(os.path.join(outdir, "images"), exist_ok=True)
 
@@ -269,9 +269,9 @@ def collect(profile: dict, start: datetime, end: datetime, outdir: str, delay: f
 
     posts = []
     image_count = 0
-    for i, row in enumerate(list(links.values())[:max_articles], 1):
+    selected_links=list(links.values()) if max_articles is None else list(links.values())[:max_articles]\n    for i, row in enumerate(selected_links, 1):
         url = row["url"]
-        print(f"[博客文章] {i}/{min(len(links), max_articles)} {url}")
+        print(f"[博客文章] {i}/{len(selected_links)} {url}")
         r = get(url, delay=delay)
         if not r:
             continue
