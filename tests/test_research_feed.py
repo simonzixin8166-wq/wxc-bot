@@ -124,3 +124,21 @@ assert {"tcds_cross_zero","ppo_above_signal","ppo_hist_positive","price_above_ma
 assert all(len(x["evidence_excerpt"])<=180 for x in method_row["method_signals"])
 assert all(len(x["evidence_hash"])==64 for x in method_row["method_signals"])
 print("PASS full-text method signals survive bounded excerpt")
+
+
+# Realistic yifan99 wording: PPO Histogram must not be mislabeled as MACD,
+# and both "向上超过 Signal" + "MA50 后连续两天守住" must be recognized.
+real_phrase=(
+    "PPO = -0.532 ｜ Signal = -0.768 ｜ Histogram = +0.237。"
+    "PPO 本身还在零轴以下。PPO 已经向上超过 Signal，Histogram 也由负转正。"
+    "Early Entry → 等待 MA50 确认。如果接下来价格真正站上 MA50，而且能够连续两天守住，"
+    "同时 TCDS 从 0 继续转正、PPO Histogram 继续扩大。"
+)
+real_signals=rf.extract_method_signals(real_phrase)
+real_ids={x["condition_id"] for x in real_signals}
+assert "ppo_above_signal" in real_ids
+assert "ppo_hist_positive" in real_ids
+assert "price_above_ma50" in real_ids
+assert "ma50_hold_two_sessions" in real_ids
+assert "macd_hist_positive" not in real_ids
+print("PASS realistic PPO/MA50 extraction precision")
