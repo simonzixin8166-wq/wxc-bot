@@ -21,7 +21,6 @@ BLOG_PROFILES = ("BrightLine", "yifan99")
 def blog_seen_path(author: str) -> Path:
     safe = re.sub(r"[^A-Za-z0-9_.-]+", "_", author or "unknown")
     return DATA_DIR / f"seen_blog_{safe}.json"
-MAX_FEED = 1200
 MAX_EXCERPT = 360
 
 THEMES = {
@@ -66,7 +65,8 @@ SYMBOL_ALIASES = {
 
 TICKER_WHITELIST = {
     "INTC","IREN","TSLA","NBIS","CRWV","META","QCOM","MRVL","NVDA","MU","NOW",
-    "PYPL","COIN","AAPL","AMZN","GOOG","GOOGL","QQQ","TQQQ","SMH","SPY","VOO","QLD","VGT"
+    "PYPL","COIN","AAPL","AMZN","GOOG","GOOGL","QQQ","TQQQ","SMH","SPY","VOO","QLD","VGT",
+    "LITE","AMD","MSFT","TSM","AVGO","SOFI","BE","MRVL","AMAT","AAOI","CIEN"
 }
 AMBIGUOUS_TICKERS = {"NOW","MU","META","COIN"}
 
@@ -356,7 +356,8 @@ def append_records(records: list[dict]) -> int:
             changed=True
 
     if changed:
-        feed["records"] = sorted(feed["records"], key=lambda x: x.get("captured_at", ""))[-MAX_FEED:]
+        feed["records"] = sorted(feed["records"], key=lambda x: x.get("captured_at", ""))
+        feed["retention_policy"] = "append_only_no_record_count_cap"
         feed["updated_at"] = now
         _write(FEED_PATH, feed)
     return added
