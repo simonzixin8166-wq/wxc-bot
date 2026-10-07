@@ -50,6 +50,10 @@ def resolve_profile(name: str):
 def archive_url(blog_id: str, year: int, month: int) -> str:
     return f"{BLOG_ROOT}/myblog/{blog_id}/{year:04d}{month:02d}/"
 
+def overview_url(blog_id: str) -> str:
+    """Author overview used as a second discovery path for recent posts."""
+    return f"{BLOG_ROOT}/myoverview/{blog_id}/"
+
 
 def get(url: str, retries: int = 3, delay: float = 2.5):
     """Low-frequency request with bounded retry; no anti-bot bypass."""
@@ -250,6 +254,16 @@ def collect(profile: dict, start: datetime, end: datetime, outdir: str, delay: f
         r = get(url, delay=delay)
         if not r:
             continue
+        for row in parse_archive(r.text, profile["blog_id"]):
+            links[row["url"]] = row
+
+    # A monthly archive can lag or temporarily omit a new post. Merge the
+    # author's overview as an independent recent-post discovery path so the
+    # next scheduled run can recover missed posts without manual insertion.
+    overview = overview_url(profile["blog_id"])
+    print(f"[博客概览] {overview}")
+    r = get(overview, delay=delay)
+    if r:
         for row in parse_archive(r.text, profile["blog_id"]):
             links[row["url"]] = row
 
