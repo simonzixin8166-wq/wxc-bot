@@ -199,8 +199,9 @@ with tempfile.TemporaryDirectory() as td:
     def refresh_meta(url):
         vid=url.split("v=")[-1]
         return {"id":vid,"title":"TITLE "+vid,"webpage_url":url}
+    refresh_phase={"ready":False}
     def refresh_transcript(vid,title="",author=""):
-        if vid=="recover1":
+        if vid=="recover1" and refresh_phase["ready"]:
             return {
               "text":"00:01 "+"完整转录与明确条件。"*250,
               "status":"available","quality":"Q2","provider":"reducer.xgoose.org",
@@ -221,6 +222,7 @@ with tempfile.TemporaryDirectory() as td:
         # Same seen video now has RSS publication metadata. It must be retried
         # with the refreshed entry rather than stale pending metadata.
         refresh_entries["@老李玩钱"][0]["rss_published_at"]="2026-10-07T01:00:00Z"
+        refresh_phase["ready"]=True
         recovered=yt.collect(refresh_list,refresh_meta,refresh_transcript)
         assert recovered["discovered_new_videos"]==0
         assert recovered["pending_retried"]==1
