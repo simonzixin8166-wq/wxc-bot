@@ -35,6 +35,7 @@ try:
     assert r["event_score_eligible"] is False
     assert r["text_hash"]
     assert r["excerpt"]==""
+    assert r["content_filtering"]["filter"]=="youtube_promotion_noise_v1"
 
     m=yla.build_probe({"author":"B","video_id":"macro","title":"Fed","role":"market_context"})
     assert m["historical_learning_eligible"] is True
