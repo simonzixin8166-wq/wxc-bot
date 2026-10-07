@@ -11,7 +11,6 @@ from datetime import datetime
 import os
 import wxc_tg_agent as agent
 import research_feed as rf
-import youtube_research as yt
 
 FORUM_DAILY_PAGES = int(os.getenv("FORUM_DAILY_PAGES", "8"))
 BLOG_RECOVERY_DAYS = int(os.getenv("BLOG_RECOVERY_DAYS", "14"))
@@ -40,10 +39,9 @@ def main():
     forum_added = collect_forum()
     blog_batches = rf.capture_configured_blogs(days=BLOG_RECOVERY_DAYS)
     blog_added = sum(len(rows) for rows in blog_batches.values())
-    youtube = yt.collect()
     day = datetime.now().strftime("%Y-%m-%d")
     digest = rf.daily_digest_text(day)
-    agent.say(digest + f"\n\n本轮新增：论坛 {forum_added} 条；作者博客 {blog_added} 条；YouTube {youtube.get('feed_records_added',0)} 条。")
+    agent.say(digest + f"\n\n本轮新增：论坛 {forum_added} 条；作者博客 {blog_added} 条。YouTube 由独立 youtube-forward-intake 持续采集。")
     print(digest)
 
 if __name__ == "__main__":
