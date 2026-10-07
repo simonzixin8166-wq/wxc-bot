@@ -15,7 +15,12 @@ import wxc_blog as blog
 
 DATA_DIR = Path(os.getenv("DATA_DIR", "state"))
 FEED_PATH = DATA_DIR / "research_feed.json"
-BLOG_SEEN = DATA_DIR / "seen_blog_BrightLine.json"
+BLOG_SEEN = DATA_DIR / "seen_blog_BrightLine.json"  # legacy alias
+BLOG_PROFILES = ("BrightLine", "yifan99")
+
+def blog_seen_path(author: str) -> Path:
+    safe = re.sub(r"[^A-Za-z0-9_.-]+", "_", author or "unknown")
+    return DATA_DIR / f"seen_blog_{safe}.json"
 MAX_FEED = 1200
 MAX_EXCERPT = 360
 
@@ -254,25 +259,38 @@ def append_records(records: list[dict]) -> int:
 def add_forum_posts(author: str, posts: list[dict]) -> int:
     return append_records([normalize("forum", author, p) for p in posts])
 
-def capture_brightline(days: int = 2) -> list[dict]:
-    profile = blog.resolve_profile("BrightLine")
+def capture_blog_profile(name: str, days: int = 2) -> list[dict]:
+    profile = blog.resolve_profile(name)
+    if not profile:
+        return []
+    author = profile["author"]
     end = datetime.now()
     start = end - timedelta(days=days)
-    outdir = tempfile.mkdtemp(prefix="wxc_blog_daily_")
+    outdir = tempfile.mkdtemp(prefix=f"wxc_blog_daily_{author}_")
     try:
-        result = blog.collect(profile, start, end, outdir, delay=2.5, max_articles=30, max_images=0)
-        seen = set(_read(BLOG_SEEN, []))
+        result = blog.collect(profile, start, end, outdir, delay=2.5, max_articles=40, max_images=0)
+        seen_path = blog_seen_path(author)
+        # Preserve BrightLine's original state filename for backward compatibility.
+        if author == "BrightLine" and BLOG_SEEN.exists() and not seen_path.exists():
+            seen_path = BLOG_SEEN
+        seen = set(_read(seen_path, []))
         fresh = []
         for post in result.get("posts", []):
             pid = post.get("id")
             if pid and pid not in seen:
-                fresh.append(normalize("blog", "BrightLine", post))
+                fresh.append(normalize("blog", author, post))
                 seen.add(pid)
-        _write(BLOG_SEEN, sorted(seen))
+        _write(seen_path, sorted(seen))
         append_records(fresh)
         return fresh
     finally:
         shutil.rmtree(outdir, ignore_errors=True)
+
+def capture_brightline(days: int = 2) -> list[dict]:
+    return capture_blog_profile("BrightLine", days=days)
+
+def capture_configured_blogs(days: int = 2) -> dict[str, list[dict]]:
+    return {name: capture_blog_profile(name, days=days) for name in BLOG_PROFILES}
 
 def records_for_day(day: str) -> list[dict]:
     feed = _read(FEED_PATH, {"records": []})
