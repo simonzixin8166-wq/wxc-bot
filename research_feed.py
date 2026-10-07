@@ -225,7 +225,7 @@ def extract_method_signals(text: str) -> list[dict]:
         ("price_below_ma50", r"(?:价格|股价|price)?.{0,36}(?:跌破|低于|below).{0,18}ma\s*50", True),
         ("ma50_hold_two_sessions", r"连续\s*(?:两|2)\s*(?:个)?(?:交易日|天).{0,36}(?:站上|守住|高于).{0,18}ma\s*50", True),
         ("supertrend_bullish", r"supertrend.{0,40}(?:翻多|转多|bull)", True),
-        ("macd_hist_positive", r"(?:macd.{0,40})?(?:柱状图|柱线|histogram).{0,40}(?:负转正|转正|positive)", True),
+        ("macd_hist_positive", r"macd.{0,80}(?:柱状图|柱线|histogram).{0,40}(?:负转正|转正|positive)", True),
     ]
     out=[]
     seen=set()
