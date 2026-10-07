@@ -22,7 +22,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: wxc-research-close
+  group: wxc-research-writer
   cancel-in-progress: true
 
 jobs:
