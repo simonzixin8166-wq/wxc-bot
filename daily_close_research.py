@@ -2,7 +2,7 @@
 """One daily post-close research collection cycle.
 
 Collects:
-- BrightLine blog additions from the recent window
+- configured author blog additions from the recent window
 - new forum posts from the currently subscribed authors
 Then sends one TG digest and leaves normalized records in state/research_feed.json.
 """
@@ -37,11 +37,12 @@ def collect_forum():
 
 def main():
     forum_added = collect_forum()
-    blog_rows = rf.capture_brightline(days=2)
+    blog_batches = rf.capture_configured_blogs(days=2)
+    blog_added = sum(len(rows) for rows in blog_batches.values())
     youtube = yt.collect()
     day = datetime.now().strftime("%Y-%m-%d")
     digest = rf.daily_digest_text(day)
-    agent.say(digest + f"\n\n本轮新增：论坛 {forum_added} 条；BrightLine 博客 {len(blog_rows)} 条；YouTube {youtube.get('feed_records_added',0)} 条。")
+    agent.say(digest + f"\n\n本轮新增：论坛 {forum_added} 条；作者博客 {blog_added} 条；YouTube {youtube.get('feed_records_added',0)} 条。")
     print(digest)
 
 if __name__ == "__main__":
