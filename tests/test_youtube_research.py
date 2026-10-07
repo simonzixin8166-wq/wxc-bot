@@ -234,3 +234,55 @@ with tempfile.TemporaryDirectory() as td:
         yt.SEEN_PATH,yt.STATUS_PATH,yt.PENDING_PATH,rf.FEED_PATH=old_seen,old_status,old_pending,old_feed
 
 print("PASS pending YouTube metadata refresh from live listing")
+
+
+# High-quality YouTube text without a reproducible publication timestamp is
+# useful for semantic learning but must be admitted only as backfill/non-forward.
+with tempfile.TemporaryDirectory() as td:
+    td=Path(td)
+    old_seen,old_status,old_pending,old_feed=yt.SEEN_PATH,yt.STATUS_PATH,yt.PENDING_PATH,rf.FEED_PATH
+    yt.SEEN_PATH=td/"seen_youtube.json"
+    yt.STATUS_PATH=td/"youtube_source_status.json"
+    yt.PENDING_PATH=td/"pending_youtube.json"
+    rf.FEED_PATH=td/"research_feed.json"
+    unknown_entries={
+      "@RhinoFinance":[{"id":"ub","title":"baseline"}],
+      "@老李玩钱":[{"id":"ulb","title":"baseline"}],
+      "@AndreiJikh":[{"id":"uab","title":"baseline"}],
+    }
+    def unknown_list(url):
+        for handle,rows in unknown_entries.items():
+            if handle in url:return rows
+        return []
+    def unknown_meta(url):
+        vid=url.split("v=")[-1]
+        return {"id":vid,"title":"TITLE "+vid,"webpage_url":url}
+    def unknown_transcript(vid,title="",author=""):
+        if vid=="u1":
+            return {
+              "text":"00:01 "+"完整转录与明确条件。"*250,
+              "status":"available","quality":"Q2","provider":"reducer.xgoose.org",
+              "provider_url":"https://reducer.xgoose.org/items/u1",
+              "content_origin":"third_party_transcript","timestamp_evidence":True,
+              "rule_candidate_allowed":True,
+            }
+        return {"text":"","status":"metadata_only","quality":"Q5","provider":"metadata_only",
+                "provider_url":"","content_origin":"metadata_only","timestamp_evidence":False,
+                "rule_candidate_allowed":False}
+    try:
+        yt.collect(unknown_list,unknown_meta,unknown_transcript)
+        unknown_entries["@老李玩钱"].insert(0,{"id":"u1","title":"有正文但缺发布时间"})
+        out=yt.collect(unknown_list,unknown_meta,unknown_transcript)
+        assert out["feed_records_added"]==1
+        assert out["pending_total"]==0
+        assert out["nonforward_timestamp_unknown_admitted"]==1
+        row=yt._read(rf.FEED_PATH,{"records":[]})["records"][-1]
+        assert row["published_at"]==""
+        assert row["intake_class_hint"]=="backfill"
+        assert row["capture_mode"]=="youtube_timestamp_unknown_learning"
+        assert row["timestamp_confidence"]=="missing"
+        assert row["forward_evidence_eligible"] is False
+    finally:
+        yt.SEEN_PATH,yt.STATUS_PATH,yt.PENDING_PATH,rf.FEED_PATH=old_seen,old_status,old_pending,old_feed
+
+print("PASS timestamp-unknown YouTube text is learning-only/backfill")
