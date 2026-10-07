@@ -73,3 +73,8 @@ assert "逆向交易" in themes
 assert "止损纪律" in themes
 assert "风险管理" in themes
 assert "趋势确认" in themes
+
+
+assert "BrightLine" in rf.BLOG_PROFILES
+assert "yifan99" in rf.BLOG_PROFILES
+assert rf.blog_seen_path("yifan99").name == "seen_blog_yifan99.json"
