@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-07T02:54:14Z",
+  "generated_at": "2026-10-07T02:59:22Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -37,10 +37,11 @@
         "video_id": "XW0RpReUUbk",
         "title": "2支暴跌老牌传统股！可以买入了？",
         "url": "https://www.youtube.com/watch?v=XW0RpReUUbk",
-        "published_at": "",
+        "published_at": "2026-10-05",
         "flat_metadata_keys": [
           "channel_id",
-          "duration"
+          "duration",
+          "rss_published_at"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -76,9 +77,9 @@
   ],
   "discovered_new_videos": 0,
   "pending_retried": 3,
-  "pending_total": 3,
-  "admitted_from_pending": 0,
-  "feed_records_added": 0,
+  "pending_total": 2,
+  "admitted_from_pending": 1,
+  "feed_records_added": 1,
   "new_video_diagnostics": [
     {
       "author": "RhinoFinance / 视野环球财经",
@@ -95,12 +96,19 @@
       "author": "老李玩钱",
       "video_id": "XW0RpReUUbk",
       "title": "2支暴跌老牌传统股！可以买入了？",
+      "published_at": "2026-10-05",
+      "transcript_status": "available",
       "content_quality": "Q2",
       "content_provider": "reducer.xgoose.org",
       "rule_candidate_allowed": true,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_published_at"
+      "content_chars": 3457,
+      "symbols": [
+        "TSLA",
+        "NVDA"
+      ],
+      "operations": 2,
+      "admission": "research_feed",
+      "was_pending": true
     },
     {
       "author": "RhinoFinance / 视野环球财经",

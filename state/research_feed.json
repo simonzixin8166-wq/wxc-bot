@@ -2,27 +2,6 @@
   "version": 1,
   "records": [
     {
-      "id": "41f64bcc7434f6e149d8",
-      "source": "wenxuecity",
-      "source_kind": "forum",
-      "author": "三心三意",
-      "published_at": "2026-10-01 09:14:48",
-      "title": "出租车司机也能看到存储PE小于10，这个信息对投资的作用是“零”",
-      "url": "https://bbs.wenxuecity.com/cfzh/112840.html",
-      "excerpt": "",
-      "content_chars": 0,
-      "images_count": 0,
-      "themes_hint": [
-        "其他研究"
-      ],
-      "symbols": [],
-      "operations": [],
-      "portfolio_rules": [],
-      "lessons": [],
-      "captured_at": "2026-10-01T23:38:33Z",
-      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。"
-    },
-    {
       "id": "5fb99a42ef203bcaa0f8",
       "source": "wenxuecity",
       "source_kind": "forum",
@@ -26086,7 +26065,65 @@
       "lessons": [],
       "captured_at": "2026-10-07T02:43:26Z",
       "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。"
+    },
+    {
+      "id": "efbda19f1c2a3cae8c17",
+      "source": "youtube",
+      "source_kind": "video",
+      "author": "老李玩钱",
+      "published_at": "2026-10-05",
+      "title": "2支暴跌老牌传统股！可以买入了？",
+      "url": "https://www.youtube.com/watch?v=XW0RpReUUbk",
+      "excerpt": "洛杉矶吴彦祖在线说谷这几天呢南加州这边实在是太热了今天录完这期视频我就得把西瓜给杀开吃掉屈居火牙牙精最近有两只美国的老牌传统股股价都遭遇了暴跌一只是下跌了30%另一只更吓人从高点已经是跌去了80%这已经不是腰斩了已经是斩到了脚脖子了那有些朋友就来问我说老李这两只股票现在能不能去抄底能不能买入今天这期视频我就来跟大家做一波分析以及它聊一聊我的一些看法和建议但是咱们说正事之前依照国际惯例还是先来跟大家量账户今天美股三大指数全部收率我的账户上涨了2600多美金当前的账户总资产来到了33万8千多我的这个账户又在创历史新高今天要跟大家说的第一支暴跌的老牌传统股呢就是耐克股票代码是NKE耐克这只股票从2021年的高点163一路下跌跌到了现在的33块多这个价格这个股价已经是跌了80%以上那朋友们肯定不禁要问了说耐克这支股票的",
+      "content_chars": 3457,
+      "images_count": 0,
+      "themes_hint": [
+        "风险管理",
+        "失败复盘",
+        "长期持有纪律",
+        "TSLA"
+      ],
+      "symbols": [
+        "TSLA",
+        "NVDA"
+      ],
+      "operations": [
+        {
+          "symbols": [
+            "NVDA"
+          ],
+          "actions": [
+            "buy"
+          ],
+          "attribution": "unconfirmed_author_context",
+          "attribution_confidence": "needs_review"
+        },
+        {
+          "symbols": [
+            "TSLA",
+            "NVDA"
+          ],
+          "actions": [
+            "add",
+            "buy"
+          ],
+          "attribution": "unconfirmed_author_context",
+          "attribution_confidence": "needs_review"
+        }
+      ],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-07T02:59:11Z",
+      "source_role": "rule_supply",
+      "transcript_status": "available",
+      "content_quality": "Q2",
+      "content_provider": "reducer.xgoose.org",
+      "content_provider_url": "https://reducer.xgoose.org/items/4040",
+      "content_origin": "third_party_transcript",
+      "timestamp_evidence": true,
+      "rule_candidate_allowed": true,
+      "source_notice": "公开视频研究来源；仅保存短摘录与原视频链接。作者观点属于未验证假设，MyAlpha需独立验证后才可进入正式证据。"
     }
   ],
-  "updated_at": "2026-10-07T02:43:26Z"
+  "updated_at": "2026-10-07T02:59:22Z"
 }
