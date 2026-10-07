@@ -25,6 +25,7 @@ ARTICLE = """
 
 assert blog.resolve_profile("BRGHTLINE")["blog_id"] == "82458"
 assert blog.resolve_profile("亮线留痕")["author"] == "BrightLine"
+assert blog.resolve_profile("yifan99")["blog_id"] == "31983"
 
 rows = blog.parse_archive(ARCHIVE, "82458")
 assert len(rows) == 1
