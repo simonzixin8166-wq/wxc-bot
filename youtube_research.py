@@ -288,6 +288,7 @@ def collect(
 
     discovered=[]
     channel_status=[]
+    current_entries={}
     for ch in CHANNELS:
         handle=ch["handle"]
         url=f"https://www.youtube.com/{handle}/videos"
@@ -321,10 +322,13 @@ def collect(
                 "latest":sample,"transcript_probe":transcript_probe,
             })
 
-            if not first_run:
-                for e in entries:
-                    vid=_video_id(e)
-                    if vid and vid not in seen:
+            for e in entries:
+                vid=_video_id(e)
+                if vid:
+                    # Keep the freshest flat/RSS metadata even for videos that
+                    # were already marked seen and are waiting in pending.
+                    current_entries[vid]=(ch,e)
+                    if not first_run and vid not in seen:
                         discovered.append((ch,e))
             seen.update(ids)
         except Exception as exc:
@@ -338,15 +342,29 @@ def collect(
     # disappear from the latest-10 channel window.
     work={}
     for vid,old in pending.items():
-        ch=channels_by_handle.get(old.get("handle")) or channels_by_author.get(old.get("author"))
+        fresh=current_entries.get(vid)
+        ch=(fresh[0] if fresh else None) or channels_by_handle.get(old.get("handle")) or channels_by_author.get(old.get("author"))
         if not ch:
             continue
-        work[vid]=(ch,{
-            "id":vid,
-            "title":old.get("title") or "",
-            "webpage_url":old.get("url") or _canonical_video_url(vid),
-            "rss_published_at":old.get("published_at") or "",
-        },old,True)
+        if fresh:
+            # Critical recovery path: a video may first be discovered before
+            # yt-dlp/RSS exposes a publication timestamp. On later runs the
+            # live channel listing can contain better metadata, so retry with
+            # that fresh entry instead of the stale pending snapshot.
+            entry=dict(fresh[1])
+            entry.setdefault("id",vid)
+            if not entry.get("title"):entry["title"]=old.get("title") or ""
+            if not entry.get("webpage_url"):entry["webpage_url"]=old.get("url") or _canonical_video_url(vid)
+            if not _entry_published(entry) and old.get("published_at"):
+                entry["rss_published_at"]=old.get("published_at")
+        else:
+            entry={
+                "id":vid,
+                "title":old.get("title") or "",
+                "webpage_url":old.get("url") or _canonical_video_url(vid),
+                "rss_published_at":old.get("published_at") or "",
+            }
+        work[vid]=(ch,entry,old,True)
     for ch,entry in discovered:
         vid=_video_id(entry)
         work[vid]=(ch,entry,pending.get(vid),False)
