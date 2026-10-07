@@ -1,0 +1,60 @@
+name: youtube-forward-intake
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "youtube_research.py"
+      - "transcript_router.py"
+      - "tests/test_youtube_research.py"
+      - "tests/test_transcript_router.py"
+      - ".github/workflows/youtube-forward-intake.yml"
+  schedule:
+    # Frequent lightweight discovery; unresolved transcripts remain pending
+    # and are retried without fabricating publication timestamps or evidence.
+    - cron: "17 */2 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: wxc-research-writer
+  cancel-in-progress: false
+
+jobs:
+  youtube-forward:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Validate YouTube forward intake
+        run: |
+          python -m py_compile youtube_research.py transcript_router.py research_feed.py
+          PYTHONPATH=. python tests/test_youtube_research.py
+          PYTHONPATH=. python tests/test_transcript_router.py
+
+      - name: Collect YouTube forward research
+        env:
+          DATA_DIR: state
+          TRANSCRIPT_FAST_MODE: "1"
+        run: python youtube_research.py
+
+      - name: Save YouTube forward state
+        if: always()
+        run: |
+          git config user.name "wxc-bot"
+          git config user.email "wxc-bot@users.noreply.github.com"
+          git add state/seen_youtube.json state/pending_youtube.json state/youtube_source_status.json state/research_feed.json
+          git diff --cached --quiet || (git commit -m "update YouTube forward research" && git pull --rebase origin main && git push origin HEAD:main)
