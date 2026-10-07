@@ -25671,6 +25671,14 @@
           "state_hint": "EARLY_ENTRY"
         },
         {
+          "condition_id": "ppo_above_signal",
+          "machine_ready": false,
+          "evidence_excerpt": "PPO = -0.532 ｜ Signal = -0.768 ｜ Histogram = +0.237 PPO 本身还在零轴以下，所以 Amazon 还不能算真正进入强趋势。但是一个重要变化已经出现： PPO 已经向上超过 Signal，Histogram 也由负转正。",
+          "evidence_hash": "7df412d613cfd78b4b369be48ea5d1870788eaab17df03caa0290d875a6b3847",
+          "source_derived_only": true,
+          "state_hint": "EARLY_ENTRY"
+        },
+        {
           "condition_id": "ppo_hist_positive",
           "machine_ready": false,
           "evidence_excerpt": "PPO = -0.532 ｜ Signal = -0.768 ｜ Histogram = +0.237 PPO 本身还在零轴以下，所以 Amazon 还不能算真正进入强趋势。但是一个重要变化已经出现： PPO 已经向上超过 Signal，Histogram 也由负转正。",
@@ -25685,9 +25693,17 @@
           "evidence_hash": "0d51291a9e9cc97a8b716f4a17fc63919f5c967b45d972ac8d745055af125b1a",
           "source_derived_only": true,
           "state_hint": "EARLY_ENTRY"
+        },
+        {
+          "condition_id": "ma50_hold_two_sessions",
+          "machine_ready": true,
+          "evidence_excerpt": "。这也是为什么我还不会说：“Amazon 已经突破，可以追了。” Early Entry → 等待 MA50 确认 如果接下来价格真正站上 MA50，而且能够连续两天守住，同时 TCDS 从 0 继续转正、PPO Histogram 继续扩大，那么性质就不一样了。",
+          "evidence_hash": "0d51291a9e9cc97a8b716f4a17fc63919f5c967b45d972ac8d745055af125b1a",
+          "source_derived_only": true,
+          "state_hint": "EARLY_ENTRY"
         }
       ],
-      "method_signals_enriched_at": "2026-10-07T03:31:35Z"
+      "method_signals_enriched_at": "2026-10-07T03:36:10Z"
     },
     {
       "id": "5377eb61a5db0e089b1c",
@@ -25778,9 +25794,17 @@
           "evidence_hash": "a83af1e7ee20615c971b890b9131277b4e0df26dd60b3966f86f07c352761af1",
           "source_derived_only": true,
           "state_hint": "EARLY_ENTRY"
+        },
+        {
+          "condition_id": "ma50_hold_two_sessions",
+          "machine_ready": true,
+          "evidence_excerpt": "价格首次站上 MA50，市场开始验证 Early Entry。 Stage 3 — Confirmation： 连续两个交易日站在 MA50 上方，同时 TCDS-D 与 MACD 没有恶化，进入趋势持有阶段。",
+          "evidence_hash": "cd84ccedbd132c1d287b8742334ba9ddf6c72b620745e2b6c3c34962c777112b",
+          "source_derived_only": true,
+          "state_hint": "EARLY_ENTRY"
         }
       ],
-      "method_signals_enriched_at": "2026-10-07T03:26:29Z"
+      "method_signals_enriched_at": "2026-10-07T03:36:10Z"
     },
     {
       "id": "9666f1f9a28236f6b04d",
@@ -25930,6 +25954,14 @@
           "state_hint": "EARLY_ENTRY"
         },
         {
+          "condition_id": "ma50_hold_two_sessions",
+          "machine_ready": true,
+          "evidence_excerpt": "同时下面的动量指标也没有确认突破。图中 TCDS = -65，MACD = -0.657，MACD 柱仍在零轴下方，说明这次上穿并没有得到动量配合。因此目前不能把前面的 E/E+ 当成有效趋势反转，更合理的是把它看成一次 early entry 失败。 我现在会重点看三个区域： - 250–253：第一道确认区。AMZN 必须重新站回 MA21/MA50，并",
+          "evidence_hash": "48fe7fadf6552da5b555d3a726f2ecb1c7b0e419a04c719d334acc3fbf6c4f62",
+          "source_derived_only": true,
+          "state_hint": "EARLY_ENTRY"
+        },
+        {
           "condition_id": "price_below_ma50",
           "machine_ready": true,
           "evidence_excerpt": "这套系统里，暂时把 AMZN 的信号写成： AMZN 9/29: FALSE BREAK ? Price 246.67 | Below MA21/MA50 | TCDS -65 | MACD 0",
@@ -25938,7 +25970,7 @@
           "state_hint": "EARLY_ENTRY"
         }
       ],
-      "method_signals_enriched_at": "2026-10-07T03:26:29Z"
+      "method_signals_enriched_at": "2026-10-07T03:36:10Z"
     },
     {
       "id": "e115e9890dd8407ffaac",
@@ -26321,5 +26353,5 @@
       "source_notice": "公开视频研究来源；仅保存短摘录与原视频链接。作者观点属于未验证假设，MyAlpha需独立验证后才可进入正式证据。"
     }
   ],
-  "updated_at": "2026-10-07T03:31:35Z"
+  "updated_at": "2026-10-07T03:36:10Z"
 }
