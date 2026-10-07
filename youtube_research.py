@@ -306,15 +306,16 @@ def collect(
                     if newest.get(k) is not None
                 ),
             }
-            transcript_probe="not_probed"
-            if sample["video_id"]:
-                aq=_acq(transcript_fetcher,sample["video_id"],sample.get("title") or "",ch["author"])
-                transcript_probe=aq.get("status")
-                sample["transcript_available"]=bool(aq.get("text"))
-                sample["transcript_chars"]=len(aq.get("text") or "")
-                sample["content_quality"]=aq.get("quality","Q5")
-                sample["content_provider"]=aq.get("provider","metadata_only")
-                sample["rule_candidate_allowed"]=bool(aq.get("rule_candidate_allowed"))
+            # Discovery/status must stay lightweight. Transcript acquisition is
+            # performed only for newly discovered or pending videos below.
+            # Probing every channel latest here duplicated expensive provider
+            # calls and could stall the whole post-close collection cycle.
+            transcript_probe="deferred_to_worklist"
+            sample["transcript_available"]=False
+            sample["transcript_chars"]=0
+            sample["content_quality"]="unknown_until_needed"
+            sample["content_provider"]="not_probed"
+            sample["rule_candidate_allowed"]=False
 
             channel_status.append({
                 "handle":handle,"author":ch["author"],"role":ch["role"],
