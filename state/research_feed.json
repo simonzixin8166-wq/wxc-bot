@@ -2,69 +2,6 @@
   "version": 1,
   "records": [
     {
-      "id": "d0a89a91d7da0604eb72",
-      "source": "wenxuecity",
-      "source_kind": "forum",
-      "author": "三心三意",
-      "published_at": "2026-10-01 08:28:19",
-      "title": "To the moon, lol",
-      "url": "https://bbs.wenxuecity.com/cfzh/112834.html",
-      "excerpt": "",
-      "content_chars": 0,
-      "images_count": 0,
-      "themes_hint": [
-        "其他研究"
-      ],
-      "symbols": [],
-      "operations": [],
-      "portfolio_rules": [],
-      "lessons": [],
-      "captured_at": "2026-10-01T23:38:33Z",
-      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。"
-    },
-    {
-      "id": "caa68f2c14fb21d175cd",
-      "source": "wenxuecity",
-      "source_kind": "forum",
-      "author": "三心三意",
-      "published_at": "2026-10-01 09:09:50",
-      "title": "hahah, yield 掉了整整10bps :)",
-      "url": "https://bbs.wenxuecity.com/cfzh/112838.html",
-      "excerpt": "",
-      "content_chars": 0,
-      "images_count": 0,
-      "themes_hint": [
-        "其他研究"
-      ],
-      "symbols": [],
-      "operations": [],
-      "portfolio_rules": [],
-      "lessons": [],
-      "captured_at": "2026-10-01T23:38:33Z",
-      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。"
-    },
-    {
-      "id": "1ab8248750d8080bbdbf",
-      "source": "wenxuecity",
-      "source_kind": "forum",
-      "author": "三心三意",
-      "published_at": "2026-10-01 09:13:23",
-      "title": "“会不会28年封顶” --- 这是个$$B 的问题。所以投资存储，忘掉PE和PEG，花时间研究它的工业周期来做决定",
-      "url": "https://bbs.wenxuecity.com/cfzh/112839.html",
-      "excerpt": "",
-      "content_chars": 0,
-      "images_count": 0,
-      "themes_hint": [
-        "其他研究"
-      ],
-      "symbols": [],
-      "operations": [],
-      "portfolio_rules": [],
-      "lessons": [],
-      "captured_at": "2026-10-01T23:38:33Z",
-      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。"
-    },
-    {
       "id": "41f64bcc7434f6e149d8",
       "source": "wenxuecity",
       "source_kind": "forum",
@@ -26086,7 +26023,70 @@
       "lessons": [],
       "captured_at": "2026-10-07T01:44:23Z",
       "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。"
+    },
+    {
+      "id": "895e9d7f37e12e608c90",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-06 18:42:00",
+      "title": "人人都说， 打败大盘是不可能的。 可以直面自己的内心问问自己能不能做到上面这些。如果不能，确实很难打败",
+      "url": "https://bbs.wenxuecity.com/cfzh/113991.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-07T02:43:26Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。"
+    },
+    {
+      "id": "c9984e58c555586c16b2",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-06 19:12:00",
+      "title": "硅和玻璃合成的路还很长。如果CBRS能马上提高产能和良率，可以吃短期2年内的红利。",
+      "url": "https://bbs.wenxuecity.com/cfzh/113999.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-07T02:43:26Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。"
+    },
+    {
+      "id": "765763bce9956ebd1540",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-06 19:13:00",
+      "title": "这个一点像BE，也就是吃几年能源监管进展缓慢的红利",
+      "url": "https://bbs.wenxuecity.com/cfzh/114001.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-07T02:43:26Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。"
     }
   ],
-  "updated_at": "2026-10-07T01:44:23Z"
+  "updated_at": "2026-10-07T02:43:26Z"
 }
