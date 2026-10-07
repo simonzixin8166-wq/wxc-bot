@@ -25679,14 +25679,6 @@
           "state_hint": "EARLY_ENTRY"
         },
         {
-          "condition_id": "macd_hist_positive",
-          "machine_ready": true,
-          "evidence_excerpt": "PPO = -0.532 ｜ Signal = -0.768 ｜ Histogram = +0.237 PPO 本身还在零轴以下，所以 Amazon 还不能算真正进入强趋势。但是一个重要变化已经出现： PPO 已经向上超过 Signal，Histogram 也由负转正。",
-          "evidence_hash": "7df412d613cfd78b4b369be48ea5d1870788eaab17df03caa0290d875a6b3847",
-          "source_derived_only": true,
-          "state_hint": "EARLY_ENTRY"
-        },
-        {
           "condition_id": "price_above_ma50",
           "machine_ready": true,
           "evidence_excerpt": "。这也是为什么我还不会说：“Amazon 已经突破，可以追了。” Early Entry → 等待 MA50 确认 如果接下来价格真正站上 MA50，而且能够连续两天守住，同时 TCDS 从 0 继续转正、PPO Histogram 继续扩大，那么性质就不一样了。",
@@ -25695,7 +25687,7 @@
           "state_hint": "EARLY_ENTRY"
         }
       ],
-      "method_signals_enriched_at": "2026-10-07T03:26:29Z"
+      "method_signals_enriched_at": "2026-10-07T03:31:35Z"
     },
     {
       "id": "5377eb61a5db0e089b1c",
@@ -26329,5 +26321,5 @@
       "source_notice": "公开视频研究来源；仅保存短摘录与原视频链接。作者观点属于未验证假设，MyAlpha需独立验证后才可进入正式证据。"
     }
   ],
-  "updated_at": "2026-10-07T03:26:29Z"
+  "updated_at": "2026-10-07T03:31:35Z"
 }
