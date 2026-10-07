@@ -14,6 +14,7 @@ import research_feed as rf
 import youtube_research as yt
 
 FORUM_DAILY_PAGES = int(os.getenv("FORUM_DAILY_PAGES", "8"))
+BLOG_RECOVERY_DAYS = int(os.getenv("BLOG_RECOVERY_DAYS", "14"))
 
 def collect_forum():
     authors = agent.load_watch()
@@ -37,7 +38,7 @@ def collect_forum():
 
 def main():
     forum_added = collect_forum()
-    blog_batches = rf.capture_configured_blogs(days=2)
+    blog_batches = rf.capture_configured_blogs(days=BLOG_RECOVERY_DAYS)
     blog_added = sum(len(rows) for rows in blog_batches.values())
     youtube = yt.collect()
     day = datetime.now().strftime("%Y-%m-%d")
