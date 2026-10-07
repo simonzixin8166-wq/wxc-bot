@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T02:27:06Z",
+  "updated_at": "2026-10-07T01:19:51Z",
   "records": [
     {
       "video_id": "lWd7zsWV-4I",
@@ -11,8 +11,8 @@
       "url": "https://www.youtube.com/watch?v=lWd7zsWV-4I",
       "published_at": "",
       "first_discovered_at": "2026-10-06T02:27:04Z",
-      "last_checked_at": "2026-10-06T02:27:04Z",
-      "retry_count": 1,
+      "last_checked_at": "2026-10-07T01:19:43Z",
+      "retry_count": 2,
       "last_quality": "Q5",
       "last_provider": "metadata_only",
       "last_status": "metadata_only",
@@ -27,11 +27,27 @@
       "url": "https://www.youtube.com/watch?v=XW0RpReUUbk",
       "published_at": "",
       "first_discovered_at": "2026-10-06T02:27:06Z",
-      "last_checked_at": "2026-10-06T02:27:06Z",
-      "retry_count": 1,
+      "last_checked_at": "2026-10-07T01:19:46Z",
+      "retry_count": 2,
       "last_quality": "Q2",
       "last_provider": "reducer.xgoose.org",
       "last_status": "available",
+      "last_error": null
+    },
+    {
+      "video_id": "wxKcxcjSq5o",
+      "handle": "@RhinoFinance",
+      "author": "RhinoFinance / 视野环球财经",
+      "role": "rule_supply",
+      "title": "美股 MRVL、AMD、ISRG、CEG！三季度财报看什么？10大公司EPS贡献超过490！",
+      "url": "https://www.youtube.com/watch?v=wxKcxcjSq5o",
+      "published_at": "",
+      "first_discovered_at": "2026-10-07T01:19:51Z",
+      "last_checked_at": "2026-10-07T01:19:51Z",
+      "retry_count": 1,
+      "last_quality": "Q5",
+      "last_provider": "metadata_only",
+      "last_status": "metadata_only",
       "last_error": null
     }
   ],

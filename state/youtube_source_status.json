@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-06T02:27:06Z",
+  "generated_at": "2026-10-07T01:19:51Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -11,9 +11,9 @@
       "status": "ok",
       "listed_videos": 10,
       "latest": {
-        "video_id": "lWd7zsWV-4I",
-        "title": "美股 NVDA、TSM、MSFT！对冲基金：不加仓，等抬轿子！标普各种相关性瓦解！",
-        "url": "https://www.youtube.com/watch?v=lWd7zsWV-4I",
+        "video_id": "wxKcxcjSq5o",
+        "title": "美股 MRVL、AMD、ISRG、CEG！三季度财报看什么？10大公司EPS贡献超过490！",
+        "url": "https://www.youtube.com/watch?v=wxKcxcjSq5o",
         "published_at": "",
         "flat_metadata_keys": [
           "channel_id",
@@ -58,25 +58,25 @@
       "listed_videos": 10,
       "latest": {
         "video_id": "pO1eGLrl1lw",
-        "title": "How I'm Investing",
+        "title": "How I've Invested To Build Wealth",
         "url": "https://www.youtube.com/watch?v=pO1eGLrl1lw",
         "published_at": "",
         "flat_metadata_keys": [
           "channel_id",
           "duration"
         ],
-        "transcript_available": false,
-        "transcript_chars": 0,
-        "content_quality": "Q5",
-        "content_provider": "metadata_only",
+        "transcript_available": true,
+        "transcript_chars": 733,
+        "content_quality": "Q4",
+        "content_provider": "pickscribe.com",
         "rule_candidate_allowed": false
       },
-      "transcript_probe": "metadata_only"
+      "transcript_probe": "available"
     }
   ],
-  "discovered_new_videos": 2,
-  "pending_retried": 0,
-  "pending_total": 2,
+  "discovered_new_videos": 1,
+  "pending_retried": 2,
+  "pending_total": 3,
   "admitted_from_pending": 0,
   "feed_records_added": 0,
   "new_video_diagnostics": [
@@ -88,7 +88,7 @@
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
       "admission": "pending_content",
-      "was_pending": false,
+      "was_pending": true,
       "pending_reason": "missing_published_at"
     },
     {
@@ -98,6 +98,17 @@
       "content_quality": "Q2",
       "content_provider": "reducer.xgoose.org",
       "rule_candidate_allowed": true,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_published_at"
+    },
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "wxKcxcjSq5o",
+      "title": "美股 MRVL、AMD、ISRG、CEG！三季度财报看什么？10大公司EPS贡献超过490！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
       "admission": "pending_content",
       "was_pending": false,
       "pending_reason": "missing_published_at"
