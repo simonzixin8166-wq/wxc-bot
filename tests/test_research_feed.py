@@ -78,3 +78,35 @@ assert "趋势确认" in themes
 assert "BrightLine" in rf.BLOG_PROFILES
 assert "yifan99" in rf.BLOG_PROFILES
 assert rf.blog_seen_path("yifan99").name == "seen_blog_yifan99.json"
+
+
+# Full-text method extraction must survive the public 360-char excerpt cap.
+# The later PPO/MA50 conditions are intentionally placed after the excerpt.
+long_method_text=(
+    "AMZN趋势观察。" + "前文背景说明。"*80 +
+    "\nTCDS 从深度负值持续回升，今天 TCDS = 0。"
+    "\nPPO 已经向上交叉 Signal，Histogram 从负值转正。"
+    "\n价格随后站上 MA50；如果连续两个交易日守住 MA50，再视为趋势确认。"
+)
+signals=rf.extract_method_signals(long_method_text)
+ids={x["condition_id"] for x in signals}
+assert "tcds_cross_zero" in ids
+assert "ppo_above_signal" in ids
+assert "ppo_hist_positive" in ids
+assert "price_above_ma50" in ids
+assert "ma50_hold_two_sessions" in ids
+assert next(x for x in signals if x["condition_id"]=="price_above_ma50")["machine_ready"] is True
+assert next(x for x in signals if x["condition_id"]=="ppo_above_signal")["machine_ready"] is False
+
+method_row=rf.normalize("blog","yifan99",{
+    "title":"Amazon，要突破了？","text":long_method_text,
+    "url":"https://blog.wenxuecity.com/myblog/31983/202610/3830.html",
+    "date":"2026-10-06","images":[]
+})
+assert len(method_row["excerpt"])<=rf.MAX_EXCERPT
+assert "PPO" not in method_row["excerpt"]  # proves the old excerpt-only path would miss it
+method_ids={x["condition_id"] for x in method_row["method_signals"]}
+assert {"tcds_cross_zero","ppo_above_signal","ppo_hist_positive","price_above_ma50","ma50_hold_two_sessions"} <= method_ids
+assert all(len(x["evidence_excerpt"])<=180 for x in method_row["method_signals"])
+assert all(len(x["evidence_hash"])==64 for x in method_row["method_signals"])
+print("PASS full-text method signals survive bounded excerpt")
