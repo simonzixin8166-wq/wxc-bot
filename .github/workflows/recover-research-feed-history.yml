@@ -28,6 +28,9 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Install collector dependencies
+        run: pip install -r requirements.txt
+
       - name: Recover every historical research feed record
         run: python recover_research_feed_history.py
 
