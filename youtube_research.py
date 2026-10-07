@@ -241,7 +241,7 @@ def make_feed_row(channel:dict, meta:dict, acquisition:dict)->dict:
             "lessons":[],
         }
     return {
-        "id":_key(channel["author"],url,published,title),
+        "id":hashlib.sha1(("youtube|"+channel["author"]+"|"+vid).encode("utf-8")).hexdigest()[:20],
         "source":"youtube",
         "source_kind":"video",
         "author":channel["author"],
@@ -389,9 +389,20 @@ def collect(
                         pass
                 aq=_acq(transcript_fetcher,vid,str(meta.get("title") or ""),ch["author"])
                 published=_entry_published(meta)
-                ready=_content_ready(ch,aq) and bool(published)
-                if ready:
+                content_ready=_content_ready(ch,aq)
+                ready=content_ready and bool(published)
+                learning_only=content_ready and not bool(published)
+                if ready or learning_only:
                     row=make_feed_row(ch,meta,aq)
+                    if learning_only:
+                        # We have enough text to learn from, but publication time
+                        # is not reproducible. Preserve the knowledge while
+                        # permanently failing closed for Forward/Promotion.
+                        row["intake_class_hint"]="backfill"
+                        row["capture_mode"]="youtube_timestamp_unknown_learning"
+                        row["timestamp_confidence"]="missing"
+                        row["forward_evidence_eligible"]=False
+                        row["source_notice"]="YouTube正文可用于非Forward语义学习；可靠发布时间缺失，因此强制按backfill处理，禁止计入Forward Evidence或Promotion。"
                     rows.append(row)
                     next_pending.pop(vid,None)
                     if was_pending:
@@ -402,7 +413,8 @@ def collect(
                         "content_quality":row["content_quality"],"content_provider":row["content_provider"],
                         "rule_candidate_allowed":row["rule_candidate_allowed"],
                         "content_chars":row["content_chars"],"symbols":row["symbols"],
-                        "operations":len(row["operations"]),"admission":"research_feed",
+                        "operations":len(row["operations"]),
+                        "admission":"research_feed_nonforward_timestamp_unknown" if learning_only else "research_feed",
                         "was_pending":was_pending,
                     })
                 else:
@@ -414,7 +426,7 @@ def collect(
                         "content_provider":aq.get("provider","metadata_only"),
                         "rule_candidate_allowed":bool(aq.get("rule_candidate_allowed")),
                         "admission":"pending_content","was_pending":was_pending,
-                        "pending_reason":"missing_published_at" if not _entry_published(meta) else "insufficient_content",
+                        "pending_reason":"missing_learning_text" if not content_ready else "missing_published_at",
                     })
             except Exception as exc:
                 fallback_meta={
@@ -450,11 +462,12 @@ def collect(
         "pending_retried":0 if first_run else sum(1 for _,_,_,was_pending in work.values() if was_pending),
         "pending_total":len(pending_rows),
         "admitted_from_pending":admitted_from_pending,
+        "nonforward_timestamp_unknown_admitted":sum(1 for x in appended if x.get("admission")=="research_feed_nonforward_timestamp_unknown"),
         "feed_records_added":added,
         "new_video_diagnostics":appended,
         "guardrails":[
             "Initial run only establishes a seen-video baseline; existing videos are not inserted into forward research feed.",
-            "New videos with insufficient learning text or missing reliable published_at remain pending and do not enter Source Store or formal forward evidence.",
+            "New videos with insufficient learning text remain pending; Q1/Q2 text with missing reliable published_at may enter backfill-only semantic learning but can never count as Forward/Promotion.",
             "Rule-supply sources require Q1/Q2 rule-eligible text for first research-feed admission.",
             "Market-context sources may enter with Q1-Q4 text; Q3/Q4 remain non-rule-eligible.",
             "Collector never downloads video/audio and stores only bounded transcript excerpts.",
