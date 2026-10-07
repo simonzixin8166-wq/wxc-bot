@@ -109,6 +109,36 @@ def _sentences(text: str) -> list[str]:
             out.extend(x.strip() for x in re.split(r"(?<=[。！？；])", line) if x.strip())
     return out
 
+YOUTUBE_PROMOTION_HINTS=(
+    "开户链接","开户福利","开户奖励","入金","转仓","免费股票","免费股",
+    "现金券","碎股礼包","免佣","moomoo","webull","tradeup","老虎证券",
+    "邀请链接","粉丝专属","新用户","开户即享","存入",
+)
+
+def filter_youtube_promotion_noise(text: str) -> tuple[str, dict]:
+    """Remove obvious brokerage/sponsor units before semantic learning.
+
+    The raw acquired transcript is never rewritten or persisted here. This
+    filter only controls what can feed symbol/topic/operation extraction, so a
+    sponsor saying "deposit to receive NVDA/TSLA" cannot become an investment
+    subject or author action.
+    """
+    kept=[]; removed=[]; units=_sentences(text)
+    for unit in units:
+        low=unit.lower()
+        if any(h.lower() in low for h in YOUTUBE_PROMOTION_HINTS):
+            removed.append(unit)
+        else:
+            kept.append(unit)
+    filtered="\n".join(kept).strip()
+    return filtered,{
+        "filter":"youtube_promotion_noise_v1",
+        "input_units":len(units),
+        "removed_units":len(removed),
+        "removed_ratio":(len(removed)/len(units) if units else 0.0),
+        "promotion_noise_detected":bool(removed),
+    }
+
 def classify_attribution(title: str, unit: str, context: str) -> tuple[str, str]:
     third_names = ("段永平","巴菲特","德鲁肯米勒","斯坦利","芒格","Burry","伯里")
     third = any(name.lower() in (title + " " + unit).lower() for name in third_names)
