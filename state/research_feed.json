@@ -2,6 +2,1520 @@
   "version": 1,
   "records": [
     {
+      "id": "9596f303fbd4884b6bb0",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-09-30 05:35:00",
+      "title": "mRNA downgrade to sell, down 15 pre market",
+      "url": "https://bbs.wenxuecity.com/cfzh/112597.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T01:27:21Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "b7c9783237c36bd8fa47",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-09-30 05:37:00",
+      "title": "PCE softer than expectation but GDP is hot",
+      "url": "https://bbs.wenxuecity.com/cfzh/112598.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T01:27:21Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "6f4bb2b7d9a17dbad64d",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-09-30 06:05:00",
+      "title": "SemiAnalysis:OpenAi getting off some CBRS and switch to NVDA",
+      "url": "https://bbs.wenxuecity.com/cfzh/112603.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [
+        "NVDA"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T01:27:21Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "c3e50f1ceb99136317af",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-09-30 07:19:26",
+      "title": "For Dell and HPE, just hold for agent AI's momentum",
+      "url": "https://bbs.wenxuecity.com/cfzh/112613.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T01:27:21Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "1a82e0e76dc903d3864e",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-09-30 07:20:08",
+      "title": "There will always be news, but fundamental has final say",
+      "url": "https://bbs.wenxuecity.com/cfzh/112614.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T01:27:21Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "b7f48458f052ebb45f52",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-09-30 07:20:31",
+      "title": "Yes, highly risky bet",
+      "url": "https://bbs.wenxuecity.com/cfzh/112615.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T01:27:21Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "b16880e541332aa2264a",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-09-30 07:27:13",
+      "title": "YTD return is meaningless. 唯一对自己有价值的就是买入价和卖出价",
+      "url": "https://bbs.wenxuecity.com/cfzh/112616.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T01:27:21Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "bcf8d8720d91c2cc81e0",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-09-30 07:29:11",
+      "title": "YTD 这个指标是花街给韭菜的工作汇报。真正的投资人和Trader不会去理会这个指标：）",
+      "url": "https://bbs.wenxuecity.com/cfzh/112617.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T01:27:21Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "0cb8828e0739d445676e",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-09-30 07:58:49",
+      "title": "Again, all depends on when you buy and where you sell",
+      "url": "https://bbs.wenxuecity.com/cfzh/112621.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T01:27:21Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "53648a5a3487bf58c616",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-09-30 09:45:52",
+      "title": "This is why i anchor my SP at 900 almost a month ago :)",
+      "url": "https://bbs.wenxuecity.com/cfzh/112642.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "Sell Put"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T01:27:21Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "34e9afdf77640597b25c",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-09-30 09:46:24",
+      "title": "Dont think it matters. ER will be fine",
+      "url": "https://bbs.wenxuecity.com/cfzh/112643.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T01:27:21Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "357e4ba2f3b4e0073325",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-09-30 09:48:39",
+      "title": "只要 big index hold the line， 我们就知道liquidity 是留在市场的，也就不用当心股价波动",
+      "url": "https://bbs.wenxuecity.com/cfzh/112644.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T01:27:21Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "2c2c1ef73499d69da563",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-09-30 09:49:53",
+      "title": "我一直说，只要标普不破位，资金一定会流回半导体。几个月前你们还不信：）",
+      "url": "https://bbs.wenxuecity.com/cfzh/112645.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T01:27:21Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "d38a7ededc747047f3d8",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-09-30 11:02:21",
+      "title": "It's mostly impacted by spiking yield.",
+      "url": "https://bbs.wenxuecity.com/cfzh/112654.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T01:27:21Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "bf5be012046489e8ee01",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-09-30 12:42:20",
+      "title": "When market stop rotatig, we will see from index",
+      "url": "https://bbs.wenxuecity.com/cfzh/112663.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T01:27:21Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "d5ef9235c243382e9da4",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-09-30 12:42:50",
+      "title": "That's why you need to stay with absolute leaders for now",
+      "url": "https://bbs.wenxuecity.com/cfzh/112664.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [
+        "NOW"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T01:27:21Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "e0e0a6c36c899fa5c258",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-09-30 13:07:54",
+      "title": "Yeah, coming as expected. No suprise",
+      "url": "https://bbs.wenxuecity.com/cfzh/112681.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T01:27:21Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "8cc92871d4ea08f3c1ea",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-09-30 13:21:01",
+      "title": "不要再发这种口水帖了",
+      "url": "https://bbs.wenxuecity.com/cfzh/112687.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T01:27:21Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "4d8ec2b38f7f657d38bc",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-09-30 13:25:35",
+      "title": "Google up 5 on the news",
+      "url": "https://bbs.wenxuecity.com/cfzh/112688.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [
+        "GOOGL",
+        "GOOG"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T01:27:21Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "e6d9fcbe24d043833bb6",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-09-30 13:35:14",
+      "title": "MU up 22 so far in afterhours,  Need to wait for cc",
+      "url": "https://bbs.wenxuecity.com/cfzh/112691.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [
+        "MU"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T01:27:21Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "00739e26e58f0e4d38c2",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-09-30 13:40:08",
+      "title": "I think earning wise, fully within expectation. 关键还是电话会议",
+      "url": "https://bbs.wenxuecity.com/cfzh/112692.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T01:27:21Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "3ccd281b8414676f2f2a",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-09-30 14:06:27",
+      "title": "I suspect analyst will push for entire FY27 guidance",
+      "url": "https://bbs.wenxuecity.com/cfzh/112699.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T01:27:21Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "a4bf1afc1027b1de58af",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-09-30 14:12:00",
+      "title": "这个CapEx比预期的480亿高了5-6个亿",
+      "url": "https://bbs.wenxuecity.com/cfzh/112701.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T01:27:21Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "b534aca7e75123c5ceca",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-09-30 14:20:00",
+      "title": "我记得， 最要的理由，就是半导体6，7月份严重超买，绝大部份股票完全脱离基本面。在这个背景下造成了一个上下震荡的股市",
+      "url": "https://bbs.wenxuecity.com/cfzh/112702.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T01:27:21Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "7c42f49721f498c9f8aa",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-09-30 14:21:00",
+      "title": "震荡股市对大多数人来说，是非常难交易的一种市场形态",
+      "url": "https://bbs.wenxuecity.com/cfzh/112703.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T01:27:21Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "701f3dbcb27bb3af1e62",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-09-30 14:36:00",
+      "title": "除非有什么特大消息，否者周5前基本上会被MM在put/call wall 里折腾",
+      "url": "https://bbs.wenxuecity.com/cfzh/112705.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "Sell Put"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T01:27:21Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "2846bf588ab597d703da",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-09-30 14:47:51",
+      "title": "一年”最差“的9月今天结束了。结果是，道指确实最差，但纳指和标普都不错，SMH更是涨了近10%",
+      "url": "https://bbs.wenxuecity.com/cfzh/112708.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [
+        "SMH"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T01:27:21Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "af9a8910cc0414457338",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-09-30 15:08:52",
+      "title": "去年解放日后，当时就不是做SP，因为那个阶段的市场结构不一样。所以SP不是什么时候都应该用的",
+      "url": "https://bbs.wenxuecity.com/cfzh/112710.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T01:27:21Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "82ef39baf082512b458e",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-09-30 15:15:01",
+      "title": "APP 好像破位了呀",
+      "url": "https://bbs.wenxuecity.com/cfzh/112712.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T01:27:21Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "94576d2e553ada3aa47d",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-09-30 15:42:35",
+      "title": "Buy any big dip if there is any :)",
+      "url": "https://bbs.wenxuecity.com/cfzh/112715.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T01:27:21Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "a5dcfdaf8bd37cd863ec",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-09-30 15:57:01",
+      "title": "我看到的是297是support。不过一天掉下去有可能是诱空。但要是2天内回不去，下面一马平川没有support",
+      "url": "https://bbs.wenxuecity.com/cfzh/112723.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T01:27:21Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "5ff5f912ae9dd42b0a5b",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-09-30 16:47:00",
+      "title": "我今天也做了double calendar. call 是 1170， put 是 950 ：）",
+      "url": "https://bbs.wenxuecity.com/cfzh/112731.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "Sell Put"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T01:27:21Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "5b1ea7c0004921eaee4c",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-09-30 16:48:00",
+      "title": "用opst 给的公式算， FF 是 55% ：）",
+      "url": "https://bbs.wenxuecity.com/cfzh/112732.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T01:27:21Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "9f384c782751af244f4d",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-09-30 16:50:00",
+      "title": "接下来的迷思是： 中期选举的10月份是股市回报最好的一个月，LOL",
+      "url": "https://bbs.wenxuecity.com/cfzh/112733.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T01:27:21Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "b8d4d2083792e64634a3",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-09-30 17:51:33",
+      "title": "中间有目前的大量正股啊，哈哈哈",
+      "url": "https://bbs.wenxuecity.com/cfzh/112748.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T01:27:21Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "f38fe297b10e4426c574",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "yifan99",
+      "published_at": "2026-09-30 08:41:14",
+      "title": "MM喜欢他在650和1000之间上下震荡，哈哈",
+      "url": "https://bbs.wenxuecity.com/cfzh/112633.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T01:27:35Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "0e26ec2f549c0512320e",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "yifan99",
+      "published_at": "2026-09-30 09:59:21",
+      "title": "我的SP在800，所以你总会比我多挣很多!",
+      "url": "https://bbs.wenxuecity.com/cfzh/112646.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T01:27:35Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "22d958b351a86b95ab98",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "yifan99",
+      "published_at": "2026-09-30 10:24:10",
+      "title": "恭喜了！",
+      "url": "https://bbs.wenxuecity.com/cfzh/112650.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T01:27:35Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "e5690f23bd2e3faae52b",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "yifan99",
+      "published_at": "2026-09-30 14:09:50",
+      "title": "LITE 适合 Sell Put 的理由(结合图)",
+      "url": "https://bbs.wenxuecity.com/cfzh/112700.html",
+      "excerpt": "LITE 适合 Sell Put 的理由\n\n波动大,权利金厚。 126 天内从约 1156 跌到约 548,又反弹到 972,振幅很大,说明隐含波动率通常偏高。卖方收的权利金也会比 QQQ 这类低波动标的高很多。\n下方有多层技术支撑,方便选行权价。 按图上坐标估算,现价约 972,下面依次是:\r\n\t\nMA21:约 915–920\nMA50:约 860–870\nSupertrend 止损线:约 800–810\n前期低点:约 548\n\r\n\t把行权价放在 MA50 或 Supertrend 附近(约 800–860),相当于给自己留出约 12–18% 的缓冲。\n趋势结构偏多。 价格在 MA21、MA50 之上,MA21 高于 MA50,Supertrend 已经翻多并逐级抬高。8 月初的 Entry(E)信号之后,右",
+      "content_chars": 834,
+      "images_count": 1,
+      "themes_hint": [
+        "Sell Put",
+        "风险管理"
+      ],
+      "symbols": [
+        "QQQ"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T01:27:35Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "000f627c83bfa4b720b7",
+      "source": "wenxuecity",
+      "source_kind": "blog",
+      "author": "BrightLine",
+      "published_at": "2026-09-30",
+      "title": "0.1%的人拿走15%：这不是贫富差距，是持股差距",
+      "url": "https://blog.wenxuecity.com/myblog/82458/202609/22836.html",
+      "excerpt": "今天华尔街的报道又在刷屏：美国最富的0.1%家庭，占有全国15%的财富，创历史新高。\n先把数字摆清楚。美联储的分配金融账户（DFA）数据显示，2026年二季度，顶层0.1%的财富占比是15.0%，一季度是14.5%，一年前是14.1%。一个季度跳了半个百分点，这在财富分配数据里是非常罕见的速度。1989年这个数字大约是9%，三十多年下来，几乎翻了一倍。\n0.1%是多少人？大约13万户，入门门槛是四千多万美元净资产。13万户，拿走全美家庭财富的七分之一。\n很多人看到这里就开始愤怒，骂资本主义，骂华尔街。我想说的是另一件事：这组数据里最重要的信息，不是谁拿得多，而是钱从哪里来。\n二季度美国家庭总净资产创下195.9万亿美元的纪录，一个季度涨了12.8万亿。这12.8万亿里，84%来自股票。\n再看顶层0.1%手里拿的",
+      "content_chars": 1238,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T01:29:00Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "9239e762dff974f28e16",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-09-30 23:39:00",
+      "title": "这不是说他们就是对的，但这些担心总是有的。多头也不急着拉，慢慢磨死空头：）",
+      "url": "https://bbs.wenxuecity.com/cfzh/112780.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T23:38:33Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "becfb2c3a9b72544111d",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-01 06:07:00",
+      "title": "又跌回来了。 债市崩了。10Y利率夜盘到了24年新高，LOL",
+      "url": "https://bbs.wenxuecity.com/cfzh/112797.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T23:38:33Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "cbfa92ce93b8b26a0424",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-01 06:48:31",
+      "title": "Taking some profit on AMAT",
+      "url": "https://bbs.wenxuecity.com/cfzh/112800.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T23:38:33Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "2beb2f1e9ff3a528cace",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-01 06:59:38",
+      "title": "Bond market panic sell",
+      "url": "https://bbs.wenxuecity.com/cfzh/112802.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T23:38:33Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "dea57a394e3385e4ed84",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-01 07:16:07",
+      "title": "Yeap, flying :)",
+      "url": "https://bbs.wenxuecity.com/cfzh/112807.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T23:38:33Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "ec99434431f8764cb167",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-01 07:18:47",
+      "title": "On LITE, starting to sell some 1150-1200 call spread",
+      "url": "https://bbs.wenxuecity.com/cfzh/112810.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T23:38:33Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "5fc20e55ae9918aa9348",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-01 07:35:27",
+      "title": "only 4%, it is nothing",
+      "url": "https://bbs.wenxuecity.com/cfzh/112813.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T23:38:33Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "7889a5acd6f79b3fdd31",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-01 07:40:07",
+      "title": "Looking for bond market to rally anytime soon",
+      "url": "https://bbs.wenxuecity.com/cfzh/112815.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T23:38:33Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "2d57b4b1f8c2250896c3",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-01 07:41:04",
+      "title": "anything is possible in stock market",
+      "url": "https://bbs.wenxuecity.com/cfzh/112818.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T23:38:33Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "356089e004d61fae1ed1",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-01 07:49:59",
+      "title": "你们还是没有学会如何去理解花街的心理， 这是为什么股票分析对大多数人来说很难，因为它不完全是数字计算的结果",
+      "url": "https://bbs.wenxuecity.com/cfzh/112824.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T23:38:33Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "4107752c747d087873a7",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-01 08:19:27",
+      "title": "我们看股票，不能看冰冷的数字，不能说PE小于10就一定比PE大于40的好，或者坏",
+      "url": "https://bbs.wenxuecity.com/cfzh/112830.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T23:38:33Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "8cdcfad198dedd641df2",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-01 08:21:28",
+      "title": "花街现在的心理是：存储28年要封顶，光通28年要冲刺。至于他们对不对，以后再不断看业务追踪，但这就是现在的心理",
+      "url": "https://bbs.wenxuecity.com/cfzh/112831.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T23:38:33Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "b6e14b13ad686a5d7174",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-01 08:23:48",
+      "title": "研究股票，要把这些花街模糊的预期放到你的估值里。如果只要PE这个谁都能算出来的数去可以投资，人人都是亿万富翁",
+      "url": "https://bbs.wenxuecity.com/cfzh/112832.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T23:38:33Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "d0a89a91d7da0604eb72",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-01 08:28:19",
+      "title": "To the moon, lol",
+      "url": "https://bbs.wenxuecity.com/cfzh/112834.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T23:38:33Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "caa68f2c14fb21d175cd",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-01 09:09:50",
+      "title": "hahah, yield 掉了整整10bps :)",
+      "url": "https://bbs.wenxuecity.com/cfzh/112838.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T23:38:33Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "1ab8248750d8080bbdbf",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-01 09:13:23",
+      "title": "“会不会28年封顶” --- 这是个$$B 的问题。所以投资存储，忘掉PE和PEG，花时间研究它的工业周期来做决定",
+      "url": "https://bbs.wenxuecity.com/cfzh/112839.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T23:38:33Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "41f64bcc7434f6e149d8",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-01 09:14:48",
+      "title": "出租车司机也能看到存储PE小于10，这个信息对投资的作用是“零”",
+      "url": "https://bbs.wenxuecity.com/cfzh/112840.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T23:38:33Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "5fb99a42ef203bcaa0f8",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-01 09:22:03",
+      "title": "me too, lol, bought almost at lowest point",
+      "url": "https://bbs.wenxuecity.com/cfzh/112843.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T23:38:33Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "a9e1db90e326efa73b59",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-01 09:22:24",
+      "title": "can't resist :)",
+      "url": "https://bbs.wenxuecity.com/cfzh/112844.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T23:38:33Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "82133bbf4e6ddcd5b77e",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-01 09:28:30",
+      "title": "chyang98 是我们的CMO --- chief marketing officer :)",
+      "url": "https://bbs.wenxuecity.com/cfzh/112846.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-01T23:38:33Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "recovered_git_history",
+      "recovered_from_git_history": true,
+      "forward_evidence_eligible": false
+    },
+    {
       "id": "6b9d23e8eea34fcdd529",
       "source": "wenxuecity",
       "source_kind": "forum",
@@ -22049,13 +23563,13 @@
       "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。"
     },
     {
-      "id": "59e846ef91666a93ef0b",
+      "id": "26b32610f4264f0b3ce1",
       "source": "wenxuecity",
       "source_kind": "forum",
       "author": "三心三意",
       "published_at": "2026-10-03 16:29:00",
-      "title": "if FOMO never come, then sell if market breakdown",
-      "url": "https://bbs.wenxuecity.com/cfzh/113425.html",
+      "title": "hold until FOMO starts and then hedge :)",
+      "url": "https://bbs.wenxuecity.com/cfzh/113424.html",
       "excerpt": "",
       "content_chars": 0,
       "images_count": 0,
@@ -22070,13 +23584,13 @@
       "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。"
     },
     {
-      "id": "26b32610f4264f0b3ce1",
+      "id": "59e846ef91666a93ef0b",
       "source": "wenxuecity",
       "source_kind": "forum",
       "author": "三心三意",
       "published_at": "2026-10-03 16:29:00",
-      "title": "hold until FOMO starts and then hedge :)",
-      "url": "https://bbs.wenxuecity.com/cfzh/113424.html",
+      "title": "if FOMO never come, then sell if market breakdown",
+      "url": "https://bbs.wenxuecity.com/cfzh/113425.html",
       "excerpt": "",
       "content_chars": 0,
       "images_count": 0,
@@ -25450,6 +26964,59 @@
       "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。"
     },
     {
+      "id": "e4e6e7e36204742d9e28",
+      "source": "wenxuecity",
+      "source_kind": "blog",
+      "author": "BrightLine",
+      "published_at": "2026-09-25",
+      "title": "错过最好的10天？那错过最差的10天呢",
+      "url": "https://blog.wenxuecity.com/myblog/82458/202609/19534.html",
+      "excerpt": "Cliff Asness，AQR联合创始人，芝加哥大学博士，师从Fama，管理着上千亿美元的量化资产。他在华尔街有两个名声：一是研究做得扎实，二是嘴特别损。他自己说，年轻时写论文拼命模仿Fama和French，干巴巴、四平八稳；是2000年互联网泡沫\"弄坏了他身上的某样东西\"，从那以后他开始在文章里放肆地挖苦和调侃。\n今年5月底，他上了Excess Returns播客。主持人的设定很有意思：像滚石乐队巡演一样，不唱新歌，只唱金曲。于是Asness把他几十年来最有名的文章挨个过了一遍。一个多小时听下来，基本就是一场拆迁现场。\n先从他最出名、也最让大基金公司难堪的那张图说起。之后是他逐个拆掉的其他常识，尽量保留原意和数据。\n一、\"错过最好的10天\"是个蠢论证\n这篇文章他2000年左右就写好了，投给《金融分析师期刊》",
+      "content_chars": 7078,
+      "images_count": 0,
+      "themes_hint": [
+        "风险管理",
+        "失败复盘",
+        "长期持有纪律"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [
+        "admit_wrong"
+      ],
+      "captured_at": "2026-10-07T01:17:36Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。"
+    },
+    {
+      "id": "2e62dfdf3b296f5aaf54",
+      "source": "wenxuecity",
+      "source_kind": "blog",
+      "author": "BrightLine",
+      "published_at": "2026-09-26",
+      "title": "在座各位三十年后都是Billionaire？我算了一下，是真的",
+      "url": "https://blog.wenxuecity.com/myblog/82458/202609/20217.html",
+      "excerpt": "前几天朋友聚会，有人举杯说了一句：在座各位，三十年后都是Billionaire，只要不screw up复利。\n大家都笑了，我却想起当年硅谷居士说90岁可以到B，一坛子人大吃一惊。今天干脆把这笔账算清楚。\n起点统一用10米。（硅谷居士当时净值超过10米，我的朋友净值也超这个数字。）\n一、十亿是一百倍\n10米到1B，是100倍。三十年做到一百倍，需要的年化是16.6%。这是整篇文章唯一需要记住的数字。\n二、三条路\n年化10%，也就是SPY的长期水平：30年17.4倍，终点1.74亿。很富，但离B还差一个数量级。按这个速度到B要48年。居士说90岁到B，算的是VGT/QQQ这条路：四十出头手握10米，老老实实吃大盘，九十岁前后过线。当年大家吃惊，其实数学上一点都不夸张。\n年化15%：30年66倍，6.6亿，差一口气。",
+      "content_chars": 1082,
+      "images_count": 0,
+      "themes_hint": [
+        "失败复盘",
+        "长期持有纪律"
+      ],
+      "symbols": [
+        "SPY",
+        "QQQ",
+        "VGT"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [
+        "admit_wrong"
+      ],
+      "captured_at": "2026-10-07T01:17:36Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。"
+    },
+    {
       "id": "1c87654e13e7e7518567",
       "source": "wenxuecity",
       "source_kind": "blog",
@@ -25522,70 +27089,252 @@
       "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。"
     },
     {
-      "id": "2e62dfdf3b296f5aaf54",
+      "id": "10b5e3e9ffe2bb208daf",
       "source": "wenxuecity",
       "source_kind": "blog",
-      "author": "BrightLine",
-      "published_at": "2026-09-26",
-      "title": "在座各位三十年后都是Billionaire？我算了一下，是真的",
-      "url": "https://blog.wenxuecity.com/myblog/82458/202609/20217.html",
-      "excerpt": "前几天朋友聚会，有人举杯说了一句：在座各位，三十年后都是Billionaire，只要不screw up复利。\n大家都笑了，我却想起当年硅谷居士说90岁可以到B，一坛子人大吃一惊。今天干脆把这笔账算清楚。\n起点统一用10米。（硅谷居士当时净值超过10米，我的朋友净值也超这个数字。）\n一、十亿是一百倍\n10米到1B，是100倍。三十年做到一百倍，需要的年化是16.6%。这是整篇文章唯一需要记住的数字。\n二、三条路\n年化10%，也就是SPY的长期水平：30年17.4倍，终点1.74亿。很富，但离B还差一个数量级。按这个速度到B要48年。居士说90岁到B，算的是VGT/QQQ这条路：四十出头手握10米，老老实实吃大盘，九十岁前后过线。当年大家吃惊，其实数学上一点都不夸张。\n年化15%：30年66倍，6.6亿，差一口气。",
-      "content_chars": 1082,
-      "images_count": 0,
-      "themes_hint": [
-        "失败复盘",
-        "长期持有纪律"
-      ],
-      "symbols": [
-        "SPY",
-        "QQQ",
-        "VGT"
-      ],
-      "operations": [],
-      "portfolio_rules": [],
-      "lessons": [
-        "admit_wrong"
-      ],
-      "captured_at": "2026-10-07T01:17:36Z",
-      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。"
-    },
-    {
-      "id": "e4e6e7e36204742d9e28",
-      "source": "wenxuecity",
-      "source_kind": "blog",
-      "author": "BrightLine",
+      "author": "yifan99",
       "published_at": "2026-09-25",
-      "title": "错过最好的10天？那错过最差的10天呢",
-      "url": "https://blog.wenxuecity.com/myblog/82458/202609/19534.html",
-      "excerpt": "Cliff Asness，AQR联合创始人，芝加哥大学博士，师从Fama，管理着上千亿美元的量化资产。他在华尔街有两个名声：一是研究做得扎实，二是嘴特别损。他自己说，年轻时写论文拼命模仿Fama和French，干巴巴、四平八稳；是2000年互联网泡沫\"弄坏了他身上的某样东西\"，从那以后他开始在文章里放肆地挖苦和调侃。\n今年5月底，他上了Excess Returns播客。主持人的设定很有意思：像滚石乐队巡演一样，不唱新歌，只唱金曲。于是Asness把他几十年来最有名的文章挨个过了一遍。一个多小时听下来，基本就是一场拆迁现场。\n先从他最出名、也最让大基金公司难堪的那张图说起。之后是他逐个拆掉的其他常识，尽量保留原意和数据。\n一、\"错过最好的10天\"是个蠢论证\n这篇文章他2000年左右就写好了，投给《金融分析师期刊》",
-      "content_chars": 7078,
+      "title": "分享：投资之路 · 第一阶段：从一箱认购证到一套白菜价的房子",
+      "url": "https://blog.wenxuecity.com/myblog/31983/202609/19077.html",
+      "excerpt": "投资之路  第一阶段：从一箱认购证到一套白菜价的房子\n人生第一次听说股票这个词，是在上海，认购证正热闹的年月。\n那时候班里有位同学，在认购证发售的最后一天，用白菜价扫了一整箱回来，随手往集体宿舍那张堆满脸盆、旧课本、不知道谁的臭袜子的床铺上一扔，就跟扔了一箱过期挂历似的。我们几个还笑他：这年头连废纸都要囤了？\n后来的事大家都知道了，他不声不响地坐在那堆废纸上，一路接接接接到了财富自由。我们笑得最欢的时候，也是后来想起来最惭愧的时候：原来那不是一箱废纸，是一张船票，而我们，是笑着目送它开船的人。\n我呢，是那种典型的读书人穷病患者，只会低头读书，不会抬头看机会。这件事就这么被我不动声色地从记忆里优化掉了，跟删了个不常用的APP一样干脆利落。\n后来我去了日本留学，一待就是7年。那些年，依旧是同一套发财哲学：不分昼夜地",
+      "content_chars": 1355,
       "images_count": 0,
       "themes_hint": [
-        "风险管理",
-        "失败复盘",
-        "长期持有纪律"
+        "其他研究"
       ],
       "symbols": [],
       "operations": [],
       "portfolio_rules": [],
-      "lessons": [
-        "admit_wrong"
-      ],
-      "captured_at": "2026-10-07T01:17:36Z",
-      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。"
+      "lessons": [],
+      "captured_at": "2026-10-07T01:19:19Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "initial_blog_profile_backfill"
     },
     {
-      "id": "79c31059d07fa06e5aec",
+      "id": "31d67da43d6cc50d16cb",
       "source": "wenxuecity",
       "source_kind": "blog",
       "author": "yifan99",
-      "published_at": "2026-10-06",
-      "title": "Amazon，要突破了？",
-      "url": "https://blog.wenxuecity.com/myblog/31983/202610/3830.html",
-      "excerpt": "前一段时间看 Amazon，我一直比较谨慎。原因很简单：\n几次看起来要突破，最后都没有走出来。\n但今天再看这张图，我觉得有些东西开始不一样了。\nAMZN 今天收在\n256.29，+1.95%\n。不过真正让我注意的，并不是这 1.95%，而是价格背后的几个信号开始同时转向。\nAmazon DeepWave：价格、MA21/MA50、Supertrend、TCDS-D/MACD 与 PPO\nTCDS终于回到0\n过去几周，Amazon 的 TCDS 一直处于负值，而且一度相当弱。但最近它开始从底部持续回升，今天到了：\nTCDS = 0\n。\n深度负值 → 持续回升 → 0\n单独看“0”似乎没什么特别，但看它走过来的路径，意义完全不同：弱势正在逐渐消失。看 TCDS 不能只看今天是多少，更重要的是看它\n正在往哪里走\n。\n",
-      "content_chars": 1103,
+      "published_at": "2026-09-25",
+      "title": "不预测股价，而是学会跟随趋势",
+      "url": "https://blog.wenxuecity.com/myblog/31983/202609/19300.html",
+      "excerpt": "不预测股价，而是学会跟随趋势\n投资多年，我越来越体会到，股票投资最难的不是找到一只好股票，而是知道什么时候买、什么时候卖，以及什么时候应该耐心持有。\n每天都有各种财经新闻，AI投资、公司财报、美联储政策……但很多时候，当新闻出来时，股价早已发生变化。市场交易的不仅是已经发生的事情，更是对未来的预期。\n最近，我一直利用自己建立的TCDS多周期趋势系统观察股票走势。从ORCL、GOOG、AMZN到AAPL和QCOM，我发现，趋势的变化往往比新闻更早提示市场的方向。\nORCL：TCDS提前发出转弱信号\nORCL就是一个很好的例子。在股价接近高位时，TCDS已经开始回落，随后日线和周线逐渐转弱。即使中间出现反弹，趋势也未能恢复，股价最终进入明显的调整。\n这说明，投资不能仅仅依靠公司的利好消息，更需要观察市场是否仍然支持",
+      "content_chars": 2423,
+      "images_count": 5,
+      "themes_hint": [
+        "风险管理",
+        "长期持有纪律"
+      ],
+      "symbols": [
+        "AAPL",
+        "AMZN",
+        "QCOM",
+        "GOOG"
+      ],
+      "operations": [
+        {
+          "symbols": [
+            "AAPL",
+            "AMZN",
+            "QCOM",
+            "GOOG"
+          ],
+          "actions": [
+            "buy",
+            "sell",
+            "hold"
+          ],
+          "attribution": "author_action",
+          "attribution_confidence": "high"
+        },
+        {
+          "symbols": [
+            "AAPL"
+          ],
+          "actions": [
+            "buy"
+          ],
+          "attribution": "unconfirmed_author_context",
+          "attribution_confidence": "needs_review"
+        }
+      ],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-07T01:19:19Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "initial_blog_profile_backfill"
+    },
+    {
+      "id": "4e9807fbebe47c32a5f4",
+      "source": "wenxuecity",
+      "source_kind": "blog",
+      "author": "yifan99",
+      "published_at": "2026-09-25",
+      "title": "MU与SNDK：TCDS提示趋势转强，但仍需关注财报风险",
+      "url": "https://blog.wenxuecity.com/myblog/31983/202609/19491.html",
+      "excerpt": "MU与SNDK：TCDS提示趋势转强，但仍需关注财报风险\n有网友问MU和SNDK的TCDS， 我在这里提供这两个股票的TCDS变化\n从最新的TCDS图表来看，MU和SNDK都表现出上行趋势修复的迹象。\nMU（Micron）： 股价经历前期调整后重新走强，TCDS从低位快速回升至正值区域，目前日线约为65，周线约为50，显示多周期趋势正在改善。MACD保持正值，股价也重新接近阶段性高点。虽然短期仍可能震荡，但整体上涨结构尚未破坏。我是在图中买入点买了一些MUU小赌，不赌ER，打算在ER前出掉。\nSNDK（SanDisk）： 股价从前期调整低点明显反弹，TCDS日线约为55，周线约为-10，短期上涨动能有所恢复。不过，日线与周线尚未形成完全一致的多头共振，显示目前仍属于趋势过渡阶段。未来能否继续上行，需要观察周线是",
+      "content_chars": 679,
+      "images_count": 2,
+      "themes_hint": [
+        "风险管理"
+      ],
+      "symbols": [
+        "MU"
+      ],
+      "operations": [
+        {
+          "symbols": [
+            "MU"
+          ],
+          "actions": [
+            "buy"
+          ],
+          "attribution": "author_action",
+          "attribution_confidence": "high"
+        }
+      ],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-07T01:19:19Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "initial_blog_profile_backfill"
+    },
+    {
+      "id": "05ad2b7fa3b169d67736",
+      "source": "wenxuecity",
+      "source_kind": "blog",
+      "author": "yifan99",
+      "published_at": "2026-09-26",
+      "title": "WDC和STX的TCDS变化 与SNDK比要弱得多",
+      "url": "https://blog.wenxuecity.com/myblog/31983/202609/19716.html",
+      "excerpt": "WDC的动态图很有意思！它很好地展示了TCDS如何在股价尚未明显突破时，捕捉趋势由弱转强的早期变化。\nWDC：TCDS开始转强，但仍处于趋势确认阶段\n从图中可以看到，WDC经历了前期的大幅上涨、6月底的高位回落，以及随后数月的震荡整理。近期出现了几个值得关注的变化：\nTCDS： 从负值区域快速回升，重新进入正值区域，提示短期动能正在改善。\nMACD： 柱状图由负转正，反映下跌动能减弱、上涨动能开始恢复。\n价格结构： 股价从近期低点反弹，但仍处于MA50和上方Supertrend压力附近，尚未形成明确突破。\n趋势确认： 短期指标率先改善，但中长期趋势尚未完全同步。\n这与此前GOOG、AMZN的情况有些相似：价格还在整理，TCDS却开始提前反映方向的变化。\n不过，TCDS转正只是早期信号，并不等于上涨趋势已经确认。",
+      "content_chars": 418,
+      "images_count": 2,
+      "themes_hint": [
+        "长期持有纪律",
+        "趋势确认"
+      ],
+      "symbols": [
+        "AMZN",
+        "GOOG"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-07T01:19:19Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "initial_blog_profile_backfill",
+      "method_signals": [
+        {
+          "condition_id": "tcds_cross_zero",
+          "machine_ready": false,
+          "evidence_excerpt": "从图中可以看到，WDC经历了前期的大幅上涨、6月底的高位回落，以及随后数月的震荡整理。近期出现了几个值得关注的变化： TCDS： 从负值区域快速回升，重新进入正值区域，提示短期动能正在改善。 MACD： 柱状图由负转正，反映下跌动能减弱、上涨动能开始恢复。",
+          "evidence_hash": "6259671e2ea6ab967e59dc0a121f2e3a672c218bc58b17e0fc802d44916dc892",
+          "source_derived_only": true,
+          "state_hint": "CONFIRMATION"
+        },
+        {
+          "condition_id": "ppo_hist_positive",
+          "machine_ready": false,
+          "evidence_excerpt": "从图中可以看到，WDC经历了前期的大幅上涨、6月底的高位回落，以及随后数月的震荡整理。近期出现了几个值得关注的变化： TCDS： 从负值区域快速回升，重新进入正值区域，提示短期动能正在改善。 MACD： 柱状图由负转正，反映下跌动能减弱、上涨动能开始恢复。",
+          "evidence_hash": "6259671e2ea6ab967e59dc0a121f2e3a672c218bc58b17e0fc802d44916dc892",
+          "source_derived_only": true,
+          "state_hint": "CONFIRMATION"
+        },
+        {
+          "condition_id": "macd_hist_positive",
+          "machine_ready": true,
+          "evidence_excerpt": "从图中可以看到，WDC经历了前期的大幅上涨、6月底的高位回落，以及随后数月的震荡整理。近期出现了几个值得关注的变化： TCDS： 从负值区域快速回升，重新进入正值区域，提示短期动能正在改善。 MACD： 柱状图由负转正，反映下跌动能减弱、上涨动能开始恢复。",
+          "evidence_hash": "6259671e2ea6ab967e59dc0a121f2e3a672c218bc58b17e0fc802d44916dc892",
+          "source_derived_only": true,
+          "state_hint": "CONFIRMATION"
+        },
+        {
+          "condition_id": "price_above_ma50",
+          "machine_ready": true,
+          "evidence_excerpt": "趋势确认： 短期指标率先改善，但中长期趋势尚未完全同步。 这与此前GOOG、AMZN的情况有些相似：价格还在整理，TCDS却开始提前反映方向的变化。 不过，TCDS转正只是早期信号，并不等于上涨趋势已经确认。如果后续股价能够突破MA50和Supertrend压力，同时TCDS持续保持正值，才意味着多周期趋势进一步改善。",
+          "evidence_hash": "3dc6b3d59c8664e4ee171e6fe02983e5cff726eece0f103dd0e2a40cc5155603",
+          "source_derived_only": true,
+          "state_hint": "CONFIRMATION"
+        }
+      ],
+      "method_signals_enriched_at": "2026-10-07T03:26:29Z"
+    },
+    {
+      "id": "e115e9890dd8407ffaac",
+      "source": "wenxuecity",
+      "source_kind": "blog",
+      "author": "yifan99",
+      "published_at": "2026-09-26",
+      "title": "GLW：TCDS开始转正，但上涨趋势尚未确认",
+      "url": "https://blog.wenxuecity.com/myblog/31983/202609/19819.html",
+      "excerpt": "GLW（Corning）这张图很有代表性。经历6月底的高点和随后大幅调整之后，股价进入了较长时间的横盘整理。目前短期动能开始改善，但整体仍处于趋势转换的早期阶段。\n从图中可以看到，三个变化值得关注：\nTCDS由负转正： 从近期的弱势区域快速恢复至+15，说明短期方向开始改善，但目前仍属于初步转强。\nMACD同步改善： 柱状图重新转正，显示短期上涨动能开始恢复。\n价格尚未突破关键压力： 当前股价仍在MA50下方附近运行，上方Supertrend压力尚未有效突破，因此不能认定主要上涨趋势已经形成。\n特别值得关注的是，GLW的股价虽然从低位反弹，但整体仍在横盘区间内，近期尚未形成持续的更高高点。\n与WDC相比，GLW的信号有什么不同？\n指标\nWDC\nGLW\nTCDS\n刚进入正值区域\n+15，初步转强\nMACD\n开始转",
+      "content_chars": 697,
+      "images_count": 2,
+      "themes_hint": [
+        "趋势确认"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-07T01:19:19Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "initial_blog_profile_backfill",
+      "method_signals": [
+        {
+          "condition_id": "tcds_cross_zero",
+          "machine_ready": false,
+          "evidence_excerpt": "GLW：TCDS开始转正，但上涨趋势尚未确认 GLW（Corning）这张图很有代表性。经历6月底的高点和随后大幅调整之后，股价进入了较长时间的横盘整理。目前短期动能开始改善，但整体仍处于趋势转换的早期阶段。",
+          "evidence_hash": "cf529a9ea81c4c62ba4b9e56df2ba72a4acc9ff2688b7d4c89e513b0fddfeb17",
+          "source_derived_only": true,
+          "state_hint": "EARLY_ENTRY"
+        },
+        {
+          "condition_id": "ppo_hist_positive",
+          "machine_ready": false,
+          "evidence_excerpt": "从图中可以看到，三个变化值得关注： TCDS由负转正： 从近期的弱势区域快速恢复至+15，说明短期方向开始改善，但目前仍属于初步转强。 MACD同步改善： 柱状图重新转正，显示短期上涨动能开始恢复。",
+          "evidence_hash": "749cb03a1101e752102d5a9ebd6493b484673ce06ccaed77c0bed03b2db662ed",
+          "source_derived_only": true,
+          "state_hint": "EARLY_ENTRY"
+        },
+        {
+          "condition_id": "macd_hist_positive",
+          "machine_ready": true,
+          "evidence_excerpt": "从图中可以看到，三个变化值得关注： TCDS由负转正： 从近期的弱势区域快速恢复至+15，说明短期方向开始改善，但目前仍属于初步转强。 MACD同步改善： 柱状图重新转正，显示短期上涨动能开始恢复。",
+          "evidence_hash": "749cb03a1101e752102d5a9ebd6493b484673ce06ccaed77c0bed03b2db662ed",
+          "source_derived_only": true,
+          "state_hint": "EARLY_ENTRY"
+        },
+        {
+          "condition_id": "price_above_ma50",
+          "machine_ready": true,
+          "evidence_excerpt": "TCDS由负转正： 从近期的弱势区域快速恢复至+15，说明短期方向开始改善，但目前仍属于初步转强。 MACD同步改善： 柱状图重新转正，显示短期上涨动能开始恢复。 价格尚未突破关键压力： 当前股价仍在MA50下方附近运行，上方Supertrend压力尚未有效突破，因此不能认定主要上涨趋势已经形成。",
+          "evidence_hash": "52bd9bae00b13439ece6a2811b40e05939a08c248e4a50437299adcd9a780fcc",
+          "source_derived_only": true,
+          "state_hint": "EARLY_ENTRY"
+        }
+      ],
+      "method_signals_enriched_at": "2026-10-07T03:26:29Z"
+    },
+    {
+      "id": "d5b6b9842d3e2a1cd49f",
+      "source": "wenxuecity",
+      "source_kind": "blog",
+      "author": "yifan99",
+      "published_at": "2026-09-29",
+      "title": "AMZN 一次向上 False Break（假突破），目前重新回到偏弱区间",
+      "url": "https://blog.wenxuecity.com/myblog/31983/202609/22036.html",
+      "excerpt": "从这张 AMZN 截至 9/29 的日线图看，把最近这一段更新为：\nAMZN：更像是一次向上 False Break（假突破），目前重新回到偏弱区间。\n关键原因是：前几天价格一度重新站上 MA21 / MA50 附近，并出现绿色 E / E+ 信号，但随后没有形成持续上攻，反而又跌回两条均线下方。今天收在 246.67，而短期均线大约仍在 250–253 区域，这符合典型的“突破后不能站稳 → 回落”的 false breakout 结构。\n同时下面的动量指标也没有确认突破。图中 TCDS = -65，MACD = -0.657，MACD 柱仍在零轴下方，说明这次上穿并没有得到动量配合。因此目前不能把前面的 E/E+ 当成有效趋势反转，更合理的是把它看成一次 early entry 失败。\n我现在会重点看三个区",
+      "content_chars": 946,
       "images_count": 1,
       "themes_hint": [
+        "失败复盘",
         "趋势确认"
       ],
       "symbols": [
@@ -25600,42 +27349,26 @@
       "capture_mode": "initial_blog_profile_backfill",
       "method_signals": [
         {
-          "condition_id": "tcds_cross_zero",
-          "machine_ready": false,
-          "evidence_excerpt": "。不过真正让我注意的，并不是这 1.95%，而是价格背后的几个信号开始同时转向。 Amazon DeepWave：价格、MA21/MA50、Supertrend、TCDS-D/MACD 与 PPO TCDS终于回到0",
-          "evidence_hash": "2469e7e0beaa9f5383bdbe29cd49efd120daa6e582856f1156ba80491527a634",
-          "source_derived_only": true,
-          "state_hint": "EARLY_ENTRY"
-        },
-        {
-          "condition_id": "ppo_above_signal",
-          "machine_ready": false,
-          "evidence_excerpt": "PPO = -0.532 ｜ Signal = -0.768 ｜ Histogram = +0.237 PPO 本身还在零轴以下，所以 Amazon 还不能算真正进入强趋势。但是一个重要变化已经出现： PPO 已经向上超过 Signal，Histogram 也由负转正。",
-          "evidence_hash": "7df412d613cfd78b4b369be48ea5d1870788eaab17df03caa0290d875a6b3847",
-          "source_derived_only": true,
-          "state_hint": "EARLY_ENTRY"
-        },
-        {
-          "condition_id": "ppo_hist_positive",
-          "machine_ready": false,
-          "evidence_excerpt": "PPO = -0.532 ｜ Signal = -0.768 ｜ Histogram = +0.237 PPO 本身还在零轴以下，所以 Amazon 还不能算真正进入强趋势。但是一个重要变化已经出现： PPO 已经向上超过 Signal，Histogram 也由负转正。",
-          "evidence_hash": "7df412d613cfd78b4b369be48ea5d1870788eaab17df03caa0290d875a6b3847",
-          "source_derived_only": true,
-          "state_hint": "EARLY_ENTRY"
-        },
-        {
           "condition_id": "price_above_ma50",
           "machine_ready": true,
-          "evidence_excerpt": "。这也是为什么我还不会说：“Amazon 已经突破，可以追了。” Early Entry → 等待 MA50 确认 如果接下来价格真正站上 MA50，而且能够连续两天守住，同时 TCDS 从 0 继续转正、PPO Histogram 继续扩大，那么性质就不一样了。",
-          "evidence_hash": "0d51291a9e9cc97a8b716f4a17fc63919f5c967b45d972ac8d745055af125b1a",
+          "evidence_excerpt": "从这张 AMZN 截至 9/29 的日线图看，把最近这一段更新为： AMZN：更像是一次向上 False Break（假突破），目前重新回到偏弱区间。 关键原因是：前几天价格一度重新站上 MA21 / MA50 附近，并出现绿色 E / E+ 信号，但随后没有形成持续上攻，反而又跌回两条均线下方。今天收在 246.67，而短期均线大约仍在 250–253 区",
+          "evidence_hash": "059f9fd32dd7d4e7ad984292c031f47e38bbd637244900e17ef9b9d916df8084",
           "source_derived_only": true,
           "state_hint": "EARLY_ENTRY"
         },
         {
           "condition_id": "ma50_hold_two_sessions",
           "machine_ready": true,
-          "evidence_excerpt": "。这也是为什么我还不会说：“Amazon 已经突破，可以追了。” Early Entry → 等待 MA50 确认 如果接下来价格真正站上 MA50，而且能够连续两天守住，同时 TCDS 从 0 继续转正、PPO Histogram 继续扩大，那么性质就不一样了。",
-          "evidence_hash": "0d51291a9e9cc97a8b716f4a17fc63919f5c967b45d972ac8d745055af125b1a",
+          "evidence_excerpt": "同时下面的动量指标也没有确认突破。图中 TCDS = -65，MACD = -0.657，MACD 柱仍在零轴下方，说明这次上穿并没有得到动量配合。因此目前不能把前面的 E/E+ 当成有效趋势反转，更合理的是把它看成一次 early entry 失败。 我现在会重点看三个区域： - 250–253：第一道确认区。AMZN 必须重新站回 MA21/MA50，并",
+          "evidence_hash": "48fe7fadf6552da5b555d3a726f2ecb1c7b0e419a04c719d334acc3fbf6c4f62",
+          "source_derived_only": true,
+          "state_hint": "EARLY_ENTRY"
+        },
+        {
+          "condition_id": "price_below_ma50",
+          "machine_ready": true,
+          "evidence_excerpt": "这套系统里，暂时把 AMZN 的信号写成： AMZN 9/29: FALSE BREAK ? Price 246.67 | Below MA21/MA50 | TCDS -65 | MACD 0",
+          "evidence_hash": "f713fd184eafd848c56c2488e9ca775d6cba0fa25193ac5e60d035dddc49bd29",
           "source_derived_only": true,
           "state_hint": "EARLY_ENTRY"
         }
@@ -25643,18 +27376,63 @@
       "method_signals_enriched_at": "2026-10-07T03:36:10Z"
     },
     {
-      "id": "5377eb61a5db0e089b1c",
+      "id": "9ae79b7468ca2e7f8f75",
       "source": "wenxuecity",
       "source_kind": "blog",
       "author": "yifan99",
-      "published_at": "2026-10-06",
-      "title": "AVGO：底部修复已经开始，但趋势确认还差一步",
-      "url": "https://blog.wenxuecity.com/myblog/31983/202610/3715.html",
-      "excerpt": "AVGO：底部修复已经开始，但趋势确认还差一步\nDeepWave 趋势观察 · 根据2026年10月5日的数据，10月6日数据可能有变化\n最近看 AAOI、CIEN 和 AMAT，我越来越觉得，真正值得关注的并不是某一天涨了多少，而是一个更简单的问题：一只股票究竟是“正在反弹”，还是已经重新进入可以\nRide with the Wave\n的趋势？\nAVGO 已经出现明显的底部修复信号，但与已经突破 MA50 的 CIEN 相比，它目前仍然少了最后一道价格确认。\n图1｜AVGO：价格、MA21/MA50、Supertrend、TCDS-D/MACD 与 PPO 的组合结构\n一、真正值得注意的，是内部动量先变了\nAVGO 当前价格约 362.5。单看价格，它仍处于前期调整后的恢复阶段，还不能称为一个漂亮的突破形态。",
-      "content_chars": 1508,
-      "images_count": 0,
+      "published_at": "2026-09-30",
+      "title": "LITE 适合 Sell Put 的理由(结合图)",
+      "url": "https://blog.wenxuecity.com/myblog/31983/202609/22705.html",
+      "excerpt": "LITE 适合 Sell Put 的理由\n波动大,权利金厚。\n126 天内从约 1156 跌到约 548,又反弹到 972,振幅很大,说明隐含波动率通常偏高。卖方收的权利金也会比 QQQ 这类低波动标的高很多。\n下方有多层技术支撑,方便选行权价。\n按图上坐标估算,现价约 972,下面依次是:\nMA21:约 915–920\nMA50:约 860–870\nSupertrend 止损线:约 800–810\n前期低点:约 548\n把行权价放在 MA50 或 Supertrend 附近(约 800–860),相当于给自己留出约 12–18% 的缓冲。\n趋势结构偏多。\n价格在 MA21、MA50 之上,MA21 高于 MA50,Supertrend 已经翻多并逐级抬高。8 月初的 Entry(E)信号之后,右侧几次 ADD",
+      "content_chars": 826,
+      "images_count": 1,
+      "themes_hint": [
+        "Sell Put",
+        "风险管理",
+        "止损纪律"
+      ],
+      "symbols": [
+        "QQQ"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-07T01:19:19Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "initial_blog_profile_backfill",
+      "method_signals": [
+        {
+          "condition_id": "price_above_ma50",
+          "machine_ready": true,
+          "evidence_excerpt": "把行权价放在 MA50 或 Supertrend 附近(约 800–860),相当于给自己留出约 12–18% 的缓冲。 趋势结构偏多。 价格在 MA21、MA50 之上,MA21 高于 MA50,Supertrend 已经翻多并逐级抬高。8 月初的 Entry(E)信号之后,右侧几次 ADD 都落在 MA50 附近,说明回踩均线有承接。",
+          "evidence_hash": "88c449b461a29dea091e396db5186d6853c38bf163d29bf2fa4df170fcf2e7ea",
+          "source_derived_only": true
+        },
+        {
+          "condition_id": "supertrend_bullish",
+          "machine_ready": true,
+          "evidence_excerpt": "把行权价放在 MA50 或 Supertrend 附近(约 800–860),相当于给自己留出约 12–18% 的缓冲。 趋势结构偏多。 价格在 MA21、MA50 之上,MA21 高于 MA50,Supertrend 已经翻多并逐级抬高。8 月初的 Entry(E)信号之后,右侧几次 ADD 都落在 MA50 附近,说明回踩均线有承接。",
+          "evidence_hash": "88c449b461a29dea091e396db5186d6853c38bf163d29bf2fa4df170fcf2e7ea",
+          "source_derived_only": true
+        }
+      ],
+      "method_signals_enriched_at": "2026-10-07T03:26:29Z"
+    },
+    {
+      "id": "bced53383a2d1aed7e7d",
+      "source": "wenxuecity",
+      "source_kind": "blog",
+      "author": "yifan99",
+      "published_at": "2026-10-02",
+      "title": "CIEN 的技术修复更完整，AAOI 的上涨弹性更大、波动也更高",
+      "url": "https://blog.wenxuecity.com/myblog/31983/202610/703.html",
+      "excerpt": "整体看，两只股票都在经历“中期下跌后的短线反弹”，但 CIEN 的技术修复更完整，AAOI 的上涨弹性更大、波动也更高。\nCIEN：短线已经明显转强。 4月至6月快速上涨，随后持续回落；9月在约310–350美元区域企稳。10月1日放量上涨7.77%，收379.14美元，重新站上短期均线及Supertrend附近，MACD柱线转正，说明反弹开始升级为趋势修复。今天盘中约386.52美元，再涨1.95%，两日累计约9.86%；最高388.81美元。\nAAOI：反弹力度更强，但中期反转尚待确认。 5月见顶后总体下行，8月反弹失败，9月主要在95–110美元附近筑底。10月1日上涨8.12%，收107.32美元，MACD改善并重新站上短期均线；但图中价格仍接近或低于下降中的中期均线和Supertrend压力。今天盘中",
+      "content_chars": 571,
+      "images_count": 2,
       "themes_hint": [
         "风险管理",
+        "失败复盘",
         "趋势确认"
       ],
       "symbols": [],
@@ -25667,15 +27445,48 @@
       "capture_mode": "initial_blog_profile_backfill",
       "method_signals": [
         {
-          "condition_id": "price_above_ma50",
+          "condition_id": "ppo_hist_positive",
+          "machine_ready": false,
+          "evidence_excerpt": "CIEN 的技术修复更完整，AAOI 的上涨弹性更大、波动也更高 整体看，两只股票都在经历“中期下跌后的短线反弹”，但 CIEN 的技术修复更完整，AAOI 的上涨弹性更大、波动也更高。 CIEN：短线已经明显转强。 4月至6月快速上涨，随后持续回落；9月在约310–350美元区域企稳。10月1日放量上涨7.77%，收379.14美元，重新站上短期均线及Su",
+          "evidence_hash": "6dd8cb66241c3d50d1ed301a85ab813c55124354a7a65d46388795c1b030872f",
+          "source_derived_only": true
+        },
+        {
+          "condition_id": "macd_hist_positive",
           "machine_ready": true,
-          "evidence_excerpt": "Ride with the Wave 的趋势？ AVGO 已经出现明显的底部修复信号，但与已经突破 MA50 的 CIEN 相比，它目前仍然少了最后一道价格确认。",
-          "evidence_hash": "67fca709d42ff2ef525d996ec39c563c733c8cb13ea6864b882c53251f3ec086",
-          "source_derived_only": true,
-          "state_hint": "EARLY_ENTRY"
+          "evidence_excerpt": "CIEN 的技术修复更完整，AAOI 的上涨弹性更大、波动也更高 整体看，两只股票都在经历“中期下跌后的短线反弹”，但 CIEN 的技术修复更完整，AAOI 的上涨弹性更大、波动也更高。 CIEN：短线已经明显转强。 4月至6月快速上涨，随后持续回落；9月在约310–350美元区域企稳。10月1日放量上涨7.77%，收379.14美元，重新站上短期均线及Su",
+          "evidence_hash": "6dd8cb66241c3d50d1ed301a85ab813c55124354a7a65d46388795c1b030872f",
+          "source_derived_only": true
         }
       ],
       "method_signals_enriched_at": "2026-10-07T03:26:29Z"
+    },
+    {
+      "id": "9666f1f9a28236f6b04d",
+      "source": "wenxuecity",
+      "source_kind": "blog",
+      "author": "yifan99",
+      "published_at": "2026-10-03",
+      "title": "科技股反弹是真修复，还是 2000 年式背离？",
+      "url": "https://blog.wenxuecity.com/myblog/31983/202610/1760.html",
+      "excerpt": "科技股反弹是真修复，还是 2000 年式背离？\nCore Index 走强、Broad Regime 仍低迷：DeepWave 市场复盘 · 基于 2026-10-02 本地扫描 · 非投资建议\n核心观点：\nCore Index 的修复已经发生，但 Broad Regime 尚未确认。这不是“科技股必然崩盘”的结论，而是未来数周最重要的验证问题：\n核心指数的强势能否扩散为更广泛的参与和更低的离场压力？\n论证链：数据证明什么，又不能证明什么\n命题\n可验证证据\n合理结论\n不能直接推出\n当前存在指数与广度背离\n2026-10-02：Core Index Recovery 89.2，Broad Regime 15.6，二者相差 73.6 分；SPY/QQQ 位于重建 20 日均线上方约 0.6% / 3.0%。\n核心指",
+      "content_chars": 5044,
+      "images_count": 3,
+      "themes_hint": [
+        "风险管理",
+        "失败复盘"
+      ],
+      "symbols": [
+        "SPY",
+        "QQQ"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "captured_at": "2026-10-07T01:19:19Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "initial_blog_profile_backfill"
     },
     {
       "id": "8d9e6281e5fe0a41bf7f",
@@ -25744,46 +27555,18 @@
       "method_signals_enriched_at": "2026-10-07T03:36:10Z"
     },
     {
-      "id": "9666f1f9a28236f6b04d",
+      "id": "5377eb61a5db0e089b1c",
       "source": "wenxuecity",
       "source_kind": "blog",
       "author": "yifan99",
-      "published_at": "2026-10-03",
-      "title": "科技股反弹是真修复，还是 2000 年式背离？",
-      "url": "https://blog.wenxuecity.com/myblog/31983/202610/1760.html",
-      "excerpt": "科技股反弹是真修复，还是 2000 年式背离？\nCore Index 走强、Broad Regime 仍低迷：DeepWave 市场复盘 · 基于 2026-10-02 本地扫描 · 非投资建议\n核心观点：\nCore Index 的修复已经发生，但 Broad Regime 尚未确认。这不是“科技股必然崩盘”的结论，而是未来数周最重要的验证问题：\n核心指数的强势能否扩散为更广泛的参与和更低的离场压力？\n论证链：数据证明什么，又不能证明什么\n命题\n可验证证据\n合理结论\n不能直接推出\n当前存在指数与广度背离\n2026-10-02：Core Index Recovery 89.2，Broad Regime 15.6，二者相差 73.6 分；SPY/QQQ 位于重建 20 日均线上方约 0.6% / 3.0%。\n核心指",
-      "content_chars": 5044,
-      "images_count": 3,
+      "published_at": "2026-10-06",
+      "title": "AVGO：底部修复已经开始，但趋势确认还差一步",
+      "url": "https://blog.wenxuecity.com/myblog/31983/202610/3715.html",
+      "excerpt": "AVGO：底部修复已经开始，但趋势确认还差一步\nDeepWave 趋势观察 · 根据2026年10月5日的数据，10月6日数据可能有变化\n最近看 AAOI、CIEN 和 AMAT，我越来越觉得，真正值得关注的并不是某一天涨了多少，而是一个更简单的问题：一只股票究竟是“正在反弹”，还是已经重新进入可以\nRide with the Wave\n的趋势？\nAVGO 已经出现明显的底部修复信号，但与已经突破 MA50 的 CIEN 相比，它目前仍然少了最后一道价格确认。\n图1｜AVGO：价格、MA21/MA50、Supertrend、TCDS-D/MACD 与 PPO 的组合结构\n一、真正值得注意的，是内部动量先变了\nAVGO 当前价格约 362.5。单看价格，它仍处于前期调整后的恢复阶段，还不能称为一个漂亮的突破形态。",
+      "content_chars": 1508,
+      "images_count": 0,
       "themes_hint": [
         "风险管理",
-        "失败复盘"
-      ],
-      "symbols": [
-        "SPY",
-        "QQQ"
-      ],
-      "operations": [],
-      "portfolio_rules": [],
-      "lessons": [],
-      "captured_at": "2026-10-07T01:19:19Z",
-      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
-      "intake_class_hint": "backfill",
-      "capture_mode": "initial_blog_profile_backfill"
-    },
-    {
-      "id": "bced53383a2d1aed7e7d",
-      "source": "wenxuecity",
-      "source_kind": "blog",
-      "author": "yifan99",
-      "published_at": "2026-10-02",
-      "title": "CIEN 的技术修复更完整，AAOI 的上涨弹性更大、波动也更高",
-      "url": "https://blog.wenxuecity.com/myblog/31983/202610/703.html",
-      "excerpt": "整体看，两只股票都在经历“中期下跌后的短线反弹”，但 CIEN 的技术修复更完整，AAOI 的上涨弹性更大、波动也更高。\nCIEN：短线已经明显转强。 4月至6月快速上涨，随后持续回落；9月在约310–350美元区域企稳。10月1日放量上涨7.77%，收379.14美元，重新站上短期均线及Supertrend附近，MACD柱线转正，说明反弹开始升级为趋势修复。今天盘中约386.52美元，再涨1.95%，两日累计约9.86%；最高388.81美元。\nAAOI：反弹力度更强，但中期反转尚待确认。 5月见顶后总体下行，8月反弹失败，9月主要在95–110美元附近筑底。10月1日上涨8.12%，收107.32美元，MACD改善并重新站上短期均线；但图中价格仍接近或低于下降中的中期均线和Supertrend压力。今天盘中",
-      "content_chars": 571,
-      "images_count": 2,
-      "themes_hint": [
-        "风险管理",
-        "失败复盘",
         "趋势确认"
       ],
       "symbols": [],
@@ -25796,79 +27579,28 @@
       "capture_mode": "initial_blog_profile_backfill",
       "method_signals": [
         {
-          "condition_id": "ppo_hist_positive",
-          "machine_ready": false,
-          "evidence_excerpt": "CIEN 的技术修复更完整，AAOI 的上涨弹性更大、波动也更高 整体看，两只股票都在经历“中期下跌后的短线反弹”，但 CIEN 的技术修复更完整，AAOI 的上涨弹性更大、波动也更高。 CIEN：短线已经明显转强。 4月至6月快速上涨，随后持续回落；9月在约310–350美元区域企稳。10月1日放量上涨7.77%，收379.14美元，重新站上短期均线及Su",
-          "evidence_hash": "6dd8cb66241c3d50d1ed301a85ab813c55124354a7a65d46388795c1b030872f",
-          "source_derived_only": true
-        },
-        {
-          "condition_id": "macd_hist_positive",
-          "machine_ready": true,
-          "evidence_excerpt": "CIEN 的技术修复更完整，AAOI 的上涨弹性更大、波动也更高 整体看，两只股票都在经历“中期下跌后的短线反弹”，但 CIEN 的技术修复更完整，AAOI 的上涨弹性更大、波动也更高。 CIEN：短线已经明显转强。 4月至6月快速上涨，随后持续回落；9月在约310–350美元区域企稳。10月1日放量上涨7.77%，收379.14美元，重新站上短期均线及Su",
-          "evidence_hash": "6dd8cb66241c3d50d1ed301a85ab813c55124354a7a65d46388795c1b030872f",
-          "source_derived_only": true
-        }
-      ],
-      "method_signals_enriched_at": "2026-10-07T03:26:29Z"
-    },
-    {
-      "id": "9ae79b7468ca2e7f8f75",
-      "source": "wenxuecity",
-      "source_kind": "blog",
-      "author": "yifan99",
-      "published_at": "2026-09-30",
-      "title": "LITE 适合 Sell Put 的理由(结合图)",
-      "url": "https://blog.wenxuecity.com/myblog/31983/202609/22705.html",
-      "excerpt": "LITE 适合 Sell Put 的理由\n波动大,权利金厚。\n126 天内从约 1156 跌到约 548,又反弹到 972,振幅很大,说明隐含波动率通常偏高。卖方收的权利金也会比 QQQ 这类低波动标的高很多。\n下方有多层技术支撑,方便选行权价。\n按图上坐标估算,现价约 972,下面依次是:\nMA21:约 915–920\nMA50:约 860–870\nSupertrend 止损线:约 800–810\n前期低点:约 548\n把行权价放在 MA50 或 Supertrend 附近(约 800–860),相当于给自己留出约 12–18% 的缓冲。\n趋势结构偏多。\n价格在 MA21、MA50 之上,MA21 高于 MA50,Supertrend 已经翻多并逐级抬高。8 月初的 Entry(E)信号之后,右侧几次 ADD",
-      "content_chars": 826,
-      "images_count": 1,
-      "themes_hint": [
-        "Sell Put",
-        "风险管理",
-        "止损纪律"
-      ],
-      "symbols": [
-        "QQQ"
-      ],
-      "operations": [],
-      "portfolio_rules": [],
-      "lessons": [],
-      "captured_at": "2026-10-07T01:19:19Z",
-      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
-      "intake_class_hint": "backfill",
-      "capture_mode": "initial_blog_profile_backfill",
-      "method_signals": [
-        {
           "condition_id": "price_above_ma50",
           "machine_ready": true,
-          "evidence_excerpt": "把行权价放在 MA50 或 Supertrend 附近(约 800–860),相当于给自己留出约 12–18% 的缓冲。 趋势结构偏多。 价格在 MA21、MA50 之上,MA21 高于 MA50,Supertrend 已经翻多并逐级抬高。8 月初的 Entry(E)信号之后,右侧几次 ADD 都落在 MA50 附近,说明回踩均线有承接。",
-          "evidence_hash": "88c449b461a29dea091e396db5186d6853c38bf163d29bf2fa4df170fcf2e7ea",
-          "source_derived_only": true
-        },
-        {
-          "condition_id": "supertrend_bullish",
-          "machine_ready": true,
-          "evidence_excerpt": "把行权价放在 MA50 或 Supertrend 附近(约 800–860),相当于给自己留出约 12–18% 的缓冲。 趋势结构偏多。 价格在 MA21、MA50 之上,MA21 高于 MA50,Supertrend 已经翻多并逐级抬高。8 月初的 Entry(E)信号之后,右侧几次 ADD 都落在 MA50 附近,说明回踩均线有承接。",
-          "evidence_hash": "88c449b461a29dea091e396db5186d6853c38bf163d29bf2fa4df170fcf2e7ea",
-          "source_derived_only": true
+          "evidence_excerpt": "Ride with the Wave 的趋势？ AVGO 已经出现明显的底部修复信号，但与已经突破 MA50 的 CIEN 相比，它目前仍然少了最后一道价格确认。",
+          "evidence_hash": "67fca709d42ff2ef525d996ec39c563c733c8cb13ea6864b882c53251f3ec086",
+          "source_derived_only": true,
+          "state_hint": "EARLY_ENTRY"
         }
       ],
       "method_signals_enriched_at": "2026-10-07T03:26:29Z"
     },
     {
-      "id": "d5b6b9842d3e2a1cd49f",
+      "id": "79c31059d07fa06e5aec",
       "source": "wenxuecity",
       "source_kind": "blog",
       "author": "yifan99",
-      "published_at": "2026-09-29",
-      "title": "AMZN 一次向上 False Break（假突破），目前重新回到偏弱区间",
-      "url": "https://blog.wenxuecity.com/myblog/31983/202609/22036.html",
-      "excerpt": "从这张 AMZN 截至 9/29 的日线图看，把最近这一段更新为：\nAMZN：更像是一次向上 False Break（假突破），目前重新回到偏弱区间。\n关键原因是：前几天价格一度重新站上 MA21 / MA50 附近，并出现绿色 E / E+ 信号，但随后没有形成持续上攻，反而又跌回两条均线下方。今天收在 246.67，而短期均线大约仍在 250–253 区域，这符合典型的“突破后不能站稳 → 回落”的 false breakout 结构。\n同时下面的动量指标也没有确认突破。图中 TCDS = -65，MACD = -0.657，MACD 柱仍在零轴下方，说明这次上穿并没有得到动量配合。因此目前不能把前面的 E/E+ 当成有效趋势反转，更合理的是把它看成一次 early entry 失败。\n我现在会重点看三个区",
-      "content_chars": 946,
+      "published_at": "2026-10-06",
+      "title": "Amazon，要突破了？",
+      "url": "https://blog.wenxuecity.com/myblog/31983/202610/3830.html",
+      "excerpt": "前一段时间看 Amazon，我一直比较谨慎。原因很简单：\n几次看起来要突破，最后都没有走出来。\n但今天再看这张图，我觉得有些东西开始不一样了。\nAMZN 今天收在\n256.29，+1.95%\n。不过真正让我注意的，并不是这 1.95%，而是价格背后的几个信号开始同时转向。\nAmazon DeepWave：价格、MA21/MA50、Supertrend、TCDS-D/MACD 与 PPO\nTCDS终于回到0\n过去几周，Amazon 的 TCDS 一直处于负值，而且一度相当弱。但最近它开始从底部持续回升，今天到了：\nTCDS = 0\n。\n深度负值 → 持续回升 → 0\n单独看“0”似乎没什么特别，但看它走过来的路径，意义完全不同：弱势正在逐渐消失。看 TCDS 不能只看今天是多少，更重要的是看它\n正在往哪里走\n。\n",
+      "content_chars": 1103,
       "images_count": 1,
       "themes_hint": [
-        "失败复盘",
         "趋势确认"
       ],
       "symbols": [
@@ -25883,265 +27615,47 @@
       "capture_mode": "initial_blog_profile_backfill",
       "method_signals": [
         {
+          "condition_id": "tcds_cross_zero",
+          "machine_ready": false,
+          "evidence_excerpt": "。不过真正让我注意的，并不是这 1.95%，而是价格背后的几个信号开始同时转向。 Amazon DeepWave：价格、MA21/MA50、Supertrend、TCDS-D/MACD 与 PPO TCDS终于回到0",
+          "evidence_hash": "2469e7e0beaa9f5383bdbe29cd49efd120daa6e582856f1156ba80491527a634",
+          "source_derived_only": true,
+          "state_hint": "EARLY_ENTRY"
+        },
+        {
+          "condition_id": "ppo_above_signal",
+          "machine_ready": false,
+          "evidence_excerpt": "PPO = -0.532 ｜ Signal = -0.768 ｜ Histogram = +0.237 PPO 本身还在零轴以下，所以 Amazon 还不能算真正进入强趋势。但是一个重要变化已经出现： PPO 已经向上超过 Signal，Histogram 也由负转正。",
+          "evidence_hash": "7df412d613cfd78b4b369be48ea5d1870788eaab17df03caa0290d875a6b3847",
+          "source_derived_only": true,
+          "state_hint": "EARLY_ENTRY"
+        },
+        {
+          "condition_id": "ppo_hist_positive",
+          "machine_ready": false,
+          "evidence_excerpt": "PPO = -0.532 ｜ Signal = -0.768 ｜ Histogram = +0.237 PPO 本身还在零轴以下，所以 Amazon 还不能算真正进入强趋势。但是一个重要变化已经出现： PPO 已经向上超过 Signal，Histogram 也由负转正。",
+          "evidence_hash": "7df412d613cfd78b4b369be48ea5d1870788eaab17df03caa0290d875a6b3847",
+          "source_derived_only": true,
+          "state_hint": "EARLY_ENTRY"
+        },
+        {
           "condition_id": "price_above_ma50",
           "machine_ready": true,
-          "evidence_excerpt": "从这张 AMZN 截至 9/29 的日线图看，把最近这一段更新为： AMZN：更像是一次向上 False Break（假突破），目前重新回到偏弱区间。 关键原因是：前几天价格一度重新站上 MA21 / MA50 附近，并出现绿色 E / E+ 信号，但随后没有形成持续上攻，反而又跌回两条均线下方。今天收在 246.67，而短期均线大约仍在 250–253 区",
-          "evidence_hash": "059f9fd32dd7d4e7ad984292c031f47e38bbd637244900e17ef9b9d916df8084",
+          "evidence_excerpt": "。这也是为什么我还不会说：“Amazon 已经突破，可以追了。” Early Entry → 等待 MA50 确认 如果接下来价格真正站上 MA50，而且能够连续两天守住，同时 TCDS 从 0 继续转正、PPO Histogram 继续扩大，那么性质就不一样了。",
+          "evidence_hash": "0d51291a9e9cc97a8b716f4a17fc63919f5c967b45d972ac8d745055af125b1a",
           "source_derived_only": true,
           "state_hint": "EARLY_ENTRY"
         },
         {
           "condition_id": "ma50_hold_two_sessions",
           "machine_ready": true,
-          "evidence_excerpt": "同时下面的动量指标也没有确认突破。图中 TCDS = -65，MACD = -0.657，MACD 柱仍在零轴下方，说明这次上穿并没有得到动量配合。因此目前不能把前面的 E/E+ 当成有效趋势反转，更合理的是把它看成一次 early entry 失败。 我现在会重点看三个区域： - 250–253：第一道确认区。AMZN 必须重新站回 MA21/MA50，并",
-          "evidence_hash": "48fe7fadf6552da5b555d3a726f2ecb1c7b0e419a04c719d334acc3fbf6c4f62",
-          "source_derived_only": true,
-          "state_hint": "EARLY_ENTRY"
-        },
-        {
-          "condition_id": "price_below_ma50",
-          "machine_ready": true,
-          "evidence_excerpt": "这套系统里，暂时把 AMZN 的信号写成： AMZN 9/29: FALSE BREAK ? Price 246.67 | Below MA21/MA50 | TCDS -65 | MACD 0",
-          "evidence_hash": "f713fd184eafd848c56c2488e9ca775d6cba0fa25193ac5e60d035dddc49bd29",
+          "evidence_excerpt": "。这也是为什么我还不会说：“Amazon 已经突破，可以追了。” Early Entry → 等待 MA50 确认 如果接下来价格真正站上 MA50，而且能够连续两天守住，同时 TCDS 从 0 继续转正、PPO Histogram 继续扩大，那么性质就不一样了。",
+          "evidence_hash": "0d51291a9e9cc97a8b716f4a17fc63919f5c967b45d972ac8d745055af125b1a",
           "source_derived_only": true,
           "state_hint": "EARLY_ENTRY"
         }
       ],
       "method_signals_enriched_at": "2026-10-07T03:36:10Z"
-    },
-    {
-      "id": "e115e9890dd8407ffaac",
-      "source": "wenxuecity",
-      "source_kind": "blog",
-      "author": "yifan99",
-      "published_at": "2026-09-26",
-      "title": "GLW：TCDS开始转正，但上涨趋势尚未确认",
-      "url": "https://blog.wenxuecity.com/myblog/31983/202609/19819.html",
-      "excerpt": "GLW（Corning）这张图很有代表性。经历6月底的高点和随后大幅调整之后，股价进入了较长时间的横盘整理。目前短期动能开始改善，但整体仍处于趋势转换的早期阶段。\n从图中可以看到，三个变化值得关注：\nTCDS由负转正： 从近期的弱势区域快速恢复至+15，说明短期方向开始改善，但目前仍属于初步转强。\nMACD同步改善： 柱状图重新转正，显示短期上涨动能开始恢复。\n价格尚未突破关键压力： 当前股价仍在MA50下方附近运行，上方Supertrend压力尚未有效突破，因此不能认定主要上涨趋势已经形成。\n特别值得关注的是，GLW的股价虽然从低位反弹，但整体仍在横盘区间内，近期尚未形成持续的更高高点。\n与WDC相比，GLW的信号有什么不同？\n指标\nWDC\nGLW\nTCDS\n刚进入正值区域\n+15，初步转强\nMACD\n开始转",
-      "content_chars": 697,
-      "images_count": 2,
-      "themes_hint": [
-        "趋势确认"
-      ],
-      "symbols": [],
-      "operations": [],
-      "portfolio_rules": [],
-      "lessons": [],
-      "captured_at": "2026-10-07T01:19:19Z",
-      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
-      "intake_class_hint": "backfill",
-      "capture_mode": "initial_blog_profile_backfill",
-      "method_signals": [
-        {
-          "condition_id": "tcds_cross_zero",
-          "machine_ready": false,
-          "evidence_excerpt": "GLW：TCDS开始转正，但上涨趋势尚未确认 GLW（Corning）这张图很有代表性。经历6月底的高点和随后大幅调整之后，股价进入了较长时间的横盘整理。目前短期动能开始改善，但整体仍处于趋势转换的早期阶段。",
-          "evidence_hash": "cf529a9ea81c4c62ba4b9e56df2ba72a4acc9ff2688b7d4c89e513b0fddfeb17",
-          "source_derived_only": true,
-          "state_hint": "EARLY_ENTRY"
-        },
-        {
-          "condition_id": "ppo_hist_positive",
-          "machine_ready": false,
-          "evidence_excerpt": "从图中可以看到，三个变化值得关注： TCDS由负转正： 从近期的弱势区域快速恢复至+15，说明短期方向开始改善，但目前仍属于初步转强。 MACD同步改善： 柱状图重新转正，显示短期上涨动能开始恢复。",
-          "evidence_hash": "749cb03a1101e752102d5a9ebd6493b484673ce06ccaed77c0bed03b2db662ed",
-          "source_derived_only": true,
-          "state_hint": "EARLY_ENTRY"
-        },
-        {
-          "condition_id": "macd_hist_positive",
-          "machine_ready": true,
-          "evidence_excerpt": "从图中可以看到，三个变化值得关注： TCDS由负转正： 从近期的弱势区域快速恢复至+15，说明短期方向开始改善，但目前仍属于初步转强。 MACD同步改善： 柱状图重新转正，显示短期上涨动能开始恢复。",
-          "evidence_hash": "749cb03a1101e752102d5a9ebd6493b484673ce06ccaed77c0bed03b2db662ed",
-          "source_derived_only": true,
-          "state_hint": "EARLY_ENTRY"
-        },
-        {
-          "condition_id": "price_above_ma50",
-          "machine_ready": true,
-          "evidence_excerpt": "TCDS由负转正： 从近期的弱势区域快速恢复至+15，说明短期方向开始改善，但目前仍属于初步转强。 MACD同步改善： 柱状图重新转正，显示短期上涨动能开始恢复。 价格尚未突破关键压力： 当前股价仍在MA50下方附近运行，上方Supertrend压力尚未有效突破，因此不能认定主要上涨趋势已经形成。",
-          "evidence_hash": "52bd9bae00b13439ece6a2811b40e05939a08c248e4a50437299adcd9a780fcc",
-          "source_derived_only": true,
-          "state_hint": "EARLY_ENTRY"
-        }
-      ],
-      "method_signals_enriched_at": "2026-10-07T03:26:29Z"
-    },
-    {
-      "id": "05ad2b7fa3b169d67736",
-      "source": "wenxuecity",
-      "source_kind": "blog",
-      "author": "yifan99",
-      "published_at": "2026-09-26",
-      "title": "WDC和STX的TCDS变化 与SNDK比要弱得多",
-      "url": "https://blog.wenxuecity.com/myblog/31983/202609/19716.html",
-      "excerpt": "WDC的动态图很有意思！它很好地展示了TCDS如何在股价尚未明显突破时，捕捉趋势由弱转强的早期变化。\nWDC：TCDS开始转强，但仍处于趋势确认阶段\n从图中可以看到，WDC经历了前期的大幅上涨、6月底的高位回落，以及随后数月的震荡整理。近期出现了几个值得关注的变化：\nTCDS： 从负值区域快速回升，重新进入正值区域，提示短期动能正在改善。\nMACD： 柱状图由负转正，反映下跌动能减弱、上涨动能开始恢复。\n价格结构： 股价从近期低点反弹，但仍处于MA50和上方Supertrend压力附近，尚未形成明确突破。\n趋势确认： 短期指标率先改善，但中长期趋势尚未完全同步。\n这与此前GOOG、AMZN的情况有些相似：价格还在整理，TCDS却开始提前反映方向的变化。\n不过，TCDS转正只是早期信号，并不等于上涨趋势已经确认。",
-      "content_chars": 418,
-      "images_count": 2,
-      "themes_hint": [
-        "长期持有纪律",
-        "趋势确认"
-      ],
-      "symbols": [
-        "AMZN",
-        "GOOG"
-      ],
-      "operations": [],
-      "portfolio_rules": [],
-      "lessons": [],
-      "captured_at": "2026-10-07T01:19:19Z",
-      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
-      "intake_class_hint": "backfill",
-      "capture_mode": "initial_blog_profile_backfill",
-      "method_signals": [
-        {
-          "condition_id": "tcds_cross_zero",
-          "machine_ready": false,
-          "evidence_excerpt": "从图中可以看到，WDC经历了前期的大幅上涨、6月底的高位回落，以及随后数月的震荡整理。近期出现了几个值得关注的变化： TCDS： 从负值区域快速回升，重新进入正值区域，提示短期动能正在改善。 MACD： 柱状图由负转正，反映下跌动能减弱、上涨动能开始恢复。",
-          "evidence_hash": "6259671e2ea6ab967e59dc0a121f2e3a672c218bc58b17e0fc802d44916dc892",
-          "source_derived_only": true,
-          "state_hint": "CONFIRMATION"
-        },
-        {
-          "condition_id": "ppo_hist_positive",
-          "machine_ready": false,
-          "evidence_excerpt": "从图中可以看到，WDC经历了前期的大幅上涨、6月底的高位回落，以及随后数月的震荡整理。近期出现了几个值得关注的变化： TCDS： 从负值区域快速回升，重新进入正值区域，提示短期动能正在改善。 MACD： 柱状图由负转正，反映下跌动能减弱、上涨动能开始恢复。",
-          "evidence_hash": "6259671e2ea6ab967e59dc0a121f2e3a672c218bc58b17e0fc802d44916dc892",
-          "source_derived_only": true,
-          "state_hint": "CONFIRMATION"
-        },
-        {
-          "condition_id": "macd_hist_positive",
-          "machine_ready": true,
-          "evidence_excerpt": "从图中可以看到，WDC经历了前期的大幅上涨、6月底的高位回落，以及随后数月的震荡整理。近期出现了几个值得关注的变化： TCDS： 从负值区域快速回升，重新进入正值区域，提示短期动能正在改善。 MACD： 柱状图由负转正，反映下跌动能减弱、上涨动能开始恢复。",
-          "evidence_hash": "6259671e2ea6ab967e59dc0a121f2e3a672c218bc58b17e0fc802d44916dc892",
-          "source_derived_only": true,
-          "state_hint": "CONFIRMATION"
-        },
-        {
-          "condition_id": "price_above_ma50",
-          "machine_ready": true,
-          "evidence_excerpt": "趋势确认： 短期指标率先改善，但中长期趋势尚未完全同步。 这与此前GOOG、AMZN的情况有些相似：价格还在整理，TCDS却开始提前反映方向的变化。 不过，TCDS转正只是早期信号，并不等于上涨趋势已经确认。如果后续股价能够突破MA50和Supertrend压力，同时TCDS持续保持正值，才意味着多周期趋势进一步改善。",
-          "evidence_hash": "3dc6b3d59c8664e4ee171e6fe02983e5cff726eece0f103dd0e2a40cc5155603",
-          "source_derived_only": true,
-          "state_hint": "CONFIRMATION"
-        }
-      ],
-      "method_signals_enriched_at": "2026-10-07T03:26:29Z"
-    },
-    {
-      "id": "4e9807fbebe47c32a5f4",
-      "source": "wenxuecity",
-      "source_kind": "blog",
-      "author": "yifan99",
-      "published_at": "2026-09-25",
-      "title": "MU与SNDK：TCDS提示趋势转强，但仍需关注财报风险",
-      "url": "https://blog.wenxuecity.com/myblog/31983/202609/19491.html",
-      "excerpt": "MU与SNDK：TCDS提示趋势转强，但仍需关注财报风险\n有网友问MU和SNDK的TCDS， 我在这里提供这两个股票的TCDS变化\n从最新的TCDS图表来看，MU和SNDK都表现出上行趋势修复的迹象。\nMU（Micron）： 股价经历前期调整后重新走强，TCDS从低位快速回升至正值区域，目前日线约为65，周线约为50，显示多周期趋势正在改善。MACD保持正值，股价也重新接近阶段性高点。虽然短期仍可能震荡，但整体上涨结构尚未破坏。我是在图中买入点买了一些MUU小赌，不赌ER，打算在ER前出掉。\nSNDK（SanDisk）： 股价从前期调整低点明显反弹，TCDS日线约为55，周线约为-10，短期上涨动能有所恢复。不过，日线与周线尚未形成完全一致的多头共振，显示目前仍属于趋势过渡阶段。未来能否继续上行，需要观察周线是",
-      "content_chars": 679,
-      "images_count": 2,
-      "themes_hint": [
-        "风险管理"
-      ],
-      "symbols": [
-        "MU"
-      ],
-      "operations": [
-        {
-          "symbols": [
-            "MU"
-          ],
-          "actions": [
-            "buy"
-          ],
-          "attribution": "author_action",
-          "attribution_confidence": "high"
-        }
-      ],
-      "portfolio_rules": [],
-      "lessons": [],
-      "captured_at": "2026-10-07T01:19:19Z",
-      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
-      "intake_class_hint": "backfill",
-      "capture_mode": "initial_blog_profile_backfill"
-    },
-    {
-      "id": "31d67da43d6cc50d16cb",
-      "source": "wenxuecity",
-      "source_kind": "blog",
-      "author": "yifan99",
-      "published_at": "2026-09-25",
-      "title": "不预测股价，而是学会跟随趋势",
-      "url": "https://blog.wenxuecity.com/myblog/31983/202609/19300.html",
-      "excerpt": "不预测股价，而是学会跟随趋势\n投资多年，我越来越体会到，股票投资最难的不是找到一只好股票，而是知道什么时候买、什么时候卖，以及什么时候应该耐心持有。\n每天都有各种财经新闻，AI投资、公司财报、美联储政策……但很多时候，当新闻出来时，股价早已发生变化。市场交易的不仅是已经发生的事情，更是对未来的预期。\n最近，我一直利用自己建立的TCDS多周期趋势系统观察股票走势。从ORCL、GOOG、AMZN到AAPL和QCOM，我发现，趋势的变化往往比新闻更早提示市场的方向。\nORCL：TCDS提前发出转弱信号\nORCL就是一个很好的例子。在股价接近高位时，TCDS已经开始回落，随后日线和周线逐渐转弱。即使中间出现反弹，趋势也未能恢复，股价最终进入明显的调整。\n这说明，投资不能仅仅依靠公司的利好消息，更需要观察市场是否仍然支持",
-      "content_chars": 2423,
-      "images_count": 5,
-      "themes_hint": [
-        "风险管理",
-        "长期持有纪律"
-      ],
-      "symbols": [
-        "AAPL",
-        "AMZN",
-        "QCOM",
-        "GOOG"
-      ],
-      "operations": [
-        {
-          "symbols": [
-            "AAPL",
-            "AMZN",
-            "QCOM",
-            "GOOG"
-          ],
-          "actions": [
-            "buy",
-            "sell",
-            "hold"
-          ],
-          "attribution": "author_action",
-          "attribution_confidence": "high"
-        },
-        {
-          "symbols": [
-            "AAPL"
-          ],
-          "actions": [
-            "buy"
-          ],
-          "attribution": "unconfirmed_author_context",
-          "attribution_confidence": "needs_review"
-        }
-      ],
-      "portfolio_rules": [],
-      "lessons": [],
-      "captured_at": "2026-10-07T01:19:19Z",
-      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
-      "intake_class_hint": "backfill",
-      "capture_mode": "initial_blog_profile_backfill"
-    },
-    {
-      "id": "10b5e3e9ffe2bb208daf",
-      "source": "wenxuecity",
-      "source_kind": "blog",
-      "author": "yifan99",
-      "published_at": "2026-09-25",
-      "title": "分享：投资之路 · 第一阶段：从一箱认购证到一套白菜价的房子",
-      "url": "https://blog.wenxuecity.com/myblog/31983/202609/19077.html",
-      "excerpt": "投资之路  第一阶段：从一箱认购证到一套白菜价的房子\n人生第一次听说股票这个词，是在上海，认购证正热闹的年月。\n那时候班里有位同学，在认购证发售的最后一天，用白菜价扫了一整箱回来，随手往集体宿舍那张堆满脸盆、旧课本、不知道谁的臭袜子的床铺上一扔，就跟扔了一箱过期挂历似的。我们几个还笑他：这年头连废纸都要囤了？\n后来的事大家都知道了，他不声不响地坐在那堆废纸上，一路接接接接到了财富自由。我们笑得最欢的时候，也是后来想起来最惭愧的时候：原来那不是一箱废纸，是一张船票，而我们，是笑着目送它开船的人。\n我呢，是那种典型的读书人穷病患者，只会低头读书，不会抬头看机会。这件事就这么被我不动声色地从记忆里优化掉了，跟删了个不常用的APP一样干脆利落。\n后来我去了日本留学，一待就是7年。那些年，依旧是同一套发财哲学：不分昼夜地",
-      "content_chars": 1355,
-      "images_count": 0,
-      "themes_hint": [
-        "其他研究"
-      ],
-      "symbols": [],
-      "operations": [],
-      "portfolio_rules": [],
-      "lessons": [],
-      "captured_at": "2026-10-07T01:19:19Z",
-      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
-      "intake_class_hint": "backfill",
-      "capture_mode": "initial_blog_profile_backfill"
     },
     {
       "id": "a3629377f8d3e3fc0f63",
@@ -26378,5 +27892,15 @@
       "capture_mode": "scheduled_blog_scan"
     }
   ],
-  "updated_at": "2026-10-07T07:23:52Z"
+  "updated_at": "2026-10-07T07:23:52Z",
+  "retention_policy": "append_only_no_record_count_cap",
+  "historical_recovery": {
+    "completed_at": "2026-10-07T13:43:06.018028+00:00",
+    "git_commits_scanned": 23,
+    "current_before": 1200,
+    "historical_unique_seen": 1260,
+    "recovered_missing_records": 60,
+    "current_after": 1260,
+    "policy": "restored rows are historical_backfill and never genuine forward evidence"
+  }
 }
