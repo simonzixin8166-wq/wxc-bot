@@ -1,6 +1,6 @@
 {
-  "version": 2,
-  "generated_at": "2026-10-07T02:59:51Z",
+  "version": 3,
+  "generated_at": "2026-10-07T03:01:49Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -14,10 +14,11 @@
         "video_id": "wxKcxcjSq5o",
         "title": "美股 MRVL、AMD、ISRG、CEG！三季度财报看什么？10大公司EPS贡献超过490！",
         "url": "https://www.youtube.com/watch?v=wxKcxcjSq5o",
-        "published_at": "",
+        "published_at": "2026-10-07",
         "flat_metadata_keys": [
           "channel_id",
-          "duration"
+          "duration",
+          "rss_published_at"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -37,11 +38,10 @@
         "video_id": "XW0RpReUUbk",
         "title": "2支暴跌老牌传统股！可以买入了？",
         "url": "https://www.youtube.com/watch?v=XW0RpReUUbk",
-        "published_at": "2026-10-05",
+        "published_at": "",
         "flat_metadata_keys": [
           "channel_id",
-          "duration",
-          "rss_published_at"
+          "duration"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -56,16 +56,13 @@
       "author": "Andrei Jikh",
       "role": "market_context",
       "status": "ok",
-      "listed_videos": 10,
+      "listed_videos": 0,
       "latest": {
-        "video_id": "pO1eGLrl1lw",
-        "title": "How I've Invested To Build Wealth",
-        "url": "https://www.youtube.com/watch?v=pO1eGLrl1lw",
+        "video_id": null,
+        "title": null,
+        "url": null,
         "published_at": "",
-        "flat_metadata_keys": [
-          "channel_id",
-          "duration"
-        ],
+        "flat_metadata_keys": [],
         "transcript_available": false,
         "transcript_chars": 0,
         "content_quality": "unknown_until_needed",
@@ -105,6 +102,14 @@
       "pending_reason": "missing_learning_text"
     }
   ],
+  "intake_health": {
+    "status": "ok",
+    "channel_errors": 0,
+    "stuck_high_quality_pending": 0,
+    "provider_waiting_pending": 2,
+    "stuck_video_ids": [],
+    "meaning": "Q1/Q2 text must not remain stuck in pending; Q3-Q5 may legitimately wait for better learning text."
+  },
   "guardrails": [
     "Initial run only establishes a seen-video baseline; existing videos are not inserted into forward research feed.",
     "New videos with insufficient learning text remain pending; Q1/Q2 text with missing reliable published_at may enter backfill-only semantic learning but can never count as Forward/Promotion.",
