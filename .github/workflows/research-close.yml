@@ -6,6 +6,11 @@ on:
     paths:
       - "youtube_research.py"
       - "transcript_router.py"
+      - "research_feed.py"
+      - "daily_close_research.py"
+      - "wxc_blog.py"
+      - "tests/test_blog_collector.py"
+      - "tests/test_research_feed.py"
       - "requirements.txt"
       - ".github/workflows/research-close.yml"
   schedule:
