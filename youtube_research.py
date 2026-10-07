@@ -256,6 +256,7 @@ def make_feed_row(channel:dict, meta:dict, acquisition:dict)->dict:
         "operations":learning["operations"],
         "portfolio_rules":learning["portfolio_rules"],
         "lessons":learning["lessons"],
+        "method_signals":rf.extract_method_signals(joined),
         "captured_at":_now(),
         "source_role":channel["role"],
         "transcript_status":acquisition.get("status"),
