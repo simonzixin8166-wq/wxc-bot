@@ -288,3 +288,25 @@ with tempfile.TemporaryDirectory() as td:
         yt.SEEN_PATH,yt.STATUS_PATH,yt.PENDING_PATH,rf.FEED_PATH=old_seen,old_status,old_pending,old_feed
 
 print("PASS timestamp-unknown YouTube text is learning-only/backfill")
+
+
+# Intake watchdog: high-quality text must not remain silently stuck in pending.
+health=yt._intake_health(
+    [
+      {"video_id":"ok_wait","last_quality":"Q5","retry_count":8},
+      {"video_id":"stuck_q2","last_quality":"Q2","retry_count":3},
+    ],
+    [{"status":"ok"}],
+)
+assert health["status"]=="attention"
+assert health["stuck_high_quality_pending"]==1
+assert health["provider_waiting_pending"]==1
+assert health["stuck_video_ids"]==["stuck_q2"]
+
+healthy=yt._intake_health(
+    [{"video_id":"wait_q5","last_quality":"Q5","retry_count":9}],
+    [{"status":"ok"}],
+)
+assert healthy["status"]=="ok"
+assert healthy["stuck_high_quality_pending"]==0
+print("PASS YouTube intake health watchdog")
