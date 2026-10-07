@@ -60,6 +60,7 @@ jobs:
           JOBS_DIR: /tmp/jobs
           WATCH_MINUTES: "30"
           FORUM_DAILY_PAGES: "8"
+          TRANSCRIPT_FAST_MODE: "1"
         run: python daily_close_research.py
 
       - name: Save forward research state first
