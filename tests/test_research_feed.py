@@ -157,3 +157,30 @@ assert "AMZN" in rf.detect_symbols(filtered)
 learning=rf.extract_structured_learning(filtered)
 assert all("NVDA" not in (x.get("symbols") or []) and "TSLA" not in (x.get("symbols") or []) for x in learning["operations"])
 print("PASS YouTube promotion noise filter")
+
+
+# Canonical research feed is append-only by record count. Presentation may be
+# bounded elsewhere, but acquired source records must never be evicted.
+with tempfile.TemporaryDirectory() as td:
+    old = rf.FEED_PATH
+    rf.FEED_PATH = Path(td) / "research_feed.json"
+    try:
+        batch=[]
+        for i in range(1255):
+            batch.append({
+                "id":f"bulk-{i}","source":"wenxuecity","source_kind":"forum","author":"A",
+                "published_at":"2026-10-07","title":f"row {i}","url":f"https://example.com/{i}",
+                "excerpt":"","content_chars":0,"images_count":0,"themes_hint":["其他研究"],
+                "symbols":[],"operations":[],"portfolio_rules":[],"lessons":[],"method_signals":[],
+                "captured_at":f"2026-10-07T10:{i%60:02d}:{i%60:02d}Z"
+            })
+        assert rf.append_records(batch)==1255
+        saved=rf._read(rf.FEED_PATH,{"records":[]})
+        assert len(saved["records"])==1255
+        assert saved["retention_policy"]=="append_only_no_record_count_cap"
+    finally:
+        rf.FEED_PATH = old
+
+assert "LITE" in rf.detect_symbols("LITE 适合 Sell Put，波动大、权利金厚")
+assert "NVDA" in rf.detect_symbols("NVDA Sell Put")
+print("PASS no destructive feed cap / LITE NVDA ticker coverage")
