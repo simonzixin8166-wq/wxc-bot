@@ -374,7 +374,7 @@ def capture_blog_profile(name: str, days: int = 2) -> list[dict]:
     start = end - timedelta(days=days)
     outdir = tempfile.mkdtemp(prefix=f"wxc_blog_daily_{author}_")
     try:
-        result = blog.collect(profile, start, end, outdir, delay=2.5, max_articles=40, max_images=0)
+        result = blog.collect(profile, start, end, outdir, delay=2.5, max_articles=None, max_images=0)
         seen_path = blog_seen_path(author)
         # Preserve BrightLine's original state filename for backward compatibility.
         if author == "BrightLine" and BLOG_SEEN.exists() and not seen_path.exists():
