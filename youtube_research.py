@@ -228,8 +228,9 @@ def make_feed_row(channel:dict, meta:dict, acquisition:dict)->dict:
     url=str(meta.get("webpage_url") or _canonical_video_url(vid))
     published=_entry_published(meta)
     text=(acquisition.get("text") or "").strip()
-    joined=(title+"\n"+text).strip()
-    if text and acquisition.get("rule_candidate_allowed"):
+    filtered_text,filter_meta=rf.filter_youtube_promotion_noise(text)
+    joined=(title+"\n"+filtered_text).strip()
+    if filtered_text and acquisition.get("rule_candidate_allowed"):
         learning=rf.extract_structured_learning(joined)
     else:
         # Q3/Q4/Q5 may still provide topic/symbol context, but must not fabricate
@@ -250,6 +251,8 @@ def make_feed_row(channel:dict, meta:dict, acquisition:dict)->dict:
         "url":url,
         "excerpt":text[:MAX_EXCERPT],
         "content_chars":len(text),
+        "semantic_content_chars":len(filtered_text),
+        "content_filtering":filter_meta,
         "images_count":0,
         "themes_hint":rf.detect_themes(joined),
         "symbols":learning["symbols"],
