@@ -33,6 +33,7 @@ HISTORICAL_BACKLOG_PATH=DATA_DIR/"youtube_historical_backlog.json"
 HISTORICAL_ARCHIVE_PATH=DATA_DIR/"youtube_learning_archive.json"
 MAX_LIST_PER_CHANNEL=10
 MAX_DISCOVERY_SCAN=int(os.getenv("YOUTUBE_MAX_DISCOVERY_SCAN","200"))
+MAX_CONTENT_WORK_PER_RUN=max(1,int(os.getenv("YOUTUBE_CONTENT_WORK_PER_RUN","6")))
 MAX_TRANSCRIPT_CHARS=12000
 MAX_EXCERPT=360
 
@@ -429,9 +430,43 @@ def collect(
                 "error":f"{type(exc).__name__}: {exc}",
             })
 
+    # Persist discovery BEFORE any expensive per-video content acquisition.
+    # If YouTube throttles transcript/metadata providers later in the run, the
+    # discovered inventory and continuity proof still survive and every new
+    # video is durably queued for a later bounded work batch.
+    discovery_generated=_now()
+    discovery_complete=all(
+        bool(x.get("discovery_complete"))
+        for x in channel_status if x.get("status")!="error"
+    ) and not any(x.get("status")=="error" for x in channel_status)
+    _write(SEEN_PATH.parent/"youtube_discovery_state.json",{
+        "version":2,
+        "updated_at":discovery_generated,
+        "channels":next_channel_state,
+        "complete":discovery_complete,
+        "policy":"Discovery is persisted before content acquisition. Scan-until-prior-anchor proves continuity; content work is a persistent bounded backlog.",
+    })
+    _write(SEEN_PATH,{"version":1,"updated_at":discovery_generated,"video_ids":sorted(seen)})
+
+    provisional_pending=dict(pending)
+    for ch,entry in discovered:
+        vid=_video_id(entry)
+        if not vid or vid in provisional_pending:
+            continue
+        meta=_entry_metadata(entry)
+        aq={"quality":"Q5","provider":"not_yet_probed","status":"discovered_pending","rule_candidate_allowed":False}
+        provisional_pending[vid]=_pending_record(ch,meta,aq,None)
+    pending=provisional_pending
+    _write(PENDING_PATH,{
+        "version":1,
+        "updated_at":discovery_generated,
+        "records":sorted(pending.values(),key=lambda x:(x.get("first_discovered_at") or "",x.get("video_id") or "")),
+        "guardrail":"Every discovered video is durably queued before expensive content acquisition; batching never drops backlog.",
+    })
+
     # Newly discovered videos plus unresolved pending videos form this run's
     # content-acquisition worklist. Pending rows are retried even after they
-    # disappear from the latest-10 channel window.
+    # disappear from the latest channel window.
     work={}
     for vid,old in pending.items():
         fresh=current_entries.get(vid)
@@ -467,8 +502,18 @@ def collect(
     rows=[]
     next_pending=dict(pending)
 
+    # Processing limit is only a per-run resource budget. The full queue was
+    # already persisted above, so items beyond this batch remain durable.
+    work_items=list(work.items())
+    work_items.sort(key=lambda kv:(
+        0 if kv[1][3] is False else 1,
+        str((kv[1][2] or {}).get("first_discovered_at") or ""),
+        kv[0],
+    ))
+    attempted_work=work_items[:MAX_CONTENT_WORK_PER_RUN]
+
     if not first_run:
-        for vid,(ch,entry,prior_pending,was_pending) in work.items():
+        for vid,(ch,entry,prior_pending,was_pending) in attempted_work:
             try:
                 meta=_entry_metadata(entry)
                 if not _entry_published(entry):
@@ -536,12 +581,14 @@ def collect(
         added=rf.append_records(rows)
 
     generated=_now()
+    # Refresh the timestamp after bounded acquisition without changing the
+    # already-proven discovery continuity state.
     _write(SEEN_PATH.parent/"youtube_discovery_state.json",{
-        "version":1,
+        "version":2,
         "updated_at":generated,
         "channels":next_channel_state,
-        "complete":all(bool(x.get("discovery_complete")) for x in channel_status if x.get("status")!="error") and not any(x.get("status")=="error" for x in channel_status),
-        "policy":"scan-until-prior-anchor; partial scans keep the old anchor and expand depth next run",
+        "complete":discovery_complete,
+        "policy":"Discovery is persisted before content acquisition. Scan-until-prior-anchor proves continuity; content work is a persistent bounded backlog.",
     })
 
     # Explicitly account for legacy seen videos that are not represented by
@@ -601,13 +648,16 @@ def collect(
         "first_run":first_run,
         "channels":channel_status,
         "discovered_new_videos":0 if first_run else len(discovered),
-        "pending_retried":0 if first_run else sum(1 for _,_,_,was_pending in work.values() if was_pending),
+        "pending_retried":0 if first_run else sum(1 for _,(_,_,_,was_pending) in attempted_work if was_pending),
+        "content_attempted_this_run":0 if first_run else len(attempted_work),
+        "content_work_budget":MAX_CONTENT_WORK_PER_RUN,
+        "content_backlog_after_run":len(pending_rows),
         "pending_total":len(pending_rows),
         "admitted_from_pending":admitted_from_pending,
         "nonforward_timestamp_unknown_admitted":sum(1 for x in appended if x.get("admission")=="research_feed_nonforward_timestamp_unknown"),
         "feed_records_added":added,
         "historical_backlog_total":len(backlog_rows),
-        "discovery_complete":all(bool(x.get("discovery_complete")) for x in channel_status if x.get("status")!="error") and not any(x.get("status")=="error" for x in channel_status),
+        "discovery_complete":discovery_complete,
         "new_video_diagnostics":appended,
         "intake_health":health,
         "guardrails":[
@@ -618,6 +668,7 @@ def collect(
             "Collector never downloads video/audio and stores only bounded transcript excerpts.",
             "After baseline, discovery completeness requires reaching the prior per-channel anchor in the same run; scan depth expands 10→20→40… up to the safety ceiling, otherwise status remains partial.",
             "Seen-but-not-learned videos are explicitly reconciled into historical backlog.",
+            "Content acquisition is bounded per run only after every discovery is durably persisted; unprocessed items remain pending/backlog.",
         ],
     }
     _write(SEEN_PATH,{"version":1,"updated_at":generated,"video_ids":sorted(seen)})
