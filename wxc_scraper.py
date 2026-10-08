@@ -41,6 +41,47 @@ def get(url, retries=3, delay=2.5):
     return None
 
 # ---------- 列表页 ----------
+def parse_list_entries(html, author):
+    """Return every visible author entry, including replies, without collapsing
+    multiple replies that share the same parent-thread id."""
+    soup = BeautifulSoup(html, "html.parser")
+    posts = soup.select("a.post")
+    out = []
+    for i, a in enumerate(posts):
+        sp = a.find_next("span", class_="b")
+        if sp is None:
+            continue
+        nxt = posts[i + 1] if i + 1 < len(posts) else None
+        if nxt is not None and (sp.sourceline, sp.sourcepos) > (nxt.sourceline, nxt.sourcepos):
+            continue
+        au = sp.find("a")
+        if not au or au.get_text(strip=True).casefold() != author.casefold():
+            continue
+        href = urljoin(BASE, a.get("href", ""))
+        m = re.search(r"/(\d+)\.html", href)
+        if not m:
+            continue
+        container=a.find_parent("p") or a.parent
+        visible=(container.get_text(" ",strip=True) if container else "")
+        dm=re.search(r"(\d{2}/\d{2}/\d{4})\s*(postreply)?\s*(\d{2}:\d{2}:\d{2})",visible,re.I)
+        published=""
+        reply_marker=False
+        if dm:
+            published=f"{dm.group(1)} {dm.group(3)}"
+            reply_marker=bool(dm.group(2))
+        title=a.get_text(strip=True)
+        raw_key="|".join([author,href,published,title])
+        out.append({
+            "entry_key":hashlib.sha1(raw_key.encode("utf-8")).hexdigest()[:20],
+            "parent_post_id":m.group(1),
+            "url":href,
+            "title":title,
+            "author":author,
+            "published_at":published,
+            "entry_kind":"reply" if reply_marker else "post",
+        })
+    return out
+
 def parse_list(html, author):
     """返回 [(post_id, url, title, date_str)],只保留指定作者。
     不依赖 <p> 父节点(原始 HTML 与浏览器保存版结构不同),
