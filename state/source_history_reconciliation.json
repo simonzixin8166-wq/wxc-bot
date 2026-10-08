@@ -1,0 +1,233 @@
+{
+  "version": 1,
+  "generated_at": "2026-10-08T16:18:39.438938+00:00",
+  "principle": "author x month reconciliation; unscanned history is unknown, backfill is never Genuine Forward",
+  "matrix": {
+    "BrightLine": {
+      "2026-09": {
+        "records": 4,
+        "backfill": 1,
+        "excerpt": 4,
+        "live_or_unclassified": 3,
+        "structured_view": 3
+      },
+      "2026-10": {
+        "records": 7,
+        "live_or_unclassified": 7,
+        "excerpt": 7,
+        "structured_view": 3
+      }
+    },
+    "bogbog": {
+      "2026-07": {
+        "records": 475,
+        "live_or_unclassified": 475,
+        "excerpt": 179,
+        "title_only": 296,
+        "structured_view": 12
+      },
+      "2026-08": {
+        "records": 233,
+        "live_or_unclassified": 233,
+        "excerpt": 86,
+        "title_only": 147,
+        "structured_view": 5
+      },
+      "2026-09": {
+        "records": 166,
+        "live_or_unclassified": 166,
+        "title_only": 103,
+        "excerpt": 63,
+        "structured_view": 3
+      },
+      "2026-10": {
+        "records": 65,
+        "live_or_unclassified": 65,
+        "excerpt": 31,
+        "title_only": 34,
+        "structured_view": 2
+      }
+    },
+    "jenning": {
+      "2025-07": {
+        "records": 1,
+        "backfill": 1,
+        "excerpt": 1
+      }
+    },
+    "yifan99": {
+      "2026-09": {
+        "records": 11,
+        "backfill": 11,
+        "title_only": 3,
+        "excerpt": 8,
+        "structured_view": 2
+      },
+      "2026-10": {
+        "records": 24,
+        "live_or_unclassified": 19,
+        "title_only": 8,
+        "excerpt": 16,
+        "backfill": 5
+      }
+    },
+    "三心三意": {
+      "2026-09": {
+        "records": 45,
+        "backfill": 36,
+        "title_only": 45,
+        "live_or_unclassified": 9
+      },
+      "2026-10": {
+        "records": 233,
+        "backfill": 19,
+        "title_only": 221,
+        "live_or_unclassified": 214,
+        "excerpt": 12,
+        "structured_view": 1
+      }
+    },
+    "我是一只井底蛙": {
+      "2026-10": {
+        "records": 54,
+        "live_or_unclassified": 54,
+        "title_only": 35,
+        "excerpt": 19
+      }
+    }
+  },
+  "coverage": {
+    "BrightLine": {
+      "kinds": [
+        "blog"
+      ],
+      "records": 11,
+      "first_month": "2026-09",
+      "last_month": "2026-10",
+      "watched_forum_author": false,
+      "blog": {
+        "archive_months_scanned": [
+          "2026-09",
+          "2026-10"
+        ],
+        "archive_failures": [],
+        "unique_article_ids": 11,
+        "missing_from_feed": 0,
+        "recovery_window_days": 14,
+        "history_before_window": "not_scanned (unknown, not zero)"
+      }
+    },
+    "bogbog": {
+      "kinds": [
+        "forum"
+      ],
+      "records": 939,
+      "first_month": "2026-07",
+      "last_month": "2026-10",
+      "watched_forum_author": true,
+      "forum": {
+        "seen_ids": 939,
+        "in_feed": 939,
+        "seen_not_in_feed": 0,
+        "seen_not_in_feed_examples": [],
+        "reason": null
+      }
+    },
+    "jenning": {
+      "kinds": [
+        "forum"
+      ],
+      "records": 1,
+      "first_month": "2025-07",
+      "last_month": "2025-07",
+      "watched_forum_author": false,
+      "scope": "one-off research backfill (not a watched author); no history scan"
+    },
+    "yifan99": {
+      "kinds": [
+        "blog",
+        "forum"
+      ],
+      "records": 35,
+      "first_month": "2026-09",
+      "last_month": "2026-10",
+      "watched_forum_author": true,
+      "blog": {
+        "archive_months_scanned": [
+          "2026-09",
+          "2026-10"
+        ],
+        "archive_failures": [],
+        "unique_article_ids": 13,
+        "missing_from_feed": 0,
+        "recovery_window_days": 14,
+        "history_before_window": "not_scanned (unknown, not zero)"
+      },
+      "forum": {
+        "seen_ids": 25,
+        "in_feed": 22,
+        "seen_not_in_feed": 4,
+        "seen_not_in_feed_examples": [
+          "112513",
+          "112544",
+          "112561",
+          "112567"
+        ],
+        "reason": "legacy seen before the feed existed / not research posts; recoverable only via explicit backfill"
+      }
+    },
+    "三心三意": {
+      "kinds": [
+        "forum"
+      ],
+      "records": 278,
+      "first_month": "2026-09",
+      "last_month": "2026-10",
+      "watched_forum_author": true,
+      "forum": {
+        "seen_ids": 347,
+        "in_feed": 278,
+        "seen_not_in_feed": 79,
+        "seen_not_in_feed_examples": [
+          "112259",
+          "112282",
+          "112291",
+          "112302",
+          "112318"
+        ],
+        "reason": "legacy seen before the feed existed / not research posts; recoverable only via explicit backfill"
+      }
+    },
+    "我是一只井底蛙": {
+      "kinds": [
+        "forum"
+      ],
+      "records": 54,
+      "first_month": "2026-10",
+      "last_month": "2026-10",
+      "watched_forum_author": true,
+      "forum": {
+        "seen_ids": 57,
+        "in_feed": 54,
+        "seen_not_in_feed": 6,
+        "seen_not_in_feed_examples": [
+          "112313",
+          "112423",
+          "112428",
+          "112430",
+          "112439"
+        ],
+        "reason": "legacy seen before the feed existed / not research posts; recoverable only via explicit backfill"
+      }
+    }
+  },
+  "totals": {
+    "authors": 6,
+    "records": 1318,
+    "text_depth": {
+      "title_only": 892,
+      "excerpt": 426
+    }
+  },
+  "access_policy": "no bypassing 403/429 or login walls; history fills only via bounded, rate-limited backfill"
+}
