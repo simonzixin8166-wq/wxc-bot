@@ -34,6 +34,12 @@ try:
     assert p["attribution_fallback"]=="list_visible_reply_text"
     assert p["source_entry_key"]==rows[1]["entry_key"]
 
+
+    # A main post fetch/parse/author mismatch is unresolved. It must not be
+    # converted into a synthetic reply or marked processed.
+    unresolved=agent._forum_entry_post("三心三意",rows[0],{})
+    assert unresolved is None
+
     feed_row=rf.normalize("forum","三心三意",p)
     assert feed_row["forum_entry_kind"]=="reply"
     assert feed_row["attribution_fallback"]=="list_visible_reply_text"
