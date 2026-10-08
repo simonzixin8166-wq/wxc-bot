@@ -44,7 +44,7 @@
         "paid": false
       },
       "telegram:send_message": {
-        "count": 3,
+        "count": 4,
         "paid": false
       }
     }
