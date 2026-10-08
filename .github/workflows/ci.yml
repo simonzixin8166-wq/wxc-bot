@@ -27,6 +27,7 @@ jobs:
           PYTHONPATH=. python tests/test_source_intake_completeness.py
           PYTHONPATH=. python tests/test_forum_entry_capture.py
           PYTHONPATH=. python tests/test_forum_anchor_continuity.py
+          PYTHONPATH=. python tests/test_forum_persist_before_seen.py
           PYTHONPATH=. python tests/test_research_feed.py
           PYTHONPATH=. python tests/test_youtube_research.py
           PYTHONPATH=. python tests/test_transcript_router.py

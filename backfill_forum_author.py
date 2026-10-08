@@ -41,7 +41,12 @@ def backfill(author: str, days: int, max_pages: int):
     ordered = sorted(ids, key=int, reverse=True)
     print(json.dumps({"stage":"fetch_posts","matched_ids":len(ordered)}, ensure_ascii=False), flush=True)
     posts = agent.fetch_posts(ordered, ids, state, since=cutoff)
-    added = rf.add_forum_posts(author, posts)
+    # Historical recovery is never Genuine Forward evidence.
+    added = rf.add_forum_posts(author, posts, provenance={
+        "intake_class_hint": "backfill",
+        "capture_mode": "forum_author_backfill",
+        "forward_evidence_eligible": False,
+    })
 
     # Mark captured IDs as seen so the normal daily collector continues from here
     # instead of replaying the history window.

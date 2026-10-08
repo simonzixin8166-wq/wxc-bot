@@ -425,7 +425,10 @@ def check_watch(authors):
         posts = fetch_posts(new, ids, state)
         if not posts:
             continue
-        rf.add_forum_posts(au, posts)
+        # Notification only. The canonical research feed is written exclusively by
+        # daily_close_research.collect_forum (anchor continuity + persist-then-seen,
+        # serialized in the wxc-research-writer group); a second unserialized
+        # writer here could bypass those guarantees.
         say(f"📌 {au} 新发言 {len(posts)} 条 ({datetime.now():%m-%d %H:%M})\n\n" + digest_text(posts, au))
         seen.update(p["id"] for p in posts); save_seen(au, seen)
         sent = 0  # 带图的帖子:把图片直接发到聊天里
