@@ -1,5 +1,5 @@
 name: research-close
-# Research-close contract refresh: 2026-10-08T03:00Z forum-entry-completeness
+# Research-close contract refresh: 2026-10-08T04:12Z serialized-full-intake
 
 on:
   push:
