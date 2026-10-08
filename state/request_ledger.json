@@ -42,6 +42,10 @@
       "myalphaview:server_action_status": {
         "count": 1,
         "paid": false
+      },
+      "telegram:send_message": {
+        "count": 1,
+        "paid": false
       }
     }
   }
