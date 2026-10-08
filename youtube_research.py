@@ -341,15 +341,28 @@ def collect(
                 budget=min(MAX_DISCOVERY_SCAN,max(50,MAX_LIST_PER_CHANNEL))
             else:
                 budget=MAX_LIST_PER_CHANNEL if prior_complete else min(MAX_DISCOVERY_SCAN,max(MAX_LIST_PER_CHANNEL,prior_budget))
-            entries=_call_list_channel(list_channel,url,budget)
-            ids=[_video_id(x) for x in entries if _video_id(x)]
+            scan_attempts=[]
+            while True:
+                entries=_call_list_channel(list_channel,url,budget)
+                ids=[_video_id(x) for x in entries if _video_id(x)]
+                if not prior_anchor and not first_run:
+                    prior_anchor=next((vid for vid in ids if vid in seen),"")
+                anchor_found=bool(prior_anchor) and prior_anchor in set(ids)
+                reached_end=len(entries)<budget
+                # First-ever baseline may use channel end; every later scan
+                # must prove continuity to the previous per-channel anchor.
+                discovery_complete=bool(entries) and (
+                    reached_end if first_run else anchor_found
+                )
+                scan_attempts.append({
+                    "limit":budget,"listed":len(ids),
+                    "anchor_found":anchor_found,"reached_end":reached_end,
+                })
+                if discovery_complete or budget>=MAX_DISCOVERY_SCAN:
+                    break
+                budget=min(MAX_DISCOVERY_SCAN,max(budget+1,budget*2))
             newest=entries[0] if entries else {}
-            if not prior_anchor and not first_run:
-                prior_anchor=next((vid for vid in ids if vid in seen),"")
-            anchor_found=(not prior_anchor) or (prior_anchor in set(ids))
-            reached_end=len(entries)<budget
-            discovery_complete=bool(entries) and (anchor_found or reached_end)
-            next_limit=MAX_LIST_PER_CHANNEL if discovery_complete else min(MAX_DISCOVERY_SCAN,max(budget+1,budget*2))
+            next_limit=MAX_LIST_PER_CHANNEL if discovery_complete else MAX_DISCOVERY_SCAN
             sample={
                 "video_id":_video_id(newest) or None,
                 "title":newest.get("title"),
@@ -375,6 +388,7 @@ def collect(
                 "handle":handle,"author":ch["author"],"role":ch["role"],
                 "status":"ok" if discovery_complete else "partial",
                 "listed_videos":len(ids),"scan_limit":budget,
+                "scan_attempts":scan_attempts,
                 "previous_anchor_video_id":prior_anchor or None,
                 "anchor_found":anchor_found,"reached_end":reached_end,
                 "discovery_complete":discovery_complete,
@@ -394,6 +408,7 @@ def collect(
                 "previous_anchor_video_id":prior_anchor or None,
                 "complete":discovery_complete,
                 "last_scan_limit":budget,
+                "scan_attempts":scan_attempts,
                 "next_scan_limit":next_limit,
                 "last_listed_count":len(ids),
                 "updated_at":_now(),
@@ -601,7 +616,7 @@ def collect(
             "Rule-supply sources require Q1/Q2 rule-eligible text for first research-feed admission.",
             "Market-context sources may enter with Q1-Q4 text; Q3/Q4 remain non-rule-eligible.",
             "Collector never downloads video/audio and stores only bounded transcript excerpts.",
-            "Discovery completeness is proven by reaching the prior per-channel anchor or channel end; otherwise status remains partial and scan depth expands next run.",
+            "After baseline, discovery completeness requires reaching the prior per-channel anchor in the same run; scan depth expands 10→20→40… up to the safety ceiling, otherwise status remains partial.",
             "Seen-but-not-learned videos are explicitly reconciled into historical backlog.",
         ],
     }
