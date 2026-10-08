@@ -1,0 +1,57 @@
+name: backfill-forum-post
+
+# Manual only: ingest one named historical forum post as research backfill
+# (never Genuine Forward; author's original post only, no replies).
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: "Forum post URL (https://bbs.wenxuecity.com/<board>/<id>.html)"
+        required: true
+      author:
+        description: "Expected author (must match the page)"
+        required: true
+      request:
+        description: "Research request reference, e.g. quant-dashboard#133"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: wxc-research-writer
+  cancel-in-progress: false
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Validate
+        run: |
+          python -m py_compile backfill_forum_post.py research_feed.py verify_research_feed.py
+          PYTHONPATH=. python tests/test_backfill_forum_post.py
+      - name: Ingest post as backfill
+        env:
+          DATA_DIR: state
+          URL: ${{ inputs.url }}
+          AUTHOR: ${{ inputs.author }}
+          REQ: ${{ inputs.request }}
+        run: |
+          out=$(python backfill_forum_post.py --url "$URL" --author "$AUTHOR" --request "$REQ")
+          echo "$out"
+          echo "::notice title=Single-post research backfill::$out"
+      - name: Save feed
+        run: |
+          git config user.name "wxc-bot"
+          git config user.email "wxc-bot@users.noreply.github.com"
+          git add state/research_feed.json
+          if [ -f state/research_feed_manifest.json ]; then git add state/research_feed_manifest.json; fi
+          git diff --cached --quiet || (git commit -m "research backfill: single historical forum post" && git pull --rebase origin main && python verify_research_feed.py && git push origin HEAD:main)
