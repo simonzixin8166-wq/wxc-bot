@@ -12,7 +12,8 @@ permissions:
   contents: write
 
 concurrency:
-  group: wxc-research-feed-recovery
+  # P2-11: every research_feed writer shares one serialized group (no concurrent feed writes).
+  group: wxc-research-writer
   cancel-in-progress: false
 
 jobs:
@@ -58,8 +59,10 @@ jobs:
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add state/research_feed.json state/research_feed_recovery_report.json
+          if [ -f state/research_feed_manifest.json ]; then git add state/research_feed_manifest.json; fi
           if ! git diff --cached --quiet; then
             git commit -m "recover historical research feed records"
             git pull --rebase origin main
+            python verify_research_feed.py
             git push origin HEAD:main
           fi

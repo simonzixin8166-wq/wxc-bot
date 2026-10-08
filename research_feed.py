@@ -43,9 +43,59 @@ def _read(path: Path, default):
     except Exception:
         return default
 
-def _write(path: Path, value):
+MANIFEST_NAME = "research_feed_manifest.json"
+
+
+class FeedIntegrityError(RuntimeError):
+    """Raised instead of writing a feed that would lose records or is not valid JSON."""
+
+
+def feed_manifest(feed: dict, payload: bytes) -> dict:
+    """Small sidecar that lets consumers verify the >1 MiB feed they downloaded."""
+    ids = sorted(str(r.get("id")) for r in feed.get("records", []) if r.get("id"))
+    return {
+        "version": 1,
+        "file": "state/research_feed.json",
+        "feed_updated_at": feed.get("updated_at"),
+        "record_count": len(feed.get("records", [])),
+        "unique_ids": len(set(ids)),
+        "ids_sha256": hashlib.sha256("\n".join(ids).encode("utf-8")).hexdigest(),
+        "bytes": len(payload),
+        "content_sha256": hashlib.sha256(payload).hexdigest(),
+    }
+
+
+def _atomic_write_bytes(path: Path, payload: bytes):
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(value, ensure_ascii=False, indent=2), encoding="utf-8")
+    fd, tmp = tempfile.mkstemp(prefix=path.name + ".", suffix=".tmp", dir=str(path.parent))
+    try:
+        with os.fdopen(fd, "wb") as f:
+            f.write(payload)
+            f.flush()
+            os.fsync(f.fileno())
+        os.replace(tmp, path)  # atomic on POSIX: readers see old or new, never a torn file
+    finally:
+        if os.path.exists(tmp):
+            os.unlink(tmp)
+
+
+def _write(path: Path, value):
+    payload = json.dumps(value, ensure_ascii=False, indent=2).encode("utf-8")
+    if Path(path).name == FEED_PATH.name:
+        records = value.get("records") if isinstance(value, dict) else None
+        if not isinstance(records, list):
+            raise FeedIntegrityError("research feed must be an object with a records list")
+        on_disk = _read(path, {"records": []}).get("records") or []
+        if len(records) < len(on_disk):
+            # The feed is append-only; a shorter feed means a lost write or a bad merge.
+            raise FeedIntegrityError(f"refusing to shrink research feed {len(on_disk)} -> {len(records)}")
+        json.loads(payload.decode("utf-8"))  # round-trip check before replacing anything
+        _atomic_write_bytes(path, payload)
+        manifest = feed_manifest(value, payload)
+        _atomic_write_bytes(Path(path).parent / MANIFEST_NAME,
+                            json.dumps(manifest, ensure_ascii=False, indent=2).encode("utf-8"))
+        return
+    _atomic_write_bytes(path, payload)
 
 def _canonical(url: str) -> str:
     return re.sub(r"#.*$", "", url or "")

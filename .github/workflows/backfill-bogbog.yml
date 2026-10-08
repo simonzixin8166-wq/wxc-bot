@@ -11,7 +11,8 @@ permissions:
   contents: write
 
 concurrency:
-  group: backfill-bogbog-research
+  # P2-11: every research_feed writer shares one serialized group (no concurrent feed writes).
+  group: wxc-research-writer
   cancel-in-progress: false
 
 jobs:
@@ -39,4 +40,5 @@ jobs:
           git config user.name "wxc-bot"
           git config user.email "wxc-bot@users.noreply.github.com"
           git add state/research_feed.json state/seen_bogbog.json
-          git diff --cached --quiet || (git commit -m "backfill bogbog recent research source" && git pull --rebase origin main && git push origin HEAD:main)
+          if [ -f state/research_feed_manifest.json ]; then git add state/research_feed_manifest.json; fi
+          git diff --cached --quiet || (git commit -m "backfill bogbog recent research source" && git pull --rebase origin main && python verify_research_feed.py && git push origin HEAD:main)
