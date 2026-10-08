@@ -29348,9 +29348,46 @@
       "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
       "capture_mode": "scheduled_forum_anchor_scan",
       "intake_class_hint": "live_candidate"
+    },
+    {
+      "id": "fd98325a7b0276ca38d8",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "jenning",
+      "published_at": "2025-07-19 19:39:15",
+      "title": "长持倍数基金的方法探讨",
+      "url": "https://bbs.wenxuecity.com/tzlc/2138962.html",
+      "excerpt": "杠杆只是个放大器，能放大利润，也能放大损失，自身无所谓好坏，如果非要说好坏的话，在于利用的是否合理。就像给你把菜刀，用来砍人就是干坏事，用来做美味佳饶就是干好事，好坏与菜刀无关。\n我本人对杠杆是情有独钟，次贷危机时资金匮乏，也正是因为大胆利用杠杆，十来年间在地产投资上取得了很好的回报，这如其说是我的功劳，倒不如说是杠杆的功劳，我只是在最应该用杠杆的时候恰巧把杠杆用到好处的那头猪！\n房产可以用杠杆，股市也一样，只要利用的合理。\n最近我写过几篇有关倍数基金和杠杆的文章，其中也讨论到倍数基金可不可以长持的问题。\n总起来说，倍数基金的最佳倍数应该介入2到3之间，取决于不同的指数和时间段。做短的（short or inverse）基金不适合长持，倍数超过3的做长基金也不适合长持（超过3倍的磨损太快），非宽带的倍数指数基金",
+      "content_chars": 3368,
+      "images_count": 3,
+      "themes_hint": [
+        "Sell Put",
+        "风险管理",
+        "长期持有纪律"
+      ],
+      "symbols": [
+        "TQQQ",
+        "QQQ",
+        "SPY"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "forum_entry_kind": null,
+      "source_entry_key": null,
+      "parent_post_id": null,
+      "attribution_fallback": null,
+      "captured_at": "2026-10-08T13:52:30Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "single_post_research_backfill",
+      "forward_evidence_eligible": false,
+      "research_request": "quant-dashboard#133",
+      "content_scope": "author_original_post_only"
     }
   ],
-  "updated_at": "2026-10-08T13:35:22Z",
+  "updated_at": "2026-10-08T13:52:30Z",
   "retention_policy": "append_only_no_record_count_cap",
   "historical_recovery": {
     "completed_at": "2026-10-07T13:43:06.018028+00:00",
