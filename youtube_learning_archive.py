@@ -25,6 +25,7 @@ import youtube_provider_health as health
 DATA_DIR=Path(os.getenv("DATA_DIR","state"))
 OUT=DATA_DIR/"youtube_learning_archive.json"
 HEALTH_OUT=DATA_DIR/"youtube_provider_health.json"
+BACKLOG=DATA_DIR/"youtube_historical_backlog.json"
 MAX_EXCERPT=0
 RETRY_DAYS={"Q1":30,"Q2":30,"Q3":7,"Q4":7,"Q5":7}
 
@@ -250,8 +251,29 @@ def main():
             row["last_probe_at"]=prior_generated_at
         prior_by_video[str(row.get("video_id"))]=row
     now=datetime.now(timezone.utc)
+    backlog_doc={}
+    try:
+        backlog_doc=json.loads(BACKLOG.read_text(encoding="utf-8"))
+    except Exception:
+        backlog_doc={}
+    probes=[]
+    by_video={}
+    for p in list(health.PROBES)+(backlog_doc.get("records") or []):
+        vid=str(p.get("video_id") or "")
+        if not vid:continue
+        candidate={
+            "video_id":vid,
+            "author":p.get("author") or "unknown",
+            "title":p.get("title") or "",
+            "role":p.get("role") or "market_context",
+        }
+        # Curated/static probe metadata wins when both exist.
+        if vid not in by_video or p in health.PROBES:
+            by_video[vid]=candidate
+    probes=list(by_video.values())
+
     rows=[]
-    for p in health.PROBES:
+    for p in probes:
         prior=prior_by_video.get(str(p.get("video_id")))
         if should_probe(prior,now):
             rows.append(merge_with_prior(build_probe(p),prior))
@@ -266,6 +288,7 @@ def main():
         "records":rows,
         "counts":{
             "records":len(rows),
+            "backlog_candidates_included":sum(1 for p in probes if str(p.get("video_id")) in {str(x.get("video_id")) for x in (backlog_doc.get("records") or [])}),
             "q1_q2_learning_eligible":sum(1 for r in rows if r["historical_learning_eligible"]),
             "q5_metadata_only":sum(1 for r in rows if r["quality"]=="Q5"),
             "rule_supply_records":sum(1 for r in rows if r["role"]=="rule_supply"),
@@ -274,7 +297,7 @@ def main():
         },
         "guardrails":[
             "This archive is never appended to research_feed.",
-            "These historical videos never enter Source Store, Rule Registry, EventScore, Promotion, Readiness, or Planner gating.",
+            "Historical backlog videos are actively probed into this archive when metadata is available, but never enter Source Store, Rule Registry, EventScore, Promotion, Readiness, or Planner gating.",
             "Only Q1/Q2 text is semantically extracted; Q3/Q4/Q5 remain descriptive/context-only.",
             "Third-party transcripts are processed in-memory only; persisted records keep hashes, text length and structured learning, not transcript excerpts.",
             "Historical learning quality is monotonic: a temporary weaker provider result cannot erase a prior stronger Q1/Q2 snapshot.",
