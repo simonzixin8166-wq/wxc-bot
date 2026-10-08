@@ -369,7 +369,7 @@ def append_records(records: list[dict]) -> int:
 def add_forum_posts(author: str, posts: list[dict]) -> int:
     return append_records([normalize("forum", author, p) for p in posts])
 
-def capture_blog_profile(name: str, days: int = 2) -> list[dict]:
+def capture_blog_profile(name: str, days: int = 2, return_report: bool = False):
     profile = blog.resolve_profile(name)
     if not profile:
         return []
@@ -397,8 +397,18 @@ def capture_blog_profile(name: str, days: int = 2) -> list[dict]:
                 continue
             row = normalize("blog", author, post)
             if pid not in seen:
-                row["intake_class_hint"] = "backfill" if bootstrap_backfill else "live_candidate"
-                row["capture_mode"] = "initial_blog_profile_backfill" if bootstrap_backfill else "scheduled_blog_scan"
+                scan_complete=bool(result.get("scan_complete"))
+                if bootstrap_backfill:
+                    row["intake_class_hint"]="backfill"
+                    row["capture_mode"]="initial_blog_profile_backfill"
+                elif not scan_complete:
+                    row["intake_class_hint"]="backfill"
+                    row["capture_mode"]="incomplete_blog_scan_backfill"
+                    row["forward_evidence_eligible"]=False
+                    row["source_notice"]="博客归档扫描存在缺失月份；正文保留用于历史学习，但本轮禁止计入 Genuine Forward。"
+                else:
+                    row["intake_class_hint"]="live_candidate"
+                    row["capture_mode"]="scheduled_blog_scan_complete"
                 fresh.append(row)
                 seen.add(pid)
             elif row.get("method_signals"):
@@ -408,6 +418,26 @@ def capture_blog_profile(name: str, days: int = 2) -> list[dict]:
                 enrich.append(row)
         _write(seen_path, sorted(seen))
         append_records(fresh + enrich)
+        if return_report:
+            return {
+                "fresh":fresh,
+                "report":{
+                    "author":author,
+                    "scan_complete":bool(result.get("scan_complete")),
+                    "archive_months":result.get("archive_months"),
+                    "archive_months_ok":result.get("archive_months_ok") or [],
+                    "archive_failures":result.get("archive_failures") or [],
+                    "overview_ok":bool(result.get("overview_ok")),
+                    "article_links_found":result.get("article_links_found",0),
+                    "posts_parsed":result.get("posts_parsed",len(result.get("posts") or [])),
+                    "fresh_records":len(fresh),
+                    "seen_total":len(seen),
+                    "bootstrap_backfill":bootstrap_backfill,
+                    "retention_policy":result.get("retention_policy"),
+                    "start":start.isoformat(),
+                    "end":end.isoformat(),
+                },
+            }
         return fresh
     finally:
         shutil.rmtree(outdir, ignore_errors=True)
