@@ -85,6 +85,7 @@ jobs:
         run: |
           git config user.name "wxc-bot"
           git config user.email "wxc-bot@users.noreply.github.com"
+          python source_history_reconciliation.py || echo '::warning::source history reconciliation failed (non-gating)'
           git add state
           git diff --cached --quiet || (git commit -m "update forward research source feed" && git pull --rebase origin main && python verify_research_feed.py && git push origin HEAD:main)
 
