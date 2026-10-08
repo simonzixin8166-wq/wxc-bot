@@ -81,7 +81,7 @@ def collect_forum():
     discovered_by_author={}
     for author in authors:
         entries=agent.entries_for(author,htmls)
-        seen_entries_path=Path("state")/f"seen_forum_entries_{author}.json"
+        seen_entries_path=FORUM_SCAN_STATE.parent/f"seen_forum_entries_{author}.json"
         entry_state_exists=seen_entries_path.exists()
         seen_entries=set(_read(seen_entries_path,[]))
         legacy_seen={str(x) for x in agent.load_seen(author)}
