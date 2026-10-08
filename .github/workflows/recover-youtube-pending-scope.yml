@@ -1,0 +1,62 @@
+name: Recover YouTube Pending Scope
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "recover_youtube_pending_history.py"
+      - ".github/workflows/recover-youtube-pending-scope.yml"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: wxc-research-writer
+  cancel-in-progress: false
+
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Recover legacy pending scope from Git history
+        run: python recover_youtube_pending_history.py
+
+      - name: Reconcile source intake completeness
+        run: python source_intake_completeness.py
+
+      - name: Validate chronology and accounting contracts
+        run: |
+          PYTHONPATH=. python tests/test_youtube_research.py
+          PYTHONPATH=. python tests/test_source_intake_completeness.py
+          python - <<'PY'
+          import json
+          r=json.load(open("state/youtube_pending_scope_recovery.json",encoding="utf-8"))
+          assert r["current_pending_after"]<=r["current_pending_before"]
+          assert r["largest_pending_jump"]["added"]>=20
+          c=json.load(open("state/source_intake_completeness.json",encoding="utf-8"))
+          assert c["youtube"]["accounting_balanced"] is True
+          print(r)
+          print(c["youtube"])
+          PY
+
+      - name: Commit recovered scope
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add state/pending_youtube.json state/youtube_historical_backlog.json state/youtube_pending_scope_recovery.json state/source_intake_completeness.json
+          if ! git diff --cached --quiet; then
+            git commit -m "reclassify legacy YouTube pending as historical learning"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
