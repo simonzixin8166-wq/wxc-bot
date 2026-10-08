@@ -1,10 +1,12 @@
 {
-  "version": 2,
-  "updated_at": "2026-10-08T04:33:19.502238+00:00",
+  "version": 3,
+  "updated_at": "2026-10-08T04:38:15.357475+00:00",
   "anchor_id": "114182",
   "previous_anchor_id": "114182",
   "legacy_seen_anchor_id": "114176",
   "complete": true,
+  "continuity_complete": true,
+  "processing_complete": true,
   "pages_scanned": 8,
   "scan_budget": 8,
   "scan_attempts": [
@@ -31,6 +33,19 @@
     "我是一只井底蛙": 0,
     "bogbog": 0
   },
+  "processed_entries_by_author": {
+    "三心三意": 0,
+    "yifan99": 0,
+    "我是一只井底蛙": 0,
+    "bogbog": 0
+  },
+  "unresolved_entries_by_author": {
+    "三心三意": 0,
+    "yifan99": 0,
+    "我是一只井底蛙": 0,
+    "bogbog": 0
+  },
+  "unresolved_entries_total": 0,
   "feed_records_added": 0,
-  "guardrail": "complete requires proof that the scan reached the previous known anchor; first migration uses the highest legacy seen id as that anchor. Partial scans never advance the anchor or create Genuine Forward evidence."
+  "guardrail": "complete requires both continuity to the prior anchor and durable processing of every newly visible entry. Unresolved entries keep the batch partial, block anchor advancement, and prevent Genuine Forward admission."
 }

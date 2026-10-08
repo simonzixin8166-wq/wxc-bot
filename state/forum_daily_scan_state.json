@@ -1,10 +1,12 @@
 {
-  "version": 2,
-  "updated_at": "2026-10-08T04:33:19.502238+00:00",
+  "version": 3,
+  "updated_at": "2026-10-08T04:38:15.357475+00:00",
   "anchor_id": "114182",
   "previous_anchor_id": "114182",
   "legacy_seen_anchor_id": "114176",
   "complete": true,
+  "continuity_complete": true,
+  "processing_complete": true,
   "pages_scanned": 8,
   "scan_budget": 8,
   "scan_attempts": [
