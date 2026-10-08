@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "updated_at": "2026-10-08T03:23:43.849908+00:00",
+  "updated_at": "2026-10-08T03:25:13.370354+00:00",
   "anchor_id": "114181",
-  "previous_anchor_id": "114176",
+  "previous_anchor_id": "114181",
   "legacy_seen_anchor_id": "114176",
   "complete": true,
   "pages_scanned": 8,
@@ -26,11 +26,11 @@
     "bogbog"
   ],
   "new_entries_by_author": {
-    "三心三意": 1,
+    "三心三意": 0,
     "yifan99": 0,
     "我是一只井底蛙": 0,
     "bogbog": 0
   },
-  "feed_records_added": 1,
+  "feed_records_added": 0,
   "guardrail": "complete requires proof that the scan reached the previous known anchor; first migration uses the highest legacy seen id as that anchor. Partial scans never advance the anchor or create Genuine Forward evidence."
 }
