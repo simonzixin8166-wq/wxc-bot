@@ -1,60 +1,60 @@
 {
   "version": 2,
-  "updated_at": "2026-10-08T04:07:30Z",
+  "updated_at": "2026-10-08T04:11:35Z",
   "channels": {
     "@RhinoFinance": {
       "author": "RhinoFinance / 视野环球财经",
       "anchor_video_id": "o3v28EEIdb4",
-      "previous_anchor_video_id": "wxKcxcjSq5o",
+      "previous_anchor_video_id": "o3v28EEIdb4",
       "complete": true,
-      "last_scan_limit": 50,
+      "last_scan_limit": 10,
       "scan_attempts": [
         {
-          "limit": 50,
-          "listed": 50,
+          "limit": 10,
+          "listed": 10,
           "anchor_found": true,
           "reached_end": false
         }
       ],
       "next_scan_limit": 10,
-      "last_listed_count": 50,
-      "updated_at": "2026-10-08T04:06:12Z"
+      "last_listed_count": 10,
+      "updated_at": "2026-10-08T04:10:24Z"
     },
     "@老李玩钱": {
       "author": "老李玩钱",
       "anchor_video_id": "XW0RpReUUbk",
       "previous_anchor_video_id": "XW0RpReUUbk",
       "complete": true,
-      "last_scan_limit": 50,
+      "last_scan_limit": 10,
       "scan_attempts": [
         {
-          "limit": 50,
-          "listed": 50,
+          "limit": 10,
+          "listed": 10,
           "anchor_found": true,
           "reached_end": false
         }
       ],
       "next_scan_limit": 10,
-      "last_listed_count": 50,
-      "updated_at": "2026-10-08T04:06:13Z"
+      "last_listed_count": 10,
+      "updated_at": "2026-10-08T04:10:24Z"
     },
     "@AndreiJikh": {
       "author": "Andrei Jikh",
       "anchor_video_id": "pO1eGLrl1lw",
       "previous_anchor_video_id": "pO1eGLrl1lw",
       "complete": true,
-      "last_scan_limit": 50,
+      "last_scan_limit": 10,
       "scan_attempts": [
         {
-          "limit": 50,
-          "listed": 50,
+          "limit": 10,
+          "listed": 10,
           "anchor_found": true,
           "reached_end": false
         }
       ],
       "next_scan_limit": 10,
-      "last_listed_count": 50,
-      "updated_at": "2026-10-08T04:06:13Z"
+      "last_listed_count": 10,
+      "updated_at": "2026-10-08T04:10:25Z"
     }
   },
   "complete": true,

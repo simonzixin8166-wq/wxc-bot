@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-10-08T04:07:30Z",
+  "generated_at": "2026-10-08T04:11:35Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -9,17 +9,17 @@
       "author": "RhinoFinance / 视野环球财经",
       "role": "rule_supply",
       "status": "ok",
-      "listed_videos": 50,
-      "scan_limit": 50,
+      "listed_videos": 10,
+      "scan_limit": 10,
       "scan_attempts": [
         {
-          "limit": 50,
-          "listed": 50,
+          "limit": 10,
+          "listed": 10,
           "anchor_found": true,
           "reached_end": false
         }
       ],
-      "previous_anchor_video_id": "wxKcxcjSq5o",
+      "previous_anchor_video_id": "o3v28EEIdb4",
       "anchor_found": true,
       "reached_end": false,
       "discovery_complete": true,
@@ -45,12 +45,12 @@
       "author": "老李玩钱",
       "role": "rule_supply",
       "status": "ok",
-      "listed_videos": 50,
-      "scan_limit": 50,
+      "listed_videos": 10,
+      "scan_limit": 10,
       "scan_attempts": [
         {
-          "limit": 50,
-          "listed": 50,
+          "limit": 10,
+          "listed": 10,
           "anchor_found": true,
           "reached_end": false
         }
@@ -81,12 +81,12 @@
       "author": "Andrei Jikh",
       "role": "market_context",
       "status": "ok",
-      "listed_videos": 50,
-      "scan_limit": 50,
+      "listed_videos": 10,
+      "scan_limit": 10,
       "scan_attempts": [
         {
-          "limit": 50,
-          "listed": 50,
+          "limit": 10,
+          "listed": 10,
           "anchor_found": true,
           "reached_end": false
         }
@@ -113,18 +113,40 @@
       "transcript_probe": "deferred_to_worklist"
     }
   ],
-  "discovered_new_videos": 117,
-  "pending_retried": 0,
+  "discovered_new_videos": 0,
+  "pending_retried": 6,
   "content_attempted_this_run": 6,
   "content_work_budget": 6,
-  "content_backlog_after_run": 119,
-  "pending_total": 119,
-  "admitted_from_pending": 0,
-  "nonforward_timestamp_unknown_admitted": 0,
-  "feed_records_added": 0,
-  "historical_backlog_total": 48,
+  "content_backlog_after_run": 118,
+  "pending_total": 118,
+  "admitted_from_pending": 1,
+  "nonforward_timestamp_unknown_admitted": 1,
+  "feed_records_added": 1,
+  "historical_backlog_total": 49,
   "discovery_complete": true,
   "new_video_diagnostics": [
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "lWd7zsWV-4I",
+      "title": "美股 NVDA、TSM、MSFT！对冲基金：不加仓，等抬轿子！标普各种相关性瓦解！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "wxKcxcjSq5o",
+      "title": "美股 MRVL、AMD、ISRG、CEG！三季度财报看什么？10大公司EPS贡献超过490！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
     {
       "author": "RhinoFinance / 视野环球财经",
       "video_id": "-KAra9tD4RU",
@@ -133,7 +155,7 @@
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
       "admission": "pending_content",
-      "was_pending": false,
+      "was_pending": true,
       "pending_reason": "missing_learning_text"
     },
     {
@@ -144,19 +166,23 @@
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
       "admission": "pending_content",
-      "was_pending": false,
+      "was_pending": true,
       "pending_reason": "missing_learning_text"
     },
     {
       "author": "Andrei Jikh",
       "video_id": "0NjfsieWHbU",
       "title": "How I'm Investing In The SpaceX IPO",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
+      "published_at": "",
+      "transcript_status": "available",
+      "content_quality": "Q4",
+      "content_provider": "pickscribe.com",
       "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": false,
-      "pending_reason": "missing_learning_text"
+      "content_chars": 733,
+      "symbols": [],
+      "operations": 0,
+      "admission": "research_feed_nonforward_timestamp_unknown",
+      "was_pending": true
     },
     {
       "author": "RhinoFinance / 视野环球财经",
@@ -166,29 +192,7 @@
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
       "admission": "pending_content",
-      "was_pending": false,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "Andrei Jikh",
-      "video_id": "16oTiM8o8ic",
-      "title": "My Alternative Investment Portfolio (Pokemon Edition)",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": false,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "19S-O_bla-A",
-      "title": "美股 MRVL抢单AVGO！AMD更新！财政部加码回购债券！为什么？钱哪来？QE吗？",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": false,
+      "was_pending": true,
       "pending_reason": "missing_learning_text"
     }
   ],
@@ -196,7 +200,7 @@
     "status": "ok",
     "channel_errors": 0,
     "stuck_high_quality_pending": 0,
-    "provider_waiting_pending": 119,
+    "provider_waiting_pending": 118,
     "stuck_video_ids": [],
     "meaning": "Q1/Q2 text must not remain stuck in pending; Q3-Q5 may legitimately wait for better learning text."
   },
