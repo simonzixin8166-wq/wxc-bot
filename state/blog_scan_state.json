@@ -1,0 +1,17 @@
+{
+  "authors": {
+    "BrightLine": {
+      "last_success_at": "2026-10-08T03:06:47.211878+00:00",
+      "recovery_days_used": 14,
+      "new_records": 0
+    },
+    "yifan99": {
+      "last_success_at": "2026-10-08T03:06:47.211878+00:00",
+      "recovery_days_used": 14,
+      "new_records": 0
+    }
+  },
+  "version": 1,
+  "updated_at": "2026-10-08T03:06:47.211878+00:00",
+  "policy": "recovery window expands from the last successful scheduled scan; it is not capped at 14 days"
+}
