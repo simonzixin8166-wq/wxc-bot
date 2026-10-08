@@ -57,13 +57,20 @@ def collect_forum():
     added=0
     discovered_by_author={}
     for author in authors:
-        ids=agent.ids_for(author,htmls)
-        seen=agent.load_seen(author)
-        new=sorted((i for i in ids if i not in seen),key=int,reverse=True)
-        discovered_by_author[author]=len(new)
-        if not new:
+        entries=agent.entries_for(author,htmls)
+        seen_entries_path=Path("state")/f"seen_forum_entries_{author}.json"
+        seen_entries=set(_read(seen_entries_path,[]))
+        new_keys=[k for k in entries if k not in seen_entries]
+        # Newest visible entries first, but retain every entry; no count cap.
+        new_entries=sorted(
+            (entries[k] for k in new_keys),
+            key=lambda x:(str(x.get("published_at") or ""),str(x.get("entry_key") or "")),
+            reverse=True,
+        )
+        discovered_by_author[author]=len(new_entries)
+        if not new_entries:
             continue
-        posts=agent.fetch_posts(new,ids,state)
+        posts=agent.fetch_entries(new_entries,state)
         if not posts:
             continue
         rows=[rf.normalize("forum",author,p) for p in posts]
@@ -74,8 +81,8 @@ def collect_forum():
                 row["forward_evidence_eligible"]=False
                 row["source_notice"]="论坛扫描尚未到达上次锚点；记录保留用于历史学习，但本轮不计入 Genuine Forward。"
         added+=rf.append_records(rows)
-        seen.update(p["id"] for p in posts)
-        agent.save_seen(author,seen)
+        seen_entries.update(str(p.get("source_entry_key") or "") for p in posts if p.get("source_entry_key"))
+        _write(seen_entries_path,sorted(seen_entries))
 
     newest=all_ids[0] if all_ids else prior_anchor or None
     next_pages=FORUM_DAILY_PAGES if complete else min(FORUM_MAX_SCAN_PAGES,max(budget+1,budget*2))
@@ -96,9 +103,9 @@ def collect_forum():
         "anchor_found":anchor_found,
         "reached_end":reached_end,
         "authors":authors,
-        "new_ids_by_author":discovered_by_author,
+        "new_entries_by_author":discovered_by_author,
         "feed_records_added":added,
-        "guardrail":"partial scans never advance the prior anchor and never create Genuine Forward evidence; next run expands scan depth until the prior anchor/end is reached.",
+        "guardrail":"partial scans never advance the prior anchor and never create Genuine Forward evidence; every visible watched-author post/reply has its own stable entry key, and next run expands scan depth until the prior anchor/end is reached.",
     })
     return added,scan_state
 
