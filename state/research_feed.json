@@ -28860,9 +28860,124 @@
       "capture_mode": "youtube_timestamp_unknown_learning",
       "timestamp_confidence": "missing",
       "forward_evidence_eligible": false
+    },
+    {
+      "id": "4c217eeaee3bb2931a72",
+      "source": "youtube",
+      "source_kind": "video",
+      "author": "Andrei Jikh",
+      "published_at": "",
+      "title": "Why Trump Flew to China with 18 CEOs",
+      "url": "https://www.youtube.com/watch?v=3DYnQMmQk8k",
+      "excerpt": "Scribe\n \n \nScribe\nLike it? Make Scribe even better by\n \nleaving a review\nGet Chrome Extension\nBrowse\nPopular Videos\nRecent Videos\nAll Channels\nFree Tools\nVideo Subtitle Downloader\nVideo Timestamp Generator\nVideo Summarizer\nVideo Word Counter\nVideo Title Analyzer\nVideo Transcript Search\nVideo Analytics\nVideo Chapters Creator\nVideo Quiz Generator\nChat with Vid",
+      "content_chars": 733,
+      "semantic_content_chars": 723,
+      "content_filtering": {
+        "filter": "youtube_promotion_noise_v1",
+        "input_units": 40,
+        "removed_units": 0,
+        "removed_ratio": 0.0,
+        "promotion_noise_detected": false
+      },
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "captured_at": "2026-10-08T04:20:12Z",
+      "source_role": "market_context",
+      "transcript_status": "available",
+      "content_quality": "Q4",
+      "content_provider": "pickscribe.com",
+      "content_provider_url": "https://pickscribe.com/v/3DYnQMmQk8k/",
+      "content_origin": "third_party_transcript",
+      "timestamp_evidence": false,
+      "rule_candidate_allowed": false,
+      "source_notice": "YouTube正文可用于非Forward语义学习；可靠发布时间缺失，因此强制按backfill处理，禁止计入Forward Evidence或Promotion。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "youtube_timestamp_unknown_learning",
+      "timestamp_confidence": "missing",
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "752ea5e9edcd1ec11aff",
+      "source": "youtube",
+      "source_kind": "video",
+      "author": "老李玩钱",
+      "published_at": "",
+      "title": "5支ETF！买入布局，长期稳定盈利",
+      "url": "https://www.youtube.com/watch?v=5k5rE4y2ySQ",
+      "excerpt": "大家好,我是老李,在我这个频道,基本上每半年会跟大家做一次ETF的专题,正好最近我看很多朋友又在问我ETF投资的相关问题,那么本期视频咱们就主要来讲ETF,但是说正事之前,依照国际惯例,还是先来跟大家量账户。今天美股三大指数全部收红我的账户也是一片红今天一共下跌了3000多美金当前的账户总资产呢收在了31万7000多首先声明一点今天咱们讲的ETF投资策略呢都是针对长期投资来说的啊今天挑选出的这五支ETF啊如果咱们采用定投的方式分批持续的去建仓然后长期持有才能发挥出他们最大的效果这里呢跟大家做一个简单的科普就是长期投资跟短期投资啊咱们一般在股市当中啊如果一只股票或者ETF你持有的时间小于一年啊这个一般叫做短期投资那么如果是持有一年以上的话啊就被定义为长期投资但是这些ETF你可以持有更长的时间比如说三年五年十年八年",
+      "content_chars": 4894,
+      "semantic_content_chars": 3703,
+      "content_filtering": {
+        "filter": "youtube_promotion_noise_v1",
+        "input_units": 5,
+        "removed_units": 1,
+        "removed_ratio": 0.2,
+        "promotion_noise_detected": true
+      },
+      "images_count": 0,
+      "themes_hint": [
+        "风险管理",
+        "长期持有纪律"
+      ],
+      "symbols": [
+        "NVDA",
+        "QQQ",
+        "VOO",
+        "MU"
+      ],
+      "operations": [
+        {
+          "symbols": [
+            "VOO"
+          ],
+          "actions": [
+            "buy",
+            "hold"
+          ],
+          "attribution": "unconfirmed_author_context",
+          "attribution_confidence": "needs_review"
+        },
+        {
+          "symbols": [
+            "NVDA",
+            "QQQ",
+            "VOO",
+            "MU"
+          ],
+          "actions": [
+            "buy"
+          ],
+          "attribution": "unconfirmed_author_context",
+          "attribution_confidence": "needs_review"
+        }
+      ],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "captured_at": "2026-10-08T04:20:31Z",
+      "source_role": "rule_supply",
+      "transcript_status": "available",
+      "content_quality": "Q2",
+      "content_provider": "reducer.xgoose.org",
+      "content_provider_url": "https://reducer.xgoose.org/items/3848",
+      "content_origin": "third_party_transcript",
+      "timestamp_evidence": true,
+      "rule_candidate_allowed": true,
+      "source_notice": "YouTube正文可用于非Forward语义学习；可靠发布时间缺失，因此强制按backfill处理，禁止计入Forward Evidence或Promotion。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "youtube_timestamp_unknown_learning",
+      "timestamp_confidence": "missing",
+      "forward_evidence_eligible": false
     }
   ],
-  "updated_at": "2026-10-08T04:11:35Z",
+  "updated_at": "2026-10-08T04:20:31Z",
   "retention_policy": "append_only_no_record_count_cap",
   "historical_recovery": {
     "completed_at": "2026-10-07T13:43:06.018028+00:00",

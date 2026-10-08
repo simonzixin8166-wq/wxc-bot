@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-10-08T04:11:35Z",
+  "generated_at": "2026-10-08T04:21:44Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -117,40 +117,19 @@
   "pending_retried": 6,
   "content_attempted_this_run": 6,
   "content_work_budget": 6,
-  "content_backlog_after_run": 118,
-  "pending_total": 118,
-  "admitted_from_pending": 1,
-  "nonforward_timestamp_unknown_admitted": 1,
-  "feed_records_added": 1,
+  "content_backlog_after_run": 116,
+  "pending_total": 116,
+  "historical_demoted_from_pending": 0,
+  "admitted_from_pending": 0,
+  "nonforward_timestamp_unknown_admitted": 0,
+  "feed_records_added": 0,
   "historical_backlog_total": 49,
   "discovery_complete": true,
   "new_video_diagnostics": [
     {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "lWd7zsWV-4I",
-      "title": "美股 NVDA、TSM、MSFT！对冲基金：不加仓，等抬轿子！标普各种相关性瓦解！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "wxKcxcjSq5o",
-      "title": "美股 MRVL、AMD、ISRG、CEG！三季度财报看什么？10大公司EPS贡献超过490！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "-KAra9tD4RU",
-      "title": "（会员第297期）2026年8月03日-07日，重要公司Q2财报后2026、2027前瞻估值，强支撑点位！",
+      "author": "Andrei Jikh",
+      "video_id": "66XyEa1yyAQ",
+      "title": "The End Of The Iran Deal",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -160,8 +139,30 @@
     },
     {
       "author": "老李玩钱",
-      "video_id": "0KgZcbhZoXk",
-      "title": "2支被忽略的科技巨头！分析与买入建议",
+      "video_id": "6_GvmiNgd4M",
+      "title": "美股7巨头，价格已到位！买入/加仓价格点位更新",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "71FEJcz9VCY",
+      "title": "美股 凯投宏观：AI泡沫潜在破灭，五个警告信号！8月财政报告恶化，利息飙升！SOXX跟踪！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "7IraEqi0ZKs",
+      "title": "美股 机构二季度13 F，加减仓哪些！大空头Michael Burry最新操作，真的相当空！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -171,23 +172,19 @@
     },
     {
       "author": "Andrei Jikh",
-      "video_id": "0NjfsieWHbU",
-      "title": "How I'm Investing In The SpaceX IPO",
-      "published_at": "",
-      "transcript_status": "available",
-      "content_quality": "Q4",
-      "content_provider": "pickscribe.com",
+      "video_id": "87NzxCEUQlw",
+      "title": "China Just Shut Down Gold Trading",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
-      "content_chars": 733,
-      "symbols": [],
-      "operations": 0,
-      "admission": "research_feed_nonforward_timestamp_unknown",
-      "was_pending": true
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "0w77lIBdCn0",
-      "title": "美股 机构弹药见底！下一步，暴风雨？平静？TSLA、IGV、AVGO！",
+      "video_id": "8DY3zEBTFZ8",
+      "title": "美股 系统准备重新武装杠杆！MSFT再跌一天修复！半导体、软件，又跷跷板？ CRWV、NBIS、LITE、COHR！APP再跟踪！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -200,7 +197,7 @@
     "status": "ok",
     "channel_errors": 0,
     "stuck_high_quality_pending": 0,
-    "provider_waiting_pending": 118,
+    "provider_waiting_pending": 116,
     "stuck_video_ids": [],
     "meaning": "Q1/Q2 text must not remain stuck in pending; Q3-Q5 may legitimately wait for better learning text."
   },
@@ -212,6 +209,8 @@
     "Collector never downloads video/audio and stores only bounded transcript excerpts.",
     "After baseline, discovery completeness requires reaching the prior per-channel anchor in the same run; scan depth expands 10→20→40… up to the safety ceiling, otherwise status remains partial.",
     "Seen-but-not-learned videos are explicitly reconciled into historical backlog.",
-    "Content acquisition is bounded per run only after every discovery is durably persisted; unprocessed items remain pending/backlog."
+    "Content acquisition is bounded per run only after every discovery is durably persisted; unprocessed items remain pending/backlog.",
+    "Videos first discovered after their publication day are demoted from Forward pending into the explicit historical-learning backlog; chronology is never fabricated.",
+    "Pending retries are ordered by retry_count/last_checked so inaccessible old videos cannot starve the rest of the queue."
   ]
 }
