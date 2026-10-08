@@ -364,16 +364,20 @@ def entries_for(author, htmls):
     return rows
 
 def _forum_entry_post(author, entry, state):
-    r=b.fetch(entry["url"],state)
-    p=w.parse_post(r.text,entry["url"]) if r else None
-    if p and str(p.get("author") or "").casefold()==author.casefold():
-        p["forum_entry_kind"]=entry.get("entry_kind") or "post"
-        p["source_entry_key"]=entry.get("entry_key")
-        p["parent_post_id"]=entry.get("parent_post_id")
-        return p
+    # Reply text is already visible in the forum listing. Following its href
+    # often resolves to the parent thread, so fetching it is both wasteful and
+    # attribution-risky. Preserve the visible reply directly.
+    if entry.get("entry_kind")!="reply":
+        r=b.fetch(entry["url"],state)
+        p=w.parse_post(r.text,entry["url"]) if r else None
+        if p and str(p.get("author") or "").casefold()==author.casefold():
+            p["forum_entry_kind"]=entry.get("entry_kind") or "post"
+            p["source_entry_key"]=entry.get("entry_key")
+            p["parent_post_id"]=entry.get("parent_post_id")
+            return p
     # Fail closed on author attribution. Never store somebody else's parent
-    # body as the watched author's text. For a short reply, the list title is
-    # itself the visible reply text and remains useful for semantic learning.
+    # body as the watched author's text. For a reply, the list title is the
+    # visible author text and remains useful for semantic learning.
     published=str(entry.get("published_at") or "")
     try:
         published=datetime.strptime(published,"%m/%d/%Y %H:%M:%S").strftime("%Y-%m-%d %H:%M:%S")
