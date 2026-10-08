@@ -26,6 +26,7 @@ DATA_DIR=Path(os.getenv("DATA_DIR","state"))
 OUT=DATA_DIR/"youtube_learning_archive.json"
 HEALTH_OUT=DATA_DIR/"youtube_provider_health.json"
 BACKLOG=DATA_DIR/"youtube_historical_backlog.json"
+BACKLOG_BATCH=max(1,int(os.getenv("YOUTUBE_HISTORICAL_BACKLOG_BATCH","8")))
 MAX_EXCERPT=0
 RETRY_DAYS={"Q1":30,"Q2":30,"Q3":7,"Q4":7,"Q5":7}
 
@@ -256,29 +257,44 @@ def main():
         backlog_doc=json.loads(BACKLOG.read_text(encoding="utf-8"))
     except Exception:
         backlog_doc={}
-    probes=[]
+    curated=[]
     by_video={}
-    for p in list(health.PROBES)+(backlog_doc.get("records") or []):
+    for p in list(health.PROBES):
         vid=str(p.get("video_id") or "")
         if not vid:continue
-        candidate={
-            "video_id":vid,
-            "author":p.get("author") or "unknown",
-            "title":p.get("title") or "",
-            "role":p.get("role") or "market_context",
+        by_video[vid]={
+            "video_id":vid,"author":p.get("author") or "unknown",
+            "title":p.get("title") or "","role":p.get("role") or "market_context",
         }
-        # Curated/static probe metadata wins when both exist.
-        if vid not in by_video or p in health.PROBES:
-            by_video[vid]=candidate
-    probes=list(by_video.values())
+    curated=list(by_video.values())
 
-    rows=[]
+    backlog_candidates=[]
+    for p in (backlog_doc.get("records") or []):
+        vid=str(p.get("video_id") or "")
+        if not vid or vid in by_video:continue
+        prior=prior_by_video.get(vid)
+        # Already semantically learned historical rows do not consume the
+        # retry budget; weaker Q3/Q4/Q5 rows stay eligible for future retry.
+        if prior and prior.get("historical_learning_eligible") is True:
+            continue
+        backlog_candidates.append({
+            "video_id":vid,"author":p.get("author") or "unknown",
+            "title":p.get("title") or "","role":p.get("role") or "market_context",
+        })
+    backlog_candidates=backlog_candidates[:BACKLOG_BATCH]
+    probes=curated+backlog_candidates
+
+    # Start from the full prior archive so a video leaving today's probe set
+    # can never disappear from historical memory.
+    next_by_video={k:dict(v) for k,v in prior_by_video.items()}
     for p in probes:
-        prior=prior_by_video.get(str(p.get("video_id")))
+        vid=str(p.get("video_id"))
+        prior=prior_by_video.get(vid)
         if should_probe(prior,now):
-            rows.append(merge_with_prior(build_probe(p),prior))
-        else:
-            rows.append(reuse_prior_probe(prior))
+            next_by_video[vid]=merge_with_prior(build_probe(p),prior)
+        elif prior:
+            next_by_video[vid]=reuse_prior_probe(prior)
+    rows=sorted(next_by_video.values(),key=lambda x:(str(x.get("author") or ""),str(x.get("video_id") or "")))
     out={
         "version":1,
         "generated_at":_now(),
@@ -288,7 +304,8 @@ def main():
         "records":rows,
         "counts":{
             "records":len(rows),
-            "backlog_candidates_included":sum(1 for p in probes if str(p.get("video_id")) in {str(x.get("video_id")) for x in (backlog_doc.get("records") or [])}),
+            "backlog_candidates_included":len(backlog_candidates),
+            "backlog_batch_limit":BACKLOG_BATCH,
             "q1_q2_learning_eligible":sum(1 for r in rows if r["historical_learning_eligible"]),
             "q5_metadata_only":sum(1 for r in rows if r["quality"]=="Q5"),
             "rule_supply_records":sum(1 for r in rows if r["role"]=="rule_supply"),
@@ -302,6 +319,7 @@ def main():
             "Third-party transcripts are processed in-memory only; persisted records keep hashes, text length and structured learning, not transcript excerpts.",
             "Historical learning quality is monotonic: a temporary weaker provider result cannot erase a prior stronger Q1/Q2 snapshot.",
             "Static historical probes use quality-aware retry backoff; YOUTUBE_HISTORICAL_FORCE_REFRESH=1 overrides it for explicit refresh.",
+            "Backlog processing is bounded per run but unresolved items remain explicit and are never silently dropped.",
         ],
     }
     OUT.parent.mkdir(parents=True,exist_ok=True)
