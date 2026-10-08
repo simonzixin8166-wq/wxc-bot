@@ -364,20 +364,21 @@ def entries_for(author, htmls):
     return rows
 
 def _forum_entry_post(author, entry, state):
-    # Reply text is already visible in the forum listing. Following its href
-    # often resolves to the parent thread, so fetching it is both wasteful and
-    # attribution-risky. Preserve the visible reply directly.
-    if entry.get("entry_kind")!="reply":
+    kind=entry.get("entry_kind") or "post"
+    # Main posts require an author-verified article body. A fetch/parse/author
+    # mismatch is unresolved and must be retried; never relabel it as a reply.
+    if kind!="reply":
         r=b.fetch(entry["url"],state)
         p=w.parse_post(r.text,entry["url"]) if r else None
-        if p and str(p.get("author") or "").casefold()==author.casefold():
-            p["forum_entry_kind"]=entry.get("entry_kind") or "post"
-            p["source_entry_key"]=entry.get("entry_key")
-            p["parent_post_id"]=entry.get("parent_post_id")
-            return p
-    # Fail closed on author attribution. Never store somebody else's parent
-    # body as the watched author's text. For a reply, the list title is the
-    # visible author text and remains useful for semantic learning.
+        if not p or str(p.get("author") or "").casefold()!=author.casefold():
+            return None
+        p["forum_entry_kind"]="post"
+        p["source_entry_key"]=entry.get("entry_key")
+        p["parent_post_id"]=entry.get("parent_post_id")
+        return p
+    # Reply text is already visible in the listing. Following a reply href can
+    # resolve to somebody else's parent body, so preserve only the watched
+    # author's visible reply text and never attribute the parent body to them.
     published=str(entry.get("published_at") or "")
     try:
         published=datetime.strptime(published,"%m/%d/%Y %H:%M:%S").strftime("%Y-%m-%d %H:%M:%S")
