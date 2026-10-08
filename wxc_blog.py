@@ -248,12 +248,17 @@ def collect(profile: dict, start: datetime, end: datetime, outdir: str, delay: f
     os.makedirs(os.path.join(outdir, "images"), exist_ok=True)
 
     links = {}
-    for year, month in month_range(start, end):
+    archive_months_requested=month_range(start,end)
+    archive_months_ok=[]
+    archive_failures=[]
+    for year, month in archive_months_requested:
         url = archive_url(profile["blog_id"], year, month)
         print(f"[博客归档] {year:04d}-{month:02d} {url}")
         r = get(url, delay=delay)
         if not r:
+            archive_failures.append(f"{year:04d}-{month:02d}")
             continue
+        archive_months_ok.append(f"{year:04d}-{month:02d}")
         for row in parse_archive(r.text, profile["blog_id"]):
             links[row["url"]] = row
 
@@ -263,6 +268,7 @@ def collect(profile: dict, start: datetime, end: datetime, outdir: str, delay: f
     overview = overview_url(profile["blog_id"])
     print(f"[博客概览] {overview}")
     r = get(overview, delay=delay)
+    overview_ok=bool(r)
     if r:
         for row in parse_archive(r.text, profile["blog_id"]):
             links[row["url"]] = row
@@ -304,6 +310,13 @@ def collect(profile: dict, start: datetime, end: datetime, outdir: str, delay: f
     return {
         "posts": posts,
         "images_downloaded": image_count,
-        "archive_months": len(month_range(start, end)),
+        "archive_months": len(archive_months_requested),
+        "archive_months_requested":[f"{y:04d}-{m:02d}" for y,m in archive_months_requested],
+        "archive_months_ok":archive_months_ok,
+        "archive_failures":archive_failures,
+        "overview_ok":overview_ok,
         "article_links_found": len(links),
+        "posts_parsed":len(posts),
+        "scan_complete":not archive_failures,
+        "retention_policy":"no_article_count_cap",
     }
