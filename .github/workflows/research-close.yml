@@ -29,7 +29,10 @@ permissions:
 
 concurrency:
   group: wxc-research-writer
-  cancel-in-progress: false
+  # Collector logic/state is monotonic but version-sensitive. A newer collector
+  # revision must supersede an older in-flight run so stale logic cannot write
+  # state after a correctness fix.
+  cancel-in-progress: true
 
 jobs:
   collect:
