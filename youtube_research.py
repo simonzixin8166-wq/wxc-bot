@@ -606,7 +606,7 @@ def collect(
         url=str(row.get("url") or "")
         if "v=" in url:feed_video_ids.add(url.split("v=")[-1].split("&")[0])
     hist_doc=_read(SEEN_PATH.parent/"youtube_learning_archive.json",{"records":[]})
-    hist_ids={str(x.get("video_id") or "") for x in (hist_doc.get("records") or []) if x.get("video_id")}
+    hist_ids={str(x.get("video_id") or "") for x in (hist_doc.get("records") or []) if x.get("video_id") and x.get("historical_learning_eligible") is True}
     pending_ids=set(next_pending)
     unresolved=sorted(x for x in seen if x and x not in feed_video_ids and x not in hist_ids and x not in pending_ids)
     inventory={}
