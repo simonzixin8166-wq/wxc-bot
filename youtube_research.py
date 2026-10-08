@@ -28,7 +28,11 @@ DATA_DIR=Path(os.getenv("DATA_DIR","state"))
 SEEN_PATH=DATA_DIR/"seen_youtube.json"
 STATUS_PATH=DATA_DIR/"youtube_source_status.json"
 PENDING_PATH=DATA_DIR/"pending_youtube.json"
+DISCOVERY_STATE_PATH=DATA_DIR/"youtube_discovery_state.json"
+HISTORICAL_BACKLOG_PATH=DATA_DIR/"youtube_historical_backlog.json"
+HISTORICAL_ARCHIVE_PATH=DATA_DIR/"youtube_learning_archive.json"
 MAX_LIST_PER_CHANNEL=10
+MAX_DISCOVERY_SCAN=int(os.getenv("YOUTUBE_MAX_DISCOVERY_SCAN","200"))
 MAX_TRANSCRIPT_CHARS=12000
 MAX_EXCERPT=360
 
@@ -109,11 +113,11 @@ def _rss_entries(channel_id:str)->dict[str,dict]:
     except Exception:
         return {}
 
-def default_list_channel(channel_url:str)->list[dict]:
+def default_list_channel(channel_url:str, limit:int=MAX_LIST_PER_CHANNEL)->list[dict]:
     import yt_dlp
     opts={
         "quiet":True,"no_warnings":True,"skip_download":True,
-        "extract_flat":"in_playlist","playlistend":MAX_LIST_PER_CHANNEL,
+        "extract_flat":"in_playlist","playlistend":max(1,int(limit)),
         "ignoreerrors":True,"socket_timeout":15,"retries":1,"extractor_retries":1,
     }
     with yt_dlp.YoutubeDL(opts) as ydl:
@@ -129,6 +133,12 @@ def default_list_channel(channel_url:str)->list[dict]:
         if rid in rss:row.update(rss[rid])
         rows.append(row)
     return rows
+
+def _call_list_channel(fetcher, url:str, limit:int)->list[dict]:
+    try:
+        return list(fetcher(url,limit) or [])
+    except TypeError:
+        return list(fetcher(url) or [])
 
 def default_video_metadata(video_url:str)->dict:
     import yt_dlp
@@ -301,6 +311,9 @@ def collect(
     seen_doc=_read(SEEN_PATH,None)
     first_run=not isinstance(seen_doc,dict) or "video_ids" not in seen_doc
     seen=set((seen_doc or {}).get("video_ids") or [])
+    discovery_state=_read(DISCOVERY_STATE_PATH,{"version":1,"channels":{}})
+    prior_channel_state=discovery_state.get("channels") or {}
+    next_channel_state={}
 
     pending_doc=_read(PENDING_PATH,{"version":1,"records":[]})
     pending={
@@ -318,9 +331,25 @@ def collect(
         handle=ch["handle"]
         url=f"https://www.youtube.com/{handle}/videos"
         try:
-            entries=list_channel(url)[:MAX_LIST_PER_CHANNEL]
+            prior_state=prior_channel_state.get(handle) or {}
+            prior_anchor=str(prior_state.get("anchor_video_id") or "")
+            prior_complete=bool(prior_state.get("complete",True))
+            prior_budget=int(prior_state.get("next_scan_limit") or MAX_LIST_PER_CHANNEL)
+            # Legacy migration starts wider so the old global seen set can be
+            # anchored without assuming latest-10 was complete.
+            if not prior_state and not first_run:
+                budget=min(MAX_DISCOVERY_SCAN,max(50,MAX_LIST_PER_CHANNEL))
+            else:
+                budget=MAX_LIST_PER_CHANNEL if prior_complete else min(MAX_DISCOVERY_SCAN,max(MAX_LIST_PER_CHANNEL,prior_budget))
+            entries=_call_list_channel(list_channel,url,budget)
             ids=[_video_id(x) for x in entries if _video_id(x)]
             newest=entries[0] if entries else {}
+            if not prior_anchor and not first_run:
+                prior_anchor=next((vid for vid in ids if vid in seen),"")
+            anchor_found=(not prior_anchor) or (prior_anchor in set(ids))
+            reached_end=len(entries)<budget
+            discovery_complete=bool(entries) and (anchor_found or reached_end)
+            next_limit=MAX_LIST_PER_CHANNEL if discovery_complete else min(MAX_DISCOVERY_SCAN,max(budget+1,budget*2))
             sample={
                 "video_id":_video_id(newest) or None,
                 "title":newest.get("title"),
@@ -344,23 +373,45 @@ def collect(
 
             channel_status.append({
                 "handle":handle,"author":ch["author"],"role":ch["role"],
-                "status":"ok","listed_videos":len(ids),
+                "status":"ok" if discovery_complete else "partial",
+                "listed_videos":len(ids),"scan_limit":budget,
+                "previous_anchor_video_id":prior_anchor or None,
+                "anchor_found":anchor_found,"reached_end":reached_end,
+                "discovery_complete":discovery_complete,
                 "latest":sample,"transcript_probe":transcript_probe,
             })
 
             for e in entries:
                 vid=_video_id(e)
                 if vid:
-                    # Keep the freshest flat/RSS metadata even for videos that
-                    # were already marked seen and are waiting in pending.
                     current_entries[vid]=(ch,e)
                     if not first_run and vid not in seen:
                         discovered.append((ch,e))
             seen.update(ids)
+            next_channel_state[handle]={
+                "author":ch["author"],
+                "anchor_video_id":(_video_id(newest) if discovery_complete and _video_id(newest) else prior_anchor or None),
+                "previous_anchor_video_id":prior_anchor or None,
+                "complete":discovery_complete,
+                "last_scan_limit":budget,
+                "next_scan_limit":next_limit,
+                "last_listed_count":len(ids),
+                "updated_at":_now(),
+            }
         except Exception as exc:
+            prior_state=prior_channel_state.get(handle) or {}
+            next_channel_state[handle]={
+                **prior_state,
+                "author":ch["author"],
+                "complete":False,
+                "next_scan_limit":min(MAX_DISCOVERY_SCAN,max(MAX_LIST_PER_CHANNEL,int(prior_state.get("next_scan_limit") or MAX_LIST_PER_CHANNEL)*2)),
+                "updated_at":_now(),
+                "last_error":f"{type(exc).__name__}: {exc}",
+            }
             channel_status.append({
                 "handle":handle,"author":ch["author"],"role":ch["role"],
-                "status":"error","error":f"{type(exc).__name__}: {exc}",
+                "status":"error","discovery_complete":False,
+                "error":f"{type(exc).__name__}: {exc}",
             })
 
     # Newly discovered videos plus unresolved pending videos form this run's
@@ -470,6 +521,56 @@ def collect(
         added=rf.append_records(rows)
 
     generated=_now()
+    _write(DISCOVERY_STATE_PATH,{
+        "version":1,
+        "updated_at":generated,
+        "channels":next_channel_state,
+        "complete":all(bool(x.get("discovery_complete")) for x in channel_status if x.get("status")!="error") and not any(x.get("status")=="error" for x in channel_status),
+        "policy":"scan-until-prior-anchor; partial scans keep the old anchor and expand depth next run",
+    })
+
+    # Explicitly account for legacy seen videos that are not represented by
+    # either formal forward research, pending acquisition, or historical learning.
+    feed_doc=rf._read(rf.FEED_PATH,{"records":[]})
+    feed_video_ids={
+        str((row.get("youtube") or {}).get("video_id") or row.get("video_id") or "")
+        for row in (feed_doc.get("records") or [])
+        if row.get("source")=="youtube"
+    }
+    # Current feed rows encode the canonical watch URL even when no video_id
+    # top-level field is present.
+    for row in (feed_doc.get("records") or []):
+        if row.get("source")!="youtube":continue
+        url=str(row.get("url") or "")
+        if "v=" in url:feed_video_ids.add(url.split("v=")[-1].split("&")[0])
+    hist_doc=_read(HISTORICAL_ARCHIVE_PATH,{"records":[]})
+    hist_ids={str(x.get("video_id") or "") for x in (hist_doc.get("records") or []) if x.get("video_id")}
+    pending_ids=set(next_pending)
+    unresolved=sorted(x for x in seen if x and x not in feed_video_ids and x not in hist_ids and x not in pending_ids)
+    inventory={}
+    for vid,(ch,e) in current_entries.items():
+        inventory[vid]={
+            "video_id":vid,"handle":ch.get("handle"),"author":ch.get("author"),"role":ch.get("role"),
+            "title":e.get("title") or "","url":e.get("webpage_url") or _canonical_video_url(vid),
+            "published_at":_entry_published(e),
+        }
+    prior_backlog=_read(HISTORICAL_BACKLOG_PATH,{"records":[]})
+    prior_by_id={str(x.get("video_id")):x for x in prior_backlog.get("records") or [] if x.get("video_id")}
+    backlog_rows=[]
+    for vid in unresolved:
+        row=dict(prior_by_id.get(vid) or {})
+        row.update({k:v for k,v in (inventory.get(vid) or {"video_id":vid}).items() if v not in (None,"")})
+        row["video_id"]=vid
+        row["status"]="historical_learning_backlog"
+        row["forward_evidence_eligible"]=False
+        row["last_accounted_at"]=generated
+        backlog_rows.append(row)
+    _write(HISTORICAL_BACKLOG_PATH,{
+        "version":1,"updated_at":generated,"records":backlog_rows,
+        "counts":{"seen":len(seen),"formal_feed":len(feed_video_ids),"historical_archive":len(hist_ids),"pending":len(pending_ids),"unresolved_backlog":len(backlog_rows)},
+        "guardrail":"Seen is discovery state, not learning. Every seen video must be in formal feed, pending, historical archive, or this explicit non-forward backlog.",
+    })
+
     pending_rows=sorted(next_pending.values(),key=lambda x:(x.get("first_discovered_at") or "",x.get("video_id") or ""))
     _write(PENDING_PATH,{
         "version":1,
@@ -479,7 +580,7 @@ def collect(
     })
     health=_intake_health(pending_rows,channel_status)
     status={
-        "version":3,
+        "version":4,
         "generated_at":generated,
         "status":"baseline_established" if first_run else health["status"],
         "first_run":first_run,
@@ -490,6 +591,8 @@ def collect(
         "admitted_from_pending":admitted_from_pending,
         "nonforward_timestamp_unknown_admitted":sum(1 for x in appended if x.get("admission")=="research_feed_nonforward_timestamp_unknown"),
         "feed_records_added":added,
+        "historical_backlog_total":len(backlog_rows),
+        "discovery_complete":all(bool(x.get("discovery_complete")) for x in channel_status if x.get("status")!="error") and not any(x.get("status")=="error" for x in channel_status),
         "new_video_diagnostics":appended,
         "intake_health":health,
         "guardrails":[
@@ -498,6 +601,8 @@ def collect(
             "Rule-supply sources require Q1/Q2 rule-eligible text for first research-feed admission.",
             "Market-context sources may enter with Q1-Q4 text; Q3/Q4 remain non-rule-eligible.",
             "Collector never downloads video/audio and stores only bounded transcript excerpts.",
+            "Discovery completeness is proven by reaching the prior per-channel anchor or channel end; otherwise status remains partial and scan depth expands next run.",
+            "Seen-but-not-learned videos are explicitly reconciled into historical backlog.",
         ],
     }
     _write(SEEN_PATH,{"version":1,"updated_at":generated,"video_ids":sorted(seen)})
