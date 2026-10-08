@@ -321,6 +321,10 @@ def normalize(source_kind: str, author: str, post: dict) -> dict:
         "portfolio_rules": learning["portfolio_rules"],
         "lessons": learning["lessons"],
         "method_signals": method_signals,
+        "forum_entry_kind": post.get("forum_entry_kind"),
+        "source_entry_key": post.get("source_entry_key"),
+        "parent_post_id": post.get("parent_post_id"),
+        "attribution_fallback": post.get("attribution_fallback"),
         "captured_at": datetime.utcnow().replace(microsecond=0).isoformat() + "Z",
         "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
     }
