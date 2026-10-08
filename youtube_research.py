@@ -213,6 +213,21 @@ def _content_ready(channel:dict, acquisition:dict)->bool:
         return quality in {"Q1","Q2","Q3","Q4"}
     return quality in {"Q1","Q2"}
 
+def _date_only(value):
+    s=str(value or "")
+    return s[:10] if len(s)>=10 and s[4:5]=="-" and s[7:8]=="-" else ""
+
+def _pending_is_historical(row:dict)->bool:
+    """A video first discovered after its publication day is backfill, not Forward.
+
+    It must leave the forward-pending queue and be learned through the explicit
+    non-gating historical backlog. Unknown publication dates remain pending so
+    we do not fabricate chronology.
+    """
+    published=_date_only(row.get("published_at"))
+    discovered=_date_only(row.get("first_discovered_at"))
+    return bool(published and discovered and published < discovered)
+
 def _pending_record(channel:dict, meta:dict, acquisition:dict, prior:dict|None=None, error:str|None=None)->dict:
     prior=prior or {}
     now=_now()
@@ -456,6 +471,11 @@ def collect(
         meta=_entry_metadata(entry)
         aq={"quality":"Q5","provider":"not_yet_probed","status":"discovered_pending","rule_candidate_allowed":False}
         provisional_pending[vid]=_pending_record(ch,meta,aq,None)
+    historical_demoted=[]
+    for vid,row in list(provisional_pending.items()):
+        if _pending_is_historical(row):
+            historical_demoted.append(vid)
+            provisional_pending.pop(vid,None)
     pending=provisional_pending
     _write(PENDING_PATH,{
         "version":1,
@@ -507,6 +527,8 @@ def collect(
     work_items=list(work.items())
     work_items.sort(key=lambda kv:(
         0 if kv[1][3] is False else 1,
+        int((kv[1][2] or {}).get("retry_count") or 0),
+        str((kv[1][2] or {}).get("last_checked_at") or ""),
         str((kv[1][2] or {}).get("first_discovered_at") or ""),
         kv[0],
     ))
@@ -653,6 +675,7 @@ def collect(
         "content_work_budget":MAX_CONTENT_WORK_PER_RUN,
         "content_backlog_after_run":len(pending_rows),
         "pending_total":len(pending_rows),
+        "historical_demoted_from_pending":len(historical_demoted),
         "admitted_from_pending":admitted_from_pending,
         "nonforward_timestamp_unknown_admitted":sum(1 for x in appended if x.get("admission")=="research_feed_nonforward_timestamp_unknown"),
         "feed_records_added":added,
@@ -669,6 +692,8 @@ def collect(
             "After baseline, discovery completeness requires reaching the prior per-channel anchor in the same run; scan depth expands 10→20→40… up to the safety ceiling, otherwise status remains partial.",
             "Seen-but-not-learned videos are explicitly reconciled into historical backlog.",
             "Content acquisition is bounded per run only after every discovery is durably persisted; unprocessed items remain pending/backlog.",
+            "Videos first discovered after their publication day are demoted from Forward pending into the explicit historical-learning backlog; chronology is never fabricated.",
+            "Pending retries are ordered by retry_count/last_checked so inaccessible old videos cannot starve the rest of the queue.",
         ],
     }
     _write(SEEN_PATH,{"version":1,"updated_at":generated,"video_ids":sorted(seen)})
