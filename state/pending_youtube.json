@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T13:26:50Z",
+  "updated_at": "2026-10-08T19:58:27Z",
   "records": [
     {
       "video_id": "lWd7zsWV-4I",
@@ -635,11 +635,11 @@
       "url": "https://www.youtube.com/watch?v=NZpobX6MQVA",
       "published_at": "",
       "first_discovered_at": "2026-10-08T04:06:13Z",
-      "last_checked_at": "2026-10-08T04:06:13Z",
-      "retry_count": 1,
+      "last_checked_at": "2026-10-08T19:56:16Z",
+      "retry_count": 2,
       "last_quality": "Q5",
-      "last_provider": "not_yet_probed",
-      "last_status": "discovered_pending",
+      "last_provider": "metadata_only",
+      "last_status": "metadata_only",
       "last_error": null
     },
     {
@@ -651,11 +651,11 @@
       "url": "https://www.youtube.com/watch?v=O_xE_bGbwTI",
       "published_at": "",
       "first_discovered_at": "2026-10-08T04:06:13Z",
-      "last_checked_at": "2026-10-08T04:06:13Z",
-      "retry_count": 1,
+      "last_checked_at": "2026-10-08T19:56:26Z",
+      "retry_count": 2,
       "last_quality": "Q5",
-      "last_provider": "not_yet_probed",
-      "last_status": "discovered_pending",
+      "last_provider": "metadata_only",
+      "last_status": "metadata_only",
       "last_error": null
     },
     {
@@ -667,11 +667,11 @@
       "url": "https://www.youtube.com/watch?v=PDAHTpp2c78",
       "published_at": "",
       "first_discovered_at": "2026-10-08T04:06:13Z",
-      "last_checked_at": "2026-10-08T04:06:13Z",
-      "retry_count": 1,
+      "last_checked_at": "2026-10-08T19:56:36Z",
+      "retry_count": 2,
       "last_quality": "Q5",
-      "last_provider": "not_yet_probed",
-      "last_status": "discovered_pending",
+      "last_provider": "metadata_only",
+      "last_status": "metadata_only",
       "last_error": null
     },
     {
@@ -683,11 +683,11 @@
       "url": "https://www.youtube.com/watch?v=PdypXJ5gtKY",
       "published_at": "",
       "first_discovered_at": "2026-10-08T04:06:13Z",
-      "last_checked_at": "2026-10-08T04:06:13Z",
-      "retry_count": 1,
+      "last_checked_at": "2026-10-08T19:56:46Z",
+      "retry_count": 2,
       "last_quality": "Q5",
-      "last_provider": "not_yet_probed",
-      "last_status": "discovered_pending",
+      "last_provider": "metadata_only",
+      "last_status": "metadata_only",
       "last_error": null
     },
     {
@@ -699,11 +699,11 @@
       "url": "https://www.youtube.com/watch?v=Q5xMtR4SWP8",
       "published_at": "",
       "first_discovered_at": "2026-10-08T04:06:13Z",
-      "last_checked_at": "2026-10-08T04:06:13Z",
-      "retry_count": 1,
+      "last_checked_at": "2026-10-08T19:56:57Z",
+      "retry_count": 2,
       "last_quality": "Q5",
-      "last_provider": "not_yet_probed",
-      "last_status": "discovered_pending",
+      "last_provider": "metadata_only",
+      "last_status": "metadata_only",
       "last_error": null
     },
     {
@@ -715,11 +715,11 @@
       "url": "https://www.youtube.com/watch?v=RCFtgOCsyg0",
       "published_at": "",
       "first_discovered_at": "2026-10-08T04:06:13Z",
-      "last_checked_at": "2026-10-08T04:06:13Z",
-      "retry_count": 1,
+      "last_checked_at": "2026-10-08T19:57:15Z",
+      "retry_count": 2,
       "last_quality": "Q5",
-      "last_provider": "not_yet_probed",
-      "last_status": "discovered_pending",
+      "last_provider": "metadata_only",
+      "last_status": "metadata_only",
       "last_error": null
     },
     {
@@ -731,11 +731,11 @@
       "url": "https://www.youtube.com/watch?v=RHhVWhqq1nI",
       "published_at": "",
       "first_discovered_at": "2026-10-08T04:06:13Z",
-      "last_checked_at": "2026-10-08T04:06:13Z",
-      "retry_count": 1,
+      "last_checked_at": "2026-10-08T19:57:28Z",
+      "retry_count": 2,
       "last_quality": "Q5",
-      "last_provider": "not_yet_probed",
-      "last_status": "discovered_pending",
+      "last_provider": "metadata_only",
+      "last_status": "metadata_only",
       "last_error": null
     },
     {
@@ -747,11 +747,11 @@
       "url": "https://www.youtube.com/watch?v=RgGeU0w9GZo",
       "published_at": "",
       "first_discovered_at": "2026-10-08T04:06:13Z",
-      "last_checked_at": "2026-10-08T04:06:13Z",
-      "retry_count": 1,
+      "last_checked_at": "2026-10-08T19:57:38Z",
+      "retry_count": 2,
       "last_quality": "Q5",
-      "last_provider": "not_yet_probed",
-      "last_status": "discovered_pending",
+      "last_provider": "metadata_only",
+      "last_status": "metadata_only",
       "last_error": null
     },
     {
@@ -763,11 +763,11 @@
       "url": "https://www.youtube.com/watch?v=SJERXQX7tAU",
       "published_at": "",
       "first_discovered_at": "2026-10-08T04:06:13Z",
-      "last_checked_at": "2026-10-08T04:06:13Z",
-      "retry_count": 1,
+      "last_checked_at": "2026-10-08T19:57:48Z",
+      "retry_count": 2,
       "last_quality": "Q5",
-      "last_provider": "not_yet_probed",
-      "last_status": "discovered_pending",
+      "last_provider": "metadata_only",
+      "last_status": "metadata_only",
       "last_error": null
     },
     {
@@ -779,11 +779,11 @@
       "url": "https://www.youtube.com/watch?v=SrRLRsUFsUw",
       "published_at": "",
       "first_discovered_at": "2026-10-08T04:06:13Z",
-      "last_checked_at": "2026-10-08T04:06:13Z",
-      "retry_count": 1,
+      "last_checked_at": "2026-10-08T19:57:58Z",
+      "retry_count": 2,
       "last_quality": "Q5",
-      "last_provider": "not_yet_probed",
-      "last_status": "discovered_pending",
+      "last_provider": "metadata_only",
+      "last_status": "metadata_only",
       "last_error": null
     },
     {
@@ -795,11 +795,11 @@
       "url": "https://www.youtube.com/watch?v=TlgONux62A0",
       "published_at": "",
       "first_discovered_at": "2026-10-08T04:06:13Z",
-      "last_checked_at": "2026-10-08T04:06:13Z",
-      "retry_count": 1,
+      "last_checked_at": "2026-10-08T19:58:16Z",
+      "retry_count": 2,
       "last_quality": "Q5",
-      "last_provider": "not_yet_probed",
-      "last_status": "discovered_pending",
+      "last_provider": "metadata_only",
+      "last_status": "metadata_only",
       "last_error": null
     },
     {
@@ -811,11 +811,11 @@
       "url": "https://www.youtube.com/watch?v=Ue75SpWXfjo",
       "published_at": "",
       "first_discovered_at": "2026-10-08T04:06:13Z",
-      "last_checked_at": "2026-10-08T04:06:13Z",
-      "retry_count": 1,
+      "last_checked_at": "2026-10-08T19:58:27Z",
+      "retry_count": 2,
       "last_quality": "Q5",
-      "last_provider": "not_yet_probed",
-      "last_status": "discovered_pending",
+      "last_provider": "metadata_only",
+      "last_status": "metadata_only",
       "last_error": null
     },
     {
