@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "generated_at": "2026-10-08T03:56:58.843561+00:00",
+  "complete": false,
+  "forum": {
+    "complete": true,
+    "continuity_proven": true,
+    "anchor_id": "114181",
+    "previous_anchor_id": "114181",
+    "status": "complete"
+  },
+  "blogs": {
+    "complete": true,
+    "authors": {
+      "BrightLine": {
+        "complete": true,
+        "scan_complete": true,
+        "missing_from_feed": 0,
+        "unique_article_ids": null,
+        "feed_present_urls": null,
+        "archive_failures": []
+      },
+      "yifan99": {
+        "complete": true,
+        "scan_complete": true,
+        "missing_from_feed": 0,
+        "unique_article_ids": null,
+        "feed_present_urls": null,
+        "archive_failures": []
+      }
+    }
+  },
+  "youtube": {
+    "complete": false,
+    "discovery_complete": false,
+    "pending": 2,
+    "historical_backlog": 0,
+    "status": "ok"
+  },
+  "guardrail": "complete=true requires proven forum continuity, zero blog feed gaps, proven YouTube discovery continuity, and zero unresolved YouTube pending/backlog items."
+}
