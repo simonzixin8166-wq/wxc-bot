@@ -1,5 +1,5 @@
 name: youtube-forward-intake
-# Forward intake retry marker: 2026-10-07T02:55Z
+# Forward intake retry marker: 2026-10-08T03:40Z anchor-backlog-reconciliation
 
 on:
   workflow_dispatch:
@@ -21,7 +21,7 @@ permissions:
 
 concurrency:
   group: wxc-research-writer
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   youtube-forward:
