@@ -19,8 +19,10 @@ permissions:
   contents: write
 
 concurrency:
-  group: wxc-youtube-historical-learning
-  cancel-in-progress: true
+  # All workflows that write shared research state serialize through one group.
+  # This prevents rebase conflicts between forward, historical and post-close collectors.
+  group: wxc-research-writer
+  cancel-in-progress: false
 
 jobs:
   historical:
