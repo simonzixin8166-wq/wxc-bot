@@ -1,11 +1,7 @@
 name: Recover YouTube Pending Scope
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - "recover_youtube_pending_history.py"
-      - ".github/workflows/recover-youtube-pending-scope.yml"
+  # Manual only: a history/scope recovery must never run as a side effect of a code change.
   workflow_dispatch: {}
 
 permissions:
