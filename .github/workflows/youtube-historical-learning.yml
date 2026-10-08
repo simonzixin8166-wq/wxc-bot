@@ -9,6 +9,7 @@ on:
       - "youtube_provider_health.py"
       - "transcript_router.py"
       - "tests/test_youtube_learning_archive.py"
+      - "state/youtube_historical_backlog.json"
       - ".github/workflows/youtube-historical-learning.yml"
   schedule:
     # Static historical videos need low-frequency retries, not daily polling.
