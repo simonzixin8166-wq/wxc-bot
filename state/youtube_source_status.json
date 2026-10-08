@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-10-08T06:01:04Z",
+  "generated_at": "2026-10-08T13:26:50Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -27,10 +27,11 @@
         "video_id": "o3v28EEIdb4",
         "title": "美股 大盘伸个懒腰！ SPCX又又又发债！AAPL扩大智能家居版图！CAT怎么了？META正常回撤！",
         "url": "https://www.youtube.com/watch?v=o3v28EEIdb4",
-        "published_at": "",
+        "published_at": "2026-10-08",
         "flat_metadata_keys": [
           "channel_id",
-          "duration"
+          "duration",
+          "rss_published_at"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -63,10 +64,11 @@
         "video_id": "XW0RpReUUbk",
         "title": "2支暴跌老牌传统股！可以买入了？",
         "url": "https://www.youtube.com/watch?v=XW0RpReUUbk",
-        "published_at": "",
+        "published_at": "2026-10-05",
         "flat_metadata_keys": [
           "channel_id",
-          "duration"
+          "duration",
+          "rss_published_at"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -117,8 +119,8 @@
   "pending_retried": 6,
   "content_attempted_this_run": 6,
   "content_work_budget": 6,
-  "content_backlog_after_run": 115,
-  "pending_total": 115,
+  "content_backlog_after_run": 114,
+  "pending_total": 114,
   "historical_demoted_from_pending": 0,
   "admitted_from_pending": 0,
   "nonforward_timestamp_unknown_admitted": 0,
@@ -127,31 +129,9 @@
   "discovery_complete": true,
   "new_video_diagnostics": [
     {
-      "author": "Andrei Jikh",
-      "video_id": "BpuKpyCk0Us",
-      "title": "How I'd Invest $10,000 Right Now",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "Andrei Jikh",
-      "video_id": "DFSWsJ_y1-M",
-      "title": "China Just Won The AI Race",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "EB4-BTw4ETQ",
-      "title": "美股 NVDA、META不同意AI放缓！加息后，标普、利率走势！SPY、QQQ、SOXX、SMH较差的情况，跌至哪里？",
+      "video_id": "JmAgOc0hTwQ",
+      "title": "美股 AI数据中心违约风险一览！长债收益率19年新高！SPY、QQQ、SOXX 、SMH重要位置！HD维持前瞻！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -161,19 +141,8 @@
     },
     {
       "author": "老李玩钱",
-      "video_id": "FK_7ldpLAjI",
-      "title": "$200,000本金美股账户2周年，表现如何？复盘总结，经验心得",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "老李玩钱",
-      "video_id": "FqN2N9NJ00M",
-      "title": "美股：TSLA，GOOG！财报解读，操作建议",
+      "video_id": "MEQ814VtkrY",
+      "title": "战火打响美股竟安然无恙，什么情况？3月行情推演及展望",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -183,8 +152,41 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "Fu_h7lMTYU8",
-      "title": "美股 三个风险，现在如何？GOOG加速倒车！软件IGV，成分股跟踪！ORCL、PLTR、CRM、INTU、APP、ADBE！",
+      "video_id": "MFB-Fp4F15A",
+      "title": "美股 罕见IGV压 SOXX一头！NFLX止跌雄起了吗？TSLA、WMT、SNDK！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "Andrei Jikh",
+      "video_id": "MUUin7TkWsk",
+      "title": "How I'm Investing For What's Coming",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "老李玩钱",
+      "video_id": "Mv4_zIzQGLs",
+      "title": "回调周期中，非常适合买入定投的5支ETF",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "N8BjausuEsI",
+      "title": "美股 META大招豪赌AI代理！对GOOG、AMZN影响！SOXX还需一天确认！财政部回购不及预期！AAPL开始折叠！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -197,7 +199,7 @@
     "status": "ok",
     "channel_errors": 0,
     "stuck_high_quality_pending": 0,
-    "provider_waiting_pending": 115,
+    "provider_waiting_pending": 114,
     "stuck_video_ids": [],
     "meaning": "Q1/Q2 text must not remain stuck in pending; Q3-Q5 may legitimately wait for better learning text."
   },

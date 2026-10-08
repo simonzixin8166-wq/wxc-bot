@@ -29077,9 +29077,84 @@
       "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
       "capture_mode": "scheduled_forum_anchor_scan",
       "intake_class_hint": "live_candidate"
+    },
+    {
+      "id": "b8fa63143a68d68b691c",
+      "source": "youtube",
+      "source_kind": "video",
+      "author": "老李玩钱",
+      "published_at": "",
+      "title": "2支大科技牛股！买入机会浮现",
+      "url": "https://www.youtube.com/watch?v=HlewXhJTmtQ",
+      "excerpt": "洛杉矶吴彦祖在线说股在上一期视频里呢我跟大家说啊咱们最近呢最好是被携现金账户里留个20%到30%的现金仓位已被不时之需结果视频发出之后呢我看咱有些朋友评论说说老李啊别说20%到30%的现金呢我现在账户里面满手的现金满仓的子弹就是不知道该往哪发射说老李有没有现在啊就能够让我们发射一下开仓买入的一些股票今天这期视频呢我要跟大家说的这两只股票都是在现阶段啊就可以考虑去开赃买入并且长期布局的但是咱们说正事之前依照国际惯例还是先来跟大家亮账户今天我的账户表现不太好整体下跌了将近3000美金当前的账户总资产收在了31万4千多今天要跟大家说的第一只股票就是TSM台积电这只股票其实在我前一阵子的视频当中刚刚跟大家更新过一次我对这只股票一直是比较看好的我也觉得这只股票是非常值得咱们散户去买入并且进行长期布局的那么对这只股票长期投",
+      "content_chars": 2776,
+      "semantic_content_chars": 2538,
+      "content_filtering": {
+        "filter": "youtube_promotion_noise_v1",
+        "input_units": 3,
+        "removed_units": 1,
+        "removed_ratio": 0.3333333333333333,
+        "promotion_noise_detected": true
+      },
+      "images_count": 0,
+      "themes_hint": [
+        "风险管理",
+        "长期持有纪律"
+      ],
+      "symbols": [
+        "NVDA",
+        "GOOGL",
+        "GOOG",
+        "AMD",
+        "TSM"
+      ],
+      "operations": [
+        {
+          "symbols": [
+            "NVDA",
+            "AMD",
+            "TSM"
+          ],
+          "actions": [
+            "add",
+            "buy"
+          ],
+          "attribution": "unconfirmed_author_context",
+          "attribution_confidence": "needs_review"
+        },
+        {
+          "symbols": [
+            "GOOGL",
+            "GOOG"
+          ],
+          "actions": [
+            "add",
+            "buy"
+          ],
+          "attribution": "third_party_example",
+          "attribution_confidence": "high"
+        }
+      ],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "captured_at": "2026-10-08T13:25:13Z",
+      "source_role": "rule_supply",
+      "transcript_status": "available",
+      "content_quality": "Q2",
+      "content_provider": "reducer.xgoose.org",
+      "content_provider_url": "https://reducer.xgoose.org/items/3850",
+      "content_origin": "third_party_transcript",
+      "timestamp_evidence": true,
+      "rule_candidate_allowed": true,
+      "source_notice": "YouTube正文可用于非Forward语义学习；可靠发布时间缺失，因此强制按backfill处理，禁止计入Forward Evidence或Promotion。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "youtube_timestamp_unknown_learning",
+      "timestamp_confidence": "missing",
+      "forward_evidence_eligible": false
     }
   ],
-  "updated_at": "2026-10-08T06:24:40Z",
+  "updated_at": "2026-10-08T13:25:42Z",
   "retention_policy": "append_only_no_record_count_cap",
   "historical_recovery": {
     "completed_at": "2026-10-07T13:43:06.018028+00:00",
