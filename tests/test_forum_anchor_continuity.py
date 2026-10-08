@@ -25,7 +25,7 @@ with tempfile.TemporaryDirectory() as td:
         d.agent.fetch_entries=lambda entries,state:[]
         added,scan=d.collect_forum()
         assert added==0
-        assert scan["version"]==2
+        assert scan["version"]==3
         assert scan["previous_anchor_id"]=="114162"
         assert scan["legacy_seen_anchor_id"]=="114162"
         assert scan["complete"] is True
@@ -46,6 +46,27 @@ with tempfile.TemporaryDirectory() as td:
         assert scan2["anchor_id"]=="114250"
         assert scan2["scan_budget"]==16
         assert [x["pages"] for x in scan2["scan_attempts"]]==[8,16]
+
+        # Continuity alone is not enough: an unresolved newly visible main
+        # post keeps the cycle partial and prevents anchor advancement.
+        d._write(d.FORUM_SCAN_STATE,{
+            "version":3,"anchor_id":"114162","complete":True,"next_scan_pages":8
+        })
+        d.agent.list_pages=lambda n,state:[
+            '<a href="/cfzh/114200.html">x</a><a href="114162.html">anchor</a>'
+        ]+['<a href="/cfzh/114180.html">x</a>']*(n-1)
+        d.agent.entries_for=lambda author,htmls:{
+            "k1":{"entry_key":"k1","entry_kind":"post","parent_post_id":"114200","published_at":"10/08/2026 08:00:00"}
+        }
+        d.agent.fetch_entries=lambda entries,state:[]
+        _,scan_unresolved=d.collect_forum()
+        assert scan_unresolved["continuity_complete"] is True
+        assert scan_unresolved["processing_complete"] is False
+        assert scan_unresolved["complete"] is False
+        assert scan_unresolved["anchor_id"]=="114162"
+
+        d.agent.entries_for=lambda author,htmls:{}
+        d.agent.fetch_entries=lambda entries,state:[]
 
         # Even at the safety ceiling, missing continuity never becomes complete.
         d._write(d.FORUM_SCAN_STATE,{
