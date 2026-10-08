@@ -418,6 +418,17 @@ def capture_blog_profile(name: str, days: int = 2, return_report: bool = False):
                 enrich.append(row)
         _write(seen_path, sorted(seen))
         append_records(fresh + enrich)
+
+        parsed_posts=list(result.get("posts") or [])
+        parsed_ids={str(p.get("id")) for p in parsed_posts if p.get("id")}
+        feed_now=_read(FEED_PATH,{"records":[]})
+        author_blog_rows=[
+            x for x in (feed_now.get("records") or [])
+            if x.get("source_kind")=="blog" and str(x.get("author") or "").casefold()==author.casefold()
+        ]
+        feed_urls={_canonical(str(x.get("url") or "")) for x in author_blog_rows}
+        parsed_urls={_canonical(str(p.get("url") or "")) for p in parsed_posts if p.get("url")}
+        missing_urls=sorted(u for u in parsed_urls if u and u not in feed_urls)
         if return_report:
             return {
                 "fresh":fresh,
@@ -430,6 +441,11 @@ def capture_blog_profile(name: str, days: int = 2, return_report: bool = False):
                     "overview_ok":bool(result.get("overview_ok")),
                     "article_links_found":result.get("article_links_found",0),
                     "posts_parsed":result.get("posts_parsed",len(result.get("posts") or [])),
+                    "unique_article_ids":len(parsed_ids),
+                    "parsed_unique_urls":len(parsed_urls),
+                    "feed_present_urls":len(parsed_urls)-len(missing_urls),
+                    "missing_from_feed":len(missing_urls),
+                    "missing_from_feed_urls":missing_urls[:20],
                     "fresh_records":len(fresh),
                     "seen_total":len(seen),
                     "bootstrap_backfill":bootstrap_backfill,
