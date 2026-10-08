@@ -107,7 +107,8 @@ def build():
 
 def main():
     out,report=build()
-    FEED.write_text(json.dumps(out,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    import research_feed as rf  # atomic write + no-shrink guard + manifest sidecar
+    rf._write(FEED,out)
     REPORT.write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print(json.dumps({k:report[k] for k in ("git_commits_scanned","current_before","historical_unique_seen","recovered_missing_records","current_after")},ensure_ascii=False))
 

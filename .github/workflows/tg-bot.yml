@@ -49,7 +49,7 @@ jobs:
           git config user.name "wxc-bot"
           git config user.email "wxc-bot@users.noreply.github.com"
           # tg-bot is notification-only: never stage the canonical research feed.
-          git add state ':!state/research_feed.json'
+          git add state ':!state/research_feed.json' ':!state/research_feed_manifest.json'
           if ! git diff --cached --quiet; then
             git commit -m "update state"
             for i in 1 2 3; do
