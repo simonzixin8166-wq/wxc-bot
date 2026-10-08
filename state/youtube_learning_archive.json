@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-10-07T07:22:07+00:00",
+  "generated_at": "2026-10-08T02:17:27+00:00",
   "mode": "historical_observational_learning_only",
   "non_gating": true,
   "result_blind": true,
@@ -518,6 +518,7 @@
   ],
   "counts": {
     "records": 15,
+    "backlog_candidates_included": 0,
     "q1_q2_learning_eligible": 4,
     "q5_metadata_only": 10,
     "rule_supply_records": 7,
@@ -526,7 +527,7 @@
   },
   "guardrails": [
     "This archive is never appended to research_feed.",
-    "These historical videos never enter Source Store, Rule Registry, EventScore, Promotion, Readiness, or Planner gating.",
+    "Historical backlog videos are actively probed into this archive when metadata is available, but never enter Source Store, Rule Registry, EventScore, Promotion, Readiness, or Planner gating.",
     "Only Q1/Q2 text is semantically extracted; Q3/Q4/Q5 remain descriptive/context-only.",
     "Third-party transcripts are processed in-memory only; persisted records keep hashes, text length and structured learning, not transcript excerpts.",
     "Historical learning quality is monotonic: a temporary weaker provider result cannot erase a prior stronger Q1/Q2 snapshot.",
