@@ -54,8 +54,8 @@ def collect_forum():
     legacy_seen=[]
     for author in authors:
         for value in agent.load_seen(author):
-            try:legacy_seen.append(int(value))
-            except Exception:pass
+            try: legacy_seen.append(int(value))
+            except Exception: pass
     legacy_anchor=str(max(legacy_seen)) if legacy_seen else ""
     if prior_version<2 and legacy_anchor:
         prior_anchor=legacy_anchor
@@ -64,8 +64,9 @@ def collect_forum():
     prior_budget=int(prior.get("next_scan_pages") or FORUM_DAILY_PAGES)
     budget=FORUM_DAILY_PAGES if prior_complete else min(FORUM_MAX_SCAN_PAGES,max(FORUM_DAILY_PAGES,prior_budget))
 
-    # Complete continuity in one scheduled cycle whenever practical. Page
-    # limits are request-batch controls, never retention/completeness limits.
+    # First prove list continuity. This is necessary but not sufficient for an
+    # overall complete cycle: every newly visible entry must also be durably
+    # processed or the batch stays fail-closed.
     scan_attempts=[]
     while True:
         htmls=agent.list_pages(budget,state)
@@ -75,10 +76,14 @@ def collect_forum():
         if anchor_found or budget>=FORUM_MAX_SCAN_PAGES:
             break
         budget=min(FORUM_MAX_SCAN_PAGES,max(budget+1,budget*2))
+
     reached_end=False
-    complete=bool(htmls) and bool(anchor_found)
-    added=0
+    continuity_complete=bool(htmls) and bool(anchor_found)
     discovered_by_author={}
+    processed_by_author={}
+    unresolved_by_author={}
+    pending_rows=[]
+
     for author in authors:
         entries=agent.entries_for(author,htmls)
         seen_entries_path=FORUM_SCAN_STATE.parent/f"seen_forum_entries_{author}.json"
@@ -86,9 +91,9 @@ def collect_forum():
         seen_entries=set(_read(seen_entries_path,[]))
         legacy_seen={str(x) for x in agent.load_seen(author)}
 
-        # One-time migration: do not re-fetch legacy main posts already proven
-        # seen. Replies remain intentionally unseeded so the new entry-level
-        # model can recover historical replies that post-id tracking collapsed.
+        # One-time migration: legacy main posts were tracked by parent post id.
+        # Replies remain intentionally unseeded because old post-id tracking
+        # collapsed multiple reply entries.
         if not entry_state_exists:
             for key,entry in entries.items():
                 if entry.get("entry_kind")=="post" and str(entry.get("parent_post_id") or "") in legacy_seen:
@@ -96,38 +101,60 @@ def collect_forum():
             _write(seen_entries_path,sorted(seen_entries))
 
         new_keys=[k for k in entries if k not in seen_entries]
-        # Newest visible entries first, but retain every entry; no count cap.
         new_entries=sorted(
             (entries[k] for k in new_keys),
             key=lambda x:(str(x.get("published_at") or ""),str(x.get("entry_key") or "")),
             reverse=True,
         )
         discovered_by_author[author]=len(new_entries)
-        if not new_entries:
-            continue
-        posts=agent.fetch_entries(new_entries,state)
-        if not posts:
-            continue
-        rows=[rf.normalize("forum",author,p) for p in posts]
-        for row in rows:
-            row["capture_mode"]="scheduled_forum_anchor_scan"
-            row["intake_class_hint"]="live_candidate" if complete else "backfill"
-            if not complete:
-                row["forward_evidence_eligible"]=False
-                row["source_notice"]="论坛扫描尚未到达上次锚点；记录保留用于历史学习，但本轮不计入 Genuine Forward。"
-        added+=rf.append_records(rows)
-        seen_entries.update(str(p.get("source_entry_key") or "") for p in posts if p.get("source_entry_key"))
-        _write(seen_entries_path,sorted(seen_entries))
+
+        posts=agent.fetch_entries(new_entries,state) if new_entries else []
+        processed_keys={str(p.get("source_entry_key") or "") for p in posts if p.get("source_entry_key")}
+        unresolved=[x for x in new_entries if str(x.get("entry_key") or "") not in processed_keys]
+        processed_by_author[author]=len(processed_keys)
+        unresolved_by_author[author]=len(unresolved)
+
+        # Do not mark unresolved entries as seen. They remain retryable on the
+        # next scan; this is critical for main-post fetch/attribution failures.
+        if processed_keys:
+            seen_entries.update(processed_keys)
+            _write(seen_entries_path,sorted(seen_entries))
+
+        if posts:
+            pending_rows.extend((author,p) for p in posts)
+
+    processing_complete=all(int(v or 0)==0 for v in unresolved_by_author.values())
+    complete=continuity_complete and processing_complete
+
+    # Only after the whole batch is known complete may records be admitted as
+    # live candidates. Any continuity or processing gap demotes the entire batch
+    # to backfill/non-forward, preventing partial-batch forward contamination.
+    added=0
+    rows=[]
+    for author,p in pending_rows:
+        row=rf.normalize("forum",author,p)
+        row["capture_mode"]="scheduled_forum_anchor_scan"
+        row["intake_class_hint"]="live_candidate" if complete else "backfill"
+        if not complete:
+            row["forward_evidence_eligible"]=False
+            row["source_notice"]="论坛本轮未形成完整采集闭环；记录保留用于历史学习，但不计入 Genuine Forward。"
+        rows.append(row)
+    if rows:
+        added=rf.append_records(rows)
 
     newest=(str(max(int(x) for x in all_ids)) if all_ids else prior_anchor or None)
+    # Never advance the anchor on an incomplete batch. Otherwise an unresolved
+    # entry could fall behind the next anchor and become permanently invisible.
     next_pages=FORUM_DAILY_PAGES if complete else min(FORUM_MAX_SCAN_PAGES,max(budget+1,budget*2))
     scan_state={
-        "version":2,
+        "version":3,
         "updated_at":datetime.now(timezone.utc).isoformat(),
         "anchor_id":newest if complete and newest else prior_anchor or None,
         "previous_anchor_id":prior_anchor or None,
         "legacy_seen_anchor_id":legacy_anchor or None,
         "complete":complete,
+        "continuity_complete":continuity_complete,
+        "processing_complete":processing_complete,
         "pages_scanned":len(htmls),
         "scan_budget":budget,
         "scan_attempts":scan_attempts,
@@ -139,12 +166,15 @@ def collect_forum():
         "status":"complete" if complete else "partial",
         "anchor_found":anchor_found,
         "reached_end":reached_end,
-        "continuity_proven":anchor_found,
+        "continuity_proven":continuity_complete,
         "scan_attempts":scan_attempts,
         "authors":authors,
         "new_entries_by_author":discovered_by_author,
+        "processed_entries_by_author":processed_by_author,
+        "unresolved_entries_by_author":unresolved_by_author,
+        "unresolved_entries_total":sum(unresolved_by_author.values()),
         "feed_records_added":added,
-        "guardrail":"complete requires proof that the scan reached the previous known anchor; first migration uses the highest legacy seen id as that anchor. Partial scans never advance the anchor or create Genuine Forward evidence.",
+        "guardrail":"complete requires both continuity to the prior anchor and durable processing of every newly visible entry. Unresolved entries keep the batch partial, block anchor advancement, and prevent Genuine Forward admission.",
     })
     return added,scan_state
 
