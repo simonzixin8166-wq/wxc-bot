@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-10-08T03:56:58.843561+00:00",
+  "generated_at": "2026-10-08T04:07:30.387357+00:00",
   "complete": false,
   "forum": {
     "complete": true,
@@ -32,9 +32,9 @@
   },
   "youtube": {
     "complete": false,
-    "discovery_complete": false,
-    "pending": 2,
-    "historical_backlog": 0,
+    "discovery_complete": true,
+    "pending": 119,
+    "historical_backlog": 48,
     "status": "ok"
   },
   "guardrail": "complete=true requires proven forum continuity, zero blog feed gaps, proven YouTube discovery continuity, and zero unresolved YouTube pending/backlog items."

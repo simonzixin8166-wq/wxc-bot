@@ -1,6 +1,6 @@
 {
-  "version": 3,
-  "generated_at": "2026-10-08T00:11:29Z",
+  "version": 4,
+  "generated_at": "2026-10-08T04:07:30Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -9,16 +9,28 @@
       "author": "RhinoFinance / 视野环球财经",
       "role": "rule_supply",
       "status": "ok",
-      "listed_videos": 10,
+      "listed_videos": 50,
+      "scan_limit": 50,
+      "scan_attempts": [
+        {
+          "limit": 50,
+          "listed": 50,
+          "anchor_found": true,
+          "reached_end": false
+        }
+      ],
+      "previous_anchor_video_id": "wxKcxcjSq5o",
+      "anchor_found": true,
+      "reached_end": false,
+      "discovery_complete": true,
       "latest": {
-        "video_id": "wxKcxcjSq5o",
-        "title": "美股 MRVL、AMD、ISRG、CEG！三季度财报看什么？10大公司EPS贡献超过490！",
-        "url": "https://www.youtube.com/watch?v=wxKcxcjSq5o",
-        "published_at": "2026-10-07",
+        "video_id": "o3v28EEIdb4",
+        "title": "美股 大盘伸个懒腰！ SPCX又又又发债！AAPL扩大智能家居版图！CAT怎么了？META正常回撤！",
+        "url": "https://www.youtube.com/watch?v=o3v28EEIdb4",
+        "published_at": "",
         "flat_metadata_keys": [
           "channel_id",
-          "duration",
-          "rss_published_at"
+          "duration"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -33,16 +45,28 @@
       "author": "老李玩钱",
       "role": "rule_supply",
       "status": "ok",
-      "listed_videos": 10,
+      "listed_videos": 50,
+      "scan_limit": 50,
+      "scan_attempts": [
+        {
+          "limit": 50,
+          "listed": 50,
+          "anchor_found": true,
+          "reached_end": false
+        }
+      ],
+      "previous_anchor_video_id": "XW0RpReUUbk",
+      "anchor_found": true,
+      "reached_end": false,
+      "discovery_complete": true,
       "latest": {
         "video_id": "XW0RpReUUbk",
         "title": "2支暴跌老牌传统股！可以买入了？",
         "url": "https://www.youtube.com/watch?v=XW0RpReUUbk",
-        "published_at": "2026-10-05",
+        "published_at": "",
         "flat_metadata_keys": [
           "channel_id",
-          "duration",
-          "rss_published_at"
+          "duration"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -57,7 +81,20 @@
       "author": "Andrei Jikh",
       "role": "market_context",
       "status": "ok",
-      "listed_videos": 10,
+      "listed_videos": 50,
+      "scan_limit": 50,
+      "scan_attempts": [
+        {
+          "limit": 50,
+          "listed": 50,
+          "anchor_found": true,
+          "reached_end": false
+        }
+      ],
+      "previous_anchor_video_id": "pO1eGLrl1lw",
+      "anchor_found": true,
+      "reached_end": false,
+      "discovery_complete": true,
       "latest": {
         "video_id": "pO1eGLrl1lw",
         "title": "How I'm Investing",
@@ -76,33 +113,82 @@
       "transcript_probe": "deferred_to_worklist"
     }
   ],
-  "discovered_new_videos": 0,
-  "pending_retried": 2,
-  "pending_total": 2,
+  "discovered_new_videos": 117,
+  "pending_retried": 0,
+  "content_attempted_this_run": 6,
+  "content_work_budget": 6,
+  "content_backlog_after_run": 119,
+  "pending_total": 119,
   "admitted_from_pending": 0,
   "nonforward_timestamp_unknown_admitted": 0,
   "feed_records_added": 0,
+  "historical_backlog_total": 48,
+  "discovery_complete": true,
   "new_video_diagnostics": [
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "lWd7zsWV-4I",
-      "title": "美股 NVDA、TSM、MSFT！对冲基金：不加仓，等抬轿子！标普各种相关性瓦解！",
+      "video_id": "-KAra9tD4RU",
+      "title": "（会员第297期）2026年8月03日-07日，重要公司Q2财报后2026、2027前瞻估值，强支撑点位！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
       "admission": "pending_content",
-      "was_pending": true,
+      "was_pending": false,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "老李玩钱",
+      "video_id": "0KgZcbhZoXk",
+      "title": "2支被忽略的科技巨头！分析与买入建议",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": false,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "Andrei Jikh",
+      "video_id": "0NjfsieWHbU",
+      "title": "How I'm Investing In The SpaceX IPO",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": false,
       "pending_reason": "missing_learning_text"
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "wxKcxcjSq5o",
-      "title": "美股 MRVL、AMD、ISRG、CEG！三季度财报看什么？10大公司EPS贡献超过490！",
+      "video_id": "0w77lIBdCn0",
+      "title": "美股 机构弹药见底！下一步，暴风雨？平静？TSLA、IGV、AVGO！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
       "admission": "pending_content",
-      "was_pending": true,
+      "was_pending": false,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "Andrei Jikh",
+      "video_id": "16oTiM8o8ic",
+      "title": "My Alternative Investment Portfolio (Pokemon Edition)",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": false,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "19S-O_bla-A",
+      "title": "美股 MRVL抢单AVGO！AMD更新！财政部加码回购债券！为什么？钱哪来？QE吗？",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": false,
       "pending_reason": "missing_learning_text"
     }
   ],
@@ -110,7 +196,7 @@
     "status": "ok",
     "channel_errors": 0,
     "stuck_high_quality_pending": 0,
-    "provider_waiting_pending": 2,
+    "provider_waiting_pending": 119,
     "stuck_video_ids": [],
     "meaning": "Q1/Q2 text must not remain stuck in pending; Q3-Q5 may legitimately wait for better learning text."
   },
@@ -119,6 +205,9 @@
     "New videos with insufficient learning text remain pending; Q1/Q2 text with missing reliable published_at may enter backfill-only semantic learning but can never count as Forward/Promotion.",
     "Rule-supply sources require Q1/Q2 rule-eligible text for first research-feed admission.",
     "Market-context sources may enter with Q1-Q4 text; Q3/Q4 remain non-rule-eligible.",
-    "Collector never downloads video/audio and stores only bounded transcript excerpts."
+    "Collector never downloads video/audio and stores only bounded transcript excerpts.",
+    "After baseline, discovery completeness requires reaching the prior per-channel anchor in the same run; scan depth expands 10→20→40… up to the safety ceiling, otherwise status remains partial.",
+    "Seen-but-not-learned videos are explicitly reconciled into historical backlog.",
+    "Content acquisition is bounded per run only after every discovery is durably persisted; unprocessed items remain pending/backlog."
   ]
 }

@@ -1,0 +1,442 @@
+{
+  "version": 1,
+  "updated_at": "2026-10-08T04:07:30Z",
+  "records": [
+    {
+      "video_id": "2Ci7OynnUqk",
+      "status": "historical_learning_backlog",
+      "forward_evidence_eligible": false,
+      "last_accounted_at": "2026-10-08T04:07:30Z"
+    },
+    {
+      "video_id": "4BvyVOHzZZg",
+      "status": "historical_learning_backlog",
+      "forward_evidence_eligible": false,
+      "last_accounted_at": "2026-10-08T04:07:30Z"
+    },
+    {
+      "video_id": "6CN5UBeEwrU",
+      "handle": "@AndreiJikh",
+      "author": "Andrei Jikh",
+      "role": "market_context",
+      "title": "The World Is Routing Around America",
+      "url": "https://www.youtube.com/watch?v=6CN5UBeEwrU",
+      "status": "historical_learning_backlog",
+      "forward_evidence_eligible": false,
+      "last_accounted_at": "2026-10-08T04:07:30Z"
+    },
+    {
+      "video_id": "6NOiINBIbew",
+      "handle": "@RhinoFinance",
+      "author": "RhinoFinance / 视野环球财经",
+      "role": "rule_supply",
+      "title": "美股 META杀红眼，抢游戏地盘！ORCL遇到更大麻烦！GOOG、AMZN继续等人！COST纹丝不动！",
+      "url": "https://www.youtube.com/watch?v=6NOiINBIbew",
+      "status": "historical_learning_backlog",
+      "forward_evidence_eligible": false,
+      "last_accounted_at": "2026-10-08T04:07:30Z"
+    },
+    {
+      "video_id": "6_ov90oJ8Ig",
+      "handle": "@老李玩钱",
+      "author": "老李玩钱",
+      "role": "rule_supply",
+      "title": "华尔街突然集体看多：标普500剑指8000点！我为什么反而开始慌了...",
+      "url": "https://www.youtube.com/watch?v=6_ov90oJ8Ig",
+      "status": "historical_learning_backlog",
+      "forward_evidence_eligible": false,
+      "last_accounted_at": "2026-10-08T04:07:30Z"
+    },
+    {
+      "video_id": "CUYS6bDAGFM",
+      "handle": "@老李玩钱",
+      "author": "老李玩钱",
+      "role": "rule_supply",
+      "title": "美股7巨头价格点位更新！谁该买，谁该等？全方位分析及操作建议",
+      "url": "https://www.youtube.com/watch?v=CUYS6bDAGFM",
+      "status": "historical_learning_backlog",
+      "forward_evidence_eligible": false,
+      "last_accounted_at": "2026-10-08T04:07:30Z"
+    },
+    {
+      "video_id": "CpXRqkEIscI",
+      "handle": "@RhinoFinance",
+      "author": "RhinoFinance / 视野环球财经",
+      "role": "rule_supply",
+      "title": "美股 META真快、ORCL哪里止跌？ASML、LRCX潜在突破！神准摩根大通：战术看涨！CTA：不大跌主买！",
+      "url": "https://www.youtube.com/watch?v=CpXRqkEIscI",
+      "status": "historical_learning_backlog",
+      "forward_evidence_eligible": false,
+      "last_accounted_at": "2026-10-08T04:07:30Z"
+    },
+    {
+      "video_id": "EcMX0ub9gSg",
+      "status": "historical_learning_backlog",
+      "forward_evidence_eligible": false,
+      "last_accounted_at": "2026-10-08T04:07:30Z"
+    },
+    {
+      "video_id": "F2QRfRammpI",
+      "handle": "@老李玩钱",
+      "author": "老李玩钱",
+      "role": "rule_supply",
+      "title": "10月美股，回调即买入！我来告诉你为什么",
+      "url": "https://www.youtube.com/watch?v=F2QRfRammpI",
+      "status": "historical_learning_backlog",
+      "forward_evidence_eligible": false,
+      "last_accounted_at": "2026-10-08T04:07:30Z"
+    },
+    {
+      "video_id": "Iv5V74WB6uo",
+      "status": "historical_learning_backlog",
+      "forward_evidence_eligible": false,
+      "last_accounted_at": "2026-10-08T04:07:30Z"
+    },
+    {
+      "video_id": "JDZeHmH2GvE",
+      "status": "historical_learning_backlog",
+      "forward_evidence_eligible": false,
+      "last_accounted_at": "2026-10-08T04:07:30Z"
+    },
+    {
+      "video_id": "LWHKiYV-8pU",
+      "handle": "@RhinoFinance",
+      "author": "RhinoFinance / 视野环球财经",
+      "role": "rule_supply",
+      "title": "美股 SMH突破，SOXX差一点！NKE财报灾难前瞻！Anthropic IPO可能强上，基本信息！",
+      "url": "https://www.youtube.com/watch?v=LWHKiYV-8pU",
+      "status": "historical_learning_backlog",
+      "forward_evidence_eligible": false,
+      "last_accounted_at": "2026-10-08T04:07:30Z"
+    },
+    {
+      "video_id": "OiUiDCPDDoA",
+      "handle": "@AndreiJikh",
+      "author": "Andrei Jikh",
+      "role": "market_context",
+      "title": "The Global Energy Crisis Is About To Start",
+      "url": "https://www.youtube.com/watch?v=OiUiDCPDDoA",
+      "status": "historical_learning_backlog",
+      "forward_evidence_eligible": false,
+      "last_accounted_at": "2026-10-08T04:07:30Z"
+    },
+    {
+      "video_id": "OyiGHowGOSI",
+      "handle": "@RhinoFinance",
+      "author": "RhinoFinance / 视野环球财经",
+      "role": "rule_supply",
+      "title": "美股 MSFT中秋送大礼突破！META歇脚，TSM高看！QQQ、SOXX、SPY！",
+      "url": "https://www.youtube.com/watch?v=OyiGHowGOSI",
+      "status": "historical_learning_backlog",
+      "forward_evidence_eligible": false,
+      "last_accounted_at": "2026-10-08T04:07:30Z"
+    },
+    {
+      "video_id": "QFvHL3z6C-0",
+      "handle": "@AndreiJikh",
+      "author": "Andrei Jikh",
+      "role": "market_context",
+      "title": "Trump’s Tariff War Just Went Nuclear",
+      "url": "https://www.youtube.com/watch?v=QFvHL3z6C-0",
+      "status": "historical_learning_backlog",
+      "forward_evidence_eligible": false,
+      "last_accounted_at": "2026-10-08T04:07:30Z"
+    },
+    {
+      "video_id": "S53iIEnGogw",
+      "status": "historical_learning_backlog",
+      "forward_evidence_eligible": false,
+      "last_accounted_at": "2026-10-08T04:07:30Z"
+    },
+    {
+      "video_id": "SiYqe6w69WI",
+      "status": "historical_learning_backlog",
+      "forward_evidence_eligible": false,
+      "last_accounted_at": "2026-10-08T04:07:30Z"
+    },
+    {
+      "video_id": "TpGDgieIAak",
+      "status": "historical_learning_backlog",
+      "forward_evidence_eligible": false,
+      "last_accounted_at": "2026-10-08T04:07:30Z"
+    },
+    {
+      "video_id": "U3Q9D9WX5ec",
+      "handle": "@老李玩钱",
+      "author": "老李玩钱",
+      "role": "rule_supply",
+      "title": "加息靴子落地！接下来3个月美股并不乐观...",
+      "url": "https://www.youtube.com/watch?v=U3Q9D9WX5ec",
+      "status": "historical_learning_backlog",
+      "forward_evidence_eligible": false,
+      "last_accounted_at": "2026-10-08T04:07:30Z"
+    },
+    {
+      "video_id": "V11vKrhYRpI",
+      "handle": "@RhinoFinance",
+      "author": "RhinoFinance / 视野环球财经",
+      "role": "rule_supply",
+      "title": "（会员第304期）标普SPX重要路径前瞻：2026-2028几个潜在触顶“摔杯”爆发点，对应触发条件！大盘为何和多个关联指标脱敏！（10年期国债收益、风险溢价ERP、债券波动MOVE指数）",
+      "url": "https://www.youtube.com/watch?v=V11vKrhYRpI",
+      "status": "historical_learning_backlog",
+      "forward_evidence_eligible": false,
+      "last_accounted_at": "2026-10-08T04:07:30Z"
+    },
+    {
+      "video_id": "W1NcpdMtcRw",
+      "status": "historical_learning_backlog",
+      "forward_evidence_eligible": false,
+      "last_accounted_at": "2026-10-08T04:07:30Z"
+    },
+    {
+      "video_id": "W6kK9EoF-rs",
+      "handle": "@老李玩钱",
+      "author": "老李玩钱",
+      "role": "rule_supply",
+      "title": "美联储9月若加息！这3大板块及4支股票反而受益",
+      "url": "https://www.youtube.com/watch?v=W6kK9EoF-rs",
+      "status": "historical_learning_backlog",
+      "forward_evidence_eligible": false,
+      "last_accounted_at": "2026-10-08T04:07:30Z"
+    },
+    {
+      "video_id": "Y3lw2AZB-CA",
+      "status": "historical_learning_backlog",
+      "forward_evidence_eligible": false,
+      "last_accounted_at": "2026-10-08T04:07:30Z"
+    },
+    {
+      "video_id": "ZWIf77kODE0",
+      "handle": "@RhinoFinance",
+      "author": "RhinoFinance / 视野环球财经",
+      "role": "rule_supply",
+      "title": "美股 纳指期货投机仓位9年新高！两个潜在轧空！NVDA美股最大回购！NFLX、AMD、META、TSLA！",
+      "url": "https://www.youtube.com/watch?v=ZWIf77kODE0",
+      "status": "historical_learning_backlog",
+      "forward_evidence_eligible": false,
+      "last_accounted_at": "2026-10-08T04:07:30Z"
+    },
+    {
+      "video_id": "Zq5V3QRbqgQ",
+      "handle": "@AndreiJikh",
+      "author": "Andrei Jikh",
+      "role": "market_context",
+      "title": "How I'm Preparing for Agenda 2030",
+      "url": "https://www.youtube.com/watch?v=Zq5V3QRbqgQ",
+      "status": "historical_learning_backlog",
+      "forward_evidence_eligible": false,
+      "last_accounted_at": "2026-10-08T04:07:30Z"
+    },
+    {
+      "video_id": "a5IJ8PNlers",
+      "status": "historical_learning_backlog",
+      "forward_evidence_eligible": false,
+      "last_accounted_at": "2026-10-08T04:07:30Z"
+    },
+    {
+      "video_id": "aaNr7EdpNj4",
+      "handle": "@AndreiJikh",
+      "author": "Andrei Jikh",
+      "role": "market_context",
+      "title": "How AI Will Take Over The World",
+      "url": "https://www.youtube.com/watch?v=aaNr7EdpNj4",
+      "status": "historical_learning_backlog",
+      "forward_evidence_eligible": false,
+      "last_accounted_at": "2026-10-08T04:07:30Z"
+    },
+    {
+      "video_id": "b8NYGpLXYdU",
+      "status": "historical_learning_backlog",
+      "forward_evidence_eligible": false,
+      "last_accounted_at": "2026-10-08T04:07:30Z"
+    },
+    {
+      "video_id": "c2x0-yD7SsQ",
+      "status": "historical_learning_backlog",
+      "forward_evidence_eligible": false,
+      "last_accounted_at": "2026-10-08T04:07:30Z"
+    },
+    {
+      "video_id": "cGSEmqIyFf0",
+      "handle": "@RhinoFinance",
+      "author": "RhinoFinance / 视野环球财经",
+      "role": "rule_supply",
+      "title": "美股 PCE推迟加息至12月！MU财报好坏各半！SNDK、GOOG、LLY、TRV！",
+      "url": "https://www.youtube.com/watch?v=cGSEmqIyFf0",
+      "status": "historical_learning_backlog",
+      "forward_evidence_eligible": false,
+      "last_accounted_at": "2026-10-08T04:07:30Z"
+    },
+    {
+      "video_id": "dM4qkaPySe0",
+      "status": "historical_learning_backlog",
+      "forward_evidence_eligible": false,
+      "last_accounted_at": "2026-10-08T04:07:30Z"
+    },
+    {
+      "video_id": "h0vkR077cRo",
+      "handle": "@老李玩钱",
+      "author": "老李玩钱",
+      "role": "rule_supply",
+      "title": "AI发展的最底层逻辑：电力！优选这3支股票",
+      "url": "https://www.youtube.com/watch?v=h0vkR077cRo",
+      "status": "historical_learning_backlog",
+      "forward_evidence_eligible": false,
+      "last_accounted_at": "2026-10-08T04:07:30Z"
+    },
+    {
+      "video_id": "h1-YBhMV3CA",
+      "handle": "@RhinoFinance",
+      "author": "RhinoFinance / 视野环球财经",
+      "role": "rule_supply",
+      "title": "美股 10年期国债收益暴涨！MSFT加入价格战！AVGO的新风险！MCD四年新低！COST财报波动！",
+      "url": "https://www.youtube.com/watch?v=h1-YBhMV3CA",
+      "status": "historical_learning_backlog",
+      "forward_evidence_eligible": false,
+      "last_accounted_at": "2026-10-08T04:07:30Z"
+    },
+    {
+      "video_id": "iBxWsP8k9XM",
+      "handle": "@AndreiJikh",
+      "author": "Andrei Jikh",
+      "role": "market_context",
+      "title": "Trump’s Tariff War Just Went Nuclear",
+      "url": "https://www.youtube.com/watch?v=iBxWsP8k9XM",
+      "status": "historical_learning_backlog",
+      "forward_evidence_eligible": false,
+      "last_accounted_at": "2026-10-08T04:07:30Z"
+    },
+    {
+      "video_id": "iN7WmJTeEQc",
+      "status": "historical_learning_backlog",
+      "forward_evidence_eligible": false,
+      "last_accounted_at": "2026-10-08T04:07:30Z"
+    },
+    {
+      "video_id": "jAxCvjgqxEs",
+      "handle": "@老李玩钱",
+      "author": "老李玩钱",
+      "role": "rule_supply",
+      "title": "9月必买3支股票",
+      "url": "https://www.youtube.com/watch?v=jAxCvjgqxEs",
+      "status": "historical_learning_backlog",
+      "forward_evidence_eligible": false,
+      "last_accounted_at": "2026-10-08T04:07:30Z"
+    },
+    {
+      "video_id": "kD5hGfArUf0",
+      "handle": "@RhinoFinance",
+      "author": "RhinoFinance / 视野环球财经",
+      "role": "rule_supply",
+      "title": "（会员第303期）定量分析大盘，别被情绪左右！VIX 期限结构（Term Structure）用法！加仓、减仓、买保护，还是别动！",
+      "url": "https://www.youtube.com/watch?v=kD5hGfArUf0",
+      "status": "historical_learning_backlog",
+      "forward_evidence_eligible": false,
+      "last_accounted_at": "2026-10-08T04:07:30Z"
+    },
+    {
+      "video_id": "khnPevsQ_TE",
+      "status": "historical_learning_backlog",
+      "forward_evidence_eligible": false,
+      "last_accounted_at": "2026-10-08T04:07:30Z"
+    },
+    {
+      "video_id": "oyxzo9m8oHE",
+      "status": "historical_learning_backlog",
+      "forward_evidence_eligible": false,
+      "last_accounted_at": "2026-10-08T04:07:30Z"
+    },
+    {
+      "video_id": "pO1eGLrl1lw",
+      "handle": "@AndreiJikh",
+      "author": "Andrei Jikh",
+      "role": "market_context",
+      "title": "How I'm Investing",
+      "url": "https://www.youtube.com/watch?v=pO1eGLrl1lw",
+      "status": "historical_learning_backlog",
+      "forward_evidence_eligible": false,
+      "last_accounted_at": "2026-10-08T04:07:30Z"
+    },
+    {
+      "video_id": "rQCKbtW9x9Q",
+      "status": "historical_learning_backlog",
+      "forward_evidence_eligible": false,
+      "last_accounted_at": "2026-10-08T04:07:30Z"
+    },
+    {
+      "video_id": "t8KXQrHPmrg",
+      "handle": "@AndreiJikh",
+      "author": "Andrei Jikh",
+      "role": "market_context",
+      "title": "What The Elites Are Planning For 2030",
+      "url": "https://www.youtube.com/watch?v=t8KXQrHPmrg",
+      "status": "historical_learning_backlog",
+      "forward_evidence_eligible": false,
+      "last_accounted_at": "2026-10-08T04:07:30Z"
+    },
+    {
+      "video_id": "tNxNwsTIqNk",
+      "status": "historical_learning_backlog",
+      "forward_evidence_eligible": false,
+      "last_accounted_at": "2026-10-08T04:07:30Z"
+    },
+    {
+      "video_id": "uO7fQuYJUMU",
+      "status": "historical_learning_backlog",
+      "forward_evidence_eligible": false,
+      "last_accounted_at": "2026-10-08T04:07:30Z"
+    },
+    {
+      "video_id": "uYZk6upfvCU",
+      "handle": "@老李玩钱",
+      "author": "老李玩钱",
+      "role": "rule_supply",
+      "title": "AI泡沫将导致股市大的崩盘，重演2000年悲剧？我的看法...",
+      "url": "https://www.youtube.com/watch?v=uYZk6upfvCU",
+      "status": "historical_learning_backlog",
+      "forward_evidence_eligible": false,
+      "last_accounted_at": "2026-10-08T04:07:30Z"
+    },
+    {
+      "video_id": "xSXNSt0m-go",
+      "handle": "@AndreiJikh",
+      "author": "Andrei Jikh",
+      "role": "market_context",
+      "title": "Prepare For The Al Take Over",
+      "url": "https://www.youtube.com/watch?v=xSXNSt0m-go",
+      "status": "historical_learning_backlog",
+      "forward_evidence_eligible": false,
+      "last_accounted_at": "2026-10-08T04:07:30Z"
+    },
+    {
+      "video_id": "xTCIqCNjikE",
+      "handle": "@老李玩钱",
+      "author": "老李玩钱",
+      "role": "rule_supply",
+      "title": "NVDA，MRVL 分析及买入建议",
+      "url": "https://www.youtube.com/watch?v=xTCIqCNjikE",
+      "status": "historical_learning_backlog",
+      "forward_evidence_eligible": false,
+      "last_accounted_at": "2026-10-08T04:07:30Z"
+    },
+    {
+      "video_id": "xvtySd-L8RY",
+      "handle": "@AndreiJikh",
+      "author": "Andrei Jikh",
+      "role": "market_context",
+      "title": "Prepare For Financial Repression",
+      "url": "https://www.youtube.com/watch?v=xvtySd-L8RY",
+      "status": "historical_learning_backlog",
+      "forward_evidence_eligible": false,
+      "last_accounted_at": "2026-10-08T04:07:30Z"
+    }
+  ],
+  "counts": {
+    "seen": 170,
+    "formal_feed": 2,
+    "historical_archive": 15,
+    "pending": 119,
+    "unresolved_backlog": 48
+  },
+  "guardrail": "Seen is discovery state, not learning. Every seen video must be in formal feed, pending, historical archive, or this explicit non-forward backlog."
+}
