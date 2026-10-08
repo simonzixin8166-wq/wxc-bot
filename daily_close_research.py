@@ -171,14 +171,21 @@ def main():
         report=result.get("report") or {}
         blog_batches[name]=rows
         previous_success=prior.get("last_success_at")
+        missing=int(report.get("missing_from_feed") or 0)
+        complete=bool(report.get("scan_complete")) and missing==0
         blog_state.setdefault("authors",{})[name]={
-            "last_success_at":now.isoformat() if report.get("scan_complete") else previous_success,
+            "last_success_at":now.isoformat() if complete else previous_success,
             "last_attempt_at":now.isoformat(),
-            "scan_complete":bool(report.get("scan_complete")),
+            "scan_complete":complete,
             "recovery_days_used":days,
             "new_records":len(rows),
             "article_links_found":report.get("article_links_found",0),
             "posts_parsed":report.get("posts_parsed",0),
+            "unique_article_ids":report.get("unique_article_ids",0),
+            "parsed_unique_urls":report.get("parsed_unique_urls",0),
+            "feed_present_urls":report.get("feed_present_urls",0),
+            "missing_from_feed":missing,
+            "missing_from_feed_urls":report.get("missing_from_feed_urls") or [],
             "seen_total":report.get("seen_total",0),
             "archive_months":report.get("archive_months",0),
             "archive_months_ok":report.get("archive_months_ok") or [],
@@ -188,7 +195,7 @@ def main():
         }
     blog_state["version"]=1
     blog_state["updated_at"]=now.isoformat()
-    blog_state["policy"]="recovery window expands from the last complete scheduled scan; failed archive months do not advance last_success_at and article discovery has no count cap"
+    blog_state["policy"]="recovery window expands from the last complete scheduled scan; failed archive months or parsed URLs missing from canonical feed do not advance last_success_at; article discovery has no count cap"
     _write(BLOG_SCAN_STATE,blog_state)
 
     blog_added=sum(len(rows) for rows in blog_batches.values())
