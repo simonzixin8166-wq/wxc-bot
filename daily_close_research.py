@@ -83,6 +83,7 @@ def collect_forum():
     processed_by_author={}
     unresolved_by_author={}
     pending_rows=[]
+    seen_targets={}
 
     for author in authors:
         entries=agent.entries_for(author,htmls)
@@ -114,11 +115,10 @@ def collect_forum():
         processed_by_author[author]=len(processed_keys)
         unresolved_by_author[author]=len(unresolved)
 
-        # Do not mark unresolved entries as seen. They remain retryable on the
-        # next scan; this is critical for main-post fetch/attribution failures.
-        if processed_keys:
-            seen_entries.update(processed_keys)
-            _write(seen_entries_path,sorted(seen_entries))
+        # Do not mark anything as seen yet. Entries become "seen" only after
+        # their feed row is durably persisted (verified below); unresolved or
+        # unpersisted entries stay retryable on the next scan.
+        seen_targets[author]=(seen_entries_path,seen_entries)
 
         if posts:
             pending_rows.extend((author,p) for p in posts)
@@ -131,8 +131,10 @@ def collect_forum():
     # to backfill/non-forward, preventing partial-batch forward contamination.
     added=0
     rows=[]
+    row_entry=[]
     for author,p in pending_rows:
         row=rf.normalize("forum",author,p)
+        row_entry.append((author,str(p.get("source_entry_key") or ""),row.get("id")))
         row["capture_mode"]="scheduled_forum_anchor_scan"
         row["intake_class_hint"]="live_candidate" if complete else "backfill"
         if not complete:
@@ -140,7 +142,27 @@ def collect_forum():
             row["source_notice"]="论坛本轮未形成完整采集闭环；记录保留用于历史学习，但不计入 Genuine Forward。"
         rows.append(row)
     if rows:
+        # Raises on write failure: nothing is marked seen, the anchor does not
+        # move, and the whole batch is retried on the next run.
         added=rf.append_records(rows)
+
+    # Persist-then-acknowledge: mark an entry seen only when its row is
+    # verifiably present in the canonical feed on disk.
+    persisted=rf.persisted_ids([rid for _,_,rid in row_entry]) if row_entry else set()
+    unpersisted_by_author={}
+    for author,key,rid in row_entry:
+        if not key:continue
+        if rid in persisted:
+            seen_targets[author][1].add(key)
+        else:
+            unpersisted_by_author[author]=unpersisted_by_author.get(author,0)+1
+    for author,(path,entries) in seen_targets.items():
+        _write(path,sorted(entries))
+    for author,n in unpersisted_by_author.items():
+        unresolved_by_author[author]=unresolved_by_author.get(author,0)+n
+    if unpersisted_by_author:
+        processing_complete=False
+        complete=False
 
     newest=(str(max(int(x) for x in all_ids)) if all_ids else prior_anchor or None)
     # Never advance the anchor on an incomplete batch. Otherwise an unresolved

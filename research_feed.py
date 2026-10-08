@@ -366,8 +366,19 @@ def append_records(records: list[dict]) -> int:
         _write(FEED_PATH, feed)
     return added
 
-def add_forum_posts(author: str, posts: list[dict]) -> int:
-    return append_records([normalize("forum", author, p) for p in posts])
+def persisted_ids(ids) -> set:
+    """Return the subset of record ids that are present in the feed on disk."""
+    want={str(x) for x in ids if x}
+    if not want:
+        return set()
+    feed=_read(FEED_PATH,{"records":[]})
+    return {str(x.get("id")) for x in feed.get("records",[]) if str(x.get("id")) in want}
+
+def add_forum_posts(author: str, posts: list[dict], provenance: dict | None = None) -> int:
+    rows=[normalize("forum", author, p) for p in posts]
+    for row in rows:
+        row.update(provenance or {})
+    return append_records(rows)
 
 def capture_blog_profile(name: str, days: int = 2, return_report: bool = False):
     profile = blog.resolve_profile(name)
