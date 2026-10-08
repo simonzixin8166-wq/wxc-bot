@@ -166,16 +166,29 @@ def main():
                 days=max(days,elapsed)
             except Exception:
                 pass
-        rows=rf.capture_blog_profile(name,days=days)
+        result=rf.capture_blog_profile(name,days=days,return_report=True)
+        rows=result.get("fresh") or []
+        report=result.get("report") or {}
         blog_batches[name]=rows
+        previous_success=prior.get("last_success_at")
         blog_state.setdefault("authors",{})[name]={
-            "last_success_at":now.isoformat(),
+            "last_success_at":now.isoformat() if report.get("scan_complete") else previous_success,
+            "last_attempt_at":now.isoformat(),
+            "scan_complete":bool(report.get("scan_complete")),
             "recovery_days_used":days,
             "new_records":len(rows),
+            "article_links_found":report.get("article_links_found",0),
+            "posts_parsed":report.get("posts_parsed",0),
+            "seen_total":report.get("seen_total",0),
+            "archive_months":report.get("archive_months",0),
+            "archive_months_ok":report.get("archive_months_ok") or [],
+            "archive_failures":report.get("archive_failures") or [],
+            "overview_ok":report.get("overview_ok"),
+            "retention_policy":report.get("retention_policy"),
         }
     blog_state["version"]=1
     blog_state["updated_at"]=now.isoformat()
-    blog_state["policy"]="recovery window expands from the last successful scheduled scan; it is not capped at 14 days"
+    blog_state["policy"]="recovery window expands from the last complete scheduled scan; failed archive months do not advance last_success_at and article discovery has no count cap"
     _write(BLOG_SCAN_STATE,blog_state)
 
     blog_added=sum(len(rows) for rows in blog_batches.values())
