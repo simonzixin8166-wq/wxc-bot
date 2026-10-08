@@ -29,10 +29,8 @@ permissions:
 
 concurrency:
   group: wxc-research-writer
-  # Collector logic/state is monotonic but version-sensitive. A newer collector
-  # revision must supersede an older in-flight run so stale logic cannot write
-  # state after a correctness fix.
-  cancel-in-progress: true
+  # Shared writer is serialized. Runs queue rather than cancel each other so forum/blog and YouTube completeness scans both finish.
+  cancel-in-progress: false
 
 jobs:
   collect:
