@@ -3,6 +3,9 @@ import tempfile
 import youtube_research as yt
 import research_feed as rf
 
+TODAY=yt._now()[:10]
+TODAY_COMPACT=TODAY.replace("-","")
+
 entries={
  "@RhinoFinance":[{"id":"r2","title":"new"},{"id":"r1","title":"old"}],
  "@老李玩钱":[{"id":"l1","title":"l"}],
@@ -16,7 +19,7 @@ def list_channel(url):
 
 def meta(url):
     vid=url.split("v=")[-1]
-    return {"id":vid,"title":"TITLE "+vid,"webpage_url":url,"upload_date":"20261005"}
+    return {"id":vid,"title":"TITLE "+vid,"webpage_url":url,"upload_date":TODAY_COMPACT}
 
 def transcript(vid):
     if vid=="a1":return "","unavailable:NoTranscriptFound"
@@ -120,7 +123,7 @@ with tempfile.TemporaryDirectory() as td:
         return []
     def local_meta(url):
         vid=url.split("v=")[-1]
-        return {"id":vid,"title":"TITLE "+vid,"webpage_url":url,"upload_date":"20261006"}
+        return {"id":vid,"title":"TITLE "+vid,"webpage_url":url,"upload_date":TODAY_COMPACT}
     def routed(vid,title="",author=""):
         if vid=="lnew" and phase["ready"]:
             return {
@@ -143,7 +146,7 @@ with tempfile.TemporaryDirectory() as td:
         assert base["pending_total"]==0
 
         local_entries["@老李玩钱"].insert(0,{
-          "id":"lnew","title":"新视频：QQQ分批计划","rss_published_at":"2026-10-06T01:00:00Z"
+          "id":"lnew","title":"新视频：QQQ分批计划","rss_published_at":TODAY+"T01:00:00Z"
         })
         q5=yt.collect(local_list,local_meta,routed)
         assert q5["discovered_new_videos"]==1
@@ -152,7 +155,7 @@ with tempfile.TemporaryDirectory() as td:
         assert not rf.FEED_PATH.exists()
         pending=yt._read(yt.PENDING_PATH,{"records":[]})["records"]
         assert pending[0]["video_id"]=="lnew"
-        assert pending[0]["published_at"]=="2026-10-06"
+        assert pending[0]["published_at"]==TODAY
 
         # Same video is already seen but is explicitly retried from pending.
         phase["ready"]=True
@@ -166,7 +169,7 @@ with tempfile.TemporaryDirectory() as td:
         assert len(feed)==1
         assert feed[0]["content_quality"]=="Q2"
         assert feed[0]["content_provider"]=="reducer.xgoose.org"
-        assert feed[0]["published_at"]=="2026-10-06"
+        assert feed[0]["published_at"]==TODAY
 
         # No duplicate admission on subsequent run.
         again=yt.collect(local_list,local_meta,routed)
@@ -222,7 +225,7 @@ with tempfile.TemporaryDirectory() as td:
 
         # Same seen video now has RSS publication metadata. It must be retried
         # with the refreshed entry rather than stale pending metadata.
-        refresh_entries["@老李玩钱"][0]["rss_published_at"]="2026-10-07T01:00:00Z"
+        refresh_entries["@老李玩钱"][0]["rss_published_at"]=TODAY+"T01:00:00Z"
         refresh_phase["ready"]=True
         recovered=yt.collect(refresh_list,refresh_meta,refresh_transcript)
         assert recovered["discovered_new_videos"]==0
@@ -231,7 +234,7 @@ with tempfile.TemporaryDirectory() as td:
         assert recovered["pending_total"]==0
         assert recovered["feed_records_added"]==1
         feed=yt._read(rf.FEED_PATH,{"records":[]})["records"]
-        assert feed[-1]["published_at"]=="2026-10-07"
+        assert feed[-1]["published_at"]==TODAY
         assert feed[-1]["content_quality"]=="Q2"
     finally:
         yt.SEEN_PATH,yt.STATUS_PATH,yt.PENDING_PATH,rf.FEED_PATH=old_seen,old_status,old_pending,old_feed
@@ -311,3 +314,20 @@ healthy=yt._intake_health(
 assert healthy["status"]=="ok"
 assert healthy["stuck_high_quality_pending"]==0
 print("PASS YouTube intake health watchdog")
+
+
+# Discovery chronology: older videos discovered today are historical backfill,
+# not forward pending. Same-day publication remains a forward acquisition candidate.
+assert yt._pending_is_historical({
+    "published_at":"2020-01-01",
+    "first_discovered_at":TODAY+"T12:00:00Z",
+}) is True
+assert yt._pending_is_historical({
+    "published_at":TODAY,
+    "first_discovered_at":TODAY+"T12:00:00Z",
+}) is False
+assert yt._pending_is_historical({
+    "published_at":"",
+    "first_discovered_at":TODAY+"T12:00:00Z",
+}) is False
+print("PASS YouTube historical-vs-forward pending chronology gate")
