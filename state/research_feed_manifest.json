@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "file": "state/research_feed.json",
+  "feed_updated_at": "2026-10-08T13:35:22Z",
+  "record_count": 1315,
+  "unique_ids": 1315,
+  "ids_sha256": "3e628482c02ae9308a528530f3c1e78b561388f973b24a9ab0e48280b71dca74",
+  "bytes": 1154741,
+  "content_sha256": "71544345df72b864d1ccbb4234230c8c0ae43a06af5eb876c391bc01d44c16b7"
+}
