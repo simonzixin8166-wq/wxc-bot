@@ -13,6 +13,15 @@ def load(name,default=None):
     try:return json.loads((STATE/name).read_text(encoding="utf-8"))
     except Exception:return {} if default is None else default
 
+def _youtube_id_from_url(url):
+    s=str(url or "")
+    if "v=" in s:return s.split("v=")[-1].split("&")[0]
+    if "youtu.be/" in s:return s.split("youtu.be/")[-1].split("?")[0]
+    return ""
+
+def _ids(rows,key="video_id"):
+    return {str(x.get(key) or "") for x in (rows or []) if str(x.get(key) or "")}
+
 def build():
     forum=load("forum_source_status.json",{})
     blogs=load("blog_scan_state.json",{})
@@ -20,6 +29,9 @@ def build():
     ytd=load("youtube_discovery_state.json",{})
     ytb=load("youtube_historical_backlog.json",{"records":[]})
     ytp=load("pending_youtube.json",{"records":[]})
+    yts=load("seen_youtube.json",{"video_ids":[]})
+    yta=load("youtube_learning_archive.json",{"records":[]})
+    feed=load("research_feed.json",{"records":[]})
 
     authors=blogs.get("authors") or {}
     blog_rows={}
@@ -38,15 +50,43 @@ def build():
 
     forum_complete=bool(forum.get("complete")) and bool(forum.get("continuity_proven"))
     youtube_discovery_complete=bool(ytd.get("complete"))
-    pending=len(ytp.get("records") or [])
-    backlog=len(ytb.get("records") or [])
-    youtube_learning_complete=youtube_discovery_complete and pending==0 and backlog==0
+    pending_rows=ytp.get("records") or []
+    backlog_rows=ytb.get("records") or []
+    archive_rows=yta.get("records") or []
+    pending=len(pending_rows)
+    backlog=len(backlog_rows)
 
-    complete=forum_complete and blogs_complete and youtube_learning_complete
+    seen={str(x) for x in (yts.get("video_ids") or []) if str(x)}
+    pending_ids=_ids(pending_rows)
+    backlog_ids=_ids(backlog_rows)
+    archive_ids=_ids(archive_rows)
+    learned_hist_ids={
+        str(x.get("video_id"))
+        for x in archive_rows
+        if x.get("video_id") and x.get("historical_learning_eligible") is True
+    }
+    feed_ids=set()
+    for row in (feed.get("records") or []):
+        if row.get("source")!="youtube":continue
+        vid=str((row.get("youtube") or {}).get("video_id") or row.get("video_id") or _youtube_id_from_url(row.get("url")) or "")
+        if vid:feed_ids.add(vid)
+
+    accounted_ids=feed_ids|archive_ids|pending_ids|backlog_ids
+    unaccounted=sorted(seen-accounted_ids)
+    youtube_accounting_balanced=(len(unaccounted)==0)
+    youtube_coverage_complete=youtube_discovery_complete and youtube_accounting_balanced
+    semantic_learned_ids=feed_ids|learned_hist_ids
+    unresolved_semantic=sorted(seen-semantic_learned_ids)
+    youtube_learning_complete=youtube_coverage_complete and len(unresolved_semantic)==0
+
+    coverage_complete=forum_complete and blogs_complete and youtube_coverage_complete
+    semantic_learning_complete=forum_complete and blogs_complete and youtube_learning_complete
     return {
-      "version":1,
+      "version":2,
       "generated_at":datetime.now(timezone.utc).isoformat(),
-      "complete":complete,
+      "complete":coverage_complete,
+      "coverage_complete":coverage_complete,
+      "semantic_learning_complete":semantic_learning_complete,
       "forum":{
         "complete":forum_complete,
         "continuity_proven":forum.get("continuity_proven"),
@@ -56,13 +96,27 @@ def build():
       },
       "blogs":{"complete":blogs_complete,"authors":blog_rows},
       "youtube":{
-        "complete":youtube_learning_complete,
+        "complete":youtube_coverage_complete,
+        "coverage_complete":youtube_coverage_complete,
+        "semantic_learning_complete":youtube_learning_complete,
         "discovery_complete":youtube_discovery_complete,
+        "accounting_balanced":youtube_accounting_balanced,
+        "seen":len(seen),
+        "feed_records":len(feed_ids),
+        "historical_archive_records":len(archive_ids),
+        "historical_semantic_learned":len(learned_hist_ids),
         "pending":pending,
         "historical_backlog":backlog,
+        "unaccounted":len(unaccounted),
+        "unaccounted_video_ids":unaccounted[:50],
+        "unresolved_semantic":len(unresolved_semantic),
         "status":yt.get("status"),
       },
-      "guardrail":"complete=true requires proven forum continuity, zero blog feed gaps, proven YouTube discovery continuity, and zero unresolved YouTube pending/backlog items."
+      "guardrails":[
+        "coverage_complete proves every discovered source is durably accounted; it does not claim every external item yielded learnable text.",
+        "semantic_learning_complete additionally requires every discovered YouTube item to have formal-feed or Q1/Q2 historical semantic learning.",
+        "Pending/backlog/provider-blocked items remain explicit and keep the external-source learning domain partial; they are never silently counted as learned."
+      ]
     }
 
 def main():
