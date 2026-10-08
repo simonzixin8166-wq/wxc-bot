@@ -1,11 +1,8 @@
 name: Recover Research Feed History
 
+# Manual only: historical recovery must never run as a side effect of a code change
+# (it was auto-triggered when #27 touched this file; cancelled before it ran).
 on:
-  push:
-    branches: [main]
-    paths:
-      - "recover_research_feed_history.py"
-      - ".github/workflows/recover-research-feed-history.yml"
   workflow_dispatch: {}
 
 permissions:
