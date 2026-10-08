@@ -1,27 +1,36 @@
 {
-  "version": 1,
-  "updated_at": "2026-10-08T03:06:47.211255+00:00",
-  "anchor_id": "113867",
-  "previous_anchor_id": null,
+  "version": 2,
+  "updated_at": "2026-10-08T03:23:43.849908+00:00",
+  "anchor_id": "114181",
+  "previous_anchor_id": "114176",
+  "legacy_seen_anchor_id": "114176",
   "complete": true,
   "pages_scanned": 8,
   "scan_budget": 8,
+  "scan_attempts": [
+    {
+      "pages": 8,
+      "html_pages": 8,
+      "anchor_found": true
+    }
+  ],
   "next_scan_pages": 8,
   "status": "complete",
   "anchor_found": true,
   "reached_end": false,
+  "continuity_proven": true,
   "authors": [
     "三心三意",
     "yifan99",
     "我是一只井底蛙",
     "bogbog"
   ],
-  "new_ids_by_author": {
+  "new_entries_by_author": {
     "三心三意": 1,
     "yifan99": 0,
     "我是一只井底蛙": 0,
     "bogbog": 0
   },
   "feed_records_added": 1,
-  "guardrail": "partial scans never advance the prior anchor and never create Genuine Forward evidence; next run expands scan depth until the prior anchor/end is reached."
+  "guardrail": "complete requires proof that the scan reached the previous known anchor; first migration uses the highest legacy seen id as that anchor. Partial scans never advance the anchor or create Genuine Forward evidence."
 }

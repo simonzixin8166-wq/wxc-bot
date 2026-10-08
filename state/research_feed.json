@@ -28790,9 +28790,37 @@
       "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
       "capture_mode": "scheduled_forum_anchor_scan",
       "intake_class_hint": "live_candidate"
+    },
+    {
+      "id": "160c48ef7f52b624afdd",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-07 20:09:06",
+      "title": "I dont think historical high has much meaning here",
+      "url": "https://bbs.wenxuecity.com/cfzh/114181.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "0a88ec2b6bc5c2d773ee",
+      "parent_post_id": "114181",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-08T03:23:42Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "capture_mode": "scheduled_forum_anchor_scan",
+      "intake_class_hint": "live_candidate"
     }
   ],
-  "updated_at": "2026-10-08T03:06:46Z",
+  "updated_at": "2026-10-08T03:23:42Z",
   "retention_policy": "append_only_no_record_count_cap",
   "historical_recovery": {
     "completed_at": "2026-10-07T13:43:06.018028+00:00",
