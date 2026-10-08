@@ -75,9 +75,51 @@ with tempfile.TemporaryDirectory() as td:
             vf.verify(rf.FEED_PATH, man, 700); raise AssertionError("truncated")
         except json.JSONDecodeError:
             pass
-        # A stale manifest (feed rewritten by an older tool with a new updated_at) is not a mismatch.
+        # A stale manifest (feed rewritten outside rf._write) is rejected in strict mode and only
+        # tolerated with the explicit legacy switch.
         rf.FEED_PATH.write_text(json.dumps(dict(doc, updated_at="2099-01-01T00:00:00Z")))
-        assert vf.verify(rf.FEED_PATH, man, 700)["records"] == 700
+        try:
+            vf.verify(rf.FEED_PATH, man, 700); raise AssertionError("stale manifest must fail strict")
+        except SystemExit as e:
+            assert "FEED_MANIFEST_STALE" in str(e)
+        assert vf.verify(rf.FEED_PATH, man, 700, legacy_ok=True)["manifest"] == "stale"
+        man.unlink()
+        try:
+            vf.verify(rf.FEED_PATH, man, 700); raise AssertionError("missing manifest must fail strict")
+        except SystemExit as e:
+            assert "FEED_MANIFEST_ABSENT" in str(e)
+
+        # Append-only beyond the count: same-count delete+add, and same-id provenance rewrite.
+        rf.FEED_PATH.write_bytes(before)
+        base = json.loads(before)["records"]
+        swapped = base[:-1] + [rec(5000)]
+        try:
+            rf._write(rf.FEED_PATH, {"version": 1, "records": swapped}); raise AssertionError("delete+add")
+        except rf.FeedIntegrityError as e:
+            assert "lost_ids" in str(e)
+        tampered_url = [dict(base[0], captured_at="2030-01-01T00:00:00Z")] + base[1:]
+        try:
+            rf._write(rf.FEED_PATH, {"version": 1, "records": tampered_url}); raise AssertionError("rewrite")
+        except rf.FeedIntegrityError as e:
+            assert "rewritten" in str(e)
+        assert rf.FEED_PATH.read_bytes() == before
+        # Filling an empty provenance field is allowed; an explicit revision is allowed.
+        filled = [dict(base[0], intake_class_hint="backfill")] + base[1:]
+        assert rf.immutable_violations(base, filled) == ([], [])
+        revised = [dict(base[0], captured_at="2026-10-09T00:00:00Z",
+                        revision={"fields": ["captured_at"], "reason": "clock fix", "revised_at": "2026-10-09"})] + base[1:]
+        assert rf.immutable_violations(base, revised) == ([], [])
+        # Pre-push verify compares record by record against origin/main.
+        rf._write(rf.FEED_PATH, {"version": 1, "updated_at": "2026-10-09T00:00:00Z", "records": base + [rec(7000)]})
+        assert vf.verify(rf.FEED_PATH, man, base)["manifest"] == "verified"
+        try:
+            vf.verify(rf.FEED_PATH, man, base + [rec(8000)]); raise AssertionError("lost vs origin")
+        except SystemExit as e:
+            assert "FEED_SHRINK" in str(e) or "FEED_LOST_IDS" in str(e)
+        try:
+            vf.verify(rf.FEED_PATH, man, [dict(base[0], captured_at="1999-01-01T00:00:00Z")] + base[1:]); raise AssertionError("prov")
+        except SystemExit as e:
+            assert "FEED_PROVENANCE_REWRITE" in str(e)
     finally:
         rf.FEED_PATH = old
 

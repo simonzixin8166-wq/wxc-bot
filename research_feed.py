@@ -50,6 +50,36 @@ class FeedIntegrityError(RuntimeError):
     """Raised instead of writing a feed that would lose records or is not valid JSON."""
 
 
+# Provenance fields that must never be silently rewritten once set. An empty value may be
+# filled later (historical recovery fills gaps); a non-empty value may only change when the
+# record declares it in an explicit revision {"fields": [...], "reason": ..., "revised_at": ...}.
+IMMUTABLE_FIELDS = ("id", "source", "source_kind", "author", "published_at", "url", "captured_at",
+                    "intake_class_hint", "capture_mode")
+
+
+def _empty(v):
+    return v is None or v == "" or v == [] or v == {}
+
+
+def immutable_violations(old_records, new_records):
+    """Return (lost_ids, changed) where changed = [(id, field)] for silent provenance rewrites."""
+    new_by_id = {r.get("id"): r for r in new_records if isinstance(r, dict) and r.get("id")}
+    lost, changed = [], []
+    for old in old_records:
+        rid = old.get("id") if isinstance(old, dict) else None
+        if not rid:
+            continue
+        new = new_by_id.get(rid)
+        if new is None:
+            lost.append(rid)
+            continue
+        declared = set(((new.get("revision") or {}).get("fields")) or [])
+        for f in IMMUTABLE_FIELDS:
+            if not _empty(old.get(f)) and old.get(f) != new.get(f) and f not in declared:
+                changed.append((rid, f))
+    return lost, changed
+
+
 def feed_manifest(feed: dict, payload: bytes) -> dict:
     """Small sidecar that lets consumers verify the >1 MiB feed they downloaded."""
     ids = sorted(str(r.get("id")) for r in feed.get("records", []) if r.get("id"))
@@ -89,6 +119,11 @@ def _write(path: Path, value):
         if len(records) < len(on_disk):
             # The feed is append-only; a shorter feed means a lost write or a bad merge.
             raise FeedIntegrityError(f"refusing to shrink research feed {len(on_disk)} -> {len(records)}")
+        lost, changed = immutable_violations(on_disk, records)
+        if lost or changed:
+            # Same-count delete+add or an in-place provenance rewrite is not append-only either.
+            raise FeedIntegrityError(f"append-only violation: lost_ids={lost[:5]} ({len(lost)}), "
+                                     f"rewritten={changed[:5]} ({len(changed)})")
         json.loads(payload.decode("utf-8"))  # round-trip check before replacing anything
         _atomic_write_bytes(path, payload)
         manifest = feed_manifest(value, payload)
