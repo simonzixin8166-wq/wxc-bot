@@ -79,5 +79,7 @@ jobs:
           if [ -f state/research_feed_manifest.json ]; then git add state/research_feed_manifest.json; fi
           if [ -f state/source_intake_completeness.json ]; then git add state/source_intake_completeness.json; fi
           if [ -f state/youtube_discovery_state.json ]; then git add state/youtube_discovery_state.json; fi
+          python youtube_learning_reconciliation.py || echo '::warning::youtube reconciliation failed (non-gating)'
+          if [ -f state/youtube_learning_reconciliation.json ]; then git add state/youtube_learning_reconciliation.json; fi
           if [ -f state/youtube_historical_backlog.json ]; then git add state/youtube_historical_backlog.json; fi
           git diff --cached --quiet || (git commit -m "update YouTube forward research" && git pull --rebase origin main && python verify_research_feed.py && git push origin HEAD:main)
