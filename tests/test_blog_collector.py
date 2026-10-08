@@ -86,9 +86,12 @@ try:
     def fail_first_archive(url, delay=0):
         class R:
             def __init__(self,text): self.text=text
-        if "myblog" in url: return R(ARTICLE)
-        calls["n"]+=1
-        if calls["n"]==1:return None
+        if url.rstrip("/").endswith("202609"):
+            return None
+        if "/myoverview/" in url:
+            return R(ARCHIVE)
+        if "/myblog/" in url:
+            return R(ARTICLE)
         return R(ARCHIVE)
     blog.get=fail_first_archive
     with tempfile.TemporaryDirectory() as td:
