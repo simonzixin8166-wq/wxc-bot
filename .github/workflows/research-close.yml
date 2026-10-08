@@ -1,5 +1,5 @@
 name: research-close
-# Research-close contract refresh: 2026-10-07T03:05Z
+# Research-close contract refresh: 2026-10-08T03:00Z forum-entry-completeness
 
 on:
   push:
@@ -9,6 +9,9 @@ on:
       - "transcript_router.py"
       - "research_feed.py"
       - "daily_close_research.py"
+      - "wxc_scraper.py"
+      - "wxc_tg_agent.py"
+      - "tests/test_forum_entry_capture.py"
       - "wxc_blog.py"
       - "tests/test_blog_collector.py"
       - "tests/test_research_feed.py"
@@ -48,6 +51,7 @@ jobs:
         run: |
           python -m py_compile research_feed.py transcript_router.py youtube_research.py youtube_provider_health.py daily_close_research.py wxc_tg_agent.py wxc_blog.py wxc_scraper.py
           PYTHONPATH=. python tests/test_research_feed.py
+          PYTHONPATH=. python tests/test_forum_entry_capture.py
           PYTHONPATH=. python tests/test_youtube_research.py
           PYTHONPATH=. python tests/test_transcript_router.py
           PYTHONPATH=. python tests/test_youtube_learning_archive.py
