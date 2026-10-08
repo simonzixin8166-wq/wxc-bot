@@ -28,7 +28,8 @@ def check_myalpha_server_action(meta):
             counts=s.get("action_counts") or {}
             if status=="action_required":
                 msg=("⚠️ MyAlpha 有需要处理的事项\n"
-                     f"L3 {counts.get('l3',0)} · L2 {counts.get('l2',0)} · Thesis复核 {counts.get('thesis_review',0)}\n"
+                     # Public status is presence-only (0/1) since quant-dashboard#154: show 有/无, not counts.
+                     f"L3 {'有' if counts.get('l3') else '无'} · L2 {'有' if counts.get('l2') else '无'} · Thesis复核 {'有' if counts.get('thesis_review') else '无'}\n"
                      "详细私有仓位未写入公开状态，请打开 MyAlpha 查看。")
             else:
                 msg=("⚠️ MyAlpha 当前无法可靠判断\n"
