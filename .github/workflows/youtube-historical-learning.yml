@@ -44,15 +44,19 @@ jobs:
           python -m py_compile transcript_router.py youtube_provider_health.py youtube_learning_archive.py
           PYTHONPATH=. python tests/test_transcript_router.py
           PYTHONPATH=. python tests/test_youtube_learning_archive.py
+          PYTHONPATH=. python tests/test_source_intake_completeness.py
 
       - name: Build non-gating historical archive once
         env:
           DATA_DIR: state
         run: timeout 8m python youtube_learning_archive.py
 
+      - name: Build unified source intake completeness
+        run: python source_intake_completeness.py
+
       - name: Save historical archive and provider health
         run: |
           git config user.name "wxc-bot"
           git config user.email "wxc-bot@users.noreply.github.com"
-          git add state/youtube_provider_health.json state/youtube_learning_archive.json
+          git add state/source_intake_completeness.json state/youtube_provider_health.json state/youtube_learning_archive.json
           git diff --cached --quiet || (git commit -m "update non-gating historical youtube learning" && git pull --rebase origin main && git push origin HEAD:main)
