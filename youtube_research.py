@@ -311,7 +311,7 @@ def collect(
     seen_doc=_read(SEEN_PATH,None)
     first_run=not isinstance(seen_doc,dict) or "video_ids" not in seen_doc
     seen=set((seen_doc or {}).get("video_ids") or [])
-    discovery_state=_read(DISCOVERY_STATE_PATH,{"version":1,"channels":{}})
+    discovery_state=_read(SEEN_PATH.parent/"youtube_discovery_state.json",{"version":1,"channels":{}})
     prior_channel_state=discovery_state.get("channels") or {}
     next_channel_state={}
 
@@ -521,7 +521,7 @@ def collect(
         added=rf.append_records(rows)
 
     generated=_now()
-    _write(DISCOVERY_STATE_PATH,{
+    _write(SEEN_PATH.parent/"youtube_discovery_state.json",{
         "version":1,
         "updated_at":generated,
         "channels":next_channel_state,
@@ -543,7 +543,7 @@ def collect(
         if row.get("source")!="youtube":continue
         url=str(row.get("url") or "")
         if "v=" in url:feed_video_ids.add(url.split("v=")[-1].split("&")[0])
-    hist_doc=_read(HISTORICAL_ARCHIVE_PATH,{"records":[]})
+    hist_doc=_read(SEEN_PATH.parent/"youtube_learning_archive.json",{"records":[]})
     hist_ids={str(x.get("video_id") or "") for x in (hist_doc.get("records") or []) if x.get("video_id")}
     pending_ids=set(next_pending)
     unresolved=sorted(x for x in seen if x and x not in feed_video_ids and x not in hist_ids and x not in pending_ids)
@@ -554,7 +554,7 @@ def collect(
             "title":e.get("title") or "","url":e.get("webpage_url") or _canonical_video_url(vid),
             "published_at":_entry_published(e),
         }
-    prior_backlog=_read(HISTORICAL_BACKLOG_PATH,{"records":[]})
+    prior_backlog=_read(SEEN_PATH.parent/"youtube_historical_backlog.json",{"records":[]})
     prior_by_id={str(x.get("video_id")):x for x in prior_backlog.get("records") or [] if x.get("video_id")}
     backlog_rows=[]
     for vid in unresolved:
@@ -565,7 +565,7 @@ def collect(
         row["forward_evidence_eligible"]=False
         row["last_accounted_at"]=generated
         backlog_rows.append(row)
-    _write(HISTORICAL_BACKLOG_PATH,{
+    _write(SEEN_PATH.parent/"youtube_historical_backlog.json",{
         "version":1,"updated_at":generated,"records":backlog_rows,
         "counts":{"seen":len(seen),"formal_feed":len(feed_video_ids),"historical_archive":len(hist_ids),"pending":len(pending_ids),"unresolved_backlog":len(backlog_rows)},
         "guardrail":"Seen is discovery state, not learning. Every seen video must be in formal feed, pending, historical archive, or this explicit non-forward backlog.",
