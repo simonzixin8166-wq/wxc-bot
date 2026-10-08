@@ -355,6 +355,53 @@ def ids_for(author, htmls):
             ids[pid] = href
     return ids
 
+def entries_for(author, htmls):
+    """Preserve every visible forum entry (post or reply) with a stable key."""
+    rows={}
+    for h in htmls:
+        for row in w.parse_list_entries(h,author):
+            rows[row["entry_key"]]=row
+    return rows
+
+def _forum_entry_post(author, entry, state):
+    r=b.fetch(entry["url"],state)
+    p=w.parse_post(r.text,entry["url"]) if r else None
+    if p and str(p.get("author") or "").casefold()==author.casefold():
+        p["forum_entry_kind"]=entry.get("entry_kind") or "post"
+        p["source_entry_key"]=entry.get("entry_key")
+        p["parent_post_id"]=entry.get("parent_post_id")
+        return p
+    # Fail closed on author attribution. Never store somebody else's parent
+    # body as the watched author's text. For a short reply, the list title is
+    # itself the visible reply text and remains useful for semantic learning.
+    published=str(entry.get("published_at") or "")
+    try:
+        published=datetime.strptime(published,"%m/%d/%Y %H:%M:%S").strftime("%Y-%m-%d %H:%M:%S")
+    except Exception:
+        pass
+    return {
+        "id":"reply-"+str(entry.get("entry_key") or ""),
+        "url":entry.get("url") or "",
+        "title":entry.get("title") or "",
+        "author":author,
+        "date":published,
+        "reads":"","likes":"",
+        "text":entry.get("title") or "",
+        "images":[],
+        "forum_entry_kind":"reply",
+        "source_entry_key":entry.get("entry_key"),
+        "parent_post_id":entry.get("parent_post_id"),
+        "attribution_fallback":"list_visible_reply_text",
+    }
+
+def fetch_entries(entries, state):
+    posts=[]
+    for entry in entries:
+        p=_forum_entry_post(entry.get("author") or "",entry,state)
+        if p:posts.append(p)
+    posts.sort(key=lambda x:str(x.get("date") or ""))
+    return posts
+
 def baseline(authors):
     """订阅时先把现有帖子标记为已读,避免一次性刷屏"""
     htmls = list_pages(3, {})
