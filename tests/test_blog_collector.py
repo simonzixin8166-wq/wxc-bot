@@ -52,4 +52,57 @@ with tempfile.TemporaryDirectory() as td:
     assert (Path(td) / "index.csv").exists()
     assert (Path(td) / "posts.json").exists()
 
+# Collector completeness is explicit: every requested monthly archive must
+# succeed. Overview is an independent recovery path, not a substitute for a
+# failed archive month.
+old_get=blog.get
+old_download=blog.download_image
+try:
+    def fake_get(url, delay=0):
+        class R:
+            def __init__(self,text): self.text=text
+        if "myblog" in url: return R(ARTICLE)
+        return R(ARCHIVE)
+    blog.get=fake_get
+    blog.download_image=lambda *args,**kwargs: None
+    with tempfile.TemporaryDirectory() as td:
+        result=blog.collect(
+            blog.resolve_profile("BrightLine"),
+            datetime(2026,9,30),datetime(2026,9,30,23,59,59),td,
+            delay=0,max_articles=None,max_images=0
+        )
+        assert result["scan_complete"] is True
+        assert result["archive_failures"]==[]
+        assert result["retention_policy"]=="no_article_count_cap"
+
+    def archive_failure(url, delay=0):
+        class R:
+            def __init__(self,text): self.text=text
+        if "/myblog/" in url: return R(ARTICLE)
+        if "blogtitle" in url or "archive" in url: return None
+        return R(ARCHIVE)
+    # Directly verify the contract via a deterministic one-month failure.
+    calls={"n":0}
+    def fail_first_archive(url, delay=0):
+        class R:
+            def __init__(self,text): self.text=text
+        if "myblog" in url: return R(ARTICLE)
+        calls["n"]+=1
+        if calls["n"]==1:return None
+        return R(ARCHIVE)
+    blog.get=fail_first_archive
+    with tempfile.TemporaryDirectory() as td:
+        result=blog.collect(
+            blog.resolve_profile("BrightLine"),
+            datetime(2026,9,30),datetime(2026,9,30,23,59,59),td,
+            delay=0,max_articles=None,max_images=0
+        )
+        assert result["scan_complete"] is False
+        assert result["archive_failures"]==["2026-09"]
+finally:
+    blog.get=old_get
+    blog.download_image=old_download
+
+print("PASS blog completeness accounting / no article-count cap")
+
 print("PASS BrightLine Blog Collector V1")
