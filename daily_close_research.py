@@ -36,7 +36,7 @@ def _all_forum_ids(htmls):
     out=[]
     seen=set()
     for html in htmls:
-        for pid in re.findall(r"/cfzh/(\d+)\.html", html or ""):
+        for pid in re.findall(r"(?:/cfzh/)?(\d+)\.html", html or ""):
             if pid not in seen:
                 seen.add(pid); out.append(pid)
     return out
@@ -46,14 +46,28 @@ def collect_forum():
     state={}
     prior=_read(FORUM_SCAN_STATE,{})
     prior_anchor=str(prior.get("anchor_id") or "")
-    prior_complete=bool(prior.get("complete", True))
+    prior_version=int(prior.get("version") or 0)
+
+    # Migration from the legacy fixed-page scanner: use the highest already-seen
+    # forum id as the prior anchor. A missing prior anchor must never mean
+    # "complete"; we first have to prove continuity to a known old observation.
+    legacy_seen=[]
+    for author in authors:
+        for value in agent.load_seen(author):
+            try:legacy_seen.append(int(value))
+            except Exception:pass
+    legacy_anchor=str(max(legacy_seen)) if legacy_seen else ""
+    if prior_version<2 and legacy_anchor:
+        prior_anchor=legacy_anchor
+
+    prior_complete=bool(prior.get("complete",False)) if prior_version>=2 else False
     prior_budget=int(prior.get("next_scan_pages") or FORUM_DAILY_PAGES)
     budget=FORUM_DAILY_PAGES if prior_complete else min(FORUM_MAX_SCAN_PAGES,max(FORUM_DAILY_PAGES,prior_budget))
     htmls=agent.list_pages(budget,state)
     all_ids=_all_forum_ids(htmls)
-    anchor_found=(not prior_anchor) or (prior_anchor in set(all_ids))
-    reached_end=len(htmls)<budget
-    complete=bool(htmls) and (anchor_found or reached_end)
+    anchor_found=bool(prior_anchor) and prior_anchor in set(all_ids)
+    reached_end=False
+    complete=bool(htmls) and bool(anchor_found)
     added=0
     discovered_by_author={}
     for author in authors:
@@ -84,13 +98,14 @@ def collect_forum():
         seen_entries.update(str(p.get("source_entry_key") or "") for p in posts if p.get("source_entry_key"))
         _write(seen_entries_path,sorted(seen_entries))
 
-    newest=all_ids[0] if all_ids else prior_anchor or None
+    newest=(str(max(int(x) for x in all_ids)) if all_ids else prior_anchor or None)
     next_pages=FORUM_DAILY_PAGES if complete else min(FORUM_MAX_SCAN_PAGES,max(budget+1,budget*2))
     scan_state={
-        "version":1,
+        "version":2,
         "updated_at":datetime.now(timezone.utc).isoformat(),
         "anchor_id":newest if complete and newest else prior_anchor or None,
         "previous_anchor_id":prior_anchor or None,
+        "legacy_seen_anchor_id":legacy_anchor or None,
         "complete":complete,
         "pages_scanned":len(htmls),
         "scan_budget":budget,
@@ -102,10 +117,11 @@ def collect_forum():
         "status":"complete" if complete else "partial",
         "anchor_found":anchor_found,
         "reached_end":reached_end,
+        "continuity_proven":anchor_found,
         "authors":authors,
         "new_entries_by_author":discovered_by_author,
         "feed_records_added":added,
-        "guardrail":"partial scans never advance the prior anchor and never create Genuine Forward evidence; every visible watched-author post/reply has its own stable entry key, and next run expands scan depth until the prior anchor/end is reached.",
+        "guardrail":"complete requires proof that the scan reached the previous known anchor; first migration uses the highest legacy seen id as that anchor. Partial scans never advance the anchor or create Genuine Forward evidence.",
     })
     return added,scan_state
 
