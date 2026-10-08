@@ -42,12 +42,26 @@ jobs:
 
       - name: Validate YouTube forward intake
         run: |
-          python -m py_compile youtube_research.py transcript_router.py research_feed.py
+          python -m py_compile youtube_research.py youtube_learning_archive.py transcript_router.py research_feed.py
           PYTHONPATH=. python tests/test_youtube_research.py
+          PYTHONPATH=. python tests/test_youtube_learning_archive.py
           PYTHONPATH=. python tests/test_transcript_router.py
           PYTHONPATH=. python tests/test_source_intake_completeness.py
 
       - name: Collect YouTube forward research
+        env:
+          DATA_DIR: state
+          TRANSCRIPT_FAST_MODE: "1"
+        run: python youtube_research.py
+
+      - name: Process a bounded historical YouTube backlog batch
+        env:
+          DATA_DIR: state
+          TRANSCRIPT_FAST_MODE: "1"
+          YOUTUBE_HISTORICAL_BACKLOG_BATCH: "8"
+        run: python youtube_learning_archive.py
+
+      - name: Reconcile YouTube backlog after historical learning
         env:
           DATA_DIR: state
           TRANSCRIPT_FAST_MODE: "1"
@@ -61,7 +75,7 @@ jobs:
         run: |
           git config user.name "wxc-bot"
           git config user.email "wxc-bot@users.noreply.github.com"
-          git add state/seen_youtube.json state/pending_youtube.json state/youtube_source_status.json state/research_feed.json
+          git add state/seen_youtube.json state/pending_youtube.json state/youtube_source_status.json state/research_feed.json state/youtube_learning_archive.json state/youtube_provider_health.json
           if [ -f state/source_intake_completeness.json ]; then git add state/source_intake_completeness.json; fi
           if [ -f state/youtube_discovery_state.json ]; then git add state/youtube_discovery_state.json; fi
           if [ -f state/youtube_historical_backlog.json ]; then git add state/youtube_historical_backlog.json; fi
