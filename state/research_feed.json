@@ -29017,9 +29017,69 @@
       "capture_mode": "youtube_timestamp_unknown_learning",
       "timestamp_confidence": "missing",
       "forward_evidence_eligible": false
+    },
+    {
+      "id": "75bea3dd19f0ce3174b0",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-07 22:09:54",
+      "title": "Each stock should be treated independently",
+      "url": "https://bbs.wenxuecity.com/cfzh/114185.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [
+        "BE"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "452dd4aadad2bdb0b59f",
+      "parent_post_id": "114185",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-08T06:24:40Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "capture_mode": "scheduled_forum_anchor_scan",
+      "intake_class_hint": "live_candidate"
+    },
+    {
+      "id": "1270def7a5f54dfb7fd5",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-07 22:11:53",
+      "title": "即使LITE到顶的判断是对的，并不代表COHR一定会去前高。这中间没有必然的逻辑链",
+      "url": "https://bbs.wenxuecity.com/cfzh/114186.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [
+        "LITE"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "55c04b6e486cfcda25b4",
+      "parent_post_id": "114186",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-08T06:24:40Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "capture_mode": "scheduled_forum_anchor_scan",
+      "intake_class_hint": "live_candidate"
     }
   ],
-  "updated_at": "2026-10-08T05:59:54Z",
+  "updated_at": "2026-10-08T06:24:40Z",
   "retention_policy": "append_only_no_record_count_cap",
   "historical_recovery": {
     "completed_at": "2026-10-07T13:43:06.018028+00:00",
