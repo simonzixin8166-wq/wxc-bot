@@ -63,9 +63,18 @@ def collect_forum():
     prior_complete=bool(prior.get("complete",False)) if prior_version>=2 else False
     prior_budget=int(prior.get("next_scan_pages") or FORUM_DAILY_PAGES)
     budget=FORUM_DAILY_PAGES if prior_complete else min(FORUM_MAX_SCAN_PAGES,max(FORUM_DAILY_PAGES,prior_budget))
-    htmls=agent.list_pages(budget,state)
-    all_ids=_all_forum_ids(htmls)
-    anchor_found=bool(prior_anchor) and prior_anchor in set(all_ids)
+
+    # Complete continuity in one scheduled cycle whenever practical. Page
+    # limits are request-batch controls, never retention/completeness limits.
+    scan_attempts=[]
+    while True:
+        htmls=agent.list_pages(budget,state)
+        all_ids=_all_forum_ids(htmls)
+        anchor_found=bool(prior_anchor) and prior_anchor in set(all_ids)
+        scan_attempts.append({"pages":budget,"html_pages":len(htmls),"anchor_found":anchor_found})
+        if anchor_found or budget>=FORUM_MAX_SCAN_PAGES:
+            break
+        budget=min(FORUM_MAX_SCAN_PAGES,max(budget+1,budget*2))
     reached_end=False
     complete=bool(htmls) and bool(anchor_found)
     added=0
@@ -109,6 +118,7 @@ def collect_forum():
         "complete":complete,
         "pages_scanned":len(htmls),
         "scan_budget":budget,
+        "scan_attempts":scan_attempts,
         "next_scan_pages":next_pages,
     }
     _write(FORUM_SCAN_STATE,scan_state)
@@ -118,6 +128,7 @@ def collect_forum():
         "anchor_found":anchor_found,
         "reached_end":reached_end,
         "continuity_proven":anchor_found,
+        "scan_attempts":scan_attempts,
         "authors":authors,
         "new_entries_by_author":discovered_by_author,
         "feed_records_added":added,
