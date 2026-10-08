@@ -61,5 +61,8 @@ jobs:
         run: |
           git config user.name "wxc-bot"
           git config user.email "wxc-bot@users.noreply.github.com"
-          git add state/source_intake_completeness.json state/seen_youtube.json state/pending_youtube.json state/youtube_source_status.json state/youtube_discovery_state.json state/youtube_historical_backlog.json state/research_feed.json
+          git add state/seen_youtube.json state/pending_youtube.json state/youtube_source_status.json state/research_feed.json
+          if [ -f state/source_intake_completeness.json ]; then git add state/source_intake_completeness.json; fi
+          if [ -f state/youtube_discovery_state.json ]; then git add state/youtube_discovery_state.json; fi
+          if [ -f state/youtube_historical_backlog.json ]; then git add state/youtube_historical_backlog.json; fi
           git diff --cached --quiet || (git commit -m "update YouTube forward research" && git pull --rebase origin main && git push origin HEAD:main)
