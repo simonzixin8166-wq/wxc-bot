@@ -82,7 +82,19 @@ def collect_forum():
     for author in authors:
         entries=agent.entries_for(author,htmls)
         seen_entries_path=Path("state")/f"seen_forum_entries_{author}.json"
+        entry_state_exists=seen_entries_path.exists()
         seen_entries=set(_read(seen_entries_path,[]))
+        legacy_seen={str(x) for x in agent.load_seen(author)}
+
+        # One-time migration: do not re-fetch legacy main posts already proven
+        # seen. Replies remain intentionally unseeded so the new entry-level
+        # model can recover historical replies that post-id tracking collapsed.
+        if not entry_state_exists:
+            for key,entry in entries.items():
+                if entry.get("entry_kind")=="post" and str(entry.get("parent_post_id") or "") in legacy_seen:
+                    seen_entries.add(key)
+            _write(seen_entries_path,sorted(seen_entries))
+
         new_keys=[k for k in entries if k not in seen_entries]
         # Newest visible entries first, but retain every entry; no count cap.
         new_entries=sorted(
