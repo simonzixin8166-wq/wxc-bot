@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "generated_at": "2026-10-08T16:10:14.894928+00:00",
+  "principle": "seen is discovery, not learning; each video is counted once in its highest stage",
+  "seen": 170,
+  "stages": {
+    "formal_feed_text": 6,
+    "historical_backlog": 40,
+    "metadata_only": 48,
+    "pending_unprobed": 75,
+    "transcript_readable": 1
+  },
+  "stages_sum_equals_seen": true,
+  "learning_layers": {
+    "text_available": 7,
+    "semantically_understood": 0,
+    "falsifiable_claims_or_rule_capable": 4,
+    "matured_outcomes": 0,
+    "matured_outcomes_note": "no YouTube claim outcome tracker yet; never inferred"
+  },
+  "by_author": {
+    "Andrei Jikh": {
+      "formal_feed_text": 3,
+      "metadata_only": 10,
+      "pending_unprobed": 28,
+      "historical_backlog": 9
+    },
+    "RhinoFinance / 视野环球财经": {
+      "metadata_only": 19,
+      "historical_backlog": 7,
+      "pending_unprobed": 24
+    },
+    "unknown": {
+      "metadata_only": 3,
+      "historical_backlog": 17
+    },
+    "老李玩钱": {
+      "metadata_only": 16,
+      "formal_feed_text": 3,
+      "historical_backlog": 7,
+      "pending_unprobed": 23,
+      "transcript_readable": 1
+    }
+  },
+  "inconsistencies": {
+    "videos_in_multiple_state_files": {
+      "archive+backlog": 9,
+      "archive+pending": 1
+    }
+  },
+  "provider": {
+    "probes": 23,
+    "available": 5,
+    "rule_candidate_capable": 4
+  },
+  "backlog_eta": {
+    "content_work_budget_per_run": 6,
+    "pending_unprobed": 75,
+    "runs_to_probe_all_pending": 13,
+    "note": "free-first: bounded per-run budget, provider limits respected"
+  },
+  "guardrails": [
+    "historical/backlog videos are never Genuine Forward",
+    "metadata-only titles are not learning",
+    "no paid providers added"
+  ]
+}

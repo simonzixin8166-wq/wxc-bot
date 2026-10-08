@@ -60,5 +60,7 @@ jobs:
         run: |
           git config user.name "wxc-bot"
           git config user.email "wxc-bot@users.noreply.github.com"
+          python youtube_learning_reconciliation.py || echo '::warning::youtube reconciliation failed (non-gating)'
+          if [ -f state/youtube_learning_reconciliation.json ]; then git add state/youtube_learning_reconciliation.json; fi
           git add state/source_intake_completeness.json state/youtube_provider_health.json state/youtube_learning_archive.json
           git diff --cached --quiet || (git commit -m "update non-gating historical youtube learning" && git pull --rebase origin main && git push origin HEAD:main)
