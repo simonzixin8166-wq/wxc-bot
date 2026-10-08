@@ -21,7 +21,7 @@ permissions:
 
 concurrency:
   group: wxc-research-writer
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   youtube-forward:
