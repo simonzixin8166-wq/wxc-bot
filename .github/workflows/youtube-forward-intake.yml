@@ -57,5 +57,5 @@ jobs:
         run: |
           git config user.name "wxc-bot"
           git config user.email "wxc-bot@users.noreply.github.com"
-          git add state/seen_youtube.json state/pending_youtube.json state/youtube_source_status.json state/research_feed.json
+          git add state/seen_youtube.json state/pending_youtube.json state/youtube_source_status.json state/youtube_discovery_state.json state/youtube_historical_backlog.json state/research_feed.json
           git diff --cached --quiet || (git commit -m "update YouTube forward research" && git pull --rebase origin main && git push origin HEAD:main)
