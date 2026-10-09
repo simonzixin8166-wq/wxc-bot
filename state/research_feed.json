@@ -39354,9 +39354,163 @@
       "capture_mode": "youtube_timestamp_unknown_learning",
       "timestamp_confidence": "missing",
       "forward_evidence_eligible": false
+    },
+    {
+      "id": "8c461e25e17965532006",
+      "source": "youtube",
+      "source_kind": "video",
+      "author": "Andrei Jikh",
+      "published_at": "",
+      "title": "America Is Sacrificing The Dollar",
+      "url": "https://www.youtube.com/watch?v=n9PBhubDM6c",
+      "excerpt": "Scribe\n \n \nScribe\nLike it? Make Scribe even better by\n \nleaving a review\nGet Chrome Extension\nBrowse\nPopular Videos\nRecent Videos\nAll Channels\nFree Tools\nVideo Subtitle Downloader\nVideo Timestamp Generator\nVideo Summarizer\nVideo Word Counter\nVideo Title Analyzer\nVideo Transcript Search\nVideo Analytics\nVideo Chapters Creator\nVideo Quiz Generator\nChat with Vid",
+      "content_chars": 733,
+      "semantic_content_chars": 723,
+      "content_filtering": {
+        "filter": "youtube_promotion_noise_v1",
+        "input_units": 40,
+        "removed_units": 0,
+        "removed_ratio": 0.0,
+        "promotion_noise_detected": false
+      },
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "captured_at": "2026-10-09T22:36:51Z",
+      "source_role": "market_context",
+      "transcript_status": "available",
+      "content_quality": "Q4",
+      "content_provider": "pickscribe.com",
+      "content_provider_url": "https://pickscribe.com/v/n9PBhubDM6c/",
+      "content_origin": "third_party_transcript",
+      "timestamp_evidence": false,
+      "rule_candidate_allowed": false,
+      "source_notice": "YouTube正文可用于非Forward语义学习；可靠发布时间缺失，因此强制按backfill处理，禁止计入Forward Evidence或Promotion。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "youtube_timestamp_unknown_learning",
+      "timestamp_confidence": "missing",
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "0e20c128346d7105ba6e",
+      "source": "youtube",
+      "source_kind": "video",
+      "author": "Andrei Jikh",
+      "published_at": "",
+      "title": "Your 401K Is Their Exit Strategy",
+      "url": "https://www.youtube.com/watch?v=n9uLoqEJUaI",
+      "excerpt": "Scribe\n \n \nScribe\nLike it? Make Scribe even better by\n \nleaving a review\nGet Chrome Extension\nBrowse\nPopular Videos\nRecent Videos\nAll Channels\nFree Tools\nVideo Subtitle Downloader\nVideo Timestamp Generator\nVideo Summarizer\nVideo Word Counter\nVideo Title Analyzer\nVideo Transcript Search\nVideo Analytics\nVideo Chapters Creator\nVideo Quiz Generator\nChat with Vid",
+      "content_chars": 733,
+      "semantic_content_chars": 723,
+      "content_filtering": {
+        "filter": "youtube_promotion_noise_v1",
+        "input_units": 40,
+        "removed_units": 0,
+        "removed_ratio": 0.0,
+        "promotion_noise_detected": false
+      },
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "captured_at": "2026-10-09T22:37:01Z",
+      "source_role": "market_context",
+      "transcript_status": "available",
+      "content_quality": "Q4",
+      "content_provider": "pickscribe.com",
+      "content_provider_url": "https://pickscribe.com/v/n9uLoqEJUaI/",
+      "content_origin": "third_party_transcript",
+      "timestamp_evidence": false,
+      "rule_candidate_allowed": false,
+      "source_notice": "YouTube正文可用于非Forward语义学习；可靠发布时间缺失，因此强制按backfill处理，禁止计入Forward Evidence或Promotion。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "youtube_timestamp_unknown_learning",
+      "timestamp_confidence": "missing",
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "f88e85ee3b830378ab18",
+      "source": "youtube",
+      "source_kind": "video",
+      "author": "老李玩钱",
+      "published_at": "",
+      "title": "8月必买3支股票！",
+      "url": "https://www.youtube.com/watch?v=oY4i6qlQQB8",
+      "excerpt": "大家好,我是老吕今儿是8月的第一个交易日咱股市开门绿,一片绿油油我这绿油油的大西瓜也已经到位昨天刚去Costco夹仓了这两个西瓜这8月份刚刚开始不管接下来股市怎么走咱们的投资策略跟思路还是保持不变挑选基本面好的优质股票逢低买入进行长期的布局今天我来跟大家推荐8月必买三只股票但是咱说正事之前依照国际惯例还是先来跟大家量账户今天美股三大指数全部收率我的账户表现不错上涨了6500多美金当前的账户总资产又回到了31万以上从历史上来看8月的美股整体表现还行标普白指数在8月份的历史平均回报率是0.63%但8月过完之后呢9月份就不太乐观了从历史上来看9月份是美股当中表现最差的一个月份今天要跟大家说的第一只股票呢就是英伟达达哥啊英伟达这只股票好像有好一阵子啊没有来跟大家啊说过了这支股票我发现在咱们美股当中它的热度也没有之前那么",
+      "content_chars": 4088,
+      "semantic_content_chars": 2486,
+      "content_filtering": {
+        "filter": "youtube_promotion_noise_v1",
+        "input_units": 4,
+        "removed_units": 2,
+        "removed_ratio": 0.5,
+        "promotion_noise_detected": true
+      },
+      "images_count": 0,
+      "themes_hint": [
+        "长期持有纪律"
+      ],
+      "symbols": [
+        "NVDA",
+        "MU"
+      ],
+      "operations": [
+        {
+          "symbols": [
+            "NVDA"
+          ],
+          "actions": [
+            "buy",
+            "hold"
+          ],
+          "attribution": "unconfirmed_author_context",
+          "attribution_confidence": "needs_review"
+        },
+        {
+          "symbols": [
+            "NVDA",
+            "MU"
+          ],
+          "actions": [
+            "add",
+            "buy",
+            "hold"
+          ],
+          "attribution": "unconfirmed_author_context",
+          "attribution_confidence": "needs_review"
+        }
+      ],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "captured_at": "2026-10-09T22:38:01Z",
+      "source_role": "rule_supply",
+      "transcript_status": "available",
+      "content_quality": "Q2",
+      "content_provider": "reducer.xgoose.org",
+      "content_provider_url": "https://reducer.xgoose.org/items/3844",
+      "content_origin": "third_party_transcript",
+      "timestamp_evidence": true,
+      "rule_candidate_allowed": true,
+      "source_notice": "YouTube正文可用于非Forward语义学习；可靠发布时间缺失，因此强制按backfill处理，禁止计入Forward Evidence或Promotion。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "youtube_timestamp_unknown_learning",
+      "timestamp_confidence": "missing",
+      "forward_evidence_eligible": false
     }
   ],
-  "updated_at": "2026-10-09T17:00:09Z",
+  "updated_at": "2026-10-09T22:38:17Z",
   "retention_policy": "append_only_no_record_count_cap",
   "historical_recovery": {
     "completed_at": "2026-10-07T13:43:06.018028+00:00",

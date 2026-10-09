@@ -1,46 +1,46 @@
 {
   "version": 1,
-  "generated_at": "2026-10-09T17:01:48.541017+00:00",
+  "generated_at": "2026-10-09T22:38:17.764081+00:00",
   "principle": "seen is discovery, not learning; each video is counted once in its highest stage",
   "seen": 172,
   "stages": {
-    "formal_feed_text": 3,
+    "formal_feed_text": 4,
     "historical_backlog": 41,
-    "metadata_only": 93,
-    "pending_unprobed": 29,
-    "provider_boilerplate": 5,
+    "metadata_only": 101,
+    "pending_unprobed": 18,
+    "provider_boilerplate": 7,
     "transcript_readable": 1
   },
   "stages_sum_equals_seen": true,
   "learning_layers": {
-    "text_available": 4,
+    "text_available": 5,
     "semantically_understood": 0,
-    "falsifiable_claims_or_rule_capable": 4,
+    "falsifiable_claims_or_rule_capable": 5,
     "matured_outcomes": 0,
     "matured_outcomes_note": "no YouTube claim outcome tracker yet; never inferred"
   },
   "by_author": {
     "Andrei Jikh": {
-      "provider_boilerplate": 5,
-      "metadata_only": 26,
+      "provider_boilerplate": 7,
+      "metadata_only": 27,
       "historical_backlog": 9,
-      "pending_unprobed": 10
+      "pending_unprobed": 7
     },
     "RhinoFinance / 视野环球财经": {
-      "metadata_only": 37,
+      "metadata_only": 38,
       "historical_backlog": 7,
-      "pending_unprobed": 7
+      "pending_unprobed": 6
     },
     "unknown": {
       "metadata_only": 3,
       "historical_backlog": 17
     },
     "老李玩钱": {
-      "metadata_only": 27,
-      "formal_feed_text": 3,
+      "metadata_only": 33,
+      "formal_feed_text": 4,
       "historical_backlog": 8,
-      "pending_unprobed": 12,
-      "transcript_readable": 1
+      "transcript_readable": 1,
+      "pending_unprobed": 5
     }
   },
   "inconsistencies": {
@@ -56,8 +56,8 @@
   },
   "backlog_eta": {
     "content_work_budget_per_run": 6,
-    "pending_unprobed": 29,
-    "runs_to_probe_all_pending": 5,
+    "pending_unprobed": 18,
+    "runs_to_probe_all_pending": 3,
     "note": "free-first: bounded per-run budget, provider limits respected"
   },
   "guardrails": [
