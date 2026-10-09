@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-10-09T06:03:55.940232+00:00",
+  "generated_at": "2026-10-09T07:18:30.333062+00:00",
   "principle": "author x month reconciliation; unscanned history is unknown, backfill is never Genuine Forward",
   "matrix": {
     "BrightLine": {
@@ -96,17 +96,33 @@
       }
     },
     "麻你": {
+      "2026-07": {
+        "records": 53,
+        "backfill": 53,
+        "title_only": 33,
+        "excerpt": 20,
+        "structured_view": 4
+      },
+      "2026-08": {
+        "records": 30,
+        "backfill": 30,
+        "title_only": 20,
+        "excerpt": 10,
+        "structured_view": 3
+      },
       "2026-09": {
-        "records": 1,
-        "backfill": 1,
-        "excerpt": 1
+        "records": 67,
+        "backfill": 67,
+        "excerpt": 20,
+        "title_only": 47,
+        "structured_view": 3
       },
       "2026-10": {
-        "records": 6,
-        "backfill": 6,
-        "excerpt": 3,
-        "structured_view": 1,
-        "title_only": 3
+        "records": 42,
+        "backfill": 42,
+        "excerpt": 10,
+        "structured_view": 3,
+        "title_only": 32
       }
     }
   },
@@ -239,8 +255,8 @@
         "blog",
         "forum"
       ],
-      "records": 7,
-      "first_month": "2026-09",
+      "records": 192,
+      "first_month": "2026-07",
       "last_month": "2026-10",
       "watched_forum_author": false,
       "blog": {
@@ -255,8 +271,8 @@
         "history_before_window": "not_scanned (unknown, not zero)"
       },
       "forum": {
-        "seen_ids": 0,
-        "in_feed": 4,
+        "seen_ids": 177,
+        "in_feed": 177,
         "seen_not_in_feed": 0,
         "seen_not_in_feed_examples": [],
         "reason": null
@@ -265,10 +281,10 @@
   },
   "totals": {
     "authors": 7,
-    "records": 1375,
+    "records": 1560,
     "text_depth": {
-      "title_only": 939,
-      "excerpt": 436
+      "title_only": 1068,
+      "excerpt": 492
     }
   },
   "access_policy": "no bypassing 403/429 or login walls; history fills only via bounded, rate-limited backfill"
