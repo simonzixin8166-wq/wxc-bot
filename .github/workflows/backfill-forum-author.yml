@@ -89,7 +89,7 @@ jobs:
           git config user.email "wxc-bot@users.noreply.github.com"
           git add state/research_feed.json
           [ -f "state/seen_${AUTHOR}.json" ] && git add "state/seen_${AUTHOR}.json"
-          for f in state/seen_blog_"${AUTHOR}".json state/blog_scan_state.json; do [ -f "$f" ] && git add "$f"; done
+          for f in state/seen_blog_*.json state/blog_scan_state.json; do [ -f "$f" ] && git add "$f"; done
           for f in state/seen_forum_entries_*_"${AUTHOR}".json; do [ -f "$f" ] && git add "$f"; done
           if [ -f state/research_feed_manifest.json ]; then git add state/research_feed_manifest.json; fi
           git diff --cached --quiet || (git commit -m "backfill forum author ${AUTHOR} (backfill only)" && git pull --rebase origin main && python verify_research_feed.py && git push origin HEAD:main)
