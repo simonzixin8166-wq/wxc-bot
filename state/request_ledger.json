@@ -54,7 +54,7 @@
         "paid": false
       },
       "telegram:send_message": {
-        "count": 6,
+        "count": 7,
         "paid": false
       },
       "myalphaview:server_action_status": {
