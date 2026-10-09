@@ -1,0 +1,400 @@
+{
+ "generated_at": "2026-10-09T05:21:40.361953+00:00",
+ "aggregate": {
+  "articles_ok": 19,
+  "articles_unavailable": 1,
+  "claims_full": 7,
+  "checkable_full": 7,
+  "claims_excerpt": 4,
+  "checkable_excerpt": 4,
+  "articles_with_checkable_full": 5,
+  "articles_with_checkable_excerpt": 3,
+  "stance_mix": {
+   "buy": 1,
+   "sell": 5,
+   "bullish": 1
+  }
+ },
+ "rows": [
+  {
+   "url": "https://blog.wenxuecity.com/myblog/82458/202610/3062.html",
+   "author": "BrightLine",
+   "outcome": "ok",
+   "author_matches": true,
+   "chars_full": 3661,
+   "chars_stored": 384,
+   "claims_full": 0,
+   "checkable_full": 0,
+   "claims_excerpt": 0,
+   "checkable_excerpt": 0,
+   "symbols_full": [],
+   "claims": []
+  },
+  {
+   "url": "https://blog.wenxuecity.com/myblog/82458/202610/1675.html",
+   "author": "BrightLine",
+   "outcome": "ok",
+   "author_matches": true,
+   "chars_full": 1876,
+   "chars_stored": 374,
+   "claims_full": 0,
+   "checkable_full": 0,
+   "claims_excerpt": 0,
+   "checkable_excerpt": 0,
+   "symbols_full": [],
+   "claims": []
+  },
+  {
+   "url": "https://blog.wenxuecity.com/myblog/82458/202610/972.html",
+   "author": "BrightLine",
+   "outcome": "ok",
+   "author_matches": true,
+   "chars_full": 1750,
+   "chars_stored": 371,
+   "claims_full": 0,
+   "checkable_full": 0,
+   "claims_excerpt": 0,
+   "checkable_excerpt": 0,
+   "symbols_full": [],
+   "claims": []
+  },
+  {
+   "url": "https://blog.wenxuecity.com/myblog/82458/202610/4050.html",
+   "author": "BrightLine",
+   "outcome": "ok",
+   "author_matches": true,
+   "chars_full": 3056,
+   "chars_stored": 402,
+   "claims_full": 0,
+   "checkable_full": 0,
+   "claims_excerpt": 0,
+   "checkable_excerpt": 0,
+   "symbols_full": [],
+   "claims": []
+  },
+  {
+   "url": "https://blog.wenxuecity.com/myblog/82458/202610/264.html",
+   "author": "BrightLine",
+   "outcome": "ok",
+   "author_matches": true,
+   "chars_full": 1884,
+   "chars_stored": 373,
+   "claims_full": 1,
+   "checkable_full": 1,
+   "claims_excerpt": 1,
+   "checkable_excerpt": 1,
+   "symbols_full": [
+    "AAPL"
+   ],
+   "claims": [
+    {
+     "symbol": "AAPL",
+     "stance": "buy",
+     "stance_cues": [
+      "buy"
+     ],
+     "horizon": null,
+     "conditional": false,
+     "question": false,
+     "price": null,
+     "evidence_sha256": "3649ff0d3d3cfae2491ab7c8f4e420cc338e3c1a0f3107e2f33881d2e1ecb4c8",
+     "evidence_chars": 62
+    }
+   ]
+  },
+  {
+   "url": "https://blog.wenxuecity.com/myblog/31983/202610/703.html",
+   "author": "yifan99",
+   "outcome": "ok",
+   "author_matches": true,
+   "chars_full": 604,
+   "chars_stored": 393,
+   "claims_full": 0,
+   "checkable_full": 0,
+   "claims_excerpt": 0,
+   "checkable_excerpt": 0,
+   "symbols_full": [],
+   "claims": []
+  },
+  {
+   "url": "https://blog.wenxuecity.com/myblog/31983/202609/19716.html",
+   "author": "yifan99",
+   "outcome": "ok",
+   "author_matches": true,
+   "chars_full": 444,
+   "chars_stored": 386,
+   "claims_full": 0,
+   "checkable_full": 0,
+   "claims_excerpt": 0,
+   "checkable_excerpt": 0,
+   "symbols_full": [],
+   "claims": []
+  },
+  {
+   "url": "https://blog.wenxuecity.com/myblog/31983/202610/3830.html",
+   "author": "yifan99",
+   "outcome": "ok",
+   "author_matches": true,
+   "chars_full": 1116,
+   "chars_stored": 373,
+   "claims_full": 0,
+   "checkable_full": 0,
+   "claims_excerpt": 0,
+   "checkable_excerpt": 0,
+   "symbols_full": [],
+   "claims": []
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/113153.html",
+   "author": "yifan99",
+   "outcome": "ok",
+   "author_matches": true,
+   "chars_full": 608,
+   "chars_stored": 393,
+   "claims_full": 0,
+   "checkable_full": 0,
+   "claims_excerpt": 0,
+   "checkable_excerpt": 0,
+   "symbols_full": [],
+   "claims": []
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/113441.html",
+   "author": "yifan99",
+   "outcome": "unavailable",
+   "http": 200
+  },
+  {
+   "url": "https://blog.wenxuecity.com/myblog/31983/202609/22705.html",
+   "author": "yifan99",
+   "outcome": "ok",
+   "author_matches": true,
+   "chars_full": 852,
+   "chars_stored": 386,
+   "claims_full": 2,
+   "checkable_full": 2,
+   "claims_excerpt": 2,
+   "checkable_excerpt": 2,
+   "symbols_full": [
+    "LITE"
+   ],
+   "claims": [
+    {
+     "symbol": "LITE",
+     "stance": "sell",
+     "stance_cues": [
+      "sell"
+     ],
+     "horizon": null,
+     "conditional": false,
+     "question": false,
+     "price": null,
+     "evidence_sha256": "cff0811e2dda9e43f5dc4ae791dababe66d3aa045b7afc37fc434f6cd829c263",
+     "evidence_chars": 25
+    },
+    {
+     "symbol": "LITE",
+     "stance": "sell",
+     "stance_cues": [
+      "sell"
+     ],
+     "horizon": null,
+     "conditional": false,
+     "question": false,
+     "price": null,
+     "evidence_sha256": "27fd4a186996f655718d6d6487ebbff4d9aee550c53cb7fc7217a91cfb556603",
+     "evidence_chars": 20
+    }
+   ]
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/113867.html",
+   "author": "yifan99",
+   "outcome": "ok",
+   "author_matches": true,
+   "chars_full": 1738,
+   "chars_stored": 396,
+   "claims_full": 1,
+   "checkable_full": 1,
+   "claims_excerpt": 0,
+   "checkable_excerpt": 0,
+   "symbols_full": [
+    "LITE"
+   ],
+   "claims": [
+    {
+     "symbol": "LITE",
+     "stance": "sell",
+     "stance_cues": [
+      "sell"
+     ],
+     "horizon": null,
+     "conditional": false,
+     "question": false,
+     "price": null,
+     "evidence_sha256": "cff0811e2dda9e43f5dc4ae791dababe66d3aa045b7afc37fc434f6cd829c263",
+     "evidence_chars": 25
+    }
+   ]
+  },
+  {
+   "url": "https://blog.wenxuecity.com/myblog/31983/202610/5067.html",
+   "author": "yifan99",
+   "outcome": "ok",
+   "author_matches": true,
+   "chars_full": 2325,
+   "chars_stored": 387,
+   "claims_full": 0,
+   "checkable_full": 0,
+   "claims_excerpt": 0,
+   "checkable_excerpt": 0,
+   "symbols_full": [],
+   "claims": []
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/94243.html",
+   "author": "bogbog",
+   "outcome": "ok",
+   "author_matches": true,
+   "chars_full": 393,
+   "chars_stored": 365,
+   "claims_full": 0,
+   "checkable_full": 0,
+   "claims_excerpt": 0,
+   "checkable_excerpt": 0,
+   "symbols_full": [],
+   "claims": []
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/97248.html",
+   "author": "bogbog",
+   "outcome": "ok",
+   "author_matches": true,
+   "chars_full": 744,
+   "chars_stored": 393,
+   "claims_full": 0,
+   "checkable_full": 0,
+   "claims_excerpt": 0,
+   "checkable_excerpt": 0,
+   "symbols_full": [],
+   "claims": []
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/107559.html",
+   "author": "bogbog",
+   "outcome": "ok",
+   "author_matches": true,
+   "chars_full": 454,
+   "chars_stored": 405,
+   "claims_full": 0,
+   "checkable_full": 0,
+   "claims_excerpt": 0,
+   "checkable_excerpt": 0,
+   "symbols_full": [],
+   "claims": []
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/113873.html",
+   "author": "三心三意",
+   "outcome": "ok",
+   "author_matches": true,
+   "chars_full": 588,
+   "chars_stored": 381,
+   "claims_full": 0,
+   "checkable_full": 0,
+   "claims_excerpt": 0,
+   "checkable_excerpt": 0,
+   "symbols_full": [],
+   "claims": []
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/113990.html",
+   "author": "三心三意",
+   "outcome": "ok",
+   "author_matches": true,
+   "chars_full": 402,
+   "chars_stored": 367,
+   "claims_full": 0,
+   "checkable_full": 0,
+   "claims_excerpt": 0,
+   "checkable_excerpt": 0,
+   "symbols_full": [],
+   "claims": []
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/113317.html",
+   "author": "我是一只井底蛙",
+   "outcome": "ok",
+   "author_matches": true,
+   "chars_full": 416,
+   "chars_stored": 376,
+   "claims_full": 1,
+   "checkable_full": 1,
+   "claims_excerpt": 1,
+   "checkable_excerpt": 1,
+   "symbols_full": [
+    "SP"
+   ],
+   "claims": [
+    {
+     "symbol": "SP",
+     "stance": "bullish",
+     "stance_cues": [
+      "bullish"
+     ],
+     "horizon": null,
+     "conditional": false,
+     "question": false,
+     "price": null,
+     "evidence_sha256": "bec7d050c0e4c1d77c3646951dbece2a3d150ab883bb630fc431a36570aeadcf",
+     "evidence_chars": 31
+    }
+   ]
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/tzlc/2138962.html",
+   "author": "jenning",
+   "outcome": "ok",
+   "author_matches": true,
+   "chars_full": 3380,
+   "chars_stored": 372,
+   "claims_full": 2,
+   "checkable_full": 2,
+   "claims_excerpt": 0,
+   "checkable_excerpt": 0,
+   "symbols_full": [
+    "LRS",
+    "SP"
+   ],
+   "claims": [
+    {
+     "symbol": "LRS",
+     "stance": "sell",
+     "stance_cues": [
+      "sell"
+     ],
+     "horizon": null,
+     "conditional": false,
+     "question": false,
+     "price": null,
+     "evidence_sha256": "7fe45c497a7a5ccc286c6128a7ddafb498d8abc27ec4917938de6e30b6657106",
+     "evidence_chars": 139
+    },
+    {
+     "symbol": "SP",
+     "stance": "sell",
+     "stance_cues": [
+      "sell"
+     ],
+     "horizon": null,
+     "conditional": false,
+     "question": false,
+     "price": null,
+     "evidence_sha256": "7fe45c497a7a5ccc286c6128a7ddafb498d8abc27ec4917938de6e30b6657106",
+     "evidence_chars": 139
+    }
+   ]
+  }
+ ],
+ "policy": "runtime-only full text; report stores structured claims + sentence sha256, never source wording"
+}
