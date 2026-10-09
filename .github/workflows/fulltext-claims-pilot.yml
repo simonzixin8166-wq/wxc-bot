@@ -9,6 +9,10 @@ on:
         description: "Articles (max 20)"
         required: false
         default: "20"
+      review:
+        description: "Round 2: add ≤40-char excerpts + locators for manual FP/FN review (writes a separate report)"
+        required: false
+        default: "false"
 
 permissions:
   contents: write
@@ -31,14 +35,19 @@ jobs:
       - run: |
           PYTHONPATH=. python tests/test_claim_extractor.py
           PYTHONPATH=. python tests/test_pilot_fulltext_claims.py
+          PYTHONPATH=. python tests/test_learning_round2.py
       - name: Pilot (runtime-only full text)
         run: |
-          out=$(python pilot_fulltext_claims.py --limit "${{ inputs.limit }}")
+          if [ "${{ inputs.review }}" = "true" ]; then
+            out=$(python pilot_fulltext_claims.py --limit "${{ inputs.limit }}" --review --out state/fulltext_claims_pilot_round2.json)
+          else
+            out=$(python pilot_fulltext_claims.py --limit "${{ inputs.limit }}")
+          fi
           echo "$out"
           echo "::notice title=Full-text claims pilot::$out"
       - name: Save report only
         run: |
           git config user.name "github-actions"; git config user.email "actions@github.com"
-          git add state/fulltext_claims_pilot.json
+          git add state/fulltext_claims_pilot*.json
           git diff --cached --quiet || git commit -m "full-text claims pilot report (runtime-only text)"
           git pull --rebase origin main && git push

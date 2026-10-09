@@ -56,6 +56,8 @@ def fetch_text(rec):
 def main(argv=None):
     ap = argparse.ArgumentParser()
     ap.add_argument("--limit", type=int, default=20)
+    ap.add_argument("--out", default=str(OUT))
+    ap.add_argument("--review", action="store_true", help="add ≤40-char excerpts + locators for manual FP/FN review")
     a = ap.parse_args(argv)
     records = json.loads(FEED.read_text(encoding="utf-8"))["records"]
     rows, fails = [], 0
@@ -74,7 +76,7 @@ def main(argv=None):
         rows.append({"url": rec["url"], "author": rec.get("author"), "outcome": "ok",
                      "author_matches": str(page_author or "").casefold() == str(rec.get("author") or "").casefold() or "blog.wenxuecity.com" in rec["url"],
                      "chars_full": len(text), "chars_stored": len(excerpt), **summarize(full_c, ex_c),
-                     "claims": full_c})
+                     "claims": full_c, **({"review": ce.review_material(text)} if a.review else {})})
         text = None  # runtime only
     ok = [r for r in rows if r["outcome"] == "ok"]
     agg = {"articles_ok": len(ok), "articles_unavailable": len(rows) - len(ok),
@@ -83,9 +85,12 @@ def main(argv=None):
            "articles_with_checkable_full": sum(1 for r in ok if r["checkable_full"]),
            "articles_with_checkable_excerpt": sum(1 for r in ok if r["checkable_excerpt"]),
            "stance_mix": dict(Counter(c["stance"] for r in ok for c in r["claims"]))}
-    report = {"generated_at": datetime.now(timezone.utc).isoformat(), "aggregate": agg, "rows": rows,
+    report = {"generated_at": datetime.now(timezone.utc).isoformat(), "extractor_version": ce.EXTRACTOR_VERSION,
+              "aggregate": agg, "rows": rows,
               "policy": "runtime-only full text; report stores structured claims + sentence sha256, never source wording"}
-    OUT.write_text(json.dumps(report, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    if a.review:
+        report["policy"] += "; review mode adds ≤40-char excerpts + sentence index/sha256 (decision C: excerpts and locators only)"
+    Path(a.out).write_text(json.dumps(report, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     print(json.dumps(agg, ensure_ascii=False))
     return 0
 

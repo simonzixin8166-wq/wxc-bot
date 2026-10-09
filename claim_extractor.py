@@ -14,7 +14,8 @@ from __future__ import annotations
 import hashlib, re
 
 STANCE_CUES = [
-    ("trim", r"减仓|卖掉一半|卖出一部分|止盈|trim|take profit"),
+    ("hold", r"(?:没有|没|不|未|不会)(?:减仓|卖出?|卖掉|清仓|止盈)|not selling|won'?t sell"),
+    ("trim", r"减仓|卖掉一半|卖出一部分|止盈|trim|tak(?:e|ing) (?:some )?profits?"),
     ("sell", r"清仓|卖出|卖掉|sell\b|exit"),
     ("add", r"加仓|补仓|继续买|add to|adding"),
     ("buy", r"买入|建仓|逢低买|抄底|上车|必买|值得买|buy\b|bought|accumulat"),
@@ -91,6 +92,28 @@ def extract_claims(text: str, limit: int = 30) -> list[dict]:
             if len(claims) >= limit:
                 return claims
     return claims
+
+
+EXTRACTOR_VERSION = "ce-3"  # ce-2 whitelist/aliases + negated sells → hold, "taking profit" → trim
+
+
+def review_material(text: str, excerpt_chars: int = 40, max_missed: int = 5) -> dict:
+    """Reviewer aid (#133 decision C allows short excerpts + locators, not full text):
+    claim sentences and symbol-mentioning sentences that produced no claim (possible false negatives),
+    each as a ≤excerpt_chars excerpt + sentence index + sha256."""
+    claimed, missed = [], []
+    for i, s in enumerate(sentences(text)):
+        syms = symbols_in(s)
+        if not syms:
+            continue
+        has_stance = any(re.search(pat, s.lower(), re.I) for _, pat in STANCE_CUES)
+        keys = [k for k, v in ALIASES.items() if v in syms and k in s] + syms
+        pos = min((s.find(k) for k in keys if s.find(k) >= 0), default=0)
+        start = max(0, min(pos - excerpt_chars // 2, len(s) - excerpt_chars))
+        item = {"i": i, "symbols": syms, "excerpt": s[start:start + excerpt_chars], "sha256": hashlib.sha256(s.encode("utf-8")).hexdigest()}
+        (claimed if has_stance else missed).append(item)
+    return {"claim_sentences": claimed[:30], "mention_without_stance": missed[:max_missed],
+            "mention_without_stance_total": len(missed)}
 
 
 def checkable(claim: dict) -> bool:
