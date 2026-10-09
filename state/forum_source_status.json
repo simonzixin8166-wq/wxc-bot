@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-10-09T05:32:18.403739+00:00",
+  "updated_at": "2026-10-09T05:57:55.967294+00:00",
   "anchor_id": "114413",
   "previous_anchor_id": "114413",
   "legacy_seen_anchor_id": "114380",
@@ -25,29 +25,25 @@
     "三心三意",
     "yifan99",
     "我是一只井底蛙",
-    "bogbog",
-    "麻你"
+    "bogbog"
   ],
   "new_entries_by_author": {
     "三心三意": 0,
     "yifan99": 0,
     "我是一只井底蛙": 0,
-    "bogbog": 0,
-    "麻你": 0
+    "bogbog": 0
   },
   "processed_entries_by_author": {
     "三心三意": 0,
     "yifan99": 0,
     "我是一只井底蛙": 0,
-    "bogbog": 0,
-    "麻你": 0
+    "bogbog": 0
   },
   "unresolved_entries_by_author": {
     "三心三意": 0,
     "yifan99": 0,
     "我是一只井底蛙": 0,
-    "bogbog": 0,
-    "麻你": 0
+    "bogbog": 0
   },
   "unresolved_entries_total": 0,
   "feed_records_added": 0,

@@ -31052,9 +31052,512 @@
       "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
       "capture_mode": "scheduled_forum_anchor_scan",
       "intake_class_hint": "live_candidate"
+    },
+    {
+      "id": "dcb938407a0c1550dea3",
+      "source": "wenxuecity",
+      "source_kind": "blog",
+      "author": "麻你",
+      "published_at": "2026-10-07",
+      "title": "为什么要多仓VGT",
+      "url": "https://blog.wenxuecity.com/myblog/78105/202610/4859.html",
+      "excerpt": "首先，当前和可见的未来，主要是高科技带动股市，做为高科技高度集合的VGT，回报远远高于道琼（DIA）和SP500（SPY，VOO），也高于纳指QQQ\n其次，操作上每年只把VGT盈利的10%到15%留在股市，超出部分卖出做为储备金，迎接股市下跌时买入，越跌越买，只买不卖。\n至于VGT下跌80-90%的情形，应该说是很好的事情。为什么这么说？因为\n第一，投入到股市的钱是日常生活用不到的钱，也就是说，无论在股市高涨或大跌，都不需要卖出股票来维持生活。退休前，有房租和工资，退休后有房租，pension和社安金，这些钱日常生活用不完（包括商务舱和五星旅店），更有历年从VGT取利积攒的储备金可用。\n第二，可以在低点大批买进VGT。VGT的跌幅会比道琼和SP500更深更大，也就是更便宜，未来上升幅度更大，盈利更多。\n第三，可",
+      "content_chars": 500,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [
+        "QQQ",
+        "SPY",
+        "VOO",
+        "VGT"
+      ],
+      "operations": [
+        {
+          "symbols": [
+            "VGT"
+          ],
+          "actions": [
+            "buy",
+            "sell"
+          ],
+          "attribution": "unconfirmed_author_context",
+          "attribution_confidence": "needs_review"
+        },
+        {
+          "symbols": [
+            "VGT"
+          ],
+          "actions": [
+            "sell"
+          ],
+          "attribution": "unconfirmed_author_context",
+          "attribution_confidence": "needs_review"
+        }
+      ],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [
+        {
+          "symbol": "VGT",
+          "stance": "sell",
+          "stance_cues": [
+            "sell",
+            "buy"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "099ad7b73b2baa9b96beb804728c1f47fc11a06daa5494a65f65f5fd82277fac",
+          "evidence_chars": 60
+        }
+      ],
+      "author_actions": [
+        {
+          "symbol": "VGT",
+          "action_type": "COMMENTARY",
+          "confidence": "medium",
+          "size_pct": null,
+          "price": null,
+          "allocation_pct": null,
+          "evidence_quote": "为什么要多仓VGT",
+          "evidence_sha256": "12e42792df6308b53dafa5d88a1bb7080a8cc8d2cab8b0a276ae9478f56171b0"
+        },
+        {
+          "symbol": "VGT",
+          "action_type": "COMMENTARY",
+          "confidence": "medium",
+          "size_pct": null,
+          "price": null,
+          "allocation_pct": null,
+          "evidence_quote": "首先，当前和可见的未来，主要是高科技带动股市，做为高科技高度集合的VGT，回报远",
+          "evidence_sha256": "8be38cd45ce68d7e0261677515c7ab4c620f3cd1aadc3ec0671c51dcb63fd30b"
+        },
+        {
+          "symbol": "VGT",
+          "action_type": "UNCLEAR",
+          "confidence": "low",
+          "size_pct": null,
+          "price": 15.0,
+          "allocation_pct": null,
+          "evidence_quote": "其次，操作上每年只把VGT盈利的10%到15%留在股市，超出部分卖出做为储备金，",
+          "evidence_sha256": "099ad7b73b2baa9b96beb804728c1f47fc11a06daa5494a65f65f5fd82277fac"
+        },
+        {
+          "symbol": "VGT",
+          "action_type": "COMMENTARY",
+          "confidence": "medium",
+          "size_pct": null,
+          "price": null,
+          "allocation_pct": null,
+          "evidence_quote": "至于VGT下跌80-90%的情形，应该说是很好的事情。",
+          "evidence_sha256": "51b5cf711700c4768446438bf534298ad450ae48181875ac06fcab977800b0e4"
+        },
+        {
+          "symbol": "VGT",
+          "action_type": "COMMENTARY",
+          "confidence": "medium",
+          "size_pct": null,
+          "price": null,
+          "allocation_pct": null,
+          "evidence_quote": "退休前，有房租和工资，退休后有房租，pension和社安金，这些钱日常生活用不完",
+          "evidence_sha256": "66865ab93b221c8bb6c984b61ba0616c7978ae432a4c29015235483dae8b098d"
+        },
+        {
+          "symbol": "VGT",
+          "action_type": "COMMENTARY",
+          "confidence": "medium",
+          "size_pct": null,
+          "price": null,
+          "allocation_pct": null,
+          "evidence_quote": "第二，可以在低点大批买进VGT。",
+          "evidence_sha256": "89ec9d552a2febf1908c13b3ee4ddad22f3267668f782c1bf72a10efd2d08098"
+        },
+        {
+          "symbol": "VGT",
+          "action_type": "COMMENTARY",
+          "confidence": "medium",
+          "size_pct": null,
+          "price": null,
+          "allocation_pct": null,
+          "evidence_quote": "VGT的跌幅会比道琼和SP500更深更大，也就是更便宜，未来上升幅度更大，盈利更",
+          "evidence_sha256": "5eb9f90ce135fdf79b81eac2296c079bc7bf2496f86fb46e76f76e9f9be26ac3"
+        },
+        {
+          "symbol": "VGT",
+          "action_type": "COMMENTARY",
+          "confidence": "medium",
+          "size_pct": null,
+          "price": null,
+          "allocation_pct": null,
+          "evidence_quote": "第三，可以大笔把VGT在低点从退休账户转入ROTH账户，省去巨额税款。",
+          "evidence_sha256": "9992c3c5407655d2cd122f1e638ca6a802d47c5c7e80be883144d70609715287"
+        },
+        {
+          "symbol": "VGT",
+          "action_type": "COMMENTARY",
+          "confidence": "medium",
+          "size_pct": null,
+          "price": null,
+          "allocation_pct": null,
+          "evidence_quote": "总之，选VGT就是选它跌的狠，涨的也更狠，赚的也就更多。",
+          "evidence_sha256": "dc3780a3979dc305771e095c54d05847b517249a8d490bd94a6ebc2bd659ac16"
+        }
+      ],
+      "forum_entry_kind": null,
+      "source_entry_key": null,
+      "parent_post_id": null,
+      "attribution_fallback": null,
+      "captured_at": "2026-10-09T06:03:24Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "initial_blog_profile_backfill"
+    },
+    {
+      "id": "90a6fa68e53056c1d2e6",
+      "source": "wenxuecity",
+      "source_kind": "blog",
+      "author": "麻你",
+      "published_at": "2026-10-02",
+      "title": "下个星期继续保持87%仓位在VGT，13%在SGOV",
+      "url": "https://blog.wenxuecity.com/myblog/78105/202610/666.html",
+      "excerpt": "大盘表现不错\n耐心等待未来上方卖出信号，按比例减仓取利",
+      "content_chars": 27,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [
+        "SGOV",
+        "VGT"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "author_actions": [
+        {
+          "symbol": "VGT",
+          "action_type": "HOLD",
+          "confidence": "high",
+          "size_pct": null,
+          "price": null,
+          "allocation_pct": {
+            "VGT": 87.0,
+            "SGOV": 13.0
+          },
+          "evidence_quote": "下个星期继续保持87%仓位在VGT，13%在SGOV",
+          "evidence_sha256": "dbdb1c0813d76288161506fe0e68118bb5e8995aa7b1a61402aedd4c15e39414"
+        },
+        {
+          "symbol": "SGOV",
+          "action_type": "HOLD",
+          "confidence": "high",
+          "size_pct": null,
+          "price": null,
+          "allocation_pct": {
+            "VGT": 87.0,
+            "SGOV": 13.0
+          },
+          "evidence_quote": "下个星期继续保持87%仓位在VGT，13%在SGOV",
+          "evidence_sha256": "dbdb1c0813d76288161506fe0e68118bb5e8995aa7b1a61402aedd4c15e39414"
+        }
+      ],
+      "forum_entry_kind": null,
+      "source_entry_key": null,
+      "parent_post_id": null,
+      "attribution_fallback": null,
+      "captured_at": "2026-10-09T06:03:24Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "initial_blog_profile_backfill"
+    },
+    {
+      "id": "33a892728be60a2a745e",
+      "source": "wenxuecity",
+      "source_kind": "blog",
+      "author": "麻你",
+      "published_at": "2026-09-25",
+      "title": "下个星期继续保持87%仓位在VGT，13%在SGOV",
+      "url": "https://blog.wenxuecity.com/myblog/78105/202609/19181.html",
+      "excerpt": "又念叨一次",
+      "content_chars": 5,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [
+        "SGOV",
+        "VGT"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "author_actions": [
+        {
+          "symbol": "VGT",
+          "action_type": "HOLD",
+          "confidence": "high",
+          "size_pct": null,
+          "price": null,
+          "allocation_pct": {
+            "VGT": 87.0,
+            "SGOV": 13.0
+          },
+          "evidence_quote": "下个星期继续保持87%仓位在VGT，13%在SGOV",
+          "evidence_sha256": "dbdb1c0813d76288161506fe0e68118bb5e8995aa7b1a61402aedd4c15e39414"
+        },
+        {
+          "symbol": "SGOV",
+          "action_type": "HOLD",
+          "confidence": "high",
+          "size_pct": null,
+          "price": null,
+          "allocation_pct": {
+            "VGT": 87.0,
+            "SGOV": 13.0
+          },
+          "evidence_quote": "下个星期继续保持87%仓位在VGT，13%在SGOV",
+          "evidence_sha256": "dbdb1c0813d76288161506fe0e68118bb5e8995aa7b1a61402aedd4c15e39414"
+        }
+      ],
+      "forum_entry_kind": null,
+      "source_entry_key": null,
+      "parent_post_id": null,
+      "attribution_fallback": null,
+      "captured_at": "2026-10-09T06:03:24Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "initial_blog_profile_backfill"
+    },
+    {
+      "id": "7bcba0fdb0f05f2a3ab5",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "麻你",
+      "published_at": "2026-10-07 21:46:04",
+      "title": "为什么要多仓VGT",
+      "url": "https://bbs.wenxuecity.com/tzlc/2382261.html",
+      "excerpt": "更多我的博客文章>>>\n \n \n\n下个星期继续保持87%仓位在VGT，13%在SGOV\n下个星期继续保持87%仓位在VGT，13%在SGOV\n下个星期继续保持87%的仓位在VGT，13%的仓位在SGOV\n下个星期继续保持87%仓位在VGT，13%仓位在SGOV\n下个星期继续保持87%仓位在VGT，13%仓位在SGOV",
+      "content_chars": 159,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [
+        "SGOV",
+        "VGT"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "author_actions": [
+        {
+          "symbol": "VGT",
+          "action_type": "COMMENTARY",
+          "confidence": "medium",
+          "size_pct": null,
+          "price": null,
+          "allocation_pct": null,
+          "evidence_quote": "为什么要多仓VGT",
+          "evidence_sha256": "12e42792df6308b53dafa5d88a1bb7080a8cc8d2cab8b0a276ae9478f56171b0"
+        },
+        {
+          "symbol": "VGT",
+          "action_type": "HOLD",
+          "confidence": "high",
+          "size_pct": null,
+          "price": null,
+          "allocation_pct": {
+            "VGT": 87.0,
+            "SGOV": 13.0
+          },
+          "evidence_quote": "下个星期继续保持87%仓位在VGT，13%在SGOV",
+          "evidence_sha256": "dbdb1c0813d76288161506fe0e68118bb5e8995aa7b1a61402aedd4c15e39414"
+        },
+        {
+          "symbol": "SGOV",
+          "action_type": "HOLD",
+          "confidence": "high",
+          "size_pct": null,
+          "price": null,
+          "allocation_pct": {
+            "VGT": 87.0,
+            "SGOV": 13.0
+          },
+          "evidence_quote": "下个星期继续保持87%仓位在VGT，13%在SGOV",
+          "evidence_sha256": "dbdb1c0813d76288161506fe0e68118bb5e8995aa7b1a61402aedd4c15e39414"
+        },
+        {
+          "symbol": "VGT",
+          "action_type": "HOLD",
+          "confidence": "high",
+          "size_pct": null,
+          "price": null,
+          "allocation_pct": {
+            "VGT": 87.0,
+            "SGOV": 13.0
+          },
+          "evidence_quote": "下个星期继续保持87%的仓位在VGT，13%的仓位在SGOV",
+          "evidence_sha256": "3293c0d3ac799f42207028ecc4c13693f2700427edcc4a12cc06bdf125d1a421"
+        },
+        {
+          "symbol": "SGOV",
+          "action_type": "HOLD",
+          "confidence": "high",
+          "size_pct": null,
+          "price": null,
+          "allocation_pct": {
+            "VGT": 87.0,
+            "SGOV": 13.0
+          },
+          "evidence_quote": "下个星期继续保持87%的仓位在VGT，13%的仓位在SGOV",
+          "evidence_sha256": "3293c0d3ac799f42207028ecc4c13693f2700427edcc4a12cc06bdf125d1a421"
+        },
+        {
+          "symbol": "VGT",
+          "action_type": "HOLD",
+          "confidence": "high",
+          "size_pct": null,
+          "price": null,
+          "allocation_pct": {
+            "VGT": 87.0,
+            "SGOV": 13.0
+          },
+          "evidence_quote": "下个星期继续保持87%仓位在VGT，13%仓位在SGOV",
+          "evidence_sha256": "b09c370435da287c8599631b1feee3fe9fae7c2ac2b94ca998b83df03560eb2d"
+        },
+        {
+          "symbol": "SGOV",
+          "action_type": "HOLD",
+          "confidence": "high",
+          "size_pct": null,
+          "price": null,
+          "allocation_pct": {
+            "VGT": 87.0,
+            "SGOV": 13.0
+          },
+          "evidence_quote": "下个星期继续保持87%仓位在VGT，13%仓位在SGOV",
+          "evidence_sha256": "b09c370435da287c8599631b1feee3fe9fae7c2ac2b94ca998b83df03560eb2d"
+        }
+      ],
+      "forum_entry_kind": "post",
+      "source_entry_key": "089a29ad6d89419a7416",
+      "parent_post_id": "2382261",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-09T06:03:55Z",
+      "source_notice": "新关注作者/版块的首轮采集：发布早于开始关注，作为历史学习，不计入 Genuine Forward。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "board_author_bootstrap",
+      "forward_evidence_eligible": false,
+      "forum_board": "tzlc"
+    },
+    {
+      "id": "5bdc4f36d5d143997c17",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "麻你",
+      "published_at": "2026-10-08 08:25:27",
+      "title": "确实如此",
+      "url": "https://bbs.wenxuecity.com/tzlc/2382449.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "19a6bad224045945ab71",
+      "parent_post_id": "2382449",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-09T06:03:55Z",
+      "source_notice": "新关注作者/版块的首轮采集：发布早于开始关注，作为历史学习，不计入 Genuine Forward。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "board_author_bootstrap",
+      "forward_evidence_eligible": false,
+      "forum_board": "tzlc"
+    },
+    {
+      "id": "80866244486721c0d978",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "麻你",
+      "published_at": "2026-10-08 08:27:24",
+      "title": "一生中抓住改变命运的几次机遇，结局真的太不一样。大多情况下，读书能改变命运！",
+      "url": "https://bbs.wenxuecity.com/tzlc/2382451.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "efe7f319ab4691d032d1",
+      "parent_post_id": "2382451",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-09T06:03:55Z",
+      "source_notice": "新关注作者/版块的首轮采集：发布早于开始关注，作为历史学习，不计入 Genuine Forward。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "board_author_bootstrap",
+      "forward_evidence_eligible": false,
+      "forum_board": "tzlc"
+    },
+    {
+      "id": "184d77d571fa7b99dac3",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "麻你",
+      "published_at": "2026-10-08 08:53:09",
+      "title": "个人账户同样操作",
+      "url": "https://bbs.wenxuecity.com/tzlc/2382469.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "a71b0c3fb26e87c444c3",
+      "parent_post_id": "2382469",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-09T06:03:55Z",
+      "source_notice": "新关注作者/版块的首轮采集：发布早于开始关注，作为历史学习，不计入 Genuine Forward。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "board_author_bootstrap",
+      "forward_evidence_eligible": false,
+      "forum_board": "tzlc"
     }
   ],
-  "updated_at": "2026-10-09T05:15:58Z",
+  "updated_at": "2026-10-09T06:03:55Z",
   "retention_policy": "append_only_no_record_count_cap",
   "historical_recovery": {
     "completed_at": "2026-10-07T13:43:06.018028+00:00",

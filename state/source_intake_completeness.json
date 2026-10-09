@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-09T05:36:32.594015+00:00",
+  "generated_at": "2026-10-09T06:03:55.882755+00:00",
   "complete": true,
   "coverage_complete": true,
   "semantic_learning_complete": false,
@@ -28,6 +28,14 @@
         "missing_from_feed": 0,
         "unique_article_ids": 13,
         "feed_present_urls": 13,
+        "archive_failures": []
+      },
+      "麻你": {
+        "complete": true,
+        "scan_complete": true,
+        "missing_from_feed": 0,
+        "unique_article_ids": 3,
+        "feed_present_urls": 3,
         "archive_failures": []
       }
     }
