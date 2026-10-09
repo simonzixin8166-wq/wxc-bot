@@ -9,6 +9,10 @@ on:
         description: "Samples per author"
         required: false
         default: "12"
+      round2_total:
+        description: "Round 2 stratified sample size (0 = round 1 mode); excludes round-1 URLs"
+        required: false
+        default: "0"
 
 permissions:
   contents: write
@@ -20,7 +24,7 @@ concurrency:
 jobs:
   diagnose:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -28,15 +32,21 @@ jobs:
           python-version: "3.11"
           cache: pip
       - run: pip install -r requirements.txt
-      - run: PYTHONPATH=. python tests/test_diagnose_title_only.py
+      - run: |
+          PYTHONPATH=. python tests/test_diagnose_title_only.py
+          PYTHONPATH=. python tests/test_learning_round2.py
       - name: Diagnose (read-only)
         run: |
-          out=$(python diagnose_title_only.py --per-author "${{ inputs.per_author }}")
+          if [ "${{ inputs.round2_total }}" != "0" ]; then
+            out=$(python diagnose_title_only.py --round2-total "${{ inputs.round2_total }}" --max-requests 140 --out state/title_only_diagnosis_round2.json)
+          else
+            out=$(python diagnose_title_only.py --per-author "${{ inputs.per_author }}")
+          fi
           echo "$out"
           echo "::notice title=Title-only diagnosis::$out"
       - name: Save report only
         run: |
           git config user.name "github-actions"; git config user.email "actions@github.com"
-          git add state/title_only_diagnosis.json
+          git add state/title_only_diagnosis*.json
           git diff --cached --quiet || git commit -m "title-only diagnosis report (read-only)"
           git pull --rebase origin main && git push

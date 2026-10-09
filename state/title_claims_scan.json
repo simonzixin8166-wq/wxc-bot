@@ -1,0 +1,289 @@
+{
+ "generated_at": "2026-10-09T15:27:51.544040+00:00",
+ "extractor_version": "ce-3",
+ "totals": {
+  "title_only": 1068,
+  "mentions_symbol": 186,
+  "with_claim": 16,
+  "with_checkable_claim": 15,
+  "question_only": 1
+ },
+ "by_author": {
+  "三心三意": {
+   "title_only": 300,
+   "mentions_symbol": 38,
+   "with_claim": 3,
+   "with_checkable_claim": 2,
+   "question_only": 1
+  },
+  "yifan99": {
+   "title_only": 13,
+   "mentions_symbol": 4,
+   "with_claim": 1,
+   "with_checkable_claim": 1,
+   "question_only": 0
+  },
+  "我是一只井底蛙": {
+   "title_only": 37,
+   "mentions_symbol": 10,
+   "with_claim": 3,
+   "with_checkable_claim": 3,
+   "question_only": 0
+  },
+  "bogbog": {
+   "title_only": 586,
+   "mentions_symbol": 122,
+   "with_claim": 6,
+   "with_checkable_claim": 6,
+   "question_only": 0
+  },
+  "麻你": {
+   "title_only": 132,
+   "mentions_symbol": 12,
+   "with_claim": 3,
+   "with_checkable_claim": 3,
+   "question_only": 0
+  }
+ },
+ "claims": [
+  {
+   "id": "cbfa92ce93b8b26a0424",
+   "author": "三心三意",
+   "published_at": "2026-10-01 06:48:31",
+   "claims": [
+    {
+     "symbol": "AMAT",
+     "stance": "trim",
+     "question": false,
+     "conditional": false,
+     "horizon": null
+    }
+   ]
+  },
+  {
+   "id": "ec99434431f8764cb167",
+   "author": "三心三意",
+   "published_at": "2026-10-01 07:18:47",
+   "claims": [
+    {
+     "symbol": "LITE",
+     "stance": "sell",
+     "question": false,
+     "conditional": false,
+     "horizon": null
+    }
+   ]
+  },
+  {
+   "id": "380f05091982b9a2ba0f",
+   "author": "bogbog",
+   "published_at": "2026-07-07 09:57:40",
+   "claims": [
+    {
+     "symbol": "AAPL",
+     "stance": "bullish",
+     "question": false,
+     "conditional": false,
+     "horizon": null
+    }
+   ]
+  },
+  {
+   "id": "43f24ed67584fb10809f",
+   "author": "bogbog",
+   "published_at": "2026-07-30 06:09:56",
+   "claims": [
+    {
+     "symbol": "SOFI",
+     "stance": "add",
+     "question": false,
+     "conditional": false,
+     "horizon": null
+    }
+   ]
+  },
+  {
+   "id": "3c64dac3a6b884997697",
+   "author": "bogbog",
+   "published_at": "2026-08-12 21:35:56",
+   "claims": [
+    {
+     "symbol": "NVDA",
+     "stance": "buy",
+     "question": false,
+     "conditional": true,
+     "horizon": null
+    }
+   ]
+  },
+  {
+   "id": "88cfc9ca6f3649322fc8",
+   "author": "bogbog",
+   "published_at": "2026-08-13 08:21:16",
+   "claims": [
+    {
+     "symbol": "NBIS",
+     "stance": "add",
+     "question": false,
+     "conditional": false,
+     "horizon": null
+    },
+    {
+     "symbol": "AAOI",
+     "stance": "add",
+     "question": false,
+     "conditional": false,
+     "horizon": null
+    }
+   ]
+  },
+  {
+   "id": "42953a0686310851c248",
+   "author": "bogbog",
+   "published_at": "2026-09-04 08:09:35",
+   "claims": [
+    {
+     "symbol": "SPCX",
+     "stance": "bullish",
+     "question": false,
+     "conditional": false,
+     "horizon": null
+    }
+   ]
+  },
+  {
+   "id": "55d48b48161f87ebe493",
+   "author": "bogbog",
+   "published_at": "2026-10-02 13:57:19",
+   "claims": [
+    {
+     "symbol": "LITE",
+     "stance": "hold",
+     "question": false,
+     "conditional": false,
+     "horizon": null
+    }
+   ]
+  },
+  {
+   "id": "91d746c47782af1459f1",
+   "author": "我是一只井底蛙",
+   "published_at": "2026-10-04 16:18:21",
+   "claims": [
+    {
+     "symbol": "META",
+     "stance": "buy",
+     "question": false,
+     "conditional": true,
+     "horizon": null
+    }
+   ]
+  },
+  {
+   "id": "cc365e49ee81a0ad2612",
+   "author": "我是一只井底蛙",
+   "published_at": "2026-10-05 06:57:32",
+   "claims": [
+    {
+     "symbol": "SPCX",
+     "stance": "add",
+     "question": false,
+     "conditional": false,
+     "horizon": null
+    }
+   ]
+  },
+  {
+   "id": "9fe36c8e2fd76710fff7",
+   "author": "三心三意",
+   "published_at": "2026-10-08 12:52:54",
+   "claims": [
+    {
+     "symbol": "NVDA",
+     "stance": "buy",
+     "question": true,
+     "conditional": false,
+     "horizon": null
+    }
+   ]
+  },
+  {
+   "id": "56dda4e36d20dce5d5e6",
+   "author": "yifan99",
+   "published_at": "2026-10-08 13:10:50",
+   "claims": [
+    {
+     "symbol": "AVGO",
+     "stance": "sell",
+     "question": false,
+     "conditional": false,
+     "horizon": "short"
+    }
+   ]
+  },
+  {
+   "id": "8c9a1636b8f77207424d",
+   "author": "我是一只井底蛙",
+   "published_at": "2026-10-08 15:21:30",
+   "claims": [
+    {
+     "symbol": "SPCX",
+     "stance": "hold",
+     "question": false,
+     "conditional": false,
+     "horizon": null
+    }
+   ]
+  },
+  {
+   "id": "e45dc9a009715118c827",
+   "author": "麻你",
+   "published_at": "2026-08-24 20:16:34",
+   "claims": [
+    {
+     "symbol": "VGT",
+     "stance": "sell",
+     "question": false,
+     "conditional": false,
+     "horizon": null
+    }
+   ]
+  },
+  {
+   "id": "bdbadf4d56e4903fc8dc",
+   "author": "麻你",
+   "published_at": "2026-09-18 10:11:57",
+   "claims": [
+    {
+     "symbol": "SGOV",
+     "stance": "sell",
+     "question": false,
+     "conditional": false,
+     "horizon": null
+    },
+    {
+     "symbol": "VGT",
+     "stance": "sell",
+     "question": false,
+     "conditional": false,
+     "horizon": null
+    }
+   ]
+  },
+  {
+   "id": "89ef97c4172e54edd2af",
+   "author": "麻你",
+   "published_at": "2026-09-25 11:55:48",
+   "claims": [
+    {
+     "symbol": "VGT",
+     "stance": "hold",
+     "question": false,
+     "conditional": false,
+     "horizon": null
+    }
+   ]
+  }
+ ],
+ "policy": "offline over stored titles; ids + structured claims only"
+}
