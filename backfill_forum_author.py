@@ -79,8 +79,19 @@ def main():
     ap.add_argument("--author", required=True)
     ap.add_argument("--days", type=int, default=92)
     ap.add_argument("--max-pages", type=int, default=400)
+    ap.add_argument("--board", default="cfzh")
     a=ap.parse_args()
-    backfill(a.author, a.days, a.max_pages)
+    if a.board == "cfzh":
+        backfill(a.author, a.days, a.max_pages)
+    else:
+        import forum_board_scan as fbs
+        with fbs.on_board(a.board):
+            r = backfill(a.author, a.days, a.max_pages)
+        # seed the board scanner's per-author seen state so daily scans continue from here
+        seen_path = fbs.STATE / f"seen_forum_entries_{a.board}_{a.author}.json"
+        if not seen_path.exists():
+            fbs._write(seen_path, [])
+        print(json.dumps({"board": a.board, **(r or {})}, ensure_ascii=False))
 
 if __name__=="__main__":
     main()

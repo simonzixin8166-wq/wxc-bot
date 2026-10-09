@@ -26,6 +26,11 @@ PROFILES = {
         "blog_id": "82458",
         "aliases": ["brightline", "brghtline", "亮线留痕"],
     },
+    "mani": {
+        "author": "麻你",
+        "blog_id": "78105",
+        "aliases": ["麻你"],
+    },
     "yifan99": {
         "author": "yifan99",
         "blog_id": "31983",

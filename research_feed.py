@@ -16,7 +16,7 @@ import wxc_blog as blog
 DATA_DIR = Path(os.getenv("DATA_DIR", "state"))
 FEED_PATH = DATA_DIR / "research_feed.json"
 BLOG_SEEN = DATA_DIR / "seen_blog_BrightLine.json"  # legacy alias
-BLOG_PROFILES = ("BrightLine", "yifan99")
+BLOG_PROFILES = ("BrightLine", "yifan99", "麻你")
 
 def blog_seen_path(author: str) -> Path:
     safe = re.sub(r"[^A-Za-z0-9_.-]+", "_", author or "unknown")
