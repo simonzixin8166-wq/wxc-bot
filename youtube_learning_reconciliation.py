@@ -8,8 +8,9 @@ Seen ≠ learned. Stages (highest reached wins, each video counted once):
   metadata_only         probed; only title/description metadata (Q5)
   pending_unprobed      discovered, no content probe yet
   historical_backlog    older video accounted for but not yet scheduled for learning
+  provider_boilerplate  feed text was a transcript-provider navigation page, not a transcript
 Learning layers reported on top (never inferred from 'seen'):
-  semantically_understood  text that produced lessons/representative points
+  semantically_understood  text that produced lessons or at least one checkable claim (symbol + explicit stance)
   falsifiable_claims       structured operations or rule candidates from the text
   matured_outcomes         claims with matured forward outcomes (no YouTube outcome tracker yet → 0)
 Inconsistencies (a video listed in more than one state file) are reported, not hidden.
@@ -17,6 +18,7 @@ Read-only over state/; writes state/youtube_learning_reconciliation.json.
 """
 from __future__ import annotations
 import json, os
+import claim_extractor as _ce
 from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
@@ -58,8 +60,10 @@ def build(now=None):
         f = feed.get(vid) or {}
         p = pending.get(vid) or {}
         author_of[vid] = f.get("author") or a.get("author") or p.get("author") or (backlog.get(vid) or {}).get("author") or "unknown"
-        if vid in feed and (f.get("excerpt") or f.get("content_chars")):
+        if vid in feed and (f.get("excerpt") or f.get("content_chars")) and not _ce.provider_boilerplate(f.get("excerpt") or ""):
             stage[vid] = "formal_feed_text"
+        elif vid in feed and _ce.provider_boilerplate(f.get("excerpt") or ""):
+            stage[vid] = "provider_boilerplate"
         elif a.get("quality") in ("Q1", "Q2"):
             stage[vid] = "transcript_readable"
         elif a.get("quality") in ("Q3", "Q4"):
@@ -72,7 +76,8 @@ def build(now=None):
             stage[vid] = "historical_backlog"
         else:
             stage[vid] = "unaccounted"
-        if a.get("lessons") or a.get("representative_points") or f.get("lessons"):
+        claims_ = list(a.get("claims") or []) + list(f.get("claims") or [])
+        if a.get("lessons") or f.get("lessons") or any(_ce.checkable(c) for c in claims_):
             learned.add(vid)
         if a.get("operations") or f.get("operations") or a.get("rule_candidate_capable_at_source"):
             claims.add(vid)

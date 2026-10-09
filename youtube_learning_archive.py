@@ -156,6 +156,11 @@ def build_probe(p:dict)->dict:
     cleaned=clean_learning_text(raw_text)
     text,filter_meta=rf.filter_youtube_promotion_noise(cleaned)
     quality=result.get("quality") or "Q5"
+    import claim_extractor as ce
+    boilerplate=ce.provider_boilerplate(raw_text)
+    if boilerplate:
+        # A provider navigation page is not a transcript: never counted as text or learning.
+        quality="Q5"
     eligible=quality in {"Q1","Q2"} and bool(text)
 
     learning={
@@ -167,6 +172,7 @@ def build_probe(p:dict)->dict:
     themes=[]
     macro=[]
     points=[]
+    claims=[]
     if eligible:
         learning=rf.extract_structured_learning(text)
         # Historical archive keeps only author-owned actions/plans. Third-party
@@ -178,6 +184,7 @@ def build_probe(p:dict)->dict:
         themes=rf.detect_themes((p.get("title") or "")+"\n"+text)
         macro=macro_topics(text)
         points=representative_points(text,p.get("role") or "")
+        claims=ce.extract_claims(text,limit=20)
 
     return {
         "archive_id":"yt_hist_"+_hash(p["video_id"])[:16],
@@ -207,6 +214,11 @@ def build_probe(p:dict)->dict:
         "portfolio_rules":learning["portfolio_rules"] if eligible else [],
         "lessons":learning["lessons"] if eligible else [],
         "representative_points":[],
+        # representative_points stay empty in the public archive (no transcript wording is republished);
+        # semantic understanding is measured by structured, hash-anchored claims instead.
+        "claims":claims,
+        "checkable_claims":sum(1 for c in claims if ce.checkable(c)),
+        "provider_boilerplate":boilerplate,
         "forward_evidence_eligible":False,
         "promotion_eligible":False,
         "event_score_eligible":False,
