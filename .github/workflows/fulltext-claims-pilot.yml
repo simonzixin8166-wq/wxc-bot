@@ -1,0 +1,44 @@
+name: fulltext-claims-pilot
+
+# Manual: 20-article runtime-only full text → structured checkable claims (quant-dashboard#133 item 5).
+# Full text is never persisted; the report stores structured claims + sentence sha256 only.
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "Articles (max 20)"
+        required: false
+        default: "20"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: wxc-research-writer
+  cancel-in-progress: false
+
+jobs:
+  pilot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: |
+          PYTHONPATH=. python tests/test_claim_extractor.py
+          PYTHONPATH=. python tests/test_pilot_fulltext_claims.py
+      - name: Pilot (runtime-only full text)
+        run: |
+          out=$(python pilot_fulltext_claims.py --limit "${{ inputs.limit }}")
+          echo "$out"
+          echo "::notice title=Full-text claims pilot::$out"
+      - name: Save report only
+        run: |
+          git config user.name "github-actions"; git config user.email "actions@github.com"
+          git add state/fulltext_claims_pilot.json
+          git diff --cached --quiet || git commit -m "full-text claims pilot report (runtime-only text)"
+          git pull --rebase origin main && git push
