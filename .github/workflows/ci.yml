@@ -24,6 +24,7 @@ jobs:
         run: |
           python -m py_compile wxc_actions.py wxc_scraper.py wxc_tg_agent.py wxc_tg_bot.py wxc_blog.py research_feed.py verify_research_feed.py transcript_router.py youtube_research.py youtube_provider_health.py daily_close_research.py
           PYTHONPATH=. python tests/test_blog_collector.py
+          PYTHONPATH=. python tests/test_diagnose_title_only.py
           PYTHONPATH=. python tests/test_source_intake_completeness.py
           PYTHONPATH=. python tests/test_forum_entry_capture.py
           PYTHONPATH=. python tests/test_forum_anchor_continuity.py

@@ -1,0 +1,42 @@
+name: diagnose-title-only
+
+# Manual, read-only diagnosis for quant-dashboard#133 item 5: why 900+ forum records hold only a title.
+# Re-fetches a small sample of public post pages slowly; stores metrics + reason codes, never body text.
+on:
+  workflow_dispatch:
+    inputs:
+      per_author:
+        description: "Samples per author"
+        required: false
+        default: "12"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: wxc-research-writer
+  cancel-in-progress: false
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: PYTHONPATH=. python tests/test_diagnose_title_only.py
+      - name: Diagnose (read-only)
+        run: |
+          out=$(python diagnose_title_only.py --per-author "${{ inputs.per_author }}")
+          echo "$out"
+          echo "::notice title=Title-only diagnosis::$out"
+      - name: Save report only
+        run: |
+          git config user.name "github-actions"; git config user.email "actions@github.com"
+          git add state/title_only_diagnosis.json
+          git diff --cached --quiet || git commit -m "title-only diagnosis report (read-only)"
+          git pull --rebase origin main && git push
