@@ -1,0 +1,116 @@
+{
+ "generated_at": "2026-10-09T15:35:03+00:00",
+ "reviewer": "claude (manual, from ≤40-char excerpts in fulltext_claims_pilot_round2.json + stored titles); needs owner/independent spot check",
+ "extractor_version": "ce-3",
+ "fulltext_pilot": {
+  "articles_ok": 19,
+  "unavailable": 1,
+  "claims": 6,
+  "verdicts": [
+   {
+    "url_tail": "82458/202610/4050.html",
+    "symbol": "CRWV",
+    "extracted": "sell",
+    "verdict": "false_positive",
+    "reason": "author bought (接) at ~60; stance inverted"
+   },
+   {
+    "url_tail": "82458/202610/4050.html",
+    "symbol": "MRVL",
+    "extracted": "sell",
+    "verdict": "false_positive",
+    "reason": "author bought (接) at ~160; stance inverted"
+   },
+   {
+    "url_tail": "82458/202610/264.html",
+    "symbol": "AAPL",
+    "extracted": "buy",
+    "verdict": "false_positive",
+    "reason": "third-party example (Buffett), not the author's call"
+   },
+   {
+    "url_tail": "31983/202609/22705.html",
+    "symbol": "LITE",
+    "extracted": "sell",
+    "verdict": "false_positive",
+    "reason": "'Sell Put' = willing to own (bullish); option-strategy wording read as sell"
+   },
+   {
+    "url_tail": "31983/202609/22705.html",
+    "symbol": "LITE",
+    "extracted": "sell",
+    "verdict": "false_positive",
+    "reason": "duplicate of the same heading"
+   },
+   {
+    "url_tail": "cfzh/113867.html",
+    "symbol": "LITE",
+    "extracted": "sell",
+    "verdict": "false_positive",
+    "reason": "same 'Sell Put' heading quoted"
+   }
+  ],
+  "strict_precision": "0/6",
+  "missed_views_examples": [
+   {
+    "url_tail": "82458/202610/3062.html",
+    "symbol": "IREN",
+    "view": "add executed (加了) + explicit thesis"
+   },
+   {
+    "url_tail": "82458/202610/4050.html",
+    "symbol": "MRVL/CRWV",
+    "view": "buy executed (接)"
+   },
+   {
+    "url_tail": "82458/202610/264.html",
+    "symbol": "GOOGL",
+    "view": "long hold (~10y, 没动)"
+   },
+   {
+    "url_tail": "82458/202610/264.html",
+    "symbol": "INTC",
+    "view": "buy executed (建的仓)"
+   },
+   {
+    "url_tail": "31983/202610/703.html",
+    "symbol": "CIEN",
+    "view": "short-term bullish (短线转强, conditional level)"
+   },
+   {
+    "url_tail": "cfzh/113867.html",
+    "symbol": "AVGO",
+    "view": "bottoming, trend unconfirmed (conditional bullish)"
+   },
+   {
+    "url_tail": "31983/202609/22705.html",
+    "symbol": "LITE",
+    "view": "sell put ~800 = willing to own"
+   }
+  ],
+  "articles_with_clear_author_view": "≈9/19",
+  "articles_with_correct_claim": "0/19",
+  "previous_round": "ce-1 pilot 2026-10-09T05:21Z: 7 claims; earlier '2 false' (SP, LRS) understated — under this stricter review the remaining AAPL/LITE claims are also false"
+ },
+ "title_scan": {
+  "title_only_records": 1068,
+  "titles_with_symbol": 186,
+  "ce2_title_claims": {
+   "titles": 13,
+   "claims": 16,
+   "false_positive": [
+    "VGT sell (麻你: SGOV sold, VGT bought)",
+    "VGT trim (negated: 没有减仓) — fixed in ce-3 → hold",
+    "LITE sell (selling a call spread; ambiguous)"
+   ],
+   "strict_precision": "13/16"
+  },
+  "missed_sample": {
+   "sampled_titles_without_claim": 40,
+   "clear_views_missed": 15,
+   "note": "e.g. 可以买 / taking profit (fixed ce-3) / 不卖 (fixed ce-3) / nah / 到ATH / price targets; ~37% of symbol-mentioning titles without a claim carry a view"
+  }
+ },
+ "conclusion": "Rule-based claims are not reliable learning input (full-text precision 0/6, title precision ~81% but recall ~20%). They are not consumed by quant-dashboard scoring; keep them experimental and excluded from learning/forward evidence until a reviewed extractor reaches an agreed precision on a held-out set.",
+ "policy": "no full text stored; excerpts ≤40 chars live only in the pilot report"
+}
