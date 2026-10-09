@@ -381,6 +381,13 @@ def detect_themes(text: str) -> list[str]:
     found = [name for name, keys in THEMES.items() if any(k in low for k in keys)]
     return found[:8] or ["其他研究"]
 
+def _claims(text: str) -> list:
+    try:
+        import claim_extractor as _ce
+        return _ce.extract_claims(text, limit=20)
+    except Exception:
+        return []
+
 def normalize(source_kind: str, author: str, post: dict) -> dict:
     title = str(post.get("title") or "").strip()
     text = str(post.get("text") or "").strip()
@@ -406,6 +413,8 @@ def normalize(source_kind: str, author: str, post: dict) -> dict:
         "portfolio_rules": learning["portfolio_rules"],
         "lessons": learning["lessons"],
         "method_signals": method_signals,
+        # Checkable claims from the full runtime text (structured fields + sentence hash only).
+        "claims": _claims(joined),
         "forum_entry_kind": post.get("forum_entry_kind"),
         "source_entry_key": post.get("source_entry_key"),
         "parent_post_id": post.get("parent_post_id"),
