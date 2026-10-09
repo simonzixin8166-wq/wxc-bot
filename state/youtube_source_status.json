@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-10-08T19:58:27Z",
+  "generated_at": "2026-10-09T00:23:54Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -56,15 +56,15 @@
           "reached_end": false
         }
       ],
-      "previous_anchor_video_id": "XW0RpReUUbk",
+      "previous_anchor_video_id": "QYQlbuF8xdk",
       "anchor_found": true,
       "reached_end": false,
       "discovery_complete": true,
       "latest": {
-        "video_id": "XW0RpReUUbk",
-        "title": "2支暴跌老牌传统股！可以买入了？",
-        "url": "https://www.youtube.com/watch?v=XW0RpReUUbk",
-        "published_at": "2026-10-05",
+        "video_id": "QYQlbuF8xdk",
+        "title": "国债收益率居高不下！如何利用闲置资金购买美国国债，稳定获取利息现金流",
+        "url": "https://www.youtube.com/watch?v=QYQlbuF8xdk",
+        "published_at": "2026-10-08",
         "flat_metadata_keys": [
           "channel_id",
           "duration",
@@ -121,50 +121,17 @@
   "content_work_budget": 6,
   "content_backlog_after_run": 114,
   "pending_total": 114,
-  "historical_demoted_from_pending": 0,
+  "historical_demoted_from_pending": 1,
   "admitted_from_pending": 0,
   "nonforward_timestamp_unknown_admitted": 0,
   "feed_records_added": 0,
-  "historical_backlog_total": 49,
+  "historical_backlog_total": 50,
   "discovery_complete": true,
   "new_video_diagnostics": [
     {
-      "author": "老李玩钱",
-      "video_id": "RHhVWhqq1nI",
-      "title": "美联储会议砸盘，账户已跌下$300,000！微软，META，SOFI 财报解读",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "RgGeU0w9GZo",
-      "title": "美股 NVDA黄仁勋“喊单”奏效！AVGO有惊无险，PANW放缓代价！褐皮书：物价，消费，就业，增长！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "老李玩钱",
-      "video_id": "SJERXQX7tAU",
-      "title": "5大科技，机会来了，最新买入/加仓价格点位！另外准备减仓1支股",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "老李玩钱",
-      "video_id": "SrRLRsUFsUw",
-      "title": "华尔街大量卖出的3支股票！你是否要跟着卖出",
+      "video_id": "Y7P-VOo0KTs",
+      "title": "（会员第298期）四大科技AI货币化进度（2026年Q2后），MSFT、GOOG、AMZN、META！前车之鉴，能否提前识别泡沫？",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -174,8 +141,30 @@
     },
     {
       "author": "Andrei Jikh",
-      "video_id": "TlgONux62A0",
-      "title": "The Fed's Plan For The U.S. Economy",
+      "video_id": "YBhwK-VWsxY",
+      "title": "Japan's Money Is Collapsing",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "Z9T89cdzuyo",
+      "title": "美股 NVDA、MRVL、INTU、CRWD、CRM财报波动！对冲基金上周大抛售！大逆转，Altman承认AI时间表看法错误！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "Andrei Jikh",
+      "video_id": "ZEi5tVIXWyc",
+      "title": "South Korea’s AI Bubble Just Popped",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -185,8 +174,19 @@
     },
     {
       "author": "老李玩钱",
-      "video_id": "Ue75SpWXfjo",
-      "title": "美股最重磅的一周：美联储会议及4大科技巨头财报提前展望，买入/加仓价格点位更新",
+      "video_id": "ZGYWudfZMM4",
+      "title": "美股重回高位，要卖股票了吗？到底什么时候该卖出股票",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "Andrei Jikh",
+      "video_id": "Z_xvkbGWauU",
+      "title": "China Just Shut Down Gold Trading",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,

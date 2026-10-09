@@ -1,18 +1,18 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T19:58:27Z",
+  "updated_at": "2026-10-09T00:23:54Z",
   "records": [
     {
       "video_id": "2Ci7OynnUqk",
       "status": "historical_learning_backlog",
       "forward_evidence_eligible": false,
-      "last_accounted_at": "2026-10-08T19:58:27Z"
+      "last_accounted_at": "2026-10-09T00:23:54Z"
     },
     {
       "video_id": "4BvyVOHzZZg",
       "status": "historical_learning_backlog",
       "forward_evidence_eligible": false,
-      "last_accounted_at": "2026-10-08T19:58:27Z"
+      "last_accounted_at": "2026-10-09T00:23:54Z"
     },
     {
       "video_id": "6CN5UBeEwrU",
@@ -23,7 +23,7 @@
       "url": "https://www.youtube.com/watch?v=6CN5UBeEwrU",
       "status": "historical_learning_backlog",
       "forward_evidence_eligible": false,
-      "last_accounted_at": "2026-10-08T19:58:27Z"
+      "last_accounted_at": "2026-10-09T00:23:54Z"
     },
     {
       "video_id": "6NOiINBIbew",
@@ -34,7 +34,7 @@
       "url": "https://www.youtube.com/watch?v=6NOiINBIbew",
       "status": "historical_learning_backlog",
       "forward_evidence_eligible": false,
-      "last_accounted_at": "2026-10-08T19:58:27Z"
+      "last_accounted_at": "2026-10-09T00:23:54Z"
     },
     {
       "video_id": "6_ov90oJ8Ig",
@@ -45,7 +45,7 @@
       "url": "https://www.youtube.com/watch?v=6_ov90oJ8Ig",
       "status": "historical_learning_backlog",
       "forward_evidence_eligible": false,
-      "last_accounted_at": "2026-10-08T19:58:27Z",
+      "last_accounted_at": "2026-10-09T00:23:54Z",
       "published_at": "2026-09-14"
     },
     {
@@ -57,7 +57,7 @@
       "url": "https://www.youtube.com/watch?v=CUYS6bDAGFM",
       "status": "historical_learning_backlog",
       "forward_evidence_eligible": false,
-      "last_accounted_at": "2026-10-08T19:58:27Z",
+      "last_accounted_at": "2026-10-09T00:23:54Z",
       "published_at": "2026-09-11"
     },
     {
@@ -69,14 +69,14 @@
       "url": "https://www.youtube.com/watch?v=CpXRqkEIscI",
       "status": "historical_learning_backlog",
       "forward_evidence_eligible": false,
-      "last_accounted_at": "2026-10-08T19:58:27Z",
+      "last_accounted_at": "2026-10-09T00:23:54Z",
       "published_at": "2026-09-30"
     },
     {
       "video_id": "EcMX0ub9gSg",
       "status": "historical_learning_backlog",
       "forward_evidence_eligible": false,
-      "last_accounted_at": "2026-10-08T19:58:27Z"
+      "last_accounted_at": "2026-10-09T00:23:54Z"
     },
     {
       "video_id": "F2QRfRammpI",
@@ -87,20 +87,20 @@
       "url": "https://www.youtube.com/watch?v=F2QRfRammpI",
       "status": "historical_learning_backlog",
       "forward_evidence_eligible": false,
-      "last_accounted_at": "2026-10-08T19:58:27Z",
+      "last_accounted_at": "2026-10-09T00:23:54Z",
       "published_at": "2026-09-28"
     },
     {
       "video_id": "Iv5V74WB6uo",
       "status": "historical_learning_backlog",
       "forward_evidence_eligible": false,
-      "last_accounted_at": "2026-10-08T19:58:27Z"
+      "last_accounted_at": "2026-10-09T00:23:54Z"
     },
     {
       "video_id": "JDZeHmH2GvE",
       "status": "historical_learning_backlog",
       "forward_evidence_eligible": false,
-      "last_accounted_at": "2026-10-08T19:58:27Z"
+      "last_accounted_at": "2026-10-09T00:23:54Z"
     },
     {
       "video_id": "LWHKiYV-8pU",
@@ -111,7 +111,7 @@
       "url": "https://www.youtube.com/watch?v=LWHKiYV-8pU",
       "status": "historical_learning_backlog",
       "forward_evidence_eligible": false,
-      "last_accounted_at": "2026-10-08T19:58:27Z",
+      "last_accounted_at": "2026-10-09T00:23:54Z",
       "published_at": "2026-10-02"
     },
     {
@@ -123,7 +123,7 @@
       "url": "https://www.youtube.com/watch?v=OiUiDCPDDoA",
       "status": "historical_learning_backlog",
       "forward_evidence_eligible": false,
-      "last_accounted_at": "2026-10-08T19:58:27Z"
+      "last_accounted_at": "2026-10-09T00:23:54Z"
     },
     {
       "video_id": "OyiGHowGOSI",
@@ -134,7 +134,7 @@
       "url": "https://www.youtube.com/watch?v=OyiGHowGOSI",
       "status": "historical_learning_backlog",
       "forward_evidence_eligible": false,
-      "last_accounted_at": "2026-10-08T19:58:27Z"
+      "last_accounted_at": "2026-10-09T00:23:54Z"
     },
     {
       "video_id": "QFvHL3z6C-0",
@@ -145,25 +145,37 @@
       "url": "https://www.youtube.com/watch?v=QFvHL3z6C-0",
       "status": "historical_learning_backlog",
       "forward_evidence_eligible": false,
-      "last_accounted_at": "2026-10-08T19:58:27Z"
+      "last_accounted_at": "2026-10-09T00:23:54Z"
+    },
+    {
+      "video_id": "QYQlbuF8xdk",
+      "handle": "@老李玩钱",
+      "author": "老李玩钱",
+      "role": "rule_supply",
+      "title": "国债收益率居高不下！如何利用闲置资金购买美国国债，稳定获取利息现金流",
+      "url": "https://www.youtube.com/watch?v=QYQlbuF8xdk",
+      "published_at": "2026-10-08",
+      "status": "historical_learning_backlog",
+      "forward_evidence_eligible": false,
+      "last_accounted_at": "2026-10-09T00:23:54Z"
     },
     {
       "video_id": "S53iIEnGogw",
       "status": "historical_learning_backlog",
       "forward_evidence_eligible": false,
-      "last_accounted_at": "2026-10-08T19:58:27Z"
+      "last_accounted_at": "2026-10-09T00:23:54Z"
     },
     {
       "video_id": "SiYqe6w69WI",
       "status": "historical_learning_backlog",
       "forward_evidence_eligible": false,
-      "last_accounted_at": "2026-10-08T19:58:27Z"
+      "last_accounted_at": "2026-10-09T00:23:54Z"
     },
     {
       "video_id": "TpGDgieIAak",
       "status": "historical_learning_backlog",
       "forward_evidence_eligible": false,
-      "last_accounted_at": "2026-10-08T19:58:27Z"
+      "last_accounted_at": "2026-10-09T00:23:54Z"
     },
     {
       "video_id": "U3Q9D9WX5ec",
@@ -174,7 +186,7 @@
       "url": "https://www.youtube.com/watch?v=U3Q9D9WX5ec",
       "status": "historical_learning_backlog",
       "forward_evidence_eligible": false,
-      "last_accounted_at": "2026-10-08T19:58:27Z",
+      "last_accounted_at": "2026-10-09T00:23:54Z",
       "published_at": "2026-09-16"
     },
     {
@@ -186,13 +198,13 @@
       "url": "https://www.youtube.com/watch?v=V11vKrhYRpI",
       "status": "historical_learning_backlog",
       "forward_evidence_eligible": false,
-      "last_accounted_at": "2026-10-08T19:58:27Z"
+      "last_accounted_at": "2026-10-09T00:23:54Z"
     },
     {
       "video_id": "W1NcpdMtcRw",
       "status": "historical_learning_backlog",
       "forward_evidence_eligible": false,
-      "last_accounted_at": "2026-10-08T19:58:27Z"
+      "last_accounted_at": "2026-10-09T00:23:54Z"
     },
     {
       "video_id": "W6kK9EoF-rs",
@@ -203,14 +215,14 @@
       "url": "https://www.youtube.com/watch?v=W6kK9EoF-rs",
       "status": "historical_learning_backlog",
       "forward_evidence_eligible": false,
-      "last_accounted_at": "2026-10-08T19:58:27Z",
+      "last_accounted_at": "2026-10-09T00:23:54Z",
       "published_at": "2026-09-08"
     },
     {
       "video_id": "Y3lw2AZB-CA",
       "status": "historical_learning_backlog",
       "forward_evidence_eligible": false,
-      "last_accounted_at": "2026-10-08T19:58:27Z"
+      "last_accounted_at": "2026-10-09T00:23:54Z"
     },
     {
       "video_id": "ZWIf77kODE0",
@@ -221,7 +233,7 @@
       "url": "https://www.youtube.com/watch?v=ZWIf77kODE0",
       "status": "historical_learning_backlog",
       "forward_evidence_eligible": false,
-      "last_accounted_at": "2026-10-08T19:58:27Z",
+      "last_accounted_at": "2026-10-09T00:23:54Z",
       "published_at": "2026-09-29"
     },
     {
@@ -233,13 +245,13 @@
       "url": "https://www.youtube.com/watch?v=Zq5V3QRbqgQ",
       "status": "historical_learning_backlog",
       "forward_evidence_eligible": false,
-      "last_accounted_at": "2026-10-08T19:58:27Z"
+      "last_accounted_at": "2026-10-09T00:23:54Z"
     },
     {
       "video_id": "a5IJ8PNlers",
       "status": "historical_learning_backlog",
       "forward_evidence_eligible": false,
-      "last_accounted_at": "2026-10-08T19:58:27Z"
+      "last_accounted_at": "2026-10-09T00:23:54Z"
     },
     {
       "video_id": "aaNr7EdpNj4",
@@ -250,19 +262,19 @@
       "url": "https://www.youtube.com/watch?v=aaNr7EdpNj4",
       "status": "historical_learning_backlog",
       "forward_evidence_eligible": false,
-      "last_accounted_at": "2026-10-08T19:58:27Z"
+      "last_accounted_at": "2026-10-09T00:23:54Z"
     },
     {
       "video_id": "b8NYGpLXYdU",
       "status": "historical_learning_backlog",
       "forward_evidence_eligible": false,
-      "last_accounted_at": "2026-10-08T19:58:27Z"
+      "last_accounted_at": "2026-10-09T00:23:54Z"
     },
     {
       "video_id": "c2x0-yD7SsQ",
       "status": "historical_learning_backlog",
       "forward_evidence_eligible": false,
-      "last_accounted_at": "2026-10-08T19:58:27Z"
+      "last_accounted_at": "2026-10-09T00:23:54Z"
     },
     {
       "video_id": "cGSEmqIyFf0",
@@ -273,14 +285,14 @@
       "url": "https://www.youtube.com/watch?v=cGSEmqIyFf0",
       "status": "historical_learning_backlog",
       "forward_evidence_eligible": false,
-      "last_accounted_at": "2026-10-08T19:58:27Z",
+      "last_accounted_at": "2026-10-09T00:23:54Z",
       "published_at": "2026-10-01"
     },
     {
       "video_id": "dM4qkaPySe0",
       "status": "historical_learning_backlog",
       "forward_evidence_eligible": false,
-      "last_accounted_at": "2026-10-08T19:58:27Z"
+      "last_accounted_at": "2026-10-09T00:23:54Z"
     },
     {
       "video_id": "gm7968MOWmo",
@@ -291,7 +303,7 @@
       "url": "https://www.youtube.com/watch?v=gm7968MOWmo",
       "status": "historical_learning_backlog",
       "forward_evidence_eligible": false,
-      "last_accounted_at": "2026-10-08T19:58:27Z",
+      "last_accounted_at": "2026-10-09T00:23:54Z",
       "published_at": "2026-10-03"
     },
     {
@@ -303,7 +315,7 @@
       "url": "https://www.youtube.com/watch?v=h0vkR077cRo",
       "status": "historical_learning_backlog",
       "forward_evidence_eligible": false,
-      "last_accounted_at": "2026-10-08T19:58:27Z",
+      "last_accounted_at": "2026-10-09T00:23:54Z",
       "published_at": "2026-09-21"
     },
     {
@@ -315,7 +327,7 @@
       "url": "https://www.youtube.com/watch?v=h1-YBhMV3CA",
       "status": "historical_learning_backlog",
       "forward_evidence_eligible": false,
-      "last_accounted_at": "2026-10-08T19:58:27Z"
+      "last_accounted_at": "2026-10-09T00:23:54Z"
     },
     {
       "video_id": "iBxWsP8k9XM",
@@ -326,13 +338,13 @@
       "url": "https://www.youtube.com/watch?v=iBxWsP8k9XM",
       "status": "historical_learning_backlog",
       "forward_evidence_eligible": false,
-      "last_accounted_at": "2026-10-08T19:58:27Z"
+      "last_accounted_at": "2026-10-09T00:23:54Z"
     },
     {
       "video_id": "iN7WmJTeEQc",
       "status": "historical_learning_backlog",
       "forward_evidence_eligible": false,
-      "last_accounted_at": "2026-10-08T19:58:27Z"
+      "last_accounted_at": "2026-10-09T00:23:54Z"
     },
     {
       "video_id": "jAxCvjgqxEs",
@@ -343,7 +355,7 @@
       "url": "https://www.youtube.com/watch?v=jAxCvjgqxEs",
       "status": "historical_learning_backlog",
       "forward_evidence_eligible": false,
-      "last_accounted_at": "2026-10-08T19:58:27Z",
+      "last_accounted_at": "2026-10-09T00:23:54Z",
       "published_at": "2026-08-31"
     },
     {
@@ -355,19 +367,19 @@
       "url": "https://www.youtube.com/watch?v=kD5hGfArUf0",
       "status": "historical_learning_backlog",
       "forward_evidence_eligible": false,
-      "last_accounted_at": "2026-10-08T19:58:27Z"
+      "last_accounted_at": "2026-10-09T00:23:54Z"
     },
     {
       "video_id": "khnPevsQ_TE",
       "status": "historical_learning_backlog",
       "forward_evidence_eligible": false,
-      "last_accounted_at": "2026-10-08T19:58:27Z"
+      "last_accounted_at": "2026-10-09T00:23:54Z"
     },
     {
       "video_id": "oyxzo9m8oHE",
       "status": "historical_learning_backlog",
       "forward_evidence_eligible": false,
-      "last_accounted_at": "2026-10-08T19:58:27Z"
+      "last_accounted_at": "2026-10-09T00:23:54Z"
     },
     {
       "video_id": "pO1eGLrl1lw",
@@ -378,13 +390,13 @@
       "url": "https://www.youtube.com/watch?v=pO1eGLrl1lw",
       "status": "historical_learning_backlog",
       "forward_evidence_eligible": false,
-      "last_accounted_at": "2026-10-08T19:58:27Z"
+      "last_accounted_at": "2026-10-09T00:23:54Z"
     },
     {
       "video_id": "rQCKbtW9x9Q",
       "status": "historical_learning_backlog",
       "forward_evidence_eligible": false,
-      "last_accounted_at": "2026-10-08T19:58:27Z"
+      "last_accounted_at": "2026-10-09T00:23:54Z"
     },
     {
       "video_id": "t8KXQrHPmrg",
@@ -395,19 +407,19 @@
       "url": "https://www.youtube.com/watch?v=t8KXQrHPmrg",
       "status": "historical_learning_backlog",
       "forward_evidence_eligible": false,
-      "last_accounted_at": "2026-10-08T19:58:27Z"
+      "last_accounted_at": "2026-10-09T00:23:54Z"
     },
     {
       "video_id": "tNxNwsTIqNk",
       "status": "historical_learning_backlog",
       "forward_evidence_eligible": false,
-      "last_accounted_at": "2026-10-08T19:58:27Z"
+      "last_accounted_at": "2026-10-09T00:23:54Z"
     },
     {
       "video_id": "uO7fQuYJUMU",
       "status": "historical_learning_backlog",
       "forward_evidence_eligible": false,
-      "last_accounted_at": "2026-10-08T19:58:27Z"
+      "last_accounted_at": "2026-10-09T00:23:54Z"
     },
     {
       "video_id": "uYZk6upfvCU",
@@ -418,7 +430,7 @@
       "url": "https://www.youtube.com/watch?v=uYZk6upfvCU",
       "status": "historical_learning_backlog",
       "forward_evidence_eligible": false,
-      "last_accounted_at": "2026-10-08T19:58:27Z",
+      "last_accounted_at": "2026-10-09T00:23:54Z",
       "published_at": "2026-09-24"
     },
     {
@@ -430,7 +442,7 @@
       "url": "https://www.youtube.com/watch?v=xSXNSt0m-go",
       "status": "historical_learning_backlog",
       "forward_evidence_eligible": false,
-      "last_accounted_at": "2026-10-08T19:58:27Z"
+      "last_accounted_at": "2026-10-09T00:23:54Z"
     },
     {
       "video_id": "xTCIqCNjikE",
@@ -441,7 +453,7 @@
       "url": "https://www.youtube.com/watch?v=xTCIqCNjikE",
       "status": "historical_learning_backlog",
       "forward_evidence_eligible": false,
-      "last_accounted_at": "2026-10-08T19:58:27Z"
+      "last_accounted_at": "2026-10-09T00:23:54Z"
     },
     {
       "video_id": "xvtySd-L8RY",
@@ -452,15 +464,15 @@
       "url": "https://www.youtube.com/watch?v=xvtySd-L8RY",
       "status": "historical_learning_backlog",
       "forward_evidence_eligible": false,
-      "last_accounted_at": "2026-10-08T19:58:27Z"
+      "last_accounted_at": "2026-10-09T00:23:54Z"
     }
   ],
   "counts": {
-    "seen": 170,
+    "seen": 171,
     "formal_feed": 7,
     "historical_archive": 4,
     "pending": 114,
-    "unresolved_backlog": 49
+    "unresolved_backlog": 50
   },
   "guardrail": "Seen is discovery state, not learning. Every seen video must be in formal feed, pending, historical archive, or this explicit non-forward backlog."
 }
