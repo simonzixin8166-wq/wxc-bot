@@ -53,7 +53,14 @@ def sentences(text: str) -> list[str]:
 
 
 def symbols_in(s: str) -> list[str]:
-    syms = [m for m in re.findall(TICKER, s) if m not in STOP]
+    """Use the feed's own whitelist + alias detection (pilot showed free-form uppercase tokens such as
+    'SP' from 'S&P' or strategy acronyms become false tickers); fall back to the local regex only
+    when research_feed is unavailable."""
+    try:
+        import research_feed as _rf
+        syms = list(_rf.detect_symbols(s))
+    except Exception:
+        syms = [m for m in re.findall(TICKER, s) if m not in STOP]
     syms += [v for k, v in ALIASES.items() if k in s]
     return list(dict.fromkeys(syms))
 

@@ -27,4 +27,6 @@ assert any(c["symbol"] == "QQQ" and c["stance"] == "bearish" for c in ce.extract
 junk = "Scribe Like it? Make Scribe even better by leaving a review Get Chrome Extension Browse Popular Videos Recent Videos All Channels Free Tools Video Subtitle Downloader"
 assert ce.provider_boilerplate(junk) and not ce.provider_boilerplate(t)
 assert not ce.provider_boilerplate(junk + " real transcript words" * 200)
+# pilot false positives: S&P / strategy acronyms are not tickers
+assert not any(c["symbol"] in ("SP", "LRS") for c in ce.extract_claims("S&P 我卖出了一部分，LRS 策略也卖出。"))
 print("PASS claim_extractor")
