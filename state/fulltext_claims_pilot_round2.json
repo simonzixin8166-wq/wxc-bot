@@ -1,0 +1,905 @@
+{
+ "generated_at": "2026-10-09T15:31:55.680596+00:00",
+ "extractor_version": "ce-3",
+ "aggregate": {
+  "articles_ok": 19,
+  "articles_unavailable": 1,
+  "claims_full": 6,
+  "checkable_full": 6,
+  "claims_excerpt": 3,
+  "checkable_excerpt": 3,
+  "articles_with_checkable_full": 4,
+  "articles_with_checkable_excerpt": 2,
+  "stance_mix": {
+   "sell": 5,
+   "buy": 1
+  }
+ },
+ "rows": [
+  {
+   "url": "https://blog.wenxuecity.com/myblog/82458/202610/3062.html",
+   "author": "BrightLine",
+   "outcome": "ok",
+   "author_matches": true,
+   "chars_full": 3661,
+   "chars_stored": 384,
+   "claims_full": 0,
+   "checkable_full": 0,
+   "claims_excerpt": 0,
+   "checkable_excerpt": 0,
+   "symbols_full": [],
+   "claims": [],
+   "review": {
+    "claim_sentences": [],
+    "mention_without_stance": [
+     {
+      "i": 0,
+      "symbols": [
+       "IREN"
+      ],
+      "excerpt": "IREN - 我写了一个论点，然后等市场来验证",
+      "sha256": "ce4f3c18be2bcfe122b246e31f1379606177c54cfe8e78574ef92e9fb58f6bf5"
+     },
+     {
+      "i": 2,
+      "symbols": [
+       "IREN"
+      ],
+      "excerpt": "我在 29、30、31 加了 IREN。",
+      "sha256": "2f678d9d78e912fb0fa1d2b1c74202583cfa4c7896e3815962a5b6fcb9ffcc44"
+     },
+     {
+      "i": 4,
+      "symbols": [
+       "IREN"
+      ],
+      "excerpt": "今天 IREN 在 40 上下。",
+      "sha256": "385cd25691a6e2e1deaa4d06b20cdfe425df78ab96a54ad291e5e09015907b4e"
+     },
+     {
+      "i": 6,
+      "symbols": [
+       "IREN",
+       "CRWV"
+      ],
+      "excerpt": "CRWV 从 180 跌到 80，IREN 从 70 跌到 40。",
+      "sha256": "8337b6897dde922ef83343032d430cc28373a0c4fb458d60ef248641cb309714"
+     },
+     {
+      "i": 15,
+      "symbols": [
+       "MSFT"
+      ],
+      "excerpt": "微软那份合同对应的 GPU 融资 36 亿，6% 固定利率，覆盖 96% 的 G",
+      "sha256": "089b15b015ee9fe09122b3363c32eb0cf512f89a558c859c5a88ca614a4e1d5f"
+     }
+    ],
+    "mention_without_stance_total": 27
+   }
+  },
+  {
+   "url": "https://blog.wenxuecity.com/myblog/82458/202610/1675.html",
+   "author": "BrightLine",
+   "outcome": "ok",
+   "author_matches": true,
+   "chars_full": 1876,
+   "chars_stored": 374,
+   "claims_full": 0,
+   "checkable_full": 0,
+   "claims_excerpt": 0,
+   "checkable_excerpt": 0,
+   "symbols_full": [],
+   "claims": [],
+   "review": {
+    "claim_sentences": [],
+    "mention_without_stance": [],
+    "mention_without_stance_total": 0
+   }
+  },
+  {
+   "url": "https://blog.wenxuecity.com/myblog/82458/202610/972.html",
+   "author": "BrightLine",
+   "outcome": "ok",
+   "author_matches": true,
+   "chars_full": 1750,
+   "chars_stored": 371,
+   "claims_full": 0,
+   "checkable_full": 0,
+   "claims_excerpt": 0,
+   "checkable_excerpt": 0,
+   "symbols_full": [],
+   "claims": [],
+   "review": {
+    "claim_sentences": [],
+    "mention_without_stance": [],
+    "mention_without_stance_total": 0
+   }
+  },
+  {
+   "url": "https://blog.wenxuecity.com/myblog/82458/202610/4050.html",
+   "author": "BrightLine",
+   "outcome": "ok",
+   "author_matches": true,
+   "chars_full": 3056,
+   "chars_stored": 402,
+   "claims_full": 2,
+   "checkable_full": 2,
+   "claims_excerpt": 0,
+   "checkable_excerpt": 0,
+   "symbols_full": [
+    "CRWV",
+    "MRVL"
+   ],
+   "claims": [
+    {
+     "symbol": "CRWV",
+     "stance": "sell",
+     "stance_cues": [
+      "sell"
+     ],
+     "horizon": null,
+     "conditional": false,
+     "question": false,
+     "price": null,
+     "evidence_sha256": "00fd09811af6afa167129f5e3719ce80d848dd1d1888c4d7f7fa64500ae496b3",
+     "evidence_chars": 62
+    },
+    {
+     "symbol": "MRVL",
+     "stance": "sell",
+     "stance_cues": [
+      "sell"
+     ],
+     "horizon": null,
+     "conditional": false,
+     "question": false,
+     "price": null,
+     "evidence_sha256": "00fd09811af6afa167129f5e3719ce80d848dd1d1888c4d7f7fa64500ae496b3",
+     "evidence_chars": 62
+    }
+   ],
+   "review": {
+    "claim_sentences": [
+     {
+      "i": 99,
+      "symbols": [
+       "CRWV",
+       "MRVL"
+      ],
+      "excerpt": "七月底那次，我能在160接Marvell、60接CoreWeave，不是因为我比",
+      "sha256": "00fd09811af6afa167129f5e3719ce80d848dd1d1888c4d7f7fa64500ae496b3"
+     }
+    ],
+    "mention_without_stance": [
+     {
+      "i": 2,
+      "symbols": [
+       "MRVL"
+      ],
+      "excerpt": "七月底那轮踩踏里160买的Marvell，今天收在287，涨了将近八成。",
+      "sha256": "bc49fe535e1eedaa0968ff9376f4014b1b8cd25bea51047e468894848c5be519"
+     },
+     {
+      "i": 3,
+      "symbols": [
+       "CRWV"
+      ],
+      "excerpt": "同一时间段60左右接的CoreWeave，现在92，五成多。",
+      "sha256": "23e9e93221af3bf1482b427eb04f3cb5424b2e9cfea143496b555efed6d3ab96"
+     },
+     {
+      "i": 28,
+      "symbols": [
+       "MRVL"
+      ],
+      "excerpt": "Marvell的过程更长。",
+      "sha256": "958e0864bc4f7cf79f2d5e6a45c5264e2fde763597eaf5e8ec918eb23f30441e"
+     },
+     {
+      "i": 30,
+      "symbols": [
+       "MRVL"
+      ],
+      "excerpt": "我在160接的时候，没有任何人在讨论Marvell，大家都在讨论自己的保证金。",
+      "sha256": "bcfaa37f2450adf1055dcce2c54e31ad2505ba391e1f03d342481e5644f0baad"
+     },
+     {
+      "i": 37,
+      "symbols": [
+       "MRVL"
+      ],
+      "excerpt": "Marvell其实还有一段更煎熬的前传。",
+      "sha256": "f2559fc7c0f920e0a308fca63b50e1810cbd2bf9496f74166d6e4add4da67b25"
+     }
+    ],
+    "mention_without_stance_total": 11
+   }
+  },
+  {
+   "url": "https://blog.wenxuecity.com/myblog/82458/202610/264.html",
+   "author": "BrightLine",
+   "outcome": "ok",
+   "author_matches": true,
+   "chars_full": 1884,
+   "chars_stored": 373,
+   "claims_full": 1,
+   "checkable_full": 1,
+   "claims_excerpt": 1,
+   "checkable_excerpt": 1,
+   "symbols_full": [
+    "AAPL"
+   ],
+   "claims": [
+    {
+     "symbol": "AAPL",
+     "stance": "buy",
+     "stance_cues": [
+      "buy"
+     ],
+     "horizon": null,
+     "conditional": false,
+     "question": false,
+     "price": null,
+     "evidence_sha256": "3649ff0d3d3cfae2491ab7c8f4e420cc338e3c1a0f3107e2f33881d2e1ecb4c8",
+     "evidence_chars": 62
+    }
+   ],
+   "review": {
+    "claim_sentences": [
+     {
+      "i": 7,
+      "symbols": [
+       "AAPL"
+      ],
+      "excerpt": "作者拿巴菲特买苹果举例，从2016年开始建仓，前后投入约400亿美元，市值最高时",
+      "sha256": "3649ff0d3d3cfae2491ab7c8f4e420cc338e3c1a0f3107e2f33881d2e1ecb4c8"
+     }
+    ],
+    "mention_without_stance": [
+     {
+      "i": 20,
+      "symbols": [
+       "GOOGL"
+      ],
+      "excerpt": "谷歌我拿了将近十年，中间不知道有多少次市场说它要被颠覆了，我没动。",
+      "sha256": "0034681bf6a5eb6925e1eaef0e024127d19ba97efac22cc5a7cd313ce47a0648"
+     },
+     {
+      "i": 21,
+      "symbols": [
+       "INTC"
+      ],
+      "excerpt": "英特尔是在市场把它的代工业务判了死刑的时候建的仓，成本三十美元左右。",
+      "sha256": "67f79b43c05808416aea127f749a8f3e7b2257d0f86bdb9c0808b3ce02a69888"
+     },
+     {
+      "i": 47,
+      "symbols": [
+       "SPY",
+       "VOO"
+      ],
+      "excerpt": "可以选三个：SPY，跟踪标普500，最稳；",
+      "sha256": "688f39d60a67be5606593d4e1bf56ed648d31c59eb0f66514e08b421f477d9a4"
+     },
+     {
+      "i": 48,
+      "symbols": [
+       "QQQ"
+      ],
+      "excerpt": "QQQ，跟踪纳指100，科技成分更重；",
+      "sha256": "631054fce4b27a9fd6e4e8cc995e2f8409a8ddd1ea3093c7e507381e89a6eb6d"
+     },
+     {
+      "i": 49,
+      "symbols": [
+       "VGT"
+      ],
+      "excerpt": "VGT，纯科技板块，进攻性最强。",
+      "sha256": "5a999ec29e0eee712b3169cedb880c09b0d23af96e933af78684574030aaceff"
+     }
+    ],
+    "mention_without_stance_total": 6
+   }
+  },
+  {
+   "url": "https://blog.wenxuecity.com/myblog/31983/202610/703.html",
+   "author": "yifan99",
+   "outcome": "ok",
+   "author_matches": true,
+   "chars_full": 604,
+   "chars_stored": 393,
+   "claims_full": 0,
+   "checkable_full": 0,
+   "claims_excerpt": 0,
+   "checkable_excerpt": 0,
+   "symbols_full": [],
+   "claims": [],
+   "review": {
+    "claim_sentences": [],
+    "mention_without_stance": [
+     {
+      "i": 0,
+      "symbols": [
+       "AAOI",
+       "CIEN"
+      ],
+      "excerpt": "CIEN 的技术修复更完整，AAOI 的上涨弹性更大、波动也更高",
+      "sha256": "277af48dd7395fe77ad719d6f2b101b032203b9f928bd6227360280618ba0c60"
+     },
+     {
+      "i": 1,
+      "symbols": [
+       "AAOI",
+       "CIEN"
+      ],
+      "excerpt": "票都在经历“中期下跌后的短线反弹”，但 CIEN 的技术修复更完整，AAOI 的",
+      "sha256": "8370a377f149d334c0add4e08a3c83029bec6be5352988127614a1aed94a2a54"
+     },
+     {
+      "i": 2,
+      "symbols": [
+       "CIEN"
+      ],
+      "excerpt": "CIEN：短线已经明显转强。",
+      "sha256": "d46288bd0a5907ad02ee27d107a3015e9a5e5bc323a6cc0fe33c259b7db97d42"
+     },
+     {
+      "i": 8,
+      "symbols": [
+       "AAOI"
+      ],
+      "excerpt": "AAOI：反弹力度更强，但中期反转尚待确认。",
+      "sha256": "55e361b32bd1d3e727086010955d4dbe7d4fea977d892efb66983088d914dde8"
+     },
+     {
+      "i": 14,
+      "symbols": [
+       "CIEN"
+      ],
+      "excerpt": "总之，CIEN属于“突破后继续确认”，若能守住379–381美元，下一观察位是3",
+      "sha256": "d0215525234bf5a00edf91c56c2b5dd70f63392eb850d7ddfb496794d52c51f8"
+     }
+    ],
+    "mention_without_stance_total": 7
+   }
+  },
+  {
+   "url": "https://blog.wenxuecity.com/myblog/31983/202609/19716.html",
+   "author": "yifan99",
+   "outcome": "ok",
+   "author_matches": true,
+   "chars_full": 444,
+   "chars_stored": 386,
+   "claims_full": 0,
+   "checkable_full": 0,
+   "claims_excerpt": 0,
+   "checkable_excerpt": 0,
+   "symbols_full": [],
+   "claims": [],
+   "review": {
+    "claim_sentences": [],
+    "mention_without_stance": [
+     {
+      "i": 10,
+      "symbols": [
+       "GOOG",
+       "AMZN"
+      ],
+      "excerpt": "这与此前GOOG、AMZN的情况有些相似：价格还在整理，TCDS却开始提前反映方",
+      "sha256": "2b5f08ea2449d04b584c08c99682df49d93dfad8669ff539c7689f183a1187de"
+     }
+    ],
+    "mention_without_stance_total": 1
+   }
+  },
+  {
+   "url": "https://blog.wenxuecity.com/myblog/31983/202610/3830.html",
+   "author": "yifan99",
+   "outcome": "ok",
+   "author_matches": true,
+   "chars_full": 1116,
+   "chars_stored": 373,
+   "claims_full": 0,
+   "checkable_full": 0,
+   "claims_excerpt": 0,
+   "checkable_excerpt": 0,
+   "symbols_full": [],
+   "claims": [],
+   "review": {
+    "claim_sentences": [],
+    "mention_without_stance": [
+     {
+      "i": 5,
+      "symbols": [
+       "AMZN"
+      ],
+      "excerpt": "AMZN 今天收在",
+      "sha256": "764399a997ec8a8f2981143c7edab159ca0d1b569ad0aaf65ec4c4afdef7008d"
+     },
+     {
+      "i": 37,
+      "symbols": [
+       "AAOI",
+       "CIEN",
+       "AMAT"
+      ],
+      "excerpt": "这也是最近 AAOI、CIEN、AMAT 给我的一个启发。",
+      "sha256": "25b87f35a19c5a46827b8b03fe7b51eb59807b5180336d746a5505292afe064a"
+     }
+    ],
+    "mention_without_stance_total": 2
+   }
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/113153.html",
+   "author": "yifan99",
+   "outcome": "ok",
+   "author_matches": true,
+   "chars_full": 608,
+   "chars_stored": 393,
+   "claims_full": 0,
+   "checkable_full": 0,
+   "claims_excerpt": 0,
+   "checkable_excerpt": 0,
+   "symbols_full": [],
+   "claims": [],
+   "review": {
+    "claim_sentences": [],
+    "mention_without_stance": [
+     {
+      "i": 0,
+      "symbols": [
+       "AAOI",
+       "CIEN"
+      ],
+      "excerpt": "CIEN 的技术修复更完整，AAOI 的上涨弹性更大、波动也更高",
+      "sha256": "277af48dd7395fe77ad719d6f2b101b032203b9f928bd6227360280618ba0c60"
+     },
+     {
+      "i": 1,
+      "symbols": [
+       "AAOI",
+       "CIEN"
+      ],
+      "excerpt": "票都在经历“中期下跌后的短线反弹”，但 CIEN 的技术修复更完整，AAOI 的",
+      "sha256": "8370a377f149d334c0add4e08a3c83029bec6be5352988127614a1aed94a2a54"
+     },
+     {
+      "i": 2,
+      "symbols": [
+       "CIEN"
+      ],
+      "excerpt": "CIEN：短线已经明显转强。",
+      "sha256": "d46288bd0a5907ad02ee27d107a3015e9a5e5bc323a6cc0fe33c259b7db97d42"
+     },
+     {
+      "i": 8,
+      "symbols": [
+       "AAOI"
+      ],
+      "excerpt": "AAOI：反弹力度更强，但中期反转尚待确认。",
+      "sha256": "55e361b32bd1d3e727086010955d4dbe7d4fea977d892efb66983088d914dde8"
+     },
+     {
+      "i": 14,
+      "symbols": [
+       "CIEN"
+      ],
+      "excerpt": "总之，CIEN属于“突破后继续确认”，若能守住379–381美元，下一观察位是3",
+      "sha256": "d0215525234bf5a00edf91c56c2b5dd70f63392eb850d7ddfb496794d52c51f8"
+     }
+    ],
+    "mention_without_stance_total": 7
+   }
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/113441.html",
+   "author": "yifan99",
+   "outcome": "unavailable",
+   "http": 200
+  },
+  {
+   "url": "https://blog.wenxuecity.com/myblog/31983/202609/22705.html",
+   "author": "yifan99",
+   "outcome": "ok",
+   "author_matches": true,
+   "chars_full": 852,
+   "chars_stored": 386,
+   "claims_full": 2,
+   "checkable_full": 2,
+   "claims_excerpt": 2,
+   "checkable_excerpt": 2,
+   "symbols_full": [
+    "LITE"
+   ],
+   "claims": [
+    {
+     "symbol": "LITE",
+     "stance": "sell",
+     "stance_cues": [
+      "sell"
+     ],
+     "horizon": null,
+     "conditional": false,
+     "question": false,
+     "price": null,
+     "evidence_sha256": "cff0811e2dda9e43f5dc4ae791dababe66d3aa045b7afc37fc434f6cd829c263",
+     "evidence_chars": 25
+    },
+    {
+     "symbol": "LITE",
+     "stance": "sell",
+     "stance_cues": [
+      "sell"
+     ],
+     "horizon": null,
+     "conditional": false,
+     "question": false,
+     "price": null,
+     "evidence_sha256": "27fd4a186996f655718d6d6487ebbff4d9aee550c53cb7fc7217a91cfb556603",
+     "evidence_chars": 20
+    }
+   ],
+   "review": {
+    "claim_sentences": [
+     {
+      "i": 0,
+      "symbols": [
+       "LITE"
+      ],
+      "excerpt": "LITE 适合 Sell Put 的理由(结合图)",
+      "sha256": "cff0811e2dda9e43f5dc4ae791dababe66d3aa045b7afc37fc434f6cd829c263"
+     },
+     {
+      "i": 1,
+      "symbols": [
+       "LITE"
+      ],
+      "excerpt": "LITE 适合 Sell Put 的理由",
+      "sha256": "27fd4a186996f655718d6d6487ebbff4d9aee550c53cb7fc7217a91cfb556603"
+     }
+    ],
+    "mention_without_stance": [
+     {
+      "i": 4,
+      "symbols": [
+       "QQQ"
+      ],
+      "excerpt": "卖方收的权利金也会比 QQQ 这类低波动标的高很多。",
+      "sha256": "0d91fae596b505d5d3ae0c0ca1aca3497ee4c25832493edd8d1c6687dd90b434"
+     },
+     {
+      "i": 19,
+      "symbols": [
+       "LITE"
+      ],
+      "excerpt": "LITE 是光通信/AI 算力链上的核心标的,如果被行权,在 800 上下拿到股",
+      "sha256": "e8a06aca2894675cbdb0d4ee816cb3477e039fda136f6f632fb3bcfa56456805"
+     }
+    ],
+    "mention_without_stance_total": 2
+   }
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/113867.html",
+   "author": "yifan99",
+   "outcome": "ok",
+   "author_matches": true,
+   "chars_full": 1738,
+   "chars_stored": 396,
+   "claims_full": 1,
+   "checkable_full": 1,
+   "claims_excerpt": 0,
+   "checkable_excerpt": 0,
+   "symbols_full": [
+    "LITE"
+   ],
+   "claims": [
+    {
+     "symbol": "LITE",
+     "stance": "sell",
+     "stance_cues": [
+      "sell"
+     ],
+     "horizon": null,
+     "conditional": false,
+     "question": false,
+     "price": null,
+     "evidence_sha256": "cff0811e2dda9e43f5dc4ae791dababe66d3aa045b7afc37fc434f6cd829c263",
+     "evidence_chars": 25
+    }
+   ],
+   "review": {
+    "claim_sentences": [
+     {
+      "i": 54,
+      "symbols": [
+       "LITE"
+      ],
+      "excerpt": "LITE 适合 Sell Put 的理由(结合图)",
+      "sha256": "cff0811e2dda9e43f5dc4ae791dababe66d3aa045b7afc37fc434f6cd829c263"
+     }
+    ],
+    "mention_without_stance": [
+     {
+      "i": 0,
+      "symbols": [
+       "AVGO"
+      ],
+      "excerpt": "分享 10月5日的数据 AVGO：底部修复已经开始，但趋势确认还差一步",
+      "sha256": "72720028f0ae65f66edba4b6ccb210fb7a738dc975d3aa970e3394fb649f8e80"
+     },
+     {
+      "i": 1,
+      "symbols": [
+       "AVGO"
+      ],
+      "excerpt": "AVGO：底部修复已经开始，但趋势确认还差一步",
+      "sha256": "8c5bb428c54dc6f8c7faa077c99812a14b9b09bba56e5722fdb62088d6ff5f2a"
+     },
+     {
+      "i": 3,
+      "symbols": [
+       "AAOI",
+       "CIEN",
+       "AMAT"
+      ],
+      "excerpt": "最近看 AAOI、CIEN 和 AMAT，我越来越觉得，真正值得关注的并不是某一",
+      "sha256": "c8790a105999621b47b81299e1545ca10fb5ac74ed02dcb766069dcc55d8a25f"
+     },
+     {
+      "i": 4,
+      "symbols": [
+       "CIEN",
+       "AVGO"
+      ],
+      "excerpt": "AVGO 已经出现明显的底部修复信号，但与已经突破 MA50 的 CIEN 相比",
+      "sha256": "abfa9dddaf0c1413fbcb1efff6176d9e2a0283fb333500c69243457662a45c64"
+     },
+     {
+      "i": 5,
+      "symbols": [
+       "AVGO"
+      ],
+      "excerpt": "图1｜AVGO：价格、MA21/MA50、Supertrend、TCDS-D/M",
+      "sha256": "230a286eaf29a50fd3ac8267291f5fe0777ab0ee1c9d0181a71575a2fbd94053"
+     }
+    ],
+    "mention_without_stance_total": 15
+   }
+  },
+  {
+   "url": "https://blog.wenxuecity.com/myblog/31983/202610/5067.html",
+   "author": "yifan99",
+   "outcome": "ok",
+   "author_matches": true,
+   "chars_full": 2325,
+   "chars_stored": 387,
+   "claims_full": 0,
+   "checkable_full": 0,
+   "claims_excerpt": 0,
+   "checkable_excerpt": 0,
+   "symbols_full": [],
+   "claims": [],
+   "review": {
+    "claim_sentences": [],
+    "mention_without_stance": [],
+    "mention_without_stance_total": 0
+   }
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/94243.html",
+   "author": "bogbog",
+   "outcome": "ok",
+   "author_matches": true,
+   "chars_full": 393,
+   "chars_stored": 365,
+   "claims_full": 0,
+   "checkable_full": 0,
+   "claims_excerpt": 0,
+   "checkable_excerpt": 0,
+   "symbols_full": [],
+   "claims": [],
+   "review": {
+    "claim_sentences": [],
+    "mention_without_stance": [
+     {
+      "i": 1,
+      "symbols": [
+       "CRWV",
+       "NBIS"
+      ],
+      "excerpt": "ud competitor means NBIS and CRWV remain",
+      "sha256": "efa42d534f9665fdad9b3aad12114b92983d1c37456db34dfd20342eec64f28d"
+     }
+    ],
+    "mention_without_stance_total": 1
+   }
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/97248.html",
+   "author": "bogbog",
+   "outcome": "ok",
+   "author_matches": true,
+   "chars_full": 744,
+   "chars_stored": 393,
+   "claims_full": 0,
+   "checkable_full": 0,
+   "claims_excerpt": 0,
+   "checkable_excerpt": 0,
+   "symbols_full": [],
+   "claims": [],
+   "review": {
+    "claim_sentences": [],
+    "mention_without_stance": [],
+    "mention_without_stance_total": 0
+   }
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/107559.html",
+   "author": "bogbog",
+   "outcome": "ok",
+   "author_matches": true,
+   "chars_full": 454,
+   "chars_stored": 405,
+   "claims_full": 0,
+   "checkable_full": 0,
+   "claims_excerpt": 0,
+   "checkable_excerpt": 0,
+   "symbols_full": [],
+   "claims": [],
+   "review": {
+    "claim_sentences": [],
+    "mention_without_stance": [
+     {
+      "i": 0,
+      "symbols": [
+       "MRVL"
+      ],
+      "excerpt": "Marvell's $18B FY2028 revenue target cha",
+      "sha256": "b3c471053276295f61d1f164063339c586dc1b62614ff0b470306a6449a4ff73"
+     }
+    ],
+    "mention_without_stance_total": 1
+   }
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/113873.html",
+   "author": "三心三意",
+   "outcome": "ok",
+   "author_matches": true,
+   "chars_full": 588,
+   "chars_stored": 381,
+   "claims_full": 0,
+   "checkable_full": 0,
+   "claims_excerpt": 0,
+   "checkable_excerpt": 0,
+   "symbols_full": [],
+   "claims": [],
+   "review": {
+    "claim_sentences": [],
+    "mention_without_stance": [
+     {
+      "i": 8,
+      "symbols": [
+       "MRVL"
+      ],
+      "excerpt": "老黄振臂一呼，说 MRVL 将来可能成为一家市值 $1T 的公司，MRVL 随即",
+      "sha256": "e48d31ddda4583fb5f76122aed2973da1d63594c940134b602f71d223654f2f9"
+     },
+     {
+      "i": 10,
+      "symbols": [
+       "MRVL"
+      ],
+      "excerpt": "接下来 MRVL 在 $200–230 之间横盘震荡。",
+      "sha256": "29584848e361afc3c0e8fc0540c8ac0fbfbe871a8093c599daba81c1e8932ed7"
+     }
+    ],
+    "mention_without_stance_total": 2
+   }
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/113990.html",
+   "author": "三心三意",
+   "outcome": "ok",
+   "author_matches": true,
+   "chars_full": 402,
+   "chars_stored": 367,
+   "claims_full": 0,
+   "checkable_full": 0,
+   "claims_excerpt": 0,
+   "checkable_excerpt": 0,
+   "symbols_full": [],
+   "claims": [],
+   "review": {
+    "claim_sentences": [],
+    "mention_without_stance": [
+     {
+      "i": 2,
+      "symbols": [
+       "NVDA",
+       "MRVL",
+       "AVGO"
+      ],
+      "excerpt": "个月里就发生了天翻地覆的变化，所以当听到英伟达上个财报说明年revenue要增长",
+      "sha256": "50a8790e33539c2813481ec72f468f197fbeb74faa04399e17317d90f824a156"
+     }
+    ],
+    "mention_without_stance_total": 1
+   }
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/113317.html",
+   "author": "我是一只井底蛙",
+   "outcome": "ok",
+   "author_matches": true,
+   "chars_full": 416,
+   "chars_stored": 376,
+   "claims_full": 0,
+   "checkable_full": 0,
+   "claims_excerpt": 0,
+   "checkable_excerpt": 0,
+   "symbols_full": [],
+   "claims": [],
+   "review": {
+    "claim_sentences": [],
+    "mention_without_stance": [],
+    "mention_without_stance_total": 0
+   }
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/tzlc/2138962.html",
+   "author": "jenning",
+   "outcome": "ok",
+   "author_matches": true,
+   "chars_full": 3380,
+   "chars_stored": 372,
+   "claims_full": 0,
+   "checkable_full": 0,
+   "claims_excerpt": 0,
+   "checkable_excerpt": 0,
+   "symbols_full": [],
+   "claims": [],
+   "review": {
+    "claim_sentences": [],
+    "mention_without_stance": [
+     {
+      "i": 35,
+      "symbols": [
+       "SPY"
+      ],
+      "excerpt": "作用，所以这种策略很难说是成功，尽管长期来说，它的回报率可能并不比长持SPY差。",
+      "sha256": "47d713b29949f4550a87be67bb27da7d2d8463ddf4a6bc13128a92055462c77f"
+     },
+     {
+      "i": 38,
+      "symbols": [
+       "TQQQ"
+      ],
+      "excerpt": "有人提出1/3的UPRO（或TQQQ），剩下的2/3投入债市，这种策略本身没什么",
+      "sha256": "d72db848d37b27c49b2f14c3b9a55f5ca8a52bf17ea8c2f2627d1bb07421d9a8"
+     },
+     {
+      "i": 53,
+      "symbols": [
+       "QQQ"
+      ],
+      "excerpt": "如果有30年的投资时间，用这种方法30年后的回报率应该至少是QQQ的10倍以上。",
+      "sha256": "32ca3abed5ee8ff0d52c767dde8aee1d72a1b3325c711d744d200a0a7de3aeeb"
+     },
+     {
+      "i": 55,
+      "symbols": [
+       "QQQ"
+      ],
+      "excerpt": "时间长度， 比如投资在十年以上，无论是从投资回报，还是风险，都不必长持QQQ差。",
+      "sha256": "25c4521c6f4913d4e085ebbd9fd96113131b040de7e3b5c4a80866af7b7bc8db"
+     }
+    ],
+    "mention_without_stance_total": 4
+   }
+  }
+ ],
+ "policy": "runtime-only full text; report stores structured claims + sentence sha256, never source wording; review mode adds ≤40-char excerpts + sentence index/sha256 (decision C: excerpts and locators only)"
+}
