@@ -48,7 +48,10 @@ def classify_sentence(s, symbols):
     hold, rebal = bool(re.search(HOLD, low)), bool(re.search(REBAL, low))
     sell, buy = bool(re.search(SELL, low)), bool(re.search(BUY, low))
     price = re.search(r"(?:设|在|到|价格?|@)\s*\$?([0-9]{2,4}\.[0-9]{1,2}|[0-9]{2,4})\s*(?:美元|元)?\s*(?:止盈|卖|挂|买|成交)?", s)
-    size = re.search(r"(?:卖出|卖掉|减仓|买入|加仓|止盈)[^0-9%]{0,12}?([0-9]{1,3}(?:\.[0-9]+)?)\s*%", s)
+    size = re.search(r"(?:卖出|卖掉|减仓|买入|加仓|止盈)[^0-9%]{0,12}?([0-9]{1,3}(?:\.[0-9]+)?)\s*%", s) or \
+        re.search(r"占[^0-9%]{0,10}?总仓位的?\s*([0-9]{1,3}(?:\.[0-9]+)?)\s*%", s)
+    # "如果下周没有触发止盈点，那就继续保持90%仓位" is a conditional HOLD, not a sell plan.
+    hold_if_not_triggered = hold and bool(re.search(r"没有触发|未触发|不触发|没触发", s))
     out = []
     allocation = {sym: _pct_for(sym, s) for sym in symbols if _pct_for(sym, s) is not None}
     digest = hashlib.sha256(s.encode("utf-8")).hexdigest()
@@ -57,6 +60,8 @@ def classify_sentence(s, symbols):
             t, conf = "UNCLEAR", "low"
         elif rebal and len(hits) > 1:
             t, conf = ("REBALANCE", "high" if executed else "medium")
+        elif hold_if_not_triggered:
+            t, conf = "HOLD", "medium"
         elif executed and (sell or buy):
             t, conf = ("SELL_EXECUTED" if sell else "BUY_EXECUTED"), "high"
         elif planned and (sell or buy):

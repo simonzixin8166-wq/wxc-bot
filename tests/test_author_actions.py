@@ -31,4 +31,9 @@ assert all(x["action_type"] in ("COMMENTARY", "HOLD") for x in a), a
 # untracked author → nothing (no fuzzy matching of people quoting 麻你)
 assert aa.extract_author_actions("bogbog", "麻你说继续持有VGT", "") == []
 assert all(len(x["evidence_quote"]) <= 40 for x in aa.extract_author_actions("麻你", "", "继续持有87% VGT、13% SGOV，这是一个比较长的句子用于测试截断长度是否正确并且不超过四十个字符的限制"))
+# real 麻你 sentences (tzlc 2357083 / 2358508)
+a = aa.extract_author_actions("麻你", "", "如果下个星期没有触发止盈点，那就继续保持90%仓位在VGT")
+assert [x["action_type"] for x in a] == ["HOLD"] and a[0]["allocation_pct"] == {"VGT": 90.0}, a
+a = aa.extract_author_actions("麻你", "", "今天卖出了部分VGT在117.57，大约占VGT总仓位的4%")
+assert a[0]["action_type"] == "SELL_EXECUTED" and a[0]["price"] == 117.57 and a[0]["size_pct"] == 4.0, a
 print("PASS author_actions")
