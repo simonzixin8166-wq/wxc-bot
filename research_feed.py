@@ -484,6 +484,16 @@ def add_forum_posts(author: str, posts: list[dict], provenance: dict | None = No
         row.update(provenance or {})
     return append_records(rows)
 
+def _published_days_ago(row) -> int:
+    try:
+        p = datetime.fromisoformat(str(row.get("published_at") or "")[:19].replace("Z", ""))
+    except Exception:
+        try:
+            p = datetime.fromisoformat(str(row.get("published_at") or "")[:10])
+        except Exception:
+            return 0
+    return (datetime.utcnow() - p).days
+
 def capture_blog_profile(name: str, days: int = 2, return_report: bool = False):
     profile = blog.resolve_profile(name)
     if not profile:
@@ -521,6 +531,12 @@ def capture_blog_profile(name: str, days: int = 2, return_report: bool = False):
                     row["capture_mode"]="incomplete_blog_scan_backfill"
                     row["forward_evidence_eligible"]=False
                     row["source_notice"]="博客归档扫描存在缺失月份；正文保留用于历史学习，但本轮禁止计入 Genuine Forward。"
+                elif _published_days_ago(row) > 3:
+                    # Newly discovered but published days ago (e.g. an author added mid-history):
+                    # never a point-in-time live observation.
+                    row["intake_class_hint"]="backfill"
+                    row["capture_mode"]="late_discovery_backfill"
+                    row["forward_evidence_eligible"]=False
                 else:
                     row["intake_class_hint"]="live_candidate"
                     row["capture_mode"]="scheduled_blog_scan_complete"

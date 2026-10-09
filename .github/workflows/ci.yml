@@ -30,6 +30,7 @@ jobs:
           PYTHONPATH=. python tests/test_author_actions.py
           PYTHONPATH=. python tests/test_forum_board_scan.py
           PYTHONPATH=. python tests/test_feed_safe_commit.py
+          PYTHONPATH=. python tests/test_correct_provenance.py
           PYTHONPATH=. python tests/test_source_intake_completeness.py
           PYTHONPATH=. python tests/test_forum_entry_capture.py
           PYTHONPATH=. python tests/test_forum_anchor_continuity.py

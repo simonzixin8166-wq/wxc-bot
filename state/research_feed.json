@@ -38404,8 +38404,23 @@
       "attribution_fallback": null,
       "captured_at": "2026-10-09T07:06:11Z",
       "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
-      "intake_class_hint": "live_candidate",
-      "capture_mode": "scheduled_blog_scan_complete"
+      "intake_class_hint": "backfill",
+      "capture_mode": "late_discovery_backfill",
+      "forward_evidence_eligible": false,
+      "revision": {
+        "fields": [
+          "intake_class_hint",
+          "capture_mode"
+        ],
+        "prior": {
+          "intake_class_hint": "live_candidate",
+          "capture_mode": "scheduled_blog_scan_complete",
+          "forward_evidence_eligible": null
+        },
+        "reason": "blog posts published weeks before first capture were admitted as live_candidate by the daily blog scan; downgraded per quant-dashboard#133 (never count backfill as Genuine Forward)",
+        "at": "2026-10-09T07:09:41Z",
+        "direction": "downgrade_only"
+      }
     },
     {
       "id": "842ce1ff1c136e23d949",
@@ -38464,8 +38479,23 @@
       "attribution_fallback": null,
       "captured_at": "2026-10-09T07:06:11Z",
       "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
-      "intake_class_hint": "live_candidate",
-      "capture_mode": "scheduled_blog_scan_complete"
+      "intake_class_hint": "backfill",
+      "capture_mode": "late_discovery_backfill",
+      "forward_evidence_eligible": false,
+      "revision": {
+        "fields": [
+          "intake_class_hint",
+          "capture_mode"
+        ],
+        "prior": {
+          "intake_class_hint": "live_candidate",
+          "capture_mode": "scheduled_blog_scan_complete",
+          "forward_evidence_eligible": null
+        },
+        "reason": "blog posts published weeks before first capture were admitted as live_candidate by the daily blog scan; downgraded per quant-dashboard#133 (never count backfill as Genuine Forward)",
+        "at": "2026-10-09T07:09:41Z",
+        "direction": "downgrade_only"
+      }
     },
     {
       "id": "c2f65918632b81548c4f",
@@ -38524,8 +38554,23 @@
       "attribution_fallback": null,
       "captured_at": "2026-10-09T07:06:11Z",
       "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
-      "intake_class_hint": "live_candidate",
-      "capture_mode": "scheduled_blog_scan_complete"
+      "intake_class_hint": "backfill",
+      "capture_mode": "late_discovery_backfill",
+      "forward_evidence_eligible": false,
+      "revision": {
+        "fields": [
+          "intake_class_hint",
+          "capture_mode"
+        ],
+        "prior": {
+          "intake_class_hint": "live_candidate",
+          "capture_mode": "scheduled_blog_scan_complete",
+          "forward_evidence_eligible": null
+        },
+        "reason": "blog posts published weeks before first capture were admitted as live_candidate by the daily blog scan; downgraded per quant-dashboard#133 (never count backfill as Genuine Forward)",
+        "at": "2026-10-09T07:09:41Z",
+        "direction": "downgrade_only"
+      }
     },
     {
       "id": "899a8355126ebba90a81",
@@ -38584,8 +38629,23 @@
       "attribution_fallback": null,
       "captured_at": "2026-10-09T07:06:11Z",
       "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
-      "intake_class_hint": "live_candidate",
-      "capture_mode": "scheduled_blog_scan_complete"
+      "intake_class_hint": "backfill",
+      "capture_mode": "late_discovery_backfill",
+      "forward_evidence_eligible": false,
+      "revision": {
+        "fields": [
+          "intake_class_hint",
+          "capture_mode"
+        ],
+        "prior": {
+          "intake_class_hint": "live_candidate",
+          "capture_mode": "scheduled_blog_scan_complete",
+          "forward_evidence_eligible": null
+        },
+        "reason": "blog posts published weeks before first capture were admitted as live_candidate by the daily blog scan; downgraded per quant-dashboard#133 (never count backfill as Genuine Forward)",
+        "at": "2026-10-09T07:09:41Z",
+        "direction": "downgrade_only"
+      }
     },
     {
       "id": "a136e0ed5c36779a592a",
@@ -38680,8 +38740,23 @@
       "attribution_fallback": null,
       "captured_at": "2026-10-09T07:06:11Z",
       "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
-      "intake_class_hint": "live_candidate",
-      "capture_mode": "scheduled_blog_scan_complete"
+      "intake_class_hint": "backfill",
+      "capture_mode": "late_discovery_backfill",
+      "forward_evidence_eligible": false,
+      "revision": {
+        "fields": [
+          "intake_class_hint",
+          "capture_mode"
+        ],
+        "prior": {
+          "intake_class_hint": "live_candidate",
+          "capture_mode": "scheduled_blog_scan_complete",
+          "forward_evidence_eligible": null
+        },
+        "reason": "blog posts published weeks before first capture were admitted as live_candidate by the daily blog scan; downgraded per quant-dashboard#133 (never count backfill as Genuine Forward)",
+        "at": "2026-10-09T07:09:41Z",
+        "direction": "downgrade_only"
+      }
     },
     {
       "id": "f432bc291dbd26df2a62",
@@ -38740,8 +38815,23 @@
       "attribution_fallback": null,
       "captured_at": "2026-10-09T07:06:11Z",
       "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
-      "intake_class_hint": "live_candidate",
-      "capture_mode": "scheduled_blog_scan_complete"
+      "intake_class_hint": "backfill",
+      "capture_mode": "late_discovery_backfill",
+      "forward_evidence_eligible": false,
+      "revision": {
+        "fields": [
+          "intake_class_hint",
+          "capture_mode"
+        ],
+        "prior": {
+          "intake_class_hint": "live_candidate",
+          "capture_mode": "scheduled_blog_scan_complete",
+          "forward_evidence_eligible": null
+        },
+        "reason": "blog posts published weeks before first capture were admitted as live_candidate by the daily blog scan; downgraded per quant-dashboard#133 (never count backfill as Genuine Forward)",
+        "at": "2026-10-09T07:09:41Z",
+        "direction": "downgrade_only"
+      }
     },
     {
       "id": "6797785c06a17093914e",
@@ -38800,8 +38890,23 @@
       "attribution_fallback": null,
       "captured_at": "2026-10-09T07:06:11Z",
       "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
-      "intake_class_hint": "live_candidate",
-      "capture_mode": "scheduled_blog_scan_complete"
+      "intake_class_hint": "backfill",
+      "capture_mode": "late_discovery_backfill",
+      "forward_evidence_eligible": false,
+      "revision": {
+        "fields": [
+          "intake_class_hint",
+          "capture_mode"
+        ],
+        "prior": {
+          "intake_class_hint": "live_candidate",
+          "capture_mode": "scheduled_blog_scan_complete",
+          "forward_evidence_eligible": null
+        },
+        "reason": "blog posts published weeks before first capture were admitted as live_candidate by the daily blog scan; downgraded per quant-dashboard#133 (never count backfill as Genuine Forward)",
+        "at": "2026-10-09T07:09:41Z",
+        "direction": "downgrade_only"
+      }
     },
     {
       "id": "8fe0f2b06c2505c4855e",
@@ -38881,8 +38986,23 @@
       "attribution_fallback": null,
       "captured_at": "2026-10-09T07:06:11Z",
       "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
-      "intake_class_hint": "live_candidate",
-      "capture_mode": "scheduled_blog_scan_complete"
+      "intake_class_hint": "backfill",
+      "capture_mode": "late_discovery_backfill",
+      "forward_evidence_eligible": false,
+      "revision": {
+        "fields": [
+          "intake_class_hint",
+          "capture_mode"
+        ],
+        "prior": {
+          "intake_class_hint": "live_candidate",
+          "capture_mode": "scheduled_blog_scan_complete",
+          "forward_evidence_eligible": null
+        },
+        "reason": "blog posts published weeks before first capture were admitted as live_candidate by the daily blog scan; downgraded per quant-dashboard#133 (never count backfill as Genuine Forward)",
+        "at": "2026-10-09T07:09:41Z",
+        "direction": "downgrade_only"
+      }
     },
     {
       "id": "0a4fe66d7c130faba5f3",
@@ -38947,8 +39067,23 @@
       "attribution_fallback": null,
       "captured_at": "2026-10-09T07:06:11Z",
       "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
-      "intake_class_hint": "live_candidate",
-      "capture_mode": "scheduled_blog_scan_complete"
+      "intake_class_hint": "backfill",
+      "capture_mode": "late_discovery_backfill",
+      "forward_evidence_eligible": false,
+      "revision": {
+        "fields": [
+          "intake_class_hint",
+          "capture_mode"
+        ],
+        "prior": {
+          "intake_class_hint": "live_candidate",
+          "capture_mode": "scheduled_blog_scan_complete",
+          "forward_evidence_eligible": null
+        },
+        "reason": "blog posts published weeks before first capture were admitted as live_candidate by the daily blog scan; downgraded per quant-dashboard#133 (never count backfill as Genuine Forward)",
+        "at": "2026-10-09T07:09:41Z",
+        "direction": "downgrade_only"
+      }
     },
     {
       "id": "4e550ddd2c534477b84b",
@@ -39013,8 +39148,23 @@
       "attribution_fallback": null,
       "captured_at": "2026-10-09T07:06:11Z",
       "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
-      "intake_class_hint": "live_candidate",
-      "capture_mode": "scheduled_blog_scan_complete"
+      "intake_class_hint": "backfill",
+      "capture_mode": "late_discovery_backfill",
+      "forward_evidence_eligible": false,
+      "revision": {
+        "fields": [
+          "intake_class_hint",
+          "capture_mode"
+        ],
+        "prior": {
+          "intake_class_hint": "live_candidate",
+          "capture_mode": "scheduled_blog_scan_complete",
+          "forward_evidence_eligible": null
+        },
+        "reason": "blog posts published weeks before first capture were admitted as live_candidate by the daily blog scan; downgraded per quant-dashboard#133 (never count backfill as Genuine Forward)",
+        "at": "2026-10-09T07:09:41Z",
+        "direction": "downgrade_only"
+      }
     },
     {
       "id": "f93bd40f721e30255565",
@@ -39043,8 +39193,23 @@
       "attribution_fallback": null,
       "captured_at": "2026-10-09T07:06:11Z",
       "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
-      "intake_class_hint": "live_candidate",
-      "capture_mode": "scheduled_blog_scan_complete"
+      "intake_class_hint": "backfill",
+      "capture_mode": "late_discovery_backfill",
+      "forward_evidence_eligible": false,
+      "revision": {
+        "fields": [
+          "intake_class_hint",
+          "capture_mode"
+        ],
+        "prior": {
+          "intake_class_hint": "live_candidate",
+          "capture_mode": "scheduled_blog_scan_complete",
+          "forward_evidence_eligible": null
+        },
+        "reason": "blog posts published weeks before first capture were admitted as live_candidate by the daily blog scan; downgraded per quant-dashboard#133 (never count backfill as Genuine Forward)",
+        "at": "2026-10-09T07:09:41Z",
+        "direction": "downgrade_only"
+      }
     },
     {
       "id": "f1236a29b26569474b9b",
@@ -39088,11 +39253,26 @@
       "attribution_fallback": null,
       "captured_at": "2026-10-09T07:06:11Z",
       "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
-      "intake_class_hint": "live_candidate",
-      "capture_mode": "scheduled_blog_scan_complete"
+      "intake_class_hint": "backfill",
+      "capture_mode": "late_discovery_backfill",
+      "forward_evidence_eligible": false,
+      "revision": {
+        "fields": [
+          "intake_class_hint",
+          "capture_mode"
+        ],
+        "prior": {
+          "intake_class_hint": "live_candidate",
+          "capture_mode": "scheduled_blog_scan_complete",
+          "forward_evidence_eligible": null
+        },
+        "reason": "blog posts published weeks before first capture were admitted as live_candidate by the daily blog scan; downgraded per quant-dashboard#133 (never count backfill as Genuine Forward)",
+        "at": "2026-10-09T07:09:41Z",
+        "direction": "downgrade_only"
+      }
     }
   ],
-  "updated_at": "2026-10-09T07:06:12Z",
+  "updated_at": "2026-10-09T07:09:41Z",
   "retention_policy": "append_only_no_record_count_cap",
   "historical_recovery": {
     "completed_at": "2026-10-07T13:43:06.018028+00:00",
