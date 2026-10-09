@@ -85,6 +85,7 @@ def collect_forum():
     pending_rows=[]
     seen_targets={}
 
+    bootstrap_authors=set()
     for author in authors:
         entries=agent.entries_for(author,htmls)
         seen_entries_path=FORUM_SCAN_STATE.parent/f"seen_forum_entries_{author}.json"
@@ -95,6 +96,10 @@ def collect_forum():
         # One-time migration: legacy main posts were tracked by parent post id.
         # Replies remain intentionally unseeded because old post-id tracking
         # collapsed multiple reply entries.
+        if not entry_state_exists and not legacy_seen:
+            # Newly watched author: whatever is already visible was published before we started
+            # watching, so the first scan is bootstrap history, never Genuine Forward.
+            bootstrap_authors.add(author)
         if not entry_state_exists:
             for key,entry in entries.items():
                 if entry.get("entry_kind")=="post" and str(entry.get("parent_post_id") or "") in legacy_seen:
@@ -136,8 +141,11 @@ def collect_forum():
         row=rf.normalize("forum",author,p)
         row_entry.append((author,str(p.get("source_entry_key") or ""),row.get("id")))
         row["capture_mode"]="scheduled_forum_anchor_scan"
-        row["intake_class_hint"]="live_candidate" if complete else "backfill"
-        if not complete:
+        row["intake_class_hint"]="live_candidate" if complete and author not in bootstrap_authors else "backfill"
+        if author in bootstrap_authors:
+            row["forward_evidence_eligible"]=False
+            row["source_notice"]="新关注作者的首轮采集：发布早于开始关注，作为历史学习，不计入 Genuine Forward。"
+        elif not complete:
             row["forward_evidence_eligible"]=False
             row["source_notice"]="论坛本轮未形成完整采集闭环；记录保留用于历史学习，但不计入 Genuine Forward。"
         rows.append(row)

@@ -1,0 +1,71 @@
+name: backfill-forum-author
+
+# Manual: recent-history backfill for one watched forum author (never Genuine Forward).
+# The author must already be in state/watch.json (exact username match in forum listings).
+on:
+  workflow_dispatch:
+    inputs:
+      author:
+        description: "Watched forum author (exact username)"
+        required: true
+      days:
+        description: "Days back (max 92)"
+        required: false
+        default: "92"
+      max_pages:
+        description: "Max listing pages to scan"
+        required: false
+        default: "400"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: wxc-research-writer
+  cancel-in-progress: false
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Validate
+        env:
+          AUTHOR: ${{ inputs.author }}
+          DAYS: ${{ inputs.days }}
+        run: |
+          python -m py_compile backfill_forum_author.py research_feed.py author_actions.py claim_extractor.py
+          PYTHONPATH=. python tests/test_research_feed.py
+          PYTHONPATH=. python tests/test_author_actions.py
+          python - <<'PY'
+          import json, os, sys
+          a = os.environ["AUTHOR"]; d = int(os.environ["DAYS"])
+          if a not in json.load(open("state/watch.json", encoding="utf-8")): sys.exit(f"{a} is not a watched author")
+          if not 1 <= d <= 92: sys.exit("days must be 1..92")
+          PY
+      - name: Backfill
+        env:
+          DATA_DIR: state
+          PYTHONUNBUFFERED: "1"
+          AUTHOR: ${{ inputs.author }}
+          DAYS: ${{ inputs.days }}
+          PAGES: ${{ inputs.max_pages }}
+        run: |
+          out=$(python backfill_forum_author.py --author "$AUTHOR" --days "$DAYS" --max-pages "$PAGES" | tail -2)
+          echo "$out"
+          echo "::notice title=Forum author backfill::$(echo "$out" | head -1)"
+      - name: Save source feed and seen state
+        env:
+          AUTHOR: ${{ inputs.author }}
+        run: |
+          git config user.name "wxc-bot"
+          git config user.email "wxc-bot@users.noreply.github.com"
+          git add state/research_feed.json "state/seen_${AUTHOR}.json"
+          if [ -f state/research_feed_manifest.json ]; then git add state/research_feed_manifest.json; fi
+          git diff --cached --quiet || (git commit -m "backfill forum author ${AUTHOR} (backfill only)" && git pull --rebase origin main && python verify_research_feed.py && git push origin HEAD:main)

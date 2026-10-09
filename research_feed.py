@@ -388,6 +388,13 @@ def _claims(text: str) -> list:
     except Exception:
         return []
 
+def _author_actions(author: str, title: str, text: str) -> list:
+    try:
+        import author_actions as _aa
+        return _aa.extract_author_actions(author, title, text)
+    except Exception:
+        return []
+
 def normalize(source_kind: str, author: str, post: dict) -> dict:
     title = str(post.get("title") or "").strip()
     text = str(post.get("text") or "").strip()
@@ -415,6 +422,8 @@ def normalize(source_kind: str, author: str, post: dict) -> dict:
         "method_signals": method_signals,
         # Checkable claims from the full runtime text (structured fields + sentence hash only).
         "claims": _claims(joined),
+        # Tracked authors' own position statements (author research signal, never a MyAlpha action).
+        "author_actions": _author_actions(author, title, text),
         "forum_entry_kind": post.get("forum_entry_kind"),
         "source_entry_key": post.get("source_entry_key"),
         "parent_post_id": post.get("parent_post_id"),
