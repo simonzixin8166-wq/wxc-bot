@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-10-09T00:23:54Z",
+  "generated_at": "2026-10-09T09:01:40Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -19,15 +19,15 @@
           "reached_end": false
         }
       ],
-      "previous_anchor_video_id": "o3v28EEIdb4",
+      "previous_anchor_video_id": "-e3gyj_NP7c",
       "anchor_found": true,
       "reached_end": false,
       "discovery_complete": true,
       "latest": {
-        "video_id": "o3v28EEIdb4",
-        "title": "美股 大盘伸个懒腰！ SPCX又又又发债！AAPL扩大智能家居版图！CAT怎么了？META正常回撤！",
-        "url": "https://www.youtube.com/watch?v=o3v28EEIdb4",
-        "published_at": "2026-10-08",
+        "video_id": "-e3gyj_NP7c",
+        "title": "美股 科技股、半导体失血！消费股领涨，XLP重要位置！SMH、SOXX完成修复！SPY、QQQ、XLK长线点位更新！",
+        "url": "https://www.youtube.com/watch?v=-e3gyj_NP7c",
+        "published_at": "2026-10-09",
         "flat_metadata_keys": [
           "channel_id",
           "duration",
@@ -121,61 +121,39 @@
   "content_work_budget": 6,
   "content_backlog_after_run": 114,
   "pending_total": 114,
-  "historical_demoted_from_pending": 1,
-  "admitted_from_pending": 0,
-  "nonforward_timestamp_unknown_admitted": 0,
-  "feed_records_added": 0,
+  "historical_demoted_from_pending": 0,
+  "admitted_from_pending": 1,
+  "nonforward_timestamp_unknown_admitted": 1,
+  "feed_records_added": 1,
   "historical_backlog_total": 50,
   "discovery_complete": true,
   "new_video_diagnostics": [
     {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "Y7P-VOo0KTs",
-      "title": "（会员第298期）四大科技AI货币化进度（2026年Q2后），MSFT、GOOG、AMZN、META！前车之鉴，能否提前识别泡沫？",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "Andrei Jikh",
-      "video_id": "YBhwK-VWsxY",
-      "title": "Japan's Money Is Collapsing",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "Z9T89cdzuyo",
-      "title": "美股 NVDA、MRVL、INTU、CRWD、CRM财报波动！对冲基金上周大抛售！大逆转，Altman承认AI时间表看法错误！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "Andrei Jikh",
-      "video_id": "ZEi5tVIXWyc",
-      "title": "South Korea’s AI Bubble Just Popped",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
       "author": "老李玩钱",
-      "video_id": "ZGYWudfZMM4",
-      "title": "美股重回高位，要卖股票了吗？到底什么时候该卖出股票",
+      "video_id": "alcGiFrl6k0",
+      "title": "个股点评及买入建议：PLTR，SOFI，GOOG，MSFT，TSLA",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "bdzWer7gNII",
+      "title": "美股 OpenAI给半导体打鸡血！SOXX底部已成？ORCL、AMD、NVDA！TSLA遭行政狙击！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "cwQxqL-vC94",
+      "title": "美股 WMT糟糕前瞻大跌还债！ISRG无风起浪！NOW、SPCX！美国债务累积95天走完200年！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -185,14 +163,40 @@
     },
     {
       "author": "Andrei Jikh",
-      "video_id": "Z_xvkbGWauU",
-      "title": "China Just Shut Down Gold Trading",
+      "video_id": "dFjvcY9Tth0",
+      "title": "China Is Preparing For $38,000 Gold",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
       "admission": "pending_content",
       "was_pending": true,
       "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "dTQmi_hrOpU",
+      "title": "美股 ORCL缺乏惊喜，ADBE底气不足！SOXX遇阻、IGV破位！CTA触发标普承压，VIX苏醒！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "Andrei Jikh",
+      "video_id": "dg9Ezg_RS6E",
+      "title": "They’re Buying Gold And Selling You AI",
+      "published_at": "",
+      "transcript_status": "available",
+      "content_quality": "Q4",
+      "content_provider": "pickscribe.com",
+      "rule_candidate_allowed": false,
+      "content_chars": 733,
+      "symbols": [],
+      "operations": 0,
+      "admission": "research_feed_nonforward_timestamp_unknown",
+      "was_pending": true
     }
   ],
   "intake_health": {

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-09T00:23:54Z",
+  "updated_at": "2026-10-09T09:01:40Z",
   "records": [
     {
       "video_id": "lWd7zsWV-4I",
@@ -1003,11 +1003,11 @@
       "url": "https://www.youtube.com/watch?v=Zl1B2xBExw8",
       "published_at": "",
       "first_discovered_at": "2026-10-08T04:06:13Z",
-      "last_checked_at": "2026-10-08T04:06:13Z",
-      "retry_count": 1,
+      "last_checked_at": "2026-10-09T08:59:53Z",
+      "retry_count": 2,
       "last_quality": "Q5",
-      "last_provider": "not_yet_probed",
-      "last_status": "discovered_pending",
+      "last_provider": "metadata_only",
+      "last_status": "metadata_only",
       "last_error": null
     },
     {
@@ -1019,11 +1019,11 @@
       "url": "https://www.youtube.com/watch?v=ZrYTeawbbR8",
       "published_at": "",
       "first_discovered_at": "2026-10-08T04:06:13Z",
-      "last_checked_at": "2026-10-08T04:06:13Z",
-      "retry_count": 1,
+      "last_checked_at": "2026-10-09T09:00:07Z",
+      "retry_count": 2,
       "last_quality": "Q5",
-      "last_provider": "not_yet_probed",
-      "last_status": "discovered_pending",
+      "last_provider": "metadata_only",
+      "last_status": "metadata_only",
       "last_error": null
     },
     {
@@ -1035,11 +1035,11 @@
       "url": "https://www.youtube.com/watch?v=_YXDHskRP6Y",
       "published_at": "",
       "first_discovered_at": "2026-10-08T04:06:13Z",
-      "last_checked_at": "2026-10-08T04:06:13Z",
-      "retry_count": 1,
+      "last_checked_at": "2026-10-09T09:00:28Z",
+      "retry_count": 2,
       "last_quality": "Q5",
-      "last_provider": "not_yet_probed",
-      "last_status": "discovered_pending",
+      "last_provider": "metadata_only",
+      "last_status": "metadata_only",
       "last_error": null
     },
     {
@@ -1051,11 +1051,11 @@
       "url": "https://www.youtube.com/watch?v=_lOVieAIvSA",
       "published_at": "",
       "first_discovered_at": "2026-10-08T04:06:13Z",
-      "last_checked_at": "2026-10-08T04:06:13Z",
-      "retry_count": 1,
+      "last_checked_at": "2026-10-09T09:00:41Z",
+      "retry_count": 2,
       "last_quality": "Q5",
-      "last_provider": "not_yet_probed",
-      "last_status": "discovered_pending",
+      "last_provider": "metadata_only",
+      "last_status": "metadata_only",
       "last_error": null
     },
     {
@@ -1067,11 +1067,11 @@
       "url": "https://www.youtube.com/watch?v=aiO11zglFjc",
       "published_at": "",
       "first_discovered_at": "2026-10-08T04:06:13Z",
-      "last_checked_at": "2026-10-08T04:06:13Z",
-      "retry_count": 1,
+      "last_checked_at": "2026-10-09T09:00:46Z",
+      "retry_count": 2,
       "last_quality": "Q5",
-      "last_provider": "not_yet_probed",
-      "last_status": "discovered_pending",
+      "last_provider": "metadata_only",
+      "last_status": "metadata_only",
       "last_error": null
     },
     {
@@ -1083,11 +1083,11 @@
       "url": "https://www.youtube.com/watch?v=alcGiFrl6k0",
       "published_at": "",
       "first_discovered_at": "2026-10-08T04:06:13Z",
-      "last_checked_at": "2026-10-08T04:06:13Z",
-      "retry_count": 1,
+      "last_checked_at": "2026-10-09T09:00:58Z",
+      "retry_count": 2,
       "last_quality": "Q5",
-      "last_provider": "not_yet_probed",
-      "last_status": "discovered_pending",
+      "last_provider": "metadata_only",
+      "last_status": "metadata_only",
       "last_error": null
     },
     {
@@ -1099,11 +1099,11 @@
       "url": "https://www.youtube.com/watch?v=bdzWer7gNII",
       "published_at": "",
       "first_discovered_at": "2026-10-08T04:06:13Z",
-      "last_checked_at": "2026-10-08T04:06:13Z",
-      "retry_count": 1,
+      "last_checked_at": "2026-10-09T09:01:03Z",
+      "retry_count": 2,
       "last_quality": "Q5",
-      "last_provider": "not_yet_probed",
-      "last_status": "discovered_pending",
+      "last_provider": "metadata_only",
+      "last_status": "metadata_only",
       "last_error": null
     },
     {
@@ -1115,11 +1115,11 @@
       "url": "https://www.youtube.com/watch?v=cwQxqL-vC94",
       "published_at": "",
       "first_discovered_at": "2026-10-08T04:06:13Z",
-      "last_checked_at": "2026-10-08T04:06:13Z",
-      "retry_count": 1,
+      "last_checked_at": "2026-10-09T09:01:14Z",
+      "retry_count": 2,
       "last_quality": "Q5",
-      "last_provider": "not_yet_probed",
-      "last_status": "discovered_pending",
+      "last_provider": "metadata_only",
+      "last_status": "metadata_only",
       "last_error": null
     },
     {
@@ -1131,11 +1131,11 @@
       "url": "https://www.youtube.com/watch?v=dFjvcY9Tth0",
       "published_at": "",
       "first_discovered_at": "2026-10-08T04:06:13Z",
-      "last_checked_at": "2026-10-08T04:06:13Z",
-      "retry_count": 1,
+      "last_checked_at": "2026-10-09T09:01:20Z",
+      "retry_count": 2,
       "last_quality": "Q5",
-      "last_provider": "not_yet_probed",
-      "last_status": "discovered_pending",
+      "last_provider": "metadata_only",
+      "last_status": "metadata_only",
       "last_error": null
     },
     {
@@ -1147,27 +1147,11 @@
       "url": "https://www.youtube.com/watch?v=dTQmi_hrOpU",
       "published_at": "",
       "first_discovered_at": "2026-10-08T04:06:13Z",
-      "last_checked_at": "2026-10-08T04:06:13Z",
-      "retry_count": 1,
+      "last_checked_at": "2026-10-09T09:01:30Z",
+      "retry_count": 2,
       "last_quality": "Q5",
-      "last_provider": "not_yet_probed",
-      "last_status": "discovered_pending",
-      "last_error": null
-    },
-    {
-      "video_id": "dg9Ezg_RS6E",
-      "handle": "@AndreiJikh",
-      "author": "Andrei Jikh",
-      "role": "market_context",
-      "title": "They’re Buying Gold And Selling You AI",
-      "url": "https://www.youtube.com/watch?v=dg9Ezg_RS6E",
-      "published_at": "",
-      "first_discovered_at": "2026-10-08T04:06:13Z",
-      "last_checked_at": "2026-10-08T04:06:13Z",
-      "retry_count": 1,
-      "last_quality": "Q5",
-      "last_provider": "not_yet_probed",
-      "last_status": "discovered_pending",
+      "last_provider": "metadata_only",
+      "last_status": "metadata_only",
       "last_error": null
     },
     {
@@ -1824,6 +1808,22 @@
       "last_quality": "Q5",
       "last_provider": "not_yet_probed",
       "last_status": "discovered_pending",
+      "last_error": null
+    },
+    {
+      "video_id": "-e3gyj_NP7c",
+      "handle": "@RhinoFinance",
+      "author": "RhinoFinance / 视野环球财经",
+      "role": "rule_supply",
+      "title": "美股 科技股、半导体失血！消费股领涨，XLP重要位置！SMH、SOXX完成修复！SPY、QQQ、XLK长线点位更新！",
+      "url": "https://www.youtube.com/watch?v=-e3gyj_NP7c",
+      "published_at": "2026-10-09",
+      "first_discovered_at": "2026-10-09T08:59:34Z",
+      "last_checked_at": "2026-10-09T08:59:43Z",
+      "retry_count": 2,
+      "last_quality": "Q5",
+      "last_provider": "metadata_only",
+      "last_status": "metadata_only",
       "last_error": null
     }
   ],
