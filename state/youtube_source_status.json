@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-10-10T12:29:33Z",
+  "generated_at": "2026-10-10T18:35:29Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -122,38 +122,16 @@
   "content_backlog_after_run": 105,
   "pending_total": 105,
   "historical_demoted_from_pending": 0,
-  "admitted_from_pending": 1,
-  "nonforward_timestamp_unknown_admitted": 1,
-  "feed_records_added": 1,
+  "admitted_from_pending": 0,
+  "nonforward_timestamp_unknown_admitted": 0,
+  "feed_records_added": 0,
   "historical_backlog_total": 50,
   "discovery_complete": true,
   "new_video_diagnostics": [
     {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "19S-O_bla-A",
-      "title": "美股 MRVL抢单AVGO！AMD更新！财政部加码回购债券！为什么？钱哪来？QE吗？",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
       "author": "老李玩钱",
-      "video_id": "1QM5vfCkId0",
-      "title": "当前美股的泡沫到底有多大？NVDA财报解读及操作建议",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "Andrei Jikh",
-      "video_id": "1UIKZBGYMYI",
-      "title": "China Is Preparing For $38,000 Gold",
+      "video_id": "9SBwuIy6KRs",
+      "title": "美股很高！但这3支股票还在地上趴着，可以买入",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -163,8 +141,8 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "4M7w7DR865M",
-      "title": "美股 最差9月，CTA更新！JPM战术转向，减仓多头！对冲基金上周仓位！AMZN遭起诉掉块肉！",
+      "video_id": "Am7QxgzrUek",
+      "title": "美股 对冲基金最新仓位，软件VS半导体！SOXX、IGV、QQQ！META、MSFT正常回撤！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -174,8 +152,19 @@
     },
     {
       "author": "老李玩钱",
-      "video_id": "4n9bB7N96fY",
-      "title": "5月必买3支股票",
+      "video_id": "B8OxtGSEfoo",
+      "title": "当前美股存在的3大风险因素",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "老李玩钱",
+      "video_id": "B9E1AdBLM24",
+      "title": "我对当前美股行情的一些思考！答疑：MU, INTC, SNDK, RKLB还能追吗",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -185,18 +174,25 @@
     },
     {
       "author": "Andrei Jikh",
-      "video_id": "66XyEa1yyAQ",
-      "title": "The End Of The Iran Deal",
-      "published_at": "",
-      "transcript_status": "available",
-      "content_quality": "Q4",
-      "content_provider": "pickscribe.com",
+      "video_id": "BpuKpyCk0Us",
+      "title": "How I'd Invest $10,000 Right Now",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
-      "content_chars": 733,
-      "symbols": [],
-      "operations": 0,
-      "admission": "research_feed_nonforward_timestamp_unknown",
-      "was_pending": true
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "Andrei Jikh",
+      "video_id": "DFSWsJ_y1-M",
+      "title": "China Just Won The AI Race",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
     }
   ],
   "intake_health": {
