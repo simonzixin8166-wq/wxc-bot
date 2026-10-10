@@ -1,14 +1,14 @@
 {
   "version": 1,
-  "generated_at": "2026-10-09T22:38:17.764081+00:00",
+  "generated_at": "2026-10-10T05:50:23.644783+00:00",
   "principle": "seen is discovery, not learning; each video is counted once in its highest stage",
   "seen": 172,
   "stages": {
     "formal_feed_text": 4,
     "historical_backlog": 41,
-    "metadata_only": 101,
-    "pending_unprobed": 18,
-    "provider_boilerplate": 7,
+    "metadata_only": 110,
+    "pending_unprobed": 6,
+    "provider_boilerplate": 10,
     "transcript_readable": 1
   },
   "stages_sum_equals_seen": true,
@@ -21,26 +21,26 @@
   },
   "by_author": {
     "Andrei Jikh": {
-      "provider_boilerplate": 7,
-      "metadata_only": 27,
+      "provider_boilerplate": 10,
+      "metadata_only": 30,
       "historical_backlog": 9,
-      "pending_unprobed": 7
+      "pending_unprobed": 1
     },
     "RhinoFinance / 视野环球财经": {
-      "metadata_only": 38,
+      "metadata_only": 41,
       "historical_backlog": 7,
-      "pending_unprobed": 6
+      "pending_unprobed": 3
     },
     "unknown": {
       "metadata_only": 3,
       "historical_backlog": 17
     },
     "老李玩钱": {
-      "metadata_only": 33,
+      "metadata_only": 36,
       "formal_feed_text": 4,
       "historical_backlog": 8,
       "transcript_readable": 1,
-      "pending_unprobed": 5
+      "pending_unprobed": 2
     }
   },
   "inconsistencies": {
@@ -56,8 +56,8 @@
   },
   "backlog_eta": {
     "content_work_budget_per_run": 6,
-    "pending_unprobed": 18,
-    "runs_to_probe_all_pending": 3,
+    "pending_unprobed": 6,
+    "runs_to_probe_all_pending": 1,
     "note": "free-first: bounded per-run budget, provider limits respected"
   },
   "guardrails": [

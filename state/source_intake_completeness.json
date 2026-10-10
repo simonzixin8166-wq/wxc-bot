@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-10T02:04:29.642951+00:00",
+  "generated_at": "2026-10-10T05:50:23.523955+00:00",
   "complete": true,
   "coverage_complete": true,
   "semantic_learning_complete": false,
@@ -47,14 +47,14 @@
     "discovery_complete": true,
     "accounting_balanced": true,
     "seen": 172,
-    "feed_records": 11,
+    "feed_records": 14,
     "historical_archive_records": 23,
     "historical_semantic_learned": 4,
-    "pending": 110,
+    "pending": 107,
     "historical_backlog": 50,
     "unaccounted": 0,
     "unaccounted_video_ids": [],
-    "unresolved_semantic": 160,
+    "unresolved_semantic": 157,
     "status": "ok"
   },
   "guardrails": [
