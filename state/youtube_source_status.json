@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-10-10T05:50:23Z",
+  "generated_at": "2026-10-10T12:29:33Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -27,10 +27,11 @@
         "video_id": "-e3gyj_NP7c",
         "title": "美股 科技股、半导体失血！消费股领涨，XLP重要位置！SMH、SOXX完成修复！SPY、QQQ、XLK长线点位更新！",
         "url": "https://www.youtube.com/watch?v=-e3gyj_NP7c",
-        "published_at": "",
+        "published_at": "2026-10-09",
         "flat_metadata_keys": [
           "channel_id",
-          "duration"
+          "duration",
+          "rss_published_at"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -63,10 +64,11 @@
         "video_id": "QYQlbuF8xdk",
         "title": "国债收益率居高不下！如何利用闲置资金购买美国国债，稳定获取利息现金流",
         "url": "https://www.youtube.com/watch?v=QYQlbuF8xdk",
-        "published_at": "",
+        "published_at": "2026-10-08",
         "flat_metadata_keys": [
           "channel_id",
-          "duration"
+          "duration",
+          "rss_published_at"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -117,19 +119,19 @@
   "pending_retried": 6,
   "content_attempted_this_run": 6,
   "content_work_budget": 6,
-  "content_backlog_after_run": 107,
-  "pending_total": 107,
+  "content_backlog_after_run": 105,
+  "pending_total": 105,
   "historical_demoted_from_pending": 0,
-  "admitted_from_pending": 2,
-  "nonforward_timestamp_unknown_admitted": 2,
-  "feed_records_added": 2,
+  "admitted_from_pending": 1,
+  "nonforward_timestamp_unknown_admitted": 1,
+  "feed_records_added": 1,
   "historical_backlog_total": 50,
   "discovery_complete": true,
   "new_video_diagnostics": [
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "v88zbUVrp8w",
-      "title": "美股 美联储27年预期撕裂！AI威胁叙事，网络安全爆炒！PANW、CRWD、FTNT！META忘记讲，看置顶评论！",
+      "video_id": "19S-O_bla-A",
+      "title": "美股 MRVL抢单AVGO！AMD更新！财政部加码回购债券！为什么？钱哪来？QE吗？",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -138,20 +140,9 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "vXlqWhsJzxI",
-      "title": "美股 NVDA完好、NOW突破！UNH、SHOP更新！前车之鉴，直到2028，数据中心绝不能大退潮！对比互联网泡沫、房地产浪潮！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "vynRw9NT7TQ",
-      "title": "美股 TSLA突破，强弱区间！MSFT对AI货币化充满信心！四大科技共振！AMD成了之前的NVDA！",
+      "author": "老李玩钱",
+      "video_id": "1QM5vfCkId0",
+      "title": "当前美股的泡沫到底有多大？NVDA财报解读及操作建议",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -161,8 +152,30 @@
     },
     {
       "author": "Andrei Jikh",
-      "video_id": "w0a504L8fgs",
-      "title": "China & Japan Are Dumping US Bonds",
+      "video_id": "1UIKZBGYMYI",
+      "title": "China Is Preparing For $38,000 Gold",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "4M7w7DR865M",
+      "title": "美股 最差9月，CTA更新！JPM战术转向，减仓多头！对冲基金上周仓位！AMZN遭起诉掉块肉！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "老李玩钱",
+      "video_id": "4n9bB7N96fY",
+      "title": "5月必买3支股票",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -172,8 +185,8 @@
     },
     {
       "author": "Andrei Jikh",
-      "video_id": "w8yTmTdF1Kw",
-      "title": "Every Bond Market In The World Is Breaking",
+      "video_id": "66XyEa1yyAQ",
+      "title": "The End Of The Iran Deal",
       "published_at": "",
       "transcript_status": "available",
       "content_quality": "Q4",
@@ -184,30 +197,13 @@
       "operations": 0,
       "admission": "research_feed_nonforward_timestamp_unknown",
       "was_pending": true
-    },
-    {
-      "author": "Andrei Jikh",
-      "video_id": "wDjJsh0FDRY",
-      "title": "Your Money Is About To Be Worth A Lot Less",
-      "published_at": "",
-      "transcript_status": "available",
-      "content_quality": "Q4",
-      "content_provider": "pickscribe.com",
-      "rule_candidate_allowed": false,
-      "content_chars": 733,
-      "symbols": [
-        "BE"
-      ],
-      "operations": 0,
-      "admission": "research_feed_nonforward_timestamp_unknown",
-      "was_pending": true
     }
   ],
   "intake_health": {
     "status": "ok",
     "channel_errors": 0,
     "stuck_high_quality_pending": 0,
-    "provider_waiting_pending": 107,
+    "provider_waiting_pending": 105,
     "stuck_video_ids": [],
     "meaning": "Q1/Q2 text must not remain stuck in pending; Q3-Q5 may legitimately wait for better learning text."
   },
