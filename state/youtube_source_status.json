@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-10-10T18:35:29Z",
+  "generated_at": "2026-10-10T23:33:30Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -27,11 +27,10 @@
         "video_id": "-e3gyj_NP7c",
         "title": "美股 科技股、半导体失血！消费股领涨，XLP重要位置！SMH、SOXX完成修复！SPY、QQQ、XLK长线点位更新！",
         "url": "https://www.youtube.com/watch?v=-e3gyj_NP7c",
-        "published_at": "2026-10-09",
+        "published_at": "",
         "flat_metadata_keys": [
           "channel_id",
-          "duration",
-          "rss_published_at"
+          "duration"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -64,11 +63,10 @@
         "video_id": "QYQlbuF8xdk",
         "title": "国债收益率居高不下！如何利用闲置资金购买美国国债，稳定获取利息现金流",
         "url": "https://www.youtube.com/watch?v=QYQlbuF8xdk",
-        "published_at": "2026-10-08",
+        "published_at": "",
         "flat_metadata_keys": [
           "channel_id",
-          "duration",
-          "rss_published_at"
+          "duration"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -99,7 +97,7 @@
       "discovery_complete": true,
       "latest": {
         "video_id": "pO1eGLrl1lw",
-        "title": "How I'm Investing",
+        "title": "How I've Invested To Build Wealth",
         "url": "https://www.youtube.com/watch?v=pO1eGLrl1lw",
         "published_at": "",
         "flat_metadata_keys": [
@@ -119,19 +117,45 @@
   "pending_retried": 6,
   "content_attempted_this_run": 6,
   "content_work_budget": 6,
-  "content_backlog_after_run": 105,
-  "pending_total": 105,
+  "content_backlog_after_run": 104,
+  "pending_total": 104,
   "historical_demoted_from_pending": 0,
-  "admitted_from_pending": 0,
-  "nonforward_timestamp_unknown_admitted": 0,
-  "feed_records_added": 0,
+  "admitted_from_pending": 1,
+  "nonforward_timestamp_unknown_admitted": 1,
+  "feed_records_added": 1,
   "historical_backlog_total": 50,
   "discovery_complete": true,
   "new_video_diagnostics": [
     {
+      "author": "Andrei Jikh",
+      "video_id": "HIBozcOlQPY",
+      "title": "How I’m Preparing For The “Supercycle”",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "Andrei Jikh",
+      "video_id": "J0MrkkH8bIk",
+      "title": "Japan Is Starting To Break",
+      "published_at": "",
+      "transcript_status": "available",
+      "content_quality": "Q4",
+      "content_provider": "pickscribe.com",
+      "rule_candidate_allowed": false,
+      "content_chars": 733,
+      "symbols": [],
+      "operations": 0,
+      "admission": "research_feed_nonforward_timestamp_unknown",
+      "was_pending": true
+    },
+    {
       "author": "老李玩钱",
-      "video_id": "9SBwuIy6KRs",
-      "title": "美股很高！但这3支股票还在地上趴着，可以买入",
+      "video_id": "JOaFOcY7Kc8",
+      "title": "华尔街大举买入和加仓的5支股票！我的看法及买入建议",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -141,8 +165,8 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "Am7QxgzrUek",
-      "title": "美股 对冲基金最新仓位，软件VS半导体！SOXX、IGV、QQQ！META、MSFT正常回撤！",
+      "video_id": "JmAgOc0hTwQ",
+      "title": "美股 AI数据中心违约风险一览！长债收益率19年新高！SPY、QQQ、SOXX 、SMH重要位置！HD维持前瞻！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -152,8 +176,8 @@
     },
     {
       "author": "老李玩钱",
-      "video_id": "B8OxtGSEfoo",
-      "title": "当前美股存在的3大风险因素",
+      "video_id": "MEQ814VtkrY",
+      "title": "战火打响美股竟安然无恙，什么情况？3月行情推演及展望",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -162,31 +186,9 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "老李玩钱",
-      "video_id": "B9E1AdBLM24",
-      "title": "我对当前美股行情的一些思考！答疑：MU, INTC, SNDK, RKLB还能追吗",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "Andrei Jikh",
-      "video_id": "BpuKpyCk0Us",
-      "title": "How I'd Invest $10,000 Right Now",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "Andrei Jikh",
-      "video_id": "DFSWsJ_y1-M",
-      "title": "China Just Won The AI Race",
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "MFB-Fp4F15A",
+      "title": "美股 罕见IGV压 SOXX一头！NFLX止跌雄起了吗？TSLA、WMT、SNDK！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -199,7 +201,7 @@
     "status": "ok",
     "channel_errors": 0,
     "stuck_high_quality_pending": 0,
-    "provider_waiting_pending": 105,
+    "provider_waiting_pending": 104,
     "stuck_video_ids": [],
     "meaning": "Q1/Q2 text must not remain stuck in pending; Q3-Q5 may legitimately wait for better learning text."
   },
