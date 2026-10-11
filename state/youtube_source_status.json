@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-10-10T23:33:30Z",
+  "generated_at": "2026-10-11T05:42:56Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -19,14 +19,14 @@
           "reached_end": false
         }
       ],
-      "previous_anchor_video_id": "-e3gyj_NP7c",
+      "previous_anchor_video_id": "xOY53crL1ZA",
       "anchor_found": true,
       "reached_end": false,
       "discovery_complete": true,
       "latest": {
-        "video_id": "-e3gyj_NP7c",
-        "title": "美股 科技股、半导体失血！消费股领涨，XLP重要位置！SMH、SOXX完成修复！SPY、QQQ、XLK长线点位更新！",
-        "url": "https://www.youtube.com/watch?v=-e3gyj_NP7c",
+        "video_id": "xOY53crL1ZA",
+        "title": "（会员第305期）掌握数据，跟随趋势！如何追踪标普、个股、EPS业绩修正？几个隐藏的免费数据入口！使用方法！",
+        "url": "https://www.youtube.com/watch?v=xOY53crL1ZA",
         "published_at": "",
         "flat_metadata_keys": [
           "channel_id",
@@ -127,9 +127,31 @@
   "discovery_complete": true,
   "new_video_diagnostics": [
     {
-      "author": "Andrei Jikh",
-      "video_id": "HIBozcOlQPY",
-      "title": "How I’m Preparing For The “Supercycle”",
+      "author": "老李玩钱",
+      "video_id": "PDAHTpp2c78",
+      "title": "摩根大通：标普500今年将下跌15%",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "老李玩钱",
+      "video_id": "PdypXJ5gtKY",
+      "title": "半导体和存储，10支热门个股和ETF，买入及加仓建议",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "老李玩钱",
+      "video_id": "Q5xMtR4SWP8",
+      "title": "美股高位摇摇欲坠！要回调了？操作上的建议",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -139,8 +161,8 @@
     },
     {
       "author": "Andrei Jikh",
-      "video_id": "J0MrkkH8bIk",
-      "title": "Japan Is Starting To Break",
+      "video_id": "RCFtgOCsyg0",
+      "title": "They’re Buying Gold And Selling You AI",
       "published_at": "",
       "transcript_status": "available",
       "content_quality": "Q4",
@@ -154,8 +176,8 @@
     },
     {
       "author": "老李玩钱",
-      "video_id": "JOaFOcY7Kc8",
-      "title": "华尔街大举买入和加仓的5支股票！我的看法及买入建议",
+      "video_id": "RHhVWhqq1nI",
+      "title": "美联储会议砸盘，账户已跌下$300,000！微软，META，SOFI 财报解读",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -165,30 +187,8 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "JmAgOc0hTwQ",
-      "title": "美股 AI数据中心违约风险一览！长债收益率19年新高！SPY、QQQ、SOXX 、SMH重要位置！HD维持前瞻！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "老李玩钱",
-      "video_id": "MEQ814VtkrY",
-      "title": "战火打响美股竟安然无恙，什么情况？3月行情推演及展望",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "MFB-Fp4F15A",
-      "title": "美股 罕见IGV压 SOXX一头！NFLX止跌雄起了吗？TSLA、WMT、SNDK！",
+      "video_id": "RgGeU0w9GZo",
+      "title": "美股 NVDA黄仁勋“喊单”奏效！AVGO有惊无险，PANW放缓代价！褐皮书：物价，消费，就业，增长！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
