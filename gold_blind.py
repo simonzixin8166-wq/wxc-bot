@@ -98,13 +98,17 @@ def kappa(gold_items, answers):
 def main(argv=None):
     ap = argparse.ArgumentParser()
     sub = ap.add_subparsers(dest="cmd", required=True)
+    ap.add_argument("--gold", default=str(GOLD))
+    ap.add_argument("--req", default=str(REQ))
     sub.add_parser("export")
     k = sub.add_parser("kappa"); k.add_argument("answers")
     a = ap.parse_args(argv)
-    items = [json.loads(x) for x in GOLD.read_text(encoding="utf-8").splitlines() if x.strip()]
+    items = [json.loads(x) for x in Path(a.gold).read_text(encoding="utf-8").splitlines() if x.strip()]
     if a.cmd == "export":
-        REQ.write_text(json.dumps(export(items), ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
-        print(json.dumps({"exported": json.loads(REQ.read_text(encoding="utf-8"))["items"]}))
+        rep = export(items)
+        rep["version"] = Path(a.req).stem.replace("_request", "")
+        Path(a.req).write_text(json.dumps(rep, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+        print(json.dumps({"exported": rep["items"]}))
     else:
         print(json.dumps(kappa(items, json.loads(Path(a.answers).read_text(encoding="utf-8"))), ensure_ascii=False))
     return 0

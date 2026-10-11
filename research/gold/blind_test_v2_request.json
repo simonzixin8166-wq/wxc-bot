@@ -1,0 +1,388 @@
+{
+ "version": "blind_test_v2",
+ "items": 41,
+ "instructions": "For each item, open the URL (or read the title) and list the AUTHOR'S OWN position/view per ticker: stance ∈ buy/add/sell/trim/hold/avoid/bullish/bearish; status ∈ executed/planned/conditional/opinion; instrument ∈ stock/sell_put/covered_call/leaps/other. Quotes of other people, third-party trades and examples are NOT the author's claims. No ticker or no own view → labels: []. If the page cannot be opened or the sentence cannot be found → status 'unavailable'; if genuinely unclear → 'ambiguous'. Do not guess. Sentence items: judge the sentence that contains the locator, using the article only as context.",
+ "requests": [
+  {
+   "blind_id": "b-9eccd53c14",
+   "kind": "sentence",
+   "author": "麻你",
+   "url": "https://bbs.wenxuecity.com/tzlc/2378573.html",
+   "published_at": "2026-10-02 09:48:25",
+   "sentence_index": 2,
+   "locator": "耐心等待未来上方卖出信号，按比例减仓取利"
+  },
+  {
+   "blind_id": "b-93e988844c",
+   "kind": "sentence",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/95052.html",
+   "published_at": "2026-07-07 17:25:22",
+   "sentence_index": 3,
+   "locator": "对于这些我已拥有很久有足够多的股，我加仓的价格要求严格一些。"
+  },
+  {
+   "blind_id": "b-3ffff6a201",
+   "kind": "sentence",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/96265.html",
+   "published_at": "2026-07-12 16:44:56",
+   "sentence_index": 6,
+   "locator": "这次我也是是说我自己仓位足够多，加仓点就要求高一点，除非调整到绝对便宜才会再考虑"
+  },
+  {
+   "blind_id": "b-2752c01600",
+   "kind": "sentence",
+   "author": "yifan99",
+   "url": "https://bbs.wenxuecity.com/cfzh/113671.html",
+   "published_at": "2026-10-05 13:41:34",
+   "sentence_index": 56,
+   "locator": "AMZN 一次向上 False Break（假突破），目前重新回到偏弱区间"
+  },
+  {
+   "blind_id": "b-38f4455848",
+   "kind": "sentence",
+   "author": "麻你",
+   "url": "https://blog.wenxuecity.com/myblog/78105/202610/4859.html",
+   "published_at": "2026-10-07",
+   "sentence_index": 8,
+   "locator": "VGT的跌幅会比道琼和SP500更深更大，也就是更便宜，未来上升幅度更大，盈利更"
+  },
+  {
+   "blind_id": "b-ad2c73c795",
+   "kind": "sentence",
+   "author": "麻你",
+   "url": "https://bbs.wenxuecity.com/tzlc/2357083.html",
+   "published_at": "2026-08-21 16:09:21",
+   "sentence_index": 1,
+   "locator": "因为这几个星期比上次止盈的位置又涨了4%"
+  },
+  {
+   "blind_id": "b-9aab5754d1",
+   "kind": "sentence",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/95056.html",
+   "published_at": "2026-07-07 17:40:44",
+   "sentence_index": 3,
+   "locator": "而且卖了交的税可能还没有跌幅多， 很麻烦的，只要基本面不变， 长期看涨就是不动已"
+  },
+  {
+   "blind_id": "b-35c138ceb1",
+   "kind": "sentence",
+   "author": "yifan99",
+   "url": "https://blog.wenxuecity.com/myblog/31983/202609/19300.html",
+   "published_at": "2026-09-25",
+   "sentence_index": 41,
+   "locator": "AAPL是我实际交易中的一个例子。"
+  },
+  {
+   "blind_id": "b-10b02b5c8f",
+   "kind": "sentence",
+   "author": "yifan99",
+   "url": "https://blog.wenxuecity.com/myblog/31983/202609/19300.html",
+   "published_at": "2026-09-25",
+   "sentence_index": 62,
+   "locator": "趋势由弱转强时，寻找买入机会。"
+  },
+  {
+   "blind_id": "b-f90d916edd",
+   "kind": "sentence",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/114571.html",
+   "published_at": "2026-10-09 15:53:39",
+   "sentence_index": 9,
+   "locator": "如此将确认周线级别的买入。"
+  },
+  {
+   "blind_id": "b-3ec9935b04",
+   "kind": "sentence",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/96265.html",
+   "published_at": "2026-07-12 16:44:56",
+   "sentence_index": 0,
+   "locator": "AMD现在短期不便宜了，我记得两个月前您说过有个网红说AMD不好，但当时还是值得"
+  },
+  {
+   "blind_id": "b-c03488b211",
+   "kind": "sentence",
+   "author": "麻你",
+   "url": "https://blog.wenxuecity.com/myblog/78105/202610/4859.html",
+   "published_at": "2026-10-07",
+   "sentence_index": 9,
+   "locator": "第三，可以大笔把VGT在低点从退休账户转入ROTH账户，省去巨额税款。"
+  },
+  {
+   "blind_id": "b-1fa9eeb3a6",
+   "kind": "sentence",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/100298.html",
+   "published_at": "2026-07-29 09:57:12",
+   "sentence_index": 9,
+   "locator": "他来个灵魂拷问，你还觉得苹果好吗？"
+  },
+  {
+   "blind_id": "b-15ff3af942",
+   "kind": "sentence",
+   "author": "yifan99",
+   "url": "https://bbs.wenxuecity.com/cfzh/114225.html",
+   "published_at": "2026-10-08 08:45:43",
+   "sentence_index": 63,
+   "locator": "面对冒牌食品，我们有时会想：已经买了，扔掉可惜，吃完再说。"
+  },
+  {
+   "blind_id": "b-1bfc4919a8",
+   "kind": "sentence",
+   "author": "yifan99",
+   "url": "https://blog.wenxuecity.com/myblog/31983/202609/22036.html",
+   "published_at": "2026-09-29",
+   "sentence_index": 1,
+   "locator": "从这张 AMZN 截至 9/29 的日线图看，把最近这一段更新为："
+  },
+  {
+   "blind_id": "b-28cfbc3d8c",
+   "kind": "sentence",
+   "author": "麻你",
+   "url": "https://bbs.wenxuecity.com/tzlc/2333693.html",
+   "published_at": "2026-07-10 13:19:48",
+   "sentence_index": 1,
+   "locator": "如果大盘下行就等待买入机会"
+  },
+  {
+   "blind_id": "b-41df3390a1",
+   "kind": "sentence",
+   "author": "BrightLine",
+   "url": "https://blog.wenxuecity.com/myblog/82458/202610/6792.html",
+   "published_at": "2026-10-10",
+   "sentence_index": 77,
+   "locator": "基准情景：2027年起Muse的订阅和广告收入开始进财报，资本开支见顶，盈利增速"
+  },
+  {
+   "blind_id": "b-00b0139ef4",
+   "kind": "sentence",
+   "author": "麻你",
+   "url": "https://bbs.wenxuecity.com/tzlc/2345443.html",
+   "published_at": "2026-07-31 09:03:39",
+   "sentence_index": 1,
+   "locator": "其余10%放在SGOV吃利息，做为储备金，等买入信号出现时就开始买。"
+  },
+  {
+   "blind_id": "b-816b95feab",
+   "kind": "sentence",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/113341.html",
+   "published_at": "2026-10-03 09:11:49",
+   "sentence_index": 3,
+   "locator": "图形没突破，你think它可以突破，抢跑提起买了，你很可能买错。"
+  },
+  {
+   "blind_id": "b-675638c468",
+   "kind": "sentence",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/114594.html",
+   "published_at": "2026-10-10 06:07:42",
+   "sentence_index": 3,
+   "locator": "SP 500 bullish percent 上升了 11.32%"
+  },
+  {
+   "blind_id": "b-3970656728",
+   "kind": "sentence",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/109275.html",
+   "published_at": "2026-09-06 12:21:15",
+   "sentence_index": 1,
+   "locator": "of the AMD Helios full-rack AI system ar"
+  },
+  {
+   "blind_id": "b-a33d24a1cb",
+   "kind": "sentence",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/96265.html",
+   "published_at": "2026-07-12 16:44:56",
+   "sentence_index": 5,
+   "locator": "我自己没有加仓，我就是要165， 130左右才会考虑， lol."
+  },
+  {
+   "blind_id": "b-7306f45fee",
+   "kind": "sentence",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/99403.html",
+   "published_at": "2026-07-25 07:22:34",
+   "sentence_index": 6,
+   "locator": "小加仓 （风险中等，RR可以接受）"
+  },
+  {
+   "blind_id": "b-88327e9ee4",
+   "kind": "sentence",
+   "author": "yifan99",
+   "url": "https://blog.wenxuecity.com/myblog/31983/202609/22036.html",
+   "published_at": "2026-09-29",
+   "sentence_index": 19,
+   "locator": "这套系统里，暂时把 AMZN 的信号写成："
+  },
+  {
+   "blind_id": "b-0fe9c47623",
+   "kind": "sentence",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/98407.html",
+   "published_at": "2026-07-21 17:47:31",
+   "sentence_index": 1,
+   "locator": "买进的时候有说过，大概47左右买的，"
+  },
+  {
+   "blind_id": "b-b01a363cbc",
+   "kind": "sentence",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/95066.html",
+   "published_at": "2026-07-07 18:49:38",
+   "sentence_index": 2,
+   "locator": "早上(美国时间）我加仓了。"
+  },
+  {
+   "blind_id": "b-b82a697552",
+   "kind": "sentence",
+   "author": "yifan99",
+   "url": "https://blog.wenxuecity.com/myblog/31983/202609/22036.html",
+   "published_at": "2026-09-29",
+   "sentence_index": 24,
+   "locator": "如果接下来 AMZN 突破 253，我会把它重新列入确认候选；"
+  },
+  {
+   "blind_id": "b-71eccfc4fa",
+   "kind": "sentence",
+   "author": "麻你",
+   "url": "https://blog.wenxuecity.com/myblog/78105/202610/4859.html",
+   "published_at": "2026-10-07",
+   "sentence_index": 6,
+   "locator": "钱日常生活用不完（包括商务舱和五星旅店），更有历年从VGT取利积攒的储备金可用。"
+  },
+  {
+   "blind_id": "b-58bbe3368c",
+   "kind": "sentence",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/98407.html",
+   "published_at": "2026-07-21 17:47:31",
+   "sentence_index": 4,
+   "locator": "这次也加仓了，17号那天64ish买入。"
+  },
+  {
+   "blind_id": "b-f1ea696949",
+   "kind": "sentence",
+   "author": "yifan99",
+   "url": "https://bbs.wenxuecity.com/cfzh/113671.html",
+   "published_at": "2026-10-05 13:41:34",
+   "sentence_index": 26,
+   "locator": "因此与 AAOI 相比，它更接近 Confirmed Recovery。"
+  },
+  {
+   "blind_id": "b-1503dbcc35",
+   "kind": "sentence",
+   "author": "yifan99",
+   "url": "https://blog.wenxuecity.com/myblog/31983/202609/22036.html",
+   "published_at": "2026-09-29",
+   "sentence_index": 2,
+   "locator": "AMZN：更像是一次向上 False Break（假突破），目前重新回到偏弱区间"
+  },
+  {
+   "blind_id": "b-7556309e4d",
+   "kind": "sentence",
+   "author": "yifan99",
+   "url": "https://blog.wenxuecity.com/myblog/31983/202609/19491.html",
+   "published_at": "2026-09-25",
+   "sentence_index": 0,
+   "locator": "MU与SNDK：TCDS提示趋势转强，但仍需关注财报风险"
+  },
+  {
+   "blind_id": "b-a0c2fe7ba9",
+   "kind": "sentence",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/114571.html",
+   "published_at": "2026-10-09 15:53:39",
+   "sentence_index": 12,
+   "locator": "它是在7月底确认周线买入信号的。"
+  },
+  {
+   "blind_id": "b-2e1945fed1",
+   "kind": "sentence",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/101619.html",
+   "published_at": "2026-08-02 16:35:54",
+   "sentence_index": 0,
+   "locator": "楼下说了， too much shortage, 如果8，9月份一直在调整，我会"
+  },
+  {
+   "blind_id": "b-935db7a284",
+   "kind": "sentence",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/97338.html",
+   "published_at": "2026-07-16 15:14:24",
+   "sentence_index": 5,
+   "locator": "如果看下ASML和TSM的财报展望，就知道是很利好MU这些股的。"
+  },
+  {
+   "blind_id": "b-924421104c",
+   "kind": "sentence",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/113341.html",
+   "published_at": "2026-10-03 09:11:49",
+   "sentence_index": 2,
+   "locator": "图形没破位，你think它可能会破位，卖了，你很可能卖错。"
+  },
+  {
+   "blind_id": "b-bc0eaf822b",
+   "kind": "sentence",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/98317.html",
+   "published_at": "2026-07-21 09:29:45",
+   "sentence_index": 1,
+   "locator": "这两周买入3次， 201， 194ish买后涨了后来又跌了。"
+  },
+  {
+   "blind_id": "b-054275404b",
+   "kind": "sentence",
+   "author": "yifan99",
+   "url": "https://blog.wenxuecity.com/myblog/31983/202609/22036.html",
+   "published_at": "2026-09-29",
+   "sentence_index": 10,
+   "locator": "AMZN 必须重新站回 MA21/MA50，并最好连续 2 个交易日守住，fal"
+  },
+  {
+   "blind_id": "b-c6ec2156c1",
+   "kind": "sentence",
+   "author": "yifan99",
+   "url": "https://bbs.wenxuecity.com/cfzh/113671.html",
+   "published_at": "2026-10-05 13:41:34",
+   "sentence_index": 3,
+   "locator": "AI时代的交易，也许不必在“抄底”和“追涨”之间二选一。"
+  },
+  {
+   "blind_id": "b-3d07c4f6f9",
+   "kind": "sentence",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/114571.html",
+   "published_at": "2026-10-09 15:53:39",
+   "sentence_index": 17,
+   "locator": "- 特斯拉，上涨 3.27%。"
+  },
+  {
+   "blind_id": "b-eecff15357",
+   "kind": "sentence",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/109275.html",
+   "published_at": "2026-09-06 12:21:15",
+   "sentence_index": 3,
+   "locator": "NVDA今年涨幅有限，回到前高容易些。"
+  }
+ ],
+ "answer_format": {
+  "blind_id": "b-…",
+  "status": "ok|unavailable|ambiguous",
+  "labels": [
+   {
+    "symbol": "TICKER",
+    "stance": "…",
+    "status": "…",
+    "instrument": "…"
+   }
+  ]
+ }
+}
