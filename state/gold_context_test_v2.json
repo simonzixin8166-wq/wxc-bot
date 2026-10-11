@@ -1,0 +1,3346 @@
+{
+ "generated_at": "2026-10-11T08:25:51.202155+00:00",
+ "articles": [
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/100298.html",
+   "item_id": "36eee8ba70762a07e46b",
+   "author": "bogbog",
+   "source_kind": "forum",
+   "published_at": "2026-07-29 09:57:12",
+   "outcome": "ok",
+   "chars": 190,
+   "text_sha256": "09f4acf890fa00ce4abf29b8cd2f825c715935b3720052693d1faf1c5a56af72",
+   "sentences": [
+    {
+     "i": 0,
+     "locator": "苹果变成了AI 股的hedge, 哈哈。",
+     "sha256": "1c6d2b5c33aabf68a0097655f79a0e846885b0e5cc9bf9020f4db02e391b3075",
+     "symbols": [
+      "AAPL"
+     ],
+     "stance_cue": false,
+     "chars": 20
+    },
+    {
+     "i": 1,
+     "locator": "不过去年苹果很惨的，",
+     "sha256": "cc2c8dc6e1f0d9a34d4ea3ec777bafe5e3655a5b73fd90fbf4f4c470d1b33dcc",
+     "symbols": [
+      "AAPL"
+     ],
+     "stance_cue": false,
+     "chars": 10
+    },
+    {
+     "i": 3,
+     "locator": "我记得我天天说苹果还有潜力， 说便宜应该买进或者加仓。",
+     "sha256": "3616fcf6071b42f49895377c7f33cf0e65444c6de32cf3d3ca7cde3c81cb2a67",
+     "symbols": [
+      "AAPL"
+     ],
+     "stance_cue": true,
+     "chars": 27
+    },
+    {
+     "i": 4,
+     "locator": "大概苹果210左右时， 三心问我， 你真觉得苹果好吗？",
+     "sha256": "c5f827031c8b3415d3f6a41bec323871968bbc039120956dead1d9fdb64467eb",
+     "symbols": [
+      "AAPL"
+     ],
+     "stance_cue": false,
+     "chars": 27
+    },
+    {
+     "i": 5,
+     "locator": "（可能看我天天说苹果的好）",
+     "sha256": "d00d62d048e6b7a8f41c11e1e570d48261f7e44a1f1678d7efad847d0ef24736",
+     "symbols": [
+      "AAPL"
+     ],
+     "stance_cue": false,
+     "chars": 13
+    },
+    {
+     "i": 9,
+     "locator": "他来个灵魂拷问，你还觉得苹果好吗？",
+     "sha256": "8f5b07e55d06edadc45eef284df32a9e395f3329c9c5a335f2922adb5840a2c4",
+     "symbols": [
+      "AAPL"
+     ],
+     "stance_cue": false,
+     "chars": 17
+    },
+    {
+     "i": 2,
+     "locator": "一度跌下200，很多人不看好。",
+     "sha256": "59c9b494fd78b781002b7134250873100e33a3a416f98d2eda267165dd18efef",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 15
+    }
+   ],
+   "candidate_sentences_total": 7
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/101099.html",
+   "item_id": "52b4ee1809fa9578beaa",
+   "author": "bogbog",
+   "source_kind": "forum",
+   "published_at": "2026-07-30 22:49:01",
+   "outcome": "ok",
+   "chars": 229,
+   "text_sha256": "0e18c5a091287fb1e12545ac451c27c4641a2daacfb921f55991e74430ed48fe",
+   "sentences": [
+    {
+     "i": 1,
+     "locator": "但起码在第一次买入NBIS时，",
+     "sha256": "49d4a93449fadd10f9449df2ca1521974a65b6f639480d5f10f3f1aa80434410",
+     "symbols": [
+      "NBIS"
+     ],
+     "stance_cue": true,
+     "chars": 15
+    },
+    {
+     "i": 4,
+     "locator": "我只要在我觉得合理的价格以及Risk/rewards可以接受的情况下accumu",
+     "sha256": "34ce4dd6fc679123b61d29e8df7703f2ec4ee0334c2b4b6bf2dc1bd2827db372",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 48
+    },
+    {
+     "i": 6,
+     "locator": "所以只要合理价格就accumulate.",
+     "sha256": "6b42c32e0ee40f683f9df952cf3daef174592c9ba859ce816681fc0972917362",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 20
+    }
+   ],
+   "candidate_sentences_total": 3
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/101330.html",
+   "item_id": "5495c2253b8f867a9c08",
+   "author": "bogbog",
+   "source_kind": "forum",
+   "published_at": "2026-07-31 19:06:15",
+   "outcome": "ok",
+   "chars": 143,
+   "text_sha256": "bd18ac10e6f981b71f1f144d8de3b9c3def8511b95bdbe336243080e6c378f3a",
+   "sentences": [],
+   "candidate_sentences_total": 0
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/101413.html",
+   "item_id": "1aea21f6565dc296bbfd",
+   "author": "bogbog",
+   "source_kind": "forum",
+   "published_at": "2026-08-01 09:06:40",
+   "outcome": "ok",
+   "chars": 153,
+   "text_sha256": "9ce27a6962c789f01ddd88075d33587628c043b495285060eb31da0fc4c0d1ac",
+   "sentences": [
+    {
+     "i": 0,
+     "locator": "对冲CAPEX波动， 苹果就是了。",
+     "sha256": "ca05971dbc1a1230a7a87249fef6fe5136696c4c0659394dff50a25e5364e7fd",
+     "symbols": [
+      "AAPL"
+     ],
+     "stance_cue": false,
+     "chars": 17
+    },
+    {
+     "i": 4,
+     "locator": "苹果不可缺，因为他可能最终是AI的最大收益者， 而且是不需要花大钱的主儿。",
+     "sha256": "e08683cf49662b17efea700aa891ebe281bfc43986e9ea2d7c75955f712443bc",
+     "symbols": [
+      "AAPL"
+     ],
+     "stance_cue": false,
+     "chars": 37
+    }
+   ],
+   "candidate_sentences_total": 2
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/101456.html",
+   "item_id": "faad1157daeaf2e55c9f",
+   "author": "bogbog",
+   "source_kind": "forum",
+   "published_at": "2026-08-01 11:48:05",
+   "outcome": "ok",
+   "chars": 205,
+   "text_sha256": "c3c5ddfec8fa87ec5b1297cebccf733724c957f5141a828ef5dc747a7929d502",
+   "sentences": [
+    {
+     "i": 0,
+     "locator": "嗯，以前苹果跌10帕比较少见，现在都不稀奇了。",
+     "sha256": "48e983106602741eadac7c529f8f4681d7dd154d104a48953491353da7cb5c29",
+     "symbols": [
+      "AAPL"
+     ],
+     "stance_cue": false,
+     "chars": 23
+    },
+    {
+     "i": 1,
+     "locator": "其实这次暴跌， 我的总portfolio是可以的， 因为苹果，",
+     "sha256": "9e05c1b5ef6d6ba29dd1e192e698162a021bec15d714cecf869f7f5243843830",
+     "symbols": [
+      "AAPL"
+     ],
+     "stance_cue": false,
+     "chars": 31
+    },
+    {
+     "i": 4,
+     "locator": "为我去年进场和今年三月进场的intc, AMD, MU, NBIS，TSEM等 ",
+     "sha256": "f56ad98ad1d0606c0de675ac6f28ac4ea055adbac1896c370341a425863b8241",
+     "symbols": [
+      "INTC",
+      "NBIS",
+      "AMD",
+      "MU",
+      "TSEM"
+     ],
+     "stance_cue": false,
+     "chars": 66
+    }
+   ],
+   "candidate_sentences_total": 3
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/101474.html",
+   "item_id": "e2b45014188ef913f534",
+   "author": "bogbog",
+   "source_kind": "forum",
+   "published_at": "2026-08-01 12:43:44",
+   "outcome": "ok",
+   "chars": 200,
+   "text_sha256": "f73c53cf486c69079c0bac47e66b307a33ab4c21f5387f3a1b035e3f460bb796",
+   "sentences": [],
+   "candidate_sentences_total": 0
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/101584.html",
+   "item_id": "ec38958eafcf4f9dca14",
+   "author": "bogbog",
+   "source_kind": "forum",
+   "published_at": "2026-08-02 11:57:55",
+   "outcome": "ok",
+   "chars": 202,
+   "text_sha256": "e065347e4699802a9858d5b5baeb81f5c1025c02699460d0d173297d97e4da1a",
+   "sentences": [
+    {
+     "i": 0,
+     "locator": "all memory stocks are buy now - too much",
+     "sha256": "df27ff0efcf97cc0849921b72e0b4ebb8d7f82f2a236d9bf0c27180b6fbee3e0",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 40
+    }
+   ],
+   "candidate_sentences_total": 1
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/101619.html",
+   "item_id": "758ae1c14f1fc4dc471e",
+   "author": "bogbog",
+   "source_kind": "forum",
+   "published_at": "2026-08-02 16:35:54",
+   "outcome": "ok",
+   "chars": 184,
+   "text_sha256": "3308dbc4d909404b17eac460f09d0c0507bd8f4667c4172f6456d15a1e464e1b",
+   "sentences": [
+    {
+     "i": 1,
+     "locator": "他也有可能象40左右的INTC, 200左右的AMD, 就是涨了一波之后，调整了",
+     "sha256": "39c8a827cfe738ae860c489984011dee6956f6672a84ab64dc2195ee0a6250b0",
+     "symbols": [
+      "INTC",
+      "AMD"
+     ],
+     "stance_cue": false,
+     "chars": 59
+    },
+    {
+     "i": 3,
+     "locator": "不过不一定是MU, 我只是省事， 不想太多个股， 所以stick to one ",
+     "sha256": "4fb9898e632aea78c533e64a8a86f90d131a512b93a3c8aa28ff7dceadbf5742",
+     "symbols": [
+      "MU"
+     ],
+     "stance_cue": false,
+     "chars": 44
+    },
+    {
+     "i": 0,
+     "locator": "楼下说了， too much shortage, 如果8，9月份一直在调整，我会",
+     "sha256": "b5f58c78014feee9ed3b81877ea0ccc03d7d8cd3544f3f75c28d5f0caac1857f",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 47
+    }
+   ],
+   "candidate_sentences_total": 3
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/101621.html",
+   "item_id": "d809e4e3e979cf867212",
+   "author": "bogbog",
+   "source_kind": "forum",
+   "published_at": "2026-08-02 16:42:34",
+   "outcome": "ok",
+   "chars": 171,
+   "text_sha256": "21fdd7adbb5a14c5f64802819dd2b37dd6cb066ca57847f225b742200aaa5662",
+   "sentences": [],
+   "candidate_sentences_total": 0
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/101722.html",
+   "item_id": "60b99eae5fc05748da1a",
+   "author": "bogbog",
+   "source_kind": "forum",
+   "published_at": "2026-08-03 08:21:24",
+   "outcome": "ok",
+   "chars": 147,
+   "text_sha256": "cc7b50d85e3f425596139a5de70a675042b5d42db2c917a5b15ed9fe32276126",
+   "sentences": [],
+   "candidate_sentences_total": 0
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/102358.html",
+   "item_id": "c0f5b459202633243933",
+   "author": "bogbog",
+   "source_kind": "forum",
+   "published_at": "2026-08-04 22:19:52",
+   "outcome": "ok",
+   "chars": 200,
+   "text_sha256": "afa3f5aaa8d521287e259f75dede7be16cf07149d2c8b23fddeebb6fdbe25a5a",
+   "sentences": [
+    {
+     "i": 0,
+     "locator": "AMD不好跟NVDA比PE.",
+     "sha256": "9e512b0d8a22df688f917983a15a23bcd1d2aaaafcdb6f71cd70bcb80394a67d",
+     "symbols": [
+      "NVDA",
+      "AMD"
+     ],
+     "stance_cue": false,
+     "chars": 14
+    },
+    {
+     "i": 1,
+     "locator": "跌主要是Q2 808M的Capex, AMD过去的一个decade,",
+     "sha256": "eea57afd2a53337926ce5bda7226806fad4761af3c96ff38d7b82cb07cd0fb32",
+     "symbols": [
+      "AMD"
+     ],
+     "stance_cue": false,
+     "chars": 34
+    }
+   ],
+   "candidate_sentences_total": 2
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/102377.html",
+   "item_id": "8b8790c4085c5b5da8e6",
+   "author": "bogbog",
+   "source_kind": "forum",
+   "published_at": "2026-08-05 04:59:22",
+   "outcome": "ok",
+   "chars": 223,
+   "text_sha256": "3f7a50f6873f5fc171110702c5d4a79ef92d57843b455ec00e963a2531cfa4a9",
+   "sentences": [
+    {
+     "i": 1,
+     "locator": "AVGO is a much larger, diversified semic",
+     "sha256": "a4a883612f2b2e17375bceac22e0dd3f9dda3ab4a0cf6f6113651d9986b92260",
+     "symbols": [
+      "AVGO"
+     ],
+     "stance_cue": false,
+     "chars": 63
+    },
+    {
+     "i": 2,
+     "locator": "MRVL is a smaller, focused AI networking",
+     "sha256": "6871d7dac140d27a6eb8b49fc3f0102e29a0c56e25a8091101baf24548a1365c",
+     "symbols": [
+      "MRVL"
+     ],
+     "stance_cue": false,
+     "chars": 101
+    }
+   ],
+   "candidate_sentences_total": 2
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/104561.html",
+   "item_id": "60d323d7b1373c5bcec6",
+   "author": "bogbog",
+   "source_kind": "forum",
+   "published_at": "2026-08-12 07:24:14",
+   "outcome": "ok",
+   "chars": 266,
+   "text_sha256": "a67cf7a14737caaf27e38e9274724192efa7479f2f6318e05ff7c8dfb33edfe4",
+   "sentences": [],
+   "candidate_sentences_total": 0
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/104714.html",
+   "item_id": "b2147fdf14ee6ef3b7c5",
+   "author": "bogbog",
+   "source_kind": "forum",
+   "published_at": "2026-08-12 17:03:47",
+   "outcome": "ok",
+   "chars": 164,
+   "text_sha256": "78dc883790055d9b86edd9b4802793bad15485f03d1bf74bf3bd93130310df27",
+   "sentences": [
+    {
+     "i": 0,
+     "locator": "一到115我就开始买了， 也有帮我儿子一起买， 买时有说过。",
+     "sha256": "489570b33e2be9f31ccc9b90ee31d66a504012612cb5f0a602648affa39acd83",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 30
+    }
+   ],
+   "candidate_sentences_total": 1
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/106852.html",
+   "item_id": "f9b56fb494d1f002eec2",
+   "author": "bogbog",
+   "source_kind": "forum",
+   "published_at": "2026-08-23 00:28:14",
+   "outcome": "ok",
+   "chars": 249,
+   "text_sha256": "89e7d3953bb8d0450458c7f500c5eeed586120347164ad2951395ccf18262048",
+   "sentences": [
+    {
+     "i": 0,
+     "locator": "刚开始不懂btc, 去年三月跟风买入ibit leaps,",
+     "sha256": "d3c65690e643b6a574adde9b9165870cb13c4a620a01be576ed2fc206db3d0f1",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 29
+    },
+    {
+     "i": 2,
+     "locator": "其实买的价格也不贵、 中间有段时间还涨了不少， 不过等我弄明白btc 和leap",
+     "sha256": "168591a943ea5668d2c9254c6add876a63cc56929d3c4be29a0ccc3cfb1b5833",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 82
+    }
+   ],
+   "candidate_sentences_total": 2
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/108995.html",
+   "item_id": "d0d0238d76b70f1e3479",
+   "author": "bogbog",
+   "source_kind": "forum",
+   "published_at": "2026-09-04 07:23:36",
+   "outcome": "ok",
+   "chars": 172,
+   "text_sha256": "3065a1f439ef83de62f85755e4464c62a460f2f6328c69c63d084a6bd395612a",
+   "sentences": [
+    {
+     "i": 0,
+     "locator": "昨天买的lotto AEHR up 10%, AAOI 5%, 嘻嘻，猜对了买在",
+     "sha256": "b64f8a57d7380ae77b6b0fa6a7aedcd5b8e25a33db963717819cb963e26a457f",
+     "symbols": [
+      "AAOI",
+      "AEHR"
+     ],
+     "stance_cue": false,
+     "chars": 50
+    }
+   ],
+   "candidate_sentences_total": 1
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/109275.html",
+   "item_id": "4b02da5b471a59f2d498",
+   "author": "bogbog",
+   "source_kind": "forum",
+   "published_at": "2026-09-06 12:21:15",
+   "outcome": "ok",
+   "chars": 187,
+   "text_sha256": "c181389053256d3df47db023a19b3765c3b401b6e4de4daee3ce382a69f1b79c",
+   "sentences": [
+    {
+     "i": 1,
+     "locator": "of the AMD Helios full-rack AI system ar",
+     "sha256": "f0337ce35e583dec113d99bdd890252487047790ed5867f091f3dda7892c5087",
+     "symbols": [
+      "AMD"
+     ],
+     "stance_cue": false,
+     "chars": 66
+    },
+    {
+     "i": 3,
+     "locator": "NVDA今年涨幅有限，回到前高容易些。",
+     "sha256": "f910812d639679febd13debd30f08fa7e57045a7815012a54b96d4a12ece2938",
+     "symbols": [
+      "NVDA"
+     ],
+     "stance_cue": false,
+     "chars": 19
+    },
+    {
+     "i": 4,
+     "locator": "AMD今年涨幅多， 这个调整是expected.",
+     "sha256": "7c4f9d5557a4ee1c2574545de7e22c8b61727161f02d76d30f8709094f4ae1ec",
+     "symbols": [
+      "AMD"
+     ],
+     "stance_cue": false,
+     "chars": 24
+    }
+   ],
+   "candidate_sentences_total": 3
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/109553.html",
+   "item_id": "a183fac13a64afe3e2d3",
+   "author": "bogbog",
+   "source_kind": "forum",
+   "published_at": "2026-09-08 16:11:18",
+   "outcome": "ok",
+   "chars": 131,
+   "text_sha256": "75b440bb342a42a7e2218cce13122d3e0ed0aa704a13571cd264218d686b800d",
+   "sentences": [],
+   "candidate_sentences_total": 0
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/112636.html",
+   "item_id": "cb36ead2de44474fd0ba",
+   "author": "bogbog",
+   "source_kind": "forum",
+   "published_at": "2026-09-30 09:00:44",
+   "outcome": "ok",
+   "chars": 208,
+   "text_sha256": "6a4185fd30b4a5b0372396d7bbab7993b265129fe32c06d8d77bedfcac60f4e3",
+   "sentences": [
+    {
+     "i": 1,
+     "locator": "我逢高卖出我原本就不打算长持的2-3个lotto股/very high beta",
+     "sha256": "b7cbfdc15954905a587348209edfaf13a7b4fdcf94d60eda35fb6bc87d5739bf",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 42
+    }
+   ],
+   "candidate_sentences_total": 1
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/112673.html",
+   "item_id": "54586721f4f2d0b83922",
+   "author": "bogbog",
+   "source_kind": "forum",
+   "published_at": "2026-09-30 12:59:03",
+   "outcome": "ok",
+   "chars": 326,
+   "text_sha256": "7a02e3c3466b68ca3f106333ffcf4447b8ee180d493cfc9205d99fbe6aab0d4f",
+   "sentences": [],
+   "candidate_sentences_total": 0
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/112700.html",
+   "item_id": "e5690f23bd2e3faae52b",
+   "author": "yifan99",
+   "source_kind": "forum",
+   "published_at": "2026-09-30 14:09:50",
+   "outcome": "ok",
+   "chars": 860,
+   "text_sha256": "e8545adf722db575cc271d6d9592f4fa1667e8f43613f83375ed473692624504",
+   "sentences": [
+    {
+     "i": 0,
+     "locator": "LITE 适合 Sell Put 的理由(结合图)",
+     "sha256": "cff0811e2dda9e43f5dc4ae791dababe66d3aa045b7afc37fc434f6cd829c263",
+     "symbols": [
+      "LITE"
+     ],
+     "stance_cue": true,
+     "chars": 25
+    },
+    {
+     "i": 1,
+     "locator": "LITE 适合 Sell Put 的理由",
+     "sha256": "27fd4a186996f655718d6d6487ebbff4d9aee550c53cb7fc7217a91cfb556603",
+     "symbols": [
+      "LITE"
+     ],
+     "stance_cue": true,
+     "chars": 20
+    },
+    {
+     "i": 4,
+     "locator": "卖方收的权利金也会比 QQQ 这类低波动标的高很多。",
+     "sha256": "0d91fae596b505d5d3ae0c0ca1aca3497ee4c25832493edd8d1c6687dd90b434",
+     "symbols": [
+      "QQQ"
+     ],
+     "stance_cue": false,
+     "chars": 26
+    },
+    {
+     "i": 19,
+     "locator": "LITE 是光通信/AI 算力链上的核心标的,如果被行权,在 800 上下拿到股",
+     "sha256": "e8a06aca2894675cbdb0d4ee816cb3477e039fda136f6f632fb3bcfa56456805",
+     "symbols": [
+      "LITE"
+     ],
+     "stance_cue": false,
+     "chars": 66
+    },
+    {
+     "i": 18,
+     "locator": "愿意接货,这是 Sell Put 的前提。",
+     "sha256": "f0ff628f753a11c1b537f753993cc03f2355bb36d0ebe17a114a408c7ec0ee47",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 21
+    }
+   ],
+   "candidate_sentences_total": 5
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/112781.html",
+   "item_id": "279a670bf197d7384a3b",
+   "author": "bogbog",
+   "source_kind": "forum",
+   "published_at": "2026-09-30 23:39:55",
+   "outcome": "ok",
+   "chars": 192,
+   "text_sha256": "bf3960ca7fcb2d79c3e97e77045591c5da963dc8332afa0ac948abc201801348",
+   "sentences": [
+    {
+     "i": 0,
+     "locator": "这个公司事情真多，买了就忘了还真不适合他。",
+     "sha256": "a49325ba019c1f82146a7ddfa0bc617386edf0b40f35f3af021d4e63a1310ca0",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 21
+    },
+    {
+     "i": 4,
+     "locator": "去年差不多最低的时候买进的还是浮盈的，后来加仓的有些在水下，整体还是还是浮盈的。",
+     "sha256": "3c710b2d7cb227f5b49e3da7da84b222bc3efe72a5759eac682cfbdec8102c73",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 40
+    },
+    {
+     "i": 5,
+     "locator": "仓位不多，目前看着也没什么基本面问题，留着吧暂时不卖。",
+     "sha256": "7b7040d5356d8c0bb6ea11829a37476caa7ef45fb328c7f259fc1890a34072fb",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 27
+    },
+    {
+     "i": 7,
+     "locator": "等我多了解一下，基本面如有问题就exit",
+     "sha256": "a3301b39c540887421bda545ba8e17b8943fe4acce73f82532b19125f6c88db5",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 20
+    }
+   ],
+   "candidate_sentences_total": 4
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/113324.html",
+   "item_id": "38c0de908ccbc6a0accb",
+   "author": "我是一只井底蛙",
+   "source_kind": "forum",
+   "published_at": "2026-10-03 08:21:07",
+   "outcome": "ok",
+   "chars": 236,
+   "text_sha256": "20c975d3f21bef9d7a7fb1f8a477ebbf4ceb65f68a0dc43bf129767c7ef73bc5",
+   "sentences": [],
+   "candidate_sentences_total": 0
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/113341.html",
+   "item_id": "26eb63668b7dc67c4f52",
+   "author": "我是一只井底蛙",
+   "source_kind": "forum",
+   "published_at": "2026-10-03 09:11:49",
+   "outcome": "ok",
+   "chars": 234,
+   "text_sha256": "2ca6d99c25517f3716965023faee587b680867eb6fec58dbcccfcc7647244d78",
+   "sentences": [
+    {
+     "i": 2,
+     "locator": "图形没破位，你think它可能会破位，卖了，你很可能卖错。",
+     "sha256": "45cfb595e63e2c7de087fbe21d4fd3f3b790a24851545f7b18b232fda0631c4c",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 29
+    },
+    {
+     "i": 3,
+     "locator": "图形没突破，你think它可以突破，抢跑提起买了，你很可能买错。",
+     "sha256": "dd2a1f29685ed68499e76e1aee185747fd33e573e82bd7eb00e4bb1baad2af76",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 32
+    }
+   ],
+   "candidate_sentences_total": 2
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/113358.html",
+   "item_id": "2f5509961ee37fcef544",
+   "author": "三心三意",
+   "source_kind": "forum",
+   "published_at": "2026-10-03 10:48:34",
+   "outcome": "ok",
+   "chars": 313,
+   "text_sha256": "1d81d4f72d6206477943b39a115cfc9e496dd2a103ff9a67e188bfa59e485f6b",
+   "sentences": [],
+   "candidate_sentences_total": 0
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/113514.html",
+   "item_id": "046a2b2204ad0a233930",
+   "author": "bogbog",
+   "source_kind": "forum",
+   "published_at": "2026-10-04 16:09:55",
+   "outcome": "ok",
+   "chars": 362,
+   "text_sha256": "aa7ae389ab4613f2f44bd014337db03b44e0ec2efab36c28d159462cd4500839",
+   "sentences": [
+    {
+     "i": 3,
+     "locator": " 但是我得到的profit已经还可以了（AEHR的仓位差不多是涨了5倍，3倍 &",
+     "sha256": "180b4f6ebf2e1220717ec2a5351332e97b7160e593215e03833085192468d4d9",
+     "symbols": [
+      "AEHR"
+     ],
+     "stance_cue": true,
+     "chars": 136
+    },
+    {
+     "i": 4,
+     "locator": "其实他们占我仓位的比例很小， 但是我觉得being defensive 可以ju",
+     "sha256": "8ae2f06526fc19439a3db780ddd1cad22330bee5f33686ea1043105679276603",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 70
+    },
+    {
+     "i": 6,
+     "locator": "但是不再加仓，要攒钱， 等到下次调整再买， 我一般都不追高的。",
+     "sha256": "0d5a5c6c74a10dabb30e77c27cfd9350c400415600f96e0ffe144f1574f80d90",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 31
+    }
+   ],
+   "candidate_sentences_total": 3
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/113671.html",
+   "item_id": "d7f938643d641aa7154e",
+   "author": "yifan99",
+   "source_kind": "forum",
+   "published_at": "2026-10-05 13:41:34",
+   "outcome": "ok",
+   "chars": 2108,
+   "text_sha256": "a87c86025fb6594f7d8227bd8e3a57d1bab3c157151117b2ca37158a416e2021",
+   "sentences": [
+    {
+     "i": 0,
+     "locator": "ave：Left to Right 从 AAOI 和 CIEN 看“左侧发现，右",
+     "sha256": "01eab495697c8670673ac8c61c75a41b686d331c9482cce8077ff26a2093fa4f",
+     "symbols": [
+      "CIEN",
+      "AAOI"
+     ],
+     "stance_cue": false,
+     "chars": 59
+    },
+    {
+     "i": 2,
+     "locator": "从 AAOI 和 CIEN 看“左侧发现，右侧确认”",
+     "sha256": "ab047219988d840c2506c04d837923f0ba078c8d5d5c450028adac56aa02e76b",
+     "symbols": [
+      "CIEN",
+      "AAOI"
+     ],
+     "stance_cue": false,
+     "chars": 26
+    },
+    {
+     "i": 8,
+     "locator": "AAOI 和 CIEN 最近两笔实盘，恰好把这个过程表现得很清楚。",
+     "sha256": "a80ef7e74e6175b0382750721a9177f5f350a0cbfa7c635279b615758fc4b860",
+     "symbols": [
+      "CIEN",
+      "AAOI"
+     ],
+     "stance_cue": false,
+     "chars": 33
+    },
+    {
+     "i": 10,
+     "locator": "AAOI：Early Entry 之后，开始挑战 MA50",
+     "sha256": "cb1766e1bba37f232b5b2cee6c9970e88413a7d4a0c7f1a4a3ee323f53f9beb4",
+     "symbols": [
+      "AAOI"
+     ],
+     "stance_cue": false,
+     "chars": 29
+    },
+    {
+     "i": 11,
+     "locator": "9月18日，我在 AAOI 大约 $108 建仓。",
+     "sha256": "c7a053e8343339c2a425990660fb142892501981aaed7e861f0a5b1a51344ce7",
+     "symbols": [
+      "AAOI"
+     ],
+     "stance_cue": true,
+     "chars": 25
+    },
+    {
+     "i": 15,
+     "locator": "现在 AAOI 已站到 MA50 上方，同时 TCDS-D 明显向上、MACD ",
+     "sha256": "bd09d0789de26b7a9c944a24475732ab47a068103a96eb97c08e6d3e12ee1245",
+     "symbols": [
+      "AAOI"
+     ],
+     "stance_cue": false,
+     "chars": 85
+    },
+    {
+     "i": 19,
+     "locator": "AAOI：Early Entry 后突破 MA50，TCDS-D 与 MACD ",
+     "sha256": "f2db2fa300ba867d06796725d8194554453455606973f7bfb9b06b62710ad011",
+     "symbols": [
+      "AAOI"
+     ],
+     "stance_cue": false,
+     "chars": 55
+    },
+    {
+     "i": 20,
+     "locator": "CIEN：从 Early Entry 到第二天 MA50 Confirmatio",
+     "sha256": "f50b38c4d65d9cbb8db3875dadd2ac20947f3b7867ce9218ae30d46bec50d710",
+     "symbols": [
+      "CIEN"
+     ],
+     "stance_cue": false,
+     "chars": 41
+    },
+    {
+     "i": 21,
+     "locator": "CIEN 的过程更完整。",
+     "sha256": "5b173b6db689b29ee604f62453016c920295f96a6c96cc80a23a6f9c5380d2d9",
+     "symbols": [
+      "CIEN"
+     ],
+     "stance_cue": false,
+     "chars": 12
+    },
+    {
+     "i": 24,
+     "locator": "CIEN 前面经历明显下跌，但在价格真正突破 MA50 以前，DeepWave ",
+     "sha256": "328c4162f56e9ad1bd191a4a3b36a5261355e67de40ed6bd458cf9f1f66f30b2",
+     "symbols": [
+      "CIEN"
+     ],
+     "stance_cue": false,
+     "chars": 118
+    },
+    {
+     "i": 25,
+     "locator": "现在 CIEN 已连续第二个交易日位于 MA50 上方。",
+     "sha256": "8db923dc38282d8c31f36371cb881b96d8bc4ab2cf36780c061499cd236e9356",
+     "symbols": [
+      "CIEN"
+     ],
+     "stance_cue": false,
+     "chars": 28
+    },
+    {
+     "i": 26,
+     "locator": "因此与 AAOI 相比，它更接近 Confirmed Recovery。",
+     "sha256": "757b65cf175eb9c6b10072978978ae174aba977e63d07bcb67308ec27537b71a",
+     "symbols": [
+      "AAOI"
+     ],
+     "stance_cue": false,
+     "chars": 36
+    },
+    {
+     "i": 29,
+     "locator": "CIEN：Early Entry 后逐步修复，目前已出现第二天 MA50 con",
+     "sha256": "ed9172914e5beb9cccc9be9a9c03535b6aef3f6fee0ccd053fa695601f5df5a2",
+     "symbols": [
+      "CIEN"
+     ],
+     "stance_cue": false,
+     "chars": 50
+    },
+    {
+     "i": 37,
+     "locator": "按照这个框架，AAOI 当前更接近 Stage 2，CIEN 已经进入 Stag",
+     "sha256": "105e773080c78695e9a06613e28963604e1c535c5cf48d867ed6325d9dc542fa",
+     "symbols": [
+      "CIEN",
+      "AAOI"
+     ],
+     "stance_cue": false,
+     "chars": 44
+    },
+    {
+     "i": 38,
+     "locator": "因此目前 CIEN 的趋势确认程度略高于 AAOI。",
+     "sha256": "0b07684dbc4800529e2ce6ba877bacef49d0ed4b9842304739b25fdcaa6fd951",
+     "symbols": [
+      "CIEN",
+      "AAOI"
+     ],
+     "stance_cue": false,
+     "chars": 26
+    },
+    {
+     "i": 45,
+     "locator": "AAOI 和 CIEN 都还没有走完。",
+     "sha256": "2c2692cc25b43db51970ec53035c1f1ca0a02b65cff5761de62ecfe536eeb0e8",
+     "symbols": [
+      "CIEN",
+      "AAOI"
+     ],
+     "stance_cue": false,
+     "chars": 19
+    },
+    {
+     "i": 50,
+     "locator": "CIEN 的技术修复更完整，AAOI 的上涨弹性更大、波动也更高",
+     "sha256": "277af48dd7395fe77ad719d6f2b101b032203b9f928bd6227360280618ba0c60",
+     "symbols": [
+      "CIEN",
+      "AAOI"
+     ],
+     "stance_cue": false,
+     "chars": 32
+    },
+    {
+     "i": 52,
+     "locator": "ave：Left to Right 从 AAOI 和 CIEN 看“左侧发现，右",
+     "sha256": "01eab495697c8670673ac8c61c75a41b686d331c9482cce8077ff26a2093fa4f",
+     "symbols": [
+      "CIEN",
+      "AAOI"
+     ],
+     "stance_cue": false,
+     "chars": 59
+    },
+    {
+     "i": 54,
+     "locator": "CIEN 的技术修复更完整，AAOI 的上涨弹性更大、波动也更高",
+     "sha256": "277af48dd7395fe77ad719d6f2b101b032203b9f928bd6227360280618ba0c60",
+     "symbols": [
+      "CIEN",
+      "AAOI"
+     ],
+     "stance_cue": false,
+     "chars": 32
+    },
+    {
+     "i": 55,
+     "locator": "LITE 适合 Sell Put 的理由(结合图)",
+     "sha256": "cff0811e2dda9e43f5dc4ae791dababe66d3aa045b7afc37fc434f6cd829c263",
+     "symbols": [
+      "LITE"
+     ],
+     "stance_cue": true,
+     "chars": 25
+    },
+    {
+     "i": 56,
+     "locator": "AMZN 一次向上 False Break（假突破），目前重新回到偏弱区间",
+     "sha256": "c10e5febd5dbdb947a4d355131af180f29e17d2cc7154f34136f8ae652071f1d",
+     "symbols": [
+      "AMZN"
+     ],
+     "stance_cue": false,
+     "chars": 37
+    },
+    {
+     "i": 3,
+     "locator": "AI时代的交易，也许不必在“抄底”和“追涨”之间二选一。",
+     "sha256": "89c08ec06b02597e25afa29267777864318ebc531c48b5a32c6881229cfa419a",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 28
+    },
+    {
+     "i": 6,
+     "locator": "如果看到指标刚刚转头就重仓，又很容易变成抄底。",
+     "sha256": "1bada47b7d830b8ca8b9ae3e9aa1fc39a5880f8fd8260c0e2bec99885d3d8b01",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 23
+    },
+    {
+     "i": 17,
+     "locator": "下一步更重要的是能否站稳，而不是因为一天大涨就追着加仓。",
+     "sha256": "0422e23817b8e615abc62cacc076f6e4fc8bfc284092a4c3204d28263f160537",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 28
+    },
+    {
+     "i": 32,
+     "locator": "把 MA50 当成唯一买入开关，信号容易滞后；",
+     "sha256": "0cb0fcbe21cff88bc78cb4e5999b8f01e3afdf8ef5e08ec6998082858215db5a",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 23
+    }
+   ],
+   "candidate_sentences_total": 28
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/113918.html",
+   "item_id": "a688f62cf1568381701a",
+   "author": "yifan99",
+   "source_kind": "forum",
+   "published_at": "2026-10-06 14:04:20",
+   "outcome": "ok",
+   "chars": 1265,
+   "text_sha256": "f86e705a3801ccacb510fada803059a735126b7d3048a82f4a90f17033e8eb67",
+   "sentences": [
+    {
+     "i": 4,
+     "locator": "AMZN 今天收在 256.29，+1.95%。",
+     "sha256": "87d4de6c801bab85e518b175ee54ceb894ae6607cde161b158332791e2fbf42d",
+     "symbols": [
+      "AMZN"
+     ],
+     "stance_cue": false,
+     "chars": 24
+    },
+    {
+     "i": 32,
+     "locator": "这也是最近 AAOI、CIEN、AMAT 给我的一个启发。",
+     "sha256": "25b87f35a19c5a46827b8b03fe7b51eb59807b5180336d746a5505292afe064a",
+     "symbols": [
+      "CIEN",
+      "AMAT",
+      "AAOI"
+     ],
+     "stance_cue": false,
+     "chars": 29
+    },
+    {
+     "i": 41,
+     "locator": "AVGO：底部修复已经开始，但趋势确认还差一步Ride with the Wav",
+     "sha256": "234b4b121c2b1be36fdd1717a02496ee2f80972a251d0d246e26cfd42391cb46",
+     "symbols": [
+      "CIEN",
+      "AVGO",
+      "AAOI"
+     ],
+     "stance_cue": false,
+     "chars": 105
+    },
+    {
+     "i": 33,
+     "locator": "真正好的交易系统，不应该只在最后告诉我：BUY。",
+     "sha256": "aa6e5afa118b7a17ea9ad42e72d4dbac2aa97071c1f32e785e2b7f9417ac6086",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 24
+    }
+   ],
+   "candidate_sentences_total": 4
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/114225.html",
+   "item_id": "8f047ce96706141c9220",
+   "author": "yifan99",
+   "source_kind": "forum",
+   "published_at": "2026-10-08 08:45:43",
+   "outcome": "ok",
+   "chars": 2515,
+   "text_sha256": "15b4cc04163eda7d6ca92b2a369763892381c38f7482e78755045e76558f6bc5",
+   "sentences": [
+    {
+     "i": 89,
+     "locator": "AVGO：底部修复已经开始，但趋势确认还差一步",
+     "sha256": "8c5bb428c54dc6f8c7faa077c99812a14b9b09bba56e5722fdb62088d6ff5f2a",
+     "symbols": [
+      "AVGO"
+     ],
+     "stance_cue": false,
+     "chars": 23
+    },
+    {
+     "i": 90,
+     "locator": "ave：Left to Right 从 AAOI 和 CIEN 看“左侧发现，右",
+     "sha256": "01eab495697c8670673ac8c61c75a41b686d331c9482cce8077ff26a2093fa4f",
+     "symbols": [
+      "CIEN",
+      "AAOI"
+     ],
+     "stance_cue": false,
+     "chars": 59
+    },
+    {
+     "i": 3,
+     "locator": "前几天，我在华人超市买了一瓶镇江香醋。",
+     "sha256": "70f38ff192e632cee61632a658eaf8d99e2cbc98bd71a10bd710cc01d77b46e1",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 19
+    },
+    {
+     "i": 63,
+     "locator": "面对冒牌食品，我们有时会想：已经买了，扔掉可惜，吃完再说。",
+     "sha256": "1f07ce454523adb940775bbba1c75672acb96b58d3289c7d1fe18cf61dea70f7",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 29
+    },
+    {
+     "i": 65,
+     "locator": "如果误导消费者的产品仍然能卖出去，认真做品牌、遵守质量要求的企业，就可能在价格竞",
+     "sha256": "b7e26addb44392ae01a9da249ab004557e648b6d593f4325657c3fe7c50a753d",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 45
+    }
+   ],
+   "candidate_sentences_total": 5
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/114376.html",
+   "item_id": "8a4b38e952064def7920",
+   "author": "yifan99",
+   "source_kind": "forum",
+   "published_at": "2026-10-08 17:19:45",
+   "outcome": "ok",
+   "chars": 188,
+   "text_sha256": "129d4808b845e21829313018d41b53a1662f8745531415c7ad52ef46e40bcabb",
+   "sentences": [],
+   "candidate_sentences_total": 0
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/114571.html",
+   "item_id": "9bf7d6d7f269af723746",
+   "author": "我是一只井底蛙",
+   "source_kind": "forum",
+   "published_at": "2026-10-09 15:53:39",
+   "outcome": "ok",
+   "chars": 652,
+   "text_sha256": "2c67a95e08ec960a9fabd02b489992e180ff7eef6e03155643e88ff311aecd47",
+   "sentences": [
+    {
+     "i": 2,
+     "locator": "- 亚麻，上涨4.34%，周线回到10周均线上。",
+     "sha256": "7b9446cedb407fbae8f91beca5eee7e4710b107dfacd4a9ab2724b09bcdc7642",
+     "symbols": [
+      "AMZN"
+     ],
+     "stance_cue": false,
+     "chars": 24
+    },
+    {
+     "i": 3,
+     "locator": "- CIEN，这周大涨近15%。",
+     "sha256": "43d0622694a914423b53e6b44e5113e8e77b7cb4c670c51b5e103942dfda9b9b",
+     "symbols": [
+      "CIEN"
+     ],
+     "stance_cue": false,
+     "chars": 16
+    },
+    {
+     "i": 7,
+     "locator": "- 谷歌，上涨2.38%，但周线仍是横盘。",
+     "sha256": "a29cb5dfc026767f61568c2890a8b856ff60cb45eb1a0ba78ee64375b4a1bf91",
+     "symbols": [
+      "GOOGL"
+     ],
+     "stance_cue": false,
+     "chars": 21
+    },
+    {
+     "i": 10,
+     "locator": "- 微软，上涨 3.39%，新高。",
+     "sha256": "27fcc575097b477a460adbaa1aa34a17439b3c199da66557ec7bc67b75f774b1",
+     "symbols": [
+      "MSFT"
+     ],
+     "stance_cue": false,
+     "chars": 17
+    },
+    {
+     "i": 13,
+     "locator": "- PLTR，上涨 10.75%。",
+     "sha256": "03cb852613ed30f9e76d9490b8bbf36b5fe3f1533cf89a2ed615ec3eff1f151c",
+     "symbols": [
+      "PLTR"
+     ],
+     "stance_cue": false,
+     "chars": 17
+    },
+    {
+     "i": 14,
+     "locator": "同微软，也是在7月底/8月初暴力突破10周均线确认买入信号的。",
+     "sha256": "4ec0425c56bd8737c14940b6e2ffd880b1babb675096372c81e005a57295f024",
+     "symbols": [
+      "MSFT"
+     ],
+     "stance_cue": true,
+     "chars": 31
+    },
+    {
+     "i": 17,
+     "locator": "- 特斯拉，上涨 3.27%。",
+     "sha256": "d46d5087d8f2547e8d136b60080cffc3d153c1c97600553c9a1bff9358f8feea",
+     "symbols": [
+      "TSLA"
+     ],
+     "stance_cue": false,
+     "chars": 15
+    },
+    {
+     "i": 21,
+     "locator": "SMH 下跌4.32%，周线暂时无妨，仍在10周均线上。",
+     "sha256": "e0747e0c101b049e9b86001ade653076b3006e971fa467e25e5c36a7bf8a6adc",
+     "symbols": [
+      "SMH"
+     ],
+     "stance_cue": false,
+     "chars": 28
+    },
+    {
+     "i": 24,
+     "locator": "INTC卖掉一半，这个卖的比SOXL早。",
+     "sha256": "cb338452094963a82e909380e95437d628427ea7248f30a347343ca87fe6fe13",
+     "symbols": [
+      "INTC",
+      "SOXL"
+     ],
+     "stance_cue": true,
+     "chars": 20
+    },
+    {
+     "i": 25,
+     "locator": "AMD卖掉一半。",
+     "sha256": "dcd41b4c7e8fc3d6e0ce25ee52a3a6cc18d5ae40cd5c2301e4b5fef3e9c66daa",
+     "symbols": [
+      "AMD"
+     ],
+     "stance_cue": true,
+     "chars": 8
+    },
+    {
+     "i": 26,
+     "locator": "ARM向上突破没有发生，卖掉一半。",
+     "sha256": "3526162b3e30f393e47b107bc70eb68c41f4a23ab30ef81ac7a649c3988e5f46",
+     "symbols": [
+      "ARM"
+     ],
+     "stance_cue": true,
+     "chars": 17
+    },
+    {
+     "i": 27,
+     "locator": "rotate到了其它板块：买了亚麻，和周三，周四买了financial 板块的 ",
+     "sha256": "9c952a928f74df46954ac9e142cea5356bda66efdb5fd492b0d229b2406c97b4",
+     "symbols": [
+      "AMZN"
+     ],
+     "stance_cue": true,
+     "chars": 44
+    },
+    {
+     "i": 4,
+     "locator": "上周刚回到10周均线上（周线买入信号），日线回到50天均线。",
+     "sha256": "d18b6cad553452d16de5c0ea68969a084cc3fbd29c339ea815547af2bc2989d3",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 30
+    },
+    {
+     "i": 6,
+     "locator": "原想等回测时buy dips，但看情形希望不大，于是在今天盘前先买上一单。",
+     "sha256": "ecc26c945c1c3d707181e6d400e2bd0627fdbbe81bd8aebe314ba532f2868cf8",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 37
+    },
+    {
+     "i": 9,
+     "locator": "如此将确认周线级别的买入。",
+     "sha256": "7ebc21abfbedf6620c38bf7de21a046ec09724ba8619ce30b65b0af93f7418d6",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 13
+    },
+    {
+     "i": 12,
+     "locator": "它是在7月底确认周线买入信号的。",
+     "sha256": "37a8e11de10320c5b419abaec6486a8a8bb6b6a0fd5dad7ab8ab91f6d26f1ded",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 16
+    }
+   ],
+   "candidate_sentences_total": 16
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/114594.html",
+   "item_id": "d9bd79102341973b3d32",
+   "author": "我是一只井底蛙",
+   "source_kind": "forum",
+   "published_at": "2026-10-10 06:07:42",
+   "outcome": "ok",
+   "chars": 192,
+   "text_sha256": "420101f8a207788232185f12eb6bb5d24e5f420b7b485e203933d7b7f406a484",
+   "sentences": [
+    {
+     "i": 0,
+     "locator": "再来几个“可以继续看好大盘”的数据",
+     "sha256": "1eeb6842d7bf7bb1e662d36ce2406bb21131ba2a1991aad03827397d26bddb4b",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 17
+    },
+    {
+     "i": 3,
+     "locator": "SP 500 bullish percent 上升了 11.32%",
+     "sha256": "104b8b2421b333ff2a4dba63eb6ac1d837ebee75c0e0f0ed1ed9fe6ed840ebca",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 33
+    }
+   ],
+   "candidate_sentences_total": 2
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/94244.html",
+   "item_id": "59f30a4a764c89fa7828",
+   "author": "bogbog",
+   "source_kind": "forum",
+   "published_at": "2026-07-03 01:34:30",
+   "outcome": "ok",
+   "chars": 191,
+   "text_sha256": "1cfbbdf929ad089a6e5ba5b3920734db7158ee205b14ceefaf82c698ffa422a3",
+   "sentences": [],
+   "candidate_sentences_total": 0
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/94374.html",
+   "item_id": "40fc950c9245bb6c7bdd",
+   "author": "bogbog",
+   "source_kind": "forum",
+   "published_at": "2026-07-03 17:10:17",
+   "outcome": "ok",
+   "chars": 351,
+   "text_sha256": "f981a3f9075471602389638da3657057565cc6046a7f48584dbc2b13121cea08",
+   "sentences": [
+    {
+     "i": 0,
+     "locator": "MSFT其实今年还是大致能判断的，",
+     "sha256": "b7d10c44efc6ca12e2646be52f2ea63780847794401e2a8fd93f71f58969756d",
+     "symbols": [
+      "MSFT"
+     ],
+     "stance_cue": false,
+     "chars": 17
+    },
+    {
+     "i": 1,
+     "locator": "去年底和今年一二月份的时候，有讨论买msft的， 一直说not yet, 还不是",
+     "sha256": "37d6be6941f6e354e6b640151fccf8d940c619088d48d7091116b802a14b88fd",
+     "symbols": [
+      "MSFT"
+     ],
+     "stance_cue": true,
+     "chars": 44
+    },
+    {
+     "i": 4,
+     "locator": "说过会在375左右开始加仓，",
+     "sha256": "333c8b9cb03ce4bf701f8d101a42efb05eb7e2da0787ef0ba87abe67cdacd7cc",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 14
+    }
+   ],
+   "candidate_sentences_total": 3
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/94903.html",
+   "item_id": "0557d6885a8d5b48b6ae",
+   "author": "bogbog",
+   "source_kind": "forum",
+   "published_at": "2026-07-07 09:08:35",
+   "outcome": "ok",
+   "chars": 190,
+   "text_sha256": "dd60df0728a2e202f2a980267f6091b7dd67da6a901ec8a3d7ec9760515dadd1",
+   "sentences": [],
+   "candidate_sentences_total": 0
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/95052.html",
+   "item_id": "3a2e44e825eeb225993c",
+   "author": "bogbog",
+   "source_kind": "forum",
+   "published_at": "2026-07-07 17:25:22",
+   "outcome": "ok",
+   "chars": 174,
+   "text_sha256": "b78a5f1c2873e4f4405458360bbc2ac74bb4282e88412ce3525ee7218e2cb1fe",
+   "sentences": [
+    {
+     "i": 0,
+     "locator": "NVDA， 我会在160-165左右考虑加仓，还有130-135左右。",
+     "sha256": "ebbc863a74516f46d9f97d1c7b4d090f317e29467b4c74137aa5f44ea23cfbb9",
+     "symbols": [
+      "NVDA"
+     ],
+     "stance_cue": true,
+     "chars": 35
+    },
+    {
+     "i": 3,
+     "locator": "对于这些我已拥有很久有足够多的股，我加仓的价格要求严格一些。",
+     "sha256": "94076a2103b59a42266739eee10a0896c25297bff730a735948652c164c78597",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 30
+    },
+    {
+     "i": 4,
+     "locator": "对于新买的还在积累股数的股，我对加仓的要求不会太高，差不多就可以。",
+     "sha256": "2d8e015f07678fe8a33d21c8012716f17a383beb96cbfe2a9d6ddee009cca2be",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 33
+    }
+   ],
+   "candidate_sentences_total": 3
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/95056.html",
+   "item_id": "a1143dc62f8dac219fb2",
+   "author": "bogbog",
+   "source_kind": "forum",
+   "published_at": "2026-07-07 17:40:44",
+   "outcome": "ok",
+   "chars": 183,
+   "text_sha256": "075d420e3ea1183097e7c892698b1b9b53d05e43a98bd8deb8c1907a6c9036bf",
+   "sentences": [
+    {
+     "i": 3,
+     "locator": "而且卖了交的税可能还没有跌幅多， 很麻烦的，只要基本面不变， 长期看涨就是不动已",
+     "sha256": "7d79b54765654766b2ebae1efc46088b5dd986e4f3d6a897996983afad2c786b",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 51
+    }
+   ],
+   "candidate_sentences_total": 1
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/95066.html",
+   "item_id": "cdf6fa7c797c07f29afb",
+   "author": "bogbog",
+   "source_kind": "forum",
+   "published_at": "2026-07-07 18:49:38",
+   "outcome": "ok",
+   "chars": 193,
+   "text_sha256": "8868cf7524fcd24fd7b9f5a7bf5df581ae3fa8d3bcb79790d5c092c3923c19b0",
+   "sentences": [
+    {
+     "i": 0,
+     "locator": "小松松，您是不是问我加仓了tsem, mrvl没？",
+     "sha256": "4dc9c0b0e9222b0a4e3d2d3bf990ed0f4f2f20e0643c1f0ee97bf586baa62ed0",
+     "symbols": [
+      "MRVL"
+     ],
+     "stance_cue": true,
+     "chars": 25
+    },
+    {
+     "i": 6,
+     "locator": "股市跌了看看我外婆援助我黄金不， 哈哈开个玩笑。",
+     "sha256": "88562b301fd153d0f9afce60c496aa0d90664176bee4d98d163b08e0c2bba237",
+     "symbols": [
+      "GLD"
+     ],
+     "stance_cue": false,
+     "chars": 24
+    },
+    {
+     "i": 2,
+     "locator": "早上(美国时间）我加仓了。",
+     "sha256": "07a39f5b45d3774d98bdfeca9d615c1d470d5ab405cab5f4a688ce408f1ddb02",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 13
+    },
+    {
+     "i": 3,
+     "locator": "有可能更低，但是到了我愿意accumulate的价格。",
+     "sha256": "9437225d96d17e4eee0ffd02d4601509e80d7671564167cd92acaf6d60a8e904",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 27
+    },
+    {
+     "i": 7,
+     "locator": "还加了一点点我的lotto股，",
+     "sha256": "934cc8ab8ee724143a9f85d0a2caca557954efdb3045f856dd54de1063947143",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 15
+    }
+   ],
+   "candidate_sentences_total": 5
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/95076.html",
+   "item_id": "307d714f12b31d4f1122",
+   "author": "bogbog",
+   "source_kind": "forum",
+   "published_at": "2026-07-07 21:55:33",
+   "outcome": "ok",
+   "chars": 220,
+   "text_sha256": "5cf87fd603f78d5eb78ce7ee8640fbea9cf6923d4b6c363c767cd3c298988c0b",
+   "sentences": [
+    {
+     "i": 0,
+     "locator": "哦，都忘了说NBIS。",
+     "sha256": "f382df146215a031739d40d291d1770d61380b753aa601d76cdb7ca1497cf8fb",
+     "symbols": [
+      "NBIS"
+     ],
+     "stance_cue": false,
+     "chars": 11
+    },
+    {
+     "i": 2,
+     "locator": "可能象3月份的MU，虽然在高位看到了回调，但比我预想的回调更快更狠。",
+     "sha256": "291e5543961075bb273570edac70f3ce5b81542efd8f8183031b309017ca2645",
+     "symbols": [
+      "MU"
+     ],
+     "stance_cue": false,
+     "chars": 34
+    },
+    {
+     "i": 1,
+     "locator": "早上201的时候加了， 刚刚盘后194-195也加了，",
+     "sha256": "b8e0d3127bf44975f2a0c78b08225901f8548fa7b1a01f2be4d112724bef0ed1",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 27
+    },
+    {
+     "i": 4,
+     "locator": "今天看到他跌到我觉得还算合理的价格了，就再加了一点， 如果更猛的跌到时再加一点。",
+     "sha256": "8472de84c86317a90878fa372f63b055fe124e1ed16bb1804c65238f9e82d679",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 40
+    }
+   ],
+   "candidate_sentences_total": 4
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/95097.html",
+   "item_id": "be628e8383c4e01c3c04",
+   "author": "bogbog",
+   "source_kind": "forum",
+   "published_at": "2026-07-08 03:48:18",
+   "outcome": "ok",
+   "chars": 140,
+   "text_sha256": "1d66056eaaef67d07010567aa5a05690aacf9d72c398c2eb3de7a06d30c0af68",
+   "sentences": [
+    {
+     "i": 2,
+     "locator": "全部一梯一户+一个工人梯每户， 业主不多，有些业主房子买了就不在港，只有工人姐姐",
+     "sha256": "19458a685bc0ce0c3a24d61c194c3fcd7faba878a3e0e32b7639bea1bb156685",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 45
+    }
+   ],
+   "candidate_sentences_total": 1
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/95640.html",
+   "item_id": "b682bdd905576f848242",
+   "author": "bogbog",
+   "source_kind": "forum",
+   "published_at": "2026-07-09 23:17:55",
+   "outcome": "ok",
+   "chars": 165,
+   "text_sha256": "5977aabf43dfbc6b275a5a15678855cda2718fac74f2b38cbb49759e15887dd7",
+   "sentences": [],
+   "candidate_sentences_total": 0
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/95909.html",
+   "item_id": "8b350d402b3d3f8dadfe",
+   "author": "bogbog",
+   "source_kind": "forum",
+   "published_at": "2026-07-10 17:56:21",
+   "outcome": "ok",
+   "chars": 276,
+   "text_sha256": "68e7b53095eda183b40ed06c9e63a981cd8acbc8e2db41190fff4ac3d5963d09",
+   "sentences": [
+    {
+     "i": 2,
+     "locator": "只卖了PAYC （不看好了，不会考虑再买进) 和年初到期的三个股票的leaps ",
+     "sha256": "714da79ee5b8a4f0d1ffd36e49b30389a2afce80978d421166ba1c87559ae3af",
+     "symbols": [
+      "AMD"
+     ],
+     "stance_cue": true,
+     "chars": 60
+    },
+    {
+     "i": 3,
+     "locator": "INTC leaps 去年暴涨后就跑了。",
+     "sha256": "6cb96500d4d7d1655cdf88ee5c93491ac037355012ce96daf8f8c9a6f5703c97",
+     "symbols": [
+      "INTC"
+     ],
+     "stance_cue": false,
+     "chars": 20
+    },
+    {
+     "i": 0,
+     "locator": "基本就是完全不动+新收入逢低加仓积累股数。",
+     "sha256": "c1e55c7767da7677d6e9a056cd42c9910277d0e0503de6d2dc9f43d7b3c360dd",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 21
+    },
+    {
+     "i": 1,
+     "locator": "因为除了买进的价格，股数也很重要。",
+     "sha256": "2d7b4b9bab3fd5cdd0c419f462c9c187c1b88aaa07545eb1f4229f39d5f73d05",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 17
+    },
+    {
+     "i": 4,
+     "locator": "之所以买进的不轻易卖出是因为卖出后跌的幅度可能还没有税多。",
+     "sha256": "f7fd762241152e99cc4d06d83c41f773495331f415b0144e7cc7aa063800aaab",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 29
+    },
+    {
+     "i": 5,
+     "locator": "还有既然还要买回， 这些股票也有可能短时间暴涨，卖了就难追进去。",
+     "sha256": "ae6f2a4f6cd6d0366c22bea0a672267fc30a0087a21afbe3f4ac4d22265071e2",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 32
+    }
+   ],
+   "candidate_sentences_total": 6
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/95991.html",
+   "item_id": "a6354e80ec0ef6f1632c",
+   "author": "bogbog",
+   "source_kind": "forum",
+   "published_at": "2026-07-11 07:45:45",
+   "outcome": "ok",
+   "chars": 180,
+   "text_sha256": "071da530cec69b639188734cad0defca874258beca47a4180ee63aee58b07f6f",
+   "sentences": [
+    {
+     "i": 3,
+     "locator": "这几年都逐渐卖了。",
+     "sha256": "c5166fd15a39e825751bf984f563ac97aea746a55496b7fdf3ab8fe3103322bb",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 9
+    }
+   ],
+   "candidate_sentences_total": 1
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/96265.html",
+   "item_id": "03d8673a1c3b5985b11c",
+   "author": "bogbog",
+   "source_kind": "forum",
+   "published_at": "2026-07-12 16:44:56",
+   "outcome": "ok",
+   "chars": 307,
+   "text_sha256": "ec859ff9821397ba44531579d56155e089b35ad04ac73d2ad76b226599daca78",
+   "sentences": [
+    {
+     "i": 0,
+     "locator": "AMD现在短期不便宜了，我记得两个月前您说过有个网红说AMD不好，但当时还是值得",
+     "sha256": "5b7c55815a4baaa9bac04b1631bb2dd71ef45c8d51fef2cfde73caaffab85b71",
+     "symbols": [
+      "AMD"
+     ],
+     "stance_cue": true,
+     "chars": 43
+    },
+    {
+     "i": 3,
+     "locator": "NVDA今年大部分时间都很便宜，三月份是165。",
+     "sha256": "0bf33b90cd38612714ceb65f714f7d545c0ff1287015b1d76b9d3fd791164ae8",
+     "symbols": [
+      "NVDA"
+     ],
+     "stance_cue": false,
+     "chars": 24
+    },
+    {
+     "i": 8,
+     "locator": "NVDA我熟悉的不能再熟悉了。",
+     "sha256": "498cfd96bc77b4335b65de7b28d37c2cad89a7618af91510f6882766a45d92bc",
+     "symbols": [
+      "NVDA"
+     ],
+     "stance_cue": false,
+     "chars": 15
+    },
+    {
+     "i": 9,
+     "locator": "AMD & INTC也算熟悉",
+     "sha256": "5a9885e0ade9b406193802fd7719ece85f29a883e9c1732b4c76849c345af468",
+     "symbols": [
+      "INTC",
+      "AMD"
+     ],
+     "stance_cue": false,
+     "chars": 14
+    },
+    {
+     "i": 5,
+     "locator": "我自己没有加仓，我就是要165， 130左右才会考虑， lol.",
+     "sha256": "39f426645ccf3c4dfea7c492ed1d41d318de39b11f00606105100752ed537c73",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 32
+    },
+    {
+     "i": 6,
+     "locator": "这次我也是是说我自己仓位足够多，加仓点就要求高一点，除非调整到绝对便宜才会再考虑",
+     "sha256": "e787bc08ab1c8f180e32fc959fb8cda6bc3a74b87d143f4e206569a4c1bb6502",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 41
+    }
+   ],
+   "candidate_sentences_total": 6
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/96758.html",
+   "item_id": "704bb7f4f05ec3780903",
+   "author": "bogbog",
+   "source_kind": "forum",
+   "published_at": "2026-07-14 19:21:18",
+   "outcome": "ok",
+   "chars": 285,
+   "text_sha256": "fd349151a3baad112bc577bdba0720a938cb3e16f4f322504baacd80278fa107",
+   "sentences": [
+    {
+     "i": 2,
+     "locator": "不是那种可以buy and then go to the beach。",
+     "sha256": "583f26852feb1d83a8df78ec4454a42cc8ff5c4c65b059f939c5d35914513389",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 35
+    }
+   ],
+   "candidate_sentences_total": 1
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/97338.html",
+   "item_id": "bf3ef42e1c26e734e104",
+   "author": "bogbog",
+   "source_kind": "forum",
+   "published_at": "2026-07-16 15:14:24",
+   "outcome": "ok",
+   "chars": 351,
+   "text_sha256": "7ea42c9cd4e373f56219d4a916d1878dbd6cf65cf3c1c07171e953901273a9b0",
+   "sentences": [
+    {
+     "i": 0,
+     "locator": "其实MU的PT 1000-1200 左右met之后， 肯定要pull back。",
+     "sha256": "c3813dd57f400f718322ec73c4d3d32962d600db431b77881d16932beefe70df",
+     "symbols": [
+      "MU"
+     ],
+     "stance_cue": false,
+     "chars": 40
+    },
+    {
+     "i": 5,
+     "locator": "如果看下ASML和TSM的财报展望，就知道是很利好MU这些股的。",
+     "sha256": "1012b8bf4947758b66b264adf8c955f872e1eabf61c36c93be43dffc8457992c",
+     "symbols": [
+      "TSM",
+      "MU"
+     ],
+     "stance_cue": false,
+     "chars": 32
+    },
+    {
+     "i": 3,
+     "locator": "所以我说过如果需要现金的话可以在1200左右trim一些。",
+     "sha256": "986634ed3e00a252182b6fd31088567589d4cb2642bcf58481f92ef6acc68f15",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 29
+    },
+    {
+     "i": 6,
+     "locator": "我不强求自己要买在最低点，so I'm comfortable with 我自己",
+     "sha256": "2b5f722e0dbff21b893a73738767843c28c34be2a2ea54b29d6d7a39d35dec2f",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 44
+    }
+   ],
+   "candidate_sentences_total": 4
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/97422.html",
+   "item_id": "26737ea21f653762a6e5",
+   "author": "bogbog",
+   "source_kind": "forum",
+   "published_at": "2026-07-16 22:15:34",
+   "outcome": "ok",
+   "chars": 186,
+   "text_sha256": "f651a3b0901da6bd5e4d49db31a11d71029615526b4ebb8c70a34b5870a6621f",
+   "sentences": [
+    {
+     "i": 1,
+     "locator": "这是今天的截图， 从2013买入一股也没有卖过。",
+     "sha256": "6ef00b24666ea17aacc949beafd761b6343ca3b3b62d5a411ccd7b1f07360967",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 24
+    },
+    {
+     "i": 2,
+     "locator": "还在不同账户加过很多次仓，2022年暴跌时大家都说Netflix is dead",
+     "sha256": "05147dee8c7dd927338619e42679488b0e6089f26e396a75c19f884e62aae9da",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 70
+    },
+    {
+     "i": 3,
+     "locator": "最后一次加仓是去年四月份，之前说过，80多买的，还在水下，但也不打算卖。",
+     "sha256": "a03b29ad0e72ef40860b927c163a405dd2ecf31ecfa73d1284a1da294a436067",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 36
+    },
+    {
+     "i": 5,
+     "locator": "我认为基本面还没有变坏不卖。",
+     "sha256": "5437468e0e3391f3c69c75793e6aa045209be2fb6929ce2954a60d05fa5ac915",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 14
+    }
+   ],
+   "candidate_sentences_total": 4
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/97872.html",
+   "item_id": "e24ab92abf8ce95c592b",
+   "author": "bogbog",
+   "source_kind": "forum",
+   "published_at": "2026-07-18 20:21:36",
+   "outcome": "ok",
+   "chars": 147,
+   "text_sha256": "b42a3fa3d25f9025cc7b892a6510ecc294e59302fcebc72ab39a6b39196f7aab",
+   "sentences": [],
+   "candidate_sentences_total": 0
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/97984.html",
+   "item_id": "b41680a604eb506aac64",
+   "author": "bogbog",
+   "source_kind": "forum",
+   "published_at": "2026-07-19 12:17:21",
+   "outcome": "ok",
+   "chars": 285,
+   "text_sha256": "87c23a3a195dfcf375f0866705e42087dc78bca941a9e6b6ef8d0a44a2fc97f1",
+   "sentences": [],
+   "candidate_sentences_total": 0
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/98317.html",
+   "item_id": "0f7ad47b98cdb9eff1fa",
+   "author": "bogbog",
+   "source_kind": "forum",
+   "published_at": "2026-07-21 09:29:45",
+   "outcome": "ok",
+   "chars": 177,
+   "text_sha256": "e8f058b4810dd2af828e9e110877795feb007fe46fbbe122809b471dca03a964",
+   "sentences": [
+    {
+     "i": 0,
+     "locator": "NBIS今天也不错，",
+     "sha256": "8dcb1e3f6568e088afea0c4e747c126198533227ce2afd5fa7a36990628a5b52",
+     "symbols": [
+      "NBIS"
+     ],
+     "stance_cue": false,
+     "chars": 10
+    },
+    {
+     "i": 3,
+     "locator": "买入时都提过， 昨天NVDA公布9.3%持有。",
+     "sha256": "6ce6b03752b95edd96dcced2d26c5fb92ba10f36fb786fabcf9dc9a7b4c973c5",
+     "symbols": [
+      "NVDA"
+     ],
+     "stance_cue": true,
+     "chars": 23
+    },
+    {
+     "i": 4,
+     "locator": "这个NBIS在最高点290左右的时候，只看到回调到200-220左右。",
+     "sha256": "8f5c6d37c865c9afa6a23d9dbf1f8145c7b31a955798ec888ba070a6bc2a7fa2",
+     "symbols": [
+      "NBIS"
+     ],
+     "stance_cue": false,
+     "chars": 35
+    },
+    {
+     "i": 1,
+     "locator": "这两周买入3次， 201， 194ish买后涨了后来又跌了。",
+     "sha256": "2958c1110a3e8694c779fcf680239f6d7d79a680af63d1791baf3f4ab98197a9",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 30
+    },
+    {
+     "i": 2,
+     "locator": "这一次在164ish买入， it's a steal.",
+     "sha256": "a77447e6b0b8f96e0432d964ce74eb6a0612827782b607bdb478244fc6c9d2fa",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 27
+    }
+   ],
+   "candidate_sentences_total": 5
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/98407.html",
+   "item_id": "82a887c94f74cb31da65",
+   "author": "bogbog",
+   "source_kind": "forum",
+   "published_at": "2026-07-21 17:47:31",
+   "outcome": "ok",
+   "chars": 264,
+   "text_sha256": "fbc12cca866192f1e9dae940836f80429025d3b106e1a376f32cd4555bbc11e4",
+   "sentences": [
+    {
+     "i": 1,
+     "locator": "买进的时候有说过，大概47左右买的，",
+     "sha256": "806aab3c9e3f8375c717e22a7673d55e837e66b2c42708fc3c1b505dff06988c",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 18
+    },
+    {
+     "i": 3,
+     "locator": "三月份又跌下来， 加了仓。",
+     "sha256": "c6260eeb82f3f1ee8a7d87eba28c4cc5c599d0ac87f43a755e0fbc6509c76684",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 13
+    },
+    {
+     "i": 4,
+     "locator": "这次也加仓了，17号那天64ish买入。",
+     "sha256": "b94decc4efa66502d3c5d778fa747f8237b5fba63654f694e64fd89946aa494d",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 20
+    }
+   ],
+   "candidate_sentences_total": 3
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/98448.html",
+   "item_id": "1bb89dc46741554b7503",
+   "author": "bogbog",
+   "source_kind": "forum",
+   "published_at": "2026-07-21 22:54:48",
+   "outcome": "ok",
+   "chars": 248,
+   "text_sha256": "0d928554c18ce04c8c7c4147a5cc2b731b88d1e21e183f4e1a26372b41e06d23",
+   "sentences": [
+    {
+     "i": 1,
+     "locator": "game, it's competing by avoiding direct ",
+     "sha256": "29373b22e55371903ca580e1eea01171b22654e18590db1ad28d4fc71d2a5cf5",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 154
+    }
+   ],
+   "candidate_sentences_total": 1
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/98615.html",
+   "item_id": "70ab331ac718dcdd18ac",
+   "author": "bogbog",
+   "source_kind": "forum",
+   "published_at": "2026-07-22 13:51:09",
+   "outcome": "ok",
+   "chars": 166,
+   "text_sha256": "d0703fe0086d3a67fdc07bc72c132d2524ee1b05c96f3b261017a073f5e23f1d",
+   "sentences": [
+    {
+     "i": 1,
+     "locator": "说过几次了， 在ASML & TSM财报出来前就说过，",
+     "sha256": "0a9ea16e1c7db81ab893fa956c0da18a36f8680011cef42974e951f2a69a59fc",
+     "symbols": [
+      "TSM"
+     ],
+     "stance_cue": false,
+     "chars": 27
+    }
+   ],
+   "candidate_sentences_total": 1
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/98738.html",
+   "item_id": "93e9907bc35f22b02396",
+   "author": "bogbog",
+   "source_kind": "forum",
+   "published_at": "2026-07-22 20:00:43",
+   "outcome": "ok",
+   "chars": 155,
+   "text_sha256": "aca3d6a9287f800c8e4c4c67611a764b20ff97d9d601b61d6a36f7b9a72a7e7f",
+   "sentences": [
+    {
+     "i": 0,
+     "locator": "所以苹果被称为“烂苹果”, lol, just kidding.",
+     "sha256": "bf6a7a3de13c042b7df99dbca87802461e45639b56d8e1026b300e9978f9f1d0",
+     "symbols": [
+      "AAPL"
+     ],
+     "stance_cue": false,
+     "chars": 32
+    }
+   ],
+   "candidate_sentences_total": 1
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/98754.html",
+   "item_id": "4fd3fc6a25c84e182c7f",
+   "author": "bogbog",
+   "source_kind": "forum",
+   "published_at": "2026-07-22 22:43:08",
+   "outcome": "ok",
+   "chars": 341,
+   "text_sha256": "70693bc6526d7103265849730cda7f9118e2668eede0db53f7d5ad96105aad58",
+   "sentences": [],
+   "candidate_sentences_total": 0
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/99403.html",
+   "item_id": "856f4ae6189942111b97",
+   "author": "bogbog",
+   "source_kind": "forum",
+   "published_at": "2026-07-25 07:22:34",
+   "outcome": "ok",
+   "chars": 183,
+   "text_sha256": "58730e32794da3e7baa9efd337be983d777bded670e0c71e85d4830f12d9f2eb",
+   "sentences": [
+    {
+     "i": 1,
+     "locator": "我是去年四五月大力加仓， 今年三月大力加仓。",
+     "sha256": "8f503335bcbbb77773b5de6a556ceca013004051a7c690865613322a359d83d5",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 22
+    },
+    {
+     "i": 2,
+     "locator": "四月小加仓4个个股， 六/七月小加仓4-5个个股。",
+     "sha256": "2c67ccac8623d040ac7367e9d208fcbd8845a5b0e4557b46a816145b6a3de99e",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 25
+    },
+    {
+     "i": 3,
+     "locator": "小加仓主要是因为我了解过这些公司认为这些个股一年后远不止这个价。",
+     "sha256": "736c17dbf00943debfaeac58fe2a416826a9a0f6652602a688719ed8fa69bf86",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 32
+    },
+    {
+     "i": 5,
+     "locator": "大力加仓（风险低时， RR很好）",
+     "sha256": "eec72c018c04546b625d275f7018cf9e26f0ca35214d9dc172a7dd042e760df0",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 16
+    },
+    {
+     "i": 6,
+     "locator": "小加仓 （风险中等，RR可以接受）",
+     "sha256": "d84ec471b16323457a9f26fed4ba7629226ca07ccfc6c4989bf57e969a69aa06",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 17
+    }
+   ],
+   "candidate_sentences_total": 5
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/cfzh/99991.html",
+   "item_id": "d6513f3d458d5d492399",
+   "author": "bogbog",
+   "source_kind": "forum",
+   "published_at": "2026-07-28 09:46:12",
+   "outcome": "ok",
+   "chars": 149,
+   "text_sha256": "b9ead17ad2201dae736c723a6fb840d4e9ad893525c29747e431b8db4e74cd9f",
+   "sentences": [],
+   "candidate_sentences_total": 0
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/tzlc/2333693.html",
+   "item_id": "bce4450d16d98c2e8ba1",
+   "author": "麻你",
+   "source_kind": "forum",
+   "published_at": "2026-07-10 13:19:48",
+   "outcome": "ok",
+   "chars": 179,
+   "text_sha256": "90d968036930ed2885f7a21dda61f6578c577a3cf87116e1e9223af83cc17e36",
+   "sentences": [
+    {
+     "i": 0,
+     "locator": "下个星期继续保持90%的仓位在VGT",
+     "sha256": "426d412f34d295017ea347028d459073f9fcc96528ebeb4df891e687e3319aa8",
+     "symbols": [
+      "VGT"
+     ],
+     "stance_cue": true,
+     "chars": 18
+    },
+    {
+     "i": 3,
+     "locator": "客文章>>>下个星期继续保持87%仓位在VGT，13%仓位在SGOV为什么要多仓",
+     "sha256": "bada32eb4dd7700f46ffdd562da5305946adc8511822c89e38f02094880ad334",
+     "symbols": [
+      "SGOV",
+      "VGT"
+     ],
+     "stance_cue": true,
+     "chars": 130
+    },
+    {
+     "i": 1,
+     "locator": "如果大盘下行就等待买入机会",
+     "sha256": "72cfdc088329e355226a56bf22293b1c81e0f0d2e3309078050816e2aaad3467",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 13
+    },
+    {
+     "i": 2,
+     "locator": "如果上行就等待下一个卖出信号",
+     "sha256": "bd463d919508440ec944b7f41794131ae0cc4890ecb446af4ea4b15b3d7b07ce",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 14
+    }
+   ],
+   "candidate_sentences_total": 4
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/tzlc/2342121.html",
+   "item_id": "f44b8d7ca3f797b1be00",
+   "author": "麻你",
+   "source_kind": "forum",
+   "published_at": "2026-07-24 12:30:12",
+   "outcome": "ok",
+   "chars": 215,
+   "text_sha256": "e4ce55397e6d0b7267ed39dc7afcfe60837a5fbd5dc0c7121e9d1b69d512c0f5",
+   "sentences": [
+    {
+     "i": 0,
+     "locator": "下个星期继续保持90%的仓位在VGT",
+     "sha256": "426d412f34d295017ea347028d459073f9fcc96528ebeb4df891e687e3319aa8",
+     "symbols": [
+      "VGT"
+     ],
+     "stance_cue": true,
+     "chars": 18
+    },
+    {
+     "i": 1,
+     "locator": "如果大盘继续跌就在200天均线下面开始买VGT，就怕它跌不到那里，手里的现金继续",
+     "sha256": "d2700c12bf85965a14898c1ddf952708b73162a802dc919542332c39815a113e",
+     "symbols": [
+      "SGOV",
+      "VGT"
+     ],
+     "stance_cue": true,
+     "chars": 51
+    },
+    {
+     "i": 3,
+     "locator": "客文章>>>下个星期继续保持87%仓位在VGT，13%仓位在SGOV为什么要多仓",
+     "sha256": "bada32eb4dd7700f46ffdd562da5305946adc8511822c89e38f02094880ad334",
+     "symbols": [
+      "SGOV",
+      "VGT"
+     ],
+     "stance_cue": true,
+     "chars": 130
+    }
+   ],
+   "candidate_sentences_total": 3
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/tzlc/2345443.html",
+   "item_id": "06aeb5cd5d7a97d374e7",
+   "author": "麻你",
+   "source_kind": "forum",
+   "published_at": "2026-07-31 09:03:39",
+   "outcome": "ok",
+   "chars": 190,
+   "text_sha256": "dd1739e219197cf59a6cd8a5eb8feab9d21d208d086dfc41073b8ae5d7856d2e",
+   "sentences": [
+    {
+     "i": 0,
+     "locator": "下个星期继续保持90%的仓位在VGT",
+     "sha256": "426d412f34d295017ea347028d459073f9fcc96528ebeb4df891e687e3319aa8",
+     "symbols": [
+      "VGT"
+     ],
+     "stance_cue": true,
+     "chars": 18
+    },
+    {
+     "i": 1,
+     "locator": "其余10%放在SGOV吃利息，做为储备金，等买入信号出现时就开始买。",
+     "sha256": "c73d81e3ffbbcfc9bcd2fd772f60bfc897f029aca1bb01df9aa1fc7e6e1e8215",
+     "symbols": [
+      "SGOV"
+     ],
+     "stance_cue": true,
+     "chars": 34
+    },
+    {
+     "i": 2,
+     "locator": "客文章>>>下个星期继续保持87%仓位在VGT，13%仓位在SGOV为什么要多仓",
+     "sha256": "bada32eb4dd7700f46ffdd562da5305946adc8511822c89e38f02094880ad334",
+     "symbols": [
+      "SGOV",
+      "VGT"
+     ],
+     "stance_cue": true,
+     "chars": 130
+    }
+   ],
+   "candidate_sentences_total": 3
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/tzlc/2357083.html",
+   "item_id": "d37969d4442843963b16",
+   "author": "麻你",
+   "source_kind": "forum",
+   "published_at": "2026-08-21 16:09:21",
+   "outcome": "ok",
+   "chars": 209,
+   "text_sha256": "6f5d39a0a929d8b7ecd9cf7500b15b9e009a1feae6d38dbd6057485875aa151a",
+   "sentences": [
+    {
+     "i": 0,
+     "locator": "下个星期设117.57止盈，卖出VGT总仓位的4%。",
+     "sha256": "fc85ed9dd73f48f9e19da3916aa8181fcde981184bf727948a73cf7f8222b7cc",
+     "symbols": [
+      "VGT"
+     ],
+     "stance_cue": true,
+     "chars": 26
+    },
+    {
+     "i": 2,
+     "locator": "如果下个星期没有触发止盈点，那就继续保持90%仓位在VGT",
+     "sha256": "287335fdf0e5351df2cc2f9d96822f0f9807634e5fd13b398adcb765c7846607",
+     "symbols": [
+      "VGT"
+     ],
+     "stance_cue": true,
+     "chars": 29
+    },
+    {
+     "i": 3,
+     "locator": "客文章>>>下个星期继续保持87%仓位在VGT，13%仓位在SGOV为什么要多仓",
+     "sha256": "bada32eb4dd7700f46ffdd562da5305946adc8511822c89e38f02094880ad334",
+     "symbols": [
+      "SGOV",
+      "VGT"
+     ],
+     "stance_cue": true,
+     "chars": 130
+    },
+    {
+     "i": 1,
+     "locator": "因为这几个星期比上次止盈的位置又涨了4%",
+     "sha256": "b957c537bf72aaa891ff82fa58fec3239117623238ddf13dafe9a7c8ebcb645d",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 20
+    }
+   ],
+   "candidate_sentences_total": 4
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/tzlc/2365638.html",
+   "item_id": "df7f6d4f29b4cf225c23",
+   "author": "麻你",
+   "source_kind": "forum",
+   "published_at": "2026-09-11 12:41:48",
+   "outcome": "ok",
+   "chars": 175,
+   "text_sha256": "59d9cd46d6f424d98c89e2fc52791d127f712ed3258153fa4347d3fb66e726c4",
+   "sentences": [
+    {
+     "i": 0,
+     "locator": "下个星期继续保持87%仓位在VGT，13%仓位在SGOV",
+     "sha256": "b09c370435da287c8599631b1feee3fe9fae7c2ac2b94ca998b83df03560eb2d",
+     "symbols": [
+      "SGOV",
+      "VGT"
+     ],
+     "stance_cue": true,
+     "chars": 28
+    },
+    {
+     "i": 2,
+     "locator": "客文章>>>下个星期继续保持87%仓位在VGT，13%仓位在SGOV为什么要多仓",
+     "sha256": "bada32eb4dd7700f46ffdd562da5305946adc8511822c89e38f02094880ad334",
+     "symbols": [
+      "SGOV",
+      "VGT"
+     ],
+     "stance_cue": true,
+     "chars": 130
+    },
+    {
+     "i": 1,
+     "locator": "继续耐心等待上方卖出信号出现",
+     "sha256": "2f403d0609086f1b61a0df45db5441bd00f660eee97c1d2eb4d7b1c3e9b79055",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 14
+    }
+   ],
+   "candidate_sentences_total": 3
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/tzlc/2368624.html",
+   "item_id": "0d6f0b4f52da296a27d4",
+   "author": "麻你",
+   "source_kind": "forum",
+   "published_at": "2026-09-18 12:07:40",
+   "outcome": "ok",
+   "chars": 148,
+   "text_sha256": "fe1a5989dad83f9bfd18e983796f17fbd8d46a411e0d28798b482f216cbaeb28",
+   "sentences": [
+    {
+     "i": 0,
+     "locator": "你有3米SGOV买在100.65一股，每月拿9千分红继续买进SGOV可能买在10",
+     "sha256": "13597d7d9468e1e0f395d587f6ad04290f9fdd0ed77ee54dbeef3328e2e25ead",
+     "symbols": [
+      "SGOV"
+     ],
+     "stance_cue": true,
+     "chars": 46
+    },
+    {
+     "i": 1,
+     "locator": "你用sell specific选你买在100.65的原始股来卖，而不是卖你的分红",
+     "sha256": "156c1e4261c0df0c08fb693b9f747d8958f3b63ee0bdc113654df3d7e0f09a8f",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 85
+    }
+   ],
+   "candidate_sentences_total": 2
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/tzlc/2372727.html",
+   "item_id": "1756bb940a4382fd71ac",
+   "author": "麻你",
+   "source_kind": "forum",
+   "published_at": "2026-09-25 10:50:27",
+   "outcome": "ok",
+   "chars": 238,
+   "text_sha256": "e99e5fa8242c18fff6168f4a0174861ac1499f13d55c8f019025bd654cb4ab23",
+   "sentences": [
+    {
+     "i": 0,
+     "locator": "下个星期继续保持87%仓位在VGT，13%在SGOV",
+     "sha256": "dbdb1c0813d76288161506fe0e68118bb5e8995aa7b1a61402aedd4c15e39414",
+     "symbols": [
+      "SGOV",
+      "VGT"
+     ],
+     "stance_cue": true,
+     "chars": 26
+    },
+    {
+     "i": 1,
+     "locator": "VGT year to date 涨了33%，账户在四月底部加仓成全仓，涨幅更好",
+     "sha256": "5996767be1a62b6e5994bef4c0ebcd2d6b09bfee189b7584ee84b68cfbb86579",
+     "symbols": [
+      "VGT"
+     ],
+     "stance_cue": true,
+     "chars": 42
+    },
+    {
+     "i": 3,
+     "locator": "下个星期继续保持87%的仓位在VGT，13%的仓位在SGOV",
+     "sha256": "3293c0d3ac799f42207028ecc4c13693f2700427edcc4a12cc06bdf125d1a421",
+     "symbols": [
+      "SGOV",
+      "VGT"
+     ],
+     "stance_cue": true,
+     "chars": 30
+    },
+    {
+     "i": 4,
+     "locator": "下个星期继续保持87%仓位在VGT，13%仓位在SGOV",
+     "sha256": "b09c370435da287c8599631b1feee3fe9fae7c2ac2b94ca998b83df03560eb2d",
+     "symbols": [
+      "SGOV",
+      "VGT"
+     ],
+     "stance_cue": true,
+     "chars": 28
+    },
+    {
+     "i": 5,
+     "locator": "下个星期继续保持87%仓位在VGT，13%仓位在SGOV",
+     "sha256": "b09c370435da287c8599631b1feee3fe9fae7c2ac2b94ca998b83df03560eb2d",
+     "symbols": [
+      "SGOV",
+      "VGT"
+     ],
+     "stance_cue": true,
+     "chars": 28
+    },
+    {
+     "i": 6,
+     "locator": "下个星期继续保持87%仓位在VGT，13%在SGOV",
+     "sha256": "dbdb1c0813d76288161506fe0e68118bb5e8995aa7b1a61402aedd4c15e39414",
+     "symbols": [
+      "SGOV",
+      "VGT"
+     ],
+     "stance_cue": true,
+     "chars": 26
+    },
+    {
+     "i": 7,
+     "locator": "下个星期设117.57止盈，卖出VGT总仓位的4%。",
+     "sha256": "fc85ed9dd73f48f9e19da3916aa8181fcde981184bf727948a73cf7f8222b7cc",
+     "symbols": [
+      "VGT"
+     ],
+     "stance_cue": true,
+     "chars": 26
+    }
+   ],
+   "candidate_sentences_total": 7
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/tzlc/2378573.html",
+   "item_id": "9941151ab536eeb7967c",
+   "author": "麻你",
+   "source_kind": "forum",
+   "published_at": "2026-10-02 09:48:25",
+   "outcome": "ok",
+   "chars": 186,
+   "text_sha256": "f0d312ee5c9412b290b133d426cbbe0e9c0969d1b093577b48ce8d1fe5652f72",
+   "sentences": [
+    {
+     "i": 0,
+     "locator": "下个星期继续保持87%仓位在VGT，13%在SGOV",
+     "sha256": "dbdb1c0813d76288161506fe0e68118bb5e8995aa7b1a61402aedd4c15e39414",
+     "symbols": [
+      "SGOV",
+      "VGT"
+     ],
+     "stance_cue": true,
+     "chars": 26
+    },
+    {
+     "i": 3,
+     "locator": "客文章>>>下个星期继续保持87%仓位在VGT，13%仓位在SGOV为什么要多仓",
+     "sha256": "bada32eb4dd7700f46ffdd562da5305946adc8511822c89e38f02094880ad334",
+     "symbols": [
+      "SGOV",
+      "VGT"
+     ],
+     "stance_cue": true,
+     "chars": 130
+    },
+    {
+     "i": 2,
+     "locator": "耐心等待未来上方卖出信号，按比例减仓取利",
+     "sha256": "94ed0a5f78b736bbb3d79cf2ded68f73d1b1c756b191f6efdd52d7b6475c18fa",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 20
+    }
+   ],
+   "candidate_sentences_total": 3
+  },
+  {
+   "url": "https://bbs.wenxuecity.com/tzlc/2382261.html",
+   "item_id": "7bcba0fdb0f05f2a3ab5",
+   "author": "麻你",
+   "source_kind": "forum",
+   "published_at": "2026-10-07 21:46:04",
+   "outcome": "ok",
+   "chars": 169,
+   "text_sha256": "637ebe28ce62ef2b62416237552beb7ec132788bd6ccffab09c4e5e43ca715c0",
+   "sentences": [
+    {
+     "i": 0,
+     "locator": "为什么要多仓VGT",
+     "sha256": "12e42792df6308b53dafa5d88a1bb7080a8cc8d2cab8b0a276ae9478f56171b0",
+     "symbols": [
+      "VGT"
+     ],
+     "stance_cue": false,
+     "chars": 9
+    },
+    {
+     "i": 2,
+     "locator": "下个星期继续保持87%仓位在VGT，13%在SGOV",
+     "sha256": "dbdb1c0813d76288161506fe0e68118bb5e8995aa7b1a61402aedd4c15e39414",
+     "symbols": [
+      "SGOV",
+      "VGT"
+     ],
+     "stance_cue": true,
+     "chars": 26
+    },
+    {
+     "i": 3,
+     "locator": "下个星期继续保持87%仓位在VGT，13%在SGOV",
+     "sha256": "dbdb1c0813d76288161506fe0e68118bb5e8995aa7b1a61402aedd4c15e39414",
+     "symbols": [
+      "SGOV",
+      "VGT"
+     ],
+     "stance_cue": true,
+     "chars": 26
+    },
+    {
+     "i": 4,
+     "locator": "下个星期继续保持87%的仓位在VGT，13%的仓位在SGOV",
+     "sha256": "3293c0d3ac799f42207028ecc4c13693f2700427edcc4a12cc06bdf125d1a421",
+     "symbols": [
+      "SGOV",
+      "VGT"
+     ],
+     "stance_cue": true,
+     "chars": 30
+    },
+    {
+     "i": 5,
+     "locator": "下个星期继续保持87%仓位在VGT，13%仓位在SGOV",
+     "sha256": "b09c370435da287c8599631b1feee3fe9fae7c2ac2b94ca998b83df03560eb2d",
+     "symbols": [
+      "SGOV",
+      "VGT"
+     ],
+     "stance_cue": true,
+     "chars": 28
+    },
+    {
+     "i": 6,
+     "locator": "下个星期继续保持87%仓位在VGT，13%仓位在SGOV",
+     "sha256": "b09c370435da287c8599631b1feee3fe9fae7c2ac2b94ca998b83df03560eb2d",
+     "symbols": [
+      "SGOV",
+      "VGT"
+     ],
+     "stance_cue": true,
+     "chars": 28
+    }
+   ],
+   "candidate_sentences_total": 6
+  },
+  {
+   "url": "https://blog.wenxuecity.com/myblog/31983/202609/19300.html",
+   "item_id": "31d67da43d6cc50d16cb",
+   "author": "yifan99",
+   "source_kind": "blog",
+   "published_at": "2026-09-25",
+   "outcome": "ok",
+   "chars": 2438,
+   "text_sha256": "77c16c07a4679858c55a03a352255bf135ab87a8a601cb512aa6d24a281a1e4d",
+   "sentences": [
+    {
+     "i": 6,
+     "locator": "从ORCL、GOOG、AMZN到AAPL和QCOM，我发现，趋势的变化往往比新闻",
+     "sha256": "2ac0f78cf0100d6a30f6c87be08ac13e5bbd2d70ea14b1c72ab6e9a0313736d8",
+     "symbols": [
+      "ORCL",
+      "AMZN",
+      "QCOM",
+      "AAPL",
+      "GOOG"
+     ],
+     "stance_cue": false,
+     "chars": 50
+    },
+    {
+     "i": 7,
+     "locator": "ORCL：TCDS提前发出转弱信号",
+     "sha256": "c1be464dc7e8301aa12ee6225a52004a3db33ed4b4542f2d5b27a9d83f9af841",
+     "symbols": [
+      "ORCL"
+     ],
+     "stance_cue": false,
+     "chars": 17
+    },
+    {
+     "i": 8,
+     "locator": "ORCL就是一个很好的例子。",
+     "sha256": "de594099ad356df7b57953d98d42e2541ecc6358c8fd9dd41b032f3ee5a8d22c",
+     "symbols": [
+      "ORCL"
+     ],
+     "stance_cue": false,
+     "chars": 14
+    },
+    {
+     "i": 20,
+     "locator": "GOOG和AMZN：新的上行趋势正在酝酿？",
+     "sha256": "a8b176a2bcfe0899028d7547e7a6c94bea5a9e8626542dd66789e7dbcefc3b18",
+     "symbols": [
+      "AMZN",
+      "GOOG"
+     ],
+     "stance_cue": false,
+     "chars": 21
+    },
+    {
+     "i": 21,
+     "locator": "再看看GOOG和AMZN，虽然股价仍在反复震荡，但TCDS已经出现从低位回升的迹",
+     "sha256": "29ebdaa52397c2a806fca60b922ad7ae3a67761351fc5951d988bcbf3adbbfb5",
+     "symbols": [
+      "AMZN",
+      "GOOG"
+     ],
+     "stance_cue": false,
+     "chars": 60
+    },
+    {
+     "i": 22,
+     "locator": "相比之下，AAPL和QCOM的多周期趋势更加明确。",
+     "sha256": "f71ad59b88a456646d89e4b599ad000ca208d951f117e90e50bb34fc76173c5d",
+     "symbols": [
+      "QCOM",
+      "AAPL"
+     ],
+     "stance_cue": false,
+     "chars": 25
+    },
+    {
+     "i": 23,
+     "locator": "尤其是AAPL，我根据TCDS的动态变化，在289美元附近买入后一直持有，中间经",
+     "sha256": "4ff739429202caea4832e56762388957c5dd8008ceebbcce2261ef51dfbc9af2",
+     "symbols": [
+      "AAPL"
+     ],
+     "stance_cue": true,
+     "chars": 78
+    },
+    {
+     "i": 24,
+     "locator": "QCOM也是如此，前几天的大跌看起来吓人，但从TCDS来看，整体上行结构并未遭到",
+     "sha256": "561787c669bd775897d74158fa5833d1949d6acbd05677312ec152da64bd8811",
+     "symbols": [
+      "QCOM"
+     ],
+     "stance_cue": false,
+     "chars": 45
+    },
+    {
+     "i": 40,
+     "locator": "AAPL：289美元附近买入，为什么一直没有卖？",
+     "sha256": "8ffa6e14198406c5c23fe7ef872efe790d7e630c0949dbe0c1326142199266e7",
+     "symbols": [
+      "AAPL"
+     ],
+     "stance_cue": true,
+     "chars": 24
+    },
+    {
+     "i": 41,
+     "locator": "AAPL是我实际交易中的一个例子。",
+     "sha256": "32a3151fe3657ec7539d3a2ab0f57aa54ea711ee5b55447a269d0cada9da1304",
+     "symbols": [
+      "AAPL"
+     ],
+     "stance_cue": false,
+     "chars": 17
+    },
+    {
+     "i": 44,
+     "locator": "最近，AAPL的日线和周线继续保持多头结构，TCDS再次进入强势区域。",
+     "sha256": "33cee6a8713a5c7b60ddc2516e74d0b67d45937b59bd1fc806cf0abb3bb2c152",
+     "symbols": [
+      "AAPL"
+     ],
+     "stance_cue": true,
+     "chars": 35
+    },
+    {
+     "i": 48,
+     "locator": "QCOM：一次大跌，不代表上涨趋势结束",
+     "sha256": "692532da117fd2669bab9f221c71737417f01e15ad66b87b990acdbb3a4cc352",
+     "symbols": [
+      "QCOM"
+     ],
+     "stance_cue": false,
+     "chars": 19
+    },
+    {
+     "i": 49,
+     "locator": "QCOM前几天出现明显下跌。",
+     "sha256": "0fc05fd46744b4751f42f5873655254851a4e831291741525e944ec3d573f2da",
+     "symbols": [
+      "QCOM"
+     ],
+     "stance_cue": false,
+     "chars": 14
+    },
+    {
+     "i": 29,
+     "locator": "很多散户之所以反复被“割韭菜”，并不是因为买不到好股票，而是上涨时不敢买，回调时",
+     "sha256": "689f463f1c8df66d23930c36c2e6a1bd8e4f762c2386e5515c6be6707e16a054",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 61
+    },
+    {
+     "i": 42,
+     "locator": "我在289美元附近买入后，一直持有至今。",
+     "sha256": "0f29d625c39e0f95341d003d726dd5625049ffde447241bc86f1ca6417ebda96",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 20
+    },
+    {
+     "i": 45,
+     "locator": "这让我更加体会到：买入一只股票并不难，难的是当趋势仍然存在时，能否拿得住。",
+     "sha256": "298f1b58e4286311690b50c9323086c3c1cd8c46578462ad7f4e7f79bbbc80cb",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 37
+    },
+    {
+     "i": 46,
+     "locator": "过去，我也曾经因为担心利润回吐而过早卖出，结果错过后面的大行情。",
+     "sha256": "05760f3be0fb0a455cd1845f5ea0fcaab28c47c5cfe057281f4d5846ee521abb",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 32
+    },
+    {
+     "i": 52,
+     "locator": "因此，我并没有因为短期下跌而紧张卖出。",
+     "sha256": "43ee1d7b60432887dbbb96e69cf71a5a067ddeccef549d904fa8bb6834721297",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 19
+    },
+    {
+     "i": 55,
+     "locator": "如果趋势真正转弱，就不能把每一次下跌都当作买入机会。",
+     "sha256": "6df2bdf60a403480d214f23b1c591ee1ae3a2c6fc40066cb996520a424defb65",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 26
+    },
+    {
+     "i": 58,
+     "locator": "很多散户之所以反复被“割韭菜”，并不是因为选不到好股票，而是因为上涨时不敢买，涨",
+     "sha256": "6b6937af6787c540b472e084020390834016b8931daa299cf9b07bc7261cb9b0",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 70
+    },
+    {
+     "i": 62,
+     "locator": "趋势由弱转强时，寻找买入机会。",
+     "sha256": "99483b6928cb9778329a63fb45cd1baac437ce4819390ae9ff117bba30f403d9",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 15
+    }
+   ],
+   "candidate_sentences_total": 21
+  },
+  {
+   "url": "https://blog.wenxuecity.com/myblog/31983/202609/19491.html",
+   "item_id": "4e9807fbebe47c32a5f4",
+   "author": "yifan99",
+   "source_kind": "blog",
+   "published_at": "2026-09-25",
+   "outcome": "ok",
+   "chars": 708,
+   "text_sha256": "94553aa81827c8bb2f2c70cc504a8cf67f8d957f50960fa4c305876768a93c72",
+   "sentences": [
+    {
+     "i": 0,
+     "locator": "MU与SNDK：TCDS提示趋势转强，但仍需关注财报风险",
+     "sha256": "34acf59f1717781c4e0b6e7a01f6375537f49574c8b2c0155b0b8f5d60c2c9fa",
+     "symbols": [
+      "MU",
+      "SNDK"
+     ],
+     "stance_cue": false,
+     "chars": 28
+    },
+    {
+     "i": 1,
+     "locator": "MU与SNDK：TCDS提示趋势转强，但仍需关注财报风险",
+     "sha256": "34acf59f1717781c4e0b6e7a01f6375537f49574c8b2c0155b0b8f5d60c2c9fa",
+     "symbols": [
+      "MU",
+      "SNDK"
+     ],
+     "stance_cue": false,
+     "chars": 28
+    },
+    {
+     "i": 2,
+     "locator": "有网友问MU和SNDK的TCDS， 我在这里提供这两个股票的TCDS变化",
+     "sha256": "d4853c1892c71a4b6a1dc8aa0182a57bfcd03fc2483e40b6d8d89d62af217d67",
+     "symbols": [
+      "MU",
+      "SNDK"
+     ],
+     "stance_cue": false,
+     "chars": 36
+    },
+    {
+     "i": 3,
+     "locator": "从最新的TCDS图表来看，MU和SNDK都表现出上行趋势修复的迹象。",
+     "sha256": "8945c2c3ef1244e1a7e117da93f98d95f6aa8800066c314e586c954fc0aecf04",
+     "symbols": [
+      "MU",
+      "SNDK"
+     ],
+     "stance_cue": false,
+     "chars": 34
+    },
+    {
+     "i": 4,
+     "locator": "MU（Micron）： 股价经历前期调整后重新走强，TCDS从低位快速回升至正值",
+     "sha256": "fa1826616574e30133cec01b83e7242a7e985b2772a5c530126cdf2e2df172df",
+     "symbols": [
+      "MU"
+     ],
+     "stance_cue": false,
+     "chars": 71
+    },
+    {
+     "i": 8,
+     "locator": "SNDK（SanDisk）： 股价从前期调整低点明显反弹，TCDS日线约为55，",
+     "sha256": "a88b031a7f9219a8611383a26cce24d65ea6d29fe86c5ea5b55633f6c91ebe9c",
+     "symbols": [
+      "SNDK"
+     ],
+     "stance_cue": false,
+     "chars": 59
+    },
+    {
+     "i": 7,
+     "locator": "我是在图中买入点买了一些MUU小赌，不赌ER，打算在ER前出掉。",
+     "sha256": "7fa5db9a3568c8cb748ef2aeb5a5aeeee47bb10cef5809912ce10de211220eac",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 32
+    }
+   ],
+   "candidate_sentences_total": 7
+  },
+  {
+   "url": "https://blog.wenxuecity.com/myblog/31983/202609/22036.html",
+   "item_id": "d5b6b9842d3e2a1cd49f",
+   "author": "yifan99",
+   "source_kind": "blog",
+   "published_at": "2026-09-29",
+   "outcome": "ok",
+   "chars": 984,
+   "text_sha256": "1ed9c328fbd8a3228c943ec6230c644087bce4aa7c5e50425ddfb2774cd473c2",
+   "sentences": [
+    {
+     "i": 0,
+     "locator": "AMZN 一次向上 False Break（假突破），目前重新回到偏弱区间",
+     "sha256": "c10e5febd5dbdb947a4d355131af180f29e17d2cc7154f34136f8ae652071f1d",
+     "symbols": [
+      "AMZN"
+     ],
+     "stance_cue": false,
+     "chars": 37
+    },
+    {
+     "i": 1,
+     "locator": "从这张 AMZN 截至 9/29 的日线图看，把最近这一段更新为：",
+     "sha256": "8d5aac53b7639494f656aef1928324c5c0e2f4bf210d63a16f91afc1619b0f37",
+     "symbols": [
+      "AMZN"
+     ],
+     "stance_cue": false,
+     "chars": 33
+    },
+    {
+     "i": 2,
+     "locator": "AMZN：更像是一次向上 False Break（假突破），目前重新回到偏弱区间",
+     "sha256": "b018ec1649096e5cd447fe9599a76228dafa13a04049f104845da10ce6634b42",
+     "symbols": [
+      "AMZN"
+     ],
+     "stance_cue": false,
+     "chars": 41
+    },
+    {
+     "i": 10,
+     "locator": "AMZN 必须重新站回 MA21/MA50，并最好连续 2 个交易日守住，fal",
+     "sha256": "4b23baa7df80092cb4bbc91bac15de0f27a132fba56b6eba3bf0ebd0686583c1",
+     "symbols": [
+      "AMZN"
+     ],
+     "stance_cue": false,
+     "chars": 57
+    },
+    {
+     "i": 15,
+     "locator": "以如果用之前的趋势交易框架来表达，现在 AMZN 的状态不是 BUY，而更接近：",
+     "sha256": "7e155c13847b25d5b551e1ece4aca4901e97e185158460de36dfb74f78c551df",
+     "symbols": [
+      "AMZN"
+     ],
+     "stance_cue": true,
+     "chars": 41
+    },
+    {
+     "i": 19,
+     "locator": "这套系统里，暂时把 AMZN 的信号写成：",
+     "sha256": "5fcf34ed8de9a11822815944c4233db3aba263a26115f0fa2305eab66c8ea34c",
+     "symbols": [
+      "AMZN"
+     ],
+     "stance_cue": false,
+     "chars": 21
+    },
+    {
+     "i": 20,
+     "locator": "AMZN 9/29: FALSE BREAK ?",
+     "sha256": "7ba6701a2e01ebc3f02f663bdc40f0d848bdb067f8c01dee2802a11c51226a22",
+     "symbols": [
+      "AMZN"
+     ],
+     "stance_cue": false,
+     "chars": 24
+    },
+    {
+     "i": 24,
+     "locator": "如果接下来 AMZN 突破 253，我会把它重新列入确认候选；",
+     "sha256": "5bac761dd82aa52e744e83f744de6883f1f415db283d82c3e3c977e9daf6cfea",
+     "symbols": [
+      "AMZN"
+     ],
+     "stance_cue": false,
+     "chars": 31
+    },
+    {
+     "i": 23,
+     "locator": "Re-entry: reclaim ~252–253 + hold 2 days",
+     "sha256": "6b00eb2c861c6b925d40ee49a7ff0e86eb564880a74a5e0dd29cdef890100769",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 40
+    },
+    {
+     "i": 25,
+     "locator": "如果先跌破 243–245，则继续保持防守。",
+     "sha256": "6ac15034785cabcd25e40b196cd034af374a2034b98d02725dc3091271511325",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 22
+    }
+   ],
+   "candidate_sentences_total": 10
+  },
+  {
+   "url": "https://blog.wenxuecity.com/myblog/78105/202607/9090.html",
+   "item_id": "f93bd40f721e30255565",
+   "author": "麻你",
+   "source_kind": "blog",
+   "published_at": "2026-07-13",
+   "outcome": "ok",
+   "chars": 148,
+   "text_sha256": "61bc34edf47b50b0a1b9a41c5f11fd260f63b7c572343965190800d63947d54f",
+   "sentences": [
+    {
+     "i": 3,
+     "locator": "如果大盘选择继续向上，就等待上方的卖出信号出现，卖出部分盈利取利。",
+     "sha256": "046d859d4ed75da1b1028315e5d6d0b7330bf41db0b6191a27f21a5745cf48a4",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 33
+    },
+    {
+     "i": 5,
+     "locator": "如果大盘选择调头向下，那就等待下方的买入信号出现开始加仓。",
+     "sha256": "d419a52d1c004659f12d6fcf525c0df0de694da0c742990ce96797cfdc1bb6b7",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 29
+    },
+    {
+     "i": 6,
+     "locator": "越跌越买，只买不卖。",
+     "sha256": "f57b2b929066b5d594e4de81b09cfed8a1eba49501045ad10319449e67a304e3",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 10
+    }
+   ],
+   "candidate_sentences_total": 3
+  },
+  {
+   "url": "https://blog.wenxuecity.com/myblog/78105/202610/4859.html",
+   "item_id": "dcb938407a0c1550dea3",
+   "author": "麻你",
+   "source_kind": "blog",
+   "published_at": "2026-10-07",
+   "outcome": "ok",
+   "chars": 510,
+   "text_sha256": "255d1deac64403a0b90cbc7197cdbff3b95c31f701ebfb079697e315aba610e4",
+   "sentences": [
+    {
+     "i": 0,
+     "locator": "为什么要多仓VGT",
+     "sha256": "12e42792df6308b53dafa5d88a1bb7080a8cc8d2cab8b0a276ae9478f56171b0",
+     "symbols": [
+      "VGT"
+     ],
+     "stance_cue": false,
+     "chars": 9
+    },
+    {
+     "i": 1,
+     "locator": "要是高科技带动股市，做为高科技高度集合的VGT，回报远远高于道琼（DIA）和SP",
+     "sha256": "8be38cd45ce68d7e0261677515c7ab4c620f3cd1aadc3ec0671c51dcb63fd30b",
+     "symbols": [
+      "QQQ",
+      "VOO",
+      "SPY",
+      "VGT",
+      "DIA"
+     ],
+     "stance_cue": false,
+     "chars": 74
+    },
+    {
+     "i": 2,
+     "locator": "其次，操作上每年只把VGT盈利的10%到15%留在股市，超出部分卖出做为储备金，",
+     "sha256": "099ad7b73b2baa9b96beb804728c1f47fc11a06daa5494a65f65f5fd82277fac",
+     "symbols": [
+      "VGT"
+     ],
+     "stance_cue": true,
+     "chars": 60
+    },
+    {
+     "i": 3,
+     "locator": "至于VGT下跌80-90%的情形，应该说是很好的事情。",
+     "sha256": "51b5cf711700c4768446438bf534298ad450ae48181875ac06fcab977800b0e4",
+     "symbols": [
+      "VGT"
+     ],
+     "stance_cue": false,
+     "chars": 27
+    },
+    {
+     "i": 6,
+     "locator": "钱日常生活用不完（包括商务舱和五星旅店），更有历年从VGT取利积攒的储备金可用。",
+     "sha256": "66865ab93b221c8bb6c984b61ba0616c7978ae432a4c29015235483dae8b098d",
+     "symbols": [
+      "VGT"
+     ],
+     "stance_cue": true,
+     "chars": 72
+    },
+    {
+     "i": 7,
+     "locator": "第二，可以在低点大批买进VGT。",
+     "sha256": "89ec9d552a2febf1908c13b3ee4ddad22f3267668f782c1bf72a10efd2d08098",
+     "symbols": [
+      "VGT"
+     ],
+     "stance_cue": true,
+     "chars": 16
+    },
+    {
+     "i": 8,
+     "locator": "VGT的跌幅会比道琼和SP500更深更大，也就是更便宜，未来上升幅度更大，盈利更",
+     "sha256": "5eb9f90ce135fdf79b81eac2296c079bc7bf2496f86fb46e76f76e9f9be26ac3",
+     "symbols": [
+      "VGT"
+     ],
+     "stance_cue": false,
+     "chars": 42
+    },
+    {
+     "i": 9,
+     "locator": "第三，可以大笔把VGT在低点从退休账户转入ROTH账户，省去巨额税款。",
+     "sha256": "9992c3c5407655d2cd122f1e638ca6a802d47c5c7e80be883144d70609715287",
+     "symbols": [
+      "VGT"
+     ],
+     "stance_cue": false,
+     "chars": 35
+    },
+    {
+     "i": 11,
+     "locator": "总之，选VGT就是选它跌的狠，涨的也更狠，赚的也就更多。",
+     "sha256": "dc3780a3979dc305771e095c54d05847b517249a8d490bd94a6ebc2bd659ac16",
+     "symbols": [
+      "VGT"
+     ],
+     "stance_cue": false,
+     "chars": 28
+    },
+    {
+     "i": 5,
+     "locator": "第一，投入到股市的钱是日常生活用不到的钱，也就是说，无论在股市高涨或大跌，都不需",
+     "sha256": "bb4db9995fa46a021e7b5ddbdef4f97b518b28aa53f1bac5ec49fd6a47b9696a",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 51
+    }
+   ],
+   "candidate_sentences_total": 10
+  },
+  {
+   "url": "https://blog.wenxuecity.com/myblog/82458/202609/20217.html",
+   "item_id": "2e62dfdf3b296f5aaf54",
+   "author": "BrightLine",
+   "source_kind": "blog",
+   "published_at": "2026-09-26",
+   "outcome": "ok",
+   "chars": 1114,
+   "text_sha256": "71d806f68dd08dec334c8a092db44ca0533f62d9aa4ae596fec41aa95ca7e60b",
+   "sentences": [
+    {
+     "i": 11,
+     "locator": "年化10%，也就是SPY的长期水平：30年17.4倍，终点1.74亿。",
+     "sha256": "23fa1fa6917dfac49b09790f80697d47fadec15d39b1adec837ea8b0cdb3fb85",
+     "symbols": [
+      "SPY"
+     ],
+     "stance_cue": false,
+     "chars": 35
+    },
+    {
+     "i": 14,
+     "locator": "居士说90岁到B，算的是VGT/QQQ这条路：四十出头手握10米，老老实实吃大盘",
+     "sha256": "83402994f9b68aab3f62fa6c24d2728a72a6993a333f22e9e28603d28eb4588d",
+     "symbols": [
+      "QQQ",
+      "VGT"
+     ],
+     "stance_cue": false,
+     "chars": 49
+    },
+    {
+     "i": 17,
+     "locator": "年化20%，QQQ这些年的水平：30年237倍，23.7亿。",
+     "sha256": "785e196762316fe517c1cbb23a6d63ad9455aa921346e7811155f3b4838607f3",
+     "symbols": [
+      "QQQ"
+     ],
+     "stance_cue": false,
+     "chars": 30
+    },
+    {
+     "i": 23,
+     "locator": "QQQ过去10年含息年化约20.9%，过去20年约16.3%。",
+     "sha256": "e894e14d3fbfa8056e67ac30c2ea9d2be019d3de3a467103b4c651a8b34c8fd7",
+     "symbols": [
+      "QQQ"
+     ],
+     "stance_cue": false,
+     "chars": 31
+    },
+    {
+     "i": 24,
+     "locator": "纳指100从1985年创立到2025年初，四十年年化14.25%。",
+     "sha256": "54f7ccfd8e604bf13a17c89d278a8d4aaef24f58ad34ff6e149bc988334f199b",
+     "symbols": [
+      "QQQ"
+     ],
+     "stance_cue": false,
+     "chars": 33
+    },
+    {
+     "i": 26,
+     "locator": "也就是说，二十年前把钱放进纳指一动不动的人，今天已经走在Billionaire的",
+     "sha256": "aef66432d2e0fff0882988a9b1f6f8bd4c7bd3fea1463652b30ff4a843036848",
+     "symbols": [
+      "QQQ"
+     ],
+     "stance_cue": false,
+     "chars": 45
+    },
+    {
+     "i": 29,
+     "locator": "同一个QQQ，如果是1999年高点买进，到今天年化只有10.5%左右，和SPY差",
+     "sha256": "e8d756e865dc54f62519faf4eac1086e67fcd0dfb5f0bcff541cd02ba1bbb73f",
+     "symbols": [
+      "QQQ",
+      "SPY"
+     ],
+     "stance_cue": true,
+     "chars": 43
+    },
+    {
+     "i": 35,
+     "locator": "科技主线上的资金，拿到16.6%以上并不是奢望，过去二十年的纳指已经证明过一次。",
+     "sha256": "605f16c6d642b896d4ab74094bf435b06418b36dab4c87a790b36f0a895836b1",
+     "symbols": [
+      "QQQ"
+     ],
+     "stance_cue": false,
+     "chars": 51
+    },
+    {
+     "i": 30,
+     "locator": "买在泡沫顶上，二十多年的超额就被吃掉了。",
+     "sha256": "bac41a7a89cf05dd020e511fc2ad3662e24359a55e54e6e9a837577e1261b156",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 20
+    },
+    {
+     "i": 33,
+     "locator": "可一旦在2000年或2008年那种时候被迫卖出，那就不是少赚几个点的问题，而是复",
+     "sha256": "e990aefe5be2791e2afc04e70a4ea1eae80470ef89edd4eaaa4fd25895a48659",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 53
+    }
+   ],
+   "candidate_sentences_total": 10
+  },
+  {
+   "url": "https://blog.wenxuecity.com/myblog/82458/202610/6792.html",
+   "item_id": "1e8bdac0655d45d20834",
+   "author": "BrightLine",
+   "source_kind": "blog",
+   "published_at": "2026-10-10",
+   "outcome": "ok",
+   "chars": 2889,
+   "text_sha256": "92e44d6f52f051b3edfc983fc9538d04ca309c833537ef1271b53e80df4d1a7c",
+   "sentences": [
+    {
+     "i": 37,
+     "locator": "搜索烧钱，最后只有Google和微软玩得起，Google拿了九成，微软烧了上百亿",
+     "sha256": "74665cdc5fd0e9157a365b93e98662f138575c58f4cb3f2167bad907c4117c4a",
+     "symbols": [
+      "MSFT"
+     ],
+     "stance_cue": false,
+     "chars": 52
+    },
+    {
+     "i": 66,
+     "locator": "而现在的META，按2027年预期利润算大约21倍市盈率。",
+     "sha256": "3111dd23e60f640d46828cf3fa0af94c1dd5dece672e21d4a0a8405f98bbc90c",
+     "symbols": [
+      "META"
+     ],
+     "stance_cue": false,
+     "chars": 29
+    },
+    {
+     "i": 70,
+     "locator": "七、META到1000美元，我看不成问题",
+     "sha256": "f9d7bc2c1d9f4fd649caeec3fc9839727c7b6fdf1e690d71cb477bc0728eb9b4",
+     "symbols": [
+      "META"
+     ],
+     "stance_cue": false,
+     "chars": 20
+    },
+    {
+     "i": 90,
+     "locator": "声明：本人重仓META，以上只是个人使用体验和看法，不构成任何投资建议。",
+     "sha256": "e0c1ca06066cfa89054dd9e504be00d55c2420f73f36b75773f8e08447175f2c",
+     "symbols": [
+      "META"
+     ],
+     "stance_cue": false,
+     "chars": 36
+    },
+    {
+     "i": 77,
+     "locator": "基准情景：2027年起Muse的订阅和广告收入开始进财报，资本开支见顶，盈利增速",
+     "sha256": "b9b024c97333aa2ba2a4856d3774f222e826055a6478e42618657637250448fd",
+     "symbols": [],
+     "stance_cue": true,
+     "chars": 43
+    }
+   ],
+   "candidate_sentences_total": 5
+  }
+ ],
+ "policy": "runtime-only text; stores ≤40-char locators + sentence sha256 only"
+}
