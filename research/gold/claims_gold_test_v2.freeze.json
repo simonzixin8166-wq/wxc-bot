@@ -1,0 +1,6 @@
+{
+ "test_items": 205,
+ "test_sha256": "d82f7d44381c506f125ce82a12969ba15a7d2d2ad964bbd89a3df33c20c83a7e",
+ "frozen_at": "2026-10-11",
+ "note": "fresh unseen articles (none in gold v1 / round-2); report once per extractor version; never tune on it"
+}
