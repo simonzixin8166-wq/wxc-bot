@@ -42210,9 +42210,70 @@
       "capture_mode": "youtube_timestamp_unknown_learning",
       "timestamp_confidence": "missing",
       "forward_evidence_eligible": false
+    },
+    {
+      "id": "66b4cef06a84cd3de2eb",
+      "source": "wenxuecity",
+      "source_kind": "blog",
+      "author": "BrightLine",
+      "published_at": "2026-10-11",
+      "title": "云计算才是AI最赚钱的环节",
+      "url": "https://blog.wenxuecity.com/myblog/82458/202610/7180.html",
+      "excerpt": "李录最近在哥大格雷厄姆与多德论坛上谈AI，有一个观点流传很广：AI和互联网不一样，互联网基础设施建好以后，多分发一次信息几乎不花钱；AI每生成一次回答、每跑一次Agent任务，都要继续烧GPU、烧电、占存储。边际成本不为零，所以上游芯片商拿到订单，下游未必能同步赚钱。\n这段话前半句我完全同意，后半句我认为恰恰说反了。\n边际成本不为零，对打价格战的模型公司是压力，对云计算却是收入。你每问一个问题，每让Agent跑一个任务，云厂商的电表就转一圈。软件时代是写一次、卖无数份拷贝；AI时代是按次计费、按token收钱。这不是下游的诅咒，这是收费站的生意模式。用的人越多，任务越复杂，收费站的流水就越大。\n一、数字已经替云厂商说话了\n先看今年第二季度的财报。\nAWS季度收入422亿美元，同比增长37%，连续第五个季度加速，",
+      "content_chars": 5951,
+      "images_count": 0,
+      "themes_hint": [
+        "风险管理",
+        "失败复盘",
+        "IREN",
+        "TSLA"
+      ],
+      "symbols": [
+        "CRWV",
+        "NBIS",
+        "IREN",
+        "TSLA",
+        "NVDA"
+      ],
+      "operations": [
+        {
+          "symbols": [
+            "NVDA"
+          ],
+          "actions": [
+            "sell"
+          ],
+          "attribution": "unconfirmed_author_context",
+          "attribution_confidence": "needs_review"
+        },
+        {
+          "symbols": [
+            "TSLA"
+          ],
+          "actions": [
+            "sell"
+          ],
+          "attribution": "author_action",
+          "attribution_confidence": "high"
+        }
+      ],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": null,
+      "source_entry_key": null,
+      "parent_post_id": null,
+      "attribution_fallback": null,
+      "captured_at": "2026-10-11T13:10:44Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "scheduled_blog_scan_complete"
     }
   ],
-  "updated_at": "2026-10-11T12:45:25Z",
+  "updated_at": "2026-10-11T13:10:45Z",
   "retention_policy": "append_only_no_record_count_cap",
   "historical_recovery": {
     "completed_at": "2026-10-07T13:43:06.018028+00:00",
