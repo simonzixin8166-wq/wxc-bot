@@ -9,6 +9,14 @@ on:
         description: "Gold file (claims_gold_v1.jsonl or claims_gold_test_v2.jsonl)"
         required: false
         default: "claims_gold_v1.jsonl"
+      mode:
+        description: "ce (rules) or hp (ce-5 high-precision shadow)"
+        required: false
+        default: "ce"
+      split:
+        description: "dev, test or both"
+        required: false
+        default: "both"
 
 permissions:
   contents: write
@@ -31,7 +39,7 @@ jobs:
       - run: PYTHONPATH=. python tests/test_claims_gold.py
       - name: Evaluate (runtime-only article text)
         run: |
-          name="${{ inputs.gold }}"; out=$(python eval_claims_gold.py --fetch --gold "$name" --out "state/eval_${name%.jsonl}.json")
+          name="${{ inputs.gold }}"; out=$(python eval_claims_gold.py --fetch --gold "$name" --mode "${{ inputs.mode }}" --split "${{ inputs.split }}" --out "state/eval_${name%.jsonl}_${{ inputs.mode }}_${{ inputs.split }}.json")
           echo "$out"
           echo "::notice title=Claims gold eval::$out"
       - name: Save metrics only

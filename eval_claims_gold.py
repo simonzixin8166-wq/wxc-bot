@@ -54,11 +54,13 @@ def classify_errors(pred, gold, it, detected):
     return errs
 
 
-def evaluate(items, texts):
+def evaluate(items, texts, extractor=None, splits=("dev", "test")):
+    extractor = extractor or ce.extract_claims
     res = {}
-    for split in ("dev", "test"):
+    for split in splits:
         tp = fp = fn = 0
         errors = Counter()
+        gates = defaultdict(lambda: [0, 0])
         n = scored = amb = unavailable = abstain = abstain_ok = 0
         for it in (x for x in items if x["split"] == split):
             n += 1
@@ -70,7 +72,12 @@ def evaluate(items, texts):
                 unavailable += 1
                 continue
             scored += 1
-            claims = [c for c in ce.extract_claims(text) if ce.checkable(c)]
+            claims = [c for c in extractor(text) if ce.checkable(c)]
+            for c in claims:
+                gate = c.get("hp_gate")
+                if gate:
+                    ok = (c["symbol"], COARSE.get(c["stance"], c["stance"])) in {(l["symbol"], COARSE[l["stance"]]) for l in it["labels"]}
+                    gates[gate][0 if ok else 1] += 1
             pred = {(c["symbol"], COARSE.get(c["stance"], c["stance"])) for c in claims}
             gold = {(l["symbol"], COARSE[l["stance"]]) for l in it["labels"]}
             if not pred:
@@ -86,7 +93,9 @@ def evaluate(items, texts):
                       "precision": round(tp / (tp + fp), 3) if tp + fp else None,
                       "recall": round(tp / (tp + fn), 3) if tp + fn else None,
                       "abstain_rate": round(abstain / scored, 3) if scored else None,
-                      "correct_abstain_items": abstain_ok, "errors": dict(errors)}
+                      "correct_abstain_items": abstain_ok, "errors": dict(errors),
+                      "coverage": round((tp + fp) / (tp + fn), 3) if tp + fn else None,
+                      "by_gate": {g: {"correct": v[0], "wrong": v[1]} for g, v in gates.items()}}
     return res
 
 
@@ -95,9 +104,15 @@ def load_texts(items, fetch=False):
     texts = {}
     for it in items:
         if it.get("kind", "title") == "title":
-            t = (recs.get(it["item_id"]) or {}).get("title") or ""
+            t = (recs.get(it.get("record_id") or it["item_id"]) or {}).get("title") or ""
             if sha(t) == it["text_sha256"]:
                 texts[it["item_id"]] = t
+        elif it.get("kind") == "excerpt":  # stored public title + ≤360-char excerpt, located by sentence sha
+            r = recs.get(it["record_id"]) or {}
+            for s_ in ce.sentences(f"{r.get('title') or ''}\n{r.get('excerpt') or ''}"):
+                if sha(s_) == it["text_sha256"]:
+                    texts[it["item_id"]] = s_
+                    break
     if fetch:
         import time, random
         from pilot_fulltext_claims import fetch_text
@@ -145,6 +160,8 @@ def main(argv=None):
     ap.add_argument("--gold", default="claims_gold_v1.jsonl")
     ap.add_argument("--fetch", action="store_true", help="fetch article sentences at runtime (Actions)")
     ap.add_argument("--out", default=str(ROOT / "state" / "claims_gold_eval.json"))
+    ap.add_argument("--mode", choices=("ce", "hp"), default="ce", help="hp = ce-5 high-precision shadow")
+    ap.add_argument("--split", choices=("dev", "test", "both"), default="both")
     a = ap.parse_args(argv)
     path = GOLD_DIR / a.gold
     items = [json.loads(x) for x in path.read_text(encoding="utf-8").splitlines() if x.strip()]
@@ -157,14 +174,15 @@ def main(argv=None):
     if freeze(items)["test_sha256"] != freeze(frozen_items)["test_sha256"]:
         raise SystemExit("adjudication changed the frozen test split")
     texts = load_texts(items, fetch=a.fetch)
-    by_kind = {k: evaluate([i for i in items if i.get("kind", "title") == k], texts) for k in ("title", "sentence")}
-    rep = {"extractor_version": ce.EXTRACTOR_VERSION, "gold": path.name, "test_frozen_intact": frozen_ok, "adjudications": n_adj,
-           "fetched_sentences": a.fetch, "results": evaluate(items, texts), "by_kind": by_kind,
+    fn = ce.extract_claims_hp if a.mode == "hp" else ce.extract_claims
+    sp = ("dev", "test") if a.split == "both" else (a.split,)
+    by_kind = {k: evaluate([i for i in items if i.get("kind", "title") == k], texts, fn, sp) for k in ("title", "sentence", "excerpt")}
+    rep = {"extractor_version": ce.HP_VERSION if a.mode == "hp" else ce.EXTRACTOR_VERSION, "splits": list(sp), "gold": path.name, "test_frozen_intact": frozen_ok, "adjudications": n_adj,
+           "fetched_sentences": a.fetch, "results": evaluate(items, texts, fn, sp), "by_kind": by_kind,
            "note": "single labeler until the blind second label is in; scored only where text is traceable"}
     Path(a.out).write_text(json.dumps(rep, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     print(json.dumps({"extractor": rep["extractor_version"], "frozen": frozen_ok,
-                      "dev": {k: rep["results"]["dev"][k] for k in ("scored", "precision", "recall", "traceability")},
-                      "test": {k: rep["results"]["test"][k] for k in ("scored", "precision", "recall", "traceability")}},
+                      **{s_: {k: rep["results"][s_][k] for k in ("scored", "precision", "recall", "coverage", "traceability")} for s_ in sp}},
                      ensure_ascii=False))
     return 0
 

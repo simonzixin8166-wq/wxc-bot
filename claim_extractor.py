@@ -141,3 +141,50 @@ def provider_boilerplate(text: str) -> bool:
     markers and too little other text to be a real transcript."""
     low = (text or "").lower()
     return sum(m in low for m in BOILERPLATE_MARKERS) >= 3 and len(low) < 2000
+
+
+# ---------------------------------------------------------------------------------------------
+# ce-5 high-precision shadow mode (quant-dashboard#133 6107236790 item 2). Developed on gold v1 dev only.
+# Keeps a claim only when the sentence is a first-person, explicit statement of a trade or position;
+# everything else (forecasts, technical descriptions, questions, irony, third parties, mixed actions
+# across several tickers) abstains. Output carries the gate that admitted it, for audit.
+HP_VERSION = "ce-5-hp"
+FIRST_PERSON = r"我|俺|本人|(?<![A-Za-z])I(?![A-Za-z])|(?<![A-Za-z])my(?![A-Za-z])"
+EXECUTED = r"\btaking\b|\bselling\b|\bbuying\b|\badding\b|了|已经?|今天|昨天|昨晚|刚刚|刚才|盘前|盘后|上周|这周|本周|周[一二三四五]|月底|\d+月\d+[号日]|took|sold|bought|exited|added"
+FORECAST = r"下一站|估计|猜|应该会|可能会|也许|大概率|看图|目标价|会到|会回到|会有|hard bounce|pt\b|target"
+HOLD_POSITION = r"(?:保持|维持)\s*\d+(?:\.\d+)?\s*%|\d+(?:\.\d+)?\s*%\s*(?:的)?仓位|重仓|最大仓|满仓|全仓|拿了.{0,10}没动|我没动|半股也不会卖|一股也不卖|不卖"
+CONDITIONAL_PLAN = r"(?:如果|若|一旦|跌到|跌下|涨到|到了?)[^。；;]{0,24}(?:就|再|会|才)?\s*(?:买|加仓|加|卖|减仓|止盈|取利)"
+
+
+def extract_claims_hp(text: str, limit: int = 30) -> list[dict]:
+    out = []
+    for s in sentences(text):
+        low = s.lower()
+        cs = [c for c in extract_claims(s, limit=10) if checkable(c)]
+        if not cs or s.rstrip().endswith(("?", "？", "吗")):
+            continue
+        explicit_fp = bool(re.search(FIRST_PERSON, s))
+        if re.search(THIRD_PARTY, s) and not explicit_fp:
+            continue
+        # Chinese posts often drop the subject: no other person named → the author speaks
+        fp = explicit_fp or not re.search(r"你|您|他|她|有人|别人|大家|网友|网红|楼主", s)
+        stances = {c["stance"] for c in cs}
+        if len({c["symbol"] for c in cs}) > 1 and len(stances) > 1:
+            continue  # mixed actions across tickers: abstain
+        for c in cs:
+            st = c["stance"]
+            gate = None
+            if st in ("buy", "add", "sell", "trim") and fp and re.search(EXECUTED, low) and not c["conditional"]:
+                gate, status = "first_person_executed_trade", "executed"
+            elif st in ("buy", "add", "sell", "trim") and fp and re.search(CONDITIONAL_PLAN, s):
+                gate, status = "first_person_conditional_plan", "conditional"
+            elif st == "hold" and re.search(HOLD_POSITION, s) and (fp or re.search(r"(?:保持|维持)\s*\d", s)):
+                gate, status = "explicit_position_hold", "opinion"
+            elif st == "bullish" and re.search(r"sell\s*puts?|卖\s*put|卖出看跌", low):
+                gate, status = "sell_put_willing_to_own", "opinion"
+            if not gate or (gate != "first_person_executed_trade" and re.search(FORECAST, low)):
+                continue
+            out.append({**c, "status": status, "hp_gate": gate})
+            if len(out) >= limit:
+                return out
+    return out

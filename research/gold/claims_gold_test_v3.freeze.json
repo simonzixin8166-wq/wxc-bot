@@ -1,0 +1,6 @@
+{
+ "test_items": 141,
+ "test_sha256": "654d1c0b8e81c0794d71dc18c8cdfe2a60edad4bf6698e1bb2286909e9709153",
+ "frozen_at": "2026-10-11",
+ "note": "unseen stored excerpts (forum/blog/video) + unused titles; no overlap with v0/v1/test v2; report once per extractor version"
+}
