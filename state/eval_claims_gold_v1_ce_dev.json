@@ -1,0 +1,111 @@
+{
+ "extractor_version": "ce-4",
+ "splits": [
+  "dev"
+ ],
+ "gold": "claims_gold_v1.jsonl",
+ "test_frozen_intact": true,
+ "adjudications": 4,
+ "fetched_sentences": true,
+ "results": {
+  "dev": {
+   "items": 161,
+   "scored": 151,
+   "ambiguous_excluded": 10,
+   "unavailable": 0,
+   "traceability": 1.0,
+   "gold_claims": 71,
+   "pred_claims": 51,
+   "tp": 43,
+   "fp": 8,
+   "fn": 28,
+   "precision": 0.843,
+   "recall": 0.606,
+   "abstain_rate": 0.748,
+   "correct_abstain_items": 90,
+   "errors": {
+    "missed_stance": 24,
+    "wrong_symbol": 1,
+    "wrong_stance": 4,
+    "stance_mismatch": 4,
+    "claim_where_none": 3
+   },
+   "coverage": 0.718,
+   "by_gate": {}
+  }
+ },
+ "by_kind": {
+  "title": {
+   "dev": {
+    "items": 67,
+    "scored": 66,
+    "ambiguous_excluded": 1,
+    "unavailable": 0,
+    "traceability": 1.0,
+    "gold_claims": 32,
+    "pred_claims": 20,
+    "tp": 19,
+    "fp": 1,
+    "fn": 13,
+    "precision": 0.95,
+    "recall": 0.594,
+    "abstain_rate": 0.803,
+    "correct_abstain_items": 40,
+    "errors": {
+     "missed_stance": 13,
+     "wrong_symbol": 1
+    },
+    "coverage": 0.625,
+    "by_gate": {}
+   }
+  },
+  "sentence": {
+   "dev": {
+    "items": 94,
+    "scored": 85,
+    "ambiguous_excluded": 9,
+    "unavailable": 0,
+    "traceability": 1.0,
+    "gold_claims": 39,
+    "pred_claims": 31,
+    "tp": 24,
+    "fp": 7,
+    "fn": 15,
+    "precision": 0.774,
+    "recall": 0.615,
+    "abstain_rate": 0.706,
+    "correct_abstain_items": 50,
+    "errors": {
+     "wrong_stance": 4,
+     "stance_mismatch": 4,
+     "claim_where_none": 3,
+     "missed_stance": 11
+    },
+    "coverage": 0.795,
+    "by_gate": {}
+   }
+  },
+  "excerpt": {
+   "dev": {
+    "items": 0,
+    "scored": 0,
+    "ambiguous_excluded": 0,
+    "unavailable": 0,
+    "traceability": null,
+    "gold_claims": 0,
+    "pred_claims": 0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0,
+    "precision": null,
+    "recall": null,
+    "abstain_rate": null,
+    "correct_abstain_items": 0,
+    "errors": {},
+    "coverage": null,
+    "by_gate": {}
+   }
+  }
+ },
+ "note": "single labeler until the blind second label is in; scored only where text is traceable"
+}
