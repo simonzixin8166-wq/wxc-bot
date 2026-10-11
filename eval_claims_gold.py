@@ -1,24 +1,57 @@
 #!/usr/bin/env python3
-"""Evaluate claim_extractor against the human gold corpus (quant-dashboard#133 6106703460, phase 1).
+"""Evaluate claim_extractor against the human gold corpus (quant-dashboard#133 6106703460 / 6106896435).
 
-Gold items reference stored public text (titles / stored excerpts) by id + sha256; labels are the
-author's OWN stance per symbol (quotes/examples are not claims). Coarse direction is compared:
-long (buy/add) / reduce (sell/trim) / hold / bullish / bearish / avoid. Reports precision, recall,
-abstain rate and error types per split; the test split must not be used to tune rules.
+Gold items reference public text by id/locator + sha256; labels are the author's OWN stance per symbol
+(quotes, third-party examples and other people's trades are not claims). Coarse direction compared:
+long (buy/add) / reduce (sell/trim) / hold / bullish / bearish / avoid. Items marked ambiguous are
+excluded from scoring and counted separately.
+
+  title items    : text = stored public title (verified by sha256)
+  sentence items : text is fetched at runtime (--fetch, Actions only); the sentence is located by sha256.
+                   Not found → unavailable (counts against traceability, never guessed).
+
+Metrics per split: precision, recall, abstain rate, correct-abstain items, traceability, error types.
+The test split is frozen (claims_gold_v1.freeze.json); report it once per extractor version, never tune on it.
 """
 from __future__ import annotations
-import argparse, json, sys
-from collections import Counter
+import argparse, hashlib, json, sys
+from collections import Counter, defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 import claim_extractor as ce  # noqa: E402
 
-GOLD = ROOT / "research" / "gold" / "claims_gold_v0.jsonl"
+GOLD_DIR = ROOT / "research" / "gold"
 FEED = ROOT / "state" / "research_feed.json"
 COARSE = {"buy": "long", "add": "long", "sell": "reduce", "trim": "reduce", "hold": "hold",
           "bullish": "bullish", "bearish": "bearish", "avoid": "avoid"}
+
+
+def sha(t):
+    return hashlib.sha256((t or "").encode("utf-8")).hexdigest()
+
+
+def classify_errors(pred, gold, it, detected):
+    errs = Counter()
+    gsym = {g[0] for g in gold}
+    for p in pred - gold:
+        if p[0] in gsym:
+            errs["wrong_stance"] += 1
+            if any(l.get("instrument") == "sell_put" for l in it["labels"]):
+                errs["wrong_stance_option_semantics"] += 1
+        elif not gold:
+            errs["claim_where_none"] += 1
+        else:
+            errs["wrong_symbol"] += 1
+    for g in gold - pred:
+        if g[0] in {p[0] for p in pred}:
+            errs["stance_mismatch"] += 1
+        elif g[0] not in detected:
+            errs["missed_symbol_not_detected"] += 1
+        else:
+            errs["missed_stance"] += 1
+    return errs
 
 
 def evaluate(items, texts):
@@ -26,46 +59,94 @@ def evaluate(items, texts):
     for split in ("dev", "test"):
         tp = fp = fn = 0
         errors = Counter()
-        n_items = abstain_ok = 0
+        n = scored = amb = unavailable = abstain = abstain_ok = 0
         for it in (x for x in items if x["split"] == split):
-            n_items += 1
-            text = texts.get(it["item_id"], "")
-            pred = {(c["symbol"], COARSE.get(c["stance"], c["stance"])) for c in ce.extract_claims(text) if ce.checkable(c)}
+            n += 1
+            if it.get("ambiguous"):
+                amb += 1
+                continue
+            text = texts.get(it["item_id"])
+            if text is None:
+                unavailable += 1
+                continue
+            scored += 1
+            claims = [c for c in ce.extract_claims(text) if ce.checkable(c)]
+            pred = {(c["symbol"], COARSE.get(c["stance"], c["stance"])) for c in claims}
             gold = {(l["symbol"], COARSE[l["stance"]]) for l in it["labels"]}
-            if not gold and not pred:
-                abstain_ok += 1
+            if not pred:
+                abstain += 1
+                abstain_ok += not gold
             tp += len(pred & gold)
-            for p in pred - gold:
-                fp += 1
-                errors["wrong_stance" if any(p[0] == g[0] for g in gold) else "no_claim_in_gold"] += 1
-            for g in gold - pred:
-                fn += 1
-                errors["stance_mismatch" if any(g[0] == p[0] for p in pred) else "missed"] += 1
-        res[split] = {"items": n_items, "gold_claims": tp + fn, "pred_claims": tp + fp, "tp": tp, "fp": fp, "fn": fn,
+            fp += len(pred - gold)
+            fn += len(gold - pred)
+            errors += classify_errors(pred, gold, it, set(ce.symbols_in(text)))
+        res[split] = {"items": n, "scored": scored, "ambiguous_excluded": amb, "unavailable": unavailable,
+                      "traceability": round(scored / (n - amb), 3) if n - amb else None,
+                      "gold_claims": tp + fn, "pred_claims": tp + fp, "tp": tp, "fp": fp, "fn": fn,
                       "precision": round(tp / (tp + fp), 3) if tp + fp else None,
                       "recall": round(tp / (tp + fn), 3) if tp + fn else None,
+                      "abstain_rate": round(abstain / scored, 3) if scored else None,
                       "correct_abstain_items": abstain_ok, "errors": dict(errors)}
     return res
 
 
-def main(argv=None):
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--out", default=str(ROOT / "state" / "claims_gold_eval.json"))
-    a = ap.parse_args(argv)
-    items = [json.loads(x) for x in GOLD.read_text(encoding="utf-8").splitlines() if x.strip()]
+def load_texts(items, fetch=False):
     recs = {r["id"]: r for r in json.loads(FEED.read_text(encoding="utf-8"))["records"]}
     texts = {}
     for it in items:
-        r = recs.get(it["item_id"]) or {}
-        t = r.get("title") or "" if it["source"] == "title" else r.get("excerpt") or ""
-        import hashlib
-        if hashlib.sha256(t.encode()).hexdigest() != it["text_sha256"]:
-            raise SystemExit(f"text changed for {it['item_id']}: gold label no longer applies")
-        texts[it["item_id"]] = t
-    rep = {"extractor_version": ce.EXTRACTOR_VERSION, "gold": GOLD.name, "results": evaluate(items, texts),
-           "note": "single labeler (claude-v0); second blinded label pending; small n — not a pass/fail gate yet"}
+        if it.get("kind", "title") == "title":
+            t = (recs.get(it["item_id"]) or {}).get("title") or ""
+            if sha(t) == it["text_sha256"]:
+                texts[it["item_id"]] = t
+    if fetch:
+        import time, random
+        from pilot_fulltext_claims import fetch_text
+        by_url = defaultdict(list)
+        for it in items:
+            if it.get("kind") == "sentence" and not it.get("ambiguous"):
+                by_url[it["url"]].append(it)
+        for url, its in by_url.items():
+            time.sleep(random.uniform(2.0, 4.0))
+            status, _, text = fetch_text({"url": url, "author": its[0].get("author")})
+            if status in (403, 429):
+                break
+            if not text:
+                continue
+            sents = {sha(s): s for s in ce.sentences(text)}
+            for it in its:
+                if it["text_sha256"] in sents:
+                    texts[it["item_id"]] = sents[it["text_sha256"]]
+            text = None  # runtime only
+    return texts
+
+
+def freeze(items):
+    test = sorted(json.dumps(i, ensure_ascii=False, sort_keys=True) for i in items if i["split"] == "test")
+    return {"test_items": len(test), "test_sha256": sha("\n".join(test))}
+
+
+def main(argv=None):
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--gold", default="claims_gold_v1.jsonl")
+    ap.add_argument("--fetch", action="store_true", help="fetch article sentences at runtime (Actions)")
+    ap.add_argument("--out", default=str(ROOT / "state" / "claims_gold_eval.json"))
+    a = ap.parse_args(argv)
+    path = GOLD_DIR / a.gold
+    items = [json.loads(x) for x in path.read_text(encoding="utf-8").splitlines() if x.strip()]
+    fz = GOLD_DIR / path.name.replace(".jsonl", ".freeze.json")
+    frozen_ok = None
+    if fz.exists():
+        frozen_ok = json.loads(fz.read_text(encoding="utf-8"))["test_sha256"] == freeze(items)["test_sha256"]
+    texts = load_texts(items, fetch=a.fetch)
+    by_kind = {k: evaluate([i for i in items if i.get("kind", "title") == k], texts) for k in ("title", "sentence")}
+    rep = {"extractor_version": ce.EXTRACTOR_VERSION, "gold": path.name, "test_frozen_intact": frozen_ok,
+           "fetched_sentences": a.fetch, "results": evaluate(items, texts), "by_kind": by_kind,
+           "note": "single labeler until the blind second label is in; scored only where text is traceable"}
     Path(a.out).write_text(json.dumps(rep, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
-    print(json.dumps(rep, ensure_ascii=False))
+    print(json.dumps({"extractor": rep["extractor_version"], "frozen": frozen_ok,
+                      "dev": {k: rep["results"]["dev"][k] for k in ("scored", "precision", "recall", "traceability")},
+                      "test": {k: rep["results"]["test"][k] for k in ("scored", "precision", "recall", "traceability")}},
+                     ensure_ascii=False))
     return 0
 
 
