@@ -1,0 +1,42 @@
+name: gold-context
+
+# Manual: runtime fetch of public articles for the claims gold corpus v1 (quant-dashboard#133).
+# Stores only ≤40-char sentence locators + sha256; article text is discarded after the run.
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "Articles"
+        required: false
+        default: "36"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: wxc-research-writer
+  cancel-in-progress: false
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: PYTHONPATH=. python tests/test_gold_context.py
+      - name: Export locators (runtime-only text)
+        run: |
+          out=$(python gold_context.py --limit "${{ inputs.limit }}")
+          echo "$out"
+          echo "::notice title=Gold context::$out"
+      - name: Save locators only
+        run: |
+          git config user.name "github-actions"; git config user.email "actions@github.com"
+          git add state/gold_context_v1.json
+          git diff --cached --quiet || git commit -m "gold context v1 locators (runtime-only text)"
+          git pull --rebase origin main && git push
