@@ -120,6 +120,21 @@ def load_texts(items, fetch=False):
     return texts
 
 
+def apply_adjudication(items, path):
+    """Append-only adjudication overlay (second-labeler disagreements resolved with a reason).
+    The gold file itself is never rewritten; adjudications may only touch dev items."""
+    if not path.exists():
+        return items, 0
+    adj = [json.loads(x) for x in path.read_text(encoding="utf-8").splitlines() if x.strip()]
+    by = {i["item_id"]: i for i in items}
+    for a in adj:
+        it = by[a["item_id"]]
+        if it["split"] != "dev":
+            raise SystemExit(f"adjudication touches frozen test item {a['item_id']}")
+        it.update(a["after"])
+    return items, len(adj)
+
+
 def freeze(items):
     test = sorted(json.dumps(i, ensure_ascii=False, sort_keys=True) for i in items if i["split"] == "test")
     return {"test_items": len(test), "test_sha256": sha("\n".join(test))}
@@ -137,9 +152,13 @@ def main(argv=None):
     frozen_ok = None
     if fz.exists():
         frozen_ok = json.loads(fz.read_text(encoding="utf-8"))["test_sha256"] == freeze(items)["test_sha256"]
+    frozen_items = [dict(i) for i in items]
+    items, n_adj = apply_adjudication(items, GOLD_DIR / path.name.replace(".jsonl", "_adjudication.jsonl"))
+    if freeze(items)["test_sha256"] != freeze(frozen_items)["test_sha256"]:
+        raise SystemExit("adjudication changed the frozen test split")
     texts = load_texts(items, fetch=a.fetch)
     by_kind = {k: evaluate([i for i in items if i.get("kind", "title") == k], texts) for k in ("title", "sentence")}
-    rep = {"extractor_version": ce.EXTRACTOR_VERSION, "gold": path.name, "test_frozen_intact": frozen_ok,
+    rep = {"extractor_version": ce.EXTRACTOR_VERSION, "gold": path.name, "test_frozen_intact": frozen_ok, "adjudications": n_adj,
            "fetched_sentences": a.fetch, "results": evaluate(items, texts), "by_kind": by_kind,
            "note": "single labeler until the blind second label is in; scored only where text is traceable"}
     Path(a.out).write_text(json.dumps(rep, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
