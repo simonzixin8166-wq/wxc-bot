@@ -1,0 +1,152 @@
+{
+ "extractor_version": "ce-5-hp",
+ "splits": [
+  "dev"
+ ],
+ "gold": "claims_gold_v1.jsonl",
+ "test_frozen_intact": true,
+ "adjudications": 4,
+ "fetched_sentences": true,
+ "results": {
+  "dev": {
+   "items": 161,
+   "scored": 151,
+   "ambiguous_excluded": 10,
+   "unavailable": 0,
+   "traceability": 1.0,
+   "gold_claims": 71,
+   "pred_claims": 36,
+   "tp": 31,
+   "fp": 5,
+   "fn": 40,
+   "precision": 0.861,
+   "recall": 0.437,
+   "abstain_rate": 0.828,
+   "correct_abstain_items": 92,
+   "errors": {
+    "missed_stance": 36,
+    "wrong_symbol": 1,
+    "wrong_stance": 4,
+    "stance_mismatch": 4
+   },
+   "coverage": 0.507,
+   "by_gate": {
+    "first_person_executed_trade": {
+     "correct": 21,
+     "wrong": 4
+    },
+    "explicit_position_hold": {
+     "correct": 7,
+     "wrong": 1
+    },
+    "first_person_conditional_plan": {
+     "correct": 1,
+     "wrong": 0
+    },
+    "sell_put_willing_to_own": {
+     "correct": 2,
+     "wrong": 0
+    }
+   }
+  }
+ },
+ "by_kind": {
+  "title": {
+   "dev": {
+    "items": 67,
+    "scored": 66,
+    "ambiguous_excluded": 1,
+    "unavailable": 0,
+    "traceability": 1.0,
+    "gold_claims": 32,
+    "pred_claims": 17,
+    "tp": 16,
+    "fp": 1,
+    "fn": 16,
+    "precision": 0.941,
+    "recall": 0.5,
+    "abstain_rate": 0.833,
+    "correct_abstain_items": 40,
+    "errors": {
+     "missed_stance": 16,
+     "wrong_symbol": 1
+    },
+    "coverage": 0.531,
+    "by_gate": {
+     "first_person_executed_trade": {
+      "correct": 15,
+      "wrong": 1
+     },
+     "explicit_position_hold": {
+      "correct": 1,
+      "wrong": 0
+     }
+    }
+   }
+  },
+  "sentence": {
+   "dev": {
+    "items": 94,
+    "scored": 85,
+    "ambiguous_excluded": 9,
+    "unavailable": 0,
+    "traceability": 1.0,
+    "gold_claims": 39,
+    "pred_claims": 19,
+    "tp": 15,
+    "fp": 4,
+    "fn": 24,
+    "precision": 0.789,
+    "recall": 0.385,
+    "abstain_rate": 0.824,
+    "correct_abstain_items": 52,
+    "errors": {
+     "wrong_stance": 4,
+     "stance_mismatch": 4,
+     "missed_stance": 20
+    },
+    "coverage": 0.487,
+    "by_gate": {
+     "first_person_executed_trade": {
+      "correct": 6,
+      "wrong": 3
+     },
+     "explicit_position_hold": {
+      "correct": 6,
+      "wrong": 1
+     },
+     "first_person_conditional_plan": {
+      "correct": 1,
+      "wrong": 0
+     },
+     "sell_put_willing_to_own": {
+      "correct": 2,
+      "wrong": 0
+     }
+    }
+   }
+  },
+  "excerpt": {
+   "dev": {
+    "items": 0,
+    "scored": 0,
+    "ambiguous_excluded": 0,
+    "unavailable": 0,
+    "traceability": null,
+    "gold_claims": 0,
+    "pred_claims": 0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0,
+    "precision": null,
+    "recall": null,
+    "abstain_rate": null,
+    "correct_abstain_items": 0,
+    "errors": {},
+    "coverage": null,
+    "by_gate": {}
+   }
+  }
+ },
+ "note": "single labeler until the blind second label is in; scored only where text is traceable"
+}
