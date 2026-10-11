@@ -1,0 +1,360 @@
+{
+ "version": "blind-v1",
+ "items": 40,
+ "instructions": "For each item, open the URL (or read the title) and list the AUTHOR'S OWN position/view per ticker: stance ∈ buy/add/sell/trim/hold/avoid/bullish/bearish; status ∈ executed/planned/conditional/opinion; instrument ∈ stock/sell_put/covered_call/leaps/other. Quotes of other people, third-party trades and examples are NOT the author's claims. No ticker or no own view → labels: []. If the page cannot be opened or the sentence cannot be found → status 'unavailable'; if genuinely unclear → 'ambiguous'. Do not guess. Sentence items: judge the sentence that contains the locator, using the article only as context.",
+ "requests": [
+  {
+   "blind_id": "b-61c6fff3c6",
+   "kind": "title",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/100833.html",
+   "published_at": "2026-07-30 11:22:46",
+   "title": "3倍涨跌幅能拿住， 是做大事的人物。 哈哈，估计冲浪很厉害"
+  },
+  {
+   "blind_id": "b-6aa95d4cc0",
+   "kind": "sentence",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/113037.html",
+   "published_at": "2026-10-02 06:16:08",
+   "sentence_index": 5,
+   "locator": "其他的仓位保留不变，但不会加仓除非有重大调整。"
+  },
+  {
+   "blind_id": "b-3a4ebad7e7",
+   "kind": "title",
+   "author": "麻你",
+   "url": "https://bbs.wenxuecity.com/tzlc/2376729.html",
+   "published_at": "2026-09-30 12:00:24",
+   "title": "完全同意，近朱者赤近墨者黑，借鉴成功人士的经验，远离收入低但引以为荣的人士"
+  },
+  {
+   "blind_id": "b-9450b3edba",
+   "kind": "sentence",
+   "author": "yifan99",
+   "url": "https://blog.wenxuecity.com/myblog/31983/202610/3715.html",
+   "published_at": "2026-10-06",
+   "sentence_index": 8,
+   "locator": "AVGO 当前价格约 362.5。"
+  },
+  {
+   "blind_id": "b-5631d5a9c4",
+   "kind": "title",
+   "author": "麻你",
+   "url": "https://bbs.wenxuecity.com/tzlc/2357140.html",
+   "published_at": "2026-08-21 20:09:30",
+   "title": "是低于这个止盈点，系统就自动卖了。设的是stop loss order"
+  },
+  {
+   "blind_id": "b-ff200e2276",
+   "kind": "sentence",
+   "author": "BrightLine",
+   "url": "https://blog.wenxuecity.com/myblog/82458/202610/3062.html",
+   "published_at": null,
+   "sentence_index": 4,
+   "locator": "今天 IREN 在 40 上下。"
+  },
+  {
+   "blind_id": "b-ea47231ba0",
+   "kind": "sentence",
+   "author": "BrightLine",
+   "url": "https://blog.wenxuecity.com/myblog/82458/202610/264.html",
+   "published_at": null,
+   "sentence_index": 49,
+   "locator": "VGT，纯科技板块，进攻性最强。"
+  },
+  {
+   "blind_id": "b-f8cee338cc",
+   "kind": "title",
+   "author": "麻你",
+   "url": "https://bbs.wenxuecity.com/tzlc/2378994.html",
+   "published_at": "2026-10-02 15:41:23",
+   "title": "今年俺的VGT表现很不错，已经涨了33%"
+  },
+  {
+   "blind_id": "b-00af62180b",
+   "kind": "sentence",
+   "author": "yifan99",
+   "url": "https://blog.wenxuecity.com/myblog/31983/202609/22705.html",
+   "published_at": null,
+   "sentence_index": 1,
+   "locator": "LITE 适合 Sell Put 的理由"
+  },
+  {
+   "blind_id": "b-f7ad6bf956",
+   "kind": "sentence",
+   "author": "麻你",
+   "url": "https://bbs.wenxuecity.com/tzlc/2353238.html",
+   "published_at": "2026-08-14 17:20:06",
+   "sentence_index": 0,
+   "locator": "下个星期继续保持90%仓位在VGT，10%在SGOV"
+  },
+  {
+   "blind_id": "b-07d244599c",
+   "kind": "title",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/113152.html",
+   "published_at": "2026-10-02 10:41:42",
+   "title": "游泳归来，喜欢一开盘就买入的突破股VSH上涨了13.1% :-)"
+  },
+  {
+   "blind_id": "b-6637347ce2",
+   "kind": "sentence",
+   "author": "yifan99",
+   "url": "https://blog.wenxuecity.com/myblog/31983/202610/3715.html",
+   "published_at": "2026-10-06",
+   "sentence_index": 48,
+   "locator": "AVGO 现在恰好处在第二个问题附近。"
+  },
+  {
+   "blind_id": "b-8e84bc55e9",
+   "kind": "sentence",
+   "author": "麻你",
+   "url": "https://bbs.wenxuecity.com/tzlc/2380686.html",
+   "published_at": "2026-10-04 19:38:45",
+   "sentence_index": 9,
+   "locator": "今年个股只买了SPCX，买在114.99一股，到现在涨的不错"
+  },
+  {
+   "blind_id": "b-293e03080e",
+   "kind": "title",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/113949.html",
+   "published_at": "2026-10-06 15:33:26",
+   "title": "应该对MU没有任何影响"
+  },
+  {
+   "blind_id": "b-e8955a7ec6",
+   "kind": "title",
+   "author": "麻你",
+   "url": "https://bbs.wenxuecity.com/tzlc/2344341.html",
+   "published_at": "2026-07-28 21:04:34",
+   "title": "照你这么说俺90%的仓位在VGT是在自杀啦! 哈哈"
+  },
+  {
+   "blind_id": "b-2cee917f04",
+   "kind": "sentence",
+   "author": "yifan99",
+   "url": "https://blog.wenxuecity.com/myblog/31983/202610/703.html",
+   "published_at": null,
+   "sentence_index": 8,
+   "locator": "AAOI：反弹力度更强，但中期反转尚待确认。"
+  },
+  {
+   "blind_id": "b-a17931361f",
+   "kind": "title",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/114070.html",
+   "published_at": "2026-10-07 07:37:59",
+   "title": "MU 这次财报后根本就没怎么动，如果连这点波动都承受不了的人，不适合做个股"
+  },
+  {
+   "blind_id": "b-495aa4436b",
+   "kind": "sentence",
+   "author": "yifan99",
+   "url": "https://blog.wenxuecity.com/myblog/31983/202610/3715.html",
+   "published_at": "2026-10-06",
+   "sentence_index": 17,
+   "locator": "AVGO 尚未明确站稳 MA50，而且 MA50 本身仍处于下降到走平的过渡阶段"
+  },
+  {
+   "blind_id": "b-e283d55d76",
+   "kind": "title",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/94941.html",
+   "published_at": "2026-07-07 09:57:40",
+   "title": "我的苹果要创新高了~~史上最牛股之一， :-D"
+  },
+  {
+   "blind_id": "b-b6c7846fcc",
+   "kind": "sentence",
+   "author": "BrightLine",
+   "url": "https://blog.wenxuecity.com/myblog/82458/202610/4050.html",
+   "published_at": null,
+   "sentence_index": 28,
+   "locator": "Marvell的过程更长。"
+  },
+  {
+   "blind_id": "b-9f88d87fdd",
+   "kind": "title",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/114372.html",
+   "published_at": "2026-10-08 16:56:00",
+   "title": "AMAT 从 415 一路不回头到了540，无论是不是大顶，也该补补缺口歇歇了"
+  },
+  {
+   "blind_id": "b-63c2d82db3",
+   "kind": "title",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/96144.html",
+   "published_at": "2026-07-11 16:21:11",
+   "title": "季报前后的量有时候比较deceiving, 在这里机构需要时间processINTC季报对AMD等的影响"
+  },
+  {
+   "blind_id": "b-d609ed4d16",
+   "kind": "sentence",
+   "author": "yifan99",
+   "url": "https://blog.wenxuecity.com/myblog/31983/202609/19077.html",
+   "published_at": "2026-09-25",
+   "sentence_index": 29,
+   "locator": "有意思的是，那时候微软的总部就在我所在的城市，股价便宜得跟白菜价似的，只是我那会"
+  },
+  {
+   "blind_id": "b-121f845eae",
+   "kind": "sentence",
+   "author": "yifan99",
+   "url": "https://blog.wenxuecity.com/myblog/31983/202610/3063.html",
+   "published_at": "2026-10-05",
+   "sentence_index": 31,
+   "locator": "现在 CIEN 已连续第二个交易日位于 MA50 上方。"
+  },
+  {
+   "blind_id": "b-a8d8eeeb92",
+   "kind": "title",
+   "author": "麻你",
+   "url": "https://bbs.wenxuecity.com/tzlc/2344390.html",
+   "published_at": "2026-07-29 06:02:27",
+   "title": "俺是开玩笑，炒个股的确很难。对于波动大，beta 高的指数股VGT需要按比例低买高卖。VOO不需要买卖，可以满仓长期持有"
+  },
+  {
+   "blind_id": "b-ad41f9243c",
+   "kind": "title",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/114477.html",
+   "published_at": "2026-10-09 07:12:43",
+   "title": "亚麻。昨天的跌幅差不多全部追回，股价差不多回到昨天开盘的高点。不错！如果超过260，站稳260，我会加仓。"
+  },
+  {
+   "blind_id": "b-771a800ad5",
+   "kind": "title",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/113168.html",
+   "published_at": "2026-10-02 11:50:00",
+   "title": "SPCX, 哈哈哈"
+  },
+  {
+   "blind_id": "b-c5ad1585e9",
+   "kind": "sentence",
+   "author": "BrightLine",
+   "url": "https://blog.wenxuecity.com/myblog/82458/202610/3062.html",
+   "published_at": null,
+   "sentence_index": 15,
+   "locator": "微软那份合同对应的 GPU 融资 36 亿，6% 固定利率，覆盖 96% 的 G"
+  },
+  {
+   "blind_id": "b-c39522b340",
+   "kind": "title",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/113240.html",
+   "published_at": "2026-10-02 17:13:26",
+   "title": "SMH up 25% since July low, hahaha"
+  },
+  {
+   "blind_id": "b-ee8eb5fa99",
+   "kind": "sentence",
+   "author": "麻你",
+   "url": "https://bbs.wenxuecity.com/tzlc/2380686.html",
+   "published_at": "2026-10-04 19:38:45",
+   "sentence_index": 3,
+   "locator": "今年7月初首次减仓VGT取利。"
+  },
+  {
+   "blind_id": "b-2abdaaaba0",
+   "kind": "sentence",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/114145.html",
+   "published_at": "2026-10-07 15:18:13",
+   "sentence_index": 2,
+   "locator": "那现在AMD涨的也不慢了， 我就两个一样程度看好？"
+  },
+  {
+   "blind_id": "b-8bb57a7d58",
+   "kind": "title",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/113047.html",
+   "published_at": "2026-10-02 06:29:07",
+   "title": "SMH 也630 了！"
+  },
+  {
+   "blind_id": "b-40c26b1ad2",
+   "kind": "title",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/101326.html",
+   "published_at": "2026-07-31 18:33:26",
+   "title": "哈哈，苹果是我的最大仓。 但是应该还会有反复， 一般不买第一个red candle。不过长线无所谓一些差价"
+  },
+  {
+   "blind_id": "b-a99283afbe",
+   "kind": "title",
+   "author": "麻你",
+   "url": "https://bbs.wenxuecity.com/tzlc/2357101.html",
+   "published_at": "2026-08-21 16:39:00",
+   "title": "下个星期跌下去就卖，不跌就不卖"
+  },
+  {
+   "blind_id": "b-223f5b09ed",
+   "kind": "sentence",
+   "author": "yifan99",
+   "url": "https://blog.wenxuecity.com/myblog/31983/202610/3063.html",
+   "published_at": "2026-10-05",
+   "sentence_index": 51,
+   "locator": "因此目前 CIEN 的趋势确认程度略高于 AAOI。"
+  },
+  {
+   "blind_id": "b-4783911220",
+   "kind": "sentence",
+   "author": "麻你",
+   "url": "https://bbs.wenxuecity.com/tzlc/2380686.html",
+   "published_at": "2026-10-04 19:38:45",
+   "sentence_index": 0,
+   "locator": "去年下半年，大盘涨的没完没了，根本没有买入大盘的机会，闲得实在无聊，拿出大约1%"
+  },
+  {
+   "blind_id": "b-7a37317e7a",
+   "kind": "sentence",
+   "author": "BrightLine",
+   "url": "https://blog.wenxuecity.com/myblog/82458/202610/264.html",
+   "published_at": null,
+   "sentence_index": 21,
+   "locator": "英特尔是在市场把它的代工业务判了死刑的时候建的仓，成本三十美元左右。"
+  },
+  {
+   "blind_id": "b-fae5a28fc5",
+   "kind": "title",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/99142.html",
+   "published_at": "2026-07-24 08:42:40",
+   "title": "今天SPCX下了115，我要开始关注了"
+  },
+  {
+   "blind_id": "b-076ae7467a",
+   "kind": "sentence",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/113037.html",
+   "published_at": "2026-10-02 06:16:08",
+   "sentence_index": 6,
+   "locator": "其实我都很少很少卖掉股票，but I don't want to be gree"
+  },
+  {
+   "blind_id": "b-91ef00c477",
+   "kind": "sentence",
+   "author": "BrightLine",
+   "url": "https://blog.wenxuecity.com/myblog/82458/202610/4050.html",
+   "published_at": null,
+   "sentence_index": 99,
+   "locator": "七月底那次，我能在160接Marvell、60接CoreWeave，不是因为我比"
+  }
+ ],
+ "answer_format": {
+  "blind_id": "b-…",
+  "status": "ok|unavailable|ambiguous",
+  "labels": [
+   {
+    "symbol": "TICKER",
+    "stance": "…",
+    "status": "…",
+    "instrument": "…"
+   }
+  ]
+ }
+}

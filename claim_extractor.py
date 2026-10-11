@@ -14,11 +14,14 @@ from __future__ import annotations
 import hashlib, re
 
 STANCE_CUES = [
-    ("hold", r"(?:没有|没|不|未|不会)(?:减仓|卖出?|卖掉|清仓|止盈)|not selling|won'?t sell"),
-    ("trim", r"减仓|卖掉一半|卖出一部分|止盈|trim|tak(?:e|ing) (?:some )?profits?"),
-    ("sell", r"清仓|卖出|卖掉|sell\b|exit"),
-    ("add", r"加仓|补仓|继续买|add to|adding"),
-    ("buy", r"买入|建仓|逢低买|抄底|上车|必买|值得买|buy\b|bought|accumulat"),
+    # option strategies first: selling puts = willing to own (bullish), never a plain "sell"
+    ("bullish", r"sell\s*puts?|卖\s*put|卖出看跌|short\s*puts?"),
+    ("hold", r"covered\s*calls?|卖\s*call|备兑"),
+    ("hold", r"(?:没有|没|不|未|不会)(?:减仓|卖出?|卖掉|清仓|止盈)|not selling|won'?t sell|继续保持|保持\s*\d+%|长期持有|满仓长期|我没动|拿了.{0,10}没动|半股也不会卖"),
+    ("trim", r"减仓|减了仓|卖掉一半|卖出一部分|卖了一点|止盈|取利|获利卖|trim|tak(?:e|ing) (?:some )?profits?|took the profit"),
+    ("sell", r"清仓|卖出|卖掉|卖了|sell\b|exit"),
+    ("add", r"加仓|补仓|继续买|加了|加大|add to|adding|buy more"),
+    ("buy", r"买入|建仓|建的仓|逢低买|抄底|上车|必买|值得买|买进|买了|少买了|\d\s*(?:左右)?接(?!受|近|着|下来)|(?<![直承对迎])接(?:的|了)?(?=\s*\d)|(?<![不别])买\s*\$?[A-Z]{2,5}(?![A-Za-z])|buy\b|bought|accumulat|is a buy"),
     ("hold", r"继续持有|拿住|一股也不卖|持有不动|hold\b|holding"),
     ("avoid", r"不碰|远离|回避|不建议买|avoid|stay away"),
     ("bearish", r"看空|看跌|见顶|泡沫|下跌空间|bearish|overvalued"),
@@ -33,7 +36,11 @@ CONDITIONAL = r"如果|要是|跌到|涨到|一旦|除非|假如|if\b|once\b|unl
 PRICE = r"(?:\$|美元|价位|跌到|涨到|目标价?|target)\s*([0-9]{1,5}(?:\.[0-9]{1,2})?)"
 TICKER = r"(?<![A-Za-z$])\$?([A-Z]{2,5})(?![A-Za-z])"
 STOP = {"ETF", "CEO", "IPO", "AI", "GDP", "CPI", "FED", "USD", "THE", "AND", "FOR", "YOU", "EPS", "PE", "OK", "US", "IRA", "API"}
-ALIASES = {"英伟达": "NVDA", "特斯拉": "TSLA", "苹果": "AAPL", "微软": "MSFT", "谷歌": "GOOGL", "亚马逊": "AMZN",
+# third-party holders (other investors, quoted examples): their trades are not the author's claims
+THIRD_PARTY = r"(?:^|[，,。；;：:\s“\"])(?:他|她|他们|有人|别人|巴菲特|段永平|Asness|作者拿)|举例|据报道|13F"
+# extra tickers for claims only; uppercase-only because several are English words
+EXTRA_TICKERS = ("ARM", "IBIT", "AEHR", "CRDO", "RKLB", "VSH", "SOXL", "AVL", "COHR", "TSEM", "UPRO", "SNDK", "DIA")
+ALIASES = {"亚麻": "AMZN", "古狗": "GOOGL", "Marvell": "MRVL", "CoreWeave": "CRWV", "英伟达": "NVDA", "特斯拉": "TSLA", "苹果": "AAPL", "微软": "MSFT", "谷歌": "GOOGL", "亚马逊": "AMZN",
            "美光": "MU", "台积电": "TSM", "超微": "AMD", "纳指": "QQQ", "标普": "VOO", "博通": "AVGO", "甲骨文": "ORCL",
            "脸书": "META", "奈飞": "NFLX", "黄金": "GLD"}
 
@@ -62,7 +69,9 @@ def symbols_in(s: str) -> list[str]:
         syms = list(_rf.detect_symbols(s))
     except Exception:
         syms = [m for m in re.findall(TICKER, s) if m not in STOP]
+    syms = [x for x in syms if not (x == "BE" and not re.search(r"(?<![A-Za-z])BE(?![A-Za-z])", s))]
     syms += [v for k, v in ALIASES.items() if k in s]
+    syms += [t for t in EXTRA_TICKERS if re.search(rf"(?<![A-Za-z0-9]){t}(?![A-Za-z0-9])", s)]
     return list(dict.fromkeys(syms))
 
 
@@ -76,6 +85,8 @@ def extract_claims(text: str, limit: int = 30) -> list[dict]:
         stances = [name for name, pat in STANCE_CUES if re.search(pat, low, re.I)]
         if not stances:
             continue
+        if re.search(THIRD_PARTY, s) and not re.search(r"我|俺|\bI\b|\bmy\b", s):
+            continue  # abstain: someone else's position, not the author's
         horizon = next((h for h, pat in HORIZON if re.search(pat, low, re.I)), None)
         price = re.search(PRICE, s, re.I)
         digest = hashlib.sha256(s.encode("utf-8")).hexdigest()
@@ -94,7 +105,7 @@ def extract_claims(text: str, limit: int = 30) -> list[dict]:
     return claims
 
 
-EXTRACTOR_VERSION = "ce-3"  # ce-2 whitelist/aliases + negated sells → hold, "taking profit" → trim
+EXTRACTOR_VERSION = "ce-4"  # ce-3 + option semantics (sell put → bullish), third-party abstain, executed-trade cues, extra tickers/aliases
 
 
 def review_material(text: str, excerpt_chars: int = 40, max_missed: int = 5) -> dict:

@@ -1,0 +1,37 @@
+name: gold-eval
+
+# Manual: evaluate claim_extractor on the claims gold corpus; article sentences are fetched at runtime
+# and located by sha256 (text discarded). Writes only metrics.
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: wxc-research-writer
+  cancel-in-progress: false
+
+jobs:
+  eval:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: PYTHONPATH=. python tests/test_claims_gold.py
+      - name: Evaluate (runtime-only article text)
+        run: |
+          out=$(python eval_claims_gold.py --fetch)
+          echo "$out"
+          echo "::notice title=Claims gold eval::$out"
+      - name: Save metrics only
+        run: |
+          git config user.name "github-actions"; git config user.email "actions@github.com"
+          git add state/claims_gold_eval.json
+          git diff --cached --quiet || git commit -m "claims gold eval metrics"
+          git pull --rebase origin main && git push

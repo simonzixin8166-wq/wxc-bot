@@ -1,35 +1,129 @@
 {
- "extractor_version": "ce-3",
- "gold": "claims_gold_v0.jsonl",
+ "extractor_version": "ce-4",
+ "gold": "claims_gold_v1.jsonl",
+ "test_frozen_intact": true,
+ "fetched_sentences": false,
  "results": {
   "dev": {
-   "items": 35,
-   "gold_claims": 14,
-   "pred_claims": 5,
-   "tp": 5,
-   "fp": 0,
-   "fn": 9,
-   "precision": 1.0,
-   "recall": 0.357,
-   "correct_abstain_items": 23,
+   "items": 161,
+   "scored": 67,
+   "ambiguous_excluded": 7,
+   "unavailable": 87,
+   "traceability": 0.435,
+   "gold_claims": 31,
+   "pred_claims": 20,
+   "tp": 19,
+   "fp": 1,
+   "fn": 12,
+   "precision": 0.95,
+   "recall": 0.613,
+   "abstain_rate": 0.806,
+   "correct_abstain_items": 42,
    "errors": {
-    "missed": 9
+    "missed_stance": 12,
+    "wrong_symbol": 1
    }
   },
   "test": {
-   "items": 10,
-   "gold_claims": 6,
-   "pred_claims": 3,
-   "tp": 3,
-   "fp": 0,
-   "fn": 3,
-   "precision": 1.0,
-   "recall": 0.5,
-   "correct_abstain_items": 6,
+   "items": 38,
+   "scored": 29,
+   "ambiguous_excluded": 0,
+   "unavailable": 9,
+   "traceability": 0.763,
+   "gold_claims": 15,
+   "pred_claims": 7,
+   "tp": 6,
+   "fp": 1,
+   "fn": 9,
+   "precision": 0.857,
+   "recall": 0.4,
+   "abstain_rate": 0.793,
+   "correct_abstain_items": 16,
    "errors": {
-    "missed": 3
+    "missed_stance": 9,
+    "wrong_symbol": 1
    }
   }
  },
- "note": "single labeler (claude-v0); second blinded label pending; small n — not a pass/fail gate yet"
+ "by_kind": {
+  "title": {
+   "dev": {
+    "items": 67,
+    "scored": 67,
+    "ambiguous_excluded": 0,
+    "unavailable": 0,
+    "traceability": 1.0,
+    "gold_claims": 31,
+    "pred_claims": 20,
+    "tp": 19,
+    "fp": 1,
+    "fn": 12,
+    "precision": 0.95,
+    "recall": 0.613,
+    "abstain_rate": 0.806,
+    "correct_abstain_items": 42,
+    "errors": {
+     "missed_stance": 12,
+     "wrong_symbol": 1
+    }
+   },
+   "test": {
+    "items": 29,
+    "scored": 29,
+    "ambiguous_excluded": 0,
+    "unavailable": 0,
+    "traceability": 1.0,
+    "gold_claims": 15,
+    "pred_claims": 7,
+    "tp": 6,
+    "fp": 1,
+    "fn": 9,
+    "precision": 0.857,
+    "recall": 0.4,
+    "abstain_rate": 0.793,
+    "correct_abstain_items": 16,
+    "errors": {
+     "missed_stance": 9,
+     "wrong_symbol": 1
+    }
+   }
+  },
+  "sentence": {
+   "dev": {
+    "items": 94,
+    "scored": 0,
+    "ambiguous_excluded": 7,
+    "unavailable": 87,
+    "traceability": 0.0,
+    "gold_claims": 0,
+    "pred_claims": 0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0,
+    "precision": null,
+    "recall": null,
+    "abstain_rate": null,
+    "correct_abstain_items": 0,
+    "errors": {}
+   },
+   "test": {
+    "items": 9,
+    "scored": 0,
+    "ambiguous_excluded": 0,
+    "unavailable": 9,
+    "traceability": 0.0,
+    "gold_claims": 0,
+    "pred_claims": 0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0,
+    "precision": null,
+    "recall": null,
+    "abstain_rate": null,
+    "correct_abstain_items": 0,
+    "errors": {}
+   }
+  }
+ },
+ "note": "single labeler until the blind second label is in; scored only where text is traceable"
 }
