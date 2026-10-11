@@ -87,6 +87,13 @@ jobs:
       - name: Build unified source intake completeness
         run: python source_intake_completeness.py
 
+      - name: Source quality flags + daily author claims for MyAlpha research (overlay; non-gating)
+        continue-on-error: true
+        run: |
+          python provenance_audit.py
+          python source_quality_flags.py
+          python author_claims_daily.py
+
       - name: Save forward research state first
         if: always()
         run: |

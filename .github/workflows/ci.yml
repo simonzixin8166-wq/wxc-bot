@@ -31,6 +31,7 @@ jobs:
           PYTHONPATH=. python tests/test_gold_context.py
           PYTHONPATH=. python tests/test_learning_inventory.py
           PYTHONPATH=. python tests/test_provenance_audit.py
+          PYTHONPATH=. python tests/test_quality_flags_claims.py
           PYTHONPATH=. python tests/test_pilot_fulltext_claims.py
           PYTHONPATH=. python tests/test_author_actions.py
           PYTHONPATH=. python tests/test_forum_board_scan.py
