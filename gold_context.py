@@ -58,6 +58,8 @@ def locators(text, cap=25, width=40):
 def main(argv=None):
     ap = argparse.ArgumentParser()
     ap.add_argument("--limit", type=int, default=36)
+    ap.add_argument("--all-remaining", action="store_true", help="test v2: every unused forum/blog article (fresh, unseen)")
+    ap.add_argument("--out", default=str(OUT))
     a = ap.parse_args(argv)
     records = json.loads(FEED.read_text(encoding="utf-8"))["records"]
     exclude = set()
@@ -65,8 +67,17 @@ def main(argv=None):
         exclude = {r["url"] for r in json.loads(EXCLUDE.read_text(encoding="utf-8"))["rows"]}
     except Exception:
         pass
+    if a.all_remaining:  # also exclude everything already used for gold v1
+        try:
+            exclude |= {x["url"] for x in json.loads(OUT.read_text(encoding="utf-8"))["articles"]}
+        except Exception:
+            pass
+        picks = sorted((r for r in records if r.get("source_kind") in ("forum", "blog") and r.get("url")
+                        and r["url"] not in exclude and int(r.get("content_chars") or 0) > 120), key=lambda r: r["url"])
+    else:
+        picks = pick(records, exclude)
     rows, fails = [], 0
-    for rec in pick(records, exclude)[: a.limit]:
+    for rec in picks[: a.limit]:
         if fails >= 5:
             break
         time.sleep(random.uniform(2.0, 4.5))
@@ -87,7 +98,7 @@ def main(argv=None):
         text = None
     rep = {"generated_at": datetime.now(timezone.utc).isoformat(), "articles": rows,
            "policy": "runtime-only text; stores ≤40-char locators + sentence sha256 only"}
-    OUT.write_text(json.dumps(rep, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    Path(a.out).write_text(json.dumps(rep, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     ok = [r for r in rows if r["outcome"] == "ok"]
     print(json.dumps({"articles_ok": len(ok), "unavailable": len(rows) - len(ok),
                       "sentences": sum(len(r["sentences"]) for r in ok)}, ensure_ascii=False))

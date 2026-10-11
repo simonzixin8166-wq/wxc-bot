@@ -9,6 +9,10 @@ on:
         description: "Articles"
         required: false
         default: "36"
+      test_v2:
+        description: "Fresh unseen articles for frozen test v2 (all remaining)"
+        required: false
+        default: "false"
 
 permissions:
   contents: write
@@ -20,7 +24,7 @@ concurrency:
 jobs:
   export:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -31,12 +35,16 @@ jobs:
       - run: PYTHONPATH=. python tests/test_gold_context.py
       - name: Export locators (runtime-only text)
         run: |
-          out=$(python gold_context.py --limit "${{ inputs.limit }}")
+          if [ "${{ inputs.test_v2 }}" = "true" ]; then
+            out=$(python gold_context.py --all-remaining --limit "${{ inputs.limit }}" --out state/gold_context_test_v2.json)
+          else
+            out=$(python gold_context.py --limit "${{ inputs.limit }}")
+          fi
           echo "$out"
           echo "::notice title=Gold context::$out"
       - name: Save locators only
         run: |
           git config user.name "github-actions"; git config user.email "actions@github.com"
-          git add state/gold_context_v1.json
+          git add state/gold_context_*.json
           git diff --cached --quiet || git commit -m "gold context v1 locators (runtime-only text)"
           git pull --rebase origin main && git push

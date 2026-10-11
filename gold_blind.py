@@ -62,6 +62,7 @@ def export(items):
 def kappa(gold_items, answers):
     gmap = {blind_id(i["item_id"]): i for i in gold_items}
     pairs, disagreements, skipped = [], Counter(), Counter()
+    status_pairs = []
     for a in answers:
         it = gmap.get(a["blind_id"])
         if not it:
@@ -71,6 +72,11 @@ def kappa(gold_items, answers):
             continue
         g = {l["symbol"].upper(): COARSE[l["stance"]] for l in it["labels"]}
         b = {l["symbol"].upper(): COARSE.get(l["stance"], l["stance"]) for l in a.get("labels") or []}
+        gs = {l["symbol"].upper(): l.get("status") for l in it["labels"]}
+        bs = {l["symbol"].upper(): l.get("status") for l in a.get("labels") or []}
+        for sym in set(g) & set(b):
+            if g[sym] == b[sym] and g[sym] != "hold":
+                status_pairs.append(gs.get(sym) == bs.get(sym))
         syms = set(g) | set(b) or {"_none_"}
         for s in syms:
             x, y = g.get(s, "none"), b.get(s, "none")
@@ -85,7 +91,8 @@ def kappa(gold_items, answers):
     pe = sum(cx[k] * cy[k] for k in set(cx) | set(cy)) / (n * n)
     k = (po - pe) / (1 - pe) if pe < 1 else 1.0
     return {"pairs": n, "observed_agreement": round(po, 3), "kappa": round(k, 3), "disagreements": dict(disagreements),
-            "skipped": dict(skipped)}
+            "skipped": dict(skipped), "status_agreement_non_hold": (round(sum(status_pairs) / len(status_pairs), 3) if status_pairs else None),
+            "status_pairs": len(status_pairs)}
 
 
 def main(argv=None):

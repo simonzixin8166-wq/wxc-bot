@@ -1,0 +1,1 @@
+{"pairs": 33, "observed_agreement": 0.848, "kappa": 0.757, "disagreements": {"claim_vs_none": 4, "stance": 1}, "skipped": {"ambiguous": 8, "gold_ambiguous": 1}, "status_agreement_non_hold": 1.0, "status_pairs": 6}
