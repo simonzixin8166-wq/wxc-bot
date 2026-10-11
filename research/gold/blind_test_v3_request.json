@@ -1,0 +1,245 @@
+{
+ "version": "blind_test_v3",
+ "items": 28,
+ "instructions": "For each item, open the URL (or read the title) and list the AUTHOR'S OWN position/view per ticker: stance ∈ buy/add/sell/trim/hold/avoid/bullish/bearish; status ∈ executed/planned/conditional/opinion; instrument ∈ stock/sell_put/covered_call/leaps/other. Quotes of other people, third-party trades and examples are NOT the author's claims. No ticker or no own view → labels: []. If the page cannot be opened or the sentence cannot be found → status 'unavailable'; if genuinely unclear → 'ambiguous'. Do not guess. Sentence items: judge the sentence that contains the locator, using the article only as context.",
+ "requests": [
+  {
+   "blind_id": "b-e692db6cd7",
+   "kind": "excerpt",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/113733.html",
+   "published_at": "2026-10-05 21:30:08",
+   "sentence_index": 0,
+   "stored_excerpt_sentence_locator": "有信心，属于那种买了可以忘记的股， 我都不担心这个公司，当然只是我个人看法，"
+  },
+  {
+   "blind_id": "b-397ff97cd8",
+   "kind": "title",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/114106.html",
+   "published_at": "2026-10-07 10:17:00",
+   "title": "游泳归来见亚马逊今天的表现相当不错。如果能至少保持这样收盘，收盘前准备买入！"
+  },
+  {
+   "blind_id": "b-50acbf1158",
+   "kind": "excerpt",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/113083.html",
+   "published_at": "2026-10-02 07:38:55",
+   "sentence_index": 1,
+   "stored_excerpt_sentence_locator": "盘前 303.6 加仓了 ARM。"
+  },
+  {
+   "blind_id": "b-637281bf71",
+   "kind": "excerpt",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/110107.html",
+   "published_at": "2026-09-11 15:11:18",
+   "sentence_index": 0,
+   "stored_excerpt_sentence_locator": "Hood适合中长线， 之后23小时交易后更有利他。"
+  },
+  {
+   "blind_id": "b-3c45fcc949",
+   "kind": "excerpt",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/100493.html",
+   "published_at": "2026-07-29 16:01:56",
+   "sentence_index": 0,
+   "stored_excerpt_sentence_locator": "因为MU从3月31日的300ish涨到了1200ish, 1200是可以trim"
+  },
+  {
+   "blind_id": "b-e5f41944e7",
+   "kind": "excerpt",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/111870.html",
+   "published_at": "2026-09-24 22:09:01",
+   "sentence_index": 1,
+   "stored_excerpt_sentence_locator": "But I wouldn't buy at this price, 因为前阵子"
+  },
+  {
+   "blind_id": "b-0d3889a985",
+   "kind": "excerpt",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/103426.html",
+   "published_at": "2026-08-07 17:37:25",
+   "sentence_index": 0,
+   "stored_excerpt_sentence_locator": "是一个购买区间，从115开始就可以买了，但估计最低也只能砸到60，不太可能30."
+  },
+  {
+   "blind_id": "b-8ea3f6b7d3",
+   "kind": "title",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/100685.html",
+   "published_at": "2026-07-30 07:06:55",
+   "title": "META的ROI on CAPEX还没有直接体现出来， 所以市场暂时不买账, 但也是暂时的。"
+  },
+  {
+   "blind_id": "b-533d484834",
+   "kind": "excerpt",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/109690.html",
+   "published_at": "2026-09-09 15:54:04",
+   "sentence_index": 0,
+   "stored_excerpt_sentence_locator": "像google, apple, meta, nvda, msft， amzn等都"
+  },
+  {
+   "blind_id": "b-7ae4f0b13d",
+   "kind": "title",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/109554.html",
+   "published_at": "2026-09-08 16:14:53",
+   "title": "您sell puts卖的是时候能挣到那么多premiums很厉害的"
+  },
+  {
+   "blind_id": "b-b91bf15111",
+   "kind": "title",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/98889.html",
+   "published_at": "2026-07-23 08:48:41",
+   "title": "AMD的财报不会差的"
+  },
+  {
+   "blind_id": "b-d1f80f4e06",
+   "kind": "title",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/100112.html",
+   "published_at": "2026-07-28 16:50:41",
+   "title": "这SNDK之前是2000多？ 只知道之前overvalued，最近没有关注，都不知道跌了这么多"
+  },
+  {
+   "blind_id": "b-187af8df22",
+   "kind": "title",
+   "author": "麻你",
+   "url": "https://bbs.wenxuecity.com/tzlc/2372762.html",
+   "published_at": "2026-09-25 11:55:48",
+   "title": "没有减仓，VGT的比例肯定增加了。懒得具体计算。股数没有变化"
+  },
+  {
+   "blind_id": "b-b9348ab82b",
+   "kind": "title",
+   "author": "麻你",
+   "url": "https://bbs.wenxuecity.com/tzlc/2368549.html",
+   "published_at": "2026-09-18 10:11:57",
+   "title": "当天卖掉的SGOV的钱放在pending activity里，可以马上用来买VGT。但不可转到checking账户"
+  },
+  {
+   "blind_id": "b-cb80b9afed",
+   "kind": "excerpt",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/110089.html",
+   "published_at": "2026-09-11 13:18:45",
+   "sentence_index": 4,
+   "stored_excerpt_sentence_locator": "昨天最低只到了756， 但很接近753， expected a bounce, "
+  },
+  {
+   "blind_id": "b-f9df13ed82",
+   "kind": "excerpt",
+   "author": "老李玩钱",
+   "url": "https://www.youtube.com/watch?v=XW0RpReUUbk",
+   "published_at": "2026-10-05",
+   "sentence_index": 2,
+   "stored_excerpt_sentence_locator": "洛杉矶吴彦祖在线说谷这几天呢南加州这边实在是太热了今天录完这期视频我就得把西瓜给"
+  },
+  {
+   "blind_id": "b-81f24ab7d0",
+   "kind": "excerpt",
+   "author": "Andrei Jikh",
+   "url": "https://www.youtube.com/watch?v=yhRjvX_t4hc",
+   "published_at": "",
+   "sentence_index": 0,
+   "stored_excerpt_sentence_locator": "Your 401K Is Their Exit Strategy (SpaceX"
+  },
+  {
+   "blind_id": "b-381e65b68b",
+   "kind": "title",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/110206.html",
+   "published_at": "2026-09-12 15:55:20",
+   "title": "加息+yields fall, 同样是bullish的"
+  },
+  {
+   "blind_id": "b-9719779417",
+   "kind": "excerpt",
+   "author": "yifan99",
+   "url": "https://bbs.wenxuecity.com/cfzh/113972.html",
+   "published_at": "2026-10-06 17:20:13",
+   "sentence_index": 0,
+   "stored_excerpt_sentence_locator": "AVGO>AMZN>GOOG 其实AVGOj今天已经confirmed"
+  },
+  {
+   "blind_id": "b-8c8985160e",
+   "kind": "excerpt",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/114428.html",
+   "published_at": "2026-10-09 05:33:23",
+   "sentence_index": 1,
+   "stored_excerpt_sentence_locator": "NOW 周线参考图"
+  },
+  {
+   "blind_id": "b-4db1ddf0a1",
+   "kind": "title",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/113369.html",
+   "published_at": "2026-10-03 12:00:16",
+   "title": "嗯？buy in panic 为什么跟我的观点不一致？"
+  },
+  {
+   "blind_id": "b-5f61492788",
+   "kind": "title",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/98978.html",
+   "published_at": "2026-07-23 13:07:53",
+   "title": "INTC is on fire."
+  },
+  {
+   "blind_id": "b-9c1ec9e07e",
+   "kind": "title",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/114439.html",
+   "published_at": "2026-10-09 05:59:45",
+   "title": "做短线也要看长线，成功的概率更大一些，进可攻退可守。—— 如果短线错了，股价买入后退回来，如果长线好，守起来更有信心一点"
+  },
+  {
+   "blind_id": "b-f532ed90a8",
+   "kind": "excerpt",
+   "author": "麻你",
+   "url": "https://bbs.wenxuecity.com/tzlc/2371754.html",
+   "published_at": "2026-09-23 17:10:25",
+   "sentence_index": 4,
+   "stored_excerpt_sentence_locator": "俺是在特斯拉发布cybertruck 的当天就订的车。"
+  },
+  {
+   "blind_id": "b-08bcdd9955",
+   "kind": "title",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/111098.html",
+   "published_at": "2026-09-18 16:44:31",
+   "title": "SPY 771,"
+  },
+  {
+   "blind_id": "b-11a16c9ff6",
+   "kind": "title",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/108994.html",
+   "published_at": "2026-09-04 07:23:04",
+   "title": "我加仓RKLB,:-D"
+  },
+  {
+   "blind_id": "b-e0b76182cf",
+   "kind": "title",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/113952.html",
+   "published_at": "2026-10-06 15:36:23",
+   "title": "我有不少股，卖掉后跌得魂飞魄散。止损，让我避免了深度被套，让我在股市活到今天。"
+  },
+  {
+   "blind_id": "b-1a8af2f694",
+   "kind": "excerpt",
+   "author": "麻你",
+   "url": "https://bbs.wenxuecity.com/tzlc/2341438.html",
+   "published_at": "2026-07-23 11:51:29",
+   "sentence_index": 1,
+   "stored_excerpt_sentence_locator": "长期持有美股大盘指数"
+  }
+ ]
+}

@@ -1,0 +1,113 @@
+{
+ "extractor_version": "ce-4",
+ "splits": [
+  "test"
+ ],
+ "gold": "claims_gold_test_v3.jsonl",
+ "test_frozen_intact": true,
+ "adjudications": 0,
+ "fetched_sentences": false,
+ "results": {
+  "test": {
+   "items": 141,
+   "scored": 135,
+   "ambiguous_excluded": 6,
+   "unavailable": 0,
+   "traceability": 1.0,
+   "gold_claims": 59,
+   "pred_claims": 27,
+   "tp": 22,
+   "fp": 5,
+   "fn": 37,
+   "precision": 0.815,
+   "recall": 0.373,
+   "abstain_rate": 0.852,
+   "correct_abstain_items": 88,
+   "errors": {
+    "missed_symbol_not_detected": 4,
+    "missed_stance": 28,
+    "stance_mismatch": 5,
+    "wrong_symbol": 2,
+    "wrong_stance": 3
+   },
+   "coverage": 0.458,
+   "by_gate": {}
+  }
+ },
+ "by_kind": {
+  "title": {
+   "test": {
+    "items": 71,
+    "scored": 68,
+    "ambiguous_excluded": 3,
+    "unavailable": 0,
+    "traceability": 1.0,
+    "gold_claims": 29,
+    "pred_claims": 11,
+    "tp": 9,
+    "fp": 2,
+    "fn": 20,
+    "precision": 0.818,
+    "recall": 0.31,
+    "abstain_rate": 0.882,
+    "correct_abstain_items": 44,
+    "errors": {
+     "missed_stance": 17,
+     "wrong_stance": 2,
+     "stance_mismatch": 3
+    },
+    "coverage": 0.379,
+    "by_gate": {}
+   }
+  },
+  "sentence": {
+   "test": {
+    "items": 0,
+    "scored": 0,
+    "ambiguous_excluded": 0,
+    "unavailable": 0,
+    "traceability": null,
+    "gold_claims": 0,
+    "pred_claims": 0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0,
+    "precision": null,
+    "recall": null,
+    "abstain_rate": null,
+    "correct_abstain_items": 0,
+    "errors": {},
+    "coverage": null,
+    "by_gate": {}
+   }
+  },
+  "excerpt": {
+   "test": {
+    "items": 70,
+    "scored": 67,
+    "ambiguous_excluded": 3,
+    "unavailable": 0,
+    "traceability": 1.0,
+    "gold_claims": 30,
+    "pred_claims": 16,
+    "tp": 13,
+    "fp": 3,
+    "fn": 17,
+    "precision": 0.812,
+    "recall": 0.433,
+    "abstain_rate": 0.821,
+    "correct_abstain_items": 44,
+    "errors": {
+     "missed_symbol_not_detected": 4,
+     "missed_stance": 11,
+     "stance_mismatch": 2,
+     "wrong_symbol": 2,
+     "wrong_stance": 1
+    },
+    "coverage": 0.533,
+    "by_gate": {}
+   }
+  }
+ },
+ "note": "single labeler until the blind second label is in; scored only where text is traceable"
+}

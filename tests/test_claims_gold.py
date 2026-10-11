@@ -44,3 +44,15 @@ assert sum(len(i["labels"]) for i in t2 if not i["ambiguous"]) >= 50
 req2 = json.loads((ROOT / "research/gold/blind_test_v2_request.json").read_text(encoding="utf-8"))
 assert all(not ({"labels", "item_id", "split"} & set(r)) for r in req2["requests"])
 print("PASS test v2 frozen")
+
+# frozen test v3: stored excerpts (forum/blog/video) + unused titles, no overlap with earlier sets
+t3 = [json.loads(x) for x in (ROOT / "research/gold/claims_gold_test_v3.jsonl").read_text(encoding="utf-8").splitlines() if x.strip()]
+fz3 = json.loads((ROOT / "research/gold/claims_gold_test_v3.freeze.json").read_text(encoding="utf-8"))
+assert ev.freeze(t3)["test_sha256"] == fz3["test_sha256"], "frozen test v3 changed"
+earlier = {i["text_sha256"] for i in v1} | {i["text_sha256"] for i in t2}
+assert not ({i["text_sha256"] for i in t3} & earlier)
+assert sum(len(i["labels"]) for i in t3 if not i["ambiguous"]) >= 50
+import claim_extractor as ce
+hp = ce.extract_claims_hp("我在 29、30、31 加了 IREN。他后来加仓英伟达。SPY跌下765， 下一站就是753左右。")
+assert [(c["symbol"], c["stance"], c["hp_gate"]) for c in hp] == [("IREN", "add", "first_person_executed_trade")]
+print("PASS test v3 frozen + hp")
