@@ -1,0 +1,130 @@
+{
+ "extractor_version": "ce-4",
+ "gold": "claims_gold_test_v2.jsonl",
+ "test_frozen_intact": true,
+ "adjudications": 0,
+ "fetched_sentences": true,
+ "results": {
+  "dev": {
+   "items": 0,
+   "scored": 0,
+   "ambiguous_excluded": 0,
+   "unavailable": 0,
+   "traceability": null,
+   "gold_claims": 0,
+   "pred_claims": 0,
+   "tp": 0,
+   "fp": 0,
+   "fn": 0,
+   "precision": null,
+   "recall": null,
+   "abstain_rate": null,
+   "correct_abstain_items": 0,
+   "errors": {}
+  },
+  "test": {
+   "items": 205,
+   "scored": 190,
+   "ambiguous_excluded": 12,
+   "unavailable": 3,
+   "traceability": 0.984,
+   "gold_claims": 57,
+   "pred_claims": 26,
+   "tp": 13,
+   "fp": 13,
+   "fn": 44,
+   "precision": 0.5,
+   "recall": 0.228,
+   "abstain_rate": 0.879,
+   "correct_abstain_items": 141,
+   "errors": {
+    "wrong_stance": 8,
+    "stance_mismatch": 9,
+    "missed_stance": 32,
+    "missed_symbol_not_detected": 3,
+    "claim_where_none": 5
+   }
+  }
+ },
+ "by_kind": {
+  "title": {
+   "dev": {
+    "items": 0,
+    "scored": 0,
+    "ambiguous_excluded": 0,
+    "unavailable": 0,
+    "traceability": null,
+    "gold_claims": 0,
+    "pred_claims": 0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0,
+    "precision": null,
+    "recall": null,
+    "abstain_rate": null,
+    "correct_abstain_items": 0,
+    "errors": {}
+   },
+   "test": {
+    "items": 0,
+    "scored": 0,
+    "ambiguous_excluded": 0,
+    "unavailable": 0,
+    "traceability": null,
+    "gold_claims": 0,
+    "pred_claims": 0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0,
+    "precision": null,
+    "recall": null,
+    "abstain_rate": null,
+    "correct_abstain_items": 0,
+    "errors": {}
+   }
+  },
+  "sentence": {
+   "dev": {
+    "items": 0,
+    "scored": 0,
+    "ambiguous_excluded": 0,
+    "unavailable": 0,
+    "traceability": null,
+    "gold_claims": 0,
+    "pred_claims": 0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0,
+    "precision": null,
+    "recall": null,
+    "abstain_rate": null,
+    "correct_abstain_items": 0,
+    "errors": {}
+   },
+   "test": {
+    "items": 205,
+    "scored": 190,
+    "ambiguous_excluded": 12,
+    "unavailable": 3,
+    "traceability": 0.984,
+    "gold_claims": 57,
+    "pred_claims": 26,
+    "tp": 13,
+    "fp": 13,
+    "fn": 44,
+    "precision": 0.5,
+    "recall": 0.228,
+    "abstain_rate": 0.879,
+    "correct_abstain_items": 141,
+    "errors": {
+     "wrong_stance": 8,
+     "stance_mismatch": 9,
+     "missed_stance": 32,
+     "missed_symbol_not_detected": 3,
+     "claim_where_none": 5
+    }
+   }
+  }
+ },
+ "note": "single labeler until the blind second label is in; scored only where text is traceable"
+}
