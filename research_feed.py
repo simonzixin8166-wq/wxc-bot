@@ -423,6 +423,7 @@ def normalize(source_kind: str, author: str, post: dict) -> dict:
         "method_signals": method_signals,
         # Checkable claims from the full runtime text (structured fields + sentence hash only).
         "claims": _claims(joined),
+        "claims_status": "experimental_unvalidated",  # #133: not for scoring / forward / actions until gold-set gate passes
         # Tracked authors' own position statements (author research signal, never a MyAlpha action).
         "author_actions": _author_actions(author, title, text),
         "forum_entry_kind": post.get("forum_entry_kind"),
