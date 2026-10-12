@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-11T13:14:23+00:00",
- "records": 1645,
+ "generated_at": "2026-10-12T03:14:54+00:00",
+ "records": 1659,
  "without_recorded_provenance": 1226,
  "derived_for_unrecorded": {
   "near_publication_observed": 339,
@@ -10,10 +10,10 @@
  "recorded_live_but_gap_over_72h": [],
  "video_transcripts": {
   "excerpt_present": 4,
-  "provider_navigation_page": 15
+  "provider_navigation_page": 17
  },
  "video_transcript_status": {
-  "available": 19
+  "available": 21
  },
  "method": "first git appearance of the record id in state/research_feed.json vs published_at (timezone not recorded); unprovable is never guessed",
  "rows": [
@@ -18164,6 +18164,166 @@
    "author": "BrightLine",
    "recorded_provenance": "live_candidate",
    "published_at": "2026-10-11",
+   "first_git_seen": "2026-10-11T13:14:24Z",
+   "first_git_commit": "6929aa45f22f3b2c52f79b72759945d5fcf73d3e",
+   "gap_hours": 13.2,
+   "derived_provenance": "near_publication_observed"
+  },
+  {
+   "id": "9657d062e95ea9cd5357",
+   "kind": "video",
+   "author": "Andrei Jikh",
+   "recorded_provenance": "backfill",
+   "published_at": "",
+   "first_git_seen": "2026-10-11T23:39:27Z",
+   "first_git_commit": "bade3f940621768921fdfc4ec1b7f849b80baec1",
+   "gap_hours": null,
+   "derived_provenance": "unprovable",
+   "transcript_check": "provider_navigation_page",
+   "transcript_status": "available",
+   "content_quality": "Q4"
+  },
+  {
+   "id": "cdbea1101c32cba65449",
+   "kind": "video",
+   "author": "Andrei Jikh",
+   "recorded_provenance": "backfill",
+   "published_at": "",
+   "first_git_seen": "2026-10-11T23:39:27Z",
+   "first_git_commit": "bade3f940621768921fdfc4ec1b7f849b80baec1",
+   "gap_hours": null,
+   "derived_provenance": "unprovable",
+   "transcript_check": "provider_navigation_page",
+   "transcript_status": "available",
+   "content_quality": "Q4"
+  },
+  {
+   "id": "854c7d5966e6f330ab63",
+   "kind": "forum",
+   "author": "三心三意",
+   "recorded_provenance": "live_candidate",
+   "published_at": "2026-10-11 09:38:00",
+   "first_git_seen": null,
+   "first_git_commit": null,
+   "gap_hours": null,
+   "derived_provenance": "unprovable"
+  },
+  {
+   "id": "4d97fdaf0e22e5a42cdd",
+   "kind": "forum",
+   "author": "三心三意",
+   "recorded_provenance": "live_candidate",
+   "published_at": "2026-10-11 10:52:32",
+   "first_git_seen": null,
+   "first_git_commit": null,
+   "gap_hours": null,
+   "derived_provenance": "unprovable"
+  },
+  {
+   "id": "03fba59d79ecafcd0f12",
+   "kind": "forum",
+   "author": "三心三意",
+   "recorded_provenance": "live_candidate",
+   "published_at": "2026-10-11 11:52:28",
+   "first_git_seen": null,
+   "first_git_commit": null,
+   "gap_hours": null,
+   "derived_provenance": "unprovable"
+  },
+  {
+   "id": "fa884eb9a01f6c8c9bec",
+   "kind": "forum",
+   "author": "三心三意",
+   "recorded_provenance": "live_candidate",
+   "published_at": "2026-10-11 15:30:11",
+   "first_git_seen": null,
+   "first_git_commit": null,
+   "gap_hours": null,
+   "derived_provenance": "unprovable"
+  },
+  {
+   "id": "d318f975cd68da5e4515",
+   "kind": "forum",
+   "author": "三心三意",
+   "recorded_provenance": "live_candidate",
+   "published_at": "2026-10-11 17:13:10",
+   "first_git_seen": null,
+   "first_git_commit": null,
+   "gap_hours": null,
+   "derived_provenance": "unprovable"
+  },
+  {
+   "id": "afc65b3232047e69d803",
+   "kind": "forum",
+   "author": "三心三意",
+   "recorded_provenance": "live_candidate",
+   "published_at": "2026-10-11 17:46:14",
+   "first_git_seen": null,
+   "first_git_commit": null,
+   "gap_hours": null,
+   "derived_provenance": "unprovable"
+  },
+  {
+   "id": "29afac4a8bb5f7a94092",
+   "kind": "forum",
+   "author": "我是一只井底蛙",
+   "recorded_provenance": "live_candidate",
+   "published_at": "2026-10-11 11:54:31",
+   "first_git_seen": null,
+   "first_git_commit": null,
+   "gap_hours": null,
+   "derived_provenance": "unprovable"
+  },
+  {
+   "id": "1091bc6e65d6f61c1fc7",
+   "kind": "forum",
+   "author": "我是一只井底蛙",
+   "recorded_provenance": "live_candidate",
+   "published_at": "2026-10-11 18:37:32",
+   "first_git_seen": null,
+   "first_git_commit": null,
+   "gap_hours": null,
+   "derived_provenance": "unprovable"
+  },
+  {
+   "id": "eee037218a557229289d",
+   "kind": "forum",
+   "author": "我是一只井底蛙",
+   "recorded_provenance": "live_candidate",
+   "published_at": "2026-10-11 18:38:23",
+   "first_git_seen": null,
+   "first_git_commit": null,
+   "gap_hours": null,
+   "derived_provenance": "unprovable"
+  },
+  {
+   "id": "6f6ea249669f6f353073",
+   "kind": "forum",
+   "author": "我是一只井底蛙",
+   "recorded_provenance": "live_candidate",
+   "published_at": "2026-10-11 18:58:48",
+   "first_git_seen": null,
+   "first_git_commit": null,
+   "gap_hours": null,
+   "derived_provenance": "unprovable"
+  },
+  {
+   "id": "fa5334cb764901842fc4",
+   "kind": "blog",
+   "author": "BrightLine",
+   "recorded_provenance": "live_candidate",
+   "published_at": "2026-10-11",
+   "first_git_seen": null,
+   "first_git_commit": null,
+   "gap_hours": null,
+   "derived_provenance": "unprovable"
+  },
+  {
+   "id": "741be7d868777d8d98dd",
+   "kind": "forum",
+   "author": "麻你",
+   "recorded_provenance": "live_candidate",
+   "published_at": "2026-10-11 08:38:04",
    "first_git_seen": null,
    "first_git_commit": null,
    "gap_hours": null,
