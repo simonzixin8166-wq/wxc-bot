@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-10-12T15:18:11Z",
+  "generated_at": "2026-10-12T22:57:14Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -92,18 +92,19 @@
           "reached_end": false
         }
       ],
-      "previous_anchor_video_id": "7-lWx78nAQ4",
+      "previous_anchor_video_id": "g1kgEiP1v10",
       "anchor_found": true,
       "reached_end": false,
       "discovery_complete": true,
       "latest": {
-        "video_id": "7-lWx78nAQ4",
-        "title": "The World Is Broke, Debt Spiral Is Here",
-        "url": "https://www.youtube.com/watch?v=7-lWx78nAQ4",
-        "published_at": "",
+        "video_id": "g1kgEiP1v10",
+        "title": "Trump Just Started The Debt Spiral",
+        "url": "https://www.youtube.com/watch?v=g1kgEiP1v10",
+        "published_at": "2026-10-12",
         "flat_metadata_keys": [
           "channel_id",
-          "duration"
+          "duration",
+          "rss_published_at"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -118,8 +119,8 @@
   "pending_retried": 6,
   "content_attempted_this_run": 6,
   "content_work_budget": 6,
-  "content_backlog_after_run": 99,
-  "pending_total": 99,
+  "content_backlog_after_run": 100,
+  "pending_total": 100,
   "historical_demoted_from_pending": 0,
   "admitted_from_pending": 0,
   "nonforward_timestamp_unknown_admitted": 0,
@@ -128,9 +129,9 @@
   "discovery_complete": true,
   "new_video_diagnostics": [
     {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "vynRw9NT7TQ",
-      "title": "美股 TSLA突破，强弱区间！MSFT对AI货币化充满信心！四大科技共振！AMD成了之前的NVDA！",
+      "author": "Andrei Jikh",
+      "video_id": "g1kgEiP1v10",
+      "title": "Trump Just Started The Debt Spiral",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -140,8 +141,8 @@
     },
     {
       "author": "Andrei Jikh",
-      "video_id": "w0a504L8fgs",
-      "title": "China & Japan Are Dumping US Bonds",
+      "video_id": "16oTiM8o8ic",
+      "title": "My Alternative Investment Portfolio (Pokemon Edition)",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -151,8 +152,8 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "wz13N6Q4-tg",
-      "title": "美股 无聊行情即将结束！回购债券的隐藏动机！LULU、NKE、INTU！",
+      "video_id": "19S-O_bla-A",
+      "title": "美股 MRVL抢单AVGO！AMD更新！财政部加码回购债券！为什么？钱哪来？QE吗？",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -162,8 +163,8 @@
     },
     {
       "author": "老李玩钱",
-      "video_id": "xUrNp0Dy0ws",
-      "title": "3支牛股！回调即可买入",
+      "video_id": "1QM5vfCkId0",
+      "title": "当前美股的泡沫到底有多大？NVDA财报解读及操作建议",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -172,9 +173,9 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "老李玩钱",
-      "video_id": "yEdijFeesTs",
-      "title": "$310,000美股账户，我加仓/减仓的4支股票！接下来美股将何去何从",
+      "author": "Andrei Jikh",
+      "video_id": "1UIKZBGYMYI",
+      "title": "China Is Preparing For $38,000 Gold",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -184,8 +185,8 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "zscZ446Irdk",
-      "title": "（会员第302期）胜率最高的9种买点！个人经验干货分享！",
+      "video_id": "4M7w7DR865M",
+      "title": "美股 最差9月，CTA更新！JPM战术转向，减仓多头！对冲基金上周仓位！AMZN遭起诉掉块肉！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -198,7 +199,7 @@
     "status": "ok",
     "channel_errors": 0,
     "stuck_high_quality_pending": 0,
-    "provider_waiting_pending": 99,
+    "provider_waiting_pending": 100,
     "stuck_video_ids": [],
     "meaning": "Q1/Q2 text must not remain stuck in pending; Q3-Q5 may legitimately wait for better learning text."
   },
