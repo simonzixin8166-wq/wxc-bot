@@ -24,7 +24,12 @@ on:
       - ".github/workflows/research-close.yml"
   schedule:
     # 22:30 UTC is safely after the regular US close in both DST and winter time.
-    - cron: "30 22 * * 1-5"
+    # Runs every day (blogs/forums publish on weekends too) plus a 13:10 UTC catch-up, because GitHub can
+    # delay or skip a scheduled run (the Fri 2026-10-10 22:30 run never started; BrightLine 7216 published
+    # 2026-10-11 was only captured 2026-10-12 03:11). Collection is idempotent (seen-state + feed dedupe) and
+    # stamps captured_at, so an extra run never re-labels or back-dates anything. Public repo: Actions minutes are free.
+    - cron: "30 22 * * *"
+    - cron: "10 13 * * *"
   workflow_dispatch:
 
 permissions:
