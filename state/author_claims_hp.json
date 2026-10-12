@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-10-12T03:25:15+00:00",
+ "generated_at": "2026-10-12T21:52:14+00:00",
  "extractor": "ce-5-hp",
  "lookback_days": 21,
- "records_scanned": 683,
+ "records_scanned": 706,
  "records_excluded_by_flags": 0,
  "claims": [
   {
@@ -1092,6 +1092,22 @@
    "instrument": "stock",
    "price": null,
    "sentence_sha256": "bada32eb4dd7700f46ffdd562da5305946adc8511822c89e38f02094880ad334"
+  },
+  {
+   "record_id": "7aea457abd3b6c645cc9",
+   "author": "三心三意",
+   "source_kind": "forum",
+   "url": "https://bbs.wenxuecity.com/cfzh/114734.html",
+   "published_at": "2026-10-12 07:23:07",
+   "first_seen": "2026-10-12T21:46:03Z",
+   "provenance": "unprovable",
+   "symbol": "AMAT",
+   "stance": "buy",
+   "status": "executed",
+   "hp_gate": "first_person_executed_trade",
+   "instrument": "stock",
+   "price": null,
+   "sentence_sha256": "7809738491969a94426d51521d408088d6d550fa7c87733f0899c3232ccd44b0"
   }
  ],
  "claims_status": "experimental_unvalidated",
