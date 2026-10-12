@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-10-11T23:39:27Z",
+  "generated_at": "2026-10-12T05:52:56Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -117,8 +117,8 @@
   "pending_retried": 6,
   "content_attempted_this_run": 6,
   "content_work_budget": 6,
-  "content_backlog_after_run": 101,
-  "pending_total": 101,
+  "content_backlog_after_run": 99,
+  "pending_total": 99,
   "historical_demoted_from_pending": 0,
   "admitted_from_pending": 1,
   "nonforward_timestamp_unknown_admitted": 1,
@@ -127,9 +127,20 @@
   "discovery_complete": true,
   "new_video_diagnostics": [
     {
+      "author": "老李玩钱",
+      "video_id": "o0ScN6BzkaI",
+      "title": "美股涨的心慌！要卖股票了？",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "gN9uUJPqipo",
-      "title": "美股 NVDA再增5000亿循环融资！MSFT下月加高护城河！一只加仓计划！BRK二季度加速回购！",
+      "video_id": "o3v28EEIdb4",
+      "title": "美股 大盘伸个懒腰！ SPCX又又又发债！AAPL扩大智能家居版图！CAT怎么了？META正常回撤！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -139,8 +150,30 @@
     },
     {
       "author": "老李玩钱",
-      "video_id": "hHKD2zuGKuc",
-      "title": "31万美股账户，14支股票加仓、减仓及持仓计划更新！频道暂停通知",
+      "video_id": "p6FafiL08Oo",
+      "title": "个股点评及买入建议：AVGO, NVDA, GOOG, META, SOFI, MRVL",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "pkg7bdNOf88",
+      "title": "（会员第300期）板块重要前瞻26年8月29日更新，2026、2027主要13个行业版块，季度、年度EPS增速数据更新！哪些行业增速强劲？标普SPX、26、27前瞻交易范围，押注方向决定成败！",
+      "content_quality": "Q4",
+      "content_provider": "pickscribe.com",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "老李玩钱",
+      "video_id": "r-2GJq_zHgU",
+      "title": "美股高位！但这2支股票依然不高，可以买入",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -150,19 +183,8 @@
     },
     {
       "author": "Andrei Jikh",
-      "video_id": "hy90LdpEUvQ",
-      "title": "South Korea’s AI Bubble Just Popped",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "Andrei Jikh",
-      "video_id": "j4HpgeFPjRQ",
-      "title": "They’re Using Your Insurance To Fund The AI Bubble",
+      "video_id": "r4xoOQ32KNM",
+      "title": "The Iran Deal Just Broke The Global Economy",
       "published_at": "",
       "transcript_status": "available",
       "content_quality": "Q4",
@@ -173,35 +195,13 @@
       "operations": 0,
       "admission": "research_feed_nonforward_timestamp_unknown",
       "was_pending": true
-    },
-    {
-      "author": "Andrei Jikh",
-      "video_id": "jx14bV5ffw0",
-      "title": "Russia Just Legalized Crypto",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "kXr89fM66C4",
-      "title": "美股 罕见吸血，半导体、软件齐飞！IGV暴涨突破剑指新高！PLTR、NOW、MSFT！CRWD、MRVL财报！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
     }
   ],
   "intake_health": {
     "status": "ok",
     "channel_errors": 0,
     "stuck_high_quality_pending": 0,
-    "provider_waiting_pending": 101,
+    "provider_waiting_pending": 99,
     "stuck_video_ids": [],
     "meaning": "Q1/Q2 text must not remain stuck in pending; Q3-Q5 may legitimately wait for better learning text."
   },
