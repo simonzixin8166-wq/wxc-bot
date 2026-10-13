@@ -106,11 +106,11 @@
     },
     "2026-10-13": {
       "telegram:get_updates": {
-        "count": 2,
+        "count": 3,
         "paid": false
       },
       "myalphaview:server_action_status": {
-        "count": 2,
+        "count": 3,
         "paid": false
       },
       "telegram:send_message": {
