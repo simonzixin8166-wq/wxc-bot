@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-10-12T22:57:14Z",
+  "generated_at": "2026-10-13T06:45:29Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -19,14 +19,14 @@
           "reached_end": false
         }
       ],
-      "previous_anchor_video_id": "xOY53crL1ZA",
+      "previous_anchor_video_id": "cr3MV3KTHRE",
       "anchor_found": true,
       "reached_end": false,
       "discovery_complete": true,
       "latest": {
-        "video_id": "xOY53crL1ZA",
-        "title": "（会员第305期）掌握数据，跟随趋势！如何追踪标普、个股、EPS业绩修正？几个隐藏的免费数据入口！使用方法！",
-        "url": "https://www.youtube.com/watch?v=xOY53crL1ZA",
+        "video_id": "cr3MV3KTHRE",
+        "title": "美股 对冲基金，抛售哪些？做多哪些？META、MSFT、XLI，存储重伤，竞争加剧！MU、SNDK位置！",
+        "url": "https://www.youtube.com/watch?v=cr3MV3KTHRE",
         "published_at": "",
         "flat_metadata_keys": [
           "channel_id",
@@ -55,19 +55,18 @@
           "reached_end": false
         }
       ],
-      "previous_anchor_video_id": "QYQlbuF8xdk",
+      "previous_anchor_video_id": "hFY-CcoS0KA",
       "anchor_found": true,
       "reached_end": false,
       "discovery_complete": true,
       "latest": {
-        "video_id": "QYQlbuF8xdk",
-        "title": "国债收益率居高不下！如何利用闲置资金购买美国国债，稳定获取利息现金流",
-        "url": "https://www.youtube.com/watch?v=QYQlbuF8xdk",
-        "published_at": "2026-10-08",
+        "video_id": "hFY-CcoS0KA",
+        "title": "做好准备！逢低买入优质股票的机会要来了",
+        "url": "https://www.youtube.com/watch?v=hFY-CcoS0KA",
+        "published_at": "",
         "flat_metadata_keys": [
           "channel_id",
-          "duration",
-          "rss_published_at"
+          "duration"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -100,11 +99,10 @@
         "video_id": "g1kgEiP1v10",
         "title": "Trump Just Started The Debt Spiral",
         "url": "https://www.youtube.com/watch?v=g1kgEiP1v10",
-        "published_at": "2026-10-12",
+        "published_at": "",
         "flat_metadata_keys": [
           "channel_id",
-          "duration",
-          "rss_published_at"
+          "duration"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -119,8 +117,8 @@
   "pending_retried": 6,
   "content_attempted_this_run": 6,
   "content_work_budget": 6,
-  "content_backlog_after_run": 100,
-  "pending_total": 100,
+  "content_backlog_after_run": 102,
+  "pending_total": 102,
   "historical_demoted_from_pending": 0,
   "admitted_from_pending": 0,
   "nonforward_timestamp_unknown_admitted": 0,
@@ -129,31 +127,9 @@
   "discovery_complete": true,
   "new_video_diagnostics": [
     {
-      "author": "Andrei Jikh",
-      "video_id": "g1kgEiP1v10",
-      "title": "Trump Just Started The Debt Spiral",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "Andrei Jikh",
-      "video_id": "16oTiM8o8ic",
-      "title": "My Alternative Investment Portfolio (Pokemon Edition)",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "19S-O_bla-A",
-      "title": "美股 MRVL抢单AVGO！AMD更新！财政部加码回购债券！为什么？钱哪来？QE吗？",
+      "video_id": "cr3MV3KTHRE",
+      "title": "美股 对冲基金，抛售哪些？做多哪些？META、MSFT、XLI，存储重伤，竞争加剧！MU、SNDK位置！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -163,8 +139,8 @@
     },
     {
       "author": "老李玩钱",
-      "video_id": "1QM5vfCkId0",
-      "title": "当前美股的泡沫到底有多大？NVDA财报解读及操作建议",
+      "video_id": "hFY-CcoS0KA",
+      "title": "做好准备！逢低买入优质股票的机会要来了",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -174,8 +150,8 @@
     },
     {
       "author": "Andrei Jikh",
-      "video_id": "1UIKZBGYMYI",
-      "title": "China Is Preparing For $38,000 Gold",
+      "video_id": "87NzxCEUQlw",
+      "title": "China Just Shut Down Gold Trading",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -185,8 +161,30 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "4M7w7DR865M",
-      "title": "美股 最差9月，CTA更新！JPM战术转向，减仓多头！对冲基金上周仓位！AMZN遭起诉掉块肉！",
+      "video_id": "8DY3zEBTFZ8",
+      "title": "美股 系统准备重新武装杠杆！MSFT再跌一天修复！半导体、软件，又跷跷板？ CRWV、NBIS、LITE、COHR！APP再跟踪！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "老李玩钱",
+      "video_id": "8uy8c4S2BW4",
+      "title": "英伟达财报渡劫！依然长期看好",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "老李玩钱",
+      "video_id": "9SBwuIy6KRs",
+      "title": "美股很高！但这3支股票还在地上趴着，可以买入",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -199,7 +197,7 @@
     "status": "ok",
     "channel_errors": 0,
     "stuck_high_quality_pending": 0,
-    "provider_waiting_pending": 100,
+    "provider_waiting_pending": 102,
     "stuck_video_ids": [],
     "meaning": "Q1/Q2 text must not remain stuck in pending; Q3-Q5 may legitimately wait for better learning text."
   },
