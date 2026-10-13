@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-10-13T15:58:21Z",
+  "generated_at": "2026-10-13T21:15:14Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -130,53 +130,9 @@
   "discovery_complete": true,
   "new_video_diagnostics": [
     {
-      "author": "老李玩钱",
-      "video_id": "FK_7ldpLAjI",
-      "title": "$200,000本金美股账户2周年，表现如何？复盘总结，经验心得",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "老李玩钱",
-      "video_id": "FqN2N9NJ00M",
-      "title": "美股：TSLA，GOOG！财报解读，操作建议",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "Fu_h7lMTYU8",
-      "title": "美股 三个风险，现在如何？GOOG加速倒车！软件IGV，成分股跟踪！ORCL、PLTR、CRM、INTU、APP、ADBE！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "G_zzWcUSTfY",
-      "title": "美股 共识预期：半导体无路可退！QQQ、IWM、AMD、META！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "老李玩钱",
-      "video_id": "GsmAlvfOUFs",
-      "title": "6月必买3支股票",
+      "video_id": "N8BjausuEsI",
+      "title": "美股 META大招豪赌AI代理！对GOOG、AMZN影响！SOXX还需一天确认！财政部回购不及预期！AAPL开始折叠！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -186,8 +142,52 @@
     },
     {
       "author": "Andrei Jikh",
-      "video_id": "HIBozcOlQPY",
-      "title": "How I’m Preparing For The “Supercycle”",
+      "video_id": "NZpobX6MQVA",
+      "title": "Trump Will Cause The Next Financial Crisis",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "老李玩钱",
+      "video_id": "O_xE_bGbwTI",
+      "title": "美股形势依然不明朗！要卖股票了？！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "老李玩钱",
+      "video_id": "PDAHTpp2c78",
+      "title": "摩根大通：标普500今年将下跌15%",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "老李玩钱",
+      "video_id": "PdypXJ5gtKY",
+      "title": "半导体和存储，10支热门个股和ETF，买入及加仓建议",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "老李玩钱",
+      "video_id": "Q5xMtR4SWP8",
+      "title": "美股高位摇摇欲坠！要回调了？操作上的建议",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
