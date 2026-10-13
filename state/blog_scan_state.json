@@ -1,11 +1,11 @@
 {
   "authors": {
     "BrightLine": {
-      "last_success_at": "2026-10-13T03:08:20.756994+00:00",
-      "last_attempt_at": "2026-10-13T03:08:20.756994+00:00",
+      "last_success_at": "2026-10-13T19:53:20.095039+00:00",
+      "last_attempt_at": "2026-10-13T19:53:20.095039+00:00",
       "scan_complete": true,
       "recovery_days_used": 14,
-      "new_records": 1,
+      "new_records": 0,
       "article_links_found": 55,
       "posts_parsed": 32,
       "unique_article_ids": 12,
@@ -24,8 +24,8 @@
       "retention_policy": "no_article_count_cap"
     },
     "yifan99": {
-      "last_success_at": "2026-10-13T03:08:20.756994+00:00",
-      "last_attempt_at": "2026-10-13T03:08:20.756994+00:00",
+      "last_success_at": "2026-10-13T19:53:20.095039+00:00",
+      "last_attempt_at": "2026-10-13T19:53:20.095039+00:00",
       "scan_complete": true,
       "recovery_days_used": 14,
       "new_records": 0,
@@ -47,8 +47,8 @@
       "retention_policy": "no_article_count_cap"
     },
     "麻你": {
-      "last_success_at": "2026-10-13T03:08:20.756994+00:00",
-      "last_attempt_at": "2026-10-13T03:08:20.756994+00:00",
+      "last_success_at": "2026-10-13T19:53:20.095039+00:00",
+      "last_attempt_at": "2026-10-13T19:53:20.095039+00:00",
       "scan_complete": true,
       "recovery_days_used": 14,
       "new_records": 0,
@@ -71,6 +71,6 @@
     }
   },
   "version": 1,
-  "updated_at": "2026-10-13T03:08:20.756994+00:00",
+  "updated_at": "2026-10-13T19:53:20.095039+00:00",
   "policy": "recovery window expands from the last complete scheduled scan; failed archive months or parsed URLs missing from canonical feed do not advance last_success_at; article discovery has no count cap"
 }
