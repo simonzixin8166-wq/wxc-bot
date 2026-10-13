@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-10-12T21:52:14+00:00",
+ "generated_at": "2026-10-13T03:14:36+00:00",
  "extractor": "ce-5-hp",
  "lookback_days": 21,
- "records_scanned": 706,
+ "records_scanned": 709,
  "records_excluded_by_flags": 0,
  "claims": [
   {
@@ -1099,8 +1099,8 @@
    "source_kind": "forum",
    "url": "https://bbs.wenxuecity.com/cfzh/114734.html",
    "published_at": "2026-10-12 07:23:07",
-   "first_seen": "2026-10-12T21:46:03Z",
-   "provenance": "unprovable",
+   "first_seen": "2026-10-12T21:52:15Z",
+   "provenance": "near_publication_observed",
    "symbol": "AMAT",
    "stance": "buy",
    "status": "executed",

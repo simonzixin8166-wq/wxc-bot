@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-10-12T21:52:15.183133+00:00",
+  "generated_at": "2026-10-13T03:14:36.766496+00:00",
   "principle": "author x month reconciliation; unscanned history is unknown, backfill is never Genuine Forward",
   "matrix": {
     "BrightLine": {
@@ -12,10 +12,10 @@
         "structured_view": 3
       },
       "2026-10": {
-        "records": 10,
-        "live_or_unclassified": 10,
-        "excerpt": 10,
-        "structured_view": 4
+        "records": 11,
+        "live_or_unclassified": 11,
+        "excerpt": 11,
+        "structured_view": 5
       }
     },
     "bogbog": {
@@ -79,10 +79,10 @@
         "live_or_unclassified": 9
       },
       "2026-10": {
-        "records": 340,
+        "records": 342,
         "backfill": 19,
-        "title_only": 327,
-        "live_or_unclassified": 321,
+        "title_only": 329,
+        "live_or_unclassified": 323,
         "excerpt": 13,
         "structured_view": 3
       }
@@ -133,7 +133,7 @@
       "kinds": [
         "blog"
       ],
-      "records": 14,
+      "records": 15,
       "first_month": "2026-09",
       "last_month": "2026-10",
       "watched_forum_author": false,
@@ -143,7 +143,7 @@
           "2026-10"
         ],
         "archive_failures": [],
-        "unique_article_ids": 11,
+        "unique_article_ids": 12,
         "missing_from_feed": 0,
         "recovery_window_days": 14,
         "history_before_window": "not_scanned (unknown, not zero)"
@@ -212,13 +212,13 @@
       "kinds": [
         "forum"
       ],
-      "records": 385,
+      "records": 387,
       "first_month": "2026-09",
       "last_month": "2026-10",
       "watched_forum_author": true,
       "forum": {
         "seen_ids": 439,
-        "in_feed": 385,
+        "in_feed": 387,
         "seen_not_in_feed": 79,
         "seen_not_in_feed_examples": [
           "112259",
@@ -283,10 +283,10 @@
   },
   "totals": {
     "authors": 7,
-    "records": 1671,
+    "records": 1674,
     "text_depth": {
-      "title_only": 1160,
-      "excerpt": 511
+      "title_only": 1162,
+      "excerpt": 512
     }
   },
   "access_policy": "no bypassing 403/429 or login walls; history fills only via bounded, rate-limited backfill"

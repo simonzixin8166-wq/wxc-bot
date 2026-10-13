@@ -1,10 +1,10 @@
 {
   "version": 1,
   "file": "state/research_feed.json",
-  "feed_updated_at": "2026-10-12T21:52:13Z",
-  "record_count": 1695,
-  "unique_ids": 1695,
-  "ids_sha256": "a1b0e28eac631a85b8955fe776b2eea72bee2f20653dd27dcbdfaaaa1d1d9942",
-  "bytes": 1704876,
-  "content_sha256": "264d4b0e05b3ae4dc080528d24483ebc8fa5aa70ac3c0d542a79a7ff74727cd2"
+  "feed_updated_at": "2026-10-13T03:10:59Z",
+  "record_count": 1698,
+  "unique_ids": 1698,
+  "ids_sha256": "d3cb1ab6ba621a600e1fa838dbebb1eab25347959b49b59d12268d2cd03bfd80",
+  "bytes": 1709287,
+  "content_sha256": "0760d033143c5aaee5e8bdb2ad1dadeaaceb0792b76e1c92ecd2131cb4a95e1d"
 }
