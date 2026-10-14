@@ -120,15 +120,15 @@
     },
     "2026-10-14": {
       "telegram:send_message": {
-        "count": 7,
+        "count": 10,
         "paid": false
       },
       "telegram:get_updates": {
-        "count": 4,
+        "count": 5,
         "paid": false
       },
       "myalphaview:server_action_status": {
-        "count": 4,
+        "count": 5,
         "paid": false
       }
     }
