@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-10-14T01:14:15Z",
+  "generated_at": "2026-10-14T07:35:52Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -19,18 +19,19 @@
           "reached_end": false
         }
       ],
-      "previous_anchor_video_id": "cr3MV3KTHRE",
+      "previous_anchor_video_id": "JlFrJ45B6zU",
       "anchor_found": true,
       "reached_end": false,
       "discovery_complete": true,
       "latest": {
-        "video_id": "cr3MV3KTHRE",
-        "title": "美股 对冲基金，抛售哪些？做多哪些？META、MSFT、XLI，存储重伤，竞争加剧！MU、SNDK位置！",
-        "url": "https://www.youtube.com/watch?v=cr3MV3KTHRE",
-        "published_at": "",
+        "video_id": "JlFrJ45B6zU",
+        "title": "美股 资本支出：三季度增速见顶！SOXX、SMH反复拉扯！UNH已计价，JPM不及格！",
+        "url": "https://www.youtube.com/watch?v=JlFrJ45B6zU",
+        "published_at": "2026-10-14",
         "flat_metadata_keys": [
           "channel_id",
-          "duration"
+          "duration",
+          "rss_published_at"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -63,10 +64,11 @@
         "video_id": "hFY-CcoS0KA",
         "title": "做好准备！逢低买入优质股票的机会要来了",
         "url": "https://www.youtube.com/watch?v=hFY-CcoS0KA",
-        "published_at": "",
+        "published_at": "2026-10-12",
         "flat_metadata_keys": [
           "channel_id",
-          "duration"
+          "duration",
+          "rss_published_at"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -99,10 +101,11 @@
         "video_id": "g1kgEiP1v10",
         "title": "Trump Just Started The Debt Spiral",
         "url": "https://www.youtube.com/watch?v=g1kgEiP1v10",
-        "published_at": "",
+        "published_at": "2026-10-12",
         "flat_metadata_keys": [
           "channel_id",
-          "duration"
+          "duration",
+          "rss_published_at"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -117,8 +120,8 @@
   "pending_retried": 6,
   "content_attempted_this_run": 6,
   "content_work_budget": 6,
-  "content_backlog_after_run": 102,
-  "pending_total": 102,
+  "content_backlog_after_run": 103,
+  "pending_total": 103,
   "historical_demoted_from_pending": 0,
   "admitted_from_pending": 0,
   "nonforward_timestamp_unknown_admitted": 0,
@@ -128,8 +131,8 @@
   "new_video_diagnostics": [
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "Wpbwn2Pj3kQ",
-      "title": "美股 META、AMD联手起飞！QQQ、SOXX、IGV，全部突破！对冲基金、散户，在买什么？",
+      "video_id": "JlFrJ45B6zU",
+      "title": "美股 资本支出：三季度增速见顶！SOXX、SMH反复拉扯！UNH已计价，JPM不及格！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -139,41 +142,8 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "XFCufoG9DVc",
-      "title": "美股 META肉搏AMZN，别被带歪！SHOP受益！AI巨头加速推新模型！德州更严厉暂停数据中心！金融XLF怎么了？",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "XJeU_be2gGU",
-      "title": "美股 供应商循环融资裂痕！NVDA后撤，半导体逆转！沃什大战贝森特！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "XdQF1csLbnk",
-      "title": "美股 QQQ、IWM、SOXX、SMH、风险位置！SPY、IGV相对安全！持仓计划更新！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "Y7P-VOo0KTs",
-      "title": "（会员第298期）四大科技AI货币化进度（2026年Q2后），MSFT、GOOG、AMZN、META！前车之鉴，能否提前识别泡沫？",
+      "video_id": "Zl1B2xBExw8",
+      "title": "（会员第301期）买点避雷，减少误判！18条原则，坚决不买！个人经验干货分享！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -183,8 +153,41 @@
     },
     {
       "author": "Andrei Jikh",
-      "video_id": "YBhwK-VWsxY",
-      "title": "Japan's Money Is Collapsing",
+      "video_id": "ZrYTeawbbR8",
+      "title": "How The Next Financial Crisis Happens",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "Andrei Jikh",
+      "video_id": "_YXDHskRP6Y",
+      "title": "Here's What Pops This Stock Bubble",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "Andrei Jikh",
+      "video_id": "_lOVieAIvSA",
+      "title": "I Let AI Invest My Money For 3 Years",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "aiO11zglFjc",
+      "title": "美股 NVDA业绩强劲，苦新高已久！META官司和解！CRM加速AI转型业绩上调！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -197,7 +200,7 @@
     "status": "ok",
     "channel_errors": 0,
     "stuck_high_quality_pending": 0,
-    "provider_waiting_pending": 102,
+    "provider_waiting_pending": 103,
     "stuck_video_ids": [],
     "meaning": "Q1/Q2 text must not remain stuck in pending; Q3-Q5 may legitimately wait for better learning text."
   },
