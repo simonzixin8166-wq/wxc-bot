@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-10-14T07:35:52Z",
+  "generated_at": "2026-10-14T13:43:16Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -131,8 +131,8 @@
   "new_video_diagnostics": [
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "JlFrJ45B6zU",
-      "title": "美股 资本支出：三季度增速见顶！SOXX、SMH反复拉扯！UNH已计价，JPM不及格！",
+      "video_id": "fLKcWY1h45w",
+      "title": "美股 三家巨头呼吁AI发展放缓，半导体暴跌！利好！利空！何去何从？几个思考！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -142,41 +142,8 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "Zl1B2xBExw8",
-      "title": "（会员第301期）买点避雷，减少误判！18条原则，坚决不买！个人经验干货分享！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "Andrei Jikh",
-      "video_id": "ZrYTeawbbR8",
-      "title": "How The Next Financial Crisis Happens",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "Andrei Jikh",
-      "video_id": "_YXDHskRP6Y",
-      "title": "Here's What Pops This Stock Bubble",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "Andrei Jikh",
-      "video_id": "_lOVieAIvSA",
-      "title": "I Let AI Invest My Money For 3 Years",
+      "video_id": "fLp8kUbv_u8",
+      "title": "美股 对冲基金低仓位按兵不动！AMD很猛，SOXX临门！金融XLF、医疗XLV！ADBE财报押注！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -186,8 +153,41 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "aiO11zglFjc",
-      "title": "美股 NVDA业绩强劲，苦新高已久！META官司和解！CRM加速AI转型业绩上调！",
+      "video_id": "gN9uUJPqipo",
+      "title": "美股 NVDA再增5000亿循环融资！MSFT下月加高护城河！一只加仓计划！BRK二季度加速回购！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "老李玩钱",
+      "video_id": "hHKD2zuGKuc",
+      "title": "31万美股账户，14支股票加仓、减仓及持仓计划更新！频道暂停通知",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "Andrei Jikh",
+      "video_id": "hy90LdpEUvQ",
+      "title": "South Korea’s AI Bubble Just Popped",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "Andrei Jikh",
+      "video_id": "jx14bV5ffw0",
+      "title": "Russia Just Legalized Crypto",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
