@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-10-14T13:43:16Z",
+  "generated_at": "2026-10-14T18:37:54Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -130,9 +130,9 @@
   "discovery_complete": true,
   "new_video_diagnostics": [
     {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "fLKcWY1h45w",
-      "title": "美股 三家巨头呼吁AI发展放缓，半导体暴跌！利好！利空！何去何从？几个思考！",
+      "author": "老李玩钱",
+      "video_id": "o0ScN6BzkaI",
+      "title": "美股涨的心慌！要卖股票了？",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -142,19 +142,8 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "fLp8kUbv_u8",
-      "title": "美股 对冲基金低仓位按兵不动！AMD很猛，SOXX临门！金融XLF、医疗XLV！ADBE财报押注！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "gN9uUJPqipo",
-      "title": "美股 NVDA再增5000亿循环融资！MSFT下月加高护城河！一只加仓计划！BRK二季度加速回购！",
+      "video_id": "o3v28EEIdb4",
+      "title": "美股 大盘伸个懒腰！ SPCX又又又发债！AAPL扩大智能家居版图！CAT怎么了？META正常回撤！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -164,8 +153,8 @@
     },
     {
       "author": "老李玩钱",
-      "video_id": "hHKD2zuGKuc",
-      "title": "31万美股账户，14支股票加仓、减仓及持仓计划更新！频道暂停通知",
+      "video_id": "p6FafiL08Oo",
+      "title": "个股点评及买入建议：AVGO, NVDA, GOOG, META, SOFI, MRVL",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -174,9 +163,20 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "Andrei Jikh",
-      "video_id": "hy90LdpEUvQ",
-      "title": "South Korea’s AI Bubble Just Popped",
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "pkg7bdNOf88",
+      "title": "（会员第300期）板块重要前瞻26年8月29日更新，2026、2027主要13个行业版块，季度、年度EPS增速数据更新！哪些行业增速强劲？标普SPX、26、27前瞻交易范围，押注方向决定成败！",
+      "content_quality": "Q4",
+      "content_provider": "pickscribe.com",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "老李玩钱",
+      "video_id": "r-2GJq_zHgU",
+      "title": "美股高位！但这2支股票依然不高，可以买入",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -185,9 +185,9 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "Andrei Jikh",
-      "video_id": "jx14bV5ffw0",
-      "title": "Russia Just Legalized Crypto",
+      "author": "老李玩钱",
+      "video_id": "s35e0bZb4xA",
+      "title": "美联储鹰派砸盘！MU财报业绩亮眼，但股价依然下跌！接下来何去何从",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
