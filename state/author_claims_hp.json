@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-10-14T01:27:36+00:00",
+ "generated_at": "2026-10-14T18:08:40+00:00",
  "extractor": "ce-5-hp",
  "lookback_days": 21,
- "records_scanned": 733,
+ "records_scanned": 757,
  "records_excluded_by_flags": 0,
  "claims": [
   {
@@ -1108,6 +1108,54 @@
    "instrument": "stock",
    "price": null,
    "sentence_sha256": "3e2e764b46fb15f3730accbe14ccacfa4f27696e0ef05fae27bd20a490ed9992"
+  },
+  {
+   "record_id": "8a2dfd9e6b71958d9215",
+   "author": "三心三意",
+   "source_kind": "forum",
+   "url": "https://bbs.wenxuecity.com/cfzh/115095.html",
+   "published_at": "2026-10-14 08:43:49",
+   "first_seen": "2026-10-14T18:02:02Z",
+   "provenance": "unprovable",
+   "symbol": "AMAT",
+   "stance": "sell",
+   "status": "executed",
+   "hp_gate": "first_person_executed_trade",
+   "instrument": "stock",
+   "price": null,
+   "sentence_sha256": "beef108008cdb7cc41d60890661f43dab6ba63d26bdebd5664feece31d1b7281"
+  },
+  {
+   "record_id": "c9866c9c3ccac29728f6",
+   "author": "bogbog",
+   "source_kind": "forum",
+   "url": "https://bbs.wenxuecity.com/cfzh/115100.html",
+   "published_at": "2026-10-14 08:58:31",
+   "first_seen": "2026-10-14T18:02:03Z",
+   "provenance": "unprovable",
+   "symbol": "AAOI",
+   "stance": "sell",
+   "status": "executed",
+   "hp_gate": "first_person_executed_trade",
+   "instrument": "stock",
+   "price": null,
+   "sentence_sha256": "72db1b549256e7e4fb426aa8b282a299c9627960cfdf56051350f7c9e2ca06df"
+  },
+  {
+   "record_id": "c9866c9c3ccac29728f6",
+   "author": "bogbog",
+   "source_kind": "forum",
+   "url": "https://bbs.wenxuecity.com/cfzh/115100.html",
+   "published_at": "2026-10-14 08:58:31",
+   "first_seen": "2026-10-14T18:02:03Z",
+   "provenance": "unprovable",
+   "symbol": "ARM",
+   "stance": "sell",
+   "status": "executed",
+   "hp_gate": "first_person_executed_trade",
+   "instrument": "stock",
+   "price": null,
+   "sentence_sha256": "72db1b549256e7e4fb426aa8b282a299c9627960cfdf56051350f7c9e2ca06df"
   }
  ],
  "claims_status": "experimental_unvalidated",

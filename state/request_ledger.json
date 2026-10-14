@@ -120,7 +120,7 @@
     },
     "2026-10-14": {
       "telegram:send_message": {
-        "count": 6,
+        "count": 7,
         "paid": false
       },
       "telegram:get_updates": {
