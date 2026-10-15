@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-10-15T00:52:49+00:00",
+ "generated_at": "2026-10-15T17:52:10+00:00",
  "extractor": "ce-5-hp",
  "lookback_days": 21,
- "records_scanned": 789,
+ "records_scanned": 793,
  "records_excluded_by_flags": 0,
  "claims": [
   {
