@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-10-15T16:58:48Z",
+  "generated_at": "2026-10-15T21:21:37Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -93,19 +93,18 @@
           "reached_end": false
         }
       ],
-      "previous_anchor_video_id": "g1kgEiP1v10",
+      "previous_anchor_video_id": "TNQ2PuDLiOg",
       "anchor_found": true,
       "reached_end": false,
       "discovery_complete": true,
       "latest": {
-        "video_id": "g1kgEiP1v10",
-        "title": "Trump Just Started The Debt Spiral",
-        "url": "https://www.youtube.com/watch?v=g1kgEiP1v10",
-        "published_at": "2026-10-12",
+        "video_id": "TNQ2PuDLiOg",
+        "title": "XRP: The Next “Global Payment”",
+        "url": "https://www.youtube.com/watch?v=TNQ2PuDLiOg",
+        "published_at": "",
         "flat_metadata_keys": [
           "channel_id",
-          "duration",
-          "rss_published_at"
+          "duration"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -120,8 +119,8 @@
   "pending_retried": 6,
   "content_attempted_this_run": 6,
   "content_work_budget": 6,
-  "content_backlog_after_run": 104,
-  "pending_total": 104,
+  "content_backlog_after_run": 105,
+  "pending_total": 105,
   "historical_demoted_from_pending": 0,
   "admitted_from_pending": 0,
   "nonforward_timestamp_unknown_admitted": 0,
@@ -130,31 +129,9 @@
   "discovery_complete": true,
   "new_video_diagnostics": [
     {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "Fu_h7lMTYU8",
-      "title": "美股 三个风险，现在如何？GOOG加速倒车！软件IGV，成分股跟踪！ORCL、PLTR、CRM、INTU、APP、ADBE！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "G_zzWcUSTfY",
-      "title": "美股 共识预期：半导体无路可退！QQQ、IWM、AMD、META！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "老李玩钱",
-      "video_id": "GsmAlvfOUFs",
-      "title": "6月必买3支股票",
+      "author": "Andrei Jikh",
+      "video_id": "TNQ2PuDLiOg",
+      "title": "XRP: The Next “Global Payment”",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -164,8 +141,8 @@
     },
     {
       "author": "Andrei Jikh",
-      "video_id": "HIBozcOlQPY",
-      "title": "How I’m Preparing For The “Supercycle”",
+      "video_id": "NZpobX6MQVA",
+      "title": "Trump Will Cause The Next Financial Crisis",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -175,8 +152,8 @@
     },
     {
       "author": "老李玩钱",
-      "video_id": "JOaFOcY7Kc8",
-      "title": "华尔街大举买入和加仓的5支股票！我的看法及买入建议",
+      "video_id": "O_xE_bGbwTI",
+      "title": "美股形势依然不明朗！要卖股票了？！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -185,9 +162,31 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "JmAgOc0hTwQ",
-      "title": "美股 AI数据中心违约风险一览！长债收益率19年新高！SPY、QQQ、SOXX 、SMH重要位置！HD维持前瞻！",
+      "author": "老李玩钱",
+      "video_id": "PDAHTpp2c78",
+      "title": "摩根大通：标普500今年将下跌15%",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "老李玩钱",
+      "video_id": "PdypXJ5gtKY",
+      "title": "半导体和存储，10支热门个股和ETF，买入及加仓建议",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "老李玩钱",
+      "video_id": "Q5xMtR4SWP8",
+      "title": "美股高位摇摇欲坠！要回调了？操作上的建议",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -200,7 +199,7 @@
     "status": "ok",
     "channel_errors": 0,
     "stuck_high_quality_pending": 0,
-    "provider_waiting_pending": 104,
+    "provider_waiting_pending": 105,
     "stuck_video_ids": [],
     "meaning": "Q1/Q2 text must not remain stuck in pending; Q3-Q5 may legitimately wait for better learning text."
   },
