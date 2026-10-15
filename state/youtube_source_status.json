@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-10-14T23:14:03Z",
+  "generated_at": "2026-10-15T04:34:30Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -19,14 +19,14 @@
           "reached_end": false
         }
       ],
-      "previous_anchor_video_id": "JlFrJ45B6zU",
+      "previous_anchor_video_id": "ttrjfdl-Ne4",
       "anchor_found": true,
       "reached_end": false,
       "discovery_complete": true,
       "latest": {
-        "video_id": "JlFrJ45B6zU",
-        "title": "美股 资本支出：三季度增速见顶！SOXX、SMH反复拉扯！UNH已计价，JPM不及格！",
-        "url": "https://www.youtube.com/watch?v=JlFrJ45B6zU",
+        "video_id": "ttrjfdl-Ne4",
+        "title": "美股 短期洗牌，还是大跌开始？CRWV信贷引发AI交易混乱！ASML财报粗犷，叫好不叫座！",
+        "url": "https://www.youtube.com/watch?v=ttrjfdl-Ne4",
         "published_at": "",
         "flat_metadata_keys": [
           "channel_id",
@@ -117,8 +117,8 @@
   "pending_retried": 6,
   "content_attempted_this_run": 6,
   "content_work_budget": 6,
-  "content_backlog_after_run": 103,
-  "pending_total": 103,
+  "content_backlog_after_run": 104,
+  "pending_total": 104,
   "historical_demoted_from_pending": 0,
   "admitted_from_pending": 0,
   "nonforward_timestamp_unknown_admitted": 0,
@@ -127,20 +127,9 @@
   "discovery_complete": true,
   "new_video_diagnostics": [
     {
-      "author": "老李玩钱",
-      "video_id": "xUrNp0Dy0ws",
-      "title": "3支牛股！回调即可买入",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "老李玩钱",
-      "video_id": "yEdijFeesTs",
-      "title": "$310,000美股账户，我加仓/减仓的4支股票！接下来美股将何去何从",
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "ttrjfdl-Ne4",
+      "title": "美股 短期洗牌，还是大跌开始？CRWV信贷引发AI交易混乱！ASML财报粗犷，叫好不叫座！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -150,8 +139,19 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "zscZ446Irdk",
-      "title": "（会员第302期）胜率最高的9种买点！个人经验干货分享！",
+      "video_id": "0w77lIBdCn0",
+      "title": "美股 机构弹药见底！下一步，暴风雨？平静？TSLA、IGV、AVGO！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "Andrei Jikh",
+      "video_id": "16oTiM8o8ic",
+      "title": "My Alternative Investment Portfolio (Pokemon Edition)",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -161,8 +161,19 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "xOY53crL1ZA",
-      "title": "（会员第305期）掌握数据，跟随趋势！如何追踪标普、个股、EPS业绩修正？几个隐藏的免费数据入口！使用方法！",
+      "video_id": "19S-O_bla-A",
+      "title": "美股 MRVL抢单AVGO！AMD更新！财政部加码回购债券！为什么？钱哪来？QE吗？",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "老李玩钱",
+      "video_id": "1QM5vfCkId0",
+      "title": "当前美股的泡沫到底有多大？NVDA财报解读及操作建议",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -172,19 +183,8 @@
     },
     {
       "author": "Andrei Jikh",
-      "video_id": "7-lWx78nAQ4",
-      "title": "The Debt Spiral Has Started",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "Andrei Jikh",
-      "video_id": "g1kgEiP1v10",
-      "title": "Trump Just Started The Debt Spiral",
+      "video_id": "1UIKZBGYMYI",
+      "title": "China Is Preparing For $38,000 Gold",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -197,7 +197,7 @@
     "status": "ok",
     "channel_errors": 0,
     "stuck_high_quality_pending": 0,
-    "provider_waiting_pending": 103,
+    "provider_waiting_pending": 104,
     "stuck_video_ids": [],
     "meaning": "Q1/Q2 text must not remain stuck in pending; Q3-Q5 may legitimately wait for better learning text."
   },

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-10-14T23:13:03+00:00",
+  "generated_at": "2026-10-15T04:34:12+00:00",
   "non_gating": true,
   "historical_diagnostic_only": true,
   "probe_count": 23,
@@ -40,16 +40,16 @@
     {
       "author": "Andrei Jikh",
       "video_id": "6CN5UBeEwrU",
-      "title": "The World Is Routing Around America",
+      "title": "The Global Energy Crisis Is About To Start",
       "role": "market_context",
       "status": "metadata_only",
       "quality": "Q5",
-      "provider": "metadata_only",
-      "provider_url": "",
-      "content_origin": "metadata_only",
+      "provider": "pickscribe.com",
+      "provider_url": "https://pickscribe.com/v/6CN5UBeEwrU/",
+      "content_origin": "third_party_transcript",
       "timestamp_evidence": false,
       "rule_candidate_allowed": false,
-      "chars": 0,
+      "chars": 338,
       "note": "Derived from the same historical acquisition pass; no second provider request."
     },
     {
