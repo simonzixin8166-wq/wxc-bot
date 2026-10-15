@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-10-15T04:34:30Z",
+  "generated_at": "2026-10-15T11:25:08Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -27,10 +27,11 @@
         "video_id": "ttrjfdl-Ne4",
         "title": "美股 短期洗牌，还是大跌开始？CRWV信贷引发AI交易混乱！ASML财报粗犷，叫好不叫座！",
         "url": "https://www.youtube.com/watch?v=ttrjfdl-Ne4",
-        "published_at": "",
+        "published_at": "2026-10-15",
         "flat_metadata_keys": [
           "channel_id",
-          "duration"
+          "duration",
+          "rss_published_at"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -63,10 +64,11 @@
         "video_id": "hFY-CcoS0KA",
         "title": "做好准备！逢低买入优质股票的机会要来了",
         "url": "https://www.youtube.com/watch?v=hFY-CcoS0KA",
-        "published_at": "",
+        "published_at": "2026-10-12",
         "flat_metadata_keys": [
           "channel_id",
-          "duration"
+          "duration",
+          "rss_published_at"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -99,10 +101,11 @@
         "video_id": "g1kgEiP1v10",
         "title": "Trump Just Started The Debt Spiral",
         "url": "https://www.youtube.com/watch?v=g1kgEiP1v10",
-        "published_at": "",
+        "published_at": "2026-10-12",
         "flat_metadata_keys": [
           "channel_id",
-          "duration"
+          "duration",
+          "rss_published_at"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -127,31 +130,9 @@
   "discovery_complete": true,
   "new_video_diagnostics": [
     {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "ttrjfdl-Ne4",
-      "title": "美股 短期洗牌，还是大跌开始？CRWV信贷引发AI交易混乱！ASML财报粗犷，叫好不叫座！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "0w77lIBdCn0",
-      "title": "美股 机构弹药见底！下一步，暴风雨？平静？TSLA、IGV、AVGO！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
       "author": "Andrei Jikh",
-      "video_id": "16oTiM8o8ic",
-      "title": "My Alternative Investment Portfolio (Pokemon Edition)",
+      "video_id": "87NzxCEUQlw",
+      "title": "China Just Shut Down Gold Trading",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -161,8 +142,8 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "19S-O_bla-A",
-      "title": "美股 MRVL抢单AVGO！AMD更新！财政部加码回购债券！为什么？钱哪来？QE吗？",
+      "video_id": "8DY3zEBTFZ8",
+      "title": "美股 系统准备重新武装杠杆！MSFT再跌一天修复！半导体、软件，又跷跷板？ CRWV、NBIS、LITE、COHR！APP再跟踪！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -172,8 +153,8 @@
     },
     {
       "author": "老李玩钱",
-      "video_id": "1QM5vfCkId0",
-      "title": "当前美股的泡沫到底有多大？NVDA财报解读及操作建议",
+      "video_id": "8uy8c4S2BW4",
+      "title": "英伟达财报渡劫！依然长期看好",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -182,9 +163,31 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "Andrei Jikh",
-      "video_id": "1UIKZBGYMYI",
-      "title": "China Is Preparing For $38,000 Gold",
+      "author": "老李玩钱",
+      "video_id": "9SBwuIy6KRs",
+      "title": "美股很高！但这3支股票还在地上趴着，可以买入",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "Am7QxgzrUek",
+      "title": "美股 对冲基金最新仓位，软件VS半导体！SOXX、IGV、QQQ！META、MSFT正常回撤！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "老李玩钱",
+      "video_id": "B8OxtGSEfoo",
+      "title": "当前美股存在的3大风险因素",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
