@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-14T18:08:40+00:00",
- "records": 1752,
+ "generated_at": "2026-10-15T00:52:49+00:00",
+ "records": 1784,
  "without_recorded_provenance": 1226,
  "derived_for_unrecorded": {
   "near_publication_observed": 339,
@@ -19092,10 +19092,10 @@
    "author": "三心三意",
    "recorded_provenance": "live_candidate",
    "published_at": "2026-10-13 21:03:04",
-   "first_git_seen": null,
-   "first_git_commit": null,
-   "gap_hours": null,
-   "derived_provenance": "unprovable"
+   "first_git_seen": "2026-10-14T18:08:41Z",
+   "first_git_commit": "ecbfab9f9363d412276d27869fda2b275d840ca9",
+   "gap_hours": 21.1,
+   "derived_provenance": "near_publication_observed"
   },
   {
    "id": "35dce4c5779011ba48af",
@@ -19103,10 +19103,10 @@
    "author": "三心三意",
    "recorded_provenance": "live_candidate",
    "published_at": "2026-10-13 21:14:22",
-   "first_git_seen": null,
-   "first_git_commit": null,
-   "gap_hours": null,
-   "derived_provenance": "unprovable"
+   "first_git_seen": "2026-10-14T18:08:41Z",
+   "first_git_commit": "ecbfab9f9363d412276d27869fda2b275d840ca9",
+   "gap_hours": 20.9,
+   "derived_provenance": "near_publication_observed"
   },
   {
    "id": "22a302004bd3cb88167f",
@@ -19114,10 +19114,10 @@
    "author": "三心三意",
    "recorded_provenance": "live_candidate",
    "published_at": "2026-10-13 21:15:33",
-   "first_git_seen": null,
-   "first_git_commit": null,
-   "gap_hours": null,
-   "derived_provenance": "unprovable"
+   "first_git_seen": "2026-10-14T18:08:41Z",
+   "first_git_commit": "ecbfab9f9363d412276d27869fda2b275d840ca9",
+   "gap_hours": 20.9,
+   "derived_provenance": "near_publication_observed"
   },
   {
    "id": "5edfba7375273df8e54c",
@@ -19125,10 +19125,10 @@
    "author": "三心三意",
    "recorded_provenance": "live_candidate",
    "published_at": "2026-10-14 07:12:48",
-   "first_git_seen": null,
-   "first_git_commit": null,
-   "gap_hours": null,
-   "derived_provenance": "unprovable"
+   "first_git_seen": "2026-10-14T18:08:41Z",
+   "first_git_commit": "ecbfab9f9363d412276d27869fda2b275d840ca9",
+   "gap_hours": 10.9,
+   "derived_provenance": "near_publication_observed"
   },
   {
    "id": "d5506051c53c2708ac82",
@@ -19136,10 +19136,10 @@
    "author": "三心三意",
    "recorded_provenance": "live_candidate",
    "published_at": "2026-10-14 07:38:27",
-   "first_git_seen": null,
-   "first_git_commit": null,
-   "gap_hours": null,
-   "derived_provenance": "unprovable"
+   "first_git_seen": "2026-10-14T18:08:41Z",
+   "first_git_commit": "ecbfab9f9363d412276d27869fda2b275d840ca9",
+   "gap_hours": 10.5,
+   "derived_provenance": "near_publication_observed"
   },
   {
    "id": "97c1b6ded2bafd5e22dd",
@@ -19147,10 +19147,10 @@
    "author": "三心三意",
    "recorded_provenance": "live_candidate",
    "published_at": "2026-10-14 08:13:23",
-   "first_git_seen": null,
-   "first_git_commit": null,
-   "gap_hours": null,
-   "derived_provenance": "unprovable"
+   "first_git_seen": "2026-10-14T18:08:41Z",
+   "first_git_commit": "ecbfab9f9363d412276d27869fda2b275d840ca9",
+   "gap_hours": 9.9,
+   "derived_provenance": "near_publication_observed"
   },
   {
    "id": "8a2dfd9e6b71958d9215",
@@ -19158,10 +19158,10 @@
    "author": "三心三意",
    "recorded_provenance": "live_candidate",
    "published_at": "2026-10-14 08:43:49",
-   "first_git_seen": null,
-   "first_git_commit": null,
-   "gap_hours": null,
-   "derived_provenance": "unprovable"
+   "first_git_seen": "2026-10-14T18:08:41Z",
+   "first_git_commit": "ecbfab9f9363d412276d27869fda2b275d840ca9",
+   "gap_hours": 9.4,
+   "derived_provenance": "near_publication_observed"
   },
   {
    "id": "36e8435c30852cb1b318",
@@ -19169,10 +19169,10 @@
    "author": "三心三意",
    "recorded_provenance": "live_candidate",
    "published_at": "2026-10-14 09:42:00",
-   "first_git_seen": null,
-   "first_git_commit": null,
-   "gap_hours": null,
-   "derived_provenance": "unprovable"
+   "first_git_seen": "2026-10-14T18:08:41Z",
+   "first_git_commit": "ecbfab9f9363d412276d27869fda2b275d840ca9",
+   "gap_hours": 8.4,
+   "derived_provenance": "near_publication_observed"
   },
   {
    "id": "2c2a9fb2b34dd42b7e9d",
@@ -19180,10 +19180,10 @@
    "author": "三心三意",
    "recorded_provenance": "live_candidate",
    "published_at": "2026-10-14 09:44:00",
-   "first_git_seen": null,
-   "first_git_commit": null,
-   "gap_hours": null,
-   "derived_provenance": "unprovable"
+   "first_git_seen": "2026-10-14T18:08:41Z",
+   "first_git_commit": "ecbfab9f9363d412276d27869fda2b275d840ca9",
+   "gap_hours": 8.4,
+   "derived_provenance": "near_publication_observed"
   },
   {
    "id": "b9d0e9b0af33b6b87340",
@@ -19191,10 +19191,10 @@
    "author": "三心三意",
    "recorded_provenance": "live_candidate",
    "published_at": "2026-10-14 10:05:22",
-   "first_git_seen": null,
-   "first_git_commit": null,
-   "gap_hours": null,
-   "derived_provenance": "unprovable"
+   "first_git_seen": "2026-10-14T18:08:41Z",
+   "first_git_commit": "ecbfab9f9363d412276d27869fda2b275d840ca9",
+   "gap_hours": 8.1,
+   "derived_provenance": "near_publication_observed"
   },
   {
    "id": "b4e17310b5098ae44fe7",
@@ -19202,10 +19202,10 @@
    "author": "三心三意",
    "recorded_provenance": "live_candidate",
    "published_at": "2026-10-14 10:08:08",
-   "first_git_seen": null,
-   "first_git_commit": null,
-   "gap_hours": null,
-   "derived_provenance": "unprovable"
+   "first_git_seen": "2026-10-14T18:08:41Z",
+   "first_git_commit": "ecbfab9f9363d412276d27869fda2b275d840ca9",
+   "gap_hours": 8.0,
+   "derived_provenance": "near_publication_observed"
   },
   {
    "id": "9649172797d89addd597",
@@ -19213,10 +19213,10 @@
    "author": "三心三意",
    "recorded_provenance": "live_candidate",
    "published_at": "2026-10-14 10:10:17",
-   "first_git_seen": null,
-   "first_git_commit": null,
-   "gap_hours": null,
-   "derived_provenance": "unprovable"
+   "first_git_seen": "2026-10-14T18:08:41Z",
+   "first_git_commit": "ecbfab9f9363d412276d27869fda2b275d840ca9",
+   "gap_hours": 8.0,
+   "derived_provenance": "near_publication_observed"
   },
   {
    "id": "4440aed615535638dbfd",
@@ -19224,10 +19224,10 @@
    "author": "三心三意",
    "recorded_provenance": "live_candidate",
    "published_at": "2026-10-14 10:40:00",
-   "first_git_seen": null,
-   "first_git_commit": null,
-   "gap_hours": null,
-   "derived_provenance": "unprovable"
+   "first_git_seen": "2026-10-14T18:08:41Z",
+   "first_git_commit": "ecbfab9f9363d412276d27869fda2b275d840ca9",
+   "gap_hours": 7.5,
+   "derived_provenance": "near_publication_observed"
   },
   {
    "id": "780490b494fb0f6f9502",
@@ -19235,10 +19235,10 @@
    "author": "三心三意",
    "recorded_provenance": "live_candidate",
    "published_at": "2026-10-14 10:50:00",
-   "first_git_seen": null,
-   "first_git_commit": null,
-   "gap_hours": null,
-   "derived_provenance": "unprovable"
+   "first_git_seen": "2026-10-14T18:08:41Z",
+   "first_git_commit": "ecbfab9f9363d412276d27869fda2b275d840ca9",
+   "gap_hours": 7.3,
+   "derived_provenance": "near_publication_observed"
   },
   {
    "id": "8e73254d901d55324718",
@@ -19246,10 +19246,10 @@
    "author": "我是一只井底蛙",
    "recorded_provenance": "live_candidate",
    "published_at": "2026-10-14 09:18:05",
-   "first_git_seen": null,
-   "first_git_commit": null,
-   "gap_hours": null,
-   "derived_provenance": "unprovable"
+   "first_git_seen": "2026-10-14T18:08:41Z",
+   "first_git_commit": "ecbfab9f9363d412276d27869fda2b275d840ca9",
+   "gap_hours": 8.8,
+   "derived_provenance": "near_publication_observed"
   },
   {
    "id": "9b52ab8395f1b3437cbb",
@@ -19257,10 +19257,10 @@
    "author": "我是一只井底蛙",
    "recorded_provenance": "live_candidate",
    "published_at": "2026-10-14 09:23:16",
-   "first_git_seen": null,
-   "first_git_commit": null,
-   "gap_hours": null,
-   "derived_provenance": "unprovable"
+   "first_git_seen": "2026-10-14T18:08:41Z",
+   "first_git_commit": "ecbfab9f9363d412276d27869fda2b275d840ca9",
+   "gap_hours": 8.8,
+   "derived_provenance": "near_publication_observed"
   },
   {
    "id": "0bf566296269432aab5c",
@@ -19268,10 +19268,10 @@
    "author": "bogbog",
    "recorded_provenance": "live_candidate",
    "published_at": "2026-10-14 08:50:36",
-   "first_git_seen": null,
-   "first_git_commit": null,
-   "gap_hours": null,
-   "derived_provenance": "unprovable"
+   "first_git_seen": "2026-10-14T18:08:41Z",
+   "first_git_commit": "ecbfab9f9363d412276d27869fda2b275d840ca9",
+   "gap_hours": 9.3,
+   "derived_provenance": "near_publication_observed"
   },
   {
    "id": "84b2be82faab42b08789",
@@ -19279,10 +19279,10 @@
    "author": "bogbog",
    "recorded_provenance": "live_candidate",
    "published_at": "2026-10-14 08:52:49",
-   "first_git_seen": null,
-   "first_git_commit": null,
-   "gap_hours": null,
-   "derived_provenance": "unprovable"
+   "first_git_seen": "2026-10-14T18:08:41Z",
+   "first_git_commit": "ecbfab9f9363d412276d27869fda2b275d840ca9",
+   "gap_hours": 9.3,
+   "derived_provenance": "near_publication_observed"
   },
   {
    "id": "c9866c9c3ccac29728f6",
@@ -19290,10 +19290,10 @@
    "author": "bogbog",
    "recorded_provenance": "live_candidate",
    "published_at": "2026-10-14 08:58:31",
-   "first_git_seen": null,
-   "first_git_commit": null,
-   "gap_hours": null,
-   "derived_provenance": "unprovable"
+   "first_git_seen": "2026-10-14T18:08:41Z",
+   "first_git_commit": "ecbfab9f9363d412276d27869fda2b275d840ca9",
+   "gap_hours": 9.2,
+   "derived_provenance": "near_publication_observed"
   },
   {
    "id": "4482d333f75199228cce",
@@ -19301,10 +19301,10 @@
    "author": "bogbog",
    "recorded_provenance": "live_candidate",
    "published_at": "2026-10-14 09:16:41",
-   "first_git_seen": null,
-   "first_git_commit": null,
-   "gap_hours": null,
-   "derived_provenance": "unprovable"
+   "first_git_seen": "2026-10-14T18:08:41Z",
+   "first_git_commit": "ecbfab9f9363d412276d27869fda2b275d840ca9",
+   "gap_hours": 8.9,
+   "derived_provenance": "near_publication_observed"
   },
   {
    "id": "bb26f1a157c14aa55ecd",
@@ -19312,10 +19312,10 @@
    "author": "bogbog",
    "recorded_provenance": "live_candidate",
    "published_at": "2026-10-14 09:27:41",
-   "first_git_seen": null,
-   "first_git_commit": null,
-   "gap_hours": null,
-   "derived_provenance": "unprovable"
+   "first_git_seen": "2026-10-14T18:08:41Z",
+   "first_git_commit": "ecbfab9f9363d412276d27869fda2b275d840ca9",
+   "gap_hours": 8.7,
+   "derived_provenance": "near_publication_observed"
   },
   {
    "id": "a03581e6c422c2d1e30f",
@@ -19323,10 +19323,10 @@
    "author": "bogbog",
    "recorded_provenance": "live_candidate",
    "published_at": "2026-10-14 09:40:38",
-   "first_git_seen": null,
-   "first_git_commit": null,
-   "gap_hours": null,
-   "derived_provenance": "unprovable"
+   "first_git_seen": "2026-10-14T18:08:41Z",
+   "first_git_commit": "ecbfab9f9363d412276d27869fda2b275d840ca9",
+   "gap_hours": 8.5,
+   "derived_provenance": "near_publication_observed"
   },
   {
    "id": "f6d8a94a6c6971cc3d14",
@@ -19334,10 +19334,10 @@
    "author": "bogbog",
    "recorded_provenance": "live_candidate",
    "published_at": "2026-10-14 10:09:59",
-   "first_git_seen": null,
-   "first_git_commit": null,
-   "gap_hours": null,
-   "derived_provenance": "unprovable"
+   "first_git_seen": "2026-10-14T18:08:41Z",
+   "first_git_commit": "ecbfab9f9363d412276d27869fda2b275d840ca9",
+   "gap_hours": 8.0,
+   "derived_provenance": "near_publication_observed"
   },
   {
    "id": "ee14f937035848de04de",
@@ -19345,10 +19345,10 @@
    "author": "麻你",
    "recorded_provenance": "live_candidate",
    "published_at": "2026-10-14 06:14:19",
-   "first_git_seen": null,
-   "first_git_commit": null,
-   "gap_hours": null,
-   "derived_provenance": "unprovable"
+   "first_git_seen": "2026-10-14T18:08:41Z",
+   "first_git_commit": "ecbfab9f9363d412276d27869fda2b275d840ca9",
+   "gap_hours": 11.9,
+   "derived_provenance": "near_publication_observed"
   },
   {
    "id": "8afc55df4c45d2019399",
@@ -19356,6 +19356,358 @@
    "author": "麻你",
    "recorded_provenance": "live_candidate",
    "published_at": "2026-10-14 07:55:30",
+   "first_git_seen": "2026-10-14T18:08:41Z",
+   "first_git_commit": "ecbfab9f9363d412276d27869fda2b275d840ca9",
+   "gap_hours": 10.2,
+   "derived_provenance": "near_publication_observed"
+  },
+  {
+   "id": "e81400f067076b8ec76f",
+   "kind": "forum",
+   "author": "三心三意",
+   "recorded_provenance": "live_candidate",
+   "published_at": "2026-10-14 11:05:13",
+   "first_git_seen": null,
+   "first_git_commit": null,
+   "gap_hours": null,
+   "derived_provenance": "unprovable"
+  },
+  {
+   "id": "a3ff955b6830487e8c33",
+   "kind": "forum",
+   "author": "三心三意",
+   "recorded_provenance": "live_candidate",
+   "published_at": "2026-10-14 11:05:39",
+   "first_git_seen": null,
+   "first_git_commit": null,
+   "gap_hours": null,
+   "derived_provenance": "unprovable"
+  },
+  {
+   "id": "aab04022c69107c44a09",
+   "kind": "forum",
+   "author": "三心三意",
+   "recorded_provenance": "live_candidate",
+   "published_at": "2026-10-14 11:09:09",
+   "first_git_seen": null,
+   "first_git_commit": null,
+   "gap_hours": null,
+   "derived_provenance": "unprovable"
+  },
+  {
+   "id": "dbfdb63fea8377bce44b",
+   "kind": "forum",
+   "author": "三心三意",
+   "recorded_provenance": "live_candidate",
+   "published_at": "2026-10-14 12:17:36",
+   "first_git_seen": null,
+   "first_git_commit": null,
+   "gap_hours": null,
+   "derived_provenance": "unprovable"
+  },
+  {
+   "id": "bc2902c063f79f93942f",
+   "kind": "forum",
+   "author": "三心三意",
+   "recorded_provenance": "live_candidate",
+   "published_at": "2026-10-14 12:19:10",
+   "first_git_seen": null,
+   "first_git_commit": null,
+   "gap_hours": null,
+   "derived_provenance": "unprovable"
+  },
+  {
+   "id": "d1546a150724e8ff5560",
+   "kind": "forum",
+   "author": "三心三意",
+   "recorded_provenance": "live_candidate",
+   "published_at": "2026-10-14 12:43:11",
+   "first_git_seen": null,
+   "first_git_commit": null,
+   "gap_hours": null,
+   "derived_provenance": "unprovable"
+  },
+  {
+   "id": "821824e971d6fb36108a",
+   "kind": "forum",
+   "author": "三心三意",
+   "recorded_provenance": "live_candidate",
+   "published_at": "2026-10-14 12:50:18",
+   "first_git_seen": null,
+   "first_git_commit": null,
+   "gap_hours": null,
+   "derived_provenance": "unprovable"
+  },
+  {
+   "id": "395e0efece98cb8f4d88",
+   "kind": "forum",
+   "author": "三心三意",
+   "recorded_provenance": "live_candidate",
+   "published_at": "2026-10-14 12:50:25",
+   "first_git_seen": null,
+   "first_git_commit": null,
+   "gap_hours": null,
+   "derived_provenance": "unprovable"
+  },
+  {
+   "id": "dfdefaae0cbf4bfb6520",
+   "kind": "forum",
+   "author": "三心三意",
+   "recorded_provenance": "live_candidate",
+   "published_at": "2026-10-14 12:51:58",
+   "first_git_seen": null,
+   "first_git_commit": null,
+   "gap_hours": null,
+   "derived_provenance": "unprovable"
+  },
+  {
+   "id": "3b461e589c3e926eb0fd",
+   "kind": "forum",
+   "author": "三心三意",
+   "recorded_provenance": "live_candidate",
+   "published_at": "2026-10-14 13:32:00",
+   "first_git_seen": null,
+   "first_git_commit": null,
+   "gap_hours": null,
+   "derived_provenance": "unprovable"
+  },
+  {
+   "id": "4f6c1fdff1654ca8a166",
+   "kind": "forum",
+   "author": "三心三意",
+   "recorded_provenance": "live_candidate",
+   "published_at": "2026-10-14 14:07:00",
+   "first_git_seen": null,
+   "first_git_commit": null,
+   "gap_hours": null,
+   "derived_provenance": "unprovable"
+  },
+  {
+   "id": "5eab953a0ec863308c25",
+   "kind": "forum",
+   "author": "三心三意",
+   "recorded_provenance": "live_candidate",
+   "published_at": "2026-10-14 14:09:00",
+   "first_git_seen": null,
+   "first_git_commit": null,
+   "gap_hours": null,
+   "derived_provenance": "unprovable"
+  },
+  {
+   "id": "922bab286719ff47b261",
+   "kind": "forum",
+   "author": "三心三意",
+   "recorded_provenance": "live_candidate",
+   "published_at": "2026-10-14 14:11:00",
+   "first_git_seen": null,
+   "first_git_commit": null,
+   "gap_hours": null,
+   "derived_provenance": "unprovable"
+  },
+  {
+   "id": "fc9348feb9d3ff2c3b4c",
+   "kind": "forum",
+   "author": "三心三意",
+   "recorded_provenance": "live_candidate",
+   "published_at": "2026-10-14 15:00:37",
+   "first_git_seen": null,
+   "first_git_commit": null,
+   "gap_hours": null,
+   "derived_provenance": "unprovable"
+  },
+  {
+   "id": "d32b2b28c70485633045",
+   "kind": "forum",
+   "author": "三心三意",
+   "recorded_provenance": "live_candidate",
+   "published_at": "2026-10-14 15:21:30",
+   "first_git_seen": null,
+   "first_git_commit": null,
+   "gap_hours": null,
+   "derived_provenance": "unprovable"
+  },
+  {
+   "id": "f7c152b2a0f5ede10e30",
+   "kind": "forum",
+   "author": "三心三意",
+   "recorded_provenance": "live_candidate",
+   "published_at": "2026-10-14 15:24:02",
+   "first_git_seen": null,
+   "first_git_commit": null,
+   "gap_hours": null,
+   "derived_provenance": "unprovable"
+  },
+  {
+   "id": "9760306d99e45e9428eb",
+   "kind": "forum",
+   "author": "三心三意",
+   "recorded_provenance": "live_candidate",
+   "published_at": "2026-10-14 15:25:55",
+   "first_git_seen": null,
+   "first_git_commit": null,
+   "gap_hours": null,
+   "derived_provenance": "unprovable"
+  },
+  {
+   "id": "5b4709535e904d837848",
+   "kind": "forum",
+   "author": "三心三意",
+   "recorded_provenance": "live_candidate",
+   "published_at": "2026-10-14 15:26:35",
+   "first_git_seen": null,
+   "first_git_commit": null,
+   "gap_hours": null,
+   "derived_provenance": "unprovable"
+  },
+  {
+   "id": "42aee414f510a8d9f1dd",
+   "kind": "forum",
+   "author": "三心三意",
+   "recorded_provenance": "live_candidate",
+   "published_at": "2026-10-14 15:30:42",
+   "first_git_seen": null,
+   "first_git_commit": null,
+   "gap_hours": null,
+   "derived_provenance": "unprovable"
+  },
+  {
+   "id": "404b642ac1d129080c06",
+   "kind": "forum",
+   "author": "三心三意",
+   "recorded_provenance": "live_candidate",
+   "published_at": "2026-10-14 15:32:14",
+   "first_git_seen": null,
+   "first_git_commit": null,
+   "gap_hours": null,
+   "derived_provenance": "unprovable"
+  },
+  {
+   "id": "1a7e9b74efa84e0b520e",
+   "kind": "forum",
+   "author": "三心三意",
+   "recorded_provenance": "live_candidate",
+   "published_at": "2026-10-14 15:59:00",
+   "first_git_seen": null,
+   "first_git_commit": null,
+   "gap_hours": null,
+   "derived_provenance": "unprovable"
+  },
+  {
+   "id": "b961f52693c0b30474e7",
+   "kind": "forum",
+   "author": "三心三意",
+   "recorded_provenance": "live_candidate",
+   "published_at": "2026-10-14 16:07:00",
+   "first_git_seen": null,
+   "first_git_commit": null,
+   "gap_hours": null,
+   "derived_provenance": "unprovable"
+  },
+  {
+   "id": "e5cfcbe1c23af1321b93",
+   "kind": "forum",
+   "author": "三心三意",
+   "recorded_provenance": "live_candidate",
+   "published_at": "2026-10-14 16:39:00",
+   "first_git_seen": null,
+   "first_git_commit": null,
+   "gap_hours": null,
+   "derived_provenance": "unprovable"
+  },
+  {
+   "id": "e213e0cd92a985e213f4",
+   "kind": "forum",
+   "author": "三心三意",
+   "recorded_provenance": "live_candidate",
+   "published_at": "2026-10-14 17:01:23",
+   "first_git_seen": null,
+   "first_git_commit": null,
+   "gap_hours": null,
+   "derived_provenance": "unprovable"
+  },
+  {
+   "id": "e1aa190c7bdb0c7dfce6",
+   "kind": "forum",
+   "author": "三心三意",
+   "recorded_provenance": "live_candidate",
+   "published_at": "2026-10-14 17:02:02",
+   "first_git_seen": null,
+   "first_git_commit": null,
+   "gap_hours": null,
+   "derived_provenance": "unprovable"
+  },
+  {
+   "id": "54841eb8d57ea8a84543",
+   "kind": "forum",
+   "author": "bogbog",
+   "recorded_provenance": "live_candidate",
+   "published_at": "2026-10-14 11:53:57",
+   "first_git_seen": null,
+   "first_git_commit": null,
+   "gap_hours": null,
+   "derived_provenance": "unprovable"
+  },
+  {
+   "id": "b6083b99799f4f8e8122",
+   "kind": "forum",
+   "author": "bogbog",
+   "recorded_provenance": "live_candidate",
+   "published_at": "2026-10-14 14:54:24",
+   "first_git_seen": null,
+   "first_git_commit": null,
+   "gap_hours": null,
+   "derived_provenance": "unprovable"
+  },
+  {
+   "id": "3b4935f8347b7698e6cf",
+   "kind": "forum",
+   "author": "bogbog",
+   "recorded_provenance": "live_candidate",
+   "published_at": "2026-10-14 14:55:08",
+   "first_git_seen": null,
+   "first_git_commit": null,
+   "gap_hours": null,
+   "derived_provenance": "unprovable"
+  },
+  {
+   "id": "813ea34cb23c15fddaad",
+   "kind": "forum",
+   "author": "bogbog",
+   "recorded_provenance": "live_candidate",
+   "published_at": "2026-10-14 14:56:14",
+   "first_git_seen": null,
+   "first_git_commit": null,
+   "gap_hours": null,
+   "derived_provenance": "unprovable"
+  },
+  {
+   "id": "463bd930883696309530",
+   "kind": "forum",
+   "author": "bogbog",
+   "recorded_provenance": "live_candidate",
+   "published_at": "2026-10-14 14:56:56",
+   "first_git_seen": null,
+   "first_git_commit": null,
+   "gap_hours": null,
+   "derived_provenance": "unprovable"
+  },
+  {
+   "id": "3940f547741ae02a858f",
+   "kind": "forum",
+   "author": "bogbog",
+   "recorded_provenance": "live_candidate",
+   "published_at": "2026-10-14 15:20:58",
+   "first_git_seen": null,
+   "first_git_commit": null,
+   "gap_hours": null,
+   "derived_provenance": "unprovable"
+  },
+  {
+   "id": "73b02bb742635bd0f23d",
+   "kind": "forum",
+   "author": "bogbog",
+   "recorded_provenance": "live_candidate",
+   "published_at": "2026-10-14 16:50:43",
    "first_git_seen": null,
    "first_git_commit": null,
    "gap_hours": null,

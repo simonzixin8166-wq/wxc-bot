@@ -1,22 +1,21 @@
 {
   "authors": {
     "BrightLine": {
-      "last_success_at": "2026-10-14T18:02:03.306801+00:00",
-      "last_attempt_at": "2026-10-14T18:02:03.306801+00:00",
+      "last_success_at": "2026-10-15T00:47:39.145981+00:00",
+      "last_attempt_at": "2026-10-15T00:47:39.145981+00:00",
       "scan_complete": true,
       "recovery_days_used": 14,
       "new_records": 0,
-      "article_links_found": 56,
-      "posts_parsed": 33,
-      "unique_article_ids": 13,
-      "parsed_unique_urls": 13,
-      "feed_present_urls": 13,
+      "article_links_found": 40,
+      "posts_parsed": 32,
+      "unique_article_ids": 12,
+      "parsed_unique_urls": 12,
+      "feed_present_urls": 12,
       "missing_from_feed": 0,
       "missing_from_feed_urls": [],
       "seen_total": 16,
-      "archive_months": 2,
+      "archive_months": 1,
       "archive_months_ok": [
-        "2026-09",
         "2026-10"
       ],
       "archive_failures": [],
@@ -24,22 +23,21 @@
       "retention_policy": "no_article_count_cap"
     },
     "yifan99": {
-      "last_success_at": "2026-10-14T18:02:03.306801+00:00",
-      "last_attempt_at": "2026-10-14T18:02:03.306801+00:00",
+      "last_success_at": "2026-10-15T00:47:39.145981+00:00",
+      "last_attempt_at": "2026-10-15T00:47:39.145981+00:00",
       "scan_complete": true,
       "recovery_days_used": 14,
       "new_records": 0,
-      "article_links_found": 37,
-      "posts_parsed": 17,
-      "unique_article_ids": 7,
-      "parsed_unique_urls": 7,
-      "feed_present_urls": 7,
+      "article_links_found": 31,
+      "posts_parsed": 15,
+      "unique_article_ids": 6,
+      "parsed_unique_urls": 6,
+      "feed_present_urls": 6,
       "missing_from_feed": 0,
       "missing_from_feed_urls": [],
       "seen_total": 13,
-      "archive_months": 2,
+      "archive_months": 1,
       "archive_months_ok": [
-        "2026-09",
         "2026-10"
       ],
       "archive_failures": [],
@@ -47,8 +45,8 @@
       "retention_policy": "no_article_count_cap"
     },
     "麻你": {
-      "last_success_at": "2026-10-14T18:02:03.306801+00:00",
-      "last_attempt_at": "2026-10-14T18:02:03.306801+00:00",
+      "last_success_at": "2026-10-15T00:47:39.145981+00:00",
+      "last_attempt_at": "2026-10-15T00:47:39.145981+00:00",
       "scan_complete": true,
       "recovery_days_used": 14,
       "new_records": 0,
@@ -60,9 +58,8 @@
       "missing_from_feed": 0,
       "missing_from_feed_urls": [],
       "seen_total": 16,
-      "archive_months": 2,
+      "archive_months": 1,
       "archive_months_ok": [
-        "2026-09",
         "2026-10"
       ],
       "archive_failures": [],
@@ -71,6 +68,6 @@
     }
   },
   "version": 1,
-  "updated_at": "2026-10-14T18:02:03.306801+00:00",
+  "updated_at": "2026-10-15T00:47:39.145981+00:00",
   "policy": "recovery window expands from the last complete scheduled scan; failed archive months or parsed URLs missing from canonical feed do not advance last_success_at; article discovery has no count cap"
 }
