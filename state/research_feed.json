@@ -47627,9 +47627,886 @@
       "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
       "capture_mode": "scheduled_forum_anchor_scan",
       "intake_class_hint": "live_candidate"
+    },
+    {
+      "id": "eaf305fe2dcc49897c55",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-15 20:11:16",
+      "title": "tsla up 10 in heavy volume overnight",
+      "url": "https://bbs.wenxuecity.com/cfzh/115443.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "TSLA"
+      ],
+      "symbols": [
+        "TSLA"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "253f42a0f0c6eee6f1df",
+      "parent_post_id": "115443",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-16T17:24:36Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "capture_mode": "scheduled_forum_anchor_scan",
+      "intake_class_hint": "live_candidate"
+    },
+    {
+      "id": "efbadb7311df42cd2751",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-16 10:06:23",
+      "title": "卖出昨天进的 COHR， as it broke yesterday's low",
+      "url": "https://bbs.wenxuecity.com/cfzh/115525.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [
+        {
+          "symbol": "COHR",
+          "stance": "sell",
+          "stance_cues": [
+            "sell"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "e7e250f3114ab0d506a022897f4df465bf08f682a3c33ce8b9f2a57da4593acb",
+          "evidence_chars": 40
+        }
+      ],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "4c35f596bb332087c40e",
+      "parent_post_id": "115525",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-16T17:24:36Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "capture_mode": "scheduled_forum_anchor_scan",
+      "intake_class_hint": "live_candidate"
+    },
+    {
+      "id": "b161a3a380b65cef9ea7",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-16 10:06:57",
+      "title": "如果SKHY跌破昨天低点，也要卖出",
+      "url": "https://bbs.wenxuecity.com/cfzh/115526.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "ca431fb999b0e020e98d",
+      "parent_post_id": "115526",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-16T17:24:36Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "capture_mode": "scheduled_forum_anchor_scan",
+      "intake_class_hint": "live_candidate"
+    },
+    {
+      "id": "af7a7b9a9836e9cd485b",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "我是一只井底蛙",
+      "published_at": "2026-10-15 18:05:56",
+      "title": "NOW的操作",
+      "url": "https://bbs.wenxuecity.com/cfzh/115438.html",
+      "excerpt": "上次画的周线图和分析：https://bbs.wenxuecity.com/cfzh/114428.html\n现在的周线图：\n如果按日线图操作:\n我的均价是 144 （green dotted line）。跌下138止损（减半或全卖）亏损有限，但如果趋势成立并继续，利润可能会很大，毕竟这个周线大“圆底”才刚完成，新的长线上涨趋势才刚成立。或者说：只要它具体走势没有证明趋势结束，趋势就会继续。",
+      "content_chars": 197,
+      "images_count": 2,
+      "themes_hint": [
+        "风险管理",
+        "失败复盘",
+        "止损纪律"
+      ],
+      "symbols": [
+        "NOW"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "ec94fe1d6a10c4addc62",
+      "parent_post_id": "115438",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-16T17:24:36Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "capture_mode": "scheduled_forum_anchor_scan",
+      "intake_class_hint": "live_candidate"
+    },
+    {
+      "id": "ed9b346ad4487dd48ef4",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "我是一只井底蛙",
+      "published_at": "2026-10-16 04:50:37",
+      "title": "特斯拉日线参考图",
+      "url": "https://bbs.wenxuecity.com/cfzh/115465.html",
+      "excerpt": "特斯拉目前仍是“横盘震荡‘。\n盘前上涨3%。但价格仍在波动区间内。\n385-390 是价格阻力（波动区间上沿阻力），同时也是200天均线阻力。这是一个值得关注的点位。",
+      "content_chars": 83,
+      "images_count": 1,
+      "themes_hint": [
+        "TSLA"
+      ],
+      "symbols": [
+        "TSLA"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "fc19282a101747574f1a",
+      "parent_post_id": "115465",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-16T17:24:36Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "capture_mode": "scheduled_forum_anchor_scan",
+      "intake_class_hint": "live_candidate"
+    },
+    {
+      "id": "5bf42307cecc3cc31d04",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "我是一只井底蛙",
+      "published_at": "2026-10-16 05:07:55",
+      "title": "META 参考图",
+      "url": "https://bbs.wenxuecity.com/cfzh/115466.html",
+      "excerpt": "META 昨天收在 736.72. 即使当日最低点也没有跌破最近的710附近的最近价位支撑。因此对META到昨天为止我是不增不减，按兵不动。\n收盘跌下710我会考虑减半或干脆全部出来，找机会再尝试。",
+      "content_chars": 99,
+      "images_count": 1,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [
+        "META"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "bcb636c835856c204b49",
+      "parent_post_id": "115466",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-16T17:24:36Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "capture_mode": "scheduled_forum_anchor_scan",
+      "intake_class_hint": "live_candidate"
+    },
+    {
+      "id": "707645189d08020cd72c",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "我是一只井底蛙",
+      "published_at": "2026-10-16 05:27:13",
+      "title": "PFE 参考图",
+      "url": "https://bbs.wenxuecity.com/cfzh/115469.html",
+      "excerpt": "这是PFE的长线月线图。长线看趋势。\nPFE经过长达2年半的底部横盘终于“底部箱体”突破并稳住了。\n前天按这个长线买入，也将按长线持有，直到趋势结束。在等待的过程中，还能收获PFE的高分红。",
+      "content_chars": 95,
+      "images_count": 1,
+      "themes_hint": [
+        "趋势确认"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "a5a3d731dab7f196aaf5",
+      "parent_post_id": "115469",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-16T17:24:36Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "capture_mode": "scheduled_forum_anchor_scan",
+      "intake_class_hint": "live_candidate"
+    },
+    {
+      "id": "61e767e618ce09d7d4f3",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "我是一只井底蛙",
+      "published_at": "2026-10-16 06:58:12",
+      "title": "买入 JPM，我的第二只金融股，第一只是10月初买的 MA。",
+      "url": "https://bbs.wenxuecity.com/cfzh/115488.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 1,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "26f1178db5e649a0d410",
+      "parent_post_id": "115488",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-16T17:24:36Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "capture_mode": "scheduled_forum_anchor_scan",
+      "intake_class_hint": "live_candidate"
+    },
+    {
+      "id": "8ae4c20f5499180fbdd3",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "我是一只井底蛙",
+      "published_at": "2026-10-16 07:07:23",
+      "title": "所以我昨天说单日的反弹不是那么可靠，会有”一日行情“，还是要看pattern，而不是一天的涨跌：",
+      "url": "https://bbs.wenxuecity.com/cfzh/115491.html",
+      "excerpt": "https://bbs.wenxuecity.com/cfzh/115432.html",
+      "content_chars": 43,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "9b73f5bfb6fad3cc7f3e",
+      "parent_post_id": "115491",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-16T17:24:36Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "capture_mode": "scheduled_forum_anchor_scan",
+      "intake_class_hint": "live_candidate"
+    },
+    {
+      "id": "ce392c192ecfb16a7be8",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "bogbog",
+      "published_at": "2026-10-16 09:00:33",
+      "title": "Meta长期不担心，前一阵子在新高时不是追的好时候，因为RR只是okay,",
+      "url": "https://bbs.wenxuecity.com/cfzh/115503.html",
+      "excerpt": "那个接近800的价位是值得中短线trim的时候。",
+      "content_chars": 24,
+      "images_count": 0,
+      "themes_hint": [
+        "长期持有纪律"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "01d72673b4c8fa33ad6c",
+      "parent_post_id": "115503",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-16T17:24:36Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "capture_mode": "scheduled_forum_anchor_scan",
+      "intake_class_hint": "live_candidate"
+    },
+    {
+      "id": "34340126062c4c81e324",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "bogbog",
+      "published_at": "2026-10-16 09:06:08",
+      "title": "+1",
+      "url": "https://bbs.wenxuecity.com/cfzh/115504.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "57f4cc48ff7f98ea9c12",
+      "parent_post_id": "115504",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-16T17:24:36Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "capture_mode": "scheduled_forum_anchor_scan",
+      "intake_class_hint": "live_candidate"
+    },
+    {
+      "id": "7c4ee5fc0c2ac20bb2f1",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "bogbog",
+      "published_at": "2026-10-16 09:24:52",
+      "title": "AMD's Nov. 3 report matters a lot too.",
+      "url": "https://bbs.wenxuecity.com/cfzh/115510.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [
+        "AMD"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "368b1a46ff265846812d",
+      "parent_post_id": "115510",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-16T17:24:36Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "capture_mode": "scheduled_forum_anchor_scan",
+      "intake_class_hint": "live_candidate"
+    },
+    {
+      "id": "e31ae47a98faf636de3d",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "bogbog",
+      "published_at": "2026-10-16 09:30:20",
+      "title": "蛙兄是做Trading的， 根据TA",
+      "url": "https://bbs.wenxuecity.com/cfzh/115512.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "948ab2b682c60c539c71",
+      "parent_post_id": "115512",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-16T17:24:36Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "capture_mode": "scheduled_forum_anchor_scan",
+      "intake_class_hint": "live_candidate"
+    },
+    {
+      "id": "0b847dfda78ec449435c",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "bogbog",
+      "published_at": "2026-10-16 09:42:09",
+      "title": "这次暂时都还没有买， 有几个我想加仓的已经进入我的",
+      "url": "https://bbs.wenxuecity.com/cfzh/115515.html",
+      "excerpt": "第一个愿意加仓的价位区间， 但是cheap prices alone aren't enough.",
+      "content_chars": 49,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "1b3f30193047d4bb6ce3",
+      "parent_post_id": "115515",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-16T17:24:36Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "capture_mode": "scheduled_forum_anchor_scan",
+      "intake_class_hint": "live_candidate"
+    },
+    {
+      "id": "8f9aaa67bf996d2b25a1",
+      "source": "wenxuecity",
+      "source_kind": "blog",
+      "author": "BrightLine",
+      "published_at": "2026-10-15",
+      "title": "黄仁勋的买入价，和一次代际财富的机会",
+      "url": "https://blog.wenxuecity.com/myblog/82458/202610/10691.html",
+      "excerpt": "这两天市场很吵，Gartner说80%的neocloud会消失，有人说AI泡沫破了。CoreWeave和IREN一度双双跌破52周新低，CoreWeave最低59.51美元，IREN最低26.60美元，Nebius盘中也一度跌到163美元。\n今天早上开盘那一个小时，是我这几个月见过最凶的抛售。三家一起往下砸，没有任何公司层面的坏消息，卖盘却一波接一波，跌破7月低点也毫不停顿。那种不看价格、不讲道理的卖法，我太熟悉了。我当时就跟太太说，今天的感觉，和7月Situational Awareness爆仓那天一模一样，肯定是有基金在被强平。\n到了中午，市场果然开始传一个消息：一家AI对冲基金爆了，持仓里排在前面的就是Nebius和CoreWeave。消息还没有被正式证实，但盘面已经说明了一切。\n强制卖出有一个特点：不看",
+      "content_chars": 2380,
+      "images_count": 0,
+      "themes_hint": [
+        "风险管理",
+        "IREN"
+      ],
+      "symbols": [
+        "CRWV",
+        "NBIS",
+        "IREN",
+        "NVDA"
+      ],
+      "operations": [
+        {
+          "symbols": [
+            "CRWV",
+            "IREN"
+          ],
+          "actions": [
+            "sell"
+          ],
+          "attribution": "author_action",
+          "attribution_confidence": "high"
+        },
+        {
+          "symbols": [
+            "CRWV",
+            "NBIS",
+            "IREN"
+          ],
+          "actions": [
+            "sell"
+          ],
+          "attribution": "author_action",
+          "attribution_confidence": "high"
+        },
+        {
+          "symbols": [
+            "NVDA"
+          ],
+          "actions": [
+            "buy"
+          ],
+          "attribution": "author_action",
+          "attribution_confidence": "high"
+        },
+        {
+          "symbols": [
+            "CRWV",
+            "NVDA"
+          ],
+          "actions": [
+            "buy"
+          ],
+          "attribution": "author_action",
+          "attribution_confidence": "high"
+        },
+        {
+          "symbols": [
+            "IREN",
+            "NVDA"
+          ],
+          "actions": [
+            "buy"
+          ],
+          "attribution": "author_action",
+          "attribution_confidence": "high"
+        },
+        {
+          "symbols": [
+            "CRWV"
+          ],
+          "actions": [
+            "buy"
+          ],
+          "attribution": "unconfirmed_author_context",
+          "attribution_confidence": "needs_review"
+        },
+        {
+          "symbols": [
+            "NVDA"
+          ],
+          "actions": [
+            "buy"
+          ],
+          "attribution": "unconfirmed_author_context",
+          "attribution_confidence": "needs_review"
+        }
+      ],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [
+        {
+          "symbol": "CRWV",
+          "stance": "add",
+          "stance_cues": [
+            "add"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "cc146538bd86d99720b0a046e27c8dfe1e8498ccac4b7ea97cf57abc3ed690ee",
+          "evidence_chars": 50
+        },
+        {
+          "symbol": "IREN",
+          "stance": "add",
+          "stance_cues": [
+            "add"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "cc146538bd86d99720b0a046e27c8dfe1e8498ccac4b7ea97cf57abc3ed690ee",
+          "evidence_chars": 50
+        },
+        {
+          "symbol": "NVDA",
+          "stance": "buy",
+          "stance_cues": [
+            "buy"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "8d991b0e9f69025610188cd3a1b6a1a9442e99c3dd7b0778afcae75c45155acc",
+          "evidence_chars": 14
+        },
+        {
+          "symbol": "CRWV",
+          "stance": "buy",
+          "stance_cues": [
+            "buy"
+          ],
+          "horizon": "medium",
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "3ed0e5a4f5336c1ce931807e259355caaf6c729f8fa0587b95f9eb93ffc3c8c1",
+          "evidence_chars": 36
+        },
+        {
+          "symbol": "NVDA",
+          "stance": "buy",
+          "stance_cues": [
+            "buy"
+          ],
+          "horizon": "medium",
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "3ed0e5a4f5336c1ce931807e259355caaf6c729f8fa0587b95f9eb93ffc3c8c1",
+          "evidence_chars": 36
+        },
+        {
+          "symbol": "NVDA",
+          "stance": "buy",
+          "stance_cues": [
+            "buy"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "bcac3d2e2d9f52cfb5e40778a24a09a4a64cb13f690e4d34e66dac4fca139e84",
+          "evidence_chars": 25
+        },
+        {
+          "symbol": "IREN",
+          "stance": "buy",
+          "stance_cues": [
+            "buy"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "d9c38788d486e806147453a2925c14ad1ce5350f2135a3cb52b25ec615a550e3",
+          "evidence_chars": 46
+        },
+        {
+          "symbol": "NVDA",
+          "stance": "buy",
+          "stance_cues": [
+            "buy"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "d9c38788d486e806147453a2925c14ad1ce5350f2135a3cb52b25ec615a550e3",
+          "evidence_chars": 46
+        },
+        {
+          "symbol": "IREN",
+          "stance": "bullish",
+          "stance_cues": [
+            "bullish"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "de3bf069a5c80d38d8e67cccefe64a23a4d3f12ce172c881fa610587c1f6e384",
+          "evidence_chars": 49
+        },
+        {
+          "symbol": "IREN",
+          "stance": "bullish",
+          "stance_cues": [
+            "bullish"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "0da8ec5f33f4c0becdeb4a02e6ace0d2ae3c23a30dc7c4f53486cc3f153c8108",
+          "evidence_chars": 14
+        },
+        {
+          "symbol": "NVDA",
+          "stance": "buy",
+          "stance_cues": [
+            "buy"
+          ],
+          "horizon": null,
+          "conditional": true,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "55bbdfb9b1bcebba15408060fb0a72ed8ee3d1768768ff83c77da0e3052a7dcd",
+          "evidence_chars": 62
+        }
+      ],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": null,
+      "source_entry_key": null,
+      "parent_post_id": null,
+      "attribution_fallback": null,
+      "captured_at": "2026-10-16T17:26:34Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "scheduled_blog_scan_complete"
+    },
+    {
+      "id": "09ce4f9daa294f119163",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "麻你",
+      "published_at": "2026-10-16 08:53:09",
+      "title": "如果这个车开始预定，俺肯定会马上就订一辆。当年",
+      "url": "https://bbs.wenxuecity.com/tzlc/2385874.html",
+      "excerpt": "当年cybertruck 发布会当晚，俺就订了一辆。结果俺是第一批2000辆当中拿到cybertruck 车的。当时全世界也就不到2000辆。真正的炫了一把。哈哈",
+      "content_chars": 81,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "016e556ecd18c62d2c39",
+      "parent_post_id": "2385874",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-16T17:30:01Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "scheduled_board_anchor_scan",
+      "forum_board": "tzlc"
+    },
+    {
+      "id": "e9fdb0c4966b5161b66a",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "麻你",
+      "published_at": "2026-10-16 08:56:49",
+      "title": "赞，开明",
+      "url": "https://bbs.wenxuecity.com/tzlc/2385879.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "9f3558c73ae98868f8ee",
+      "parent_post_id": "2385879",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-16T17:30:01Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "scheduled_board_anchor_scan",
+      "forum_board": "tzlc"
+    },
+    {
+      "id": "1ab1c8e2e8a6bacac668",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "麻你",
+      "published_at": "2026-10-16 09:21:34",
+      "title": "一个人不代表整个群体，",
+      "url": "https://bbs.wenxuecity.com/tzlc/2385909.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "8e1275ce6f39db82ecbe",
+      "parent_post_id": "2385909",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-16T17:30:01Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "scheduled_board_anchor_scan",
+      "forum_board": "tzlc"
+    },
+    {
+      "id": "aef9e6d5917eb186ff81",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "麻你",
+      "published_at": "2026-10-16 09:25:12",
+      "title": "非常赞同",
+      "url": "https://bbs.wenxuecity.com/tzlc/2385914.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "d32f72248d6bcb465a3c",
+      "parent_post_id": "2385914",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-16T17:30:01Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "scheduled_board_anchor_scan",
+      "forum_board": "tzlc"
+    },
+    {
+      "id": "6b6901b952a83faa82d1",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "麻你",
+      "published_at": "2026-10-16 10:28:22",
+      "title": "哈哈，不能浪费粮食，谁知盘中餐，粒粒…",
+      "url": "https://bbs.wenxuecity.com/tzlc/2385958.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "aab130e1bb8f184672b8",
+      "parent_post_id": "2385958",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-16T17:30:01Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "scheduled_board_anchor_scan",
+      "forum_board": "tzlc"
     }
   ],
-  "updated_at": "2026-10-16T00:38:27Z",
+  "updated_at": "2026-10-16T17:30:01Z",
   "retention_policy": "append_only_no_record_count_cap",
   "historical_recovery": {
     "completed_at": "2026-10-07T13:43:06.018028+00:00",

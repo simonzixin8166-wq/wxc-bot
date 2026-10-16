@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-10-16T00:45:22.844469+00:00",
+  "generated_at": "2026-10-16T17:30:03.908788+00:00",
   "principle": "author x month reconciliation; unscanned history is unknown, backfill is never Genuine Forward",
   "matrix": {
     "BrightLine": {
@@ -12,10 +12,10 @@
         "structured_view": 3
       },
       "2026-10": {
-        "records": 12,
-        "live_or_unclassified": 12,
-        "excerpt": 12,
-        "structured_view": 5
+        "records": 13,
+        "live_or_unclassified": 13,
+        "excerpt": 13,
+        "structured_view": 6
       }
     },
     "bogbog": {
@@ -41,10 +41,10 @@
         "structured_view": 3
       },
       "2026-10": {
-        "records": 89,
-        "live_or_unclassified": 89,
-        "excerpt": 42,
-        "title_only": 47,
+        "records": 94,
+        "live_or_unclassified": 94,
+        "excerpt": 44,
+        "title_only": 50,
         "structured_view": 2
       }
     },
@@ -79,20 +79,20 @@
         "live_or_unclassified": 9
       },
       "2026-10": {
-        "records": 419,
+        "records": 422,
         "backfill": 19,
-        "title_only": 401,
-        "live_or_unclassified": 400,
+        "title_only": 404,
+        "live_or_unclassified": 403,
         "excerpt": 18,
         "structured_view": 3
       }
     },
     "我是一只井底蛙": {
       "2026-10": {
-        "records": 90,
-        "live_or_unclassified": 90,
-        "title_only": 57,
-        "excerpt": 33,
+        "records": 96,
+        "live_or_unclassified": 96,
+        "title_only": 58,
+        "excerpt": 38,
         "structured_view": 7
       }
     },
@@ -119,12 +119,12 @@
         "structured_view": 3
       },
       "2026-10": {
-        "records": 54,
+        "records": 59,
         "backfill": 45,
-        "excerpt": 14,
+        "excerpt": 15,
         "structured_view": 4,
-        "title_only": 40,
-        "live_or_unclassified": 9
+        "title_only": 44,
+        "live_or_unclassified": 14
       }
     }
   },
@@ -133,7 +133,7 @@
       "kinds": [
         "blog"
       ],
-      "records": 16,
+      "records": 17,
       "first_month": "2026-09",
       "last_month": "2026-10",
       "watched_forum_author": false,
@@ -142,7 +142,7 @@
           "2026-10"
         ],
         "archive_failures": [],
-        "unique_article_ids": 11,
+        "unique_article_ids": 12,
         "missing_from_feed": 0,
         "recovery_window_days": 14,
         "history_before_window": "not_scanned (unknown, not zero)"
@@ -152,13 +152,13 @@
       "kinds": [
         "forum"
       ],
-      "records": 963,
+      "records": 968,
       "first_month": "2026-07",
       "last_month": "2026-10",
       "watched_forum_author": true,
       "forum": {
         "seen_ids": 963,
-        "in_feed": 963,
+        "in_feed": 968,
         "seen_not_in_feed": 0,
         "seen_not_in_feed_examples": [],
         "reason": null
@@ -210,13 +210,13 @@
       "kinds": [
         "forum"
       ],
-      "records": 464,
+      "records": 467,
       "first_month": "2026-09",
       "last_month": "2026-10",
       "watched_forum_author": true,
       "forum": {
         "seen_ids": 543,
-        "in_feed": 464,
+        "in_feed": 467,
         "seen_not_in_feed": 79,
         "seen_not_in_feed_examples": [
           "112259",
@@ -232,13 +232,13 @@
       "kinds": [
         "forum"
       ],
-      "records": 90,
+      "records": 96,
       "first_month": "2026-10",
       "last_month": "2026-10",
       "watched_forum_author": true,
       "forum": {
         "seen_ids": 96,
-        "in_feed": 90,
+        "in_feed": 96,
         "seen_not_in_feed": 6,
         "seen_not_in_feed_examples": [
           "112313",
@@ -255,7 +255,7 @@
         "blog",
         "forum"
       ],
-      "records": 204,
+      "records": 209,
       "first_month": "2026-07",
       "last_month": "2026-10",
       "watched_forum_author": false,
@@ -271,7 +271,7 @@
       },
       "forum": {
         "seen_ids": 177,
-        "in_feed": 188,
+        "in_feed": 193,
         "seen_not_in_feed": 0,
         "seen_not_in_feed_examples": [],
         "reason": null
@@ -280,10 +280,10 @@
   },
   "totals": {
     "authors": 7,
-    "records": 1776,
+    "records": 1796,
     "text_depth": {
-      "title_only": 1249,
-      "excerpt": 527
+      "title_only": 1260,
+      "excerpt": 536
     }
   },
   "access_policy": "no bypassing 403/429 or login walls; history fills only via bounded, rate-limited backfill"
