@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-10-16T18:03:14Z",
+  "generated_at": "2026-10-16T21:05:45Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -129,31 +129,9 @@
   "discovery_complete": true,
   "new_video_diagnostics": [
     {
-      "author": "老李玩钱",
-      "video_id": "nLskyS7Vvug",
-      "title": "华尔街大举买入和卖出的8支股票！是否要跟着买进或卖出？我的看法及操作建议",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "老李玩钱",
-      "video_id": "nNaiUbM17HY",
-      "title": "美股不怕急跌，怕的是目前这种震荡下行的行情",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "老李玩钱",
-      "video_id": "o0ScN6BzkaI",
-      "title": "美股涨的心慌！要卖股票了？",
+      "author": "Andrei Jikh",
+      "video_id": "w0a504L8fgs",
+      "title": "China & Japan Are Dumping US Bonds",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -163,8 +141,8 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "o3v28EEIdb4",
-      "title": "美股 大盘伸个懒腰！ SPCX又又又发债！AAPL扩大智能家居版图！CAT怎么了？META正常回撤！",
+      "video_id": "wz13N6Q4-tg",
+      "title": "美股 无聊行情即将结束！回购债券的隐藏动机！LULU、NKE、INTU！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -174,8 +152,19 @@
     },
     {
       "author": "老李玩钱",
-      "video_id": "p6FafiL08Oo",
-      "title": "个股点评及买入建议：AVGO, NVDA, GOOG, META, SOFI, MRVL",
+      "video_id": "xUrNp0Dy0ws",
+      "title": "3支牛股！回调即可买入",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "老李玩钱",
+      "video_id": "yEdijFeesTs",
+      "title": "$310,000美股账户，我加仓/减仓的4支股票！接下来美股将何去何从",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -185,10 +174,21 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "pkg7bdNOf88",
-      "title": "（会员第300期）板块重要前瞻26年8月29日更新，2026、2027主要13个行业版块，季度、年度EPS增速数据更新！哪些行业增速强劲？标普SPX、26、27前瞻交易范围，押注方向决定成败！",
-      "content_quality": "Q4",
-      "content_provider": "pickscribe.com",
+      "video_id": "zscZ446Irdk",
+      "title": "（会员第302期）胜率最高的9种买点！个人经验干货分享！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "xOY53crL1ZA",
+      "title": "（会员第305期）掌握数据，跟随趋势！如何追踪标普、个股、EPS业绩修正？几个隐藏的免费数据入口！使用方法！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
       "admission": "pending_content",
       "was_pending": true,
