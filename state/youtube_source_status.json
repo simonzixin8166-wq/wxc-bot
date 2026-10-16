@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-10-16T13:15:10Z",
+  "generated_at": "2026-10-16T18:03:14Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -99,7 +99,7 @@
       "discovery_complete": true,
       "latest": {
         "video_id": "TNQ2PuDLiOg",
-        "title": "My Thoughts On XRP",
+        "title": "XRP: The Next “Global Payment”",
         "url": "https://www.youtube.com/watch?v=TNQ2PuDLiOg",
         "published_at": "",
         "flat_metadata_keys": [
@@ -129,53 +129,9 @@
   "discovery_complete": true,
   "new_video_diagnostics": [
     {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "dTQmi_hrOpU",
-      "title": "美股 ORCL缺乏惊喜，ADBE底气不足！SOXX遇阻、IGV破位！CTA触发标普承压，VIX苏醒！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "e3bb4BYnK-E",
-      "title": "（会员第299期）2026年8月10日-21日，重要公司Q2财报后2026、2027前瞻估值，强支撑点位！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "fLKcWY1h45w",
-      "title": "美股 三家巨头呼吁AI发展放缓，半导体暴跌！利好！利空！何去何从？几个思考！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "fLp8kUbv_u8",
-      "title": "美股 对冲基金低仓位按兵不动！AMD很猛，SOXX临门！金融XLF、医疗XLV！ADBE财报押注！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "gN9uUJPqipo",
-      "title": "美股 NVDA再增5000亿循环融资！MSFT下月加高护城河！一只加仓计划！BRK二季度加速回购！",
+      "author": "老李玩钱",
+      "video_id": "nLskyS7Vvug",
+      "title": "华尔街大举买入和卖出的8支股票！是否要跟着买进或卖出？我的看法及操作建议",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -185,10 +141,54 @@
     },
     {
       "author": "老李玩钱",
-      "video_id": "hHKD2zuGKuc",
-      "title": "31万美股账户，14支股票加仓、减仓及持仓计划更新！频道暂停通知",
+      "video_id": "nNaiUbM17HY",
+      "title": "美股不怕急跌，怕的是目前这种震荡下行的行情",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "老李玩钱",
+      "video_id": "o0ScN6BzkaI",
+      "title": "美股涨的心慌！要卖股票了？",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "o3v28EEIdb4",
+      "title": "美股 大盘伸个懒腰！ SPCX又又又发债！AAPL扩大智能家居版图！CAT怎么了？META正常回撤！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "老李玩钱",
+      "video_id": "p6FafiL08Oo",
+      "title": "个股点评及买入建议：AVGO, NVDA, GOOG, META, SOFI, MRVL",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "pkg7bdNOf88",
+      "title": "（会员第300期）板块重要前瞻26年8月29日更新，2026、2027主要13个行业版块，季度、年度EPS增速数据更新！哪些行业增速强劲？标普SPX、26、27前瞻交易范围，押注方向决定成败！",
+      "content_quality": "Q4",
+      "content_provider": "pickscribe.com",
       "rule_candidate_allowed": false,
       "admission": "pending_content",
       "was_pending": true,
