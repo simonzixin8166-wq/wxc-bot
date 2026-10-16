@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-10-16T00:23:38Z",
+  "generated_at": "2026-10-16T07:07:52Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -19,15 +19,15 @@
           "reached_end": false
         }
       ],
-      "previous_anchor_video_id": "ttrjfdl-Ne4",
+      "previous_anchor_video_id": "SbZltIBvi7M",
       "anchor_found": true,
       "reached_end": false,
       "discovery_complete": true,
       "latest": {
-        "video_id": "ttrjfdl-Ne4",
-        "title": "美股 短期洗牌，还是大跌开始？CRWV信贷引发AI交易混乱！ASML财报粗犷，叫好不叫座！",
-        "url": "https://www.youtube.com/watch?v=ttrjfdl-Ne4",
-        "published_at": "2026-10-15",
+        "video_id": "SbZltIBvi7M",
+        "title": "美股 对冲基金清空1年来AI仓位！不看好人工智能了吗？举例NVDA对比AMD！",
+        "url": "https://www.youtube.com/watch?v=SbZltIBvi7M",
+        "published_at": "2026-10-16",
         "flat_metadata_keys": [
           "channel_id",
           "duration",
@@ -99,7 +99,7 @@
       "discovery_complete": true,
       "latest": {
         "video_id": "TNQ2PuDLiOg",
-        "title": "My Thoughts On XRP",
+        "title": "XRP: The Next “Global Payment”",
         "url": "https://www.youtube.com/watch?v=TNQ2PuDLiOg",
         "published_at": "",
         "flat_metadata_keys": [
@@ -119,8 +119,8 @@
   "pending_retried": 6,
   "content_attempted_this_run": 6,
   "content_work_budget": 6,
-  "content_backlog_after_run": 105,
-  "pending_total": 105,
+  "content_backlog_after_run": 106,
+  "pending_total": 106,
   "historical_demoted_from_pending": 0,
   "admitted_from_pending": 0,
   "nonforward_timestamp_unknown_admitted": 0,
@@ -129,9 +129,42 @@
   "discovery_complete": true,
   "new_video_diagnostics": [
     {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "SbZltIBvi7M",
+      "title": "美股 对冲基金清空1年来AI仓位！不看好人工智能了吗？举例NVDA对比AMD！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "-e3gyj_NP7c",
+      "title": "美股 科技股、半导体失血！消费股领涨，XLP重要位置！SMH、SOXX完成修复！SPY、QQQ、XLK长线点位更新！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "Zl1B2xBExw8",
+      "title": "（会员第301期）买点避雷，减少误判！18条原则，坚决不买！个人经验干货分享！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
       "author": "Andrei Jikh",
-      "video_id": "Uw84lTiD5C8",
-      "title": "Russia Just Legalized Crypto",
+      "video_id": "ZrYTeawbbR8",
+      "title": "How The Next Financial Crisis Happens",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -140,9 +173,9 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "Wpbwn2Pj3kQ",
-      "title": "美股 META、AMD联手起飞！QQQ、SOXX、IGV，全部突破！对冲基金、散户，在买什么？",
+      "author": "Andrei Jikh",
+      "video_id": "_YXDHskRP6Y",
+      "title": "Here's What Pops This Stock Bubble",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -151,42 +184,9 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "XFCufoG9DVc",
-      "title": "美股 META肉搏AMZN，别被带歪！SHOP受益！AI巨头加速推新模型！德州更严厉暂停数据中心！金融XLF怎么了？",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "XJeU_be2gGU",
-      "title": "美股 供应商循环融资裂痕！NVDA后撤，半导体逆转！沃什大战贝森特！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "XdQF1csLbnk",
-      "title": "美股 QQQ、IWM、SOXX、SMH、风险位置！SPY、IGV相对安全！持仓计划更新！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "Y7P-VOo0KTs",
-      "title": "（会员第298期）四大科技AI货币化进度（2026年Q2后），MSFT、GOOG、AMZN、META！前车之鉴，能否提前识别泡沫？",
+      "author": "Andrei Jikh",
+      "video_id": "_lOVieAIvSA",
+      "title": "I Let AI Invest My Money For 3 Years",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -199,7 +199,7 @@
     "status": "ok",
     "channel_errors": 0,
     "stuck_high_quality_pending": 0,
-    "provider_waiting_pending": 105,
+    "provider_waiting_pending": 106,
     "stuck_video_ids": [],
     "meaning": "Q1/Q2 text must not remain stuck in pending; Q3-Q5 may legitimately wait for better learning text."
   },
