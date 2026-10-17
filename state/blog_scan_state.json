@@ -1,16 +1,16 @@
 {
   "authors": {
     "BrightLine": {
-      "last_success_at": "2026-10-16T17:24:36.348727+00:00",
-      "last_attempt_at": "2026-10-16T17:24:36.348727+00:00",
+      "last_success_at": "2026-10-17T00:43:59.692821+00:00",
+      "last_attempt_at": "2026-10-17T00:43:59.692821+00:00",
       "scan_complete": true,
       "recovery_days_used": 14,
-      "new_records": 1,
+      "new_records": 0,
       "article_links_found": 41,
-      "posts_parsed": 32,
-      "unique_article_ids": 12,
-      "parsed_unique_urls": 12,
-      "feed_present_urls": 12,
+      "posts_parsed": 31,
+      "unique_article_ids": 11,
+      "parsed_unique_urls": 11,
+      "feed_present_urls": 11,
       "missing_from_feed": 0,
       "missing_from_feed_urls": [],
       "seen_total": 17,
@@ -23,16 +23,16 @@
       "retention_policy": "no_article_count_cap"
     },
     "yifan99": {
-      "last_success_at": "2026-10-16T17:24:36.348727+00:00",
-      "last_attempt_at": "2026-10-16T17:24:36.348727+00:00",
+      "last_success_at": "2026-10-17T00:43:59.692821+00:00",
+      "last_attempt_at": "2026-10-17T00:43:59.692821+00:00",
       "scan_complete": true,
       "recovery_days_used": 14,
       "new_records": 0,
       "article_links_found": 31,
-      "posts_parsed": 15,
-      "unique_article_ids": 6,
-      "parsed_unique_urls": 6,
-      "feed_present_urls": 6,
+      "posts_parsed": 11,
+      "unique_article_ids": 5,
+      "parsed_unique_urls": 5,
+      "feed_present_urls": 5,
       "missing_from_feed": 0,
       "missing_from_feed_urls": [],
       "seen_total": 13,
@@ -45,19 +45,19 @@
       "retention_policy": "no_article_count_cap"
     },
     "麻你": {
-      "last_success_at": "2026-10-16T17:24:36.348727+00:00",
-      "last_attempt_at": "2026-10-16T17:24:36.348727+00:00",
+      "last_success_at": "2026-10-17T00:43:59.692821+00:00",
+      "last_attempt_at": "2026-10-17T00:43:59.692821+00:00",
       "scan_complete": true,
       "recovery_days_used": 14,
-      "new_records": 0,
+      "new_records": 1,
       "article_links_found": 28,
-      "posts_parsed": 9,
+      "posts_parsed": 8,
       "unique_article_ids": 3,
       "parsed_unique_urls": 3,
       "feed_present_urls": 3,
       "missing_from_feed": 0,
       "missing_from_feed_urls": [],
-      "seen_total": 16,
+      "seen_total": 17,
       "archive_months": 1,
       "archive_months_ok": [
         "2026-10"
@@ -68,6 +68,6 @@
     }
   },
   "version": 1,
-  "updated_at": "2026-10-16T17:24:36.348727+00:00",
+  "updated_at": "2026-10-17T00:43:59.692821+00:00",
   "policy": "recovery window expands from the last complete scheduled scan; failed archive months or parsed URLs missing from canonical feed do not advance last_success_at; article discovery has no count cap"
 }

@@ -48504,9 +48504,1368 @@
       "intake_class_hint": "live_candidate",
       "capture_mode": "scheduled_board_anchor_scan",
       "forum_board": "tzlc"
+    },
+    {
+      "id": "1b941dac5bad54e1ffed",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-16 10:47:24",
+      "title": "LOL, 老虎凳的侍候：）",
+      "url": "https://bbs.wenxuecity.com/cfzh/115548.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "c529bf92023c4d7e3651",
+      "parent_post_id": "115548",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-17T00:43:59Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "capture_mode": "scheduled_forum_anchor_scan",
+      "intake_class_hint": "live_candidate"
+    },
+    {
+      "id": "532ed6aeef1ac41d2825",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-16 10:52:03",
+      "title": "I think it already has :)",
+      "url": "https://bbs.wenxuecity.com/cfzh/115552.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "8fec17df923dbc368e86",
+      "parent_post_id": "115552",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-17T00:43:59Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "capture_mode": "scheduled_forum_anchor_scan",
+      "intake_class_hint": "live_candidate"
+    },
+    {
+      "id": "4876c77f117a985fcb84",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-16 11:37:00",
+      "title": "SMH coming back to test 540 again",
+      "url": "https://bbs.wenxuecity.com/cfzh/115572.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [
+        "SMH"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "bbb7ae9f701fc90901ec",
+      "parent_post_id": "115572",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-17T00:43:59Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "capture_mode": "scheduled_forum_anchor_scan",
+      "intake_class_hint": "live_candidate"
+    },
+    {
+      "id": "c1a8096289c7762d4aea",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-16 12:33:31",
+      "title": "哈哈哈",
+      "url": "https://bbs.wenxuecity.com/cfzh/115608.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "5e66e66726ae65b22e07",
+      "parent_post_id": "115608",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-17T00:43:59Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "capture_mode": "scheduled_forum_anchor_scan",
+      "intake_class_hint": "live_candidate"
+    },
+    {
+      "id": "6077780061d0a3a0158f",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-16 13:09:00",
+      "title": "SMH right on 540 again, lol",
+      "url": "https://bbs.wenxuecity.com/cfzh/115622.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [
+        "SMH"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "88cde312fcbde1219187",
+      "parent_post_id": "115622",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-17T00:43:59Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "capture_mode": "scheduled_forum_anchor_scan",
+      "intake_class_hint": "live_candidate"
+    },
+    {
+      "id": "9ee128231db0e80cc0d2",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-16 14:23:04",
+      "title": "620 买AMD？？？？？ Why?",
+      "url": "https://bbs.wenxuecity.com/cfzh/115650.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [
+        "AMD"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [
+        {
+          "symbol": "AMD",
+          "stance": "buy",
+          "stance_cues": [
+            "buy"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": true,
+          "price": null,
+          "evidence_sha256": "3cf4def2e61f0a21b110a835ccb2d9c30f0c0949aba327e5d227fd2e989b6356",
+          "evidence_chars": 9
+        }
+      ],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "626d984fb07fc9a8b7ce",
+      "parent_post_id": "115650",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-17T00:43:59Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "capture_mode": "scheduled_forum_anchor_scan",
+      "intake_class_hint": "live_candidate"
+    },
+    {
+      "id": "edd5b62bf150d63bf4ad",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-16 14:24:13",
+      "title": "That's literally next to ATH, 为什么在这个坛子上会这样买？",
+      "url": "https://bbs.wenxuecity.com/cfzh/115652.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "8cd21d42c5b73d7baa02",
+      "parent_post_id": "115652",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-17T00:43:59Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "capture_mode": "scheduled_forum_anchor_scan",
+      "intake_class_hint": "live_candidate"
+    },
+    {
+      "id": "14c3ceec9edc082bc4f8",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-16 14:25:34",
+      "title": "Trump中期选举不赢的话 ----  肯定输，没有悬念",
+      "url": "https://bbs.wenxuecity.com/cfzh/115655.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "478d20c7359f77ec6f25",
+      "parent_post_id": "115655",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-17T00:43:59Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "capture_mode": "scheduled_forum_anchor_scan",
+      "intake_class_hint": "live_candidate"
+    },
+    {
+      "id": "bdd5a8f5c4955981e601",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-16 14:49:21",
+      "title": "The number 1 lesson you can learn here: 永远不要追高",
+      "url": "https://bbs.wenxuecity.com/cfzh/115662.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "7476a90b07385e13aee9",
+      "parent_post_id": "115662",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-17T00:43:59Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "capture_mode": "scheduled_forum_anchor_scan",
+      "intake_class_hint": "live_candidate"
+    },
+    {
+      "id": "f61a780cc023315f1b6a",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-16 14:50:27",
+      "title": "无论形势多么好，永远不要FOMO追高",
+      "url": "https://bbs.wenxuecity.com/cfzh/115664.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "f781d7ec2cdfcd302f98",
+      "parent_post_id": "115664",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-17T00:43:59Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "capture_mode": "scheduled_forum_anchor_scan",
+      "intake_class_hint": "live_candidate"
+    },
+    {
+      "id": "7cd1f266199b6d37d5be",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-16 14:59:01",
+      "title": "今天LITE close在824，正好在我这次做的820 breakeven 上方， 想了想，还是准备吃进正股",
+      "url": "https://bbs.wenxuecity.com/cfzh/115666.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [
+        "LITE"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "b17cdf283337c75537b7",
+      "parent_post_id": "115666",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-17T00:43:59Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "capture_mode": "scheduled_forum_anchor_scan",
+      "intake_class_hint": "live_candidate"
+    },
+    {
+      "id": "fb7c2b1ff13ef54f4d78",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-16 15:00:11",
+      "title": "下面几个月就准备拿着300的均价的LITE不动，等MM shake the market.",
+      "url": "https://bbs.wenxuecity.com/cfzh/115667.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [
+        "LITE"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "c6e4d6c1c4ac0898a3c9",
+      "parent_post_id": "115667",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-17T00:43:59Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "capture_mode": "scheduled_forum_anchor_scan",
+      "intake_class_hint": "live_candidate"
+    },
+    {
+      "id": "1777845131e1273ab1c7",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-16 15:01:09",
+      "title": "AMD：600-650 is a clear FOMO to me, 说了很多次了",
+      "url": "https://bbs.wenxuecity.com/cfzh/115668.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [
+        "AMD"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "ecd074b4a781ca73f00a",
+      "parent_post_id": "115668",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-17T00:43:59Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "capture_mode": "scheduled_forum_anchor_scan",
+      "intake_class_hint": "live_candidate"
+    },
+    {
+      "id": "fa53de67cabb16622145",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-16 15:33:00",
+      "title": "I don’t have any for now. it is all stocks for the moment",
+      "url": "https://bbs.wenxuecity.com/cfzh/115676.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "cceb61288e1641677e9f",
+      "parent_post_id": "115676",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-17T00:43:59Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "capture_mode": "scheduled_forum_anchor_scan",
+      "intake_class_hint": "live_candidate"
+    },
+    {
+      "id": "cba93f2963f091f22810",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-16 16:33:00",
+      "title": "only $50k? 这里很多坛友都可以买10倍这个数。哈哈哈",
+      "url": "https://bbs.wenxuecity.com/cfzh/115682.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "23618785ac82ac6c2a4b",
+      "parent_post_id": "115682",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-17T00:43:59Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "capture_mode": "scheduled_forum_anchor_scan",
+      "intake_class_hint": "live_candidate"
+    },
+    {
+      "id": "f34c0bb7b06779480ecf",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "bogbog",
+      "published_at": "2026-10-16 11:38:34",
+      "title": "肯定有，前两周说过retail cash allocation低于历史平均水平， margin debts高",
+      "url": "https://bbs.wenxuecity.com/cfzh/115573.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "e6d7696e46a58f7949e3",
+      "parent_post_id": "115573",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-17T00:43:59Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "capture_mode": "scheduled_forum_anchor_scan",
+      "intake_class_hint": "live_candidate"
+    },
+    {
+      "id": "147cb7e0cfcf635d6d9d",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "bogbog",
+      "published_at": "2026-10-16 11:39:23",
+      "title": "对我自己来说这次是not yet",
+      "url": "https://bbs.wenxuecity.com/cfzh/115574.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "3b6ee72532ddf458a41a",
+      "parent_post_id": "115574",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-17T00:43:59Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "capture_mode": "scheduled_forum_anchor_scan",
+      "intake_class_hint": "live_candidate"
+    },
+    {
+      "id": "bef69122a8f8256226f9",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "bogbog",
+      "published_at": "2026-10-16 11:41:16",
+      "title": "这些属于长投股，都不担心。",
+      "url": "https://bbs.wenxuecity.com/cfzh/115575.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "87e568fef4580098971a",
+      "parent_post_id": "115575",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-17T00:43:59Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "capture_mode": "scheduled_forum_anchor_scan",
+      "intake_class_hint": "live_candidate"
+    },
+    {
+      "id": "6c02fa775a18dd3f7081",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "bogbog",
+      "published_at": "2026-10-16 11:51:33",
+      "title": "其实均线大哥的30%QQQ， 大盘分批再跌下去也不用太担心，是个很好的策略，",
+      "url": "https://bbs.wenxuecity.com/cfzh/115581.html",
+      "excerpt": "个股长持就要做到成本低， 而且成本低还不够，要观察很多因素。  \n \n前两周有网友给我发了几个信息，我跟他说其实逢大跌买大盘相对安全点。 他问我每个月投入股票多少钱，我还开玩笑说您是不是觉得我投资水平高才这么好奇，哈哈",
+      "content_chars": 109,
+      "images_count": 2,
+      "themes_hint": [
+        "长期持有纪律"
+      ],
+      "symbols": [
+        "QQQ"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "f7832fa99d69e9983230",
+      "parent_post_id": "115581",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-17T00:43:59Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "capture_mode": "scheduled_forum_anchor_scan",
+      "intake_class_hint": "live_candidate"
+    },
+    {
+      "id": "4b5fb75ea32c92996664",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "bogbog",
+      "published_at": "2026-10-16 12:01:57",
+      "title": "对",
+      "url": "https://bbs.wenxuecity.com/cfzh/115584.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "c253f2f01b6c70d530fe",
+      "parent_post_id": "115584",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-17T00:43:59Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "capture_mode": "scheduled_forum_anchor_scan",
+      "intake_class_hint": "live_candidate"
+    },
+    {
+      "id": "3933a642dcf6f7d5bb94",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "bogbog",
+      "published_at": "2026-10-16 12:07:19",
+      "title": "AMD，MU, NBIS，等等。",
+      "url": "https://bbs.wenxuecity.com/cfzh/115588.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 1,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [
+        "NBIS",
+        "AMD",
+        "MU"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "f1e9584250ad0bfd46bd",
+      "parent_post_id": "115588",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-17T00:43:59Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "capture_mode": "scheduled_forum_anchor_scan",
+      "intake_class_hint": "live_candidate"
+    },
+    {
+      "id": "0582881aba59f4ab9dd1",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "bogbog",
+      "published_at": "2026-10-16 12:14:16",
+      "title": "Meta我这几个月都很少关注，因为属于老一批的股，很多了。 我自己只会在500多加仓， 但是现在应该是跌不到那里了，",
+      "url": "https://bbs.wenxuecity.com/cfzh/115594.html",
+      "excerpt": "三心上次说680变成了支撑，可能可以参考一下？  \n \nMeta属于那种买了就可以忘记的股， 逢大跌可以加仓，不用太担心持有过程中的涨涨跌跌",
+      "content_chars": 70,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "f80feaad4f17a5db17a0",
+      "parent_post_id": "115594",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-17T00:43:59Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "capture_mode": "scheduled_forum_anchor_scan",
+      "intake_class_hint": "live_candidate"
+    },
+    {
+      "id": "a85c42f9add762de779a",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "bogbog",
+      "published_at": "2026-10-16 12:17:54",
+      "title": "苹果最牛， 只有这个是绿的，",
+      "url": "https://bbs.wenxuecity.com/cfzh/115597.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 1,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "7e7584209a5a1b9eb562",
+      "parent_post_id": "115597",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-17T00:43:59Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "capture_mode": "scheduled_forum_anchor_scan",
+      "intake_class_hint": "live_candidate"
+    },
+    {
+      "id": "f5d39fae641048af23fd",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "bogbog",
+      "published_at": "2026-10-16 12:22:09",
+      "title": "AMZN对我自己来说，是可以再拿5-10年的股，至少目前看过去是这样的，",
+      "url": "https://bbs.wenxuecity.com/cfzh/115600.html",
+      "excerpt": "我的第一批，11年前买的， 2015年10月22日买的，还在呢， as of now 778.95%,  not the best compared to Apple, netflix & NVDA but still decent.",
+      "content_chars": 117,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [
+        "AMZN",
+        "NVDA"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "4d303efaa80aa487a446",
+      "parent_post_id": "115600",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-17T00:43:59Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "capture_mode": "scheduled_forum_anchor_scan",
+      "intake_class_hint": "live_candidate"
+    },
+    {
+      "id": "52c9e9e098cbdf204fd2",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "bogbog",
+      "published_at": "2026-10-16 12:50:29",
+      "title": "因为投资的首要任务是保护本金。 其实是前两三周就应该开始defensive,",
+      "url": "https://bbs.wenxuecity.com/cfzh/115614.html",
+      "excerpt": "trim， get rid of margin,  hedge,  dump lotto/high better stocks, 积攒现金等等， whatever works for you.  \n现在QQQ都跌了不少了, 有些个股其实都跌入比较便宜的了，但是因为这次的macro复杂一些，所以我自己是再等等再考虑加仓",
+      "content_chars": 159,
+      "images_count": 0,
+      "themes_hint": [
+        "风险管理"
+      ],
+      "symbols": [
+        "QQQ"
+      ],
+      "operations": [
+        {
+          "symbols": [
+            "QQQ"
+          ],
+          "actions": [
+            "add"
+          ],
+          "attribution": "unconfirmed_author_context",
+          "attribution_confidence": "needs_review"
+        }
+      ],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [
+        {
+          "symbol": "QQQ",
+          "stance": "add",
+          "stance_cues": [
+            "add"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "95a2eee93a807607823c0e0f51bc089068e88bef3d9020040581ba0a0116067b",
+          "evidence_chars": 60
+        }
+      ],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "3cc78db6f79799ca1bd0",
+      "parent_post_id": "115614",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-17T00:43:59Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "capture_mode": "scheduled_forum_anchor_scan",
+      "intake_class_hint": "live_candidate"
+    },
+    {
+      "id": "d5d28da35b3055089d6a",
+      "source": "wenxuecity",
+      "source_kind": "blog",
+      "author": "麻你",
+      "published_at": "2026-10-16",
+      "title": "下个星期设VGT 118.36止盈，如果跌下，卖出总仓位的5%",
+      "url": "https://blog.wenxuecity.com/myblog/78105/202610/11167.html",
+      "excerpt": "因为上次卖在112.8，现在比上次涨了5%\n上次设的117.57止盈只卖了很少一点\n如果下个星期以后没有触发止盈就继续保持87%的仓位在VGT，13%仓位在SGOV\n如果触发止盈以后大盘继续上涨就保持82%左右的仓位在VGT，18%仓位在SGOV\n如果VGT继续下跌就开始加仓，越跌越买，只买不卖",
+      "content_chars": 148,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [
+        "SGOV",
+        "VGT"
+      ],
+      "operations": [
+        {
+          "symbols": [
+            "VGT"
+          ],
+          "actions": [
+            "sell"
+          ],
+          "attribution": "unconfirmed_author_context",
+          "attribution_confidence": "needs_review"
+        },
+        {
+          "symbols": [
+            "VGT"
+          ],
+          "actions": [
+            "add"
+          ],
+          "attribution": "unconfirmed_author_context",
+          "attribution_confidence": "needs_review"
+        }
+      ],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [
+        {
+          "symbol": "VGT",
+          "stance": "trim",
+          "stance_cues": [
+            "trim",
+            "sell"
+          ],
+          "horizon": null,
+          "conditional": true,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "3419c0a66cff0665650bf80e144ce63325d279b50b396addba05935f9f59bf80",
+          "evidence_chars": 31
+        },
+        {
+          "symbol": "SGOV",
+          "stance": "hold",
+          "stance_cues": [
+            "hold",
+            "trim"
+          ],
+          "horizon": null,
+          "conditional": true,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "113b5a6e4aaa7f962ee61b264d92082da489e8f8c1943954f39dd3ae34ab0755",
+          "evidence_chars": 40
+        },
+        {
+          "symbol": "VGT",
+          "stance": "hold",
+          "stance_cues": [
+            "hold",
+            "trim"
+          ],
+          "horizon": null,
+          "conditional": true,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "113b5a6e4aaa7f962ee61b264d92082da489e8f8c1943954f39dd3ae34ab0755",
+          "evidence_chars": 40
+        },
+        {
+          "symbol": "SGOV",
+          "stance": "hold",
+          "stance_cues": [
+            "hold",
+            "trim"
+          ],
+          "horizon": null,
+          "conditional": true,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "0e99ad944b1d83d53e809d26688c067979a3203b6157ea4e5127782f7f641e44",
+          "evidence_chars": 40
+        },
+        {
+          "symbol": "VGT",
+          "stance": "hold",
+          "stance_cues": [
+            "hold",
+            "trim"
+          ],
+          "horizon": null,
+          "conditional": true,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "0e99ad944b1d83d53e809d26688c067979a3203b6157ea4e5127782f7f641e44",
+          "evidence_chars": 40
+        },
+        {
+          "symbol": "VGT",
+          "stance": "hold",
+          "stance_cues": [
+            "hold",
+            "add"
+          ],
+          "horizon": null,
+          "conditional": true,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "e815d1a2eb88e155f5ea01d2e8ab240679f3d83166a523cc82b1950d46ecb8aa",
+          "evidence_chars": 24
+        }
+      ],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [
+        {
+          "symbol": "VGT",
+          "action_type": "SELL_PLANNED",
+          "confidence": "high",
+          "size_pct": 5.0,
+          "price": null,
+          "allocation_pct": null,
+          "evidence_quote": "下个星期设VGT 118.36止盈，如果跌下，卖出总仓位的5%",
+          "evidence_sha256": "3419c0a66cff0665650bf80e144ce63325d279b50b396addba05935f9f59bf80"
+        },
+        {
+          "symbol": "VGT",
+          "action_type": "HOLD",
+          "confidence": "medium",
+          "size_pct": null,
+          "price": null,
+          "allocation_pct": {
+            "VGT": 87.0,
+            "SGOV": 13.0
+          },
+          "evidence_quote": "如果下个星期以后没有触发止盈就继续保持87%的仓位在VGT，13%仓位在SGOV",
+          "evidence_sha256": "113b5a6e4aaa7f962ee61b264d92082da489e8f8c1943954f39dd3ae34ab0755"
+        },
+        {
+          "symbol": "SGOV",
+          "action_type": "HOLD",
+          "confidence": "medium",
+          "size_pct": null,
+          "price": null,
+          "allocation_pct": {
+            "VGT": 87.0,
+            "SGOV": 13.0
+          },
+          "evidence_quote": "如果下个星期以后没有触发止盈就继续保持87%的仓位在VGT，13%仓位在SGOV",
+          "evidence_sha256": "113b5a6e4aaa7f962ee61b264d92082da489e8f8c1943954f39dd3ae34ab0755"
+        },
+        {
+          "symbol": "VGT",
+          "action_type": "SELL_PLANNED",
+          "confidence": "high",
+          "size_pct": 82.0,
+          "price": null,
+          "allocation_pct": {
+            "SGOV": 18.0
+          },
+          "evidence_quote": "如果触发止盈以后大盘继续上涨就保持82%左右的仓位在VGT，18%仓位在SGOV",
+          "evidence_sha256": "0e99ad944b1d83d53e809d26688c067979a3203b6157ea4e5127782f7f641e44"
+        },
+        {
+          "symbol": "SGOV",
+          "action_type": "SELL_PLANNED",
+          "confidence": "high",
+          "size_pct": 82.0,
+          "price": null,
+          "allocation_pct": {
+            "SGOV": 18.0
+          },
+          "evidence_quote": "如果触发止盈以后大盘继续上涨就保持82%左右的仓位在VGT，18%仓位在SGOV",
+          "evidence_sha256": "0e99ad944b1d83d53e809d26688c067979a3203b6157ea4e5127782f7f641e44"
+        },
+        {
+          "symbol": "VGT",
+          "action_type": "BUY_PLANNED",
+          "confidence": "high",
+          "size_pct": null,
+          "price": null,
+          "allocation_pct": null,
+          "evidence_quote": "如果VGT继续下跌就开始加仓，越跌越买，只买不卖",
+          "evidence_sha256": "e815d1a2eb88e155f5ea01d2e8ab240679f3d83166a523cc82b1950d46ecb8aa"
+        }
+      ],
+      "forum_entry_kind": null,
+      "source_entry_key": null,
+      "parent_post_id": null,
+      "attribution_fallback": null,
+      "captured_at": "2026-10-17T00:48:41Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "scheduled_blog_scan_complete"
+    },
+    {
+      "id": "902553da20fd6a4c7902",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "麻你",
+      "published_at": "2026-10-16 15:27:12",
+      "title": "下个星期设VGT 118.36止盈，如果跌下，卖出总仓位的5%",
+      "url": "https://bbs.wenxuecity.com/tzlc/2386198.html",
+      "excerpt": "因为上次卖在112.8，现在比上次涨了5%\n上次设的117.57止盈只卖了很少一点\n如果下个星期以后没有触发止盈就继续保持87%的仓位在VGT，13%仓位在SGOV\n如果触发止盈以后大盘继续上涨就保持82%左右的仓位在VGT，18%仓位在SGOV\n如果VGT继续下跌就开始加仓，越跌越买，只买不卖\n\n更多我的博客文章>>>下个星期设VGT 118.36止盈，如果跌下，卖出总仓位的5%下个星期继续保持87%仓位在VGT，13%仓位在SGOV为什么要多仓VGT下个星期继续保持87%仓位在VGT，13%在SGOV下个星期继续保持87%仓位在VGT，13%在SGOV",
+      "content_chars": 281,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [
+        "SGOV",
+        "VGT"
+      ],
+      "operations": [
+        {
+          "symbols": [
+            "VGT"
+          ],
+          "actions": [
+            "sell"
+          ],
+          "attribution": "unconfirmed_author_context",
+          "attribution_confidence": "needs_review"
+        },
+        {
+          "symbols": [
+            "VGT"
+          ],
+          "actions": [
+            "add"
+          ],
+          "attribution": "unconfirmed_author_context",
+          "attribution_confidence": "needs_review"
+        },
+        {
+          "symbols": [
+            "SGOV",
+            "VGT"
+          ],
+          "actions": [
+            "sell"
+          ],
+          "attribution": "unconfirmed_author_context",
+          "attribution_confidence": "needs_review"
+        }
+      ],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [
+        {
+          "symbol": "VGT",
+          "stance": "trim",
+          "stance_cues": [
+            "trim",
+            "sell"
+          ],
+          "horizon": null,
+          "conditional": true,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "3419c0a66cff0665650bf80e144ce63325d279b50b396addba05935f9f59bf80",
+          "evidence_chars": 31
+        },
+        {
+          "symbol": "SGOV",
+          "stance": "hold",
+          "stance_cues": [
+            "hold",
+            "trim"
+          ],
+          "horizon": null,
+          "conditional": true,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "113b5a6e4aaa7f962ee61b264d92082da489e8f8c1943954f39dd3ae34ab0755",
+          "evidence_chars": 40
+        },
+        {
+          "symbol": "VGT",
+          "stance": "hold",
+          "stance_cues": [
+            "hold",
+            "trim"
+          ],
+          "horizon": null,
+          "conditional": true,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "113b5a6e4aaa7f962ee61b264d92082da489e8f8c1943954f39dd3ae34ab0755",
+          "evidence_chars": 40
+        },
+        {
+          "symbol": "SGOV",
+          "stance": "hold",
+          "stance_cues": [
+            "hold",
+            "trim"
+          ],
+          "horizon": null,
+          "conditional": true,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "0e99ad944b1d83d53e809d26688c067979a3203b6157ea4e5127782f7f641e44",
+          "evidence_chars": 40
+        },
+        {
+          "symbol": "VGT",
+          "stance": "hold",
+          "stance_cues": [
+            "hold",
+            "trim"
+          ],
+          "horizon": null,
+          "conditional": true,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "0e99ad944b1d83d53e809d26688c067979a3203b6157ea4e5127782f7f641e44",
+          "evidence_chars": 40
+        },
+        {
+          "symbol": "VGT",
+          "stance": "hold",
+          "stance_cues": [
+            "hold",
+            "add"
+          ],
+          "horizon": null,
+          "conditional": true,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "e815d1a2eb88e155f5ea01d2e8ab240679f3d83166a523cc82b1950d46ecb8aa",
+          "evidence_chars": 24
+        },
+        {
+          "symbol": "SGOV",
+          "stance": "hold",
+          "stance_cues": [
+            "hold",
+            "trim",
+            "sell"
+          ],
+          "horizon": null,
+          "conditional": true,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "eb95d4f2412eb0cd6919db349fa4d4451b1019257c06426a22bdaf3702df1f48",
+          "evidence_chars": 131
+        },
+        {
+          "symbol": "VGT",
+          "stance": "hold",
+          "stance_cues": [
+            "hold",
+            "trim",
+            "sell"
+          ],
+          "horizon": null,
+          "conditional": true,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "eb95d4f2412eb0cd6919db349fa4d4451b1019257c06426a22bdaf3702df1f48",
+          "evidence_chars": 131
+        }
+      ],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [
+        {
+          "symbol": "VGT",
+          "action_type": "SELL_PLANNED",
+          "confidence": "high",
+          "size_pct": 5.0,
+          "price": null,
+          "allocation_pct": null,
+          "evidence_quote": "下个星期设VGT 118.36止盈，如果跌下，卖出总仓位的5%",
+          "evidence_sha256": "3419c0a66cff0665650bf80e144ce63325d279b50b396addba05935f9f59bf80"
+        },
+        {
+          "symbol": "VGT",
+          "action_type": "HOLD",
+          "confidence": "medium",
+          "size_pct": null,
+          "price": null,
+          "allocation_pct": {
+            "VGT": 87.0,
+            "SGOV": 13.0
+          },
+          "evidence_quote": "如果下个星期以后没有触发止盈就继续保持87%的仓位在VGT，13%仓位在SGOV",
+          "evidence_sha256": "113b5a6e4aaa7f962ee61b264d92082da489e8f8c1943954f39dd3ae34ab0755"
+        },
+        {
+          "symbol": "SGOV",
+          "action_type": "HOLD",
+          "confidence": "medium",
+          "size_pct": null,
+          "price": null,
+          "allocation_pct": {
+            "VGT": 87.0,
+            "SGOV": 13.0
+          },
+          "evidence_quote": "如果下个星期以后没有触发止盈就继续保持87%的仓位在VGT，13%仓位在SGOV",
+          "evidence_sha256": "113b5a6e4aaa7f962ee61b264d92082da489e8f8c1943954f39dd3ae34ab0755"
+        },
+        {
+          "symbol": "VGT",
+          "action_type": "SELL_PLANNED",
+          "confidence": "high",
+          "size_pct": 82.0,
+          "price": null,
+          "allocation_pct": {
+            "SGOV": 18.0
+          },
+          "evidence_quote": "如果触发止盈以后大盘继续上涨就保持82%左右的仓位在VGT，18%仓位在SGOV",
+          "evidence_sha256": "0e99ad944b1d83d53e809d26688c067979a3203b6157ea4e5127782f7f641e44"
+        },
+        {
+          "symbol": "SGOV",
+          "action_type": "SELL_PLANNED",
+          "confidence": "high",
+          "size_pct": 82.0,
+          "price": null,
+          "allocation_pct": {
+            "SGOV": 18.0
+          },
+          "evidence_quote": "如果触发止盈以后大盘继续上涨就保持82%左右的仓位在VGT，18%仓位在SGOV",
+          "evidence_sha256": "0e99ad944b1d83d53e809d26688c067979a3203b6157ea4e5127782f7f641e44"
+        },
+        {
+          "symbol": "VGT",
+          "action_type": "BUY_PLANNED",
+          "confidence": "high",
+          "size_pct": null,
+          "price": null,
+          "allocation_pct": null,
+          "evidence_quote": "如果VGT继续下跌就开始加仓，越跌越买，只买不卖",
+          "evidence_sha256": "e815d1a2eb88e155f5ea01d2e8ab240679f3d83166a523cc82b1950d46ecb8aa"
+        },
+        {
+          "symbol": "VGT",
+          "action_type": "SELL_PLANNED",
+          "confidence": "high",
+          "size_pct": 5.0,
+          "price": null,
+          "allocation_pct": {
+            "VGT": 87.0,
+            "SGOV": 13.0
+          },
+          "evidence_quote": "更多我的博客文章>>>下个星期设VGT 118.36止盈，如果跌下，卖出总仓位的",
+          "evidence_sha256": "eb95d4f2412eb0cd6919db349fa4d4451b1019257c06426a22bdaf3702df1f48"
+        },
+        {
+          "symbol": "SGOV",
+          "action_type": "SELL_PLANNED",
+          "confidence": "high",
+          "size_pct": 5.0,
+          "price": null,
+          "allocation_pct": {
+            "VGT": 87.0,
+            "SGOV": 13.0
+          },
+          "evidence_quote": "更多我的博客文章>>>下个星期设VGT 118.36止盈，如果跌下，卖出总仓位的",
+          "evidence_sha256": "eb95d4f2412eb0cd6919db349fa4d4451b1019257c06426a22bdaf3702df1f48"
+        }
+      ],
+      "forum_entry_kind": "post",
+      "source_entry_key": "eb01791867250701b2f8",
+      "parent_post_id": "2386198",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-17T00:49:07Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "scheduled_board_anchor_scan",
+      "forum_board": "tzlc"
+    },
+    {
+      "id": "24c9ff0cd94328428eb6",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "麻你",
+      "published_at": "2026-10-16 16:51:42",
+      "title": "有可能赚的更多，但是，遇到大的回调就失去大笔加仓的机会",
+      "url": "https://bbs.wenxuecity.com/tzlc/2386229.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "3548b37e18d2f380b734",
+      "parent_post_id": "2386229",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-17T00:49:07Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "scheduled_board_anchor_scan",
+      "forum_board": "tzlc"
     }
   ],
-  "updated_at": "2026-10-16T17:30:01Z",
+  "updated_at": "2026-10-17T00:49:07Z",
   "retention_policy": "append_only_no_record_count_cap",
   "historical_recovery": {
     "completed_at": "2026-10-07T13:43:06.018028+00:00",
