@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-10-17T18:29:14Z",
+  "generated_at": "2026-10-17T22:17:20Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -99,7 +99,7 @@
       "discovery_complete": true,
       "latest": {
         "video_id": "TNQ2PuDLiOg",
-        "title": "XRP: The Next “Global Payment”",
+        "title": "My Thoughts On XRP",
         "url": "https://www.youtube.com/watch?v=TNQ2PuDLiOg",
         "published_at": "",
         "flat_metadata_keys": [
@@ -130,30 +130,8 @@
   "new_video_diagnostics": [
     {
       "author": "老李玩钱",
-      "video_id": "SJERXQX7tAU",
-      "title": "5大科技，机会来了，最新买入/加仓价格点位！另外准备减仓1支股",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "老李玩钱",
-      "video_id": "SrRLRsUFsUw",
-      "title": "华尔街大量卖出的3支股票！你是否要跟着卖出",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "老李玩钱",
-      "video_id": "Ue75SpWXfjo",
-      "title": "美股最重磅的一周：美联储会议及4大科技巨头财报提前展望，买入/加仓价格点位更新",
+      "video_id": "ZGYWudfZMM4",
+      "title": "美股重回高位，要卖股票了吗？到底什么时候该卖出股票",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -163,8 +141,8 @@
     },
     {
       "author": "Andrei Jikh",
-      "video_id": "Uw84lTiD5C8",
-      "title": "Russia Just Legalized Crypto",
+      "video_id": "Z_xvkbGWauU",
+      "title": "China Just Shut Down Gold Trading",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -174,8 +152,8 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "Wpbwn2Pj3kQ",
-      "title": "美股 META、AMD联手起飞！QQQ、SOXX、IGV，全部突破！对冲基金、散户，在买什么？",
+      "video_id": "-e3gyj_NP7c",
+      "title": "美股 科技股、半导体失血！消费股领涨，XLP重要位置！SMH、SOXX完成修复！SPY、QQQ、XLK长线点位更新！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -185,8 +163,30 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "XFCufoG9DVc",
-      "title": "美股 META肉搏AMZN，别被带歪！SHOP受益！AI巨头加速推新模型！德州更严厉暂停数据中心！金融XLF怎么了？",
+      "video_id": "Zl1B2xBExw8",
+      "title": "（会员第301期）买点避雷，减少误判！18条原则，坚决不买！个人经验干货分享！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "Andrei Jikh",
+      "video_id": "ZrYTeawbbR8",
+      "title": "How The Next Financial Crisis Happens",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "Andrei Jikh",
+      "video_id": "_YXDHskRP6Y",
+      "title": "Here's What Pops This Stock Bubble",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
