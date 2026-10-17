@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-10-17T15:31:17Z",
+  "generated_at": "2026-10-17T18:29:14Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -130,30 +130,8 @@
   "new_video_diagnostics": [
     {
       "author": "老李玩钱",
-      "video_id": "MEQ814VtkrY",
-      "title": "战火打响美股竟安然无恙，什么情况？3月行情推演及展望",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "MFB-Fp4F15A",
-      "title": "美股 罕见IGV压 SOXX一头！NFLX止跌雄起了吗？TSLA、WMT、SNDK！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "Andrei Jikh",
-      "video_id": "MUUin7TkWsk",
-      "title": "How I'm Investing For What's Coming",
+      "video_id": "SJERXQX7tAU",
+      "title": "5大科技，机会来了，最新买入/加仓价格点位！另外准备减仓1支股",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -163,8 +141,8 @@
     },
     {
       "author": "老李玩钱",
-      "video_id": "Mv4_zIzQGLs",
-      "title": "回调周期中，非常适合买入定投的5支ETF",
+      "video_id": "SrRLRsUFsUw",
+      "title": "华尔街大量卖出的3支股票！你是否要跟着卖出",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -173,9 +151,9 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "N8BjausuEsI",
-      "title": "美股 META大招豪赌AI代理！对GOOG、AMZN影响！SOXX还需一天确认！财政部回购不及预期！AAPL开始折叠！",
+      "author": "老李玩钱",
+      "video_id": "Ue75SpWXfjo",
+      "title": "美股最重磅的一周：美联储会议及4大科技巨头财报提前展望，买入/加仓价格点位更新",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -185,8 +163,30 @@
     },
     {
       "author": "Andrei Jikh",
-      "video_id": "NZpobX6MQVA",
-      "title": "Trump Will Cause The Next Financial Crisis",
+      "video_id": "Uw84lTiD5C8",
+      "title": "Russia Just Legalized Crypto",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "Wpbwn2Pj3kQ",
+      "title": "美股 META、AMD联手起飞！QQQ、SOXX、IGV，全部突破！对冲基金、散户，在买什么？",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "XFCufoG9DVc",
+      "title": "美股 META肉搏AMZN，别被带歪！SHOP受益！AI巨头加速推新模型！德州更严厉暂停数据中心！金融XLF怎么了？",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
