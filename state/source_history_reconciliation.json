@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-10-17T00:49:09.429307+00:00",
+  "generated_at": "2026-10-17T16:33:25.895909+00:00",
   "principle": "author x month reconciliation; unscanned history is unknown, backfill is never Genuine Forward",
   "matrix": {
     "BrightLine": {
@@ -12,9 +12,9 @@
         "structured_view": 3
       },
       "2026-10": {
-        "records": 13,
-        "live_or_unclassified": 13,
-        "excerpt": 13,
+        "records": 14,
+        "live_or_unclassified": 14,
+        "excerpt": 14,
         "structured_view": 6
       }
     },
@@ -41,10 +41,10 @@
         "structured_view": 3
       },
       "2026-10": {
-        "records": 104,
-        "live_or_unclassified": 104,
-        "excerpt": 48,
-        "title_only": 56,
+        "records": 111,
+        "live_or_unclassified": 111,
+        "excerpt": 52,
+        "title_only": 59,
         "structured_view": 3
       }
     },
@@ -79,11 +79,11 @@
         "live_or_unclassified": 9
       },
       "2026-10": {
-        "records": 437,
+        "records": 460,
         "backfill": 19,
-        "title_only": 419,
-        "live_or_unclassified": 418,
-        "excerpt": 18,
+        "title_only": 441,
+        "live_or_unclassified": 441,
+        "excerpt": 19,
         "structured_view": 3
       }
     },
@@ -119,11 +119,11 @@
         "structured_view": 3
       },
       "2026-10": {
-        "records": 62,
-        "backfill": 45,
-        "excerpt": 17,
+        "records": 86,
+        "backfill": 69,
+        "excerpt": 20,
         "structured_view": 6,
-        "title_only": 45,
+        "title_only": 66,
         "live_or_unclassified": 17
       }
     }
@@ -133,7 +133,7 @@
       "kinds": [
         "blog"
       ],
-      "records": 17,
+      "records": 18,
       "first_month": "2026-09",
       "last_month": "2026-10",
       "watched_forum_author": false,
@@ -142,7 +142,7 @@
           "2026-10"
         ],
         "archive_failures": [],
-        "unique_article_ids": 11,
+        "unique_article_ids": 12,
         "missing_from_feed": 0,
         "recovery_window_days": 14,
         "history_before_window": "not_scanned (unknown, not zero)"
@@ -152,13 +152,13 @@
       "kinds": [
         "forum"
       ],
-      "records": 978,
+      "records": 985,
       "first_month": "2026-07",
       "last_month": "2026-10",
       "watched_forum_author": true,
       "forum": {
-        "seen_ids": 963,
-        "in_feed": 978,
+        "seen_ids": 978,
+        "in_feed": 985,
         "seen_not_in_feed": 0,
         "seen_not_in_feed_examples": [],
         "reason": null
@@ -210,13 +210,13 @@
       "kinds": [
         "forum"
       ],
-      "records": 482,
+      "records": 505,
       "first_month": "2026-09",
       "last_month": "2026-10",
       "watched_forum_author": true,
       "forum": {
-        "seen_ids": 543,
-        "in_feed": 482,
+        "seen_ids": 571,
+        "in_feed": 505,
         "seen_not_in_feed": 79,
         "seen_not_in_feed_examples": [
           "112259",
@@ -237,7 +237,7 @@
       "last_month": "2026-10",
       "watched_forum_author": true,
       "forum": {
-        "seen_ids": 96,
+        "seen_ids": 102,
         "in_feed": 96,
         "seen_not_in_feed": 6,
         "seen_not_in_feed_examples": [
@@ -255,7 +255,7 @@
         "blog",
         "forum"
       ],
-      "records": 212,
+      "records": 236,
       "first_month": "2026-07",
       "last_month": "2026-10",
       "watched_forum_author": false,
@@ -271,7 +271,7 @@
       },
       "forum": {
         "seen_ids": 177,
-        "in_feed": 195,
+        "in_feed": 219,
         "seen_not_in_feed": 0,
         "seen_not_in_feed_examples": [],
         "reason": null
@@ -280,10 +280,10 @@
   },
   "totals": {
     "authors": 7,
-    "records": 1824,
+    "records": 1879,
     "text_depth": {
-      "title_only": 1282,
-      "excerpt": 542
+      "title_only": 1328,
+      "excerpt": 551
     }
   },
   "access_policy": "no bypassing 403/429 or login walls; history fills only via bounded, rate-limited backfill"

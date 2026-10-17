@@ -162,7 +162,7 @@
     },
     "2026-10-17": {
       "telegram:send_message": {
-        "count": 4,
+        "count": 5,
         "paid": false
       },
       "telegram:get_updates": {
