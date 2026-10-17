@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-10-16T21:05:45Z",
+  "generated_at": "2026-10-17T00:27:54Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -27,11 +27,10 @@
         "video_id": "SbZltIBvi7M",
         "title": "美股 对冲基金清空1年来AI仓位！不看好人工智能了吗？举例NVDA对比AMD！",
         "url": "https://www.youtube.com/watch?v=SbZltIBvi7M",
-        "published_at": "2026-10-16",
+        "published_at": "",
         "flat_metadata_keys": [
           "channel_id",
-          "duration",
-          "rss_published_at"
+          "duration"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -64,11 +63,10 @@
         "video_id": "hFY-CcoS0KA",
         "title": "做好准备！逢低买入优质股票的机会要来了",
         "url": "https://www.youtube.com/watch?v=hFY-CcoS0KA",
-        "published_at": "2026-10-12",
+        "published_at": "",
         "flat_metadata_keys": [
           "channel_id",
-          "duration",
-          "rss_published_at"
+          "duration"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -130,8 +128,8 @@
   "new_video_diagnostics": [
     {
       "author": "Andrei Jikh",
-      "video_id": "w0a504L8fgs",
-      "title": "China & Japan Are Dumping US Bonds",
+      "video_id": "TNQ2PuDLiOg",
+      "title": "XRP: The Next “Global Payment”",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -141,8 +139,19 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "wz13N6Q4-tg",
-      "title": "美股 无聊行情即将结束！回购债券的隐藏动机！LULU、NKE、INTU！",
+      "video_id": "SbZltIBvi7M",
+      "title": "美股 对冲基金清空1年来AI仓位！不看好人工智能了吗？举例NVDA对比AMD！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "-KAra9tD4RU",
+      "title": "（会员第297期）2026年8月03日-07日，重要公司Q2财报后2026、2027前瞻估值，强支撑点位！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -152,19 +161,8 @@
     },
     {
       "author": "老李玩钱",
-      "video_id": "xUrNp0Dy0ws",
-      "title": "3支牛股！回调即可买入",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "老李玩钱",
-      "video_id": "yEdijFeesTs",
-      "title": "$310,000美股账户，我加仓/减仓的4支股票！接下来美股将何去何从",
+      "video_id": "0KgZcbhZoXk",
+      "title": "2支被忽略的科技巨头！分析与买入建议",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -174,8 +172,8 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "zscZ446Irdk",
-      "title": "（会员第302期）胜率最高的9种买点！个人经验干货分享！",
+      "video_id": "0w77lIBdCn0",
+      "title": "美股 机构弹药见底！下一步，暴风雨？平静？TSLA、IGV、AVGO！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -184,9 +182,9 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "xOY53crL1ZA",
-      "title": "（会员第305期）掌握数据，跟随趋势！如何追踪标普、个股、EPS业绩修正？几个隐藏的免费数据入口！使用方法！",
+      "author": "Andrei Jikh",
+      "video_id": "16oTiM8o8ic",
+      "title": "My Alternative Investment Portfolio (Pokemon Edition)",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
