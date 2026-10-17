@@ -1,0 +1,1255 @@
+{
+ "version": "owner-blind-2026-10-17",
+ "labeler": "owner (independent, did not see gold or extractor output)",
+ "items": 69,
+ "sets": {
+  "blind_test_v2": 41,
+  "blind_test_v3": 28
+ },
+ "gold_compared": "claims_gold_test_v2/v3 (claude-v1.1, frozen, unedited)",
+ "round1": {
+  "status": "INVALID",
+  "why": "≈9 s/item, 60-char locators without context, 62% ambiguous, labeling misunderstandings (own holdings entered)",
+  "kappa": {
+   "pairs": 36,
+   "observed_agreement": 0.333,
+   "kappa": -0.073,
+   "disagreements": {
+    "claim_vs_none": 22,
+    "stance": 2
+   },
+   "skipped": {
+    "ambiguous": 43,
+    "gold_ambiguous": 2
+   },
+   "status_agreement_non_hold": 1.0,
+   "status_pairs": 3
+  }
+ },
+ "round2": {
+  "status": "VALID_RAW",
+  "guideline": "v1.1",
+  "kappa": {
+   "pairs": 69,
+   "observed_agreement": 0.333,
+   "kappa": 0.126,
+   "disagreements": {
+    "claim_vs_none": 45,
+    "stance": 1
+   },
+   "skipped": {
+    "ambiguous": 12,
+    "gold_ambiguous": 2
+   },
+   "status_agreement_non_hold": 0.867,
+   "status_pairs": 15
+  },
+  "duration_min": 31,
+  "finding": "stance agrees when both see a claim (1 stance disagreement; status 0.867); 45/46 disagreements are claim-vs-none, 31 of them owner-claim/gold-none → definition gap, not direction"
+ },
+ "owner_decision_2026-10-17": "guideline v1.2: context-resolved tickers count; author system signals count with holder=author_system; price reports/quotes/examples stay non-claims",
+ "adjudication": {
+  "file": "claims_gold_test_v2v3_owner_v1.2_adjudication.jsonl",
+  "decisions": {
+   "claim": 27,
+   "ambiguous": 8,
+   "none": 25,
+   "needs_article_check": 9
+  },
+  "note": "adjudicated AFTER seeing owner labels → never used to compute agreement; inter-annotator agreement under v1.2 needs a fresh blind sample"
+ },
+ "learning_status": "UNPROVEN",
+ "labels_round1": [
+  {
+   "blind_id": "b-00b0139ef4",
+   "status": "ok",
+   "labels": []
+  },
+  {
+   "blind_id": "b-7556309e4d",
+   "status": "ok",
+   "labels": []
+  },
+  {
+   "blind_id": "b-8ea3f6b7d3",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "bullish",
+     "status": "opinion",
+     "symbol": "META"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-10b02b5c8f",
+   "status": "ambiguous",
+   "labels": []
+  },
+  {
+   "blind_id": "b-533d484834",
+   "status": "ok",
+   "labels": []
+  },
+  {
+   "blind_id": "b-935db7a284",
+   "status": "ambiguous",
+   "labels": []
+  },
+  {
+   "blind_id": "b-28cfbc3d8c",
+   "status": "ambiguous",
+   "labels": []
+  },
+  {
+   "blind_id": "b-9eccd53c14",
+   "status": "ambiguous",
+   "labels": []
+  },
+  {
+   "blind_id": "b-381e65b68b",
+   "status": "ambiguous",
+   "labels": []
+  },
+  {
+   "blind_id": "b-f90d916edd",
+   "status": "ambiguous",
+   "labels": []
+  },
+  {
+   "blind_id": "b-1fa9eeb3a6",
+   "status": "ambiguous",
+   "labels": []
+  },
+  {
+   "blind_id": "b-e692db6cd7",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "add",
+     "status": "conditional",
+     "symbol": "QQQM"
+    },
+    {
+     "instrument": "stock",
+     "stance": "add",
+     "status": "conditional",
+     "symbol": "VGT"
+    },
+    {
+     "instrument": "stock",
+     "stance": "add",
+     "status": "conditional",
+     "symbol": "QLD"
+    },
+    {
+     "instrument": "stock",
+     "stance": "hold",
+     "status": "conditional",
+     "symbol": "NVDA"
+    },
+    {
+     "instrument": "stock",
+     "stance": "add",
+     "status": "conditional",
+     "symbol": "IREN"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-7ae4f0b13d",
+   "status": "ok",
+   "labels": []
+  },
+  {
+   "blind_id": "b-c6ec2156c1",
+   "status": "ambiguous",
+   "labels": []
+  },
+  {
+   "blind_id": "b-3d07c4f6f9",
+   "status": "ambiguous",
+   "labels": []
+  },
+  {
+   "blind_id": "b-71eccfc4fa",
+   "status": "ambiguous",
+   "labels": []
+  },
+  {
+   "blind_id": "b-e0b76182cf",
+   "status": "ambiguous",
+   "labels": []
+  },
+  {
+   "blind_id": "b-3970656728",
+   "status": "ok",
+   "labels": []
+  },
+  {
+   "blind_id": "b-50acbf1158",
+   "status": "ambiguous",
+   "labels": []
+  },
+  {
+   "blind_id": "b-d1f80f4e06",
+   "status": "ambiguous",
+   "labels": []
+  },
+  {
+   "blind_id": "b-924421104c",
+   "status": "ambiguous",
+   "labels": []
+  },
+  {
+   "blind_id": "b-4db1ddf0a1",
+   "status": "ambiguous",
+   "labels": []
+  },
+  {
+   "blind_id": "b-11a16c9ff6",
+   "status": "ok",
+   "labels": []
+  },
+  {
+   "blind_id": "b-08bcdd9955",
+   "status": "ambiguous",
+   "labels": []
+  },
+  {
+   "blind_id": "b-8c8985160e",
+   "status": "ambiguous",
+   "labels": []
+  },
+  {
+   "blind_id": "b-f1ea696949",
+   "status": "ambiguous",
+   "labels": []
+  },
+  {
+   "blind_id": "b-88327e9ee4",
+   "status": "ok",
+   "labels": []
+  },
+  {
+   "blind_id": "b-1bfc4919a8",
+   "status": "ambiguous",
+   "labels": []
+  },
+  {
+   "blind_id": "b-3ec9935b04",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "bullish",
+     "status": "opinion",
+     "symbol": "AMD"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-b82a697552",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "bullish",
+     "status": "opinion",
+     "symbol": "AMZN"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-f532ed90a8",
+   "status": "ambiguous",
+   "labels": []
+  },
+  {
+   "blind_id": "b-ad2c73c795",
+   "status": "ambiguous",
+   "labels": []
+  },
+  {
+   "blind_id": "b-1503dbcc35",
+   "status": "ambiguous",
+   "labels": []
+  },
+  {
+   "blind_id": "b-b91bf15111",
+   "status": "ambiguous",
+   "labels": []
+  },
+  {
+   "blind_id": "b-816b95feab",
+   "status": "ambiguous",
+   "labels": []
+  },
+  {
+   "blind_id": "b-637281bf71",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "bullish",
+     "status": "opinion",
+     "symbol": "HOOD"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-58bbe3368c",
+   "status": "ambiguous",
+   "labels": []
+  },
+  {
+   "blind_id": "b-9719779417",
+   "status": "ambiguous",
+   "labels": []
+  },
+  {
+   "blind_id": "b-2e1945fed1",
+   "status": "ambiguous",
+   "labels": []
+  },
+  {
+   "blind_id": "b-3ffff6a201",
+   "status": "ambiguous",
+   "labels": []
+  },
+  {
+   "blind_id": "b-38f4455848",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "bullish",
+     "status": "opinion",
+     "symbol": "VGT"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-b9348ab82b",
+   "status": "ok",
+   "labels": []
+  },
+  {
+   "blind_id": "b-0fe9c47623",
+   "status": "ambiguous",
+   "labels": []
+  },
+  {
+   "blind_id": "b-bc0eaf822b",
+   "status": "ambiguous",
+   "labels": []
+  },
+  {
+   "blind_id": "b-81f24ab7d0",
+   "status": "ok",
+   "labels": []
+  },
+  {
+   "blind_id": "b-054275404b",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "bullish",
+     "status": "opinion",
+     "symbol": "AMZN"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-3c45fcc949",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "hold",
+     "status": "opinion",
+     "symbol": "MU"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-0d3889a985",
+   "status": "ambiguous",
+   "labels": []
+  },
+  {
+   "blind_id": "b-b01a363cbc",
+   "status": "ambiguous",
+   "labels": []
+  },
+  {
+   "blind_id": "b-7306f45fee",
+   "status": "ok",
+   "labels": []
+  },
+  {
+   "blind_id": "b-9aab5754d1",
+   "status": "ambiguous",
+   "labels": []
+  },
+  {
+   "blind_id": "b-93e988844c",
+   "status": "ok",
+   "labels": []
+  },
+  {
+   "blind_id": "b-a33d24a1cb",
+   "status": "ok",
+   "labels": []
+  },
+  {
+   "blind_id": "b-a0c2fe7ba9",
+   "status": "ambiguous",
+   "labels": []
+  },
+  {
+   "blind_id": "b-9c1ec9e07e",
+   "status": "ambiguous",
+   "labels": []
+  },
+  {
+   "blind_id": "b-cb80b9afed",
+   "status": "ambiguous",
+   "labels": []
+  },
+  {
+   "blind_id": "b-f9df13ed82",
+   "status": "ok",
+   "labels": []
+  },
+  {
+   "blind_id": "b-2752c01600",
+   "status": "ambiguous",
+   "labels": []
+  },
+  {
+   "blind_id": "b-e5f41944e7",
+   "status": "ambiguous",
+   "labels": []
+  },
+  {
+   "blind_id": "b-187af8df22",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "bullish",
+     "status": "opinion",
+     "symbol": "VGT"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-35c138ceb1",
+   "status": "ambiguous",
+   "labels": []
+  },
+  {
+   "blind_id": "b-5f61492788",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "bullish",
+     "status": "opinion",
+     "symbol": "INTC"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-c03488b211",
+   "status": "ambiguous",
+   "labels": []
+  },
+  {
+   "blind_id": "b-397ff97cd8",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "hold",
+     "status": "opinion",
+     "symbol": "AWZN"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-15ff3af942",
+   "status": "ambiguous",
+   "labels": []
+  },
+  {
+   "blind_id": "b-1a8af2f694",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "bullish",
+     "status": "opinion",
+     "symbol": "QQQ"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-41df3390a1",
+   "status": "ambiguous",
+   "labels": []
+  },
+  {
+   "blind_id": "b-eecff15357",
+   "status": "ambiguous",
+   "labels": []
+  },
+  {
+   "blind_id": "b-675638c468",
+   "status": "ok",
+   "labels": []
+  }
+ ],
+ "labels_round2": [
+  {
+   "blind_id": "b-00b0139ef4",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "buy",
+     "status": "opinion",
+     "symbol": "VGT"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-7556309e4d",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "bullish",
+     "status": "opinion",
+     "symbol": "MU"
+    },
+    {
+     "instrument": "stock",
+     "stance": "bullish",
+     "status": "opinion",
+     "symbol": "SNKD"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-8ea3f6b7d3",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "bullish",
+     "status": "opinion",
+     "symbol": "META"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-10b02b5c8f",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "bullish",
+     "status": "opinion",
+     "symbol": "AMZN"
+    },
+    {
+     "instrument": "stock",
+     "stance": "bullish",
+     "status": "opinion",
+     "symbol": "GOOG"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-533d484834",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "bullish",
+     "status": "opinion",
+     "symbol": "GOOG"
+    },
+    {
+     "instrument": "stock",
+     "stance": "bullish",
+     "status": "opinion",
+     "symbol": "APPL"
+    },
+    {
+     "instrument": "stock",
+     "stance": "bullish",
+     "status": "opinion",
+     "symbol": "META"
+    },
+    {
+     "instrument": "stock",
+     "stance": "bullish",
+     "status": "opinion",
+     "symbol": "NVDA"
+    },
+    {
+     "instrument": "stock",
+     "stance": "bullish",
+     "status": "opinion",
+     "symbol": "MSFT"
+    },
+    {
+     "instrument": "stock",
+     "stance": "bullish",
+     "status": "opinion",
+     "symbol": "AMZN"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-935db7a284",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "bullish",
+     "status": "opinion",
+     "symbol": "MU"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-28cfbc3d8c",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "buy",
+     "status": "opinion",
+     "symbol": "VGT"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-9eccd53c14",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "trim",
+     "status": "opinion",
+     "symbol": "VGT"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-381e65b68b",
+   "status": "ok",
+   "labels": []
+  },
+  {
+   "blind_id": "b-f90d916edd",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "buy",
+     "status": "opinion",
+     "symbol": "GOOG"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-1fa9eeb3a6",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "bullish",
+     "status": "opinion",
+     "symbol": "APPL"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-e692db6cd7",
+   "status": "ambiguous",
+   "labels": []
+  },
+  {
+   "blind_id": "b-7ae4f0b13d",
+   "status": "ambiguous",
+   "labels": []
+  },
+  {
+   "blind_id": "b-c6ec2156c1",
+   "status": "ambiguous",
+   "labels": []
+  },
+  {
+   "blind_id": "b-3d07c4f6f9",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "bullish",
+     "status": "opinion",
+     "symbol": "TSLA"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-71eccfc4fa",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "hold",
+     "status": "opinion",
+     "symbol": "VGT"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-e0b76182cf",
+   "status": "ambiguous",
+   "labels": []
+  },
+  {
+   "blind_id": "b-3970656728",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "avoid",
+     "status": "opinion",
+     "symbol": "AMD"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-50acbf1158",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "buy",
+     "status": "executed",
+     "symbol": "ARM"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-d1f80f4e06",
+   "status": "ok",
+   "labels": []
+  },
+  {
+   "blind_id": "b-924421104c",
+   "status": "ambiguous",
+   "labels": []
+  },
+  {
+   "blind_id": "b-4db1ddf0a1",
+   "status": "ambiguous",
+   "labels": []
+  },
+  {
+   "blind_id": "b-11a16c9ff6",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "buy",
+     "status": "executed",
+     "symbol": "RKLB"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-08bcdd9955",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "bullish",
+     "status": "opinion",
+     "symbol": "SPY"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-8c8985160e",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "bullish",
+     "status": "opinion",
+     "symbol": "NOW"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-f1ea696949",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "bullish",
+     "status": "opinion",
+     "symbol": "CIEN"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-88327e9ee4",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "avoid",
+     "status": "opinion",
+     "symbol": "AMZN"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-1bfc4919a8",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "bearish",
+     "status": "opinion",
+     "symbol": "AMZN"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-3ec9935b04",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "trim",
+     "status": "opinion",
+     "symbol": "AMD"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-b82a697552",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "bullish",
+     "status": "planned",
+     "symbol": "AMZN"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-f532ed90a8",
+   "status": "ok",
+   "labels": []
+  },
+  {
+   "blind_id": "b-ad2c73c795",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "hold",
+     "status": "opinion",
+     "symbol": "VGT"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-1503dbcc35",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "avoid",
+     "status": "opinion",
+     "symbol": "AMZN"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-b91bf15111",
+   "status": "ok",
+   "labels": []
+  },
+  {
+   "blind_id": "b-816b95feab",
+   "status": "ambiguous",
+   "labels": []
+  },
+  {
+   "blind_id": "b-637281bf71",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "bullish",
+     "status": "opinion",
+     "symbol": "HOOD"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-58bbe3368c",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "buy",
+     "status": "executed",
+     "symbol": "RKLB"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-9719779417",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "bullish",
+     "status": "opinion",
+     "symbol": "AVGO"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-2e1945fed1",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "bullish",
+     "status": "opinion",
+     "symbol": "MU"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-3ffff6a201",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "add",
+     "status": "opinion",
+     "symbol": "NVDA"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-38f4455848",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "bullish",
+     "status": "opinion",
+     "symbol": "VGT"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-b9348ab82b",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "bullish",
+     "status": "planned",
+     "symbol": "VGTY"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-0fe9c47623",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "hold",
+     "status": "opinion",
+     "symbol": "RKLB"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-bc0eaf822b",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "buy",
+     "status": "executed",
+     "symbol": "NBIS"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-81f24ab7d0",
+   "status": "ambiguous",
+   "labels": []
+  },
+  {
+   "blind_id": "b-054275404b",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "bullish",
+     "status": "opinion",
+     "symbol": "AMZN"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-3c45fcc949",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "sell",
+     "status": "opinion",
+     "symbol": "MU"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-0d3889a985",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "bullish",
+     "status": "opinion",
+     "symbol": "SPCX"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-b01a363cbc",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "buy",
+     "status": "executed",
+     "symbol": "TSEM"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-7306f45fee",
+   "status": "ambiguous",
+   "labels": []
+  },
+  {
+   "blind_id": "b-9aab5754d1",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "bullish",
+     "status": "opinion",
+     "symbol": "NVDA"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-93e988844c",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "trim",
+     "status": "opinion",
+     "symbol": "NVDA"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-a33d24a1cb",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "buy",
+     "status": "opinion",
+     "symbol": "NVDA"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-a0c2fe7ba9",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "buy",
+     "status": "opinion",
+     "symbol": "MSFT"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-9c1ec9e07e",
+   "status": "ok",
+   "labels": []
+  },
+  {
+   "blind_id": "b-cb80b9afed",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "trim",
+     "status": "opinion",
+     "symbol": "SPX"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-f9df13ed82",
+   "status": "ambiguous",
+   "labels": []
+  },
+  {
+   "blind_id": "b-2752c01600",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "avoid",
+     "status": "opinion",
+     "symbol": "AMZN"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-e5f41944e7",
+   "status": "ambiguous",
+   "labels": []
+  },
+  {
+   "blind_id": "b-187af8df22",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "hold",
+     "status": "opinion",
+     "symbol": "VGT"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-35c138ceb1",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "bullish",
+     "status": "opinion",
+     "symbol": "AAPL"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-5f61492788",
+   "status": "ambiguous",
+   "labels": []
+  },
+  {
+   "blind_id": "b-c03488b211",
+   "status": "ok",
+   "labels": []
+  },
+  {
+   "blind_id": "b-397ff97cd8",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "buy",
+     "status": "opinion",
+     "symbol": "AMZN"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-15ff3af942",
+   "status": "ok",
+   "labels": []
+  },
+  {
+   "blind_id": "b-1a8af2f694",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "bullish",
+     "status": "opinion",
+     "symbol": "QQQ"
+    },
+    {
+     "instrument": "stock",
+     "stance": "bullish",
+     "status": "opinion",
+     "symbol": "SPY"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-41df3390a1",
+   "status": "ok",
+   "labels": []
+  },
+  {
+   "blind_id": "b-eecff15357",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "bullish",
+     "status": "opinion",
+     "symbol": "NVDA"
+    }
+   ]
+  },
+  {
+   "blind_id": "b-675638c468",
+   "status": "ok",
+   "labels": [
+    {
+     "instrument": "stock",
+     "stance": "bearish",
+     "status": "opinion",
+     "symbol": "SPY"
+    }
+   ]
+  }
+ ]
+}
