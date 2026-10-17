@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-10-17T00:27:54Z",
+  "generated_at": "2026-10-17T06:54:57Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -19,14 +19,14 @@
           "reached_end": false
         }
       ],
-      "previous_anchor_video_id": "SbZltIBvi7M",
+      "previous_anchor_video_id": "dpDUZnMjzJk",
       "anchor_found": true,
       "reached_end": false,
       "discovery_complete": true,
       "latest": {
-        "video_id": "SbZltIBvi7M",
-        "title": "美股 对冲基金清空1年来AI仓位！不看好人工智能了吗？举例NVDA对比AMD！",
-        "url": "https://www.youtube.com/watch?v=SbZltIBvi7M",
+        "video_id": "dpDUZnMjzJk",
+        "title": "美股 纳指重挫，Anthropic增速失望，IPO估值下调！AI高增长交易动摇！TSM持仓计划更新！SPY、QQQ、SOXX、SMH！",
+        "url": "https://www.youtube.com/watch?v=dpDUZnMjzJk",
         "published_at": "",
         "flat_metadata_keys": [
           "channel_id",
@@ -97,7 +97,7 @@
       "discovery_complete": true,
       "latest": {
         "video_id": "TNQ2PuDLiOg",
-        "title": "XRP: The Next “Global Payment”",
+        "title": "My Thoughts On XRP",
         "url": "https://www.youtube.com/watch?v=TNQ2PuDLiOg",
         "published_at": "",
         "flat_metadata_keys": [
@@ -117,8 +117,8 @@
   "pending_retried": 6,
   "content_attempted_this_run": 6,
   "content_work_budget": 6,
-  "content_backlog_after_run": 106,
-  "pending_total": 106,
+  "content_backlog_after_run": 107,
+  "pending_total": 107,
   "historical_demoted_from_pending": 0,
   "admitted_from_pending": 0,
   "nonforward_timestamp_unknown_admitted": 0,
@@ -127,31 +127,9 @@
   "discovery_complete": true,
   "new_video_diagnostics": [
     {
-      "author": "Andrei Jikh",
-      "video_id": "TNQ2PuDLiOg",
-      "title": "XRP: The Next “Global Payment”",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "SbZltIBvi7M",
-      "title": "美股 对冲基金清空1年来AI仓位！不看好人工智能了吗？举例NVDA对比AMD！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "-KAra9tD4RU",
-      "title": "（会员第297期）2026年8月03日-07日，重要公司Q2财报后2026、2027前瞻估值，强支撑点位！",
+      "video_id": "dpDUZnMjzJk",
+      "title": "美股 纳指重挫，Anthropic增速失望，IPO估值下调！AI高增长交易动摇！TSM持仓计划更新！SPY、QQQ、SOXX、SMH！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -161,8 +139,8 @@
     },
     {
       "author": "老李玩钱",
-      "video_id": "0KgZcbhZoXk",
-      "title": "2支被忽略的科技巨头！分析与买入建议",
+      "video_id": "6_GvmiNgd4M",
+      "title": "美股7巨头，价格已到位！买入/加仓价格点位更新",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -172,8 +150,19 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "0w77lIBdCn0",
-      "title": "美股 机构弹药见底！下一步，暴风雨？平静？TSLA、IGV、AVGO！",
+      "video_id": "71FEJcz9VCY",
+      "title": "美股 凯投宏观：AI泡沫潜在破灭，五个警告信号！8月财政报告恶化，利息飙升！SOXX跟踪！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "7IraEqi0ZKs",
+      "title": "美股 机构二季度13 F，加减仓哪些！大空头Michael Burry最新操作，真的相当空！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -183,8 +172,19 @@
     },
     {
       "author": "Andrei Jikh",
-      "video_id": "16oTiM8o8ic",
-      "title": "My Alternative Investment Portfolio (Pokemon Edition)",
+      "video_id": "87NzxCEUQlw",
+      "title": "China Just Shut Down Gold Trading",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "8DY3zEBTFZ8",
+      "title": "美股 系统准备重新武装杠杆！MSFT再跌一天修复！半导体、软件，又跷跷板？ CRWV、NBIS、LITE、COHR！APP再跟踪！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -197,7 +197,7 @@
     "status": "ok",
     "channel_errors": 0,
     "stuck_high_quality_pending": 0,
-    "provider_waiting_pending": 106,
+    "provider_waiting_pending": 107,
     "stuck_video_ids": [],
     "meaning": "Q1/Q2 text must not remain stuck in pending; Q3-Q5 may legitimately wait for better learning text."
   },
