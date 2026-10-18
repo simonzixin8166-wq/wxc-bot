@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-10-18T00:18:27+00:00",
+ "generated_at": "2026-10-18T16:39:15+00:00",
  "extractor": "ce-5-hp",
  "lookback_days": 21,
- "records_scanned": 901,
+ "records_scanned": 921,
  "records_excluded_by_flags": 0,
  "claims": [
   {
@@ -1300,6 +1300,22 @@
    "instrument": "stock",
    "price": null,
    "sentence_sha256": "eb95d4f2412eb0cd6919db349fa4d4451b1019257c06426a22bdaf3702df1f48"
+  },
+  {
+   "record_id": "f50b5f253e8f32dcede6",
+   "author": "BrightLine",
+   "source_kind": "blog",
+   "url": "https://blog.wenxuecity.com/myblog/82458/202610/12256.html",
+   "published_at": "2026-10-18",
+   "first_seen": "2026-10-18T16:34:14Z",
+   "provenance": "unprovable",
+   "symbol": "MSFT",
+   "stance": "sell",
+   "status": "executed",
+   "hp_gate": "first_person_executed_trade",
+   "instrument": "stock",
+   "price": null,
+   "sentence_sha256": "37009bd8502c3222d4102bd593ccbab148dc84ca83d03def04598164060566ef"
   }
  ],
  "claims_status": "experimental_unvalidated",

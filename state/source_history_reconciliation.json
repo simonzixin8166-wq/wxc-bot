@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-10-18T00:18:27.755846+00:00",
+  "generated_at": "2026-10-18T16:39:16.460272+00:00",
   "principle": "author x month reconciliation; unscanned history is unknown, backfill is never Genuine Forward",
   "matrix": {
     "BrightLine": {
@@ -12,10 +12,10 @@
         "structured_view": 3
       },
       "2026-10": {
-        "records": 15,
-        "live_or_unclassified": 15,
-        "excerpt": 15,
-        "structured_view": 6
+        "records": 19,
+        "live_or_unclassified": 19,
+        "excerpt": 19,
+        "structured_view": 7
       }
     },
     "bogbog": {
@@ -41,10 +41,10 @@
         "structured_view": 3
       },
       "2026-10": {
-        "records": 115,
-        "live_or_unclassified": 115,
-        "excerpt": 54,
-        "title_only": 61,
+        "records": 118,
+        "live_or_unclassified": 118,
+        "excerpt": 55,
+        "title_only": 63,
         "structured_view": 3
       }
     },
@@ -79,10 +79,10 @@
         "live_or_unclassified": 9
       },
       "2026-10": {
-        "records": 466,
+        "records": 478,
         "backfill": 19,
-        "title_only": 447,
-        "live_or_unclassified": 447,
+        "title_only": 459,
+        "live_or_unclassified": 459,
         "excerpt": 19,
         "structured_view": 3
       }
@@ -119,11 +119,11 @@
         "structured_view": 3
       },
       "2026-10": {
-        "records": 88,
-        "backfill": 69,
+        "records": 89,
+        "backfill": 70,
         "excerpt": 20,
         "structured_view": 6,
-        "title_only": 68,
+        "title_only": 69,
         "live_or_unclassified": 19
       }
     }
@@ -133,7 +133,7 @@
       "kinds": [
         "blog"
       ],
-      "records": 19,
+      "records": 23,
       "first_month": "2026-09",
       "last_month": "2026-10",
       "watched_forum_author": false,
@@ -142,7 +142,7 @@
           "2026-10"
         ],
         "archive_failures": [],
-        "unique_article_ids": 11,
+        "unique_article_ids": 15,
         "missing_from_feed": 0,
         "recovery_window_days": 14,
         "history_before_window": "not_scanned (unknown, not zero)"
@@ -152,13 +152,13 @@
       "kinds": [
         "forum"
       ],
-      "records": 989,
+      "records": 992,
       "first_month": "2026-07",
       "last_month": "2026-10",
       "watched_forum_author": true,
       "forum": {
         "seen_ids": 987,
-        "in_feed": 988,
+        "in_feed": 991,
         "seen_not_in_feed": 0,
         "seen_not_in_feed_examples": [],
         "reason": null
@@ -210,13 +210,13 @@
       "kinds": [
         "forum"
       ],
-      "records": 511,
+      "records": 523,
       "first_month": "2026-09",
       "last_month": "2026-10",
       "watched_forum_author": true,
       "forum": {
         "seen_ids": 590,
-        "in_feed": 511,
+        "in_feed": 523,
         "seen_not_in_feed": 79,
         "seen_not_in_feed_examples": [
           "112259",
@@ -255,7 +255,7 @@
         "blog",
         "forum"
       ],
-      "records": 238,
+      "records": 239,
       "first_month": "2026-07",
       "last_month": "2026-10",
       "watched_forum_author": false,
@@ -271,7 +271,7 @@
       },
       "forum": {
         "seen_ids": 177,
-        "in_feed": 221,
+        "in_feed": 222,
         "seen_not_in_feed": 0,
         "seen_not_in_feed_examples": [],
         "reason": null
@@ -280,10 +280,10 @@
   },
   "totals": {
     "authors": 7,
-    "records": 1894,
+    "records": 1914,
     "text_depth": {
-      "title_only": 1338,
-      "excerpt": 556
+      "title_only": 1353,
+      "excerpt": 561
     }
   },
   "access_policy": "no bypassing 403/429 or login walls; history fills only via bounded, rate-limited backfill"
