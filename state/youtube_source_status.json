@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-10-18T18:39:08Z",
+  "generated_at": "2026-10-18T22:25:51Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -129,8 +129,8 @@
   "new_video_diagnostics": [
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "19S-O_bla-A",
-      "title": "美股 MRVL抢单AVGO！AMD更新！财政部加码回购债券！为什么？钱哪来？QE吗？",
+      "video_id": "Am7QxgzrUek",
+      "title": "美股 对冲基金最新仓位，软件VS半导体！SOXX、IGV、QQQ！META、MSFT正常回撤！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -140,8 +140,19 @@
     },
     {
       "author": "老李玩钱",
-      "video_id": "1QM5vfCkId0",
-      "title": "当前美股的泡沫到底有多大？NVDA财报解读及操作建议",
+      "video_id": "B8OxtGSEfoo",
+      "title": "当前美股存在的3大风险因素",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "老李玩钱",
+      "video_id": "B9E1AdBLM24",
+      "title": "我对当前美股行情的一些思考！答疑：MU, INTC, SNDK, RKLB还能追吗",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -151,8 +162,19 @@
     },
     {
       "author": "Andrei Jikh",
-      "video_id": "1UIKZBGYMYI",
-      "title": "China Is Preparing For $38,000 Gold",
+      "video_id": "BpuKpyCk0Us",
+      "title": "How I'd Invest $10,000 Right Now",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "Andrei Jikh",
+      "video_id": "DFSWsJ_y1-M",
+      "title": "China Just Won The AI Race",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -162,30 +184,8 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "4M7w7DR865M",
-      "title": "美股 最差9月，CTA更新！JPM战术转向，减仓多头！对冲基金上周仓位！AMZN遭起诉掉块肉！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "老李玩钱",
-      "video_id": "4n9bB7N96fY",
-      "title": "5月必买3支股票",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "老李玩钱",
-      "video_id": "6_GvmiNgd4M",
-      "title": "美股7巨头，价格已到位！买入/加仓价格点位更新",
+      "video_id": "EB4-BTw4ETQ",
+      "title": "美股 NVDA、META不同意AI放缓！加息后，标普、利率走势！SPY、QQQ、SOXX、SMH较差的情况，跌至哪里？",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
