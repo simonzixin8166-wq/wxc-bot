@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-10-18T04:28:06Z",
+  "generated_at": "2026-10-18T11:00:23Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -63,10 +63,11 @@
         "video_id": "hFY-CcoS0KA",
         "title": "做好准备！逢低买入优质股票的机会要来了",
         "url": "https://www.youtube.com/watch?v=hFY-CcoS0KA",
-        "published_at": "",
+        "published_at": "2026-10-12",
         "flat_metadata_keys": [
           "channel_id",
-          "duration"
+          "duration",
+          "rss_published_at"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -138,42 +139,9 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "老李玩钱",
-      "video_id": "mR1KTb9wBT0",
-      "title": "2支新股：SPCX, SKHY 能买入吗？NFLX财报暴雷，接下来我的计划和打算",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "老李玩钱",
-      "video_id": "nLskyS7Vvug",
-      "title": "华尔街大举买入和卖出的8支股票！是否要跟着买进或卖出？我的看法及操作建议",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "老李玩钱",
-      "video_id": "nNaiUbM17HY",
-      "title": "美股不怕急跌，怕的是目前这种震荡下行的行情",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "老李玩钱",
-      "video_id": "o0ScN6BzkaI",
-      "title": "美股涨的心慌！要卖股票了？",
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "v88zbUVrp8w",
+      "title": "美股 美联储27年预期撕裂！AI威胁叙事，网络安全爆炒！PANW、CRWD、FTNT！META忘记讲，看置顶评论！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -183,8 +151,41 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "o3v28EEIdb4",
-      "title": "美股 大盘伸个懒腰！ SPCX又又又发债！AAPL扩大智能家居版图！CAT怎么了？META正常回撤！",
+      "video_id": "vXlqWhsJzxI",
+      "title": "美股 NVDA完好、NOW突破！UNH、SHOP更新！前车之鉴，直到2028，数据中心绝不能大退潮！对比互联网泡沫、房地产浪潮！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "vynRw9NT7TQ",
+      "title": "美股 TSLA突破，强弱区间！MSFT对AI货币化充满信心！四大科技共振！AMD成了之前的NVDA！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "Andrei Jikh",
+      "video_id": "w0a504L8fgs",
+      "title": "China & Japan Are Dumping US Bonds",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "wz13N6Q4-tg",
+      "title": "美股 无聊行情即将结束！回购债券的隐藏动机！LULU、NKE、INTU！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
