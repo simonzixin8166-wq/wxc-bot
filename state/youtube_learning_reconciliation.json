@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "generated_at": "2026-10-18T15:51:31.718186+00:00",
+  "generated_at": "2026-10-18T18:39:08.994353+00:00",
   "principle": "seen is discovery, not learning; each video is counted once in its highest stage",
   "seen": 183,
   "stages": {
     "formal_feed_text": 4,
-    "historical_backlog": 41,
-    "metadata_only": 116,
+    "historical_backlog": 42,
+    "metadata_only": 115,
     "pending_unprobed": 1,
     "provider_boilerplate": 20,
     "transcript_readable": 1
@@ -35,9 +35,9 @@
       "historical_backlog": 17
     },
     "老李玩钱": {
-      "metadata_only": 39,
+      "metadata_only": 38,
       "formal_feed_text": 4,
-      "historical_backlog": 8,
+      "historical_backlog": 9,
       "transcript_readable": 1
     }
   },
