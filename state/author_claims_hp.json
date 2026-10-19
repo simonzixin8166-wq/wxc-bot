@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-10-18T16:39:15+00:00",
+ "generated_at": "2026-10-19T00:30:28+00:00",
  "extractor": "ce-5-hp",
  "lookback_days": 21,
- "records_scanned": 921,
+ "records_scanned": 940,
  "records_excluded_by_flags": 0,
  "claims": [
   {
@@ -1307,8 +1307,8 @@
    "source_kind": "blog",
    "url": "https://blog.wenxuecity.com/myblog/82458/202610/12256.html",
    "published_at": "2026-10-18",
-   "first_seen": "2026-10-18T16:34:14Z",
-   "provenance": "unprovable",
+   "first_seen": "2026-10-18T16:39:16Z",
+   "provenance": "near_publication_observed",
    "symbol": "MSFT",
    "stance": "sell",
    "status": "executed",
@@ -1316,6 +1316,38 @@
    "instrument": "stock",
    "price": null,
    "sentence_sha256": "37009bd8502c3222d4102bd593ccbab148dc84ca83d03def04598164060566ef"
+  },
+  {
+   "record_id": "e0bb3c4a9d0d2f059d3c",
+   "author": "bogbog",
+   "source_kind": "forum",
+   "url": "https://bbs.wenxuecity.com/cfzh/115940.html",
+   "published_at": "2026-10-18 12:21:45",
+   "first_seen": "2026-10-19T00:24:53Z",
+   "provenance": "unprovable",
+   "symbol": "INTC",
+   "stance": "hold",
+   "status": "opinion",
+   "hp_gate": "explicit_position_hold",
+   "instrument": "stock",
+   "price": null,
+   "sentence_sha256": "4af605211bbcfe5c837ca9526f666236b2036c5780380485014644069f89bc85"
+  },
+  {
+   "record_id": "e0bb3c4a9d0d2f059d3c",
+   "author": "bogbog",
+   "source_kind": "forum",
+   "url": "https://bbs.wenxuecity.com/cfzh/115940.html",
+   "published_at": "2026-10-18 12:21:45",
+   "first_seen": "2026-10-19T00:24:53Z",
+   "provenance": "unprovable",
+   "symbol": "AMD",
+   "stance": "hold",
+   "status": "opinion",
+   "hp_gate": "explicit_position_hold",
+   "instrument": "stock",
+   "price": null,
+   "sentence_sha256": "4af605211bbcfe5c837ca9526f666236b2036c5780380485014644069f89bc85"
   }
  ],
  "claims_status": "experimental_unvalidated",

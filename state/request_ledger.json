@@ -187,6 +187,12 @@
         "count": 8,
         "paid": false
       }
+    },
+    "2026-10-19": {
+      "telegram:send_message": {
+        "count": 1,
+        "paid": false
+      }
     }
   }
 }
