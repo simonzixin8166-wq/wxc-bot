@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-10-19T13:07:21+00:00",
+  "generated_at": "2026-10-19T19:55:36+00:00",
   "mode": "historical_observational_learning_only",
   "non_gating": true,
   "result_blind": true,
@@ -274,8 +274,7 @@
       "promotion_eligible": false,
       "event_score_eligible": false,
       "note": "Historical observational learning only; never admitted to forward evidence or Promotion.",
-      "last_probe_at": "2026-10-12T15:17:45+00:00",
-      "probe_skipped_backoff": true
+      "last_probe_at": "2026-10-19T19:55:26+00:00"
     },
     {
       "archive_id": "yt_hist_df0026934f3eb818",
@@ -315,8 +314,7 @@
       "promotion_eligible": false,
       "event_score_eligible": false,
       "note": "Historical observational learning only; never admitted to forward evidence or Promotion.",
-      "last_probe_at": "2026-10-12T15:17:43+00:00",
-      "probe_skipped_backoff": true
+      "last_probe_at": "2026-10-19T19:55:08+00:00"
     },
     {
       "archive_id": "yt_hist_4512706b3e68eac2",
@@ -398,11 +396,10 @@
       "promotion_eligible": false,
       "event_score_eligible": false,
       "note": "Historical observational learning only; retained prior best-quality snapshot after a weaker provider probe. Never admitted to forward evidence or Promotion.",
-      "last_probe_at": "2026-10-12T15:17:43+00:00",
+      "last_probe_at": "2026-10-19T19:55:15+00:00",
       "retained_prior_best_quality": true,
       "last_probe_quality": "Q5",
-      "last_probe_provider": "pickscribe.com",
-      "probe_skipped_backoff": true
+      "last_probe_provider": "pickscribe.com"
     },
     {
       "archive_id": "yt_hist_2f4c135fe4af6ca5",
@@ -524,8 +521,7 @@
       "promotion_eligible": false,
       "event_score_eligible": false,
       "note": "Historical observational learning only; never admitted to forward evidence or Promotion.",
-      "last_probe_at": "2026-10-12T15:17:40+00:00",
-      "probe_skipped_backoff": true
+      "last_probe_at": "2026-10-19T19:54:48+00:00"
     },
     {
       "archive_id": "yt_hist_110d724bc56e9c1e",
@@ -688,8 +684,7 @@
       "promotion_eligible": false,
       "event_score_eligible": false,
       "note": "Historical observational learning only; never admitted to forward evidence or Promotion.",
-      "last_probe_at": "2026-10-12T15:17:42+00:00",
-      "probe_skipped_backoff": true
+      "last_probe_at": "2026-10-19T19:54:57+00:00"
     },
     {
       "archive_id": "yt_hist_29f76dccda3d444a",
@@ -729,8 +724,7 @@
       "promotion_eligible": false,
       "event_score_eligible": false,
       "note": "Historical observational learning only; never admitted to forward evidence or Promotion.",
-      "last_probe_at": "2026-10-12T15:17:48+00:00",
-      "probe_skipped_backoff": true
+      "last_probe_at": "2026-10-19T19:55:31+00:00"
     },
     {
       "archive_id": "yt_hist_e64bcf6eb5b506ed",
@@ -811,8 +805,7 @@
       "promotion_eligible": false,
       "event_score_eligible": false,
       "note": "Historical observational learning only; never admitted to forward evidence or Promotion.",
-      "last_probe_at": "2026-10-12T15:17:49+00:00",
-      "probe_skipped_backoff": true
+      "last_probe_at": "2026-10-19T19:55:36+00:00"
     },
     {
       "archive_id": "yt_hist_89a03e53025bb698",
@@ -893,8 +886,7 @@
       "promotion_eligible": false,
       "event_score_eligible": false,
       "note": "Historical observational learning only; never admitted to forward evidence or Promotion.",
-      "last_probe_at": "2026-10-12T15:17:42+00:00",
-      "probe_skipped_backoff": true
+      "last_probe_at": "2026-10-19T19:55:02+00:00"
     },
     {
       "archive_id": "yt_hist_3d3b40d0b65152ff",
@@ -934,8 +926,7 @@
       "promotion_eligible": false,
       "event_score_eligible": false,
       "note": "Historical observational learning only; never admitted to forward evidence or Promotion.",
-      "last_probe_at": "2026-10-12T15:17:41+00:00",
-      "probe_skipped_backoff": true
+      "last_probe_at": "2026-10-19T19:54:53+00:00"
     },
     {
       "archive_id": "yt_hist_58b3ef66c6c5d7ab",
