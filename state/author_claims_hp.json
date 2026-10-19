@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-10-19T00:30:28+00:00",
+ "generated_at": "2026-10-19T19:27:55+00:00",
  "extractor": "ce-5-hp",
  "lookback_days": 21,
- "records_scanned": 940,
+ "records_scanned": 983,
  "records_excluded_by_flags": 0,
  "claims": [
   {
@@ -1323,8 +1323,8 @@
    "source_kind": "forum",
    "url": "https://bbs.wenxuecity.com/cfzh/115940.html",
    "published_at": "2026-10-18 12:21:45",
-   "first_seen": "2026-10-19T00:24:53Z",
-   "provenance": "unprovable",
+   "first_seen": "2026-10-19T00:30:28Z",
+   "provenance": "near_publication_observed",
    "symbol": "INTC",
    "stance": "hold",
    "status": "opinion",
@@ -1339,8 +1339,8 @@
    "source_kind": "forum",
    "url": "https://bbs.wenxuecity.com/cfzh/115940.html",
    "published_at": "2026-10-18 12:21:45",
-   "first_seen": "2026-10-19T00:24:53Z",
-   "provenance": "unprovable",
+   "first_seen": "2026-10-19T00:30:28Z",
+   "provenance": "near_publication_observed",
    "symbol": "AMD",
    "stance": "hold",
    "status": "opinion",
