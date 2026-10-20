@@ -262,8 +262,23 @@ def main():
     day=datetime.now().strftime("%Y-%m-%d")
     digest=rf.daily_digest_text(day)
     forum_note="complete" if forum_scan.get("complete") else f"partial,next={forum_scan.get('next_scan_pages')} pages"
-    agent.say(digest+f"\n\n本轮新增：论坛 {forum_added} 条（{forum_note}）；作者博客 {blog_added} 条。YouTube 由独立 youtube-forward-intake 持续采集。")
+    notify_digest(digest+f"\n\n本轮新增：论坛 {forum_added} 条（{forum_note}）；作者博客 {blog_added} 条。YouTube 由独立 youtube-forward-intake 持续采集。")
     print(digest)
+
+def notify_digest(text, send=None):
+    """Telegram digest is a notification, not part of collection: by this point all state is already written.
+    A Telegram timeout/HTTP error must not fail the job (it previously turned a complete collection into a
+    failed run → quant-dashboard system status 'attention' → QA business_data FAIL; run 39351856353).
+    Returns 'sent' or 'failed:<ExceptionType>' and prints a GitHub warning so the miss stays visible."""
+    send = send or agent.say
+    try:
+        send(text)
+        return "sent"
+    except Exception as exc:  # noqa: BLE001 - any delivery failure is reported, never raised
+        status = f"failed:{type(exc).__name__}"
+        print(f"::warning title=research-close::telegram digest not delivered ({status}); collection already saved")
+        return status
+
 
 if __name__ == "__main__":
     main()
