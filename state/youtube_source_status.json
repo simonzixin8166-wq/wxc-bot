@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-10-20T04:49:09Z",
+  "generated_at": "2026-10-20T11:32:21Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -27,10 +27,11 @@
         "video_id": "XMs6mASFtbE",
         "title": "美股 AMZN撑起半边天！多空决战蓄势待发！杠杆ETF抄底创纪录！ SPCX、TSLA、META财报波动！",
         "url": "https://www.youtube.com/watch?v=XMs6mASFtbE",
-        "published_at": "",
+        "published_at": "2026-10-20",
         "flat_metadata_keys": [
           "channel_id",
-          "duration"
+          "duration",
+          "rss_published_at"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -63,10 +64,11 @@
         "video_id": "ecN20bdjkrs",
         "title": "8支重磅股票！买入/加仓，价格点位更新",
         "url": "https://www.youtube.com/watch?v=ecN20bdjkrs",
-        "published_at": "",
+        "published_at": "2026-10-19",
         "flat_metadata_keys": [
           "channel_id",
-          "duration"
+          "duration",
+          "rss_published_at"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -117,13 +119,13 @@
   "pending_retried": 6,
   "content_attempted_this_run": 6,
   "content_work_budget": 6,
-  "content_backlog_after_run": 109,
-  "pending_total": 109,
-  "historical_demoted_from_pending": 0,
+  "content_backlog_after_run": 108,
+  "pending_total": 108,
+  "historical_demoted_from_pending": 1,
   "admitted_from_pending": 0,
   "nonforward_timestamp_unknown_admitted": 0,
   "feed_records_added": 0,
-  "historical_backlog_total": 51,
+  "historical_backlog_total": 52,
   "discovery_complete": true,
   "new_video_diagnostics": [
     {
@@ -139,8 +141,8 @@
     },
     {
       "author": "老李玩钱",
-      "video_id": "ecN20bdjkrs",
-      "title": "8支重磅股票！买入/加仓，价格点位更新",
+      "video_id": "p6FafiL08Oo",
+      "title": "个股点评及买入建议：AVGO, NVDA, GOOG, META, SOFI, MRVL",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -150,19 +152,19 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "kXr89fM66C4",
-      "title": "美股 罕见吸血，半导体、软件齐飞！IGV暴涨突破剑指新高！PLTR、NOW、MSFT！CRWD、MRVL财报！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
+      "video_id": "pkg7bdNOf88",
+      "title": "（会员第300期）板块重要前瞻26年8月29日更新，2026、2027主要13个行业版块，季度、年度EPS增速数据更新！哪些行业增速强劲？标普SPX、26、27前瞻交易范围，押注方向决定成败！",
+      "content_quality": "Q4",
+      "content_provider": "pickscribe.com",
       "rule_candidate_allowed": false,
       "admission": "pending_content",
       "was_pending": true,
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "Andrei Jikh",
-      "video_id": "kZDqW9hbB50",
-      "title": "How To Prepare (Gold, Silver, Oil)",
+      "author": "老李玩钱",
+      "video_id": "r-2GJq_zHgU",
+      "title": "美股高位！但这2支股票依然不高，可以买入",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -172,8 +174,8 @@
     },
     {
       "author": "老李玩钱",
-      "video_id": "mCI0-03LcvM",
-      "title": "SpaceX即将上市！散户该如何参与？对特斯拉股价会有怎样的影响",
+      "video_id": "s35e0bZb4xA",
+      "title": "美联储鹰派砸盘！MU财报业绩亮眼，但股价依然下跌！接下来何去何从",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -183,8 +185,8 @@
     },
     {
       "author": "老李玩钱",
-      "video_id": "mR1KTb9wBT0",
-      "title": "2支新股：SPCX, SKHY 能买入吗？NFLX财报暴雷，接下来我的计划和打算",
+      "video_id": "tW8LXsiWlew",
+      "title": "个股点评，买入建议：TSLA，AAPL，BRK.B",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -197,7 +199,7 @@
     "status": "ok",
     "channel_errors": 0,
     "stuck_high_quality_pending": 0,
-    "provider_waiting_pending": 109,
+    "provider_waiting_pending": 108,
     "stuck_video_ids": [],
     "meaning": "Q1/Q2 text must not remain stuck in pending; Q3-Q5 may legitimately wait for better learning text."
   },
