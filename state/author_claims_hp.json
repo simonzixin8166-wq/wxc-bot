@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-10-20T03:21:22+00:00",
+ "generated_at": "2026-10-21T00:58:29+00:00",
  "extractor": "ce-5-hp",
  "lookback_days": 21,
- "records_scanned": 990,
+ "records_scanned": 1057,
  "records_excluded_by_flags": 0,
  "claims": [
   {
@@ -372,38 +372,6 @@
    "instrument": "stock",
    "price": null,
    "sentence_sha256": "2f678d9d78e912fb0fa1d2b1c74202583cfa4c7896e3815962a5b6fcb9ffcc44"
-  },
-  {
-   "record_id": "9ae79b7468ca2e7f8f75",
-   "author": "yifan99",
-   "source_kind": "blog",
-   "url": "https://blog.wenxuecity.com/myblog/31983/202609/22705.html",
-   "published_at": "2026-09-30",
-   "first_seen": "2026-10-07T01:19:53Z",
-   "provenance": "backfill_proven",
-   "symbol": "LITE",
-   "stance": "bullish",
-   "status": "opinion",
-   "hp_gate": "sell_put_willing_to_own",
-   "instrument": "sell_put",
-   "price": null,
-   "sentence_sha256": "cff0811e2dda9e43f5dc4ae791dababe66d3aa045b7afc37fc434f6cd829c263"
-  },
-  {
-   "record_id": "9ae79b7468ca2e7f8f75",
-   "author": "yifan99",
-   "source_kind": "blog",
-   "url": "https://blog.wenxuecity.com/myblog/31983/202609/22705.html",
-   "published_at": "2026-09-30",
-   "first_seen": "2026-10-07T01:19:53Z",
-   "provenance": "backfill_proven",
-   "symbol": "LITE",
-   "stance": "bullish",
-   "status": "opinion",
-   "hp_gate": "sell_put_willing_to_own",
-   "instrument": "sell_put",
-   "price": null,
-   "sentence_sha256": "27fd4a186996f655718d6d6487ebbff4d9aee550c53cb7fc7217a91cfb556603"
   },
   {
    "record_id": "820d3a2459304826c2ad",
@@ -1348,6 +1316,38 @@
    "instrument": "stock",
    "price": null,
    "sentence_sha256": "4af605211bbcfe5c837ca9526f666236b2036c5780380485014644069f89bc85"
+  },
+  {
+   "record_id": "b553df2ce9a9e2f7057c",
+   "author": "三心三意",
+   "source_kind": "forum",
+   "url": "https://bbs.wenxuecity.com/cfzh/116186.html",
+   "published_at": "2026-10-20 07:00:05",
+   "first_seen": "2026-10-21T00:53:00Z",
+   "provenance": "unprovable",
+   "symbol": "COHR",
+   "stance": "buy",
+   "status": "executed",
+   "hp_gate": "first_person_executed_trade",
+   "instrument": "stock",
+   "price": null,
+   "sentence_sha256": "dcf16f282c113cec55a5b8fdda7077878f3c3a893de1acb6ebcf92245995da4a"
+  },
+  {
+   "record_id": "eb23fbe750d03ac5ccff",
+   "author": "三心三意",
+   "source_kind": "forum",
+   "url": "https://bbs.wenxuecity.com/cfzh/116222.html",
+   "published_at": "2026-10-20 09:39:51",
+   "first_seen": "2026-10-21T00:53:00Z",
+   "provenance": "unprovable",
+   "symbol": "AMAT",
+   "stance": "buy",
+   "status": "executed",
+   "hp_gate": "first_person_executed_trade",
+   "instrument": "stock",
+   "price": null,
+   "sentence_sha256": "318849cadb4db5b07f97d59e4eb929601b9c81cb1d0ccdec77b139256e30ee2e"
   }
  ],
  "claims_status": "experimental_unvalidated",

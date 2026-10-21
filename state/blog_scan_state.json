@@ -1,16 +1,16 @@
 {
   "authors": {
     "BrightLine": {
-      "last_success_at": "2026-10-20T03:15:51.966794+00:00",
-      "last_attempt_at": "2026-10-20T03:15:51.966794+00:00",
+      "last_success_at": "2026-10-21T00:53:00.232970+00:00",
+      "last_attempt_at": "2026-10-21T00:53:00.232970+00:00",
       "scan_complete": true,
       "recovery_days_used": 14,
       "new_records": 0,
       "article_links_found": 47,
-      "posts_parsed": 32,
-      "unique_article_ids": 13,
-      "parsed_unique_urls": 13,
-      "feed_present_urls": 13,
+      "posts_parsed": 31,
+      "unique_article_ids": 12,
+      "parsed_unique_urls": 12,
+      "feed_present_urls": 12,
       "missing_from_feed": 0,
       "missing_from_feed_urls": [],
       "seen_total": 23,
@@ -23,16 +23,16 @@
       "retention_policy": "no_article_count_cap"
     },
     "yifan99": {
-      "last_success_at": "2026-10-20T03:15:51.966794+00:00",
-      "last_attempt_at": "2026-10-20T03:15:51.966794+00:00",
+      "last_success_at": "2026-10-21T00:53:00.232970+00:00",
+      "last_attempt_at": "2026-10-21T00:53:00.232970+00:00",
       "scan_complete": true,
       "recovery_days_used": 14,
       "new_records": 0,
       "article_links_found": 31,
-      "posts_parsed": 7,
-      "unique_article_ids": 3,
-      "parsed_unique_urls": 3,
-      "feed_present_urls": 3,
+      "posts_parsed": 3,
+      "unique_article_ids": 1,
+      "parsed_unique_urls": 1,
+      "feed_present_urls": 1,
       "missing_from_feed": 0,
       "missing_from_feed_urls": [],
       "seen_total": 13,
@@ -45,8 +45,8 @@
       "retention_policy": "no_article_count_cap"
     },
     "麻你": {
-      "last_success_at": "2026-10-20T03:15:51.966794+00:00",
-      "last_attempt_at": "2026-10-20T03:15:51.966794+00:00",
+      "last_success_at": "2026-10-21T00:53:00.232970+00:00",
+      "last_attempt_at": "2026-10-21T00:53:00.232970+00:00",
       "scan_complete": true,
       "recovery_days_used": 14,
       "new_records": 0,
@@ -68,6 +68,6 @@
     }
   },
   "version": 1,
-  "updated_at": "2026-10-20T03:15:51.966794+00:00",
+  "updated_at": "2026-10-21T00:53:00.232970+00:00",
   "policy": "recovery window expands from the last complete scheduled scan; failed archive months or parsed URLs missing from canonical feed do not advance last_success_at; article discovery has no count cap"
 }
