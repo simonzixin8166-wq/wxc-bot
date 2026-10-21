@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-10-20T21:36:45Z",
+  "generated_at": "2026-10-21T00:37:59Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -99,7 +99,7 @@
       "discovery_complete": true,
       "latest": {
         "video_id": "TNQ2PuDLiOg",
-        "title": "XRP: The Next “Global Payment”",
+        "title": "My Thoughts On XRP",
         "url": "https://www.youtube.com/watch?v=TNQ2PuDLiOg",
         "published_at": "",
         "flat_metadata_keys": [
@@ -130,8 +130,8 @@
   "new_video_diagnostics": [
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "A4p5t_F4mQs",
-      "title": "（会员第306期）补充26年8月24-10月09，2026年10月12日-16日，重要公司Q3财报后2026、2027前瞻估值，强支撑点位！",
+      "video_id": "71FEJcz9VCY",
+      "title": "美股 凯投宏观：AI泡沫潜在破灭，五个警告信号！8月财政报告恶化，利息飙升！SOXX跟踪！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -141,41 +141,8 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "XMs6mASFtbE",
-      "title": "美股 AMZN撑起半边天！多空决战蓄势待发！杠杆ETF抄底创纪录！ SPCX、TSLA、META财报波动！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "-KAra9tD4RU",
-      "title": "（会员第297期）2026年8月03日-07日，重要公司Q2财报后2026、2027前瞻估值，强支撑点位！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "老李玩钱",
-      "video_id": "0KgZcbhZoXk",
-      "title": "2支被忽略的科技巨头！分析与买入建议",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "0w77lIBdCn0",
-      "title": "美股 机构弹药见底！下一步，暴风雨？平静？TSLA、IGV、AVGO！",
+      "video_id": "7IraEqi0ZKs",
+      "title": "美股 机构二季度13 F，加减仓哪些！大空头Michael Burry最新操作，真的相当空！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -185,8 +152,41 @@
     },
     {
       "author": "Andrei Jikh",
-      "video_id": "16oTiM8o8ic",
-      "title": "My Alternative Investment Portfolio (Pokemon Edition)",
+      "video_id": "87NzxCEUQlw",
+      "title": "China Just Shut Down Gold Trading",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "8DY3zEBTFZ8",
+      "title": "美股 系统准备重新武装杠杆！MSFT再跌一天修复！半导体、软件，又跷跷板？ CRWV、NBIS、LITE、COHR！APP再跟踪！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "老李玩钱",
+      "video_id": "8uy8c4S2BW4",
+      "title": "英伟达财报渡劫！依然长期看好",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "老李玩钱",
+      "video_id": "9SBwuIy6KRs",
+      "title": "美股很高！但这3支股票还在地上趴着，可以买入",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
