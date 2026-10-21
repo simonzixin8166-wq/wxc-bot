@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-10-21T13:47:01Z",
+  "generated_at": "2026-10-21T18:37:35Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -141,19 +141,8 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "MFB-Fp4F15A",
-      "title": "美股 罕见IGV压 SOXX一头！NFLX止跌雄起了吗？TSLA、WMT、SNDK！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "Andrei Jikh",
-      "video_id": "MUUin7TkWsk",
-      "title": "How I'm Investing For What's Coming",
+      "video_id": "RgGeU0w9GZo",
+      "title": "美股 NVDA黄仁勋“喊单”奏效！AVGO有惊无险，PANW放缓代价！褐皮书：物价，消费，就业，增长！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -163,8 +152,8 @@
     },
     {
       "author": "老李玩钱",
-      "video_id": "Mv4_zIzQGLs",
-      "title": "回调周期中，非常适合买入定投的5支ETF",
+      "video_id": "SJERXQX7tAU",
+      "title": "5大科技，机会来了，最新买入/加仓价格点位！另外准备减仓1支股",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -173,9 +162,20 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "N8BjausuEsI",
-      "title": "美股 META大招豪赌AI代理！对GOOG、AMZN影响！SOXX还需一天确认！财政部回购不及预期！AAPL开始折叠！",
+      "author": "老李玩钱",
+      "video_id": "SrRLRsUFsUw",
+      "title": "华尔街大量卖出的3支股票！你是否要跟着卖出",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "老李玩钱",
+      "video_id": "Ue75SpWXfjo",
+      "title": "美股最重磅的一周：美联储会议及4大科技巨头财报提前展望，买入/加仓价格点位更新",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -185,8 +185,8 @@
     },
     {
       "author": "Andrei Jikh",
-      "video_id": "NZpobX6MQVA",
-      "title": "Trump Will Cause The Next Financial Crisis",
+      "video_id": "Uw84lTiD5C8",
+      "title": "Russia Just Legalized Crypto",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
