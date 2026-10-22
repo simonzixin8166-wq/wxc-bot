@@ -104,6 +104,18 @@ assert gv.budget_ok() is False
 assert gv.identity_ok({"observed_title": TITLE}, TITLE, AUTHOR)
 assert gv.identity_ok({"observed_title": "SPCX前瞻提振半导体 NFLX 等待", "observed_channel": "视野环球财经"}, TITLE, AUTHOR)
 assert not gv.identity_ok({"observed_title": None}, TITLE, AUTHOR)
+# first live run (DQ0Yn27pdgk): right channel + tickers, misremembered title/date -> accept; prompt never carries the title
+T2 = "美股 空头杀红眼5倍加码！META自保，含糊27年资本支出！TSLA、LRCX、GOOG！"
+seen = {"observed_title": "多空决战蓄势待发！META、特斯拉、泛林财报深度解析！空头加码5倍做空！| 视野环球财经 20241023",
+        "observed_channel": "视野环球财经", "symbols": ["META", "TSLA", "LRCX"]}
+assert gv.identity_ok(seen, T2, AUTHOR)
+assert not gv.identity_ok(dict(seen, observed_channel="Other Channel"), T2, AUTHOR)
+assert not gv.identity_ok(dict(seen, symbols=["META"]), T2, AUTHOR)
+assert "T2" not in gv.PROMPT and "{title}" not in gv.PROMPT
+# safety: missing block is fine (MyAlpha enforces it), contradicting it is not
+assert gv._safe({}) and gv._safe({"safety": GOOD["safety"]})
+assert not gv._safe({"safety": dict(GOOD["safety"], production_action="buy")})
+assert not gv._safe({"safety": dict(GOOD["safety"], forward_evidence_eligible=True)})
 
 # 5) router: only the forward intake opts in; health probes / archives never spend the budget
 doc["days"][gv._today()] = {"calls": 0}
