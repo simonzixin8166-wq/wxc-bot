@@ -78,6 +78,9 @@ assert budget()["calls"] == 1 and budget()["admitted"] == 1
 bad = dict(GOOD, observed_title="How I Retired Early With Dividends", observed_channel="Some Other Channel")
 assert gv.acquire("vid1", TITLE, AUTHOR, post=post_with(Resp(200, wrap(bad)))) is None
 assert budget()["rejected"] == 1
+rec = budget()["recent"]
+assert [r["outcome"] for r in rec] == ["admitted", "identity_mismatch"], rec
+assert "How I Retired" in rec[-1]["detail"] and "test-key" not in json.dumps(rec)
 # 4) run cap reached (2 per run) -> no further call
 n = len(calls)
 assert gv.acquire("vid1", TITLE, AUTHOR, post=post_with(Resp(200, wrap(GOOD)))) is None and len(calls) == n
@@ -89,6 +92,7 @@ assert gv.acquire("vid1", TITLE, AUTHOR, post=post_with(Resp(200, wrap(unsafe)))
 gv._run_calls = 0
 assert gv.acquire("vid1", TITLE, AUTHOR, post=post_with(Resp(429, {}))) is None
 assert budget()["exhausted"] is True and gv.budget_ok() is False
+assert [r["outcome"] for r in budget()["recent"]][-2:] == ["safety_contract", "http_429"]
 # daily cap (5) also holds
 doc = json.loads((Path(tmp) / "gemini_video_budget.json").read_text())
 doc["days"][gv._today()] = {"calls": 5}
