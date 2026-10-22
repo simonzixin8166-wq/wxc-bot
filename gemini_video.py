@@ -21,6 +21,7 @@ import difflib
 import json
 import os
 import re
+import time
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -31,6 +32,7 @@ MODEL = os.getenv("GEMINI_VIDEO_MODEL", "gemini-3.8-flash")
 DAILY_CAP = int(os.getenv("GEMINI_VIDEO_DAILY_CAP", "10"))
 RUN_CAP = int(os.getenv("GEMINI_VIDEO_RUN_CAP", "2"))
 TIMEOUT = int(os.getenv("GEMINI_VIDEO_TIMEOUT", "240"))
+RETRY_WAIT = int(os.getenv("GEMINI_VIDEO_RETRY_WAIT", "20"))
 MAX_CLAIMS = 12
 CLAIM_CHARS = 120
 KEEP_DAYS = 45
@@ -166,16 +168,18 @@ def _extract_json(raw):
     return json.loads(m.group(0)) if m else None
 
 
+TRADE_WORDS = {"buy", "sell", "short", "cover", "order", "trade", "place_order", "open", "close"}
+
+
 def _safe(parsed):
-    """Reject output that claims forward/promotion eligibility or a production action. A missing safety block
-    is fine: these guardrails are enforced by MyAlpha itself (Q3, never rule-eligible), not by the model."""
+    """The model's own 'safety' echo is not a guarantee - MyAlpha enforces the guardrails itself (Q3, never
+    rule-eligible, forward_evidence_eligible=false). Reject only when the model proposes a concrete trade
+    action for the platform; other wording ('none', 'n/a', flags flipped) is ignored and overwritten."""
     s = parsed.get("safety")
-    if s is None:
-        return True
     if not isinstance(s, dict):
-        return False
-    return (s.get("forward_evidence_eligible") in (False, None) and s.get("promotion_eligible") in (False, None)
-            and s.get("production_action") in (None, "", "null") and s.get("historical_only") in (True, None))
+        return True
+    action = str(s.get("production_action") or "").strip().lower()
+    return action not in TRADE_WORDS
 
 
 def render(parsed):
@@ -214,9 +218,12 @@ def acquire(video_id, title, author, post=None):
     url = f"https://www.youtube.com/watch?v={video_id}"
     body = {"model": MODEL, "input": [{"type": "video", "uri": url}, {"type": "text", "text": PROMPT}]}
     try:
-        r = post(ENDPOINT, json=body, timeout=TIMEOUT,
-                 headers={"x-goog-api-key": os.environ["GEMINI_API_KEY"].strip(), "Content-Type": "application/json",
-                          "User-Agent": "MyAlphaView-YT01/1.0"})
+        headers = {"x-goog-api-key": os.environ["GEMINI_API_KEY"].strip(), "Content-Type": "application/json",
+                   "User-Agent": "MyAlphaView-YT01/1.0"}
+        r = post(ENDPOINT, json=body, timeout=TIMEOUT, headers=headers)
+        if r.status_code == 503:  # "high demand" is usually momentary: one retry within the same budgeted call
+            time.sleep(RETRY_WAIT)
+            r = post(ENDPOINT, json=body, timeout=TIMEOUT, headers=headers)
         if r.status_code == 429:
             _bump("exhausted", video_id, "http_429", _body(r))
             return None
@@ -231,7 +238,7 @@ def acquire(video_id, title, author, post=None):
         _bump("rejected", video_id, "no_json")
         return None
     if not _safe(parsed):
-        _bump("rejected", video_id, "safety_contract")
+        _bump("rejected", video_id, "safety_contract", json.dumps(parsed.get("safety"), ensure_ascii=False))
         return None
     if not identity_ok(parsed, title, author):
         _bump("rejected", video_id, "identity_mismatch",

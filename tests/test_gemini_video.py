@@ -13,6 +13,7 @@ tmp = tempfile.mkdtemp()
 os.environ["DATA_DIR"] = tmp
 os.environ["GEMINI_VIDEO_DAILY_CAP"] = "5"
 os.environ["GEMINI_VIDEO_RUN_CAP"] = "2"
+os.environ["GEMINI_VIDEO_RETRY_WAIT"] = "0"
 os.environ.pop("GEMINI_API_KEY", None)
 import gemini_video as gv
 import transcript_router as tr
@@ -100,6 +101,19 @@ doc["days"][gv._today()] = {"calls": 5}
 gv._run_calls = 0
 assert gv.budget_ok() is False
 
+# 503 "high demand" is retried once inside the same budgeted call
+doc = json.loads((Path(tmp) / "gemini_video_budget.json").read_text())
+doc["days"][gv._today()] = {"calls": 0}
+(Path(tmp) / "gemini_video_budget.json").write_text(json.dumps(doc))
+gv._run_calls = 0
+seq = [Resp(503, {}), Resp(200, wrap(GOOD))]
+def flaky(url, json=None, timeout=None, headers=None):
+    return seq.pop(0)
+assert gv.acquire("vid1", TITLE, AUTHOR, post=flaky) and not seq and budget()["calls"] == 1
+doc["days"][gv._today()] = {"calls": 5}
+(Path(tmp) / "gemini_video_budget.json").write_text(json.dumps(doc))
+gv._run_calls = 0
+
 # identity helper: same title passes, channel-only near match passes, unrelated fails
 assert gv.identity_ok({"observed_title": TITLE}, TITLE, AUTHOR)
 assert gv.identity_ok({"observed_title": "SPCX前瞻提振半导体 NFLX 等待", "observed_channel": "视野环球财经"}, TITLE, AUTHOR)
@@ -115,7 +129,9 @@ assert "T2" not in gv.PROMPT and "{title}" not in gv.PROMPT
 # safety: missing block is fine (MyAlpha enforces it), contradicting it is not
 assert gv._safe({}) and gv._safe({"safety": GOOD["safety"]})
 assert not gv._safe({"safety": dict(GOOD["safety"], production_action="buy")})
-assert not gv._safe({"safety": dict(GOOD["safety"], forward_evidence_eligible=True)})
+assert gv._safe({"safety": dict(GOOD["safety"], forward_evidence_eligible=True)})  # ignored: MyAlpha forces False
+assert gv._safe({"safety": dict(GOOD["safety"], production_action="none", historical_only=False)})
+assert not gv._safe({"safety": dict(GOOD["safety"], production_action="SELL")})
 
 # 5) router: only the forward intake opts in; health probes / archives never spend the budget
 doc["days"][gv._today()] = {"calls": 0}
