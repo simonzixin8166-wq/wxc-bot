@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-10-22T05:12:25Z",
+  "generated_at": "2026-10-22T11:47:53Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -27,10 +27,11 @@
         "video_id": "DQ0Yn27pdgk",
         "title": "美股 空头杀红眼5倍加码！META自保，含糊27年资本支出！TSLA、LRCX、GOOG！",
         "url": "https://www.youtube.com/watch?v=DQ0Yn27pdgk",
-        "published_at": "",
+        "published_at": "2026-10-22",
         "flat_metadata_keys": [
           "channel_id",
-          "duration"
+          "duration",
+          "rss_published_at"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -63,10 +64,11 @@
         "video_id": "ecN20bdjkrs",
         "title": "8支重磅股票！买入/加仓，价格点位更新",
         "url": "https://www.youtube.com/watch?v=ecN20bdjkrs",
-        "published_at": "",
+        "published_at": "2026-10-19",
         "flat_metadata_keys": [
           "channel_id",
-          "duration"
+          "duration",
+          "rss_published_at"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -127,9 +129,9 @@
   "discovery_complete": true,
   "new_video_diagnostics": [
     {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "XMs6mASFtbE",
-      "title": "美股 AMZN撑起半边天！多空决战蓄势待发！杠杆ETF抄底创纪录！ SPCX、TSLA、META财报波动！",
+      "author": "老李玩钱",
+      "video_id": "6_GvmiNgd4M",
+      "title": "美股7巨头，价格已到位！买入/加仓价格点位更新",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -139,8 +141,8 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "g7V8AbUkjcs",
-      "title": "美股 SPCX前瞻大幅提振半导体！NFLX蛰伏等待！ISRG加仓计划更新！",
+      "video_id": "71FEJcz9VCY",
+      "title": "美股 凯投宏观：AI泡沫潜在破灭，五个警告信号！8月财政报告恶化，利息飙升！SOXX跟踪！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -150,8 +152,19 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "DQ0Yn27pdgk",
-      "title": "美股 空头杀红眼5倍加码！META自保，含糊27年资本支出！TSLA、LRCX、GOOG！",
+      "video_id": "7IraEqi0ZKs",
+      "title": "美股 机构二季度13 F，加减仓哪些！大空头Michael Burry最新操作，真的相当空！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "Andrei Jikh",
+      "video_id": "87NzxCEUQlw",
+      "title": "China Just Shut Down Gold Trading",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -161,8 +174,8 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "-KAra9tD4RU",
-      "title": "（会员第297期）2026年8月03日-07日，重要公司Q2财报后2026、2027前瞻估值，强支撑点位！",
+      "video_id": "8DY3zEBTFZ8",
+      "title": "美股 系统准备重新武装杠杆！MSFT再跌一天修复！半导体、软件，又跷跷板？ CRWV、NBIS、LITE、COHR！APP再跟踪！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -172,19 +185,8 @@
     },
     {
       "author": "老李玩钱",
-      "video_id": "0KgZcbhZoXk",
-      "title": "2支被忽略的科技巨头！分析与买入建议",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "0w77lIBdCn0",
-      "title": "美股 机构弹药见底！下一步，暴风雨？平静？TSLA、IGV、AVGO！",
+      "video_id": "8uy8c4S2BW4",
+      "title": "英伟达财报渡劫！依然长期看好",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
