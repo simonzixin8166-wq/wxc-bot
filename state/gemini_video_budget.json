@@ -1,10 +1,23 @@
 {
   "days": {
     "2026-10-22": {
-      "calls": 4,
+      "calls": 6,
       "admitted": 0,
-      "rejected": 1,
-      "errors": 3
+      "rejected": 3,
+      "errors": 3,
+      "recent": [
+        {
+          "video_id": "DQ0Yn27pdgk",
+          "outcome": "identity_mismatch",
+          "at": "04:44:15Z",
+          "detail": "seen='多空决战蓄势待发！META、特斯拉、泛林财报深度解析！空头加码5倍做空！| 视野环球财经 20241023' channel='视野环球财经'"
+        },
+        {
+          "video_id": "mR1KTb9wBT0",
+          "outcome": "safety_contract",
+          "at": "04:45:36Z"
+        }
+      ]
     }
   },
   "version": 1,
