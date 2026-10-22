@@ -109,7 +109,12 @@ gv._run_calls = 0
 seq = [Resp(503, {}), Resp(200, wrap(GOOD))]
 def flaky(url, json=None, timeout=None, headers=None):
     return seq.pop(0)
-assert gv.acquire("vid1", TITLE, AUTHOR, post=flaky) and not seq and budget()["calls"] == 1
+got503 = gv.acquire("vid1", TITLE, AUTHOR, post=flaky)
+assert got503 and not seq and budget()["calls"] == 1 and got503["structured"]["model"] == gv.MODELS[1]
+# every model overloaded -> no admission, call refunded to today's cap
+gv._run_calls = 0
+assert gv.acquire("vid1", TITLE, AUTHOR, post=lambda *a, **k: Resp(503, {})) is None
+assert budget()["calls"] == 1 and budget()["refunded_503"] == 1 and budget()["recent"][-1]["outcome"] == "http_503_all_models"
 doc["days"][gv._today()] = {"calls": 5}
 (Path(tmp) / "gemini_video_budget.json").write_text(json.dumps(doc))
 gv._run_calls = 0
