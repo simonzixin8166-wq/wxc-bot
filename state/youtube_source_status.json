@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-10-22T04:33:11Z",
+  "generated_at": "2026-10-22T04:40:47Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -138,31 +138,9 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "老李玩钱",
-      "video_id": "alcGiFrl6k0",
-      "title": "个股点评及买入建议：PLTR，SOFI，GOOG，MSFT，TSLA",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "bdzWer7gNII",
-      "title": "美股 OpenAI给半导体打鸡血！SOXX底部已成？ORCL、AMD、NVDA！TSLA遭行政狙击！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "cwQxqL-vC94",
-      "title": "美股 WMT糟糕前瞻大跌还债！ISRG无风起浪！NOW、SPCX！美国债务累积95天走完200年！",
+      "author": "Andrei Jikh",
+      "video_id": "hy90LdpEUvQ",
+      "title": "South Korea’s AI Bubble Just Popped",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -172,8 +150,8 @@
     },
     {
       "author": "Andrei Jikh",
-      "video_id": "dFjvcY9Tth0",
-      "title": "China Is Preparing For $38,000 Gold",
+      "video_id": "jx14bV5ffw0",
+      "title": "Russia Just Legalized Crypto",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -183,8 +161,30 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "dTQmi_hrOpU",
-      "title": "美股 ORCL缺乏惊喜，ADBE底气不足！SOXX遇阻、IGV破位！CTA触发标普承压，VIX苏醒！",
+      "video_id": "kXr89fM66C4",
+      "title": "美股 罕见吸血，半导体、软件齐飞！IGV暴涨突破剑指新高！PLTR、NOW、MSFT！CRWD、MRVL财报！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "Andrei Jikh",
+      "video_id": "kZDqW9hbB50",
+      "title": "How To Prepare (Gold, Silver, Oil)",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "老李玩钱",
+      "video_id": "mCI0-03LcvM",
+      "title": "SpaceX即将上市！散户该如何参与？对特斯拉股价会有怎样的影响",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,

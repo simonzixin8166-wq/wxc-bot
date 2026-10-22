@@ -1,10 +1,10 @@
 {
   "days": {
     "2026-10-22": {
-      "calls": 2,
+      "calls": 4,
       "admitted": 0,
       "rejected": 1,
-      "errors": 1
+      "errors": 3
     }
   },
   "version": 1,
