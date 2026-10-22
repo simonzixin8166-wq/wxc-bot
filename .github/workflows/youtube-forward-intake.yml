@@ -26,7 +26,7 @@ concurrency:
 jobs:
   youtube-forward:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
         with:
@@ -42,16 +42,22 @@ jobs:
 
       - name: Validate YouTube forward intake
         run: |
-          python -m py_compile youtube_research.py youtube_learning_archive.py transcript_router.py research_feed.py
+          python -m py_compile youtube_research.py youtube_learning_archive.py transcript_router.py research_feed.py gemini_video.py
           PYTHONPATH=. python tests/test_youtube_research.py
           PYTHONPATH=. python tests/test_youtube_learning_archive.py
           PYTHONPATH=. python tests/test_transcript_router.py
+          PYTHONPATH=. python tests/test_gemini_video.py
           PYTHONPATH=. python tests/test_source_intake_completeness.py
 
       - name: Collect YouTube forward research
         env:
           DATA_DIR: state
           TRANSCRIPT_FAST_MODE: "1"
+          # YT-01: Gemini video understanding fallback (free tier; off when the secret is absent)
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_VIDEO_DAILY_CAP: "10"
+          GEMINI_VIDEO_RUN_CAP: "2"
+          GEMINI_VIDEO_TIMEOUT: "180"
         run: python youtube_research.py
 
       - name: Process a bounded historical YouTube backlog batch
@@ -82,4 +88,5 @@ jobs:
           python youtube_learning_reconciliation.py || echo '::warning::youtube reconciliation failed (non-gating)'
           if [ -f state/youtube_learning_reconciliation.json ]; then git add state/youtube_learning_reconciliation.json; fi
           if [ -f state/youtube_historical_backlog.json ]; then git add state/youtube_historical_backlog.json; fi
+          if [ -f state/gemini_video_budget.json ]; then git add state/gemini_video_budget.json; fi
           git diff --cached --quiet || (git commit -m "update YouTube forward research" && git pull --rebase origin main && python verify_research_feed.py && git push origin HEAD:main)

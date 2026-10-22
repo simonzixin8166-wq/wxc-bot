@@ -7,7 +7,8 @@ Priority:
 Q1 official/auto transcript -> Q2 third-party near-full transcript
 -> Q3 timestamped structured summary -> Q4 public summary -> Q5 metadata only.
 
-Only allowlisted public providers are queried. Pages are fetched only for newly
+Only allowlisted public providers are queried; Gemini video understanding (YT-01) is the last
+fallback and only runs with GEMINI_API_KEY set, within a daily free-tier budget. Pages are fetched only for newly
 observed videos or explicit health probes. The router never downloads video/audio.
 """
 from __future__ import annotations
@@ -55,6 +56,7 @@ class Acquisition:
     rule_candidate_allowed:bool=False
     chars:int=0
     note:str=""
+    structured:dict|None=None
 
     def to_dict(self):
         d=asdict(self)
@@ -258,7 +260,18 @@ def _duckduckgo_links(query:str)->list[str]:
     except Exception:
         return []
 
-def acquire_third_party(video_id:str,title:str,author:str)->Acquisition:
+def _gemini_fallback(video_id:str,title:str,author:str)->Acquisition|None:
+    """YT-01: last resort when no transcript/summary provider has the video (off without GEMINI_API_KEY)."""
+    try:
+        import gemini_video
+        got=gemini_video.acquire(video_id,title,author)
+    except Exception:
+        return None
+    if not got:
+        return None
+    return Acquisition(**{k:got[k] for k in Acquisition.__dataclass_fields__ if k in got})
+
+def acquire_third_party(video_id:str,title:str,author:str,allow_gemini:bool=False)->Acquisition:
     # English channels with stable PickScribe video-id pages should go direct
     # first. This avoids expensive title-search fallbacks and reduces transient
     # provider failures. Chinese rule-supply sources still prefer xgoose's
@@ -277,7 +290,7 @@ def acquire_third_party(video_id:str,title:str,author:str)->Acquisition:
         # New-video collection is latency-sensitive. If exact providers have
         # not indexed the video yet, persist it in pending and retry later
         # rather than fan out to broad web discovery in the same daily run.
-        return Acquisition(note="Fast mode: exact providers not ready; retry from pending on a later run.")
+        return (allow_gemini and _gemini_fallback(video_id,title,author)) or Acquisition(note="Fast mode: exact providers not ready; retry from pending on a later run.")
 
     queries=[
         f'"{video_id}" transcript',
@@ -293,10 +306,11 @@ def acquire_third_party(video_id:str,title:str,author:str)->Acquisition:
             got=_candidate_from_url(url,title,author)
             if got:
                 return got
-    return Acquisition(note="No allowlisted public transcript/summary provider matched this video.")
+    return (allow_gemini and _gemini_fallback(video_id,title,author)) or Acquisition(note="No allowlisted public transcript/summary provider matched this video.")
 
-def acquire(video_id:str,title:str,author:str,official_fetcher=None)->dict:
-    """Acquire best available text. official_fetcher(video_id)->(text,status)."""
+def acquire(video_id:str,title:str,author:str,official_fetcher=None,allow_gemini:bool=False)->dict:
+    """Acquire best available text. official_fetcher(video_id)->(text,status).
+    allow_gemini: only the forward intake opts in (health probes and archives never spend the Gemini budget)."""
     if official_fetcher:
         try:
             text,status=official_fetcher(video_id)
@@ -316,7 +330,7 @@ def acquire(video_id:str,title:str,author:str,official_fetcher=None)->dict:
         except Exception:
             pass
 
-    return acquire_third_party(video_id,title,author).to_dict()
+    return acquire_third_party(video_id,title,author,allow_gemini=allow_gemini).to_dict()
 
 def public_view(result:dict)->dict:
     """Sanitized acquisition metadata; never expose/store full transcript here."""

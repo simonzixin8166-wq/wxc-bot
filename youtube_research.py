@@ -14,6 +14,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import re
 import os
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
@@ -162,7 +163,7 @@ def youtube_official_transcript(video_id:str)->tuple[str,str]:
         return "",f"unavailable:{type(exc).__name__}"
 
 def default_transcript(video_id:str,title:str="",author:str="")->dict:
-    return tr.acquire(video_id,title,author,official_fetcher=youtube_official_transcript)
+    return tr.acquire(video_id,title,author,official_fetcher=youtube_official_transcript,allow_gemini=True)
 
 def _acq(fetcher,video_id,title,author):
     """Normalize injected legacy tuple fetchers and router dict results."""
@@ -207,6 +208,10 @@ def _content_ready(channel:dict, acquisition:dict)->bool:
     has_text=bool((acquisition.get("text") or "").strip())
     if not has_text:
         return False
+    if acquisition.get("content_origin")=="gemini_video_understanding":
+        # YT-01 (Owner 10/22): admitted for learning as an experimental Q3 record for any role; it never
+        # becomes rule-eligible here and its claims wait for the Owner's spot check.
+        return quality=="Q3" and bool(acquisition.get("structured"))
     if channel.get("role")=="rule_supply":
         return quality in {"Q1","Q2"} and bool(acquisition.get("rule_candidate_allowed"))
     if channel.get("role")=="market_context":
@@ -267,7 +272,7 @@ def make_feed_row(channel:dict, meta:dict, acquisition:dict)->dict:
             "portfolio_rules":[],
             "lessons":[],
         }
-    return {
+    row={
         "id":hashlib.sha1(("youtube|"+channel["author"]+"|"+vid).encode("utf-8")).hexdigest()[:20],
         "source":"youtube",
         "source_kind":"video",
@@ -297,6 +302,18 @@ def make_feed_row(channel:dict, meta:dict, acquisition:dict)->dict:
         "rule_candidate_allowed":bool(acquisition.get("rule_candidate_allowed")),
         "source_notice":"公开视频研究来源；仅保存短摘录与原视频链接。作者观点属于未验证假设，MyAlpha需独立验证后才可进入正式证据。",
     }
+    st=acquisition.get("structured") or {}
+    if acquisition.get("content_origin")=="gemini_video_understanding" and st:
+        row["symbols"]=sorted(set(row["symbols"])|{s for s in (st.get("symbols") or []) if re.fullmatch(r"[A-Z][A-Z0-9.]{0,9}",str(s))})
+        row["claims"]=rf._claims(joined)
+        row["claims_status"]="experimental_unvalidated"
+        row["video_claims"]=st.get("claims") or []
+        row["video_claims_model"]=st.get("model")
+        row["video_observed_title"]=str(st.get("observed_title") or "")[:200]
+        row["validation_status"]="pending_owner_spot_check"
+        row["forward_evidence_eligible"]=False
+        row["source_notice"]="公开视频由 Gemini 读取原片（语音+画面）生成的结构化摘要；观点未验证、不可直接作为规则，等待 Owner 抽查原片核对。"
+    return row
 
 def _intake_health(pending_rows:list[dict], channel_status:list[dict])->dict:
     channel_errors=[x for x in channel_status if x.get("status")!="ok"]
