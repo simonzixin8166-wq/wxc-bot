@@ -232,7 +232,7 @@
     },
     "2026-10-22": {
       "telegram:send_message": {
-        "count": 1,
+        "count": 2,
         "paid": false
       },
       "telegram:get_updates": {

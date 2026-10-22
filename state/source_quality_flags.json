@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-22T00:57:08+00:00",
- "records": 2161,
+ "generated_at": "2026-10-22T04:30:14+00:00",
+ "records": 2163,
  "excluded": 20,
  "flag_counts": {
   "invalid_transcript": 20
@@ -11,10 +11,10 @@
   "note": "video count follows the live feed (18 at the 10-11 inventory, 19 after a new video was captured 10-11 12:45Z)"
  },
  "provenance_counts": {
-  "near_publication_observed": 1031,
+  "near_publication_observed": 1049,
   "backfill_proven": 1060,
   "delayed_capture": 29,
-  "unprovable": 41
+  "unprovable": 25
  },
  "policy": "overlay only; feed/raw files unchanged; near_publication_observed ≠ real-time lock",
  "records_flags": {
@@ -15062,123 +15062,137 @@
   "4705b13ec21a5c57c2c7": {
    "flags": [],
    "exclude": false,
-   "provenance": "unprovable",
-   "first_git_seen": null,
+   "provenance": "near_publication_observed",
+   "first_git_seen": "2026-10-22T00:57:08Z",
    "published_at_timezone": "unknown"
   },
   "dd96c9276b2404ca575b": {
    "flags": [],
    "exclude": false,
-   "provenance": "unprovable",
-   "first_git_seen": null,
+   "provenance": "near_publication_observed",
+   "first_git_seen": "2026-10-22T00:57:08Z",
    "published_at_timezone": "unknown"
   },
   "236649638c591a09dd52": {
    "flags": [],
    "exclude": false,
-   "provenance": "unprovable",
-   "first_git_seen": null,
+   "provenance": "near_publication_observed",
+   "first_git_seen": "2026-10-22T00:57:08Z",
    "published_at_timezone": "unknown"
   },
   "772e77aa3d71d27a9258": {
    "flags": [],
    "exclude": false,
-   "provenance": "unprovable",
-   "first_git_seen": null,
+   "provenance": "near_publication_observed",
+   "first_git_seen": "2026-10-22T00:57:08Z",
    "published_at_timezone": "unknown"
   },
   "a49ac8f18485746ed125": {
    "flags": [],
    "exclude": false,
-   "provenance": "unprovable",
-   "first_git_seen": null,
+   "provenance": "near_publication_observed",
+   "first_git_seen": "2026-10-22T00:57:08Z",
    "published_at_timezone": "unknown"
   },
   "5f332c934799ac324761": {
    "flags": [],
    "exclude": false,
-   "provenance": "unprovable",
-   "first_git_seen": null,
+   "provenance": "near_publication_observed",
+   "first_git_seen": "2026-10-22T00:57:08Z",
    "published_at_timezone": "unknown"
   },
   "0cfe537fc5a4ca81933f": {
    "flags": [],
    "exclude": false,
-   "provenance": "unprovable",
-   "first_git_seen": null,
+   "provenance": "near_publication_observed",
+   "first_git_seen": "2026-10-22T00:57:08Z",
    "published_at_timezone": "unknown"
   },
   "ed53ca7130e13714680e": {
    "flags": [],
    "exclude": false,
-   "provenance": "unprovable",
-   "first_git_seen": null,
+   "provenance": "near_publication_observed",
+   "first_git_seen": "2026-10-22T00:57:08Z",
    "published_at_timezone": "unknown"
   },
   "48c07bab29910bf690fa": {
    "flags": [],
    "exclude": false,
-   "provenance": "unprovable",
-   "first_git_seen": null,
+   "provenance": "near_publication_observed",
+   "first_git_seen": "2026-10-22T00:57:08Z",
    "published_at_timezone": "unknown"
   },
   "716b5c4066ba489b74c0": {
    "flags": [],
    "exclude": false,
-   "provenance": "unprovable",
-   "first_git_seen": null,
+   "provenance": "near_publication_observed",
+   "first_git_seen": "2026-10-22T00:57:08Z",
    "published_at_timezone": "unknown"
   },
   "53cb0474e37af52d51ba": {
    "flags": [],
    "exclude": false,
-   "provenance": "unprovable",
-   "first_git_seen": null,
+   "provenance": "near_publication_observed",
+   "first_git_seen": "2026-10-22T00:57:08Z",
    "published_at_timezone": "unknown"
   },
   "195b6090cad056ae0a2e": {
    "flags": [],
    "exclude": false,
-   "provenance": "unprovable",
-   "first_git_seen": null,
+   "provenance": "near_publication_observed",
+   "first_git_seen": "2026-10-22T00:57:08Z",
    "published_at_timezone": "unknown"
   },
   "7a358508391eb6d9e2bc": {
    "flags": [],
    "exclude": false,
-   "provenance": "unprovable",
-   "first_git_seen": null,
+   "provenance": "near_publication_observed",
+   "first_git_seen": "2026-10-22T00:57:08Z",
    "published_at_timezone": "unknown"
   },
   "336d22b27a93c6819b9b": {
    "flags": [],
    "exclude": false,
-   "provenance": "unprovable",
-   "first_git_seen": null,
+   "provenance": "near_publication_observed",
+   "first_git_seen": "2026-10-22T00:57:08Z",
    "published_at_timezone": "unknown"
   },
   "8fc90c383033f71c441b": {
    "flags": [],
    "exclude": false,
-   "provenance": "unprovable",
-   "first_git_seen": null,
+   "provenance": "near_publication_observed",
+   "first_git_seen": "2026-10-22T00:57:08Z",
    "published_at_timezone": "unknown"
   },
   "ec92f168f4446af2085c": {
    "flags": [],
    "exclude": false,
-   "provenance": "unprovable",
-   "first_git_seen": null,
+   "provenance": "near_publication_observed",
+   "first_git_seen": "2026-10-22T00:57:08Z",
    "published_at_timezone": "unknown"
   },
   "16fa2186e12fca0912f1": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "near_publication_observed",
+   "first_git_seen": "2026-10-22T00:57:08Z",
+   "published_at_timezone": "unknown"
+  },
+  "c2733f49aec536882fc6": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "near_publication_observed",
+   "first_git_seen": "2026-10-22T00:57:08Z",
+   "published_at_timezone": "unknown"
+  },
+  "0f111660cb028f5e5e76": {
    "flags": [],
    "exclude": false,
    "provenance": "unprovable",
    "first_git_seen": null,
    "published_at_timezone": "unknown"
   },
-  "c2733f49aec536882fc6": {
+  "8627ca0ebf5b6146ba9b": {
    "flags": [],
    "exclude": false,
    "provenance": "unprovable",
