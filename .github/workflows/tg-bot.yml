@@ -49,11 +49,13 @@ jobs:
           git config user.name "wxc-bot"
           git config user.email "wxc-bot@users.noreply.github.com"
           # tg-bot is notification-only: never stage the canonical research feed.
+          git config merge.request-ledger.driver "python merge_request_ledger.py %O %A %B"
           git add state ':!state/research_feed.json' ':!state/research_feed_manifest.json'
           if ! git diff --cached --quiet; then
             git commit -m "update state"
             for i in 1 2 3; do
               git pull --rebase origin main && git push origin HEAD:main && break
+              git rebase --abort 2>/dev/null || true
               sleep $((i*5))
             done
           fi
