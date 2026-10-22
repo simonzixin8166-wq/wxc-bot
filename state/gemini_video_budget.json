@@ -1,0 +1,12 @@
+{
+  "days": {
+    "2026-10-22": {
+      "calls": 2,
+      "admitted": 0,
+      "rejected": 1,
+      "errors": 1
+    }
+  },
+  "version": 1,
+  "policy": "free tier only; <= 10 calls/day, <= 2 per run; 429 stops the day"
+}

@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-10-21T23:17:36Z",
+  "generated_at": "2026-10-22T04:33:11Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -19,14 +19,14 @@
           "reached_end": false
         }
       ],
-      "previous_anchor_video_id": "g7V8AbUkjcs",
+      "previous_anchor_video_id": "DQ0Yn27pdgk",
       "anchor_found": true,
       "reached_end": false,
       "discovery_complete": true,
       "latest": {
-        "video_id": "g7V8AbUkjcs",
-        "title": "美股 SPCX前瞻大幅提振半导体！NFLX蛰伏等待！ISRG加仓计划更新！",
-        "url": "https://www.youtube.com/watch?v=g7V8AbUkjcs",
+        "video_id": "DQ0Yn27pdgk",
+        "title": "美股 空头杀红眼5倍加码！META自保，含糊27年资本支出！TSLA、LRCX、GOOG！",
+        "url": "https://www.youtube.com/watch?v=DQ0Yn27pdgk",
         "published_at": "",
         "flat_metadata_keys": [
           "channel_id",
@@ -91,14 +91,14 @@
           "reached_end": false
         }
       ],
-      "previous_anchor_video_id": "TNQ2PuDLiOg",
+      "previous_anchor_video_id": "y4InEG485vw",
       "anchor_found": true,
       "reached_end": false,
       "discovery_complete": true,
       "latest": {
-        "video_id": "TNQ2PuDLiOg",
-        "title": "XRP: The Next “Global Payment”",
-        "url": "https://www.youtube.com/watch?v=TNQ2PuDLiOg",
+        "video_id": "y4InEG485vw",
+        "title": "Europe Is the Test. America Is Next.",
+        "url": "https://www.youtube.com/watch?v=y4InEG485vw",
         "published_at": "",
         "flat_metadata_keys": [
           "channel_id",
@@ -117,8 +117,8 @@
   "pending_retried": 6,
   "content_attempted_this_run": 6,
   "content_work_budget": 6,
-  "content_backlog_after_run": 109,
-  "pending_total": 109,
+  "content_backlog_after_run": 110,
+  "pending_total": 110,
   "historical_demoted_from_pending": 0,
   "admitted_from_pending": 0,
   "nonforward_timestamp_unknown_admitted": 0,
@@ -128,19 +128,8 @@
   "new_video_diagnostics": [
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "Z9T89cdzuyo",
-      "title": "美股 NVDA、MRVL、INTU、CRWD、CRM财报波动！对冲基金上周大抛售！大逆转，Altman承认AI时间表看法错误！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "Andrei Jikh",
-      "video_id": "ZEi5tVIXWyc",
-      "title": "South Korea’s AI Bubble Just Popped",
+      "video_id": "DQ0Yn27pdgk",
+      "title": "美股 空头杀红眼5倍加码！META自保，含糊27年资本支出！TSLA、LRCX、GOOG！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -150,8 +139,30 @@
     },
     {
       "author": "老李玩钱",
-      "video_id": "ZGYWudfZMM4",
-      "title": "美股重回高位，要卖股票了吗？到底什么时候该卖出股票",
+      "video_id": "alcGiFrl6k0",
+      "title": "个股点评及买入建议：PLTR，SOFI，GOOG，MSFT，TSLA",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "bdzWer7gNII",
+      "title": "美股 OpenAI给半导体打鸡血！SOXX底部已成？ORCL、AMD、NVDA！TSLA遭行政狙击！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "cwQxqL-vC94",
+      "title": "美股 WMT糟糕前瞻大跌还债！ISRG无风起浪！NOW、SPCX！美国债务累积95天走完200年！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -161,8 +172,8 @@
     },
     {
       "author": "Andrei Jikh",
-      "video_id": "Z_xvkbGWauU",
-      "title": "China Just Shut Down Gold Trading",
+      "video_id": "dFjvcY9Tth0",
+      "title": "China Is Preparing For $38,000 Gold",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -172,19 +183,8 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "-e3gyj_NP7c",
-      "title": "美股 科技股、半导体失血！消费股领涨，XLP重要位置！SMH、SOXX完成修复！SPY、QQQ、XLK长线点位更新！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "Zl1B2xBExw8",
-      "title": "（会员第301期）买点避雷，减少误判！18条原则，坚决不买！个人经验干货分享！",
+      "video_id": "dTQmi_hrOpU",
+      "title": "美股 ORCL缺乏惊喜，ADBE底气不足！SOXX遇阻、IGV破位！CTA触发标普承压，VIX苏醒！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -197,7 +197,7 @@
     "status": "ok",
     "channel_errors": 0,
     "stuck_high_quality_pending": 0,
-    "provider_waiting_pending": 109,
+    "provider_waiting_pending": 110,
     "stuck_video_ids": [],
     "meaning": "Q1/Q2 text must not remain stuck in pending; Q3-Q5 may legitimately wait for better learning text."
   },
