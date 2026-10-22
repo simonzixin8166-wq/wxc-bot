@@ -229,6 +229,12 @@
         "count": 8,
         "paid": false
       }
+    },
+    "2026-10-22": {
+      "telegram:send_message": {
+        "count": 1,
+        "paid": false
+      }
     }
   }
 }
