@@ -28,7 +28,8 @@ from pathlib import Path
 import requests
 
 ENDPOINT = "https://generativelanguage.googleapis.com/v1beta/interactions"
-MODEL = os.getenv("GEMINI_VIDEO_MODEL", "gemini-3.8-flash")
+MODELS = [m.strip() for m in os.getenv("GEMINI_VIDEO_MODELS", "gemini-3.8-flash,gemini-3.5-flash").split(",") if m.strip()]
+MODEL = MODELS[0]
 DAILY_CAP = int(os.getenv("GEMINI_VIDEO_DAILY_CAP", "10"))
 RUN_CAP = int(os.getenv("GEMINI_VIDEO_RUN_CAP", "2"))
 TIMEOUT = int(os.getenv("GEMINI_VIDEO_TIMEOUT", "240"))
@@ -112,6 +113,15 @@ def _body(r):
         return (r.text or "")[:200]
     except Exception:
         return ""
+
+
+def _refund():
+    doc = _load_budget()
+    day = (doc.get("days") or {}).get(_today())
+    if day and int(day.get("calls") or 0) > 0:
+        day["calls"] = int(day["calls"]) - 1
+        day["refunded_503"] = int(day.get("refunded_503") or 0) + 1
+        _save_budget(doc)
 
 
 def enabled():
@@ -216,16 +226,27 @@ def acquire(video_id, title, author, post=None):
     _run_calls += 1
     _bump("calls")
     url = f"https://www.youtube.com/watch?v={video_id}"
-    body = {"model": MODEL, "input": [{"type": "video", "uri": url}, {"type": "text", "text": PROMPT}]}
+    used = MODEL
     try:
         headers = {"x-goog-api-key": os.environ["GEMINI_API_KEY"].strip(), "Content-Type": "application/json",
                    "User-Agent": "MyAlphaView-YT01/1.0"}
-        r = post(ENDPOINT, json=body, timeout=TIMEOUT, headers=headers)
-        if r.status_code == 503:  # "high demand" is usually momentary: one retry within the same budgeted call
-            time.sleep(RETRY_WAIT)
+        r = None
+        # "high demand" (503) on one model: wait briefly and try the next free model inside the same call.
+        for i, model in enumerate(MODELS):
+            if i:
+                time.sleep(RETRY_WAIT)
+            used = model
+            body = {"model": model, "input": [{"type": "video", "uri": url}, {"type": "text", "text": PROMPT}]}
             r = post(ENDPOINT, json=body, timeout=TIMEOUT, headers=headers)
+            if r.status_code != 503:
+                break
         if r.status_code == 429:
             _bump("exhausted", video_id, "http_429", _body(r))
+            return None
+        if r.status_code == 503:
+            # Google-side overload: nothing was processed, so the call is refunded to today's budget.
+            _bump("errors", video_id, "http_503_all_models", _body(r))
+            _refund()
             return None
         if r.status_code != 200:
             _bump("errors", video_id, f"http_{r.status_code}", _body(r))
@@ -254,8 +275,8 @@ def acquire(video_id, title, author, post=None):
         "provider_url": url, "content_origin": ORIGIN,
         "timestamp_evidence": any(c.get("timestamp") for c in claims(parsed)),
         "rule_candidate_allowed": False, "chars": len(text),
-        "note": f"Gemini {MODEL} read the public video; experimental, pending Owner spot check.",
-        "structured": {"model": MODEL, "observed_title": parsed.get("observed_title"),
+        "note": f"Gemini {used} read the public video; experimental, pending Owner spot check.",
+        "structured": {"model": used, "observed_title": parsed.get("observed_title"),
                        "claims": claims(parsed), "symbols": [str(s)[:12] for s in (parsed.get("symbols") or [])][:12],
                        "uncertainties": [str(u)[:CLAIM_CHARS] for u in (parsed.get("uncertainties") or [])][:5]},
     }
