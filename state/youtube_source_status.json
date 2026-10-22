@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-10-22T04:57:13Z",
+  "generated_at": "2026-10-22T05:12:25Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -127,9 +127,53 @@
   "discovery_complete": true,
   "new_video_diagnostics": [
     {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "XMs6mASFtbE",
+      "title": "美股 AMZN撑起半边天！多空决战蓄势待发！杠杆ETF抄底创纪录！ SPCX、TSLA、META财报波动！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "g7V8AbUkjcs",
+      "title": "美股 SPCX前瞻大幅提振半导体！NFLX蛰伏等待！ISRG加仓计划更新！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "DQ0Yn27pdgk",
+      "title": "美股 空头杀红眼5倍加码！META自保，含糊27年资本支出！TSLA、LRCX、GOOG！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "-KAra9tD4RU",
+      "title": "（会员第297期）2026年8月03日-07日，重要公司Q2财报后2026、2027前瞻估值，强支撑点位！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
       "author": "老李玩钱",
-      "video_id": "yEdijFeesTs",
-      "title": "$310,000美股账户，我加仓/减仓的4支股票！接下来美股将何去何从",
+      "video_id": "0KgZcbhZoXk",
+      "title": "2支被忽略的科技巨头！分析与买入建议",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -139,52 +183,8 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "zscZ446Irdk",
-      "title": "（会员第302期）胜率最高的9种买点！个人经验干货分享！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "xOY53crL1ZA",
-      "title": "（会员第305期）掌握数据，跟随趋势！如何追踪标普、个股、EPS业绩修正？几个隐藏的免费数据入口！使用方法！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "Andrei Jikh",
-      "video_id": "7-lWx78nAQ4",
-      "title": "The Debt Spiral Has Started",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "Andrei Jikh",
-      "video_id": "g1kgEiP1v10",
-      "title": "Trump Just Started The Debt Spiral",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "cr3MV3KTHRE",
-      "title": "美股 对冲基金，抛售哪些？做多哪些？META、MSFT、XLI，存储重伤，竞争加剧！MU、SNDK位置！",
+      "video_id": "0w77lIBdCn0",
+      "title": "美股 机构弹药见底！下一步，暴风雨？平静？TSLA、IGV、AVGO！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,

@@ -1,10 +1,10 @@
 {
   "days": {
     "2026-10-22": {
-      "calls": 8,
+      "calls": 10,
       "admitted": 0,
       "rejected": 4,
-      "errors": 4,
+      "errors": 6,
       "recent": [
         {
           "video_id": "DQ0Yn27pdgk",
@@ -27,6 +27,18 @@
           "video_id": "vXlqWhsJzxI",
           "outcome": "safety_contract",
           "at": "04:56:38Z"
+        },
+        {
+          "video_id": "JlFrJ45B6zU",
+          "outcome": "http_503",
+          "at": "05:08:54Z",
+          "detail": "{\"error\":{\"message\":\"gemini-3.8-flash is currently experiencing high demand, spikes in demand are usually temporary. Please try again later.\",\"code\":\"service_unavailable\"}}"
+        },
+        {
+          "video_id": "ttrjfdl-Ne4",
+          "outcome": "http_503",
+          "at": "05:11:29Z",
+          "detail": "{\"error\":{\"message\":\"gemini-3.8-flash is currently experiencing high demand, spikes in demand are usually temporary. Please try again later.\",\"code\":\"service_unavailable\"}}"
         }
       ]
     }
