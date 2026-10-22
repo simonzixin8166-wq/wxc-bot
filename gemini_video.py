@@ -89,13 +89,27 @@ def _save_budget(doc):
     p.write_text(json.dumps(doc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
-def _bump(field):
+def _bump(field, video_id=None, outcome=None, detail=None):
     doc = _load_budget()
     day = doc.setdefault("days", {}).setdefault(_today(), {"calls": 0, "admitted": 0, "rejected": 0, "errors": 0})
     day[field] = int(day.get(field) or 0) + 1
     if field == "exhausted":
         day["exhausted"] = True
+    if outcome:
+        # Diagnostics only: outcome code + a short provider message, never the key or video content.
+        row = {"video_id": video_id, "outcome": outcome, "at": datetime.now(timezone.utc).strftime("%H:%M:%SZ")}
+        if detail:
+            row["detail"] = re.sub(r"AIza[0-9A-Za-z_-]{10,}", "[key]", str(detail))[:200]
+        day["recent"] = (day.get("recent") or [])[-9:] + [row]
+        print(f"::notice title=YT-01 Gemini::video={video_id} outcome={outcome} {row.get('detail', '')}"[:300])
     _save_budget(doc)
+
+
+def _body(r):
+    try:
+        return (r.text or "")[:200]
+    except Exception:
+        return ""
 
 
 def enabled():
@@ -187,23 +201,30 @@ def acquire(video_id, title, author, post=None):
                  headers={"x-goog-api-key": os.environ["GEMINI_API_KEY"].strip(), "Content-Type": "application/json",
                           "User-Agent": "MyAlphaView-YT01/1.0"})
         if r.status_code == 429:
-            _bump("exhausted")
+            _bump("exhausted", video_id, "http_429", _body(r))
             return None
         if r.status_code != 200:
-            _bump("errors")
+            _bump("errors", video_id, f"http_{r.status_code}", _body(r))
             return None
         parsed = _extract_json(r.json())
-    except Exception:
-        _bump("errors")
+    except Exception as exc:
+        _bump("errors", video_id, "exception", type(exc).__name__)
         return None
-    if not isinstance(parsed, dict) or not _safe(parsed) or not identity_ok(parsed, title, author):
-        _bump("rejected")
+    if not isinstance(parsed, dict):
+        _bump("rejected", video_id, "no_json")
+        return None
+    if not _safe(parsed):
+        _bump("rejected", video_id, "safety_contract")
+        return None
+    if not identity_ok(parsed, title, author):
+        _bump("rejected", video_id, "identity_mismatch",
+              f"seen={str(parsed.get('observed_title'))[:60]!r} channel={str(parsed.get('observed_channel'))[:30]!r}")
         return None
     text = render(parsed)
     if len(str(parsed.get("summary_zh") or "").strip()) < 20 or not claims(parsed):
-        _bump("rejected")
+        _bump("rejected", video_id, "thin_content")
         return None
-    _bump("admitted")
+    _bump("admitted", video_id, "admitted")
     return {
         "text": text, "status": "available", "quality": "Q3", "provider": "gemini_video",
         "provider_url": url, "content_origin": ORIGIN,
