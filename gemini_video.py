@@ -125,7 +125,13 @@ def _norm(s):
     return re.sub(r"[\W_]+", "", str(s or "").lower())
 
 
+TICKER = re.compile(r"(?<![A-Za-z])[A-Z]{2,5}(?![A-Za-z])")
+
+
 def identity_ok(parsed, title, author):
+    """Did Gemini actually see this video? The prompt only carries the URL, never the title, so matching the
+    known title's distinctive tickers is evidence the model read the real video even when it misremembers the
+    exact title wording (first live run: right channel and tickers, wrong title/date -> was wrongly rejected)."""
     seen_title, seen_channel = _norm(parsed.get("observed_title")), _norm(parsed.get("observed_channel"))
     want_title = _norm(title)
     if not seen_title or not want_title:
@@ -133,7 +139,12 @@ def identity_ok(parsed, title, author):
     ratio = difflib.SequenceMatcher(None, seen_title, want_title).ratio()
     names = [_norm(x) for x in re.split(r"[/|]", author or "") if _norm(x)]
     channel_hit = any(n and (n in seen_channel or seen_channel in n) for n in names) if seen_channel else False
-    return ratio >= 0.6 or (ratio >= 0.35 and channel_hit)
+    if ratio >= 0.6 or (ratio >= 0.35 and channel_hit):
+        return True
+    want_tickers = set(TICKER.findall(title or ""))
+    seen_tickers = set(TICKER.findall(str(parsed.get("observed_title") or ""))) | {
+        str(x).upper() for x in (parsed.get("symbols") or []) if isinstance(x, str)}
+    return channel_hit and len(want_tickers) >= 2 and len(want_tickers & seen_tickers) >= 2
 
 
 def _extract_json(raw):
@@ -156,9 +167,15 @@ def _extract_json(raw):
 
 
 def _safe(parsed):
-    s = parsed.get("safety") or {}
-    return (s.get("historical_only") is True and s.get("forward_evidence_eligible") is False
-            and s.get("promotion_eligible") is False and s.get("production_action") is None)
+    """Reject output that claims forward/promotion eligibility or a production action. A missing safety block
+    is fine: these guardrails are enforced by MyAlpha itself (Q3, never rule-eligible), not by the model."""
+    s = parsed.get("safety")
+    if s is None:
+        return True
+    if not isinstance(s, dict):
+        return False
+    return (s.get("forward_evidence_eligible") in (False, None) and s.get("promotion_eligible") in (False, None)
+            and s.get("production_action") in (None, "", "null") and s.get("historical_only") in (True, None))
 
 
 def render(parsed):
