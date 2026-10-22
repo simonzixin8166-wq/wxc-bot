@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-10-22T04:46:18Z",
+  "generated_at": "2026-10-22T04:57:13Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -97,7 +97,7 @@
       "discovery_complete": true,
       "latest": {
         "video_id": "y4InEG485vw",
-        "title": "Europe Is the Test. America Is Next.",
+        "title": "Europe Is Burning. Here’s Who Profits.",
         "url": "https://www.youtube.com/watch?v=y4InEG485vw",
         "published_at": "",
         "flat_metadata_keys": [
@@ -127,20 +127,9 @@
   "discovery_complete": true,
   "new_video_diagnostics": [
     {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "DQ0Yn27pdgk",
-      "title": "美股 空头杀红眼5倍加码！META自保，含糊27年资本支出！TSLA、LRCX、GOOG！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
       "author": "老李玩钱",
-      "video_id": "p6FafiL08Oo",
-      "title": "个股点评及买入建议：AVGO, NVDA, GOOG, META, SOFI, MRVL",
+      "video_id": "yEdijFeesTs",
+      "title": "$310,000美股账户，我加仓/减仓的4支股票！接下来美股将何去何从",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -150,19 +139,8 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "pkg7bdNOf88",
-      "title": "（会员第300期）板块重要前瞻26年8月29日更新，2026、2027主要13个行业版块，季度、年度EPS增速数据更新！哪些行业增速强劲？标普SPX、26、27前瞻交易范围，押注方向决定成败！",
-      "content_quality": "Q4",
-      "content_provider": "pickscribe.com",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "老李玩钱",
-      "video_id": "r-2GJq_zHgU",
-      "title": "美股高位！但这2支股票依然不高，可以买入",
+      "video_id": "zscZ446Irdk",
+      "title": "（会员第302期）胜率最高的9种买点！个人经验干货分享！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -171,9 +149,9 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "老李玩钱",
-      "video_id": "s35e0bZb4xA",
-      "title": "美联储鹰派砸盘！MU财报业绩亮眼，但股价依然下跌！接下来何去何从",
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "xOY53crL1ZA",
+      "title": "（会员第305期）掌握数据，跟随趋势！如何追踪标普、个股、EPS业绩修正？几个隐藏的免费数据入口！使用方法！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -182,9 +160,31 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "老李玩钱",
-      "video_id": "tW8LXsiWlew",
-      "title": "个股点评，买入建议：TSLA，AAPL，BRK.B",
+      "author": "Andrei Jikh",
+      "video_id": "7-lWx78nAQ4",
+      "title": "The Debt Spiral Has Started",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "Andrei Jikh",
+      "video_id": "g1kgEiP1v10",
+      "title": "Trump Just Started The Debt Spiral",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "cr3MV3KTHRE",
+      "title": "美股 对冲基金，抛售哪些？做多哪些？META、MSFT、XLI，存储重伤，竞争加剧！MU、SNDK位置！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
