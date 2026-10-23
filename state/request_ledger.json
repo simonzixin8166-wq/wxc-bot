@@ -246,6 +246,14 @@
     },
     "2026-10-23": {
       "telegram:send_message": {
+        "count": 5,
+        "paid": false
+      },
+      "telegram:get_updates": {
+        "count": 1,
+        "paid": false
+      },
+      "myalphaview:server_action_status": {
         "count": 1,
         "paid": false
       }
