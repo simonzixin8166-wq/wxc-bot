@@ -40,10 +40,21 @@
           "at": "05:11:29Z",
           "detail": "{\"error\":{\"message\":\"gemini-3.8-flash is currently experiencing high demand, spikes in demand are usually temporary. Please try again later.\",\"code\":\"service_unavailable\"}}"
         }
-      ]
+      ],
+      "reconciliation": {
+        "status": "INCOMPLETE",
+        "calls_billed": 10,
+        "calls_refunded_503": 0,
+        "detail_rows": 6,
+        "missing_detail_rows": 4,
+        "counter_mismatch": [
+          "rejected",
+          "errors"
+        ]
+      }
     },
     "2026-10-23": {
-      "calls": 2,
+      "calls": 3,
       "admitted": 1,
       "rejected": 1,
       "errors": 0,
@@ -58,8 +69,26 @@
           "video_id": "RHhVWhqq1nI",
           "outcome": "admitted",
           "at": "00:43:16Z"
+        },
+        {
+          "video_id": "4_uytm7I_XQ",
+          "outcome": "http_429",
+          "at": "07:28:23Z",
+          "model": "gemini-3.5-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 半导体SOXX成分股全阵亡！后面怎么玩？注意事项！",
+          "detail": "{\"error\":{\"message\":\"Your project has exceeded a quota. See https://ai.dev/rate-limit to manage your rate limits.\",\"code\":\"too_many_requests\"}}"
         }
-      ]
+      ],
+      "reconciliation": {
+        "status": "COMPLETE",
+        "calls_billed": 3,
+        "calls_refunded_503": 0,
+        "detail_rows": 3,
+        "missing_detail_rows": 0,
+        "counter_mismatch": []
+      },
+      "exhausted": true
     }
   },
   "version": 1,
