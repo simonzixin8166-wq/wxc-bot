@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-10-23T13:24:14Z",
+  "generated_at": "2026-10-23T18:18:49Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -99,7 +99,7 @@
       "discovery_complete": true,
       "latest": {
         "video_id": "y4InEG485vw",
-        "title": "Europe Is the Test. America Is Next.",
+        "title": "Europe Is Burning. Here’s Who Profits.",
         "url": "https://www.youtube.com/watch?v=y4InEG485vw",
         "published_at": "",
         "flat_metadata_keys": [
@@ -140,9 +140,9 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "dTQmi_hrOpU",
-      "title": "美股 ORCL缺乏惊喜，ADBE底气不足！SOXX遇阻、IGV破位！CTA触发标普承压，VIX苏醒！",
+      "author": "老李玩钱",
+      "video_id": "mCI0-03LcvM",
+      "title": "SpaceX即将上市！散户该如何参与？对特斯拉股价会有怎样的影响",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -151,9 +151,9 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "e3bb4BYnK-E",
-      "title": "（会员第299期）2026年8月10日-21日，重要公司Q2财报后2026、2027前瞻估值，强支撑点位！",
+      "author": "老李玩钱",
+      "video_id": "mR1KTb9wBT0",
+      "title": "2支新股：SPCX, SKHY 能买入吗？NFLX财报暴雷，接下来我的计划和打算",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -162,9 +162,9 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "fLKcWY1h45w",
-      "title": "美股 三家巨头呼吁AI发展放缓，半导体暴跌！利好！利空！何去何从？几个思考！",
+      "author": "老李玩钱",
+      "video_id": "nLskyS7Vvug",
+      "title": "华尔街大举买入和卖出的8支股票！是否要跟着买进或卖出？我的看法及操作建议",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -173,9 +173,9 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "fLp8kUbv_u8",
-      "title": "美股 对冲基金低仓位按兵不动！AMD很猛，SOXX临门！金融XLF、医疗XLV！ADBE财报押注！",
+      "author": "老李玩钱",
+      "video_id": "nNaiUbM17HY",
+      "title": "美股不怕急跌，怕的是目前这种震荡下行的行情",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -184,9 +184,9 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "gN9uUJPqipo",
-      "title": "美股 NVDA再增5000亿循环融资！MSFT下月加高护城河！一只加仓计划！BRK二季度加速回购！",
+      "author": "老李玩钱",
+      "video_id": "o0ScN6BzkaI",
+      "title": "美股涨的心慌！要卖股票了？",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
