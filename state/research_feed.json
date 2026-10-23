@@ -65316,9 +65316,51 @@
       "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
       "capture_mode": "scheduled_forum_anchor_scan",
       "intake_class_hint": "live_candidate"
+    },
+    {
+      "id": "3500ae6e46a477551dd9",
+      "source": "youtube",
+      "source_kind": "video",
+      "author": "Andrei Jikh",
+      "published_at": "",
+      "title": "Europe Is the Test. America Is Next.",
+      "url": "https://www.youtube.com/watch?v=8cufVZ_Q39s",
+      "excerpt": "Free Video Transcripts | Scribe\nScribe\n \n \nScribe\nLike it? Make Scribe even better by\n \nleaving a review\nGet Chrome Extension\nBrowse\nPopular Videos\nRecent Videos\nAll Channels\nFree Tools\nVideo Subtitle Downloader\nVideo Timestamp Generator\nVideo Summarizer\nVideo Word Counter\nVideo Title Analyzer\nVideo Transcript Search\nVideo Analytics\nVideo Chapters Creator\nVi",
+      "content_chars": 718,
+      "semantic_content_chars": 708,
+      "content_filtering": {
+        "filter": "youtube_promotion_noise_v1",
+        "input_units": 39,
+        "removed_units": 0,
+        "removed_ratio": 0.0,
+        "promotion_noise_detected": false
+      },
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "captured_at": "2026-10-23T23:07:45Z",
+      "source_role": "market_context",
+      "transcript_status": "available",
+      "content_quality": "Q4",
+      "content_provider": "pickscribe.com",
+      "content_provider_url": "https://pickscribe.com/v/8cufVZ_Q39s/",
+      "content_origin": "third_party_transcript",
+      "timestamp_evidence": false,
+      "rule_candidate_allowed": false,
+      "source_notice": "YouTube正文可用于非Forward语义学习；可靠发布时间缺失，因此强制按backfill处理，禁止计入Forward Evidence或Promotion。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "youtube_timestamp_unknown_learning",
+      "timestamp_confidence": "missing",
+      "forward_evidence_eligible": false
     }
   ],
-  "updated_at": "2026-10-23T17:54:42Z",
+  "updated_at": "2026-10-23T23:08:19Z",
   "retention_policy": "append_only_no_record_count_cap",
   "historical_recovery": {
     "completed_at": "2026-10-07T13:43:06.018028+00:00",
