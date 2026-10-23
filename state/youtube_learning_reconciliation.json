@@ -1,20 +1,20 @@
 {
   "version": 1,
-  "generated_at": "2026-10-22T21:34:03.133659+00:00",
+  "generated_at": "2026-10-23T00:44:04.901640+00:00",
   "principle": "seen is discovery, not learning; each video is counted once in its highest stage",
   "seen": 188,
   "stages": {
-    "formal_feed_text": 4,
+    "formal_feed_text": 5,
     "historical_backlog": 43,
-    "metadata_only": 118,
+    "metadata_only": 117,
     "pending_unprobed": 1,
     "provider_boilerplate": 21,
     "transcript_readable": 1
   },
   "stages_sum_equals_seen": true,
   "learning_layers": {
-    "text_available": 5,
-    "semantically_understood": 0,
+    "text_available": 6,
+    "semantically_understood": 1,
     "falsifiable_claims_or_rule_capable": 5,
     "matured_outcomes": 0,
     "matured_outcomes_note": "no YouTube claim outcome tracker yet; never inferred"
@@ -35,8 +35,8 @@
       "historical_backlog": 17
     },
     "老李玩钱": {
-      "metadata_only": 38,
-      "formal_feed_text": 4,
+      "metadata_only": 37,
+      "formal_feed_text": 5,
       "historical_backlog": 10,
       "transcript_readable": 1
     }

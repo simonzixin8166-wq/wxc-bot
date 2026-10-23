@@ -41,6 +41,25 @@
           "detail": "{\"error\":{\"message\":\"gemini-3.8-flash is currently experiencing high demand, spikes in demand are usually temporary. Please try again later.\",\"code\":\"service_unavailable\"}}"
         }
       ]
+    },
+    "2026-10-23": {
+      "calls": 2,
+      "admitted": 1,
+      "rejected": 1,
+      "errors": 0,
+      "recent": [
+        {
+          "video_id": "Q5xMtR4SWP8",
+          "outcome": "identity_mismatch",
+          "at": "00:40:27Z",
+          "detail": "seen='美股回调整理几率大，但不必惊慌，如何有效应对？' channel='老李玩钱'"
+        },
+        {
+          "video_id": "RHhVWhqq1nI",
+          "outcome": "admitted",
+          "at": "00:43:16Z"
+        }
+      ]
     }
   },
   "version": 1,

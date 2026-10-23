@@ -62017,9 +62017,203 @@
       "intake_class_hint": "live_candidate",
       "capture_mode": "scheduled_board_anchor_scan",
       "forum_board": "tzlc"
+    },
+    {
+      "id": "6181d94eb7270103146f",
+      "source": "youtube",
+      "source_kind": "video",
+      "author": "老李玩钱",
+      "published_at": "",
+      "title": "美联储会议砸盘，账户已跌下$300,000！微软，META，SOFI 财报解读",
+      "url": "https://www.youtube.com/watch?v=RHhVWhqq1nI",
+      "excerpt": "[Gemini 视频理解 · 未验证] 老李分析了美联储7月维持利率不变但9月加息预期上升导致的美股砸盘。技术面上标普500与纳指均跌破形态支撑位。个股方面，微软财报稳健长期看好；Meta财报暴雷建议等待520美元附近再考虑抄底；Sofi表现稳健，计划在14.8美元以下继续加仓。\n- [04:57 SPX bearish 7250] 标普500跌破三角形震荡区间，可能向下试探7250点支撑位，若跌破则看7000点强支撑\n- [05:30 IXIC bearish 24000] 纳指跌破25000点强支撑确认破位，很可能会下探24000点支撑位及250日年线\n- [08:00 MSFT bullish 400] 长期看好微软，盘后价格400美元左右接近作者成本价402美元，想开仓买入可以考虑\n- [10:14 M",
+      "content_chars": 636,
+      "semantic_content_chars": 636,
+      "content_filtering": {
+        "filter": "youtube_promotion_noise_v1",
+        "input_units": 11,
+        "removed_units": 0,
+        "removed_ratio": 0.0,
+        "promotion_noise_detected": false
+      },
+      "images_count": 0,
+      "themes_hint": [
+        "长期持有纪律"
+      ],
+      "symbols": [
+        "IXIC",
+        "META",
+        "MSFT",
+        "SOFI",
+        "SPX"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "captured_at": "2026-10-23T00:43:16Z",
+      "source_role": "rule_supply",
+      "transcript_status": "available",
+      "content_quality": "Q3",
+      "content_provider": "gemini_video",
+      "content_provider_url": "https://www.youtube.com/watch?v=RHhVWhqq1nI",
+      "content_origin": "gemini_video_understanding",
+      "timestamp_evidence": true,
+      "rule_candidate_allowed": false,
+      "source_notice": "YouTube正文可用于非Forward语义学习；可靠发布时间缺失，因此强制按backfill处理，禁止计入Forward Evidence或Promotion。",
+      "claims": [
+        {
+          "symbol": "MSFT",
+          "stance": "bullish",
+          "stance_cues": [
+            "bullish"
+          ],
+          "horizon": "long",
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "ac340a3075666d5a11c8365ba588d417d4392a8e4afcb6f234dab03204ca3017",
+          "evidence_chars": 16
+        },
+        {
+          "symbol": "SOFI",
+          "stance": "add",
+          "stance_cues": [
+            "add"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "30acfede523287521f5b68f1d5b23bbe435b7946b2e03dbcb21d565f0fa4269d",
+          "evidence_chars": 25
+        },
+        {
+          "symbol": "VOO",
+          "stance": "bearish",
+          "stance_cues": [
+            "bearish"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "5171a564dd02efc443689eb833633c2c2506d9eab250c25c345163ee746442c2",
+          "evidence_chars": 70
+        },
+        {
+          "symbol": "QQQ",
+          "stance": "bearish",
+          "stance_cues": [
+            "bearish"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "54067ca89d73f5ff0809b19ff10ac99dc8bc99109bc1f6d1555eeeec72a99210",
+          "evidence_chars": 69
+        },
+        {
+          "symbol": "MSFT",
+          "stance": "buy",
+          "stance_cues": [
+            "buy",
+            "bullish"
+          ],
+          "horizon": "long",
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "8528076ef0d0a4d94404a80f659251c9314df99f63cedd76760cfff7ba531639",
+          "evidence_chars": 67
+        },
+        {
+          "symbol": "META",
+          "stance": "buy",
+          "stance_cues": [
+            "buy"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "e6721067811b88f69b56a6ac903f8011d448f30a885afe2cc8f6a7f7c1674b97",
+          "evidence_chars": 70
+        },
+        {
+          "symbol": "SOFI",
+          "stance": "add",
+          "stance_cues": [
+            "add",
+            "bullish"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "fdbd33dde2b7a1aaff54e9c1f0ae541a114adf32c94a4ac60c20859934b57e40",
+          "evidence_chars": 72
+        }
+      ],
+      "claims_status": "experimental_unvalidated",
+      "video_claims": [
+        {
+          "claim": "标普500跌破三角形震荡区间，可能向下试探7250点支撑位，若跌破则看7000点强支撑",
+          "symbol": "SPX",
+          "stance": "bearish",
+          "price": "7250",
+          "timestamp": "04:57",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high"
+        },
+        {
+          "claim": "纳指跌破25000点强支撑确认破位，很可能会下探24000点支撑位及250日年线",
+          "symbol": "IXIC",
+          "stance": "bearish",
+          "price": "24000",
+          "timestamp": "05:30",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high"
+        },
+        {
+          "claim": "长期看好微软，盘后价格400美元左右接近作者成本价402美元，想开仓买入可以考虑",
+          "symbol": "MSFT",
+          "stance": "bullish",
+          "price": "400",
+          "timestamp": "08:00",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high"
+        },
+        {
+          "claim": "Meta财报不及预期且破位540美元支撑，想抄底不用急，回落至520美元附近可考虑适度开仓",
+          "symbol": "META",
+          "stance": "watch",
+          "price": "520",
+          "timestamp": "10:14",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high"
+        },
+        {
+          "claim": "Sofi财报整体表现不错，维持看好且持仓不变，计划在14.8美元以下进一步加仓至600股",
+          "symbol": "SOFI",
+          "stance": "bullish",
+          "price": "14.8",
+          "timestamp": "13:35",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high"
+        }
+      ],
+      "video_claims_model": "gemini-3.8-flash",
+      "video_observed_title": "美联储会议决议砸盘！微软、Meta、Sofi财报解读，美股大盘走势分析",
+      "validation_status": "pending_owner_spot_check",
+      "forward_evidence_eligible": false,
+      "intake_class_hint": "backfill",
+      "capture_mode": "youtube_timestamp_unknown_learning",
+      "timestamp_confidence": "missing"
     }
   ],
-  "updated_at": "2026-10-22T18:06:42Z",
+  "updated_at": "2026-10-23T00:43:36Z",
   "retention_policy": "append_only_no_record_count_cap",
   "historical_recovery": {
     "completed_at": "2026-10-07T13:43:06.018028+00:00",
