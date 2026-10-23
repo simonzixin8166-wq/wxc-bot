@@ -168,4 +168,33 @@ assert row["claims_status"] == "experimental_unvalidated" and row["validation_st
 assert row["forward_evidence_eligible"] is False and row["content_provider"] == "gemini_video"
 assert {"SPCX", "NFLX", "ISRG"} <= set(row["symbols"]) and "not a ticker" not in row["symbols"]
 assert len(row["excerpt"]) <= 360 and row["video_claims"][0]["timestamp"] == "06:12"
-print("PASS YT-01 Gemini video fallback: keyless off, budget/run cap/429, identity + safety gates, forward-intake only, experimental Q3 admission")
+
+# 7) call ledger reconciles: one detail row per billed or refunded call, with model/author/title, never truncated
+doc = json.loads((Path(tmp) / "gemini_video_budget.json").read_text())
+doc["days"][gv._today()] = {"calls": 0}
+(Path(tmp) / "gemini_video_budget.json").write_text(json.dumps(doc))
+for resp in (lambda *a, **k: Resp(200, wrap(GOOD)), lambda *a, **k: Resp(200, wrap(bad)), lambda *a, **k: Resp(503, {}),
+             lambda *a, **k: Resp(500, {}), lambda *a, **k: (_ for _ in ()).throw(TimeoutError()),
+             lambda *a, **k: Resp(200, {"outputs": []})):
+    gv._run_calls = 0
+    gv.acquire("vid1", TITLE, AUTHOR, post=resp)
+day = budget()
+rec = day["reconciliation"]
+assert rec["status"] == "COMPLETE" and rec["calls_billed"] == 5 and rec["calls_refunded_503"] == 1, rec
+assert rec["detail_rows"] == 6 and rec["missing_detail_rows"] == 0 and rec["counter_mismatch"] == [], rec
+assert [r["outcome"] for r in day["recent"]] == ["admitted", "identity_mismatch", "http_503_all_models", "http_500",
+                                                "exception", "no_json"]
+assert all(r["author"] == AUTHOR and r["model"] and r["title"] == TITLE[:60] for r in day["recent"]), day["recent"]
+assert day["recent"][0]["model"] == gv.MODELS[0] and day["recent"][2]["model"] == ",".join(gv.MODELS)
+assert "test-key" not in json.dumps(day)
+# a full day (cap calls + refunds) keeps every row; the old last-10 window would have dropped some
+assert gv.RECENT_KEEP >= gv.DAILY_CAP * 4
+# 2026-10-22 shape: 10 calls billed but only 6 rows (first two runs predate logging) -> INCOMPLETE, 4 missing, never guessed
+legacy = {"calls": 10, "admitted": 0, "rejected": 4, "errors": 6, "recent":
+          [{"outcome": o} for o in ("http_503", "http_503", "http_503", "safety_contract", "safety_contract", "identity_mismatch")]}
+r22 = gv.reconcile(legacy)
+assert r22["status"] == "INCOMPLETE" and r22["missing_detail_rows"] == 4 and r22["counter_mismatch"] == ["rejected", "errors"], r22
+# a row whose class disagrees with the counters is INCOMPLETE even when the row count matches
+assert gv.reconcile({"calls": 1, "admitted": 1, "recent": [{"outcome": "identity_mismatch"}]})["status"] == "INCOMPLETE"
+assert gv.reconcile({"calls": 0})["status"] == "COMPLETE"
+print("PASS YT-01 Gemini video fallback: keyless off, budget/run cap/429, identity + safety gates, forward-intake only, experimental Q3 admission, call ledger reconciles")

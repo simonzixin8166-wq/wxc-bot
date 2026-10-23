@@ -37,6 +37,9 @@ RETRY_WAIT = int(os.getenv("GEMINI_VIDEO_RETRY_WAIT", "20"))
 MAX_CLAIMS = 12
 CLAIM_CHARS = 120
 KEEP_DAYS = 45
+# One detail row per finished call (refunded 503s included); generous so a day's rows are never truncated.
+RECENT_KEEP = max(40, DAILY_CAP * 4)
+OUTCOME_FIELD = {"admitted": "admitted", "http_429": "exhausted"}
 ORIGIN = "gemini_video_understanding"
 
 _run_calls = 0
@@ -85,6 +88,9 @@ def _load_budget():
 def _save_budget(doc):
     days = doc.get("days") or {}
     doc["days"] = {d: days[d] for d in sorted(days)[-KEEP_DAYS:]}
+    for day in doc["days"].values():
+        if isinstance(day, dict):
+            day["reconciliation"] = reconcile(day)
     doc["version"] = 1
     doc["policy"] = f"free tier only; <= {DAILY_CAP} calls/day, <= {RUN_CAP} per run; 429 stops the day"
     p = _budget_path()
@@ -92,7 +98,28 @@ def _save_budget(doc):
     p.write_text(json.dumps(doc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
-def _bump(field, video_id=None, outcome=None, detail=None):
+def _field_of(outcome):
+    if outcome in OUTCOME_FIELD:
+        return OUTCOME_FIELD[outcome]
+    return "errors" if outcome.startswith("http_") or outcome == "exception" else "rejected"
+
+
+def reconcile(day):
+    """Counters vs per-call rows. Every billed or refunded call must have exactly one detail row whose
+    outcome class matches the counters; anything else is INCOMPLETE (never back-filled or guessed)."""
+    rows = [r for r in (day.get("recent") or []) if isinstance(r, dict) and r.get("outcome")]
+    expected = int(day.get("calls") or 0) + int(day.get("refunded_503") or 0)
+    by = {"admitted": 0, "rejected": 0, "errors": 0, "exhausted": 0}
+    for r in rows:
+        by[_field_of(r["outcome"])] += 1
+    mismatched = [f for f in ("admitted", "rejected", "errors") if by[f] != int(day.get(f) or 0)]
+    complete = len(rows) == expected and not mismatched
+    return {"status": "COMPLETE" if complete else "INCOMPLETE", "calls_billed": int(day.get("calls") or 0),
+            "calls_refunded_503": int(day.get("refunded_503") or 0), "detail_rows": len(rows),
+            "missing_detail_rows": max(0, expected - len(rows)), "counter_mismatch": mismatched}
+
+
+def _bump(field, video_id=None, outcome=None, detail=None, **extra):
     doc = _load_budget()
     day = doc.setdefault("days", {}).setdefault(_today(), {"calls": 0, "admitted": 0, "rejected": 0, "errors": 0})
     day[field] = int(day.get(field) or 0) + 1
@@ -101,9 +128,10 @@ def _bump(field, video_id=None, outcome=None, detail=None):
     if outcome:
         # Diagnostics only: outcome code + a short provider message, never the key or video content.
         row = {"video_id": video_id, "outcome": outcome, "at": datetime.now(timezone.utc).strftime("%H:%M:%SZ")}
+        row.update({k: str(v)[:60] for k, v in extra.items() if v})
         if detail:
             row["detail"] = re.sub(r"AIza[0-9A-Za-z_-]{10,}", "[key]", str(detail))[:200]
-        day["recent"] = (day.get("recent") or [])[-9:] + [row]
+        day["recent"] = (day.get("recent") or [])[-(RECENT_KEEP - 1):] + [row]
         print(f"::notice title=YT-01 Gemini::video={video_id} outcome={outcome} {row.get('detail', '')}"[:300])
     _save_budget(doc)
 
@@ -225,6 +253,7 @@ def acquire(video_id, title, author, post=None):
     post = post or requests.post
     _run_calls += 1
     _bump("calls")
+    who = {"author": author, "title": title}
     url = f"https://www.youtube.com/watch?v={video_id}"
     used = MODEL
     try:
@@ -241,35 +270,35 @@ def acquire(video_id, title, author, post=None):
             if r.status_code != 503:
                 break
         if r.status_code == 429:
-            _bump("exhausted", video_id, "http_429", _body(r))
+            _bump("exhausted", video_id, "http_429", _body(r), model=used, **who)
             return None
         if r.status_code == 503:
             # Google-side overload: nothing was processed, so the call is refunded to today's budget.
-            _bump("errors", video_id, "http_503_all_models", _body(r))
+            _bump("errors", video_id, "http_503_all_models", _body(r), model=",".join(MODELS), **who)
             _refund()
             return None
         if r.status_code != 200:
-            _bump("errors", video_id, f"http_{r.status_code}", _body(r))
+            _bump("errors", video_id, f"http_{r.status_code}", _body(r), model=used, **who)
             return None
         parsed = _extract_json(r.json())
     except Exception as exc:
-        _bump("errors", video_id, "exception", type(exc).__name__)
+        _bump("errors", video_id, "exception", type(exc).__name__, model=used, **who)
         return None
     if not isinstance(parsed, dict):
-        _bump("rejected", video_id, "no_json")
+        _bump("rejected", video_id, "no_json", model=used, **who)
         return None
     if not _safe(parsed):
-        _bump("rejected", video_id, "safety_contract", json.dumps(parsed.get("safety"), ensure_ascii=False))
+        _bump("rejected", video_id, "safety_contract", json.dumps(parsed.get("safety"), ensure_ascii=False), model=used, **who)
         return None
     if not identity_ok(parsed, title, author):
         _bump("rejected", video_id, "identity_mismatch",
-              f"seen={str(parsed.get('observed_title'))[:60]!r} channel={str(parsed.get('observed_channel'))[:30]!r}")
+              f"seen={str(parsed.get('observed_title'))[:60]!r} channel={str(parsed.get('observed_channel'))[:30]!r}", model=used, **who)
         return None
     text = render(parsed)
     if len(str(parsed.get("summary_zh") or "").strip()) < 20 or not claims(parsed):
-        _bump("rejected", video_id, "thin_content")
+        _bump("rejected", video_id, "thin_content", model=used, **who)
         return None
-    _bump("admitted", video_id, "admitted")
+    _bump("admitted", video_id, "admitted", model=used, **who)
     return {
         "text": text, "status": "available", "quality": "Q3", "provider": "gemini_video",
         "provider_url": url, "content_origin": ORIGIN,
