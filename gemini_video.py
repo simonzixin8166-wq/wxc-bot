@@ -245,10 +245,26 @@ def claims(parsed):
     return out
 
 
+def _author_blocked_today(author):
+    day = (_load_budget().get("days") or {}).get(_today()) or {}
+    return bool(author) and author in (day.get("skip_authors_403") or [])
+
+
+def _block_author_today(author):
+    """403 permission_denied (e.g. a channel Gemini may not read): skip that author for the rest of the UTC day
+    instead of spending more free-tier calls on it. Resets the next day; nothing else is blocked."""
+    if not author:
+        return
+    doc = _load_budget()
+    day = doc.setdefault("days", {}).setdefault(_today(), {"calls": 0, "admitted": 0, "rejected": 0, "errors": 0})
+    day["skip_authors_403"] = sorted(set(day.get("skip_authors_403") or []) | {str(author)[:80]})
+    _save_budget(doc)
+
+
 def acquire(video_id, title, author, post=None):
     """Return an Acquisition-compatible dict, or None (disabled, over budget, failed or unverified)."""
     global _run_calls
-    if not enabled() or not budget_ok():
+    if not enabled() or not budget_ok() or _author_blocked_today(author):
         return None
     post = post or requests.post
     _run_calls += 1
@@ -279,6 +295,8 @@ def acquire(video_id, title, author, post=None):
             return None
         if r.status_code != 200:
             _bump("errors", video_id, f"http_{r.status_code}", _body(r), model=used, **who)
+            if r.status_code == 403:
+                _block_author_today(author)
             return None
         parsed = _extract_json(r.json())
     except Exception as exc:

@@ -197,4 +197,21 @@ assert r22["status"] == "INCOMPLETE" and r22["missing_detail_rows"] == 4 and r22
 # a row whose class disagrees with the counters is INCOMPLETE even when the row count matches
 assert gv.reconcile({"calls": 1, "admitted": 1, "recent": [{"outcome": "identity_mismatch"}]})["status"] == "INCOMPLETE"
 assert gv.reconcile({"calls": 0})["status"] == "COMPLETE"
-print("PASS YT-01 Gemini video fallback: keyless off, budget/run cap/429, identity + safety gates, forward-intake only, experimental Q3 admission, call ledger reconciles")
+
+# 8) 403 permission_denied: that author is skipped for the rest of the day (no call spent); others still run
+doc = json.loads((Path(tmp) / "gemini_video_budget.json").read_text())
+doc["days"][gv._today()] = {"calls": 0}
+(Path(tmp) / "gemini_video_budget.json").write_text(json.dumps(doc))
+gv._run_calls = 0
+n = len(calls)
+assert gv.acquire("vid1", TITLE, "Andrei Jikh", post=lambda *a, **k: Resp(403, {})) is None
+assert budget()["skip_authors_403"] == ["Andrei Jikh"] and budget()["calls"] == 1
+gv._run_calls = 0
+assert gv.acquire("vid1", TITLE, "Andrei Jikh", post=lambda *a, **k: (_ for _ in ()).throw(AssertionError("no call"))) is None
+assert budget()["calls"] == 1 and budget()["reconciliation"]["status"] == "COMPLETE"
+assert gv.acquire("vid1", TITLE, AUTHOR, post=post_with(Resp(200, wrap(GOOD)))) is not None  # other channels unaffected
+# 500 does not block the author
+gv._run_calls = 0
+assert gv.acquire("vid1", TITLE, "Other Author", post=lambda *a, **k: Resp(500, {})) is None
+assert "Other Author" not in budget()["skip_authors_403"]
+print("PASS YT-01 Gemini video fallback: keyless off, budget/run cap/429, identity + safety gates, forward-intake only, experimental Q3 admission, call ledger reconciles, 403 author skipped for the day")
