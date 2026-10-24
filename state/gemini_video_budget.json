@@ -91,15 +91,15 @@
       "exhausted": true
     },
     "2026-10-24": {
-      "calls": 8,
-      "admitted": 4,
+      "calls": 10,
+      "admitted": 6,
       "rejected": 0,
       "errors": 4,
       "reconciliation": {
         "status": "COMPLETE",
-        "calls_billed": 8,
+        "calls_billed": 10,
         "calls_refunded_503": 0,
-        "detail_rows": 8,
+        "detail_rows": 10,
         "missing_detail_rows": 0,
         "counter_mismatch": []
       },
@@ -171,6 +171,22 @@
           "model": "gemini-3.8-flash",
           "author": "老李玩钱",
           "title": "当前美股存在的3大风险因素"
+        },
+        {
+          "video_id": "JOaFOcY7Kc8",
+          "outcome": "admitted",
+          "at": "22:29:31Z",
+          "model": "gemini-3.8-flash",
+          "author": "老李玩钱",
+          "title": "华尔街大举买入和加仓的5支股票！我的看法及买入建议"
+        },
+        {
+          "video_id": "JmAgOc0hTwQ",
+          "outcome": "admitted",
+          "at": "22:32:34Z",
+          "model": "gemini-3.8-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 AI数据中心违约风险一览！长债收益率19年新高！SPY、QQQ、SOXX 、SMH重要位置！HD维持前瞻！"
         }
       ]
     }

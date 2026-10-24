@@ -66682,9 +66682,361 @@
       "intake_class_hint": "backfill",
       "capture_mode": "youtube_timestamp_unknown_learning",
       "timestamp_confidence": "missing"
+    },
+    {
+      "id": "4006518af569a18bcc48",
+      "source": "youtube",
+      "source_kind": "video",
+      "author": "老李玩钱",
+      "published_at": "",
+      "title": "华尔街大举买入和加仓的5支股票！我的看法及买入建议",
+      "url": "https://www.youtube.com/watch?v=JOaFOcY7Kc8",
+      "excerpt": "[Gemini 视频理解 · 未验证] 视频基于华尔街二季度13F机构持仓报告，梳理了机构重点加仓的5只股票：谷歌、亚马逊、台积电、美光科技和博通。作者分析了各公司的业务增长逻辑及市盈率估值，并结合技术面给出了各自的开仓与加仓建议价格点位。\n- [04:58 GOOG buy 335, 320] 机构二季度大举加仓谷歌，建议开仓点位为335，加仓点位为320\n- [09:05 AMZN buy 255, 239] 机构二季度大幅增持亚马逊，建议255以下考虑开仓，缺口下沿239考虑加仓\n- [12:56 TSM buy 420, 396] 台积电护城河强大且估值合理，回调时建议开仓点位为420，加仓点位为396\n- [16:03 MU buy 896, 820] 美光科技处于存储与芯片双风口，建议在900（89",
+      "content_chars": 557,
+      "semantic_content_chars": 557,
+      "content_filtering": {
+        "filter": "youtube_promotion_noise_v1",
+        "input_units": 9,
+        "removed_units": 0,
+        "removed_ratio": 0.0,
+        "promotion_noise_detected": false
+      },
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [
+        "AMZN",
+        "AVGO",
+        "GOOG",
+        "MU",
+        "TSM"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "captured_at": "2026-10-24T22:29:31Z",
+      "source_role": "rule_supply",
+      "transcript_status": "available",
+      "content_quality": "Q3",
+      "content_provider": "gemini_video",
+      "content_provider_url": "https://www.youtube.com/watch?v=JOaFOcY7Kc8",
+      "content_origin": "gemini_video_understanding",
+      "timestamp_evidence": true,
+      "rule_candidate_allowed": false,
+      "source_notice": "YouTube正文可用于非Forward语义学习；可靠发布时间缺失，因此强制按backfill处理，禁止计入Forward Evidence或Promotion。",
+      "claims": [
+        {
+          "symbol": "GOOG",
+          "stance": "add",
+          "stance_cues": [
+            "add",
+            "buy"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "a7f4c78874bacf2b6243c534888a7ff18dfd696c928bf7c588a96b04085be5e4",
+          "evidence_chars": 59
+        },
+        {
+          "symbol": "GOOGL",
+          "stance": "add",
+          "stance_cues": [
+            "add",
+            "buy"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "a7f4c78874bacf2b6243c534888a7ff18dfd696c928bf7c588a96b04085be5e4",
+          "evidence_chars": 59
+        },
+        {
+          "symbol": "AMZN",
+          "stance": "add",
+          "stance_cues": [
+            "add",
+            "buy"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "e4fa00eb5340ddbe0639b0fd613012ab924989500f60d27ba8c5d0cf655302ab",
+          "evidence_chars": 64
+        },
+        {
+          "symbol": "TSM",
+          "stance": "add",
+          "stance_cues": [
+            "add",
+            "buy"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "cdebf3d2225ae0606ef04ddb3a2497a0f51108f338dcc6c0d822b9ac44941610",
+          "evidence_chars": 63
+        },
+        {
+          "symbol": "MU",
+          "stance": "add",
+          "stance_cues": [
+            "add",
+            "buy"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "f3c6a0b9779cfb3d196791dd42aa98126b7c13d2d628b07d64b02f2131de1b5b",
+          "evidence_chars": 65
+        },
+        {
+          "symbol": "AVGO",
+          "stance": "add",
+          "stance_cues": [
+            "add",
+            "buy"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "f631c3b5bf169c983b93b1a93c6234dcef0f56e64fc475c28428e4d31859d7f1",
+          "evidence_chars": 68
+        }
+      ],
+      "claims_status": "experimental_unvalidated",
+      "video_claims": [
+        {
+          "claim": "机构二季度大举加仓谷歌，建议开仓点位为335，加仓点位为320",
+          "symbol": "GOOG",
+          "stance": "buy",
+          "price": "335, 320",
+          "timestamp": "04:58",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high"
+        },
+        {
+          "claim": "机构二季度大幅增持亚马逊，建议255以下考虑开仓，缺口下沿239考虑加仓",
+          "symbol": "AMZN",
+          "stance": "buy",
+          "price": "255, 239",
+          "timestamp": "09:05",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high"
+        },
+        {
+          "claim": "台积电护城河强大且估值合理，回调时建议开仓点位为420，加仓点位为396",
+          "symbol": "TSM",
+          "stance": "buy",
+          "price": "420, 396",
+          "timestamp": "12:56",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high"
+        },
+        {
+          "claim": "美光科技处于存储与芯片双风口，建议在900（896）以下开仓，加仓点位为820",
+          "symbol": "MU",
+          "stance": "buy",
+          "price": "896, 820",
+          "timestamp": "16:03",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high"
+        },
+        {
+          "claim": "博通在ASIC定制化芯片领域为龙头，建议开仓点位为392附近，加仓支撑位为370",
+          "symbol": "AVGO",
+          "stance": "buy",
+          "price": "392, 370",
+          "timestamp": "18:53",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high"
+        }
+      ],
+      "video_claims_model": "gemini-3.8-flash",
+      "video_observed_title": "华尔街13F文件大揭秘！机构二季度大举建仓加仓这5只股票！",
+      "validation_status": "pending_owner_spot_check",
+      "forward_evidence_eligible": false,
+      "intake_class_hint": "backfill",
+      "capture_mode": "youtube_timestamp_unknown_learning",
+      "timestamp_confidence": "missing"
+    },
+    {
+      "id": "eea4f04cdf9794336595",
+      "source": "youtube",
+      "source_kind": "video",
+      "author": "RhinoFinance / 视野环球财经",
+      "published_at": "",
+      "title": "美股 AI数据中心违约风险一览！长债收益率19年新高！SPY、QQQ、SOXX 、SMH重要位置！HD维持前瞻！",
+      "url": "https://www.youtube.com/watch?v=JmAgOc0hTwQ",
+      "excerpt": "[Gemini 视频理解 · 未验证] 美债收益率飙升压制成长股估值，推高AI数据中心巨额债务融资成本及违约风险(CDS分析)。HD家得宝二财季业绩超预期，估值位于合理区间中位，业绩处于筑底盘整期。大盘ETF冲高受阻回落，分析了SPY、QQQ、SOXX、SMH关键多空分水岭及支撑位。\n- [03:55 HD neutral 344] HD当前市价在2027财年估值中位344附近，业绩最糟糕时期已过，正处于底部盘整与防御阶段\n- [05:23 HD watch 366] HD想要打开更大涨幅需有效突破上方366强阻力位\n- [06:44 bearish] 长期国债收益率上行压制科技成长股DCF估值，并显著增加AI数据中心债务融资成本与违约风险\n- [15:52 SPY watch 729] SPY跌破768小支撑",
+      "content_chars": 883,
+      "semantic_content_chars": 883,
+      "content_filtering": {
+        "filter": "youtube_promotion_noise_v1",
+        "input_units": 15,
+        "removed_units": 0,
+        "removed_ratio": 0.0,
+        "promotion_noise_detected": false
+      },
+      "images_count": 0,
+      "themes_hint": [
+        "风险管理",
+        "长期持有纪律",
+        "趋势确认"
+      ],
+      "symbols": [
+        "HD",
+        "META",
+        "MSFT",
+        "QQQ",
+        "SMH",
+        "SOXX",
+        "SPY"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "captured_at": "2026-10-24T22:32:34Z",
+      "source_role": "rule_supply",
+      "transcript_status": "available",
+      "content_quality": "Q3",
+      "content_provider": "gemini_video",
+      "content_provider_url": "https://www.youtube.com/watch?v=JmAgOc0hTwQ",
+      "content_origin": "gemini_video_understanding",
+      "timestamp_evidence": true,
+      "rule_candidate_allowed": false,
+      "source_notice": "YouTube正文可用于非Forward语义学习；可靠发布时间缺失，因此强制按backfill处理，禁止计入Forward Evidence或Promotion。",
+      "claims": [
+        {
+          "symbol": "QQQ",
+          "stance": "bearish",
+          "stance_cues": [
+            "bearish"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "4aa75831e419d44161ad8d0b341500260d07ad611c1b1d94738bdcab3eb129a8",
+          "evidence_chars": 62
+        },
+        {
+          "symbol": "SMH",
+          "stance": "bearish",
+          "stance_cues": [
+            "bearish"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "423c22683f3bbd03d27ca51fc3eb2383672268eabc5f9b2e9a62e851c82ab706",
+          "evidence_chars": 60
+        }
+      ],
+      "claims_status": "experimental_unvalidated",
+      "video_claims": [
+        {
+          "claim": "HD当前市价在2027财年估值中位344附近，业绩最糟糕时期已过，正处于底部盘整与防御阶段",
+          "symbol": "HD",
+          "stance": "neutral",
+          "price": "344",
+          "timestamp": "03:55",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high"
+        },
+        {
+          "claim": "HD想要打开更大涨幅需有效突破上方366强阻力位",
+          "symbol": "HD",
+          "stance": "watch",
+          "price": "366",
+          "timestamp": "05:23",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high"
+        },
+        {
+          "claim": "长期国债收益率上行压制科技成长股DCF估值，并显著增加AI数据中心债务融资成本与违约风险",
+          "symbol": null,
+          "stance": "bearish",
+          "price": null,
+          "timestamp": "06:44",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high"
+        },
+        {
+          "claim": "SPY跌破768小支撑，关注下方745-756强支撑；若跌破729则走空头趋势",
+          "symbol": "SPY",
+          "stance": "watch",
+          "price": "729",
+          "timestamp": "15:52",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high"
+        },
+        {
+          "claim": "QQQ跌破705-724区域转弱，若跌破693则彻底破位走空展开更大下行",
+          "symbol": "QQQ",
+          "stance": "bearish",
+          "price": "693",
+          "timestamp": "17:55",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high"
+        },
+        {
+          "claim": "SOXX在550-580强阻力空头射程承压回落，下方关注532及489-532区间能否止跌",
+          "symbol": "SOXX",
+          "stance": "watch",
+          "price": "532",
+          "timestamp": "18:36",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high"
+        },
+        {
+          "claim": "SMH跌破557-581走弱，走势与费半趋同，若跌破535则破位走空",
+          "symbol": "SMH",
+          "stance": "bearish",
+          "price": "535",
+          "timestamp": "19:50",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high"
+        },
+        {
+          "claim": "META诉讼虽有冲击但不可能被罚破产，技术面回踩至540关键强支撑区域",
+          "symbol": "META",
+          "stance": "neutral",
+          "price": "540",
+          "timestamp": "21:35",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high"
+        },
+        {
+          "claim": "MSFT缩量横盘整理于487附近，虽有阳线但止跌形态连续性不强，建议继续观望等待",
+          "symbol": "MSFT",
+          "stance": "watch",
+          "price": "487",
+          "timestamp": "22:04",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "medium"
+        }
+      ],
+      "video_claims_model": "gemini-3.8-flash",
+      "video_observed_title": "美债收益率大涨对AI数据中心的影响；家得宝HD财报估值；大盘ETF SPY QQQ SOXX SMH META MSFT",
+      "validation_status": "pending_owner_spot_check",
+      "forward_evidence_eligible": false,
+      "intake_class_hint": "backfill",
+      "capture_mode": "youtube_timestamp_unknown_learning",
+      "timestamp_confidence": "missing"
     }
   ],
-  "updated_at": "2026-10-24T18:49:59Z",
+  "updated_at": "2026-10-24T22:33:11Z",
   "retention_policy": "append_only_no_record_count_cap",
   "historical_recovery": {
     "completed_at": "2026-10-07T13:43:06.018028+00:00",
