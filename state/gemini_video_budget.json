@@ -91,15 +91,15 @@
       "exhausted": true
     },
     "2026-10-24": {
-      "calls": 2,
+      "calls": 4,
       "admitted": 1,
       "rejected": 0,
-      "errors": 1,
+      "errors": 3,
       "reconciliation": {
         "status": "COMPLETE",
-        "calls_billed": 2,
+        "calls_billed": 4,
         "calls_refunded_503": 0,
-        "detail_rows": 2,
+        "detail_rows": 4,
         "missing_detail_rows": 0,
         "counter_mismatch": []
       },
@@ -120,6 +120,24 @@
           "author": "Andrei Jikh",
           "title": "China & Japan Are Dumping US Bonds",
           "detail": "{\"error\":{\"message\":\"The caller does not have permission\",\"code\":\"permission_denied\"}}"
+        },
+        {
+          "video_id": "TNQ2PuDLiOg",
+          "outcome": "http_403",
+          "at": "10:54:42Z",
+          "model": "gemini-3.8-flash",
+          "author": "Andrei Jikh",
+          "title": "My Thoughts On XRP",
+          "detail": "{\"error\":{\"message\":\"The caller does not have permission\",\"code\":\"permission_denied\"}}"
+        },
+        {
+          "video_id": "SbZltIBvi7M",
+          "outcome": "exception",
+          "at": "10:57:49Z",
+          "model": "gemini-3.8-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 对冲基金清空1年来AI仓位！不看好人工智能了吗？举例NVDA对比AMD！",
+          "detail": "ReadTimeout"
         }
       ]
     }
