@@ -66187,9 +66187,111 @@
       "intake_class_hint": "backfill",
       "capture_mode": "youtube_timestamp_unknown_learning",
       "timestamp_confidence": "missing"
+    },
+    {
+      "id": "16e386aa6686a0c8f015",
+      "source": "youtube",
+      "source_kind": "video",
+      "author": "RhinoFinance / 视野环球财经",
+      "published_at": "",
+      "title": "美股 MRVL抢单AVGO！AMD更新！财政部加码回购债券！为什么？钱哪来？QE吗？",
+      "url": "https://www.youtube.com/watch?v=19S-O_bla-A",
+      "excerpt": "[Gemini 视频理解 · 未验证] 本期节目分析了美国财政部加大国债回购力度对债市及美股的影响，明确指出TLT仅为短期反弹，缺乏长期牛市基础。同时更新了Moderna（MRNA）因癌症疫苗突破暴涨的情况，并详细分析了AMD、Marvell（MRVL）与博通（AVGO）的最新财报前瞻估值及技术支撑阻力位。\n- [01:08 MRNA bullish] 莫德纳（MRNA）与默克合作研发的癌症疫苗试验取得突破性进展，刺激股价大涨176%。\n- [10:08 TLT neutral] 财政部加大国债回购短期能打击空头并引发TLT反弹，但因债务规模庞大及高利率环境，TLT缺乏长期走牛的基础。\n- [12:33 AMD watch 427-453] AMD当前股价在466附近，估值略微偏高，关键中等支撑位在427-45",
+      "content_chars": 783,
+      "semantic_content_chars": 783,
+      "content_filtering": {
+        "filter": "youtube_promotion_noise_v1",
+        "input_units": 9,
+        "removed_units": 0,
+        "removed_ratio": 0.0,
+        "promotion_noise_detected": false
+      },
+      "images_count": 0,
+      "themes_hint": [
+        "长期持有纪律",
+        "趋势确认"
+      ],
+      "symbols": [
+        "AMD",
+        "AVGO",
+        "GOOGL",
+        "MRNA",
+        "MRVL",
+        "TLT"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "captured_at": "2026-10-24T15:55:48Z",
+      "source_role": "rule_supply",
+      "transcript_status": "available",
+      "content_quality": "Q3",
+      "content_provider": "gemini_video",
+      "content_provider_url": "https://www.youtube.com/watch?v=19S-O_bla-A",
+      "content_origin": "gemini_video_understanding",
+      "timestamp_evidence": true,
+      "rule_candidate_allowed": false,
+      "source_notice": "YouTube正文可用于非Forward语义学习；可靠发布时间缺失，因此强制按backfill处理，禁止计入Forward Evidence或Promotion。",
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "video_claims": [
+        {
+          "claim": "莫德纳（MRNA）与默克合作研发的癌症疫苗试验取得突破性进展，刺激股价大涨176%。",
+          "symbol": "MRNA",
+          "stance": "bullish",
+          "price": null,
+          "timestamp": "01:08",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high"
+        },
+        {
+          "claim": "财政部加大国债回购短期能打击空头并引发TLT反弹，但因债务规模庞大及高利率环境，TLT缺乏长期走牛的基础。",
+          "symbol": "TLT",
+          "stance": "neutral",
+          "price": null,
+          "timestamp": "10:08",
+          "evidence_mode": "spoken_explicit",
+          "confidence": "high"
+        },
+        {
+          "claim": "AMD当前股价在466附近，估值略微偏高，关键中等支撑位在427-453，若进一步下探，334-366（200日均线附近）为强支撑及合理估值区。",
+          "symbol": "AMD",
+          "stance": "watch",
+          "price": "427-453",
+          "timestamp": "12:33",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high"
+        },
+        {
+          "claim": "Marvell（MRVL）与谷歌深化定制AI芯片合作，虽然带来长期收入确定性，但技术面253-272及278-318面临强压力，再往上走估值将偏高。",
+          "symbol": "MRVL",
+          "stance": "watch",
+          "price": "253-272",
+          "timestamp": "18:46",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high"
+        },
+        {
+          "claim": "博通（AVGO）当前324-365区间为高增长下的合理支撑位/稳妥位置；若跌破324需注意避险。",
+          "symbol": "AVGO",
+          "stance": "watch",
+          "price": "324-365",
+          "timestamp": "20:44",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high"
+        }
+      ],
+      "video_claims_model": "gemini-3.5-flash",
+      "video_observed_title": "美股：财政部发招救国债，TLT牛市要来？Marvell暴涨拉上谷歌，博通却掉肉！AMD关键支撑位（260819 第1739期）",
+      "validation_status": "pending_owner_spot_check",
+      "forward_evidence_eligible": false,
+      "intake_class_hint": "backfill",
+      "capture_mode": "youtube_timestamp_unknown_learning",
+      "timestamp_confidence": "missing"
     }
   ],
-  "updated_at": "2026-10-24T04:33:46Z",
+  "updated_at": "2026-10-24T15:59:30Z",
   "retention_policy": "append_only_no_record_count_cap",
   "historical_recovery": {
     "completed_at": "2026-10-07T13:43:06.018028+00:00",

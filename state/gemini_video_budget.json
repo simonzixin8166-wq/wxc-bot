@@ -91,15 +91,15 @@
       "exhausted": true
     },
     "2026-10-24": {
-      "calls": 4,
-      "admitted": 1,
+      "calls": 6,
+      "admitted": 2,
       "rejected": 0,
-      "errors": 3,
+      "errors": 4,
       "reconciliation": {
         "status": "COMPLETE",
-        "calls_billed": 4,
+        "calls_billed": 6,
         "calls_refunded_503": 0,
-        "detail_rows": 4,
+        "detail_rows": 6,
         "missing_detail_rows": 0,
         "counter_mismatch": []
       },
@@ -137,6 +137,23 @@
           "model": "gemini-3.8-flash",
           "author": "RhinoFinance / 视野环球财经",
           "title": "美股 对冲基金清空1年来AI仓位！不看好人工智能了吗？举例NVDA对比AMD！",
+          "detail": "ReadTimeout"
+        },
+        {
+          "video_id": "19S-O_bla-A",
+          "outcome": "admitted",
+          "at": "15:55:48Z",
+          "model": "gemini-3.5-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 MRVL抢单AVGO！AMD更新！财政部加码回购债券！为什么？钱哪来？QE吗？"
+        },
+        {
+          "video_id": "1QM5vfCkId0",
+          "outcome": "exception",
+          "at": "15:58:54Z",
+          "model": "gemini-3.8-flash",
+          "author": "老李玩钱",
+          "title": "当前美股的泡沫到底有多大？NVDA财报解读及操作建议",
           "detail": "ReadTimeout"
         }
       ]
