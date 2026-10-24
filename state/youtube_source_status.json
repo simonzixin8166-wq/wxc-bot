@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-10-24T16:00:18Z",
+  "generated_at": "2026-10-24T18:51:01Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -120,8 +120,8 @@
   "pending_retried": 6,
   "content_attempted_this_run": 6,
   "content_work_budget": 6,
-  "content_backlog_after_run": 108,
-  "pending_total": 108,
+  "content_backlog_after_run": 106,
+  "pending_total": 106,
   "historical_demoted_from_pending": 0,
   "admitted_from_pending": 0,
   "nonforward_timestamp_unknown_admitted": 0,
@@ -130,9 +130,20 @@
   "discovery_complete": true,
   "new_video_diagnostics": [
     {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "71FEJcz9VCY",
-      "title": "美股 凯投宏观：AI泡沫潜在破灭，五个警告信号！8月财政报告恶化，利息飙升！SOXX跟踪！",
+      "author": "老李玩钱",
+      "video_id": "FK_7ldpLAjI",
+      "title": "$200,000本金美股账户2周年，表现如何？复盘总结，经验心得",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "老李玩钱",
+      "video_id": "FqN2N9NJ00M",
+      "title": "美股：TSLA，GOOG！财报解读，操作建议",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -142,8 +153,30 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "7IraEqi0ZKs",
-      "title": "美股 机构二季度13 F，加减仓哪些！大空头Michael Burry最新操作，真的相当空！",
+      "video_id": "Fu_h7lMTYU8",
+      "title": "美股 三个风险，现在如何？GOOG加速倒车！软件IGV，成分股跟踪！ORCL、PLTR、CRM、INTU、APP、ADBE！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "G_zzWcUSTfY",
+      "title": "美股 共识预期：半导体无路可退！QQQ、IWM、AMD、META！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "老李玩钱",
+      "video_id": "GsmAlvfOUFs",
+      "title": "6月必买3支股票",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -153,41 +186,8 @@
     },
     {
       "author": "Andrei Jikh",
-      "video_id": "87NzxCEUQlw",
-      "title": "China Just Shut Down Gold Trading",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "8DY3zEBTFZ8",
-      "title": "美股 系统准备重新武装杠杆！MSFT再跌一天修复！半导体、软件，又跷跷板？ CRWV、NBIS、LITE、COHR！APP再跟踪！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "老李玩钱",
-      "video_id": "8uy8c4S2BW4",
-      "title": "英伟达财报渡劫！依然长期看好",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "老李玩钱",
-      "video_id": "9SBwuIy6KRs",
-      "title": "美股很高！但这3支股票还在地上趴着，可以买入",
+      "video_id": "HIBozcOlQPY",
+      "title": "How I’m Preparing For The “Supercycle”",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -200,7 +200,7 @@
     "status": "ok",
     "channel_errors": 0,
     "stuck_high_quality_pending": 0,
-    "provider_waiting_pending": 108,
+    "provider_waiting_pending": 106,
     "stuck_video_ids": [],
     "meaning": "Q1/Q2 text must not remain stuck in pending; Q3-Q5 may legitimately wait for better learning text."
   },

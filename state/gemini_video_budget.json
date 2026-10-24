@@ -91,15 +91,15 @@
       "exhausted": true
     },
     "2026-10-24": {
-      "calls": 6,
-      "admitted": 2,
+      "calls": 8,
+      "admitted": 4,
       "rejected": 0,
       "errors": 4,
       "reconciliation": {
         "status": "COMPLETE",
-        "calls_billed": 6,
+        "calls_billed": 8,
         "calls_refunded_503": 0,
-        "detail_rows": 6,
+        "detail_rows": 8,
         "missing_detail_rows": 0,
         "counter_mismatch": []
       },
@@ -155,6 +155,22 @@
           "author": "老李玩钱",
           "title": "当前美股的泡沫到底有多大？NVDA财报解读及操作建议",
           "detail": "ReadTimeout"
+        },
+        {
+          "video_id": "Am7QxgzrUek",
+          "outcome": "admitted",
+          "at": "18:47:35Z",
+          "model": "gemini-3.8-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 对冲基金最新仓位，软件VS半导体！SOXX、IGV、QQQ！META、MSFT正常回撤！"
+        },
+        {
+          "video_id": "B8OxtGSEfoo",
+          "outcome": "admitted",
+          "at": "18:49:08Z",
+          "model": "gemini-3.8-flash",
+          "author": "老李玩钱",
+          "title": "当前美股存在的3大风险因素"
         }
       ]
     }

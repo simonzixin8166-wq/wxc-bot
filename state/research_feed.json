@@ -66383,9 +66383,308 @@
       "intake_class_hint": "live_candidate",
       "capture_mode": "scheduled_board_anchor_scan",
       "forum_board": "tzlc"
+    },
+    {
+      "id": "138b8eb5700150a2f088",
+      "source": "youtube",
+      "source_kind": "video",
+      "author": "RhinoFinance / 视野环球财经",
+      "published_at": "",
+      "title": "美股 对冲基金最新仓位，软件VS半导体！SOXX、IGV、QQQ！META、MSFT正常回撤！",
+      "url": "https://www.youtube.com/watch?v=Am7QxgzrUek",
+      "excerpt": "[Gemini 视频理解 · 未验证] 视频回顾了美股盘面表现，重点分析了高盛关于对冲基金上周头寸的数据：对冲基金以过去一年第二快速度净买入美股，做多个股并回补ETF空头，信息技术等板块获大幅净买入，房地产遭净卖出。随后对MSFT、META、IGV、SOXX、QQQ进行了技术位和指标分析。\n- [03:51 bullish] 上周对冲基金每天都净买入美股，增速为过去一年来第二快，个股多头买入，宏观产品空头回补\n- [06:08 bullish] 信息技术板块是美国净买入金额最高板块，软件空头回补，半导体及半导体设备多头买入\n- [10:22 SOXX bullish] 半导体及半导体设备净配置比例约为10.4%，仍处于历史较高位置，对冲基金依然看好多头动能\n- [09:07 IGV neutral] 软件行业净",
+      "content_chars": 837,
+      "semantic_content_chars": 779,
+      "content_filtering": {
+        "filter": "youtube_promotion_noise_v1",
+        "input_units": 13,
+        "removed_units": 1,
+        "removed_ratio": 0.07692307692307693,
+        "promotion_noise_detected": true
+      },
+      "images_count": 0,
+      "themes_hint": [
+        "风险管理",
+        "失败复盘",
+        "趋势确认"
+      ],
+      "symbols": [
+        "IGV",
+        "META",
+        "MSFT",
+        "QQQ",
+        "SOXX"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "captured_at": "2026-10-24T18:47:35Z",
+      "source_role": "rule_supply",
+      "transcript_status": "available",
+      "content_quality": "Q3",
+      "content_provider": "gemini_video",
+      "content_provider_url": "https://www.youtube.com/watch?v=Am7QxgzrUek",
+      "content_origin": "gemini_video_understanding",
+      "timestamp_evidence": true,
+      "rule_candidate_allowed": false,
+      "source_notice": "YouTube正文可用于非Forward语义学习；可靠发布时间缺失，因此强制按backfill处理，禁止计入Forward Evidence或Promotion。",
+      "claims": [
+        {
+          "symbol": "MSFT",
+          "stance": "hold",
+          "stance_cues": [
+            "hold"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "0849953164f1d45d98a6f090f073fd32270c9d0aa626a69a354c048fbb30d067",
+          "evidence_chars": 70
+        },
+        {
+          "symbol": "QQQ",
+          "stance": "buy",
+          "stance_cues": [
+            "buy"
+          ],
+          "horizon": "short",
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "eee9e823cbd76d7a149a3cbac432df600fc2e8a030d1ac5c668a7cdc8cb2ee1c",
+          "evidence_chars": 72
+        }
+      ],
+      "claims_status": "experimental_unvalidated",
+      "video_claims": [
+        {
+          "claim": "上周对冲基金每天都净买入美股，增速为过去一年来第二快，个股多头买入，宏观产品空头回补",
+          "symbol": null,
+          "stance": "bullish",
+          "price": null,
+          "timestamp": "03:51",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high"
+        },
+        {
+          "claim": "信息技术板块是美国净买入金额最高板块，软件空头回补，半导体及半导体设备多头买入",
+          "symbol": null,
+          "stance": "bullish",
+          "price": null,
+          "timestamp": "06:08",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high"
+        },
+        {
+          "claim": "半导体及半导体设备净配置比例约为10.4%，仍处于历史较高位置，对冲基金依然看好多头动能",
+          "symbol": "SOXX",
+          "stance": "bullish",
+          "price": null,
+          "timestamp": "10:22",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high"
+        },
+        {
+          "claim": "软件行业净配置比例反弹至4.5%，机构态度偏中性，空头回补但多头加仓谨慎",
+          "symbol": "IGV",
+          "stance": "neutral",
+          "price": null,
+          "timestamp": "09:07",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high"
+        },
+        {
+          "claim": "微软回调至469-487美元，完成了日线级别RSI超买和顶背离修补，仍可继续持有等待",
+          "symbol": "MSFT",
+          "stance": "hold",
+          "price": "469-487",
+          "timestamp": "11:15",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high"
+        },
+        {
+          "claim": "Meta未能突破632美元止跌，承压回落，中长线仍需时间震荡磨合，需观察其AI货币化和资本支出",
+          "symbol": "META",
+          "stance": "neutral",
+          "price": "632",
+          "timestamp": "14:04",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high"
+        },
+        {
+          "claim": "IGV止步于107美元，短期突破失败走弱，完成日线RSI顶背离修补，多头仓位并不激进",
+          "symbol": "IGV",
+          "stance": "neutral",
+          "price": "107",
+          "timestamp": "16:59",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high"
+        },
+        {
+          "claim": "SOXX进入550-580美元压力区未过，但存储等个股已出现突破止跌信号，仍具备向上突破机会",
+          "symbol": "SOXX",
+          "stance": "watch",
+          "price": "550-580",
+          "timestamp": "18:55",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high"
+        },
+        {
+          "claim": "QQQ若跌破705-724美元则短期走弱，激进做多者可在705-724美元回撤位考虑上车",
+          "symbol": "QQQ",
+          "stance": "watch",
+          "price": "705-724",
+          "timestamp": "20:26",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high"
+        }
+      ],
+      "video_claims_model": "gemini-3.8-flash",
+      "video_observed_title": "对冲基金上周疯狂抢筹这些股票！微软、META、IGV、SOXX、QQQ关键点位更新，技术面指标修复是好是坏？【美股投资分析260815】",
+      "validation_status": "pending_owner_spot_check",
+      "forward_evidence_eligible": false,
+      "intake_class_hint": "backfill",
+      "capture_mode": "youtube_timestamp_unknown_learning",
+      "timestamp_confidence": "missing"
+    },
+    {
+      "id": "14f62f7adcfbc876549e",
+      "source": "youtube",
+      "source_kind": "video",
+      "author": "老李玩钱",
+      "published_at": "",
+      "title": "当前美股存在的3大风险因素",
+      "url": "https://www.youtube.com/watch?v=B8OxtGSEfoo",
+      "excerpt": "[Gemini 视频理解 · 未验证] 老李分析当前美股虽然持续反弹创出新高，但面临三大风险：第一，市场广度不足，严重偏科于半导体等少数板块；第二，估值处于历史高位缺乏安全边际，标普500的PE及席勒PE远超历史平均水平；第三，通胀顽固导致降息预期落空，甚至面临加息可能。此外SpaceX即将IPO可能分流流动性。老李认为短期内市场必然会迎来回调，建议做好仓位管理和风控，待回调打折时再逢低布局优质资产。\n- [03:10 SPX neutral] 当前美股市场广度不足严重偏科，仅半导体芯片等极少数板块上涨，多数股票并未跟随上涨甚至下跌\n- [04:56 SPX bearish] 标普500当前PE达32.40、席勒PE达42.32，远高于历史平均水平，估值处于高位且缺乏安全边际\n- [06:48 SPX neut",
+      "content_chars": 922,
+      "semantic_content_chars": 922,
+      "content_filtering": {
+        "filter": "youtube_promotion_noise_v1",
+        "input_units": 10,
+        "removed_units": 0,
+        "removed_ratio": 0.0,
+        "promotion_noise_detected": false
+      },
+      "images_count": 0,
+      "themes_hint": [
+        "风险管理"
+      ],
+      "symbols": [
+        "AMD",
+        "IXIC",
+        "SPX"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "captured_at": "2026-10-24T18:49:08Z",
+      "source_role": "rule_supply",
+      "transcript_status": "available",
+      "content_quality": "Q3",
+      "content_provider": "gemini_video",
+      "content_provider_url": "https://www.youtube.com/watch?v=B8OxtGSEfoo",
+      "content_origin": "gemini_video_understanding",
+      "timestamp_evidence": true,
+      "rule_candidate_allowed": false,
+      "source_notice": "YouTube正文可用于非Forward语义学习；可靠发布时间缺失，因此强制按backfill处理，禁止计入Forward Evidence或Promotion。",
+      "claims": [
+        {
+          "symbol": "VOO",
+          "stance": "bearish",
+          "stance_cues": [
+            "bearish"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "3ed3d192a5782da308ff9be59206721534f70a4639e07472c99287b6b92cf7b6",
+          "evidence_chars": 72
+        },
+        {
+          "symbol": "VOO",
+          "stance": "bullish",
+          "stance_cues": [
+            "bullish"
+          ],
+          "horizon": "medium",
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "a4510cad6d297853bc4548c4712cf16cea7291aff03c45a768bd2d7382408673",
+          "evidence_chars": 79
+        }
+      ],
+      "claims_status": "experimental_unvalidated",
+      "video_claims": [
+        {
+          "claim": "当前美股市场广度不足严重偏科，仅半导体芯片等极少数板块上涨，多数股票并未跟随上涨甚至下跌",
+          "symbol": "SPX",
+          "stance": "neutral",
+          "price": null,
+          "timestamp": "03:10",
+          "evidence_mode": "spoken_explicit",
+          "confidence": "high"
+        },
+        {
+          "claim": "标普500当前PE达32.40、席勒PE达42.32，远高于历史平均水平，估值处于高位且缺乏安全边际",
+          "symbol": "SPX",
+          "stance": "bearish",
+          "price": null,
+          "timestamp": "04:56",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high"
+        },
+        {
+          "claim": "花旗集团策略师Drew Pettit给出标普500年底目标价为7700点，对比当前点位剩余上涨空间已不大",
+          "symbol": "SPX",
+          "stance": "neutral",
+          "price": "7700",
+          "timestamp": "06:48",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high"
+        },
+        {
+          "claim": "通胀居高不下使下半年降息基本不可能，甚至可能加息25个基点，对股市形成利空压力",
+          "symbol": "SPX",
+          "stance": "bearish",
+          "price": null,
+          "timestamp": "08:00",
+          "evidence_mode": "spoken_explicit",
+          "confidence": "high"
+        },
+        {
+          "claim": "SpaceX预计于6月12日IPO上市，庞大市值将吸走市场流动性，使部分板块与个股承压",
+          "symbol": null,
+          "stance": "neutral",
+          "price": null,
+          "timestamp": "09:21",
+          "evidence_mode": "spoken_explicit",
+          "confidence": "medium"
+        },
+        {
+          "claim": "美股短期之内回调肯定会有且属于必要健康的调整，建议做好仓位管理与风控，待打折逢低加仓",
+          "symbol": "SPX",
+          "stance": "watch",
+          "price": null,
+          "timestamp": "11:38",
+          "evidence_mode": "spoken_explicit",
+          "confidence": "high"
+        }
+      ],
+      "video_claims_model": "gemini-3.8-flash",
+      "video_observed_title": "美股当前存在的三大风险因素",
+      "validation_status": "pending_owner_spot_check",
+      "forward_evidence_eligible": false,
+      "intake_class_hint": "backfill",
+      "capture_mode": "youtube_timestamp_unknown_learning",
+      "timestamp_confidence": "missing"
     }
   ],
-  "updated_at": "2026-10-24T16:40:40Z",
+  "updated_at": "2026-10-24T18:49:59Z",
   "retention_policy": "append_only_no_record_count_cap",
   "historical_recovery": {
     "completed_at": "2026-10-07T13:43:06.018028+00:00",
