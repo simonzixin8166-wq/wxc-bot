@@ -65358,9 +65358,683 @@
       "capture_mode": "youtube_timestamp_unknown_learning",
       "timestamp_confidence": "missing",
       "forward_evidence_eligible": false
+    },
+    {
+      "id": "772a8d500a5163ebb86a",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-23 11:22:36",
+      "title": "Next week is huge",
+      "url": "https://bbs.wenxuecity.com/cfzh/117110.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "52ea343828ca63b504b7",
+      "parent_post_id": "117110",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-24T00:58:55Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "capture_mode": "scheduled_forum_anchor_scan",
+      "intake_class_hint": "live_candidate"
+    },
+    {
+      "id": "c7ad38fb631e25de0d1b",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-23 12:08:00",
+      "title": "well, I am out of VRT.",
+      "url": "https://bbs.wenxuecity.com/cfzh/117119.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "1c0168d10e33b8aa4f8d",
+      "parent_post_id": "117119",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-24T00:58:55Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "capture_mode": "scheduled_forum_anchor_scan",
+      "intake_class_hint": "live_candidate"
+    },
+    {
+      "id": "02cab60eb05bcbb58cb2",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-23 12:09:00",
+      "title": "also, out of SOXL. rally showed no strength. wait for better opp",
+      "url": "https://bbs.wenxuecity.com/cfzh/117120.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "35bac60c29c82ef06694",
+      "parent_post_id": "117120",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-24T00:58:55Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "capture_mode": "scheduled_forum_anchor_scan",
+      "intake_class_hint": "live_candidate"
+    },
+    {
+      "id": "6cd17d1d952b231d9f3a",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-23 13:04:31",
+      "title": "No one can answer this question for you :)",
+      "url": "https://bbs.wenxuecity.com/cfzh/117129.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "a7d92ece14c8bcebeb20",
+      "parent_post_id": "117129",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-24T00:58:55Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "capture_mode": "scheduled_forum_anchor_scan",
+      "intake_class_hint": "live_candidate"
+    },
+    {
+      "id": "ddd9531838780f31acab",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-23 15:04:00",
+      "title": "it is my short trade position. and now I want to focus on SOXL",
+      "url": "https://bbs.wenxuecity.com/cfzh/117139.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "ae8e336dd22fc281850d",
+      "parent_post_id": "117139",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-24T00:58:55Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "capture_mode": "scheduled_forum_anchor_scan",
+      "intake_class_hint": "live_candidate"
+    },
+    {
+      "id": "606460ba83dac4f839b2",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-23 15:09:00",
+      "title": "这几天我已经进出SOXL 5，6次了，积累了6%的profit, 为的就是有足够安全边际，随时准备跳上反弹的车：）",
+      "url": "https://bbs.wenxuecity.com/cfzh/117140.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "9c52ff796c42682eacb4",
+      "parent_post_id": "117140",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-24T00:58:55Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "capture_mode": "scheduled_forum_anchor_scan",
+      "intake_class_hint": "live_candidate"
+    },
+    {
+      "id": "242a73fc430f83baaacb",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "我是一只井底蛙",
+      "published_at": "2026-10-23 15:21:29",
+      "title": "下周重点观察股：特斯拉",
+      "url": "https://bbs.wenxuecity.com/cfzh/117141.html",
+      "excerpt": "试看它能不能向上冲破390的价位阻力和200天均线阻力！",
+      "content_chars": 28,
+      "images_count": 1,
+      "themes_hint": [
+        "TSLA"
+      ],
+      "symbols": [
+        "TSLA"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "6f0d0c1190f2828de8f5",
+      "parent_post_id": "117141",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-24T00:58:55Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "capture_mode": "scheduled_forum_anchor_scan",
+      "intake_class_hint": "live_candidate"
+    },
+    {
+      "id": "632ea4eb54bf27b3475a",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "bogbog",
+      "published_at": "2026-10-23 12:17:11",
+      "title": "暂时不加，仓位已经够了",
+      "url": "https://bbs.wenxuecity.com/cfzh/117121.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 1,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "f556a45bfc3cc060cc39",
+      "parent_post_id": "117121",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-24T00:58:55Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "capture_mode": "scheduled_forum_anchor_scan",
+      "intake_class_hint": "live_candidate"
+    },
+    {
+      "id": "b46a40558f5ea0cfec91",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "bogbog",
+      "published_at": "2026-10-23 12:18:11",
+      "title": "可能可以参考三心上面说的。  我没有这个股，没有认真研究过",
+      "url": "https://bbs.wenxuecity.com/cfzh/117122.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 1,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "00984bc0cce9c354ed69",
+      "parent_post_id": "117122",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-24T00:58:55Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "capture_mode": "scheduled_forum_anchor_scan",
+      "intake_class_hint": "live_candidate"
+    },
+    {
+      "id": "fff5e1ec27ebc9d86451",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "bogbog",
+      "published_at": "2026-10-23 12:18:56",
+      "title": "嗯嗯，应该是，不过不太了解",
+      "url": "https://bbs.wenxuecity.com/cfzh/117123.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "96618f6f868eff2aaaa1",
+      "parent_post_id": "117123",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-24T00:58:55Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "capture_mode": "scheduled_forum_anchor_scan",
+      "intake_class_hint": "live_candidate"
+    },
+    {
+      "id": "40e00824da050d59317d",
+      "source": "wenxuecity",
+      "source_kind": "blog",
+      "author": "麻你",
+      "published_at": "2026-10-23",
+      "title": "下个星期继续保持82%仓位在VGT，18%仓位在SGOV",
+      "url": "https://blog.wenxuecity.com/myblog/78105/202610/16549.html",
+      "excerpt": "如果大盘开始反弹奔新高，就让VGT跟着大盘往上走，直到下个卖出信号出现，再卖出部分盈利，取利。\n如果大盘继续向下，就开始不断买进VGT，越跌越买，只买不卖。直到跌到底就买到底。",
+      "content_chars": 88,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [
+        "SGOV",
+        "VGT"
+      ],
+      "operations": [
+        {
+          "symbols": [
+            "VGT"
+          ],
+          "actions": [
+            "sell"
+          ],
+          "attribution": "unconfirmed_author_context",
+          "attribution_confidence": "needs_review"
+        }
+      ],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [
+        {
+          "symbol": "SGOV",
+          "stance": "hold",
+          "stance_cues": [
+            "hold"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "09fa185e4ebb91a22d60d1ee724ccc075e42c9122a606a7bb13678835346bbc4",
+          "evidence_chars": 28
+        },
+        {
+          "symbol": "VGT",
+          "stance": "hold",
+          "stance_cues": [
+            "hold"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "09fa185e4ebb91a22d60d1ee724ccc075e42c9122a606a7bb13678835346bbc4",
+          "evidence_chars": 28
+        },
+        {
+          "symbol": "VGT",
+          "stance": "trim",
+          "stance_cues": [
+            "trim",
+            "sell"
+          ],
+          "horizon": null,
+          "conditional": true,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "131882b7e5e19955f8dc1eda53715e52057410c1fbc715778ee3463db5045b12",
+          "evidence_chars": 47
+        },
+        {
+          "symbol": "VGT",
+          "stance": "hold",
+          "stance_cues": [
+            "hold",
+            "buy"
+          ],
+          "horizon": null,
+          "conditional": true,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "a54bc385f5b00dd1a0a9d1c8d0d20ee1e3a5d6f7ba83fe7060f63390856b82da",
+          "evidence_chars": 30
+        }
+      ],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [
+        {
+          "symbol": "VGT",
+          "action_type": "HOLD",
+          "confidence": "high",
+          "size_pct": null,
+          "price": null,
+          "allocation_pct": {
+            "VGT": 82.0,
+            "SGOV": 18.0
+          },
+          "evidence_quote": "下个星期继续保持82%仓位在VGT，18%仓位在SGOV",
+          "evidence_sha256": "09fa185e4ebb91a22d60d1ee724ccc075e42c9122a606a7bb13678835346bbc4"
+        },
+        {
+          "symbol": "SGOV",
+          "action_type": "HOLD",
+          "confidence": "high",
+          "size_pct": null,
+          "price": null,
+          "allocation_pct": {
+            "VGT": 82.0,
+            "SGOV": 18.0
+          },
+          "evidence_quote": "下个星期继续保持82%仓位在VGT，18%仓位在SGOV",
+          "evidence_sha256": "09fa185e4ebb91a22d60d1ee724ccc075e42c9122a606a7bb13678835346bbc4"
+        },
+        {
+          "symbol": "VGT",
+          "action_type": "SELL_PLANNED",
+          "confidence": "high",
+          "size_pct": null,
+          "price": null,
+          "allocation_pct": null,
+          "evidence_quote": "如果大盘开始反弹奔新高，就让VGT跟着大盘往上走，直到下个卖出信号出现，再卖出部",
+          "evidence_sha256": "131882b7e5e19955f8dc1eda53715e52057410c1fbc715778ee3463db5045b12"
+        },
+        {
+          "symbol": "VGT",
+          "action_type": "COMMENTARY",
+          "confidence": "medium",
+          "size_pct": null,
+          "price": null,
+          "allocation_pct": null,
+          "evidence_quote": "如果大盘继续向下，就开始不断买进VGT，越跌越买，只买不卖。",
+          "evidence_sha256": "a54bc385f5b00dd1a0a9d1c8d0d20ee1e3a5d6f7ba83fe7060f63390856b82da"
+        }
+      ],
+      "forum_entry_kind": null,
+      "source_entry_key": null,
+      "parent_post_id": null,
+      "attribution_fallback": null,
+      "captured_at": "2026-10-24T01:03:52Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "scheduled_blog_scan_complete"
+    },
+    {
+      "id": "bb3907df342b8342412e",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "麻你",
+      "published_at": "2026-10-23 16:53:44",
+      "title": "下个星期继续保持82%仓位在VGT，18%仓位在SGOV",
+      "url": "https://bbs.wenxuecity.com/tzlc/2388985.html",
+      "excerpt": "如果大盘开始反弹奔新高，就让VGT跟着大盘往上走，直到下个卖出信号出现，再卖出部分盈利，取利。\n如果大盘继续向下，就开始不断买进VGT，越跌越买，只买不卖。直到跌到底就买到底。\n\n更多我的博客文章>>>下个星期继续保持82%仓位在VGT，18%仓位在SGOVVGT今天卖在118.36下个星期设VGT 118.36止盈，如果跌下，卖出总仓位的5%下个星期继续保持87%仓位在VGT，13%仓位在SGOV为什么要多仓VGT",
+      "content_chars": 210,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [
+        "SGOV",
+        "VGT"
+      ],
+      "operations": [
+        {
+          "symbols": [
+            "VGT"
+          ],
+          "actions": [
+            "sell"
+          ],
+          "attribution": "unconfirmed_author_context",
+          "attribution_confidence": "needs_review"
+        },
+        {
+          "symbols": [
+            "SGOV",
+            "VGT"
+          ],
+          "actions": [
+            "sell"
+          ],
+          "attribution": "unconfirmed_author_context",
+          "attribution_confidence": "needs_review"
+        }
+      ],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [
+        {
+          "symbol": "SGOV",
+          "stance": "hold",
+          "stance_cues": [
+            "hold"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "09fa185e4ebb91a22d60d1ee724ccc075e42c9122a606a7bb13678835346bbc4",
+          "evidence_chars": 28
+        },
+        {
+          "symbol": "VGT",
+          "stance": "hold",
+          "stance_cues": [
+            "hold"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "09fa185e4ebb91a22d60d1ee724ccc075e42c9122a606a7bb13678835346bbc4",
+          "evidence_chars": 28
+        },
+        {
+          "symbol": "VGT",
+          "stance": "trim",
+          "stance_cues": [
+            "trim",
+            "sell"
+          ],
+          "horizon": null,
+          "conditional": true,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "131882b7e5e19955f8dc1eda53715e52057410c1fbc715778ee3463db5045b12",
+          "evidence_chars": 47
+        },
+        {
+          "symbol": "VGT",
+          "stance": "hold",
+          "stance_cues": [
+            "hold",
+            "buy"
+          ],
+          "horizon": null,
+          "conditional": true,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "a54bc385f5b00dd1a0a9d1c8d0d20ee1e3a5d6f7ba83fe7060f63390856b82da",
+          "evidence_chars": 30
+        },
+        {
+          "symbol": "SGOV",
+          "stance": "hold",
+          "stance_cues": [
+            "hold",
+            "trim",
+            "sell"
+          ],
+          "horizon": null,
+          "conditional": true,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "117a793a64b5326b53ecfe63664a0afcb21787f6af4ca37074cf385bb97e0a60",
+          "evidence_chars": 120
+        },
+        {
+          "symbol": "VGT",
+          "stance": "hold",
+          "stance_cues": [
+            "hold",
+            "trim",
+            "sell"
+          ],
+          "horizon": null,
+          "conditional": true,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "117a793a64b5326b53ecfe63664a0afcb21787f6af4ca37074cf385bb97e0a60",
+          "evidence_chars": 120
+        }
+      ],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [
+        {
+          "symbol": "VGT",
+          "action_type": "HOLD",
+          "confidence": "high",
+          "size_pct": null,
+          "price": null,
+          "allocation_pct": {
+            "VGT": 82.0,
+            "SGOV": 18.0
+          },
+          "evidence_quote": "下个星期继续保持82%仓位在VGT，18%仓位在SGOV",
+          "evidence_sha256": "09fa185e4ebb91a22d60d1ee724ccc075e42c9122a606a7bb13678835346bbc4"
+        },
+        {
+          "symbol": "SGOV",
+          "action_type": "HOLD",
+          "confidence": "high",
+          "size_pct": null,
+          "price": null,
+          "allocation_pct": {
+            "VGT": 82.0,
+            "SGOV": 18.0
+          },
+          "evidence_quote": "下个星期继续保持82%仓位在VGT，18%仓位在SGOV",
+          "evidence_sha256": "09fa185e4ebb91a22d60d1ee724ccc075e42c9122a606a7bb13678835346bbc4"
+        },
+        {
+          "symbol": "VGT",
+          "action_type": "SELL_PLANNED",
+          "confidence": "high",
+          "size_pct": null,
+          "price": null,
+          "allocation_pct": null,
+          "evidence_quote": "如果大盘开始反弹奔新高，就让VGT跟着大盘往上走，直到下个卖出信号出现，再卖出部",
+          "evidence_sha256": "131882b7e5e19955f8dc1eda53715e52057410c1fbc715778ee3463db5045b12"
+        },
+        {
+          "symbol": "VGT",
+          "action_type": "COMMENTARY",
+          "confidence": "medium",
+          "size_pct": null,
+          "price": null,
+          "allocation_pct": null,
+          "evidence_quote": "如果大盘继续向下，就开始不断买进VGT，越跌越买，只买不卖。",
+          "evidence_sha256": "a54bc385f5b00dd1a0a9d1c8d0d20ee1e3a5d6f7ba83fe7060f63390856b82da"
+        },
+        {
+          "symbol": "VGT",
+          "action_type": "SELL_PLANNED",
+          "confidence": "high",
+          "size_pct": 5.0,
+          "price": 118.36,
+          "allocation_pct": {
+            "VGT": 82.0,
+            "SGOV": 18.0
+          },
+          "evidence_quote": "更多我的博客文章>>>下个星期继续保持82%仓位在VGT，18%仓位在SGOVV",
+          "evidence_sha256": "117a793a64b5326b53ecfe63664a0afcb21787f6af4ca37074cf385bb97e0a60"
+        },
+        {
+          "symbol": "SGOV",
+          "action_type": "SELL_PLANNED",
+          "confidence": "high",
+          "size_pct": 5.0,
+          "price": 118.36,
+          "allocation_pct": {
+            "VGT": 82.0,
+            "SGOV": 18.0
+          },
+          "evidence_quote": "更多我的博客文章>>>下个星期继续保持82%仓位在VGT，18%仓位在SGOVV",
+          "evidence_sha256": "117a793a64b5326b53ecfe63664a0afcb21787f6af4ca37074cf385bb97e0a60"
+        }
+      ],
+      "forum_entry_kind": "post",
+      "source_entry_key": "e6d0fe5d820c29f69c0d",
+      "parent_post_id": "2388985",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-24T01:04:15Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "scheduled_board_anchor_scan",
+      "forum_board": "tzlc"
     }
   ],
-  "updated_at": "2026-10-23T23:08:19Z",
+  "updated_at": "2026-10-24T01:04:15Z",
   "retention_policy": "append_only_no_record_count_cap",
   "historical_recovery": {
     "completed_at": "2026-10-07T13:43:06.018028+00:00",
