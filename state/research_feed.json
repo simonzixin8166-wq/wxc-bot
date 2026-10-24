@@ -66032,9 +66032,164 @@
       "intake_class_hint": "live_candidate",
       "capture_mode": "scheduled_board_anchor_scan",
       "forum_board": "tzlc"
+    },
+    {
+      "id": "134985b82f83aaba6679",
+      "source": "youtube",
+      "source_kind": "video",
+      "author": "RhinoFinance / 视野环球财经",
+      "published_at": "",
+      "title": "美股 对冲基金8天7减偏紧！下周注意QQQ！OpenAI也降估值！AMZN停建一数据中心！",
+      "url": "https://www.youtube.com/watch?v=b_ZVO8_QfJ0",
+      "excerpt": "[Gemini 视频理解 · 未验证] 本期节目分析了10月密歇根大学消费者信心指数及通胀预期。重点探讨了OpenAI潜在估值下调及亚马逊因阻力放弃弗吉尼亚数据中心建设计划，反映出AI基建扩张阻力与情绪降温。高盛资金流数据显示对冲基金大规模风险平仓、空头杠杆飙升至近五年高位。技术面上强调QQQ 698关键支撑，跌破则破位偏空。\n- [04:36 neutral 1.25万亿美元] OpenAI最新融资与潜在IPO估值目标从1.4万亿美元下调至约1.25万亿美元，反映市场对高增长持续性与债务驱动更为谨慎\n- [07:02 AMZN neutral] 亚马逊放弃在弗吉尼亚州建设数据中心并转为住宅与混合开发，凸显AI数据中心规划落地面临审批、电力与当地阻力\n- [15:53 bearish] 对冲基金在过去8个交易日",
+      "content_chars": 984,
+      "semantic_content_chars": 984,
+      "content_filtering": {
+        "filter": "youtube_promotion_noise_v1",
+        "input_units": 14,
+        "removed_units": 0,
+        "removed_ratio": 0.0,
+        "promotion_noise_detected": false
+      },
+      "images_count": 0,
+      "themes_hint": [
+        "风险管理",
+        "长期持有纪律",
+        "趋势确认"
+      ],
+      "symbols": [
+        "AMZN",
+        "GOOG",
+        "ISRG",
+        "MSFT",
+        "NFLX",
+        "NVDA",
+        "QQQ",
+        "SPY"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "captured_at": "2026-10-24T04:33:27Z",
+      "source_role": "rule_supply",
+      "transcript_status": "available",
+      "content_quality": "Q3",
+      "content_provider": "gemini_video",
+      "content_provider_url": "https://www.youtube.com/watch?v=b_ZVO8_QfJ0",
+      "content_origin": "gemini_video_understanding",
+      "timestamp_evidence": true,
+      "rule_candidate_allowed": false,
+      "source_notice": "YouTube正文可用于非Forward语义学习；可靠发布时间缺失，因此强制按backfill处理，禁止计入Forward Evidence或Promotion。",
+      "claims": [
+        {
+          "symbol": "QQQ",
+          "stance": "add",
+          "stance_cues": [
+            "add"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "b3e82a8a3d308ba8106efb187e43fc68c62ce36b81ec8149b9451cf12c97d44d",
+          "evidence_chars": 65
+        }
+      ],
+      "claims_status": "experimental_unvalidated",
+      "video_claims": [
+        {
+          "claim": "OpenAI最新融资与潜在IPO估值目标从1.4万亿美元下调至约1.25万亿美元，反映市场对高增长持续性与债务驱动更为谨慎",
+          "symbol": null,
+          "stance": "neutral",
+          "price": "1.25万亿美元",
+          "timestamp": "04:36",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high"
+        },
+        {
+          "claim": "亚马逊放弃在弗吉尼亚州建设数据中心并转为住宅与混合开发，凸显AI数据中心规划落地面临审批、电力与当地阻力",
+          "symbol": "AMZN",
+          "stance": "neutral",
+          "price": null,
+          "timestamp": "07:02",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high"
+        },
+        {
+          "claim": "对冲基金在过去8个交易日中有7天净减持，半导体及设备板块净卖出量最大，空头加码显著",
+          "symbol": null,
+          "stance": "bearish",
+          "price": null,
+          "timestamp": "15:53",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high"
+        },
+        {
+          "claim": "全球对冲基金空头杠杆率飙升至近五年最高水平（第99百分位），多空对峙激烈且空头占据一定优势",
+          "symbol": null,
+          "stance": "bearish",
+          "price": null,
+          "timestamp": "18:25",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high"
+        },
+        {
+          "claim": "SPY第一道强支撑位在759附近（对应759-776区间），尚未跌破",
+          "symbol": "SPY",
+          "stance": "watch",
+          "price": "759",
+          "timestamp": "21:26",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high"
+        },
+        {
+          "claim": "QQQ关键多空分水岭在698-728区间，若跌破698则确认破位偏空，下行风险加大",
+          "symbol": "QQQ",
+          "stance": "watch",
+          "price": "698",
+          "timestamp": "23:03",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high"
+        },
+        {
+          "claim": "QQQ期权隐含波动区间显示下周上下波动约22美元，若向下触及682附近则将大幅破位",
+          "symbol": "QQQ",
+          "stance": "watch",
+          "price": "682",
+          "timestamp": "25:34",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "medium"
+        },
+        {
+          "claim": "ISRG处于470-500强阻力超买区间，若无法突破被压制，可能面临15%-20%的回撤风险",
+          "symbol": "ISRG",
+          "stance": "watch",
+          "price": "470-500",
+          "timestamp": "28:13",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high"
+        },
+        {
+          "claim": "谷歌逐渐滑落至311-325长线关键支撑区间，在财报明朗及出现明确止跌形态前不宜轻举妄动",
+          "symbol": "GOOG",
+          "stance": "watch",
+          "price": "311-325",
+          "timestamp": "27:18",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high"
+        }
+      ],
+      "video_claims_model": "gemini-3.8-flash",
+      "video_observed_title": "OpenAI估值下调？亚马逊取消数据中心！对冲基金多头大撤离！QQQ关键点位决定去向！",
+      "validation_status": "pending_owner_spot_check",
+      "forward_evidence_eligible": false,
+      "intake_class_hint": "backfill",
+      "capture_mode": "youtube_timestamp_unknown_learning",
+      "timestamp_confidence": "missing"
     }
   ],
-  "updated_at": "2026-10-24T01:04:15Z",
+  "updated_at": "2026-10-24T04:33:46Z",
   "retention_policy": "append_only_no_record_count_cap",
   "historical_recovery": {
     "completed_at": "2026-10-07T13:43:06.018028+00:00",

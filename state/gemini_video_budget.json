@@ -89,6 +89,39 @@
         "counter_mismatch": []
       },
       "exhausted": true
+    },
+    "2026-10-24": {
+      "calls": 2,
+      "admitted": 1,
+      "rejected": 0,
+      "errors": 1,
+      "reconciliation": {
+        "status": "COMPLETE",
+        "calls_billed": 2,
+        "calls_refunded_503": 0,
+        "detail_rows": 2,
+        "missing_detail_rows": 0,
+        "counter_mismatch": []
+      },
+      "recent": [
+        {
+          "video_id": "b_ZVO8_QfJ0",
+          "outcome": "admitted",
+          "at": "04:33:27Z",
+          "model": "gemini-3.8-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 对冲基金8天7减偏紧！下周注意QQQ！OpenAI也降估值！AMZN停建一数据中心！"
+        },
+        {
+          "video_id": "w0a504L8fgs",
+          "outcome": "http_403",
+          "at": "04:33:34Z",
+          "model": "gemini-3.8-flash",
+          "author": "Andrei Jikh",
+          "title": "China & Japan Are Dumping US Bonds",
+          "detail": "{\"error\":{\"message\":\"The caller does not have permission\",\"code\":\"permission_denied\"}}"
+        }
+      ]
     }
   },
   "version": 1,

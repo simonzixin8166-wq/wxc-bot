@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-24T01:04:15.633181+00:00",
+  "generated_at": "2026-10-24T04:34:05.760358+00:00",
   "complete": true,
   "coverage_complete": true,
   "semantic_learning_complete": false,
@@ -46,8 +46,8 @@
     "semantic_learning_complete": false,
     "discovery_complete": true,
     "accounting_balanced": true,
-    "seen": 190,
-    "feed_records": 27,
+    "seen": 191,
+    "feed_records": 28,
     "historical_archive_records": 23,
     "historical_semantic_learned": 6,
     "pending": 109,
