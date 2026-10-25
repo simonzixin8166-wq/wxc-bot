@@ -278,11 +278,11 @@
         "paid": false
       },
       "telegram:get_updates": {
-        "count": 6,
+        "count": 7,
         "paid": false
       },
       "myalphaview:server_action_status": {
-        "count": 6,
+        "count": 7,
         "paid": false
       }
     }
