@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-10-25T11:21:51Z",
+  "generated_at": "2026-10-25T16:14:05Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -157,20 +157,9 @@
       "pending_reason": "awaiting_publication_date"
     },
     {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "fLp8kUbv_u8",
-      "title": "美股 对冲基金低仓位按兵不动！AMD很猛，SOXX临门！金融XLF、医疗XLV！ADBE财报押注！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "gN9uUJPqipo",
-      "title": "美股 NVDA再增5000亿循环融资！MSFT下月加高护城河！一只加仓计划！BRK二季度加速回购！",
+      "author": "老李玩钱",
+      "video_id": "mR1KTb9wBT0",
+      "title": "2支新股：SPCX, SKHY 能买入吗？NFLX财报暴雷，接下来我的计划和打算",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -180,8 +169,8 @@
     },
     {
       "author": "老李玩钱",
-      "video_id": "hHKD2zuGKuc",
-      "title": "31万美股账户，14支股票加仓、减仓及持仓计划更新！频道暂停通知",
+      "video_id": "nLskyS7Vvug",
+      "title": "华尔街大举买入和卖出的8支股票！是否要跟着买进或卖出？我的看法及操作建议",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -190,9 +179,20 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "Andrei Jikh",
-      "video_id": "hy90LdpEUvQ",
-      "title": "South Korea’s AI Bubble Just Popped",
+      "author": "老李玩钱",
+      "video_id": "nNaiUbM17HY",
+      "title": "美股不怕急跌，怕的是目前这种震荡下行的行情",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "老李玩钱",
+      "video_id": "o0ScN6BzkaI",
+      "title": "美股涨的心慌！要卖股票了？",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
