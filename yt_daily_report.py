@@ -48,7 +48,7 @@ def build(day, budget, status, unsupported=()):
             lines.append("✅ 已读到：")
             lines += [f"- {r.get('author') or '?'} · {(r.get('title') or '')[:40]} https://youtu.be/{r['video_id']}" for r in ok]
         if bad:
-            lines.append("❌ 未读到（可用 NotebookLM 手动补救）：")
+            lines.append("❌ 未读到（可用 NotebookLM 总结后发送：/yt 视频链接 摘要）：")
             seen = set()
             for r in bad:
                 if r["video_id"] in seen:

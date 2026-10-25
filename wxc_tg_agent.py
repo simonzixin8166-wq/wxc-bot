@@ -64,6 +64,7 @@ HELP = ("我可以帮你抓取文学城论坛和博客:\n"
         "• 抓一下三心三意最近3天的发言\n"
         "• 下载三心三意最近30页,只要长文\n"
         "• 订阅 三心三意(有新发言自动推送),可以一次订阅多位:订阅 yifan99 和 我是一只井底蛙\n"
+        "• /yt 视频链接 摘要:补收录 YouTube 视频(例如 NotebookLM 的总结),标记为未核实\n"
         "• 下载 BrightLine 博客最近30天\n"
         "• 下载 BrightLine 博客 2026年6月\n"
         "• 取消订阅 三心三意 / 订阅列表")
@@ -466,6 +467,10 @@ def run_fetch_many(authors, days, pages, min_chars):
 MAX_WATCH = 10
 
 def handle(text, sync=False):
+    if text.strip().lower().startswith("/yt"):
+        import owner_summary
+        say(owner_summary.submit(text))
+        return
     blog_req = parse_blog_request(text)
     if blog_req:
         dispatch(run_blog_fetch, blog_req, sync=sync)

@@ -178,6 +178,25 @@ def youtube_official_transcript(video_id:str)->tuple[str,str]:
 def default_transcript(video_id:str,title:str="",author:str="")->dict:
     return tr.acquire(video_id,title,author,official_fetcher=youtube_official_transcript,allow_gemini=True)
 
+def _owner_acquisition(sub:dict)->dict:
+    """Acquisition built from an Owner /yt submission (no network, no Gemini call)."""
+    lines=["[Owner 提交摘要 · 未核实] "+str(sub.get("excerpt") or "").strip()]
+    for c in sub.get("claims") or []:
+        tag=c.get("symbol") or c.get("context_symbol")
+        lines.append(f"- [{tag}] {c.get('claim')}" if tag else f"- {c.get('claim')}")
+    return {"text":"\n".join(lines),"status":"available","quality":"Q3","provider":"owner_telegram_summary",
+            "provider_url":"","content_origin":"owner_supplied_summary","timestamp_evidence":False,
+            "rule_candidate_allowed":False,"structured":sub}
+
+
+def _owner_summaries()->dict:
+    try:
+        import owner_summary
+        return owner_summary.by_video()
+    except Exception:
+        return {}
+
+
 def _gemini_priority(kind:str):
     """Gemini budget priority for one acquisition (no-op if the module is unavailable)."""
     try:
@@ -231,6 +250,9 @@ def _content_ready(channel:dict, acquisition:dict)->bool:
     has_text=bool((acquisition.get("text") or "").strip())
     if not has_text:
         return False
+    if acquisition.get("content_origin")=="owner_supplied_summary":
+        # Owner-pasted second-hand summary (NotebookLM etc.): learning-only Q3, claims unverified.
+        return quality=="Q3" and bool(acquisition.get("structured"))
     if acquisition.get("content_origin")=="gemini_video_understanding":
         # YT-01 (Owner 10/22): admitted for learning as an experimental Q3 record for any role; it never
         # becomes rule-eligible here and its claims wait for the Owner's spot check.
@@ -326,6 +348,18 @@ def make_feed_row(channel:dict, meta:dict, acquisition:dict)->dict:
         "source_notice":"公开视频研究来源；仅保存短摘录与原视频链接。作者观点属于未验证假设，MyAlpha需独立验证后才可进入正式证据。",
     }
     st=acquisition.get("structured") or {}
+    if acquisition.get("content_origin")=="owner_supplied_summary" and st:
+        row["symbols"]=sorted(set(row["symbols"])|{c["symbol"] for c in st.get("claims") or [] if c.get("symbol")})
+        row["claims"]=rf._claims(joined)
+        row["claims_status"]="author_claim_unverified"
+        row["video_claims"]=st.get("claims") or []
+        row["owner_submission_ids"]=st.get("submission_ids") or []
+        row["owner_summary_sha256"]=st.get("summary_sha256") or []
+        row["evidence_mode"]="owner_supplied_summary"
+        row["validation_status"]="pending_owner_spot_check"
+        row["forward_evidence_eligible"]=False
+        row["rule_candidate_allowed"]=False
+        row["source_notice"]="Owner 通过 Telegram 提交的第三方摘要（如 NotebookLM），不是系统读取原片；观点未核实，抽查前不可作为规则或前向证据。"
     if acquisition.get("content_origin")=="gemini_video_understanding" and st:
         row["symbols"]=sorted(set(row["symbols"])|{s for s in (st.get("symbols") or []) if re.fullmatch(r"[A-Z][A-Z0-9.]{0,9}",str(s))})
         row["claims"]=rf._claims(joined)
@@ -566,7 +600,9 @@ def collect(
     # Processing limit is only a per-run resource budget. The full queue was
     # already persisted above, so items beyond this batch remain durable.
     work_items=list(work.items())
+    owner_subs=_owner_summaries()
     work_items.sort(key=lambda kv:(
+        0 if kv[0] in owner_subs else 1,
         0 if kv[1][3] is False else 1,
         0 if _is_recent(_entry_published(kv[1][1])) else 1,
         int((kv[1][2] or {}).get("retry_count") or 0),
@@ -587,8 +623,11 @@ def collect(
                             meta.update({k:v for k,v in full.items() if v is not None})
                     except Exception:
                         pass
-                with _gemini_priority("new" if _is_recent(_entry_published(meta)) else "backlog"):
-                    aq=_acq(transcript_fetcher,vid,str(meta.get("title") or ""),ch["author"])
+                if vid in owner_subs:
+                    aq=_owner_acquisition(owner_subs[vid])
+                else:
+                    with _gemini_priority("new" if _is_recent(_entry_published(meta)) else "backlog"):
+                        aq=_acq(transcript_fetcher,vid,str(meta.get("title") or ""),ch["author"])
                 published=_entry_published(meta)
                 content_ready=_content_ready(ch,aq)
                 ready=content_ready and bool(published)
