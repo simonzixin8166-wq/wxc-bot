@@ -1,13 +1,13 @@
 {
   "version": 1,
-  "generated_at": "2026-10-25T01:43:53.242014+00:00",
+  "generated_at": "2026-10-25T04:40:22.076759+00:00",
   "principle": "seen is discovery, not learning; each video is counted once in its highest stage",
-  "seen": 191,
+  "seen": 192,
   "stages": {
     "formal_feed_text": 14,
     "historical_backlog": 44,
     "metadata_only": 109,
-    "pending_unprobed": 1,
+    "pending_unprobed": 2,
     "provider_boilerplate": 22,
     "transcript_readable": 1
   },
@@ -29,7 +29,7 @@
       "metadata_only": 47,
       "formal_feed_text": 7,
       "historical_backlog": 7,
-      "pending_unprobed": 1
+      "pending_unprobed": 2
     },
     "unknown": {
       "metadata_only": 3,
@@ -55,7 +55,7 @@
   },
   "backlog_eta": {
     "content_work_budget_per_run": 6,
-    "pending_unprobed": 1,
+    "pending_unprobed": 2,
     "runs_to_probe_all_pending": 1,
     "note": "free-first: bounded per-run budget, provider limits respected"
   },

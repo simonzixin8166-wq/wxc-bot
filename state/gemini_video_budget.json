@@ -191,15 +191,15 @@
       ]
     },
     "2026-10-25": {
-      "calls": 4,
+      "calls": 6,
       "admitted": 3,
-      "rejected": 1,
-      "errors": 0,
+      "rejected": 2,
+      "errors": 1,
       "reconciliation": {
         "status": "COMPLETE",
-        "calls_billed": 4,
+        "calls_billed": 6,
         "calls_refunded_503": 0,
-        "detail_rows": 4,
+        "detail_rows": 6,
         "missing_detail_rows": 0,
         "counter_mismatch": []
       },
@@ -236,7 +236,28 @@
           "author": "RhinoFinance / 视野环球财经",
           "title": "美股 半导体SOXX成分股全阵亡！后面怎么玩？注意事项！",
           "detail": "seen='Meta增发引发半导体崩跌？风暴中心在哪？英伟达/台积电/微软/谷歌/博通' channel='视野环球财经'"
+        },
+        {
+          "video_id": "4_uytm7I_XQ",
+          "outcome": "identity_mismatch",
+          "at": "04:38:54Z",
+          "model": "gemini-3.8-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 半导体SOXX成分股全阵亡！后面怎么玩？注意事项！",
+          "detail": "seen='META百亿融资吓崩半导体？风暴中心在哪？AI会崩吗？AMD/NVDA/TSM/AVGO/ASML/GOOG/MSFT/' channel='视野环球财经'"
+        },
+        {
+          "video_id": "Zl1B2xBExw8",
+          "outcome": "http_403",
+          "at": "04:39:09Z",
+          "model": "gemini-3.8-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "（会员第301期）买点避雷，减少误判！18条原则，坚决不买！个人经验干货分享！",
+          "detail": "{\"error\":{\"message\":\"The caller does not have permission\",\"code\":\"permission_denied\"}}"
         }
+      ],
+      "skip_authors_403": [
+        "RhinoFinance / 视野环球财经"
       ]
     }
   },
