@@ -1,19 +1,19 @@
 {
- "generated_at": "2026-10-25T01:12:39+00:00",
- "records": 2352,
- "without_recorded_provenance": 1226,
+ "generated_at": "2026-10-25T01:38:09+00:00",
+ "records": 2355,
+ "without_recorded_provenance": 1228,
  "derived_for_unrecorded": {
   "near_publication_observed": 339,
-  "backfill_proven": 864,
+  "backfill_proven": 866,
   "delayed_capture": 23
  },
  "recorded_live_but_gap_over_72h": [],
  "video_transcripts": {
-  "excerpt_present": 11,
+  "excerpt_present": 13,
   "provider_navigation_page": 22
  },
  "video_transcript_status": {
-  "available": 33
+  "available": 35
  },
  "method": "first git appearance of the record id in state/research_feed.json vs published_at (timezone not recorded); unprovable is never guessed",
  "rows": [
@@ -25983,6 +25983,45 @@
    "author": "三心三意",
    "recorded_provenance": "live_candidate",
    "published_at": "2026-10-24 18:05:07",
+   "first_git_seen": "2026-10-25T01:12:40Z",
+   "first_git_commit": "63fe3cc71969253d955718986401291dadb90a48",
+   "gap_hours": 7.1,
+   "derived_provenance": "near_publication_observed"
+  },
+  {
+   "id": "d1a506da64dcadafa727",
+   "kind": "video",
+   "author": "RhinoFinance / 视野环球财经",
+   "recorded_provenance": null,
+   "published_at": "2026-10-20",
+   "first_git_seen": "2026-10-25T01:15:53Z",
+   "first_git_commit": "75a01a5ee5a0a60ddc9c55ad5703f0750342827b",
+   "gap_hours": 121.3,
+   "derived_provenance": "backfill_proven",
+   "transcript_check": "excerpt_present",
+   "transcript_status": "available",
+   "content_quality": "Q3"
+  },
+  {
+   "id": "c0690c92d9531f4744da",
+   "kind": "video",
+   "author": "RhinoFinance / 视野环球财经",
+   "recorded_provenance": null,
+   "published_at": "2026-10-21",
+   "first_git_seen": "2026-10-25T01:15:53Z",
+   "first_git_commit": "75a01a5ee5a0a60ddc9c55ad5703f0750342827b",
+   "gap_hours": 97.3,
+   "derived_provenance": "backfill_proven",
+   "transcript_check": "excerpt_present",
+   "transcript_status": "available",
+   "content_quality": "Q3"
+  },
+  {
+   "id": "224c716055a0e85d7f7a",
+   "kind": "forum",
+   "author": "三心三意",
+   "recorded_provenance": "live_candidate",
+   "published_at": "2026-10-24 16:06:18",
    "first_git_seen": null,
    "first_git_commit": null,
    "gap_hours": null,

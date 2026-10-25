@@ -68249,9 +68249,40 @@
       "video_observed_title": "美股2026年10月20日复盘：SpaceX、直觉外科、奈飞财报分析与建仓计划",
       "validation_status": "pending_owner_spot_check",
       "forward_evidence_eligible": false
+    },
+    {
+      "id": "224c716055a0e85d7f7a",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-24 16:06:18",
+      "title": "前几个星期最有momentum的就是Dell， 坛子里很多人提到到它。当时可以进，但在高处进就要有现在掉25%的心理准备",
+      "url": "https://bbs.wenxuecity.com/cfzh/117213.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "e631d22ee2db558f3a96",
+      "parent_post_id": "117213",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-25T01:32:37Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "capture_mode": "scheduled_forum_anchor_scan",
+      "intake_class_hint": "live_candidate"
     }
   ],
-  "updated_at": "2026-10-25T01:15:36Z",
+  "updated_at": "2026-10-25T01:32:37Z",
   "retention_policy": "append_only_no_record_count_cap",
   "historical_recovery": {
     "completed_at": "2026-10-07T13:43:06.018028+00:00",
