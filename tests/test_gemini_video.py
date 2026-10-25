@@ -203,17 +203,21 @@ assert r22["status"] == "INCOMPLETE" and r22["missing_detail_rows"] == 4 and r22
 assert gv.reconcile({"calls": 1, "admitted": 1, "recent": [{"outcome": "identity_mismatch"}]})["status"] == "INCOMPLETE"
 assert gv.reconcile({"calls": 0})["status"] == "COMPLETE"
 
-# 8) 403 permission_denied: that author is skipped for the rest of the day (no call spent); others still run
+# 8) 403 permission_denied on 2 distinct videos: that author is skipped for the rest of the day; others still run
 doc = json.loads((Path(tmp) / "gemini_video_budget.json").read_text())
 doc["days"][gv._today()] = {"calls": 0}
 (Path(tmp) / "gemini_video_budget.json").write_text(json.dumps(doc))
 gv._run_calls = 0
 n = len(calls)
-assert gv.acquire("vid1", TITLE, "Andrei Jikh", post=lambda *a, **k: Resp(403, {})) is None
-assert budget()["skip_authors_403"] == ["Andrei Jikh"] and budget()["calls"] == 1
+# one restricted video (e.g. members-only/premiere) does not block the author ...
+assert gv.acquire("vidA", TITLE, "Andrei Jikh", post=lambda *a, **k: Resp(403, {})) is None
+assert "skip_authors_403" not in budget() and budget()["calls"] == 1
+# ... a second distinct video with 403 the same day does
+assert gv.acquire("vidB", TITLE, "Andrei Jikh", post=lambda *a, **k: Resp(403, {})) is None
+assert budget()["skip_authors_403"] == ["Andrei Jikh"] and budget()["calls"] == 2
 gv._run_calls = 0
-assert gv.acquire("vid1", TITLE, "Andrei Jikh", post=lambda *a, **k: (_ for _ in ()).throw(AssertionError("no call"))) is None
-assert budget()["calls"] == 1 and budget()["reconciliation"]["status"] == "COMPLETE"
+assert gv.acquire("vidC", TITLE, "Andrei Jikh", post=lambda *a, **k: (_ for _ in ()).throw(AssertionError("no call"))) is None
+assert budget()["calls"] == 2 and budget()["reconciliation"]["status"] == "COMPLETE"
 assert gv.acquire("vid1", TITLE, AUTHOR, post=post_with(Resp(200, wrap(GOOD)))) is not None  # other channels unaffected
 # 500 does not block the author
 gv._run_calls = 0
@@ -256,5 +260,17 @@ doc["days"][gv._today()] = {"calls": 0}
 gv._run_calls = 0
 assert gv.acquire("vid1", TITLE, "Andrei Jikh", post=lambda *a, **k: (_ for _ in ()).throw(AssertionError("no call"))) is None
 assert gv.acquire("vid1", TITLE, AUTHOR, post=post_with(Resp(200, wrap(GOOD)))) is not None
+
+# 12) 10/25 regression: members-only uploads never spend a call; repeated identity mismatch -> give up on that video
+gv._run_calls = 0
+nope = lambda *a, **k: (_ for _ in ()).throw(AssertionError("no call"))
+assert gv._members_only("（会员第301期）买点避雷，减少误判！") and gv._members_only("Members-only livestream")
+assert not gv._members_only(TITLE)
+assert gv.acquire("Zl1B2xBExw8", "（会员第301期）买点避雷", AUTHOR, post=nope) is None
+assert "skip_authors_403" not in (budget() or {}) or AUTHOR not in budget()["skip_authors_403"]
+hist = {"days": {"2026-10-24": {"recent": [{"video_id": "4_uytm7I_XQ", "outcome": "identity_mismatch"}]},
+                 "2026-10-25": {"recent": [{"video_id": "4_uytm7I_XQ", "outcome": "identity_mismatch"},
+                                           {"video_id": "other", "outcome": "identity_mismatch"}]}}}
+assert gv._video_given_up("4_uytm7I_XQ", hist) is True and gv._video_given_up("other", hist) is False
 assert gv.TIMEOUT * gv.RUN_CAP < 25 * 60  # fits the intake job timeout
-print("PASS YT-01 Gemini video fallback: keyless off, budget/run cap/429, identity + safety gates, forward-intake only, experimental Q3 admission, call ledger reconciles, 403 author skipped for the day, 20 claims + macro, new-video reserve, unsupported channels")
+print("PASS YT-01 Gemini video fallback: keyless off, budget/run cap/429, identity + safety gates, forward-intake only, experimental Q3 admission, call ledger reconciles, 403 author skipped for the day, 20 claims + macro, new-video reserve, unsupported channels, members-only skip, identity give-up")

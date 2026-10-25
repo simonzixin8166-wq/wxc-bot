@@ -315,21 +315,47 @@ def _author_blocked_today(author):
     return bool(author) and (author in (day.get("skip_authors_403") or []) or author in unsupported_authors(doc))
 
 
-def _block_author_today(author):
-    """403 permission_denied (e.g. a channel Gemini may not read): skip that author for the rest of the UTC day
-    instead of spending more free-tier calls on it. Resets the next day; nothing else is blocked."""
+MEMBERS_ONLY = re.compile(r"会员|members?[ -]?only|member exclusive", re.I)
+AUTHOR_403_VIDEOS = 2       # distinct videos with 403 in one day before the whole author is skipped that day
+GIVE_UP_IDENTITY = 2        # identity mismatches on one video (any days) before Gemini stops trying it
+
+
+def _members_only(title):
+    """Members-only uploads (e.g. '（会员第301期）') always 403 for Gemini: never spend a call on them."""
+    return bool(MEMBERS_ONLY.search(str(title or "")))
+
+
+def _video_given_up(video_id, doc=None):
+    """Gemini repeatedly 'saw' a different video (identity_mismatch) -> leave it to the Owner's /yt path."""
+    days = (doc or _load_budget()).get("days") or {}
+    n = sum(1 for d in days.values() for r in (d or {}).get("recent") or []
+            if isinstance(r, dict) and r.get("video_id") == video_id and r.get("outcome") == "identity_mismatch")
+    return n >= GIVE_UP_IDENTITY
+
+
+def _block_author_today(author, video_id=None):
+    """403 permission_denied: one video may simply be restricted (members-only, premiere); only when
+    AUTHOR_403_VIDEOS distinct videos of the same author 403 on the same UTC day is the author skipped for the
+    rest of that day (and those days feed the 3-in-14 'unsupported' rule). Resets the next day."""
     if not author:
         return
     doc = _load_budget()
     day = doc.setdefault("days", {}).setdefault(_today(), {"calls": 0, "admitted": 0, "rejected": 0, "errors": 0})
-    day["skip_authors_403"] = sorted(set(day.get("skip_authors_403") or []) | {str(author)[:80]})
-    _save_budget(doc)
+    vids = {r.get("video_id") for r in day.get("recent") or []
+            if isinstance(r, dict) and r.get("outcome") == "http_403" and r.get("author") == str(author)[:60]}
+    if video_id:
+        vids.add(video_id)
+    if len(vids - {None}) >= AUTHOR_403_VIDEOS:
+        day["skip_authors_403"] = sorted(set(day.get("skip_authors_403") or []) | {str(author)[:80]})
+        _save_budget(doc)
 
 
 def acquire(video_id, title, author, post=None):
     """Return an Acquisition-compatible dict, or None (disabled, over budget, failed or unverified)."""
     global _run_calls
-    if not enabled() or not budget_ok() or _author_blocked_today(author):
+    if not enabled() or _members_only(title) or _video_given_up(video_id):
+        return None
+    if not budget_ok() or _author_blocked_today(author):
         return None
     post = post or requests.post
     _run_calls += 1
@@ -361,7 +387,7 @@ def acquire(video_id, title, author, post=None):
         if r.status_code != 200:
             _bump("errors", video_id, f"http_{r.status_code}", _body(r), model=used, **who)
             if r.status_code == 403:
-                _block_author_today(author)
+                _block_author_today(author, video_id)
             return None
         parsed = _extract_json(r.json())
     except Exception as exc:
