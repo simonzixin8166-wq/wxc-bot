@@ -44,6 +44,19 @@ CHANNELS=[
     {"handle":"@AndreiJikh","author":"Andrei Jikh","role":"market_context"},
 ]
 
+RECENT_DAYS=int(os.getenv("YOUTUBE_RECENT_DAYS","7"))
+
+
+def _is_recent(published:str, now:datetime|None=None)->bool:
+    """Published within RECENT_DAYS: these get the Gemini budget first; undated/older videos are backlog."""
+    try:
+        d=datetime.fromisoformat(str(published)[:10]).replace(tzinfo=timezone.utc)
+    except ValueError:
+        return False
+    now=now or datetime.now(timezone.utc)
+    return 0<=(now-d).days<=RECENT_DAYS
+
+
 def _now():
     return datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00","Z")
 
@@ -164,6 +177,16 @@ def youtube_official_transcript(video_id:str)->tuple[str,str]:
 
 def default_transcript(video_id:str,title:str="",author:str="")->dict:
     return tr.acquire(video_id,title,author,official_fetcher=youtube_official_transcript,allow_gemini=True)
+
+def _gemini_priority(kind:str):
+    """Gemini budget priority for one acquisition (no-op if the module is unavailable)."""
+    try:
+        import gemini_video
+        return gemini_video.priority(kind)
+    except Exception:
+        import contextlib
+        return contextlib.nullcontext()
+
 
 def _acq(fetcher,video_id,title,author):
     """Normalize injected legacy tuple fetchers and router dict results."""
@@ -309,6 +332,7 @@ def make_feed_row(channel:dict, meta:dict, acquisition:dict)->dict:
         row["claims_status"]="experimental_unvalidated"
         row["video_claims"]=st.get("claims") or []
         row["video_claims_model"]=st.get("model")
+        row["video_macro"]=st.get("macro") or []
         row["video_observed_title"]=str(st.get("observed_title") or "")[:200]
         row["validation_status"]="pending_owner_spot_check"
         row["forward_evidence_eligible"]=False
@@ -544,6 +568,7 @@ def collect(
     work_items=list(work.items())
     work_items.sort(key=lambda kv:(
         0 if kv[1][3] is False else 1,
+        0 if _is_recent(_entry_published(kv[1][1])) else 1,
         int((kv[1][2] or {}).get("retry_count") or 0),
         str((kv[1][2] or {}).get("last_checked_at") or ""),
         str((kv[1][2] or {}).get("first_discovered_at") or ""),
@@ -562,7 +587,8 @@ def collect(
                             meta.update({k:v for k,v in full.items() if v is not None})
                     except Exception:
                         pass
-                aq=_acq(transcript_fetcher,vid,str(meta.get("title") or ""),ch["author"])
+                with _gemini_priority("new" if _is_recent(_entry_published(meta)) else "backlog"):
+                    aq=_acq(transcript_fetcher,vid,str(meta.get("title") or ""),ch["author"])
                 published=_entry_published(meta)
                 content_ready=_content_ready(ch,aq)
                 ready=content_ready and bool(published)
