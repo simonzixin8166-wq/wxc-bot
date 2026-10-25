@@ -191,15 +191,15 @@
       ]
     },
     "2026-10-25": {
-      "calls": 2,
-      "admitted": 2,
-      "rejected": 0,
+      "calls": 4,
+      "admitted": 3,
+      "rejected": 1,
       "errors": 0,
       "reconciliation": {
         "status": "COMPLETE",
-        "calls_billed": 2,
+        "calls_billed": 4,
         "calls_refunded_503": 0,
-        "detail_rows": 2,
+        "detail_rows": 4,
         "missing_detail_rows": 0,
         "counter_mismatch": []
       },
@@ -219,6 +219,23 @@
           "model": "gemini-3.8-flash",
           "author": "RhinoFinance / 视野环球财经",
           "title": "美股 SPCX前瞻大幅提振半导体！NFLX蛰伏等待！ISRG加仓计划更新！"
+        },
+        {
+          "video_id": "DQ0Yn27pdgk",
+          "outcome": "admitted",
+          "at": "01:40:45Z",
+          "model": "gemini-3.8-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 空头杀红眼5倍加码！META自保，含糊27年资本支出！TSLA、LRCX、GOOG！"
+        },
+        {
+          "video_id": "4_uytm7I_XQ",
+          "outcome": "identity_mismatch",
+          "at": "01:42:39Z",
+          "model": "gemini-3.8-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 半导体SOXX成分股全阵亡！后面怎么玩？注意事项！",
+          "detail": "seen='Meta增发引发半导体崩跌？风暴中心在哪？英伟达/台积电/微软/谷歌/博通' channel='视野环球财经'"
         }
       ]
     }

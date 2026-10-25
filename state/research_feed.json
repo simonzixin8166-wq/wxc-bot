@@ -68280,9 +68280,206 @@
       "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
       "capture_mode": "scheduled_forum_anchor_scan",
       "intake_class_hint": "live_candidate"
+    },
+    {
+      "id": "5da7e627e1051d2ca06c",
+      "source": "youtube",
+      "source_kind": "video",
+      "author": "RhinoFinance / 视野环球财经",
+      "published_at": "2026-10-22",
+      "title": "美股 空头杀红眼5倍加码！META自保，含糊27年资本支出！TSLA、LRCX、GOOG！",
+      "url": "https://www.youtube.com/watch?v=DQ0Yn27pdgk",
+      "excerpt": "[Gemini 视频理解 · 未验证] 本期解析LRCX、META、TSLA最新财报与估值支撑位。LRCX业绩虽超预期但缺乏持续高增长动能，长线关注200-248区间；META资本支出态度谨慎，长线买点上移至600-700；TSLA自由现金流大超预期主要因资本支出递延，维持波段操作；市场空头杠杆达5年高位，面临回购潮激发的潜在轧空风险。\n- [04:16 LRCX neutral 302] LRCX财报虽然各项指标超预期，但难以维持长期30%以上增速，跌破302后右侧行情结束\n- [05:36 LRCX watch 230-248] LRCX长线基本面合理估值建仓区间在230至248美元，更理想长线区间在200至224美元\n- [07:50 META neutral] META广告展示量增速放缓至10%，且核心",
+      "content_chars": 1112,
+      "semantic_content_chars": 1112,
+      "content_filtering": {
+        "filter": "youtube_promotion_noise_v1",
+        "input_units": 16,
+        "removed_units": 0,
+        "removed_ratio": 0.0,
+        "promotion_noise_detected": false
+      },
+      "images_count": 0,
+      "themes_hint": [
+        "风险管理",
+        "长期持有纪律",
+        "TSLA"
+      ],
+      "symbols": [
+        "GOOG",
+        "LRCX",
+        "META",
+        "SOXX",
+        "SPX",
+        "TSLA"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "captured_at": "2026-10-25T01:40:45Z",
+      "source_role": "rule_supply",
+      "transcript_status": "available",
+      "content_quality": "Q3",
+      "content_provider": "gemini_video",
+      "content_provider_url": "https://www.youtube.com/watch?v=DQ0Yn27pdgk",
+      "content_origin": "gemini_video_understanding",
+      "timestamp_evidence": true,
+      "rule_candidate_allowed": false,
+      "source_notice": "公开视频由 Gemini 读取原片（语音+画面）生成的结构化摘要；观点未验证、不可直接作为规则，等待 Owner 抽查原片核对。",
+      "claims": [
+        {
+          "symbol": "META",
+          "stance": "buy",
+          "stance_cues": [
+            "buy",
+            "bullish"
+          ],
+          "horizon": "long",
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "b87d5d6621e2817ae88772a6d59bf6447598854cef0e0b6bd604d0ac0cedfeb7",
+          "evidence_chars": 82
+        },
+        {
+          "symbol": "GOOG",
+          "stance": "bullish",
+          "stance_cues": [
+            "bullish"
+          ],
+          "horizon": "long",
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "5fa2df57692e0664afae320be46912cb03c2e0ee1f6643f63761754efce356be",
+          "evidence_chars": 70
+        },
+        {
+          "symbol": "VOO",
+          "stance": "bullish",
+          "stance_cues": [
+            "bullish"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "564bb2993768bb189fb8464be7b9a2c93ab7b0c567aa020b700079e9868060c8",
+          "evidence_chars": 78
+        }
+      ],
+      "claims_status": "experimental_unvalidated",
+      "video_claims": [
+        {
+          "claim": "LRCX财报虽然各项指标超预期，但难以维持长期30%以上增速，跌破302后右侧行情结束",
+          "stance": "neutral",
+          "price": "302",
+          "timestamp": "04:16",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "LRCX",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "LRCX长线基本面合理估值建仓区间在230至248美元，更理想长线区间在200至224美元",
+          "stance": "watch",
+          "price": "230-248",
+          "timestamp": "05:36",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "LRCX",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "META广告展示量增速放缓至10%，且核心广告业务营业利润率因支出增加由40%降至20%",
+          "stance": "neutral",
+          "price": null,
+          "timestamp": "07:50",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "META",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "META对2025年资本支出未给具体量化指引，反映出保守自保态度，长线买入区间上移至600至700美元",
+          "stance": "bullish",
+          "price": "600-700",
+          "timestamp": "14:45",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "META",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "META中度支撑在690至730美元，强支撑在640至680美元，跌破600美元技术面走弱",
+          "stance": "neutral",
+          "price": "600",
+          "timestamp": "14:24",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "META",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "TSLA自由现金流达15.3亿美元远超预期，主因资本支出仅47.3亿美元大幅低于预期的77.7亿美元，存在资本支出后延隐忧",
+          "stance": "neutral",
+          "price": null,
+          "timestamp": "16:04",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "TSLA",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "TSLA目前价格过高基本面下不了手建长线仓，目前仅适合在315至465美元大波段内进行投机操作",
+          "stance": "neutral",
+          "price": "315-465",
+          "timestamp": "22:30",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "TSLA",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "GOOG当前在298至346美元区间仍属于长线分批观察区间，跌破298美元风险显著放大",
+          "stance": "bullish",
+          "price": "298",
+          "timestamp": "23:18",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "GOOG",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "高盛数据显示卖空杠杆创近5年新高，卖空规模超过买入规模5倍以上，市场面临极高轧空风险",
+          "stance": "neutral",
+          "price": null,
+          "timestamp": "27:45",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": null,
+          "symbol_check": null
+        },
+        {
+          "claim": "标普500成分股回购静默期逐步结束，2024年授权回购金额达1.305万亿美元创历史新高，将构成多头重要托盘力量",
+          "stance": "bullish",
+          "price": null,
+          "timestamp": "30:25",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "SPX",
+          "symbol_check": "listed"
+        }
+      ],
+      "video_claims_model": "gemini-3.8-flash",
+      "video_macro": [],
+      "video_observed_title": "空头5倍加速卖空！多空决战蓄势待发！特斯拉、Meta、泛林集团财报全解析！谷歌、SOXX最新关键位！",
+      "validation_status": "pending_owner_spot_check",
+      "forward_evidence_eligible": false
     }
   ],
-  "updated_at": "2026-10-25T01:32:37Z",
+  "updated_at": "2026-10-25T01:43:08Z",
   "retention_policy": "append_only_no_record_count_cap",
   "historical_recovery": {
     "completed_at": "2026-10-07T13:43:06.018028+00:00",

@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-10-25T01:15:52Z",
+  "generated_at": "2026-10-25T01:43:52Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -28,6 +28,7 @@
         "title": "美股 对冲基金8天7减偏紧！下周注意QQQ！OpenAI也降估值！AMZN停建一数据中心！",
         "url": "https://www.youtube.com/watch?v=b_ZVO8_QfJ0",
         "published_at": "",
+        "rss_status": "error:HTTPError",
         "flat_metadata_keys": [
           "channel_id",
           "duration"
@@ -63,11 +64,11 @@
         "video_id": "ecN20bdjkrs",
         "title": "8支重磅股票！买入/加仓，价格点位更新",
         "url": "https://www.youtube.com/watch?v=ecN20bdjkrs",
-        "published_at": "2026-10-19",
+        "published_at": "",
+        "rss_status": "error:HTTPError",
         "flat_metadata_keys": [
           "channel_id",
-          "duration",
-          "rss_published_at"
+          "duration"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -100,11 +101,11 @@
         "video_id": "8cufVZ_Q39s",
         "title": "Europe Is the Test. America Is Next.",
         "url": "https://www.youtube.com/watch?v=8cufVZ_Q39s",
-        "published_at": "2026-10-23",
+        "published_at": "",
+        "rss_status": "error:HTTPError",
         "flat_metadata_keys": [
           "channel_id",
-          "duration",
-          "rss_published_at"
+          "duration"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -119,26 +120,21 @@
   "pending_retried": 6,
   "content_attempted_this_run": 6,
   "content_work_budget": 6,
-  "content_backlog_after_run": 102,
-  "pending_total": 102,
+  "content_backlog_after_run": 101,
+  "pending_total": 101,
   "historical_demoted_from_pending": 0,
   "admitted_from_pending": 0,
   "nonforward_timestamp_unknown_admitted": 0,
   "feed_records_added": 0,
+  "publication_dates_resolved": 0,
+  "rss_status": {
+    "UCFQsi7WaF5X41tcuOryDk8w": "error:HTTPError",
+    "UCGy7SkBjcIAgTiwkXEtPnYg": "error:HTTPError",
+    "UCo2gxyermsLBSCxFHvJs0Zg": "error:HTTPError"
+  },
   "historical_backlog_total": 53,
   "discovery_complete": true,
   "new_video_diagnostics": [
-    {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "DQ0Yn27pdgk",
-      "title": "美股 空头杀红眼5倍加码！META自保，含糊27年资本支出！TSLA、LRCX、GOOG！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
     {
       "author": "RhinoFinance / 视野环球财经",
       "video_id": "4_uytm7I_XQ",
@@ -151,20 +147,9 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "老李玩钱",
-      "video_id": "SrRLRsUFsUw",
-      "title": "华尔街大量卖出的3支股票！你是否要跟着卖出",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "老李玩钱",
-      "video_id": "Ue75SpWXfjo",
-      "title": "美股最重磅的一周：美联储会议及4大科技巨头财报提前展望，买入/加仓价格点位更新",
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "Z9T89cdzuyo",
+      "title": "美股 NVDA、MRVL、INTU、CRWD、CRM财报波动！对冲基金上周大抛售！大逆转，Altman承认AI时间表看法错误！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -174,8 +159,30 @@
     },
     {
       "author": "Andrei Jikh",
-      "video_id": "Uw84lTiD5C8",
-      "title": "Russia Just Legalized Crypto",
+      "video_id": "ZEi5tVIXWyc",
+      "title": "South Korea’s AI Bubble Just Popped",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "老李玩钱",
+      "video_id": "ZGYWudfZMM4",
+      "title": "美股重回高位，要卖股票了吗？到底什么时候该卖出股票",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "Andrei Jikh",
+      "video_id": "Z_xvkbGWauU",
+      "title": "China Just Shut Down Gold Trading",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -185,8 +192,8 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "Wpbwn2Pj3kQ",
-      "title": "美股 META、AMD联手起飞！QQQ、SOXX、IGV，全部突破！对冲基金、散户，在买什么？",
+      "video_id": "-e3gyj_NP7c",
+      "title": "美股 科技股、半导体失血！消费股领涨，XLP重要位置！SMH、SOXX完成修复！SPY、QQQ、XLK长线点位更新！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -199,7 +206,7 @@
     "status": "ok",
     "channel_errors": 0,
     "stuck_high_quality_pending": 0,
-    "provider_waiting_pending": 102,
+    "provider_waiting_pending": 101,
     "stuck_video_ids": [],
     "meaning": "Q1/Q2 text must not remain stuck in pending; Q3-Q5 may legitimately wait for better learning text."
   },
