@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-10-24T22:34:08Z",
+  "generated_at": "2026-10-25T01:15:52Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -27,11 +27,10 @@
         "video_id": "b_ZVO8_QfJ0",
         "title": "美股 对冲基金8天7减偏紧！下周注意QQQ！OpenAI也降估值！AMZN停建一数据中心！",
         "url": "https://www.youtube.com/watch?v=b_ZVO8_QfJ0",
-        "published_at": "2026-10-24",
+        "published_at": "",
         "flat_metadata_keys": [
           "channel_id",
-          "duration",
-          "rss_published_at"
+          "duration"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -120,8 +119,8 @@
   "pending_retried": 6,
   "content_attempted_this_run": 6,
   "content_work_budget": 6,
-  "content_backlog_after_run": 104,
-  "pending_total": 104,
+  "content_backlog_after_run": 102,
+  "pending_total": 102,
   "historical_demoted_from_pending": 0,
   "admitted_from_pending": 0,
   "nonforward_timestamp_unknown_admitted": 0,
@@ -131,8 +130,41 @@
   "new_video_diagnostics": [
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "N8BjausuEsI",
-      "title": "美股 META大招豪赌AI代理！对GOOG、AMZN影响！SOXX还需一天确认！财政部回购不及预期！AAPL开始折叠！",
+      "video_id": "DQ0Yn27pdgk",
+      "title": "美股 空头杀红眼5倍加码！META自保，含糊27年资本支出！TSLA、LRCX、GOOG！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "4_uytm7I_XQ",
+      "title": "美股 半导体SOXX成分股全阵亡！后面怎么玩？注意事项！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "老李玩钱",
+      "video_id": "SrRLRsUFsUw",
+      "title": "华尔街大量卖出的3支股票！你是否要跟着卖出",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "老李玩钱",
+      "video_id": "Ue75SpWXfjo",
+      "title": "美股最重磅的一周：美联储会议及4大科技巨头财报提前展望，买入/加仓价格点位更新",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -142,8 +174,8 @@
     },
     {
       "author": "Andrei Jikh",
-      "video_id": "NZpobX6MQVA",
-      "title": "Trump Will Cause The Next Financial Crisis",
+      "video_id": "Uw84lTiD5C8",
+      "title": "Russia Just Legalized Crypto",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -152,42 +184,9 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "老李玩钱",
-      "video_id": "O_xE_bGbwTI",
-      "title": "美股形势依然不明朗！要卖股票了？！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "老李玩钱",
-      "video_id": "PDAHTpp2c78",
-      "title": "摩根大通：标普500今年将下跌15%",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "老李玩钱",
-      "video_id": "PdypXJ5gtKY",
-      "title": "半导体和存储，10支热门个股和ETF，买入及加仓建议",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "老李玩钱",
-      "video_id": "Q5xMtR4SWP8",
-      "title": "美股高位摇摇欲坠！要回调了？操作上的建议",
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "Wpbwn2Pj3kQ",
+      "title": "美股 META、AMD联手起飞！QQQ、SOXX、IGV，全部突破！对冲基金、散户，在买什么？",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -200,7 +199,7 @@
     "status": "ok",
     "channel_errors": 0,
     "stuck_high_quality_pending": 0,
-    "provider_waiting_pending": 104,
+    "provider_waiting_pending": 102,
     "stuck_video_ids": [],
     "meaning": "Q1/Q2 text must not remain stuck in pending; Q3-Q5 may legitimately wait for better learning text."
   },

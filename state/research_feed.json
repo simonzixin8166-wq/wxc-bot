@@ -67897,9 +67897,361 @@
       "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
       "capture_mode": "scheduled_forum_anchor_scan",
       "intake_class_hint": "live_candidate"
+    },
+    {
+      "id": "d1a506da64dcadafa727",
+      "source": "youtube",
+      "source_kind": "video",
+      "author": "RhinoFinance / 视野环球财经",
+      "published_at": "2026-10-20",
+      "title": "美股 AMZN撑起半边天！多空决战蓄势待发！杠杆ETF抄底创纪录！ SPCX、TSLA、META财报波动！",
+      "url": "https://www.youtube.com/watch?v=XMs6mASFtbE",
+      "excerpt": "[Gemini 视频理解 · 未验证] 节目探讨了美股当前资金流向及杠杆ETF异动。数据显示对冲基金创纪录抛售科技及半导体板块，但多空总杠杆仍居高位；散户与资金借道SOXL、TQQQ大幅流入。市场处于多空决战拉锯期，后市伴随11月企业回购潮与大选落地将迎方向决战，并针对个股期权波动进行前瞻。\n- [03:26 SOXL neutral] 杠杆ETF单周净流入达95亿美元创2006年以来纪录，其中SOXL净流入70亿美元占74%\n- [03:39 TQQQ neutral] TQQQ单周净流入13亿美元，位列杠杆ETF流入额第二位\n- [06:22 SPY bullish] 美国基本面多空净杠杆降至43.7%，但总杠杆维持在213.9%的高位，空头头寸居高易引发挤压轧空\n- [19:10 AMZN bullish",
+      "content_chars": 756,
+      "semantic_content_chars": 756,
+      "content_filtering": {
+        "filter": "youtube_promotion_noise_v1",
+        "input_units": 12,
+        "removed_units": 0,
+        "removed_ratio": 0.0,
+        "promotion_noise_detected": false
+      },
+      "images_count": 0,
+      "themes_hint": [
+        "风险管理",
+        "趋势确认",
+        "TSLA"
+      ],
+      "symbols": [
+        "AMZN",
+        "GOOG",
+        "META",
+        "QQQ",
+        "SOXL",
+        "SPCX",
+        "SPY",
+        "TQQQ",
+        "TSLA"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "captured_at": "2026-10-25T01:14:23Z",
+      "source_role": "rule_supply",
+      "transcript_status": "available",
+      "content_quality": "Q3",
+      "content_provider": "gemini_video",
+      "content_provider_url": "https://www.youtube.com/watch?v=XMs6mASFtbE",
+      "content_origin": "gemini_video_understanding",
+      "timestamp_evidence": true,
+      "rule_candidate_allowed": false,
+      "source_notice": "公开视频由 Gemini 读取原片（语音+画面）生成的结构化摘要；观点未验证、不可直接作为规则，等待 Owner 抽查原片核对。",
+      "claims": [
+        {
+          "symbol": "SPY",
+          "stance": "bullish",
+          "stance_cues": [
+            "bullish"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "23497271ab441c40be1d3259c3fdfc2dc9a43fa215e34f60a23d04a7760622a5",
+          "evidence_chars": 70
+        },
+        {
+          "symbol": "AMZN",
+          "stance": "bullish",
+          "stance_cues": [
+            "bullish"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "3acf3896f64b8e1ea583a3dca053eb489cd94a02088a311da0e5aae1baff48a6",
+          "evidence_chars": 70
+        }
+      ],
+      "claims_status": "experimental_unvalidated",
+      "video_claims": [
+        {
+          "claim": "杠杆ETF单周净流入达95亿美元创2006年以来纪录，其中SOXL净流入70亿美元占74%",
+          "stance": "neutral",
+          "price": null,
+          "timestamp": "03:26",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "SOXL",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "TQQQ单周净流入13亿美元，位列杠杆ETF流入额第二位",
+          "stance": "neutral",
+          "price": null,
+          "timestamp": "03:39",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "TQQQ",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "美国基本面多空净杠杆降至43.7%，但总杠杆维持在213.9%的高位，空头头寸居高易引发挤压轧空",
+          "stance": "bullish",
+          "price": null,
+          "timestamp": "06:22",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "SPY",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "大摩将亚马逊列为首选股并上调目标价至350美元，技术面突破266-270后上方阻力较小",
+          "stance": "bullish",
+          "price": "350",
+          "timestamp": "19:10",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "AMZN",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "SPCX财报期权押注在148美元上下约11美元波动，财报后将迎来多批禁售股大额解禁",
+          "stance": "watch",
+          "price": "148",
+          "timestamp": "21:24",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "SPCX",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "特斯拉财报期权隐含波动在370美元上下约24美元，上方400至420美元区间面临强阻力",
+          "stance": "watch",
+          "price": "370",
+          "timestamp": "23:00",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "TSLA",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "Meta财报期权隐含波动在705美元上下约49美元，下方656支撑未破，若资本支出激增或带来惩罚",
+          "stance": "watch",
+          "price": "705",
+          "timestamp": "24:26",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "META",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "QQQ关键支撑关注687点，跌破该位置将破位走空",
+          "stance": "neutral",
+          "price": "687",
+          "timestamp": "26:33",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "QQQ",
+          "symbol_check": "listed"
+        }
+      ],
+      "video_claims_model": "gemini-3.8-flash",
+      "video_macro": [],
+      "video_observed_title": "多空决战，蓄势待发！",
+      "validation_status": "pending_owner_spot_check",
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "c0690c92d9531f4744da",
+      "source": "youtube",
+      "source_kind": "video",
+      "author": "RhinoFinance / 视野环球财经",
+      "published_at": "2026-10-21",
+      "title": "美股 SPCX前瞻大幅提振半导体！NFLX蛰伏等待！ISRG加仓计划更新！",
+      "url": "https://www.youtube.com/watch?v=g7V8AbUkjcs",
+      "excerpt": "[Gemini 视频理解 · 未验证] 本期节目为设定在未来的情景推演/财报复盘。分析了SpaceX（SPCX）、直觉外科（ISRG）及奈飞（NFLX）的三季度财报表现与业绩指引。讨论了SpaceX与特斯拉合并传闻及算力收入前景；给出了直觉外科在320-360美元的加仓计划；维持奈飞在77美元以下寻找止跌信号的分批建仓策略；并展望了Meta财报及半导体板块走势。\n- [02:56 SPCX bullish] SpaceX第三财季营收145.8亿美元，净利润44亿美元，首次实现季度盈利，全面超预期\n- [04:32 SPCX neutral] SpaceX与特斯拉合并在2027年底前完成的市场押注概率约为60%至66%\n- [08:26 SPCX watch 161] SpaceX盘后反弹至161美元上方，接近前",
+      "content_chars": 865,
+      "semantic_content_chars": 865,
+      "content_filtering": {
+        "filter": "youtube_promotion_noise_v1",
+        "input_units": 12,
+        "removed_units": 0,
+        "removed_ratio": 0.0,
+        "promotion_noise_detected": false
+      },
+      "images_count": 0,
+      "themes_hint": [
+        "失败复盘",
+        "TSLA"
+      ],
+      "symbols": [
+        "ISRG",
+        "META",
+        "NFLX",
+        "SMCI",
+        "SOXX",
+        "SPCX",
+        "TSLA"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "captured_at": "2026-10-25T01:15:27Z",
+      "source_role": "rule_supply",
+      "transcript_status": "available",
+      "content_quality": "Q3",
+      "content_provider": "gemini_video",
+      "content_provider_url": "https://www.youtube.com/watch?v=g7V8AbUkjcs",
+      "content_origin": "gemini_video_understanding",
+      "timestamp_evidence": true,
+      "rule_candidate_allowed": false,
+      "source_notice": "公开视频由 Gemini 读取原片（语音+画面）生成的结构化摘要；观点未验证、不可直接作为规则，等待 Owner 抽查原片核对。",
+      "claims": [
+        {
+          "symbol": "NFLX",
+          "stance": "buy",
+          "stance_cues": [
+            "buy"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "fdd4cd0b506211ae618ed22a3755de790f8c69efeaff080e1a7420a4939959dc",
+          "evidence_chars": 25
+        },
+        {
+          "symbol": "SPCX",
+          "stance": "bullish",
+          "stance_cues": [
+            "bullish"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "dda938a665b8d216c8220455b3cf33f45ef392daef3d6d31159a6d929386ab96",
+          "evidence_chars": 67
+        },
+        {
+          "symbol": "NFLX",
+          "stance": "buy",
+          "stance_cues": [
+            "buy"
+          ],
+          "horizon": "long",
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "4867084a374bbc88ff12a01b5f682bba83aa49540d7683f36b639fa09e4d5548",
+          "evidence_chars": 61
+        }
+      ],
+      "claims_status": "experimental_unvalidated",
+      "video_claims": [
+        {
+          "claim": "SpaceX第三财季营收145.8亿美元，净利润44亿美元，首次实现季度盈利，全面超预期",
+          "stance": "bullish",
+          "price": null,
+          "timestamp": "02:56",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "SPCX",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "SpaceX与特斯拉合并在2027年底前完成的市场押注概率约为60%至66%",
+          "stance": "neutral",
+          "price": null,
+          "timestamp": "04:32",
+          "evidence_mode": "spoken_explicit",
+          "confidence": "medium",
+          "symbol": "SPCX",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "SpaceX盘后反弹至161美元上方，接近前期放量下跌平台密集套牢区阻力",
+          "stance": "watch",
+          "price": "161",
+          "timestamp": "08:26",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "SPCX",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "直觉外科第三财季调整后EPS 3美元，营收30.5亿美元均超预期，但因和解反垄断诉讼及下调达芬奇手术增长指引导致股价下跌",
+          "stance": "neutral",
+          "price": null,
+          "timestamp": "10:22",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "ISRG",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "直觉外科加仓计划价位上调至320-360美元区间，计划加仓4%仓位",
+          "stance": "buy",
+          "price": "320-360",
+          "timestamp": "15:36",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "ISRG",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "无仓位且激进者可在370-405美元区间考虑直觉外科第一档建仓",
+          "stance": "buy",
+          "price": "370-405",
+          "timestamp": "16:22",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "ISRG",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "奈飞第三财季调整后每股收益0.87美元，营收129亿美元，第四季度营收指引134亿美元略低于预期",
+          "stance": "neutral",
+          "price": null,
+          "timestamp": "18:55",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "NFLX",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "奈飞维持77美元以下长线建仓计划，当前在64美元附近等待强力止跌形态再出手",
+          "stance": "watch",
+          "price": "77",
+          "timestamp": "17:37",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "NFLX",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "Meta资本支出规模巨大，其资本支出指引态度对半导体板块具有重大指导意义",
+          "stance": "watch",
+          "price": null,
+          "timestamp": "25:21",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "META",
+          "symbol_check": "listed"
+        }
+      ],
+      "video_claims_model": "gemini-3.8-flash",
+      "video_macro": [],
+      "video_observed_title": "美股2026年10月20日复盘：SpaceX、直觉外科、奈飞财报分析与建仓计划",
+      "validation_status": "pending_owner_spot_check",
+      "forward_evidence_eligible": false
     }
   ],
-  "updated_at": "2026-10-25T01:06:49Z",
+  "updated_at": "2026-10-25T01:15:36Z",
   "retention_policy": "append_only_no_record_count_cap",
   "historical_recovery": {
     "completed_at": "2026-10-07T13:43:06.018028+00:00",

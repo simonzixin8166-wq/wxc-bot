@@ -189,6 +189,38 @@
           "title": "美股 AI数据中心违约风险一览！长债收益率19年新高！SPY、QQQ、SOXX 、SMH重要位置！HD维持前瞻！"
         }
       ]
+    },
+    "2026-10-25": {
+      "calls": 2,
+      "admitted": 2,
+      "rejected": 0,
+      "errors": 0,
+      "reconciliation": {
+        "status": "COMPLETE",
+        "calls_billed": 2,
+        "calls_refunded_503": 0,
+        "detail_rows": 2,
+        "missing_detail_rows": 0,
+        "counter_mismatch": []
+      },
+      "recent": [
+        {
+          "video_id": "XMs6mASFtbE",
+          "outcome": "admitted",
+          "at": "01:14:23Z",
+          "model": "gemini-3.8-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 AMZN撑起半边天！多空决战蓄势待发！杠杆ETF抄底创纪录！ SPCX、TSLA、META财报波动！"
+        },
+        {
+          "video_id": "g7V8AbUkjcs",
+          "outcome": "admitted",
+          "at": "01:15:27Z",
+          "model": "gemini-3.8-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 SPCX前瞻大幅提振半导体！NFLX蛰伏等待！ISRG加仓计划更新！"
+        }
+      ]
     }
   },
   "version": 1,
