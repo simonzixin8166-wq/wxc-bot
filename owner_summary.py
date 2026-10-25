@@ -146,7 +146,16 @@ def queue_note(vid, base):
             return set()
         items = doc.get(key) or []
         return {x.get("video_id") if isinstance(x, dict) else x for x in items}
-    if vid in ids("pending_youtube.json", "records"):
+    pending = {}
+    try:
+        for x in json.loads((base / "pending_youtube.json").read_text(encoding="utf-8")).get("records") or []:
+            if isinstance(x, dict):
+                pending[x.get("video_id")] = x
+    except (OSError, ValueError):
+        pass
+    if pending.get(vid, {}).get("last_status") == "awaiting_publication_date":
+        return "该视频刚发现，正在等待发布日期（最多 48 小时），拿到日期或到期后收录（不再调用 Gemini）。"
+    if vid in pending:
         return "该视频在待处理队列中，下一次 YouTube 采集时收录（不再调用 Gemini）。"
     if vid in ids("seen_youtube.json", "video_ids"):
         return "该视频已不在待处理队列（可能已被收录），这份摘要只保存，供抽查时对照。"

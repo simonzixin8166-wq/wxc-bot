@@ -93,3 +93,10 @@ assert "下一次 YouTube 采集时收录" in osm.queue_note("PPPPPPPPPPP", base
 assert "供抽查时对照" in osm.queue_note("SSSSSSSSSSS", base)
 assert "暂不进入资料库" in osm.queue_note("XXXXXXXXXXX", base)
 print("PASS owner /yt reply queue note")
+
+# a video still waiting for its publication date (SRC-01 hold) is announced honestly
+(base / "pending_youtube.json").write_text(json.dumps({"records": [
+    {"video_id": "PPPPPPPPPPP"}, {"video_id": "HHHHHHHHHHH", "last_status": "awaiting_publication_date"}]}))
+assert "等待发布日期（最多 48 小时）" in osm.queue_note("HHHHHHHHHHH", base)
+assert "下一次 YouTube 采集时收录" in osm.queue_note("PPPPPPPPPPP", base)
+print("PASS owner /yt reply: date-hold note")

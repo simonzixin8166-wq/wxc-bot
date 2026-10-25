@@ -34,7 +34,9 @@ MODELS = [m.strip() for m in os.getenv("GEMINI_VIDEO_MODELS", "gemini-3.8-flash,
 MODEL = MODELS[0]
 DAILY_CAP = int(os.getenv("GEMINI_VIDEO_DAILY_CAP", "10"))
 RUN_CAP = int(os.getenv("GEMINI_VIDEO_RUN_CAP", "2"))
-TIMEOUT = int(os.getenv("GEMINI_VIDEO_TIMEOUT", "240"))
+# Long videos took >240s on 10/24 (SbZltIBvi7M, 1QM5vfCkId0: ReadTimeout, call spent, nothing admitted).
+# 2 calls/run x 420s still fits the intake job's 25-minute limit.
+TIMEOUT = int(os.getenv("GEMINI_VIDEO_TIMEOUT", "420"))
 RETRY_WAIT = int(os.getenv("GEMINI_VIDEO_RETRY_WAIT", "20"))
 MAX_CLAIMS = 20
 MAX_MACRO = 8

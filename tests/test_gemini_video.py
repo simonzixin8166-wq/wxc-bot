@@ -256,4 +256,5 @@ doc["days"][gv._today()] = {"calls": 0}
 gv._run_calls = 0
 assert gv.acquire("vid1", TITLE, "Andrei Jikh", post=lambda *a, **k: (_ for _ in ()).throw(AssertionError("no call"))) is None
 assert gv.acquire("vid1", TITLE, AUTHOR, post=post_with(Resp(200, wrap(GOOD)))) is not None
+assert gv.TIMEOUT * gv.RUN_CAP < 25 * 60  # fits the intake job timeout
 print("PASS YT-01 Gemini video fallback: keyless off, budget/run cap/429, identity + safety gates, forward-intake only, experimental Q3 admission, call ledger reconciles, 403 author skipped for the day, 20 claims + macro, new-video reserve, unsupported channels")
