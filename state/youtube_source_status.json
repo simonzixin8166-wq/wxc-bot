@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-10-25T16:14:05Z",
+  "generated_at": "2026-10-25T19:03:10Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -158,8 +158,8 @@
     },
     {
       "author": "老李玩钱",
-      "video_id": "mR1KTb9wBT0",
-      "title": "2支新股：SPCX, SKHY 能买入吗？NFLX财报暴雷，接下来我的计划和打算",
+      "video_id": "s35e0bZb4xA",
+      "title": "美联储鹰派砸盘！MU财报业绩亮眼，但股价依然下跌！接下来何去何从",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -169,8 +169,8 @@
     },
     {
       "author": "老李玩钱",
-      "video_id": "nLskyS7Vvug",
-      "title": "华尔街大举买入和卖出的8支股票！是否要跟着买进或卖出？我的看法及操作建议",
+      "video_id": "tW8LXsiWlew",
+      "title": "个股点评，买入建议：TSLA，AAPL，BRK.B",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -179,9 +179,9 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "老李玩钱",
-      "video_id": "nNaiUbM17HY",
-      "title": "美股不怕急跌，怕的是目前这种震荡下行的行情",
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "v88zbUVrp8w",
+      "title": "美股 美联储27年预期撕裂！AI威胁叙事，网络安全爆炒！PANW、CRWD、FTNT！META忘记讲，看置顶评论！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -190,9 +190,9 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "老李玩钱",
-      "video_id": "o0ScN6BzkaI",
-      "title": "美股涨的心慌！要卖股票了？",
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "vXlqWhsJzxI",
+      "title": "美股 NVDA完好、NOW突破！UNH、SHOP更新！前车之鉴，直到2028，数据中心绝不能大退潮！对比互联网泡沫、房地产浪潮！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
