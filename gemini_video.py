@@ -17,6 +17,8 @@ Guardrails
 """
 from __future__ import annotations
 
+import contextlib
+from collections import Counter
 import difflib
 import json
 import os
@@ -34,7 +36,8 @@ DAILY_CAP = int(os.getenv("GEMINI_VIDEO_DAILY_CAP", "10"))
 RUN_CAP = int(os.getenv("GEMINI_VIDEO_RUN_CAP", "2"))
 TIMEOUT = int(os.getenv("GEMINI_VIDEO_TIMEOUT", "240"))
 RETRY_WAIT = int(os.getenv("GEMINI_VIDEO_RETRY_WAIT", "20"))
-MAX_CLAIMS = 12
+MAX_CLAIMS = 20
+MAX_MACRO = 8
 CLAIM_CHARS = 120
 KEEP_DAYS = 45
 # One detail row per finished call (refunded 503s included); generous so a day's rows are never truncated.
@@ -58,13 +61,18 @@ Return ONLY valid JSON, no markdown, with this schema:
               "price": "explicit price level or null", "timestamp": "MM:SS or HH:MM:SS or null",
               "evidence_mode": "spoken_explicit|onscreen_explicit|spoken_plus_onscreen|visual_inference",
               "confidence": "high|medium|low"}],
+  "macro": [{"indicator": "macro/economic data point named in the video (e.g. Michigan sentiment, CPI, PCE, 10Y yield)",
+             "value": "explicit value or null", "expectation": "explicit consensus/prior or null",
+             "period": "reference period or null", "timestamp": "MM:SS or null"}],
   "methods": [{"name": "method/indicator", "explicit_parameters": {}, "missing_parameters": [], "timestamp": null}],
   "invalidations": [{"symbol": "ticker or null", "condition": "explicit exit/failure condition", "timestamp": null}],
   "uncertainties": ["anything not clear enough to treat as the author's explicit statement"],
   "safety": {"historical_only": true, "forward_evidence_eligible": false, "promotion_eligible": false, "production_action": null}
 }
 Rules: do NOT invent periods, thresholds, prices, dates, tickers or formulas; put unstated parameters in
-missing_parameters; separate explicit statements from your visual inference; at most 12 claims; if you cannot
+missing_parameters; separate explicit statements from your visual inference; at most 20 claims and 8 macro
+items; every claim about a specific company or fund MUST carry its exact US ticker in "symbol" as spoken or shown
+(null only for market-wide or macro claims; never guess a ticker from a name you did not hear or see); if you cannot
 access the video, return {"observed_title": null} and nothing else. Never output a recommendation.
 """
 
@@ -156,9 +164,37 @@ def enabled():
     return bool(os.getenv("GEMINI_API_KEY", "").strip())
 
 
+# Calls kept back each day for recently published videos; backlog (old or undated) only uses what is left.
+RESERVE_NEW = int(os.getenv("GEMINI_VIDEO_RESERVE_NEW", "4"))
+UNSUPPORTED_DAYS = 3        # 403 on this many distinct days ...
+UNSUPPORTED_WINDOW = 14     # ... within this many recent days -> treat the channel as gemini_unsupported
+_priority = "new"
+
+
+@contextlib.contextmanager
+def priority(kind):
+    """'new' (published within the recent window) or 'backlog' (older or undated) for the calls inside."""
+    global _priority
+    prev, _priority = _priority, ("backlog" if kind == "backlog" else "new")
+    try:
+        yield
+    finally:
+        _priority = prev
+
+
 def budget_ok():
     day = (_load_budget().get("days") or {}).get(_today()) or {}
-    return _run_calls < RUN_CAP and int(day.get("calls") or 0) < DAILY_CAP and not day.get("exhausted")
+    cap = DAILY_CAP if _priority == "new" else max(0, DAILY_CAP - RESERVE_NEW)
+    return _run_calls < RUN_CAP and int(day.get("calls") or 0) < cap and not day.get("exhausted")
+
+
+def unsupported_authors(doc=None):
+    """Authors with 403 permission_denied on >= UNSUPPORTED_DAYS distinct days in the last UNSUPPORTED_WINDOW
+    days. Derived from the budget history (no extra state); lifts by itself once those days age out."""
+    days = (doc or _load_budget()).get("days") or {}
+    recent = sorted(days)[-UNSUPPORTED_WINDOW:]
+    hits = Counter(a for d in recent for a in set((days[d] or {}).get("skip_authors_403") or []))
+    return sorted(a for a, n in hits.items() if n >= UNSUPPORTED_DAYS)
 
 
 def _norm(s):
@@ -226,6 +262,8 @@ def render(parsed):
     for c in claims(parsed):
         tag = " ".join(x for x in (c.get("timestamp"), c.get("symbol"), c.get("stance"), c.get("price")) if x)
         lines.append(f"- [{tag}] {c['claim']}")
+    for m in macro(parsed):
+        lines.append(f"宏观：{m['indicator']} {m.get('value') or ''}（预期 {m.get('expectation') or '—'}）{m.get('period') or ''}")
     for m in (parsed.get("methods") or [])[:6]:
         if isinstance(m, dict) and m.get("name"):
             lines.append(f"方法：{m['name']} 参数 {json.dumps(m.get('explicit_parameters') or {}, ensure_ascii=False)}")
@@ -235,19 +273,44 @@ def render(parsed):
     return "\n".join(lines).strip()
 
 
+SYMBOL_RE = re.compile(r"^[A-Z][A-Z0-9.\-]{0,9}$")
+
+
+def _symbol(v):
+    """Ticker as given by the model, upper-cased; anything that is not ticker-shaped becomes None (never guessed)."""
+    s = str(v or "").strip().lstrip("$").upper()
+    return s if SYMBOL_RE.match(s) else None
+
+
 def claims(parsed):
     out = []
+    listed = {_symbol(x) for x in (parsed.get("symbols") or [])} - {None}
     for c in (parsed.get("claims") or [])[:MAX_CLAIMS]:
         if not isinstance(c, dict) or not str(c.get("claim") or "").strip():
             continue
-        out.append({k: (str(c.get(k)).strip()[:CLAIM_CHARS] if c.get(k) not in (None, "") else None)
-                    for k in ("claim", "symbol", "stance", "price", "timestamp", "evidence_mode", "confidence")})
+        row = {k: (str(c.get(k)).strip()[:CLAIM_CHARS] if c.get(k) not in (None, "") else None)
+               for k in ("claim", "stance", "price", "timestamp", "evidence_mode", "confidence")}
+        sym = _symbol(c.get("symbol"))
+        row["symbol"] = sym
+        # a ticker the model did not also list among the discussed symbols is kept but flagged for spot-check
+        row["symbol_check"] = None if sym is None else ("listed" if sym in listed else "not_in_symbols")
+        out.append(row)
+    return out
+
+
+def macro(parsed):
+    out = []
+    for m in (parsed.get("macro") or [])[:MAX_MACRO]:
+        if isinstance(m, dict) and str(m.get("indicator") or "").strip():
+            out.append({k: (str(m.get(k)).strip()[:CLAIM_CHARS] if m.get(k) not in (None, "") else None)
+                        for k in ("indicator", "value", "expectation", "period", "timestamp")})
     return out
 
 
 def _author_blocked_today(author):
-    day = (_load_budget().get("days") or {}).get(_today()) or {}
-    return bool(author) and author in (day.get("skip_authors_403") or [])
+    doc = _load_budget()
+    day = (doc.get("days") or {}).get(_today()) or {}
+    return bool(author) and (author in (day.get("skip_authors_403") or []) or author in unsupported_authors(doc))
 
 
 def _block_author_today(author):
@@ -324,6 +387,6 @@ def acquire(video_id, title, author, post=None):
         "rule_candidate_allowed": False, "chars": len(text),
         "note": f"Gemini {used} read the public video; experimental, pending Owner spot check.",
         "structured": {"model": used, "observed_title": parsed.get("observed_title"),
-                       "claims": claims(parsed), "symbols": [str(s)[:12] for s in (parsed.get("symbols") or [])][:12],
+                       "claims": claims(parsed), "macro": macro(parsed), "symbols": [str(s)[:12] for s in (parsed.get("symbols") or [])][:12],
                        "uncertainties": [str(u)[:CLAIM_CHARS] for u in (parsed.get("uncertainties") or [])][:5]},
     }

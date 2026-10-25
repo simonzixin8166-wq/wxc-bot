@@ -5,6 +5,7 @@ import json
 import os
 import sys
 import tempfile
+from datetime import datetime, timezone
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[1]
@@ -168,6 +169,10 @@ assert row["claims_status"] == "experimental_unvalidated" and row["validation_st
 assert row["forward_evidence_eligible"] is False and row["content_provider"] == "gemini_video"
 assert {"SPCX", "NFLX", "ISRG"} <= set(row["symbols"]) and "not a ticker" not in row["symbols"]
 assert len(row["excerpt"]) <= 360 and row["video_claims"][0]["timestamp"] == "06:12"
+assert row["video_macro"] == [] and row["video_claims"][0]["symbol_check"] == "listed"
+assert yr._is_recent("2026-10-20", datetime(2026, 10, 24, tzinfo=timezone.utc)) is True
+assert yr._is_recent("2026-10-01", datetime(2026, 10, 24, tzinfo=timezone.utc)) is False
+assert yr._is_recent("", datetime(2026, 10, 24, tzinfo=timezone.utc)) is False
 
 # 7) call ledger reconciles: one detail row per billed or refunded call, with model/author/title, never truncated
 doc = json.loads((Path(tmp) / "gemini_video_budget.json").read_text())
@@ -214,4 +219,41 @@ assert gv.acquire("vid1", TITLE, AUTHOR, post=post_with(Resp(200, wrap(GOOD)))) 
 gv._run_calls = 0
 assert gv.acquire("vid1", TITLE, "Other Author", post=lambda *a, **k: Resp(500, {})) is None
 assert "Other Author" not in budget()["skip_authors_403"]
-print("PASS YT-01 Gemini video fallback: keyless off, budget/run cap/429, identity + safety gates, forward-intake only, experimental Q3 admission, call ledger reconciles, 403 author skipped for the day")
+
+# 9) extraction: up to 20 claims + macro items; tickers normalised, never guessed; unlisted tickers flagged
+rich = dict(GOOD, symbols=["ISRG", "QQQ"], macro=[{"indicator": "密歇根消费者信心", "value": "48", "expectation": "46.3",
+                                                   "period": "10月", "timestamp": "02:10"}] * 10,
+            claims=[{"claim": f"c{i}", "symbol": s} for i, s in enumerate(["isrg", "$QQQ", "RG", "英伟达", None] * 5)])
+cl = gv.claims(rich)
+assert len(cl) == 20 and gv.MAX_CLAIMS == 20
+assert [c["symbol"] for c in cl[:5]] == ["ISRG", "QQQ", "RG", None, None]
+assert [c["symbol_check"] for c in cl[:5]] == ["listed", "listed", "not_in_symbols", None, None]
+mc = gv.macro(rich)
+assert len(mc) == gv.MAX_MACRO == 8 and mc[0]["value"] == "48" and mc[0]["expectation"] == "46.3"
+assert "宏观：密歇根消费者信心 48（预期 46.3）" in gv.render(rich)
+assert "at most 20 claims" in gv.PROMPT and "exact US ticker" in gv.PROMPT and '"macro"' in gv.PROMPT
+
+# 10) budget priority: backlog (old/undated) videos cannot use the calls reserved for new videos
+doc = json.loads((Path(tmp) / "gemini_video_budget.json").read_text())
+doc["days"][gv._today()] = {"calls": gv.DAILY_CAP - gv.RESERVE_NEW}
+(Path(tmp) / "gemini_video_budget.json").write_text(json.dumps(doc))
+gv._run_calls = 0
+assert gv.budget_ok() is True                       # default priority = new
+with gv.priority("backlog"):
+    assert gv.budget_ok() is False
+    assert gv.acquire("vid1", TITLE, AUTHOR, post=lambda *a, **k: (_ for _ in ()).throw(AssertionError("no call"))) is None
+assert gv._priority == "new"
+
+# 11) 403 on 3 distinct days within 14 -> author unsupported (no call), lifts once those days age out
+hist = {"days": {f"2026-10-{d:02d}": {"skip_authors_403": ["Andrei Jikh"]} for d in (1, 5, 9)}}
+assert gv.unsupported_authors(hist) == ["Andrei Jikh"]
+hist2 = {"days": {f"2026-10-{d:02d}": {"skip_authors_403": ["Andrei Jikh"] if d in (1, 5) else []} for d in range(1, 20)}}
+assert gv.unsupported_authors(hist2) == []                                  # day 1 is outside the last 14 days
+doc = json.loads((Path(tmp) / "gemini_video_budget.json").read_text())
+doc["days"].update({f"2026-01-0{d}": {"skip_authors_403": ["Andrei Jikh"]} for d in (1, 2, 3)})
+doc["days"][gv._today()] = {"calls": 0}
+(Path(tmp) / "gemini_video_budget.json").write_text(json.dumps(doc))
+gv._run_calls = 0
+assert gv.acquire("vid1", TITLE, "Andrei Jikh", post=lambda *a, **k: (_ for _ in ()).throw(AssertionError("no call"))) is None
+assert gv.acquire("vid1", TITLE, AUTHOR, post=post_with(Resp(200, wrap(GOOD)))) is not None
+print("PASS YT-01 Gemini video fallback: keyless off, budget/run cap/429, identity + safety gates, forward-intake only, experimental Q3 admission, call ledger reconciles, 403 author skipped for the day, 20 claims + macro, new-video reserve, unsupported channels")

@@ -53,3 +53,4 @@ jobs:
           PYTHONPATH=. python tests/test_transcript_router.py
           PYTHONPATH=. python tests/test_youtube_learning_archive.py
           PYTHONPATH=. python tests/test_gemini_video.py
+          PYTHONPATH=. python tests/test_yt_daily_report.py

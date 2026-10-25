@@ -8,6 +8,7 @@ GitHub Actions 版:每次运行只做一轮,然后退出(由 cron 每 30 分钟�
 import json, os, time
 import requests
 import wxc_tg_agent as a
+import yt_daily_report
 
 META = os.path.join(a.DATA, "meta.json")
 SERVER_ACTION_URL = os.getenv("MYALPHA_SERVER_ACTION_URL", "https://myalphaview.com/research/server_action_status.json")
@@ -72,6 +73,7 @@ def main():
             a.guarded(a.check_watch, authors)
 
     meta = check_myalpha_server_action(meta)
+    meta = yt_daily_report.maybe_send(meta, a.say)
 
     if offset is not None:
         meta["offset"] = offset
