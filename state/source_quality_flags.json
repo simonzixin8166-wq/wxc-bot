@@ -1,20 +1,20 @@
 {
- "generated_at": "2026-10-24T16:40:42+00:00",
- "records": 2324,
+ "generated_at": "2026-10-25T00:34:51+00:00",
+ "records": 2351,
  "excluded": 22,
  "flag_counts": {
   "invalid_transcript": 22
  },
  "video": {
-  "records": 29,
+  "records": 33,
   "invalid_transcript": 22,
   "note": "video count follows the live feed (18 at the 10-11 inventory, 19 after a new video was captured 10-11 12:45Z)"
  },
  "provenance_counts": {
-  "near_publication_observed": 1204,
+  "near_publication_observed": 1207,
   "backfill_proven": 1060,
   "delayed_capture": 29,
-  "unprovable": 31
+  "unprovable": 55
  },
  "policy": "overlay only; feed/raw files unchanged; near_publication_observed ≠ real-time lock",
  "records_flags": {
@@ -16312,18 +16312,207 @@
   "728f7eae4e0e76a413af": {
    "flags": [],
    "exclude": false,
-   "provenance": "unprovable",
-   "first_git_seen": null,
+   "provenance": "near_publication_observed",
+   "first_git_seen": "2026-10-24T16:40:43Z",
    "published_at_timezone": "unknown"
   },
   "b29787aa9554e2a9dcd9": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "near_publication_observed",
+   "first_git_seen": "2026-10-24T16:40:43Z",
+   "published_at_timezone": "unknown"
+  },
+  "ed533aed8d09dc1c6fbb": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "near_publication_observed",
+   "first_git_seen": "2026-10-24T16:40:43Z",
+   "published_at_timezone": "unknown"
+  },
+  "138b8eb5700150a2f088": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": "2026-10-24T18:51:01Z",
+   "published_at_timezone": "unknown"
+  },
+  "14f62f7adcfbc876549e": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": "2026-10-24T18:51:01Z",
+   "published_at_timezone": "unknown"
+  },
+  "4006518af569a18bcc48": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": "2026-10-24T22:34:08Z",
+   "published_at_timezone": "unknown"
+  },
+  "eea4f04cdf9794336595": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": "2026-10-24T22:34:08Z",
+   "published_at_timezone": "unknown"
+  },
+  "dd1cfd010cecbff64a11": {
    "flags": [],
    "exclude": false,
    "provenance": "unprovable",
    "first_git_seen": null,
    "published_at_timezone": "unknown"
   },
-  "ed533aed8d09dc1c6fbb": {
+  "ccf39b1daa6a4d76e732": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "7ee0b31b9028540a79b8": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "e31cbca0edfb5b6c7b45": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "a1ad7f2eb8a331641f4b": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "b197e0ab509c37f0f40c": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "7a7c9a31dd7f1fd3969e": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "ce1e066b6e7cb6a80e34": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "f392525227ed2c14d50b": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "69f03a4d1c921fafa445": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "6cca0cbfebe4a4bfb7c6": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "5f02203844e78f296097": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "ab1c0232e4021cdf0fc6": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "1dc86be10ec5b23190cd": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "575364eaf2d93e95a731": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "604429d60d605cfa269a": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "7763c7f1b8fab88a9134": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "427742101b539036fb57": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "a5850ef67698cbe2fdea": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "037bd0952638e5a3343b": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "17c09d3f29c76d6a0f09": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "5cea2c33bec20bc8825b": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "a213c2ad1ad82b70a119": {
    "flags": [],
    "exclude": false,
    "provenance": "unprovable",
