@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-10-25T04:40:21Z",
+  "generated_at": "2026-10-25T11:21:51Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -28,7 +28,7 @@
         "title": "（会员第307期）2026年10月19日 25日，重要公司Q3财报后2026、2027前瞻估值，强支撑点位！",
         "url": "https://www.youtube.com/watch?v=e-_qeTZQnkU",
         "published_at": "",
-        "rss_status": "error:HTTPError",
+        "rss_status": "ok",
         "flat_metadata_keys": [
           "channel_id",
           "duration"
@@ -64,11 +64,12 @@
         "video_id": "ecN20bdjkrs",
         "title": "8支重磅股票！买入/加仓，价格点位更新",
         "url": "https://www.youtube.com/watch?v=ecN20bdjkrs",
-        "published_at": "",
-        "rss_status": "error:HTTPError",
+        "published_at": "2026-10-19",
+        "rss_status": "ok",
         "flat_metadata_keys": [
           "channel_id",
-          "duration"
+          "duration",
+          "rss_published_at"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -101,11 +102,12 @@
         "video_id": "8cufVZ_Q39s",
         "title": "Europe Is the Test. America Is Next.",
         "url": "https://www.youtube.com/watch?v=8cufVZ_Q39s",
-        "published_at": "",
-        "rss_status": "error:HTTPError",
+        "published_at": "2026-10-23",
+        "rss_status": "ok",
         "flat_metadata_keys": [
           "channel_id",
-          "duration"
+          "duration",
+          "rss_published_at"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -128,9 +130,9 @@
   "feed_records_added": 0,
   "publication_dates_resolved": 0,
   "rss_status": {
-    "UCFQsi7WaF5X41tcuOryDk8w": "error:HTTPError",
-    "UCGy7SkBjcIAgTiwkXEtPnYg": "error:HTTPError",
-    "UCo2gxyermsLBSCxFHvJs0Zg": "error:HTTPError"
+    "UCFQsi7WaF5X41tcuOryDk8w": "ok",
+    "UCGy7SkBjcIAgTiwkXEtPnYg": "ok",
+    "UCo2gxyermsLBSCxFHvJs0Zg": "ok"
   },
   "historical_backlog_total": 53,
   "discovery_complete": true,
@@ -156,8 +158,19 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "aiO11zglFjc",
-      "title": "美股 NVDA业绩强劲，苦新高已久！META官司和解！CRM加速AI转型业绩上调！",
+      "video_id": "fLp8kUbv_u8",
+      "title": "美股 对冲基金低仓位按兵不动！AMD很猛，SOXX临门！金融XLF、医疗XLV！ADBE财报押注！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "gN9uUJPqipo",
+      "title": "美股 NVDA再增5000亿循环融资！MSFT下月加高护城河！一只加仓计划！BRK二季度加速回购！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -167,8 +180,8 @@
     },
     {
       "author": "老李玩钱",
-      "video_id": "alcGiFrl6k0",
-      "title": "个股点评及买入建议：PLTR，SOFI，GOOG，MSFT，TSLA",
+      "video_id": "hHKD2zuGKuc",
+      "title": "31万美股账户，14支股票加仓、减仓及持仓计划更新！频道暂停通知",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -177,20 +190,9 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "bdzWer7gNII",
-      "title": "美股 OpenAI给半导体打鸡血！SOXX底部已成？ORCL、AMD、NVDA！TSLA遭行政狙击！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "cwQxqL-vC94",
-      "title": "美股 WMT糟糕前瞻大跌还债！ISRG无风起浪！NOW、SPCX！美国债务累积95天走完200年！",
+      "author": "Andrei Jikh",
+      "video_id": "hy90LdpEUvQ",
+      "title": "South Korea’s AI Bubble Just Popped",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
