@@ -1,19 +1,19 @@
 {
   "authors": {
     "BrightLine": {
-      "last_success_at": "2026-10-25T01:32:37.776382+00:00",
-      "last_attempt_at": "2026-10-25T01:32:37.776382+00:00",
+      "last_success_at": "2026-10-25T17:03:21.086550+00:00",
+      "last_attempt_at": "2026-10-25T17:03:21.086550+00:00",
       "scan_complete": true,
       "recovery_days_used": 14,
-      "new_records": 0,
-      "article_links_found": 48,
-      "posts_parsed": 32,
-      "unique_article_ids": 12,
-      "parsed_unique_urls": 12,
-      "feed_present_urls": 12,
+      "new_records": 2,
+      "article_links_found": 50,
+      "posts_parsed": 34,
+      "unique_article_ids": 14,
+      "parsed_unique_urls": 14,
+      "feed_present_urls": 14,
       "missing_from_feed": 0,
       "missing_from_feed_urls": [],
-      "seen_total": 24,
+      "seen_total": 26,
       "archive_months": 1,
       "archive_months_ok": [
         "2026-10"
@@ -23,8 +23,8 @@
       "retention_policy": "no_article_count_cap"
     },
     "yifan99": {
-      "last_success_at": "2026-10-25T01:32:37.776382+00:00",
-      "last_attempt_at": "2026-10-25T01:32:37.776382+00:00",
+      "last_success_at": "2026-10-25T17:03:21.086550+00:00",
+      "last_attempt_at": "2026-10-25T17:03:21.086550+00:00",
       "scan_complete": true,
       "recovery_days_used": 14,
       "new_records": 0,
@@ -45,8 +45,8 @@
       "retention_policy": "no_article_count_cap"
     },
     "麻你": {
-      "last_success_at": "2026-10-25T01:32:37.776382+00:00",
-      "last_attempt_at": "2026-10-25T01:32:37.776382+00:00",
+      "last_success_at": "2026-10-25T17:03:21.086550+00:00",
+      "last_attempt_at": "2026-10-25T17:03:21.086550+00:00",
       "scan_complete": true,
       "recovery_days_used": 14,
       "new_records": 0,
@@ -68,6 +68,6 @@
     }
   },
   "version": 1,
-  "updated_at": "2026-10-25T01:32:37.776382+00:00",
+  "updated_at": "2026-10-25T17:03:21.086550+00:00",
   "policy": "recovery window expands from the last complete scheduled scan; failed archive months or parsed URLs missing from canonical feed do not advance last_success_at; article discovery has no count cap"
 }

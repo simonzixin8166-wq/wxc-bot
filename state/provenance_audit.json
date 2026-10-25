@@ -1,19 +1,19 @@
 {
- "generated_at": "2026-10-25T01:38:09+00:00",
- "records": 2355,
- "without_recorded_provenance": 1228,
+ "generated_at": "2026-10-25T17:10:39+00:00",
+ "records": 2363,
+ "without_recorded_provenance": 1229,
  "derived_for_unrecorded": {
   "near_publication_observed": 339,
-  "backfill_proven": 866,
+  "backfill_proven": 867,
   "delayed_capture": 23
  },
  "recorded_live_but_gap_over_72h": [],
  "video_transcripts": {
-  "excerpt_present": 13,
+  "excerpt_present": 14,
   "provider_navigation_page": 22
  },
  "video_transcript_status": {
-  "available": 35
+  "available": 36
  },
  "method": "first git appearance of the record id in state/research_feed.json vs published_at (timezone not recorded); unprovable is never guessed",
  "rows": [
@@ -26022,6 +26022,97 @@
    "author": "三心三意",
    "recorded_provenance": "live_candidate",
    "published_at": "2026-10-24 16:06:18",
+   "first_git_seen": "2026-10-25T01:38:10Z",
+   "first_git_commit": "6ca37fd3c0e84cb191c0168081db8f24ed1ed7e6",
+   "gap_hours": 9.5,
+   "derived_provenance": "near_publication_observed"
+  },
+  {
+   "id": "5da7e627e1051d2ca06c",
+   "kind": "video",
+   "author": "RhinoFinance / 视野环球财经",
+   "recorded_provenance": null,
+   "published_at": "2026-10-22",
+   "first_git_seen": "2026-10-25T01:43:53Z",
+   "first_git_commit": "cb196c52ceaa4ab1190c119bce3984b8d38d4777",
+   "gap_hours": 73.7,
+   "derived_provenance": "backfill_proven",
+   "transcript_check": "excerpt_present",
+   "transcript_status": "available",
+   "content_quality": "Q3"
+  },
+  {
+   "id": "b40a79537c354e258742",
+   "kind": "forum",
+   "author": "三心三意",
+   "recorded_provenance": "live_candidate",
+   "published_at": "2026-10-25 09:50:08",
+   "first_git_seen": null,
+   "first_git_commit": null,
+   "gap_hours": null,
+   "derived_provenance": "unprovable"
+  },
+  {
+   "id": "00d9c785c39f3c87dcfe",
+   "kind": "forum",
+   "author": "bogbog",
+   "recorded_provenance": "live_candidate",
+   "published_at": "2026-10-25 08:13:38",
+   "first_git_seen": null,
+   "first_git_commit": null,
+   "gap_hours": null,
+   "derived_provenance": "unprovable"
+  },
+  {
+   "id": "8f0db55c7549947d3879",
+   "kind": "forum",
+   "author": "bogbog",
+   "recorded_provenance": "live_candidate",
+   "published_at": "2026-10-25 09:09:21",
+   "first_git_seen": null,
+   "first_git_commit": null,
+   "gap_hours": null,
+   "derived_provenance": "unprovable"
+  },
+  {
+   "id": "6f1566e72135dd8a2602",
+   "kind": "blog",
+   "author": "BrightLine",
+   "recorded_provenance": "live_candidate",
+   "published_at": "2026-10-25",
+   "first_git_seen": null,
+   "first_git_commit": null,
+   "gap_hours": null,
+   "derived_provenance": "unprovable"
+  },
+  {
+   "id": "d77b886ea390afeb356a",
+   "kind": "blog",
+   "author": "BrightLine",
+   "recorded_provenance": "live_candidate",
+   "published_at": "2026-10-24",
+   "first_git_seen": null,
+   "first_git_commit": null,
+   "gap_hours": null,
+   "derived_provenance": "unprovable"
+  },
+  {
+   "id": "5c7b647e2c637318d10f",
+   "kind": "forum",
+   "author": "麻你",
+   "recorded_provenance": "backfill",
+   "published_at": "2026-10-25 09:11:34",
+   "first_git_seen": null,
+   "first_git_commit": null,
+   "gap_hours": null,
+   "derived_provenance": "unprovable"
+  },
+  {
+   "id": "8983056b8c83f49401f7",
+   "kind": "forum",
+   "author": "麻你",
+   "recorded_provenance": "backfill",
+   "published_at": "2026-10-25 09:45:07",
    "first_git_seen": null,
    "first_git_commit": null,
    "gap_hours": null,
