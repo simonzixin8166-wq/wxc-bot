@@ -89,4 +89,5 @@ jobs:
           if [ -f state/youtube_learning_reconciliation.json ]; then git add state/youtube_learning_reconciliation.json; fi
           if [ -f state/youtube_historical_backlog.json ]; then git add state/youtube_historical_backlog.json; fi
           if [ -f state/gemini_video_budget.json ]; then git add state/gemini_video_budget.json; fi
+          if [ -f state/youtube_published_dates.jsonl ]; then git add state/youtube_published_dates.jsonl; fi
           git diff --cached --quiet || (git commit -m "update YouTube forward research" && git pull --rebase origin main && python verify_research_feed.py && git push origin HEAD:main)
