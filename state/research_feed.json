@@ -67866,9 +67866,40 @@
       "intake_class_hint": "live_candidate",
       "capture_mode": "scheduled_board_anchor_scan",
       "forum_board": "tzlc"
+    },
+    {
+      "id": "de43504fd1969bb0e5c8",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-10-24 18:05:07",
+      "title": "核能目前属于lottery板块，变数很大，没有确切的龙头",
+      "url": "https://bbs.wenxuecity.com/cfzh/117219.html",
+      "excerpt": "",
+      "content_chars": 0,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "6529fa98af525fc0d8fe",
+      "parent_post_id": "117219",
+      "attribution_fallback": null,
+      "captured_at": "2026-10-25T01:06:49Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "capture_mode": "scheduled_forum_anchor_scan",
+      "intake_class_hint": "live_candidate"
     }
   ],
-  "updated_at": "2026-10-25T00:34:48Z",
+  "updated_at": "2026-10-25T01:06:49Z",
   "retention_policy": "append_only_no_record_count_cap",
   "historical_recovery": {
     "completed_at": "2026-10-07T13:43:06.018028+00:00",
