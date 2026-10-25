@@ -15,6 +15,7 @@ from __future__ import annotations
 import hashlib
 import json
 import re
+import time
 import os
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
@@ -103,30 +104,49 @@ def _entry_metadata(entry:dict)->dict:
         "release_timestamp":entry.get("release_timestamp"),
     }
 
-def _rss_entries(channel_id:str)->dict[str,dict]:
+RSS_STATUS:dict[str,str]={}
+DATE_HOLD_HOURS=int(os.getenv("YOUTUBE_DATE_HOLD_HOURS","48"))
+DATES_PATH=DATA_DIR/"youtube_published_dates.jsonl"
+
+
+def _rss_entries(channel_id:str, get=None, attempts:int=2)->dict[str,dict]:
+    """Channel RSS (publication dates). Failures are recorded in RSS_STATUS (SRC-01), never silent."""
     if not channel_id:
         return {}
-    try:
-        r=requests.get(
-            f"https://www.youtube.com/feeds/videos.xml?channel_id={channel_id}",
-            timeout=15,
-            headers={"User-Agent":"MyAlphaView/YouTubeResearch"},
-        )
-        r.raise_for_status()
-        root=ET.fromstring(r.text)
-        ns={"atom":"http://www.w3.org/2005/Atom","yt":"http://www.youtube.com/xml/schemas/2015"}
-        out={}
-        for e in root.findall("atom:entry",ns):
-            vid=e.findtext("yt:videoId",default="",namespaces=ns)
-            if not vid:continue
-            out[vid]={
-                "rss_published_at":e.findtext("atom:published",default="",namespaces=ns),
-                "rss_updated_at":e.findtext("atom:updated",default="",namespaces=ns),
-                "rss_title":e.findtext("atom:title",default="",namespaces=ns),
-            }
-        return out
-    except Exception:
-        return {}
+    get=get or requests.get
+    last="error"
+    for i in range(max(1,attempts)):
+        try:
+            out=_rss_parse(get(
+                f"https://www.youtube.com/feeds/videos.xml?channel_id={channel_id}",
+                timeout=15,
+                headers={"User-Agent":"MyAlphaView/YouTubeResearch"},
+            ))
+            RSS_STATUS[channel_id]="ok" if out else "empty"
+            return out
+        except Exception as exc:
+            last=f"error:{type(exc).__name__}"
+            if i+1<attempts:
+                time.sleep(2)
+    RSS_STATUS[channel_id]=last
+    print(f"::warning title=YouTube RSS::channel={channel_id} {last} (publication dates unavailable this run)")
+    return {}
+
+
+def _rss_parse(r)->dict[str,dict]:
+    r.raise_for_status()
+    root=ET.fromstring(r.text)
+    ns={"atom":"http://www.w3.org/2005/Atom","yt":"http://www.youtube.com/xml/schemas/2015"}
+    out={}
+    for e in root.findall("atom:entry",ns):
+        vid=e.findtext("yt:videoId",default="",namespaces=ns)
+        if not vid:continue
+        out[vid]={
+            "rss_published_at":e.findtext("atom:published",default="",namespaces=ns),
+            "rss_updated_at":e.findtext("atom:updated",default="",namespaces=ns),
+            "rss_title":e.findtext("atom:title",default="",namespaces=ns),
+        }
+    return out
 
 def default_list_channel(channel_url:str, limit:int=MAX_LIST_PER_CHANNEL)->list[dict]:
     import yt_dlp
@@ -146,6 +166,7 @@ def default_list_channel(channel_url:str, limit:int=MAX_LIST_PER_CHANNEL)->list[
         if channel_id and not row.get("channel_id"):row["channel_id"]=channel_id
         rid=_video_id(row)
         if rid in rss:row.update(rss[rid])
+        row["rss_status"]=RSS_STATUS.get(channel_id,"no_channel_id")
         rows.append(row)
     return rows
 
@@ -195,6 +216,49 @@ def _owner_summaries()->dict:
         return owner_summary.by_video()
     except Exception:
         return {}
+
+
+def _within_date_hold(prior:dict|None, now:datetime|None=None)->bool:
+    """True while a video first discovered less than DATE_HOLD_HOURS ago is still waiting for its date."""
+    first=str((prior or {}).get("first_discovered_at") or "")
+    if not first:
+        return True  # discovered in this very run
+    try:
+        t=datetime.fromisoformat(first.replace("Z","+00:00"))
+    except ValueError:
+        return False
+    now=now or datetime.now(timezone.utc)
+    return (now-t).total_seconds()<DATE_HOLD_HOURS*3600
+
+
+def resolve_feed_dates(current_entries:dict, feed_records:list, path:Path|None=None, now:str|None=None)->list[dict]:
+    """SRC-01: feed rows admitted without a publication date get an append-only date resolution record once a
+    later RSS listing shows the date. The feed row itself is never rewritten and stays non-forward."""
+    path=path or DATES_PATH
+    have=set()
+    if path.exists():
+        for line in path.read_text(encoding="utf-8").splitlines():
+            try:have.add(json.loads(line).get("video_id"))
+            except ValueError:pass
+    undated={}
+    for row in feed_records:
+        if row.get("source")!="youtube" or str(row.get("published_at") or "").strip():continue
+        url=str(row.get("url") or "")
+        vid=url.split("v=")[-1].split("&")[0] if "v=" in url else ""
+        if vid:undated[vid]=row
+    out=[]
+    for vid,(ch,entry) in sorted(current_entries.items()):
+        d=str(entry.get("rss_published_at") or "")
+        if vid in undated and vid not in have and d[:10]:
+            out.append({"video_id":vid,"published_at":d,"source":"youtube_rss","resolved_at":now or _now(),
+                        "feed_row_id":undated[vid].get("id"),"author":ch.get("author"),
+                        "forward_evidence_eligible":False,
+                        "note":"date found after admission; the feed row stays timestamp-unknown backfill"})
+    if out:
+        path.parent.mkdir(parents=True,exist_ok=True)
+        with path.open("a",encoding="utf-8") as fh:
+            fh.writelines(json.dumps(x,ensure_ascii=False,sort_keys=True)+"\n" for x in out)
+    return out
 
 
 def _gemini_priority(kind:str):
@@ -459,6 +523,7 @@ def collect(
                 "title":newest.get("title"),
                 "url":_canonical_video_url(_video_id(newest)) if _video_id(newest) else None,
                 "published_at":_entry_published(newest),
+                "rss_status":newest.get("rss_status"),
                 "flat_metadata_keys":sorted(
                     k for k in ("rss_published_at","upload_date","timestamp","release_timestamp","duration","channel_id")
                     if newest.get(k) is not None
@@ -623,6 +688,15 @@ def collect(
                             meta.update({k:v for k,v in full.items() if v is not None})
                     except Exception:
                         pass
+                if not _entry_published(meta) and _within_date_hold(prior_pending):
+                    # SRC-01: a just-discovered video without a publication date (e.g. one failed RSS fetch) waits
+                    # for its date instead of being admitted as permanently non-forward; no content/Gemini call.
+                    next_pending[vid]=_pending_record(ch,meta,{"quality":"Q5","provider":"date_hold",
+                                                               "status":"awaiting_publication_date"},prior_pending)
+                    appended.append({"author":ch["author"],"video_id":vid,"title":str(meta.get("title") or ""),
+                                     "admission":"pending_content","was_pending":was_pending,
+                                     "pending_reason":"awaiting_publication_date"})
+                    continue
                 if vid in owner_subs:
                     aq=_owner_acquisition(owner_subs[vid])
                 else:
@@ -698,6 +772,8 @@ def collect(
     # Explicitly account for legacy seen videos that are not represented by
     # either formal forward research, pending acquisition, or historical learning.
     feed_doc=rf._read(rf.FEED_PATH,{"records":[]})
+    dates_resolved=resolve_feed_dates(current_entries,feed_doc.get("records") or [],
+                                      path=Path(rf.FEED_PATH).parent/"youtube_published_dates.jsonl")
     feed_video_ids={
         str((row.get("youtube") or {}).get("video_id") or row.get("video_id") or "")
         for row in (feed_doc.get("records") or [])
@@ -761,6 +837,8 @@ def collect(
         "admitted_from_pending":admitted_from_pending,
         "nonforward_timestamp_unknown_admitted":sum(1 for x in appended if x.get("admission")=="research_feed_nonforward_timestamp_unknown"),
         "feed_records_added":added,
+        "publication_dates_resolved":len(dates_resolved),
+        "rss_status":dict(sorted(RSS_STATUS.items())),
         "historical_backlog_total":len(backlog_rows),
         "discovery_complete":discovery_complete,
         "new_video_diagnostics":appended,

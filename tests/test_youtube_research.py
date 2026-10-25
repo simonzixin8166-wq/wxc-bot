@@ -278,6 +278,15 @@ with tempfile.TemporaryDirectory() as td:
     try:
         yt.collect(unknown_list,unknown_meta,unknown_transcript)
         unknown_entries["@老李玩钱"].insert(0,{"id":"u1","title":"有正文但缺发布时间"})
+        # SRC-01: a just-discovered undated video first waits (no content call) for its publication date
+        out=yt.collect(unknown_list,unknown_meta,unknown_transcript)
+        assert out["feed_records_added"]==0 and out["pending_total"]==1
+        held=yt._read(yt.PENDING_PATH,{"records":[]})["records"][0]
+        assert held["video_id"]=="u1" and held["last_status"]=="awaiting_publication_date"
+        # ... and only after the hold window is it admitted as timestamp-unknown backfill (old behaviour)
+        doc=yt._read(yt.PENDING_PATH,{"records":[]})
+        doc["records"][0]["first_discovered_at"]="2020-01-01T00:00:00Z"
+        yt._write(yt.PENDING_PATH,doc)
         out=yt.collect(unknown_list,unknown_meta,unknown_transcript)
         assert out["feed_records_added"]==1
         assert out["pending_total"]==0
