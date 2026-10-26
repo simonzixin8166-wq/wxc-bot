@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-10-26T12:59:25+00:00",
+  "generated_at": "2026-10-26T19:58:34+00:00",
   "non_gating": true,
   "historical_diagnostic_only": true,
   "probe_count": 23,
@@ -104,12 +104,12 @@
       "role": "market_context",
       "status": "metadata_only",
       "quality": "Q5",
-      "provider": "pickscribe.com",
-      "provider_url": "https://pickscribe.com/v/gRrHFoDzRHs/",
-      "content_origin": "third_party_transcript",
+      "provider": "metadata_only",
+      "provider_url": "",
+      "content_origin": "metadata_only",
       "timestamp_evidence": false,
       "rule_candidate_allowed": false,
-      "chars": 338,
+      "chars": 0,
       "note": "Derived from the same historical acquisition pass; no second provider request."
     },
     {

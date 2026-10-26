@@ -261,15 +261,15 @@
       ]
     },
     "2026-10-26": {
-      "calls": 4,
+      "calls": 5,
       "admitted": 0,
       "rejected": 0,
       "errors": 4,
       "reconciliation": {
         "status": "COMPLETE",
-        "calls_billed": 4,
+        "calls_billed": 5,
         "calls_refunded_503": 0,
-        "detail_rows": 4,
+        "detail_rows": 5,
         "missing_detail_rows": 0,
         "counter_mismatch": []
       },
@@ -309,8 +309,18 @@
           "author": "老李玩钱",
           "title": "当前美股的泡沫到底有多大？NVDA财报解读及操作建议",
           "detail": "ReadTimeout"
+        },
+        {
+          "video_id": "8uy8c4S2BW4",
+          "outcome": "http_429",
+          "at": "19:56:13Z",
+          "model": "gemini-3.5-flash",
+          "author": "老李玩钱",
+          "title": "英伟达财报渡劫！依然长期看好",
+          "detail": "{\"error\":{\"message\":\"Your project has exceeded a quota. See https://ai.dev/rate-limit to manage your rate limits.\",\"code\":\"too_many_requests\"}}"
         }
-      ]
+      ],
+      "exhausted": true
     }
   },
   "version": 1,
