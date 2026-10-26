@@ -259,6 +259,40 @@
       "skip_authors_403": [
         "RhinoFinance / 视野环球财经"
       ]
+    },
+    "2026-10-26": {
+      "calls": 2,
+      "admitted": 0,
+      "rejected": 0,
+      "errors": 2,
+      "reconciliation": {
+        "status": "COMPLETE",
+        "calls_billed": 2,
+        "calls_refunded_503": 0,
+        "detail_rows": 2,
+        "missing_detail_rows": 0,
+        "counter_mismatch": []
+      },
+      "recent": [
+        {
+          "video_id": "JlFrJ45B6zU",
+          "outcome": "exception",
+          "at": "04:44:59Z",
+          "model": "gemini-3.8-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 资本支出：三季度增速见顶！SOXX、SMH反复拉扯！UNH已计价，JPM不及格！",
+          "detail": "ReadTimeout"
+        },
+        {
+          "video_id": "ttrjfdl-Ne4",
+          "outcome": "exception",
+          "at": "04:48:00Z",
+          "model": "gemini-3.8-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 短期洗牌，还是大跌开始？CRWV信贷引发AI交易混乱！ASML财报粗犷，叫好不叫座！",
+          "detail": "ReadTimeout"
+        }
+      ]
     }
   },
   "version": 1,

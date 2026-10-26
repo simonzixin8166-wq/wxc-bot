@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-10-25T22:33:37Z",
+  "generated_at": "2026-10-26T04:48:37Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -28,7 +28,7 @@
         "title": "（会员第307期）2026年10月19日 25日，重要公司Q3财报后2026、2027前瞻估值，强支撑点位！",
         "url": "https://www.youtube.com/watch?v=e-_qeTZQnkU",
         "published_at": "",
-        "rss_status": "ok",
+        "rss_status": "error:HTTPError",
         "flat_metadata_keys": [
           "channel_id",
           "duration"
@@ -64,12 +64,11 @@
         "video_id": "ecN20bdjkrs",
         "title": "8支重磅股票！买入/加仓，价格点位更新",
         "url": "https://www.youtube.com/watch?v=ecN20bdjkrs",
-        "published_at": "2026-10-19",
-        "rss_status": "ok",
+        "published_at": "",
+        "rss_status": "error:HTTPError",
         "flat_metadata_keys": [
           "channel_id",
-          "duration",
-          "rss_published_at"
+          "duration"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -102,12 +101,11 @@
         "video_id": "8cufVZ_Q39s",
         "title": "Europe Is the Test. America Is Next.",
         "url": "https://www.youtube.com/watch?v=8cufVZ_Q39s",
-        "published_at": "2026-10-23",
-        "rss_status": "ok",
+        "published_at": "",
+        "rss_status": "error:HTTPError",
         "flat_metadata_keys": [
           "channel_id",
-          "duration",
-          "rss_published_at"
+          "duration"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -130,9 +128,9 @@
   "feed_records_added": 0,
   "publication_dates_resolved": 0,
   "rss_status": {
-    "UCFQsi7WaF5X41tcuOryDk8w": "ok",
-    "UCGy7SkBjcIAgTiwkXEtPnYg": "ok",
-    "UCo2gxyermsLBSCxFHvJs0Zg": "ok"
+    "UCFQsi7WaF5X41tcuOryDk8w": "error:HTTPError",
+    "UCGy7SkBjcIAgTiwkXEtPnYg": "error:HTTPError",
+    "UCo2gxyermsLBSCxFHvJs0Zg": "error:HTTPError"
   },
   "historical_backlog_total": 53,
   "discovery_complete": true,
@@ -150,8 +148,8 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "zscZ446Irdk",
-      "title": "（会员第302期）胜率最高的9种买点！个人经验干货分享！",
+      "video_id": "A4p5t_F4mQs",
+      "title": "（会员第306期）补充26年8月24-10月09，2026年10月12日-16日，重要公司Q3财报后2026、2027前瞻估值，强支撑点位！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -161,8 +159,16 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "xOY53crL1ZA",
-      "title": "（会员第305期）掌握数据，跟随趋势！如何追踪标普、个股、EPS业绩修正？几个隐藏的免费数据入口！使用方法！",
+      "video_id": "e-_qeTZQnkU",
+      "title": "（会员第307期）2026年10月19日 25日，重要公司Q3财报后2026、2027前瞻估值，强支撑点位！",
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "awaiting_publication_date"
+    },
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "-KAra9tD4RU",
+      "title": "（会员第297期）2026年8月03日-07日，重要公司Q2财报后2026、2027前瞻估值，强支撑点位！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -171,20 +177,9 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "Andrei Jikh",
-      "video_id": "7-lWx78nAQ4",
-      "title": "The Debt Spiral Has Started",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "Andrei Jikh",
-      "video_id": "g1kgEiP1v10",
-      "title": "Trump Just Started The Debt Spiral",
+      "author": "老李玩钱",
+      "video_id": "0KgZcbhZoXk",
+      "title": "2支被忽略的科技巨头！分析与买入建议",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -194,8 +189,8 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "cr3MV3KTHRE",
-      "title": "美股 对冲基金，抛售哪些？做多哪些？META、MSFT、XLI，存储重伤，竞争加剧！MU、SNDK位置！",
+      "video_id": "0w77lIBdCn0",
+      "title": "美股 机构弹药见底！下一步，暴风雨？平静？TSLA、IGV、AVGO！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
