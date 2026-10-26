@@ -288,7 +288,7 @@
     },
     "2026-10-26": {
       "telegram:send_message": {
-        "count": 2,
+        "count": 3,
         "paid": false
       },
       "telegram:get_updates": {
