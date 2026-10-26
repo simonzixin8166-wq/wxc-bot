@@ -261,15 +261,15 @@
       ]
     },
     "2026-10-26": {
-      "calls": 2,
+      "calls": 4,
       "admitted": 0,
       "rejected": 0,
-      "errors": 2,
+      "errors": 4,
       "reconciliation": {
         "status": "COMPLETE",
-        "calls_billed": 2,
+        "calls_billed": 4,
         "calls_refunded_503": 0,
-        "detail_rows": 2,
+        "detail_rows": 4,
         "missing_detail_rows": 0,
         "counter_mismatch": []
       },
@@ -290,6 +290,24 @@
           "model": "gemini-3.8-flash",
           "author": "RhinoFinance / 视野环球财经",
           "title": "美股 短期洗牌，还是大跌开始？CRWV信贷引发AI交易混乱！ASML财报粗犷，叫好不叫座！",
+          "detail": "ReadTimeout"
+        },
+        {
+          "video_id": "16oTiM8o8ic",
+          "outcome": "http_403",
+          "at": "12:55:44Z",
+          "model": "gemini-3.8-flash",
+          "author": "Andrei Jikh",
+          "title": "My Alternative Investment Portfolio (Pokemon Edition)",
+          "detail": "{\"error\":{\"message\":\"The caller does not have permission\",\"code\":\"permission_denied\"}}"
+        },
+        {
+          "video_id": "1QM5vfCkId0",
+          "outcome": "exception",
+          "at": "12:58:47Z",
+          "model": "gemini-3.8-flash",
+          "author": "老李玩钱",
+          "title": "当前美股的泡沫到底有多大？NVDA财报解读及操作建议",
           "detail": "ReadTimeout"
         }
       ]

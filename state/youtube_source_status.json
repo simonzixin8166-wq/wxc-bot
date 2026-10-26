@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-10-26T04:48:37Z",
+  "generated_at": "2026-10-26T13:00:28Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -28,7 +28,7 @@
         "title": "（会员第307期）2026年10月19日 25日，重要公司Q3财报后2026、2027前瞻估值，强支撑点位！",
         "url": "https://www.youtube.com/watch?v=e-_qeTZQnkU",
         "published_at": "",
-        "rss_status": "error:HTTPError",
+        "rss_status": "ok",
         "flat_metadata_keys": [
           "channel_id",
           "duration"
@@ -64,11 +64,12 @@
         "video_id": "ecN20bdjkrs",
         "title": "8支重磅股票！买入/加仓，价格点位更新",
         "url": "https://www.youtube.com/watch?v=ecN20bdjkrs",
-        "published_at": "",
-        "rss_status": "error:HTTPError",
+        "published_at": "2026-10-19",
+        "rss_status": "ok",
         "flat_metadata_keys": [
           "channel_id",
-          "duration"
+          "duration",
+          "rss_published_at"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -101,11 +102,12 @@
         "video_id": "8cufVZ_Q39s",
         "title": "Europe Is the Test. America Is Next.",
         "url": "https://www.youtube.com/watch?v=8cufVZ_Q39s",
-        "published_at": "",
-        "rss_status": "error:HTTPError",
+        "published_at": "2026-10-23",
+        "rss_status": "ok",
         "flat_metadata_keys": [
           "channel_id",
-          "duration"
+          "duration",
+          "rss_published_at"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -128,9 +130,9 @@
   "feed_records_added": 0,
   "publication_dates_resolved": 0,
   "rss_status": {
-    "UCFQsi7WaF5X41tcuOryDk8w": "error:HTTPError",
-    "UCGy7SkBjcIAgTiwkXEtPnYg": "error:HTTPError",
-    "UCo2gxyermsLBSCxFHvJs0Zg": "error:HTTPError"
+    "UCFQsi7WaF5X41tcuOryDk8w": "ok",
+    "UCGy7SkBjcIAgTiwkXEtPnYg": "ok",
+    "UCo2gxyermsLBSCxFHvJs0Zg": "ok"
   },
   "historical_backlog_total": 53,
   "discovery_complete": true,
@@ -147,39 +149,9 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "A4p5t_F4mQs",
-      "title": "（会员第306期）补充26年8月24-10月09，2026年10月12日-16日，重要公司Q3财报后2026、2027前瞻估值，强支撑点位！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "e-_qeTZQnkU",
-      "title": "（会员第307期）2026年10月19日 25日，重要公司Q3财报后2026、2027前瞻估值，强支撑点位！",
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "awaiting_publication_date"
-    },
-    {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "-KAra9tD4RU",
-      "title": "（会员第297期）2026年8月03日-07日，重要公司Q2财报后2026、2027前瞻估值，强支撑点位！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
       "author": "老李玩钱",
-      "video_id": "0KgZcbhZoXk",
-      "title": "2支被忽略的科技巨头！分析与买入建议",
+      "video_id": "6_GvmiNgd4M",
+      "title": "美股7巨头，价格已到位！买入/加仓价格点位更新",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -189,8 +161,41 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "0w77lIBdCn0",
-      "title": "美股 机构弹药见底！下一步，暴风雨？平静？TSLA、IGV、AVGO！",
+      "video_id": "71FEJcz9VCY",
+      "title": "美股 凯投宏观：AI泡沫潜在破灭，五个警告信号！8月财政报告恶化，利息飙升！SOXX跟踪！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "7IraEqi0ZKs",
+      "title": "美股 机构二季度13 F，加减仓哪些！大空头Michael Burry最新操作，真的相当空！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "Andrei Jikh",
+      "video_id": "87NzxCEUQlw",
+      "title": "China Just Shut Down Gold Trading",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "8DY3zEBTFZ8",
+      "title": "美股 系统准备重新武装杠杆！MSFT再跌一天修复！半导体、软件，又跷跷板？ CRWV、NBIS、LITE、COHR！APP再跟踪！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
