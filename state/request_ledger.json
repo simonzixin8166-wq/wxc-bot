@@ -302,7 +302,7 @@
     },
     "2026-10-27": {
       "telegram:send_message": {
-        "count": 7,
+        "count": 8,
         "paid": false
       },
       "telegram:get_updates": {
