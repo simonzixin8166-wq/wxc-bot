@@ -321,6 +321,39 @@
         }
       ],
       "exhausted": true
+    },
+    "2026-10-27": {
+      "calls": 2,
+      "admitted": 1,
+      "rejected": 1,
+      "errors": 0,
+      "reconciliation": {
+        "status": "COMPLETE",
+        "calls_billed": 2,
+        "calls_refunded_503": 0,
+        "detail_rows": 2,
+        "missing_detail_rows": 0,
+        "counter_mismatch": []
+      },
+      "recent": [
+        {
+          "video_id": "O_xE_bGbwTI",
+          "outcome": "admitted",
+          "at": "05:02:39Z",
+          "model": "gemini-3.8-flash",
+          "author": "老李玩钱",
+          "title": "美股形势依然不明朗！要卖股票了？！"
+        },
+        {
+          "video_id": "PDAHTpp2c78",
+          "outcome": "identity_mismatch",
+          "at": "05:03:40Z",
+          "model": "gemini-3.5-flash",
+          "author": "老李玩钱",
+          "title": "摩根大通：标普500今年将下跌15%",
+          "detail": "seen=\"JPMorgan says higher oil prices could spark a 'domino effect\" channel='老李美股'"
+        }
+      ]
     }
   },
   "version": 1,

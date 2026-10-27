@@ -70512,9 +70512,174 @@
       "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
       "capture_mode": "scheduled_forum_anchor_scan",
       "intake_class_hint": "live_candidate"
+    },
+    {
+      "id": "83c4a9b6f883b24561f0",
+      "source": "youtube",
+      "source_kind": "video",
+      "author": "老李玩钱",
+      "published_at": "",
+      "title": "美股形势依然不明朗！要卖股票了？！",
+      "url": "https://www.youtube.com/watch?v=O_xE_bGbwTI",
+      "excerpt": "[Gemini 视频理解 · 未验证] 老李分享美股震荡行情下是否该卖股票的逻辑。核心原则是不要试图择时预测市场（never time the market），而是基于投资组合的仓位管理控制风险。建议投资者保留至少30%以上的现金仓位作为安全防线。标普500在6700-7000点震荡区间内选择按兵不动；若跌至6540-6700区间考虑加仓优质股，若涨至7000点附近则考虑减仓增加现金储备。\n- [01:25 neutral] 不要根据预测市场来决定是否卖出股票（never time the market）\n- [05:40 neutral] 卖股票应根据投资组合的仓位管理和仓位控制来决定\n- [08:34 neutral] 现阶段应保持股票持仓的同时留有足够现金，建议保留30%以上的现金仓位\n- [08:00 ",
+      "content_chars": 782,
+      "semantic_content_chars": 782,
+      "content_filtering": {
+        "filter": "youtube_promotion_noise_v1",
+        "input_units": 12,
+        "removed_units": 0,
+        "removed_ratio": 0.0,
+        "promotion_noise_detected": false
+      },
+      "images_count": 0,
+      "themes_hint": [
+        "风险管理"
+      ],
+      "symbols": [
+        "MU",
+        "SPX"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "captured_at": "2026-10-27T05:02:39Z",
+      "source_role": "rule_supply",
+      "transcript_status": "available",
+      "content_quality": "Q3",
+      "content_provider": "gemini_video",
+      "content_provider_url": "https://www.youtube.com/watch?v=O_xE_bGbwTI",
+      "content_origin": "gemini_video_understanding",
+      "timestamp_evidence": true,
+      "rule_candidate_allowed": false,
+      "source_notice": "YouTube正文可用于非Forward语义学习；可靠发布时间缺失，因此强制按backfill处理，禁止计入Forward Evidence或Promotion。",
+      "claims": [
+        {
+          "symbol": "VOO",
+          "stance": "hold",
+          "stance_cues": [
+            "hold"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "12365a15f5b6157374541f54a6c65a35911b7df86fdbf32893eb28a382744dde",
+          "evidence_chars": 57
+        },
+        {
+          "symbol": "VOO",
+          "stance": "add",
+          "stance_cues": [
+            "add",
+            "buy"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "5595e352a11c9a276092cdec2c65631712e9c6d542784ff7ffaab5937859d269",
+          "evidence_chars": 65
+        },
+        {
+          "symbol": "VOO",
+          "stance": "trim",
+          "stance_cues": [
+            "trim",
+            "sell"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "dc2d387a4aef111c36e1cac92d6155b89a20ba484b3fba7bbb677a8c59d0b076",
+          "evidence_chars": 61
+        }
+      ],
+      "claims_status": "experimental_unvalidated",
+      "video_claims": [
+        {
+          "claim": "不要根据预测市场来决定是否卖出股票（never time the market）",
+          "stance": "neutral",
+          "price": null,
+          "timestamp": "01:25",
+          "evidence_mode": "spoken_explicit",
+          "confidence": "high",
+          "symbol": null,
+          "symbol_check": null
+        },
+        {
+          "claim": "卖股票应根据投资组合的仓位管理和仓位控制来决定",
+          "stance": "neutral",
+          "price": null,
+          "timestamp": "05:40",
+          "evidence_mode": "spoken_explicit",
+          "confidence": "high",
+          "symbol": null,
+          "symbol_check": null
+        },
+        {
+          "claim": "现阶段应保持股票持仓的同时留有足够现金，建议保留30%以上的现金仓位",
+          "stance": "neutral",
+          "price": null,
+          "timestamp": "08:34",
+          "evidence_mode": "spoken_explicit",
+          "confidence": "high",
+          "symbol": null,
+          "symbol_check": null
+        },
+        {
+          "claim": "满仓或加杠杆的投资者应先去杠杆，适当减仓囤积现金",
+          "stance": "sell",
+          "price": null,
+          "timestamp": "08:00",
+          "evidence_mode": "spoken_explicit",
+          "confidence": "high",
+          "symbol": null,
+          "symbol_check": null
+        },
+        {
+          "claim": "标普500在6700点至7000点震荡区间内选择按兵不动",
+          "stance": "hold",
+          "price": "6700-7000",
+          "timestamp": "12:38",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "SPX",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "若标普500跌破6700点跌至6540-6700区间，会选择对部分股票加仓",
+          "stance": "buy",
+          "price": "6540-6700",
+          "timestamp": "13:13",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "SPX",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "若标普500上涨达到7000点附近压力位，会考虑减仓或卖出部分股票增加现金",
+          "stance": "sell",
+          "price": "7000",
+          "timestamp": "13:34",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "SPX",
+          "symbol_check": "listed"
+        }
+      ],
+      "video_claims_model": "gemini-3.8-flash",
+      "video_macro": [],
+      "video_observed_title": "美股大跌，要不要卖股票？",
+      "validation_status": "pending_owner_spot_check",
+      "forward_evidence_eligible": false,
+      "intake_class_hint": "backfill",
+      "capture_mode": "youtube_timestamp_unknown_learning",
+      "timestamp_confidence": "missing"
     }
   ],
-  "updated_at": "2026-10-27T01:36:47Z",
+  "updated_at": "2026-10-27T05:03:50Z",
   "retention_policy": "append_only_no_record_count_cap",
   "historical_recovery": {
     "completed_at": "2026-10-07T13:43:06.018028+00:00",
