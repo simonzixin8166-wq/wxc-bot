@@ -1,8 +1,8 @@
 {
   "version": 3,
-  "updated_at": "2026-10-26T19:18:11.556792+00:00",
-  "anchor_id": "117363",
-  "previous_anchor_id": "117278",
+  "updated_at": "2026-10-27T01:36:47.328946+00:00",
+  "anchor_id": "117412",
+  "previous_anchor_id": "117363",
   "legacy_seen_anchor_id": "117249",
   "complete": true,
   "continuity_complete": true,
@@ -28,16 +28,16 @@
     "bogbog"
   ],
   "new_entries_by_author": {
-    "三心三意": 19,
+    "三心三意": 17,
     "yifan99": 0,
-    "我是一只井底蛙": 3,
-    "bogbog": 9
+    "我是一只井底蛙": 0,
+    "bogbog": 0
   },
   "processed_entries_by_author": {
-    "三心三意": 19,
+    "三心三意": 17,
     "yifan99": 0,
-    "我是一只井底蛙": 3,
-    "bogbog": 9
+    "我是一只井底蛙": 0,
+    "bogbog": 0
   },
   "unresolved_entries_by_author": {
     "三心三意": 0,
@@ -46,6 +46,6 @@
     "bogbog": 0
   },
   "unresolved_entries_total": 0,
-  "feed_records_added": 31,
+  "feed_records_added": 17,
   "guardrail": "complete requires both continuity to the prior anchor and durable processing of every newly visible entry. Unresolved entries keep the batch partial, block anchor advancement, and prevent Genuine Forward admission."
 }
