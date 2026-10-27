@@ -302,15 +302,15 @@
     },
     "2026-10-27": {
       "telegram:send_message": {
-        "count": 3,
+        "count": 6,
         "paid": false
       },
       "telegram:get_updates": {
-        "count": 1,
+        "count": 2,
         "paid": false
       },
       "myalphaview:server_action_status": {
-        "count": 1,
+        "count": 2,
         "paid": false
       }
     }
