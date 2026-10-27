@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-10-27T05:04:39Z",
+  "generated_at": "2026-10-27T12:11:39Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -27,11 +27,12 @@
         "video_id": "QHrNWTgD7DA",
         "title": "美股 三个需求利好推动SOXX反弹！大科技资本支出四选一！Anthropic更新发布S-1文件！",
         "url": "https://www.youtube.com/watch?v=QHrNWTgD7DA",
-        "published_at": "",
-        "rss_status": "error:HTTPError",
+        "published_at": "2026-10-27",
+        "rss_status": "ok",
         "flat_metadata_keys": [
           "channel_id",
-          "duration"
+          "duration",
+          "rss_published_at"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -64,11 +65,12 @@
         "video_id": "XE9OsZMUeRg",
         "title": "本周科技巨头财报叠加美联储会议！四大科技巨头+SOFI，财报前瞻及操作建议",
         "url": "https://www.youtube.com/watch?v=XE9OsZMUeRg",
-        "published_at": "",
-        "rss_status": "error:HTTPError",
+        "published_at": "2026-10-26",
+        "rss_status": "ok",
         "flat_metadata_keys": [
           "channel_id",
-          "duration"
+          "duration",
+          "rss_published_at"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -101,11 +103,12 @@
         "video_id": "8cufVZ_Q39s",
         "title": "Europe Is the Test. America Is Next.",
         "url": "https://www.youtube.com/watch?v=8cufVZ_Q39s",
-        "published_at": "",
-        "rss_status": "error:HTTPError",
+        "published_at": "2026-10-23",
+        "rss_status": "ok",
         "flat_metadata_keys": [
           "channel_id",
-          "duration"
+          "duration",
+          "rss_published_at"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -128,13 +131,35 @@
   "feed_records_added": 0,
   "publication_dates_resolved": 0,
   "rss_status": {
-    "UCFQsi7WaF5X41tcuOryDk8w": "error:HTTPError",
-    "UCGy7SkBjcIAgTiwkXEtPnYg": "error:HTTPError",
-    "UCo2gxyermsLBSCxFHvJs0Zg": "error:HTTPError"
+    "UCFQsi7WaF5X41tcuOryDk8w": "ok",
+    "UCGy7SkBjcIAgTiwkXEtPnYg": "ok",
+    "UCo2gxyermsLBSCxFHvJs0Zg": "ok"
   },
   "historical_backlog_total": 53,
   "discovery_complete": true,
   "new_video_diagnostics": [
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "QHrNWTgD7DA",
+      "title": "美股 三个需求利好推动SOXX反弹！大科技资本支出四选一！Anthropic更新发布S-1文件！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "老李玩钱",
+      "video_id": "XE9OsZMUeRg",
+      "title": "本周科技巨头财报叠加美联储会议！四大科技巨头+SOFI，财报前瞻及操作建议",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
     {
       "author": "RhinoFinance / 视野环球财经",
       "video_id": "4_uytm7I_XQ",
@@ -148,24 +173,8 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "QHrNWTgD7DA",
-      "title": "美股 三个需求利好推动SOXX反弹！大科技资本支出四选一！Anthropic更新发布S-1文件！",
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "awaiting_publication_date"
-    },
-    {
-      "author": "老李玩钱",
-      "video_id": "XE9OsZMUeRg",
-      "title": "本周科技巨头财报叠加美联储会议！四大科技巨头+SOFI，财报前瞻及操作建议",
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "awaiting_publication_date"
-    },
-    {
-      "author": "老李玩钱",
-      "video_id": "Q5xMtR4SWP8",
-      "title": "美股高位摇摇欲坠！要回调了？操作上的建议",
+      "video_id": "Wpbwn2Pj3kQ",
+      "title": "美股 META、AMD联手起飞！QQQ、SOXX、IGV，全部突破！对冲基金、散户，在买什么？",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -175,8 +184,8 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "RgGeU0w9GZo",
-      "title": "美股 NVDA黄仁勋“喊单”奏效！AVGO有惊无险，PANW放缓代价！褐皮书：物价，消费，就业，增长！",
+      "video_id": "XFCufoG9DVc",
+      "title": "美股 META肉搏AMZN，别被带歪！SHOP受益！AI巨头加速推新模型！德州更严厉暂停数据中心！金融XLF怎么了？",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -185,9 +194,9 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "老李玩钱",
-      "video_id": "SJERXQX7tAU",
-      "title": "5大科技，机会来了，最新买入/加仓价格点位！另外准备减仓1支股",
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "XdQF1csLbnk",
+      "title": "美股 QQQ、IWM、SOXX、SMH、风险位置！SPY、IGV相对安全！持仓计划更新！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,

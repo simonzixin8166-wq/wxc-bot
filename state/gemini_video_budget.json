@@ -323,15 +323,15 @@
       "exhausted": true
     },
     "2026-10-27": {
-      "calls": 2,
+      "calls": 4,
       "admitted": 1,
-      "rejected": 1,
+      "rejected": 3,
       "errors": 0,
       "reconciliation": {
         "status": "COMPLETE",
-        "calls_billed": 2,
+        "calls_billed": 4,
         "calls_refunded_503": 0,
-        "detail_rows": 2,
+        "detail_rows": 4,
         "missing_detail_rows": 0,
         "counter_mismatch": []
       },
@@ -352,6 +352,24 @@
           "author": "老李玩钱",
           "title": "摩根大通：标普500今年将下跌15%",
           "detail": "seen=\"JPMorgan says higher oil prices could spark a 'domino effect\" channel='老李美股'"
+        },
+        {
+          "video_id": "QHrNWTgD7DA",
+          "outcome": "identity_mismatch",
+          "at": "12:09:03Z",
+          "model": "gemini-3.5-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 三个需求利好推动SOXX反弹！大科技资本支出四选一！Anthropic更新发布S-1文件！",
+          "detail": "seen='视野环球财经 20241028' channel='视野环球财经'"
+        },
+        {
+          "video_id": "XE9OsZMUeRg",
+          "outcome": "identity_mismatch",
+          "at": "12:10:26Z",
+          "model": "gemini-3.5-flash",
+          "author": "老李玩钱",
+          "title": "本周科技巨头财报叠加美联储会议！四大科技巨头+SOFI，财报前瞻及操作建议",
+          "detail": "seen='None' channel='老李'"
         }
       ]
     }
