@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-10-27T12:11:39Z",
+  "generated_at": "2026-10-27T18:00:59Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -172,9 +172,9 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "Wpbwn2Pj3kQ",
-      "title": "美股 META、AMD联手起飞！QQQ、SOXX、IGV，全部突破！对冲基金、散户，在买什么？",
+      "author": "Andrei Jikh",
+      "video_id": "ZEi5tVIXWyc",
+      "title": "South Korea’s AI Bubble Just Popped",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -183,9 +183,9 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "XFCufoG9DVc",
-      "title": "美股 META肉搏AMZN，别被带歪！SHOP受益！AI巨头加速推新模型！德州更严厉暂停数据中心！金融XLF怎么了？",
+      "author": "老李玩钱",
+      "video_id": "ZGYWudfZMM4",
+      "title": "美股重回高位，要卖股票了吗？到底什么时候该卖出股票",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -194,9 +194,9 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "XdQF1csLbnk",
-      "title": "美股 QQQ、IWM、SOXX、SMH、风险位置！SPY、IGV相对安全！持仓计划更新！",
+      "author": "Andrei Jikh",
+      "video_id": "Z_xvkbGWauU",
+      "title": "China Just Shut Down Gold Trading",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,

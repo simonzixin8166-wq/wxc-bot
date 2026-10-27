@@ -323,15 +323,15 @@
       "exhausted": true
     },
     "2026-10-27": {
-      "calls": 4,
+      "calls": 5,
       "admitted": 1,
       "rejected": 3,
       "errors": 0,
       "reconciliation": {
         "status": "COMPLETE",
-        "calls_billed": 4,
+        "calls_billed": 5,
         "calls_refunded_503": 0,
-        "detail_rows": 4,
+        "detail_rows": 5,
         "missing_detail_rows": 0,
         "counter_mismatch": []
       },
@@ -370,8 +370,18 @@
           "author": "老李玩钱",
           "title": "本周科技巨头财报叠加美联储会议！四大科技巨头+SOFI，财报前瞻及操作建议",
           "detail": "seen='None' channel='老李'"
+        },
+        {
+          "video_id": "QHrNWTgD7DA",
+          "outcome": "http_429",
+          "at": "17:58:47Z",
+          "model": "gemini-3.5-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 三个需求利好推动SOXX反弹！大科技资本支出四选一！Anthropic更新发布S-1文件！",
+          "detail": "{\"error\":{\"message\":\"Your project has exceeded a quota. See https://ai.dev/rate-limit to manage your rate limits.\",\"code\":\"too_many_requests\"}}"
         }
-      ]
+      ],
+      "exhausted": true
     }
   },
   "version": 1,
