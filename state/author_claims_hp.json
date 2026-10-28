@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-10-27T18:49:17+00:00",
+ "generated_at": "2026-10-28T01:42:17+00:00",
  "extractor": "ce-5-hp",
  "lookback_days": 21,
- "records_scanned": 985,
+ "records_scanned": 996,
  "records_excluded_by_flags": 0,
  "claims": [
   {
@@ -100,22 +100,6 @@
    "instrument": "stock",
    "price": null,
    "sentence_sha256": "cdf43596e8897d6211e1026d6914010769382e88aa67e986267dd009734ef643"
-  },
-  {
-   "record_id": "dcb938407a0c1550dea3",
-   "author": "麻你",
-   "source_kind": "blog",
-   "url": "https://blog.wenxuecity.com/myblog/78105/202610/4859.html",
-   "published_at": "2026-10-07",
-   "first_seen": "2026-10-09T06:03:55Z",
-   "provenance": "delayed_capture",
-   "symbol": "VGT",
-   "stance": "hold",
-   "status": "opinion",
-   "hp_gate": "explicit_position_hold",
-   "instrument": "stock",
-   "price": null,
-   "sentence_sha256": "099ad7b73b2baa9b96beb804728c1f47fc11a06daa5494a65f65f5fd82277fac"
   },
   {
    "record_id": "7bcba0fdb0f05f2a3ab5",
@@ -1213,7 +1197,7 @@
    "published_at": "2026-10-24 10:14:37",
    "first_seen": "2026-10-25T00:34:51Z",
    "provenance": "near_publication_observed",
-   "symbol": "CRWV",
+   "symbol": "NBIS",
    "stance": "buy",
    "status": "conditional",
    "hp_gate": "first_person_conditional_plan",
@@ -1229,7 +1213,7 @@
    "published_at": "2026-10-24 10:14:37",
    "first_seen": "2026-10-25T00:34:51Z",
    "provenance": "near_publication_observed",
-   "symbol": "NBIS",
+   "symbol": "CRWV",
    "stance": "buy",
    "status": "conditional",
    "hp_gate": "first_person_conditional_plan",

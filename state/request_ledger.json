@@ -313,6 +313,12 @@
         "count": 5,
         "paid": false
       }
+    },
+    "2026-10-28": {
+      "telegram:send_message": {
+        "count": 1,
+        "paid": false
+      }
     }
   }
 }
