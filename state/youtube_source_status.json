@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-10-28T16:37:40Z",
+  "generated_at": "2026-10-28T22:33:16Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -27,12 +27,11 @@
         "video_id": "H8eS_qeBelc",
         "title": "美股 GOOG、MSFT、AMZN！多空决战有望本周分胜负！前方SOXX大波动！大摩：好消息和坏消息！",
         "url": "https://www.youtube.com/watch?v=H8eS_qeBelc",
-        "published_at": "2026-10-28",
-        "rss_status": "ok",
+        "published_at": "",
+        "rss_status": "error:HTTPError",
         "flat_metadata_keys": [
           "channel_id",
-          "duration",
-          "rss_published_at"
+          "duration"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -65,12 +64,11 @@
         "video_id": "XE9OsZMUeRg",
         "title": "本周科技巨头财报叠加美联储会议！四大科技巨头+SOFI，财报前瞻及操作建议",
         "url": "https://www.youtube.com/watch?v=XE9OsZMUeRg",
-        "published_at": "2026-10-26",
-        "rss_status": "ok",
+        "published_at": "",
+        "rss_status": "error:HTTPError",
         "flat_metadata_keys": [
           "channel_id",
-          "duration",
-          "rss_published_at"
+          "duration"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -104,7 +102,7 @@
         "title": "My Thoughts On Bitcoin",
         "url": "https://www.youtube.com/watch?v=1lspa5l4kxs",
         "published_at": "",
-        "rss_status": "ok",
+        "rss_status": "error:HTTPError",
         "flat_metadata_keys": [
           "channel_id",
           "duration"
@@ -130,9 +128,9 @@
   "feed_records_added": 0,
   "publication_dates_resolved": 0,
   "rss_status": {
-    "UCFQsi7WaF5X41tcuOryDk8w": "ok",
-    "UCGy7SkBjcIAgTiwkXEtPnYg": "ok",
-    "UCo2gxyermsLBSCxFHvJs0Zg": "ok"
+    "UCFQsi7WaF5X41tcuOryDk8w": "error:HTTPError",
+    "UCGy7SkBjcIAgTiwkXEtPnYg": "error:HTTPError",
+    "UCo2gxyermsLBSCxFHvJs0Zg": "error:HTTPError"
   },
   "historical_backlog_total": 53,
   "discovery_complete": true,
@@ -190,9 +188,9 @@
       "pending_reason": "awaiting_publication_date"
     },
     {
-      "author": "老李玩钱",
-      "video_id": "hHKD2zuGKuc",
-      "title": "31万美股账户，14支股票加仓、减仓及持仓计划更新！频道暂停通知",
+      "author": "Andrei Jikh",
+      "video_id": "jx14bV5ffw0",
+      "title": "Russia Just Legalized Crypto",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
