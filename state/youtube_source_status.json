@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-10-28T01:20:44Z",
+  "generated_at": "2026-10-28T08:26:55Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -19,19 +19,20 @@
           "reached_end": false
         }
       ],
-      "previous_anchor_video_id": "QHrNWTgD7DA",
+      "previous_anchor_video_id": "H8eS_qeBelc",
       "anchor_found": true,
       "reached_end": false,
       "discovery_complete": true,
       "latest": {
-        "video_id": "QHrNWTgD7DA",
-        "title": "美股 三个需求利好推动SOXX反弹！大科技资本支出四选一！Anthropic更新发布S-1文件！",
-        "url": "https://www.youtube.com/watch?v=QHrNWTgD7DA",
-        "published_at": "",
-        "rss_status": "error:HTTPError",
+        "video_id": "H8eS_qeBelc",
+        "title": "美股 GOOG、MSFT、AMZN！多空决战有望本周分胜负！前方SOXX大波动！大摩：好消息和坏消息！",
+        "url": "https://www.youtube.com/watch?v=H8eS_qeBelc",
+        "published_at": "2026-10-28",
+        "rss_status": "ok",
         "flat_metadata_keys": [
           "channel_id",
-          "duration"
+          "duration",
+          "rss_published_at"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -64,11 +65,12 @@
         "video_id": "XE9OsZMUeRg",
         "title": "本周科技巨头财报叠加美联储会议！四大科技巨头+SOFI，财报前瞻及操作建议",
         "url": "https://www.youtube.com/watch?v=XE9OsZMUeRg",
-        "published_at": "",
-        "rss_status": "error:HTTPError",
+        "published_at": "2026-10-26",
+        "rss_status": "ok",
         "flat_metadata_keys": [
           "channel_id",
-          "duration"
+          "duration",
+          "rss_published_at"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -93,16 +95,16 @@
           "reached_end": false
         }
       ],
-      "previous_anchor_video_id": "8cufVZ_Q39s",
+      "previous_anchor_video_id": "1lspa5l4kxs",
       "anchor_found": true,
       "reached_end": false,
       "discovery_complete": true,
       "latest": {
-        "video_id": "8cufVZ_Q39s",
-        "title": "Europe Is the Test. America Is Next.",
-        "url": "https://www.youtube.com/watch?v=8cufVZ_Q39s",
+        "video_id": "1lspa5l4kxs",
+        "title": "My Thoughts On Bitcoin",
+        "url": "https://www.youtube.com/watch?v=1lspa5l4kxs",
         "published_at": "",
-        "rss_status": "error:HTTPError",
+        "rss_status": "ok",
         "flat_metadata_keys": [
           "channel_id",
           "duration"
@@ -120,21 +122,32 @@
   "pending_retried": 6,
   "content_attempted_this_run": 6,
   "content_work_budget": 6,
-  "content_backlog_after_run": 103,
-  "pending_total": 103,
+  "content_backlog_after_run": 105,
+  "pending_total": 105,
   "historical_demoted_from_pending": 0,
   "admitted_from_pending": 0,
   "nonforward_timestamp_unknown_admitted": 0,
   "feed_records_added": 0,
   "publication_dates_resolved": 0,
   "rss_status": {
-    "UCFQsi7WaF5X41tcuOryDk8w": "error:HTTPError",
-    "UCGy7SkBjcIAgTiwkXEtPnYg": "error:HTTPError",
-    "UCo2gxyermsLBSCxFHvJs0Zg": "error:HTTPError"
+    "UCFQsi7WaF5X41tcuOryDk8w": "ok",
+    "UCGy7SkBjcIAgTiwkXEtPnYg": "ok",
+    "UCo2gxyermsLBSCxFHvJs0Zg": "ok"
   },
   "historical_backlog_total": 53,
   "discovery_complete": true,
   "new_video_diagnostics": [
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "H8eS_qeBelc",
+      "title": "美股 GOOG、MSFT、AMZN！多空决战有望本周分胜负！前方SOXX大波动！大摩：好消息和坏消息！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
     {
       "author": "RhinoFinance / 视野环球财经",
       "video_id": "QHrNWTgD7DA",
@@ -170,30 +183,16 @@
     },
     {
       "author": "Andrei Jikh",
-      "video_id": "dFjvcY9Tth0",
-      "title": "China Is Preparing For $38,000 Gold",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
+      "video_id": "1lspa5l4kxs",
+      "title": "My Thoughts On Bitcoin",
       "admission": "pending_content",
       "was_pending": true,
-      "pending_reason": "missing_learning_text"
+      "pending_reason": "awaiting_publication_date"
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "dTQmi_hrOpU",
-      "title": "美股 ORCL缺乏惊喜，ADBE底气不足！SOXX遇阻、IGV破位！CTA触发标普承压，VIX苏醒！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "e3bb4BYnK-E",
-      "title": "（会员第299期）2026年8月10日-21日，重要公司Q2财报后2026、2027前瞻估值，强支撑点位！",
+      "video_id": "fLp8kUbv_u8",
+      "title": "美股 对冲基金低仓位按兵不动！AMD很猛，SOXX临门！金融XLF、医疗XLV！ADBE财报押注！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -206,7 +205,7 @@
     "status": "ok",
     "channel_errors": 0,
     "stuck_high_quality_pending": 0,
-    "provider_waiting_pending": 103,
+    "provider_waiting_pending": 105,
     "stuck_video_ids": [],
     "meaning": "Q1/Q2 text must not remain stuck in pending; Q3-Q5 may legitimately wait for better learning text."
   },
