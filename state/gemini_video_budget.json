@@ -382,6 +382,32 @@
         }
       ],
       "exhausted": true
+    },
+    "2026-10-28": {
+      "calls": 1,
+      "admitted": 0,
+      "rejected": 0,
+      "errors": 0,
+      "reconciliation": {
+        "status": "COMPLETE",
+        "calls_billed": 1,
+        "calls_refunded_503": 0,
+        "detail_rows": 1,
+        "missing_detail_rows": 0,
+        "counter_mismatch": []
+      },
+      "exhausted": true,
+      "recent": [
+        {
+          "video_id": "QHrNWTgD7DA",
+          "outcome": "http_429",
+          "at": "01:18:55Z",
+          "model": "gemini-3.8-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 三个需求利好推动SOXX反弹！大科技资本支出四选一！Anthropic更新发布S-1文件！",
+          "detail": "{\"error\":{\"message\":\"Your project has exceeded a quota. See https://ai.dev/rate-limit to manage your rate limits.\",\"code\":\"too_many_requests\"}}"
+        }
+      ]
     }
   },
   "version": 1,
