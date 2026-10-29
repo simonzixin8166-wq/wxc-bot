@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-10-28T22:33:16Z",
+  "generated_at": "2026-10-29T05:45:12Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -19,14 +19,14 @@
           "reached_end": false
         }
       ],
-      "previous_anchor_video_id": "H8eS_qeBelc",
+      "previous_anchor_video_id": "g3qLtJPUAxU",
       "anchor_found": true,
       "reached_end": false,
       "discovery_complete": true,
       "latest": {
-        "video_id": "H8eS_qeBelc",
-        "title": "美股 GOOG、MSFT、AMZN！多空决战有望本周分胜负！前方SOXX大波动！大摩：好消息和坏消息！",
-        "url": "https://www.youtube.com/watch?v=H8eS_qeBelc",
+        "video_id": "g3qLtJPUAxU",
+        "title": "美股 MSFT AI货币化成功上岸！GOOG鼻青脸肿，等一个季度！对半导体影响！",
+        "url": "https://www.youtube.com/watch?v=g3qLtJPUAxU",
         "published_at": "",
         "rss_status": "error:HTTPError",
         "flat_metadata_keys": [
@@ -56,19 +56,20 @@
           "reached_end": false
         }
       ],
-      "previous_anchor_video_id": "XE9OsZMUeRg",
+      "previous_anchor_video_id": "oGE0jMTHpvg",
       "anchor_found": true,
       "reached_end": false,
       "discovery_complete": true,
       "latest": {
-        "video_id": "XE9OsZMUeRg",
-        "title": "本周科技巨头财报叠加美联储会议！四大科技巨头+SOFI，财报前瞻及操作建议",
-        "url": "https://www.youtube.com/watch?v=XE9OsZMUeRg",
-        "published_at": "",
-        "rss_status": "error:HTTPError",
+        "video_id": "oGE0jMTHpvg",
+        "title": "美联储会议安全落地！ORCL，MSFT，GOOG 分析及操作建议",
+        "url": "https://www.youtube.com/watch?v=oGE0jMTHpvg",
+        "published_at": "2026-10-28",
+        "rss_status": "ok",
         "flat_metadata_keys": [
           "channel_id",
-          "duration"
+          "duration",
+          "rss_published_at"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -120,8 +121,8 @@
   "pending_retried": 6,
   "content_attempted_this_run": 6,
   "content_work_budget": 6,
-  "content_backlog_after_run": 105,
-  "pending_total": 105,
+  "content_backlog_after_run": 107,
+  "pending_total": 107,
   "historical_demoted_from_pending": 0,
   "admitted_from_pending": 0,
   "nonforward_timestamp_unknown_admitted": 0,
@@ -130,11 +131,22 @@
   "rss_status": {
     "UCFQsi7WaF5X41tcuOryDk8w": "error:HTTPError",
     "UCGy7SkBjcIAgTiwkXEtPnYg": "error:HTTPError",
-    "UCo2gxyermsLBSCxFHvJs0Zg": "error:HTTPError"
+    "UCo2gxyermsLBSCxFHvJs0Zg": "ok"
   },
   "historical_backlog_total": 53,
   "discovery_complete": true,
   "new_video_diagnostics": [
+    {
+      "author": "老李玩钱",
+      "video_id": "oGE0jMTHpvg",
+      "title": "美联储会议安全落地！ORCL，MSFT，GOOG 分析及操作建议",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
     {
       "author": "RhinoFinance / 视野环球财经",
       "video_id": "H8eS_qeBelc",
@@ -180,30 +192,19 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "Andrei Jikh",
-      "video_id": "1lspa5l4kxs",
-      "title": "My Thoughts On Bitcoin",
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "g3qLtJPUAxU",
+      "title": "美股 MSFT AI货币化成功上岸！GOOG鼻青脸肿，等一个季度！对半导体影响！",
       "admission": "pending_content",
       "was_pending": true,
       "pending_reason": "awaiting_publication_date"
-    },
-    {
-      "author": "Andrei Jikh",
-      "video_id": "jx14bV5ffw0",
-      "title": "Russia Just Legalized Crypto",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
     }
   ],
   "intake_health": {
     "status": "ok",
     "channel_errors": 0,
     "stuck_high_quality_pending": 0,
-    "provider_waiting_pending": 105,
+    "provider_waiting_pending": 107,
     "stuck_video_ids": [],
     "meaning": "Q1/Q2 text must not remain stuck in pending; Q3-Q5 may legitimately wait for better learning text."
   },

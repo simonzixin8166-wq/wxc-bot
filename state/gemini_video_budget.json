@@ -384,15 +384,15 @@
       "exhausted": true
     },
     "2026-10-28": {
-      "calls": 1,
+      "calls": 2,
       "admitted": 0,
       "rejected": 0,
       "errors": 0,
       "reconciliation": {
         "status": "COMPLETE",
-        "calls_billed": 1,
+        "calls_billed": 2,
         "calls_refunded_503": 0,
-        "detail_rows": 1,
+        "detail_rows": 2,
         "missing_detail_rows": 0,
         "counter_mismatch": []
       },
@@ -406,10 +406,21 @@
           "author": "RhinoFinance / 视野环球财经",
           "title": "美股 三个需求利好推动SOXX反弹！大科技资本支出四选一！Anthropic更新发布S-1文件！",
           "detail": "{\"error\":{\"message\":\"Your project has exceeded a quota. See https://ai.dev/rate-limit to manage your rate limits.\",\"code\":\"too_many_requests\"}}"
+        },
+        {
+          "video_id": "H8eS_qeBelc",
+          "outcome": "http_429",
+          "at": "05:44:06Z",
+          "model": "gemini-3.5-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 GOOG、MSFT、AMZN！多空决战有望本周分胜负！前方SOXX大波动！大摩：好消息和坏消息！",
+          "detail": "{\"error\":{\"message\":\"Your project has exceeded a quota. See https://ai.dev/rate-limit to manage your rate limits.\",\"code\":\"too_many_requests\"}}"
         }
-      ]
+      ],
+      "exhausted_quota_day": "2026-10-28"
     }
   },
   "version": 1,
-  "policy": "free tier only; <= 10 calls/day, <= 2 per run; 429 stops the day"
+  "policy": "free tier only; <= 10 calls per Pacific-time quota day, <= 2 per run; 429 stops that quota day",
+  "day_basis": "America/Los_Angeles (Gemini RPD reset); keys before 2026-10-29 are UTC days"
 }
