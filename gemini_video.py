@@ -172,6 +172,18 @@ def _refund():
         _save_budget(doc)
 
 
+def _fallback_exhausted(model):
+    day = (_load_budget().get("days") or {}).get(_today()) or {}
+    return model in (day.get("fallback_exhausted") or [])
+
+
+def _mark_fallback_exhausted(model):
+    doc = _load_budget()
+    day = doc.setdefault("days", {}).setdefault(_today(), {"calls": 0, "admitted": 0, "rejected": 0, "errors": 0})
+    day["fallback_exhausted"] = sorted(set(day.get("fallback_exhausted") or []) | {model})
+    _save_budget(doc)
+
+
 def enabled():
     return bool(os.getenv("GEMINI_API_KEY", "").strip())
 
@@ -380,7 +392,9 @@ def acquire(video_id, title, author, post=None):
                    "User-Agent": "MyAlphaView-YT01/1.0"}
         r = None
         # "high demand" (503) on one model: wait briefly and try the next free model inside the same call.
-        for i, model in enumerate(MODELS):
+        # A fallback model whose own free quota is spent (429) is skipped for the rest of the quota day.
+        models = [m for i, m in enumerate(MODELS) if i == 0 or not _fallback_exhausted(m)]
+        for i, model in enumerate(models):
             if i:
                 time.sleep(RETRY_WAIT)
             used = model
@@ -388,6 +402,14 @@ def acquire(video_id, title, author, post=None):
             r = post(ENDPOINT, json=body, timeout=TIMEOUT, headers=headers)
             if r.status_code != 503:
                 break
+        if r.status_code == 429 and used != MODELS[0]:
+            # Quotas are per model. The primary only said "busy" (503) and its own quota is untouched, so a 429 from
+            # the fallback must not stop the whole quota day (10/26-10/28: 3 of 4 day-stopping 429s came from the
+            # fallback). Nothing was processed -> refund; the fallback is skipped for the rest of this quota day.
+            _bump("errors", video_id, "http_429_fallback", _body(r), model=used, **who)
+            _mark_fallback_exhausted(used)
+            _refund()
+            return None
         if r.status_code == 429:
             _bump("exhausted", video_id, "http_429", _body(r), model=used, **who)
             return None
