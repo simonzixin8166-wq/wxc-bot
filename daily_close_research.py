@@ -11,11 +11,17 @@ from datetime import datetime, timezone
 from pathlib import Path
 import json
 import os
+import time
 import wxc_tg_agent as agent
 import research_feed as rf
 
 FORUM_DAILY_PAGES = int(os.getenv("FORUM_DAILY_PAGES", "8"))
 FORUM_MAX_SCAN_PAGES = int(os.getenv("FORUM_MAX_SCAN_PAGES", "256"))
+# Wall-clock budget for the list-continuity scan. 10/28-10/29 two research-close runs were cancelled at the 45-min
+# job limit inside this step: an anchor that is no longer visible (e.g. a deleted post) makes every run re-scan
+# 8->16->...->256 pages (~500 fetches at >=2.5 s each), so the state was never written and nothing after it ran.
+FORUM_SCAN_SECONDS = int(os.getenv("FORUM_SCAN_SECONDS", "1200"))
+ANCHOR_HISTORY = 6
 BLOG_RECOVERY_DAYS = int(os.getenv("BLOG_RECOVERY_DAYS", "14"))
 FORUM_SCAN_STATE = Path(os.getenv("FORUM_SCAN_STATE", "state/forum_daily_scan_state.json"))
 FORUM_STATUS = Path(os.getenv("FORUM_STATUS", "state/forum_source_status.json"))
@@ -67,15 +73,39 @@ def collect_forum():
     # First prove list continuity. This is necessary but not sufficient for an
     # overall complete cycle: every newly visible entry must also be durably
     # processed or the batch stays fail-closed.
+    # Fallback anchors: earlier anchors were each the newest post id of an earlier complete scan, so finding any
+    # of them (lists are newest-first) still proves the scan reached back past the latest anchor, even if that
+    # one post has since been deleted. A later anchor never replaces the check; it only widens what counts.
+    anchors=[]
+    for a in [prior_anchor]+[str(x) for x in (prior.get("anchor_history") or [])]+[str(prior.get("previous_anchor_id") or ""),str(prior.get("legacy_seen_anchor_id") or "")]:
+        if a and a not in anchors:
+            anchors.append(a)
+    if prior_anchor:
+        anchors=[a for a in anchors if a.isdigit() and int(a)<=int(prior_anchor)] if prior_anchor.isdigit() else [prior_anchor]
     scan_attempts=[]
+    started=time.monotonic()
+    fetched=0
     while True:
         htmls=agent.list_pages(budget,state)
+        fetched+=budget
         all_ids=_all_forum_ids(htmls)
-        anchor_found=bool(prior_anchor) and prior_anchor in set(all_ids)
-        scan_attempts.append({"pages":budget,"html_pages":len(htmls),"anchor_found":anchor_found})
+        visible=set(all_ids)
+        matched=next((a for a in anchors if a in visible),None)
+        anchor_found=matched is not None
+        attempt={"pages":budget,"html_pages":len(htmls),"anchor_found":anchor_found}
+        if matched and matched!=prior_anchor:
+            attempt["anchor_matched"]=matched
+        scan_attempts.append(attempt)
         if anchor_found or budget>=FORUM_MAX_SCAN_PAGES:
             break
-        budget=min(FORUM_MAX_SCAN_PAGES,max(budget+1,budget*2))
+        nxt=min(FORUM_MAX_SCAN_PAGES,max(budget+1,budget*2))
+        elapsed=time.monotonic()-started
+        if elapsed+(elapsed/max(1,fetched))*nxt>FORUM_SCAN_SECONDS:
+            # Stop deepening instead of running into the job timeout: the batch stays partial (fail-closed),
+            # the old anchor is kept, the state is written, and the next run continues from next_scan_pages.
+            attempt["stopped"]="time_budget"
+            break
+        budget=nxt
 
     reached_end=False
     continuity_complete=bool(htmls) and bool(anchor_found)
@@ -180,6 +210,7 @@ def collect_forum():
         "version":3,
         "updated_at":datetime.now(timezone.utc).isoformat(),
         "anchor_id":newest if complete and newest else prior_anchor or None,
+        "anchor_history":([newest] if complete and newest else [])+[a for a in anchors if a!=newest][:ANCHOR_HISTORY-1],
         "previous_anchor_id":prior_anchor or None,
         "legacy_seen_anchor_id":legacy_anchor or None,
         "complete":complete,
