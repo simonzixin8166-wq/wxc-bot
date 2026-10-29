@@ -287,4 +287,33 @@ assert gv.acquire("vid1", TITLE, AUTHOR, post=post_with(Resp(429, {}))) is None
 assert budget()["exhausted_quota_day"] == gv._today() and gv.budget_ok() is False   # a real 429 today still stops the day
 saved = json.loads((Path(tmp) / "gemini_video_budget.json").read_text())
 assert saved["day_basis"].startswith("America/Los_Angeles") and "Pacific" in saved["policy"]
-print("PASS YT-01 Gemini video fallback: keyless off, budget/run cap/429, identity + safety gates, forward-intake only, experimental Q3 admission, call ledger reconciles, 403 author skipped for the day, 20 claims + macro, new-video reserve, unsupported channels, members-only skip, identity give-up, Pacific quota day")
+# Fallback-model 429 (quotas are per model): the primary only said "busy" (503), so the quota day is NOT stopped;
+# the call is refunded and the fallback is skipped for the rest of the quota day. A primary 429 still stops the day.
+doc = json.loads((Path(tmp) / "gemini_video_budget.json").read_text())
+doc["days"][gv._today()] = {"calls": 0, "admitted": 0, "rejected": 0, "errors": 0}
+(Path(tmp) / "gemini_video_budget.json").write_text(json.dumps(doc))
+gv._run_calls = 0
+seen_models = []
+def busy_then_quota(url, json=None, timeout=None, headers=None):
+    seen_models.append(json["model"])
+    return Resp(503, {}) if json["model"] == gv.MODELS[0] else Resp(429, {})
+assert gv.acquire("vid1", TITLE, AUTHOR, post=busy_then_quota) is None
+day = budget()
+assert seen_models == gv.MODELS[:2] and not day.get("exhausted") and gv.budget_ok() is True
+assert day["recent"][-1]["outcome"] == "http_429_fallback" and day["recent"][-1]["model"] == gv.MODELS[1]
+assert day["calls"] == 0 and day["refunded_503"] == 1 and day["fallback_exhausted"] == [gv.MODELS[1]]
+assert day["reconciliation"]["status"] == "COMPLETE", day["reconciliation"]
+# next call the same quota day: primary busy again -> fallback skipped (one request), refunded as 503
+seen_models.clear(); gv._run_calls = 0
+assert gv.acquire("vid1", TITLE, AUTHOR, post=busy_then_quota) is None
+assert seen_models == [gv.MODELS[0]] and budget()["recent"][-1]["outcome"] == "http_503_all_models" and gv.budget_ok() is True
+# primary healthy -> it is still used and admits normally
+gv._run_calls = 0
+assert gv.acquire("vid1", TITLE, AUTHOR, post=lambda u, json=None, timeout=None, headers=None: Resp(200, wrap(GOOD)) if json["model"] == gv.MODELS[0] else Resp(429, {}))
+# a 429 from the PRIMARY still stops the quota day
+gv._run_calls = 0
+assert gv.acquire("vid1", TITLE, AUTHOR, post=post_with(Resp(429, {}))) is None
+assert budget()["exhausted"] is True and gv.budget_ok() is False
+import yt_daily_report as rep
+assert "备用模型额度用完" in rep.REASONS["http_429_fallback"]
+print("PASS YT-01 Gemini video fallback: keyless off, budget/run cap/429, identity + safety gates, forward-intake only, experimental Q3 admission, call ledger reconciles, 403 author skipped for the day, 20 claims + macro, new-video reserve, unsupported channels, members-only skip, identity give-up, Pacific quota day, fallback 429 does not stop the day")

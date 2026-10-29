@@ -12,7 +12,7 @@ from pathlib import Path
 REASONS = {
     "admitted": "已收录", "identity_mismatch": "身份不符（模型可能没看到原片）", "safety_contract": "安全规则拒收",
     "thin_content": "内容过少", "no_json": "输出无法解析", "exception": "超时或网络异常",
-    "http_403": "403 无权限", "http_429": "429 免费额度用完", "http_503_all_models": "503 服务繁忙（已退还额度）",
+    "http_403": "403 无权限", "http_429": "429 免费额度用完", "http_503_all_models": "503 服务繁忙（已退还额度）", "http_429_fallback": "主模型繁忙、备用模型额度用完（已退还额度，下次重试主模型）",
 }
 
 
