@@ -273,4 +273,18 @@ hist = {"days": {"2026-10-24": {"recent": [{"video_id": "4_uytm7I_XQ", "outcome"
                                            {"video_id": "other", "outcome": "identity_mismatch"}]}}}
 assert gv._video_given_up("4_uytm7I_XQ", hist) is True and gv._video_given_up("other", hist) is False
 assert gv.TIMEOUT * gv.RUN_CAP < 25 * 60  # fits the intake job timeout
-print("PASS YT-01 Gemini video fallback: keyless off, budget/run cap/429, identity + safety gates, forward-intake only, experimental Q3 admission, call ledger reconciles, 403 author skipped for the day, 20 claims + macro, new-video reserve, unsupported channels, members-only skip, identity give-up")
+# Pacific quota day (Google: RPD resets at midnight Pacific time), DST-aware
+U = lambda *a: datetime(*a, tzinfo=timezone.utc)
+assert gv._today(U(2026, 10, 28, 1, 18)) == "2026-10-27"      # the 10/28 01:18Z 429 belonged to the previous quota day
+assert gv._today(U(2026, 10, 28, 6, 59)) == "2026-10-27" and gv._today(U(2026, 10, 28, 7, 0)) == "2026-10-28"   # PDT
+assert gv._today(U(2026, 11, 2, 7, 30)) == "2026-11-01" and gv._today(U(2026, 11, 2, 8, 0)) == "2026-11-02"     # PST
+gv._run_calls = 0
+doc = json.loads((Path(tmp) / "gemini_video_budget.json").read_text())
+doc["days"][gv._today()] = {"calls": 1, "exhausted": True}          # legacy UTC-day flag: history, not a block
+(Path(tmp) / "gemini_video_budget.json").write_text(json.dumps(doc))
+assert gv.budget_ok() is True
+assert gv.acquire("vid1", TITLE, AUTHOR, post=post_with(Resp(429, {}))) is None
+assert budget()["exhausted_quota_day"] == gv._today() and gv.budget_ok() is False   # a real 429 today still stops the day
+saved = json.loads((Path(tmp) / "gemini_video_budget.json").read_text())
+assert saved["day_basis"].startswith("America/Los_Angeles") and "Pacific" in saved["policy"]
+print("PASS YT-01 Gemini video fallback: keyless off, budget/run cap/429, identity + safety gates, forward-intake only, experimental Q3 admission, call ledger reconciles, 403 author skipped for the day, 20 claims + macro, new-video reserve, unsupported channels, members-only skip, identity give-up, Pacific quota day")
