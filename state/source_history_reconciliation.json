@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-10-28T19:35:38.495867+00:00",
+  "generated_at": "2026-10-29T02:39:49.164744+00:00",
   "principle": "author x month reconciliation; unscanned history is unknown, backfill is never Genuine Forward",
   "matrix": {
     "BrightLine": {
@@ -158,12 +158,15 @@
       "last_month": "2026-10",
       "watched_forum_author": true,
       "forum": {
-        "seen_ids": 1119,
+        "seen_ids": 1126,
         "in_feed": 1117,
-        "seen_not_in_feed": 2,
+        "seen_not_in_feed": 9,
         "seen_not_in_feed_examples": [
           "117604",
-          "117616"
+          "117616",
+          "117695",
+          "117696",
+          "117737"
         ],
         "reason": "legacy seen before the feed existed / not research posts; recoverable only via explicit backfill"
       }
@@ -219,9 +222,9 @@
       "last_month": "2026-10",
       "watched_forum_author": true,
       "forum": {
-        "seen_ids": 912,
+        "seen_ids": 946,
         "in_feed": 844,
-        "seen_not_in_feed": 97,
+        "seen_not_in_feed": 116,
         "seen_not_in_feed_examples": [
           "112259",
           "112282",
@@ -241,9 +244,9 @@
       "last_month": "2026-10",
       "watched_forum_author": true,
       "forum": {
-        "seen_ids": 150,
+        "seen_ids": 158,
         "in_feed": 140,
-        "seen_not_in_feed": 10,
+        "seen_not_in_feed": 18,
         "seen_not_in_feed_examples": [
           "112313",
           "112423",
