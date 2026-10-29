@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-10-29T05:45:12Z",
+  "generated_at": "2026-10-29T13:01:29Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -27,11 +27,12 @@
         "video_id": "g3qLtJPUAxU",
         "title": "美股 MSFT AI货币化成功上岸！GOOG鼻青脸肿，等一个季度！对半导体影响！",
         "url": "https://www.youtube.com/watch?v=g3qLtJPUAxU",
-        "published_at": "",
-        "rss_status": "error:HTTPError",
+        "published_at": "2026-10-29",
+        "rss_status": "ok",
         "flat_metadata_keys": [
           "channel_id",
-          "duration"
+          "duration",
+          "rss_published_at"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -103,7 +104,7 @@
         "title": "My Thoughts On Bitcoin",
         "url": "https://www.youtube.com/watch?v=1lspa5l4kxs",
         "published_at": "",
-        "rss_status": "error:HTTPError",
+        "rss_status": "ok",
         "flat_metadata_keys": [
           "channel_id",
           "duration"
@@ -121,25 +122,25 @@
   "pending_retried": 6,
   "content_attempted_this_run": 6,
   "content_work_budget": 6,
-  "content_backlog_after_run": 107,
-  "pending_total": 107,
+  "content_backlog_after_run": 106,
+  "pending_total": 106,
   "historical_demoted_from_pending": 0,
   "admitted_from_pending": 0,
   "nonforward_timestamp_unknown_admitted": 0,
   "feed_records_added": 0,
   "publication_dates_resolved": 0,
   "rss_status": {
-    "UCFQsi7WaF5X41tcuOryDk8w": "error:HTTPError",
-    "UCGy7SkBjcIAgTiwkXEtPnYg": "error:HTTPError",
+    "UCFQsi7WaF5X41tcuOryDk8w": "ok",
+    "UCGy7SkBjcIAgTiwkXEtPnYg": "ok",
     "UCo2gxyermsLBSCxFHvJs0Zg": "ok"
   },
-  "historical_backlog_total": 53,
+  "historical_backlog_total": 54,
   "discovery_complete": true,
   "new_video_diagnostics": [
     {
-      "author": "老李玩钱",
-      "video_id": "oGE0jMTHpvg",
-      "title": "美联储会议安全落地！ORCL，MSFT，GOOG 分析及操作建议",
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "g3qLtJPUAxU",
+      "title": "美股 MSFT AI货币化成功上岸！GOOG鼻青脸肿，等一个季度！对半导体影响！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -192,9 +193,9 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "g3qLtJPUAxU",
-      "title": "美股 MSFT AI货币化成功上岸！GOOG鼻青脸肿，等一个季度！对半导体影响！",
+      "author": "Andrei Jikh",
+      "video_id": "1lspa5l4kxs",
+      "title": "My Thoughts On Bitcoin",
       "admission": "pending_content",
       "was_pending": true,
       "pending_reason": "awaiting_publication_date"
@@ -204,7 +205,7 @@
     "status": "ok",
     "channel_errors": 0,
     "stuck_high_quality_pending": 0,
-    "provider_waiting_pending": 107,
+    "provider_waiting_pending": 106,
     "stuck_video_ids": [],
     "meaning": "Q1/Q2 text must not remain stuck in pending; Q3-Q5 may legitimately wait for better learning text."
   },

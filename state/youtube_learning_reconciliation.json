@@ -1,13 +1,13 @@
 {
   "version": 1,
-  "generated_at": "2026-10-29T05:45:12.866333+00:00",
+  "generated_at": "2026-10-29T13:01:29.673429+00:00",
   "principle": "seen is discovery, not learning; each video is counted once in its highest stage",
   "seen": 198,
   "stages": {
     "formal_feed_text": 15,
-    "historical_backlog": 44,
+    "historical_backlog": 45,
     "metadata_only": 113,
-    "pending_unprobed": 3,
+    "pending_unprobed": 2,
     "provider_boilerplate": 22,
     "transcript_readable": 1
   },
@@ -27,19 +27,19 @@
       "historical_backlog": 9
     },
     "RhinoFinance / 视野环球财经": {
-      "metadata_only": 50,
+      "metadata_only": 51,
       "formal_feed_text": 7,
       "historical_backlog": 7,
-      "pending_unprobed": 2
+      "pending_unprobed": 1
     },
     "unknown": {
       "metadata_only": 3,
       "historical_backlog": 18
     },
     "老李玩钱": {
-      "metadata_only": 36,
+      "metadata_only": 35,
       "formal_feed_text": 8,
-      "historical_backlog": 10,
+      "historical_backlog": 11,
       "transcript_readable": 1
     }
   },
@@ -56,7 +56,7 @@
   },
   "backlog_eta": {
     "content_work_budget_per_run": 6,
-    "pending_unprobed": 3,
+    "pending_unprobed": 2,
     "runs_to_probe_all_pending": 1,
     "note": "free-first: bounded per-run budget, provider limits respected"
   },
