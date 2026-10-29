@@ -77101,9 +77101,184 @@
       "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
       "intake_class_hint": "live_candidate",
       "capture_mode": "scheduled_blog_scan_complete"
+    },
+    {
+      "id": "d75795711be45e473b8f",
+      "source": "youtube",
+      "source_kind": "video",
+      "author": "RhinoFinance / 视野环球财经",
+      "published_at": "2026-10-28",
+      "title": "美股 GOOG、MSFT、AMZN！多空决战有望本周分胜负！前方SOXX大波动！大摩：好消息和坏消息！",
+      "url": "https://www.youtube.com/watch?v=H8eS_qeBelc",
+      "excerpt": "[Gemini 视频理解 · 未验证] 美经济数据强劲推动宏观意外指数创7个月新高。大摩威尔逊指出罗素3000及半导体多数个股已大幅回调，调整进入尾声但仍面临三次清算，标普500或先跌至7100-7200点后再向8000点反弹。分析波音财报利空暴跌及半导体、科技巨头财报期权波动预期。\n- [03:07 BA bearish] 波音Q3财报核心每股亏损34美分逊于预期并下调交付预期，导致股价暴跌\n- [04:17 BA watch 164-178] 波音当前支撑在164-178美元，若跌破149-159美元将破位大空\n- [05:13 NXPI watch 215-233] 恩智浦盘后财报因前瞻不及预期跌约7%，下方支撑位在215-233美元\n- [09:12 neutral] 大摩迈克·威尔逊认为6月开启的调整",
+      "content_chars": 934,
+      "semantic_content_chars": 934,
+      "content_filtering": {
+        "filter": "youtube_promotion_noise_v1",
+        "input_units": 17,
+        "removed_units": 0,
+        "removed_ratio": 0.0,
+        "promotion_noise_detected": false
+      },
+      "images_count": 0,
+      "themes_hint": [
+        "风险管理",
+        "失败复盘",
+        "长期持有纪律",
+        "趋势确认"
+      ],
+      "symbols": [
+        "AMZN",
+        "AVGO",
+        "BA",
+        "CRWV",
+        "GOOG",
+        "MSFT",
+        "NXPI",
+        "OKLO",
+        "SOXX"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "captured_at": "2026-10-29T19:40:55Z",
+      "source_role": "rule_supply",
+      "transcript_status": "available",
+      "content_quality": "Q3",
+      "content_provider": "gemini_video",
+      "content_provider_url": "https://www.youtube.com/watch?v=H8eS_qeBelc",
+      "content_origin": "gemini_video_understanding",
+      "timestamp_evidence": true,
+      "rule_candidate_allowed": false,
+      "source_notice": "公开视频由 Gemini 读取原片（语音+画面）生成的结构化摘要；观点未验证、不可直接作为规则，等待 Owner 抽查原片核对。",
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "video_claims": [
+        {
+          "claim": "波音Q3财报核心每股亏损34美分逊于预期并下调交付预期，导致股价暴跌",
+          "stance": "bearish",
+          "price": null,
+          "timestamp": "03:07",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "BA",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "波音当前支撑在164-178美元，若跌破149-159美元将破位大空",
+          "stance": "watch",
+          "price": "164-178",
+          "timestamp": "04:17",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "BA",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "恩智浦盘后财报因前瞻不及预期跌约7%，下方支撑位在215-233美元",
+          "stance": "watch",
+          "price": "215-233",
+          "timestamp": "05:13",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "NXPI",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "大摩迈克·威尔逊认为6月开启的调整进入尾声，但前方仍有3次清算事件",
+          "stance": "neutral",
+          "price": null,
+          "timestamp": "09:12",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": null,
+          "symbol_check": null
+        },
+        {
+          "claim": "大摩预计标普500战术性下行目标为7100-7200点，年底基本预期维持8000点",
+          "stance": "neutral",
+          "price": "7100-7200",
+          "timestamp": "09:48",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": null,
+          "symbol_check": null
+        },
+        {
+          "claim": "费城半导体SOXX本周期权定价在510美元上下28美元区间大幅波动",
+          "stance": "watch",
+          "price": "510",
+          "timestamp": "16:50",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "SOXX",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "微软期权定价在530美元上下27美元波动，结构相对稳健",
+          "stance": "watch",
+          "price": "530",
+          "timestamp": "19:24",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "MSFT",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "谷歌期权定价在315美元上下20美元波动，跌破298美元存在破位风险",
+          "stance": "watch",
+          "price": "315",
+          "timestamp": "20:13",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "GOOG",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "亚马逊期权定价在255美元上下20美元波动，若涨至275美元将突破新高确认上行",
+          "stance": "watch",
+          "price": "255",
+          "timestamp": "21:49",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "AMZN",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "博通技术反弹面临324-365美元阻力，强调交易应遵守纪律与系统",
+          "stance": "watch",
+          "price": "324-365",
+          "timestamp": "23:33",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "AVGO",
+          "symbol_check": "listed"
+        }
+      ],
+      "video_claims_model": "gemini-3.8-flash",
+      "video_macro": [
+        {
+          "indicator": "宏观经济意外指数",
+          "value": "7个月最高水平",
+          "expectation": null,
+          "period": null,
+          "timestamp": "00:27"
+        },
+        {
+          "indicator": "消费者信心指数",
+          "value": null,
+          "expectation": "超出预期",
+          "period": null,
+          "timestamp": "00:22"
+        }
+      ],
+      "video_observed_title": "美东261027 周二 视野环球财经",
+      "validation_status": "pending_owner_spot_check",
+      "forward_evidence_eligible": false
     }
   ],
-  "updated_at": "2026-10-29T19:03:17Z",
+  "updated_at": "2026-10-29T19:41:11Z",
   "retention_policy": "append_only_no_record_count_cap",
   "historical_recovery": {
     "completed_at": "2026-10-07T13:43:06.018028+00:00",

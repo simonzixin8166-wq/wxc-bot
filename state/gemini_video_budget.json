@@ -420,15 +420,15 @@
       "exhausted_quota_day": "2026-10-28"
     },
     "2026-10-29": {
-      "calls": 2,
-      "admitted": 0,
+      "calls": 4,
+      "admitted": 1,
       "rejected": 1,
-      "errors": 1,
+      "errors": 2,
       "reconciliation": {
         "status": "COMPLETE",
-        "calls_billed": 2,
+        "calls_billed": 4,
         "calls_refunded_503": 0,
-        "detail_rows": 2,
+        "detail_rows": 4,
         "missing_detail_rows": 0,
         "counter_mismatch": []
       },
@@ -450,6 +450,23 @@
           "author": "RhinoFinance / 视野环球财经",
           "title": "美股 GOOG、MSFT、AMZN！多空决战有望本周分胜负！前方SOXX大波动！大摩：好消息和坏消息！",
           "detail": "ReadTimeout"
+        },
+        {
+          "video_id": "g3qLtJPUAxU",
+          "outcome": "exception",
+          "at": "19:39:58Z",
+          "model": "gemini-3.8-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 MSFT AI货币化成功上岸！GOOG鼻青脸肿，等一个季度！对半导体影响！",
+          "detail": "ReadTimeout"
+        },
+        {
+          "video_id": "H8eS_qeBelc",
+          "outcome": "admitted",
+          "at": "19:40:55Z",
+          "model": "gemini-3.8-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 GOOG、MSFT、AMZN！多空决战有望本周分胜负！前方SOXX大波动！大摩：好消息和坏消息！"
         }
       ]
     }

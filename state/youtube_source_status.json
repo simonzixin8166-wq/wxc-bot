@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-10-29T13:01:29Z",
+  "generated_at": "2026-10-29T19:41:55Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -122,8 +122,8 @@
   "pending_retried": 6,
   "content_attempted_this_run": 6,
   "content_work_budget": 6,
-  "content_backlog_after_run": 106,
-  "pending_total": 106,
+  "content_backlog_after_run": 105,
+  "pending_total": 105,
   "historical_demoted_from_pending": 0,
   "admitted_from_pending": 0,
   "nonforward_timestamp_unknown_admitted": 0,
@@ -141,17 +141,6 @@
       "author": "RhinoFinance / 视野环球财经",
       "video_id": "g3qLtJPUAxU",
       "title": "美股 MSFT AI货币化成功上岸！GOOG鼻青脸肿，等一个季度！对半导体影响！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "H8eS_qeBelc",
-      "title": "美股 GOOG、MSFT、AMZN！多空决战有望本周分胜负！前方SOXX大波动！大摩：好消息和坏消息！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -193,19 +182,33 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "Andrei Jikh",
-      "video_id": "1lspa5l4kxs",
-      "title": "My Thoughts On Bitcoin",
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "kXr89fM66C4",
+      "title": "美股 罕见吸血，半导体、软件齐飞！IGV暴涨突破剑指新高！PLTR、NOW、MSFT！CRWD、MRVL财报！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
       "admission": "pending_content",
       "was_pending": true,
-      "pending_reason": "awaiting_publication_date"
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "Andrei Jikh",
+      "video_id": "kZDqW9hbB50",
+      "title": "How To Prepare (Gold, Silver, Oil)",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
     }
   ],
   "intake_health": {
     "status": "ok",
     "channel_errors": 0,
     "stuck_high_quality_pending": 0,
-    "provider_waiting_pending": 106,
+    "provider_waiting_pending": 105,
     "stuck_video_ids": [],
     "meaning": "Q1/Q2 text must not remain stuck in pending; Q3-Q5 may legitimately wait for better learning text."
   },
