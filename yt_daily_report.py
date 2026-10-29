@@ -1,6 +1,6 @@
-"""YT-01 daily Telegram digest: which videos Gemini read yesterday (UTC), which failed and why, with links.
+"""YT-01 daily Telegram digest: which videos Gemini read on the previous Pacific-time quota day, which failed and why, with links.
 
-Sent at most once per UTC day from the tg-bot run (meta["yt_report_day"] dedupes). A send failure leaves the day
+Sent at most once per quota day from the tg-bot run (meta["yt_report_day"] dedupes). A send failure leaves the day
 unmarked so the next run retries; it never blocks the bot. Reads state files only; no positions, no keys."""
 from __future__ import annotations
 
@@ -34,7 +34,7 @@ def _reason(row):
 def build(day, budget, status, unsupported=()):
     d = (budget.get("days") or {}).get(day)
     pending = status.get("pending_total")
-    lines = [f"📺 YouTube 采集日报 {day}（UTC）"]
+    lines = [f"📺 YouTube 采集日报 {day}（美西时间日，Gemini 免费额度按此重置）"]
     if not d:
         lines.append("当天没有调用 Gemini。")
     else:
@@ -68,9 +68,14 @@ def build(day, budget, status, unsupported=()):
 def maybe_send(meta, say, now=None, data_dir=None):
     """Send yesterday's digest once. Returns meta (marked only after a successful send)."""
     now = now or datetime.now(timezone.utc)
-    if now.hour < 1:  # leave time for the last intake run of the UTC day to commit
+    try:
+        from zoneinfo import ZoneInfo
+        local = now.astimezone(ZoneInfo("America/Los_Angeles"))  # budget days follow Gemini's Pacific quota reset
+    except Exception:
         return meta
-    day = (now - timedelta(days=1)).strftime("%Y-%m-%d")
+    if local.hour < 1:  # leave time for the last intake run of the quota day to commit
+        return meta
+    day = (local - timedelta(days=1)).strftime("%Y-%m-%d")
     if meta.get("yt_report_day") == day:
         return meta
     base = Path(data_dir or os.getenv("DATA_DIR", "state"))

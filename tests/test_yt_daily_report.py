@@ -1,4 +1,4 @@
-"""YT-01 daily digest: once per UTC day, lists read / failed videos with reasons and links, retries after a failed
+"""YT-01 daily digest: once per Pacific quota day, lists read / failed videos with reasons and links, retries after a failed
 send, never blocks the bot, carries no keys or positions."""
 import json
 import os
@@ -33,11 +33,15 @@ with tempfile.TemporaryDirectory() as d:
     (Path(d) / "gemini_video_budget.json").write_text(json.dumps(budget, ensure_ascii=False))
     (Path(d) / "youtube_source_status.json").write_text(json.dumps(status))
     sent = []
-    now = datetime(2026, 10, 25, 2, 0, tzinfo=timezone.utc)
+    # budget days are Pacific quota days: 10/25 09:00Z = 02:00 PDT -> previous quota day is 10/24
+    now = datetime(2026, 10, 25, 9, 0, tzinfo=timezone.utc)
     m = rep.maybe_send({}, sent.append, now=now, data_dir=d)
     assert m["yt_report_day"] == "2026-10-24" and len(sent) == 1
+    assert "美西时间日" in sent[0] and "（UTC）" not in sent[0]
+    # Beijing morning (10/26 01:30Z = 10/25 18:30 PDT): the latest complete quota day is still 10/24 -> no repeat
+    assert rep.maybe_send(m, sent.append, now=datetime(2026, 10, 26, 1, 30, tzinfo=timezone.utc), data_dir=d) is m
     assert rep.maybe_send(m, sent.append, now=now, data_dir=d) is m and len(sent) == 1        # once per day
-    assert rep.maybe_send({}, sent.append, now=datetime(2026, 10, 25, 0, 30, tzinfo=timezone.utc), data_dir=d) == {}
+    assert rep.maybe_send({}, sent.append, now=datetime(2026, 10, 25, 7, 30, tzinfo=timezone.utc), data_dir=d) == {}  # 00:30 PDT: wait
     def boom(_):
         raise ConnectionError()
     m2 = rep.maybe_send({}, boom, now=now, data_dir=d)                                         # failure: unmarked, no raise
@@ -46,4 +50,4 @@ with tempfile.TemporaryDirectory() as d:
 
 actions = (REPO / "wxc_actions.py").read_text(encoding="utf-8")
 assert "yt_daily_report.maybe_send(meta, a.say)" in actions
-print("PASS YT-01 daily digest: once per UTC day, reasons + links, retry after failed send, never blocks")
+print("PASS YT-01 daily digest: once per Pacific quota day, reasons + links, retry after failed send, never blocks")

@@ -6,7 +6,7 @@ for 7-8 retries), Gemini reads the PUBLIC video itself (speech + on-screen text)
 
 Guardrails
 - Off unless GEMINI_API_KEY is set. Free tier only (Owner confirmed no billing on the key's project).
-- Budget: GEMINI_VIDEO_DAILY_CAP calls per UTC day (default 10) and GEMINI_VIDEO_RUN_CAP per run (default 2),
+- Budget: GEMINI_VIDEO_DAILY_CAP calls per Pacific-time quota day (default 10) and GEMINI_VIDEO_RUN_CAP per run (default 2),
   recorded in state/gemini_video_budget.json. Google's free tier allows 8 hours of YouTube video per day.
   HTTP 429 marks the day exhausted.
 - Identity check: Gemini must report the video's title/channel; a weak match is rejected, so a model that
@@ -26,6 +26,7 @@ import re
 import time
 from datetime import datetime, timezone
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 import requests
 
@@ -79,8 +80,15 @@ access the video, return {"observed_title": null} and nothing else. Never output
 """
 
 
-def _today():
-    return datetime.now(timezone.utc).strftime("%Y-%m-%d")
+# Google: "Requests per day (RPD) quotas reset at midnight Pacific time" (ai.google.dev/gemini-api/docs/rate-limits).
+# Budget days therefore follow the Pacific calendar day (DST-aware). On 10/28 a 429 at 01:18Z (still the previous
+# Pacific day) marked the whole UTC day exhausted and three later runs skipped a freshly reset quota (0 videos read).
+QUOTA_TZ = ZoneInfo("America/Los_Angeles")
+DAY_BASIS = "America/Los_Angeles (Gemini RPD reset); keys before 2026-10-29 are UTC days"
+
+
+def _today(now=None):
+    return (now or datetime.now(timezone.utc)).astimezone(QUOTA_TZ).strftime("%Y-%m-%d")
 
 
 def _budget_path():
@@ -102,7 +110,8 @@ def _save_budget(doc):
         if isinstance(day, dict):
             day["reconciliation"] = reconcile(day)
     doc["version"] = 1
-    doc["policy"] = f"free tier only; <= {DAILY_CAP} calls/day, <= {RUN_CAP} per run; 429 stops the day"
+    doc["day_basis"] = DAY_BASIS
+    doc["policy"] = f"free tier only; <= {DAILY_CAP} calls per Pacific-time quota day, <= {RUN_CAP} per run; 429 stops that quota day"
     p = _budget_path()
     p.parent.mkdir(parents=True, exist_ok=True)
     p.write_text(json.dumps(doc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
@@ -135,6 +144,7 @@ def _bump(field, video_id=None, outcome=None, detail=None, **extra):
     day[field] = int(day.get(field) or 0) + 1
     if field == "exhausted":
         day["exhausted"] = True
+        day["exhausted_quota_day"] = _today()
     if outcome:
         # Diagnostics only: outcome code + a short provider message, never the key or video content.
         row = {"video_id": video_id, "outcome": outcome, "at": datetime.now(timezone.utc).strftime("%H:%M:%SZ")}
@@ -187,7 +197,9 @@ def priority(kind):
 def budget_ok():
     day = (_load_budget().get("days") or {}).get(_today()) or {}
     cap = DAILY_CAP if _priority == "new" else max(0, DAILY_CAP - RESERVE_NEW)
-    return _run_calls < RUN_CAP and int(day.get("calls") or 0) < cap and not day.get("exhausted")
+    # Only a 429 recorded under the Pacific quota day stops calls; a legacy UTC-day flag is history, not a block.
+    exhausted = bool(day.get("exhausted")) and day.get("exhausted_quota_day") == _today()
+    return _run_calls < RUN_CAP and int(day.get("calls") or 0) < cap and not exhausted
 
 
 def unsupported_authors(doc=None):
