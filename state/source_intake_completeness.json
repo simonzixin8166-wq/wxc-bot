@@ -1,15 +1,15 @@
 {
   "version": 2,
-  "generated_at": "2026-10-29T13:01:29.567553+00:00",
-  "complete": false,
-  "coverage_complete": false,
+  "generated_at": "2026-10-29T19:06:30.049920+00:00",
+  "complete": true,
+  "coverage_complete": true,
   "semantic_learning_complete": false,
   "forum": {
-    "complete": false,
+    "complete": true,
     "continuity_proven": true,
-    "anchor_id": "117591",
+    "anchor_id": "118014",
     "previous_anchor_id": "117591",
-    "status": "partial"
+    "status": "complete"
   },
   "blogs": {
     "complete": true,
@@ -18,8 +18,8 @@
         "complete": true,
         "scan_complete": true,
         "missing_from_feed": 0,
-        "unique_article_ids": 13,
-        "feed_present_urls": 13,
+        "unique_article_ids": 14,
+        "feed_present_urls": 14,
         "archive_failures": []
       },
       "yifan99": {

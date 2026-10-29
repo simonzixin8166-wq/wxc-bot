@@ -1,26 +1,27 @@
 {
   "version": 3,
-  "updated_at": "2026-10-29T02:54:38.731140+00:00",
-  "anchor_id": "117591",
+  "updated_at": "2026-10-29T19:00:39.855905+00:00",
+  "anchor_id": "118014",
   "anchor_history": [
+    "118014",
     "117591",
     "117523",
     "117428"
   ],
   "previous_anchor_id": "117591",
   "legacy_seen_anchor_id": "117769",
-  "complete": false,
+  "complete": true,
   "continuity_complete": true,
-  "processing_complete": false,
-  "pages_scanned": 8,
-  "scan_budget": 8,
+  "processing_complete": true,
+  "pages_scanned": 16,
+  "scan_budget": 16,
   "scan_attempts": [
     {
-      "pages": 8,
-      "html_pages": 8,
+      "pages": 16,
+      "html_pages": 16,
       "anchor_found": true,
       "anchor_matched": "117523"
     }
   ],
-  "next_scan_pages": 16
+  "next_scan_pages": 8
 }
