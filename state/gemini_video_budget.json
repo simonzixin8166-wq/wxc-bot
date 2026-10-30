@@ -505,6 +505,40 @@
           "detail": "ReadTimeout"
         }
       ]
+    },
+    "2026-10-30": {
+      "calls": 2,
+      "admitted": 0,
+      "rejected": 0,
+      "errors": 2,
+      "reconciliation": {
+        "status": "COMPLETE",
+        "calls_billed": 2,
+        "calls_refunded_503": 0,
+        "detail_rows": 2,
+        "missing_detail_rows": 0,
+        "counter_mismatch": []
+      },
+      "recent": [
+        {
+          "video_id": "53SJvdzJneM",
+          "outcome": "exception",
+          "at": "12:52:25Z",
+          "model": "gemini-3.8-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 科技股跳水锦标赛！AMZN、INTC跟随！ QQQ、SOXX多空博弈得如何？MSFT发债回吐，又不行了吗？",
+          "detail": "ReadTimeout"
+        },
+        {
+          "video_id": "QHrNWTgD7DA",
+          "outcome": "exception",
+          "at": "12:55:28Z",
+          "model": "gemini-3.8-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 三个需求利好推动SOXX反弹！大科技资本支出四选一！Anthropic更新发布S-1文件！",
+          "detail": "ReadTimeout"
+        }
+      ]
     }
   },
   "version": 1,

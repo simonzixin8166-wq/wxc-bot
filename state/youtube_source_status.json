@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-10-30T05:47:38Z",
+  "generated_at": "2026-10-30T12:55:42Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -27,11 +27,12 @@
         "video_id": "53SJvdzJneM",
         "title": "美股 科技股跳水锦标赛！AMZN、INTC跟随！ QQQ、SOXX多空博弈得如何？MSFT发债回吐，又不行了吗？",
         "url": "https://www.youtube.com/watch?v=53SJvdzJneM",
-        "published_at": "",
-        "rss_status": "error:HTTPError",
+        "published_at": "2026-10-30",
+        "rss_status": "ok",
         "flat_metadata_keys": [
           "channel_id",
-          "duration"
+          "duration",
+          "rss_published_at"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -64,11 +65,12 @@
         "video_id": "oGE0jMTHpvg",
         "title": "美联储会议安全落地！ORCL，MSFT，GOOG 分析及操作建议",
         "url": "https://www.youtube.com/watch?v=oGE0jMTHpvg",
-        "published_at": "",
-        "rss_status": "error:HTTPError",
+        "published_at": "2026-10-28",
+        "rss_status": "ok",
         "flat_metadata_keys": [
           "channel_id",
-          "duration"
+          "duration",
+          "rss_published_at"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -93,16 +95,16 @@
           "reached_end": false
         }
       ],
-      "previous_anchor_video_id": "1lspa5l4kxs",
+      "previous_anchor_video_id": "QpPf_hY_Bl8",
       "anchor_found": true,
       "reached_end": false,
       "discovery_complete": true,
       "latest": {
-        "video_id": "1lspa5l4kxs",
-        "title": "My Thoughts On Bitcoin",
-        "url": "https://www.youtube.com/watch?v=1lspa5l4kxs",
+        "video_id": "QpPf_hY_Bl8",
+        "title": "Binance Just Lost $6.3 Billion",
+        "url": "https://www.youtube.com/watch?v=QpPf_hY_Bl8",
         "published_at": "",
-        "rss_status": "error:HTTPError",
+        "rss_status": "ok",
         "flat_metadata_keys": [
           "channel_id",
           "duration"
@@ -120,21 +122,32 @@
   "pending_retried": 6,
   "content_attempted_this_run": 6,
   "content_work_budget": 6,
-  "content_backlog_after_run": 106,
-  "pending_total": 106,
+  "content_backlog_after_run": 107,
+  "pending_total": 107,
   "historical_demoted_from_pending": 0,
   "admitted_from_pending": 0,
   "nonforward_timestamp_unknown_admitted": 0,
   "feed_records_added": 0,
   "publication_dates_resolved": 0,
   "rss_status": {
-    "UCFQsi7WaF5X41tcuOryDk8w": "error:HTTPError",
-    "UCGy7SkBjcIAgTiwkXEtPnYg": "error:HTTPError",
-    "UCo2gxyermsLBSCxFHvJs0Zg": "error:HTTPError"
+    "UCFQsi7WaF5X41tcuOryDk8w": "ok",
+    "UCGy7SkBjcIAgTiwkXEtPnYg": "ok",
+    "UCo2gxyermsLBSCxFHvJs0Zg": "ok"
   },
   "historical_backlog_total": 54,
   "discovery_complete": true,
   "new_video_diagnostics": [
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "53SJvdzJneM",
+      "title": "美股 科技股跳水锦标赛！AMZN、INTC跟随！ QQQ、SOXX多空博弈得如何？MSFT发债回吐，又不行了吗？",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
     {
       "author": "RhinoFinance / 视野环球财经",
       "video_id": "g3qLtJPUAxU",
@@ -180,30 +193,19 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "53SJvdzJneM",
-      "title": "美股 科技股跳水锦标赛！AMZN、INTC跟随！ QQQ、SOXX多空博弈得如何？MSFT发债回吐，又不行了吗？",
+      "author": "Andrei Jikh",
+      "video_id": "QpPf_hY_Bl8",
+      "title": "Binance Just Lost $6.3 Billion",
       "admission": "pending_content",
       "was_pending": true,
       "pending_reason": "awaiting_publication_date"
-    },
-    {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "o3v28EEIdb4",
-      "title": "美股 大盘伸个懒腰！ SPCX又又又发债！AAPL扩大智能家居版图！CAT怎么了？META正常回撤！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
     }
   ],
   "intake_health": {
     "status": "ok",
     "channel_errors": 0,
     "stuck_high_quality_pending": 0,
-    "provider_waiting_pending": 106,
+    "provider_waiting_pending": 107,
     "stuck_video_ids": [],
     "meaning": "Q1/Q2 text must not remain stuck in pending; Q3-Q5 may legitimately wait for better learning text."
   },
