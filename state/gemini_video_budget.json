@@ -420,15 +420,15 @@
       "exhausted_quota_day": "2026-10-28"
     },
     "2026-10-29": {
-      "calls": 6,
+      "calls": 8,
       "admitted": 1,
-      "rejected": 1,
-      "errors": 4,
+      "rejected": 2,
+      "errors": 5,
       "reconciliation": {
         "status": "COMPLETE",
-        "calls_billed": 6,
+        "calls_billed": 8,
         "calls_refunded_503": 0,
-        "detail_rows": 6,
+        "detail_rows": 8,
         "missing_detail_rows": 0,
         "counter_mismatch": []
       },
@@ -481,6 +481,24 @@
           "video_id": "QHrNWTgD7DA",
           "outcome": "exception",
           "at": "00:01:38Z",
+          "model": "gemini-3.8-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 三个需求利好推动SOXX反弹！大科技资本支出四选一！Anthropic更新发布S-1文件！",
+          "detail": "ReadTimeout"
+        },
+        {
+          "video_id": "g3qLtJPUAxU",
+          "outcome": "identity_mismatch",
+          "at": "05:43:59Z",
+          "model": "gemini-3.8-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 MSFT AI货币化成功上岸！GOOG鼻青脸肿，等一个季度！对半导体影响！",
+          "detail": "seen='None' channel='视野环球财经'"
+        },
+        {
+          "video_id": "QHrNWTgD7DA",
+          "outcome": "exception",
+          "at": "05:47:03Z",
           "model": "gemini-3.8-flash",
           "author": "RhinoFinance / 视野环球财经",
           "title": "美股 三个需求利好推动SOXX反弹！大科技资本支出四选一！Anthropic更新发布S-1文件！",

@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-10-30T00:02:52Z",
+  "generated_at": "2026-10-30T05:47:38Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -19,14 +19,14 @@
           "reached_end": false
         }
       ],
-      "previous_anchor_video_id": "g3qLtJPUAxU",
+      "previous_anchor_video_id": "53SJvdzJneM",
       "anchor_found": true,
       "reached_end": false,
       "discovery_complete": true,
       "latest": {
-        "video_id": "g3qLtJPUAxU",
-        "title": "美股 MSFT AI货币化成功上岸！GOOG鼻青脸肿，等一个季度！对半导体影响！",
-        "url": "https://www.youtube.com/watch?v=g3qLtJPUAxU",
+        "video_id": "53SJvdzJneM",
+        "title": "美股 科技股跳水锦标赛！AMZN、INTC跟随！ QQQ、SOXX多空博弈得如何？MSFT发债回吐，又不行了吗？",
+        "url": "https://www.youtube.com/watch?v=53SJvdzJneM",
         "published_at": "",
         "rss_status": "error:HTTPError",
         "flat_metadata_keys": [
@@ -120,8 +120,8 @@
   "pending_retried": 6,
   "content_attempted_this_run": 6,
   "content_work_budget": 6,
-  "content_backlog_after_run": 105,
-  "pending_total": 105,
+  "content_backlog_after_run": 106,
+  "pending_total": 106,
   "historical_demoted_from_pending": 0,
   "admitted_from_pending": 0,
   "nonforward_timestamp_unknown_admitted": 0,
@@ -180,20 +180,17 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "老李玩钱",
-      "video_id": "nLskyS7Vvug",
-      "title": "华尔街大举买入和卖出的8支股票！是否要跟着买进或卖出？我的看法及操作建议",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "53SJvdzJneM",
+      "title": "美股 科技股跳水锦标赛！AMZN、INTC跟随！ QQQ、SOXX多空博弈得如何？MSFT发债回吐，又不行了吗？",
       "admission": "pending_content",
       "was_pending": true,
-      "pending_reason": "missing_learning_text"
+      "pending_reason": "awaiting_publication_date"
     },
     {
-      "author": "老李玩钱",
-      "video_id": "nNaiUbM17HY",
-      "title": "美股不怕急跌，怕的是目前这种震荡下行的行情",
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "o3v28EEIdb4",
+      "title": "美股 大盘伸个懒腰！ SPCX又又又发债！AAPL扩大智能家居版图！CAT怎么了？META正常回撤！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -206,7 +203,7 @@
     "status": "ok",
     "channel_errors": 0,
     "stuck_high_quality_pending": 0,
-    "provider_waiting_pending": 105,
+    "provider_waiting_pending": 106,
     "stuck_video_ids": [],
     "meaning": "Q1/Q2 text must not remain stuck in pending; Q3-Q5 may legitimately wait for better learning text."
   },
