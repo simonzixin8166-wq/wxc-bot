@@ -1,17 +1,17 @@
 {
   "version": 3,
-  "updated_at": "2026-10-30T02:10:36.098140+00:00",
-  "anchor_id": "118202",
+  "updated_at": "2026-10-30T18:40:11.376158+00:00",
+  "anchor_id": "118479",
   "anchor_history": [
+    "118479",
     "118202",
     "118014",
     "117591",
     "117523",
-    "117428",
-    "117769"
+    "117428"
   ],
-  "previous_anchor_id": "118014",
-  "legacy_seen_anchor_id": "118016",
+  "previous_anchor_id": "118202",
+  "legacy_seen_anchor_id": "118399",
   "complete": true,
   "continuity_complete": true,
   "processing_complete": true,
@@ -21,8 +21,7 @@
     {
       "pages": 8,
       "html_pages": 8,
-      "anchor_found": true,
-      "anchor_matched": "117523"
+      "anchor_found": true
     }
   ],
   "next_scan_pages": 8

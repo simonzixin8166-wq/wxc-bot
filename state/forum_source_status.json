@@ -1,17 +1,17 @@
 {
   "version": 3,
-  "updated_at": "2026-10-30T02:10:36.098140+00:00",
-  "anchor_id": "118202",
+  "updated_at": "2026-10-30T18:40:11.376158+00:00",
+  "anchor_id": "118479",
   "anchor_history": [
+    "118479",
     "118202",
     "118014",
     "117591",
     "117523",
-    "117428",
-    "117769"
+    "117428"
   ],
-  "previous_anchor_id": "118014",
-  "legacy_seen_anchor_id": "118016",
+  "previous_anchor_id": "118202",
+  "legacy_seen_anchor_id": "118399",
   "complete": true,
   "continuity_complete": true,
   "processing_complete": true,
@@ -21,8 +21,7 @@
     {
       "pages": 8,
       "html_pages": 8,
-      "anchor_found": true,
-      "anchor_matched": "117523"
+      "anchor_found": true
     }
   ],
   "next_scan_pages": 8,
@@ -37,16 +36,16 @@
     "bogbog"
   ],
   "new_entries_by_author": {
-    "三心三意": 46,
-    "yifan99": 1,
-    "我是一只井底蛙": 3,
-    "bogbog": 23
+    "三心三意": 39,
+    "yifan99": 2,
+    "我是一只井底蛙": 11,
+    "bogbog": 17
   },
   "processed_entries_by_author": {
-    "三心三意": 46,
-    "yifan99": 1,
-    "我是一只井底蛙": 3,
-    "bogbog": 23
+    "三心三意": 39,
+    "yifan99": 2,
+    "我是一只井底蛙": 11,
+    "bogbog": 17
   },
   "unresolved_entries_by_author": {
     "三心三意": 0,
@@ -55,6 +54,6 @@
     "bogbog": 0
   },
   "unresolved_entries_total": 0,
-  "feed_records_added": 73,
+  "feed_records_added": 69,
   "guardrail": "complete requires both continuity to the prior anchor and durable processing of every newly visible entry. Unresolved entries keep the batch partial, block anchor advancement, and prevent Genuine Forward admission."
 }
