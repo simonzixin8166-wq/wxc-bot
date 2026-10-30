@@ -82505,9 +82505,298 @@
       "intake_class_hint": "live_candidate",
       "capture_mode": "scheduled_board_anchor_scan",
       "forum_board": "tzlc"
+    },
+    {
+      "id": "a30cf8578b62ae4dea8e",
+      "source": "youtube",
+      "source_kind": "video",
+      "author": "Andrei Jikh",
+      "published_at": "2026-10-30",
+      "title": "The Biggest Crypto Theft In History",
+      "url": "https://www.youtube.com/watch?v=m7hL3bVoUuQ",
+      "excerpt": "Scribe\n \n \nScribe\nLike it? Make Scribe even better by\n \nleaving a review\nGet Chrome Extension\nBrowse\nPopular Videos\nRecent Videos\nAll Channels\nFree Tools\nVideo Subtitle Downloader\nVideo Timestamp Generator\nVideo Summarizer\nVideo Word Counter\nVideo Title Analyzer\nVideo Transcript Search\nVideo Analytics\nVideo Chapters Creator\nVideo Quiz Generator\nChat with Vid",
+      "content_chars": 733,
+      "semantic_content_chars": 723,
+      "content_filtering": {
+        "filter": "youtube_promotion_noise_v1",
+        "input_units": 40,
+        "removed_units": 0,
+        "removed_ratio": 0.0,
+        "promotion_noise_detected": false
+      },
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "captured_at": "2026-10-30T19:19:45Z",
+      "source_role": "market_context",
+      "transcript_status": "available",
+      "content_quality": "Q4",
+      "content_provider": "pickscribe.com",
+      "content_provider_url": "https://pickscribe.com/v/m7hL3bVoUuQ/",
+      "content_origin": "third_party_transcript",
+      "timestamp_evidence": false,
+      "rule_candidate_allowed": false,
+      "source_notice": "公开视频研究来源；仅保存短摘录与原视频链接。作者观点属于未验证假设，MyAlpha需独立验证后才可进入正式证据。"
+    },
+    {
+      "id": "d7f00ee25c3bbb9bf37b",
+      "source": "youtube",
+      "source_kind": "video",
+      "author": "RhinoFinance / 视野环球财经",
+      "published_at": "2026-10-30",
+      "title": "美股 科技股跳水锦标赛！AMZN、INTC跟随！ QQQ、SOXX多空博弈得如何？MSFT发债回吐，又不行了吗？",
+      "url": "https://www.youtube.com/watch?v=53SJvdzJneM",
+      "excerpt": "[Gemini 视频理解 · 未验证] 本期节目复盘美股市场走势，重点分析英特尔与亚马逊第三季度财报表现及前瞻指引疲软的原因；详细解读微软发债250亿美元获超额认购的背后逻辑及AAA高信用评级优势；最后跟踪费半SOXX与纳指QQQ在期权结算日临近时的关键技术位与多空博弈态势。\n- [04:32 INTC bearish] 英特尔三季度业绩虽超预期但四季度指引远逊共识，受PC需求疲软影响\n- [09:00 INTC neutral] 英特尔估值整体偏高，更适合做波段交易而不适合长线持有\n- [11:10 AMZN neutral] 亚马逊AWS增长强劲但总营收增速放缓且四季度营业利润指引不及预期\n- [16:20 AMZN bearish] 亚马逊因资本支出激增导致自由现金流大幅转负，新增大额长期债务\n- [21",
+      "content_chars": 889,
+      "semantic_content_chars": 889,
+      "content_filtering": {
+        "filter": "youtube_promotion_noise_v1",
+        "input_units": 15,
+        "removed_units": 0,
+        "removed_ratio": 0.0,
+        "promotion_noise_detected": false
+      },
+      "images_count": 0,
+      "themes_hint": [
+        "风险管理",
+        "失败复盘",
+        "长期持有纪律",
+        "INTC"
+      ],
+      "symbols": [
+        "AMZN",
+        "INTC",
+        "MSFT",
+        "QQQ",
+        "SOXX",
+        "SPX"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "captured_at": "2026-10-30T19:21:22Z",
+      "source_role": "rule_supply",
+      "transcript_status": "available",
+      "content_quality": "Q3",
+      "content_provider": "gemini_video",
+      "content_provider_url": "https://www.youtube.com/watch?v=53SJvdzJneM",
+      "content_origin": "gemini_video_understanding",
+      "timestamp_evidence": true,
+      "rule_candidate_allowed": false,
+      "source_notice": "公开视频由 Gemini 读取原片（语音+画面）生成的结构化摘要；观点未验证、不可直接作为规则，等待 Owner 抽查原片核对。",
+      "claims": [
+        {
+          "symbol": "INTC",
+          "stance": "bearish",
+          "stance_cues": [
+            "bearish"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "33f71368defb4d9f24839f09048882f45d128636f3138ccae82e81c4bafad16a",
+          "evidence_chars": 55
+        },
+        {
+          "symbol": "AMZN",
+          "stance": "bearish",
+          "stance_cues": [
+            "bearish"
+          ],
+          "horizon": "long",
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "020277938feaf8a9b8e3c08f7cad09aa60fae905f34f196f440459f10f64ac67",
+          "evidence_chars": 53
+        },
+        {
+          "symbol": "MSFT",
+          "stance": "bullish",
+          "stance_cues": [
+            "bullish"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "d552acd404d6ba615ab1b77b49334ab2b20ac78dce135066f1d1972d8f07db7e",
+          "evidence_chars": 58
+        },
+        {
+          "symbol": "MSFT",
+          "stance": "bullish",
+          "stance_cues": [
+            "bullish"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "7e5d3340c348e5900849098352432a603db23e0111d4fe8eb7f51ad254dba01f",
+          "evidence_chars": 55
+        },
+        {
+          "symbol": "VOO",
+          "stance": "bullish",
+          "stance_cues": [
+            "bullish"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "7e5d3340c348e5900849098352432a603db23e0111d4fe8eb7f51ad254dba01f",
+          "evidence_chars": 55
+        },
+        {
+          "symbol": "MSFT",
+          "stance": "add",
+          "stance_cues": [
+            "add",
+            "buy"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "1c373311fa215174240db28a518bf7b1f07a21b28419cc4443fe7ccff7597ba1",
+          "evidence_chars": 65
+        },
+        {
+          "symbol": "QQQ",
+          "stance": "add",
+          "stance_cues": [
+            "add",
+            "buy"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "1c373311fa215174240db28a518bf7b1f07a21b28419cc4443fe7ccff7597ba1",
+          "evidence_chars": 65
+        }
+      ],
+      "claims_status": "experimental_unvalidated",
+      "video_claims": [
+        {
+          "claim": "英特尔三季度业绩虽超预期但四季度指引远逊共识，受PC需求疲软影响",
+          "stance": "bearish",
+          "price": null,
+          "timestamp": "04:32",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "INTC",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "英特尔估值整体偏高，更适合做波段交易而不适合长线持有",
+          "stance": "neutral",
+          "price": null,
+          "timestamp": "09:00",
+          "evidence_mode": "spoken_explicit",
+          "confidence": "high",
+          "symbol": "INTC",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "亚马逊AWS增长强劲但总营收增速放缓且四季度营业利润指引不及预期",
+          "stance": "neutral",
+          "price": null,
+          "timestamp": "11:10",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "AMZN",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "亚马逊因资本支出激增导致自由现金流大幅转负，新增大额长期债务",
+          "stance": "bearish",
+          "price": null,
+          "timestamp": "16:20",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "AMZN",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "亚马逊盘后大跌触及长线技术支撑区域，不建议在急跌时恐慌杀跌",
+          "stance": "watch",
+          "price": "217-224",
+          "timestamp": "21:30",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "AMZN",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "微软发债250亿美元获超4倍超额认购，显示市场对其极强信心与低融资成本",
+          "stance": "bullish",
+          "price": null,
+          "timestamp": "26:15",
+          "evidence_mode": "spoken_explicit",
+          "confidence": "high",
+          "symbol": "MSFT",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "微软是极少数拥有标普与穆迪AAA最高信用评级的公司，信誉高于美债",
+          "stance": "bullish",
+          "price": null,
+          "timestamp": "27:18",
+          "evidence_mode": "spoken_explicit",
+          "confidence": "high",
+          "symbol": "MSFT",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "微软无仓位者可在490至534区间建仓，若纳指破位可预留仓位至490下方加仓",
+          "stance": "buy",
+          "price": "490-534",
+          "timestamp": "29:00",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "MSFT",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "费半SOXX若跌破周一开盘起涨点并收盘确认，则空头占据主动",
+          "stance": "bearish",
+          "price": "482.8",
+          "timestamp": "30:45",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "SOXX",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "QQQ关键支撑位696-698若未跌破，期权结算日仍存在空头平仓反弹可能",
+          "stance": "neutral",
+          "price": "696-698",
+          "timestamp": "34:00",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "QQQ",
+          "symbol_check": "listed"
+        }
+      ],
+      "video_claims_model": "gemini-3.8-flash",
+      "video_macro": [],
+      "video_observed_title": "英特尔财报暴雷，亚马逊重挫，微软发债被抢爆，QQQ与费半多空博弈",
+      "validation_status": "pending_owner_spot_check",
+      "forward_evidence_eligible": false
     }
   ],
-  "updated_at": "2026-10-30T18:46:27Z",
+  "updated_at": "2026-10-30T19:24:35Z",
   "retention_policy": "append_only_no_record_count_cap",
   "historical_recovery": {
     "completed_at": "2026-10-07T13:43:06.018028+00:00",
