@@ -585,15 +585,15 @@
       ]
     },
     "2026-10-31": {
-      "calls": 1,
-      "admitted": 1,
+      "calls": 2,
+      "admitted": 2,
       "rejected": 0,
-      "errors": 1,
+      "errors": 2,
       "reconciliation": {
         "status": "COMPLETE",
-        "calls_billed": 1,
-        "calls_refunded_503": 1,
-        "detail_rows": 2,
+        "calls_billed": 2,
+        "calls_refunded_503": 2,
+        "detail_rows": 4,
         "missing_detail_rows": 0,
         "counter_mismatch": []
       },
@@ -614,9 +614,26 @@
           "model": "gemini-3.5-flash",
           "author": "RhinoFinance / 视野环球财经",
           "title": "美股 美联储27年预期撕裂！AI威胁叙事，网络安全爆炒！PANW、CRWD、FTNT！META忘记讲，看置顶评论！"
+        },
+        {
+          "video_id": "K1OPHbVonjc",
+          "outcome": "http_503_all_models",
+          "at": "18:34:30Z",
+          "model": "gemini-3.8-flash,gemini-3.5-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 天塌了？应该买还是卖？11月三大风险事件！",
+          "detail": "{\"error\":{\"message\":\"gemini-3.5-flash is currently experiencing high demand, spikes in demand are usually temporary. Please try again later.\",\"code\":\"service_unavailable\"}}"
+        },
+        {
+          "video_id": "vynRw9NT7TQ",
+          "outcome": "admitted",
+          "at": "18:37:34Z",
+          "model": "gemini-3.8-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 TSLA突破，强弱区间！MSFT对AI货币化充满信心！四大科技共振！AMD成了之前的NVDA！"
         }
       ],
-      "refunded_503": 1
+      "refunded_503": 2
     }
   },
   "version": 1,

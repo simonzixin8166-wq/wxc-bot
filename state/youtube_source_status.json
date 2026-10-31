@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-10-31T12:22:31Z",
+  "generated_at": "2026-10-31T18:37:58Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -123,8 +123,8 @@
   "pending_retried": 6,
   "content_attempted_this_run": 6,
   "content_work_budget": 6,
-  "content_backlog_after_run": 106,
-  "pending_total": 106,
+  "content_backlog_after_run": 105,
+  "pending_total": 105,
   "historical_demoted_from_pending": 0,
   "admitted_from_pending": 0,
   "nonforward_timestamp_unknown_admitted": 0,
@@ -183,17 +183,20 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "Andrei Jikh",
-      "video_id": "QpPf_hY_Bl8",
-      "title": "Binance Just Lost $6.3 Billion",
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "wz13N6Q4-tg",
+      "title": "美股 无聊行情即将结束！回购债券的隐藏动机！LULU、NKE、INTU！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
       "admission": "pending_content",
       "was_pending": true,
-      "pending_reason": "awaiting_publication_date"
+      "pending_reason": "missing_learning_text"
     },
     {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "vXlqWhsJzxI",
-      "title": "美股 NVDA完好、NOW突破！UNH、SHOP更新！前车之鉴，直到2028，数据中心绝不能大退潮！对比互联网泡沫、房地产浪潮！",
+      "author": "老李玩钱",
+      "video_id": "xUrNp0Dy0ws",
+      "title": "3支牛股！回调即可买入",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -206,7 +209,7 @@
     "status": "ok",
     "channel_errors": 0,
     "stuck_high_quality_pending": 0,
-    "provider_waiting_pending": 106,
+    "provider_waiting_pending": 105,
     "stuck_video_ids": [],
     "meaning": "Q1/Q2 text must not remain stuck in pending; Q3-Q5 may legitimately wait for better learning text."
   },
