@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-10-31T18:37:58Z",
+  "generated_at": "2026-10-31T23:26:38Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -27,12 +27,11 @@
         "video_id": "K1OPHbVonjc",
         "title": "美股 天塌了？应该买还是卖？11月三大风险事件！",
         "url": "https://www.youtube.com/watch?v=K1OPHbVonjc",
-        "published_at": "2026-10-31",
-        "rss_status": "ok",
+        "published_at": "",
+        "rss_status": "error:HTTPError",
         "flat_metadata_keys": [
           "channel_id",
-          "duration",
-          "rss_published_at"
+          "duration"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -65,12 +64,11 @@
         "video_id": "oGE0jMTHpvg",
         "title": "美联储会议安全落地！ORCL，MSFT，GOOG 分析及操作建议",
         "url": "https://www.youtube.com/watch?v=oGE0jMTHpvg",
-        "published_at": "2026-10-28",
-        "rss_status": "ok",
+        "published_at": "",
+        "rss_status": "error:HTTPError",
         "flat_metadata_keys": [
           "channel_id",
-          "duration",
-          "rss_published_at"
+          "duration"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -103,12 +101,11 @@
         "video_id": "m7hL3bVoUuQ",
         "title": "Binance Just Lost $6.3 Billion",
         "url": "https://www.youtube.com/watch?v=m7hL3bVoUuQ",
-        "published_at": "2026-10-30",
-        "rss_status": "ok",
+        "published_at": "",
+        "rss_status": "error:HTTPError",
         "flat_metadata_keys": [
           "channel_id",
-          "duration",
-          "rss_published_at"
+          "duration"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -131,9 +128,9 @@
   "feed_records_added": 0,
   "publication_dates_resolved": 0,
   "rss_status": {
-    "UCFQsi7WaF5X41tcuOryDk8w": "ok",
-    "UCGy7SkBjcIAgTiwkXEtPnYg": "ok",
-    "UCo2gxyermsLBSCxFHvJs0Zg": "ok"
+    "UCFQsi7WaF5X41tcuOryDk8w": "error:HTTPError",
+    "UCGy7SkBjcIAgTiwkXEtPnYg": "error:HTTPError",
+    "UCo2gxyermsLBSCxFHvJs0Zg": "error:HTTPError"
   },
   "historical_backlog_total": 54,
   "discovery_complete": true,
@@ -184,8 +181,8 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "wz13N6Q4-tg",
-      "title": "美股 无聊行情即将结束！回购债券的隐藏动机！LULU、NKE、INTU！",
+      "video_id": "xOY53crL1ZA",
+      "title": "（会员第305期）掌握数据，跟随趋势！如何追踪标普、个股、EPS业绩修正？几个隐藏的免费数据入口！使用方法！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -194,9 +191,9 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "老李玩钱",
-      "video_id": "xUrNp0Dy0ws",
-      "title": "3支牛股！回调即可买入",
+      "author": "Andrei Jikh",
+      "video_id": "7-lWx78nAQ4",
+      "title": "The Debt Spiral Has Started",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,

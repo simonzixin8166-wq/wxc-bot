@@ -585,15 +585,15 @@
       ]
     },
     "2026-10-31": {
-      "calls": 2,
+      "calls": 4,
       "admitted": 2,
-      "rejected": 0,
+      "rejected": 2,
       "errors": 2,
       "reconciliation": {
         "status": "COMPLETE",
-        "calls_billed": 2,
+        "calls_billed": 4,
         "calls_refunded_503": 2,
-        "detail_rows": 4,
+        "detail_rows": 6,
         "missing_detail_rows": 0,
         "counter_mismatch": []
       },
@@ -631,6 +631,24 @@
           "model": "gemini-3.8-flash",
           "author": "RhinoFinance / 视野环球财经",
           "title": "美股 TSLA突破，强弱区间！MSFT对AI货币化充满信心！四大科技共振！AMD成了之前的NVDA！"
+        },
+        {
+          "video_id": "K1OPHbVonjc",
+          "outcome": "identity_mismatch",
+          "at": "23:24:58Z",
+          "model": "gemini-3.8-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 天塌了？应该买还是卖？11月三大风险事件！",
+          "detail": "seen='如何判断是正常回撤，还是AI叙事证伪，崩盘“摔杯”？现在AI市场正在发生什么？' channel='视野环球财经'"
+        },
+        {
+          "video_id": "yEdijFeesTs",
+          "outcome": "identity_mismatch",
+          "at": "23:26:10Z",
+          "model": "gemini-3.8-flash",
+          "author": "老李玩钱",
+          "title": "$310,000美股账户，我加仓/减仓的4支股票！接下来美股将何去何从",
+          "detail": "seen='美股7月暴跌？这几点你必须注意！2024下半年美股走势研判以及未来应对策略！老李账户实盘更新！' channel='老李玩钱'"
         }
       ],
       "refunded_503": 2
