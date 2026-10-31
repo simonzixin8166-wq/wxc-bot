@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-10-30T23:49:57Z",
+  "generated_at": "2026-10-31T05:39:10Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -19,20 +19,19 @@
           "reached_end": false
         }
       ],
-      "previous_anchor_video_id": "53SJvdzJneM",
+      "previous_anchor_video_id": "K1OPHbVonjc",
       "anchor_found": true,
       "reached_end": false,
       "discovery_complete": true,
       "latest": {
-        "video_id": "53SJvdzJneM",
-        "title": "美股 科技股跳水锦标赛！AMZN、INTC跟随！ QQQ、SOXX多空博弈得如何？MSFT发债回吐，又不行了吗？",
-        "url": "https://www.youtube.com/watch?v=53SJvdzJneM",
-        "published_at": "2026-10-30",
-        "rss_status": "ok",
+        "video_id": "K1OPHbVonjc",
+        "title": "美股 天塌了？应该买还是卖？11月三大风险事件！",
+        "url": "https://www.youtube.com/watch?v=K1OPHbVonjc",
+        "published_at": "",
+        "rss_status": "error:HTTPError",
         "flat_metadata_keys": [
           "channel_id",
-          "duration",
-          "rss_published_at"
+          "duration"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -65,12 +64,11 @@
         "video_id": "oGE0jMTHpvg",
         "title": "美联储会议安全落地！ORCL，MSFT，GOOG 分析及操作建议",
         "url": "https://www.youtube.com/watch?v=oGE0jMTHpvg",
-        "published_at": "2026-10-28",
-        "rss_status": "ok",
+        "published_at": "",
+        "rss_status": "error:HTTPError",
         "flat_metadata_keys": [
           "channel_id",
-          "duration",
-          "rss_published_at"
+          "duration"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -122,17 +120,17 @@
   "pending_retried": 6,
   "content_attempted_this_run": 6,
   "content_work_budget": 6,
-  "content_backlog_after_run": 106,
-  "pending_total": 106,
+  "content_backlog_after_run": 107,
+  "pending_total": 107,
   "historical_demoted_from_pending": 0,
   "admitted_from_pending": 0,
   "nonforward_timestamp_unknown_admitted": 0,
   "feed_records_added": 0,
   "publication_dates_resolved": 0,
   "rss_status": {
-    "UCFQsi7WaF5X41tcuOryDk8w": "ok",
+    "UCFQsi7WaF5X41tcuOryDk8w": "error:HTTPError",
     "UCGy7SkBjcIAgTiwkXEtPnYg": "error:HTTPError",
-    "UCo2gxyermsLBSCxFHvJs0Zg": "ok"
+    "UCo2gxyermsLBSCxFHvJs0Zg": "error:HTTPError"
   },
   "historical_backlog_total": 54,
   "discovery_complete": true,
@@ -172,27 +170,24 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "4_uytm7I_XQ",
-      "title": "美股 半导体SOXX成分股全阵亡！后面怎么玩？注意事项！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
+      "video_id": "K1OPHbVonjc",
+      "title": "美股 天塌了？应该买还是卖？11月三大风险事件！",
       "admission": "pending_content",
       "was_pending": true,
-      "pending_reason": "missing_learning_text"
+      "pending_reason": "awaiting_publication_date"
     },
     {
       "author": "Andrei Jikh",
       "video_id": "QpPf_hY_Bl8",
-      "title": "North Korea Suspected In Crypto Heist",
+      "title": "Binance Just Lost $6.3 Billion",
       "admission": "pending_content",
       "was_pending": true,
       "pending_reason": "awaiting_publication_date"
     },
     {
       "author": "老李玩钱",
-      "video_id": "r-2GJq_zHgU",
-      "title": "美股高位！但这2支股票依然不高，可以买入",
+      "video_id": "tW8LXsiWlew",
+      "title": "个股点评，买入建议：TSLA，AAPL，BRK.B",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -205,7 +200,7 @@
     "status": "ok",
     "channel_errors": 0,
     "stuck_high_quality_pending": 0,
-    "provider_waiting_pending": 106,
+    "provider_waiting_pending": 107,
     "stuck_video_ids": [],
     "meaning": "Q1/Q2 text must not remain stuck in pending; Q3-Q5 may legitimately wait for better learning text."
   },

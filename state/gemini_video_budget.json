@@ -507,15 +507,15 @@
       ]
     },
     "2026-10-30": {
-      "calls": 6,
+      "calls": 7,
       "admitted": 1,
-      "rejected": 1,
+      "rejected": 2,
       "errors": 4,
       "reconciliation": {
         "status": "COMPLETE",
-        "calls_billed": 6,
+        "calls_billed": 7,
         "calls_refunded_503": 0,
-        "detail_rows": 6,
+        "detail_rows": 7,
         "missing_detail_rows": 0,
         "counter_mismatch": []
       },
@@ -572,6 +572,15 @@
           "author": "老李玩钱",
           "title": "本周科技巨头财报叠加美联储会议！四大科技巨头+SOFI，财报前瞻及操作建议",
           "detail": "seen='美联储决议！微软、谷歌、亚马逊、苹果财报！Sofi怎么走？' channel='老李玩钱'"
+        },
+        {
+          "video_id": "QHrNWTgD7DA",
+          "outcome": "identity_mismatch",
+          "at": "05:38:41Z",
+          "model": "gemini-3.5-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 三个需求利好推动SOXX反弹！大科技资本支出四选一！Anthropic更新发布S-1文件！",
+          "detail": "seen='视野环球财经 20261026' channel='视野环球财经'"
         }
       ]
     }
