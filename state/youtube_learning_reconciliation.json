@@ -1,19 +1,19 @@
 {
   "version": 1,
-  "generated_at": "2026-10-31T05:39:11.261248+00:00",
+  "generated_at": "2026-10-31T12:22:31.375246+00:00",
   "principle": "seen is discovery, not learning; each video is counted once in its highest stage",
   "seen": 202,
   "stages": {
-    "formal_feed_text": 17,
+    "formal_feed_text": 18,
     "historical_backlog": 45,
     "metadata_only": 111,
-    "pending_unprobed": 5,
+    "pending_unprobed": 4,
     "provider_boilerplate": 23,
     "transcript_readable": 1
   },
   "stages_sum_equals_seen": true,
   "learning_layers": {
-    "text_available": 18,
+    "text_available": 19,
     "semantically_understood": 11,
     "falsifiable_claims_or_rule_capable": 5,
     "matured_outcomes": 0,
@@ -28,9 +28,9 @@
     },
     "RhinoFinance / 视野环球财经": {
       "metadata_only": 49,
-      "formal_feed_text": 9,
-      "pending_unprobed": 3,
-      "historical_backlog": 7
+      "formal_feed_text": 10,
+      "historical_backlog": 7,
+      "pending_unprobed": 2
     },
     "unknown": {
       "metadata_only": 3,
@@ -56,7 +56,7 @@
   },
   "backlog_eta": {
     "content_work_budget_per_run": 6,
-    "pending_unprobed": 5,
+    "pending_unprobed": 4,
     "runs_to_probe_all_pending": 1,
     "note": "free-first: bounded per-run budget, provider limits respected"
   },

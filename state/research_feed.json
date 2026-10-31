@@ -84911,9 +84911,136 @@
       "intake_class_hint": "live_candidate",
       "capture_mode": "scheduled_board_anchor_scan",
       "forum_board": "tzlc"
+    },
+    {
+      "id": "4b514ec39b34c196a9d5",
+      "source": "youtube",
+      "source_kind": "video",
+      "author": "RhinoFinance / 视野环球财经",
+      "published_at": "",
+      "title": "美股 美联储27年预期撕裂！AI威胁叙事，网络安全爆炒！PANW、CRWD、FTNT！META忘记讲，看置顶评论！",
+      "url": "https://www.youtube.com/watch?v=v88zbUVrp8w",
+      "excerpt": "[Gemini 视频理解 · 未验证] 本期节目详细解读美联储议息会议决议（加息25个基点）、点阵图及主席发言对市场与美债收益率的影响。同时结合8月零售销售数据分析宏观经济现状，并重点评估网络安全板块三只龙头股（PANW、CRWD、FTNT）的前瞻估值与技术面支撑位置。\n- [18:05 PANW watch] PANW前瞻估值偏高，技术面上方无压力但下方缺乏强支撑，需关注348-364及316-342支撑区间并注意保护利润\n- [21:05 CRWD watch] CRWD散户参与度高且涨幅较快，当前股价远高于前瞻估值，关注223-229及205-216支撑，量能极度萎缩时需警惕背离\n- [23:38 FTNT watch] FTNT基本面同样处于高估状态，支撑位于160-165及152-159，若跌破142",
+      "content_chars": 864,
+      "semantic_content_chars": 864,
+      "content_filtering": {
+        "filter": "youtube_promotion_noise_v1",
+        "input_units": 12,
+        "removed_units": 0,
+        "removed_ratio": 0.0,
+        "promotion_noise_detected": false
+      },
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [
+        "AMD",
+        "CRWD",
+        "FTNT",
+        "META",
+        "PANW",
+        "SOXX",
+        "SPX"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "captured_at": "2026-10-31T12:22:20Z",
+      "source_role": "rule_supply",
+      "transcript_status": "available",
+      "content_quality": "Q3",
+      "content_provider": "gemini_video",
+      "content_provider_url": "https://www.youtube.com/watch?v=v88zbUVrp8w",
+      "content_origin": "gemini_video_understanding",
+      "timestamp_evidence": true,
+      "rule_candidate_allowed": false,
+      "source_notice": "YouTube正文可用于非Forward语义学习；可靠发布时间缺失，因此强制按backfill处理，禁止计入Forward Evidence或Promotion。",
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "video_claims": [
+        {
+          "claim": "PANW前瞻估值偏高，技术面上方无压力但下方缺乏强支撑，需关注348-364及316-342支撑区间并注意保护利润",
+          "stance": "watch",
+          "price": null,
+          "timestamp": "18:05",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "PANW",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "CRWD散户参与度高且涨幅较快，当前股价远高于前瞻估值，关注223-229及205-216支撑，量能极度萎缩时需警惕背离",
+          "stance": "watch",
+          "price": null,
+          "timestamp": "21:05",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "CRWD",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "FTNT基本面同样处于高估状态，支撑位于160-165及152-159，若跌破142-149区间将大幅走空",
+          "stance": "watch",
+          "price": null,
+          "timestamp": "23:38",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "FTNT",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "标普500指数在100日均线（约7500附近）获得支撑，该均线为近期量化与技术面的重要防守位置",
+          "stance": "neutral",
+          "price": "7500",
+          "timestamp": "25:46",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "SPX",
+          "symbol_check": "listed"
+        }
+      ],
+      "video_claims_model": "gemini-3.5-flash",
+      "video_macro": [
+        {
+          "indicator": "Federal Funds Rate",
+          "value": "3.75%-4.00%",
+          "expectation": "3.75%-4.00%",
+          "period": "Current",
+          "timestamp": "01:56"
+        },
+        {
+          "indicator": "US 8M Retail Sales MoM",
+          "value": "1.2%",
+          "expectation": "0.8%",
+          "period": "August",
+          "timestamp": "11:39"
+        },
+        {
+          "indicator": "US 8M Core Retail Sales MoM",
+          "value": "1.4%",
+          "expectation": "0.6%",
+          "period": "August",
+          "timestamp": "11:48"
+        },
+        {
+          "indicator": "10Y Treasury Yield",
+          "value": "4.99%",
+          "expectation": null,
+          "period": "Current",
+          "timestamp": "13:13"
+        }
+      ],
+      "video_observed_title": "声明 Disclaimer",
+      "validation_status": "pending_owner_spot_check",
+      "forward_evidence_eligible": false,
+      "intake_class_hint": "backfill",
+      "capture_mode": "youtube_timestamp_unknown_learning",
+      "timestamp_confidence": "missing"
     }
   ],
-  "updated_at": "2026-10-31T01:54:22Z",
+  "updated_at": "2026-10-31T12:22:20Z",
   "retention_policy": "append_only_no_record_count_cap",
   "historical_recovery": {
     "completed_at": "2026-10-07T13:43:06.018028+00:00",

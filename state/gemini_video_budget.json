@@ -583,6 +583,40 @@
           "detail": "seen='视野环球财经 20261026' channel='视野环球财经'"
         }
       ]
+    },
+    "2026-10-31": {
+      "calls": 1,
+      "admitted": 1,
+      "rejected": 0,
+      "errors": 1,
+      "reconciliation": {
+        "status": "COMPLETE",
+        "calls_billed": 1,
+        "calls_refunded_503": 1,
+        "detail_rows": 2,
+        "missing_detail_rows": 0,
+        "counter_mismatch": []
+      },
+      "recent": [
+        {
+          "video_id": "K1OPHbVonjc",
+          "outcome": "http_503_all_models",
+          "at": "12:21:17Z",
+          "model": "gemini-3.8-flash,gemini-3.5-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 天塌了？应该买还是卖？11月三大风险事件！",
+          "detail": "{\"error\":{\"message\":\"gemini-3.5-flash is currently experiencing high demand, spikes in demand are usually temporary. Please try again later.\",\"code\":\"service_unavailable\"}}"
+        },
+        {
+          "video_id": "v88zbUVrp8w",
+          "outcome": "admitted",
+          "at": "12:22:20Z",
+          "model": "gemini-3.5-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 美联储27年预期撕裂！AI威胁叙事，网络安全爆炒！PANW、CRWD、FTNT！META忘记讲，看置顶评论！"
+        }
+      ],
+      "refunded_503": 1
     }
   },
   "version": 1,
