@@ -1,0 +1,30 @@
+{
+ "purpose": "Commitment: Claude first labels were completed before any GPT/Owner blind answer. Files are held privately until both blind answers are in, then published unchanged; their sha256 must match.",
+ "created_at": "2026-11-01T02:10Z",
+ "guideline": "v1.2",
+ "files": {
+  "blind_test_v4_key.json": "463dca33c00271d5e8ad3eed1a8cb7c9a7626512efd2012cc0e770796e92a36e",
+  "claims_gold_dev_v4.claude_first.jsonl": "ee9f85eb425e68e46fc222dac870c33eda036d996994b4977ed753d006d407e3",
+  "claims_gold_test_v4.claude_first.jsonl": "368360d58ef08950532e7801bb9fbff556624d33569316e51477862393081de9"
+ },
+ "counts": {
+  "test": {
+   "items": 360,
+   "items_with_labels": 89,
+   "labels": 164,
+   "post_level_claims": 151,
+   "ambiguous": 31,
+   "unavailable": 10,
+   "needs_article_check": 25
+  },
+  "dev": {
+   "items": 150,
+   "items_with_labels": 36,
+   "labels": 60,
+   "post_level_claims": 54,
+   "ambiguous": 11,
+   "unavailable": 2,
+   "needs_article_check": 6
+  }
+ }
+}
