@@ -132,8 +132,8 @@ def _post_id(href):
 def parse_thread(soup, url):
     """Conversation position of a post, read from the page that is already fetched (no extra request):
     root id (<link rel=canonical>), the post it replies to (#postparent) and the visible reply tree under it
-    (#postlist; nesting from the left margin, 20px per level). Titles are cut to 120 chars; other posts'
-    bodies are never read."""
+    (#postlist; nesting from the left margin, 20px per level, with each reply's body size). Titles are cut
+    to 120 chars; other posts' bodies are not fetched here."""
     own = _post_id(url)
     can = soup.find("link", rel="canonical")
     root = (_post_id(can.get("href")) if can else None) or own
@@ -154,9 +154,15 @@ def parse_thread(soup, url):
         m = re.search(r"margin\s*:\s*\S+\s+\S+\s+\S+\s+(\d+)px", p.get("style") or "")
         depth = int(m.group(1)) // 20 if m else 0
         stack = stack[:depth + 1]
+        sm = p.select_one("small"); meta = sm.get_text(" ", strip=True) if sm else ""
+        bm = re.search(r"\((\d+)\s*bytes\)", meta)
+        dm = re.search(r"(\d{2}/\d{2}/\d{4})\D*?(\d{2}:\d{2}:\d{2})", meta)
         replies.append({"post_id": pid, "title": a.get_text(strip=True)[:THREAD_TITLE_MAX],
                         "author": n.get_text(strip=True) if n else "", "depth": depth,
-                        "in_reply_to": stack[-1]})
+                        "in_reply_to": stack[-1],
+                        # 0 bytes = the title is the whole reply; >0 = it has a body on its own page
+                        "body_bytes": int(bm.group(1)) if bm else None,
+                        "published_at": " ".join(dm.groups()) if dm else ""})
         stack.append(pid)
     return {"post_id": own, "root_post_id": root, "is_reply": bool(own and root and own != root),
             "parent": parent, "replies": replies}

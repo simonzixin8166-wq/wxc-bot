@@ -9,7 +9,7 @@ MAIN = """<html><head><link rel="canonical" href="https://bbs.wenxuecity.com/cfz
 <div id="postmeta"><a class="username" href="#">甲作者</a><span class="date">2026-10-30 09:00:00</span></div>
 <div id="msgbodyContent">示例正文，没有真实内容。</div>
 <div id="comment"><h3>所有跟帖</h3><div id="postlist"><div>
-<p style="margin:2px 0 2px 0px;"><a class="post" href="https://bbs.wenxuecity.com/cfzh/501.html">回复一</a><span class="b"><a class="nickname">乙</a></span></p>
+<p style="margin:2px 0 2px 0px;"><a class="post" href="https://bbs.wenxuecity.com/cfzh/501.html">回复一</a><span class="b"><a class="nickname">乙</a></span><small>(0 bytes) ( 13 reads ) 10/30/2026 postreply 09:10:00</small></p>
 <p style="margin:2px 0 2px 0px;"><a class="post" href="https://bbs.wenxuecity.com/cfzh/502.html">回复二</a><span class="b"><a class="nickname">丙</a></span></p>
 <p style="margin:2px 0 2px 20px;"><a class="post" href="https://bbs.wenxuecity.com/cfzh/503.html">甲回复丙</a><span class="b"><a class="nickname">甲作者</a></span></p>
 <p style="margin:2px 0 2px 40px;"><a class="post" href="https://bbs.wenxuecity.com/cfzh/504.html">丙再回</a><span class="b"><a class="nickname">丙</a></span></p>
@@ -22,7 +22,7 @@ REPLY = """<html><head><link rel="canonical" href="https://bbs.wenxuecity.com/cf
 <div class="postbody"><div id="postparent">回复：<a href="https://bbs.wenxuecity.com/cfzh/502.html">回复二</a> - <a class="username" href="#">丙</a> <span class="date">2026-10-30 09:30:00</span></div>
 <div id="msgbodyContent">同意，我也加了一点。</div></div>
 <div id="comment"><div id="postlist"><div>
-<p style="margin:2px 0 2px 0px;"><a class="post" href="https://bbs.wenxuecity.com/cfzh/504.html">丙再回</a><span class="b"><a class="nickname">丙</a></span></p>
+<p style="margin:2px 0 2px 0px;"><a class="post" href="https://bbs.wenxuecity.com/cfzh/504.html">丙再回</a><span class="b"><a class="nickname">丙</a></span><small>(208 bytes) ( 5 reads ) 10/30/2026 postreply 10:20:00</small></p>
 </div></div></div></body></html>"""
 
 m = w.parse_post(MAIN, "https://bbs.wenxuecity.com/cfzh/500.html")
@@ -42,8 +42,14 @@ row = rf.normalize("forum", "甲作者", r)
 tc = row["thread_context"]
 assert tc == {"root_post_id": "500", "is_reply": True,
               "in_reply_to": {"post_id": "502", "author": "丙", "title": "回复二", "published_at": "2026-10-30 09:30:00"},
-              "reply_count": 1, "reply_ids": ["504"]}, tc
-assert "回复一" not in str(rf.normalize("forum", "甲作者", m)["thread_context"])  # others' reply titles not stored
+              "reply_count": 1,
+              "replies": [{"post_id": "504", "author": "丙", "title": "丙再回", "depth": 0, "in_reply_to": "503",
+                           "body_bytes": 208, "published_at": "10/30/2026 10:20:00"}],
+              "replies_with_body": 1}, tc
+mc = rf.normalize("forum", "甲作者", m)["thread_context"]
+assert [x["title"] for x in mc["replies"]] == ["回复一", "回复二", "甲回复丙", "丙再回", "回复三"]  # whole visible conversation kept
+assert mc["replies"][0]["body_bytes"] == 0 and mc["replies"][1]["body_bytes"] is None
+assert "示例正文" not in str(mc)  # bodies are never copied into the context
 
 # Old pages without these blocks, and broken markup: post still parses, context degrades to None/empty.
 bare = w.parse_post('<h1 class="title">t</h1><div id="msgbodyContent">x</div>', "https://bbs.wenxuecity.com/cfzh/9.html")
@@ -53,4 +59,4 @@ assert rf.normalize("forum", "a", {"title": "t", "text": "x", "url": "https://bb
 long_t = "长" * 300
 p2 = w.parse_post(REPLY.replace(">回复二<", f">{long_t}<", 1), "https://bbs.wenxuecity.com/cfzh/503.html")
 assert len(p2["thread"]["parent"]["title"]) == 120
-print("PASS forum thread context (root/parent/tree from the fetched page, titles <=120, others' replies not stored)")
+print("PASS forum thread context (root/parent/full reply tree with body size from the fetched page; titles <=120; no bodies)")

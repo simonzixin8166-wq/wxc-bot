@@ -397,8 +397,10 @@ def _author_actions(author: str, title: str, text: str) -> list:
         return []
 
 def _thread_context(thread):
-    """Conversation position only: root id, the parent's id/author/title (<=120 chars) and the ids of
-    visible replies. Other people's reply titles are not stored."""
+    """The visible conversation (Owner 2026-11-01: understand the author's exchanges with other users):
+    root id, the parent post and the whole reply tree with author, title (<=120 chars; for a 0-byte reply
+    the title IS the reply), nesting and body size. Reply bodies are not stored (charter: titles and short
+    excerpts only)."""
     if not isinstance(thread, dict):
         return None
     par = thread.get("parent") if isinstance(thread.get("parent"), dict) else None
@@ -410,7 +412,9 @@ def _thread_context(thread):
                          "title": str(par.get("title") or "")[:120], "published_at": par.get("published_at")}
                         if par else None),
         "reply_count": len(reps),
-        "reply_ids": [r.get("post_id") for r in reps][:80],
+        "replies": [{k: r.get(k) for k in ("post_id", "author", "title", "depth", "in_reply_to", "body_bytes", "published_at")}
+                    for r in reps][:80],
+        "replies_with_body": sum(1 for r in reps if (r.get("body_bytes") or 0) > 0),
     }
 
 
