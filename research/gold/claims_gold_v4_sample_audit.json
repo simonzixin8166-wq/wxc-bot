@@ -1,0 +1,77 @@
+{
+ "sampler_sha256": "189d327d7681637a69260bfe75b5d349cff547b69cacb8b5bafcd5e087d0e4ae",
+ "seed": "20261030",
+ "window_utc": [
+  "2026-10-12",
+  "2026-10-31"
+ ],
+ "feed_snapshot_sha256": "6ec99303a987f55af6264632100da7dd7a8bc4a535546f07be11206621316995",
+ "feed_records": 2860,
+ "exclusions": {
+  "outside_window": 1647,
+  "eligible": 1213
+ },
+ "pool_posts": 1213,
+ "posts_split_across_test_and_dev": 0,
+ "test": {
+  "items": 360,
+  "posts": 273,
+  "by_kind": {
+   "blog": {
+    "items": 49,
+    "posts": 25,
+    "title+excerpt_posts": 24
+   },
+   "video": {
+    "items": 42,
+    "posts": 21,
+    "title+excerpt_posts": 21
+   },
+   "forum": {
+    "items": 269,
+    "posts": 227,
+    "title+excerpt_posts": 42
+   }
+  },
+  "author_share": {
+   "麻你": "71 (19.7%)",
+   "bogbog": "66 (18.3%)",
+   "我是一只井底蛙": "66 (18.3%)",
+   "三心三意": "54 (15.0%)",
+   "BrightLine": "38 (10.6%)",
+   "yifan99": "23 (6.4%)",
+   "RhinoFinance / 视野环球财经": "22 (6.1%)",
+   "Andrei Jikh": "12 (3.3%)",
+   "老李玩钱": "8 (2.2%)"
+  },
+  "weeks": {
+   "42": 126,
+   "43": 125,
+   "44": 109
+  }
+ },
+ "dev": {
+  "items": 150,
+  "posts": 126,
+  "by_kind": {
+   "forum": {
+    "items": 150,
+    "posts": 126,
+    "title+excerpt_posts": 24
+   }
+  },
+  "author_share": {
+   "bogbog": "39 (26.0%)",
+   "麻你": "37 (24.7%)",
+   "我是一只井底蛙": "37 (24.7%)",
+   "三心三意": "37 (24.7%)"
+  },
+  "representative": false
+ },
+ "checks": {
+  "test_author_max_share_le_25pct": true,
+  "post_overlap_zero": true,
+  "all_blog_video_posts_in_test": true,
+  "no_full_text_stored": true
+ }
+}
