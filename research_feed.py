@@ -396,6 +396,24 @@ def _author_actions(author: str, title: str, text: str) -> list:
     except Exception:
         return []
 
+def _thread_context(thread):
+    """Conversation position only: root id, the parent's id/author/title (<=120 chars) and the ids of
+    visible replies. Other people's reply titles are not stored."""
+    if not isinstance(thread, dict):
+        return None
+    par = thread.get("parent") if isinstance(thread.get("parent"), dict) else None
+    reps = thread.get("replies") if isinstance(thread.get("replies"), list) else []
+    return {
+        "root_post_id": thread.get("root_post_id"),
+        "is_reply": bool(thread.get("is_reply")),
+        "in_reply_to": ({"post_id": par.get("post_id"), "author": par.get("author"),
+                         "title": str(par.get("title") or "")[:120], "published_at": par.get("published_at")}
+                        if par else None),
+        "reply_count": len(reps),
+        "reply_ids": [r.get("post_id") for r in reps][:80],
+    }
+
+
 def normalize(source_kind: str, author: str, post: dict) -> dict:
     title = str(post.get("title") or "").strip()
     text = str(post.get("text") or "").strip()
@@ -430,6 +448,7 @@ def normalize(source_kind: str, author: str, post: dict) -> dict:
         "source_entry_key": post.get("source_entry_key"),
         "parent_post_id": post.get("parent_post_id"),
         "attribution_fallback": post.get("attribution_fallback"),
+        "thread_context": _thread_context(post.get("thread")),
         "captured_at": datetime.utcnow().replace(microsecond=0).isoformat() + "Z",
         "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
     }

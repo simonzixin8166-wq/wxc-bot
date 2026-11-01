@@ -120,6 +120,48 @@ def list_dates(html):
     return [datetime.strptime(d, "%m/%d/%Y") for d in re.findall(r"(\d{2}/\d{2}/\d{4})", html)]
 
 # ---------- 帖子页 ----------
+THREAD_TITLE_MAX = 120
+THREAD_REPLIES_MAX = 80
+
+
+def _post_id(href):
+    m = re.search(r"/(\d+)\.html", href or "")
+    return m.group(1) if m else None
+
+
+def parse_thread(soup, url):
+    """Conversation position of a post, read from the page that is already fetched (no extra request):
+    root id (<link rel=canonical>), the post it replies to (#postparent) and the visible reply tree under it
+    (#postlist; nesting from the left margin, 20px per level). Titles are cut to 120 chars; other posts'
+    bodies are never read."""
+    own = _post_id(url)
+    can = soup.find("link", rel="canonical")
+    root = (_post_id(can.get("href")) if can else None) or own
+    parent = None
+    pp = soup.select_one("#postparent")
+    if pp:
+        a = next((x for x in pp.find_all("a") if _post_id(x.get("href"))), None)
+        if a:
+            u = pp.select_one("a.username"); d = pp.select_one("span.date")
+            parent = {"post_id": _post_id(a.get("href")), "title": a.get_text(strip=True)[:THREAD_TITLE_MAX],
+                      "author": u.get_text(strip=True) if u else "", "published_at": d.get_text(strip=True) if d else ""}
+    replies, stack = [], [own]
+    for p in soup.select("#comment #postlist p")[:THREAD_REPLIES_MAX]:
+        a = p.select_one("a.post"); n = p.select_one("a.nickname")
+        pid = _post_id(a.get("href")) if a else None
+        if not pid:
+            continue
+        m = re.search(r"margin\s*:\s*\S+\s+\S+\s+\S+\s+(\d+)px", p.get("style") or "")
+        depth = int(m.group(1)) // 20 if m else 0
+        stack = stack[:depth + 1]
+        replies.append({"post_id": pid, "title": a.get_text(strip=True)[:THREAD_TITLE_MAX],
+                        "author": n.get_text(strip=True) if n else "", "depth": depth,
+                        "in_reply_to": stack[-1]})
+        stack.append(pid)
+    return {"post_id": own, "root_post_id": root, "is_reply": bool(own and root and own != root),
+            "parent": parent, "replies": replies}
+
+
 def parse_post(html, url, with_comments=False):
     soup = BeautifulSoup(html, "html.parser")
     title = soup.select_one("h1.title")
@@ -155,6 +197,10 @@ def parse_post(html, url, with_comments=False):
         "date": date, "reads": reads, "likes": likes,
         "text": text, "images": images,
     }
+    try:
+        post["thread"] = parse_thread(soup, url)
+    except Exception:  # thread context is optional; never lose the post because of it
+        post["thread"] = None
     if with_comments:
         cs = []
         for p in soup.select("#comment #postlist p"):
