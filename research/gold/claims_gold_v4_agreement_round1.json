@@ -1,0 +1,109 @@
+{
+ "version": "gold_v4_agreement_round1",
+ "date": "2026-11-01",
+ "guideline": "v1.2",
+ "sample": "GPT 120 test items / 90 posts",
+ "inputs_sha256": {
+  "claims_gold_test_v4.claude_first.jsonl": "368360d58ef08950532e7801bb9fbff556624d33569316e51477862393081de9",
+  "blind_test_v4_gpt_answers_textpack.json": "ceb3e2bd4ba1413934cb7267eec70b6ede104e6e2f7f849aa54167c06701a7df"
+ },
+ "text_basis": "title + stored public excerpt (textpack) for both labelers",
+ "kappa_unit": "post-level binary: post has ≥1 author claim (any ticker)",
+ "direction_unit": "(record_id, symbol) pairs labeled by both; agree if coarse directions overlap",
+ "variants": {
+  "claude_raw": {
+   "posts": 90,
+   "confusion": {
+    "both_claim": 16,
+    "claude_only": 8,
+    "gpt_only": 6,
+    "neither": 60
+   },
+   "observed_agreement": 0.844,
+   "kappa": 0.591,
+   "pairs": {
+    "claude": 53,
+    "gpt": 22,
+    "both": 14
+   },
+   "direction_agree": 10,
+   "direction_rate": 0.714,
+   "direction_wilson95": [
+    0.454,
+    0.883
+   ],
+   "item_status_matrix_claude_vs_gpt": {
+    "ambiguous|ambiguous": 3,
+    "ambiguous|claim": 5,
+    "ambiguous|none": 4,
+    "claim|ambiguous": 4,
+    "claim|claim": 16,
+    "claim|none": 5,
+    "claim|unavailable": 3,
+    "needs_article_check|ambiguous": 1,
+    "needs_article_check|needs_article_check": 11,
+    "needs_article_check|none": 3,
+    "none|ambiguous": 39,
+    "none|claim": 4,
+    "none|needs_article_check": 6,
+    "none|none": 11,
+    "none|unavailable": 1,
+    "unavailable|none": 1,
+    "unavailable|unavailable": 3
+   }
+  },
+  "gemini_unverified_as_unavailable": {
+   "posts": 90,
+   "confusion": {
+    "both_claim": 15,
+    "claude_only": 6,
+    "gpt_only": 7,
+    "neither": 62
+   },
+   "observed_agreement": 0.856,
+   "kappa": 0.603,
+   "pairs": {
+    "claude": 47,
+    "gpt": 22,
+    "both": 14
+   },
+   "direction_agree": 10,
+   "direction_rate": 0.714,
+   "direction_wilson95": [
+    0.454,
+    0.883
+   ],
+   "item_status_matrix_claude_vs_gpt": {
+    "ambiguous|ambiguous": 3,
+    "ambiguous|claim": 5,
+    "ambiguous|none": 4,
+    "claim|ambiguous": 4,
+    "claim|claim": 16,
+    "claim|none": 5,
+    "needs_article_check|ambiguous": 1,
+    "needs_article_check|needs_article_check": 11,
+    "needs_article_check|none": 3,
+    "none|ambiguous": 39,
+    "none|claim": 4,
+    "none|needs_article_check": 6,
+    "none|none": 11,
+    "unavailable|none": 1,
+    "unavailable|unavailable": 7
+   }
+  }
+ },
+ "owner_spotcheck": {
+  "items": 20,
+  "agree_owner_claude": 9,
+  "agree_owner_gpt": 9,
+  "agree_claude_gpt": 16,
+  "max_allowed_disagreements": 3,
+  "note": "Owner answers are stored privately (owner feedback policy); only aggregates are public. Owner read the full articles; Claude/GPT saw title + excerpt only."
+ },
+ "gate": {
+  "kappa_ge_0.60": "borderline (0.591 raw / 0.603 with Gemini rule)",
+  "direction_ge_0.85": "FAIL (10/14 = 0.714, Wilson 0.454–0.883)",
+  "owner_disagreements_le_3": "FAIL (11/20 vs both labelers)",
+  "freeze": "NO"
+ }
+}

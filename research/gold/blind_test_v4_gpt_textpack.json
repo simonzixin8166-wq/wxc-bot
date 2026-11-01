@@ -1,0 +1,1087 @@
+{
+ "version": "blind_test_v4_gpt_textpack",
+ "for": "blind_test_v4_gpt_request.json",
+ "note": "Target text for each blind_id, taken from the public research_feed fields `title` and `excerpt` (≤360-char stored public excerpt) — the same text the first labeler and the production extractor see. No labels, no extractor claims. title is context only for kind=excerpt.",
+ "items": [
+  {
+   "blind_id": "b4-b88f613985",
+   "kind": "title",
+   "source_kind": "blog",
+   "author": "麻你",
+   "url": "https://blog.wenxuecity.com/myblog/78105/202610/11167.html",
+   "title": "下个星期设VGT 118.36止盈，如果跌下，卖出总仓位的5%",
+   "target_text": "下个星期设VGT 118.36止盈，如果跌下，卖出总仓位的5%"
+  },
+  {
+   "blind_id": "b4-1dad027601",
+   "kind": "excerpt",
+   "source_kind": "blog",
+   "author": "麻你",
+   "url": "https://blog.wenxuecity.com/myblog/78105/202610/11167.html",
+   "title": "下个星期设VGT 118.36止盈，如果跌下，卖出总仓位的5%",
+   "target_text": "因为上次卖在112.8，现在比上次涨了5%\n上次设的117.57止盈只卖了很少一点\n如果下个星期以后没有触发止盈就继续保持87%的仓位在VGT，13%仓位在SGOV\n如果触发止盈以后大盘继续上涨就保持82%左右的仓位在VGT，18%仓位在SGOV\n如果VGT继续下跌就开始加仓，越跌越买，只买不卖"
+  },
+  {
+   "blind_id": "b4-a919edb277",
+   "kind": "title",
+   "source_kind": "blog",
+   "author": "BrightLine",
+   "url": "https://blog.wenxuecity.com/myblog/82458/202610/11756.html",
+   "title": "杀手级AI应用早就来了，只是不长我们想象的样子",
+   "target_text": "杀手级AI应用早就来了，只是不长我们想象的样子"
+  },
+  {
+   "blind_id": "b4-3ba6b1694f",
+   "kind": "excerpt",
+   "source_kind": "blog",
+   "author": "BrightLine",
+   "url": "https://blog.wenxuecity.com/myblog/82458/202610/11756.html",
+   "title": "杀手级AI应用早就来了，只是不长我们想象的样子",
+   "target_text": "黄仁勋把 AI 产业比作一块五层蛋糕：最底层是能源，往上是芯片、基础设施、模型，最顶层是应用。前四层的格局已经越来越清楚，市场一直追问的是最上面那一层：AI 的杀手级应用到底在哪里？\n我的答案是：它已经来了，只是不长我们想象的样子。我们习惯了用 SaaS 的眼光去找它，所以一直没认出来。\n过去二十年，企业软件的逻辑很简单：软件公司做一套标准化产品，卖给成千上万的客户。客户登录系统，学习功能，按账号或订阅付费。COTS 加 SaaS，就是这个时代的主流商业模式。\n但客户真正要买的，从来不是功能，而是结果。标准化软件的隐性成本，是让客户去适应软件：改流程、做培训、找实施商、写二次开发。大模型和智能体出现之后，这个关系开始倒过来了。客户不必再迁就一套通用系统，而是让模型去理解自己的数据、流程和规则，然后直接把事情办完"
+  },
+  {
+   "blind_id": "b4-2e2c076174",
+   "kind": "title",
+   "source_kind": "blog",
+   "author": "麻你",
+   "url": "https://blog.wenxuecity.com/myblog/78105/202610/15672.html",
+   "title": "VGT今天卖在118.36",
+   "target_text": "VGT今天卖在118.36"
+  },
+  {
+   "blind_id": "b4-8417e23c5f",
+   "kind": "excerpt",
+   "source_kind": "blog",
+   "author": "麻你",
+   "url": "https://blog.wenxuecity.com/myblog/78105/202610/15672.html",
+   "title": "VGT今天卖在118.36",
+   "target_text": "现在VGT占总仓位82%， SGOV占总仓位18%\n如果股市继续下跌，就开始逐渐买进，越跌越买，只买不卖\n如果股市开始涨，就保持这个仓位比例，直到上方下一个卖出信号出现，越涨越卖，只卖不买"
+  },
+  {
+   "blind_id": "b4-867f08dc51",
+   "kind": "title",
+   "source_kind": "blog",
+   "author": "BrightLine",
+   "url": "https://blog.wenxuecity.com/myblog/82458/202610/9046.html",
+   "title": "做减法2.0：损之又损",
+   "target_text": "做减法2.0：损之又损"
+  },
+  {
+   "blind_id": "b4-7468f57003",
+   "kind": "excerpt",
+   "source_kind": "blog",
+   "author": "BrightLine",
+   "url": "https://blog.wenxuecity.com/myblog/82458/202610/9046.html",
+   "title": "做减法2.0：损之又损",
+   "target_text": "老子说：为学日益，为道日损。损之又损，以至于无为。\n年轻时做加法，因为以为时间无限。人到中年做减法，因为终于知道时间有限。钱花了可以再赚，时间花了就没了。所以人生真正该算的账，从来不是钱，是时间。\n几年前我写过《做减法》，讲的是舍：卖出租房，砍副业，持仓砍到指数加几只龙头。今天再看，舍只是第一步。第二步是转：事情还在，只是不再由我来做。第三步是守：把腾出来的时间，守在真正重要的人和事上。\n舍，是知道什么不值得做；转，是知道什么不必亲自做；守，是知道什么绝不能放手。\n我也写过“穷搏富算”：穷的时候靠搏，富了以后靠算。减法，就是富算里最要紧的一笔账。\n钱不够的时候，用时间换钱是现实。钱已经够了，还舍不得用钱换时间，就是习惯。为了省几百刀坐红眼航班，为一点折扣比价半天。很多人早就不需要这样过日子了，脑子却还停留在过去"
+  },
+  {
+   "blind_id": "b4-b4bc4f7941",
+   "kind": "title",
+   "source_kind": "blog",
+   "author": "麻你",
+   "url": "https://blog.wenxuecity.com/myblog/78105/202610/21768.html",
+   "title": "今天vgt买在117.60，越跌越买，只买不卖",
+   "target_text": "今天vgt买在117.60，越跌越买，只买不卖"
+  },
+  {
+   "blind_id": "b4-d16bee73e7",
+   "kind": "excerpt",
+   "source_kind": "blog",
+   "author": "麻你",
+   "url": "https://blog.wenxuecity.com/myblog/78105/202610/21768.html",
+   "title": "今天vgt买在117.60，越跌越买，只买不卖",
+   "target_text": "看看能跌多少"
+  },
+  {
+   "blind_id": "b4-6aa6703aa0",
+   "kind": "title",
+   "source_kind": "blog",
+   "author": "BrightLine",
+   "url": "https://blog.wenxuecity.com/myblog/82458/202610/17536.html",
+   "title": "传统的软件已死，智力的工业革命刚刚开始",
+   "target_text": "传统的软件已死，智力的工业革命刚刚开始"
+  },
+  {
+   "blind_id": "b4-4f5b8dde2c",
+   "kind": "excerpt",
+   "source_kind": "blog",
+   "author": "BrightLine",
+   "url": "https://blog.wenxuecity.com/myblog/82458/202610/17536.html",
+   "title": "传统的软件已死，智力的工业革命刚刚开始",
+   "target_text": "前几天我去参加一个会议。台上有人在演示他们公司的软件，讲功能，讲案例，最后推销年度订阅。\n我坐在台下，一边听，一边拿出手机，打开 Claude，把他讲的功能一条一条描述进去。半个小时后，在那场演讲结束、我离开会场之前，我已经做出了一个功能一样的软件。\n台上的人还在讲订阅价格，台下的人已经用不着了。\n那一刻我很清楚地意识到：软件行业几十年来赖以生存的东西，正在我们眼前消失。而绝大多数人，包括台上那位，都还没有意识到。\n我的判断是：这不是一场软件革命，而是一场智力的工业革命。大多数人对它的低估不是低估一点，而是指数级的低估，因为他们在用线性的眼光，去看一条指数增长的曲线。\n一、一个本质：人类第一次可以用电制造智力\n几千年来，智力是人类最稀缺的资源，而且供给是锁死的。一个工程师要先花二十多年长大、读书，每天只能工作八"
+  },
+  {
+   "blind_id": "b4-9b2edcbf40",
+   "kind": "title",
+   "source_kind": "blog",
+   "author": "BrightLine",
+   "url": "https://blog.wenxuecity.com/myblog/82458/202610/8524.html",
+   "title": "别和美联储作对，但底已经不远了",
+   "target_text": "别和美联储作对，但底已经不远了"
+  },
+  {
+   "blind_id": "b4-aa51f9d789",
+   "kind": "excerpt",
+   "source_kind": "blog",
+   "author": "BrightLine",
+   "url": "https://blog.wenxuecity.com/myblog/82458/202610/8524.html",
+   "title": "别和美联储作对，但底已经不远了",
+   "target_text": "最近我又闻到了2022年的味道，但这一次的味道不太一样。\n9月16日，美联储三年来第一次加息，联邦基金利率到了3.75%到4.00%。10年期美债收益率9月底收在5.34%，是2002年以来最高，现在还在5.2%以上徘徊。\n华尔街有句老话：Don't fight the Fed。这一次，我决定听它的，先转守，准备足够多的现金。但听它的，首先要看懂它在干什么。看懂了，就会发现：底已经不远了。\n一、这不是熊市，是轮动\nS&P 500 上周五收在7,811点，离历史高点只有一步之遥。苹果离52周高点只差1%左右，微软差2%左右，Meta 差5%左右，Nvidia 10月5日刚创收盘新高，市值逼近6万亿美元。\n但下面是另一个世界。摩根士丹利的数据：罗素3000里，超过一半的公司已经从6月高点跌了20%以上。按10月初的"
+  },
+  {
+   "blind_id": "b4-98762adc16",
+   "kind": "title",
+   "source_kind": "blog",
+   "author": "BrightLine",
+   "url": "https://blog.wenxuecity.com/myblog/82458/202610/17742.html",
+   "title": "一个建筑师用AI省下50万美元：泡沫论者问错了问题",
+   "target_text": "一个建筑师用AI省下50万美元：泡沫论者问错了问题"
+  },
+  {
+   "blind_id": "b4-5b348aed75",
+   "kind": "excerpt",
+   "source_kind": "blog",
+   "author": "BrightLine",
+   "url": "https://blog.wenxuecity.com/myblog/82458/202610/17742.html",
+   "title": "一个建筑师用AI省下50万美元：泡沫论者问错了问题",
+   "target_text": "昨天和一个朋友吃饭。他是建筑师，做钢结构建筑，不是程序员。他们行业有一套专业软件，报价50万美元。他舍不得，就用Claude自己写了一个，够用。50万省下来了，直接变成了公司的利润。之后他又陆陆续续写了很多小软件，把公司里的各种流程都提了速。\nAI为他创造了50万美元的价值，自己只收了每月几百美元的订阅费。\n我想起最新一期All-In。Citadel的Ken Griffin说AI有泡沫：企业付给OpenAI、Anthropic巨额账单，却很难在真实业务里找到对等的生产力提升。Chamath拿出Ramp的数据：1%的公司贡献了90%的AI支出，其中八成来自还没盈利、靠风投输血的初创公司，风投投A，A买B的服务，B拿着漂亮的数据再找同一批风投融资，钱在圈子里转。\n听起来很有道理。但我认为，他们把两个完全不同的问题混"
+  },
+  {
+   "blind_id": "b4-8240c017c3",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/117931.html",
+   "title": "如果现在买入，低于140的支撑支撑。亏损有限。如果涨上去，利润可观。我已有LLY和PFE，就没有再买。",
+   "target_text": "如果现在买入，低于140的支撑支撑。亏损有限。如果涨上去，利润可观。我已有LLY和PFE，就没有再买。"
+  },
+  {
+   "blind_id": "b4-12d154333b",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/118259.html",
+   "title": "手上的非科技股：LLY，PFE，MO，MA，JPM，EAT。昨天新加了邮轮 VIK，又加了一个烟草 PM",
+   "target_text": "手上的非科技股：LLY，PFE，MO，MA，JPM，EAT。昨天新加了邮轮 VIK，又加了一个烟草 PM"
+  },
+  {
+   "blind_id": "b4-46ef8f9b94",
+   "kind": "excerpt",
+   "source_kind": "forum",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/118259.html",
+   "title": "手上的非科技股：LLY，PFE，MO，MA，JPM，EAT。昨天新加了邮轮 VIK，又加了一个烟草 PM",
+   "target_text": "大都有不错的分红。"
+  },
+  {
+   "blind_id": "b4-e28f9ee25c",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/118703.html",
+   "title": "announce多少次了？害得我早早清掉了能源股。—— 哈哈，不管川普，怪我自己没定力。",
+   "target_text": "announce多少次了？害得我早早清掉了能源股。—— 哈哈，不管川普，怪我自己没定力。"
+  },
+  {
+   "blind_id": "b4-72541b71e7",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "麻你",
+   "url": "https://bbs.wenxuecity.com/tzlc/2392103.html",
+   "title": "我撂倒一个俘虏一个，撂倒一个俘虏一个，缴获了一只美国枪",
+   "target_text": "我撂倒一个俘虏一个，撂倒一个俘虏一个，缴获了一只美国枪"
+  },
+  {
+   "blind_id": "b4-bcabb32aea",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "麻你",
+   "url": "https://bbs.wenxuecity.com/tzlc/2386278.html",
+   "title": "太好了，俺去看看订一辆。你要不要也订一辆？",
+   "target_text": "太好了，俺去看看订一辆。你要不要也订一辆？"
+  },
+  {
+   "blind_id": "b4-b8ff0e4856",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/116494.html",
+   "title": "虽然SPCX涨了 10%，但感觉这只是刚开始。HOLD TIGHT！",
+   "target_text": "虽然SPCX涨了 10%，但感觉这只是刚开始。HOLD TIGHT！"
+  },
+  {
+   "blind_id": "b4-f21d9dfae3",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/117168.html",
+   "title": "AI 要崩盘 和 AI 安全 板块要突破， 这两件事不可能同时发生：）",
+   "target_text": "AI 要崩盘 和 AI 安全 板块要突破， 这两件事不可能同时发生：）"
+  },
+  {
+   "blind_id": "b4-6fbc9d24e4",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "yifan99",
+   "url": "https://bbs.wenxuecity.com/cfzh/116804.html",
+   "title": "重新分享对MRNA的观点：“相隔9天，一成一败：mRNA离真正改变癌症治疗还有多远”",
+   "target_text": "重新分享对MRNA的观点：“相隔9天，一成一败：mRNA离真正改变癌症治疗还有多远”"
+  },
+  {
+   "blind_id": "b4-54339bef28",
+   "kind": "excerpt",
+   "source_kind": "forum",
+   "author": "yifan99",
+   "url": "https://bbs.wenxuecity.com/cfzh/116804.html",
+   "title": "重新分享对MRNA的观点：“相隔9天，一成一败：mRNA离真正改变癌症治疗还有多远”",
+   "target_text": "https://blog.wenxuecity.com/myblog/31983/202608/24450.html\nModerna黑色素瘤III期成功，BioNTech结直肠癌受挫：作为一名集基础医学和临床应用的研究者，我为什么长期看好mRNA，却不敢轻言“癌症革命”？\n作为一个长期工作在基础医学研究一线的人，我仍然长期看好mRNA。但是今天的我，不再因为一个III期成功就认为我们已经找到了征服癌症的钥匙，也不会因为另一个II期失败就否定整个技术。 生命科学真正令人敬畏的地方就在这里。\n我们每解决一个问题，往往又会看到十个新的问题。 也许未来某一天，mRNA真的会改变很多癌症的治疗方式。但在那一天到来以前，我们还需要一个癌种一个癌种地证明，一个患者群一个患者群地验证。所以，看完这两个相隔只有9天的临床结果，我"
+  },
+  {
+   "blind_id": "b4-9f04f514b0",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "麻你",
+   "url": "https://bbs.wenxuecity.com/tzlc/2386331.html",
+   "title": "50天",
+   "target_text": "50天"
+  },
+  {
+   "blind_id": "b4-4938eefec2",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "yifan99",
+   "url": "https://bbs.wenxuecity.com/cfzh/117790.html",
+   "title": "LITE Flying 11% up now.",
+   "target_text": "LITE Flying 11% up now."
+  },
+  {
+   "blind_id": "b4-a481b0b5d1",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "麻你",
+   "url": "https://bbs.wenxuecity.com/tzlc/2384872.html",
+   "title": "您感觉花完很困难，俺很乐意帮你，哈哈",
+   "target_text": "您感觉花完很困难，俺很乐意帮你，哈哈"
+  },
+  {
+   "blind_id": "b4-a2291b2b50",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "麻你",
+   "url": "https://bbs.wenxuecity.com/tzlc/2392188.html",
+   "title": "是的，卖了点SGOV。 新钱前些日子买了个房子用光了，嘿嘿",
+   "target_text": "是的，卖了点SGOV。 新钱前些日子买了个房子用光了，嘿嘿"
+  },
+  {
+   "blind_id": "b4-f62a3b2fcf",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/116413.html",
+   "title": "小松松总结了我想表达的， 哈哈",
+   "target_text": "小松松总结了我想表达的， 哈哈"
+  },
+  {
+   "blind_id": "b4-b02a8cb61d",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/117977.html",
+   "title": "You can sell another 1/9 soon :)",
+   "target_text": "You can sell another 1/9 soon :)"
+  },
+  {
+   "blind_id": "b4-48fcc981b7",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "麻你",
+   "url": "https://bbs.wenxuecity.com/tzlc/2383765.html",
+   "title": "漂亮",
+   "target_text": "漂亮"
+  },
+  {
+   "blind_id": "b4-3faabf1722",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/114698.html",
+   "title": "我INTC，AMD，TSM都是获利减仓（下一步关心的什么时候补仓回来）。SOXL清仓。NVDA没动。卖掉后资金转入的是",
+   "target_text": "我INTC，AMD，TSM都是获利减仓（下一步关心的什么时候补仓回来）。SOXL清仓。NVDA没动。卖掉后资金转入的是"
+  },
+  {
+   "blind_id": "b4-9d1e38ab17",
+   "kind": "excerpt",
+   "source_kind": "forum",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/114698.html",
+   "title": "我INTC，AMD，TSM都是获利减仓（下一步关心的什么时候补仓回来）。SOXL清仓。NVDA没动。卖掉后资金转入的是",
+   "target_text": "非半导体：\nMA，AMZN，CIEN，NOW"
+  },
+  {
+   "blind_id": "b4-a4cac53f94",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "麻你",
+   "url": "https://bbs.wenxuecity.com/tzlc/2386345.html",
+   "title": "都清空了，买的太多，没有办法计算，总的看是赚的。赚的也不多，因为只是拿出账户的1%的资金在玩，是闲的无聊",
+   "target_text": "都清空了，买的太多，没有办法计算，总的看是赚的。赚的也不多，因为只是拿出账户的1%的资金在玩，是闲的无聊"
+  },
+  {
+   "blind_id": "b4-2c4195607d",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/115876.html",
+   "title": "I am watching CDS / spreads on CRWV also bond yields",
+   "target_text": "I am watching CDS / spreads on CRWV also bond yields"
+  },
+  {
+   "blind_id": "b4-7916ccbad1",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/115504.html",
+   "title": "+1",
+   "target_text": "+1"
+  },
+  {
+   "blind_id": "b4-07a843928e",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/116234.html",
+   "title": "只有我一个人觉得SPY会接着调整吗？  像个outlier, 哈哈。",
+   "target_text": "只有我一个人觉得SPY会接着调整吗？  像个outlier, 哈哈。"
+  },
+  {
+   "blind_id": "b4-9e4c9415a2",
+   "kind": "excerpt",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/116234.html",
+   "title": "只有我一个人觉得SPY会接着调整吗？  像个outlier, 哈哈。",
+   "target_text": "一般大跌我都会加仓，从来都不怕跌，  这次保守哈哈"
+  },
+  {
+   "blind_id": "b4-98229fd7d6",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "yifan99",
+   "url": "https://bbs.wenxuecity.com/cfzh/117165.html",
+   "title": "谢谢分享，这些股正在逐渐形成向上的趋势，很快会有确认，是上车的一个机会",
+   "target_text": "谢谢分享，这些股正在逐渐形成向上的趋势，很快会有确认，是上车的一个机会"
+  },
+  {
+   "blind_id": "b4-20e33fb41c",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/114981.html",
+   "title": "加仓了Meta。低于720减掉今天加仓的部分。",
+   "target_text": "加仓了Meta。低于720减掉今天加仓的部分。"
+  },
+  {
+   "blind_id": "b4-bb5ac5ca06",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "yifan99",
+   "url": "https://bbs.wenxuecity.com/cfzh/116763.html",
+   "title": "我可能要分洒一点Tqqq和SOXL",
+   "target_text": "我可能要分洒一点Tqqq和SOXL"
+  },
+  {
+   "blind_id": "b4-5f474f72fb",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/117596.html",
+   "title": "buy buy buy, lol",
+   "target_text": "buy buy buy, lol"
+  },
+  {
+   "blind_id": "b4-d78aa98bd3",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/118013.html",
+   "title": "是的， 财报的cloud以及search也没有那么悲观（ multi-turn ads， AI mode等）",
+   "target_text": "是的， 财报的cloud以及search也没有那么悲观（ multi-turn ads， AI mode等）"
+  },
+  {
+   "blind_id": "b4-d75031e07b",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "麻你",
+   "url": "https://bbs.wenxuecity.com/tzlc/2386317.html",
+   "title": "有可能，看图形，这里是强支撑",
+   "target_text": "有可能，看图形，这里是强支撑"
+  },
+  {
+   "blind_id": "b4-18ba4d5e5c",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "麻你",
+   "url": "https://bbs.wenxuecity.com/tzlc/2388985.html",
+   "title": "下个星期继续保持82%仓位在VGT，18%仓位在SGOV",
+   "target_text": "下个星期继续保持82%仓位在VGT，18%仓位在SGOV"
+  },
+  {
+   "blind_id": "b4-3944222940",
+   "kind": "excerpt",
+   "source_kind": "forum",
+   "author": "麻你",
+   "url": "https://bbs.wenxuecity.com/tzlc/2388985.html",
+   "title": "下个星期继续保持82%仓位在VGT，18%仓位在SGOV",
+   "target_text": "如果大盘开始反弹奔新高，就让VGT跟着大盘往上走，直到下个卖出信号出现，再卖出部分盈利，取利。\n如果大盘继续向下，就开始不断买进VGT，越跌越买，只买不卖。直到跌到底就买到底。\n\n更多我的博客文章>>>下个星期继续保持82%仓位在VGT，18%仓位在SGOVVGT今天卖在118.36下个星期设VGT 118.36止盈，如果跌下，卖出总仓位的5%下个星期继续保持87%仓位在VGT，13%仓位在SGOV为什么要多仓VGT"
+  },
+  {
+   "blind_id": "b4-7d845d9bb3",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "yifan99",
+   "url": "https://bbs.wenxuecity.com/cfzh/117796.html",
+   "title": "我有太多的SP了，虚惊一场了。明天收获",
+   "target_text": "我有太多的SP了，虚惊一场了。明天收获"
+  },
+  {
+   "blind_id": "b4-a06cbb6989",
+   "kind": "excerpt",
+   "source_kind": "forum",
+   "author": "yifan99",
+   "url": "https://bbs.wenxuecity.com/cfzh/117796.html",
+   "title": "我有太多的SP了，虚惊一场了。明天收获",
+   "target_text": "LITE从来不会让人失望"
+  },
+  {
+   "blind_id": "b4-c85c170504",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/117683.html",
+   "title": "不一定，看股票的具体走势是否配合。配合好的我留。不好的我不恋战，或减或清，减少风险。",
+   "target_text": "不一定，看股票的具体走势是否配合。配合好的我留。不好的我不恋战，或减或清，减少风险。"
+  },
+  {
+   "blind_id": "b4-646c44365a",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/117089.html",
+   "title": "在高点要管理自己的进价。我这个是从240开始做的。49的put,加上这两个cc, 均价已经到了140了，完全不担心",
+   "target_text": "在高点要管理自己的进价。我这个是从240开始做的。49的put,加上这两个cc, 均价已经到了140了，完全不担心"
+  },
+  {
+   "blind_id": "b4-e0a17f0f65",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/116343.html",
+   "title": "AI对我投资组合的分析：",
+   "target_text": "AI对我投资组合的分析："
+  },
+  {
+   "blind_id": "b4-1421a025b9",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/118485.html",
+   "title": "我估计是三月份的走势，",
+   "target_text": "我估计是三月份的走势，"
+  },
+  {
+   "blind_id": "b4-265d6dde5b",
+   "kind": "excerpt",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/118485.html",
+   "title": "我估计是三月份的走势，",
+   "target_text": "https://bbs.wenxuecity.com/cfzh/116211.html\n \nhttps://bbs.wenxuecity.com/cfzh/116423.html"
+  },
+  {
+   "blind_id": "b4-09eccf5ef5",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/116355.html",
+   "title": "VGT的覆盖面要比QQQ广的多。",
+   "target_text": "VGT的覆盖面要比QQQ广的多。"
+  },
+  {
+   "blind_id": "b4-8884df720e",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/117604.html",
+   "title": "这meta我每次觉得高的时候是不是也应该去空一下，哈哈，",
+   "target_text": "这meta我每次觉得高的时候是不是也应该去空一下，哈哈，"
+  },
+  {
+   "blind_id": "b4-f8515079d3",
+   "kind": "excerpt",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/117604.html",
+   "title": "这meta我每次觉得高的时候是不是也应该去空一下，哈哈，",
+   "target_text": "我记得去年有两次高点的前一天我说meta有点贵了, 前阵子也觉得贵。。  \n \n开个玩笑，不会去空一个股票"
+  },
+  {
+   "blind_id": "b4-08e1fe7e43",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/118169.html",
+   "title": "下面双越美眉说“以后要远离这样高估值高波动的股票” -- 这是对的，但只对了一半",
+   "target_text": "下面双越美眉说“以后要远离这样高估值高波动的股票” -- 这是对的，但只对了一半"
+  },
+  {
+   "blind_id": "b4-d7581874f0",
+   "kind": "excerpt",
+   "source_kind": "forum",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/118169.html",
+   "title": "下面双越美眉说“以后要远离这样高估值高波动的股票” -- 这是对的，但只对了一半",
+   "target_text": "真正要远离的是那些仅仅靠叙事和希望支撑起来的，同时又是“高估值高波动的股票”。 没有实际业务支撑的股票，在叙事反转后跌的最凶\n如果要play，也是可以的。要么严格控制自己的进价，坚决不跟风买，要么做短线，快进快出。\n绝对不要把这些股票作为信仰在高价买入，准备长持。\nINTC，ARM，RKLB，AAOI，CRBS，ASTS，MRNA，CRCL 都在不同程度上属于这类股票"
+  },
+  {
+   "blind_id": "b4-a0e808fb17",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/115227.html",
+   "title": "这个是长投的，不担心：-）",
+   "target_text": "这个是长投的，不担心：-）"
+  },
+  {
+   "blind_id": "b4-37ef5f78b9",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/115997.html",
+   "title": "特殊时期，新买的ASML我采取自动止损，止损点一旦被触发系统自动给我卖掉。即使不在电脑前也不用担心。",
+   "target_text": "特殊时期，新买的ASML我采取自动止损，止损点一旦被触发系统自动给我卖掉。即使不在电脑前也不用担心。"
+  },
+  {
+   "blind_id": "b4-284bca32c6",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/117344.html",
+   "title": "+1",
+   "target_text": "+1"
+  },
+  {
+   "blind_id": "b4-754c07cdb5",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/118120.html",
+   "title": "放量，放量， 放量。 重要的事情说了三遍，哈哈",
+   "target_text": "放量，放量， 放量。 重要的事情说了三遍，哈哈"
+  },
+  {
+   "blind_id": "b4-a4bbad63f6",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/118693.html",
+   "title": "不同时间段不同的操作方法。对Day Trading，天天都是机会。高手天天都是机会。我是对我自己而言，说出来，仅供参考。",
+   "target_text": "不同时间段不同的操作方法。对Day Trading，天天都是机会。高手天天都是机会。我是对我自己而言，说出来，仅供参考。"
+  },
+  {
+   "blind_id": "b4-4a68c5d37a",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/118001.html",
+   "title": "我记的有天google涨了10%和ath的时候，都是乐观情绪。我就说他市值这么大，要从那天的价位涨一倍是需要时间的",
+   "target_text": "我记的有天google涨了10%和ath的时候，都是乐观情绪。我就说他市值这么大，要从那天的价位涨一倍是需要时间的"
+  },
+  {
+   "blind_id": "b4-747456f8a8",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/118509.html",
+   "title": "因为跌破了765，下一站就是750.  昨天说过前阵子也说过，这里应该会反弹一些，",
+   "target_text": "因为跌破了765，下一站就是750.  昨天说过前阵子也说过，这里应该会反弹一些，"
+  },
+  {
+   "blind_id": "b4-2057735830",
+   "kind": "excerpt",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/118509.html",
+   "title": "因为跌破了765，下一站就是750.  昨天说过前阵子也说过，这里应该会反弹一些，",
+   "target_text": "如果反转不了，应该还有一个final leg down then a rebound."
+  },
+  {
+   "blind_id": "b4-53e85052e1",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/114957.html",
+   "title": "It needs to hold this area and go back above EMA50",
+   "target_text": "It needs to hold this area and go back above EMA50"
+  },
+  {
+   "blind_id": "b4-6f1112ba27",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "麻你",
+   "url": "https://bbs.wenxuecity.com/tzlc/2388308.html",
+   "title": "哈哈，俺设的止盈卖出点位还没跌到呢",
+   "target_text": "哈哈，俺设的止盈卖出点位还没跌到呢"
+  },
+  {
+   "blind_id": "b4-1743517636",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "yifan99",
+   "url": "https://bbs.wenxuecity.com/cfzh/117171.html",
+   "title": "有没有这种可能AI暂时探底，而AI安全板块只是Rotation？现在一个月能源在FOMO高点，相信很快有rotation",
+   "target_text": "有没有这种可能AI暂时探底，而AI安全板块只是Rotation？现在一个月能源在FOMO高点，相信很快有rotation"
+  },
+  {
+   "blind_id": "b4-13c122dc67",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/118233.html",
+   "title": "明天继续抛TMF（只留1半），随时准备再捞股市一波",
+   "target_text": "明天继续抛TMF（只留1半），随时准备再捞股市一波"
+  },
+  {
+   "blind_id": "b4-595179b5ab",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "麻你",
+   "url": "https://bbs.wenxuecity.com/tzlc/2386349.html",
+   "title": "哈哈，不敢当",
+   "target_text": "哈哈，不敢当"
+  },
+  {
+   "blind_id": "b4-f8f4788390",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "麻你",
+   "url": "https://bbs.wenxuecity.com/tzlc/2388576.html",
+   "title": "十几年前买的VGT换算过来也就不到10块钱一股. 什么价位再买？跌下去就买，按现金的比例买进",
+   "target_text": "十几年前买的VGT换算过来也就不到10块钱一股. 什么价位再买？跌下去就买，按现金的比例买进"
+  },
+  {
+   "blind_id": "b4-40e192576c",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/116450.html",
+   "title": "总是觉得众人皆醉，唯我独醒，坚决跟市场对着干",
+   "target_text": "总是觉得众人皆醉，唯我独醒，坚决跟市场对着干"
+  },
+  {
+   "blind_id": "b4-51e453ed3a",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/116111.html",
+   "title": "AMZN参考图分析",
+   "target_text": "AMZN参考图分析"
+  },
+  {
+   "blind_id": "b4-9981540752",
+   "kind": "excerpt",
+   "source_kind": "forum",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/116111.html",
+   "title": "AMZN参考图分析",
+   "target_text": "1）最近的一次小回调保持在价位支撑和200天均线支撑上。正常回撤。\n2）5天的短线回撤今天一天就收复回来了，强势。\n3）期待它在震荡中上升，第一目标回到295，8月初的高点"
+  },
+  {
+   "blind_id": "b4-e4855fbce7",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/117656.html",
+   "title": "718.7 清仓。“cut losses early”。现在价位 612.5",
+   "target_text": "718.7 清仓。“cut losses early”。现在价位 612.5"
+  },
+  {
+   "blind_id": "b4-ce035b77c8",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/115236.html",
+   "title": "PFE has new 52 week high",
+   "target_text": "PFE has new 52 week high"
+  },
+  {
+   "blind_id": "b4-ca17edebff",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/116188.html",
+   "title": "查了一下交易记录。LLY 14号（发帖当日）和15号连买了两天。",
+   "target_text": "查了一下交易记录。LLY 14号（发帖当日）和15号连买了两天。"
+  },
+  {
+   "blind_id": "b4-439e8492a2",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/116319.html",
+   "title": "再看SPCX，现在盘后涨了4.2%。我是在151加仓的，当时约涨了2%。但愿能保持。SPCX的涨，也推了半导体股一把。",
+   "target_text": "再看SPCX，现在盘后涨了4.2%。我是在151加仓的，当时约涨了2%。但愿能保持。SPCX的涨，也推了半导体股一把。"
+  },
+  {
+   "blind_id": "b4-132560baff",
+   "kind": "excerpt",
+   "source_kind": "forum",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/116319.html",
+   "title": "再看SPCX，现在盘后涨了4.2%。我是在151加仓的，当时约涨了2%。但愿能保持。SPCX的涨，也推了半导体股一把。",
+   "target_text": "半导体股盘后普遍上涨了2%，有点“久旱逢甘霖”的味道，LOL"
+  },
+  {
+   "blind_id": "b4-f3eac5a370",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/116482.html",
+   "title": "are you even reading post on this forum? lol",
+   "target_text": "are you even reading post on this forum? lol"
+  },
+  {
+   "blind_id": "b4-14704ec1ba",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/118542.html",
+   "title": "买大盘安全一点，我的情况有点不同，  我万一亏了有兜底的，哈哈，开玩笑啦。主要是我的主仓位很多年了，浮盈很多，不担心",
+   "target_text": "买大盘安全一点，我的情况有点不同，  我万一亏了有兜底的，哈哈，开玩笑啦。主要是我的主仓位很多年了，浮盈很多，不担心"
+  },
+  {
+   "blind_id": "b4-886571b3d1",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/116332.html",
+   "title": "稳扎稳打，不要贪心：）",
+   "target_text": "稳扎稳打，不要贪心：）"
+  },
+  {
+   "blind_id": "b4-6752c4b193",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/117141.html",
+   "title": "下周重点观察股：特斯拉",
+   "target_text": "下周重点观察股：特斯拉"
+  },
+  {
+   "blind_id": "b4-2e51a2c7c2",
+   "kind": "excerpt",
+   "source_kind": "forum",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/117141.html",
+   "title": "下周重点观察股：特斯拉",
+   "target_text": "试看它能不能向上冲破390的价位阻力和200天均线阻力！"
+  },
+  {
+   "blind_id": "b4-b7f8bdf871",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/116781.html",
+   "title": "据我所知，这里面不是每个季报都会非常好",
+   "target_text": "据我所知，这里面不是每个季报都会非常好"
+  },
+  {
+   "blind_id": "b4-3b5bbd9a53",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/116722.html",
+   "title": "大盘应该是还没有，如果SPY站不稳765， 下一站是750。 有些股倒是挺便宜了，但是",
+   "target_text": "大盘应该是还没有，如果SPY站不稳765， 下一站是750。 有些股倒是挺便宜了，但是"
+  },
+  {
+   "blind_id": "b4-7f384ff6ad",
+   "kind": "excerpt",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/116722.html",
+   "title": "大盘应该是还没有，如果SPY站不稳765， 下一站是750。 有些股倒是挺便宜了，但是",
+   "target_text": "I am ok sacrificing the rebound\n \ncause if it pops it will be worse.  只是个人感觉， YMYD"
+  },
+  {
+   "blind_id": "b4-54f6802d42",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/117465.html",
+   "title": "如果日内回撤守住跳空缺口，应该还有动能push up",
+   "target_text": "如果日内回撤守住跳空缺口，应该还有动能push up"
+  },
+  {
+   "blind_id": "b4-87d5158f28",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "麻你",
+   "url": "https://bbs.wenxuecity.com/tzlc/2392210.html",
+   "title": "赞！今天看样子就这个样子了。看看下个星期能不能继续跌下去，先在下面把雷埋好，不见鬼子不挂弦",
+   "target_text": "赞！今天看样子就这个样子了。看看下个星期能不能继续跌下去，先在下面把雷埋好，不见鬼子不挂弦"
+  },
+  {
+   "blind_id": "b4-dcc5f3c14e",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/115097.html",
+   "title": "yes, 我们已经在sideline了",
+   "target_text": "yes, 我们已经在sideline了"
+  },
+  {
+   "blind_id": "b4-43b4abe510",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/118203.html",
+   "title": "你前两天没出？",
+   "target_text": "你前两天没出？"
+  },
+  {
+   "blind_id": "b4-3d1630017e",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "yifan99",
+   "url": "https://bbs.wenxuecity.com/cfzh/118205.html",
+   "title": "今天盘中出掉一半",
+   "target_text": "今天盘中出掉一半"
+  },
+  {
+   "blind_id": "b4-7b35bbe871",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/118602.html",
+   "title": "个人感觉SMH may be in the final leg down.",
+   "target_text": "个人感觉SMH may be in the final leg down."
+  },
+  {
+   "blind_id": "b4-5d4925e6b5",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "麻你",
+   "url": "https://bbs.wenxuecity.com/tzlc/2388577.html",
+   "title": "不客气",
+   "target_text": "不客气"
+  },
+  {
+   "blind_id": "b4-5c3b10a420",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "麻你",
+   "url": "https://bbs.wenxuecity.com/tzlc/2392249.html",
+   "title": "现在是7大家里也没有多少余粮了",
+   "target_text": "现在是7大家里也没有多少余粮了"
+  },
+  {
+   "blind_id": "b4-ca18273206",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/114658.html",
+   "title": "下周我重点关注的几只股。",
+   "target_text": "下周我重点关注的几只股。"
+  },
+  {
+   "blind_id": "b4-742e4bef6f",
+   "kind": "excerpt",
+   "source_kind": "forum",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/114658.html",
+   "title": "下周我重点关注的几只股。",
+   "target_text": "1）SNDK，8月中以来一直在“区间震荡”。现在第三次回到50天EMA均线。看下周会不会和前两次一样从均线支撑反弹。还是出现“异动”，支撑失守从这里跌下去？？—— 如此不好。\n2）MU，和SNDK有点类似，但震幅比SNDK浅，也是在横盘。\n3）INTC，也是回撤到了50天均线，如果要反弹，差不多也该是时候了。亦或者要在这里震荡一下。要看其它半导体股是否配合。ARM和它类似。ARM我在周四减了一半。\n4）谷歌。谷歌上周涨了2.38%。但没有改变它横盘，窄幅围绕着10周均线上下波动的模式。等待它决定下一步方向。"
+  },
+  {
+   "blind_id": "b4-204682ef79",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/116724.html",
+   "title": "Geeze, Meta down 45, but TSLA in green? LOL",
+   "target_text": "Geeze, Meta down 45, but TSLA in green? LOL"
+  },
+  {
+   "blind_id": "b4-6b3a8ca572",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/118662.html",
+   "title": "投资，永远不要只看叙事。或者说，你要知道自己在投叙事的公司，见好就收，而不是到了140又盲目的看200",
+   "target_text": "投资，永远不要只看叙事。或者说，你要知道自己在投叙事的公司，见好就收，而不是到了140又盲目的看200"
+  },
+  {
+   "blind_id": "b4-a1e4b9dcc6",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/115882.html",
+   "title": "如果市场过激反应了，那目前有业务实力的AI硬件公司股票性价比极高",
+   "target_text": "如果市场过激反应了，那目前有业务实力的AI硬件公司股票性价比极高"
+  },
+  {
+   "blind_id": "b4-108789476f",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "麻你",
+   "url": "https://bbs.wenxuecity.com/tzlc/2384443.html",
+   "title": "这么一点点小的波动不至于乐观悲观，大量买入买出",
+   "target_text": "这么一点点小的波动不至于乐观悲观，大量买入买出"
+  },
+  {
+   "blind_id": "b4-89ccc2ebb2",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "麻你",
+   "url": "https://bbs.wenxuecity.com/tzlc/2386307.html",
+   "title": "那样的话，看起来就是一辆超跑了，没有什么好炫的",
+   "target_text": "那样的话，看起来就是一辆超跑了，没有什么好炫的"
+  },
+  {
+   "blind_id": "b4-b92fbce507",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/115584.html",
+   "title": "对",
+   "target_text": "对"
+  },
+  {
+   "blind_id": "b4-ba500aa742",
+   "kind": "title",
+   "source_kind": "video",
+   "author": "Andrei Jikh",
+   "url": "https://www.youtube.com/watch?v=u6xVHJosAII",
+   "title": "The U.S. Is Now Buying Yen",
+   "target_text": "The U.S. Is Now Buying Yen"
+  },
+  {
+   "blind_id": "b4-80739932ce",
+   "kind": "excerpt",
+   "source_kind": "video",
+   "author": "Andrei Jikh",
+   "url": "https://www.youtube.com/watch?v=u6xVHJosAII",
+   "title": "The U.S. Is Now Buying Yen",
+   "target_text": "Scribe\n \n \nScribe\nLike it? Make Scribe even better by\n \nleaving a review\nGet Chrome Extension\nBrowse\nPopular Videos\nRecent Videos\nAll Channels\nFree Tools\nVideo Subtitle Downloader\nVideo Timestamp Generator\nVideo Summarizer\nVideo Word Counter\nVideo Title Analyzer\nVideo Transcript Search\nVideo Analytics\nVideo Chapters Creator\nVideo Quiz Generator\nChat with Vid"
+  },
+  {
+   "blind_id": "b4-0d9bcda5cc",
+   "kind": "title",
+   "source_kind": "video",
+   "author": "RhinoFinance / 视野环球财经",
+   "url": "https://www.youtube.com/watch?v=Am7QxgzrUek",
+   "title": "美股 对冲基金最新仓位，软件VS半导体！SOXX、IGV、QQQ！META、MSFT正常回撤！",
+   "target_text": "美股 对冲基金最新仓位，软件VS半导体！SOXX、IGV、QQQ！META、MSFT正常回撤！"
+  },
+  {
+   "blind_id": "b4-71ede5cd96",
+   "kind": "excerpt",
+   "source_kind": "video",
+   "author": "RhinoFinance / 视野环球财经",
+   "url": "https://www.youtube.com/watch?v=Am7QxgzrUek",
+   "title": "美股 对冲基金最新仓位，软件VS半导体！SOXX、IGV、QQQ！META、MSFT正常回撤！",
+   "target_text": "[Gemini 视频理解 · 未验证] 视频回顾了美股盘面表现，重点分析了高盛关于对冲基金上周头寸的数据：对冲基金以过去一年第二快速度净买入美股，做多个股并回补ETF空头，信息技术等板块获大幅净买入，房地产遭净卖出。随后对MSFT、META、IGV、SOXX、QQQ进行了技术位和指标分析。\n- [03:51 bullish] 上周对冲基金每天都净买入美股，增速为过去一年来第二快，个股多头买入，宏观产品空头回补\n- [06:08 bullish] 信息技术板块是美国净买入金额最高板块，软件空头回补，半导体及半导体设备多头买入\n- [10:22 SOXX bullish] 半导体及半导体设备净配置比例约为10.4%，仍处于历史较高位置，对冲基金依然看好多头动能\n- [09:07 IGV neutral] 软件行业净"
+  },
+  {
+   "blind_id": "b4-28f76324c1",
+   "kind": "title",
+   "source_kind": "video",
+   "author": "RhinoFinance / 视野环球财经",
+   "url": "https://www.youtube.com/watch?v=vynRw9NT7TQ",
+   "title": "美股 TSLA突破，强弱区间！MSFT对AI货币化充满信心！四大科技共振！AMD成了之前的NVDA！",
+   "target_text": "美股 TSLA突破，强弱区间！MSFT对AI货币化充满信心！四大科技共振！AMD成了之前的NVDA！"
+  },
+  {
+   "blind_id": "b4-ab668de42d",
+   "kind": "excerpt",
+   "source_kind": "video",
+   "author": "RhinoFinance / 视野环球财经",
+   "url": "https://www.youtube.com/watch?v=vynRw9NT7TQ",
+   "title": "美股 TSLA突破，强弱区间！MSFT对AI货币化充满信心！四大科技共振！AMD成了之前的NVDA！",
+   "target_text": "[Gemini 视频理解 · 未验证] 美联储理事沃勒言论偏鸽，9月维持利率不变预期与降息概率调整。8月挑战者裁员数上升但科技业裁员处于低位，ISM服务业PMI表现强劲。特斯拉放量突破确立新震荡区间；微软调整财报分部结构凸显AI业务透明度；英伟达、AMD、谷歌等科技股处震荡蓄势或长线区间。\n- [01:45 neutral] 美联储理事沃勒态度明显转向偏鸽，倾向于9月维持利率不变而非加息\n- [06:48 TSLA bullish 315-465] 特斯拉突破368后新震荡区间为315-465，突破465看新高，回撤331-368不破为波段机会\n- [07:28 TSLA watch 331] 特斯拉日线级别存在顶背离未修复，若跌破331走势偏弱，跌破315重回前期区间\n- [10:33 MSFT bullis"
+  },
+  {
+   "blind_id": "b4-66578d2d6e",
+   "kind": "title",
+   "source_kind": "video",
+   "author": "老李玩钱",
+   "url": "https://www.youtube.com/watch?v=JOaFOcY7Kc8",
+   "title": "华尔街大举买入和加仓的5支股票！我的看法及买入建议",
+   "target_text": "华尔街大举买入和加仓的5支股票！我的看法及买入建议"
+  },
+  {
+   "blind_id": "b4-50211556f7",
+   "kind": "excerpt",
+   "source_kind": "video",
+   "author": "老李玩钱",
+   "url": "https://www.youtube.com/watch?v=JOaFOcY7Kc8",
+   "title": "华尔街大举买入和加仓的5支股票！我的看法及买入建议",
+   "target_text": "[Gemini 视频理解 · 未验证] 视频基于华尔街二季度13F机构持仓报告，梳理了机构重点加仓的5只股票：谷歌、亚马逊、台积电、美光科技和博通。作者分析了各公司的业务增长逻辑及市盈率估值，并结合技术面给出了各自的开仓与加仓建议价格点位。\n- [04:58 GOOG buy 335, 320] 机构二季度大举加仓谷歌，建议开仓点位为335，加仓点位为320\n- [09:05 AMZN buy 255, 239] 机构二季度大幅增持亚马逊，建议255以下考虑开仓，缺口下沿239考虑加仓\n- [12:56 TSM buy 420, 396] 台积电护城河强大且估值合理，回调时建议开仓点位为420，加仓点位为396\n- [16:03 MU buy 896, 820] 美光科技处于存储与芯片双风口，建议在900（89"
+  },
+  {
+   "blind_id": "b4-b98aa951f2",
+   "kind": "title",
+   "source_kind": "video",
+   "author": "Andrei Jikh",
+   "url": "https://www.youtube.com/watch?v=nHy5u06we_s",
+   "title": "Your Money Is About To Be Worth A Lot Less",
+   "target_text": "Your Money Is About To Be Worth A Lot Less"
+  },
+  {
+   "blind_id": "b4-04c6483401",
+   "kind": "excerpt",
+   "source_kind": "video",
+   "author": "Andrei Jikh",
+   "url": "https://www.youtube.com/watch?v=nHy5u06we_s",
+   "title": "Your Money Is About To Be Worth A Lot Less",
+   "target_text": "Scribe\n \n \nScribe\nLike it? Make Scribe even better by\n \nleaving a review\nGet Chrome Extension\nBrowse\nPopular Videos\nRecent Videos\nAll Channels\nFree Tools\nVideo Subtitle Downloader\nVideo Timestamp Generator\nVideo Summarizer\nVideo Word Counter\nVideo Title Analyzer\nVideo Transcript Search\nVideo Analytics\nVideo Chapters Creator\nVideo Quiz Generator\nChat with Vid"
+  },
+  {
+   "blind_id": "b4-246e0a7128",
+   "kind": "title",
+   "source_kind": "video",
+   "author": "Andrei Jikh",
+   "url": "https://www.youtube.com/watch?v=8cufVZ_Q39s",
+   "title": "Europe Is the Test. America Is Next.",
+   "target_text": "Europe Is the Test. America Is Next."
+  },
+  {
+   "blind_id": "b4-37d640bfb3",
+   "kind": "excerpt",
+   "source_kind": "video",
+   "author": "Andrei Jikh",
+   "url": "https://www.youtube.com/watch?v=8cufVZ_Q39s",
+   "title": "Europe Is the Test. America Is Next.",
+   "target_text": "Free Video Transcripts | Scribe\nScribe\n \n \nScribe\nLike it? Make Scribe even better by\n \nleaving a review\nGet Chrome Extension\nBrowse\nPopular Videos\nRecent Videos\nAll Channels\nFree Tools\nVideo Subtitle Downloader\nVideo Timestamp Generator\nVideo Summarizer\nVideo Word Counter\nVideo Title Analyzer\nVideo Transcript Search\nVideo Analytics\nVideo Chapters Creator\nVi"
+  },
+  {
+   "blind_id": "b4-f50341e994",
+   "kind": "title",
+   "source_kind": "video",
+   "author": "RhinoFinance / 视野环球财经",
+   "url": "https://www.youtube.com/watch?v=19S-O_bla-A",
+   "title": "美股 MRVL抢单AVGO！AMD更新！财政部加码回购债券！为什么？钱哪来？QE吗？",
+   "target_text": "美股 MRVL抢单AVGO！AMD更新！财政部加码回购债券！为什么？钱哪来？QE吗？"
+  },
+  {
+   "blind_id": "b4-0c93296f7d",
+   "kind": "excerpt",
+   "source_kind": "video",
+   "author": "RhinoFinance / 视野环球财经",
+   "url": "https://www.youtube.com/watch?v=19S-O_bla-A",
+   "title": "美股 MRVL抢单AVGO！AMD更新！财政部加码回购债券！为什么？钱哪来？QE吗？",
+   "target_text": "[Gemini 视频理解 · 未验证] 本期节目分析了美国财政部加大国债回购力度对债市及美股的影响，明确指出TLT仅为短期反弹，缺乏长期牛市基础。同时更新了Moderna（MRNA）因癌症疫苗突破暴涨的情况，并详细分析了AMD、Marvell（MRVL）与博通（AVGO）的最新财报前瞻估值及技术支撑阻力位。\n- [01:08 MRNA bullish] 莫德纳（MRNA）与默克合作研发的癌症疫苗试验取得突破性进展，刺激股价大涨176%。\n- [10:08 TLT neutral] 财政部加大国债回购短期能打击空头并引发TLT反弹，但因债务规模庞大及高利率环境，TLT缺乏长期走牛的基础。\n- [12:33 AMD watch 427-453] AMD当前股价在466附近，估值略微偏高，关键中等支撑位在427-45"
+  }
+ ]
+}
