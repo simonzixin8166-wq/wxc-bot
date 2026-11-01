@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-10-31T23:26:38Z",
+  "generated_at": "2026-11-01T06:02:02Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -19,14 +19,14 @@
           "reached_end": false
         }
       ],
-      "previous_anchor_video_id": "K1OPHbVonjc",
+      "previous_anchor_video_id": "-C0B7AEwOcU",
       "anchor_found": true,
       "reached_end": false,
       "discovery_complete": true,
       "latest": {
-        "video_id": "K1OPHbVonjc",
-        "title": "美股 天塌了？应该买还是卖？11月三大风险事件！",
-        "url": "https://www.youtube.com/watch?v=K1OPHbVonjc",
+        "video_id": "-C0B7AEwOcU",
+        "title": "（会员第308期）2026年10月26日-30日，重要公司Q3财报后2026、2027前瞻估值，强支撑点位！",
+        "url": "https://www.youtube.com/watch?v=-C0B7AEwOcU",
         "published_at": "",
         "rss_status": "error:HTTPError",
         "flat_metadata_keys": [
@@ -120,8 +120,8 @@
   "pending_retried": 6,
   "content_attempted_this_run": 6,
   "content_work_budget": 6,
-  "content_backlog_after_run": 105,
-  "pending_total": 105,
+  "content_backlog_after_run": 106,
+  "pending_total": 106,
   "historical_demoted_from_pending": 0,
   "admitted_from_pending": 0,
   "nonforward_timestamp_unknown_admitted": 0,
@@ -181,19 +181,16 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "xOY53crL1ZA",
-      "title": "（会员第305期）掌握数据，跟随趋势！如何追踪标普、个股、EPS业绩修正？几个隐藏的免费数据入口！使用方法！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
+      "video_id": "-C0B7AEwOcU",
+      "title": "（会员第308期）2026年10月26日-30日，重要公司Q3财报后2026、2027前瞻估值，强支撑点位！",
       "admission": "pending_content",
       "was_pending": true,
-      "pending_reason": "missing_learning_text"
+      "pending_reason": "awaiting_publication_date"
     },
     {
-      "author": "Andrei Jikh",
-      "video_id": "7-lWx78nAQ4",
-      "title": "The Debt Spiral Has Started",
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "cr3MV3KTHRE",
+      "title": "美股 对冲基金，抛售哪些？做多哪些？META、MSFT、XLI，存储重伤，竞争加剧！MU、SNDK位置！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -206,7 +203,7 @@
     "status": "ok",
     "channel_errors": 0,
     "stuck_high_quality_pending": 0,
-    "provider_waiting_pending": 105,
+    "provider_waiting_pending": 106,
     "stuck_video_ids": [],
     "meaning": "Q1/Q2 text must not remain stuck in pending; Q3-Q5 may legitimately wait for better learning text."
   },

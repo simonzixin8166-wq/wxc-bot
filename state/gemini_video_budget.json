@@ -585,15 +585,15 @@
       ]
     },
     "2026-10-31": {
-      "calls": 4,
+      "calls": 5,
       "admitted": 2,
       "rejected": 2,
-      "errors": 2,
+      "errors": 4,
       "reconciliation": {
         "status": "COMPLETE",
-        "calls_billed": 4,
-        "calls_refunded_503": 2,
-        "detail_rows": 6,
+        "calls_billed": 5,
+        "calls_refunded_503": 3,
+        "detail_rows": 8,
         "missing_detail_rows": 0,
         "counter_mismatch": []
       },
@@ -649,9 +649,27 @@
           "author": "老李玩钱",
           "title": "$310,000美股账户，我加仓/减仓的4支股票！接下来美股将何去何从",
           "detail": "seen='美股7月暴跌？这几点你必须注意！2024下半年美股走势研判以及未来应对策略！老李账户实盘更新！' channel='老李玩钱'"
+        },
+        {
+          "video_id": "K1OPHbVonjc",
+          "outcome": "exception",
+          "at": "06:00:55Z",
+          "model": "gemini-3.8-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 天塌了？应该买还是卖？11月三大风险事件！",
+          "detail": "ReadTimeout"
+        },
+        {
+          "video_id": "g1kgEiP1v10",
+          "outcome": "http_503_all_models",
+          "at": "06:01:39Z",
+          "model": "gemini-3.8-flash,gemini-3.5-flash",
+          "author": "Andrei Jikh",
+          "title": "Trump Just Started The Debt Spiral",
+          "detail": "{\"error\":{\"message\":\"gemini-3.5-flash is currently experiencing high demand, spikes in demand are usually temporary. Please try again later.\",\"code\":\"service_unavailable\"}}"
         }
       ],
-      "refunded_503": 2
+      "refunded_503": 3
     }
   },
   "version": 1,
