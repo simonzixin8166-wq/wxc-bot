@@ -672,15 +672,15 @@
       "refunded_503": 3
     },
     "2026-11-01": {
-      "calls": 2,
+      "calls": 3,
       "admitted": 1,
       "rejected": 0,
-      "errors": 1,
+      "errors": 2,
       "reconciliation": {
         "status": "COMPLETE",
-        "calls_billed": 2,
+        "calls_billed": 3,
         "calls_refunded_503": 0,
-        "detail_rows": 2,
+        "detail_rows": 3,
         "missing_detail_rows": 0,
         "counter_mismatch": []
       },
@@ -701,6 +701,15 @@
           "model": "gemini-3.8-flash",
           "author": "RhinoFinance / 视野环球财经",
           "title": "美股 资本支出：三季度增速见顶！SOXX、SMH反复拉扯！UNH已计价，JPM不及格！"
+        },
+        {
+          "video_id": "TNQ2PuDLiOg",
+          "outcome": "http_403",
+          "at": "18:55:28Z",
+          "model": "gemini-3.8-flash",
+          "author": "Andrei Jikh",
+          "title": "My Thoughts On XRP",
+          "detail": "{\"error\":{\"message\":\"The caller does not have permission\",\"code\":\"permission_denied\"}}"
         }
       ]
     }
