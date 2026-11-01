@@ -86245,9 +86245,173 @@
       "intake_class_hint": "backfill",
       "capture_mode": "youtube_timestamp_unknown_learning",
       "timestamp_confidence": "missing"
+    },
+    {
+      "id": "3fc4246409cfe002cc8c",
+      "source": "youtube",
+      "source_kind": "video",
+      "author": "RhinoFinance / 视野环球财经",
+      "published_at": "2026-10-14",
+      "title": "美股 资本支出：三季度增速见顶！SOXX、SMH反复拉扯！UNH已计价，JPM不及格！",
+      "url": "https://www.youtube.com/watch?v=JlFrJ45B6zU",
+      "excerpt": "[Gemini 视频理解 · 未验证] 本期节目分析了UNH、JPM、GS最新财报与前瞻估值，指出JPM出现营收与EPS双miss但上调净利息收入指引；讨论了科技巨头资本支出同比增速在2024年Q3见顶放缓对半导体利润率的潜在影响；更新SOXX与SMH半导体ETF关键支撑阻力位；并指出标普中位数股票距高点已跌15%。\n- [02:30 UNH bullish] UNH第三财季调整后EPS为4.69美元高于预期的4.14美元，营收1127亿美元高于预期的1113.1亿美元\n- [02:48 UNH bullish 20.50] UNH上调全年调整后每股收益指引至至少20.50美元\n- [04:14 UNH neutral 484] UNH股价目前在2027年前瞻估值中位数405美元附近，长线位置在361-394及",
+      "content_chars": 1209,
+      "semantic_content_chars": 1209,
+      "content_filtering": {
+        "filter": "youtube_promotion_noise_v1",
+        "input_units": 16,
+        "removed_units": 0,
+        "removed_ratio": 0.0,
+        "promotion_noise_detected": false
+      },
+      "images_count": 0,
+      "themes_hint": [
+        "风险管理",
+        "趋势确认"
+      ],
+      "symbols": [
+        "GS",
+        "JPM",
+        "SMH",
+        "SOXX",
+        "UNH"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "captured_at": "2026-11-01T13:22:49Z",
+      "source_role": "rule_supply",
+      "transcript_status": "available",
+      "content_quality": "Q3",
+      "content_provider": "gemini_video",
+      "content_provider_url": "https://www.youtube.com/watch?v=JlFrJ45B6zU",
+      "content_origin": "gemini_video_understanding",
+      "timestamp_evidence": true,
+      "rule_candidate_allowed": false,
+      "source_notice": "公开视频由 Gemini 读取原片（语音+画面）生成的结构化摘要；观点未验证、不可直接作为规则，等待 Owner 抽查原片核对。",
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "video_claims": [
+        {
+          "claim": "UNH第三财季调整后EPS为4.69美元高于预期的4.14美元，营收1127亿美元高于预期的1113.1亿美元",
+          "stance": "bullish",
+          "price": null,
+          "timestamp": "02:30",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "UNH",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "UNH上调全年调整后每股收益指引至至少20.50美元",
+          "stance": "bullish",
+          "price": "20.50",
+          "timestamp": "02:48",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "UNH",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "UNH股价目前在2027年前瞻估值中位数405美元附近，长线位置在361-394及347-357美元区间，需突破484美元确认进一步走高",
+          "stance": "neutral",
+          "price": "484",
+          "timestamp": "04:14",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "UNH",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "JPM第三财季调整后营收509.1亿美元及EPS 5.75美元均低于市场预期，出现罕见双miss",
+          "stance": "bearish",
+          "price": null,
+          "timestamp": "05:34",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "JPM",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "JPM上调今年净利息收入预期至1062亿美元，预计明年为1070亿美元，均高于分析师预期",
+          "stance": "bullish",
+          "price": null,
+          "timestamp": "08:31",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "JPM",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "JPM股价位于2027年前瞻估值中位水平附近，上方压力在345-360美元，下方支撑在289-318美元",
+          "stance": "neutral",
+          "price": "345",
+          "timestamp": "10:46",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "JPM",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "高盛当前股价估值偏高，远高于中位水平，上方阻力998-1074美元，支撑889-952美元",
+          "stance": "neutral",
+          "price": "889",
+          "timestamp": "12:56",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "GS",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "超大规模科技巨头资本支出同比增速共识预期在2024年Q3见顶（达116%），后续增速将逐季放缓，半导体卖铲公司毛利率未来可能承压",
+          "stance": "watch",
+          "price": null,
+          "timestamp": "15:20",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": null,
+          "symbol_check": null
+        },
+        {
+          "claim": "SOXX跌回486-577美元震荡区间，只要不跌破486美元风险爆发点，仍维持回踩企稳看新高结构",
+          "stance": "bullish",
+          "price": "486",
+          "timestamp": "22:42",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "SOXX",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "SMH跌破586美元后回到534-586美元震荡区间，跌破534美元则确认走空",
+          "stance": "watch",
+          "price": "534",
+          "timestamp": "25:07",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "SMH",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "标普500指数中位数股票交易价格距离52周高点已下跌15%，个股赚钱效应分化显著",
+          "stance": "neutral",
+          "price": null,
+          "timestamp": "28:09",
+          "evidence_mode": "spoken_explicit",
+          "confidence": "high",
+          "symbol": null,
+          "symbol_check": null
+        }
+      ],
+      "video_claims_model": "gemini-3.8-flash",
+      "video_macro": [],
+      "video_observed_title": "AI资本支出共识增速见顶？大金融财报细节，半导体ETF（SOXX、SMH）走势更新；标普中位数个股已进入技术性熊市【视野环球财经20241015】",
+      "validation_status": "pending_owner_spot_check",
+      "forward_evidence_eligible": false
     }
   ],
-  "updated_at": "2026-10-31T18:37:40Z",
+  "updated_at": "2026-11-01T13:22:49Z",
   "retention_policy": "append_only_no_record_count_cap",
   "historical_recovery": {
     "completed_at": "2026-10-07T13:43:06.018028+00:00",
