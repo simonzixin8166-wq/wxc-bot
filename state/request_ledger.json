@@ -341,6 +341,34 @@
         "count": 8,
         "paid": false
       }
+    },
+    "2026-10-30": {
+      "telegram:send_message": {
+        "count": 11,
+        "paid": false
+      },
+      "telegram:get_updates": {
+        "count": 4,
+        "paid": false
+      },
+      "myalphaview:server_action_status": {
+        "count": 4,
+        "paid": false
+      }
+    },
+    "2026-10-31": {
+      "telegram:get_updates": {
+        "count": 6,
+        "paid": false
+      },
+      "myalphaview:server_action_status": {
+        "count": 6,
+        "paid": false
+      },
+      "telegram:send_message": {
+        "count": 3,
+        "paid": false
+      }
     }
   }
 }

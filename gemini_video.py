@@ -342,6 +342,10 @@ def _author_blocked_today(author):
 MEMBERS_ONLY = re.compile(r"会员|members?[ -]?only|member exclusive", re.I)
 AUTHOR_403_VIDEOS = 2       # distinct videos with 403 in one day before the whole author is skipped that day
 GIVE_UP_IDENTITY = 2        # identity mismatches on one video (any days) before Gemini stops trying it
+GIVE_UP_TIMEOUT = 3         # ReadTimeouts on one video (any days) before Gemini stops trying it (long video)
+# 10/29-10/30: QHrNWTgD7DA timed out 5 times (TIMEOUT 420 s each) and 9 of 14 calls were exceptions; a timed-out
+# call is billed, so one long video kept eating the free daily quota. After one timeout in a quota day the video
+# waits for the next quota day; after GIVE_UP_TIMEOUT it is left to the Owner's /yt path (like identity_mismatch).
 
 
 def _members_only(title):
@@ -355,6 +359,20 @@ def _video_given_up(video_id, doc=None):
     n = sum(1 for d in days.values() for r in (d or {}).get("recent") or []
             if isinstance(r, dict) and r.get("video_id") == video_id and r.get("outcome") == "identity_mismatch")
     return n >= GIVE_UP_IDENTITY
+
+
+def _timeouts(video_id, doc=None, today_only=False):
+    days = (doc or _load_budget()).get("days") or {}
+    pick = {_today(): days.get(_today())} if today_only else days
+    return sum(1 for d in pick.values() for r in (d or {}).get("recent") or []
+               if isinstance(r, dict) and r.get("video_id") == video_id and r.get("outcome") == "exception"
+               and str(r.get("detail") or "").startswith(("ReadTimeout", "Timeout", "ConnectTimeout")))
+
+
+def _video_timed_out(video_id, doc=None):
+    """Skip a video that already timed out this quota day; give it up after GIVE_UP_TIMEOUT timeouts in total."""
+    doc = doc or _load_budget()
+    return _timeouts(video_id, doc, today_only=True) >= 1 or _timeouts(video_id, doc) >= GIVE_UP_TIMEOUT
 
 
 def _block_author_today(author, video_id=None):
@@ -377,7 +395,7 @@ def _block_author_today(author, video_id=None):
 def acquire(video_id, title, author, post=None):
     """Return an Acquisition-compatible dict, or None (disabled, over budget, failed or unverified)."""
     global _run_calls
-    if not enabled() or _members_only(title) or _video_given_up(video_id):
+    if not enabled() or _members_only(title) or _video_given_up(video_id) or _video_timed_out(video_id):
         return None
     if not budget_ok() or _author_blocked_today(author):
         return None

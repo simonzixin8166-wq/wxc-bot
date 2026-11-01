@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-10-30T00:02:52Z",
+  "generated_at": "2026-10-31T23:26:38Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -19,14 +19,14 @@
           "reached_end": false
         }
       ],
-      "previous_anchor_video_id": "g3qLtJPUAxU",
+      "previous_anchor_video_id": "K1OPHbVonjc",
       "anchor_found": true,
       "reached_end": false,
       "discovery_complete": true,
       "latest": {
-        "video_id": "g3qLtJPUAxU",
-        "title": "美股 MSFT AI货币化成功上岸！GOOG鼻青脸肿，等一个季度！对半导体影响！",
-        "url": "https://www.youtube.com/watch?v=g3qLtJPUAxU",
+        "video_id": "K1OPHbVonjc",
+        "title": "美股 天塌了？应该买还是卖？11月三大风险事件！",
+        "url": "https://www.youtube.com/watch?v=K1OPHbVonjc",
         "published_at": "",
         "rss_status": "error:HTTPError",
         "flat_metadata_keys": [
@@ -93,14 +93,14 @@
           "reached_end": false
         }
       ],
-      "previous_anchor_video_id": "1lspa5l4kxs",
+      "previous_anchor_video_id": "m7hL3bVoUuQ",
       "anchor_found": true,
       "reached_end": false,
       "discovery_complete": true,
       "latest": {
-        "video_id": "1lspa5l4kxs",
-        "title": "My Thoughts On Bitcoin",
-        "url": "https://www.youtube.com/watch?v=1lspa5l4kxs",
+        "video_id": "m7hL3bVoUuQ",
+        "title": "Binance Just Lost $6.3 Billion",
+        "url": "https://www.youtube.com/watch?v=m7hL3bVoUuQ",
         "published_at": "",
         "rss_status": "error:HTTPError",
         "flat_metadata_keys": [
@@ -137,6 +137,17 @@
   "new_video_diagnostics": [
     {
       "author": "RhinoFinance / 视野环球财经",
+      "video_id": "K1OPHbVonjc",
+      "title": "美股 天塌了？应该买还是卖？11月三大风险事件！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "RhinoFinance / 视野环球财经",
       "video_id": "g3qLtJPUAxU",
       "title": "美股 MSFT AI货币化成功上岸！GOOG鼻青脸肿，等一个季度！对半导体影响！",
       "content_quality": "Q5",
@@ -170,8 +181,8 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "4_uytm7I_XQ",
-      "title": "美股 半导体SOXX成分股全阵亡！后面怎么玩？注意事项！",
+      "video_id": "xOY53crL1ZA",
+      "title": "（会员第305期）掌握数据，跟随趋势！如何追踪标普、个股、EPS业绩修正？几个隐藏的免费数据入口！使用方法！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -180,20 +191,9 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "老李玩钱",
-      "video_id": "nLskyS7Vvug",
-      "title": "华尔街大举买入和卖出的8支股票！是否要跟着买进或卖出？我的看法及操作建议",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "老李玩钱",
-      "video_id": "nNaiUbM17HY",
-      "title": "美股不怕急跌，怕的是目前这种震荡下行的行情",
+      "author": "Andrei Jikh",
+      "video_id": "7-lWx78nAQ4",
+      "title": "The Debt Spiral Has Started",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,

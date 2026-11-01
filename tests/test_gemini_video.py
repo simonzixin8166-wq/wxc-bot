@@ -182,7 +182,8 @@ for resp in (lambda *a, **k: Resp(200, wrap(GOOD)), lambda *a, **k: Resp(200, wr
              lambda *a, **k: Resp(500, {}), lambda *a, **k: (_ for _ in ()).throw(TimeoutError()),
              lambda *a, **k: Resp(200, {"outputs": []})):
     gv._run_calls = 0
-    gv.acquire("vid1", TITLE, AUTHOR, post=resp)
+    # the timeout case uses its own video: a timed-out video is (by design) not called again the same quota day
+    gv.acquire("vidT" if "throw" in resp.__code__.co_names else "vid1", TITLE, AUTHOR, post=resp)
 day = budget()
 rec = day["reconciliation"]
 assert rec["status"] == "COMPLETE" and rec["calls_billed"] == 5 and rec["calls_refunded_503"] == 1, rec
@@ -273,6 +274,28 @@ hist = {"days": {"2026-10-24": {"recent": [{"video_id": "4_uytm7I_XQ", "outcome"
                                            {"video_id": "other", "outcome": "identity_mismatch"}]}}}
 assert gv._video_given_up("4_uytm7I_XQ", hist) is True and gv._video_given_up("other", hist) is False
 assert gv.TIMEOUT * gv.RUN_CAP < 25 * 60  # fits the intake job timeout
+# 13) 10/29-10/30 regression: one long video timed out 5 times (each billed) -> after a timeout it waits for the
+#     next quota day; after GIVE_UP_TIMEOUT timeouts in total it is given up. Other errors do not count.
+import requests as _rq
+T = gv._today()
+th = {"days": {T: {"recent": [{"video_id": "QHrNWTgD7DA", "outcome": "exception", "detail": "ReadTimeout"},
+                              {"video_id": "x500", "outcome": "http_500"}]}}}
+assert gv._video_timed_out("QHrNWTgD7DA", th) is True and gv._video_timed_out("x500", th) is False
+old_days = {"days": {"2026-10-29": {"recent": [{"video_id": "v", "outcome": "exception", "detail": "ReadTimeout"}] * 2},
+                     "2026-10-30": {"recent": [{"video_id": "v", "outcome": "exception", "detail": "ReadTimeout"}]}}}
+assert gv._video_timed_out("v", old_days) is True                       # 3 in total -> given up
+two = {"days": {"2026-10-29": {"recent": [{"video_id": "w", "outcome": "exception", "detail": "ReadTimeout"}] * 2}}}
+assert gv._video_timed_out("w", two) is False                           # 2 on earlier days -> still tried today
+assert gv._video_timed_out("w", {"days": {"2026-10-29": {"recent": [{"video_id": "w", "outcome": "exception", "detail": "KeyError"}] * 3}}}) is False
+# live path: a ReadTimeout is billed once, then the same video is not called again the same quota day
+gv._run_calls = 0
+def _timeout(*a, **k):
+    raise _rq.exceptions.ReadTimeout("read timed out")
+before = budget()["calls"]
+assert gv.acquire("longvid1", TITLE, AUTHOR, post=_timeout) is None
+assert budget()["calls"] == before + 1 and budget()["recent"][-1]["detail"].startswith("ReadTimeout")
+gv._run_calls = 0
+assert gv.acquire("longvid1", TITLE, AUTHOR, post=nope) is None and budget()["calls"] == before + 1
 # Pacific quota day (Google: RPD resets at midnight Pacific time), DST-aware
 U = lambda *a: datetime(*a, tzinfo=timezone.utc)
 assert gv._today(U(2026, 10, 28, 1, 18)) == "2026-10-27"      # the 10/28 01:18Z 429 belonged to the previous quota day
@@ -316,4 +339,4 @@ assert gv.acquire("vid1", TITLE, AUTHOR, post=post_with(Resp(429, {}))) is None
 assert budget()["exhausted"] is True and gv.budget_ok() is False
 import yt_daily_report as rep
 assert "备用模型额度用完" in rep.REASONS["http_429_fallback"]
-print("PASS YT-01 Gemini video fallback: keyless off, budget/run cap/429, identity + safety gates, forward-intake only, experimental Q3 admission, call ledger reconciles, 403 author skipped for the day, 20 claims + macro, new-video reserve, unsupported channels, members-only skip, identity give-up, Pacific quota day, fallback 429 does not stop the day")
+print("PASS YT-01 Gemini video fallback: keyless off, budget/run cap/429, identity + safety gates, forward-intake only, experimental Q3 admission, call ledger reconciles, 403 author skipped for the day, 20 claims + macro, new-video reserve, unsupported channels, members-only skip, identity give-up, Pacific quota day, fallback 429 does not stop the day, repeated timeouts skip the video")
