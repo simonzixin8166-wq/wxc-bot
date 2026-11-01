@@ -672,15 +672,15 @@
       "refunded_503": 3
     },
     "2026-11-01": {
-      "calls": 3,
-      "admitted": 1,
+      "calls": 4,
+      "admitted": 2,
       "rejected": 0,
       "errors": 2,
       "reconciliation": {
         "status": "COMPLETE",
-        "calls_billed": 3,
+        "calls_billed": 4,
         "calls_refunded_503": 0,
-        "detail_rows": 3,
+        "detail_rows": 4,
         "missing_detail_rows": 0,
         "counter_mismatch": []
       },
@@ -710,6 +710,14 @@
           "author": "Andrei Jikh",
           "title": "My Thoughts On XRP",
           "detail": "{\"error\":{\"message\":\"The caller does not have permission\",\"code\":\"permission_denied\"}}"
+        },
+        {
+          "video_id": "dpDUZnMjzJk",
+          "outcome": "admitted",
+          "at": "23:36:46Z",
+          "model": "gemini-3.8-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 纳指重挫，Anthropic增速失望，IPO估值下调！AI高增长交易动摇！TSM持仓计划更新！SPY、QQQ、SO"
         }
       ]
     }

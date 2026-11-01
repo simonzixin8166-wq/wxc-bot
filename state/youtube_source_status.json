@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-11-01T18:56:03Z",
+  "generated_at": "2026-11-01T23:37:22Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -100,7 +100,7 @@
       "discovery_complete": true,
       "latest": {
         "video_id": "m7hL3bVoUuQ",
-        "title": "Binance Just Lost $6.3 Billion",
+        "title": "The Biggest Crypto Theft In History",
         "url": "https://www.youtube.com/watch?v=m7hL3bVoUuQ",
         "published_at": "2026-10-30",
         "rss_status": "ok",
@@ -122,8 +122,8 @@
   "pending_retried": 6,
   "content_attempted_this_run": 6,
   "content_work_budget": 6,
-  "content_backlog_after_run": 105,
-  "pending_total": 105,
+  "content_backlog_after_run": 104,
+  "pending_total": 104,
   "historical_demoted_from_pending": 0,
   "admitted_from_pending": 0,
   "nonforward_timestamp_unknown_admitted": 0,
@@ -191,8 +191,8 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "SbZltIBvi7M",
-      "title": "美股 对冲基金清空1年来AI仓位！不看好人工智能了吗？举例NVDA对比AMD！",
+      "video_id": "A4p5t_F4mQs",
+      "title": "（会员第306期）补充26年8月24-10月09，2026年10月12日-16日，重要公司Q3财报后2026、2027前瞻估值，强支撑点位！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -205,7 +205,7 @@
     "status": "ok",
     "channel_errors": 0,
     "stuck_high_quality_pending": 0,
-    "provider_waiting_pending": 105,
+    "provider_waiting_pending": 104,
     "stuck_video_ids": [],
     "meaning": "Q1/Q2 text must not remain stuck in pending; Q3-Q5 may legitimately wait for better learning text."
   },

@@ -86409,9 +86409,240 @@
       "video_observed_title": "AI资本支出共识增速见顶？大金融财报细节，半导体ETF（SOXX、SMH）走势更新；标普中位数个股已进入技术性熊市【视野环球财经20241015】",
       "validation_status": "pending_owner_spot_check",
       "forward_evidence_eligible": false
+    },
+    {
+      "id": "6f73d1b04634dea763cd",
+      "source": "youtube",
+      "source_kind": "video",
+      "author": "RhinoFinance / 视野环球财经",
+      "published_at": "2026-10-17",
+      "title": "美股 纳指重挫，Anthropic增速失望，IPO估值下调！AI高增长交易动摇！TSM持仓计划更新！SPY、QQQ、SOXX、SMH！",
+      "url": "https://www.youtube.com/watch?v=dpDUZnMjzJk",
+      "excerpt": "[Gemini 视频理解 · 未验证] 节目讨论了Anthropic因AI融资成本膨胀及环比增速放缓导致潜在估值下调的消息；分析了台积电Q3财报、毛利率指引及前瞻估值点位；跟踪了标普SPY、纳指QQQ、半导体SOXX与SMH的走空与支撑位，并对META、AVGO、AMD等个股关键点位进行了解读。\n- [04:31 neutral 1.5万亿美元] Anthropic潜在买家考虑将估值下调至约1.5万亿美元，主因融资成本高企及环比增速放缓\n- [07:22 TSM neutral] 台积电Q3财报表现稳健，但前瞻毛利率指引下调至66.4%略低于预期\n- [13:48 TSM watch 399-406] 台积电410-424为激进买入点位，399-406为长线稳健布局买点\n- [14:10 TSM buy 360",
+      "content_chars": 1083,
+      "semantic_content_chars": 1083,
+      "content_filtering": {
+        "filter": "youtube_promotion_noise_v1",
+        "input_units": 18,
+        "removed_units": 0,
+        "removed_ratio": 0.0,
+        "promotion_noise_detected": false
+      },
+      "images_count": 0,
+      "themes_hint": [
+        "风险管理",
+        "止损纪律"
+      ],
+      "symbols": [
+        "AMD",
+        "AVGO",
+        "META",
+        "QQQ",
+        "SMH",
+        "SOXX",
+        "SPY",
+        "TRV",
+        "TSM"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "captured_at": "2026-11-01T23:36:46Z",
+      "source_role": "rule_supply",
+      "transcript_status": "available",
+      "content_quality": "Q3",
+      "content_provider": "gemini_video",
+      "content_provider_url": "https://www.youtube.com/watch?v=dpDUZnMjzJk",
+      "content_origin": "gemini_video_understanding",
+      "timestamp_evidence": true,
+      "rule_candidate_allowed": false,
+      "source_notice": "公开视频由 Gemini 读取原片（语音+画面）生成的结构化摘要；观点未验证、不可直接作为规则，等待 Owner 抽查原片核对。",
+      "claims": [
+        {
+          "symbol": "TSM",
+          "stance": "buy",
+          "stance_cues": [
+            "buy"
+          ],
+          "horizon": "long",
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "ef527237e900f7e6a6cb6d13baffba76939c9f952931643e7b6c5aef33fb818a",
+          "evidence_chars": 62
+        },
+        {
+          "symbol": "TSM",
+          "stance": "add",
+          "stance_cues": [
+            "add",
+            "buy"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "d487eeb548e01ed37c84753f8e81e08af1229452f98155690773668f0138e15e",
+          "evidence_chars": 65
+        },
+        {
+          "symbol": "SMH",
+          "stance": "bearish",
+          "stance_cues": [
+            "bearish"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "c96de563849ae8c5b0645ef979d1d079383e0442c854fb26a33720801351714d",
+          "evidence_chars": 62
+        },
+        {
+          "symbol": "AVGO",
+          "stance": "buy",
+          "stance_cues": [
+            "buy",
+            "bearish"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "ac41084e28a61a924c39b5d6d73bf3f6949015ff937e6e398d62d3331723bfc8",
+          "evidence_chars": 67
+        }
+      ],
+      "claims_status": "experimental_unvalidated",
+      "video_claims": [
+        {
+          "claim": "Anthropic潜在买家考虑将估值下调至约1.5万亿美元，主因融资成本高企及环比增速放缓",
+          "stance": "neutral",
+          "price": "1.5万亿美元",
+          "timestamp": "04:31",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": null,
+          "symbol_check": null
+        },
+        {
+          "claim": "台积电Q3财报表现稳健，但前瞻毛利率指引下调至66.4%略低于预期",
+          "stance": "neutral",
+          "price": null,
+          "timestamp": "07:22",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "TSM",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "台积电410-424为激进买入点位，399-406为长线稳健布局买点",
+          "stance": "watch",
+          "price": "399-406",
+          "timestamp": "13:48",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "TSM",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "台积电若回调至360-378计划加仓2%，若恐慌跌至320-350计划大买4%",
+          "stance": "buy",
+          "price": "360-378",
+          "timestamp": "14:10",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "TSM",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "标普SPY激进支撑在759-776，若跌破729才真正走入空头趋势",
+          "stance": "watch",
+          "price": "729",
+          "timestamp": "15:43",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "SPY",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "纳指QQQ多头关键防守在700-728，跌破687-694将走空",
+          "stance": "watch",
+          "price": "687-694",
+          "timestamp": "19:05",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "QQQ",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "费城半导体SOXX跌破486创连跌纪录，卖压凶猛，486-532区间破位偏空",
+          "stance": "bearish",
+          "price": "486",
+          "timestamp": "19:34",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "SOXX",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "半导体ETF SMH若跌破534-547将破位偏空，下方筹码空虚",
+          "stance": "bearish",
+          "price": "534-547",
+          "timestamp": "21:26",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "SMH",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "META跌破690后破位走弱，将进入656-680震荡区间，短线获利盘需注意保护",
+          "stance": "neutral",
+          "price": "690",
+          "timestamp": "22:12",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "META",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "博通AVGO跌至324-365支撑区，当前收盘技术形态极差，严禁盲目买入",
+          "stance": "bearish",
+          "price": "324-365",
+          "timestamp": "24:43",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "AVGO",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "AMD跌破506-528后短线承压，当前估值溢价较高，回撤弹性大",
+          "stance": "neutral",
+          "price": "506-528",
+          "timestamp": "25:31",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "AMD",
+          "symbol_check": "listed"
+        }
+      ],
+      "video_claims_model": "gemini-3.8-flash",
+      "video_macro": [
+        {
+          "indicator": "10Y Treasury yield / Real interest rate (TIPS)",
+          "value": null,
+          "expectation": null,
+          "period": null,
+          "timestamp": "16:32"
+        }
+      ],
+      "video_observed_title": "Anthropic估值遭下调！台积电Q3财报分析与估值点位更新；大盘、半导体及关键个股位置跟踪",
+      "validation_status": "pending_owner_spot_check",
+      "forward_evidence_eligible": false
     }
   ],
-  "updated_at": "2026-11-01T13:22:49Z",
+  "updated_at": "2026-11-01T23:36:46Z",
   "retention_policy": "append_only_no_record_count_cap",
   "historical_recovery": {
     "completed_at": "2026-10-07T13:43:06.018028+00:00",
