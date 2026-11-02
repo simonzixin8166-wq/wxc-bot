@@ -40,6 +40,8 @@ d.rf.capture_blog_profile = lambda name, days, return_report: calls.append(name)
 d.rf.daily_digest_text = lambda day: "digest"
 sent = []
 d.agent.say = lambda text: sent.append(text)
+_probed = d._already_probed_today
+d._already_probed_today = lambda now=None: False  # first try of the day
 try:
     d.main()
     raise AssertionError("main must stay red when the forum is blocked")
@@ -48,3 +50,20 @@ except SystemExit as exc:
 assert calls == ["BrightLine"] and (tmp / "blog_scan_state.json").exists()
 assert "blocked" in sent[0]
 print("PASS forum blocked is recorded, anchor kept, blog still collected, run stays red")
+d._already_probed_today = _probed
+
+# second run on the same day: no forum/blog request at all, ends without a new failure
+calls.clear()
+d.FORUM_STATUS.write_text(json.dumps({"status": "blocked", "blocked_at": datetime.now(timezone.utc).isoformat()}), encoding="utf-8")
+d._collect_forum_or_blocked = lambda: (_ for _ in ()).throw(AssertionError("must not touch the forum twice a day"))
+d.main()
+assert calls == []
+
+# Owner 11/2: while blocked, wenxuecity is tried once per UTC day
+d.FORUM_STATUS.write_text(json.dumps({"status": "blocked", "blocked_at": "2026-11-02T01:43:00+00:00",
+                                      "first_blocked_at": "2026-11-01T01:22:00+00:00"}), encoding="utf-8")
+assert d._already_probed_today(datetime(2026, 11, 2, 22, 30, tzinfo=timezone.utc)) is True
+assert d._already_probed_today(datetime(2026, 11, 3, 13, 10, tzinfo=timezone.utc)) is False
+d.FORUM_STATUS.write_text(json.dumps({"status": "complete", "blocked_at": "2026-11-02T01:43:00+00:00"}), encoding="utf-8")
+assert d._already_probed_today(datetime(2026, 11, 2, 22, 30, tzinfo=timezone.utc)) is False  # not blocked -> normal runs
+print("PASS blocked wenxuecity is tried once per UTC day")
