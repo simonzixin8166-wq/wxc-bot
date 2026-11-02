@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-11-02T05:58:27Z",
+  "generated_at": "2026-11-02T15:44:56Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -28,7 +28,7 @@
         "title": "（会员第308期）2026年10月26日-30日，重要公司Q3财报后2026、2027前瞻估值，强支撑点位！",
         "url": "https://www.youtube.com/watch?v=-C0B7AEwOcU",
         "published_at": "",
-        "rss_status": "error:HTTPError",
+        "rss_status": "ok",
         "flat_metadata_keys": [
           "channel_id",
           "duration"
@@ -64,11 +64,12 @@
         "video_id": "oGE0jMTHpvg",
         "title": "美联储会议安全落地！ORCL，MSFT，GOOG 分析及操作建议",
         "url": "https://www.youtube.com/watch?v=oGE0jMTHpvg",
-        "published_at": "",
-        "rss_status": "error:HTTPError",
+        "published_at": "2026-10-28",
+        "rss_status": "ok",
         "flat_metadata_keys": [
           "channel_id",
-          "duration"
+          "duration",
+          "rss_published_at"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -99,13 +100,14 @@
       "discovery_complete": true,
       "latest": {
         "video_id": "m7hL3bVoUuQ",
-        "title": "The Biggest Crypto Theft In History",
+        "title": "Binance Just Lost $6.3 Billion",
         "url": "https://www.youtube.com/watch?v=m7hL3bVoUuQ",
-        "published_at": "",
-        "rss_status": "error:HTTPError",
+        "published_at": "2026-10-30",
+        "rss_status": "ok",
         "flat_metadata_keys": [
           "channel_id",
-          "duration"
+          "duration",
+          "rss_published_at"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -128,9 +130,9 @@
   "feed_records_added": 0,
   "publication_dates_resolved": 0,
   "rss_status": {
-    "UCFQsi7WaF5X41tcuOryDk8w": "error:HTTPError",
-    "UCGy7SkBjcIAgTiwkXEtPnYg": "error:HTTPError",
-    "UCo2gxyermsLBSCxFHvJs0Zg": "error:HTTPError"
+    "UCFQsi7WaF5X41tcuOryDk8w": "ok",
+    "UCGy7SkBjcIAgTiwkXEtPnYg": "ok",
+    "UCo2gxyermsLBSCxFHvJs0Zg": "ok"
   },
   "historical_backlog_total": 54,
   "discovery_complete": true,
@@ -180,9 +182,9 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "Andrei Jikh",
-      "video_id": "1lspa5l4kxs",
-      "title": "My Thoughts On Bitcoin",
+      "author": "老李玩钱",
+      "video_id": "0KgZcbhZoXk",
+      "title": "2支被忽略的科技巨头！分析与买入建议",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -191,9 +193,9 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "Andrei Jikh",
-      "video_id": "QpPf_hY_Bl8",
-      "title": "North Korea Suspected In Crypto Heist",
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "0w77lIBdCn0",
+      "title": "美股 机构弹药见底！下一步，暴风雨？平静？TSLA、IGV、AVGO！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
