@@ -2,33 +2,34 @@
   "authors": {
     "BrightLine": {
       "last_success_at": "2026-10-31T17:43:24.455343+00:00",
-      "last_attempt_at": "2026-10-31T17:43:24.455343+00:00",
-      "scan_complete": true,
+      "last_attempt_at": "2026-11-02T07:36:17.945851+00:00",
+      "scan_complete": false,
       "recovery_days_used": 14,
-      "new_records": 1,
-      "article_links_found": 56,
-      "posts_parsed": 34,
-      "unique_article_ids": 14,
-      "parsed_unique_urls": 14,
-      "feed_present_urls": 14,
+      "new_records": 0,
+      "article_links_found": 0,
+      "posts_parsed": 0,
+      "unique_article_ids": 0,
+      "parsed_unique_urls": 0,
+      "feed_present_urls": 0,
       "missing_from_feed": 0,
       "missing_from_feed_urls": [],
       "seen_total": 32,
-      "archive_months": 1,
-      "archive_months_ok": [
-        "2026-10"
+      "archive_months": 2,
+      "archive_months_ok": [],
+      "archive_failures": [
+        "2026-10",
+        "2026-11"
       ],
-      "archive_failures": [],
-      "overview_ok": true,
+      "overview_ok": false,
       "retention_policy": "no_article_count_cap"
     },
     "yifan99": {
       "last_success_at": "2026-10-31T17:43:24.455343+00:00",
-      "last_attempt_at": "2026-10-31T17:43:24.455343+00:00",
-      "scan_complete": true,
+      "last_attempt_at": "2026-11-02T07:36:17.945851+00:00",
+      "scan_complete": false,
       "recovery_days_used": 14,
       "new_records": 0,
-      "article_links_found": 31,
+      "article_links_found": 0,
       "posts_parsed": 0,
       "unique_article_ids": 0,
       "parsed_unique_urls": 0,
@@ -36,38 +37,40 @@
       "missing_from_feed": 0,
       "missing_from_feed_urls": [],
       "seen_total": 13,
-      "archive_months": 1,
-      "archive_months_ok": [
-        "2026-10"
+      "archive_months": 2,
+      "archive_months_ok": [],
+      "archive_failures": [
+        "2026-10",
+        "2026-11"
       ],
-      "archive_failures": [],
-      "overview_ok": true,
+      "overview_ok": false,
       "retention_policy": "no_article_count_cap"
     },
     "麻你": {
       "last_success_at": "2026-10-31T17:43:24.455343+00:00",
-      "last_attempt_at": "2026-10-31T17:43:24.455343+00:00",
-      "scan_complete": true,
+      "last_attempt_at": "2026-11-02T07:36:17.945851+00:00",
+      "scan_complete": false,
       "recovery_days_used": 14,
-      "new_records": 1,
-      "article_links_found": 28,
-      "posts_parsed": 10,
-      "unique_article_ids": 5,
-      "parsed_unique_urls": 5,
-      "feed_present_urls": 5,
+      "new_records": 0,
+      "article_links_found": 0,
+      "posts_parsed": 0,
+      "unique_article_ids": 0,
+      "parsed_unique_urls": 0,
+      "feed_present_urls": 0,
       "missing_from_feed": 0,
       "missing_from_feed_urls": [],
       "seen_total": 22,
-      "archive_months": 1,
-      "archive_months_ok": [
-        "2026-10"
+      "archive_months": 2,
+      "archive_months_ok": [],
+      "archive_failures": [
+        "2026-10",
+        "2026-11"
       ],
-      "archive_failures": [],
-      "overview_ok": true,
+      "overview_ok": false,
       "retention_policy": "no_article_count_cap"
     }
   },
   "version": 1,
-  "updated_at": "2026-10-31T17:43:24.455343+00:00",
+  "updated_at": "2026-11-02T07:36:17.945851+00:00",
   "policy": "recovery window expands from the last complete scheduled scan; failed archive months or parsed URLs missing from canonical feed do not advance last_success_at; article discovery has no count cap"
 }
