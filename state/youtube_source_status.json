@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-11-02T15:44:56Z",
+  "generated_at": "2026-11-02T23:31:25Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -100,7 +100,7 @@
       "discovery_complete": true,
       "latest": {
         "video_id": "m7hL3bVoUuQ",
-        "title": "Binance Just Lost $6.3 Billion",
+        "title": "The Biggest Crypto Theft In History",
         "url": "https://www.youtube.com/watch?v=m7hL3bVoUuQ",
         "published_at": "2026-10-30",
         "rss_status": "ok",
@@ -182,9 +182,9 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "老李玩钱",
-      "video_id": "0KgZcbhZoXk",
-      "title": "2支被忽略的科技巨头！分析与买入建议",
+      "author": "Andrei Jikh",
+      "video_id": "1UIKZBGYMYI",
+      "title": "China Is Preparing For $38,000 Gold",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -194,8 +194,8 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "0w77lIBdCn0",
-      "title": "美股 机构弹药见底！下一步，暴风雨？平静？TSLA、IGV、AVGO！",
+      "video_id": "4M7w7DR865M",
+      "title": "美股 最差9月，CTA更新！JPM战术转向，减仓多头！对冲基金上周仓位！AMZN遭起诉掉块肉！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
