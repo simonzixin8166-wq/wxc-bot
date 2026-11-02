@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-11-01T23:37:22Z",
+  "generated_at": "2026-11-02T05:58:27Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -28,7 +28,7 @@
         "title": "（会员第308期）2026年10月26日-30日，重要公司Q3财报后2026、2027前瞻估值，强支撑点位！",
         "url": "https://www.youtube.com/watch?v=-C0B7AEwOcU",
         "published_at": "",
-        "rss_status": "ok",
+        "rss_status": "error:HTTPError",
         "flat_metadata_keys": [
           "channel_id",
           "duration"
@@ -64,12 +64,11 @@
         "video_id": "oGE0jMTHpvg",
         "title": "美联储会议安全落地！ORCL，MSFT，GOOG 分析及操作建议",
         "url": "https://www.youtube.com/watch?v=oGE0jMTHpvg",
-        "published_at": "2026-10-28",
-        "rss_status": "ok",
+        "published_at": "",
+        "rss_status": "error:HTTPError",
         "flat_metadata_keys": [
           "channel_id",
-          "duration",
-          "rss_published_at"
+          "duration"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -102,12 +101,11 @@
         "video_id": "m7hL3bVoUuQ",
         "title": "The Biggest Crypto Theft In History",
         "url": "https://www.youtube.com/watch?v=m7hL3bVoUuQ",
-        "published_at": "2026-10-30",
-        "rss_status": "ok",
+        "published_at": "",
+        "rss_status": "error:HTTPError",
         "flat_metadata_keys": [
           "channel_id",
-          "duration",
-          "rss_published_at"
+          "duration"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -130,9 +128,9 @@
   "feed_records_added": 0,
   "publication_dates_resolved": 0,
   "rss_status": {
-    "UCFQsi7WaF5X41tcuOryDk8w": "ok",
-    "UCGy7SkBjcIAgTiwkXEtPnYg": "ok",
-    "UCo2gxyermsLBSCxFHvJs0Zg": "ok"
+    "UCFQsi7WaF5X41tcuOryDk8w": "error:HTTPError",
+    "UCGy7SkBjcIAgTiwkXEtPnYg": "error:HTTPError",
+    "UCo2gxyermsLBSCxFHvJs0Zg": "error:HTTPError"
   },
   "historical_backlog_total": 54,
   "discovery_complete": true,
@@ -182,17 +180,20 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "-C0B7AEwOcU",
-      "title": "（会员第308期）2026年10月26日-30日，重要公司Q3财报后2026、2027前瞻估值，强支撑点位！",
+      "author": "Andrei Jikh",
+      "video_id": "1lspa5l4kxs",
+      "title": "My Thoughts On Bitcoin",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
       "admission": "pending_content",
       "was_pending": true,
-      "pending_reason": "awaiting_publication_date"
+      "pending_reason": "missing_learning_text"
     },
     {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "A4p5t_F4mQs",
-      "title": "（会员第306期）补充26年8月24-10月09，2026年10月12日-16日，重要公司Q3财报后2026、2027前瞻估值，强支撑点位！",
+      "author": "Andrei Jikh",
+      "video_id": "QpPf_hY_Bl8",
+      "title": "North Korea Suspected In Crypto Heist",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
