@@ -1,19 +1,19 @@
 {
- "generated_at": "2026-11-02T22:18:21+00:00",
- "records": 2862,
+ "generated_at": "2026-11-03T20:05:55+00:00",
+ "records": 2863,
  "excluded": 23,
  "flag_counts": {
   "invalid_transcript": 23
  },
  "video": {
-  "records": 44,
+  "records": 45,
   "invalid_transcript": 23,
   "note": "video count follows the live feed (18 at the 10-11 inventory, 19 after a new video was captured 10-11 12:45Z)"
  },
  "provenance_counts": {
   "near_publication_observed": 1727,
   "backfill_proven": 1065,
-  "delayed_capture": 35,
+  "delayed_capture": 36,
   "unprovable": 35
  },
  "policy": "overlay only; feed/raw files unchanged; near_publication_observed ≠ real-time lock",
@@ -20096,6 +20096,13 @@
    "exclude": false,
    "provenance": "backfill_proven",
    "first_git_seen": "2026-11-01T23:37:22Z",
+   "published_at_timezone": "unknown"
+  },
+  "7cf96c01506fec2ffb82": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "delayed_capture",
+   "first_git_seen": "2026-11-03T16:14:22Z",
    "published_at_timezone": "unknown"
   }
  }

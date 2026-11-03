@@ -1,19 +1,19 @@
 {
- "generated_at": "2026-11-02T22:18:21+00:00",
- "records": 2862,
- "without_recorded_provenance": 1234,
+ "generated_at": "2026-11-03T20:05:55+00:00",
+ "records": 2863,
+ "without_recorded_provenance": 1235,
  "derived_for_unrecorded": {
   "near_publication_observed": 341,
   "backfill_proven": 869,
-  "delayed_capture": 24
+  "delayed_capture": 25
  },
  "recorded_live_but_gap_over_72h": [],
  "video_transcripts": {
-  "excerpt_present": 21,
+  "excerpt_present": 22,
   "provider_navigation_page": 23
  },
  "video_transcript_status": {
-  "available": 44
+  "available": 45
  },
  "method": "first git appearance of the record id in state/research_feed.json vs published_at (timezone not recorded); unprovable is never guessed",
  "rows": [
@@ -31630,6 +31630,20 @@
    "transcript_check": "excerpt_present",
    "transcript_status": "available",
    "content_quality": "Q3"
+  },
+  {
+   "id": "7cf96c01506fec2ffb82",
+   "kind": "video",
+   "author": "老李玩钱",
+   "recorded_provenance": null,
+   "published_at": "2026-11-02",
+   "first_git_seen": "2026-11-03T16:14:22Z",
+   "first_git_commit": "ac7cb03949f0b4e67dd86f665d95f8201b0cd2a1",
+   "gap_hours": 40.2,
+   "derived_provenance": "delayed_capture",
+   "transcript_check": "excerpt_present",
+   "transcript_status": "available",
+   "content_quality": "Q2"
   }
  ]
 }

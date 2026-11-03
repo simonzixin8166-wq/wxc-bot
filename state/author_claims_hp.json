@@ -1,26 +1,10 @@
 {
- "generated_at": "2026-11-02T22:18:22+00:00",
+ "generated_at": "2026-11-03T20:05:55+00:00",
  "extractor": "ce-5-hp",
  "lookback_days": 21,
- "records_scanned": 1150,
+ "records_scanned": 1123,
  "records_excluded_by_flags": 1,
  "claims": [
-  {
-   "record_id": "dea28b8183a48ff5b96e",
-   "author": "三心三意",
-   "source_kind": "forum",
-   "url": "https://bbs.wenxuecity.com/cfzh/114915.html",
-   "published_at": "2026-10-13 07:18:15",
-   "first_seen": "2026-10-13T19:59:33Z",
-   "provenance": "near_publication_observed",
-   "symbol": "ARM",
-   "stance": "buy",
-   "status": "executed",
-   "hp_gate": "first_person_executed_trade",
-   "instrument": "stock",
-   "price": null,
-   "sentence_sha256": "3e2e764b46fb15f3730accbe14ccacfa4f27696e0ef05fae27bd20a490ed9992"
-  },
   {
    "record_id": "8a2dfd9e6b71958d9215",
    "author": "三心三意",
@@ -1172,6 +1156,38 @@
    "instrument": "stock",
    "price": null,
    "sentence_sha256": "505207b89930d5e5aff969ac60785f94c9fd6185e16493f1ec07d10e41cbd2fe"
+  },
+  {
+   "record_id": "7cf96c01506fec2ffb82",
+   "author": "老李玩钱",
+   "source_kind": "video",
+   "url": "https://www.youtube.com/watch?v=1nXl0sFPiE4",
+   "published_at": "2026-11-02",
+   "first_seen": "2026-11-03T16:14:22Z",
+   "provenance": "delayed_capture",
+   "symbol": "QQQ",
+   "stance": "buy",
+   "status": "conditional",
+   "hp_gate": "first_person_conditional_plan",
+   "instrument": "stock",
+   "price": null,
+   "sentence_sha256": "451315d012e37666d1fc69cb190f08bf1059aae04b8ef3d78c53177a8ac05636"
+  },
+  {
+   "record_id": "7cf96c01506fec2ffb82",
+   "author": "老李玩钱",
+   "source_kind": "video",
+   "url": "https://www.youtube.com/watch?v=1nXl0sFPiE4",
+   "published_at": "2026-11-02",
+   "first_seen": "2026-11-03T16:14:22Z",
+   "provenance": "delayed_capture",
+   "symbol": "VOO",
+   "stance": "buy",
+   "status": "conditional",
+   "hp_gate": "first_person_conditional_plan",
+   "instrument": "stock",
+   "price": null,
+   "sentence_sha256": "451315d012e37666d1fc69cb190f08bf1059aae04b8ef3d78c53177a8ac05636"
   }
  ],
  "claims_status": "experimental_unvalidated",
