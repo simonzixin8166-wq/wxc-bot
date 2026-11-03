@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-11-02T23:31:25Z",
+  "generated_at": "2026-11-03T06:48:22Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -19,16 +19,16 @@
           "reached_end": false
         }
       ],
-      "previous_anchor_video_id": "-C0B7AEwOcU",
+      "previous_anchor_video_id": "qcdt6yQKt_4",
       "anchor_found": true,
       "reached_end": false,
       "discovery_complete": true,
       "latest": {
-        "video_id": "-C0B7AEwOcU",
-        "title": "（会员第308期）2026年10月26日-30日，重要公司Q3财报后2026、2027前瞻估值，强支撑点位！",
-        "url": "https://www.youtube.com/watch?v=-C0B7AEwOcU",
+        "video_id": "qcdt6yQKt_4",
+        "title": "美股 AAPL多个增速放缓！ORCL再融资，信贷雪上加霜！MRVL收购LITE，双方股东都不满意！基金损失惨重，多头仓位保守！",
+        "url": "https://www.youtube.com/watch?v=qcdt6yQKt_4",
         "published_at": "",
-        "rss_status": "ok",
+        "rss_status": "error:HTTPError",
         "flat_metadata_keys": [
           "channel_id",
           "duration"
@@ -56,20 +56,19 @@
           "reached_end": false
         }
       ],
-      "previous_anchor_video_id": "oGE0jMTHpvg",
+      "previous_anchor_video_id": "1nXl0sFPiE4",
       "anchor_found": true,
       "reached_end": false,
       "discovery_complete": true,
       "latest": {
-        "video_id": "oGE0jMTHpvg",
-        "title": "美联储会议安全落地！ORCL，MSFT，GOOG 分析及操作建议",
-        "url": "https://www.youtube.com/watch?v=oGE0jMTHpvg",
-        "published_at": "2026-10-28",
-        "rss_status": "ok",
+        "video_id": "1nXl0sFPiE4",
+        "title": "11月必买3支股票",
+        "url": "https://www.youtube.com/watch?v=1nXl0sFPiE4",
+        "published_at": "",
+        "rss_status": "error:HTTPError",
         "flat_metadata_keys": [
           "channel_id",
-          "duration",
-          "rss_published_at"
+          "duration"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -100,14 +99,13 @@
       "discovery_complete": true,
       "latest": {
         "video_id": "m7hL3bVoUuQ",
-        "title": "The Biggest Crypto Theft In History",
+        "title": "Binance Just Lost $6.3 Billion",
         "url": "https://www.youtube.com/watch?v=m7hL3bVoUuQ",
-        "published_at": "2026-10-30",
-        "rss_status": "ok",
+        "published_at": "",
+        "rss_status": "error:HTTPError",
         "flat_metadata_keys": [
           "channel_id",
-          "duration",
-          "rss_published_at"
+          "duration"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -122,17 +120,17 @@
   "pending_retried": 6,
   "content_attempted_this_run": 6,
   "content_work_budget": 6,
-  "content_backlog_after_run": 104,
-  "pending_total": 104,
+  "content_backlog_after_run": 106,
+  "pending_total": 106,
   "historical_demoted_from_pending": 0,
   "admitted_from_pending": 0,
   "nonforward_timestamp_unknown_admitted": 0,
   "feed_records_added": 0,
   "publication_dates_resolved": 0,
   "rss_status": {
-    "UCFQsi7WaF5X41tcuOryDk8w": "ok",
-    "UCGy7SkBjcIAgTiwkXEtPnYg": "ok",
-    "UCo2gxyermsLBSCxFHvJs0Zg": "ok"
+    "UCFQsi7WaF5X41tcuOryDk8w": "error:HTTPError",
+    "UCGy7SkBjcIAgTiwkXEtPnYg": "error:HTTPError",
+    "UCo2gxyermsLBSCxFHvJs0Zg": "error:HTTPError"
   },
   "historical_backlog_total": 54,
   "discovery_complete": true,
@@ -172,30 +170,24 @@
     },
     {
       "author": "老李玩钱",
-      "video_id": "XE9OsZMUeRg",
-      "title": "本周科技巨头财报叠加美联储会议！四大科技巨头+SOFI，财报前瞻及操作建议",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
+      "video_id": "1nXl0sFPiE4",
+      "title": "11月必买3支股票",
       "admission": "pending_content",
       "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "Andrei Jikh",
-      "video_id": "1UIKZBGYMYI",
-      "title": "China Is Preparing For $38,000 Gold",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
+      "pending_reason": "awaiting_publication_date"
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "4M7w7DR865M",
-      "title": "美股 最差9月，CTA更新！JPM战术转向，减仓多头！对冲基金上周仓位！AMZN遭起诉掉块肉！",
+      "video_id": "qcdt6yQKt_4",
+      "title": "美股 AAPL多个增速放缓！ORCL再融资，信贷雪上加霜！MRVL收购LITE，双方股东都不满意！基金损失惨重，多头仓位保守！",
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "awaiting_publication_date"
+    },
+    {
+      "author": "老李玩钱",
+      "video_id": "6_GvmiNgd4M",
+      "title": "美股7巨头，价格已到位！买入/加仓价格点位更新",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -208,7 +200,7 @@
     "status": "ok",
     "channel_errors": 0,
     "stuck_high_quality_pending": 0,
-    "provider_waiting_pending": 104,
+    "provider_waiting_pending": 106,
     "stuck_video_ids": [],
     "meaning": "Q1/Q2 text must not remain stuck in pending; Q3-Q5 may legitimately wait for better learning text."
   },

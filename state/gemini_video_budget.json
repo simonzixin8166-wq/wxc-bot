@@ -722,15 +722,15 @@
       ]
     },
     "2026-11-02": {
-      "calls": 1,
+      "calls": 2,
       "admitted": 0,
       "rejected": 0,
-      "errors": 3,
+      "errors": 5,
       "reconciliation": {
         "status": "COMPLETE",
-        "calls_billed": 1,
-        "calls_refunded_503": 2,
-        "detail_rows": 3,
+        "calls_billed": 2,
+        "calls_refunded_503": 3,
+        "detail_rows": 5,
         "missing_detail_rows": 0,
         "counter_mismatch": []
       },
@@ -761,9 +761,27 @@
           "author": "Andrei Jikh",
           "title": "My Alternative Investment Portfolio (Pokemon Edition)",
           "detail": "{\"error\":{\"message\":\"The caller does not have permission\",\"code\":\"permission_denied\"}}"
+        },
+        {
+          "video_id": "K1OPHbVonjc",
+          "outcome": "http_503_all_models",
+          "at": "06:44:44Z",
+          "model": "gemini-3.8-flash,gemini-3.5-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 天塌了？应该买还是卖？11月三大风险事件！",
+          "detail": "{\"error\":{\"message\":\"gemini-3.5-flash is currently experiencing high demand, spikes in demand are usually temporary. Please try again later.\",\"code\":\"service_unavailable\"}}"
+        },
+        {
+          "video_id": "4n9bB7N96fY",
+          "outcome": "exception",
+          "at": "06:47:58Z",
+          "model": "gemini-3.8-flash",
+          "author": "老李玩钱",
+          "title": "5月必买3支股票",
+          "detail": "ReadTimeout"
         }
       ],
-      "refunded_503": 2
+      "refunded_503": 3
     }
   },
   "version": 1,
