@@ -1,7 +1,9 @@
-# Claims gold — labeling guideline v1.3 (DRAFT · 2026-11-01 · not frozen)
+# Claims gold — labeling guideline v1.3 (FROZEN · Owner-confirmed 2026-11-03)
 
-Status: draft from Owner decisions on 2026-11-01 (#133 6553068356, 6553167319). It becomes the frozen guideline only
-after the Owner confirms this text and its sha256 is recorded. v1.2 and every earlier gold file stay unchanged.
+Status: FROZEN. Built from Owner decisions on 2026-11-01 (#133 6553068356, 6553167319); the Owner confirmed this text
+on 2026-11-03 (draft sha256 prefix 29fcb87173203554, body unchanged apart from this status header). The sha256 of this
+file is recorded in research/gold/GUIDELINES_v1.3.sha256 and on #133. Any change makes a new version (v1.4); v1.2 and
+every earlier gold file stay unchanged.
 
 Why v1.3: in round 1 of test set v4 (wxc-bot #76, `claims_gold_v4_agreement_round1.json`) Claude and GPT agreed on
 16 of the Owner's 20 spot-check items, but each agreed with the Owner on only 9. The gap came from three
