@@ -86640,9 +86640,99 @@
       "video_observed_title": "Anthropic估值遭下调！台积电Q3财报分析与估值点位更新；大盘、半导体及关键个股位置跟踪",
       "validation_status": "pending_owner_spot_check",
       "forward_evidence_eligible": false
+    },
+    {
+      "id": "7cf96c01506fec2ffb82",
+      "source": "youtube",
+      "source_kind": "video",
+      "author": "老李玩钱",
+      "published_at": "2026-11-02",
+      "title": "11月必买3支股票",
+      "url": "https://www.youtube.com/watch?v=1nXl0sFPiE4",
+      "excerpt": "大家好,我是老李,咱们这个动荡的10月终于是过去了,那么步入11月份,美股将何去何从呢?如果我们想要上车开仓买入一些股票的话那么哪些股票我们该优先考虑去买入布局呢这就是今天这期视频啊咱们将要讨论的主要内容但是说正事之前呢依照国际惯例还是先来跟大家量账户今天美股又小小的后离谢了一下倒指还好收盘的时候微率纳指下跌了1.07%标普白指数下跌了1.27%0.51我的账户今天整体下跌了4000美金左右当前的账户总资产还勉强收在32万以上步入11月份咱们首先将面临的一个重大事件就是中期选举从美股的历史上来看中期选举之前的一个月美股一般都比较的动荡回调的概率也是比较的大那么咱们刚刚过去的10月份也再次印证了这一历史规律但是中期选举过后的一年时间里美股的表现从历史数据上来看通常都是比较强劲的从历史上看,美国股市往往会在中期选举",
+      "content_chars": 4262,
+      "semantic_content_chars": 3887,
+      "content_filtering": {
+        "filter": "youtube_promotion_noise_v1",
+        "input_units": 11,
+        "removed_units": 1,
+        "removed_ratio": 0.09090909090909091,
+        "promotion_noise_detected": true
+      },
+      "images_count": 0,
+      "themes_hint": [
+        "风险管理",
+        "长期持有纪律"
+      ],
+      "symbols": [
+        "NVDA",
+        "MU",
+        "GOOGL",
+        "AMD"
+      ],
+      "operations": [
+        {
+          "symbols": [
+            "NVDA"
+          ],
+          "actions": [
+            "buy",
+            "hold"
+          ],
+          "attribution": "unconfirmed_author_context",
+          "attribution_confidence": "needs_review"
+        },
+        {
+          "symbols": [
+            "NVDA"
+          ],
+          "actions": [
+            "add",
+            "buy"
+          ],
+          "attribution": "unconfirmed_author_context",
+          "attribution_confidence": "needs_review"
+        },
+        {
+          "symbols": [
+            "GOOGL"
+          ],
+          "actions": [
+            "hold"
+          ],
+          "attribution": "unconfirmed_author_context",
+          "attribution_confidence": "needs_review"
+        },
+        {
+          "symbols": [
+            "MU",
+            "AMD"
+          ],
+          "actions": [
+            "add",
+            "buy",
+            "hold"
+          ],
+          "attribution": "unconfirmed_author_context",
+          "attribution_confidence": "needs_review"
+        }
+      ],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "captured_at": "2026-11-03T16:12:46Z",
+      "source_role": "rule_supply",
+      "transcript_status": "available",
+      "content_quality": "Q2",
+      "content_provider": "reducer.xgoose.org",
+      "content_provider_url": "https://reducer.xgoose.org/items/13282",
+      "content_origin": "third_party_transcript",
+      "timestamp_evidence": true,
+      "rule_candidate_allowed": true,
+      "source_notice": "公开视频研究来源；仅保存短摘录与原视频链接。作者观点属于未验证假设，MyAlpha需独立验证后才可进入正式证据。"
     }
   ],
-  "updated_at": "2026-11-01T23:36:46Z",
+  "updated_at": "2026-11-03T16:14:04Z",
   "retention_policy": "append_only_no_record_count_cap",
   "historical_recovery": {
     "completed_at": "2026-10-07T13:43:06.018028+00:00",
