@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-11-03T16:14:22Z",
+  "generated_at": "2026-11-03T21:47:24Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -95,19 +95,20 @@
           "reached_end": false
         }
       ],
-      "previous_anchor_video_id": "GJOvUDVp-1E",
+      "previous_anchor_video_id": "lvTiUkJGX74",
       "anchor_found": true,
       "reached_end": false,
       "discovery_complete": true,
       "latest": {
-        "video_id": "GJOvUDVp-1E",
-        "title": "The U.S. Just Attacked Iran",
-        "url": "https://www.youtube.com/watch?v=GJOvUDVp-1E",
-        "published_at": "",
+        "video_id": "lvTiUkJGX74",
+        "title": "The Pentagon Prepares For A \"Doomsday Scenario\"",
+        "url": "https://www.youtube.com/watch?v=lvTiUkJGX74",
+        "published_at": "2026-11-03",
         "rss_status": "ok",
         "flat_metadata_keys": [
           "channel_id",
-          "duration"
+          "duration",
+          "rss_published_at"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -122,8 +123,8 @@
   "pending_retried": 6,
   "content_attempted_this_run": 6,
   "content_work_budget": 6,
-  "content_backlog_after_run": 106,
-  "pending_total": 106,
+  "content_backlog_after_run": 107,
+  "pending_total": 107,
   "historical_demoted_from_pending": 0,
   "admitted_from_pending": 0,
   "nonforward_timestamp_unknown_admitted": 0,
@@ -137,6 +138,17 @@
   "historical_backlog_total": 54,
   "discovery_complete": true,
   "new_video_diagnostics": [
+    {
+      "author": "Andrei Jikh",
+      "video_id": "lvTiUkJGX74",
+      "title": "The Pentagon Prepares For A \"Doomsday Scenario\"",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
     {
       "author": "RhinoFinance / 视野环球财经",
       "video_id": "qcdt6yQKt_4",
@@ -184,28 +196,17 @@
     {
       "author": "Andrei Jikh",
       "video_id": "GJOvUDVp-1E",
-      "title": "The U.S. Just Attacked Iran",
+      "title": "The Pentagon Prepares For A Doomsday",
       "admission": "pending_content",
       "was_pending": true,
       "pending_reason": "awaiting_publication_date"
-    },
-    {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "71FEJcz9VCY",
-      "title": "美股 凯投宏观：AI泡沫潜在破灭，五个警告信号！8月财政报告恶化，利息飙升！SOXX跟踪！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
     }
   ],
   "intake_health": {
     "status": "ok",
     "channel_errors": 0,
     "stuck_high_quality_pending": 0,
-    "provider_waiting_pending": 106,
+    "provider_waiting_pending": 107,
     "stuck_video_ids": [],
     "meaning": "Q1/Q2 text must not remain stuck in pending; Q3-Q5 may legitimately wait for better learning text."
   },
