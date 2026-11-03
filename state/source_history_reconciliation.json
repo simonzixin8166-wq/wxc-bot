@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-11-01T04:07:29.396093+00:00",
+  "generated_at": "2026-11-02T22:18:22.374528+00:00",
   "principle": "author x month reconciliation; unscanned history is unknown, backfill is never Genuine Forward",
   "matrix": {
     "BrightLine": {
@@ -141,11 +141,12 @@
       "last_month": "2026-10",
       "watched_forum_author": false,
       "blog": {
-        "archive_months_scanned": [
-          "2026-10"
+        "archive_months_scanned": [],
+        "archive_failures": [
+          "2026-10",
+          "2026-11"
         ],
-        "archive_failures": [],
-        "unique_article_ids": 14,
+        "unique_article_ids": 0,
         "missing_from_feed": 0,
         "recovery_window_days": 14,
         "history_before_window": "not_scanned (unknown, not zero)"
@@ -187,10 +188,11 @@
       "last_month": "2026-10",
       "watched_forum_author": true,
       "blog": {
-        "archive_months_scanned": [
-          "2026-10"
+        "archive_months_scanned": [],
+        "archive_failures": [
+          "2026-10",
+          "2026-11"
         ],
-        "archive_failures": [],
         "unique_article_ids": 0,
         "missing_from_feed": 0,
         "recovery_window_days": 14,
@@ -263,11 +265,12 @@
       "last_month": "2026-10",
       "watched_forum_author": false,
       "blog": {
-        "archive_months_scanned": [
-          "2026-10"
+        "archive_months_scanned": [],
+        "archive_failures": [
+          "2026-10",
+          "2026-11"
         ],
-        "archive_failures": [],
-        "unique_article_ids": 5,
+        "unique_article_ids": 0,
         "missing_from_feed": 0,
         "recovery_window_days": 14,
         "history_before_window": "not_scanned (unknown, not zero)"

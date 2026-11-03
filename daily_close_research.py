@@ -239,8 +239,52 @@ def collect_forum():
     })
     return added,scan_state
 
+def _collect_forum_or_blocked(collect=None, now=None):
+    """The forum fetcher stops after 5 consecutive request failures (SystemExit, a politeness guard that is kept).
+    Since 2026-11-01 wenxuecity answers HTTP 403 to these runs, which used to kill the whole job before the blog
+    step. Now a refused forum is recorded as status=blocked (anchor and seen-state untouched, complete=false so
+    nothing is admitted as complete/forward), no further forum requests are made in this run, and the other
+    sources still run. The job still ends red (see main) so the block stays visible. Not a retry or bypass."""
+    collect = collect or collect_forum
+    try:
+        added, scan = collect()
+        return added, scan, None
+    except SystemExit as exc:
+        reason = str(exc) or "forum fetch stopped"
+        when = (now or datetime.now(timezone.utc)).isoformat()
+        prior = _read(FORUM_STATUS, {})
+        _write(FORUM_STATUS, {
+            **prior,
+            "status": "blocked",
+            "complete": False,
+            "blocked_at": when,
+            "blocked_reason": "site refused requests (consecutive HTTP failures); no bypass attempted",
+            "blocked_detail": reason[:200],
+            "first_blocked_at": prior.get("first_blocked_at") if prior.get("status") == "blocked" else when,
+            "feed_records_added": 0,
+        })
+        print(f"::error title=forum blocked::wenxuecity forum refused this run; anchor kept at {prior.get('anchor_id')}; other sources continue")
+        return 0, {"complete": False, "blocked": True, "anchor_id": prior.get("anchor_id")}, reason
+
+
+def _already_probed_today(now=None):
+    """Owner 2026-11-02: while wenxuecity refuses us, try it once per UTC day (not twice) - it may come back.
+    True when the forum is recorded as blocked and was already tried today; that run then makes no
+    wenxuecity request (forum or blog) and ends without a new failure, so there is one red run per day."""
+    st = _read(FORUM_STATUS, {})
+    if st.get("status") != "blocked":
+        return False
+    last = str(st.get("blocked_at") or "")[:10]
+    today = (now or datetime.now(timezone.utc)).date().isoformat()
+    return last == today
+
+
 def main():
-    forum_added,forum_scan=collect_forum()
+    if _already_probed_today():
+        st = _read(FORUM_STATUS, {})
+        print(f"::warning title=wenxuecity blocked::already tried today ({st.get('blocked_at')}); no request this run, next try tomorrow (UTC). Blocked since {st.get('first_blocked_at')}")
+        return
+    forum_added,forum_scan,forum_blocked=_collect_forum_or_blocked()
 
     blog_state=_read(BLOG_SCAN_STATE,{"authors":{}})
     blog_batches={}
@@ -292,9 +336,13 @@ def main():
     blog_added=sum(len(rows) for rows in blog_batches.values())
     day=datetime.now().strftime("%Y-%m-%d")
     digest=rf.daily_digest_text(day)
-    forum_note="complete" if forum_scan.get("complete") else f"partial,next={forum_scan.get('next_scan_pages')} pages"
+    forum_note=("blocked（文学城拒绝访问，锚点保留）" if forum_blocked else
+                ("complete" if forum_scan.get("complete") else f"partial,next={forum_scan.get('next_scan_pages')} pages"))
     notify_digest(digest+f"\n\n本轮新增：论坛 {forum_added} 条（{forum_note}）；作者博客 {blog_added} 条。YouTube 由独立 youtube-forward-intake 持续采集。")
     print(digest)
+    if forum_blocked:
+        # Blog/other results are already written; keep the run red so the block is visible in system status.
+        raise SystemExit("forum blocked: " + forum_blocked)
 
 def notify_digest(text, send=None):
     """Telegram digest is a notification, not part of collection: by this point all state is already written.

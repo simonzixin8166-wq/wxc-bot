@@ -12,7 +12,7 @@
   ],
   "previous_anchor_id": "118676",
   "legacy_seen_anchor_id": "118399",
-  "complete": true,
+  "complete": false,
   "continuity_complete": true,
   "processing_complete": true,
   "pages_scanned": 8,
@@ -26,7 +26,7 @@
     }
   ],
   "next_scan_pages": 8,
-  "status": "complete",
+  "status": "blocked",
   "anchor_found": true,
   "reached_end": false,
   "continuity_proven": true,
@@ -55,6 +55,10 @@
     "bogbog": 0
   },
   "unresolved_entries_total": 0,
-  "feed_records_added": 20,
-  "guardrail": "complete requires both continuity to the prior anchor and durable processing of every newly visible entry. Unresolved entries keep the batch partial, block anchor advancement, and prevent Genuine Forward admission."
+  "feed_records_added": 0,
+  "guardrail": "complete requires both continuity to the prior anchor and durable processing of every newly visible entry. Unresolved entries keep the batch partial, block anchor advancement, and prevent Genuine Forward admission.",
+  "blocked_at": "2026-11-02T07:36:17.945345+00:00",
+  "blocked_reason": "site refused requests (consecutive HTTP failures); no bypass attempted",
+  "blocked_detail": "连续请求失败 5 次,疑似被限制,已停止。请稍后再试。",
+  "first_blocked_at": "2026-11-02T07:36:17.945345+00:00"
 }

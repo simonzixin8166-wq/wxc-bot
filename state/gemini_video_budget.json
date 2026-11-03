@@ -585,15 +585,15 @@
       ]
     },
     "2026-10-31": {
-      "calls": 4,
+      "calls": 5,
       "admitted": 2,
       "rejected": 2,
-      "errors": 2,
+      "errors": 4,
       "reconciliation": {
         "status": "COMPLETE",
-        "calls_billed": 4,
-        "calls_refunded_503": 2,
-        "detail_rows": 6,
+        "calls_billed": 5,
+        "calls_refunded_503": 3,
+        "detail_rows": 8,
         "missing_detail_rows": 0,
         "counter_mismatch": []
       },
@@ -649,6 +649,118 @@
           "author": "老李玩钱",
           "title": "$310,000美股账户，我加仓/减仓的4支股票！接下来美股将何去何从",
           "detail": "seen='美股7月暴跌？这几点你必须注意！2024下半年美股走势研判以及未来应对策略！老李账户实盘更新！' channel='老李玩钱'"
+        },
+        {
+          "video_id": "K1OPHbVonjc",
+          "outcome": "exception",
+          "at": "06:00:55Z",
+          "model": "gemini-3.8-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 天塌了？应该买还是卖？11月三大风险事件！",
+          "detail": "ReadTimeout"
+        },
+        {
+          "video_id": "g1kgEiP1v10",
+          "outcome": "http_503_all_models",
+          "at": "06:01:39Z",
+          "model": "gemini-3.8-flash,gemini-3.5-flash",
+          "author": "Andrei Jikh",
+          "title": "Trump Just Started The Debt Spiral",
+          "detail": "{\"error\":{\"message\":\"gemini-3.5-flash is currently experiencing high demand, spikes in demand are usually temporary. Please try again later.\",\"code\":\"service_unavailable\"}}"
+        }
+      ],
+      "refunded_503": 3
+    },
+    "2026-11-01": {
+      "calls": 4,
+      "admitted": 2,
+      "rejected": 0,
+      "errors": 2,
+      "reconciliation": {
+        "status": "COMPLETE",
+        "calls_billed": 4,
+        "calls_refunded_503": 0,
+        "detail_rows": 4,
+        "missing_detail_rows": 0,
+        "counter_mismatch": []
+      },
+      "recent": [
+        {
+          "video_id": "K1OPHbVonjc",
+          "outcome": "exception",
+          "at": "13:20:00Z",
+          "model": "gemini-3.8-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 天塌了？应该买还是卖？11月三大风险事件！",
+          "detail": "ReadTimeout"
+        },
+        {
+          "video_id": "JlFrJ45B6zU",
+          "outcome": "admitted",
+          "at": "13:22:49Z",
+          "model": "gemini-3.8-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 资本支出：三季度增速见顶！SOXX、SMH反复拉扯！UNH已计价，JPM不及格！"
+        },
+        {
+          "video_id": "TNQ2PuDLiOg",
+          "outcome": "http_403",
+          "at": "18:55:28Z",
+          "model": "gemini-3.8-flash",
+          "author": "Andrei Jikh",
+          "title": "My Thoughts On XRP",
+          "detail": "{\"error\":{\"message\":\"The caller does not have permission\",\"code\":\"permission_denied\"}}"
+        },
+        {
+          "video_id": "dpDUZnMjzJk",
+          "outcome": "admitted",
+          "at": "23:36:46Z",
+          "model": "gemini-3.8-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 纳指重挫，Anthropic增速失望，IPO估值下调！AI高增长交易动摇！TSM持仓计划更新！SPY、QQQ、SO"
+        }
+      ]
+    },
+    "2026-11-02": {
+      "calls": 1,
+      "admitted": 0,
+      "rejected": 0,
+      "errors": 3,
+      "reconciliation": {
+        "status": "COMPLETE",
+        "calls_billed": 1,
+        "calls_refunded_503": 2,
+        "detail_rows": 3,
+        "missing_detail_rows": 0,
+        "counter_mismatch": []
+      },
+      "recent": [
+        {
+          "video_id": "K1OPHbVonjc",
+          "outcome": "http_503_all_models",
+          "at": "15:43:44Z",
+          "model": "gemini-3.8-flash,gemini-3.5-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 天塌了？应该买还是卖？11月三大风险事件！",
+          "detail": "{\"error\":{\"message\":\"gemini-3.5-flash is currently experiencing high demand, spikes in demand are usually temporary. Please try again later.\",\"code\":\"service_unavailable\"}}"
+        },
+        {
+          "video_id": "K1OPHbVonjc",
+          "outcome": "http_503_all_models",
+          "at": "23:29:20Z",
+          "model": "gemini-3.8-flash,gemini-3.5-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 天塌了？应该买还是卖？11月三大风险事件！",
+          "detail": "{\"error\":{\"message\":\"gemini-3.5-flash is currently experiencing high demand, spikes in demand are usually temporary. Please try again later.\",\"code\":\"service_unavailable\"}}"
+        },
+        {
+          "video_id": "16oTiM8o8ic",
+          "outcome": "http_403",
+          "at": "23:29:41Z",
+          "model": "gemini-3.8-flash",
+          "author": "Andrei Jikh",
+          "title": "My Alternative Investment Portfolio (Pokemon Edition)",
+          "detail": "{\"error\":{\"message\":\"The caller does not have permission\",\"code\":\"permission_denied\"}}"
         }
       ],
       "refunded_503": 2

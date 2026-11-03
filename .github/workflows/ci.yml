@@ -43,6 +43,7 @@ jobs:
           PYTHONPATH=. python tests/test_source_intake_completeness.py
           PYTHONPATH=. python tests/test_forum_entry_capture.py
           PYTHONPATH=. python tests/test_forum_thread_context.py
+          PYTHONPATH=. python tests/test_forum_blocked_nonfatal.py
           PYTHONPATH=. python tests/test_forum_anchor_continuity.py
           PYTHONPATH=. python tests/test_forum_persist_before_seen.py
           PYTHONPATH=. python tests/test_research_feed.py

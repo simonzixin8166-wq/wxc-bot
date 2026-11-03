@@ -1,42 +1,51 @@
 {
   "version": 2,
-  "generated_at": "2026-10-31T23:26:38.915688+00:00",
-  "complete": true,
-  "coverage_complete": true,
+  "generated_at": "2026-11-02T23:31:26.102837+00:00",
+  "complete": false,
+  "coverage_complete": false,
   "semantic_learning_complete": false,
   "forum": {
-    "complete": true,
+    "complete": false,
     "continuity_proven": true,
     "anchor_id": "118755",
     "previous_anchor_id": "118676",
-    "status": "complete"
+    "status": "blocked"
   },
   "blogs": {
-    "complete": true,
+    "complete": false,
     "authors": {
       "BrightLine": {
-        "complete": true,
-        "scan_complete": true,
-        "missing_from_feed": 0,
-        "unique_article_ids": 14,
-        "feed_present_urls": 14,
-        "archive_failures": []
-      },
-      "yifan99": {
-        "complete": true,
-        "scan_complete": true,
+        "complete": false,
+        "scan_complete": false,
         "missing_from_feed": 0,
         "unique_article_ids": 0,
         "feed_present_urls": 0,
-        "archive_failures": []
+        "archive_failures": [
+          "2026-10",
+          "2026-11"
+        ]
+      },
+      "yifan99": {
+        "complete": false,
+        "scan_complete": false,
+        "missing_from_feed": 0,
+        "unique_article_ids": 0,
+        "feed_present_urls": 0,
+        "archive_failures": [
+          "2026-10",
+          "2026-11"
+        ]
       },
       "麻你": {
-        "complete": true,
-        "scan_complete": true,
+        "complete": false,
+        "scan_complete": false,
         "missing_from_feed": 0,
-        "unique_article_ids": 5,
-        "feed_present_urls": 5,
-        "archive_failures": []
+        "unique_article_ids": 0,
+        "feed_present_urls": 0,
+        "archive_failures": [
+          "2026-10",
+          "2026-11"
+        ]
       }
     }
   },
@@ -46,15 +55,15 @@
     "semantic_learning_complete": false,
     "discovery_complete": true,
     "accounting_balanced": true,
-    "seen": 202,
-    "feed_records": 42,
+    "seen": 203,
+    "feed_records": 44,
     "historical_archive_records": 23,
     "historical_semantic_learned": 6,
-    "pending": 105,
+    "pending": 104,
     "historical_backlog": 54,
     "unaccounted": 0,
     "unaccounted_video_ids": [],
-    "unresolved_semantic": 159,
+    "unresolved_semantic": 158,
     "status": "ok"
   },
   "guardrails": [
