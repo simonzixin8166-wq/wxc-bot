@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-11-03T21:47:24Z",
+  "generated_at": "2026-11-04T02:19:40Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -65,12 +65,11 @@
         "video_id": "1nXl0sFPiE4",
         "title": "11月必买3支股票",
         "url": "https://www.youtube.com/watch?v=1nXl0sFPiE4",
-        "published_at": "2026-11-02",
-        "rss_status": "ok",
+        "published_at": "",
+        "rss_status": "error:HTTPError",
         "flat_metadata_keys": [
           "channel_id",
-          "duration",
-          "rss_published_at"
+          "duration"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -103,12 +102,11 @@
         "video_id": "lvTiUkJGX74",
         "title": "The Pentagon Prepares For A \"Doomsday Scenario\"",
         "url": "https://www.youtube.com/watch?v=lvTiUkJGX74",
-        "published_at": "2026-11-03",
-        "rss_status": "ok",
+        "published_at": "",
+        "rss_status": "error:HTTPError",
         "flat_metadata_keys": [
           "channel_id",
-          "duration",
-          "rss_published_at"
+          "duration"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -123,8 +121,8 @@
   "pending_retried": 6,
   "content_attempted_this_run": 6,
   "content_work_budget": 6,
-  "content_backlog_after_run": 107,
-  "pending_total": 107,
+  "content_backlog_after_run": 106,
+  "pending_total": 106,
   "historical_demoted_from_pending": 0,
   "admitted_from_pending": 0,
   "nonforward_timestamp_unknown_admitted": 0,
@@ -132,23 +130,12 @@
   "publication_dates_resolved": 0,
   "rss_status": {
     "UCFQsi7WaF5X41tcuOryDk8w": "ok",
-    "UCGy7SkBjcIAgTiwkXEtPnYg": "ok",
-    "UCo2gxyermsLBSCxFHvJs0Zg": "ok"
+    "UCGy7SkBjcIAgTiwkXEtPnYg": "error:HTTPError",
+    "UCo2gxyermsLBSCxFHvJs0Zg": "error:HTTPError"
   },
   "historical_backlog_total": 54,
   "discovery_complete": true,
   "new_video_diagnostics": [
-    {
-      "author": "Andrei Jikh",
-      "video_id": "lvTiUkJGX74",
-      "title": "The Pentagon Prepares For A \"Doomsday Scenario\"",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
     {
       "author": "RhinoFinance / 视野环球财经",
       "video_id": "qcdt6yQKt_4",
@@ -183,9 +170,17 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "QHrNWTgD7DA",
-      "title": "美股 三个需求利好推动SOXX反弹！大科技资本支出四选一！Anthropic更新发布S-1文件！",
+      "author": "Andrei Jikh",
+      "video_id": "GJOvUDVp-1E",
+      "title": "The U.S. Just Attacked Iran",
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "awaiting_publication_date"
+    },
+    {
+      "author": "Andrei Jikh",
+      "video_id": "87NzxCEUQlw",
+      "title": "China Just Shut Down Gold Trading",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -194,19 +189,22 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "Andrei Jikh",
-      "video_id": "GJOvUDVp-1E",
-      "title": "The Pentagon Prepares For A Doomsday",
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "8DY3zEBTFZ8",
+      "title": "美股 系统准备重新武装杠杆！MSFT再跌一天修复！半导体、软件，又跷跷板？ CRWV、NBIS、LITE、COHR！APP再跟踪！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
       "admission": "pending_content",
       "was_pending": true,
-      "pending_reason": "awaiting_publication_date"
+      "pending_reason": "missing_learning_text"
     }
   ],
   "intake_health": {
     "status": "ok",
     "channel_errors": 0,
     "stuck_high_quality_pending": 0,
-    "provider_waiting_pending": 107,
+    "provider_waiting_pending": 106,
     "stuck_video_ids": [],
     "meaning": "Q1/Q2 text must not remain stuck in pending; Q3-Q5 may legitimately wait for better learning text."
   },
