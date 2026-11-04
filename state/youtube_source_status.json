@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-11-04T02:19:40Z",
+  "generated_at": "2026-11-04T12:06:01Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -19,15 +19,15 @@
           "reached_end": false
         }
       ],
-      "previous_anchor_video_id": "qcdt6yQKt_4",
+      "previous_anchor_video_id": "IcDRffqDfTo",
       "anchor_found": true,
       "reached_end": false,
       "discovery_complete": true,
       "latest": {
-        "video_id": "qcdt6yQKt_4",
-        "title": "美股 AAPL多个增速放缓！ORCL再融资，信贷雪上加霜！MRVL收购LITE，双方股东都不满意！基金损失惨重，多头仓位保守！",
-        "url": "https://www.youtube.com/watch?v=qcdt6yQKt_4",
-        "published_at": "2026-11-03",
+        "video_id": "IcDRffqDfTo",
+        "title": "美股 横扫概率极高，AI承压！AMD前瞻大好，暗藏隐忧！PLTR增速放缓高不可攀！",
+        "url": "https://www.youtube.com/watch?v=IcDRffqDfTo",
+        "published_at": "2026-11-04",
         "rss_status": "ok",
         "flat_metadata_keys": [
           "channel_id",
@@ -65,11 +65,12 @@
         "video_id": "1nXl0sFPiE4",
         "title": "11月必买3支股票",
         "url": "https://www.youtube.com/watch?v=1nXl0sFPiE4",
-        "published_at": "",
-        "rss_status": "error:HTTPError",
+        "published_at": "2026-11-02",
+        "rss_status": "ok",
         "flat_metadata_keys": [
           "channel_id",
-          "duration"
+          "duration",
+          "rss_published_at"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -100,13 +101,14 @@
       "discovery_complete": true,
       "latest": {
         "video_id": "lvTiUkJGX74",
-        "title": "The Pentagon Prepares For A \"Doomsday Scenario\"",
+        "title": "The Government Is Preparing For Something",
         "url": "https://www.youtube.com/watch?v=lvTiUkJGX74",
-        "published_at": "",
-        "rss_status": "error:HTTPError",
+        "published_at": "2026-11-03",
+        "rss_status": "ok",
         "flat_metadata_keys": [
           "channel_id",
-          "duration"
+          "duration",
+          "rss_published_at"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -121,8 +123,8 @@
   "pending_retried": 6,
   "content_attempted_this_run": 6,
   "content_work_budget": 6,
-  "content_backlog_after_run": 106,
-  "pending_total": 106,
+  "content_backlog_after_run": 107,
+  "pending_total": 107,
   "historical_demoted_from_pending": 0,
   "admitted_from_pending": 0,
   "nonforward_timestamp_unknown_admitted": 0,
@@ -130,12 +132,23 @@
   "publication_dates_resolved": 0,
   "rss_status": {
     "UCFQsi7WaF5X41tcuOryDk8w": "ok",
-    "UCGy7SkBjcIAgTiwkXEtPnYg": "error:HTTPError",
-    "UCo2gxyermsLBSCxFHvJs0Zg": "error:HTTPError"
+    "UCGy7SkBjcIAgTiwkXEtPnYg": "ok",
+    "UCo2gxyermsLBSCxFHvJs0Zg": "ok"
   },
   "historical_backlog_total": 54,
   "discovery_complete": true,
   "new_video_diagnostics": [
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "IcDRffqDfTo",
+      "title": "美股 横扫概率极高，AI承压！AMD前瞻大好，暗藏隐忧！PLTR增速放缓高不可攀！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
     {
       "author": "RhinoFinance / 视野环球财经",
       "video_id": "qcdt6yQKt_4",
@@ -172,26 +185,15 @@
     {
       "author": "Andrei Jikh",
       "video_id": "GJOvUDVp-1E",
-      "title": "The U.S. Just Attacked Iran",
+      "title": "Prepare: The War With Iran Just Restarted",
       "admission": "pending_content",
       "was_pending": true,
       "pending_reason": "awaiting_publication_date"
     },
     {
-      "author": "Andrei Jikh",
-      "video_id": "87NzxCEUQlw",
-      "title": "China Just Shut Down Gold Trading",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "8DY3zEBTFZ8",
-      "title": "美股 系统准备重新武装杠杆！MSFT再跌一天修复！半导体、软件，又跷跷板？ CRWV、NBIS、LITE、COHR！APP再跟踪！",
+      "author": "老李玩钱",
+      "video_id": "9SBwuIy6KRs",
+      "title": "美股很高！但这3支股票还在地上趴着，可以买入",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -204,7 +206,7 @@
     "status": "ok",
     "channel_errors": 0,
     "stuck_high_quality_pending": 0,
-    "provider_waiting_pending": 106,
+    "provider_waiting_pending": 107,
     "stuck_video_ids": [],
     "meaning": "Q1/Q2 text must not remain stuck in pending; Q3-Q5 may legitimately wait for better learning text."
   },
