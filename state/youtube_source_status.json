@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-11-04T12:06:01Z",
+  "generated_at": "2026-11-04T19:47:06Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -185,15 +185,15 @@
     {
       "author": "Andrei Jikh",
       "video_id": "GJOvUDVp-1E",
-      "title": "Prepare: The War With Iran Just Restarted",
+      "title": "The U.S. Just Attacked Iran",
       "admission": "pending_content",
       "was_pending": true,
       "pending_reason": "awaiting_publication_date"
     },
     {
-      "author": "老李玩钱",
-      "video_id": "9SBwuIy6KRs",
-      "title": "美股很高！但这3支股票还在地上趴着，可以买入",
+      "author": "Andrei Jikh",
+      "video_id": "BpuKpyCk0Us",
+      "title": "How I'd Invest $10,000 Right Now",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
