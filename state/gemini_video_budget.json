@@ -858,12 +858,12 @@
       "calls": 0,
       "admitted": 0,
       "rejected": 0,
-      "errors": 4,
+      "errors": 6,
       "reconciliation": {
         "status": "COMPLETE",
         "calls_billed": 0,
-        "calls_refunded_503": 4,
-        "detail_rows": 4,
+        "calls_refunded_503": 6,
+        "detail_rows": 6,
         "missing_detail_rows": 0,
         "counter_mismatch": []
       },
@@ -903,9 +903,27 @@
           "author": "RhinoFinance / 视野环球财经",
           "title": "美股 AAPL多个增速放缓！ORCL再融资，信贷雪上加霜！MRVL收购LITE，双方股东都不满意！基金损失惨重，多头仓位",
           "detail": "{\"error\":{\"message\":\"gemini-3.5-flash is currently experiencing high demand, spikes in demand are usually temporary. Please try again later.\",\"code\":\"service_unavailable\"}}"
+        },
+        {
+          "video_id": "IcDRffqDfTo",
+          "outcome": "http_503_all_models",
+          "at": "00:54:11Z",
+          "model": "gemini-3.8-flash,gemini-3.5-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 横扫概率极高，AI承压！AMD前瞻大好，暗藏隐忧！PLTR增速放缓高不可攀！",
+          "detail": "{\"error\":{\"message\":\"gemini-3.5-flash is currently experiencing high demand, spikes in demand are usually temporary. Please try again later.\",\"code\":\"service_unavailable\"}}"
+        },
+        {
+          "video_id": "qcdt6yQKt_4",
+          "outcome": "http_503_all_models",
+          "at": "00:54:42Z",
+          "model": "gemini-3.8-flash,gemini-3.5-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 AAPL多个增速放缓！ORCL再融资，信贷雪上加霜！MRVL收购LITE，双方股东都不满意！基金损失惨重，多头仓位",
+          "detail": "{\"error\":{\"message\":\"gemini-3.5-flash is currently experiencing high demand, spikes in demand are usually temporary. Please try again later.\",\"code\":\"service_unavailable\"}}"
         }
       ],
-      "refunded_503": 4
+      "refunded_503": 6
     }
   },
   "version": 1,
