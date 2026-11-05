@@ -1,0 +1,1047 @@
+{
+ "version": "blind_test_v4.1_gpt_answers",
+ "labeler": "gpt",
+ "status": "GPT independent blind draft per v1.3, relayed by the Owner 2026-11-05; schema validated by gold_v41_agreement.py; not adjudicated gold",
+ "answers": [
+  {
+   "blind_id": "b41-6e06cee39b26",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-d05c2ac8d6cb",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-6a96be682b5a",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-475dee071d18",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-96ac9b42fe47",
+   "labels": [
+    {
+     "symbol": "SOXL",
+     "stance": "buy",
+     "status": "executed",
+     "instrument": "stock",
+     "holder": "author",
+     "ticker_source": "text"
+    }
+   ],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-a84786e72593",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-bd82d1f76715",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-7c89c54ef5ee",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-3c821218f010",
+   "labels": [
+    {
+     "symbol": "QQQ",
+     "stance": "bullish",
+     "status": "opinion",
+     "instrument": "stock",
+     "holder": "author",
+     "ticker_source": "text"
+    },
+    {
+     "symbol": "VGT",
+     "stance": "bullish",
+     "status": "opinion",
+     "instrument": "stock",
+     "holder": "author",
+     "ticker_source": "text"
+    },
+    {
+     "symbol": "SMH",
+     "stance": "bullish",
+     "status": "opinion",
+     "instrument": "stock",
+     "holder": "author",
+     "ticker_source": "text"
+    }
+   ],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-f0b6f33159b9",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "question"
+  },
+  {
+   "blind_id": "b41-4cd589d592d9",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-6d7b2bfb4516",
+   "labels": [
+    {
+     "symbol": "MU",
+     "stance": "add",
+     "status": "conditional",
+     "instrument": "stock",
+     "holder": "author",
+     "ticker_source": "text"
+    }
+   ],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "answer"
+  },
+  {
+   "blind_id": "b41-5ef3d8b985f8",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-d635a39fc83f",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-329b21673757",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-41c4968e557a",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-e86979402675",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-d48d0ed82de2",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-0454123b77b9",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-1b57c3a7a133",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-6f7bedb388ed",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-6e5e53bfedd2",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-6817170db4a7",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "question"
+  },
+  {
+   "blind_id": "b41-4df9e6455f3e",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-ebd0c62b13ff",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-62b372e0bcb7",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-ef1a5f4bf322",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-87de0894181c",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-958fd3d7e216",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-360804f90f8f",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-591f230f05df",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-212f3ea2f500",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-b1542d01df04",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-a3784450fa6c",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-843a1cb4c938",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-d61a7db52290",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-8cf187e2c102",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-6278247736ed",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-d5c39b9c7d61",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-6d4dee25c8eb",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-b86846ea66be",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-018de0c4a941",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-40987deb5245",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-1b2db3e9b5a1",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-29a7bfa38080",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-a64bfc86803d",
+   "labels": [
+    {
+     "symbol": "AVGO",
+     "stance": "bullish",
+     "status": "opinion",
+     "instrument": "stock",
+     "holder": "author",
+     "ticker_source": "text"
+    }
+   ],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-85566c54f7bc",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-6f513f4f690c",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-46462052aa72",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-9cf340634014",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-3ab0ce271df3",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-cc8eac03adf6",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-050fa9ed7a7e",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-386314ee8d09",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-2a146b7f6c46",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-edb4c7cfabde",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-12569e06dd72",
+   "labels": [
+    {
+     "symbol": "ORCL",
+     "stance": "bearish",
+     "status": "opinion",
+     "instrument": "stock",
+     "holder": "author",
+     "ticker_source": "text"
+    }
+   ],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-331edd65bba2",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-26040108c6dd",
+   "labels": [
+    {
+     "symbol": "AAOI",
+     "stance": "sell",
+     "status": "executed",
+     "instrument": "stock",
+     "holder": "author",
+     "ticker_source": "text"
+    }
+   ],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-a2256c24c8d4",
+   "labels": [
+    {
+     "symbol": "SPY",
+     "stance": "bearish",
+     "status": "opinion",
+     "instrument": "stock",
+     "holder": "author",
+     "ticker_source": "text"
+    }
+   ],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-521f04f05490",
+   "labels": [
+    {
+     "symbol": "AMZN",
+     "stance": "hold",
+     "status": "opinion",
+     "instrument": "stock",
+     "holder": "author",
+     "ticker_source": "text"
+    }
+   ],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-42283b7b0d59",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-62c7360e0b4f",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-9bcc0242f61d",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-8cadfb167692",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-1621a105ebd5",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-10736583cab0",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-bac44642541b",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-103a0999f581",
+   "labels": [
+    {
+     "symbol": "BTC",
+     "stance": "bearish",
+     "status": "opinion",
+     "instrument": "other",
+     "holder": "author",
+     "ticker_source": "text"
+    }
+   ],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-3ca89b13268b",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-794247f4137e",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-fc7fdd98426c",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-7d17b47ddc6f",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-1629a38efc8a",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "social"
+  },
+  {
+   "blind_id": "b41-8a5a473b572e",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-f1f424bcad90",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-6758ec74fe51",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-ecc4b98ef0a5",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-513ec07e4f15",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-9c93ed627dd7",
+   "labels": [
+    {
+     "symbol": "AAOI",
+     "stance": "sell",
+     "status": "executed",
+     "instrument": "stock",
+     "holder": "author",
+     "ticker_source": "text"
+    }
+   ],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-98316302614a",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-8cc7e988ae27",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-4720e36fd7d4",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-661b6622d5c8",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-cec538f16231",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "question"
+  },
+  {
+   "blind_id": "b41-2719daacc1e5",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-0904cfbc5d66",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-a42e2eeb3f2e",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-38fcd34ada14",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-d39ecdf85dd7",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-c8af8691a886",
+   "labels": [],
+   "ambiguous": false,
+   "note": "needs_article_check",
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-fa96c4a3e7aa",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-9a35d4257d57",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-27d4fab94db1",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-fec9cd3dc551",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-a299f9f7ebb2",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "social"
+  },
+  {
+   "blind_id": "b41-1afa58a44b37",
+   "labels": [
+    {
+     "symbol": "MA",
+     "stance": "hold",
+     "status": "opinion",
+     "instrument": "stock",
+     "holder": "author",
+     "ticker_source": "text"
+    },
+    {
+     "symbol": "JPM",
+     "stance": "hold",
+     "status": "opinion",
+     "instrument": "stock",
+     "holder": "author",
+     "ticker_source": "text"
+    }
+   ],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-3d2d9c767b78",
+   "labels": [
+    {
+     "symbol": "SOXL",
+     "stance": "buy",
+     "status": "planned",
+     "instrument": "stock",
+     "holder": "author",
+     "ticker_source": "text"
+    }
+   ],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-371a8f5849cc",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-dd5ede867f18",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-dabfaa42679a",
+   "labels": [
+    {
+     "symbol": "VGT",
+     "stance": "trim",
+     "status": "executed",
+     "instrument": "stock",
+     "holder": "author",
+     "ticker_source": "text"
+    },
+    {
+     "symbol": "VGT",
+     "stance": "trim",
+     "status": "planned",
+     "instrument": "stock",
+     "holder": "author",
+     "ticker_source": "text"
+    },
+    {
+     "symbol": "SGOV",
+     "stance": "buy",
+     "status": "executed",
+     "instrument": "stock",
+     "holder": "author",
+     "ticker_source": "text"
+    }
+   ],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-8c6dbb09b758",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-3fcc4d0df1d5",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "social"
+  },
+  {
+   "blind_id": "b41-9d7cfb8daeac",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-0918494e6571",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "social"
+  },
+  {
+   "blind_id": "b41-e50ae4324609",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-c29460743946",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "question"
+  },
+  {
+   "blind_id": "b41-aa385d6ee488",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-29fbb9d45a83",
+   "labels": [
+    {
+     "symbol": "NFLX",
+     "stance": "bearish",
+     "status": "opinion",
+     "instrument": "stock",
+     "holder": "author",
+     "ticker_source": "text"
+    }
+   ],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-10e4d1818852",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-8a85be1af250",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-47a679cfb6dd",
+   "labels": [
+    {
+     "symbol": "SKHY",
+     "stance": "sell",
+     "status": "executed",
+     "instrument": "stock",
+     "holder": "author",
+     "ticker_source": "text"
+    },
+    {
+     "symbol": "ARM",
+     "stance": "sell",
+     "status": "executed",
+     "instrument": "stock",
+     "holder": "author",
+     "ticker_source": "text"
+    },
+    {
+     "symbol": "AMAT",
+     "stance": "sell",
+     "status": "executed",
+     "instrument": "stock",
+     "holder": "author",
+     "ticker_source": "text"
+    }
+   ],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "answer"
+  },
+  {
+   "blind_id": "b41-55ae1f5437ea",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-b0be4c62a7a4",
+   "labels": [
+    {
+     "symbol": "EAT",
+     "stance": "buy",
+     "status": "executed",
+     "instrument": "stock",
+     "holder": "author",
+     "ticker_source": "text"
+    }
+   ],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-9851e6caf0e4",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-b6a9fa85b37b",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-5e002f5492a4",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-56a85d010f3a",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-d95f8984358f",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  },
+  {
+   "blind_id": "b41-fb35ed622c12",
+   "labels": [],
+   "ambiguous": false,
+   "note": null,
+   "reply_role": "none"
+  }
+ ]
+}

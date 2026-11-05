@@ -1,0 +1,93 @@
+{
+ "version": "gold_v4.1_agreement_round1",
+ "date": "2026-11-05",
+ "guideline": "v1.3",
+ "spec": "v0.3",
+ "sample": "GPT 120 test items / 108 posts",
+ "labelers": [
+  "claude (sealed 6648335477)",
+  "gpt (relayed by the Owner)"
+ ],
+ "inputs_sha256": {
+  "blind_test_v4.1_textpack.json": "d80186695815f5116e45f1b20e21c1745465734f3b0315f14cfb9f4ba42f2e90",
+  "blind_test_v4.1_gpt_answers.json": "13b1f3e5d6c7c1a4aef03c9ff120a76904907967d95e1d94c42c047a640d6353",
+  "blind_test_v4.1_claude_answers.json": "8f8a36d99dbdf2c580bb5de9c5868a87e6fc0081a15ea2c8c88df2ef12c2935c",
+  "claims_gold_test_v4.1.claude_first.jsonl": "6dd67ce131abf95ea172d3b7442fd81b2f3a579199c97cc9a542abb53e93e243"
+ },
+ "kappa_unit": "post-level binary: post has >= 1 author claim (any ticker); needs_article_check counts as no claim",
+ "direction_unit": "(record_id, symbol) pairs labelled by both; agree if the polarities overlap",
+ "post_level": {
+  "n": 108,
+  "observed_agreement": 0.926,
+  "kappa": 0.747,
+  "confusion": {
+   "neither": 85,
+   "both_claim": 15,
+   "claude_only": 8
+  }
+ },
+ "item_level": {
+  "n": 120,
+  "observed_agreement": 0.917,
+  "kappa": 0.715,
+  "status_matrix_claude_vs_gpt": {
+   "none|none": 78,
+   "needs_article_check|none": 15,
+   "claim|claim": 16,
+   "claim|none": 10,
+   "none|needs_article_check": 1
+  }
+ },
+ "direction": {
+  "pairs_claude": 30,
+  "pairs_gpt": 21,
+  "pairs_both": 21,
+  "agree": 21,
+  "rate": 1.0,
+  "wilson95": [
+   0.845,
+   1.0
+  ],
+  "claude_only_symbols": [
+   "ALAB",
+   "ARM",
+   "MU",
+   "MU",
+   "SHOP",
+   "SPX",
+   "SPY",
+   "SPY",
+   "VGT"
+  ],
+  "gpt_only_symbols": []
+ },
+ "channels_item_level": {
+  "title": {
+   "n": 95,
+   "observed_agreement": 0.968,
+   "kappa": 0.871
+  },
+  "excerpt": {
+   "n": 25,
+   "observed_agreement": 0.72,
+   "kappa": 0.39
+  },
+  "reply": {
+   "n": 71,
+   "observed_agreement": 0.93,
+   "kappa": 0.804
+  },
+  "root": {
+   "n": 49,
+   "observed_agreement": 0.898,
+   "kappa": 0.407
+  }
+ },
+ "gate": {
+  "kappa_ge_0.60": "PASS",
+  "polarity_agreement_ge_0.85": "PASS",
+  "owner_disagreements_le_3_of_20": "NOT_EVALUATED (Owner did not label this round, #133 6648511823)",
+  "result": "PARTIAL"
+ },
+ "not_claimed": "Not frozen, not adjudicated, no S2 pass: the Owner gate is not evaluated and disagreements are not adjudicated."
+}
