@@ -327,6 +327,13 @@ def main():
             "archive_failures":report.get("archive_failures") or [],
             "overview_ok":report.get("overview_ok"),
             "retention_policy":report.get("retention_policy"),
+            # 2026-11-05 (WXC-RECOVERY-DIAGNOSTIC §4.2): a refused or unrecognised page is never "no new articles"
+            "partial_scan":bool(report.get("partial_scan")) or not complete,
+            "access_restricted":bool(report.get("access_restricted")),
+            "structure_unrecognized":report.get("structure_unrecognized") or [],
+            "article_fetch_failures":report.get("article_fetch_failures",0),
+            "article_parse_failures":report.get("article_parse_failures",0),
+            "fetch_status_counts":report.get("fetch_status_counts") or {},
         }
     blog_state["version"]=1
     blog_state["updated_at"]=now.isoformat()

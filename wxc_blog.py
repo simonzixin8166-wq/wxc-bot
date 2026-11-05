@@ -60,8 +60,31 @@ def overview_url(blog_id: str) -> str:
     return f"{BLOG_ROOT}/myoverview/{blog_id}/"
 
 
+# Access-restriction bookkeeping for one process run (2026-11-05, WXC-RECOVERY-DIAGNOSTIC §4.1).
+# A 403 or 429 means the site refused us: stop at once, never retry in the same run, and record it, so a refusal
+# is never reported as "no new articles". Once the blog host refused one request, no further request goes to that
+# host in this run (politeness; no bypass of any kind).
+ACCESS_LOG: list[dict] = []
+RESTRICTED_HOSTS: set[str] = set()
+
+
+def _host(url: str) -> str:
+    m = re.match(r"https?://([^/]+)", url or "")
+    return m.group(1).lower() if m else ""
+
+
+def reset_access_state():
+    ACCESS_LOG.clear()
+    RESTRICTED_HOSTS.clear()
+
+
 def get(url: str, retries: int = 3, delay: float = 2.5):
-    """Low-frequency request with bounded retry; no anti-bot bypass."""
+    """Low-frequency request with bounded retry for transient errors only; no anti-bot bypass.
+    403/429 stop immediately (no retry) and mark the host as restricted for the rest of this run."""
+    host = _host(url)
+    if host in RESTRICTED_HOSTS:
+        ACCESS_LOG.append({"url": url, "status": "skipped_host_restricted", "at": datetime.utcnow().isoformat() + "Z"})
+        return None
     for i in range(retries):
         try:
             r = sess.get(url, timeout=25)
@@ -70,14 +93,20 @@ def get(url: str, retries: int = 3, delay: float = 2.5):
                 time.sleep(delay)
                 return r
             if r.status_code in (403, 429):
-                print(f"  ! HTTP {r.status_code}, stop/retry later: {url}")
-                time.sleep(delay * (i + 2))
-            else:
-                print(f"  ! HTTP {r.status_code}: {url}")
+                print(f"  ! HTTP {r.status_code}: access restricted, stop (no retry this run): {url}")
+                RESTRICTED_HOSTS.add(host)
+                ACCESS_LOG.append({"url": url, "status": r.status_code, "at": datetime.utcnow().isoformat() + "Z"})
+                return None
+            print(f"  ! HTTP {r.status_code}: {url}")
         except requests.RequestException as e:
             print(f"  ! {e}")
-            time.sleep(delay * (i + 2))
+        time.sleep(delay * (i + 2))
+    ACCESS_LOG.append({"url": url, "status": "failed_after_retries", "at": datetime.utcnow().isoformat() + "Z"})
     return None
+
+
+def access_restricted() -> bool:
+    return bool(RESTRICTED_HOSTS)
 
 
 def _article_id(url: str) -> str:
@@ -106,6 +135,50 @@ def parse_archive(html: str, blog_id: str):
         seen.add(url)
         out.append({"url": url, "title": a.get_text(" ", strip=True)})
     return out
+
+
+def archive_structure_ok(html: str, blog_id: str) -> bool:
+    """A real author archive / overview page links to the author's own blog space. A 200 page with no article links
+    AND no trace of the author's blog id is an unrecognised page (layout change, interstitial, error page), not
+    "zero new articles"."""
+    return bool(re.search(rf"/(?:myblog|myoverview)/{re.escape(str(blog_id))}(?:/|\b)", html or ""))
+
+
+CATEGORY_URL = f"{BLOG_ROOT}/blog/?act=moreList&cat=cjjr"
+# Off until the diagnostic shows the finance category page is reachable and parseable from the collector's runner.
+CATEGORY_DISCOVERY = os.getenv("WXC_BLOG_CATEGORY_DISCOVERY", "0") == "1"
+_CATEGORY_CACHE: dict = {}
+
+
+def parse_category(html: str, blog_ids) -> dict:
+    """Article links on the finance category list, attributed ONLY by the blog id in the link path. Links of blog ids
+    that are not configured are counted but never attributed to a configured author."""
+    soup = BeautifulSoup(html or "", "html.parser")
+    wanted = {str(b) for b in blog_ids}
+    by_id, unattributed, seen = {b: [] for b in wanted}, 0, set()
+    for a in soup.find_all("a", href=True):
+        m = re.search(r"/myblog/(\d+)/\d{6}/\d+\.html", a["href"])
+        if not m:
+            continue
+        url = urljoin(BLOG_ROOT, a["href"])
+        if url in seen:
+            continue
+        seen.add(url)
+        if m.group(1) in wanted:
+            by_id[m.group(1)].append({"url": url, "title": a.get_text(" ", strip=True)})
+        else:
+            unattributed += 1
+    return {"by_blog_id": by_id, "unattributed_links": unattributed, "links_total": len(seen)}
+
+
+def category_links(blog_id: str, delay: float = 2.5):
+    """One category fetch per run, shared by all profiles. None when the page could not be read."""
+    if "result" not in _CATEGORY_CACHE:
+        r = get(CATEGORY_URL, delay=delay)
+        ids = [p["blog_id"] for p in PROFILES.values()]
+        _CATEGORY_CACHE["result"] = parse_category(r.text, ids) if r else None
+    res = _CATEGORY_CACHE["result"]
+    return None if res is None else res["by_blog_id"].get(str(blog_id), [])
 
 
 def _pick(soup, selectors):
@@ -253,9 +326,11 @@ def collect(profile: dict, start: datetime, end: datetime, outdir: str, delay: f
     os.makedirs(os.path.join(outdir, "images"), exist_ok=True)
 
     links = {}
+    discovered_by = {}
     archive_months_requested=month_range(start,end)
     archive_months_ok=[]
     archive_failures=[]
+    structure_unrecognized=[]
     for year, month in archive_months_requested:
         url = archive_url(profile["blog_id"], year, month)
         print(f"[博客归档] {year:04d}-{month:02d} {url}")
@@ -263,9 +338,15 @@ def collect(profile: dict, start: datetime, end: datetime, outdir: str, delay: f
         if not r:
             archive_failures.append(f"{year:04d}-{month:02d}")
             continue
+        rows = parse_archive(r.text, profile["blog_id"])
+        if not rows and not archive_structure_ok(r.text, profile["blog_id"]):
+            structure_unrecognized.append(url)
+            archive_failures.append(f"{year:04d}-{month:02d}")
+            continue
         archive_months_ok.append(f"{year:04d}-{month:02d}")
-        for row in parse_archive(r.text, profile["blog_id"]):
+        for row in rows:
             links[row["url"]] = row
+            discovered_by.setdefault(row["url"], set()).add("archive")
 
     # A monthly archive can lag or temporarily omit a new post. Merge the
     # author's overview as an independent recent-post discovery path so the
@@ -275,22 +356,44 @@ def collect(profile: dict, start: datetime, end: datetime, outdir: str, delay: f
     r = get(overview, delay=delay)
     overview_ok=bool(r)
     if r:
-        for row in parse_archive(r.text, profile["blog_id"]):
+        rows = parse_archive(r.text, profile["blog_id"])
+        if not rows and not archive_structure_ok(r.text, profile["blog_id"]):
+            structure_unrecognized.append(overview)
+            overview_ok = False
+        for row in rows:
             links[row["url"]] = row
+            discovered_by.setdefault(row["url"], set()).add("overview")
+
+    category_ok = None
+    if CATEGORY_DISCOVERY:
+        cat = category_links(profile["blog_id"], delay=delay)
+        category_ok = cat is not None
+        for row in cat or []:
+            links.setdefault(row["url"], row)
+            discovered_by.setdefault(row["url"], set()).add("category_cjjr")
 
     posts = []
     image_count = 0
     selected_links=list(links.values()) if max_articles is None else list(links.values())[:max_articles]
+    fetch_status = {}
+    article_fetch_failures, article_parse_failures = [], []
     for i, row in enumerate(selected_links, 1):
         url = row["url"]
         print(f"[博客文章] {i}/{len(selected_links)} {url}")
         r = get(url, delay=delay)
         if not r:
+            fetch_status[url] = "discovered_not_fetched"
+            article_fetch_failures.append(url)
             continue
         p = parse_article(r.text, url, profile["author"])
         if not p:
             print("  ! 文章解析失败")
+            fetch_status[url] = "fetched_not_parsed"
+            article_parse_failures.append(url)
             continue
+        fetch_status[url] = "fulltext_fetched" if p.get("text") else "fetched_not_parsed"
+        p["fetch_status"] = fetch_status[url]
+        p["discovered_by"] = sorted(discovered_by.get(url, []))
         try:
             dt = datetime.strptime(p.get("date", ""), "%Y-%m-%d")
         except ValueError:
@@ -322,6 +425,21 @@ def collect(profile: dict, start: datetime, end: datetime, outdir: str, delay: f
         "overview_ok":overview_ok,
         "article_links_found": len(links),
         "posts_parsed":len(posts),
-        "scan_complete":not archive_failures,
+        "archive_success":archive_months_ok,
+        "overview_success":overview_ok,
+        "category_success":category_ok,
+        "structure_unrecognized":structure_unrecognized,
+        "article_fetch_success":sum(1 for v in fetch_status.values() if v != "discovered_not_fetched"),
+        "article_fetch_failures":article_fetch_failures,
+        "article_parse_success":sum(1 for v in fetch_status.values() if v == "fulltext_fetched"),
+        "article_parse_failures":article_parse_failures,
+        "fetch_status_counts":{k: sum(1 for v in fetch_status.values() if v == k) for k in sorted(set(fetch_status.values()))},
+        "access_restricted":access_restricted(),
+        "access_log":list(ACCESS_LOG),
+        # complete only when every discovery path and every article read succeeded and nothing was refused
+        "scan_complete":(not archive_failures and overview_ok and not article_fetch_failures and not article_parse_failures
+                         and not access_restricted() and category_ok is not False),
+        "partial_scan":bool(archive_failures or not overview_ok or article_fetch_failures or article_parse_failures
+                            or access_restricted() or category_ok is False),
         "retention_policy":"no_article_count_cap",
     }

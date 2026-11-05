@@ -61,7 +61,9 @@ try:
     def fake_get(url, delay=0):
         class R:
             def __init__(self,text): self.text=text
-        if "myblog" in url: return R(ARTICLE)
+        # article pages end in .html; archive/overview pages are directories (2026-11-05: an archive URL answered
+        # with an article page is now an unrecognised archive, so the fake routes by page type)
+        if url.endswith(".html"): return R(ARTICLE)
         return R(ARCHIVE)
     blog.get=fake_get
     blog.download_image=lambda *args,**kwargs: None
@@ -90,7 +92,7 @@ try:
             return None
         if "/myoverview/" in url:
             return R(ARCHIVE)
-        if "/myblog/" in url:
+        if url.endswith(".html"):
             return R(ARTICLE)
         return R(ARCHIVE)
     blog.get=fail_first_archive

@@ -26,6 +26,9 @@ STOP = set("AI CEO IPO ETF FA EPS PE GDP CPI FOMC USA USD LOL OK IMO NEWS THE AN
 sess = requests.Session()
 sess.headers.update(HEADERS)
 
+RESTRICTED = []  # 403/429 seen in this run: {url, status} (2026-11-05, WXC-RECOVERY-DIAGNOSTIC §4.1)
+
+
 def get(url, retries=3, delay=2.5):
     for i in range(retries):
         try:
@@ -35,6 +38,9 @@ def get(url, retries=3, delay=2.5):
                 time.sleep(delay)
                 return r
             print(f"  ! HTTP {r.status_code}: {url}")
+            if r.status_code in (403, 429):
+                RESTRICTED.append({"url": url, "status": r.status_code})
+                return None  # refused: stop now, no retry in this run, no bypass
         except requests.RequestException as e:
             print(f"  ! {e}")
         time.sleep(delay * (i + 2))
