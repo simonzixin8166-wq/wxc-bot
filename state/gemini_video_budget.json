@@ -929,12 +929,12 @@
       "calls": 0,
       "admitted": 0,
       "rejected": 0,
-      "errors": 2,
+      "errors": 4,
       "reconciliation": {
         "status": "COMPLETE",
         "calls_billed": 0,
-        "calls_refunded_503": 2,
-        "detail_rows": 2,
+        "calls_refunded_503": 4,
+        "detail_rows": 4,
         "missing_detail_rows": 0,
         "counter_mismatch": []
       },
@@ -956,9 +956,27 @@
           "author": "老李玩钱",
           "title": "中期选举尘埃落定！美股分化严重，何去何从",
           "detail": "{\"error\":{\"message\":\"gemini-3.5-flash is currently experiencing high demand, spikes in demand are usually temporary. Please try again later.\",\"code\":\"service_unavailable\"}}"
+        },
+        {
+          "video_id": "JpvxhfYocfo",
+          "outcome": "http_503_all_models",
+          "at": "18:00:05Z",
+          "model": "gemini-3.8-flash,gemini-3.5-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 半导体打爆，还能玩吗？AMZN、MSFT为何大涨？NVDA、TSM、GOOG、ISRG持仓计划！",
+          "detail": "{\"error\":{\"message\":\"gemini-3.5-flash is currently experiencing high demand, spikes in demand are usually temporary. Please try again later.\",\"code\":\"service_unavailable\"}}"
+        },
+        {
+          "video_id": "IcDRffqDfTo",
+          "outcome": "http_503_all_models",
+          "at": "18:00:34Z",
+          "model": "gemini-3.8-flash,gemini-3.5-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 横扫概率极高，AI承压！AMD前瞻大好，暗藏隐忧！PLTR增速放缓高不可攀！",
+          "detail": "{\"error\":{\"message\":\"gemini-3.5-flash is currently experiencing high demand, spikes in demand are usually temporary. Please try again later.\",\"code\":\"service_unavailable\"}}"
         }
       ],
-      "refunded_503": 2
+      "refunded_503": 4
     }
   },
   "version": 1,
