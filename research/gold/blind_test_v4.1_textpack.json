@@ -1,0 +1,1809 @@
+{
+ "version": "blind_test_v4.1_textpack",
+ "spec": "v0.3",
+ "guideline": "v1.3",
+ "instructions": "Label each item under research/gold/GUIDELINES_v1.3.md (frozen, sha256 prefix 7dd420392be709ff). TARGET = target_text: kind=title is the post title (a 0-byte reply's title is the whole reply); kind=excerpt is the stored public excerpt (<= 360 chars) and `title` is context only. CONTEXT = thread_context: the thread's root title and up to 5 earlier titles in the same thread, rebuilt from the collector's feed (these October posts predate the collector's own thread_context; spec v0.3). Label only claims the AUTHOR makes in the TARGET; context may only resolve the ticker (ticker_source=context) or the reply role. Fields: symbol, stance (buy/add/sell/trim/hold/avoid/bullish/bearish), status (executed/planned/conditional/opinion), instrument (stock/sell_put/covered_call/leaps/other), holder (author/author_system), ticker_source (text/context). Holdings: only with explicit 'I hold' wording, <= 5 tickers, longer lists -> note 'holdings_list' and labels []. No claim -> labels [], ambiguous false. Needs the full article -> note 'needs_article_check', labels []. Replies also get reply_role (agree/disagree/answer/question/social/none). Never guess, never open other pages. Answer per blind_id: {blind_id, labels:[...], ambiguous, note, reply_role}.",
+ "note": "titles and <= 360-char public excerpts only (the same text the extractor sees); no labels, no extractor output",
+ "items": [
+  {
+   "blind_id": "b41-6e06cee39b26",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/112962.html",
+   "published_at": "2026-10-01 18:08:34",
+   "is_reply": false,
+   "title": null,
+   "target_text": "QQQ",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-d05c2ac8d6cb",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/117737.html",
+   "published_at": "2026-10-28 12:09:42",
+   "is_reply": true,
+   "title": null,
+   "target_text": "no durable market direction yet",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-6a96be682b5a",
+   "kind": "excerpt",
+   "source_kind": "forum",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/118672.html",
+   "published_at": "2026-10-30 18:16:12",
+   "is_reply": true,
+   "title": "我继续等。担心还没有跌够。不FOMO，以后有的是大把机，不是非要买在最低。不排除会有反弹，但",
+   "target_text": "担心稍有反弹还没来得及反应就又被打下地狱。\n在这次大跌前semi有过反弹，甚至是不错的反弹，结果转眼间反弹的涨幅灰飞烟灭。担心类似的情形会重演。\n现在的市场是给快手，高手的。",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-475dee071d18",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/114654.html",
+   "published_at": "2026-10-11 10:52:32",
+   "is_reply": true,
+   "title": null,
+   "target_text": "历史上，中期选举的9月底开始的1年，是标普涨幅最高的阶段。不过这些历史数据跟说9月是一年里最差的月份，不靠谱：）",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-96ac9b42fe47",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/117056.html",
+   "published_at": "2026-10-23 07:42:37",
+   "is_reply": true,
+   "title": null,
+   "target_text": "Looks like I finally caught SOXL bottom after a few try",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-a84786e72593",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/115575.html",
+   "published_at": "2026-10-16 11:41:16",
+   "is_reply": true,
+   "title": null,
+   "target_text": "这些属于长投股，都不担心。",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-bd82d1f76715",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/114523.html",
+   "published_at": "2026-10-09 09:53:28",
+   "is_reply": true,
+   "title": null,
+   "target_text": "你让我想起了秦王，去年秦王初进股市，也总想买便宜，但看着离ATH差很远的股票",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-7c89c54ef5ee",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/113702.html",
+   "published_at": "2026-10-05 15:02:10",
+   "is_reply": false,
+   "title": null,
+   "target_text": "collectively, 虽然有得有失，但这个坛子今年几乎没有miss任何大的机会 ：）",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-3c821218f010",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/117741.html",
+   "published_at": "2026-10-28 12:51:35",
+   "is_reply": true,
+   "title": null,
+   "target_text": "QQQ , VGT , SMH 等都已经开启反弹模式，正在进行时。现在就是关注它能反弹多高。只要",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-f0b6f33159b9",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/116439.html",
+   "published_at": "2026-10-20 21:00:21",
+   "is_reply": true,
+   "title": null,
+   "target_text": "怎么还在看夜盘，看韩股？没有交易量的夜盘毫无意义",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-4cd589d592d9",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/116295.html",
+   "published_at": "2026-10-20 13:42:00",
+   "is_reply": true,
+   "title": null,
+   "target_text": "ouch",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-6d7b2bfb4516",
+   "kind": "excerpt",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/115113.html",
+   "published_at": "2026-10-14 09:40:38",
+   "is_reply": true,
+   "title": "嗯嗯，",
+   "target_text": "好的， 最近比较忙，没空看股市， 等有good correction的时候再加吧，\n \nMU,\nhttps://bbs.wenxuecity.com/cfzh/112778.html\n \nhttps://bbs.wenxuecity.com/cfzh/112935.html",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-5ef3d8b985f8",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/116387.html",
+   "published_at": "2026-10-20 18:22:00",
+   "is_reply": true,
+   "title": null,
+   "target_text": "well, 90% of stocks I buy are not in their FOMO stage :)",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-d635a39fc83f",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/118375.html",
+   "published_at": "2026-10-30 08:29:49",
+   "is_reply": true,
+   "title": null,
+   "target_text": "股市从最高点到最底部，也会有好几个来回的",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-329b21673757",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "麻你",
+   "url": "https://bbs.wenxuecity.com/tzlc/2381057.html",
+   "published_at": "2026-10-05 12:03:28",
+   "is_reply": false,
+   "title": null,
+   "target_text": "我左看右看 上看下看，原来每此股市都不简单，我想了又想， 我猜了又猜，股市的心事还真奇怪，哎！真奇怪！！！！",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-41c4968e557a",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/112971.html",
+   "published_at": "2026-10-01 19:42:30",
+   "is_reply": false,
+   "title": null,
+   "target_text": "谢谢小猪优秀的解说员，",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-e86979402675",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/117248.html",
+   "published_at": "2026-10-25 13:37:00",
+   "is_reply": true,
+   "title": null,
+   "target_text": "neocloud went from darling to dog in 45 days :)",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-d48d0ed82de2",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/113227.html",
+   "published_at": "2026-10-02 15:52:23",
+   "is_reply": false,
+   "title": null,
+   "target_text": "完全不同的equipment ：）",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-0454123b77b9",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/117690.html",
+   "published_at": "2026-10-28 09:26:21",
+   "is_reply": true,
+   "title": null,
+   "target_text": "低买高卖。长短结合。AMD战例：",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-1b57c3a7a133",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/116766.html",
+   "published_at": "2026-10-22 09:17:16",
+   "is_reply": true,
+   "title": null,
+   "target_text": "I stay defensive.",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-6f7bedb388ed",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/115983.html",
+   "published_at": "2026-10-19 06:29:28",
+   "is_reply": true,
+   "title": null,
+   "target_text": "10月初开始减仓半导体以来，今天第一次买入半导体，按三心的说法：",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-6e5e53bfedd2",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/113416.html",
+   "published_at": "2026-10-03 16:15:02",
+   "is_reply": false,
+   "title": null,
+   "target_text": "Yes that’s what I said the other day. Narrower market can",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-6817170db4a7",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/115984.html",
+   "published_at": "2026-10-19 06:30:28",
+   "is_reply": true,
+   "title": null,
+   "target_text": "有没有Intel的官方发布？",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-4df9e6455f3e",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/116798.html",
+   "published_at": "2026-10-22 10:28:34",
+   "is_reply": true,
+   "title": null,
+   "target_text": "it is. 我说的是形状，不是均线，",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-ebd0c62b13ff",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "麻你",
+   "url": "https://bbs.wenxuecity.com/tzlc/2380842.html",
+   "published_at": "2026-10-05 08:12:45",
+   "is_reply": false,
+   "title": null,
+   "target_text": "俺今年买的唯一一只股票，拿着不动了",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-62b372e0bcb7",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/118672.html",
+   "published_at": "2026-10-30 18:16:12",
+   "is_reply": true,
+   "title": null,
+   "target_text": "我继续等。担心还没有跌够。不FOMO，以后有的是大把机，不是非要买在最低。不排除会有反弹，但",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-ef1a5f4bf322",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/113161.html",
+   "published_at": "2026-10-02 11:18:31",
+   "is_reply": false,
+   "title": null,
+   "target_text": "I dont think it is. market is going ATH",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-87de0894181c",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "麻你",
+   "url": "https://bbs.wenxuecity.com/tzlc/2378607.html",
+   "published_at": "2026-10-02 10:05:30",
+   "is_reply": false,
+   "title": null,
+   "target_text": "希望大盘北上能再走一段",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-958fd3d7e216",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/114127.html",
+   "published_at": "2026-10-07 12:11:42",
+   "is_reply": false,
+   "title": null,
+   "target_text": "This should have been priced in a while back already.",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-360804f90f8f",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "麻你",
+   "url": "https://bbs.wenxuecity.com/tzlc/2380696.html",
+   "published_at": "2026-10-04 19:47:55",
+   "is_reply": false,
+   "title": null,
+   "target_text": "今年2月3月4月大盘下跌那个时候俺不断地喊：越跌越买，只买不卖",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-591f230f05df",
+   "kind": "excerpt",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/113199.html",
+   "published_at": "2026-10-02 14:05:16",
+   "is_reply": false,
+   "title": "其实我也是猜的， 不过一般大家很乐观的时候我都很谨慎，",
+   "target_text": "这里是原因， 主要是觉得这个rotation 不是很healthy,\n \nhttps://bbs.wenxuecity.com/cfzh/113037.html",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-212f3ea2f500",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/113199.html",
+   "published_at": "2026-10-02 14:05:16",
+   "is_reply": false,
+   "title": null,
+   "target_text": "其实我也是猜的， 不过一般大家很乐观的时候我都很谨慎，",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-b1542d01df04",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/112899.html",
+   "published_at": "2026-10-01 11:09:43",
+   "is_reply": false,
+   "title": null,
+   "target_text": "You can always enter order once it hits",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-a3784450fa6c",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/114952.html",
+   "published_at": "2026-10-13 10:07:39",
+   "is_reply": true,
+   "title": null,
+   "target_text": "EMA 权重在近期的价格，而不是简单的平均。对短线（10，20，50天），没有trader看SMA",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-843a1cb4c938",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/114208.html",
+   "published_at": "2026-10-08 06:30:38",
+   "is_reply": true,
+   "title": null,
+   "target_text": "昨天盘后我喊了一嗓子：",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-d61a7db52290",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/117481.html",
+   "published_at": "2026-10-27 08:01:12",
+   "is_reply": true,
+   "title": null,
+   "target_text": "特斯拉周线图",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-8cf187e2c102",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/112973.html",
+   "published_at": "2026-10-01 19:45:27",
+   "is_reply": false,
+   "title": null,
+   "target_text": "staircase up, elevator down",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-6278247736ed",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/113014.html",
+   "published_at": "2026-10-02 05:04:38",
+   "is_reply": false,
+   "title": null,
+   "target_text": "比特币",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-d5c39b9c7d61",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/118702.html",
+   "published_at": "2026-10-31 06:32:41",
+   "is_reply": true,
+   "title": null,
+   "target_text": "7507 是9月的低点。我担心这个低点保不住。—— 当然，以实际走势为准。",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-6d4dee25c8eb",
+   "kind": "excerpt",
+   "source_kind": "forum",
+   "author": "麻你",
+   "url": "https://bbs.wenxuecity.com/tzlc/2383239.html",
+   "published_at": "2026-10-09 14:18:31",
+   "is_reply": true,
+   "title": "是由全仓VGT，慢慢分次卖出一小部分，把钱转到SGOV得来的。 未来随着市场不断走高，俺会卖出更多VGT，继续转入",
+   "target_text": "SGOV",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-b86846ea66be",
+   "kind": "excerpt",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/113215.html",
+   "published_at": "2026-10-02 15:06:18",
+   "is_reply": false,
+   "title": "其实熊市才是大富的机会，当然要敢买， 也得有钱买。",
+   "target_text": "牛市是大家都能挣点钱，挣多挣少而已。 但要变大富不容易，除非本来就有很多的本金。",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-018de0c4a941",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/113456.html",
+   "published_at": "2026-10-03 22:04:32",
+   "is_reply": false,
+   "title": null,
+   "target_text": "我都是瞎说瞎猜的，",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-40987deb5245",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/118752.html",
+   "published_at": "2026-10-31 10:13:14",
+   "is_reply": true,
+   "title": null,
+   "target_text": "前几次的反弹是Greed had momentary taken control.  Rally was a short",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-1b2db3e9b5a1",
+   "kind": "excerpt",
+   "source_kind": "forum",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/115983.html",
+   "published_at": "2026-10-19 06:29:28",
+   "is_reply": true,
+   "title": "10月初开始减仓半导体以来，今天第一次买入半导体，按三心的说法：",
+   "target_text": "现在买入，一定要设好止损。我一买入就下了stop loss的单，可能的亏损2.8%：",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-29a7bfa38080",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/116353.html",
+   "published_at": "2026-10-20 16:20:05",
+   "is_reply": true,
+   "title": null,
+   "target_text": "VIP成员安全性相对好一些，敢适当多买一点。风险大波段大股少量买。",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-a64bfc86803d",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/113970.html",
+   "published_at": "2026-10-06 17:04:46",
+   "is_reply": false,
+   "title": null,
+   "target_text": "这三只股中，目前以AVGO最强，可能会率先突破（周线）或已经突破（日线）。",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-85566c54f7bc",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/115510.html",
+   "published_at": "2026-10-16 09:24:52",
+   "is_reply": true,
+   "title": null,
+   "target_text": "AMD's Nov. 3 report matters a lot too.",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-6f513f4f690c",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/117193.html",
+   "published_at": "2026-10-24 12:29:33",
+   "is_reply": true,
+   "title": null,
+   "target_text": "well，3/2 to 3/17, its drawdown was 28%, 我不会说它完全没有参与调整：）",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-46462052aa72",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/115145.html",
+   "published_at": "2026-10-14 11:05:13",
+   "is_reply": true,
+   "title": null,
+   "target_text": "I never really studied neocloud so I dont know why",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-9cf340634014",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/113211.html",
+   "published_at": "2026-10-02 14:35:44",
+   "is_reply": false,
+   "title": null,
+   "target_text": "不过你们都是短线高手，不担心。",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-3ab0ce271df3",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/113206.html",
+   "published_at": "2026-10-02 14:27:39",
+   "is_reply": false,
+   "title": null,
+   "target_text": "市场已经涨了，从SPY 750开始反弹的，",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-cc8eac03adf6",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/115231.html",
+   "published_at": "2026-10-14 14:56:56",
+   "is_reply": true,
+   "title": null,
+   "target_text": "Not yet",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-050fa9ed7a7e",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/112968.html",
+   "published_at": "2026-10-01 19:25:40",
+   "is_reply": false,
+   "title": null,
+   "target_text": "Bull trap,",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-386314ee8d09",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/113713.html",
+   "published_at": "2026-10-05 16:05:41",
+   "is_reply": false,
+   "title": null,
+   "target_text": "今天SPY收774.83,  a tad below 775, hmmm",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-2a146b7f6c46",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/117954.html",
+   "published_at": "2026-10-29 08:12:12",
+   "is_reply": true,
+   "title": null,
+   "target_text": "你看，作晚都胆战心惊的，现在啥事也没有，都是自己吓自己：）",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-edb4c7cfabde",
+   "kind": "excerpt",
+   "source_kind": "blog",
+   "author": "麻你",
+   "url": "https://blog.wenxuecity.com/myblog/78105/202610/666.html",
+   "published_at": "2026-10-02",
+   "is_reply": false,
+   "title": "下个星期继续保持87%仓位在VGT，13%在SGOV",
+   "target_text": "大盘表现不错\n耐心等待未来上方卖出信号，按比例减仓取利",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-12569e06dd72",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/116235.html",
+   "published_at": "2026-10-20 10:04:54",
+   "is_reply": true,
+   "title": null,
+   "target_text": "ORCL is worse in terms of credit stress,  oops, 嘘",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-331edd65bba2",
+   "kind": "excerpt",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/115231.html",
+   "published_at": "2026-10-14 14:56:56",
+   "is_reply": true,
+   "title": "Not yet",
+   "target_text": "猜的，YMYD",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-26040108c6dd",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/115100.html",
+   "published_at": "2026-10-14 08:58:31",
+   "is_reply": true,
+   "title": null,
+   "target_text": "逢高Exited AAOI & ARM,",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-a2256c24c8d4",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/112930.html",
+   "published_at": "2026-10-01 13:03:48",
+   "is_reply": false,
+   "title": null,
+   "target_text": "剧本应该是SPY到783-785左右后，会有个8-10%左右的回调， 猜的lol",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-521f04f05490",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/115600.html",
+   "published_at": "2026-10-16 12:22:09",
+   "is_reply": true,
+   "title": null,
+   "target_text": "AMZN对我自己来说，是可以再拿5-10年的股，至少目前看过去是这样的，",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-42283b7b0d59",
+   "kind": "excerpt",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/116773.html",
+   "published_at": "2026-10-22 09:28:01",
+   "is_reply": true,
+   "title": "嗯嗯，mid term, earnings, Fed..比较复杂这次，连我一直看牛的都defensive了哈哈，SPY还",
+   "target_text": "没有真正调整，几周前说过masking. 我觉得剧本是https://bbs.wenxuecity.com/cfzh/112930.html\n但是短线随时可以买进卖出的不担心， 反复/反弹肯定有",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-62c7360e0b4f",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/114421.html",
+   "published_at": "2026-10-09 05:01:11",
+   "is_reply": true,
+   "title": null,
+   "target_text": "能提供点参考价值就好。我错的时候太多了。",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-9bcc0242f61d",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/112880.html",
+   "published_at": "2026-10-01 10:27:01",
+   "is_reply": false,
+   "title": null,
+   "target_text": "or, buy it but with very clear stop loss in place",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-8cadfb167692",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/113717.html",
+   "published_at": "2026-10-05 16:38:50",
+   "is_reply": false,
+   "title": null,
+   "target_text": "我个人觉得，如果想拥有比特币，这种虚拟币仓位要小于5%， 最好是控制在2-3%以内，",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-1621a105ebd5",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/116948.html",
+   "published_at": "2026-10-22 15:05:08",
+   "is_reply": true,
+   "title": null,
+   "target_text": "这里可能一些ID没有经过股市的震荡。去年DeepSeek时刻，英伟达一口气从146多跌到110",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-10736583cab0",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/114363.html",
+   "published_at": "2026-10-08 16:27:53",
+   "is_reply": true,
+   "title": null,
+   "target_text": "第一，不是所有解锁的人都会卖；第二，即使很多人卖，但如果买的人更多（机构，基金等大买家），股价依旧会有支撑。",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-bac44642541b",
+   "kind": "excerpt",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/115106.html",
+   "published_at": "2026-10-14 09:16:41",
+   "is_reply": true,
+   "title": "已经好几周在sideline了，这次我自己暂时还不打算进场加仓。",
+   "target_text": "SMH我没有，不太熟悉",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-103a0999f581",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/114674.html",
+   "published_at": "2026-10-11 17:46:14",
+   "is_reply": true,
+   "title": null,
+   "target_text": "Bitcoin 应该休整一阵子",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-3ca89b13268b",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "麻你",
+   "url": "https://bbs.wenxuecity.com/tzlc/2380340.html",
+   "published_at": "2026-10-04 11:20:54",
+   "is_reply": false,
+   "title": null,
+   "target_text": "和大盘持平也已经是很不错了",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-794247f4137e",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/115343.html",
+   "published_at": "2026-10-15 07:29:06",
+   "is_reply": true,
+   "title": null,
+   "target_text": "正股",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-fc7fdd98426c",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/114572.html",
+   "published_at": "2026-10-09 16:04:23",
+   "is_reply": true,
+   "title": null,
+   "target_text": "周线图我用的是10周EMA均线",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-7d17b47ddc6f",
+   "kind": "excerpt",
+   "source_kind": "forum",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/118694.html",
+   "published_at": "2026-10-31 05:43:59",
+   "is_reply": true,
+   "title": "SP 500 日线图",
+   "target_text": "昨天刚刚以 gap down的形式放量跌破短线趋势线。有种“山雨欲来”的样子，感觉不好。\n但愿我是错的。\n目前 手上33% cash。短期内以观望为主。",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-1629a38efc8a",
+   "kind": "excerpt",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/113456.html",
+   "published_at": "2026-10-03 22:04:32",
+   "is_reply": false,
+   "title": "我都是瞎说瞎猜的，",
+   "target_text": "谢谢小猪",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-8a5a473b572e",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/117396.html",
+   "published_at": "2026-10-26 16:22:02",
+   "is_reply": true,
+   "title": null,
+   "target_text": "应该是反过来，这表明市场目前对任何“仅仅”靠GPU租赁的公司没有信心。但这有可能只是市场过激反应",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-f1f424bcad90",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/114273.html",
+   "published_at": "2026-10-08 11:06:43",
+   "is_reply": true,
+   "title": null,
+   "target_text": "一个公司，它的业务不会在短短几个星期就发生了天翻地覆的变化",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-6758ec74fe51",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/114404.html",
+   "published_at": "2026-10-08 20:46:50",
+   "is_reply": true,
+   "title": null,
+   "target_text": "没有，短炒真的是要求水平很高，要不然很容易亏本。",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-ecc4b98ef0a5",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/113180.html",
+   "published_at": "2026-10-02 13:12:52",
+   "is_reply": false,
+   "title": null,
+   "target_text": "没有呀， 其实MU还没新高，浮盈都比之前少， 虽然index 接近新高，",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-513ec07e4f15",
+   "kind": "excerpt",
+   "source_kind": "forum",
+   "author": "麻你",
+   "url": "https://bbs.wenxuecity.com/tzlc/2378107.html",
+   "published_at": "2026-10-02 05:14:43",
+   "is_reply": false,
+   "title": "大赞！你家真能攒钱。2000年没有钱，2008光亏钱就是2.5米，还是税后的，假如",
+   "target_text": "还剩下了几个米，那么8年时间每年税后差不多能攒下半米以上，包括投资涨幅也是很厉害的",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-9c93ed627dd7",
+   "kind": "excerpt",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/115100.html",
+   "published_at": "2026-10-14 08:58:31",
+   "is_reply": true,
+   "title": "逢高Exited AAOI & ARM,",
+   "target_text": "前几周说过下一个exit就是AAOI, 因为high beta在这个macro不太合适。  Took the profit",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-98316302614a",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "麻你",
+   "url": "https://bbs.wenxuecity.com/tzlc/2378634.html",
+   "published_at": "2026-10-02 10:29:47",
+   "is_reply": false,
+   "title": null,
+   "target_text": "致敬就太过了，互相交流",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-8cc7e988ae27",
+   "kind": "excerpt",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/112943.html",
+   "published_at": "2026-10-01 13:59:46",
+   "is_reply": false,
+   "title": "SPY这几天一直在764左右， 需要突破775。 如果守不住764， 下一站就是750-753左右，",
+   "target_text": "跌破750， 差不多目标就是714/715左右",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-4720e36fd7d4",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/115987.html",
+   "published_at": "2026-10-19 06:43:18",
+   "is_reply": true,
+   "title": null,
+   "target_text": "股市这次回调，亚麻表现得很坚挺。",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-661b6622d5c8",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/114489.html",
+   "published_at": "2026-10-09 07:31:17",
+   "is_reply": true,
+   "title": null,
+   "target_text": "SHOP 是最近走得比较顺畅的一只股",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-cec538f16231",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/115650.html",
+   "published_at": "2026-10-16 14:23:04",
+   "is_reply": true,
+   "title": null,
+   "target_text": "620 买AMD？？？？？ Why?",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-2719daacc1e5",
+   "kind": "excerpt",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/115515.html",
+   "published_at": "2026-10-16 09:42:09",
+   "is_reply": true,
+   "title": "这次暂时都还没有买， 有几个我想加仓的已经进入我的",
+   "target_text": "第一个愿意加仓的价位区间， 但是cheap prices alone aren't enough.",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-0904cfbc5d66",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/118492.html",
+   "published_at": "2026-10-30 11:51:30",
+   "is_reply": true,
+   "title": null,
+   "target_text": "不是，我是说形状象。  看看745-750有没有反弹",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-a42e2eeb3f2e",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/116622.html",
+   "published_at": "2026-10-21 14:43:24",
+   "is_reply": true,
+   "title": null,
+   "target_text": "您买的价格好，我2015年买进的时候已经是90多，不过后来2022年加仓的也是差不多价格，那个回报按时间好一些，哈哈",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-38fcd34ada14",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/113315.html",
+   "published_at": "2026-10-03 07:50:00",
+   "is_reply": false,
+   "title": null,
+   "target_text": "老黄也很专情",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-d39ecdf85dd7",
+   "kind": "excerpt",
+   "source_kind": "forum",
+   "author": "yifan99",
+   "url": "https://bbs.wenxuecity.com/cfzh/113763.html",
+   "published_at": "2026-10-06 07:10:36",
+   "is_reply": false,
+   "title": "哈哈哈，希望我的研究不误导但能帮助大家致富。",
+   "target_text": "大家一起打败MM，",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-c8af8691a886",
+   "kind": "excerpt",
+   "source_kind": "forum",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/114273.html",
+   "published_at": "2026-10-08 11:06:43",
+   "is_reply": true,
+   "title": "一个公司，它的业务不会在短短几个星期就发生了天翻地覆的变化",
+   "target_text": "https://bbs.wenxuecity.com/cfzh/113990.html",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-fa96c4a3e7aa",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "麻你",
+   "url": "https://bbs.wenxuecity.com/tzlc/2378004.html",
+   "published_at": "2026-10-01 21:53:51",
+   "is_reply": false,
+   "title": null,
+   "target_text": "你真勤奋。俺的出租房都是交给PM公司来做",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-9a35d4257d57",
+   "kind": "excerpt",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/113180.html",
+   "published_at": "2026-10-02 13:12:52",
+   "is_reply": false,
+   "title": "没有呀， 其实MU还没新高，浮盈都比之前少， 虽然index 接近新高，",
+   "target_text": "SPY里More stocks making 52-week lows than highs， 这也是concern之一",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-27d4fab94db1",
+   "kind": "excerpt",
+   "source_kind": "forum",
+   "author": "麻你",
+   "url": "https://bbs.wenxuecity.com/tzlc/2380749.html",
+   "published_at": "2026-10-05 05:12:06",
+   "is_reply": false,
+   "title": "三个月来刚进入上升趋势，有望再去新高",
+   "target_text": "俺只有少量持股，扔在那里不去管它了",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-fec9cd3dc551",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/115106.html",
+   "published_at": "2026-10-14 09:16:41",
+   "is_reply": true,
+   "title": null,
+   "target_text": "已经好几周在sideline了，这次我自己暂时还不打算进场加仓。",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-a299f9f7ebb2",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/117861.html",
+   "published_at": "2026-10-28 18:36:51",
+   "is_reply": true,
+   "title": null,
+   "target_text": "lol, 哈哈",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-1afa58a44b37",
+   "kind": "excerpt",
+   "source_kind": "forum",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/117037.html",
+   "published_at": "2026-10-23 06:22:43",
+   "is_reply": true,
+   "title": "之前提到过的 consumer staples 和 healh care表现良好。到目前依然如此。昨天",
+   "target_text": "XLP （Consumer Staples ETF）在大盘那么弱时还大涨了 3.3%， XLV 上涨了 1.32%。\n金融板块也不错，XLF 上涨了 1.09%。金融板块我有 MA 和 JPM。MA买入后表现良好，JPM 没涨也没跌。\n昨天盘后才注意到，金融里的保险板块也表现非凡，昨天上涨了它的ETF，IAK，上涨了 2.3%。今天准备加一个Insurance 股。保险行业由于其强劲的自由现金流、高分红以及在高利率上涨周期中的盈利韧性，是防御型投资的好配置。巴菲特也一直偏爱保险。",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-3d2d9c767b78",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/118339.html",
+   "published_at": "2026-10-30 07:39:11",
+   "is_reply": true,
+   "title": null,
+   "target_text": "Enter SOXL 79.9, stop loss 78",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-371a8f5849cc",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/118725.html",
+   "published_at": "2026-10-31 07:43:51",
+   "is_reply": true,
+   "title": null,
+   "target_text": "9月底开始turn defensive, I am putting some cash back to work",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-dd5ede867f18",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/112888.html",
+   "published_at": "2026-10-01 10:47:59",
+   "is_reply": false,
+   "title": null,
+   "target_text": "Neither. I use mental stop loss :)",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-dabfaa42679a",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "麻你",
+   "url": "https://bbs.wenxuecity.com/tzlc/2383239.html",
+   "published_at": "2026-10-09 14:18:31",
+   "is_reply": true,
+   "title": null,
+   "target_text": "是由全仓VGT，慢慢分次卖出一小部分，把钱转到SGOV得来的。 未来随着市场不断走高，俺会卖出更多VGT，继续转入",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-8c6dbb09b758",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/113442.html",
+   "published_at": "2026-10-03 19:09:30",
+   "is_reply": false,
+   "title": null,
+   "target_text": "稍微改一下，Breadth 是必要条件，但不是充分条件",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-3fcc4d0df1d5",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/114405.html",
+   "published_at": "2026-10-08 20:47:49",
+   "is_reply": true,
+   "title": null,
+   "target_text": "三心变成花姐了，哈哈哈。",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-9d7cfb8daeac",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "麻你",
+   "url": "https://bbs.wenxuecity.com/tzlc/2380320.html",
+   "published_at": "2026-10-04 10:52:16",
+   "is_reply": false,
+   "title": null,
+   "target_text": "赞",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-0918494e6571",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/116329.html",
+   "published_at": "2026-10-20 15:06:37",
+   "is_reply": true,
+   "title": null,
+   "target_text": "Very good",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-e50ae4324609",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/117468.html",
+   "published_at": "2026-10-27 07:32:44",
+   "is_reply": true,
+   "title": null,
+   "target_text": "现在，如果回测，200天均线是它的支撑了。",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-c29460743946",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/115652.html",
+   "published_at": "2026-10-16 14:24:13",
+   "is_reply": true,
+   "title": null,
+   "target_text": "That's literally next to ATH, 为什么在这个坛子上会这样买？",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-aa385d6ee488",
+   "kind": "excerpt",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/112971.html",
+   "published_at": "2026-10-01 19:42:30",
+   "is_reply": false,
+   "title": "谢谢小猪优秀的解说员，",
+   "target_text": "香港昨天晚上有烟花展。  \n我今天要去澳门找朋友玩，  周末就得回美了。Laterz!",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-29fbb9d45a83",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/116739.html",
+   "published_at": "2026-10-22 08:20:38",
+   "is_reply": true,
+   "title": null,
+   "target_text": "NFLX is dead cat bounce :)",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-10e4d1818852",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/114138.html",
+   "published_at": "2026-10-07 14:40:15",
+   "is_reply": false,
+   "title": null,
+   "target_text": "晚了一步",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-8a85be1af250",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "麻你",
+   "url": "https://bbs.wenxuecity.com/tzlc/2381022.html",
+   "published_at": "2026-10-05 11:29:17",
+   "is_reply": false,
+   "title": null,
+   "target_text": "到年底再晒，一鼓作气，涨到年底（挤到年底）",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-47a679cfb6dd",
+   "kind": "excerpt",
+   "source_kind": "forum",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/115267.html",
+   "published_at": "2026-10-14 16:07:00",
+   "is_reply": true,
+   "title": "在大盘趋势没有确任前，任何新的交易都必须有tight stop loss",
+   "target_text": "昨天有人问我为什么SKHY150多进的，155就走了？还有为什么ARM，AMAT走的这么快 —— 在当下这些位置进，一旦破位，必须先跳出来。\n\n还有人问跳出来如果反弹了怎么办？ 反弹是好事啊，说明市场守住了这里。到时肯定有好股可以进的",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-55ae1f5437ea",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/113792.html",
+   "published_at": "2026-10-06 08:15:37",
+   "is_reply": false,
+   "title": null,
+   "target_text": "好的炒股的好方法/技巧很多，也许就在你手中。关键是你能不能坚持？还是容易被情绪所左右而忘掉了你的原则？",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-b0be4c62a7a4",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/117666.html",
+   "published_at": "2026-10-28 08:32:16",
+   "is_reply": true,
+   "title": null,
+   "target_text": "WOW，再看早上9:56am买的 EAT，居然涨了 16.6%！买完后一直没看，刚刚才又瞅了一眼。",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-9851e6caf0e4",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "bogbog",
+   "url": "https://bbs.wenxuecity.com/cfzh/112945.html",
+   "published_at": "2026-10-01 14:12:12",
+   "is_reply": false,
+   "title": null,
+   "target_text": "Yes, 浮盈milions from MU. good stuff~~",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-b6a9fa85b37b",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/116582.html",
+   "published_at": "2026-10-21 13:05:23",
+   "is_reply": true,
+   "title": null,
+   "target_text": "Be patient. 不少短线的在锁利",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-5e002f5492a4",
+   "kind": "excerpt",
+   "source_kind": "forum",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/114489.html",
+   "published_at": "2026-10-09 07:31:17",
+   "is_reply": true,
+   "title": "SHOP 是最近走得比较顺畅的一只股",
+   "target_text": "好就留。\nhttps://bbs.wenxuecity.com/cfzh/113573.html",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-56a85d010f3a",
+   "kind": "excerpt",
+   "source_kind": "forum",
+   "author": "我是一只井底蛙",
+   "url": "https://bbs.wenxuecity.com/cfzh/113750.html",
+   "published_at": "2026-10-06 06:41:09",
+   "is_reply": false,
+   "title": "哈哈，ALAB终于再次突破了！大涨9%！",
+   "target_text": "Patience got rewarded https://bbs.wenxuecity.com/cfzh/111546.html",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-d95f8984358f",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/113535.html",
+   "published_at": "2026-10-04 17:53:15",
+   "is_reply": false,
+   "title": null,
+   "target_text": "No wonder. 又瞎撞对了：）",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  },
+  {
+   "blind_id": "b41-fb35ed622c12",
+   "kind": "title",
+   "source_kind": "forum",
+   "author": "三心三意",
+   "url": "https://bbs.wenxuecity.com/cfzh/114155.html",
+   "published_at": "2026-10-07 16:16:02",
+   "is_reply": false,
+   "title": null,
+   "target_text": "分析来回倒，盯着股价心惊胆战，看着半导体只有绝望。 但一转眼，SMH又快接近前高了：）",
+   "thread_context": {
+    "root_title": null,
+    "earlier_titles": []
+   }
+  }
+ ]
+}
