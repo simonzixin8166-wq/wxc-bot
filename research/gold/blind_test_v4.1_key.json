@@ -1,0 +1,607 @@
+{
+ "version": "blind_test_v4.1_key",
+ "gpt_items": 120,
+ "owner_items": 20,
+ "key": [
+  {
+   "blind_id": "b41-6e06cee39b26",
+   "item_id": "t4-1acda93cff734d79",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-d05c2ac8d6cb",
+   "item_id": "t4-0428ebeda45a94f7",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-6a96be682b5a",
+   "item_id": "t4-fe53446cbef45dab",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-475dee071d18",
+   "item_id": "t4-3a0d147d980f4494",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-96ac9b42fe47",
+   "item_id": "t4-a840345e655f4167",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-a84786e72593",
+   "item_id": "t4-37636e8213b69ce0",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-bd82d1f76715",
+   "item_id": "t4-935aeec368c55a50",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-7c89c54ef5ee",
+   "item_id": "t4-86515e099fd9777e",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-3c821218f010",
+   "item_id": "t4-3b31159eb0cac6f6",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-f0b6f33159b9",
+   "item_id": "t4-0efb0126a33b01dd",
+   "owner_subset": true
+  },
+  {
+   "blind_id": "b41-4cd589d592d9",
+   "item_id": "t4-db44aa6d95a7aa45",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-6d7b2bfb4516",
+   "item_id": "t4-71021a3e6e1e93f7",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-5ef3d8b985f8",
+   "item_id": "t4-b44f9f50ae2a0aca",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-d635a39fc83f",
+   "item_id": "t4-d9030003ddac9c92",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-329b21673757",
+   "item_id": "t4-2da9715bb913a5ee",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-41c4968e557a",
+   "item_id": "t4-938859ffcc6dc740",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-e86979402675",
+   "item_id": "t4-f568adb47a4e6917",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-d48d0ed82de2",
+   "item_id": "t4-2e3e1216bf15b222",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-0454123b77b9",
+   "item_id": "t4-8aa27c0af0f97de4",
+   "owner_subset": true
+  },
+  {
+   "blind_id": "b41-1b57c3a7a133",
+   "item_id": "t4-69cac3656946e688",
+   "owner_subset": true
+  },
+  {
+   "blind_id": "b41-6f7bedb388ed",
+   "item_id": "t4-cfb1cc79cabd1efc",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-6e5e53bfedd2",
+   "item_id": "t4-e71eed740479a0cd",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-6817170db4a7",
+   "item_id": "t4-bc9ec33096e2ca66",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-4df9e6455f3e",
+   "item_id": "t4-556526e79ca33c52",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-ebd0c62b13ff",
+   "item_id": "t4-f75b8db5940b622b",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-62b372e0bcb7",
+   "item_id": "t4-a43a3995a2c215ae",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-ef1a5f4bf322",
+   "item_id": "t4-a06174c458f77013",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-87de0894181c",
+   "item_id": "t4-10389daf4c0543b4",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-958fd3d7e216",
+   "item_id": "t4-9d906c451ef336c1",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-360804f90f8f",
+   "item_id": "t4-b558d7fd78b67f7a",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-591f230f05df",
+   "item_id": "t4-a57908e17c710f58",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-212f3ea2f500",
+   "item_id": "t4-2395e2e6c9f5f2a7",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-b1542d01df04",
+   "item_id": "t4-81739434c3408acb",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-a3784450fa6c",
+   "item_id": "t4-1694e7bcb8230c9a",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-843a1cb4c938",
+   "item_id": "t4-b66644415a3033eb",
+   "owner_subset": true
+  },
+  {
+   "blind_id": "b41-d61a7db52290",
+   "item_id": "t4-52beb320724311be",
+   "owner_subset": true
+  },
+  {
+   "blind_id": "b41-8cf187e2c102",
+   "item_id": "t4-e78806744c99187a",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-6278247736ed",
+   "item_id": "t4-f11f895f9537ef5b",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-d5c39b9c7d61",
+   "item_id": "t4-8eae881dbe21662c",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-6d4dee25c8eb",
+   "item_id": "t4-354e2c5fcc97084d",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-b86846ea66be",
+   "item_id": "t4-65d853809dbf23f0",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-018de0c4a941",
+   "item_id": "t4-54dcd1216f91549f",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-40987deb5245",
+   "item_id": "t4-2150742eb90684c6",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-1b2db3e9b5a1",
+   "item_id": "t4-52dcadc2a2f077a0",
+   "owner_subset": true
+  },
+  {
+   "blind_id": "b41-29a7bfa38080",
+   "item_id": "t4-92a69b070863d1d4",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-a64bfc86803d",
+   "item_id": "t4-e8c177dd4f6900fa",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-85566c54f7bc",
+   "item_id": "t4-c476387164504b6a",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-6f513f4f690c",
+   "item_id": "t4-0302691ac05d2bd4",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-46462052aa72",
+   "item_id": "t4-bf700b6fad258fd4",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-9cf340634014",
+   "item_id": "t4-702ec57ded1f5af4",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-3ab0ce271df3",
+   "item_id": "t4-3e780546f62fae5e",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-cc8eac03adf6",
+   "item_id": "t4-2bc264582d661cfa",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-050fa9ed7a7e",
+   "item_id": "t4-ca8e26ec913ff960",
+   "owner_subset": true
+  },
+  {
+   "blind_id": "b41-386314ee8d09",
+   "item_id": "t4-2e6788a5b329b96d",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-2a146b7f6c46",
+   "item_id": "t4-65ac9b70eda0e2c2",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-edb4c7cfabde",
+   "item_id": "t4-8009c32f4c8b4d50",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-12569e06dd72",
+   "item_id": "t4-bbefc0fdbf1d4f70",
+   "owner_subset": true
+  },
+  {
+   "blind_id": "b41-331edd65bba2",
+   "item_id": "t4-08e5e25091582c11",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-26040108c6dd",
+   "item_id": "t4-b346a7d90988cd85",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-a2256c24c8d4",
+   "item_id": "t4-be04857736e4a061",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-521f04f05490",
+   "item_id": "t4-c7d1254ebf5faf53",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-42283b7b0d59",
+   "item_id": "t4-7bed6e4a281c6eed",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-62c7360e0b4f",
+   "item_id": "t4-18a028df4c05a1c7",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-9bcc0242f61d",
+   "item_id": "t4-687060b1bda676a1",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-8cadfb167692",
+   "item_id": "t4-67db49b11f2ffe07",
+   "owner_subset": true
+  },
+  {
+   "blind_id": "b41-1621a105ebd5",
+   "item_id": "t4-1520abf26212cd16",
+   "owner_subset": true
+  },
+  {
+   "blind_id": "b41-10736583cab0",
+   "item_id": "t4-85b7bb2b72ec3620",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-bac44642541b",
+   "item_id": "t4-e3f9d58ac8efab6e",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-103a0999f581",
+   "item_id": "t4-664a98c16a78bf14",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-3ca89b13268b",
+   "item_id": "t4-fba9b0f80f49ace8",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-794247f4137e",
+   "item_id": "t4-c17a7f3e152afd10",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-fc7fdd98426c",
+   "item_id": "t4-3a837875d426dde4",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-7d17b47ddc6f",
+   "item_id": "t4-a1d5fa45565da12b",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-1629a38efc8a",
+   "item_id": "t4-83c4fbbe8e08036d",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-8a5a473b572e",
+   "item_id": "t4-f99885cab135950a",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-f1f424bcad90",
+   "item_id": "t4-0b374c86e12271c2",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-6758ec74fe51",
+   "item_id": "t4-d96a0471eb9a2996",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-ecc4b98ef0a5",
+   "item_id": "t4-60763b3117ae8fb8",
+   "owner_subset": true
+  },
+  {
+   "blind_id": "b41-513ec07e4f15",
+   "item_id": "t4-8f567ae963f8d67b",
+   "owner_subset": true
+  },
+  {
+   "blind_id": "b41-9c93ed627dd7",
+   "item_id": "t4-cfc15f10cb495894",
+   "owner_subset": true
+  },
+  {
+   "blind_id": "b41-98316302614a",
+   "item_id": "t4-d61bf961bbcd9b6c",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-8cc7e988ae27",
+   "item_id": "t4-b187520eadcd959c",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-4720e36fd7d4",
+   "item_id": "t4-ac1e128d4e0ffd7d",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-661b6622d5c8",
+   "item_id": "t4-fe695fb756809feb",
+   "owner_subset": true
+  },
+  {
+   "blind_id": "b41-cec538f16231",
+   "item_id": "t4-65eb375554652aeb",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-2719daacc1e5",
+   "item_id": "t4-8cda665c730b1fe7",
+   "owner_subset": true
+  },
+  {
+   "blind_id": "b41-0904cfbc5d66",
+   "item_id": "t4-b05c940ff7da2ab4",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-a42e2eeb3f2e",
+   "item_id": "t4-4bb1b072c16f2de7",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-38fcd34ada14",
+   "item_id": "t4-26494bbc66bc99ff",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-d39ecdf85dd7",
+   "item_id": "t4-d9501a31375af0c6",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-c8af8691a886",
+   "item_id": "t4-955b10c3a24f5c88",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-fa96c4a3e7aa",
+   "item_id": "t4-a20f8a786654a114",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-9a35d4257d57",
+   "item_id": "t4-930d2cb8b7096058",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-27d4fab94db1",
+   "item_id": "t4-1ff5432004ee80e6",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-fec9cd3dc551",
+   "item_id": "t4-a4c4850d4ecefc77",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-a299f9f7ebb2",
+   "item_id": "t4-38832ca7cceea23d",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-1afa58a44b37",
+   "item_id": "t4-8e6acb9149441df2",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-3d2d9c767b78",
+   "item_id": "t4-c9061d335128fbce",
+   "owner_subset": true
+  },
+  {
+   "blind_id": "b41-371a8f5849cc",
+   "item_id": "t4-e5d1bac3a1f8de01",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-dd5ede867f18",
+   "item_id": "t4-ab680b1900d9cd0a",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-dabfaa42679a",
+   "item_id": "t4-c655b59b8c07a64b",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-8c6dbb09b758",
+   "item_id": "t4-e78e431b2681b7f1",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-3fcc4d0df1d5",
+   "item_id": "t4-8bf90facc9b11339",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-9d7cfb8daeac",
+   "item_id": "t4-b4e886f93cbaadac",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-0918494e6571",
+   "item_id": "t4-fb245899bbc8c9cf",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-e50ae4324609",
+   "item_id": "t4-fb5369a1e192c70f",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-c29460743946",
+   "item_id": "t4-a49d571b9066d825",
+   "owner_subset": true
+  },
+  {
+   "blind_id": "b41-aa385d6ee488",
+   "item_id": "t4-542c87ba424c0097",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-29fbb9d45a83",
+   "item_id": "t4-4eca49114f6df4ae",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-10e4d1818852",
+   "item_id": "t4-7861afde1df88aa4",
+   "owner_subset": true
+  },
+  {
+   "blind_id": "b41-8a85be1af250",
+   "item_id": "t4-62d1580e14b96b4a",
+   "owner_subset": true
+  },
+  {
+   "blind_id": "b41-47a679cfb6dd",
+   "item_id": "t4-a84788a2bbcbef59",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-55ae1f5437ea",
+   "item_id": "t4-e7aa69da9380e6d1",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-b0be4c62a7a4",
+   "item_id": "t4-ba86abbfbbbaf612",
+   "owner_subset": true
+  },
+  {
+   "blind_id": "b41-9851e6caf0e4",
+   "item_id": "t4-ff0d8b2d7da13451",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-b6a9fa85b37b",
+   "item_id": "t4-8267d38f226b8d61",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-5e002f5492a4",
+   "item_id": "t4-84875aab74ec1403",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-56a85d010f3a",
+   "item_id": "t4-633030adfb9929d5",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-d95f8984358f",
+   "item_id": "t4-3cb93d287f08b8b1",
+   "owner_subset": false
+  },
+  {
+   "blind_id": "b41-fb35ed622c12",
+   "item_id": "t4-87665627e7542d27",
+   "owner_subset": false
+  }
+ ]
+}

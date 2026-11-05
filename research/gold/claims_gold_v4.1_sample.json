@@ -1,0 +1,109 @@
+{
+ "seed": "20261105",
+ "window": [
+  "2026-10-01",
+  "2026-10-31"
+ ],
+ "pool_posts": 1135,
+ "pool_by_kind": {
+  "forum": 1132,
+  "blog": 3
+ },
+ "pool_by_author": {
+  "三心三意": 833,
+  "bogbog": 226,
+  "我是一只井底蛙": 46,
+  "麻你": 28,
+  "yifan99": 1,
+  "BrightLine": 1
+ },
+ "test": {
+  "items": 276,
+  "posts": 221,
+  "by_kind": {
+   "blog": 6,
+   "forum": 270
+  },
+  "by_author": {
+   "三心三意": 88,
+   "bogbog": 87,
+   "我是一只井底蛙": 62,
+   "麻你": 35,
+   "BrightLine": 2,
+   "yifan99": 2
+  },
+  "max_author_share": 0.319
+ },
+ "dev": {
+  "items": 150,
+  "posts": 121,
+  "by_kind": {
+   "forum": 150
+  },
+  "by_author": {
+   "bogbog": 113,
+   "三心三意": 37
+  },
+  "max_author_share": 0.753
+ },
+ "post_overlap": 0,
+ "spec": "v0.3",
+ "v4_sampler_sha256": "189d327d7681637a69260bfe75b5d349cff547b69cacb8b5bafcd5e087d0e4ae",
+ "prefilter": {
+  "id_previously_used": 517,
+  "url_or_thread_previously_used": 81,
+  "kept": 1135
+ },
+ "dev_items_dropped_for_thread_rule": 0,
+ "thread_overlap_after_rule": 0,
+ "test_threads": 221,
+ "dev_threads": 120,
+ "prior_use_files_checked": [
+  "GUIDELINES.md",
+  "GUIDELINES_v1.3.md",
+  "GUIDELINES_v1.3.sha256",
+  "blind_owner_2026-10-17.json",
+  "blind_test_v2_request.json",
+  "blind_test_v3_request.json",
+  "blind_test_v4_gpt_answers_access_limited_VOID.json",
+  "blind_test_v4_gpt_answers_textpack.json",
+  "blind_test_v4_gpt_request.json",
+  "blind_test_v4_gpt_textpack.json",
+  "blind_test_v4_key.json",
+  "blind_test_v4_owner_request.json",
+  "blind_v1_answers_gpt.json",
+  "blind_v1_kappa.json",
+  "blind_v1_request.json",
+  "claims_gold_dev_v4.claude_first.jsonl",
+  "claims_gold_dev_v4.unlabeled.jsonl",
+  "claims_gold_test_v2.freeze.json",
+  "claims_gold_test_v2.jsonl",
+  "claims_gold_test_v2v3_owner_v1.2_adjudication.jsonl",
+  "claims_gold_test_v3.freeze.json",
+  "claims_gold_test_v3.jsonl",
+  "claims_gold_test_v4.claude_first.jsonl",
+  "claims_gold_test_v4.unlabeled.jsonl",
+  "claims_gold_v0.jsonl",
+  "claims_gold_v1.freeze.json",
+  "claims_gold_v1.jsonl",
+  "claims_gold_v1_adjudication.jsonl",
+  "claims_gold_v4_agreement_round1.json",
+  "claims_gold_v4_claude_first.commitment.json",
+  "claims_gold_v4_sample_audit.json",
+  "author_claims_hp.json",
+  "claims_gold_eval.json",
+  "eval_claims_gold_test_v2.json",
+  "eval_claims_gold_test_v3_ce.json",
+  "eval_claims_gold_test_v3_hp.json",
+  "eval_claims_gold_v1_ce_dev.json",
+  "eval_claims_gold_v1_hp_dev.json",
+  "fulltext_claims_pilot.json",
+  "fulltext_claims_pilot_round2.json",
+  "fulltext_claims_review_round2.json",
+  "gold_context_test_v2.json",
+  "gold_context_v1.json",
+  "title_only_diagnosis.json",
+  "title_only_diagnosis_round2.json",
+  "title_claims_scan.json"
+ ]
+}
