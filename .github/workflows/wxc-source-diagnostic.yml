@@ -1,0 +1,47 @@
+name: wxc-source-diagnostic
+
+# WXC-RECOVERY-DIAGNOSTIC (Owner 2026-11-05). Manual only: one low-frequency, read-only probe of the public Wenxuecity
+# entries from the same GitHub-hosted runner environment the collectors use. No schedule, no commit, no secrets,
+# no proxy / UA change / captcha handling. The report holds statuses and counts only (no HTML, no cookies).
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+concurrency:
+  group: wxc-source-diagnostic
+  cancel-in-progress: false
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - name: Probe public entries once (stops a family on 403/429)
+        run: python wxc_source_diagnostic.py --out diagnostics/wxc_source_diagnostic.json --delay 6
+      - name: Summary
+        if: always()
+        run: |
+          python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json
+          d=json.load(open("diagnostics/wxc_source_diagnostic.json"))
+          print("## Wenxuecity public-entry diagnostic\n")
+          print("| family | verdict | requests | ok | restricted | other failure |\n|---|---|---|---|---|---|")
+          for k,v in d["families"].items():
+              print(f"| {k} | {d['verdict'][k]} | {v['requests']} | {v['ok']} | {v['restricted']} | {v['other_failure']} |")
+          print("\n| url | status | bytes | structure | links | failure |\n|---|---|---|---|---|---|")
+          for p in d["probes"]:
+              print(f"| {p['url']} | {p.get('status')} | {p.get('bytes','')} | {p.get('structure_ok','')} | {p.get('article_links','')} | {p.get('failure','')} |")
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: wxc-source-diagnostic
+          path: diagnostics/wxc_source_diagnostic.json
+          retention-days: 14
