@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-11-05T00:55:34Z",
+  "generated_at": "2026-11-05T09:27:51Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -19,19 +19,20 @@
           "reached_end": false
         }
       ],
-      "previous_anchor_video_id": "IcDRffqDfTo",
+      "previous_anchor_video_id": "JpvxhfYocfo",
       "anchor_found": true,
       "reached_end": false,
       "discovery_complete": true,
       "latest": {
-        "video_id": "IcDRffqDfTo",
-        "title": "美股 横扫概率极高，AI承压！AMD前瞻大好，暗藏隐忧！PLTR增速放缓高不可攀！",
-        "url": "https://www.youtube.com/watch?v=IcDRffqDfTo",
-        "published_at": "",
-        "rss_status": "error:HTTPError",
+        "video_id": "JpvxhfYocfo",
+        "title": "美股 半导体打爆，还能玩吗？AMZN、MSFT为何大涨？NVDA、TSM、GOOG、ISRG持仓计划！",
+        "url": "https://www.youtube.com/watch?v=JpvxhfYocfo",
+        "published_at": "2026-11-05",
+        "rss_status": "ok",
         "flat_metadata_keys": [
           "channel_id",
-          "duration"
+          "duration",
+          "rss_published_at"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -64,11 +65,12 @@
         "video_id": "w8GM1mghKJc",
         "title": "中期选举尘埃落定！美股分化严重，何去何从",
         "url": "https://www.youtube.com/watch?v=w8GM1mghKJc",
-        "published_at": "",
-        "rss_status": "error:HTTPError",
+        "published_at": "2026-11-04",
+        "rss_status": "ok",
         "flat_metadata_keys": [
           "channel_id",
-          "duration"
+          "duration",
+          "rss_published_at"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -101,11 +103,12 @@
         "video_id": "lvTiUkJGX74",
         "title": "The Government Is Preparing For Something",
         "url": "https://www.youtube.com/watch?v=lvTiUkJGX74",
-        "published_at": "",
-        "rss_status": "error:HTTPError",
+        "published_at": "2026-11-03",
+        "rss_status": "ok",
         "flat_metadata_keys": [
           "channel_id",
-          "duration"
+          "duration",
+          "rss_published_at"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -122,19 +125,30 @@
   "content_work_budget": 6,
   "content_backlog_after_run": 108,
   "pending_total": 108,
-  "historical_demoted_from_pending": 0,
+  "historical_demoted_from_pending": 1,
   "admitted_from_pending": 0,
   "nonforward_timestamp_unknown_admitted": 0,
   "feed_records_added": 0,
   "publication_dates_resolved": 0,
   "rss_status": {
-    "UCFQsi7WaF5X41tcuOryDk8w": "error:HTTPError",
-    "UCGy7SkBjcIAgTiwkXEtPnYg": "error:HTTPError",
-    "UCo2gxyermsLBSCxFHvJs0Zg": "error:HTTPError"
+    "UCFQsi7WaF5X41tcuOryDk8w": "ok",
+    "UCGy7SkBjcIAgTiwkXEtPnYg": "ok",
+    "UCo2gxyermsLBSCxFHvJs0Zg": "ok"
   },
-  "historical_backlog_total": 54,
+  "historical_backlog_total": 55,
   "discovery_complete": true,
   "new_video_diagnostics": [
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "JpvxhfYocfo",
+      "title": "美股 半导体打爆，还能玩吗？AMZN、MSFT为何大涨？NVDA、TSM、GOOG、ISRG持仓计划！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
     {
       "author": "RhinoFinance / 视野环球财经",
       "video_id": "IcDRffqDfTo",
@@ -181,16 +195,8 @@
     },
     {
       "author": "老李玩钱",
-      "video_id": "w8GM1mghKJc",
-      "title": "中期选举尘埃落定！美股分化严重，何去何从",
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "awaiting_publication_date"
-    },
-    {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "EB4-BTw4ETQ",
-      "title": "美股 NVDA、META不同意AI放缓！加息后，标普、利率走势！SPY、QQQ、SOXX、SMH较差的情况，跌至哪里？",
+      "video_id": "FK_7ldpLAjI",
+      "title": "$200,000本金美股账户2周年，表现如何？复盘总结，经验心得",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,

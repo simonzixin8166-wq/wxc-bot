@@ -924,6 +924,41 @@
         }
       ],
       "refunded_503": 6
+    },
+    "2026-11-05": {
+      "calls": 0,
+      "admitted": 0,
+      "rejected": 0,
+      "errors": 2,
+      "reconciliation": {
+        "status": "COMPLETE",
+        "calls_billed": 0,
+        "calls_refunded_503": 2,
+        "detail_rows": 2,
+        "missing_detail_rows": 0,
+        "counter_mismatch": []
+      },
+      "recent": [
+        {
+          "video_id": "JpvxhfYocfo",
+          "outcome": "http_503_all_models",
+          "at": "09:26:41Z",
+          "model": "gemini-3.8-flash,gemini-3.5-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 半导体打爆，还能玩吗？AMZN、MSFT为何大涨？NVDA、TSM、GOOG、ISRG持仓计划！",
+          "detail": "{\"error\":{\"message\":\"gemini-3.5-flash is currently experiencing high demand, spikes in demand are usually temporary. Please try again later.\",\"code\":\"service_unavailable\"}}"
+        },
+        {
+          "video_id": "w8GM1mghKJc",
+          "outcome": "http_503_all_models",
+          "at": "09:27:04Z",
+          "model": "gemini-3.8-flash,gemini-3.5-flash",
+          "author": "老李玩钱",
+          "title": "中期选举尘埃落定！美股分化严重，何去何从",
+          "detail": "{\"error\":{\"message\":\"gemini-3.5-flash is currently experiencing high demand, spikes in demand are usually temporary. Please try again later.\",\"code\":\"service_unavailable\"}}"
+        }
+      ],
+      "refunded_503": 2
     }
   },
   "version": 1,
