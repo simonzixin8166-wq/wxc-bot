@@ -425,6 +425,12 @@
         "count": 4,
         "paid": false
       }
+    },
+    "2026-11-05": {
+      "telegram:send_message": {
+        "count": 1,
+        "paid": false
+      }
     }
   }
 }
