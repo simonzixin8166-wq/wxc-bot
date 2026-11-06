@@ -28,15 +28,18 @@ jobs:
 
       - name: Validate collector code
         run: |
-          python -m py_compile wxc_actions.py wxc_scraper.py wxc_tg_agent.py wxc_tg_bot.py wxc_blog.py
+          python -m py_compile wxc_actions.py wxc_scraper.py wxc_tg_agent.py wxc_tg_bot.py wxc_blog.py owner_forward.py
           PYTHONPATH=. python tests/test_blog_collector.py
           PYTHONPATH=. python tests/test_free_first_forward_gate.py
+          PYTHONPATH=. python tests/test_owner_forward.py
 
       - name: Run bot
         env:
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
           TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          TEXTPACK_TOKEN: ${{ secrets.TEXTPACK_TOKEN }}  # fine-grained, only the private textpack repo (Owner 11/6)
+          TEXTPACK_REPO: simonzixin8166-wq/myalpha-s2-textpack
           USE_ANTHROPIC_INTENT: "0"  # 免费优先；如明确需要自然语言解析再手动启用
           DATA_DIR: state
           JOBS_DIR: /tmp/jobs

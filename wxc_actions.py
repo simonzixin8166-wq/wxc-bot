@@ -9,6 +9,7 @@ import json, os, time
 import requests
 import wxc_tg_agent as a
 import yt_daily_report
+import owner_forward
 
 META = os.path.join(a.DATA, "meta.json")
 SERVER_ACTION_URL = os.getenv("MYALPHA_SERVER_ACTION_URL", "https://myalphaview.com/research/server_action_status.json")
@@ -60,6 +61,10 @@ def main():
         m = u.get("message") or {}
         if str(m.get("chat", {}).get("id")) != a.OWNER:
             continue  # 忽略陌生人
+        if owner_forward.is_forward(m):
+            # S2 v5 source C: the Owner's own forward; full text only to the private textpack repo, never re-fetched
+            owner_forward.handle(m, a.say, tg_api=a.API, tg_file_base=f"https://api.telegram.org/file/bot{a.TOKEN}")
+            continue
         text = (m.get("text") or "").strip()
         if text:
             print("收到指令:", text)
