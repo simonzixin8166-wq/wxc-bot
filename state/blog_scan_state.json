@@ -2,7 +2,7 @@
   "authors": {
     "BrightLine": {
       "last_success_at": "2026-10-31T17:43:24.455343+00:00",
-      "last_attempt_at": "2026-11-05T02:42:26.817480+00:00",
+      "last_attempt_at": "2026-11-06T02:44:52.107860+00:00",
       "scan_complete": false,
       "recovery_days_used": 14,
       "new_records": 0,
@@ -21,11 +21,17 @@
         "2026-11"
       ],
       "overview_ok": false,
-      "retention_policy": "no_article_count_cap"
+      "retention_policy": "no_article_count_cap",
+      "partial_scan": true,
+      "access_restricted": true,
+      "structure_unrecognized": [],
+      "article_fetch_failures": 0,
+      "article_parse_failures": 0,
+      "fetch_status_counts": {}
     },
     "yifan99": {
       "last_success_at": "2026-10-31T17:43:24.455343+00:00",
-      "last_attempt_at": "2026-11-05T02:42:26.817480+00:00",
+      "last_attempt_at": "2026-11-06T02:44:52.107860+00:00",
       "scan_complete": false,
       "recovery_days_used": 14,
       "new_records": 0,
@@ -44,11 +50,17 @@
         "2026-11"
       ],
       "overview_ok": false,
-      "retention_policy": "no_article_count_cap"
+      "retention_policy": "no_article_count_cap",
+      "partial_scan": true,
+      "access_restricted": true,
+      "structure_unrecognized": [],
+      "article_fetch_failures": 0,
+      "article_parse_failures": 0,
+      "fetch_status_counts": {}
     },
     "麻你": {
       "last_success_at": "2026-10-31T17:43:24.455343+00:00",
-      "last_attempt_at": "2026-11-05T02:42:26.817480+00:00",
+      "last_attempt_at": "2026-11-06T02:44:52.107860+00:00",
       "scan_complete": false,
       "recovery_days_used": 14,
       "new_records": 0,
@@ -67,10 +79,16 @@
         "2026-11"
       ],
       "overview_ok": false,
-      "retention_policy": "no_article_count_cap"
+      "retention_policy": "no_article_count_cap",
+      "partial_scan": true,
+      "access_restricted": true,
+      "structure_unrecognized": [],
+      "article_fetch_failures": 0,
+      "article_parse_failures": 0,
+      "fetch_status_counts": {}
     }
   },
   "version": 1,
-  "updated_at": "2026-11-05T02:42:26.817480+00:00",
+  "updated_at": "2026-11-06T02:44:52.107860+00:00",
   "policy": "recovery window expands from the last complete scheduled scan; failed archive months or parsed URLs missing from canonical feed do not advance last_success_at; article discovery has no count cap"
 }
