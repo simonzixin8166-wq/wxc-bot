@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-11-05T23:38:49Z",
+  "generated_at": "2026-11-06T06:39:35Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -19,20 +19,19 @@
           "reached_end": false
         }
       ],
-      "previous_anchor_video_id": "JpvxhfYocfo",
+      "previous_anchor_video_id": "m3lFPFAq0_g",
       "anchor_found": true,
       "reached_end": false,
       "discovery_complete": true,
       "latest": {
-        "video_id": "JpvxhfYocfo",
-        "title": "美股 半导体打爆，还能玩吗？AMZN、MSFT为何大涨？NVDA、TSM、GOOG、ISRG持仓计划！",
-        "url": "https://www.youtube.com/watch?v=JpvxhfYocfo",
-        "published_at": "2026-11-05",
-        "rss_status": "ok",
+        "video_id": "m3lFPFAq0_g",
+        "title": "美股 异常资金推动滚雪球下跌！好消息，坏消息！计划内建仓一只股票！SOXX、QQQ、SPY、TSM、APP！",
+        "url": "https://www.youtube.com/watch?v=m3lFPFAq0_g",
+        "published_at": "",
+        "rss_status": "error:HTTPError",
         "flat_metadata_keys": [
           "channel_id",
-          "duration",
-          "rss_published_at"
+          "duration"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -65,12 +64,11 @@
         "video_id": "w8GM1mghKJc",
         "title": "中期选举尘埃落定！美股分化严重，何去何从",
         "url": "https://www.youtube.com/watch?v=w8GM1mghKJc",
-        "published_at": "2026-11-04",
-        "rss_status": "ok",
+        "published_at": "",
+        "rss_status": "error:HTTPError",
         "flat_metadata_keys": [
           "channel_id",
-          "duration",
-          "rss_published_at"
+          "duration"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -101,10 +99,10 @@
       "discovery_complete": true,
       "latest": {
         "video_id": "6BlwD59AoLM",
-        "title": "Why The Stock Market Just Crashed",
+        "title": "The NASDAQ Just Crashed. Here's Why",
         "url": "https://www.youtube.com/watch?v=6BlwD59AoLM",
         "published_at": "",
-        "rss_status": "ok",
+        "rss_status": "error:HTTPError",
         "flat_metadata_keys": [
           "channel_id",
           "duration"
@@ -122,17 +120,17 @@
   "pending_retried": 6,
   "content_attempted_this_run": 6,
   "content_work_budget": 6,
-  "content_backlog_after_run": 109,
-  "pending_total": 109,
+  "content_backlog_after_run": 110,
+  "pending_total": 110,
   "historical_demoted_from_pending": 0,
   "admitted_from_pending": 0,
   "nonforward_timestamp_unknown_admitted": 0,
   "feed_records_added": 0,
   "publication_dates_resolved": 0,
   "rss_status": {
-    "UCFQsi7WaF5X41tcuOryDk8w": "ok",
-    "UCGy7SkBjcIAgTiwkXEtPnYg": "ok",
-    "UCo2gxyermsLBSCxFHvJs0Zg": "ok"
+    "UCFQsi7WaF5X41tcuOryDk8w": "error:HTTPError",
+    "UCGy7SkBjcIAgTiwkXEtPnYg": "error:HTTPError",
+    "UCo2gxyermsLBSCxFHvJs0Zg": "error:HTTPError"
   },
   "historical_backlog_total": 55,
   "discovery_complete": true,
@@ -183,19 +181,16 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "g3qLtJPUAxU",
-      "title": "美股 MSFT AI货币化成功上岸！GOOG鼻青脸肿，等一个季度！对半导体影响！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
+      "video_id": "m3lFPFAq0_g",
+      "title": "美股 异常资金推动滚雪球下跌！好消息，坏消息！计划内建仓一只股票！SOXX、QQQ、SPY、TSM、APP！",
       "admission": "pending_content",
       "was_pending": true,
-      "pending_reason": "missing_learning_text"
+      "pending_reason": "awaiting_publication_date"
     },
     {
       "author": "Andrei Jikh",
       "video_id": "6BlwD59AoLM",
-      "title": "Why The Stock Market Just Crashed",
+      "title": "The NASDAQ Just Crashed. Here's Why",
       "admission": "pending_content",
       "was_pending": true,
       "pending_reason": "awaiting_publication_date"
@@ -205,7 +200,7 @@
     "status": "ok",
     "channel_errors": 0,
     "stuck_high_quality_pending": 0,
-    "provider_waiting_pending": 109,
+    "provider_waiting_pending": 110,
     "stuck_video_ids": [],
     "meaning": "Q1/Q2 text must not remain stuck in pending; Q3-Q5 may legitimately wait for better learning text."
   },
