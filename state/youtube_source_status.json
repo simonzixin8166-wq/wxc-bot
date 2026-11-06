@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-11-06T06:39:35Z",
+  "generated_at": "2026-11-06T15:56:33Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -27,11 +27,12 @@
         "video_id": "m3lFPFAq0_g",
         "title": "美股 异常资金推动滚雪球下跌！好消息，坏消息！计划内建仓一只股票！SOXX、QQQ、SPY、TSM、APP！",
         "url": "https://www.youtube.com/watch?v=m3lFPFAq0_g",
-        "published_at": "",
-        "rss_status": "error:HTTPError",
+        "published_at": "2026-11-06",
+        "rss_status": "ok",
         "flat_metadata_keys": [
           "channel_id",
-          "duration"
+          "duration",
+          "rss_published_at"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -64,11 +65,12 @@
         "video_id": "w8GM1mghKJc",
         "title": "中期选举尘埃落定！美股分化严重，何去何从",
         "url": "https://www.youtube.com/watch?v=w8GM1mghKJc",
-        "published_at": "",
-        "rss_status": "error:HTTPError",
+        "published_at": "2026-11-04",
+        "rss_status": "ok",
         "flat_metadata_keys": [
           "channel_id",
-          "duration"
+          "duration",
+          "rss_published_at"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -99,10 +101,10 @@
       "discovery_complete": true,
       "latest": {
         "video_id": "6BlwD59AoLM",
-        "title": "The NASDAQ Just Crashed. Here's Why",
+        "title": "Stocks Just Crashed. Here's Why.",
         "url": "https://www.youtube.com/watch?v=6BlwD59AoLM",
         "published_at": "",
-        "rss_status": "error:HTTPError",
+        "rss_status": "ok",
         "flat_metadata_keys": [
           "channel_id",
           "duration"
@@ -128,13 +130,24 @@
   "feed_records_added": 0,
   "publication_dates_resolved": 0,
   "rss_status": {
-    "UCFQsi7WaF5X41tcuOryDk8w": "error:HTTPError",
-    "UCGy7SkBjcIAgTiwkXEtPnYg": "error:HTTPError",
-    "UCo2gxyermsLBSCxFHvJs0Zg": "error:HTTPError"
+    "UCFQsi7WaF5X41tcuOryDk8w": "ok",
+    "UCGy7SkBjcIAgTiwkXEtPnYg": "ok",
+    "UCo2gxyermsLBSCxFHvJs0Zg": "ok"
   },
   "historical_backlog_total": 55,
   "discovery_complete": true,
   "new_video_diagnostics": [
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "m3lFPFAq0_g",
+      "title": "美股 异常资金推动滚雪球下跌！好消息，坏消息！计划内建仓一只股票！SOXX、QQQ、SPY、TSM、APP！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
     {
       "author": "RhinoFinance / 视野环球财经",
       "video_id": "JpvxhfYocfo",
@@ -180,17 +193,9 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "m3lFPFAq0_g",
-      "title": "美股 异常资金推动滚雪球下跌！好消息，坏消息！计划内建仓一只股票！SOXX、QQQ、SPY、TSM、APP！",
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "awaiting_publication_date"
-    },
-    {
       "author": "Andrei Jikh",
       "video_id": "6BlwD59AoLM",
-      "title": "The NASDAQ Just Crashed. Here's Why",
+      "title": "Stocks Just Crashed. Here's Why.",
       "admission": "pending_content",
       "was_pending": true,
       "pending_reason": "awaiting_publication_date"
