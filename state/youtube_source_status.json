@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-11-06T15:56:33Z",
+  "generated_at": "2026-11-06T21:37:03Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -101,7 +101,7 @@
       "discovery_complete": true,
       "latest": {
         "video_id": "6BlwD59AoLM",
-        "title": "Stocks Just Crashed. Here's Why.",
+        "title": "Why The Stock Market Just Crashed",
         "url": "https://www.youtube.com/watch?v=6BlwD59AoLM",
         "published_at": "",
         "rss_status": "ok",
@@ -122,8 +122,8 @@
   "pending_retried": 6,
   "content_attempted_this_run": 6,
   "content_work_budget": 6,
-  "content_backlog_after_run": 110,
-  "pending_total": 110,
+  "content_backlog_after_run": 108,
+  "pending_total": 108,
   "historical_demoted_from_pending": 0,
   "admitted_from_pending": 0,
   "nonforward_timestamp_unknown_admitted": 0,
@@ -137,28 +137,6 @@
   "historical_backlog_total": 55,
   "discovery_complete": true,
   "new_video_diagnostics": [
-    {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "m3lFPFAq0_g",
-      "title": "美股 异常资金推动滚雪球下跌！好消息，坏消息！计划内建仓一只股票！SOXX、QQQ、SPY、TSM、APP！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "JpvxhfYocfo",
-      "title": "美股 半导体打爆，还能玩吗？AMZN、MSFT为何大涨？NVDA、TSM、GOOG、ISRG持仓计划！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
     {
       "author": "RhinoFinance / 视野环球财经",
       "video_id": "IcDRffqDfTo",
@@ -195,17 +173,39 @@
     {
       "author": "Andrei Jikh",
       "video_id": "6BlwD59AoLM",
-      "title": "Stocks Just Crashed. Here's Why.",
+      "title": "Why The Stock Market Just Crashed",
       "admission": "pending_content",
       "was_pending": true,
       "pending_reason": "awaiting_publication_date"
+    },
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "G_zzWcUSTfY",
+      "title": "美股 共识预期：半导体无路可退！QQQ、IWM、AMD、META！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "老李玩钱",
+      "video_id": "GsmAlvfOUFs",
+      "title": "6月必买3支股票",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
     }
   ],
   "intake_health": {
     "status": "ok",
     "channel_errors": 0,
     "stuck_high_quality_pending": 0,
-    "provider_waiting_pending": 110,
+    "provider_waiting_pending": 108,
     "stuck_video_ids": [],
     "meaning": "Q1/Q2 text must not remain stuck in pending; Q3-Q5 may legitimately wait for better learning text."
   },

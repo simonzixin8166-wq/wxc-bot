@@ -86768,9 +86768,472 @@
       "timestamp_evidence": false,
       "rule_candidate_allowed": false,
       "source_notice": "公开视频研究来源；仅保存短摘录与原视频链接。作者观点属于未验证假设，MyAlpha需独立验证后才可进入正式证据。"
+    },
+    {
+      "id": "189eb7a53fd21744cd82",
+      "source": "youtube",
+      "source_kind": "video",
+      "author": "RhinoFinance / 视野环球财经",
+      "published_at": "2026-11-06",
+      "title": "美股 异常资金推动滚雪球下跌！好消息，坏消息！计划内建仓一只股票！SOXX、QQQ、SPY、TSM、APP！",
+      "url": "https://www.youtube.com/watch?v=m3lFPFAq0_g",
+      "excerpt": "[Gemini 视频理解 · 未验证] 本期节目分析了美股市场出现大面积暴跌的原因，主要受对冲基金清算、盘前期货异常抛压及动量资金抛售影响。作者分享了今日对奈飞(NFLX)建仓一半的操作逻辑，解释了未加仓台积电(TSM)的原因，并对SPY、QQQ、SOXX及APP的最新技术面与关键支撑压力位进行了系统更新。\n- [12:40 NFLX buy 65.67] 今日对奈飞(NFLX)进行了建仓，建立了约一半的预留仓位，均价约65.67美元。\n- [25:18 TSM watch] 台积电(TSM)今日出现大阴线下跌，不符合个人加仓纪律（触犯18条不买原则之一），因此今日未加仓。\n- [19:26 QQQ watch 642] 纳指100 ETF (QQQ)大跌后已一口气逼近第一重关键支撑区间(642-664美元)，",
+      "content_chars": 920,
+      "semantic_content_chars": 920,
+      "content_filtering": {
+        "filter": "youtube_promotion_noise_v1",
+        "input_units": 13,
+        "removed_units": 0,
+        "removed_ratio": 0.0,
+        "promotion_noise_detected": false
+      },
+      "images_count": 0,
+      "themes_hint": [
+        "风险管理",
+        "长期持有纪律"
+      ],
+      "symbols": [
+        "AAPL",
+        "APP",
+        "MSFT",
+        "NFLX",
+        "QQQ",
+        "SOXL",
+        "SOXX",
+        "SPY",
+        "TQQQ",
+        "TSM"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "captured_at": "2026-11-06T21:32:56Z",
+      "source_role": "rule_supply",
+      "transcript_status": "available",
+      "content_quality": "Q3",
+      "content_provider": "gemini_video",
+      "content_provider_url": "https://www.youtube.com/watch?v=m3lFPFAq0_g",
+      "content_origin": "gemini_video_understanding",
+      "timestamp_evidence": true,
+      "rule_candidate_allowed": false,
+      "source_notice": "公开视频由 Gemini 读取原片（语音+画面）生成的结构化摘要；观点未验证、不可直接作为规则，等待 Owner 抽查原片核对。",
+      "claims": [
+        {
+          "symbol": "NFLX",
+          "stance": "add",
+          "stance_cues": [
+            "add",
+            "buy"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "11210711497ae21a870a121d173c1a0c0a564432f33f13ed74f205e2b18b04d3",
+          "evidence_chars": 84
+        },
+        {
+          "symbol": "SPY",
+          "stance": "add",
+          "stance_cues": [
+            "add",
+            "buy"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "11210711497ae21a870a121d173c1a0c0a564432f33f13ed74f205e2b18b04d3",
+          "evidence_chars": 84
+        },
+        {
+          "symbol": "QQQ",
+          "stance": "add",
+          "stance_cues": [
+            "add",
+            "buy"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "11210711497ae21a870a121d173c1a0c0a564432f33f13ed74f205e2b18b04d3",
+          "evidence_chars": 84
+        },
+        {
+          "symbol": "TSM",
+          "stance": "add",
+          "stance_cues": [
+            "add",
+            "buy"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "11210711497ae21a870a121d173c1a0c0a564432f33f13ed74f205e2b18b04d3",
+          "evidence_chars": 84
+        },
+        {
+          "symbol": "NFLX",
+          "stance": "buy",
+          "stance_cues": [
+            "buy"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "e168050b72e6b6f506261996cee026e3a6246aeeac0ff716179264e1a9ce0454",
+          "evidence_chars": 65
+        },
+        {
+          "symbol": "TSM",
+          "stance": "add",
+          "stance_cues": [
+            "add"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "641d71c910a4bae9b722066eca24f037d5b6c1b509e9e2bc9bc381520f9f1406",
+          "evidence_chars": 69
+        }
+      ],
+      "claims_status": "experimental_unvalidated",
+      "video_claims": [
+        {
+          "claim": "今日对奈飞(NFLX)进行了建仓，建立了约一半的预留仓位，均价约65.67美元。",
+          "stance": "buy",
+          "price": "65.67",
+          "timestamp": "12:40",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "NFLX",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "台积电(TSM)今日出现大阴线下跌，不符合个人加仓纪律（触犯18条不买原则之一），因此今日未加仓。",
+          "stance": "watch",
+          "price": null,
+          "timestamp": "25:18",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "TSM",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "纳指100 ETF (QQQ)大跌后已一口气逼近第一重关键支撑区间(642-664美元)，长线投资者不宜盲目重仓追买，需等待横盘企稳。",
+          "stance": "watch",
+          "price": "642",
+          "timestamp": "19:26",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "QQQ",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "标普500 ETF (SPY)回撤至200日均线及728-753美元关键技术支撑区间，长线看属于较有吸引力的区间，但短线仍需观察。",
+          "stance": "watch",
+          "price": "728",
+          "timestamp": "20:40",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "SPY",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "费城半导体指数ETF (SOXX)执行1拆3拆股，重新调整支撑位（128-134小支撑，117-124强支撑）与压力位（160-179区间）。",
+          "stance": "watch",
+          "price": "128",
+          "timestamp": "24:00",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "SOXX",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "AppLovin (APP)财报大涨31%，重新站上304-353美元震荡区，上方关键压力位为408美元附近。",
+          "stance": "watch",
+          "price": "408",
+          "timestamp": "27:15",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "APP",
+          "symbol_check": "listed"
+        }
+      ],
+      "video_claims_model": "gemini-3.5-flash",
+      "video_macro": [
+        {
+          "indicator": "VIX 恐慌指数",
+          "value": "28.18",
+          "expectation": null,
+          "period": "2026-11-05",
+          "timestamp": "02:13"
+        }
+      ],
+      "video_observed_title": "美股暴跌！对冲基金清算潮？连环爆仓？做多/做空比例严重失衡！",
+      "validation_status": "pending_owner_spot_check",
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "0c097df04bcdaeb44879",
+      "source": "youtube",
+      "source_kind": "video",
+      "author": "RhinoFinance / 视野环球财经",
+      "published_at": "2026-11-05",
+      "title": "美股 半导体打爆，还能玩吗？AMZN、MSFT为何大涨？NVDA、TSM、GOOG、ISRG持仓计划！",
+      "url": "https://www.youtube.com/watch?v=JpvxhfYocfo",
+      "excerpt": "[Gemini 视频理解 · 未验证] 中期选举民主党横扫国会后，地方层面对数据中心建设的限制担忧增加，导致数据中心违约互换（CDS）创历史新高，半导体板块整体承压。分析师对主要科技巨头与半导体龙头的最新估值和交易策略进行了更新：NVDA关注174美元关键防线；TSM维持360-378与320-350美元加仓计划；MSFT上看600美元以上；AMZN趋势确立回调即上车机会；GOOG/META在估值下沿分批低吸；ISRG重仓波段者可在470-500美元区间获利减仓。\n- [13:25 NVDA watch 174.00] NVDA 174-185美元为技术面与基本面关键分水岭，若跌破174美元将减仓50%避险，待下方止跌后再买回\n- [14:49 TSM buy 320.00-378.00] TSM 维持360-",
+      "content_chars": 1207,
+      "semantic_content_chars": 1207,
+      "content_filtering": {
+        "filter": "youtube_promotion_noise_v1",
+        "input_units": 14,
+        "removed_units": 0,
+        "removed_ratio": 0.0,
+        "promotion_noise_detected": false
+      },
+      "images_count": 0,
+      "themes_hint": [
+        "风险管理",
+        "失败复盘",
+        "趋势确认",
+        "止损纪律"
+      ],
+      "symbols": [
+        "AMD",
+        "AMZN",
+        "GOOG",
+        "ISRG",
+        "META",
+        "MSFT",
+        "NVDA",
+        "SOXX",
+        "TSM"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "captured_at": "2026-11-06T21:36:20Z",
+      "source_role": "rule_supply",
+      "transcript_status": "available",
+      "content_quality": "Q3",
+      "content_provider": "gemini_video",
+      "content_provider_url": "https://www.youtube.com/watch?v=JpvxhfYocfo",
+      "content_origin": "gemini_video_understanding",
+      "timestamp_evidence": true,
+      "rule_candidate_allowed": false,
+      "source_notice": "公开视频由 Gemini 读取原片（语音+画面）生成的结构化摘要；观点未验证、不可直接作为规则，等待 Owner 抽查原片核对。",
+      "claims": [
+        {
+          "symbol": "TSM",
+          "stance": "add",
+          "stance_cues": [
+            "add"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "171a6c072ae7ab6ca60b53ee12898ba923ac4c3306c7682a7d7000eeccf0cd08",
+          "evidence_chars": 27
+        },
+        {
+          "symbol": "AMZN",
+          "stance": "buy",
+          "stance_cues": [
+            "buy"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "4c0dd648149b124497babe5d73c15d0affacb0e5446022318e056f5719082cff",
+          "evidence_chars": 16
+        },
+        {
+          "symbol": "NVDA",
+          "stance": "trim",
+          "stance_cues": [
+            "trim"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "9e03e2799c01fd2f1ce37f9918ab770af1ad6d9fb1711bc3892aef135ca5aac4",
+          "evidence_chars": 82
+        },
+        {
+          "symbol": "TSM",
+          "stance": "add",
+          "stance_cues": [
+            "add",
+            "buy"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "bd1fcd3d27c9100b1312d1c55adc9a4c348954c8458eb891c1f5ccde3c4b72c8",
+          "evidence_chars": 82
+        },
+        {
+          "symbol": "MSFT",
+          "stance": "trim",
+          "stance_cues": [
+            "trim",
+            "bullish"
+          ],
+          "horizon": "long",
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "31eb33ad20bc3fe90d4a147d525c3e9a4a6b79ea985a26657d6abc773b61ac78",
+          "evidence_chars": 69
+        },
+        {
+          "symbol": "AMZN",
+          "stance": "buy",
+          "stance_cues": [
+            "buy",
+            "bullish"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "e1e06de557c01137f82c2df2fdcb111995418d69853b66626855a65f28a0527b",
+          "evidence_chars": 56
+        },
+        {
+          "symbol": "META",
+          "stance": "bullish",
+          "stance_cues": [
+            "bullish"
+          ],
+          "horizon": "long",
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "26874a2ce9c133dfaec11ed245178c19b6b4563261e4b0fc64a5710b66d5534e",
+          "evidence_chars": 81
+        },
+        {
+          "symbol": "NVDA",
+          "stance": "trim",
+          "stance_cues": [
+            "trim"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "865b772aae6ce04f3a702597a5bc48930cbed4c3fbc6f4d8a41272d48e3808eb",
+          "evidence_chars": 36
+        }
+      ],
+      "claims_status": "experimental_unvalidated",
+      "video_claims": [
+        {
+          "claim": "NVDA 174-185美元为技术面与基本面关键分水岭，若跌破174美元将减仓50%避险，待下方止跌后再买回",
+          "stance": "watch",
+          "price": "174.00",
+          "timestamp": "13:25",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "NVDA",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "TSM 维持360-378美元加仓2%、320-350美元加仓4%的计划不变，加满后将成为第二大持仓",
+          "stance": "buy",
+          "price": "320.00-378.00",
+          "timestamp": "14:49",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "TSM",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "MSFT 创收盘历史新高，中长线上看600美元上方，突破600美元前无减仓计划",
+          "stance": "bullish",
+          "price": "600.00",
+          "timestamp": "19:08",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "MSFT",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "AMZN 连续跳涨突破强压，上升趋势确立，后续任何回调均为上车机会",
+          "stance": "bullish",
+          "price": null,
+          "timestamp": "20:53",
+          "evidence_mode": "spoken_explicit",
+          "confidence": "high",
+          "symbol": "AMZN",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "GOOG 目前估值位于前瞻估值下沿，轻仓者可于275-291美元及240-257美元逢低吸纳，重仓波段者可等突破348美元顺势买回",
+          "stance": "neutral",
+          "price": "240.00-291.00",
+          "timestamp": "24:55",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "GOOG",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "META 580-630美元为长线第一档低吸区间与强支撑，波段交易者跌破580美元需避险",
+          "stance": "bullish",
+          "price": "580.00-630.00",
+          "timestamp": "29:00",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "META",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "ISRG 470-500美元为震荡上沿，重仓波段者可部分获利了结，回落至458美元下方再买回，若突破500美元则确认结构性突破",
+          "stance": "neutral",
+          "price": "470.00-500.00",
+          "timestamp": "32:18",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "ISRG",
+          "symbol_check": "listed"
+        }
+      ],
+      "video_claims_model": "gemini-3.5-flash",
+      "video_macro": [
+        {
+          "indicator": "VIX 恐慌指数",
+          "value": "16.61",
+          "expectation": null,
+          "period": null,
+          "timestamp": "00:22"
+        },
+        {
+          "indicator": "Goldman Sachs Data-Center CDS Basket",
+          "value": "463.1",
+          "expectation": null,
+          "period": null,
+          "timestamp": "04:42"
+        }
+      ],
+      "video_observed_title": "美东261104 民主党横扫国会，半导体和数据中心重新定位；微软/亚马逊/谷歌/Meta/英伟达/台积电/直觉外科最新估值和应对策略",
+      "validation_status": "pending_owner_spot_check",
+      "forward_evidence_eligible": false
     }
   ],
-  "updated_at": "2026-11-04T02:19:06Z",
+  "updated_at": "2026-11-06T21:36:36Z",
   "retention_policy": "append_only_no_record_count_cap",
   "historical_recovery": {
     "completed_at": "2026-10-07T13:43:06.018028+00:00",

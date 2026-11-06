@@ -1015,15 +1015,15 @@
       "refunded_503": 8
     },
     "2026-11-06": {
-      "calls": 0,
-      "admitted": 0,
+      "calls": 2,
+      "admitted": 2,
       "rejected": 0,
       "errors": 2,
       "reconciliation": {
         "status": "COMPLETE",
-        "calls_billed": 0,
+        "calls_billed": 2,
         "calls_refunded_503": 2,
-        "detail_rows": 2,
+        "detail_rows": 4,
         "missing_detail_rows": 0,
         "counter_mismatch": []
       },
@@ -1045,6 +1045,22 @@
           "author": "RhinoFinance / 视野环球财经",
           "title": "美股 半导体打爆，还能玩吗？AMZN、MSFT为何大涨？NVDA、TSM、GOOG、ISRG持仓计划！",
           "detail": "{\"error\":{\"message\":\"gemini-3.5-flash is currently experiencing high demand, spikes in demand are usually temporary. Please try again later.\",\"code\":\"service_unavailable\"}}"
+        },
+        {
+          "video_id": "m3lFPFAq0_g",
+          "outcome": "admitted",
+          "at": "21:32:56Z",
+          "model": "gemini-3.5-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 异常资金推动滚雪球下跌！好消息，坏消息！计划内建仓一只股票！SOXX、QQQ、SPY、TSM、APP！"
+        },
+        {
+          "video_id": "JpvxhfYocfo",
+          "outcome": "admitted",
+          "at": "21:36:20Z",
+          "model": "gemini-3.5-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 半导体打爆，还能玩吗？AMZN、MSFT为何大涨？NVDA、TSM、GOOG、ISRG持仓计划！"
         }
       ],
       "refunded_503": 2
