@@ -1015,15 +1015,15 @@
       "refunded_503": 8
     },
     "2026-11-06": {
-      "calls": 2,
-      "admitted": 2,
+      "calls": 3,
+      "admitted": 3,
       "rejected": 0,
-      "errors": 2,
+      "errors": 3,
       "reconciliation": {
         "status": "COMPLETE",
-        "calls_billed": 2,
-        "calls_refunded_503": 2,
-        "detail_rows": 4,
+        "calls_billed": 3,
+        "calls_refunded_503": 3,
+        "detail_rows": 6,
         "missing_detail_rows": 0,
         "counter_mismatch": []
       },
@@ -1061,9 +1061,26 @@
           "model": "gemini-3.5-flash",
           "author": "RhinoFinance / 视野环球财经",
           "title": "美股 半导体打爆，还能玩吗？AMZN、MSFT为何大涨？NVDA、TSM、GOOG、ISRG持仓计划！"
+        },
+        {
+          "video_id": "IcDRffqDfTo",
+          "outcome": "admitted",
+          "at": "01:55:16Z",
+          "model": "gemini-3.5-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 横扫概率极高，AI承压！AMD前瞻大好，暗藏隐忧！PLTR增速放缓高不可攀！"
+        },
+        {
+          "video_id": "qcdt6yQKt_4",
+          "outcome": "http_503_all_models",
+          "at": "01:58:46Z",
+          "model": "gemini-3.8-flash,gemini-3.5-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 AAPL多个增速放缓！ORCL再融资，信贷雪上加霜！MRVL收购LITE，双方股东都不满意！基金损失惨重，多头仓位",
+          "detail": "{\"error\":{\"message\":\"gemini-3.5-flash is currently experiencing high demand, spikes in demand are usually temporary. Please try again later.\",\"code\":\"service_unavailable\"}}"
         }
       ],
-      "refunded_503": 2
+      "refunded_503": 3
     }
   },
   "version": 1,

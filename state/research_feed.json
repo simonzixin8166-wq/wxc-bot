@@ -87231,9 +87231,133 @@
       "video_observed_title": "美东261104 民主党横扫国会，半导体和数据中心重新定位；微软/亚马逊/谷歌/Meta/英伟达/台积电/直觉外科最新估值和应对策略",
       "validation_status": "pending_owner_spot_check",
       "forward_evidence_eligible": false
+    },
+    {
+      "id": "17b22caa0bc8219b9703",
+      "source": "youtube",
+      "source_kind": "video",
+      "author": "RhinoFinance / 视野环球财经",
+      "published_at": "2026-11-04",
+      "title": "美股 横扫概率极高，AI承压！AMD前瞻大好，暗藏隐忧！PLTR增速放缓高不可攀！",
+      "url": "https://www.youtube.com/watch?v=IcDRffqDfTo",
+      "excerpt": "[Gemini 视频理解 · 未验证] 本期节目解析了美股大盘及AI板块的最新走势。9月JOLTS职位空缺数据超预期回升。AMD与PLTR公布最新财报，数据中心与商业业务增长强劲，但高估值、现金流恶化及订单增速放缓引发市场担忧。同时分析了中期选举对AI基础设施投资与合规成本的潜在影响。\n- [02:05 AMD neutral] AMD三季度营收与每股收益超预期，数据中心业务再创新高，但现金流恶化、库存与应收账款大幅增加，四季度毛利率指引略低于预期。\n- [12:40 AMD watch 505] AMD股价盘后反弹至505美元附近触及前期破位阻力区，在未突破528美元前应视为技术性反弹，回调至450美元附近具备更高安全边际。\n- [14:45 PLTR neutral] PLTR三季度营收与盈利超预期，美国商",
+      "content_chars": 879,
+      "semantic_content_chars": 879,
+      "content_filtering": {
+        "filter": "youtube_promotion_noise_v1",
+        "input_units": 11,
+        "removed_units": 0,
+        "removed_ratio": 0.0,
+        "promotion_noise_detected": false
+      },
+      "images_count": 0,
+      "themes_hint": [
+        "风险管理",
+        "趋势确认",
+        "逆向交易"
+      ],
+      "symbols": [
+        "AMD",
+        "PLTR"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "captured_at": "2026-11-07T01:55:16Z",
+      "source_role": "rule_supply",
+      "transcript_status": "available",
+      "content_quality": "Q3",
+      "content_provider": "gemini_video",
+      "content_provider_url": "https://www.youtube.com/watch?v=IcDRffqDfTo",
+      "content_origin": "gemini_video_understanding",
+      "timestamp_evidence": true,
+      "rule_candidate_allowed": false,
+      "source_notice": "公开视频由 Gemini 读取原片（语音+画面）生成的结构化摘要；观点未验证、不可直接作为规则，等待 Owner 抽查原片核对。",
+      "claims": [
+        {
+          "symbol": "AMD",
+          "stance": "sell",
+          "stance_cues": [
+            "sell"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "85615a26f71bcc01720eab18911ef590a59a3f9ad7681f8af9da1efc15eb5411",
+          "evidence_chars": 36
+        }
+      ],
+      "claims_status": "experimental_unvalidated",
+      "video_claims": [
+        {
+          "claim": "AMD三季度营收与每股收益超预期，数据中心业务再创新高，但现金流恶化、库存与应收账款大幅增加，四季度毛利率指引略低于预期。",
+          "stance": "neutral",
+          "price": null,
+          "timestamp": "02:05",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "AMD",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "AMD股价盘后反弹至505美元附近触及前期破位阻力区，在未突破528美元前应视为技术性反弹，回调至450美元附近具备更高安全边际。",
+          "stance": "watch",
+          "price": "505",
+          "timestamp": "12:40",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "AMD",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "PLTR三季度营收与盈利超预期，美国商业营收首次超越政府收入，但合同总价值增长大幅放缓，显示增速有放缓迹象。",
+          "stance": "neutral",
+          "price": null,
+          "timestamp": "14:45",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "PLTR",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "PLTR当前股价（170-175美元）相比2027年前瞻估值（50倍PE下约115美元）明显偏高，169-192美元为强压力区，短期维持震荡即为较好结果。",
+          "stance": "watch",
+          "price": "175",
+          "timestamp": "17:35",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "PLTR",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "中期选举民主党横扫预期导致市场恐慌性抛售，虽然两党均支持AI主导地位，但民主党主导将增加对硅谷AI融资及数据中心的审查与合规成本。",
+          "stance": "neutral",
+          "price": null,
+          "timestamp": "21:30",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": null,
+          "symbol_check": null
+        }
+      ],
+      "video_claims_model": "gemini-3.5-flash",
+      "video_macro": [
+        {
+          "indicator": "美国9月JOLTS职位空缺",
+          "value": "752.3万",
+          "expectation": "710万",
+          "period": "9月",
+          "timestamp": "00:54"
+        }
+      ],
+      "video_observed_title": "视野环球财经 美东261103 周二 美东 8:35pm",
+      "validation_status": "pending_owner_spot_check",
+      "forward_evidence_eligible": false
     }
   ],
-  "updated_at": "2026-11-06T21:36:36Z",
+  "updated_at": "2026-11-07T01:59:16Z",
   "retention_policy": "append_only_no_record_count_cap",
   "historical_recovery": {
     "completed_at": "2026-10-07T13:43:06.018028+00:00",

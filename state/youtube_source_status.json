@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-11-06T21:37:03Z",
+  "generated_at": "2026-11-07T02:00:10Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -27,12 +27,11 @@
         "video_id": "m3lFPFAq0_g",
         "title": "美股 异常资金推动滚雪球下跌！好消息，坏消息！计划内建仓一只股票！SOXX、QQQ、SPY、TSM、APP！",
         "url": "https://www.youtube.com/watch?v=m3lFPFAq0_g",
-        "published_at": "2026-11-06",
-        "rss_status": "ok",
+        "published_at": "",
+        "rss_status": "error:HTTPError",
         "flat_metadata_keys": [
           "channel_id",
-          "duration",
-          "rss_published_at"
+          "duration"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -65,12 +64,11 @@
         "video_id": "w8GM1mghKJc",
         "title": "中期选举尘埃落定！美股分化严重，何去何从",
         "url": "https://www.youtube.com/watch?v=w8GM1mghKJc",
-        "published_at": "2026-11-04",
-        "rss_status": "ok",
+        "published_at": "",
+        "rss_status": "error:HTTPError",
         "flat_metadata_keys": [
           "channel_id",
-          "duration",
-          "rss_published_at"
+          "duration"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -101,10 +99,10 @@
       "discovery_complete": true,
       "latest": {
         "video_id": "6BlwD59AoLM",
-        "title": "Why The Stock Market Just Crashed",
+        "title": "Stocks Just Crashed. Here's Why.",
         "url": "https://www.youtube.com/watch?v=6BlwD59AoLM",
         "published_at": "",
-        "rss_status": "ok",
+        "rss_status": "error:HTTPError",
         "flat_metadata_keys": [
           "channel_id",
           "duration"
@@ -122,32 +120,21 @@
   "pending_retried": 6,
   "content_attempted_this_run": 6,
   "content_work_budget": 6,
-  "content_backlog_after_run": 108,
-  "pending_total": 108,
+  "content_backlog_after_run": 107,
+  "pending_total": 107,
   "historical_demoted_from_pending": 0,
   "admitted_from_pending": 0,
   "nonforward_timestamp_unknown_admitted": 0,
   "feed_records_added": 0,
   "publication_dates_resolved": 0,
   "rss_status": {
-    "UCFQsi7WaF5X41tcuOryDk8w": "ok",
-    "UCGy7SkBjcIAgTiwkXEtPnYg": "ok",
-    "UCo2gxyermsLBSCxFHvJs0Zg": "ok"
+    "UCFQsi7WaF5X41tcuOryDk8w": "error:HTTPError",
+    "UCGy7SkBjcIAgTiwkXEtPnYg": "error:HTTPError",
+    "UCo2gxyermsLBSCxFHvJs0Zg": "error:HTTPError"
   },
   "historical_backlog_total": 55,
   "discovery_complete": true,
   "new_video_diagnostics": [
-    {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "IcDRffqDfTo",
-      "title": "美股 横扫概率极高，AI承压！AMD前瞻大好，暗藏隐忧！PLTR增速放缓高不可攀！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
     {
       "author": "RhinoFinance / 视野环球财经",
       "video_id": "qcdt6yQKt_4",
@@ -173,15 +160,26 @@
     {
       "author": "Andrei Jikh",
       "video_id": "6BlwD59AoLM",
-      "title": "Why The Stock Market Just Crashed",
+      "title": "Stocks Just Crashed. Here's Why.",
       "admission": "pending_content",
       "was_pending": true,
       "pending_reason": "awaiting_publication_date"
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "G_zzWcUSTfY",
-      "title": "美股 共识预期：半导体无路可退！QQQ、IWM、AMD、META！",
+      "video_id": "MFB-Fp4F15A",
+      "title": "美股 罕见IGV压 SOXX一头！NFLX止跌雄起了吗？TSLA、WMT、SNDK！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "Andrei Jikh",
+      "video_id": "MUUin7TkWsk",
+      "title": "How I'm Investing For What's Coming",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -191,8 +189,8 @@
     },
     {
       "author": "老李玩钱",
-      "video_id": "GsmAlvfOUFs",
-      "title": "6月必买3支股票",
+      "video_id": "Mv4_zIzQGLs",
+      "title": "回调周期中，非常适合买入定投的5支ETF",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -205,7 +203,7 @@
     "status": "ok",
     "channel_errors": 0,
     "stuck_high_quality_pending": 0,
-    "provider_waiting_pending": 108,
+    "provider_waiting_pending": 107,
     "stuck_video_ids": [],
     "meaning": "Q1/Q2 text must not remain stuck in pending; Q3-Q5 may legitimately wait for better learning text."
   },
