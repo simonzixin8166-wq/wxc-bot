@@ -1,19 +1,19 @@
 {
- "generated_at": "2026-11-06T19:56:58+00:00",
- "records": 2864,
- "without_recorded_provenance": 1236,
+ "generated_at": "2026-11-07T18:02:01+00:00",
+ "records": 2868,
+ "without_recorded_provenance": 1240,
  "derived_for_unrecorded": {
-  "near_publication_observed": 342,
-  "backfill_proven": 869,
-  "delayed_capture": 25
+  "near_publication_observed": 343,
+  "backfill_proven": 871,
+  "delayed_capture": 26
  },
  "recorded_live_but_gap_over_72h": [],
  "video_transcripts": {
-  "excerpt_present": 22,
+  "excerpt_present": 26,
   "provider_navigation_page": 24
  },
  "video_transcript_status": {
-  "available": 46
+  "available": 50
  },
  "method": "first git appearance of the record id in state/research_feed.json vs published_at (timezone not recorded); unprovable is never guessed",
  "rows": [
@@ -31658,6 +31658,62 @@
    "transcript_check": "provider_navigation_page",
    "transcript_status": "available",
    "content_quality": "Q4"
+  },
+  {
+   "id": "189eb7a53fd21744cd82",
+   "kind": "video",
+   "author": "RhinoFinance / 视野环球财经",
+   "recorded_provenance": null,
+   "published_at": "2026-11-06",
+   "first_git_seen": "2026-11-06T21:37:03Z",
+   "first_git_commit": "02ae8ef2191e00f25ba5a7c337d2bc0fec1bac14",
+   "gap_hours": 21.6,
+   "derived_provenance": "near_publication_observed",
+   "transcript_check": "excerpt_present",
+   "transcript_status": "available",
+   "content_quality": "Q3"
+  },
+  {
+   "id": "0c097df04bcdaeb44879",
+   "kind": "video",
+   "author": "RhinoFinance / 视野环球财经",
+   "recorded_provenance": null,
+   "published_at": "2026-11-05",
+   "first_git_seen": "2026-11-06T21:37:03Z",
+   "first_git_commit": "02ae8ef2191e00f25ba5a7c337d2bc0fec1bac14",
+   "gap_hours": 45.6,
+   "derived_provenance": "delayed_capture",
+   "transcript_check": "excerpt_present",
+   "transcript_status": "available",
+   "content_quality": "Q3"
+  },
+  {
+   "id": "17b22caa0bc8219b9703",
+   "kind": "video",
+   "author": "RhinoFinance / 视野环球财经",
+   "recorded_provenance": null,
+   "published_at": "2026-11-04",
+   "first_git_seen": "2026-11-07T02:00:10Z",
+   "first_git_commit": "a815de6a68a2ca018b22d9417f2fd6fff8cb77a5",
+   "gap_hours": 74.0,
+   "derived_provenance": "backfill_proven",
+   "transcript_check": "excerpt_present",
+   "transcript_status": "available",
+   "content_quality": "Q3"
+  },
+  {
+   "id": "2aa6d98e6d46674136ba",
+   "kind": "video",
+   "author": "RhinoFinance / 视野环球财经",
+   "recorded_provenance": null,
+   "published_at": "2026-11-03",
+   "first_git_seen": "2026-11-07T08:50:16Z",
+   "first_git_commit": "71c4fcb8d721480438eefa0f3a47a32cd0754b54",
+   "gap_hours": 104.8,
+   "derived_provenance": "backfill_proven",
+   "transcript_check": "excerpt_present",
+   "transcript_status": "available",
+   "content_quality": "Q3"
   }
  ]
 }
