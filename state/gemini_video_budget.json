@@ -1083,15 +1083,15 @@
       "refunded_503": 3
     },
     "2026-11-07": {
-      "calls": 4,
+      "calls": 6,
       "admitted": 1,
       "rejected": 0,
-      "errors": 3,
+      "errors": 5,
       "reconciliation": {
         "status": "COMPLETE",
-        "calls_billed": 4,
+        "calls_billed": 6,
         "calls_refunded_503": 0,
-        "detail_rows": 4,
+        "detail_rows": 6,
         "missing_detail_rows": 0,
         "counter_mismatch": []
       },
@@ -1130,6 +1130,24 @@
           "author": "RhinoFinance / 视野环球财经",
           "title": "美股 META、AMD联手起飞！QQQ、SOXX、IGV，全部突破！对冲基金、散户，在买什么？",
           "detail": "ReadTimeout"
+        },
+        {
+          "video_id": "-e3gyj_NP7c",
+          "outcome": "exception",
+          "at": "21:49:42Z",
+          "model": "gemini-3.8-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 科技股、半导体失血！消费股领涨，XLP重要位置！SMH、SOXX完成修复！SPY、QQQ、XLK长线点位更新！",
+          "detail": "ReadTimeout"
+        },
+        {
+          "video_id": "ZrYTeawbbR8",
+          "outcome": "http_403",
+          "at": "21:49:53Z",
+          "model": "gemini-3.8-flash",
+          "author": "Andrei Jikh",
+          "title": "How The Next Financial Crisis Happens",
+          "detail": "{\"error\":{\"message\":\"The caller does not have permission\",\"code\":\"permission_denied\"}}"
         }
       ]
     }
