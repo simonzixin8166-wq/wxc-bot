@@ -1083,15 +1083,15 @@
       "refunded_503": 3
     },
     "2026-11-07": {
-      "calls": 2,
+      "calls": 4,
       "admitted": 1,
       "rejected": 0,
-      "errors": 1,
+      "errors": 3,
       "reconciliation": {
         "status": "COMPLETE",
-        "calls_billed": 2,
+        "calls_billed": 4,
         "calls_refunded_503": 0,
-        "detail_rows": 2,
+        "detail_rows": 4,
         "missing_detail_rows": 0,
         "counter_mismatch": []
       },
@@ -1111,6 +1111,24 @@
           "model": "gemini-3.8-flash",
           "author": "RhinoFinance / 视野环球财经",
           "title": "美股 天塌了？应该买还是卖？11月三大风险事件！",
+          "detail": "ReadTimeout"
+        },
+        {
+          "video_id": "Uw84lTiD5C8",
+          "outcome": "exception",
+          "at": "16:27:56Z",
+          "model": "gemini-3.8-flash",
+          "author": "Andrei Jikh",
+          "title": "Russia Just Legalized Crypto",
+          "detail": "ReadTimeout"
+        },
+        {
+          "video_id": "Wpbwn2Pj3kQ",
+          "outcome": "exception",
+          "at": "16:30:59Z",
+          "model": "gemini-3.8-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 META、AMD联手起飞！QQQ、SOXX、IGV，全部突破！对冲基金、散户，在买什么？",
           "detail": "ReadTimeout"
         }
       ]
