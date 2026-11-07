@@ -87355,9 +87355,252 @@
       "video_observed_title": "视野环球财经 美东261103 周二 美东 8:35pm",
       "validation_status": "pending_owner_spot_check",
       "forward_evidence_eligible": false
+    },
+    {
+      "id": "2aa6d98e6d46674136ba",
+      "source": "youtube",
+      "source_kind": "video",
+      "author": "RhinoFinance / 视野环球财经",
+      "published_at": "2026-11-03",
+      "title": "美股 AAPL多个增速放缓！ORCL再融资，信贷雪上加霜！MRVL收购LITE，双方股东都不满意！基金损失惨重，多头仓位保守！",
+      "url": "https://www.youtube.com/watch?v=qcdt6yQKt_4",
+      "excerpt": "[Gemini 视频理解 · 未验证] 11月初科技股冲高回落，甲骨文巨额融资令数据中心信用违约互换（CDS）飙升，加之多州提议限制数据中心扩张，AI基建信用风险升温。苹果第四财季虽超预期但服务增速放缓、产品利润率下降且估值偏高。MRVL全股票收购LITE致双方大跌并形成股价联动。\n- [02:20 ORCL watch] 甲骨文启动100亿美元发债及100亿美元股权融资，快速用尽额度且CDS飙升，信用利差创历史新高\n- [06:15 bearish] 超大规模数据中心信用违约互换持续走高，CoreWeave、甲骨文等CDS处于高位，违约风险增加\n- [12:08 bearish] 全美36场州长竞选中有20场提出暂停或限制数据中心，德州等关键区域加强监管，AI基建面临阻力\n- [15:06 AAPL neut",
+      "content_chars": 918,
+      "semantic_content_chars": 918,
+      "content_filtering": {
+        "filter": "youtube_promotion_noise_v1",
+        "input_units": 14,
+        "removed_units": 0,
+        "removed_ratio": 0.0,
+        "promotion_noise_detected": false
+      },
+      "images_count": 0,
+      "themes_hint": [
+        "风险管理"
+      ],
+      "symbols": [
+        "AAPL",
+        "CRWV",
+        "LITE",
+        "MRVL",
+        "ORCL"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "captured_at": "2026-11-07T08:46:04Z",
+      "source_role": "rule_supply",
+      "transcript_status": "available",
+      "content_quality": "Q3",
+      "content_provider": "gemini_video",
+      "content_provider_url": "https://www.youtube.com/watch?v=qcdt6yQKt_4",
+      "content_origin": "gemini_video_understanding",
+      "timestamp_evidence": true,
+      "rule_candidate_allowed": false,
+      "source_notice": "公开视频由 Gemini 读取原片（语音+画面）生成的结构化摘要；观点未验证、不可直接作为规则，等待 Owner 抽查原片核对。",
+      "claims": [
+        {
+          "symbol": "CRWV",
+          "stance": "bearish",
+          "stance_cues": [
+            "bearish"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "46658b91dc67b07afbf12736eca27574213007ab459366523202559e800b5e82",
+          "evidence_chars": 65
+        },
+        {
+          "symbol": "ORCL",
+          "stance": "bearish",
+          "stance_cues": [
+            "bearish"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "46658b91dc67b07afbf12736eca27574213007ab459366523202559e800b5e82",
+          "evidence_chars": 65
+        },
+        {
+          "symbol": "MRVL",
+          "stance": "bearish",
+          "stance_cues": [
+            "bearish"
+          ],
+          "horizon": "short",
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "1de521fc80718bf3a024e0e8bb1ba9ac8d5c563d335727847ccb8e1c47337013",
+          "evidence_chars": 65
+        },
+        {
+          "symbol": "LITE",
+          "stance": "bearish",
+          "stance_cues": [
+            "bearish"
+          ],
+          "horizon": "short",
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "1de521fc80718bf3a024e0e8bb1ba9ac8d5c563d335727847ccb8e1c47337013",
+          "evidence_chars": 65
+        },
+        {
+          "symbol": "MRVL",
+          "stance": "bearish",
+          "stance_cues": [
+            "bearish"
+          ],
+          "horizon": "short",
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "6912719d27bfae9249a181f6c83220427e4a4cd65ff636e2e03357bd8f153281",
+          "evidence_chars": 66
+        },
+        {
+          "symbol": "LITE",
+          "stance": "bearish",
+          "stance_cues": [
+            "bearish"
+          ],
+          "horizon": "short",
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "6912719d27bfae9249a181f6c83220427e4a4cd65ff636e2e03357bd8f153281",
+          "evidence_chars": 66
+        },
+        {
+          "symbol": "VOO",
+          "stance": "bullish",
+          "stance_cues": [
+            "bullish"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "571b72c1b9c6464629c61a2cd1ac0e8bb8756386b39c31fc3bfb6be9219543f2",
+          "evidence_chars": 66
+        }
+      ],
+      "claims_status": "experimental_unvalidated",
+      "video_claims": [
+        {
+          "claim": "甲骨文启动100亿美元发债及100亿美元股权融资，快速用尽额度且CDS飙升，信用利差创历史新高",
+          "stance": "watch",
+          "price": null,
+          "timestamp": "02:20",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "ORCL",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "超大规模数据中心信用违约互换持续走高，CoreWeave、甲骨文等CDS处于高位，违约风险增加",
+          "stance": "bearish",
+          "price": null,
+          "timestamp": "06:15",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": null,
+          "symbol_check": null
+        },
+        {
+          "claim": "全美36场州长竞选中有20场提出暂停或限制数据中心，德州等关键区域加强监管，AI基建面临阻力",
+          "stance": "bearish",
+          "price": null,
+          "timestamp": "12:08",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": null,
+          "symbol_check": null
+        },
+        {
+          "claim": "苹果第四财季营收与EPS超预期，但服务收入增速为2023年Q2以来最低且产品利润率下滑",
+          "stance": "neutral",
+          "price": null,
+          "timestamp": "15:06",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "AAPL",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "苹果当前股价透支了未来一年以上的估值预期，已触及2028财年估值上限，未持有着追高需谨慎",
+          "stance": "watch",
+          "price": "239",
+          "timestamp": "18:53",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "AAPL",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "MRVL以全股票方式按1:4.5比例收购LITE，二者未来股价联动，短期引发市场抛售",
+          "stance": "bearish",
+          "price": null,
+          "timestamp": "20:35",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "MRVL",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "LITE被收购后估值需与MRVL市值合并重算，技术面下方支撑较弱，短期跟随MRVL波动",
+          "stance": "bearish",
+          "price": null,
+          "timestamp": "22:20",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "LITE",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "全球对冲基金空头杠杆仍处于高位，若年底季节性多头走强可能引发空头回补逼空行情",
+          "stance": "bullish",
+          "price": null,
+          "timestamp": "28:05",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "medium",
+          "symbol": null,
+          "symbol_check": null
+        },
+        {
+          "claim": "1950年以来标普500在11月平均上涨1.9%，为全年表现最好的月份，大盘回调仍在正常修正区间",
+          "stance": "bullish",
+          "price": null,
+          "timestamp": "30:31",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": null,
+          "symbol_check": null
+        }
+      ],
+      "video_claims_model": "gemini-3.8-flash",
+      "video_macro": [
+        {
+          "indicator": "S&P 500 Historical November Average Return",
+          "value": "1.9%",
+          "expectation": null,
+          "period": "Since 1950",
+          "timestamp": "30:39"
+        }
+      ],
+      "video_observed_title": "11.4 科技股跳水因它而起？信用风险在蔓延！苹果最新财报全解析；MRVL大跌吞下LITE，未来如何走？对冲基金战况及标普历史数据",
+      "validation_status": "pending_owner_spot_check",
+      "forward_evidence_eligible": false
     }
   ],
-  "updated_at": "2026-11-07T01:59:16Z",
+  "updated_at": "2026-11-07T08:49:41Z",
   "retention_policy": "append_only_no_record_count_cap",
   "historical_recovery": {
     "completed_at": "2026-10-07T13:43:06.018028+00:00",

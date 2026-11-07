@@ -1081,6 +1081,39 @@
         }
       ],
       "refunded_503": 3
+    },
+    "2026-11-07": {
+      "calls": 2,
+      "admitted": 1,
+      "rejected": 0,
+      "errors": 1,
+      "reconciliation": {
+        "status": "COMPLETE",
+        "calls_billed": 2,
+        "calls_refunded_503": 0,
+        "detail_rows": 2,
+        "missing_detail_rows": 0,
+        "counter_mismatch": []
+      },
+      "recent": [
+        {
+          "video_id": "qcdt6yQKt_4",
+          "outcome": "admitted",
+          "at": "08:46:04Z",
+          "model": "gemini-3.8-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 AAPL多个增速放缓！ORCL再融资，信贷雪上加霜！MRVL收购LITE，双方股东都不满意！基金损失惨重，多头仓位"
+        },
+        {
+          "video_id": "K1OPHbVonjc",
+          "outcome": "exception",
+          "at": "08:49:13Z",
+          "model": "gemini-3.8-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 天塌了？应该买还是卖？11月三大风险事件！",
+          "detail": "ReadTimeout"
+        }
+      ]
     }
   },
   "version": 1,

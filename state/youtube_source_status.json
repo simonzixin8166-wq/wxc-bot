@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-11-07T02:00:10Z",
+  "generated_at": "2026-11-07T08:50:16Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -27,11 +27,12 @@
         "video_id": "m3lFPFAq0_g",
         "title": "美股 异常资金推动滚雪球下跌！好消息，坏消息！计划内建仓一只股票！SOXX、QQQ、SPY、TSM、APP！",
         "url": "https://www.youtube.com/watch?v=m3lFPFAq0_g",
-        "published_at": "",
-        "rss_status": "error:HTTPError",
+        "published_at": "2026-11-06",
+        "rss_status": "ok",
         "flat_metadata_keys": [
           "channel_id",
-          "duration"
+          "duration",
+          "rss_published_at"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -64,11 +65,12 @@
         "video_id": "w8GM1mghKJc",
         "title": "中期选举尘埃落定！美股分化严重，何去何从",
         "url": "https://www.youtube.com/watch?v=w8GM1mghKJc",
-        "published_at": "",
-        "rss_status": "error:HTTPError",
+        "published_at": "2026-11-04",
+        "rss_status": "ok",
         "flat_metadata_keys": [
           "channel_id",
-          "duration"
+          "duration",
+          "rss_published_at"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -99,10 +101,10 @@
       "discovery_complete": true,
       "latest": {
         "video_id": "6BlwD59AoLM",
-        "title": "Stocks Just Crashed. Here's Why.",
+        "title": "The NASDAQ Just Crashed. Here's Why",
         "url": "https://www.youtube.com/watch?v=6BlwD59AoLM",
         "published_at": "",
-        "rss_status": "error:HTTPError",
+        "rss_status": "ok",
         "flat_metadata_keys": [
           "channel_id",
           "duration"
@@ -120,32 +122,21 @@
   "pending_retried": 6,
   "content_attempted_this_run": 6,
   "content_work_budget": 6,
-  "content_backlog_after_run": 107,
-  "pending_total": 107,
+  "content_backlog_after_run": 106,
+  "pending_total": 106,
   "historical_demoted_from_pending": 0,
   "admitted_from_pending": 0,
   "nonforward_timestamp_unknown_admitted": 0,
   "feed_records_added": 0,
   "publication_dates_resolved": 0,
   "rss_status": {
-    "UCFQsi7WaF5X41tcuOryDk8w": "error:HTTPError",
-    "UCGy7SkBjcIAgTiwkXEtPnYg": "error:HTTPError",
-    "UCo2gxyermsLBSCxFHvJs0Zg": "error:HTTPError"
+    "UCFQsi7WaF5X41tcuOryDk8w": "ok",
+    "UCGy7SkBjcIAgTiwkXEtPnYg": "ok",
+    "UCo2gxyermsLBSCxFHvJs0Zg": "ok"
   },
   "historical_backlog_total": 55,
   "discovery_complete": true,
   "new_video_diagnostics": [
-    {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "qcdt6yQKt_4",
-      "title": "美股 AAPL多个增速放缓！ORCL再融资，信贷雪上加霜！MRVL收购LITE，双方股东都不满意！基金损失惨重，多头仓位保守！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
     {
       "author": "RhinoFinance / 视野环球财经",
       "video_id": "K1OPHbVonjc",
@@ -158,17 +149,9 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "Andrei Jikh",
-      "video_id": "6BlwD59AoLM",
-      "title": "Stocks Just Crashed. Here's Why.",
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "awaiting_publication_date"
-    },
-    {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "MFB-Fp4F15A",
-      "title": "美股 罕见IGV压 SOXX一头！NFLX止跌雄起了吗？TSLA、WMT、SNDK！",
+      "author": "老李玩钱",
+      "video_id": "Q5xMtR4SWP8",
+      "title": "美股高位摇摇欲坠！要回调了？操作上的建议",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -177,9 +160,9 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "Andrei Jikh",
-      "video_id": "MUUin7TkWsk",
-      "title": "How I'm Investing For What's Coming",
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "RgGeU0w9GZo",
+      "title": "美股 NVDA黄仁勋“喊单”奏效！AVGO有惊无险，PANW放缓代价！褐皮书：物价，消费，就业，增长！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -189,8 +172,30 @@
     },
     {
       "author": "老李玩钱",
-      "video_id": "Mv4_zIzQGLs",
-      "title": "回调周期中，非常适合买入定投的5支ETF",
+      "video_id": "SJERXQX7tAU",
+      "title": "5大科技，机会来了，最新买入/加仓价格点位！另外准备减仓1支股",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "老李玩钱",
+      "video_id": "SrRLRsUFsUw",
+      "title": "华尔街大量卖出的3支股票！你是否要跟着卖出",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "老李玩钱",
+      "video_id": "Ue75SpWXfjo",
+      "title": "美股最重磅的一周：美联储会议及4大科技巨头财报提前展望，买入/加仓价格点位更新",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -203,7 +208,7 @@
     "status": "ok",
     "channel_errors": 0,
     "stuck_high_quality_pending": 0,
-    "provider_waiting_pending": 107,
+    "provider_waiting_pending": 106,
     "stuck_video_ids": [],
     "meaning": "Q1/Q2 text must not remain stuck in pending; Q3-Q5 may legitimately wait for better learning text."
   },
