@@ -1152,15 +1152,15 @@
       ]
     },
     "2026-11-08": {
-      "calls": 2,
+      "calls": 4,
       "admitted": 1,
       "rejected": 0,
-      "errors": 1,
+      "errors": 3,
       "reconciliation": {
         "status": "COMPLETE",
-        "calls_billed": 2,
+        "calls_billed": 4,
         "calls_refunded_503": 0,
-        "detail_rows": 2,
+        "detail_rows": 4,
         "missing_detail_rows": 0,
         "counter_mismatch": []
       },
@@ -1181,6 +1181,24 @@
           "model": "gemini-3.5-flash",
           "author": "老李玩钱",
           "title": "美股不怕急跌，怕的是目前这种震荡下行的行情"
+        },
+        {
+          "video_id": "w0a504L8fgs",
+          "outcome": "http_403",
+          "at": "16:39:24Z",
+          "model": "gemini-3.8-flash",
+          "author": "Andrei Jikh",
+          "title": "China & Japan Are Dumping US Bonds",
+          "detail": "{\"error\":{\"message\":\"The caller does not have permission\",\"code\":\"permission_denied\"}}"
+        },
+        {
+          "video_id": "wz13N6Q4-tg",
+          "outcome": "exception",
+          "at": "16:42:28Z",
+          "model": "gemini-3.8-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 无聊行情即将结束！回购债券的隐藏动机！LULU、NKE、INTU！",
+          "detail": "ReadTimeout"
         }
       ]
     }
