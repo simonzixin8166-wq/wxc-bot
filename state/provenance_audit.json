@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-07T18:02:01+00:00",
- "records": 2868,
+ "generated_at": "2026-11-08T18:21:08+00:00",
+ "records": 2869,
  "without_recorded_provenance": 1240,
  "derived_for_unrecorded": {
   "near_publication_observed": 343,
@@ -9,11 +9,11 @@
  },
  "recorded_live_but_gap_over_72h": [],
  "video_transcripts": {
-  "excerpt_present": 26,
+  "excerpt_present": 27,
   "provider_navigation_page": 24
  },
  "video_transcript_status": {
-  "available": 50
+  "available": 51
  },
  "method": "first git appearance of the record id in state/research_feed.json vs published_at (timezone not recorded); unprovable is never guessed",
  "rows": [
@@ -31711,6 +31711,20 @@
    "first_git_commit": "71c4fcb8d721480438eefa0f3a47a32cd0754b54",
    "gap_hours": 104.8,
    "derived_provenance": "backfill_proven",
+   "transcript_check": "excerpt_present",
+   "transcript_status": "available",
+   "content_quality": "Q3"
+  },
+  {
+   "id": "470a5ca937c91aa851f7",
+   "kind": "video",
+   "author": "老李玩钱",
+   "recorded_provenance": "backfill",
+   "published_at": "",
+   "first_git_seen": "2026-11-08T09:01:32Z",
+   "first_git_commit": "dbc5a633bb685c3db8aa4d87686ff113ab47888f",
+   "gap_hours": null,
+   "derived_provenance": "unprovable",
    "transcript_check": "excerpt_present",
    "transcript_status": "available",
    "content_quality": "Q3"
