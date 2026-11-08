@@ -1152,15 +1152,15 @@
       ]
     },
     "2026-11-08": {
-      "calls": 4,
-      "admitted": 1,
+      "calls": 6,
+      "admitted": 2,
       "rejected": 0,
-      "errors": 3,
+      "errors": 4,
       "reconciliation": {
         "status": "COMPLETE",
-        "calls_billed": 4,
+        "calls_billed": 6,
         "calls_refunded_503": 0,
-        "detail_rows": 4,
+        "detail_rows": 6,
         "missing_detail_rows": 0,
         "counter_mismatch": []
       },
@@ -1199,7 +1199,27 @@
           "author": "RhinoFinance / 视野环球财经",
           "title": "美股 无聊行情即将结束！回购债券的隐藏动机！LULU、NKE、INTU！",
           "detail": "ReadTimeout"
+        },
+        {
+          "video_id": "TNQ2PuDLiOg",
+          "outcome": "http_403",
+          "at": "21:59:59Z",
+          "model": "gemini-3.8-flash",
+          "author": "Andrei Jikh",
+          "title": "My Thoughts On XRP",
+          "detail": "{\"error\":{\"message\":\"The caller does not have permission\",\"code\":\"permission_denied\"}}"
+        },
+        {
+          "video_id": "SbZltIBvi7M",
+          "outcome": "admitted",
+          "at": "22:02:27Z",
+          "model": "gemini-3.8-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 对冲基金清空1年来AI仓位！不看好人工智能了吗？举例NVDA对比AMD！"
         }
+      ],
+      "skip_authors_403": [
+        "Andrei Jikh"
       ]
     }
   },

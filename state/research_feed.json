@@ -87711,9 +87711,241 @@
       "intake_class_hint": "backfill",
       "capture_mode": "youtube_timestamp_unknown_learning",
       "timestamp_confidence": "missing"
+    },
+    {
+      "id": "5d9b9e06fc52bad4e576",
+      "source": "youtube",
+      "source_kind": "video",
+      "author": "RhinoFinance / 视野环球财经",
+      "published_at": "2026-10-16",
+      "title": "美股 对冲基金清空1年来AI仓位！不看好人工智能了吗？举例NVDA对比AMD！",
+      "url": "https://www.youtube.com/watch?v=SbZltIBvi7M",
+      "excerpt": "[Gemini 视频理解 · 未验证] 节目分析了美股大跌后的市场宏观与资金流向。高盛报告显示对冲基金已清空过去一年净买入的AI配置，但长期仓位未动，转向防御。博主阐述“摔杯”必须基于基本面证伪与EPS衰退预期，普通回调非危机。半导体ETF跌破486技术面偏空，但优质股在安全边际内仍是长线机会。\n- [05:15 TLT neutral] 国债收益率回撤由CTA空头仓位回补驱动，缺乏长期上行基础，TLT等长债反弹应短线获利了结\n- [04:02 TSM hold 375] 台积电财报超预期，加仓计划不变，需跌至375美元以下才会考虑加仓\n- [20:15 SOXX bearish 486] SOXX跌破486仅代表技术面走坏与资金面偏弱，并非AI或半导体行业逻辑崩塌\n- [15:45 neutral] 对冲基金",
+      "content_chars": 957,
+      "semantic_content_chars": 957,
+      "content_filtering": {
+        "filter": "youtube_promotion_noise_v1",
+        "input_units": 18,
+        "removed_units": 0,
+        "removed_ratio": 0.0,
+        "promotion_noise_detected": false
+      },
+      "images_count": 0,
+      "themes_hint": [
+        "风险管理",
+        "长期持有纪律",
+        "趋势确认"
+      ],
+      "symbols": [
+        "AMD",
+        "LRCX",
+        "NVDA",
+        "SOXX",
+        "TLT",
+        "TSM"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "captured_at": "2026-11-08T22:02:27Z",
+      "source_role": "rule_supply",
+      "transcript_status": "available",
+      "content_quality": "Q3",
+      "content_provider": "gemini_video",
+      "content_provider_url": "https://www.youtube.com/watch?v=SbZltIBvi7M",
+      "content_origin": "gemini_video_understanding",
+      "timestamp_evidence": true,
+      "rule_candidate_allowed": false,
+      "source_notice": "公开视频由 Gemini 读取原片（语音+画面）生成的结构化摘要；观点未验证、不可直接作为规则，等待 Owner 抽查原片核对。",
+      "claims": [
+        {
+          "symbol": "TSM",
+          "stance": "add",
+          "stance_cues": [
+            "add",
+            "hold"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "e0b27b7ed073136bdb340c83791687f2f8e8617ed83f93bb7aea72a04b185a71",
+          "evidence_chars": 55
+        },
+        {
+          "symbol": "NVDA",
+          "stance": "bullish",
+          "stance_cues": [
+            "bullish"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "931f0906a19e375412931b282182287466127d71ee27bd419d7475661aeb0ac0",
+          "evidence_chars": 57
+        }
+      ],
+      "claims_status": "experimental_unvalidated",
+      "video_claims": [
+        {
+          "claim": "国债收益率回撤由CTA空头仓位回补驱动，缺乏长期上行基础，TLT等长债反弹应短线获利了结",
+          "stance": "neutral",
+          "price": null,
+          "timestamp": "05:15",
+          "evidence_mode": "spoken_explicit",
+          "confidence": "high",
+          "symbol": "TLT",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "台积电财报超预期，加仓计划不变，需跌至375美元以下才会考虑加仓",
+          "stance": "hold",
+          "price": "375",
+          "timestamp": "04:02",
+          "evidence_mode": "spoken_explicit",
+          "confidence": "high",
+          "symbol": "TSM",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "SOXX跌破486仅代表技术面走坏与资金面偏弱，并非AI或半导体行业逻辑崩塌",
+          "stance": "bearish",
+          "price": "486",
+          "timestamp": "20:15",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "SOXX",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "对冲基金清空一年内加仓的AI短线仓位，但长线低成本AI底仓仍在保留",
+          "stance": "neutral",
+          "price": null,
+          "timestamp": "15:45",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": null,
+          "symbol_check": null
+        },
+        {
+          "claim": "英伟达在下调增长预期并扣减估值后安全边际依然充足，并未出现基本面摔杯",
+          "stance": "bullish",
+          "price": null,
+          "timestamp": "23:25",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "NVDA",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "AMD的安全边际弱于英伟达，若半导体调整其回撤幅度可能更大",
+          "stance": "neutral",
+          "price": null,
+          "timestamp": "24:35",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "AMD",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "LRCX跌破302美元后右侧突破上行趋势结束，反弹面临较重压力",
+          "stance": "bearish",
+          "price": "302",
+          "timestamp": "29:42",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "LRCX",
+          "symbol_check": "listed"
+        }
+      ],
+      "video_claims_model": "gemini-3.8-flash",
+      "video_macro": [
+        {
+          "indicator": "初请失业金人数",
+          "value": "19.9万",
+          "expectation": "20.0万",
+          "period": "截至10月10日当周",
+          "timestamp": "05:46"
+        },
+        {
+          "indicator": "续请失业金人数",
+          "value": "171万",
+          "expectation": "171万",
+          "period": "截至10月3日当周",
+          "timestamp": "05:55"
+        },
+        {
+          "indicator": "美国9月PPI年率",
+          "value": "6.3%",
+          "expectation": "5.3%",
+          "period": "9月",
+          "timestamp": "06:31"
+        },
+        {
+          "indicator": "美国9月核心PPI年率",
+          "value": "5.0%",
+          "expectation": "4.4%",
+          "period": "9月",
+          "timestamp": "06:44"
+        },
+        {
+          "indicator": "美国9月零售销售月率",
+          "value": "0.8%",
+          "expectation": "0.3%",
+          "period": "9月",
+          "timestamp": "07:56"
+        }
+      ],
+      "video_observed_title": "美股大跌之后对冲基金出清AI多头！摔杯到底摔了没？台积电财报加仓计划不变！半导体技术面偏空与好股票的关系！PPI和零售数据全面超预期！",
+      "validation_status": "pending_owner_spot_check",
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "872a88980b8c6edec5c7",
+      "source": "youtube",
+      "source_kind": "video",
+      "author": "Andrei Jikh",
+      "published_at": "",
+      "title": "Prepare: The War With Iran Just Restarted",
+      "url": "https://www.youtube.com/watch?v=GJOvUDVp-1E",
+      "excerpt": "Scribe\n \n \nScribe\nLike it? Make Scribe even better by\n \nleaving a review\nGet Chrome Extension\nBrowse\nPopular Videos\nRecent Videos\nAll Channels\nFree Tools\nVideo Subtitle Downloader\nVideo Timestamp Generator\nVideo Summarizer\nVideo Word Counter\nVideo Title Analyzer\nVideo Transcript Search\nVideo Analytics\nVideo Chapters Creator\nVideo Quiz Generator\nChat with Vid",
+      "content_chars": 733,
+      "semantic_content_chars": 723,
+      "content_filtering": {
+        "filter": "youtube_promotion_noise_v1",
+        "input_units": 40,
+        "removed_units": 0,
+        "removed_ratio": 0.0,
+        "promotion_noise_detected": false
+      },
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "captured_at": "2026-11-08T22:03:14Z",
+      "source_role": "market_context",
+      "transcript_status": "available",
+      "content_quality": "Q4",
+      "content_provider": "pickscribe.com",
+      "content_provider_url": "https://pickscribe.com/v/GJOvUDVp-1E/",
+      "content_origin": "third_party_transcript",
+      "timestamp_evidence": false,
+      "rule_candidate_allowed": false,
+      "source_notice": "YouTube正文可用于非Forward语义学习；可靠发布时间缺失，因此强制按backfill处理，禁止计入Forward Evidence或Promotion。",
+      "intake_class_hint": "backfill",
+      "capture_mode": "youtube_timestamp_unknown_learning",
+      "timestamp_confidence": "missing",
+      "forward_evidence_eligible": false
     }
   ],
-  "updated_at": "2026-11-08T09:01:12Z",
+  "updated_at": "2026-11-08T22:03:27Z",
   "retention_policy": "append_only_no_record_count_cap",
   "historical_recovery": {
     "completed_at": "2026-10-07T13:43:06.018028+00:00",
