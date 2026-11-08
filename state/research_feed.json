@@ -87598,9 +87598,122 @@
       "video_observed_title": "11.4 科技股跳水因它而起？信用风险在蔓延！苹果最新财报全解析；MRVL大跌吞下LITE，未来如何走？对冲基金战况及标普历史数据",
       "validation_status": "pending_owner_spot_check",
       "forward_evidence_eligible": false
+    },
+    {
+      "id": "470a5ca937c91aa851f7",
+      "source": "youtube",
+      "source_kind": "video",
+      "author": "老李玩钱",
+      "published_at": "",
+      "title": "美股不怕急跌，怕的是目前这种震荡下行的行情",
+      "url": "https://www.youtube.com/watch?v=nNaiUbM17HY",
+      "excerpt": "[Gemini 视频理解 · 未验证] 老李在视频中解答了为什么美股“不怕急跌、最怕阴跌”。急跌（如2020年3月暴跌）能迅速出清风险、挤出杠杆并促使政策与抄底资金快速入场，随后往往伴随大幅强劲反弹；而阴跌（震荡下行，如2022年熊市）如温水煮青蛙，持续损耗投资者信心与机构盈利预期。老李指出美股大盘见底通常需要一次“投降式抛售”（Capitulation Event）。目前大盘震荡下行已近两个月，若无投降式大跌，调整可能持续至4月或整个上半年。视频最后推广了TradeUP券商入金送NVDA股票活动。\n- [01:23 bullish] 美股市场不怕急跌，急跌之后通常伴随快速而强劲的反弹行情。\n- [01:28 bearish] 美股最怕缓慢的震荡下行（阴跌），阴跌时间长且难以把握底部，会严重破坏投资者信心。\n-",
+      "content_chars": 859,
+      "semantic_content_chars": 529,
+      "content_filtering": {
+        "filter": "youtube_promotion_noise_v1",
+        "input_units": 10,
+        "removed_units": 2,
+        "removed_ratio": 0.2,
+        "promotion_noise_detected": true
+      },
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [
+        "IXIC",
+        "NVDA",
+        "SPX",
+        "TSLA"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "captured_at": "2026-11-08T09:01:02Z",
+      "source_role": "rule_supply",
+      "transcript_status": "available",
+      "content_quality": "Q3",
+      "content_provider": "gemini_video",
+      "content_provider_url": "https://www.youtube.com/watch?v=nNaiUbM17HY",
+      "content_origin": "gemini_video_understanding",
+      "timestamp_evidence": true,
+      "rule_candidate_allowed": false,
+      "source_notice": "YouTube正文可用于非Forward语义学习；可靠发布时间缺失，因此强制按backfill处理，禁止计入Forward Evidence或Promotion。",
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "video_claims": [
+        {
+          "claim": "美股市场不怕急跌，急跌之后通常伴随快速而强劲的反弹行情。",
+          "stance": "bullish",
+          "price": null,
+          "timestamp": "01:23",
+          "evidence_mode": "spoken_explicit",
+          "confidence": "high",
+          "symbol": null,
+          "symbol_check": null
+        },
+        {
+          "claim": "美股最怕缓慢的震荡下行（阴跌），阴跌时间长且难以把握底部，会严重破坏投资者信心。",
+          "stance": "bearish",
+          "price": null,
+          "timestamp": "01:28",
+          "evidence_mode": "spoken_explicit",
+          "confidence": "high",
+          "symbol": null,
+          "symbol_check": null
+        },
+        {
+          "claim": "标普500指数通常需要出现一次“投降式抛售”（Capitulation Event）后才会真正见底。",
+          "stance": "neutral",
+          "price": null,
+          "timestamp": "07:25",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "SPX",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "本轮美股震荡下行若恢复较快可能在4月份好转，若较慢则可能持续整个上半年。",
+          "stance": "watch",
+          "price": null,
+          "timestamp": "08:38",
+          "evidence_mode": "spoken_explicit",
+          "confidence": "high",
+          "symbol": null,
+          "symbol_check": null
+        },
+        {
+          "claim": "在TradeUP开户入金2,000美元可免费获得1股英伟达（NVDA）股票，换算短期回报率近10%。",
+          "stance": "buy",
+          "price": "182.73",
+          "timestamp": "11:10",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "NVDA",
+          "symbol_check": "listed"
+        }
+      ],
+      "video_claims_model": "gemini-3.5-flash",
+      "video_macro": [
+        {
+          "indicator": "CBOE Volatility Index (VIX)",
+          "value": null,
+          "expectation": null,
+          "period": null,
+          "timestamp": "07:56"
+        }
+      ],
+      "video_observed_title": "为什么美股不怕急跌，最怕阴跌？",
+      "validation_status": "pending_owner_spot_check",
+      "forward_evidence_eligible": false,
+      "intake_class_hint": "backfill",
+      "capture_mode": "youtube_timestamp_unknown_learning",
+      "timestamp_confidence": "missing"
     }
   ],
-  "updated_at": "2026-11-07T08:49:41Z",
+  "updated_at": "2026-11-08T09:01:12Z",
   "retention_policy": "append_only_no_record_count_cap",
   "historical_recovery": {
     "completed_at": "2026-10-07T13:43:06.018028+00:00",
