@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-11-09T09:48:21Z",
+  "generated_at": "2026-11-09T20:49:31Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -138,16 +138,8 @@
   "new_video_diagnostics": [
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "6b-ohR2Z9Z0",
-      "title": "（会员第309期）2026年11月2日-8日，重要公司Q3财报后2026、2027前瞻估值，强支撑点位！",
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "awaiting_publication_date"
-    },
-    {
-      "author": "Andrei Jikh",
-      "video_id": "BpuKpyCk0Us",
-      "title": "How I'd Invest $10,000 Right Now",
+      "video_id": "MFB-Fp4F15A",
+      "title": "美股 罕见IGV压 SOXX一头！NFLX止跌雄起了吗？TSLA、WMT、SNDK！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -157,8 +149,19 @@
     },
     {
       "author": "Andrei Jikh",
-      "video_id": "DFSWsJ_y1-M",
-      "title": "China Just Won The AI Race",
+      "video_id": "MUUin7TkWsk",
+      "title": "How I'm Investing For What's Coming",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "老李玩钱",
+      "video_id": "Mv4_zIzQGLs",
+      "title": "回调周期中，非常适合买入定投的5支ETF",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -168,8 +171,19 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "EB4-BTw4ETQ",
-      "title": "美股 NVDA、META不同意AI放缓！加息后，标普、利率走势！SPY、QQQ、SOXX、SMH较差的情况，跌至哪里？",
+      "video_id": "N8BjausuEsI",
+      "title": "美股 META大招豪赌AI代理！对GOOG、AMZN影响！SOXX还需一天确认！财政部回购不及预期！AAPL开始折叠！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "Andrei Jikh",
+      "video_id": "NZpobX6MQVA",
+      "title": "Trump Will Cause The Next Financial Crisis",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -179,19 +193,8 @@
     },
     {
       "author": "老李玩钱",
-      "video_id": "FK_7ldpLAjI",
-      "title": "$200,000本金美股账户2周年，表现如何？复盘总结，经验心得",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "老李玩钱",
-      "video_id": "FqN2N9NJ00M",
-      "title": "美股：TSLA，GOOG！财报解读，操作建议",
+      "video_id": "PDAHTpp2c78",
+      "title": "摩根大通：标普500今年将下跌15%",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
