@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-09T05:48:02+00:00",
+ "generated_at": "2026-11-09T05:48:45+00:00",
  "records": 2872,
  "without_recorded_provenance": 1241,
  "derived_for_unrecorded": {
@@ -31763,8 +31763,8 @@
    "author": "BrightLine",
    "recorded_provenance": "backfill",
    "published_at": "",
-   "first_git_seen": null,
-   "first_git_commit": null,
+   "first_git_seen": "2026-11-09T05:48:03Z",
+   "first_git_commit": "2e0dfbd2d2f9d8e873c782c1fe7dadd4b0320a84",
    "gap_hours": null,
    "derived_provenance": "unprovable"
   }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-09T05:48:02+00:00",
+ "generated_at": "2026-11-09T05:48:45+00:00",
  "records": 2872,
  "excluded": 25,
  "flag_counts": {
@@ -20169,7 +20169,7 @@
    "flags": [],
    "exclude": false,
    "provenance": "unprovable",
-   "first_git_seen": null,
+   "first_git_seen": "2026-11-09T05:48:03Z",
    "published_at_timezone": "unknown"
   }
  }
