@@ -8,8 +8,8 @@ The Owner reads a public article in his own browser and forwards it to the Teleg
   a .zip of such files (read in memory; each article needs its own 原文链接 line).
 
 What happens:
-- Full text goes ONLY to the dedicated private repo TEXTPACK_REPO (token TEXTPACK_TOKEN, scoped to that repo),
-  temporarily, for S2 v5 labelling; it is deleted after the test-set freeze (Owner #133 6648886468).
+- Full text goes ONLY to the dedicated private repo TEXTPACK_REPO (token TEXTPACK_TOKEN, scoped to that repo) and is
+  kept there long-term for personal, non-commercial learning; it is never published (Owner charter 2026-11-09).
 - The public repo keeps only title, <=360-char excerpt, link, sha256, chars and status in
   state/owner_forward_index.jsonl.
 - The bot NEVER opens the forwarded link. A link without text is answered with "please attach the text".
@@ -154,7 +154,7 @@ def _ingest(text: str, title: str | None, url: str | None, published: str | None
             "host": urlsplit(url).netloc, "title": title, "chars": len(text), "sha256": sha,
             "published_at": published, "retrieved_at": retrieved_at,
             "retrieved_by": "owner (own browser, forwarded via Telegram)", "input": input_kind,
-            "retention": "temporary for S2 v5 labelling; delete after test-set freeze (Owner #133 6648886468)",
+            "retention": "private long-term for personal non-commercial learning; never published (Owner charter 2026-11-09)",
             "claims_status": "experimental_unvalidated"}
     status = _store_textpack(item, text, http)
     row = {k: item[k] for k in ("item_id", "source_family", "source_url", "host", "title", "chars", "sha256",
