@@ -87943,9 +87943,148 @@
       "capture_mode": "youtube_timestamp_unknown_learning",
       "timestamp_confidence": "missing",
       "forward_evidence_eligible": false
+    },
+    {
+      "id": "6e1a91f9afc0a93c860e",
+      "source": "wenxuecity",
+      "source_kind": "blog",
+      "author": "BrightLine",
+      "published_at": "",
+      "title": "今天跌麻了, 加仓IREN 18块，NBIS 118块，Intel 52块，SOXL 44块。",
+      "url": "https://blog.wenxuecity.com/myblog/82458/202611/3461.html",
+      "excerpt": "今天打开账户，第一反应就是一个字：麻。\n纳斯达克跌了5.5%，标普跌了4.4%，是2025年4月以来最惨的一天。道指跌了1800多点。半导体ETF一天跌了12%，2020年3月疫情崩盘以来最大的单日跌幅。美光跌17%，AMD跌17%，Marvell跌16%，ARM跌13%，博通跌10%，Intel跌10%，高通跌9%，英伟达跌9%。英伟达收在181块，低于去年底的186块，今年的涨幅一天之内全部吐光。纳指从上个月的高点算，已经跌超10%，正式进入调整。VIX冲到28。韩国股市也跟着跌了5%，SK海力士跌9%。\n我昨天58块加的Intel，今天收在52块，一天就亏了一成。陈立武65块买的，比我亏得还多。\n为什么跌\n今天英伟达、AMD、美光、博通没有一家发布坏消息，没有一家下调指引。跌的原因有两个，都和公司本身无关",
+      "content_chars": 2168,
+      "images_count": 0,
+      "themes_hint": [
+        "风险管理",
+        "失败复盘",
+        "长期持有纪律",
+        "INTC",
+        "IREN"
+      ],
+      "symbols": [
+        "MRVL",
+        "INTC",
+        "IREN",
+        "NVDA",
+        "MU",
+        "NBIS",
+        "AMD"
+      ],
+      "operations": [
+        {
+          "symbols": [
+            "INTC",
+            "IREN",
+            "NBIS"
+          ],
+          "actions": [
+            "add"
+          ],
+          "attribution": "unconfirmed_author_context",
+          "attribution_confidence": "needs_review"
+        },
+        {
+          "symbols": [
+            "INTC"
+          ],
+          "actions": [
+            "buy"
+          ],
+          "attribution": "author_action",
+          "attribution_confidence": "high"
+        }
+      ],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [
+        {
+          "symbol": "INTC",
+          "stance": "add",
+          "stance_cues": [
+            "add"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "ed394c02247d56a03330917d59a5d42d53360250ecd881bca2290d081bce5301",
+          "evidence_chars": 47
+        },
+        {
+          "symbol": "IREN",
+          "stance": "add",
+          "stance_cues": [
+            "add"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "ed394c02247d56a03330917d59a5d42d53360250ecd881bca2290d081bce5301",
+          "evidence_chars": 47
+        },
+        {
+          "symbol": "NBIS",
+          "stance": "add",
+          "stance_cues": [
+            "add"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "ed394c02247d56a03330917d59a5d42d53360250ecd881bca2290d081bce5301",
+          "evidence_chars": 47
+        },
+        {
+          "symbol": "SOXL",
+          "stance": "add",
+          "stance_cues": [
+            "add"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "ed394c02247d56a03330917d59a5d42d53360250ecd881bca2290d081bce5301",
+          "evidence_chars": 47
+        },
+        {
+          "symbol": "INTC",
+          "stance": "buy",
+          "stance_cues": [
+            "buy"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "521382c53e567b5e8c0f8c7be2e5ca8850c44cf0987d2c9c13255febfff894ac",
+          "evidence_chars": 39
+        }
+      ],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": null,
+      "source_entry_key": null,
+      "parent_post_id": null,
+      "attribution_fallback": null,
+      "thread_context": null,
+      "captured_at": "2026-11-09T05:47:38Z",
+      "source_notice": "Owner 事后转发（超过 7 天或发布时间未知）：仅用于理解与历史检验，不计入前瞻验证。",
+      "intake_provenance": "owner_forward",
+      "owner_forward_item_id": "C-048ccbea8bfe",
+      "owner_forward_retrieved_at": "2026-11-06T03:39:43+00:00",
+      "publication_lag_hours": null,
+      "content_sha256": "048ccbea8bfe4f3389f38668f6b2eb941e227f508601c573db24e5043b99f0fa",
+      "intake_class_hint": "backfill",
+      "capture_mode": "owner_forward_backfill",
+      "forward_evidence_eligible": false
     }
   ],
-  "updated_at": "2026-11-08T22:03:27Z",
+  "updated_at": "2026-11-09T05:47:38Z",
   "retention_policy": "append_only_no_record_count_cap",
   "historical_recovery": {
     "completed_at": "2026-10-07T13:43:06.018028+00:00",

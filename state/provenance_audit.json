@@ -1,19 +1,19 @@
 {
- "generated_at": "2026-11-08T18:21:08+00:00",
- "records": 2869,
- "without_recorded_provenance": 1240,
+ "generated_at": "2026-11-09T05:48:02+00:00",
+ "records": 2872,
+ "without_recorded_provenance": 1241,
  "derived_for_unrecorded": {
   "near_publication_observed": 343,
-  "backfill_proven": 871,
+  "backfill_proven": 872,
   "delayed_capture": 26
  },
  "recorded_live_but_gap_over_72h": [],
  "video_transcripts": {
-  "excerpt_present": 27,
-  "provider_navigation_page": 24
+  "excerpt_present": 28,
+  "provider_navigation_page": 25
  },
  "video_transcript_status": {
-  "available": 51
+  "available": 53
  },
  "method": "first git appearance of the record id in state/research_feed.json vs published_at (timezone not recorded); unprovable is never guessed",
  "rows": [
@@ -31728,6 +31728,45 @@
    "transcript_check": "excerpt_present",
    "transcript_status": "available",
    "content_quality": "Q3"
+  },
+  {
+   "id": "5d9b9e06fc52bad4e576",
+   "kind": "video",
+   "author": "RhinoFinance / 视野环球财经",
+   "recorded_provenance": null,
+   "published_at": "2026-10-16",
+   "first_git_seen": "2026-11-08T22:03:28Z",
+   "first_git_commit": "ef2e4ba55701e95dff4b33a9bab5dc7c381d1164",
+   "gap_hours": 574.1,
+   "derived_provenance": "backfill_proven",
+   "transcript_check": "excerpt_present",
+   "transcript_status": "available",
+   "content_quality": "Q3"
+  },
+  {
+   "id": "872a88980b8c6edec5c7",
+   "kind": "video",
+   "author": "Andrei Jikh",
+   "recorded_provenance": "backfill",
+   "published_at": "",
+   "first_git_seen": "2026-11-08T22:03:28Z",
+   "first_git_commit": "ef2e4ba55701e95dff4b33a9bab5dc7c381d1164",
+   "gap_hours": null,
+   "derived_provenance": "unprovable",
+   "transcript_check": "provider_navigation_page",
+   "transcript_status": "available",
+   "content_quality": "Q4"
+  },
+  {
+   "id": "6e1a91f9afc0a93c860e",
+   "kind": "blog",
+   "author": "BrightLine",
+   "recorded_provenance": "backfill",
+   "published_at": "",
+   "first_git_seen": null,
+   "first_git_commit": null,
+   "gap_hours": null,
+   "derived_provenance": "unprovable"
   }
  ]
 }

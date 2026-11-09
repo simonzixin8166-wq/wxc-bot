@@ -1,20 +1,20 @@
 {
- "generated_at": "2026-11-08T18:21:08+00:00",
- "records": 2869,
- "excluded": 24,
+ "generated_at": "2026-11-09T05:48:02+00:00",
+ "records": 2872,
+ "excluded": 25,
  "flag_counts": {
-  "invalid_transcript": 24
+  "invalid_transcript": 25
  },
  "video": {
-  "records": 51,
-  "invalid_transcript": 24,
+  "records": 53,
+  "invalid_transcript": 25,
   "note": "video count follows the live feed (18 at the 10-11 inventory, 19 after a new video was captured 10-11 12:45Z)"
  },
  "provenance_counts": {
   "near_publication_observed": 1729,
-  "backfill_proven": 1067,
+  "backfill_proven": 1068,
   "delayed_capture": 37,
-  "unprovable": 36
+  "unprovable": 38
  },
  "policy": "overlay only; feed/raw files unchanged; near_publication_observed ≠ real-time lock",
  "records_flags": {
@@ -20147,6 +20147,29 @@
    "exclude": false,
    "provenance": "unprovable",
    "first_git_seen": "2026-11-08T09:01:32Z",
+   "published_at_timezone": "unknown"
+  },
+  "5d9b9e06fc52bad4e576": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "backfill_proven",
+   "first_git_seen": "2026-11-08T22:03:28Z",
+   "published_at_timezone": "unknown"
+  },
+  "872a88980b8c6edec5c7": {
+   "flags": [
+    "invalid_transcript"
+   ],
+   "exclude": true,
+   "provenance": "unprovable",
+   "first_git_seen": "2026-11-08T22:03:28Z",
+   "published_at_timezone": "unknown"
+  },
+  "6e1a91f9afc0a93c860e": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
    "published_at_timezone": "unknown"
   }
  }
