@@ -37,6 +37,9 @@ ROOT = Path(__file__).resolve().parent
 GOLD = ROOT / "research" / "gold"
 FEED = ROOT / "state" / "research_feed.json"
 SEED, WINDOW = "20261105", ("2026-10-01", "2026-10-31")
+# Frozen inputs (2026-11-09): the sample commit f304de9 was made 2026-11-05T02:46:11Z.
+FROZEN_PRIOR = ROOT / "research" / "gold" / "claims_gold_v4.1_prior_use.json"
+CAPTURED_CUTOFF = "2026-11-05T02:46:11Z"
 V4_SAMPLER_SHA256 = hashlib.sha256((ROOT / "build_gold_v4.py").read_bytes()).hexdigest()
 PRIOR = [f for f in sorted(glob.glob(str(GOLD / "*"))) if Path(f).is_file() and "v4.1" not in Path(f).name] + [
     str(ROOT / "state" / f) for f in (
@@ -56,17 +59,24 @@ def prefilter(feed: list) -> tuple[list, dict]:
     wx = [r for r in feed if r.get("source") == "wenxuecity"]
     byid = {r["id"] for r in wx}
     used_ids, used_urls = set(), set()
-    for f in PRIOR:
-        try:
-            t = Path(f).read_text(encoding="utf-8")
-        except (OSError, UnicodeDecodeError):
-            continue
-        used_urls |= {u.rstrip(",") for u in re.findall(r"https?://[^\s\"'\\]*wenxuecity[^\s\"'\\]*", t)}
-        used_ids |= {i for i in re.findall(r"\b[0-9a-f]{20}\b", t) if i in byid}
+    if FROZEN_PRIOR.exists():
+        # 2026-11-09: the prior-use set as it was at the sample commit (rolling state files are rewritten daily)
+        fz = json.loads(FROZEN_PRIOR.read_text(encoding="utf-8"))
+        used_ids, used_urls = set(fz["used_ids"]) & byid, set(fz["used_urls"])
+    else:
+        for f in PRIOR:
+            try:
+                t = Path(f).read_text(encoding="utf-8")
+            except (OSError, UnicodeDecodeError):
+                continue
+            used_urls |= {u.rstrip(",") for u in re.findall(r"https?://[^\s\"'\\]*wenxuecity[^\s\"'\\]*", t)}
+            used_ids |= {i for i in re.findall(r"\b[0-9a-f]{20}\b", t) if i in byid}
     keep, why = [], Counter()
     for r in wx:
         if r["published_at"][:7] != "2026-10":
             continue
+        if str(r.get("captured_at") or "") > CAPTURED_CUTOFF:
+            continue  # appended to the feed after the sample was drawn: never part of the v4.1 pool
         if r["id"] in used_ids:
             why["id_previously_used"] += 1
         elif r.get("url") in used_urls:  # replies share the thread URL: the thread was already seen
