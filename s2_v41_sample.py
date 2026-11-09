@@ -41,7 +41,10 @@ SEED, WINDOW = "20261105", ("2026-10-01", "2026-10-31")
 FROZEN_PRIOR = ROOT / "research" / "gold" / "claims_gold_v4.1_prior_use.json"
 CAPTURED_CUTOFF = "2026-11-05T02:46:11Z"
 V4_SAMPLER_SHA256 = hashlib.sha256((ROOT / "build_gold_v4.py").read_bytes()).hexdigest()
-PRIOR = [f for f in sorted(glob.glob(str(GOLD / "*"))) if Path(f).is_file() and "v4.1" not in Path(f).name] + [
+# Files from later rounds (v5 and up) are not prior use of v4.1 and must not change its frozen summary.
+_LATER = re.compile(r"_v(?:[5-9]|\d{2,})(?:[._]|$)")
+PRIOR = [f for f in sorted(glob.glob(str(GOLD / "*"))) if Path(f).is_file() and "v4.1" not in Path(f).name
+         and not _LATER.search(Path(f).name)] + [
     str(ROOT / "state" / f) for f in (
         "author_claims_hp.json", "claims_gold_eval.json", "eval_claims_gold_test_v2.json", "eval_claims_gold_test_v3_ce.json",
         "eval_claims_gold_test_v3_hp.json", "eval_claims_gold_v1_ce_dev.json", "eval_claims_gold_v1_hp_dev.json",
@@ -94,9 +97,13 @@ def run() -> dict:
     bg.SEED, bg.WINDOW = SEED, WINDOW  # the only two changes allowed by guideline v1.3 §9
     # the sampler's own gold-URL exclusion, minus this sample's output files (so re-running reproduces it)
     gold = set()
-    for g in sorted(glob.glob(str(GOLD / "*.jsonl"))):
-        if "v4.1" not in Path(g).name:
-            gold |= {json.loads(x).get("url") for x in open(g, encoding="utf-8") if x.strip()} - {None}
+    fz = json.loads(FROZEN_PRIOR.read_text(encoding="utf-8")) if FROZEN_PRIOR.exists() else {}
+    if "gold_urls" in fz:
+        gold = set(fz["gold_urls"])  # frozen: gold files added later (v5, ...) must not change the v4.1 sample
+    else:
+        for g in sorted(glob.glob(str(GOLD / "*.jsonl"))):
+            if "v4.1" not in Path(g).name:
+                gold |= {json.loads(x).get("url") for x in open(g, encoding="utf-8") if x.strip()} - {None}
     posts, test, dev = bg.build(keep, gold, {})
     by_rec = {r["id"]: r for r in keep}
     t_threads = {thread_of(by_rec[i["record_id"]]) for i in test}
