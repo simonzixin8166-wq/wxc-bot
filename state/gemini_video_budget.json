@@ -1221,6 +1221,40 @@
       "skip_authors_403": [
         "Andrei Jikh"
       ]
+    },
+    "2026-11-09": {
+      "calls": 2,
+      "admitted": 0,
+      "rejected": 0,
+      "errors": 2,
+      "reconciliation": {
+        "status": "COMPLETE",
+        "calls_billed": 2,
+        "calls_refunded_503": 0,
+        "detail_rows": 2,
+        "missing_detail_rows": 0,
+        "counter_mismatch": []
+      },
+      "recent": [
+        {
+          "video_id": "87NzxCEUQlw",
+          "outcome": "http_403",
+          "at": "09:44:31Z",
+          "model": "gemini-3.8-flash",
+          "author": "Andrei Jikh",
+          "title": "China Just Shut Down Gold Trading",
+          "detail": "{\"error\":{\"message\":\"The caller does not have permission\",\"code\":\"permission_denied\"}}"
+        },
+        {
+          "video_id": "8DY3zEBTFZ8",
+          "outcome": "exception",
+          "at": "09:47:35Z",
+          "model": "gemini-3.8-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 系统准备重新武装杠杆！MSFT再跌一天修复！半导体、软件，又跷跷板？ CRWV、NBIS、LITE、COHR！AP",
+          "detail": "ReadTimeout"
+        }
+      ]
     }
   },
   "version": 1,
