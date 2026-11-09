@@ -96,7 +96,8 @@ with tempfile.TemporaryDirectory() as td:
 
     # 5. html file ("save page as") -> body only (no nav / comments / script), link from caption
     h = Http()
-    row, said = run({"document": {"file_id": "F1", "file_name": "page.html", "file_size": 5000}, "caption": URL}, h)
+    row, said = run({"document": {"file_id": "F1", "file_name": "page.html", "file_size": 5000},
+                     "caption": "https://blog.wenxuecity.com/myblog/82458/202611/9999.html"}, h)
     assert row["title"] == "测试标题" and row["input"] == "html_file" and row["textpack"] == "stored"
     stored = h.puts[0][1]
     assert BODY in stored and "不是推荐股票" in stored
@@ -120,6 +121,44 @@ with tempfile.TemporaryDirectory() as td:
     row, said = run({"document": {"file_id": "F2", "file_name": "big.html", "file_size": 5_000_000}, "caption": URL}, h)
     assert row is None and h.gets == []
     print("PASS oversized file refused")
+
+
+    # 9. same link again (different formatting of the same article) -> duplicate by URL, nothing stored
+    h = Http()
+    row, said = run({"text": f"/fw {URL}\n{BODY}（另一种排版）"}, h)
+    assert row is None and h.puts == [] and "已经收录" in said[0]
+    print("PASS same link is not stored twice")
+
+    # 10. .md file: link and publish time read from the header, header not part of the body
+    MD = f"# 软件文章\n\n**发布时间**：2026-11-08 08:11:43  \n**原文链接**：https://blog.wenxuecity.com/myblog/82458/202611/5726.html\n\n---\n\n{BODY}md"
+    h = Http(file_bytes=MD.encode("utf-8"))
+    row, said = run({"document": {"file_id": "F3", "file_name": "a.md", "file_size": 3000}}, h)
+    assert row["source_url"].endswith("/202611/5726.html") and row["published_at"] == "2026-11-08 08:11:43"
+    assert row["title"] == "软件文章" and row["input"] == "md_file" and "原文链接" not in h.puts[0][1]
+    print("PASS md file: link and date from header")
+
+    # 11. zip of several md files: each stored once, missing link reported, duplicates skipped, read in memory
+    import io, zipfile
+    buf = io.BytesIO()
+    with zipfile.ZipFile(buf, "w") as z:
+        z.writestr("blog/1.md", MD.replace("5726", "6001").replace("md", "z1"))
+        z.writestr("blog/2.md", MD.replace("5726", "6002").replace("md", "z2"))
+        z.writestr("blog/dup.md", MD)  # 5726 already stored above
+        z.writestr("blog/nolink.md", f"# 无链接\n\n{BODY}x")
+        z.writestr("__MACOSX/._1.md", "junk")
+        z.writestr("blog/img.png", "binary")
+    h = Http(file_bytes=buf.getvalue())
+    res, said = run({"document": {"file_id": "F4", "file_name": "b.zip", "file_size": len(buf.getvalue())}}, h)
+    assert res == {"zip": {"stored": 2, "duplicate": 1, "no_link": 1, "no_text": 0, "failed": 0}, "files": 4}, res
+    assert len(h.puts) == 4 and "新收录 2" in said[0] and "nolink.md" in said[0]
+    assert all(u.startswith("https://api.telegram.org/") for u in h.gets)
+    print("PASS zip: per-article storage, dedup, missing link reported")
+
+    # 12. bad zip refused
+    h = Http(file_bytes=b"not a zip")
+    res, said = run({"document": {"file_id": "F5", "file_name": "c.zip", "file_size": 9}}, h)
+    assert res is None and h.puts == [] and "zip 没有收录" in said[0]
+    print("PASS bad zip refused")
 
     # public index never contains a full body
     for line in idx.read_text(encoding="utf-8").splitlines():
