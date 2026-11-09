@@ -10,7 +10,11 @@ learns every day on its own, and the owner places every order manually. For this
   that never feeds understanding, verification and reusable experience has no value (see the charter's
   "Why we collect" and evidence ladder).
 - Collect legally and incrementally; record source, published_at, first_seen and provenance; never fake real-time.
-- Never persist third-party full text; keep titles, ≤360-char public excerpts, short locators and hashes.
+- Third-party content (Owner 2026-11-09): obtain public content through compliant channels only (official RSS/API,
+  public pages per the site's rules at low frequency, transcripts, filings, Owner forwards/saves). Full text may be
+  kept long-term ONLY in private repos for personal, non-commercial learning and backtesting, never published; public
+  repos and Pages keep titles, ≤360-char excerpts, links and hashes. Never circumvent access controls or paywalls:
+  no proxy/IP rotation, UA spoofing, captcha solving, login-cookie scraping, or caches/archives of blocked content.
 - Flag bad inputs instead of using them (e.g. `state/source_quality_flags.json`: invalid transcripts excluded).
 - Author claims are `experimental_unvalidated` until frozen, unseen tests pass the agreed gate; author
   self-reported trades are never "verified".
