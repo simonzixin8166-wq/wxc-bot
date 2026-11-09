@@ -59,8 +59,9 @@ jobs:
 
       - name: Validate source intelligence
         run: |
-          python -m py_compile research_feed.py transcript_router.py youtube_research.py youtube_provider_health.py daily_close_research.py wxc_tg_agent.py wxc_blog.py wxc_scraper.py
+          python -m py_compile owner_forward.py owner_forward_feed.py research_feed.py transcript_router.py youtube_research.py youtube_provider_health.py daily_close_research.py wxc_tg_agent.py wxc_blog.py wxc_scraper.py
           PYTHONPATH=. python tests/test_research_feed.py
+          PYTHONPATH=. python tests/test_owner_forward_feed.py
           PYTHONPATH=. python tests/test_forum_entry_capture.py
           PYTHONPATH=. python tests/test_forum_anchor_continuity.py
           PYTHONPATH=. python tests/test_forum_persist_before_seen.py
@@ -84,6 +85,15 @@ jobs:
           # unbuffered: a slow or stuck scan shows its progress in the log instead of an empty step
           PYTHONUNBUFFERED: "1"
         run: python daily_close_research.py
+
+      - name: Owner forwards into the research feed (full text read at runtime only; >7 days = backfill)
+        if: always()
+        continue-on-error: true
+        env:
+          DATA_DIR: state
+          TEXTPACK_TOKEN: ${{ secrets.TEXTPACK_TOKEN }}  # same fine-grained token, only the private textpack repo (Owner 11/9)
+          TEXTPACK_REPO: simonzixin8166-wq/myalpha-s2-textpack
+        run: python owner_forward_feed.py
 
       - name: Watched authors on other boards (e.g. 麻你 · tzlc)
         continue-on-error: true
