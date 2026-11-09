@@ -1,0 +1,51 @@
+{
+ "spec": "s2 test set v5 v0.2",
+ "seed": "20261109",
+ "cutoff": "2026-11-09T07:00:00Z",
+ "guideline": "v1.3",
+ "pool": {
+  "C": 58,
+  "A": 920
+ },
+ "prefilter": {
+  "a_prior_use": 517
+ },
+ "test": {
+  "posts": 85,
+  "by_source": {
+   "C": 40,
+   "A": 45
+  },
+  "with_ticker": 45,
+  "by_author": {
+   "BrightLine": 40,
+   "bogbog": 15,
+   "三心三意": 15,
+   "麻你": 15
+  },
+  "chars_median": 113
+ },
+ "dev": {
+  "posts": 63,
+  "by_source": {
+   "C": 18,
+   "A": 45
+  },
+  "with_ticker": 23,
+  "by_author": {
+   "BrightLine": 18,
+   "bogbog": 15,
+   "三心三意": 15,
+   "麻你": 15
+  },
+  "chars_median": 54
+ },
+ "owner_subset": {
+  "posts": 30,
+  "C": 15,
+  "A": 15
+ },
+ "note_a": "A target 60 per set; the 25% author cap allows at most 15 per author, and only authors with enough unused root posts fill it, so A is smaller when few authors qualify",
+ "phase_2": "B (YouTube transcripts, ~22 valid) is added after its transcripts are packed in Actions",
+ "no_full_text_here": true
+}
