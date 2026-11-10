@@ -1,0 +1,98 @@
+{
+ "ce-4 (production)": {
+  "all": {
+   "gold_pairs": 70,
+   "pred_pairs": 37,
+   "matched": 27,
+   "precision": 0.73,
+   "recall": 0.386,
+   "direction_agree": 25
+  },
+  "A": {
+   "gold_pairs": 16,
+   "pred_pairs": 5,
+   "matched": 5,
+   "precision": 1.0,
+   "recall": 0.312,
+   "direction_agree": 5
+  },
+  "C": {
+   "gold_pairs": 54,
+   "pred_pairs": 32,
+   "matched": 22,
+   "precision": 0.688,
+   "recall": 0.407,
+   "direction_agree": 20
+  },
+  "post_level": {
+   "tp": 14,
+   "fp": 1,
+   "fn": 19,
+   "abstain_correct": 51
+  }
+ },
+ "ce-4 hp": {
+  "all": {
+   "gold_pairs": 70,
+   "pred_pairs": 21,
+   "matched": 16,
+   "precision": 0.762,
+   "recall": 0.229,
+   "direction_agree": 14
+  },
+  "A": {
+   "gold_pairs": 16,
+   "pred_pairs": 5,
+   "matched": 5,
+   "precision": 1.0,
+   "recall": 0.312,
+   "direction_agree": 5
+  },
+  "C": {
+   "gold_pairs": 54,
+   "pred_pairs": 16,
+   "matched": 11,
+   "precision": 0.688,
+   "recall": 0.204,
+   "direction_agree": 9
+  },
+  "post_level": {
+   "tp": 9,
+   "fp": 0,
+   "fn": 24,
+   "abstain_correct": 52
+  }
+ },
+ "ce-6 shadow": {
+  "all": {
+   "gold_pairs": 70,
+   "pred_pairs": 39,
+   "matched": 29,
+   "precision": 0.744,
+   "recall": 0.414,
+   "direction_agree": 26
+  },
+  "A": {
+   "gold_pairs": 16,
+   "pred_pairs": 6,
+   "matched": 6,
+   "precision": 1.0,
+   "recall": 0.375,
+   "direction_agree": 5
+  },
+  "C": {
+   "gold_pairs": 54,
+   "pred_pairs": 33,
+   "matched": 23,
+   "precision": 0.697,
+   "recall": 0.426,
+   "direction_agree": 21
+  },
+  "post_level": {
+   "tp": 15,
+   "fp": 1,
+   "fn": 18,
+   "abstain_correct": 51
+  }
+ }
+}
