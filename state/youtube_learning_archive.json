@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-11-09T20:48:45+00:00",
+  "generated_at": "2026-11-10T04:12:39+00:00",
   "mode": "historical_observational_learning_only",
   "non_gating": true,
   "result_blind": true,
@@ -307,8 +307,7 @@
       "promotion_eligible": false,
       "event_score_eligible": false,
       "note": "Historical observational learning only; never admitted to forward evidence or Promotion.",
-      "last_probe_at": "2026-11-02T23:30:31+00:00",
-      "probe_skipped_backoff": true
+      "last_probe_at": "2026-11-10T04:12:37+00:00"
     },
     {
       "archive_id": "yt_hist_df0026934f3eb818",
@@ -318,17 +317,17 @@
       "role": "market_context",
       "url": "https://www.youtube.com/watch?v=gRrHFoDzRHs",
       "quality": "Q5",
-      "provider": "metadata_only",
-      "provider_url": "",
-      "content_origin": "metadata_only",
+      "provider": "pickscribe.com",
+      "provider_url": "https://pickscribe.com/v/gRrHFoDzRHs/",
+      "content_origin": "third_party_transcript",
       "timestamp_evidence": false,
       "rule_candidate_capable_at_source": false,
       "historical_learning_eligible": false,
-      "text_chars_seen": 0,
-      "text_hash": null,
+      "text_chars_seen": 338,
+      "text_hash": "22f7f45c1fb7518f3913082606193852799994c48f2968024071c8974ae3f044",
       "content_filtering": {
         "filter": "youtube_promotion_noise_v1",
-        "input_units": 0,
+        "input_units": 18,
         "removed_units": 0,
         "removed_ratio": 0.0,
         "promotion_noise_detected": false
@@ -343,13 +342,12 @@
       "representative_points": [],
       "claims": [],
       "checkable_claims": 0,
-      "provider_boilerplate": false,
+      "provider_boilerplate": true,
       "forward_evidence_eligible": false,
       "promotion_eligible": false,
       "event_score_eligible": false,
       "note": "Historical observational learning only; never admitted to forward evidence or Promotion.",
-      "last_probe_at": "2026-11-02T23:30:27+00:00",
-      "probe_skipped_backoff": true
+      "last_probe_at": "2026-11-10T04:12:31+00:00"
     },
     {
       "archive_id": "yt_hist_4512706b3e68eac2",
@@ -441,11 +439,10 @@
       "promotion_eligible": false,
       "event_score_eligible": false,
       "note": "Historical observational learning only; retained prior best-quality snapshot after a weaker provider probe. Never admitted to forward evidence or Promotion.",
-      "last_probe_at": "2026-11-02T23:30:29+00:00",
+      "last_probe_at": "2026-11-10T04:12:33+00:00",
       "retained_prior_best_quality": true,
       "last_probe_quality": "Q5",
-      "last_probe_provider": "pickscribe.com",
-      "probe_skipped_backoff": true
+      "last_probe_provider": "pickscribe.com"
     },
     {
       "archive_id": "yt_hist_2f4c135fe4af6ca5",
@@ -567,8 +564,7 @@
       "promotion_eligible": false,
       "event_score_eligible": false,
       "note": "Historical observational learning only; never admitted to forward evidence or Promotion.",
-      "last_probe_at": "2026-11-02T23:29:55+00:00",
-      "probe_skipped_backoff": true
+      "last_probe_at": "2026-11-10T04:12:20+00:00"
     },
     {
       "archive_id": "yt_hist_110d724bc56e9c1e",
@@ -731,8 +727,7 @@
       "promotion_eligible": false,
       "event_score_eligible": false,
       "note": "Historical observational learning only; never admitted to forward evidence or Promotion.",
-      "last_probe_at": "2026-11-02T23:30:02+00:00",
-      "probe_skipped_backoff": true
+      "last_probe_at": "2026-11-10T04:12:24+00:00"
     },
     {
       "archive_id": "yt_hist_29f76dccda3d444a",
@@ -772,8 +767,7 @@
       "promotion_eligible": false,
       "event_score_eligible": false,
       "note": "Historical observational learning only; never admitted to forward evidence or Promotion.",
-      "last_probe_at": "2026-11-02T23:30:39+00:00",
-      "probe_skipped_backoff": true
+      "last_probe_at": "2026-11-10T04:12:38+00:00"
     },
     {
       "archive_id": "yt_hist_e64bcf6eb5b506ed",
@@ -854,8 +848,7 @@
       "promotion_eligible": false,
       "event_score_eligible": false,
       "note": "Historical observational learning only; never admitted to forward evidence or Promotion.",
-      "last_probe_at": "2026-11-02T23:30:43+00:00",
-      "probe_skipped_backoff": true
+      "last_probe_at": "2026-11-10T04:12:39+00:00"
     },
     {
       "archive_id": "yt_hist_89a03e53025bb698",
@@ -936,8 +929,7 @@
       "promotion_eligible": false,
       "event_score_eligible": false,
       "note": "Historical observational learning only; never admitted to forward evidence or Promotion.",
-      "last_probe_at": "2026-11-02T23:30:11+00:00",
-      "probe_skipped_backoff": true
+      "last_probe_at": "2026-11-10T04:12:26+00:00"
     },
     {
       "archive_id": "yt_hist_3d3b40d0b65152ff",
@@ -977,8 +969,7 @@
       "promotion_eligible": false,
       "event_score_eligible": false,
       "note": "Historical observational learning only; never admitted to forward evidence or Promotion.",
-      "last_probe_at": "2026-11-02T23:29:59+00:00",
-      "probe_skipped_backoff": true
+      "last_probe_at": "2026-11-10T04:12:22+00:00"
     },
     {
       "archive_id": "yt_hist_58b3ef66c6c5d7ab",

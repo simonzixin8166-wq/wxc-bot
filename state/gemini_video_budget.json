@@ -1223,15 +1223,15 @@
       ]
     },
     "2026-11-09": {
-      "calls": 4,
+      "calls": 6,
       "admitted": 0,
       "rejected": 0,
-      "errors": 4,
+      "errors": 6,
       "reconciliation": {
         "status": "COMPLETE",
-        "calls_billed": 4,
+        "calls_billed": 6,
         "calls_refunded_503": 0,
-        "detail_rows": 4,
+        "detail_rows": 6,
         "missing_detail_rows": 0,
         "counter_mismatch": []
       },
@@ -1270,6 +1270,24 @@
           "model": "gemini-3.8-flash",
           "author": "RhinoFinance / 视野环球财经",
           "title": "美股 共识预期：半导体无路可退！QQQ、IWM、AMD、META！",
+          "detail": "ReadTimeout"
+        },
+        {
+          "video_id": "PdypXJ5gtKY",
+          "outcome": "exception",
+          "at": "04:09:01Z",
+          "model": "gemini-3.8-flash",
+          "author": "老李玩钱",
+          "title": "半导体和存储，10支热门个股和ETF，买入及加仓建议",
+          "detail": "ReadTimeout"
+        },
+        {
+          "video_id": "Q5xMtR4SWP8",
+          "outcome": "exception",
+          "at": "04:12:04Z",
+          "model": "gemini-3.8-flash",
+          "author": "老李玩钱",
+          "title": "美股高位摇摇欲坠！要回调了？操作上的建议",
           "detail": "ReadTimeout"
         }
       ]
