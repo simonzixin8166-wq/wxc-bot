@@ -119799,9 +119799,141 @@
       "content_sha256": "b0da9a2e4be1bbf63276b17ec489b2bf7ad7bfa8816fad4498e73db383de9cfb",
       "intake_class_hint": "live_candidate",
       "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "9f244404eb5d25ee699d",
+      "source": "youtube",
+      "source_kind": "video",
+      "author": "RhinoFinance / 视野环球财经",
+      "published_at": "2026-08-27",
+      "title": "美股 NVDA业绩强劲，苦新高已久！META官司和解！CRM加速AI转型业绩上调！",
+      "url": "https://www.youtube.com/watch?v=aiO11zglFjc",
+      "excerpt": "[Gemini 视频理解 · 未验证] 本期节目分析了最新发布的美国7月PCE物价指数及二季度GDP修正值。重点解读了META诉讼和解细节、CRM（Salesforce）超预期财报及与Anthropic合作的前瞻影响，以及NVDA（英伟达）二财季财报超预期、毛利率略低于预期但远期指引强劲的估值与技术面走势。\n- [06:48 META watch 581-632] META与美国29州诉讼达成约180亿美元和解，排除监管利空后估值性价比高，但AI变现较慢，短期受压于581-632区间\n- [14:20 CRM bullish 235] CRM Q2业绩与前瞻指引双双超预期，联合Anthropic推出Claudeforce反驳了AI替代论，强压力位在235-277区间\n- [24:40 NVDA bullish ",
+      "content_chars": 775,
+      "semantic_content_chars": 775,
+      "content_filtering": {
+        "filter": "youtube_promotion_noise_v1",
+        "input_units": 13,
+        "removed_units": 0,
+        "removed_ratio": 0.0,
+        "promotion_noise_detected": false
+      },
+      "images_count": 0,
+      "themes_hint": [
+        "趋势确认"
+      ],
+      "symbols": [
+        "CRM",
+        "META",
+        "NVDA"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "captured_at": "2026-11-10T20:51:29Z",
+      "source_role": "rule_supply",
+      "transcript_status": "available",
+      "content_quality": "Q3",
+      "content_provider": "gemini_video",
+      "content_provider_url": "https://www.youtube.com/watch?v=aiO11zglFjc",
+      "content_origin": "gemini_video_understanding",
+      "timestamp_evidence": true,
+      "rule_candidate_allowed": false,
+      "source_notice": "公开视频由 Gemini 读取原片（语音+画面）生成的结构化摘要；观点未验证、不可直接作为规则，等待 Owner 抽查原片核对。",
+      "claims": [
+        {
+          "symbol": "NVDA",
+          "stance": "hold",
+          "stance_cues": [
+            "hold",
+            "bullish"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "1eb734d48c43050ed524cbe6c75dffed52330bcf3b2a22a1a4949029c136fda8",
+          "evidence_chars": 78
+        }
+      ],
+      "claims_status": "experimental_unvalidated",
+      "video_claims": [
+        {
+          "claim": "META与美国29州诉讼达成约180亿美元和解，排除监管利空后估值性价比高，但AI变现较慢，短期受压于581-632区间",
+          "stance": "watch",
+          "price": "581-632",
+          "timestamp": "06:48",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "META",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "CRM Q2业绩与前瞻指引双双超预期，联合Anthropic推出Claudeforce反驳了AI替代论，强压力位在235-277区间",
+          "stance": "bullish",
+          "price": "235",
+          "timestamp": "14:20",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "CRM",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "NVDA Q2营收与EPS均超预期，2028财年营收增速指引升至70%，继续持有看好突破236并创新高",
+          "stance": "bullish",
+          "price": "218",
+          "timestamp": "24:40",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "NVDA",
+          "symbol_check": "listed"
+        }
+      ],
+      "video_claims_model": "gemini-3.5-flash",
+      "video_macro": [
+        {
+          "indicator": "美国7月核心PCE物价指数环比",
+          "value": "0.2%",
+          "expectation": "0.2%",
+          "period": "7月",
+          "timestamp": "00:55"
+        },
+        {
+          "indicator": "美国7月PCE物价指数环比",
+          "value": "0.2%",
+          "expectation": "0.1%",
+          "period": "7月",
+          "timestamp": "01:02"
+        },
+        {
+          "indicator": "美国7月核心PCE物价指数同比",
+          "value": "3.3%",
+          "expectation": "3.3%",
+          "period": "7月",
+          "timestamp": "01:08"
+        },
+        {
+          "indicator": "美国7月PCE物价指数同比",
+          "value": "3.7%",
+          "expectation": "3.6%",
+          "period": "7月",
+          "timestamp": "01:14"
+        },
+        {
+          "indicator": "美国第二季度实际GDP年化季调修正值",
+          "value": "1.5%",
+          "expectation": "1.5%",
+          "period": "第二季度",
+          "timestamp": "02:20"
+        }
+      ],
+      "video_observed_title": "视野环球财经",
+      "validation_status": "pending_owner_spot_check",
+      "forward_evidence_eligible": false
     }
   ],
-  "updated_at": "2026-11-10T20:28:09Z",
+  "updated_at": "2026-11-10T20:51:44Z",
   "retention_policy": "append_only_no_record_count_cap",
   "historical_recovery": {
     "completed_at": "2026-10-07T13:43:06.018028+00:00",

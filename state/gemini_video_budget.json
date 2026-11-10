@@ -1293,15 +1293,15 @@
       ]
     },
     "2026-11-10": {
-      "calls": 2,
-      "admitted": 0,
+      "calls": 4,
+      "admitted": 1,
       "rejected": 0,
-      "errors": 2,
+      "errors": 3,
       "reconciliation": {
         "status": "COMPLETE",
-        "calls_billed": 2,
+        "calls_billed": 4,
         "calls_refunded_503": 0,
-        "detail_rows": 2,
+        "detail_rows": 4,
         "missing_detail_rows": 0,
         "counter_mismatch": []
       },
@@ -1323,6 +1323,23 @@
           "author": "Andrei Jikh",
           "title": "Japan's Money Is Collapsing",
           "detail": "ReadTimeout"
+        },
+        {
+          "video_id": "_lOVieAIvSA",
+          "outcome": "http_403",
+          "at": "20:48:39Z",
+          "model": "gemini-3.8-flash",
+          "author": "Andrei Jikh",
+          "title": "I Let AI Invest My Money For 3 Years",
+          "detail": "{\"error\":{\"message\":\"The caller does not have permission\",\"code\":\"permission_denied\"}}"
+        },
+        {
+          "video_id": "aiO11zglFjc",
+          "outcome": "admitted",
+          "at": "20:51:29Z",
+          "model": "gemini-3.5-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 NVDA业绩强劲，苦新高已久！META官司和解！CRM加速AI转型业绩上调！"
         }
       ]
     }

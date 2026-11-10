@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-11-10T12:43:09Z",
+  "generated_at": "2026-11-10T20:52:25Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -101,7 +101,7 @@
       "discovery_complete": true,
       "latest": {
         "video_id": "6BlwD59AoLM",
-        "title": "The NASDAQ Just Crashed. Here's Why",
+        "title": "Why The Stock Market Just Crashed",
         "url": "https://www.youtube.com/watch?v=6BlwD59AoLM",
         "published_at": "",
         "rss_status": "ok",
@@ -122,9 +122,9 @@
   "pending_retried": 6,
   "content_attempted_this_run": 6,
   "content_work_budget": 6,
-  "content_backlog_after_run": 101,
-  "pending_total": 101,
-  "historical_demoted_from_pending": 0,
+  "content_backlog_after_run": 99,
+  "pending_total": 99,
+  "historical_demoted_from_pending": 1,
   "admitted_from_pending": 0,
   "nonforward_timestamp_unknown_admitted": 0,
   "feed_records_added": 0,
@@ -134,7 +134,7 @@
     "UCGy7SkBjcIAgTiwkXEtPnYg": "ok",
     "UCo2gxyermsLBSCxFHvJs0Zg": "ok"
   },
-  "historical_backlog_total": 59,
+  "historical_backlog_total": 60,
   "discovery_complete": true,
   "new_video_diagnostics": [
     {
@@ -150,8 +150,8 @@
     },
     {
       "author": "Andrei Jikh",
-      "video_id": "Z_xvkbGWauU",
-      "title": "China Just Shut Down Gold Trading",
+      "video_id": "dFjvcY9Tth0",
+      "title": "China Is Preparing For $38,000 Gold",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -161,8 +161,8 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "-e3gyj_NP7c",
-      "title": "美股 科技股、半导体失血！消费股领涨，XLP重要位置！SMH、SOXX完成修复！SPY、QQQ、XLK长线点位更新！",
+      "video_id": "dTQmi_hrOpU",
+      "title": "美股 ORCL缺乏惊喜，ADBE底气不足！SOXX遇阻、IGV破位！CTA触发标普承压，VIX苏醒！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -172,8 +172,8 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "Zl1B2xBExw8",
-      "title": "（会员第301期）买点避雷，减少误判！18条原则，坚决不买！个人经验干货分享！",
+      "video_id": "e3bb4BYnK-E",
+      "title": "（会员第299期）2026年8月10日-21日，重要公司Q2财报后2026、2027前瞻估值，强支撑点位！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -182,9 +182,9 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "Andrei Jikh",
-      "video_id": "ZrYTeawbbR8",
-      "title": "How The Next Financial Crisis Happens",
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "fLKcWY1h45w",
+      "title": "美股 三家巨头呼吁AI发展放缓，半导体暴跌！利好！利空！何去何从？几个思考！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -193,9 +193,9 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "Andrei Jikh",
-      "video_id": "_YXDHskRP6Y",
-      "title": "Here's What Pops This Stock Bubble",
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "fLp8kUbv_u8",
+      "title": "美股 对冲基金低仓位按兵不动！AMD很猛，SOXX临门！金融XLF、医疗XLV！ADBE财报押注！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -208,7 +208,7 @@
     "status": "ok",
     "channel_errors": 0,
     "stuck_high_quality_pending": 0,
-    "provider_waiting_pending": 101,
+    "provider_waiting_pending": 99,
     "stuck_video_ids": [],
     "meaning": "Q1/Q2 text must not remain stuck in pending; Q3-Q5 may legitimately wait for better learning text."
   },

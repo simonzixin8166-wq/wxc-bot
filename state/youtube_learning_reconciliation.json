@@ -1,20 +1,20 @@
 {
   "version": 1,
-  "generated_at": "2026-11-10T12:43:10.038573+00:00",
+  "generated_at": "2026-11-10T20:52:25.976593+00:00",
   "principle": "seen is discovery, not learning; each video is counted once in its highest stage",
   "seen": 214,
   "stages": {
-    "formal_feed_text": 28,
-    "historical_backlog": 50,
-    "metadata_only": 108,
+    "formal_feed_text": 29,
+    "historical_backlog": 51,
+    "metadata_only": 106,
     "pending_unprobed": 2,
     "provider_boilerplate": 25,
     "transcript_readable": 1
   },
   "stages_sum_equals_seen": true,
   "learning_layers": {
-    "text_available": 29,
-    "semantically_understood": 19,
+    "text_available": 30,
+    "semantically_understood": 20,
     "falsifiable_claims_or_rule_capable": 6,
     "matured_outcomes": 0,
     "matured_outcomes_note": "no YouTube claim outcome tracker yet; never inferred"
@@ -26,17 +26,17 @@
       "historical_backlog": 9
     },
     "RhinoFinance / 视野环球财经": {
-      "metadata_only": 47,
-      "formal_feed_text": 18,
+      "metadata_only": 46,
+      "formal_feed_text": 19,
       "pending_unprobed": 2,
       "historical_backlog": 7
     },
     "unknown": {
       "metadata_only": 3,
-      "historical_backlog": 22
+      "historical_backlog": 23
     },
     "老李玩钱": {
-      "metadata_only": 31,
+      "metadata_only": 30,
       "formal_feed_text": 10,
       "historical_backlog": 12,
       "transcript_readable": 1
