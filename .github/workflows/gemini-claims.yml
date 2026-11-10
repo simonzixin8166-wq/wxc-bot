@@ -1,0 +1,76 @@
+name: gemini-claims
+
+# S2 challenger (Owner: Gemini text understanding, free tier, public content only). Manual only. Labels the S2 v5
+# dev or frozen test set with Gemini and scores it against the gold labels. The free tier allows only a few calls a
+# day, so each run resumes from the newest earlier report of the same set (its artifact) and labels only the posts
+# still missing. Shadow: writes no feed or production artifact; the report holds labels and counts, no source text.
+on:
+  workflow_dispatch:
+    inputs:
+      set:
+        description: "dev or test (test = frozen gold v5, measured once)"
+        type: choice
+        options: [test, dev]
+        default: test
+
+permissions:
+  contents: read
+  actions: read   # only to download the previous report artifact of this workflow
+
+concurrency:
+  group: gemini-claims
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      SET: ${{ inputs.set }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - name: Tests
+        run: PYTHONPATH=. python tests/test_gemini_claims.py
+      - name: Fetch the previous report of this set (resume)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p prev
+          for id in $(gh run list -R "$GITHUB_REPOSITORY" --workflow gemini-claims.yml --limit 30 --json databaseId -q '.[].databaseId'); do
+            [ "$id" = "$GITHUB_RUN_ID" ] && continue
+            if gh run download "$id" -R "$GITHUB_REPOSITORY" -n "gemini-claims-$SET" -D prev 2>/dev/null; then
+              echo "resuming from run $id"; break
+            fi
+          done
+          ls -l prev || true
+      - name: Label with Gemini (free tier)
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          TEXTPACK_TOKEN: ${{ secrets.TEXTPACK_TOKEN }}
+          TEXTPACK_REPO: simonzixin8166-wq/myalpha-s2-textpack
+          DATA_DIR: /tmp/gemini_state
+        run: python gemini_claims.py --set "$SET" --resume "prev/gemini_claims_$SET.json" --out "diagnostics/gemini_claims_$SET.json"
+      - name: Summary
+        if: always()
+        run: |
+          python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json, os
+          s = os.environ["SET"]
+          p = f"diagnostics/gemini_claims_{s}.json"
+          if not os.path.exists(p):
+              print("no report"); raise SystemExit
+          d = json.load(open(p))
+          print(f"## Gemini claims challenger · v5 {s} set\n")
+          print(f"- answered {d['answered']}/{d['items']} (complete: {d['complete']}), meta `{json.dumps(d['meta'])}`")
+          print(f"- score vs {d['gold']} on answered posts (post x ticker): `{json.dumps(d['score'])}`")
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: gemini-claims-${{ inputs.set }}
+          path: diagnostics/gemini_claims_${{ inputs.set }}.json
+          retention-days: 90
