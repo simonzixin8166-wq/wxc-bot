@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-11-10T05:00:25.220274+00:00",
+  "generated_at": "2026-11-10T12:43:09.906766+00:00",
   "complete": false,
   "coverage_complete": false,
   "semantic_learning_complete": false,
@@ -59,8 +59,8 @@
     "feed_records": 53,
     "historical_archive_records": 23,
     "historical_semantic_learned": 6,
-    "pending": 102,
-    "historical_backlog": 58,
+    "pending": 101,
+    "historical_backlog": 59,
     "unaccounted": 0,
     "unaccounted_video_ids": [],
     "unresolved_semantic": 160,

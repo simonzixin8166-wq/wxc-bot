@@ -1291,6 +1291,40 @@
           "detail": "ReadTimeout"
         }
       ]
+    },
+    "2026-11-10": {
+      "calls": 2,
+      "admitted": 0,
+      "rejected": 0,
+      "errors": 2,
+      "reconciliation": {
+        "status": "COMPLETE",
+        "calls_billed": 2,
+        "calls_refunded_503": 0,
+        "detail_rows": 2,
+        "missing_detail_rows": 0,
+        "counter_mismatch": []
+      },
+      "recent": [
+        {
+          "video_id": "zKKjpFIIk_I",
+          "outcome": "exception",
+          "at": "12:38:15Z",
+          "model": "gemini-3.8-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 上蹿下跳比猴还快！止跌了没？机构看法！我的仓位变动，CTA更新！ NVDA、AMD、TSM、SPY、QQQ！明天C",
+          "detail": "ReadTimeout"
+        },
+        {
+          "video_id": "YBhwK-VWsxY",
+          "outcome": "exception",
+          "at": "12:41:28Z",
+          "model": "gemini-3.8-flash",
+          "author": "Andrei Jikh",
+          "title": "Japan's Money Is Collapsing",
+          "detail": "ReadTimeout"
+        }
+      ]
     }
   },
   "version": 1,
