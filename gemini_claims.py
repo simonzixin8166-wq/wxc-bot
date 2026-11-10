@@ -3,8 +3,8 @@
 label schema (Owner: Gemini text understanding approved for public content only, free tier, 2026-11-03).
 
 Shadow only: nothing here writes the research feed or any production artifact. It is used to compare against the
-rule extractor (ce-4 / ce-6) on the S2 v5 dev set now, and on the frozen v5 test set once the three-way labels
-are in.
+rule extractor (ce-4 / ce-6) on the S2 v5 dev set and on the frozen v5 test set (gold frozen 2026-11-10, wxc-bot
+#93). The test set is measured once: the prompt is not changed after seeing test results.
 
 Guardrails
 - Off unless GEMINI_API_KEY is set; free tier only. Budget GEMINI_CLAIMS_DAILY_CAP calls per Pacific-time day
@@ -13,7 +13,10 @@ Guardrails
   at runtime from the private textpack). Outputs are labels only: no source text is written anywhere.
 - Every returned label is validated against the v1.3 value sets; anything else is dropped and counted.
 
-  python gemini_claims.py --set dev --out diagnostics/gemini_claims_dev.json   (Actions: workflow_dispatch)
+- The free tier allows only a few calls a day, so a run can resume: --resume <previous report> keeps every
+  answered post and only calls the model for the rest (posts whose answer was "unavailable" are retried).
+
+  python gemini_claims.py --set test --resume prev.json --out diagnostics/gemini_claims_test.json
 """
 from __future__ import annotations
 
@@ -34,11 +37,11 @@ import requests
 ROOT = Path(__file__).resolve().parent
 GOLD = ROOT / "research" / "gold"
 ENDPOINT = "https://generativelanguage.googleapis.com/v1beta/interactions"
-MODELS = [m.strip() for m in os.getenv("GEMINI_CLAIMS_MODELS", "gemini-3.8-flash,gemini-3.5-flash").split(",") if m.strip()]
+MODELS = [m.strip() for m in os.getenv("GEMINI_CLAIMS_MODELS", "gemini-3.5-flash,gemini-3.8-flash").split(",") if m.strip()]
 DAILY_CAP = int(os.getenv("GEMINI_CLAIMS_DAILY_CAP", "80"))
 PAUSE = float(os.getenv("GEMINI_CLAIMS_PAUSE", "5"))
 TIMEOUT = int(os.getenv("GEMINI_CLAIMS_TIMEOUT", "120"))
-VERSION = "gemini-claims-0.1"
+VERSION = "gemini-claims-0.2"
 ENUMS = {"stance": {"buy", "add", "sell", "trim", "hold", "avoid", "bullish", "bearish"},
          "status": {"executed", "planned", "conditional", "opinion"},
          "instrument": {"stock", "sell_put", "covered_call", "leaps", "other"},
@@ -215,17 +218,50 @@ def score(answers: dict, gold: dict) -> dict:
             "direction_agree": sum(1 for k in tp if g[k] & p[k])}
 
 
+GOLD_FILES = {"dev": "claims_gold_dev_v5.claude_first.jsonl", "test": "claims_gold_test_v5.jsonl"}
+
+
+def _load_gold(which: str) -> dict:
+    p = GOLD / GOLD_FILES[which]
+    out = {}
+    for x in p.read_text(encoding="utf-8").splitlines() if p.exists() else []:
+        if x.strip():
+            g = json.loads(x)
+            out[g["item_id"]] = g
+    return out
+
+
+def _load_previous(path: str | None, which: str) -> dict:
+    """Answers from an earlier run of the same set and version; 'unavailable' answers are dropped so they retry."""
+    if not path or not Path(path).exists():
+        return {}
+    try:
+        prev = json.loads(Path(path).read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return {}
+    if prev.get("set") != which or prev.get("version") != VERSION:
+        return {}
+    return {k: v for k, v in (prev.get("answers") or {}).items() if v.get("note") != "unavailable"}
+
+
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--set", choices=("dev",), default="dev")  # the test set is scored only after the 3-way labels
-    ap.add_argument("--out", default="diagnostics/gemini_claims_dev.json")
+    ap.add_argument("--set", choices=("dev", "test"), default="dev")
+    ap.add_argument("--resume", default=None, help="previous report of the same set to continue from")
+    ap.add_argument("--out", default=None)
     a = ap.parse_args(argv)
+    out = a.out or f"diagnostics/gemini_claims_{a.set}.json"
     if not os.getenv("GEMINI_API_KEY"):
         print("GEMINI_API_KEY not set: challenger off")
         return 0
     items = load_set(a.set)
-    answers, meta = {}, {"calls": 0, "unavailable_text": 0, "dropped_labels": 0, "quota_stop": False, "models": {}}
+    answers = _load_previous(a.resume, a.set)
+    resumed = len(answers)
+    meta = {"calls": 0, "resumed": resumed, "unavailable_text": 0, "model_unavailable": 0, "dropped_labels": 0,
+            "quota_stop": False, "models": {}}
     for it in items:
+        if it["item_id"] in answers:
+            continue
         if it["text"] is None:
             meta["unavailable_text"] += 1
             continue
@@ -240,22 +276,20 @@ def main(argv=None) -> int:
         meta["calls"] += 1
         meta["dropped_labels"] += m.get("dropped_labels", 0)
         meta["models"][str(m.get("model"))] = meta["models"].get(str(m.get("model")), 0) + 1
+        if ans.get("note") == "unavailable":
+            meta["model_unavailable"] += 1
         answers[it["item_id"]] = ans
         time.sleep(PAUSE)
-    gold_p = GOLD / "claims_gold_dev_v5.claude_first.jsonl"
-    gold = {}
-    if gold_p.exists():
-        for x in gold_p.read_text(encoding="utf-8").splitlines():
-            if x.strip():
-                g = json.loads(x)
-                gold[g["item_id"]] = g
+    gold = _load_gold(a.set)
+    scored = {k: v for k, v in answers.items() if v.get("note") != "unavailable"}
     rep = {"version": VERSION, "set": a.set, "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-           "items": len(items), "answered": len(answers), "meta": meta,
-           "score_vs_claude_dev": score(answers, {k: v for k, v in gold.items() if k in answers}) if gold else None,
+           "items": len(items), "answered": len(scored), "complete": len(scored) == len(items), "meta": meta,
+           "gold": GOLD_FILES[a.set],
+           "score": score(scored, {k: v for k, v in gold.items() if k in scored}) if gold else None,
            "answers": answers, "production_use": False, "note": "labels only; no source text stored"}
-    Path(a.out).parent.mkdir(parents=True, exist_ok=True)
-    Path(a.out).write_text(json.dumps(rep, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
-    print(json.dumps({k: rep[k] for k in ("items", "answered", "meta", "score_vs_claude_dev")}, ensure_ascii=False))
+    Path(out).parent.mkdir(parents=True, exist_ok=True)
+    Path(out).write_text(json.dumps(rep, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    print(json.dumps({k: rep[k] for k in ("items", "answered", "complete", "meta", "score")}, ensure_ascii=False))
     return 0
 
 

@@ -88,10 +88,29 @@ assert gc._budget()["calls"] >= 4
 s = gc.score({"a": {"labels": [{"symbol": "NBIS", "stance": "buy"}, {"symbol": "X", "stance": "sell"}]}},
              {"a": {"labels": [{"symbol": "NBIS", "stance": "add"}]}})
 assert s == {"gold_pairs": 1, "pred_pairs": 2, "matched": 1, "precision": 0.5, "recall": 1.0, "direction_agree": 1}
-# only the dev set can be run before the three-way test labels exist
-try:
-    gc.main(["--set", "test"])
-    raise AssertionError
-except SystemExit:
-    pass
-print("PASS budget, scoring, test set locked")
+print("PASS budget, scoring")
+
+# resume: answered posts are kept, 'unavailable' ones retried, a different set or version is ignored
+assert gc.MODELS[0] == "gemini-3.5-flash"
+d = tempfile.mkdtemp()
+gc.load_set = lambda which: [{"item_id": i, "source": "A", "title": "t", "text": "x"} for i in ("p1", "p2", "p3")]
+called = []
+gc.label_post = lambda title, text: (called.append(1) or ({"labels": [], "ambiguous": False, "note": None, "reply_role": None},
+                                                         {"model": "gemini-3.5-flash", "dropped_labels": 0}))
+prev = Path(d) / "prev.json"
+prev.write_text(json.dumps({"version": gc.VERSION, "set": "test", "answers": {
+    "p1": {"labels": [{"symbol": "NBIS", "stance": "buy"}], "note": None},
+    "p2": {"labels": [], "note": "unavailable"}}}))
+out = Path(d) / "out.json"
+assert gc.main(["--set", "test", "--resume", str(prev), "--out", str(out)]) == 0
+r = json.loads(out.read_text())
+assert len(called) == 2 and r["meta"]["resumed"] == 1 and r["answered"] == 3 and r["complete"], r
+assert r["answers"]["p1"]["labels"][0]["symbol"] == "NBIS" and r["gold"] == "claims_gold_test_v5.jsonl"
+called.clear()
+prev.write_text(json.dumps({"version": "gemini-claims-0.1", "set": "test", "answers": {"p1": {"labels": [], "note": None}}}))
+gc.main(["--set", "test", "--resume", str(prev), "--out", str(out)])
+assert len(called) == 3, "an older version must not be resumed"
+called.clear()
+gc.main(["--set", "dev", "--resume", str(out), "--out", str(Path(d) / "dev.json")])
+assert len(called) == 3, "a report of another set must not be resumed"
+print("PASS resume keeps answered posts, retries unavailable, ignores other set/version")
