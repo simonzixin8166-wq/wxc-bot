@@ -150,7 +150,12 @@ def label_post(title: str, text: str, post=None) -> tuple[dict, dict]:
         if i:
             time.sleep(PAUSE)
         _budget(1)
-        r = post(ENDPOINT, json={"model": model, "input": [{"type": "text", "text": prompt}]}, timeout=TIMEOUT, headers=headers)
+        try:
+            r = post(ENDPOINT, json={"model": model, "input": [{"type": "text", "text": prompt}]}, timeout=TIMEOUT,
+                     headers=headers)
+        except requests.RequestException as e:  # a timeout or dropped connection skips to the next model, not the run
+            last = type(e).__name__
+            continue
         last = r.status_code
         if r.status_code == 429:
             raise RuntimeError("quota")
