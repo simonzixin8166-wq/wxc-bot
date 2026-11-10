@@ -57,7 +57,7 @@
   "unresolved_entries_total": 0,
   "feed_records_added": 0,
   "guardrail": "complete requires both continuity to the prior anchor and durable processing of every newly visible entry. Unresolved entries keep the batch partial, block anchor advancement, and prevent Genuine Forward admission.",
-  "blocked_at": "2026-11-09T01:51:30.310281+00:00",
+  "blocked_at": "2026-11-10T04:16:15.877014+00:00",
   "blocked_reason": "site refused requests (consecutive HTTP failures); no bypass attempted",
   "blocked_detail": "连续请求失败 5 次,疑似被限制,已停止。请稍后再试。",
   "first_blocked_at": "2026-11-02T07:36:17.945345+00:00"
