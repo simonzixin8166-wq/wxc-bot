@@ -188,3 +188,75 @@ def extract_claims_hp(text: str, limit: int = 30) -> list[dict]:
             if len(out) >= limit:
                 return out
     return out
+
+
+# ---------------------------------------------------------------------------------------------------------------
+# ce-6 (2026-11-10, S2 v5 dev set only; production still calls extract_claims = ce-4 until the frozen v5 test
+# set has measured ce-6 and the Owner approves). Fixes found on the v5 dev set (claude/s2_v5/dev_baseline_notes):
+#   - colloquial forum views: target prices, "跌到 X 是好事", "可以的价格", "near the top / 向下概率更高", "look for X to reach"
+#   - short posts state the ticker once (title) and the view in another sentence: carry the single ticker
+#   - historical or hypothetical sentences (a past year, "如果是…买进") without the author are not claims
+CE6_VERSION = "ce-6"
+CE6_EXTRA_CUES = [
+    ("bullish", r"目标价?\s*(?:依然|仍然|还是)?\s*(?:是|在)?\s*\$?\d|目标是\s*\$?\d|是好事|还可以的价格|可以的价格|价格不错|"
+                r"look for .{0,20}to reach|don'?t see anything wrong|最靓仔|会有个?\s*hard bounce"),
+    ("bearish", r"local top|near the top|接近.{0,4}顶|向下的?概率比向上的?高|跌的机率更大|跌的概率更大|涨幅有限|不是\s*buy"),
+]
+CE6_CONDITIONAL = CONDITIONAL + r"|到时候|到时"
+CE6_EXTRA_TICKERS = ("SPX",)
+HISTORICAL = r"(?<!\d)(?:19\d{2}|20(?:0\d|1\d|2[0-4]))\s*年|如果是.{0,12}(?:买进|买入|买的)|假设|打个比方|举个例子|比如说"
+CE6_FIRST_PERSON = r"我|俺|本人|(?<![A-Za-z])I(?![A-Za-z])|(?<![A-Za-z])my(?![A-Za-z])"
+
+
+def _ce6_symbols(s: str) -> list[str]:
+    syms = symbols_in(s)
+    syms += [t for t in CE6_EXTRA_TICKERS if re.search(rf"(?<![A-Za-z0-9]){t}(?![A-Za-z0-9])", s) and t not in syms]
+    return syms
+
+
+def _ce6_stances(s: str) -> list[str]:
+    low = s.lower()
+    # extra colloquial cues are checked first: "目标价 1400" or "不是 buy 的时候" must not fall to the generic buy cue
+    extra = [name for name, pat in CE6_EXTRA_CUES if re.search(pat, low, re.I)]
+    base = [name for name, pat in STANCE_CUES if re.search(pat, low, re.I)]
+    if extra and "bearish" in extra:
+        base = [b for b in base if b not in ("buy", "add")]
+    return list(dict.fromkeys(extra + base))
+
+
+def extract_claims_v6(text: str, limit: int = 30, carry_max_chars: int = 600) -> list[dict]:
+    sents = sentences(text)
+    post_syms = list(dict.fromkeys(x for s in sents for x in _ce6_symbols(s)))
+    carry = post_syms[0] if len(post_syms) == 1 and len(text or "") <= carry_max_chars else None
+    claims, seen = [], set()
+    for s in sents:
+        stances = _ce6_stances(s)
+        if not stances:
+            continue
+        syms = _ce6_symbols(s)
+        source = "text"
+        if not syms and carry:
+            syms, source = [carry], "context"
+        if not syms:
+            continue
+        if re.search(THIRD_PARTY, s) and not re.search(CE6_FIRST_PERSON, s):
+            continue
+        if re.search(HISTORICAL, s) and not re.search(CE6_FIRST_PERSON, s):
+            continue  # a past-year story or a hypothetical calculation, not the author's view
+        low = s.lower()
+        horizon = next((h for h, pat in HORIZON if re.search(pat, low, re.I)), None)
+        price = re.search(PRICE, s, re.I)
+        digest = hashlib.sha256(s.encode("utf-8")).hexdigest()
+        for sym in syms:
+            key = (sym, stances[0], digest)
+            if key in seen:
+                continue
+            seen.add(key)
+            claims.append({"symbol": sym, "stance": stances[0], "stance_cues": stances[:3], "horizon": horizon,
+                           "conditional": bool(re.search(CE6_CONDITIONAL, low, re.I)),
+                           "question": s.rstrip().endswith(("?", "？", "吗")),
+                           "price": float(price.group(1)) if price else None, "ticker_source": source,
+                           "evidence_sha256": digest, "evidence_chars": len(s), "extractor": CE6_VERSION})
+            if len(claims) >= limit:
+                return claims
+    return claims
