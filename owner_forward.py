@@ -5,7 +5,9 @@ The Owner reads a public article in his own browser and forwards it to the Teleg
   /fw <link>            followed by the article text (same message), or
   an .html / .htm / .txt file ("save page as"), with the link in the caption, or
   a .md / .txt file whose header carries 原文链接 (link read from the file), or
-  a .zip of such files (read in memory; each article needs its own 原文链接 line).
+  a .zip of such files (read in memory; each article needs its own 原文链接 line), or
+  forum topic .md files exported by the Owner (single or zipped) -> owner_forum_export (one entry per target-author
+  utterance; Owner 2026-11-10).
 
 What happens:
 - Full text goes ONLY to the dedicated private repo TEXTPACK_REPO (token TEXTPACK_TOKEN, scoped to that repo) and is
@@ -32,6 +34,8 @@ from urllib.parse import urlsplit, urlunsplit
 
 import requests
 from bs4 import BeautifulSoup
+
+import owner_forum_export as forum
 
 MAX_EXCERPT = 360
 MIN_BODY_CHARS = 80          # less than this after removing the link = "link only"
@@ -229,6 +233,16 @@ def handle(msg: dict, say, tg_api: str = "", tg_file_base: str = "", http=reques
             return None
         counts = {"stored": 0, "duplicate": 0, "no_link": 0, "no_text": 0, "failed": 0}
         problems = []
+        topics = [(f, b) for f, b in members if f.lower().endswith(".md") and forum.is_topic(b)]
+        fc, fseen = {"new": 0, "duplicate": 0, "failed": 0, "entries": 0, "title_only": 0, "body_missing": 0}, forum.existing()
+        for fname, body in topics:
+            for k, v in forum.ingest_topic(body, retrieved_at, now, http, fseen, "zip:forum_topic_md").items():
+                fc[k] += v
+        members = [m for m in members if m not in topics]
+        if topics:
+            say(forum.summary_zh(len(topics), fc))
+            if not members:
+                return {"forum_zip": fc, "topics": len(topics)}
         for fname, body in members:
             title, furl, published, text, kind = _parse_file(fname, body, None)
             outcome, _row = _ingest(text, title, furl, published, "zip:" + kind, retrieved_at, now, http, seen, seen_urls)
@@ -242,6 +256,11 @@ def handle(msg: dict, say, tg_api: str = "", tg_file_base: str = "", http=reques
             + "\n全文只存私有仓库，公开仓库只记标题、摘录、链接和哈希。")
         return {"zip": counts, "files": len(members)}
 
+    if name.lower().endswith(".md") and forum.is_topic(data.decode("utf-8", errors="replace")):
+        fc = forum.ingest_topic(data.decode("utf-8", errors="replace"), retrieved_at, now, http, forum.existing(),
+                                "forum_topic_md")
+        say(forum.summary_zh(1, fc))
+        return {"forum": fc}
     title, furl, published, text = _parse_file(name, data.decode("utf-8", errors="replace"), url)[:4]
     kind = _parse_file(name, "", None)[4]
     outcome, row = _ingest(text, title, furl, published, kind, retrieved_at, now, http, seen, seen_urls)

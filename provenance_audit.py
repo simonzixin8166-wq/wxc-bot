@@ -81,8 +81,9 @@ def main():
         if not recorded:
             cls[c] += 1
     unrec = [x for x in rows if not x["recorded_provenance"]]
-    # Owner forwards within 7 days are live by Owner decision (2026-11-09); forward scoring starts at captured_at.
-    timely_fw = {r["id"] for r in feed if r.get("capture_mode") == "owner_forward_timely"
+    # Owner forwards / forum exports within 7 days are live by Owner decision (2026-11-09); forward scoring starts at captured_at.
+    # Same rule for the Owner's own forum exports (2026-11-10).
+    timely_fw = {r["id"] for r in feed if r.get("capture_mode") in ("owner_forward_timely", "owner_forum_export_timely")
                  and (r.get("publication_lag_hours") or 0) <= 7 * 24}
     conflict = [x["id"] for x in rows if x["recorded_provenance"] in ("live_candidate", "scheduled_board_anchor_scan")
                 and x["derived_provenance"] == "backfill_proven" and x["id"] not in timely_fw]
