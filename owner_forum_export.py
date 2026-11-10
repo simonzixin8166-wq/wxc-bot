@@ -221,3 +221,61 @@ def summary_zh(topics: int, c: dict) -> str:
             f"其中只有标题（0 字节，标题即全文）{c['title_only']} 条，正文未导出 {c['body_missing']} 条（只按标题理解，不猜正文）。"
             + (f"\n⚠️ {c['failed']} 个话题没有存进私有仓库（TEXTPACK_TOKEN？），下次重发即可。" if c["failed"] else "")
             + "\n全文只存私有仓库；公开仓库只记标题、摘录、链接和哈希。")
+
+
+# ---------------------------------------------------------------- structured export (index/posts.jsonl), Owner 2026-11-10
+def is_index_bundle(names: list[str]) -> bool:
+    return any(n.endswith("posts.jsonl") for n in names)
+
+
+def _hm(t: str | None) -> tuple[str, str]:
+    t = (t or "").replace("T", " ")
+    return t[:16], (t[5:16] if len(t) >= 16 else "")
+
+
+def topics_from_index(posts_jsonl: str) -> tuple[list[str], list[dict]]:
+    """Rebuild topic files (the same layout as the .md export) from posts.jsonl, so both formats share one parser,
+    one dedupe (post_id) and one storage path. Returns (topic markdown list, non-forum rows such as blog posts)."""
+    rows, other = [], []
+    for line in posts_jsonl.splitlines():
+        if not line.strip():
+            continue
+        p = json.loads(line)
+        if str(p.get("source") or "").startswith("blog") or not p.get("topic_id"):
+            other.append(p)
+            continue
+        rows.append(p)
+    by_topic: dict[str, list[dict]] = {}
+    for p in rows:
+        by_topic.setdefault(str(p["topic_id"]), []).append(p)
+    out = []
+    for tid, ps in by_topic.items():
+        root = next((p for p in ps if str(p.get("post_id")) == tid or int(p.get("depth") or 0) == 0), None)
+        if not root:
+            continue
+        kids: dict[str, list[dict]] = {}
+        for p in ps:
+            if p is not root:
+                kids.setdefault(str(p.get("parent_id")), []).append(p)
+        targets = sorted({p["author"] for p in ps if p.get("is_target")})
+        full, _ = _hm(root.get("time"))
+        body = (root.get("body") or "").strip()
+        lines = [f"# {root.get('title') or ''}", "",
+                 f"- **楼主**：{root['author']}　**时间**：{full}" if full else f"- **楼主**：{root['author']}",
+                 f"- **参与的目标用户**：{', '.join(targets)}", f"- **链接**：{root['url']}",
+                 f"- **跟帖数**：{len(ps) - 1}", "", "## 主帖", "",
+                 body or ("（无正文，标题即内容）" if int(root.get("bytes") or 0) == 0 else "（正文为空）"), "", "## 跟帖", ""]
+
+        def walk(pid: str, depth: int):
+            for c in sorted(kids.get(pid, []), key=lambda x: (str(x.get("time") or ""), str(x.get("post_id")))):
+                ind = "  " * (depth - 1)
+                who = f"**{c['author']}** ⭐" if c.get("is_target") else c["author"]
+                size = f" ({int(c['bytes'])} bytes)" if int(c.get("bytes") or 0) > 0 else ""
+                lines.append(f"{ind}- [{c.get('title') or ''}]({c['url']}) — {who} {_hm(c.get('time'))[1]}{size}")
+                for bl in (c.get("body") or "").splitlines():
+                    if bl.strip():
+                        lines.append(f"{ind}  > {bl}")
+                walk(str(c["post_id"]), depth + 1)
+        walk(tid, 1)
+        out.append("\n".join(lines) + "\n")
+    return out, other

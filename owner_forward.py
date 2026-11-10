@@ -41,7 +41,7 @@ MAX_EXCERPT = 360
 MIN_BODY_CHARS = 80          # less than this after removing the link = "link only"
 MAX_FILE_BYTES = 3_000_000
 DOC_EXT = (".html", ".htm", ".txt", ".md", ".zip")
-ZIP_EXT = (".html", ".htm", ".txt", ".md")
+ZIP_EXT = (".html", ".htm", ".txt", ".md", ".jsonl", ".json")
 MAX_ZIP_FILES = 300
 MAX_ZIP_UNCOMPRESSED = 30_000_000
 URL_RE = re.compile(r"https?://[^\s<>\"'，。）)]+")
@@ -234,13 +234,26 @@ def handle(msg: dict, say, tg_api: str = "", tg_file_base: str = "", http=reques
         counts = {"stored": 0, "duplicate": 0, "no_link": 0, "no_text": 0, "failed": 0}
         problems = []
         topics = [(f, b) for f, b in members if f.lower().endswith(".md") and forum.is_topic(b)]
+        blog_rows = []
+        if forum.is_index_bundle([f for f, _ in members]):
+            # structured export (index/posts.jsonl + topics.jsonl + manifest.json): rebuilt into topic files
+            pj = next(b for f, b in members if f.endswith("posts.jsonl"))
+            mds, blog_rows = forum.topics_from_index(pj)
+            topics += [(f"index/topic_{i}.md", md) for i, md in enumerate(mds)]
+            members = [m for m in members if not m[0].lower().endswith((".jsonl", ".json"))]
         fc, fseen = {"new": 0, "duplicate": 0, "failed": 0, "entries": 0, "title_only": 0, "body_missing": 0}, forum.existing()
         for fname, body in topics:
             for k, v in forum.ingest_topic(body, retrieved_at, now, http, fseen, "zip:forum_topic_md").items():
                 fc[k] += v
-        members = [m for m in members if m not in topics]
+        members = [m for m in members if m not in topics and not m[0].lower().endswith((".jsonl", ".json"))]
+        for b in blog_rows:  # blog articles in the structured export: same path as a forwarded article
+            outcome, _r = _ingest((b.get("body") or "").strip(), b.get("title"), canonical(b.get("url") or "") or None,
+                                  str(b.get("time") or "").replace("T", " ")[:19] or None, "zip:index_blog",
+                                  retrieved_at, now, http, seen, seen_urls)
+            fc["blog_" + ("stored" if outcome == "stored" else "skipped")] = fc.get("blog_" + ("stored" if outcome == "stored" else "skipped"), 0) + 1
         if topics:
-            say(forum.summary_zh(len(topics), fc))
+            say(forum.summary_zh(len(topics), fc) + (f"\n博客文章 {len(blog_rows)} 篇：新收录 {fc.get('blog_stored', 0)}，"
+                                                      f"跳过 {fc.get('blog_skipped', 0)}（重复、缺链接或正文太短）。" if blog_rows else ""))
             if not members:
                 return {"forum_zip": fc, "topics": len(topics)}
         for fname, body in members:

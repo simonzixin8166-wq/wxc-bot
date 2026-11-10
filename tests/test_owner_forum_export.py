@@ -149,3 +149,35 @@ print("PASS feed: forum records with thread context; >7 days = backfill; existin
 os.environ.pop("TEXTPACK_TOKEN")
 assert fe._store("s2_v5_textpack/F_owner_forum/x.md", TOPIC, Http()).startswith("unavailable")
 print("PASS no token: full text not stored anywhere")
+
+# ---- structured export (index/posts.jsonl): same entries, same dedupe as the .md export
+os.environ["TEXTPACK_TOKEN"] = "t"
+P = [
+    {"post_id": "1000", "topic_id": "1000", "parent_id": None, "depth": 0, "author": "路人甲", "time": "2026-11-05T07:21",
+     "title": "今天大盘怎么看", "bytes": 0, "body": "", "url": "https://bbs.wenxuecity.com/cfzh/1000.html", "source": "cfzh",
+     "is_target": False, "body_status": "title_only"},
+    {"post_id": "1001", "topic_id": "1000", "parent_id": "1000", "depth": 1, "author": "作者A", "time": "2026-11-05T07:30",
+     "title": "我今天加仓了 NVDA", "bytes": 0, "body": "", "url": "https://bbs.wenxuecity.com/cfzh/1001.html",
+     "source": "cfzh", "is_target": True, "body_status": "title_only"},
+    {"post_id": "1006", "topic_id": "1000", "parent_id": "1001", "depth": 2, "author": "作者A", "time": "2026-11-05T09:00",
+     "title": "补充", "bytes": 60, "body": "回答:\n问\n由\n路人乙\n于\n2026-11-05 08:59:00\n第二档 150 也挂了", "source": "cfzh",
+     "url": "https://bbs.wenxuecity.com/cfzh/1006.html", "is_target": True, "body_status": "ok"},
+    {"post_id": "blog-1", "topic_id": None, "depth": 0, "author": "blog 1", "source": "blog_1", "title": "测试",
+     "body": "太短", "url": "https://blog.wenxuecity.com/myblog/1/202611/1.html", "time": "2026-11-09T08:00:00",
+     "is_target": True, "body_status": "ok"},
+]
+mds, other = fe.topics_from_index("".join(json.dumps(p, ensure_ascii=False) + "\n" for p in P))
+assert len(mds) == 1 and len(other) == 1
+E2 = {e["post_id"]: e for e in fe.parse_topic(mds[0])["entries"]}
+assert set(E2) == {"1001", "1006"} and E2["1006"]["text"] == "补充\n第二档 150 也挂了" and E2["1006"]["parent"]["post_id"] == "1001"
+buf = io.BytesIO()
+with zipfile.ZipFile(buf, "w") as z:
+    z.writestr("index/posts.jsonl", "".join(json.dumps(p, ensure_ascii=False) + "\n" for p in P))
+    z.writestr("index/topics.jsonl", "{}\n")
+    z.writestr("index/manifest.json", "{}")
+ZIP = buf.getvalue()
+said.clear()
+out = fw.handle(msg, said.append, "https://tg", "https://tgf", http=Http())
+assert out["forum_zip"]["new"] == 1 and out["forum_zip"]["duplicate"] == 1, out   # 1001 came in with the .md export
+assert "博客文章 1 篇：新收录 0" in said[-1], said
+print("PASS structured export: rebuilt into topics, deduped by post_id with the .md export, short blog text refused")
