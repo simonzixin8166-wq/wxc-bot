@@ -64,6 +64,26 @@ ans, meta = gc.label_post("t", "x", post=post_503_then_ok)
 assert calls == gc.MODELS[:2] and ans["labels"] == [] and meta["model"] == gc.MODELS[1]
 print("PASS busy model falls back")
 
+def post_timeout(url, json=None, timeout=None, headers=None):
+    raise gc.requests.exceptions.ReadTimeout("slow")
+
+
+ans, meta = gc.label_post("t", "x", post=post_timeout)
+assert ans["note"] == "unavailable" and meta == {"model": None, "status": "ReadTimeout"}
+calls.clear()
+
+
+def post_timeout_then_ok(url, json=None, timeout=None, headers=None):
+    calls.append(json["model"])
+    if len(calls) == 1:
+        raise gc.requests.exceptions.ConnectionError("reset")
+    return reply({"labels": [], "note": None})
+
+
+ans, meta = gc.label_post("t", "x", post=post_timeout_then_ok)
+assert meta["model"] == gc.MODELS[1] and meta["status"] == 200
+print("PASS timeout falls back, never kills the run")
+
 assert gc._budget()["calls"] >= 4
 s = gc.score({"a": {"labels": [{"symbol": "NBIS", "stance": "buy"}, {"symbol": "X", "stance": "sell"}]}},
              {"a": {"labels": [{"symbol": "NBIS", "stance": "add"}]}})
