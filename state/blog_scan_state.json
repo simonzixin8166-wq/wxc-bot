@@ -2,7 +2,7 @@
   "authors": {
     "BrightLine": {
       "last_success_at": "2026-10-31T17:43:24.455343+00:00",
-      "last_attempt_at": "2026-11-10T04:16:15.877621+00:00",
+      "last_attempt_at": "2026-11-11T02:07:33.004100+00:00",
       "scan_complete": false,
       "recovery_days_used": 14,
       "new_records": 0,
@@ -31,7 +31,7 @@
     },
     "yifan99": {
       "last_success_at": "2026-10-31T17:43:24.455343+00:00",
-      "last_attempt_at": "2026-11-10T04:16:15.877621+00:00",
+      "last_attempt_at": "2026-11-11T02:07:33.004100+00:00",
       "scan_complete": false,
       "recovery_days_used": 14,
       "new_records": 0,
@@ -60,7 +60,7 @@
     },
     "麻你": {
       "last_success_at": "2026-10-31T17:43:24.455343+00:00",
-      "last_attempt_at": "2026-11-10T04:16:15.877621+00:00",
+      "last_attempt_at": "2026-11-11T02:07:33.004100+00:00",
       "scan_complete": false,
       "recovery_days_used": 14,
       "new_records": 0,
@@ -89,6 +89,6 @@
     }
   },
   "version": 1,
-  "updated_at": "2026-11-10T04:16:15.877621+00:00",
+  "updated_at": "2026-11-11T02:07:33.004100+00:00",
   "policy": "recovery window expands from the last complete scheduled scan; failed archive months or parsed URLs missing from canonical feed do not advance last_success_at; article discovery has no count cap"
 }
