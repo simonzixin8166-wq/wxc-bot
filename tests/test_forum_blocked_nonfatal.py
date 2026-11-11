@@ -6,6 +6,8 @@ from pathlib import Path
 
 tmp = Path(tempfile.mkdtemp())
 os.environ["FORUM_STATUS"] = str(tmp / "forum_source_status.json")
+import wxc_access_policy  # noqa: E402
+wxc_access_policy.PAUSE_UNTIL = "2000-01-01"  # covers behaviour when access is allowed (after the Owner's pause)
 import daily_close_research as d  # noqa: E402
 
 d.FORUM_STATUS = tmp / "forum_source_status.json"
