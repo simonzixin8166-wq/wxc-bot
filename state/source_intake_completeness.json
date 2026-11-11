@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-11-11T01:58:15.231489+00:00",
+  "generated_at": "2026-11-11T03:06:06.039158+00:00",
   "complete": false,
   "coverage_complete": false,
   "semantic_learning_complete": false,
@@ -9,7 +9,7 @@
     "continuity_proven": true,
     "anchor_id": "118755",
     "previous_anchor_id": "118676",
-    "status": "blocked"
+    "status": "paused_by_owner"
   },
   "blogs": {
     "complete": false,

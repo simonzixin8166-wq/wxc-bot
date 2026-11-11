@@ -26,7 +26,7 @@
     }
   ],
   "next_scan_pages": 8,
-  "status": "blocked",
+  "status": "paused_by_owner",
   "anchor_found": true,
   "reached_end": false,
   "continuity_proven": true,
@@ -60,5 +60,8 @@
   "blocked_at": "2026-11-11T02:07:33.003344+00:00",
   "blocked_reason": "site refused requests (consecutive HTTP failures); no bypass attempted",
   "blocked_detail": "连续请求失败 5 次,疑似被限制,已停止。请稍后再试。",
-  "first_blocked_at": "2026-11-02T07:36:17.945345+00:00"
+  "first_blocked_at": "2026-11-02T07:36:17.945345+00:00",
+  "paused_until": "2027-05-11",
+  "reason": "Owner 2026-11-11: Wenxuecity refuses MyAlpha; no requests for at least six months",
+  "paused_checked_at": "2026-11-11T03:06:05.365958+00:00"
 }
