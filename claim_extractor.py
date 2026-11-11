@@ -260,3 +260,97 @@ def extract_claims_v6(text: str, limit: int = 30, carry_max_chars: int = 600) ->
             if len(claims) >= limit:
                 return claims
     return claims
+
+
+# ---------------------------------------------------------------- ce-7 (shadow, forum-aware), 2026-11-11
+# Built ONLY on the forum DEV set (474 Owner-exported utterances, Claude labels; claude/forum diagnosis 11/11).
+# Production stays on ce-4; ce-7 is measured once on a future forum test set (later exports) before any decision.
+#   - forum replies are short: a one-line reply ("加仓qqq") is a sentence even under 6 chars
+#   - the ticker often lives only in the post being answered: if the reply names no ticker and the parent title
+#     names exactly one, carry it (ticker_source=context). Context never adds a claim the reply does not make.
+#   - colloquial / English trade wording: 进 / 买回 / 被止损 / 退出来 / sold … put / 卖…葡萄 / long hold / not selling /
+#     我的 X / good entry / it's a buy / short target …
+#   - advice to "you" in a hypothetical ("如果你在300卖掉…") is not the author's claim
+CE7_VERSION = "ce-7"
+CE7_CUES = [
+    ("bullish", r"sold\s.{0,30}?puts?\b|sell\s.{0,30}?puts?\b|卖(?:出)?的?.{0,10}(?:葡萄|put)|接(?:正)?股"),
+    ("hold", r"long hold|not selling|no way i am going to (?:close|sell)|长仓|长持|不会动|不动(?:它|他)|握着不卖|拿着|不打算卖|还不打算卖|"
+             r"找不到卖的理由|卖(?:出)?的?\s*cc\b|covered calls?|我的\s*\$?[A-Za-z]{2,5}(?:股票)?|最大仓|i still have"),
+    ("sell", r"被止损|止损了|退出来|sold\b|sell (?:another|all|my|half)|全卖了|卖掉|应该去掉|去掉的"),
+    ("buy", r"(?:又|再|我|先)进(?!行|步|一步|展|度|化|口|来)|进的|\d\s*(?:又)?进(?!行|步|展|度)|买回|买着|买进|新买|buying|buy buy|"
+            r"it'?s a buy|good entry|准备进去|进去搞|可以加|盘前会加|买入小股"),
+    ("add", r"又加|也加|再加|加了|今天也加仓|加\s*\$?[A-Z]{2,5}"),
+    ("bearish", r"short target|最后需要考虑|回到.{0,8}以下都不是不可能|调整到.{0,8}才合理|破\s*\d+.{0,10}机率大"),
+    ("bullish", r"合理估值|合理的?价位|非常合理|bottom is in|肯定涨|只是需要时间|没那么悲观|priced in|long term\b|更安全|安全一点|"
+                r"假摔|park money|值那么多|could be a meaningful"),
+]
+YOU_HYPOTHETICAL = r"如果你|你如果|要是你|假如你|if you\b"
+# real US tickers seen in forum talk that the feed whitelist lacks (uppercase-only: identifiers, not stance cues)
+CE7_EXTRA_TICKERS = ("TMF", "TLT", "SKHY", "LRCX", "GEV", "VRT", "STX", "WDC", "SITM")
+
+
+def _ce7_symbols(s: str) -> list[str]:
+    syms = _ce6_symbols(s)
+    syms += [t for t in CE7_EXTRA_TICKERS if re.search(rf"(?<![A-Za-z0-9]){t}(?![A-Za-z0-9])", s) and t not in syms]
+    return syms
+
+
+def _ce7_sentences(text: str) -> list[str]:
+    s = sentences(text)
+    t = re.sub(r"\s+", " ", text or "").strip()
+    return s or ([t] if t else [])
+
+
+def _ce7_stances(s: str) -> list[str]:
+    low = s.lower()
+    seven = [name for name, pat in CE7_CUES if re.search(pat, s, re.I)]
+    six = _ce6_stances(s)
+    if "bullish" in seven and re.search(r"put|葡萄", low):  # selling puts: never a plain sell
+        six = [x for x in six if x not in ("sell", "trim")]
+    return list(dict.fromkeys(seven + six))
+
+
+def extract_claims_v7(text: str, context: str | None = None, limit: int = 30, carry_max_chars: int = 600) -> list[dict]:
+    sents = _ce7_sentences(text)
+    post_syms = list(dict.fromkeys(x for s in sents for x in _ce7_symbols(s)))
+    carry, source0 = None, "context"
+    if len(post_syms) == 1 and len(text or "") <= carry_max_chars:
+        carry, source0 = post_syms[0], "context"
+    elif not post_syms and context:
+        ctx = list(dict.fromkeys(_ce7_symbols(context)))
+        carry = ctx[0] if len(ctx) == 1 else None
+    claims, seen = [], set()
+    for s in sents:
+        stances = _ce7_stances(s)
+        if not stances:
+            continue
+        syms = _ce7_symbols(s)
+        source = "text"
+        if not syms and carry:
+            syms, source = [carry], source0
+        if not syms:
+            continue
+        fp = re.search(CE6_FIRST_PERSON, s)
+        if re.search(THIRD_PARTY, s) and not fp:
+            continue
+        if re.search(HISTORICAL, s) and not fp:
+            continue
+        if re.search(YOU_HYPOTHETICAL, s, re.I) and not fp:
+            continue
+        low = s.lower()
+        price = re.search(PRICE, s, re.I)
+        digest = hashlib.sha256(s.encode("utf-8")).hexdigest()
+        for sym in syms:
+            key = (sym, stances[0], digest)
+            if key in seen:
+                continue
+            seen.add(key)
+            claims.append({"symbol": sym, "stance": stances[0], "stance_cues": stances[:3],
+                           "horizon": next((h for h, pat in HORIZON if re.search(pat, low, re.I)), None),
+                           "conditional": bool(re.search(CE6_CONDITIONAL, low, re.I)),
+                           "question": s.rstrip().endswith(("?", "？", "吗")),
+                           "price": float(price.group(1)) if price else None, "ticker_source": source,
+                           "evidence_sha256": digest, "evidence_chars": len(s), "extractor": CE7_VERSION})
+            if len(claims) >= limit:
+                return claims
+    return claims
