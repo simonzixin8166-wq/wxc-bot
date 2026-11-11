@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-11-11T01:58:15Z",
+  "generated_at": "2026-11-11T09:24:45Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -19,15 +19,15 @@
           "reached_end": false
         }
       ],
-      "previous_anchor_video_id": "zKKjpFIIk_I",
+      "previous_anchor_video_id": "4OV3C6IIjhg",
       "anchor_found": true,
       "reached_end": false,
       "discovery_complete": true,
       "latest": {
-        "video_id": "zKKjpFIIk_I",
-        "title": "美股 上蹿下跳比猴还快！止跌了没？机构看法！我的仓位变动，CTA更新！ NVDA、AMD、TSM、SPY、QQQ！明天CRWV财报测试信心！",
-        "url": "https://www.youtube.com/watch?v=zKKjpFIIk_I",
-        "published_at": "2026-11-10",
+        "video_id": "4OV3C6IIjhg",
+        "title": "美股 Anthropic确定IPO，办公软件横刀MSFT！CRWV盘中不够，盘后凑！软银AI基建亏损的警告！电力设备GEV怎么了？美银一级投资名单，移除三家半导体！",
+        "url": "https://www.youtube.com/watch?v=4OV3C6IIjhg",
+        "published_at": "2026-11-11",
         "rss_status": "ok",
         "flat_metadata_keys": [
           "channel_id",
@@ -95,14 +95,14 @@
           "reached_end": false
         }
       ],
-      "previous_anchor_video_id": "6BlwD59AoLM",
+      "previous_anchor_video_id": "rAgmZA4DIS0",
       "anchor_found": true,
       "reached_end": false,
       "discovery_complete": true,
       "latest": {
-        "video_id": "6BlwD59AoLM",
-        "title": "Stocks Just Crashed. Here's Why.",
-        "url": "https://www.youtube.com/watch?v=6BlwD59AoLM",
+        "video_id": "rAgmZA4DIS0",
+        "title": "What If China Wins The AI Race?",
+        "url": "https://www.youtube.com/watch?v=rAgmZA4DIS0",
         "published_at": "",
         "rss_status": "ok",
         "flat_metadata_keys": [
@@ -122,8 +122,8 @@
   "pending_retried": 6,
   "content_attempted_this_run": 6,
   "content_work_budget": 6,
-  "content_backlog_after_run": 97,
-  "pending_total": 97,
+  "content_backlog_after_run": 96,
+  "pending_total": 96,
   "historical_demoted_from_pending": 0,
   "admitted_from_pending": 0,
   "nonforward_timestamp_unknown_admitted": 0,
@@ -134,13 +134,54 @@
     "UCGy7SkBjcIAgTiwkXEtPnYg": "ok",
     "UCo2gxyermsLBSCxFHvJs0Zg": "ok"
   },
-  "historical_backlog_total": 60,
+  "historical_backlog_total": 61,
   "discovery_complete": true,
   "new_video_diagnostics": [
     {
+      "author": "Andrei Jikh",
+      "video_id": "rAgmZA4DIS0",
+      "title": "What If China Wins The AI Race?",
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "awaiting_publication_date"
+    },
+    {
+      "author": "老李玩钱",
+      "video_id": "r-2GJq_zHgU",
+      "title": "美股高位！但这2支股票依然不高，可以买入",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "老李玩钱",
+      "video_id": "s35e0bZb4xA",
+      "title": "美联储鹰派砸盘！MU财报业绩亮眼，但股价依然下跌！接下来何去何从",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "老李玩钱",
+      "video_id": "tW8LXsiWlew",
+      "title": "个股点评，买入建议：TSLA，AAPL，BRK.B",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "zKKjpFIIk_I",
-      "title": "美股 上蹿下跳比猴还快！止跌了没？机构看法！我的仓位变动，CTA更新！ NVDA、AMD、TSM、SPY、QQQ！明天CRWV财报测试信心！",
+      "video_id": "vXlqWhsJzxI",
+      "title": "美股 NVDA完好、NOW突破！UNH、SHOP更新！前车之鉴，直到2028，数据中心绝不能大退潮！对比互联网泡沫、房地产浪潮！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -150,52 +191,8 @@
     },
     {
       "author": "Andrei Jikh",
-      "video_id": "kZDqW9hbB50",
-      "title": "How To Prepare (Gold, Silver, Oil)",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "老李玩钱",
-      "video_id": "mCI0-03LcvM",
-      "title": "SpaceX即将上市！散户该如何参与？对特斯拉股价会有怎样的影响",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "老李玩钱",
-      "video_id": "mR1KTb9wBT0",
-      "title": "2支新股：SPCX, SKHY 能买入吗？NFLX财报暴雷，接下来我的计划和打算",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "老李玩钱",
-      "video_id": "nLskyS7Vvug",
-      "title": "华尔街大举买入和卖出的8支股票！是否要跟着买进或卖出？我的看法及操作建议",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "老李玩钱",
-      "video_id": "o0ScN6BzkaI",
-      "title": "美股涨的心慌！要卖股票了？",
+      "video_id": "w0a504L8fgs",
+      "title": "China & Japan Are Dumping US Bonds",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -208,7 +205,7 @@
     "status": "ok",
     "channel_errors": 0,
     "stuck_high_quality_pending": 0,
-    "provider_waiting_pending": 97,
+    "provider_waiting_pending": 96,
     "stuck_video_ids": [],
     "meaning": "Q1/Q2 text must not remain stuck in pending; Q3-Q5 may legitimately wait for better learning text."
   },

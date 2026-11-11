@@ -1358,6 +1358,38 @@
           "title": "31万美股账户，14支股票加仓、减仓及持仓计划更新！频道暂停通知"
         }
       ]
+    },
+    "2026-11-11": {
+      "calls": 2,
+      "admitted": 2,
+      "rejected": 0,
+      "errors": 0,
+      "reconciliation": {
+        "status": "COMPLETE",
+        "calls_billed": 2,
+        "calls_refunded_503": 0,
+        "detail_rows": 2,
+        "missing_detail_rows": 0,
+        "counter_mismatch": []
+      },
+      "recent": [
+        {
+          "video_id": "4OV3C6IIjhg",
+          "outcome": "admitted",
+          "at": "09:22:33Z",
+          "model": "gemini-3.8-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 Anthropic确定IPO，办公软件横刀MSFT！CRWV盘中不够，盘后凑！软银AI基建亏损的警告！电力设备GE"
+        },
+        {
+          "video_id": "zKKjpFIIk_I",
+          "outcome": "admitted",
+          "at": "09:23:41Z",
+          "model": "gemini-3.8-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 上蹿下跳比猴还快！止跌了没？机构看法！我的仓位变动，CTA更新！ NVDA、AMD、TSM、SPY、QQQ！明天C"
+        }
+      ]
     }
   },
   "version": 1,

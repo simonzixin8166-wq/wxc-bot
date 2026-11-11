@@ -120635,9 +120635,598 @@
       "intake_class_hint": "backfill",
       "capture_mode": "youtube_timestamp_unknown_learning",
       "timestamp_confidence": "missing"
+    },
+    {
+      "id": "5f190aaf196a84d411a5",
+      "source": "youtube",
+      "source_kind": "video",
+      "author": "RhinoFinance / 视野环球财经",
+      "published_at": "2026-11-11",
+      "title": "美股 Anthropic确定IPO，办公软件横刀MSFT！CRWV盘中不够，盘后凑！软银AI基建亏损的警告！电力设备GEV怎么了？美银一级投资名单，移除三家半导体！",
+      "url": "https://www.youtube.com/watch?v=4OV3C6IIjhg",
+      "excerpt": "[Gemini 视频理解 · 未验证] 美股四大指数小幅收跌，10月CPI环比超预期推升10年期美债收益率重回5%关口。软银财报披露因取消数据中心发电设备预付款导致巨亏37亿美元，AI投资转向防守；电力设备龙头GEV高增长峰值已过；CoreWeave债务激增至469亿美元，利息吞噬营收，资金链面临考验；Anthropic发布办公套件短期对微软冲击有限，作者对MSFT维持600美元目标；美银将英伟达、美光、泛林自一级名单移出。\n- [31:15 SPX neutral 7000-8500] 标普500指数处于横向震荡调整阶段，2026-2027年前瞻波动区间预估在7000至8500点\n- [06:30 SFTBY bearish] 软银Q3因取消美国数据中心发电设备预付款及合同修改产生37亿美元亏损，AI投资策略",
+      "content_chars": 1075,
+      "semantic_content_chars": 1075,
+      "content_filtering": {
+        "filter": "youtube_promotion_noise_v1",
+        "input_units": 16,
+        "removed_units": 0,
+        "removed_ratio": 0.0,
+        "promotion_noise_detected": false
+      },
+      "images_count": 0,
+      "themes_hint": [
+        "风险管理",
+        "失败复盘",
+        "长期持有纪律"
+      ],
+      "symbols": [
+        "CRWV",
+        "GEV",
+        "LRCX",
+        "MSFT",
+        "MU",
+        "NVDA",
+        "SFTBY",
+        "SPX"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "captured_at": "2026-11-11T09:22:33Z",
+      "source_role": "rule_supply",
+      "transcript_status": "available",
+      "content_quality": "Q3",
+      "content_provider": "gemini_video",
+      "content_provider_url": "https://www.youtube.com/watch?v=4OV3C6IIjhg",
+      "content_origin": "gemini_video_understanding",
+      "timestamp_evidence": true,
+      "rule_candidate_allowed": false,
+      "source_notice": "公开视频由 Gemini 读取原片（语音+画面）生成的结构化摘要；观点未验证、不可直接作为规则，等待 Owner 抽查原片核对。",
+      "claims": [
+        {
+          "symbol": "CRWV",
+          "stance": "bearish",
+          "stance_cues": [
+            "bearish"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "fdbb5c87ae71f28c56a87cf8ce02076f9921e75b04fe74cfae198c8f7889603b",
+          "evidence_chars": 74
+        },
+        {
+          "symbol": "CRWV",
+          "stance": "bearish",
+          "stance_cues": [
+            "bearish"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "90c6838712138c516e411193bd5a10c6ec9b27c485cd654bd0331009ffe9f01f",
+          "evidence_chars": 70
+        },
+        {
+          "symbol": "MSFT",
+          "stance": "trim",
+          "stance_cues": [
+            "trim",
+            "bullish"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "981acd58d5936a1f30528dd679de3f82ea611916e8b644e07aec47d66325add0",
+          "evidence_chars": 54
+        },
+        {
+          "symbol": "NVDA",
+          "stance": "buy",
+          "stance_cues": [
+            "buy"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "7a1a90092996d6d8e8f019986152182d137d2e7f429082929769364c191f9f54",
+          "evidence_chars": 67
+        },
+        {
+          "symbol": "MU",
+          "stance": "buy",
+          "stance_cues": [
+            "buy"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "7a1a90092996d6d8e8f019986152182d137d2e7f429082929769364c191f9f54",
+          "evidence_chars": 67
+        },
+        {
+          "symbol": "MSFT",
+          "stance": "trim",
+          "stance_cues": [
+            "trim"
+          ],
+          "horizon": "short",
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "d03dc76c97eae32aa920f96e0bcb9397695ec21d94e6e8fdabceeb1d7e806b44",
+          "evidence_chars": 42
+        }
+      ],
+      "claims_status": "experimental_unvalidated",
+      "video_claims": [
+        {
+          "claim": "标普500指数处于横向震荡调整阶段，2026-2027年前瞻波动区间预估在7000至8500点",
+          "stance": "neutral",
+          "price": "7000-8500",
+          "timestamp": "31:15",
+          "evidence_mode": "spoken_explicit",
+          "confidence": "high",
+          "symbol": "SPX",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "软银Q3因取消美国数据中心发电设备预付款及合同修改产生37亿美元亏损，AI投资策略转向控制杠杆与防守",
+          "stance": "bearish",
+          "price": null,
+          "timestamp": "06:30",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "SFTBY",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "GEV电力设备爆发式增长峰值已过，未来进入温和增长轨道，27年存在EPS同比下滑预期",
+          "stance": "neutral",
+          "price": null,
+          "timestamp": "12:45",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "GEV",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "若长期看好电网基础设施，GEV股价回落至720美元以下具备长线关注价值",
+          "stance": "bullish",
+          "price": "720",
+          "timestamp": "13:23",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "GEV",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "CoreWeave三季度末负债总额达469亿美元，利息支出吞噬超20%营收，业绩增速跟不上负债膨胀速度",
+          "stance": "bearish",
+          "price": null,
+          "timestamp": "17:15",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "CRWV",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "CoreWeave流动负债达106亿美元而账面可用现金仅64亿美元，生死取决于外部持续融资能力",
+          "stance": "bearish",
+          "price": null,
+          "timestamp": "19:20",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "CRWV",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "Anthropic新办公套件目前功能基础，短期对微软影响有限，长期需观察其对Office付费席位的侵蚀",
+          "stance": "neutral",
+          "price": null,
+          "timestamp": "24:45",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "MSFT",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "对微软股价仍维持600美元上方目标，目前无任何减仓计划",
+          "stance": "bullish",
+          "price": "600",
+          "timestamp": "26:58",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "MSFT",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "美银将英伟达、美光和泛林从一级买入投资名单中移除，但仍维持买入评级，显示超强信心有所减弱",
+          "stance": "neutral",
+          "price": null,
+          "timestamp": "28:40",
+          "evidence_mode": "spoken_explicit",
+          "confidence": "high",
+          "symbol": "NVDA",
+          "symbol_check": "listed"
+        }
+      ],
+      "video_claims_model": "gemini-3.8-flash",
+      "video_macro": [
+        {
+          "indicator": "美国10月CPI月率季调后",
+          "value": "0.4%",
+          "expectation": "0.3%",
+          "period": "10月",
+          "timestamp": "02:20"
+        },
+        {
+          "indicator": "美国10月核心CPI月率",
+          "value": "0.3%",
+          "expectation": "0.2%",
+          "period": "10月",
+          "timestamp": "02:45"
+        },
+        {
+          "indicator": "美国10年期国债收益率",
+          "value": "5.006%",
+          "expectation": null,
+          "period": null,
+          "timestamp": "04:14"
+        }
+      ],
+      "video_observed_title": "及时新闻传递 投资看点分析 美东241110",
+      "validation_status": "pending_owner_spot_check",
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "54384e37b8157cd1f474",
+      "source": "youtube",
+      "source_kind": "video",
+      "author": "RhinoFinance / 视野环球财经",
+      "published_at": "2026-11-10",
+      "title": "美股 上蹿下跳比猴还快！止跌了没？机构看法！我的仓位变动，CTA更新！ NVDA、AMD、TSM、SPY、QQQ！明天CRWV财报测试信心！",
+      "url": "https://www.youtube.com/watch?v=zKKjpFIIk_I",
+      "excerpt": "[Gemini 视频理解 · 未验证] 美股三大指数大涨，作者分析了近期机构看法、高盛CTA资金流动模型及对冲基金仓位变动情况。对英伟达进行破位技术性减仓5%，并列出后续回补与清仓条件。同时更新了AMD、台积电、QQQ、SPY、SOXX及CoreWeave财报前瞻等点位分析。\n- [04:48 bullish] 摩根大通认为美股抛售潮已接近尾声\n- [05:21 bullish] 摩根士丹利认为调整即将结束，标普500指数接近下行目标区间\n- [06:16 bearish] 花旗集团下调了美国股票和全球科技股的评级\n- [06:27 bearish] 高盛模型显示本周CTA潜在卖盘可能达到250亿美元或更多\n- [07:32 bullish 7676] 标普500指数突破7676点将触发CTA加速买入740亿美",
+      "content_chars": 1213,
+      "semantic_content_chars": 1213,
+      "content_filtering": {
+        "filter": "youtube_promotion_noise_v1",
+        "input_units": 22,
+        "removed_units": 0,
+        "removed_ratio": 0.0,
+        "promotion_noise_detected": false
+      },
+      "images_count": 0,
+      "themes_hint": [
+        "风险管理",
+        "趋势确认"
+      ],
+      "symbols": [
+        "AMD",
+        "CRWV",
+        "NVDA",
+        "QQQ",
+        "SOXX",
+        "SPY",
+        "TSM"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "captured_at": "2026-11-11T09:23:41Z",
+      "source_role": "rule_supply",
+      "transcript_status": "available",
+      "content_quality": "Q3",
+      "content_provider": "gemini_video",
+      "content_provider_url": "https://www.youtube.com/watch?v=zKKjpFIIk_I",
+      "content_origin": "gemini_video_understanding",
+      "timestamp_evidence": true,
+      "rule_candidate_allowed": false,
+      "source_notice": "公开视频由 Gemini 读取原片（语音+画面）生成的结构化摘要；观点未验证、不可直接作为规则，等待 Owner 抽查原片核对。",
+      "claims": [
+        {
+          "symbol": "NVDA",
+          "stance": "trim",
+          "stance_cues": [
+            "trim",
+            "sell"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "4d8580abcb453e62087473d9072876c8783cd8e6555dee6f38cc6711e6530d65",
+          "evidence_chars": 29
+        },
+        {
+          "symbol": "VOO",
+          "stance": "bullish",
+          "stance_cues": [
+            "bullish"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "9e8659f7978555851ce7db7168e40c135bc9ba8fedffbf750f0cdd8b74650b80",
+          "evidence_chars": 47
+        },
+        {
+          "symbol": "VOO",
+          "stance": "buy",
+          "stance_cues": [
+            "buy",
+            "bullish"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "f50b6436abed732e856d33f355195cd92b877b60137491a123dcd6b1add7d9da",
+          "evidence_chars": 53
+        },
+        {
+          "symbol": "VOO",
+          "stance": "sell",
+          "stance_cues": [
+            "sell",
+            "bearish"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "df63548299044079640aeceaff00fd98184507ee0e80e0476c02f2765aed45e1",
+          "evidence_chars": 54
+        },
+        {
+          "symbol": "NVDA",
+          "stance": "trim",
+          "stance_cues": [
+            "trim",
+            "sell"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "b73b6a4a8cf941dad42dd7624e58404dce94b5a480041f19aba26dda4b8ea476",
+          "evidence_chars": 59
+        },
+        {
+          "symbol": "NVDA",
+          "stance": "buy",
+          "stance_cues": [
+            "buy"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "f14884b21e863f6c74f87d1ee6c0bb8017d9b5780c72a581054386acc88825b4",
+          "evidence_chars": 52
+        },
+        {
+          "symbol": "NVDA",
+          "stance": "add",
+          "stance_cues": [
+            "add",
+            "buy"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "d49b53118c79841dad0a1661fa00b7cb7ce671a716568aac48f3ed4fba321b3a",
+          "evidence_chars": 51
+        },
+        {
+          "symbol": "NVDA",
+          "stance": "sell",
+          "stance_cues": [
+            "sell"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "c8fcdfea513ea1c235b991c5e6a49a921307b7804fc201a83f5f5165f2208ea2",
+          "evidence_chars": 37
+        },
+        {
+          "symbol": "NVDA",
+          "stance": "trim",
+          "stance_cues": [
+            "trim"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "098cb32ae51dcd11363aa2e3b6a7286141747b8704b2bb489aee76f98cbd07ae",
+          "evidence_chars": 28
+        }
+      ],
+      "claims_status": "experimental_unvalidated",
+      "video_claims": [
+        {
+          "claim": "摩根大通认为美股抛售潮已接近尾声",
+          "stance": "bullish",
+          "price": null,
+          "timestamp": "04:48",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": null,
+          "symbol_check": null
+        },
+        {
+          "claim": "摩根士丹利认为调整即将结束，标普500指数接近下行目标区间",
+          "stance": "bullish",
+          "price": null,
+          "timestamp": "05:21",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": null,
+          "symbol_check": null
+        },
+        {
+          "claim": "花旗集团下调了美国股票和全球科技股的评级",
+          "stance": "bearish",
+          "price": null,
+          "timestamp": "06:16",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": null,
+          "symbol_check": null
+        },
+        {
+          "claim": "高盛模型显示本周CTA潜在卖盘可能达到250亿美元或更多",
+          "stance": "bearish",
+          "price": null,
+          "timestamp": "06:27",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": null,
+          "symbol_check": null
+        },
+        {
+          "claim": "标普500指数突破7676点将触发CTA加速买入740亿美元",
+          "stance": "bullish",
+          "price": "7676",
+          "timestamp": "07:32",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": null,
+          "symbol_check": null
+        },
+        {
+          "claim": "标普500指数跌破7084点将触发CTA加速卖出1495亿美元",
+          "stance": "bearish",
+          "price": "7084",
+          "timestamp": "07:44",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": null,
+          "symbol_check": null
+        },
+        {
+          "claim": "英伟达跌破174以174.2元技术性减仓50%仓位（总仓位的5%）",
+          "stance": "sell",
+          "price": "174.2",
+          "timestamp": "13:50",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "NVDA",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "英伟达在132-150止跌形成形态计划买回5%仓位",
+          "stance": "buy",
+          "price": "132-150",
+          "timestamp": "15:20",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "NVDA",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "英伟达若开盘/收盘突破194计划买回3%仓位后续不再加仓",
+          "stance": "buy",
+          "price": "194",
+          "timestamp": "16:11",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "NVDA",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "若黄仁勋离职，英伟达将全部清仓离场",
+          "stance": "sell",
+          "price": null,
+          "timestamp": "18:48",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "NVDA",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "AMD需要突破528才能确认止跌并进入技术性上行",
+          "stance": "watch",
+          "price": "528",
+          "timestamp": "21:44",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "AMD",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "台积电需突破424才能进入右侧，目前处于强压力位不宜追高",
+          "stance": "watch",
+          "price": "424",
+          "timestamp": "23:09",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "TSM",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "QQQ需突破728才能进入大上行，当前在642-664支撑与681-694压力间震荡",
+          "stance": "neutral",
+          "price": "728",
+          "timestamp": "25:58",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "QQQ",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "SPY面临759-776强压力，目前在中间位置震荡不易做波段",
+          "stance": "neutral",
+          "price": "759-776",
+          "timestamp": "27:29",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "SPY",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "SOXX已跌破位，在中间位置震荡，合力不易形成，更倾向做强势个股",
+          "stance": "neutral",
+          "price": null,
+          "timestamp": "29:04",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "SOXX",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "CoreWeave明日公布财报，期权引伸波动范围约为49元上下9美元",
+          "stance": "watch",
+          "price": "49",
+          "timestamp": "33:34",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "CRWV",
+          "symbol_check": "listed"
+        }
+      ],
+      "video_claims_model": "gemini-3.8-flash",
+      "video_macro": [],
+      "video_observed_title": "大盘逼近阻力，多空剧烈颠簸！反弹持续性如何？英伟达减仓与加仓预案更新！台积电，AMD，CRWV，QQQ，SPY，SOXX行情展望",
+      "validation_status": "pending_owner_spot_check",
+      "forward_evidence_eligible": false
     }
   ],
-  "updated_at": "2026-11-11T01:57:42Z",
+  "updated_at": "2026-11-11T09:24:04Z",
   "retention_policy": "append_only_no_record_count_cap",
   "historical_recovery": {
     "completed_at": "2026-10-07T13:43:06.018028+00:00",
