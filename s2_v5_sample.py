@@ -93,8 +93,10 @@ def run() -> dict:
         if not line.strip():
             continue
         x = json.loads(line)
-        if x.get("textpack") != "stored" or str(x.get("indexed_at") or "") > CUTOFF.replace("Z", "+00:00"):
-            why["c_not_stored_or_late"] += 1
+        if str(x.get("indexed_at") or "") > CUTOFF.replace("Z", "+00:00"):
+            continue  # forwarded after the cutoff: not a frozen input, not counted
+        if x.get("textpack") != "stored":
+            why["c_not_stored"] += 1
             continue
         recs = by_url.get(canon(x["source_url"]), [])
         cpool.append({"source": "C", "item_id": "v5-" + x["item_id"].lower(), "owner_forward_item_id": x["item_id"],

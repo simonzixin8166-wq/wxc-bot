@@ -37,6 +37,7 @@ jobs:
           PYTHONPATH=. python tests/test_gold_context.py
           PYTHONPATH=. python tests/test_s2_v41_sample.py
           PYTHONPATH=. python tests/test_s2_v5_sample.py
+          python s2_v41_sample.py --check && python s2_v5_sample.py --check  # frozen samples must reproduce byte for byte
           python gold_v41_agreement.py --check
           PYTHONPATH=. python tests/test_owner_blind_v12.py
           PYTHONPATH=. python tests/test_research_close_notify.py
