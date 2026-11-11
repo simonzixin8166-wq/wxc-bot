@@ -279,7 +279,23 @@ def _already_probed_today(now=None):
     return last == today
 
 
+def _paused_by_owner(now=None):
+    """Owner 2026-11-11: no Wenxuecity request until wxc_access_policy.PAUSE_UNTIL. Recorded once per run, green;
+    anchor and seen-state untouched, complete stays false so nothing is admitted as a complete forward scan."""
+    import wxc_access_policy as access_policy
+    if not access_policy.paused():
+        return False
+    prior = _read(FORUM_STATUS, {})
+    _write(FORUM_STATUS, {**prior, **access_policy.status(), "complete": False, "feed_records_added": 0,
+                          "paused_checked_at": (now or datetime.now(timezone.utc)).isoformat()})
+    print(f"::notice title=wenxuecity paused::no request (Owner 2026-11-11, until {access_policy.PAUSE_UNTIL}); "
+          "Owner forwards and forum exports continue")
+    return True
+
+
 def main():
+    if _paused_by_owner():
+        return
     if _already_probed_today():
         st = _read(FORUM_STATUS, {})
         print(f"::warning title=wenxuecity blocked::already tried today ({st.get('blocked_at')}); no request this run, next try tomorrow (UTC). Blocked since {st.get('first_blocked_at')}")

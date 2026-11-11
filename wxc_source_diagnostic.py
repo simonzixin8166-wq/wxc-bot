@@ -142,7 +142,11 @@ def main(argv=None) -> int:
     ap.add_argument("--out", default="diagnostics/wxc_source_diagnostic.json")
     ap.add_argument("--delay", type=float, default=6.0)
     a = ap.parse_args(argv)
-    rep = run(a.delay)
+    import wxc_access_policy as access_policy
+    if access_policy.paused():
+        rep = {**access_policy.status(), "verdict": "PAUSED_BY_OWNER", "families": {}, "requests": 0}
+    else:
+        rep = run(a.delay)
     Path(a.out).parent.mkdir(parents=True, exist_ok=True)
     Path(a.out).write_text(json.dumps(rep, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     print(json.dumps({"verdict": rep["verdict"], "families": rep["families"]}, ensure_ascii=False))

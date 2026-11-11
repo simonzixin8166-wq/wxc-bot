@@ -1,12 +1,15 @@
 #!/usr/bin/env python3
 """
-GitHub Actions 版:每次运行只做一轮,然后退出(由 cron 每 30 分钟触发)。
-  1) 读取 Telegram 里你发来的新指令并执行
-  2) 到点则检查已订阅博主的新发言并推送
-  3) 状态(已处理到哪条消息、订阅列表、已推送记录)存在 state/ 目录,由工作流提交回仓库
+GitHub Actions 版。BOT_RUN_MINUTES=0(默认):只做一轮后退出。BOT_RUN_MINUTES>0(Owner 2026-11-11):在这段时间里
+用 Telegram 长轮询连续值守,收到消息几十秒内处理,处理后立刻把 state/ 提交回仓库(BOT_COMMIT_STATE=1)。
+  1) 读取 Telegram 里你发来的新指令/转发/导出文件并执行
+  2) 订阅博主检查: 文学城暂停访问期间(wxc_access_policy, 至 2027-05-11)完全跳过,不发任何请求
+  3) MyAlpha 服务器状态和 YouTube 日报: 每 30 分钟最多一次
+GitHub 公开仓库的标准 runner 不计费;单个 job 最长 6 小时。
 """
-import json, os, time
+import json, os, subprocess, time
 import requests
+import wxc_access_policy as access_policy
 import wxc_tg_agent as a
 import yt_daily_report
 import owner_forward
@@ -43,46 +46,86 @@ def check_myalpha_server_action(meta):
         print("MyAlpha alert bridge skipped:",exc)
         return meta
 
-def main():
-    if not a.TOKEN or not a.OWNER:
-        raise SystemExit("请设置 Secrets: TG_BOT_TOKEN 和 TG_CHAT_ID")
-    meta = json.load(open(META)) if os.path.exists(META) else {}
-    params = {"timeout": 0, "limit": 50}
+RUN_MINUTES = float(os.getenv("BOT_RUN_MINUTES", "0") or 0)
+POLL_SECONDS = 50            # Telegram long-poll window (free; returns at once when a message arrives)
+PERIODIC_SECONDS = 30 * 60   # server status / YouTube report / (paused) watch at most this often
+
+
+def save_state(reason: str) -> None:
+    """Commit state/ right after something was handled, so research-close sees forwards the same day.
+    Same rules as the workflow's final Save state step (never stages the canonical research feed)."""
+    if os.getenv("BOT_COMMIT_STATE") != "1":
+        return
+    sh = lambda *c: subprocess.run(c, capture_output=True, text=True)  # noqa: E731
+    sh("git", "add", "state", ":!state/research_feed.json", ":!state/research_feed_manifest.json")
+    if sh("git", "diff", "--cached", "--quiet").returncode == 0:
+        return
+    sh("git", "commit", "-m", f"update state ({reason})")
+    for i in range(3):
+        if sh("git", "pull", "--rebase", "origin", "main").returncode == 0 and sh("git", "push", "origin", "HEAD:main").returncode == 0:
+            return
+        sh("git", "rebase", "--abort")
+        time.sleep(5 * (i + 1))
+    print("::warning title=tg-bot::state push failed mid-run; the final Save state step retries")
+
+
+def _poll(meta, timeout):
+    params = {"timeout": timeout, "limit": 50}
     if meta.get("offset"):
         params["offset"] = meta["offset"]  # 只确认已经处理并提交过的消息
-    a.record_request("telegram","get_updates")
-    res = requests.get(a.API + "/getUpdates", params=params, timeout=30).json()
+    a.record_request("telegram", "get_updates")
+    res = requests.get(a.API + "/getUpdates", params=params, timeout=timeout + 20).json()
     if not res.get("ok"):
         raise SystemExit(f"getUpdates 失败: {res}")
-
-    offset = meta.get("offset")
+    handled = 0
     for u in res.get("result", []):
-        offset = u["update_id"] + 1
+        meta["offset"] = u["update_id"] + 1
         m = u.get("message") or {}
         if str(m.get("chat", {}).get("id")) != a.OWNER:
             continue  # 忽略陌生人
+        handled += 1
         if owner_forward.is_forward(m):
-            # S2 v5 source C: the Owner's own forward; full text only to the private textpack repo, never re-fetched
+            # Owner's own forward/export; full text only to the private textpack repo, never re-fetched
             owner_forward.handle(m, a.say, tg_api=a.API, tg_file_base=f"https://api.telegram.org/file/bot{a.TOKEN}")
             continue
         text = (m.get("text") or "").strip()
         if text:
             print("收到指令:", text)
             a.handle(text, sync=True)
+    return handled
 
-    # 无状态的"到点"判断:每个 WATCH_MINUTES 周期的前 7 分钟内检查(cron 每 5 分钟一次,保证至少命中一次)
-    gap = max(a.WATCH_EVERY // 60, 10)
-    if int(time.time() // 60) % gap < 7:
+
+def _periodic(meta):
+    if not access_policy.paused():
         authors = a.load_watch()
         if authors:
             a.guarded(a.check_watch, authors)
-
     meta = check_myalpha_server_action(meta)
-    meta = yt_daily_report.maybe_send(meta, a.say)
+    return yt_daily_report.maybe_send(meta, a.say)
 
-    if offset is not None:
-        meta["offset"] = offset
+
+def _write_meta(meta):
     json.dump(meta, open(META, "w"))
+
+
+def main():
+    if not a.TOKEN or not a.OWNER:
+        raise SystemExit("请设置 Secrets: TG_BOT_TOKEN 和 TG_CHAT_ID")
+    meta = json.load(open(META)) if os.path.exists(META) else {}
+    deadline = time.time() + RUN_MINUTES * 60
+    last_periodic = float("-inf")
+    while True:
+        long_run = RUN_MINUTES > 0
+        handled = _poll(meta, POLL_SECONDS if long_run else 0)
+        if time.time() - last_periodic >= PERIODIC_SECONDS or not long_run:
+            meta = _periodic(meta)
+            last_periodic = time.time()
+        _write_meta(meta)
+        if handled:
+            save_state("bot handled messages")
+        if not long_run or time.time() + POLL_SECONDS + 30 >= deadline:
+            break
+
 
 if __name__ == "__main__":
     main()
