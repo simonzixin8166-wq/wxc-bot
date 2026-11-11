@@ -119931,9 +119931,713 @@
       "video_observed_title": "视野环球财经",
       "validation_status": "pending_owner_spot_check",
       "forward_evidence_eligible": false
+    },
+    {
+      "id": "6e4326c0c4ef81ed42cb",
+      "source": "youtube",
+      "source_kind": "video",
+      "author": "RhinoFinance / 视野环球财经",
+      "published_at": "2026-08-11",
+      "title": "美股 NVDA再增5000亿循环融资！MSFT下月加高护城河！一只加仓计划！BRK二季度加速回购！",
+      "url": "https://www.youtube.com/watch?v=gN9uUJPqipo",
+      "excerpt": "[Gemini 视频理解 · 未验证] 美股四大指数微跌，能源板块受原油推动大涨，十年期美债收益率回升。英伟达与金融机构合作提供5000亿美元融资支持AI基建，虽推高估值但也引发对循环融资长期风险的关注；微软计划提高自研芯片产能；伯克希尔二季度加速回购；台积电制定了逢低加仓计划。\n- [08:04 NVDA hold] 英伟达与华尔街机构协议筹集5000亿美元用于AI基建，短期有助于提升产品销量与业绩，但长期面临担保违约风险\n- [08:58 NVDA hold 206-216] 英伟达股价突破206-216美元阻力位后，当前顺势持有，不急于提前退场\n- [09:30 MSFT bullish] 微软计划提高下一代AI芯片产量以降低外部依赖并提升效率，深化护城河\n- [12:47 MSFT bullish 51",
+      "content_chars": 808,
+      "semantic_content_chars": 808,
+      "content_filtering": {
+        "filter": "youtube_promotion_noise_v1",
+        "input_units": 13,
+        "removed_units": 0,
+        "removed_ratio": 0.0,
+        "promotion_noise_detected": false
+      },
+      "images_count": 0,
+      "themes_hint": [
+        "风险管理",
+        "长期持有纪律",
+        "趋势确认"
+      ],
+      "symbols": [
+        "BRK.B",
+        "MSFT",
+        "NVDA",
+        "TSM"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "captured_at": "2026-11-11T01:56:20Z",
+      "source_role": "rule_supply",
+      "transcript_status": "available",
+      "content_quality": "Q3",
+      "content_provider": "gemini_video",
+      "content_provider_url": "https://www.youtube.com/watch?v=gN9uUJPqipo",
+      "content_origin": "gemini_video_understanding",
+      "timestamp_evidence": true,
+      "rule_candidate_allowed": false,
+      "source_notice": "公开视频由 Gemini 读取原片（语音+画面）生成的结构化摘要；观点未验证、不可直接作为规则，等待 Owner 抽查原片核对。",
+      "claims": [
+        {
+          "symbol": "TSM",
+          "stance": "add",
+          "stance_cues": [
+            "add"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "53af36b2d889cca4dd12098336de7b199d292578e288b171dbd587b7d1b0cdc3",
+          "evidence_chars": 13
+        },
+        {
+          "symbol": "NVDA",
+          "stance": "hold",
+          "stance_cues": [
+            "hold"
+          ],
+          "horizon": "long",
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "d34d55feb386b588071dc1329add524d6b15c3f2b32fffe44ff1ae04cb953e07",
+          "evidence_chars": 73
+        },
+        {
+          "symbol": "NVDA",
+          "stance": "hold",
+          "stance_cues": [
+            "hold"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "b7e7b6478ed9de0de74366ad8a68ee875dee7c199513d394d2b4b324c477d0b0",
+          "evidence_chars": 63
+        },
+        {
+          "symbol": "MSFT",
+          "stance": "bullish",
+          "stance_cues": [
+            "bullish"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "6cbce85a4b66d6ec6c37d98f3cbfe0d3b3d8d5e5b3c49529b8113d80bab8165c",
+          "evidence_chars": 56
+        },
+        {
+          "symbol": "MSFT",
+          "stance": "hold",
+          "stance_cues": [
+            "hold",
+            "bullish"
+          ],
+          "horizon": "short",
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "861e90a2cc28e3ccfe381c5023291fcd69e273760f990d05bef0adfcd9c6d4af",
+          "evidence_chars": 87
+        },
+        {
+          "symbol": "TSM",
+          "stance": "add",
+          "stance_cues": [
+            "add",
+            "buy"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "3e7696ba1dd9c3733e4aa79efb5a5638bcde30ec9e027e45a746ad59f7456604",
+          "evidence_chars": 81
+        },
+        {
+          "symbol": "TSM",
+          "stance": "add",
+          "stance_cues": [
+            "add"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "085fa6c64c14dfd2c751f0fcef28b548ed91e41bfe33e94ee8c23e9e4b8147a8",
+          "evidence_chars": 34
+        }
+      ],
+      "claims_status": "experimental_unvalidated",
+      "video_claims": [
+        {
+          "claim": "英伟达与华尔街机构协议筹集5000亿美元用于AI基建，短期有助于提升产品销量与业绩，但长期面临担保违约风险",
+          "stance": "hold",
+          "price": null,
+          "timestamp": "08:04",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "NVDA",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "英伟达股价突破206-216美元阻力位后，当前顺势持有，不急于提前退场",
+          "stance": "hold",
+          "price": "206-216",
+          "timestamp": "08:58",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "NVDA",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "微软计划提高下一代AI芯片产量以降低外部依赖并提升效率，深化护城河",
+          "stance": "bullish",
+          "price": null,
+          "timestamp": "09:30",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "MSFT",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "微软日线存在超买加顶背离，短期若回撤预计支撑在469-487美元，突破516-519美元创历史新高只是早晚的事，继续持有",
+          "stance": "bullish",
+          "price": "516",
+          "timestamp": "12:47",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "MSFT",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "伯克希尔二季度及7月加大回购力度，显示管理层判断股价低于内在价值，属于左侧均值回归标的，适合稳健配置但增速平缓",
+          "stance": "hold",
+          "price": "512-519",
+          "timestamp": "14:45",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "BRK.B",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "台积电产业链地位稳固，制定逢低加仓计划：回调至358-375美元加仓2%，若深度回踩320-350美元加仓4%",
+          "stance": "buy",
+          "price": "358-375",
+          "timestamp": "21:03",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "TSM",
+          "symbol_check": "listed"
+        }
+      ],
+      "video_claims_model": "gemini-3.8-flash",
+      "video_macro": [
+        {
+          "indicator": "美国10年期国债收益率",
+          "value": "4.713%",
+          "expectation": null,
+          "period": null,
+          "timestamp": "00:46"
+        },
+        {
+          "indicator": "CPI",
+          "value": null,
+          "expectation": null,
+          "period": null,
+          "timestamp": "01:21"
+        }
+      ],
+      "video_observed_title": "NVDA继续循环融资，MSFT加码自研芯片，BRK回购提速，TSM加仓计划",
+      "validation_status": "pending_owner_spot_check",
+      "forward_evidence_eligible": false
+    },
+    {
+      "id": "fe917d7283f2b3f9a42e",
+      "source": "youtube",
+      "source_kind": "video",
+      "author": "老李玩钱",
+      "published_at": "",
+      "title": "31万美股账户，14支股票加仓、减仓及持仓计划更新！频道暂停通知",
+      "url": "https://www.youtube.com/watch?v=hHKD2zuGKuc",
+      "excerpt": "[Gemini 视频理解 · 未验证] 老李更新账户中14只美股持仓与加减仓计划：减仓10股SMCI/AMD并计划550以上继续减仓；TSLA、AAPL封仓；NVDA、GOOG、MSFT、COST、SOFI、ORCL、NFLX、PLTR等给出具体开仓或加仓点位；宣布因高血压高血脂及休假停更一个月。\n- [01:25 AMD sell 550] 减仓10股AMD/美超微（现持仓90股），若股价涨至550以上将继续减仓\n- [04:40 TSLA hold] SpaceX上市对特斯拉短空长多；持仓100股已达目标仓位，封仓不动\n- [04:52 TSLA buy 400] 若未建仓TSLA，建议400以下开仓，385进一步加仓\n- [05:25 NVDA buy 208] NVDA目标仓位180股现持173股，建议",
+      "content_chars": 1065,
+      "semantic_content_chars": 1065,
+      "content_filtering": {
+        "filter": "youtube_promotion_noise_v1",
+        "input_units": 19,
+        "removed_units": 0,
+        "removed_ratio": 0.0,
+        "promotion_noise_detected": false
+      },
+      "images_count": 0,
+      "themes_hint": [
+        "TSLA"
+      ],
+      "symbols": [
+        "AAPL",
+        "AMD",
+        "BRK.B",
+        "COST",
+        "DIS",
+        "GOOG",
+        "MSFT",
+        "NFLX",
+        "NVDA",
+        "ORCL",
+        "PLTR",
+        "SMCI",
+        "SOFI",
+        "TSLA"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "captured_at": "2026-11-11T01:57:26Z",
+      "source_role": "rule_supply",
+      "transcript_status": "available",
+      "content_quality": "Q3",
+      "content_provider": "gemini_video",
+      "content_provider_url": "https://www.youtube.com/watch?v=hHKD2zuGKuc",
+      "content_origin": "gemini_video_understanding",
+      "timestamp_evidence": true,
+      "rule_candidate_allowed": false,
+      "source_notice": "YouTube正文可用于非Forward语义学习；可靠发布时间缺失，因此强制按backfill处理，禁止计入Forward Evidence或Promotion。",
+      "claims": [
+        {
+          "symbol": "AMD",
+          "stance": "trim",
+          "stance_cues": [
+            "trim"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "c3646720b2c0e62ce0a6a6dbdf73e46a5468d5cd81e21afb9e7b841bf869002c",
+          "evidence_chars": 67
+        },
+        {
+          "symbol": "MSFT",
+          "stance": "add",
+          "stance_cues": [
+            "add"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "bfa0d97be57785bf743fb2ecc42d64cbce4da123e8eb7910aa68d195154f1f55",
+          "evidence_chars": 52
+        },
+        {
+          "symbol": "SOFI",
+          "stance": "add",
+          "stance_cues": [
+            "add"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "bfa0d97be57785bf743fb2ecc42d64cbce4da123e8eb7910aa68d195154f1f55",
+          "evidence_chars": 52
+        },
+        {
+          "symbol": "NFLX",
+          "stance": "add",
+          "stance_cues": [
+            "add"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "bfa0d97be57785bf743fb2ecc42d64cbce4da123e8eb7910aa68d195154f1f55",
+          "evidence_chars": 52
+        },
+        {
+          "symbol": "NVDA",
+          "stance": "add",
+          "stance_cues": [
+            "add"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "bfa0d97be57785bf743fb2ecc42d64cbce4da123e8eb7910aa68d195154f1f55",
+          "evidence_chars": 52
+        },
+        {
+          "symbol": "GOOG",
+          "stance": "add",
+          "stance_cues": [
+            "add"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "bfa0d97be57785bf743fb2ecc42d64cbce4da123e8eb7910aa68d195154f1f55",
+          "evidence_chars": 52
+        },
+        {
+          "symbol": "ORCL",
+          "stance": "add",
+          "stance_cues": [
+            "add"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "bfa0d97be57785bf743fb2ecc42d64cbce4da123e8eb7910aa68d195154f1f55",
+          "evidence_chars": 52
+        },
+        {
+          "symbol": "PLTR",
+          "stance": "add",
+          "stance_cues": [
+            "add"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "bfa0d97be57785bf743fb2ecc42d64cbce4da123e8eb7910aa68d195154f1f55",
+          "evidence_chars": 52
+        },
+        {
+          "symbol": "AMD",
+          "stance": "trim",
+          "stance_cues": [
+            "trim",
+            "sell"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "68795cb760b17bf6f429657f23c6987761992b0353228a455544a1ee1c530805",
+          "evidence_chars": 59
+        },
+        {
+          "symbol": "TSLA",
+          "stance": "hold",
+          "stance_cues": [
+            "hold"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "380487c3248165ccb95c1058c82bae07002402738b0d8e76d03128c1db2855c3",
+          "evidence_chars": 37
+        },
+        {
+          "symbol": "TSLA",
+          "stance": "add",
+          "stance_cues": [
+            "add",
+            "buy"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "dc30ffc0d9fc3de46176c3b56f84a43dc82d2cbab7895d011dc19bd05c923e1e",
+          "evidence_chars": 50
+        },
+        {
+          "symbol": "NVDA",
+          "stance": "add",
+          "stance_cues": [
+            "add",
+            "buy"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "357838ac99dc44ed04e6d7faf7de72e785d581ec2ffca2e425bac7baa26e0a06",
+          "evidence_chars": 58
+        },
+        {
+          "symbol": "GOOG",
+          "stance": "add",
+          "stance_cues": [
+            "add",
+            "buy"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "bae37da8924435e5d427c3fbae5d78da11fb22192c4ef7582df9c8da7d1850e4",
+          "evidence_chars": 45
+        },
+        {
+          "symbol": "AAPL",
+          "stance": "hold",
+          "stance_cues": [
+            "hold"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "00eafaf44b321f67548f9cb437ead596aba27382a018eefabceabd04ef92aecb",
+          "evidence_chars": 43
+        },
+        {
+          "symbol": "AAPL",
+          "stance": "add",
+          "stance_cues": [
+            "add",
+            "buy"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "1b4f423fb73e8c9f86f69d024d73df00f31df848b715e51ea63a6ef4b57ec3dd",
+          "evidence_chars": 49
+        },
+        {
+          "symbol": "MSFT",
+          "stance": "buy",
+          "stance_cues": [
+            "buy"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "b4f69718ab4bba69146200ef1ae84f5eb94f08a68d0fbec278bbf63034f8389e",
+          "evidence_chars": 44
+        },
+        {
+          "symbol": "ORCL",
+          "stance": "add",
+          "stance_cues": [
+            "add",
+            "buy"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": 80.0,
+          "evidence_sha256": "a769e0bcdfca130f2a561996aa8f1436d00ad36d1d9ca08c0608e0426b959939",
+          "evidence_chars": 53
+        },
+        {
+          "symbol": "SOFI",
+          "stance": "add",
+          "stance_cues": [
+            "add",
+            "buy"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": 600.0,
+          "evidence_sha256": "84163b22636d5754b3cf6fbf710eb93a875e8bd07d2651e232be992c2e418ac2",
+          "evidence_chars": 61
+        },
+        {
+          "symbol": "NFLX",
+          "stance": "add",
+          "stance_cues": [
+            "add",
+            "buy"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "cab26a9627329a479924ec41e87c7f61e956b697ff366ea9e63551843e41d676",
+          "evidence_chars": 51
+        }
+      ],
+      "claims_status": "experimental_unvalidated",
+      "video_claims": [
+        {
+          "claim": "减仓10股AMD/美超微（现持仓90股），若股价涨至550以上将继续减仓",
+          "stance": "sell",
+          "price": "550",
+          "timestamp": "01:25",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "AMD",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "SpaceX上市对特斯拉短空长多；持仓100股已达目标仓位，封仓不动",
+          "stance": "hold",
+          "price": null,
+          "timestamp": "04:40",
+          "evidence_mode": "spoken_explicit",
+          "confidence": "high",
+          "symbol": "TSLA",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "若未建仓TSLA，建议400以下开仓，385进一步加仓",
+          "stance": "buy",
+          "price": "400",
+          "timestamp": "04:52",
+          "evidence_mode": "spoken_explicit",
+          "confidence": "high",
+          "symbol": "TSLA",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "NVDA目标仓位180股现持173股，建议208开仓，196进一步加仓",
+          "stance": "buy",
+          "price": "208",
+          "timestamp": "05:25",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "NVDA",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "GOOG建议353开仓，330进一步加仓布局",
+          "stance": "buy",
+          "price": "353",
+          "timestamp": "06:52",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "GOOG",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "AAPL已持仓60股达到目标仓位，已封仓不动；新开仓建议等回调整理",
+          "stance": "hold",
+          "price": null,
+          "timestamp": "07:16",
+          "evidence_mode": "spoken_explicit",
+          "confidence": "high",
+          "symbol": "AAPL",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "AAPL若建仓建议开仓点位275，加仓点位255",
+          "stance": "watch",
+          "price": "275",
+          "timestamp": "08:41",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "AAPL",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "MSFT目标仓位上调至50股，现持40股；若股价跌回390以下将加仓",
+          "stance": "buy",
+          "price": "390",
+          "timestamp": "09:55",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "MSFT",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "COST现持12股目标15股，若股价跌至900以下将进一步加仓",
+          "stance": "buy",
+          "price": "900",
+          "timestamp": "10:58",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "COST",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "DIS短期无加仓或减仓计划，继续持有",
+          "stance": "hold",
+          "price": null,
+          "timestamp": "11:18",
+          "evidence_mode": "spoken_explicit",
+          "confidence": "high",
+          "symbol": "DIS",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "BRK.B短期无操作计划，若跌回成本价447以下才会考虑加仓",
+          "stance": "hold",
+          "price": "447",
+          "timestamp": "11:36",
+          "evidence_mode": "spoken_explicit",
+          "confidence": "high",
+          "symbol": "BRK.B",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "ORCL现持40股目标80股，考虑在下方支撑位175附近加仓",
+          "stance": "buy",
+          "price": "175",
+          "timestamp": "12:41",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "ORCL",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "SOFI现持500股目标600股，16.5以下可开观察仓，15以下分批加仓",
+          "stance": "buy",
+          "price": "16.5",
+          "timestamp": "13:02",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "SOFI",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "Visa作为组合后卫型股票，短期继续持有",
+          "stance": "hold",
+          "price": null,
+          "timestamp": "14:18",
+          "evidence_mode": "spoken_explicit",
+          "confidence": "high",
+          "symbol": "V",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "NFLX建仓建议79以下，加仓点位设定在下方支撑位75附近",
+          "stance": "buy",
+          "price": "79",
+          "timestamp": "15:00",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "NFLX",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "PLTR估值过高，若开仓建议在125以下考虑",
+          "stance": "watch",
+          "price": "125",
+          "timestamp": "15:58",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "PLTR",
+          "symbol_check": "listed"
+        }
+      ],
+      "video_claims_model": "gemini-3.8-flash",
+      "video_macro": [],
+      "video_observed_title": "美股大盘稳住了！全部14只股票仓位更新！老李准备停更一个月！",
+      "validation_status": "pending_owner_spot_check",
+      "forward_evidence_eligible": false,
+      "intake_class_hint": "backfill",
+      "capture_mode": "youtube_timestamp_unknown_learning",
+      "timestamp_confidence": "missing"
     }
   ],
-  "updated_at": "2026-11-10T20:51:44Z",
+  "updated_at": "2026-11-11T01:57:42Z",
   "retention_policy": "append_only_no_record_count_cap",
   "historical_recovery": {
     "completed_at": "2026-10-07T13:43:06.018028+00:00",

@@ -1293,15 +1293,15 @@
       ]
     },
     "2026-11-10": {
-      "calls": 4,
-      "admitted": 1,
+      "calls": 6,
+      "admitted": 3,
       "rejected": 0,
       "errors": 3,
       "reconciliation": {
         "status": "COMPLETE",
-        "calls_billed": 4,
+        "calls_billed": 6,
         "calls_refunded_503": 0,
-        "detail_rows": 4,
+        "detail_rows": 6,
         "missing_detail_rows": 0,
         "counter_mismatch": []
       },
@@ -1340,6 +1340,22 @@
           "model": "gemini-3.5-flash",
           "author": "RhinoFinance / 视野环球财经",
           "title": "美股 NVDA业绩强劲，苦新高已久！META官司和解！CRM加速AI转型业绩上调！"
+        },
+        {
+          "video_id": "gN9uUJPqipo",
+          "outcome": "admitted",
+          "at": "01:56:20Z",
+          "model": "gemini-3.8-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 NVDA再增5000亿循环融资！MSFT下月加高护城河！一只加仓计划！BRK二季度加速回购！"
+        },
+        {
+          "video_id": "hHKD2zuGKuc",
+          "outcome": "admitted",
+          "at": "01:57:26Z",
+          "model": "gemini-3.8-flash",
+          "author": "老李玩钱",
+          "title": "31万美股账户，14支股票加仓、减仓及持仓计划更新！频道暂停通知"
         }
       ]
     }
