@@ -1360,15 +1360,15 @@
       ]
     },
     "2026-11-11": {
-      "calls": 2,
+      "calls": 3,
       "admitted": 2,
       "rejected": 0,
-      "errors": 0,
+      "errors": 2,
       "reconciliation": {
         "status": "COMPLETE",
-        "calls_billed": 2,
-        "calls_refunded_503": 0,
-        "detail_rows": 2,
+        "calls_billed": 3,
+        "calls_refunded_503": 1,
+        "detail_rows": 4,
         "missing_detail_rows": 0,
         "counter_mismatch": []
       },
@@ -1388,8 +1388,27 @@
           "model": "gemini-3.8-flash",
           "author": "RhinoFinance / 视野环球财经",
           "title": "美股 上蹿下跳比猴还快！止跌了没？机构看法！我的仓位变动，CTA更新！ NVDA、AMD、TSM、SPY、QQQ！明天C"
+        },
+        {
+          "video_id": "wz13N6Q4-tg",
+          "outcome": "http_503_all_models",
+          "at": "17:55:27Z",
+          "model": "gemini-3.8-flash,gemini-3.5-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 无聊行情即将结束！回购债券的隐藏动机！LULU、NKE、INTU！",
+          "detail": "{\"error\":{\"message\":\"gemini-3.5-flash is currently experiencing high demand, spikes in demand are usually temporary. Please try again later.\",\"code\":\"service_unavailable\"}}"
+        },
+        {
+          "video_id": "xUrNp0Dy0ws",
+          "outcome": "exception",
+          "at": "17:58:33Z",
+          "model": "gemini-3.8-flash",
+          "author": "老李玩钱",
+          "title": "3支牛股！回调即可买入",
+          "detail": "ReadTimeout"
         }
-      ]
+      ],
+      "refunded_503": 1
     }
   },
   "version": 1,

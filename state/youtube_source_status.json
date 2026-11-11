@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-11-11T09:24:45Z",
+  "generated_at": "2026-11-11T17:59:46Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -122,9 +122,9 @@
   "pending_retried": 6,
   "content_attempted_this_run": 6,
   "content_work_budget": 6,
-  "content_backlog_after_run": 96,
-  "pending_total": 96,
-  "historical_demoted_from_pending": 0,
+  "content_backlog_after_run": 94,
+  "pending_total": 94,
+  "historical_demoted_from_pending": 1,
   "admitted_from_pending": 0,
   "nonforward_timestamp_unknown_admitted": 0,
   "feed_records_added": 0,
@@ -134,7 +134,7 @@
     "UCGy7SkBjcIAgTiwkXEtPnYg": "ok",
     "UCo2gxyermsLBSCxFHvJs0Zg": "ok"
   },
-  "historical_backlog_total": 61,
+  "historical_backlog_total": 63,
   "discovery_complete": true,
   "new_video_diagnostics": [
     {
@@ -146,42 +146,9 @@
       "pending_reason": "awaiting_publication_date"
     },
     {
-      "author": "老李玩钱",
-      "video_id": "r-2GJq_zHgU",
-      "title": "美股高位！但这2支股票依然不高，可以买入",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "老李玩钱",
-      "video_id": "s35e0bZb4xA",
-      "title": "美联储鹰派砸盘！MU财报业绩亮眼，但股价依然下跌！接下来何去何从",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "老李玩钱",
-      "video_id": "tW8LXsiWlew",
-      "title": "个股点评，买入建议：TSLA，AAPL，BRK.B",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "vXlqWhsJzxI",
-      "title": "美股 NVDA完好、NOW突破！UNH、SHOP更新！前车之鉴，直到2028，数据中心绝不能大退潮！对比互联网泡沫、房地产浪潮！",
+      "author": "Andrei Jikh",
+      "video_id": "7-lWx78nAQ4",
+      "title": "The Debt Spiral Has Started",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -191,8 +158,41 @@
     },
     {
       "author": "Andrei Jikh",
-      "video_id": "w0a504L8fgs",
-      "title": "China & Japan Are Dumping US Bonds",
+      "video_id": "g1kgEiP1v10",
+      "title": "Trump Just Started The Debt Spiral",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "cr3MV3KTHRE",
+      "title": "美股 对冲基金，抛售哪些？做多哪些？META、MSFT、XLI，存储重伤，竞争加剧！MU、SNDK位置！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "ttrjfdl-Ne4",
+      "title": "美股 短期洗牌，还是大跌开始？CRWV信贷引发AI交易混乱！ASML财报粗犷，叫好不叫座！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "Andrei Jikh",
+      "video_id": "TNQ2PuDLiOg",
+      "title": "My Thoughts On XRP",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -205,7 +205,7 @@
     "status": "ok",
     "channel_errors": 0,
     "stuck_high_quality_pending": 0,
-    "provider_waiting_pending": 96,
+    "provider_waiting_pending": 94,
     "stuck_video_ids": [],
     "meaning": "Q1/Q2 text must not remain stuck in pending; Q3-Q5 may legitimately wait for better learning text."
   },
