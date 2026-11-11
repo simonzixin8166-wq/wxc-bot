@@ -106,6 +106,10 @@ def scan_board(board, authors, scan_state, fetch_state):
 
 
 def main():
+    import wxc_access_policy as access_policy
+    if access_policy.paused():
+        print(json.dumps({"forum_board_scan": access_policy.status()}, ensure_ascii=False))
+        return 0
     cfg = _read(CONFIG, [])
     boards = {}
     for x in cfg:

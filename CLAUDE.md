@@ -15,6 +15,8 @@ learns every day on its own, and the owner places every order manually. For this
   kept long-term ONLY in private repos for personal, non-commercial learning and backtesting, never published; public
   repos and Pages keep titles, ≤360-char excerpts, links and hashes. Never circumvent access controls or paywalls:
   no proxy/IP rotation, UA spoofing, captcha solving, login-cookie scraping, or caches/archives of blocked content.
+- Wenxuecity (Owner 2026-11-11): the site refuses MyAlpha, so every request to *.wenxuecity.com is paused until
+  2027-05-11 (`wxc_access_policy.py`); the Owner's own forwards and forum exports via the bot continue.
 - Flag bad inputs instead of using them (e.g. `state/source_quality_flags.json`: invalid transcripts excluded).
 - Author claims are `experimental_unvalidated` until frozen, unseen tests pass the agreed gate; author
   self-reported trades are never "verified".

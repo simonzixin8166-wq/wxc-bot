@@ -25,11 +25,15 @@ STOP = set("AI CEO IPO ETF FA EPS PE GDP CPI FOMC USA USD LOL OK IMO NEWS THE AN
 
 sess = requests.Session()
 sess.headers.update(HEADERS)
+import wxc_access_policy as access_policy  # noqa: E402
+access_policy.guard(sess)  # Owner 2026-11-11: Wenxuecity paused
 
 RESTRICTED = []  # 403/429 seen in this run: {url, status} (2026-11-05, WXC-RECOVERY-DIAGNOSTIC §4.1)
 
 
 def get(url, retries=3, delay=2.5):
+    if access_policy.paused(url):
+        return None  # paused by the Owner: no request, no retry, no sleep
     for i in range(retries):
         try:
             r = sess.get(url, timeout=20)

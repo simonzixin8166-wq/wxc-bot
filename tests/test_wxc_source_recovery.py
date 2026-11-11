@@ -15,6 +15,8 @@ from datetime import datetime
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+import wxc_access_policy  # noqa: E402
+wxc_access_policy.PAUSE_UNTIL = "2000-01-01"  # these tests cover behaviour when access is allowed (after the Owner's pause)
 import wxc_blog as blog  # noqa: E402
 import research_feed as rf  # noqa: E402
 import wxc_source_diagnostic as diag  # noqa: E402

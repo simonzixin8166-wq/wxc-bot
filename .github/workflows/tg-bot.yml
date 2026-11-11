@@ -2,7 +2,7 @@ name: tg-bot
 
 on:
   schedule:
-    - cron: "*/30 * * * *"  # 每30分钟轮询；重要市场风险由主站 Server Action Watch 负责
+    - cron: "*/30 * * * *"  # 触发很不准（实测约 8%），所以每次运行连续值守 4.5 小时（Owner 2026-11-11）；同一时间只跑一个
   workflow_dispatch:         # 也可以在 Actions 页面手动点 Run workflow
 
 permissions:
@@ -15,7 +15,7 @@ concurrency:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 300   # public repo: standard runners are free; a job may run up to 6 h
     steps:
       - uses: actions/checkout@v4
 
@@ -28,10 +28,17 @@ jobs:
 
       - name: Validate collector code
         run: |
-          python -m py_compile wxc_actions.py wxc_scraper.py wxc_tg_agent.py wxc_tg_bot.py wxc_blog.py owner_forward.py
+          python -m py_compile wxc_access_policy.py wxc_actions.py wxc_scraper.py wxc_tg_agent.py wxc_tg_bot.py wxc_blog.py owner_forward.py
           PYTHONPATH=. python tests/test_blog_collector.py
           PYTHONPATH=. python tests/test_free_first_forward_gate.py
           PYTHONPATH=. python tests/test_owner_forward.py
+          PYTHONPATH=. python tests/test_wxc_access_pause.py
+
+      - name: Git identity for mid-run state saves
+        run: |
+          git config user.name "wxc-bot"
+          git config user.email "wxc-bot@users.noreply.github.com"
+          git config merge.request-ledger.driver "python merge_request_ledger.py %O %A %B"
 
       - name: Run bot
         env:
@@ -44,6 +51,8 @@ jobs:
           DATA_DIR: state
           JOBS_DIR: /tmp/jobs
           WATCH_MINUTES: "30"
+          BOT_RUN_MINUTES: "270"   # long-poll Telegram for 4.5 h; replies within ~1 min
+          BOT_COMMIT_STATE: "1"    # push state/ right after a message is handled
         run: python wxc_actions.py
 
       - name: Save state

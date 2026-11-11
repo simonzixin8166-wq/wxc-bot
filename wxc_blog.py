@@ -42,6 +42,8 @@ HEADERS = {
 }
 sess = requests.Session()
 sess.headers.update(HEADERS)
+import wxc_access_policy as access_policy  # noqa: E402
+access_policy.guard(sess)  # Owner 2026-11-11: Wenxuecity paused
 
 
 def resolve_profile(name: str):
@@ -82,6 +84,9 @@ def get(url: str, retries: int = 3, delay: float = 2.5):
     """Low-frequency request with bounded retry for transient errors only; no anti-bot bypass.
     403/429 stop immediately (no retry) and mark the host as restricted for the rest of this run."""
     host = _host(url)
+    if access_policy.paused(url):
+        ACCESS_LOG.append({"url": url, "status": "paused_by_owner", "at": datetime.utcnow().isoformat() + "Z"})
+        return None
     if host in RESTRICTED_HOSTS:
         ACCESS_LOG.append({"url": url, "status": "skipped_host_restricted", "at": datetime.utcnow().isoformat() + "Z"})
         return None
