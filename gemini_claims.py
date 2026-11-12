@@ -77,6 +77,19 @@ Text:
 """
 
 
+FORUM_PROMPT = """You label author claims in short Chinese/English forum utterances (posts and replies) by a tracked
+investor. Same rules as below, plus: each item may show REPLYING TO, the post it answers. Use REPLYING TO ONLY to
+tell which ticker the item refers to (then ticker_source "context"); never label a claim made in REPLYING TO.
+Colloquial wording counts: 进/进的/买回 = buy, 被止损/退出来/卖掉 = sell, 卖葡萄/卖 put = bullish + sell_put,
+"long hold"/"我的X" = hold. Return ONLY JSON:
+{"answers": [ {"id": "...", "labels": [ {"symbol": "...", "stance": "...", "status": "...", "instrument": "...",
+"holder": "author", "ticker_source": "text"} ], "note": null} ]}  -- exactly one answer per item, same ids.
+
+""" + PROMPT.split("POST\n")[0] + """ITEMS
+{items}
+"""
+
+
 def _today():
     return datetime.now(ZoneInfo("America/Los_Angeles")).date().isoformat()
 
@@ -168,6 +181,63 @@ def label_post(title: str, text: str, post=None) -> tuple[dict, dict]:
     return {"labels": [], "ambiguous": False, "note": "unavailable", "reply_role": None}, {"model": None, "status": last}
 
 
+def label_batch(items: list[dict], post=None) -> tuple[dict, dict]:
+    """Forum mode: several short utterances in one call (free-tier budget). items: {id, text, context}.
+    Returns ({id: answer}, meta); an id the model skipped is 'unavailable' (retried by --resume)."""
+    post = post or requests.post
+    headers = {"x-goog-api-key": os.environ["GEMINI_API_KEY"].strip(), "Content-Type": "application/json",
+               "User-Agent": "MyAlphaView-S2-challenger/0.1"}
+    lines = []
+    for it in items:
+        lines.append(f"- id: {it['id']}\n  TEXT: {it['text']}")
+        if it.get("context"):
+            lines.append(f"  REPLYING TO: {it['context']}")
+    prompt = FORUM_PROMPT.replace("{items}", "\n".join(lines))
+    unavailable = {"labels": [], "ambiguous": False, "note": "unavailable", "reply_role": None}
+    last = None
+    for i, model in enumerate(MODELS):
+        if i:
+            time.sleep(PAUSE)
+        _budget(1)
+        try:
+            r = post(ENDPOINT, json={"model": model, "input": [{"type": "text", "text": prompt}]}, timeout=TIMEOUT,
+                     headers=headers)
+        except requests.RequestException as e:
+            last = type(e).__name__
+            continue
+        last = r.status_code
+        if r.status_code == 429:
+            raise RuntimeError("quota")
+        if r.status_code == 200:
+            parsed = _extract_json(r.json()) or {}
+            got, dropped = {}, 0
+            for a in parsed.get("answers") or []:
+                if isinstance(a, dict) and str(a.get("id")) in {it["id"] for it in items}:
+                    ans, d = clean(a)
+                    got[str(a["id"])] = ans
+                    dropped += d
+            return ({it["id"]: got.get(it["id"], unavailable) for it in items},
+                    {"model": model, "status": 200, "dropped_labels": dropped, "missing": len(items) - len(got)})
+    return {it["id"]: unavailable for it in items}, {"model": None, "status": last}
+
+
+def load_forum_dev() -> list[dict]:
+    """Forum dev set (research/forum/claims_gold_forum_dev_v1): utterance text and the post it answers, both already
+    in the public feed (titles and <=360-char excerpts only)."""
+    ids = {json.loads(x)["post_id"] for x in (ROOT / "research" / "forum" / "claims_gold_forum_dev_v1.claude_first.jsonl")
+           .read_text(encoding="utf-8").splitlines() if x.strip()}
+    out = []
+    for r in json.loads((ROOT / "state" / "research_feed.json").read_text(encoding="utf-8"))["records"]:
+        pid = str(r.get("source_entry_key") or "")
+        if r.get("intake_provenance") != "owner_forum_export" or pid not in ids:
+            continue
+        title, ex = (r.get("title") or "").strip(), (r.get("excerpt") or "").strip()
+        par = (r.get("thread_context") or {}).get("in_reply_to") or {}
+        out.append({"item_id": pid, "source": "forum", "title": title, "text": title if ex in ("", title) else f"{title}\n{ex}",
+                    "context": f"{par.get('author')}: {par.get('title')}" if par.get("title") else None})
+    return sorted(out, key=lambda x: x["item_id"])
+
+
 def _textpack_text(item_id: str) -> str | None:
     token, repo = os.getenv("TEXTPACK_TOKEN", ""), os.getenv("TEXTPACK_REPO", "")
     if not token or not repo:
@@ -218,7 +288,9 @@ def score(answers: dict, gold: dict) -> dict:
             "direction_agree": sum(1 for k in tp if g[k] & p[k])}
 
 
-GOLD_FILES = {"dev": "claims_gold_dev_v5.claude_first.jsonl", "test": "claims_gold_test_v5.jsonl"}
+GOLD_FILES = {"dev": "claims_gold_dev_v5.claude_first.jsonl", "test": "claims_gold_test_v5.jsonl",
+              "forum_dev": "../forum/claims_gold_forum_dev_v1.claude_first.jsonl"}
+FORUM_BATCH = int(os.getenv("GEMINI_FORUM_BATCH", "8"))
 
 
 def _load_gold(which: str) -> dict:
@@ -227,7 +299,7 @@ def _load_gold(which: str) -> dict:
     for x in p.read_text(encoding="utf-8").splitlines() if p.exists() else []:
         if x.strip():
             g = json.loads(x)
-            out[g["item_id"]] = g
+            out[g.get("item_id") or g["post_id"]] = g
     return out
 
 
@@ -246,7 +318,7 @@ def _load_previous(path: str | None, which: str) -> dict:
 
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--set", choices=("dev", "test"), default="dev")
+    ap.add_argument("--set", choices=("dev", "test", "forum_dev"), default="dev")
     ap.add_argument("--resume", default=None, help="previous report of the same set to continue from")
     ap.add_argument("--out", default=None)
     a = ap.parse_args(argv)
@@ -254,14 +326,32 @@ def main(argv=None) -> int:
     if not os.getenv("GEMINI_API_KEY"):
         print("GEMINI_API_KEY not set: challenger off")
         return 0
-    items = load_set(a.set)
+    items = load_forum_dev() if a.set == "forum_dev" else load_set(a.set)
     answers = _load_previous(a.resume, a.set)
     resumed = len(answers)
     meta = {"calls": 0, "resumed": resumed, "unavailable_text": 0, "model_unavailable": 0, "dropped_labels": 0,
             "quota_stop": False, "models": {}}
-    for it in items:
-        if it["item_id"] in answers:
-            continue
+    todo = [it for it in items if it["item_id"] not in answers]
+    if a.set == "forum_dev":
+        for k in range(0, len(todo), FORUM_BATCH):
+            if _budget()["calls"] >= DAILY_CAP:
+                meta["quota_stop"] = "daily_cap"
+                break
+            chunk = todo[k:k + FORUM_BATCH]
+            try:
+                got, m = label_batch([{"id": it["item_id"], "text": it["text"], "context": it.get("context")} for it in chunk])
+            except RuntimeError:
+                meta["quota_stop"] = "http_429"
+                break
+            meta["calls"] += 1
+            meta["dropped_labels"] += m.get("dropped_labels", 0)
+            meta["models"][str(m.get("model"))] = meta["models"].get(str(m.get("model")), 0) + 1
+            for iid, ans in got.items():
+                meta["model_unavailable"] += ans.get("note") == "unavailable"
+                answers[iid] = ans
+            time.sleep(PAUSE)
+        todo = []
+    for it in todo:
         if it["text"] is None:
             meta["unavailable_text"] += 1
             continue

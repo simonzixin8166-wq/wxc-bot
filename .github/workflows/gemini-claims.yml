@@ -8,9 +8,9 @@ on:
   workflow_dispatch:
     inputs:
       set:
-        description: "dev or test (test = frozen gold v5, measured once)"
+        description: "dev, test (frozen gold v5, measured once) or forum_dev (forum dev gold v1, batched)"
         type: choice
-        options: [test, dev]
+        options: [test, dev, forum_dev]
         default: test
 
 permissions:

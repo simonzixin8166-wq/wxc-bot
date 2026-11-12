@@ -90,6 +90,25 @@ s = gc.score({"a": {"labels": [{"symbol": "NBIS", "stance": "buy"}, {"symbol": "
 assert s == {"gold_pairs": 1, "pred_pairs": 2, "matched": 1, "precision": 0.5, "recall": 1.0, "direction_agree": 1}
 print("PASS budget, scoring")
 
+# forum mode: several utterances per call, REPLYING TO passed as context, a skipped id becomes unavailable
+sent.clear()
+
+
+def post_batch(url, json=None, timeout=None, headers=None):
+    sent.append(json)
+    return reply({"answers": [{"id": "a1", "labels": [{"symbol": "AMD", "stance": "hold", "status": "opinion",
+                                                       "instrument": "sell_put", "ticker_source": "context"}], "note": None},
+                              {"id": "zz", "labels": [{"symbol": "X", "stance": "buy", "status": "executed"}]}]})
+
+
+got, meta = gc.label_batch([{"id": "a1", "text": "That is my long hold", "context": "路人: AMD Jan 400 put 关吗？"},
+                            {"id": "a2", "text": "哈哈", "context": None}], post=post_batch)
+prompt = sent[0]["input"][0]["text"]
+assert "REPLYING TO: 路人: AMD Jan 400 put" in prompt and "id: a2" in prompt
+assert got["a1"]["labels"][0]["ticker_source"] == "context" and got["a2"]["note"] == "unavailable" and meta["missing"] == 1
+assert "zz" not in got
+print("PASS forum batch: context passed, ids matched, missing ids unavailable, foreign ids ignored")
+
 # resume: answered posts are kept, 'unavailable' ones retried, a different set or version is ignored
 assert gc.MODELS[0] == "gemini-3.5-flash"
 d = tempfile.mkdtemp()
