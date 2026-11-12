@@ -1360,15 +1360,15 @@
       ]
     },
     "2026-11-11": {
-      "calls": 3,
+      "calls": 5,
       "admitted": 2,
       "rejected": 0,
-      "errors": 2,
+      "errors": 4,
       "reconciliation": {
         "status": "COMPLETE",
-        "calls_billed": 3,
+        "calls_billed": 5,
         "calls_refunded_503": 1,
-        "detail_rows": 4,
+        "detail_rows": 6,
         "missing_detail_rows": 0,
         "counter_mismatch": []
       },
@@ -1406,9 +1406,30 @@
           "author": "老李玩钱",
           "title": "3支牛股！回调即可买入",
           "detail": "ReadTimeout"
+        },
+        {
+          "video_id": "1lspa5l4kxs",
+          "outcome": "http_403",
+          "at": "00:39:01Z",
+          "model": "gemini-3.8-flash",
+          "author": "Andrei Jikh",
+          "title": "My Thoughts On Bitcoin",
+          "detail": "{\"error\":{\"message\":\"The caller does not have permission\",\"code\":\"permission_denied\"}}"
+        },
+        {
+          "video_id": "QpPf_hY_Bl8",
+          "outcome": "http_403",
+          "at": "00:39:08Z",
+          "model": "gemini-3.8-flash",
+          "author": "Andrei Jikh",
+          "title": "North Korea Suspected In Crypto Heist",
+          "detail": "{\"error\":{\"message\":\"The caller does not have permission\",\"code\":\"permission_denied\"}}"
         }
       ],
-      "refunded_503": 1
+      "refunded_503": 1,
+      "skip_authors_403": [
+        "Andrei Jikh"
+      ]
     }
   },
   "version": 1,

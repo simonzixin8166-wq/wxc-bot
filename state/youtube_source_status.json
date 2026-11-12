@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-11-11T17:59:46Z",
+  "generated_at": "2026-11-12T00:39:44Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -101,7 +101,7 @@
       "discovery_complete": true,
       "latest": {
         "video_id": "rAgmZA4DIS0",
-        "title": "What If China Wins The AI Race?",
+        "title": "What If America Loses The AI Race?",
         "url": "https://www.youtube.com/watch?v=rAgmZA4DIS0",
         "published_at": "",
         "rss_status": "ok",
@@ -124,7 +124,7 @@
   "content_work_budget": 6,
   "content_backlog_after_run": 94,
   "pending_total": 94,
-  "historical_demoted_from_pending": 1,
+  "historical_demoted_from_pending": 0,
   "admitted_from_pending": 0,
   "nonforward_timestamp_unknown_admitted": 0,
   "feed_records_added": 0,
@@ -140,26 +140,15 @@
     {
       "author": "Andrei Jikh",
       "video_id": "rAgmZA4DIS0",
-      "title": "What If China Wins The AI Race?",
+      "title": "What If America Loses The AI Race?",
       "admission": "pending_content",
       "was_pending": true,
       "pending_reason": "awaiting_publication_date"
     },
     {
       "author": "Andrei Jikh",
-      "video_id": "7-lWx78nAQ4",
-      "title": "The Debt Spiral Has Started",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "Andrei Jikh",
-      "video_id": "g1kgEiP1v10",
-      "title": "Trump Just Started The Debt Spiral",
+      "video_id": "6BlwD59AoLM",
+      "title": "Stocks Just Crashed. Here's Why.",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -169,8 +158,8 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "cr3MV3KTHRE",
-      "title": "美股 对冲基金，抛售哪些？做多哪些？META、MSFT、XLI，存储重伤，竞争加剧！MU、SNDK位置！",
+      "video_id": "6b-ohR2Z9Z0",
+      "title": "（会员第309期）2026年11月2日-8日，重要公司Q3财报后2026、2027前瞻估值，强支撑点位！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -180,8 +169,8 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "ttrjfdl-Ne4",
-      "title": "美股 短期洗牌，还是大跌开始？CRWV信贷引发AI交易混乱！ASML财报粗犷，叫好不叫座！",
+      "video_id": "wxKcxcjSq5o",
+      "title": "美股 MRVL、AMD、ISRG、CEG！三季度财报看什么？10大公司EPS贡献超过490！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -190,9 +179,20 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "Andrei Jikh",
-      "video_id": "TNQ2PuDLiOg",
-      "title": "My Thoughts On XRP",
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "-KAra9tD4RU",
+      "title": "（会员第297期）2026年8月03日-07日，重要公司Q2财报后2026、2027前瞻估值，强支撑点位！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "老李玩钱",
+      "video_id": "0KgZcbhZoXk",
+      "title": "2支被忽略的科技巨头！分析与买入建议",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
