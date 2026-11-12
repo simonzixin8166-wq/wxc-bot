@@ -1,14 +1,14 @@
 {
   "version": 1,
-  "generated_at": "2026-11-12T09:48:54.259954+00:00",
+  "generated_at": "2026-11-12T18:17:56.424788+00:00",
   "principle": "seen is discovery, not learning; each video is counted once in its highest stage",
-  "seen": 217,
+  "seen": 218,
   "stages": {
     "formal_feed_text": 33,
     "historical_backlog": 54,
     "metadata_only": 103,
     "pending_unprobed": 1,
-    "provider_boilerplate": 25,
+    "provider_boilerplate": 26,
     "transcript_readable": 1
   },
   "stages_sum_equals_seen": true,
@@ -21,7 +21,7 @@
   },
   "by_author": {
     "Andrei Jikh": {
-      "provider_boilerplate": 25,
+      "provider_boilerplate": 26,
       "metadata_only": 27,
       "historical_backlog": 9,
       "pending_unprobed": 1

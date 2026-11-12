@@ -126138,9 +126138,47 @@
       "content_sha256": "1d155a8a22edf51dedbc2de885d074cc11aa32bd2fcfc1da02db86a0fa902cd8",
       "intake_class_hint": "live_candidate",
       "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "be744a56fa99319f67f8",
+      "source": "youtube",
+      "source_kind": "video",
+      "author": "Andrei Jikh",
+      "published_at": "2026-11-12",
+      "title": "What If America Loses The Al Race?",
+      "url": "https://www.youtube.com/watch?v=a7eW1OU1v00",
+      "excerpt": "Scribe\n \n \nScribe\nLike it? Make Scribe even better by\n \nleaving a review\nGet Chrome Extension\nBrowse\nPopular Videos\nRecent Videos\nAll Channels\nFree Tools\nVideo Subtitle Downloader\nVideo Timestamp Generator\nVideo Summarizer\nVideo Word Counter\nVideo Title Analyzer\nVideo Transcript Search\nVideo Analytics\nVideo Chapters Creator\nVideo Quiz Generator\nChat with Vid",
+      "content_chars": 733,
+      "semantic_content_chars": 723,
+      "content_filtering": {
+        "filter": "youtube_promotion_noise_v1",
+        "input_units": 40,
+        "removed_units": 0,
+        "removed_ratio": 0.0,
+        "promotion_noise_detected": false
+      },
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "captured_at": "2026-11-12T18:16:17Z",
+      "source_role": "market_context",
+      "transcript_status": "available",
+      "content_quality": "Q4",
+      "content_provider": "pickscribe.com",
+      "content_provider_url": "https://pickscribe.com/v/a7eW1OU1v00/",
+      "content_origin": "third_party_transcript",
+      "timestamp_evidence": false,
+      "rule_candidate_allowed": false,
+      "source_notice": "公开视频研究来源；仅保存短摘录与原视频链接。作者观点属于未验证假设，MyAlpha需独立验证后才可进入正式证据。"
     }
   ],
-  "updated_at": "2026-11-11T20:10:51Z",
+  "updated_at": "2026-11-12T18:17:23Z",
   "retention_policy": "append_only_no_record_count_cap",
   "historical_recovery": {
     "completed_at": "2026-10-07T13:43:06.018028+00:00",
