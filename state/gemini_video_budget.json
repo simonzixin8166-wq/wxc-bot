@@ -1432,15 +1432,15 @@
       ]
     },
     "2026-11-12": {
-      "calls": 0,
+      "calls": 2,
       "admitted": 0,
       "rejected": 0,
-      "errors": 4,
+      "errors": 6,
       "reconciliation": {
         "status": "COMPLETE",
-        "calls_billed": 0,
+        "calls_billed": 2,
         "calls_refunded_503": 4,
-        "detail_rows": 4,
+        "detail_rows": 6,
         "missing_detail_rows": 0,
         "counter_mismatch": []
       },
@@ -1480,6 +1480,24 @@
           "author": "RhinoFinance / 视野环球财经",
           "title": "美股 机构二季度13 F，加减仓哪些！大空头Michael Burry最新操作，真的相当空！",
           "detail": "{\"error\":{\"message\":\"gemini-3.5-flash is currently experiencing high demand, spikes in demand are usually temporary. Please try again later.\",\"code\":\"service_unavailable\"}}"
+        },
+        {
+          "video_id": "84hnnVx-8AQ",
+          "outcome": "exception",
+          "at": "23:43:25Z",
+          "model": "gemini-3.8-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 NVDA风暴继续，利好谁？持仓计划更新！大盘反弹最简单部分走完！",
+          "detail": "ReadTimeout"
+        },
+        {
+          "video_id": "DFSWsJ_y1-M",
+          "outcome": "http_403",
+          "at": "23:43:59Z",
+          "model": "gemini-3.8-flash",
+          "author": "Andrei Jikh",
+          "title": "China Just Won The AI Race",
+          "detail": "{\"error\":{\"message\":\"The caller does not have permission\",\"code\":\"permission_denied\"}}"
         }
       ],
       "refunded_503": 4
