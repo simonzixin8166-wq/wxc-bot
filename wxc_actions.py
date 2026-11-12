@@ -49,6 +49,11 @@ def check_myalpha_server_action(meta):
 RUN_MINUTES = float(os.getenv("BOT_RUN_MINUTES", "0") or 0)
 POLL_SECONDS = 50            # Telegram long-poll window (free; returns at once when a message arrives)
 PERIODIC_SECONDS = 30 * 60   # server status / YouTube report / (paused) watch at most this often
+MAX_BACKOFF = 300            # transient Telegram/network errors: back off up to 5 min, never end the run
+
+
+class TransientTelegramError(Exception):
+    """A 5xx / 429 / connection problem talking to Telegram: retried in long-run mode (11/11-12: 502, reset)."""
 
 
 def save_state(reason: str) -> None:
@@ -74,9 +79,15 @@ def _poll(meta, timeout):
     if meta.get("offset"):
         params["offset"] = meta["offset"]  # 只确认已经处理并提交过的消息
     a.record_request("telegram", "get_updates")
-    res = requests.get(a.API + "/getUpdates", params=params, timeout=timeout + 20).json()
+    try:
+        res = requests.get(a.API + "/getUpdates", params=params, timeout=timeout + 20).json()
+    except (requests.RequestException, ValueError) as exc:
+        raise TransientTelegramError(f"{type(exc).__name__}: {exc}") from exc
     if not res.get("ok"):
-        raise SystemExit(f"getUpdates 失败: {res}")
+        code = int(res.get("error_code") or 0)
+        if code >= 500 or code == 429:
+            raise TransientTelegramError(f"getUpdates {code}: {res.get('description')}")
+        raise SystemExit(f"getUpdates 失败: {res}")  # 401/404 etc.: a configuration problem, stop
     handled = 0
     for u in res.get("result", []):
         meta["offset"] = u["update_id"] + 1
@@ -84,14 +95,21 @@ def _poll(meta, timeout):
         if str(m.get("chat", {}).get("id")) != a.OWNER:
             continue  # 忽略陌生人
         handled += 1
-        if owner_forward.is_forward(m):
-            # Owner's own forward/export; full text only to the private textpack repo, never re-fetched
-            owner_forward.handle(m, a.say, tg_api=a.API, tg_file_base=f"https://api.telegram.org/file/bot{a.TOKEN}")
-            continue
-        text = (m.get("text") or "").strip()
-        if text:
-            print("收到指令:", text)
-            a.handle(text, sync=True)
+        try:
+            if owner_forward.is_forward(m):
+                # Owner's own forward/export; full text only to the private textpack repo, never re-fetched
+                owner_forward.handle(m, a.say, tg_api=a.API, tg_file_base=f"https://api.telegram.org/file/bot{a.TOKEN}")
+                continue
+            text = (m.get("text") or "").strip()
+            if text:
+                print("收到指令:", text)
+                a.handle(text, sync=True)
+        except Exception as exc:  # noqa: BLE001 - one bad message must not stop the bot or be retried forever
+            print(f"::warning title=tg-bot::message {u.get('update_id')} failed: {type(exc).__name__}: {exc}")
+            try:
+                a.say(f"这条消息处理失败（{type(exc).__name__}），已跳过，请稍后重发。")
+            except Exception:  # noqa: BLE001
+                pass
     return handled
 
 
@@ -114,11 +132,28 @@ def main():
     meta = json.load(open(META)) if os.path.exists(META) else {}
     deadline = time.time() + RUN_MINUTES * 60
     last_periodic = float("-inf")
+    failures = 0
     while True:
         long_run = RUN_MINUTES > 0
-        handled = _poll(meta, POLL_SECONDS if long_run else 0)
+        try:
+            handled = _poll(meta, POLL_SECONDS if long_run else 0)
+            failures = 0
+        except TransientTelegramError as exc:
+            if not long_run:
+                raise SystemExit(f"getUpdates 失败: {exc}")
+            failures += 1
+            wait = min(MAX_BACKOFF, 5 * 2 ** min(failures, 6))
+            print(f"::warning title=tg-bot::Telegram transient error ({exc}); retry in {wait}s")
+            _write_meta(meta)
+            if time.time() + wait + POLL_SECONDS + 30 >= deadline:
+                break
+            time.sleep(wait)
+            continue
         if time.time() - last_periodic >= PERIODIC_SECONDS or not long_run:
-            meta = _periodic(meta)
+            try:
+                meta = _periodic(meta)
+            except Exception as exc:  # noqa: BLE001 - status bridge / report must not end the bot
+                print(f"::warning title=tg-bot::periodic task failed: {type(exc).__name__}: {exc}")
             last_periodic = time.time()
         _write_meta(meta)
         if handled:

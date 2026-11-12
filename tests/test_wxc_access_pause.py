@@ -99,3 +99,38 @@ wa.RUN_MINUTES, seq[:], polls[:] = 0, [[]], []
 wa.main()
 assert len(polls) == 1 and polls[0]["timeout"] == 0                         # BOT_RUN_MINUTES=0: one round as before
 print("PASS bot loop: long-poll until the deadline, save after handling, periodic throttled; default single round")
+
+# ---- transient Telegram errors do not end a long run (11/11 connection reset, 11/12 502)
+seq2 = ["reset", {"ok": False, "error_code": 502, "description": "Bad Gateway"},
+        [{"update_id": 9, "message": {"chat": {"id": 1}, "text": "/help"}}], []]
+handled.clear(); saved.clear()
+slept = []
+
+
+def flaky(url, params=None, timeout=None):
+    x = seq2.pop(0) if seq2 else []
+    if x == "reset":
+        raise wa.requests.exceptions.ConnectionError("Connection reset by peer")
+    return R(x) if isinstance(x, list) else type("E", (), {"json": lambda self: x})()
+
+
+wa.requests.get = flaky
+wa.time.sleep = lambda s: slept.append(s)
+wa.RUN_MINUTES = 30
+wa.main()
+assert handled == ["/help"] and slept[:2] == [10, 20], (handled, slept)
+# a message whose handler raises is skipped (offset advanced), not retried forever
+seq2[:] = [[{"update_id": 10, "message": {"chat": {"id": 1}, "text": "boom"}}], []]
+said = []
+wa.a.handle = lambda text, sync=False: (_ for _ in ()).throw(RuntimeError("x"))
+wa.a.say = lambda t: said.append(t)
+wa.RUN_MINUTES = 5
+wa.main()
+assert json.loads(Path(wa.META).read_text())["offset"] == 11 and "处理失败" in said[0]
+# a bad token (401) is a configuration problem: stop
+wa.requests.get = lambda url, params=None, timeout=None: type("E", (), {"json": lambda self: {"ok": False, "error_code": 401}})()
+try:
+    wa.main(); raise AssertionError("401 must stop")
+except SystemExit:
+    pass
+print("PASS transient Telegram errors back off and continue; a failing message is skipped; 401 stops")
