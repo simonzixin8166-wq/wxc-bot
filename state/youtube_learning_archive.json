@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-11-12T00:39:18+00:00",
+  "generated_at": "2026-11-12T09:48:23+00:00",
   "mode": "historical_observational_learning_only",
   "non_gating": true,
   "result_blind": true,
@@ -160,8 +160,7 @@
       "promotion_eligible": false,
       "event_score_eligible": false,
       "note": "Historical observational learning only; never admitted to forward evidence or Promotion.",
-      "last_probe_at": "2026-11-05T09:27:24+00:00",
-      "probe_skipped_backoff": true
+      "last_probe_at": "2026-11-12T09:48:09+00:00"
     },
     {
       "archive_id": "yt_hist_338824bdf8e5f04c",
@@ -485,8 +484,7 @@
       "promotion_eligible": false,
       "event_score_eligible": false,
       "note": "Historical observational learning only; never admitted to forward evidence or Promotion.",
-      "last_probe_at": "2026-11-05T09:27:26+00:00",
-      "probe_skipped_backoff": true
+      "last_probe_at": "2026-11-12T09:48:09+00:00"
     },
     {
       "archive_id": "yt_hist_d0d45e5f4fde70e3",
@@ -526,8 +524,7 @@
       "promotion_eligible": false,
       "event_score_eligible": false,
       "note": "Historical observational learning only; never admitted to forward evidence or Promotion.",
-      "last_probe_at": "2026-11-05T09:27:32+00:00",
-      "probe_skipped_backoff": true
+      "last_probe_at": "2026-11-12T09:48:21+00:00"
     },
     {
       "archive_id": "yt_hist_0893fff08937fd37",
@@ -608,8 +605,7 @@
       "promotion_eligible": false,
       "event_score_eligible": false,
       "note": "Historical observational learning only; never admitted to forward evidence or Promotion.",
-      "last_probe_at": "2026-11-05T09:27:20+00:00",
-      "probe_skipped_backoff": true
+      "last_probe_at": "2026-11-12T09:48:06+00:00"
     },
     {
       "archive_id": "yt_hist_3ae8021e19f6b076",
@@ -649,8 +645,7 @@
       "promotion_eligible": false,
       "event_score_eligible": false,
       "note": "Historical observational learning only; never admitted to forward evidence or Promotion.",
-      "last_probe_at": "2026-11-05T09:27:22+00:00",
-      "probe_skipped_backoff": true
+      "last_probe_at": "2026-11-12T09:48:07+00:00"
     },
     {
       "archive_id": "yt_hist_20dd2bb19c558537",
@@ -690,8 +685,7 @@
       "promotion_eligible": false,
       "event_score_eligible": false,
       "note": "Historical observational learning only; never admitted to forward evidence or Promotion.",
-      "last_probe_at": "2026-11-05T09:27:37+00:00",
-      "probe_skipped_backoff": true
+      "last_probe_at": "2026-11-12T09:48:23+00:00"
     },
     {
       "archive_id": "yt_hist_1bb847d3923b3543",
@@ -813,8 +807,7 @@
       "promotion_eligible": false,
       "event_score_eligible": false,
       "note": "Historical observational learning only; never admitted to forward evidence or Promotion.",
-      "last_probe_at": "2026-11-05T09:27:28+00:00",
-      "probe_skipped_backoff": true
+      "last_probe_at": "2026-11-12T09:48:18+00:00"
     },
     {
       "archive_id": "yt_hist_62e5d086de149e44",
@@ -895,8 +888,7 @@
       "promotion_eligible": false,
       "event_score_eligible": false,
       "note": "Historical observational learning only; never admitted to forward evidence or Promotion.",
-      "last_probe_at": "2026-11-05T09:27:30+00:00",
-      "probe_skipped_backoff": true
+      "last_probe_at": "2026-11-12T09:48:19+00:00"
     },
     {
       "archive_id": "yt_hist_8eb11bcd35844155",

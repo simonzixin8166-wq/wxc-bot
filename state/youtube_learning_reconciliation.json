@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "generated_at": "2026-11-12T00:39:44.676824+00:00",
+  "generated_at": "2026-11-12T09:48:54.259954+00:00",
   "principle": "seen is discovery, not learning; each video is counted once in its highest stage",
-  "seen": 216,
+  "seen": 217,
   "stages": {
     "formal_feed_text": 33,
     "historical_backlog": 54,
-    "metadata_only": 102,
+    "metadata_only": 103,
     "pending_unprobed": 1,
     "provider_boilerplate": 25,
     "transcript_readable": 1
@@ -27,7 +27,7 @@
       "pending_unprobed": 1
     },
     "RhinoFinance / 视野环球财经": {
-      "metadata_only": 45,
+      "metadata_only": 46,
       "formal_feed_text": 22,
       "historical_backlog": 7
     },

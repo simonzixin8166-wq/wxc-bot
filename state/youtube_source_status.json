@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-11-12T00:39:44Z",
+  "generated_at": "2026-11-12T09:48:53Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -19,15 +19,15 @@
           "reached_end": false
         }
       ],
-      "previous_anchor_video_id": "4OV3C6IIjhg",
+      "previous_anchor_video_id": "84hnnVx-8AQ",
       "anchor_found": true,
       "reached_end": false,
       "discovery_complete": true,
       "latest": {
-        "video_id": "4OV3C6IIjhg",
-        "title": "美股 Anthropic确定IPO，办公软件横刀MSFT！CRWV盘中不够，盘后凑！软银AI基建亏损的警告！电力设备GEV怎么了？美银一级投资名单，移除三家半导体！",
-        "url": "https://www.youtube.com/watch?v=4OV3C6IIjhg",
-        "published_at": "2026-11-11",
+        "video_id": "84hnnVx-8AQ",
+        "title": "美股 NVDA风暴继续，利好谁？持仓计划更新！大盘反弹最简单部分走完！",
+        "url": "https://www.youtube.com/watch?v=84hnnVx-8AQ",
+        "published_at": "2026-11-12",
         "rss_status": "ok",
         "flat_metadata_keys": [
           "channel_id",
@@ -101,7 +101,7 @@
       "discovery_complete": true,
       "latest": {
         "video_id": "rAgmZA4DIS0",
-        "title": "What If America Loses The AI Race?",
+        "title": "What If China Wins The AI Race?",
         "url": "https://www.youtube.com/watch?v=rAgmZA4DIS0",
         "published_at": "",
         "rss_status": "ok",
@@ -122,8 +122,8 @@
   "pending_retried": 6,
   "content_attempted_this_run": 6,
   "content_work_budget": 6,
-  "content_backlog_after_run": 94,
-  "pending_total": 94,
+  "content_backlog_after_run": 95,
+  "pending_total": 95,
   "historical_demoted_from_pending": 0,
   "admitted_from_pending": 0,
   "nonforward_timestamp_unknown_admitted": 0,
@@ -138,50 +138,28 @@
   "discovery_complete": true,
   "new_video_diagnostics": [
     {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "84hnnVx-8AQ",
+      "title": "美股 NVDA风暴继续，利好谁？持仓计划更新！大盘反弹最简单部分走完！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
       "author": "Andrei Jikh",
       "video_id": "rAgmZA4DIS0",
-      "title": "What If America Loses The AI Race?",
+      "title": "What If China Wins The AI Race?",
       "admission": "pending_content",
       "was_pending": true,
       "pending_reason": "awaiting_publication_date"
     },
     {
-      "author": "Andrei Jikh",
-      "video_id": "6BlwD59AoLM",
-      "title": "Stocks Just Crashed. Here's Why.",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "6b-ohR2Z9Z0",
-      "title": "（会员第309期）2026年11月2日-8日，重要公司Q3财报后2026、2027前瞻估值，强支撑点位！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "wxKcxcjSq5o",
-      "title": "美股 MRVL、AMD、ISRG、CEG！三季度财报看什么？10大公司EPS贡献超过490！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "-KAra9tD4RU",
-      "title": "（会员第297期）2026年8月03日-07日，重要公司Q2财报后2026、2027前瞻估值，强支撑点位！",
+      "video_id": "4M7w7DR865M",
+      "title": "美股 最差9月，CTA更新！JPM战术转向，减仓多头！对冲基金上周仓位！AMZN遭起诉掉块肉！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -191,8 +169,30 @@
     },
     {
       "author": "老李玩钱",
-      "video_id": "0KgZcbhZoXk",
-      "title": "2支被忽略的科技巨头！分析与买入建议",
+      "video_id": "4n9bB7N96fY",
+      "title": "5月必买3支股票",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "老李玩钱",
+      "video_id": "6_GvmiNgd4M",
+      "title": "美股7巨头，价格已到位！买入/加仓价格点位更新",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "71FEJcz9VCY",
+      "title": "美股 凯投宏观：AI泡沫潜在破灭，五个警告信号！8月财政报告恶化，利息飙升！SOXX跟踪！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -205,7 +205,7 @@
     "status": "ok",
     "channel_errors": 0,
     "stuck_high_quality_pending": 0,
-    "provider_waiting_pending": 94,
+    "provider_waiting_pending": 95,
     "stuck_video_ids": [],
     "meaning": "Q1/Q2 text must not remain stuck in pending; Q3-Q5 may legitimately wait for better learning text."
   },
