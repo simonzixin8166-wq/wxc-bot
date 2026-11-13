@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-11-13T16:21:23Z",
+  "generated_at": "2026-11-13T23:33:24Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -101,7 +101,7 @@
       "discovery_complete": true,
       "latest": {
         "video_id": "a7eW1OU1v00",
-        "title": "What If China Wins The AI Race?",
+        "title": "What If America Loses The Al Race?",
         "url": "https://www.youtube.com/watch?v=a7eW1OU1v00",
         "published_at": "2026-11-12",
         "rss_status": "ok",
@@ -123,8 +123,8 @@
   "pending_retried": 6,
   "content_attempted_this_run": 6,
   "content_work_budget": 6,
-  "content_backlog_after_run": 95,
-  "pending_total": 95,
+  "content_backlog_after_run": 94,
+  "pending_total": 94,
   "historical_demoted_from_pending": 0,
   "admitted_from_pending": 0,
   "nonforward_timestamp_unknown_admitted": 0,
@@ -150,20 +150,9 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "XdQF1csLbnk",
-      "title": "美股 QQQ、IWM、SOXX、SMH、风险位置！SPY、IGV相对安全！持仓计划更新！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "Y7P-VOo0KTs",
-      "title": "（会员第298期）四大科技AI货币化进度（2026年Q2后），MSFT、GOOG、AMZN、META！前车之鉴，能否提前识别泡沫？",
+      "author": "Andrei Jikh",
+      "video_id": "_YXDHskRP6Y",
+      "title": "Here's What Pops This Stock Bubble",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -173,8 +162,8 @@
     },
     {
       "author": "Andrei Jikh",
-      "video_id": "YBhwK-VWsxY",
-      "title": "Japan's Money Is Collapsing",
+      "video_id": "_lOVieAIvSA",
+      "title": "I Let AI Invest My Money For 3 Years",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -184,8 +173,19 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "Z9T89cdzuyo",
-      "title": "美股 NVDA、MRVL、INTU、CRWD、CRM财报波动！对冲基金上周大抛售！大逆转，Altman承认AI时间表看法错误！",
+      "video_id": "bdzWer7gNII",
+      "title": "美股 OpenAI给半导体打鸡血！SOXX底部已成？ORCL、AMD、NVDA！TSLA遭行政狙击！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "cwQxqL-vC94",
+      "title": "美股 WMT糟糕前瞻大跌还债！ISRG无风起浪！NOW、SPCX！美国债务累积95天走完200年！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -195,8 +195,8 @@
     },
     {
       "author": "Andrei Jikh",
-      "video_id": "ZEi5tVIXWyc",
-      "title": "South Korea’s AI Bubble Just Popped",
+      "video_id": "dFjvcY9Tth0",
+      "title": "China Is Preparing For $38,000 Gold",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -209,7 +209,7 @@
     "status": "ok",
     "channel_errors": 0,
     "stuck_high_quality_pending": 0,
-    "provider_waiting_pending": 95,
+    "provider_waiting_pending": 94,
     "stuck_video_ids": [],
     "meaning": "Q1/Q2 text must not remain stuck in pending; Q3-Q5 may legitimately wait for better learning text."
   },

@@ -143684,9 +143684,172 @@
       "video_observed_title": "声明 Disclaimer",
       "validation_status": "pending_owner_spot_check",
       "forward_evidence_eligible": false
+    },
+    {
+      "id": "e4be1c3e5fd0fef9bfc9",
+      "source": "youtube",
+      "source_kind": "video",
+      "author": "老李玩钱",
+      "published_at": "",
+      "title": "美股重回高位，要卖股票了吗？到底什么时候该卖出股票",
+      "url": "https://www.youtube.com/watch?v=ZGYWudfZMM4",
+      "excerpt": "[Gemini 视频理解 · 未验证] 视频探讨了美股卖出股票的时机与策略。作者区分了短线与长线操作：短线需严格执行预设的止盈止损（如BLSH在80美元止盈）；长线卖出则基于基本面恶化（如清仓LULU）、降低单一关联风险（如卖出DXYZ）或出于仓位管理与估值控制（如减仓1/3的AMD）。最后警告切忌择时预测市场和凭情绪交易。\n- [05:35 BLSH sell 80] 打新买入BLSH，在达到预期的翻倍盈利目标后于80美元左右清仓卖出\n- [09:52 LULU sell 210] 因基本面走弱、竞争加剧及年底税损收割，在210美元左右清仓卖出LULU\n- [11:13 DXYZ sell 39] 因与重仓股TSLA同样高度绑定马斯克风险，在39美元以上卖出DXYZ以降低集中风险\n- [12:14 AMD s",
+      "content_chars": 655,
+      "semantic_content_chars": 655,
+      "content_filtering": {
+        "filter": "youtube_promotion_noise_v1",
+        "input_units": 9,
+        "removed_units": 0,
+        "removed_ratio": 0.0,
+        "promotion_noise_detected": false
+      },
+      "images_count": 0,
+      "themes_hint": [
+        "风险管理",
+        "止损纪律",
+        "TSLA"
+      ],
+      "symbols": [
+        "AMD",
+        "BLSH",
+        "DXYZ",
+        "LULU",
+        "TSLA"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "captured_at": "2026-11-13T23:32:21Z",
+      "source_role": "rule_supply",
+      "transcript_status": "available",
+      "content_quality": "Q3",
+      "content_provider": "gemini_video",
+      "content_provider_url": "https://www.youtube.com/watch?v=ZGYWudfZMM4",
+      "content_origin": "gemini_video_understanding",
+      "timestamp_evidence": true,
+      "rule_candidate_allowed": false,
+      "source_notice": "YouTube正文可用于非Forward语义学习；可靠发布时间缺失，因此强制按backfill处理，禁止计入Forward Evidence或Promotion。",
+      "claims": [
+        {
+          "symbol": "AMD",
+          "stance": "trim",
+          "stance_cues": [
+            "trim",
+            "sell"
+          ],
+          "horizon": "long",
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "87f16d0ec08968c37d443cd3ca24e16f84afd311579f28fc0143a2105c033ea3",
+          "evidence_chars": 64
+        },
+        {
+          "symbol": "TSLA",
+          "stance": "sell",
+          "stance_cues": [
+            "sell"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "78d9c085493eb7c530e2bebca3709e31394af75c3d4f9117d34e4b3097d9d06e",
+          "evidence_chars": 64
+        },
+        {
+          "symbol": "AMD",
+          "stance": "trim",
+          "stance_cues": [
+            "trim",
+            "sell"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "c02b278c0e1f9705dc29c7dcf9751e5be021a3350f81a703921a653d728ed583",
+          "evidence_chars": 76
+        },
+        {
+          "symbol": "TSLA",
+          "stance": "hold",
+          "stance_cues": [
+            "hold"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "4a2b96bd548064406d212af5b82a6981bcde90aa358284290fbaeeacb35f00eb",
+          "evidence_chars": 48
+        }
+      ],
+      "claims_status": "experimental_unvalidated",
+      "video_claims": [
+        {
+          "claim": "打新买入BLSH，在达到预期的翻倍盈利目标后于80美元左右清仓卖出",
+          "stance": "sell",
+          "price": "80",
+          "timestamp": "05:35",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "BLSH",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "因基本面走弱、竞争加剧及年底税损收割，在210美元左右清仓卖出LULU",
+          "stance": "sell",
+          "price": "210",
+          "timestamp": "09:52",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "LULU",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "因与重仓股TSLA同样高度绑定马斯克风险，在39美元以上卖出DXYZ以降低集中风险",
+          "stance": "sell",
+          "price": "39",
+          "timestamp": "11:13",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "DXYZ",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "因持仓比例过高（近20%）、远期PE>50倍估值偏高及需要补充账户现金，减仓AMD 1/3（从120股降至80股）",
+          "stance": "sell",
+          "price": null,
+          "timestamp": "12:14",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "AMD",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "TSLA作为账户核心重仓股继续保留，清理其他重叠风险资产",
+          "stance": "hold",
+          "price": null,
+          "timestamp": "11:06",
+          "evidence_mode": "spoken_explicit",
+          "confidence": "high",
+          "symbol": "TSLA",
+          "symbol_check": "listed"
+        }
+      ],
+      "video_claims_model": "gemini-3.5-flash",
+      "video_macro": [],
+      "video_observed_title": "到底什么时候该卖出股票？",
+      "validation_status": "pending_owner_spot_check",
+      "forward_evidence_eligible": false,
+      "intake_class_hint": "backfill",
+      "capture_mode": "youtube_timestamp_unknown_learning",
+      "timestamp_confidence": "missing"
     }
   ],
-  "updated_at": "2026-11-13T16:20:11Z",
+  "updated_at": "2026-11-13T23:32:43Z",
   "retention_policy": "append_only_no_record_count_cap",
   "historical_recovery": {
     "completed_at": "2026-10-07T13:43:06.018028+00:00",

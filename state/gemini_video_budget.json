@@ -1524,15 +1524,15 @@
       ]
     },
     "2026-11-13": {
-      "calls": 1,
-      "admitted": 1,
-      "rejected": 0,
+      "calls": 3,
+      "admitted": 2,
+      "rejected": 1,
       "errors": 1,
       "reconciliation": {
         "status": "COMPLETE",
-        "calls_billed": 1,
+        "calls_billed": 3,
         "calls_refunded_503": 1,
-        "detail_rows": 2,
+        "detail_rows": 4,
         "missing_detail_rows": 0,
         "counter_mismatch": []
       },
@@ -1553,6 +1553,23 @@
           "author": "RhinoFinance / 视野环球财经",
           "title": "美股 NVDA风暴继续，利好谁？持仓计划更新！大盘反弹最简单部分走完！",
           "detail": "{\"error\":{\"message\":\"gemini-3.5-flash is currently experiencing high demand, spikes in demand are usually temporary. Please try again later.\",\"code\":\"service_unavailable\"}}"
+        },
+        {
+          "video_id": "84hnnVx-8AQ",
+          "outcome": "identity_mismatch",
+          "at": "23:31:18Z",
+          "model": "gemini-3.5-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 NVDA风暴继续，利好谁？持仓计划更新！大盘反弹最简单部分走完！",
+          "detail": "seen='视野环球财经：黄仁勋传闻与NVDA仓位抉择' channel='视野环球财经'"
+        },
+        {
+          "video_id": "ZGYWudfZMM4",
+          "outcome": "admitted",
+          "at": "23:32:21Z",
+          "model": "gemini-3.5-flash",
+          "author": "老李玩钱",
+          "title": "美股重回高位，要卖股票了吗？到底什么时候该卖出股票"
         }
       ],
       "refunded_503": 1
