@@ -1522,6 +1522,40 @@
       "fallback_exhausted": [
         "gemini-3.5-flash"
       ]
+    },
+    "2026-11-13": {
+      "calls": 1,
+      "admitted": 1,
+      "rejected": 0,
+      "errors": 1,
+      "reconciliation": {
+        "status": "COMPLETE",
+        "calls_billed": 1,
+        "calls_refunded_503": 1,
+        "detail_rows": 2,
+        "missing_detail_rows": 0,
+        "counter_mismatch": []
+      },
+      "recent": [
+        {
+          "video_id": "f4X4h28Z44A",
+          "outcome": "admitted",
+          "at": "16:19:18Z",
+          "model": "gemini-3.5-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 黄仁勋辞职，散户抄底！NVDA持仓计划补充！QQQ空头3年新高，对冲基金低仓位，会配合追涨吗？"
+        },
+        {
+          "video_id": "84hnnVx-8AQ",
+          "outcome": "http_503_all_models",
+          "at": "16:19:41Z",
+          "model": "gemini-3.8-flash,gemini-3.5-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 NVDA风暴继续，利好谁？持仓计划更新！大盘反弹最简单部分走完！",
+          "detail": "{\"error\":{\"message\":\"gemini-3.5-flash is currently experiencing high demand, spikes in demand are usually temporary. Please try again later.\",\"code\":\"service_unavailable\"}}"
+        }
+      ],
+      "refunded_503": 1
     }
   },
   "version": 1,

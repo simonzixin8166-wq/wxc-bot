@@ -143416,9 +143416,277 @@
       "content_sha256": "ed9963191b6cd1f0d7a9ff4a11e09d5f9812eff5f87e461753152a60ce338af7",
       "intake_class_hint": "live_candidate",
       "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "50596314fd84bc928262",
+      "source": "youtube",
+      "source_kind": "video",
+      "author": "RhinoFinance / 视野环球财经",
+      "published_at": "2026-11-13",
+      "title": "美股 黄仁勋辞职，散户抄底！NVDA持仓计划补充！QQQ空头3年新高，对冲基金低仓位，会配合追涨吗？",
+      "url": "https://www.youtube.com/watch?v=f4X4h28Z44A",
+      "excerpt": "[Gemini 视频理解 · 未验证] 本期节目主要讨论英伟达(NVDA)高管变动后的机构评级调整与散户抄底资金流向。分析师更新了NVDA持仓计划：若财报前反弹至172-174美元区间将提前清仓规避风险。同时分析了美股大盘及QQQ空头头寸、CTA资金关键点位与年底 Santa Rally 潜在驱动因素。\n- [13:38 NVDA sell 172-174] 若英伟达在11月17日财报发布前反弹至172-174美元区间，将选择提前清仓离场\n- [01:51 NVDA bullish 132-150] 英伟达下方关键强支撑位在132-150美元区间\n- [04:18 NVDA neutral 220] 高盛将英伟达目标价从300美元下调至220美元，维持买入评级\n- [05:28 NVDA hold 200] 伯",
+      "content_chars": 914,
+      "semantic_content_chars": 914,
+      "content_filtering": {
+        "filter": "youtube_promotion_noise_v1",
+        "input_units": 11,
+        "removed_units": 0,
+        "removed_ratio": 0.0,
+        "promotion_noise_detected": false
+      },
+      "images_count": 0,
+      "themes_hint": [
+        "风险管理",
+        "趋势确认"
+      ],
+      "symbols": [
+        "AMD",
+        "AVGO",
+        "NVDA",
+        "QQQ",
+        "SPY"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "captured_at": "2026-11-13T16:19:18Z",
+      "source_role": "rule_supply",
+      "transcript_status": "available",
+      "content_quality": "Q3",
+      "content_provider": "gemini_video",
+      "content_provider_url": "https://www.youtube.com/watch?v=f4X4h28Z44A",
+      "content_origin": "gemini_video_understanding",
+      "timestamp_evidence": true,
+      "rule_candidate_allowed": false,
+      "source_notice": "公开视频由 Gemini 读取原片（语音+画面）生成的结构化摘要；观点未验证、不可直接作为规则，等待 Owner 抽查原片核对。",
+      "claims": [
+        {
+          "symbol": "NVDA",
+          "stance": "buy",
+          "stance_cues": [
+            "buy"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "7ae70332746fba97a05f28a1d7107abaf0af3625921165cb47b091483b7fc177",
+          "evidence_chars": 59
+        },
+        {
+          "symbol": "NVDA",
+          "stance": "sell",
+          "stance_cues": [
+            "sell"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "e43f012c19f6869e8aef2ae4c959820b01d65c5d5f1c6ecad11188d9d10cd2d7",
+          "evidence_chars": 43
+        },
+        {
+          "symbol": "NVDA",
+          "stance": "sell",
+          "stance_cues": [
+            "sell"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "7f13b032c02ae5403d939b76c32ea0b7739fc7d550d2ec85b75b70de6a8032ff",
+          "evidence_chars": 68
+        },
+        {
+          "symbol": "NVDA",
+          "stance": "bullish",
+          "stance_cues": [
+            "bullish"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "f1fcadd42c06730f2c63fa61489820b44a789b99d90c8a8145737c0c06cf149d",
+          "evidence_chars": 54
+        },
+        {
+          "symbol": "NVDA",
+          "stance": "buy",
+          "stance_cues": [
+            "buy"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "8527a953fae42cde6d6f67d346c1211c8915d4e52f88f7030f4879549ef2e9df",
+          "evidence_chars": 57
+        },
+        {
+          "symbol": "NVDA",
+          "stance": "hold",
+          "stance_cues": [
+            "hold"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "69453706bd809539805d25204dfc866d05b1b49f9208d476e2371a166b434a07",
+          "evidence_chars": 60
+        },
+        {
+          "symbol": "NVDA",
+          "stance": "hold",
+          "stance_cues": [
+            "hold"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "44cd57e85ac5dd965e40eb7a7324b0a47e938af9d104b1a4e3efa99f6af39d3f",
+          "evidence_chars": 57
+        },
+        {
+          "symbol": "SPY",
+          "stance": "bullish",
+          "stance_cues": [
+            "bullish"
+          ],
+          "horizon": "medium",
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "9bdbc7dd998901e1602de06e3c0206abe73ad9feb901c8df32eaa85ca8f840e6",
+          "evidence_chars": 58
+        },
+        {
+          "symbol": "VOO",
+          "stance": "bullish",
+          "stance_cues": [
+            "bullish"
+          ],
+          "horizon": "medium",
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "9bdbc7dd998901e1602de06e3c0206abe73ad9feb901c8df32eaa85ca8f840e6",
+          "evidence_chars": 58
+        },
+        {
+          "symbol": "QQQ",
+          "stance": "bullish",
+          "stance_cues": [
+            "bullish"
+          ],
+          "horizon": "medium",
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "76bc483fc44997cc87d87ccbb84f8918bd4243302adbceb5dffdabe40e933012",
+          "evidence_chars": 65
+        },
+        {
+          "symbol": "NVDA",
+          "stance": "buy",
+          "stance_cues": [
+            "buy"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": 1.31,
+          "evidence_sha256": "d3798269c2c728fd5668de9911df6cb8c3550cc72e848015747c628b342a8ff9",
+          "evidence_chars": 124
+        }
+      ],
+      "claims_status": "experimental_unvalidated",
+      "video_claims": [
+        {
+          "claim": "若英伟达在11月17日财报发布前反弹至172-174美元区间，将选择提前清仓离场",
+          "stance": "sell",
+          "price": "172-174",
+          "timestamp": "13:38",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "NVDA",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "英伟达下方关键强支撑位在132-150美元区间",
+          "stance": "bullish",
+          "price": "132-150",
+          "timestamp": "01:51",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "NVDA",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "高盛将英伟达目标价从300美元下调至220美元，维持买入评级",
+          "stance": "neutral",
+          "price": "220",
+          "timestamp": "04:18",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "NVDA",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "伯恩斯坦将英伟达评级下调至与大盘持平，目标价从400美元下调至200美元",
+          "stance": "hold",
+          "price": "200",
+          "timestamp": "05:28",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "NVDA",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "MR分析师将英伟达评级下调至持有，目标价从315美元降至185美元",
+          "stance": "hold",
+          "price": "185",
+          "timestamp": "04:37",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "NVDA",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "SPY若能突破上方776美元附近阻力位，标普大盘年底有望再创新高",
+          "stance": "bullish",
+          "price": "776",
+          "timestamp": "24:06",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "SPY",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "QQQ若能向上突破703-728美元区间，将推动空头平仓并开启年底行情",
+          "stance": "bullish",
+          "price": "703-728",
+          "timestamp": "24:26",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "QQQ",
+          "symbol_check": "listed"
+        }
+      ],
+      "video_claims_model": "gemini-3.5-flash",
+      "video_macro": [],
+      "video_observed_title": "声明 Disclaimer",
+      "validation_status": "pending_owner_spot_check",
+      "forward_evidence_eligible": false
     }
   ],
-  "updated_at": "2026-11-13T02:50:26Z",
+  "updated_at": "2026-11-13T16:20:11Z",
   "retention_policy": "append_only_no_record_count_cap",
   "historical_recovery": {
     "completed_at": "2026-10-07T13:43:06.018028+00:00",
