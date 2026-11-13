@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "updated_at": "2026-11-12T23:46:50Z",
+  "updated_at": "2026-11-13T06:40:50Z",
   "channels": {
     "@RhinoFinance": {
       "author": "RhinoFinance / 视野环球财经",
-      "anchor_video_id": "84hnnVx-8AQ",
-      "previous_anchor_video_id": "84hnnVx-8AQ",
+      "anchor_video_id": "f4X4h28Z44A",
+      "previous_anchor_video_id": "f4X4h28Z44A",
       "complete": true,
       "last_scan_limit": 10,
       "scan_attempts": [
@@ -18,7 +18,7 @@
       ],
       "next_scan_limit": 10,
       "last_listed_count": 10,
-      "updated_at": "2026-11-12T23:45:06Z"
+      "updated_at": "2026-11-13T06:40:05Z"
     },
     "@老李玩钱": {
       "author": "老李玩钱",
@@ -36,7 +36,7 @@
       ],
       "next_scan_limit": 10,
       "last_listed_count": 10,
-      "updated_at": "2026-11-12T23:45:06Z"
+      "updated_at": "2026-11-13T06:40:08Z"
     },
     "@AndreiJikh": {
       "author": "Andrei Jikh",
@@ -54,7 +54,7 @@
       ],
       "next_scan_limit": 10,
       "last_listed_count": 10,
-      "updated_at": "2026-11-12T23:45:07Z"
+      "updated_at": "2026-11-13T06:40:10Z"
     }
   },
   "complete": true,

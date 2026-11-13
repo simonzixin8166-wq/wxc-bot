@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-11-12T23:46:50Z",
+  "generated_at": "2026-11-13T06:40:50Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -19,20 +19,19 @@
           "reached_end": false
         }
       ],
-      "previous_anchor_video_id": "84hnnVx-8AQ",
+      "previous_anchor_video_id": "f4X4h28Z44A",
       "anchor_found": true,
       "reached_end": false,
       "discovery_complete": true,
       "latest": {
-        "video_id": "84hnnVx-8AQ",
-        "title": "美股 NVDA风暴继续，利好谁？持仓计划更新！大盘反弹最简单部分走完！",
-        "url": "https://www.youtube.com/watch?v=84hnnVx-8AQ",
-        "published_at": "2026-11-12",
-        "rss_status": "ok",
+        "video_id": "f4X4h28Z44A",
+        "title": "美股 黄仁勋辞职，散户抄底！NVDA持仓计划补充！QQQ空头3年新高，对冲基金低仓位，会配合追涨吗？",
+        "url": "https://www.youtube.com/watch?v=f4X4h28Z44A",
+        "published_at": "",
+        "rss_status": "error:HTTPError",
         "flat_metadata_keys": [
           "channel_id",
-          "duration",
-          "rss_published_at"
+          "duration"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -65,12 +64,11 @@
         "video_id": "w8GM1mghKJc",
         "title": "中期选举尘埃落定！美股分化严重，何去何从",
         "url": "https://www.youtube.com/watch?v=w8GM1mghKJc",
-        "published_at": "2026-11-04",
-        "rss_status": "ok",
+        "published_at": "",
+        "rss_status": "error:HTTPError",
         "flat_metadata_keys": [
           "channel_id",
-          "duration",
-          "rss_published_at"
+          "duration"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -103,12 +101,11 @@
         "video_id": "a7eW1OU1v00",
         "title": "What If China Wins The AI Race?",
         "url": "https://www.youtube.com/watch?v=a7eW1OU1v00",
-        "published_at": "2026-11-12",
-        "rss_status": "ok",
+        "published_at": "",
+        "rss_status": "error:HTTPError",
         "flat_metadata_keys": [
           "channel_id",
-          "duration",
-          "rss_published_at"
+          "duration"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -123,17 +120,17 @@
   "pending_retried": 6,
   "content_attempted_this_run": 6,
   "content_work_budget": 6,
-  "content_backlog_after_run": 95,
-  "pending_total": 95,
+  "content_backlog_after_run": 96,
+  "pending_total": 96,
   "historical_demoted_from_pending": 0,
   "admitted_from_pending": 0,
   "nonforward_timestamp_unknown_admitted": 0,
   "feed_records_added": 0,
   "publication_dates_resolved": 0,
   "rss_status": {
-    "UCFQsi7WaF5X41tcuOryDk8w": "ok",
-    "UCGy7SkBjcIAgTiwkXEtPnYg": "ok",
-    "UCo2gxyermsLBSCxFHvJs0Zg": "ok"
+    "UCFQsi7WaF5X41tcuOryDk8w": "error:HTTPError",
+    "UCGy7SkBjcIAgTiwkXEtPnYg": "error:HTTPError",
+    "UCo2gxyermsLBSCxFHvJs0Zg": "error:HTTPError"
   },
   "historical_backlog_total": 63,
   "discovery_complete": true,
@@ -150,17 +147,17 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "Andrei Jikh",
-      "video_id": "rAgmZA4DIS0",
-      "title": "What If China Wins The AI Race?",
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "f4X4h28Z44A",
+      "title": "美股 黄仁勋辞职，散户抄底！NVDA持仓计划补充！QQQ空头3年新高，对冲基金低仓位，会配合追涨吗？",
       "admission": "pending_content",
       "was_pending": true,
       "pending_reason": "awaiting_publication_date"
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "Fu_h7lMTYU8",
-      "title": "美股 三个风险，现在如何？GOOG加速倒车！软件IGV，成分股跟踪！ORCL、PLTR、CRM、INTU、APP、ADBE！",
+      "video_id": "N8BjausuEsI",
+      "title": "美股 META大招豪赌AI代理！对GOOG、AMZN影响！SOXX还需一天确认！财政部回购不及预期！AAPL开始折叠！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -169,9 +166,9 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "G_zzWcUSTfY",
-      "title": "美股 共识预期：半导体无路可退！QQQ、IWM、AMD、META！",
+      "author": "Andrei Jikh",
+      "video_id": "NZpobX6MQVA",
+      "title": "Trump Will Cause The Next Financial Crisis",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -181,8 +178,8 @@
     },
     {
       "author": "老李玩钱",
-      "video_id": "GsmAlvfOUFs",
-      "title": "6月必买3支股票",
+      "video_id": "PDAHTpp2c78",
+      "title": "摩根大通：标普500今年将下跌15%",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -191,9 +188,9 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "Andrei Jikh",
-      "video_id": "HIBozcOlQPY",
-      "title": "How I’m Preparing For The “Supercycle”",
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "RgGeU0w9GZo",
+      "title": "美股 NVDA黄仁勋“喊单”奏效！AVGO有惊无险，PANW放缓代价！褐皮书：物价，消费，就业，增长！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -206,7 +203,7 @@
     "status": "ok",
     "channel_errors": 0,
     "stuck_high_quality_pending": 0,
-    "provider_waiting_pending": 95,
+    "provider_waiting_pending": 96,
     "stuck_video_ids": [],
     "meaning": "Q1/Q2 text must not remain stuck in pending; Q3-Q5 may legitimately wait for better learning text."
   },

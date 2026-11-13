@@ -1435,12 +1435,12 @@
       "calls": 2,
       "admitted": 0,
       "rejected": 0,
-      "errors": 6,
+      "errors": 8,
       "reconciliation": {
         "status": "COMPLETE",
         "calls_billed": 2,
-        "calls_refunded_503": 4,
-        "detail_rows": 6,
+        "calls_refunded_503": 6,
+        "detail_rows": 8,
         "missing_detail_rows": 0,
         "counter_mismatch": []
       },
@@ -1498,9 +1498,30 @@
           "author": "Andrei Jikh",
           "title": "China Just Won The AI Race",
           "detail": "{\"error\":{\"message\":\"The caller does not have permission\",\"code\":\"permission_denied\"}}"
+        },
+        {
+          "video_id": "MEQ814VtkrY",
+          "outcome": "http_503_all_models",
+          "at": "06:39:11Z",
+          "model": "gemini-3.8-flash,gemini-3.5-flash",
+          "author": "老李玩钱",
+          "title": "战火打响美股竟安然无恙，什么情况？3月行情推演及展望",
+          "detail": "{\"error\":{\"message\":\"gemini-3.5-flash is currently experiencing high demand, spikes in demand are usually temporary. Please try again later.\",\"code\":\"service_unavailable\"}}"
+        },
+        {
+          "video_id": "MFB-Fp4F15A",
+          "outcome": "http_429_fallback",
+          "at": "06:39:47Z",
+          "model": "gemini-3.5-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 罕见IGV压 SOXX一头！NFLX止跌雄起了吗？TSLA、WMT、SNDK！",
+          "detail": "{\"error\":{\"message\":\"Rate limit exceeded for model gemini-3.6-flash (limit: 20 requests per day on Free Tier). Please retry in 1h20m12s or upgrade your tier at https://ai.dev/rate-limit.\",\"code\":\"too_"
         }
       ],
-      "refunded_503": 4
+      "refunded_503": 6,
+      "fallback_exhausted": [
+        "gemini-3.5-flash"
+      ]
     }
   },
   "version": 1,
