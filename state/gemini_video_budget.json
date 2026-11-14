@@ -1593,15 +1593,15 @@
       "refunded_503": 3
     },
     "2026-11-14": {
-      "calls": 4,
+      "calls": 5,
       "admitted": 1,
       "rejected": 1,
-      "errors": 2,
+      "errors": 3,
       "reconciliation": {
         "status": "COMPLETE",
-        "calls_billed": 4,
+        "calls_billed": 5,
         "calls_refunded_503": 0,
-        "detail_rows": 4,
+        "detail_rows": 5,
         "missing_detail_rows": 0,
         "counter_mismatch": []
       },
@@ -1640,7 +1640,19 @@
           "author": "老李玩钱",
           "title": "3支牛股！回调即可买入",
           "detail": "ReadTimeout"
+        },
+        {
+          "video_id": "1lspa5l4kxs",
+          "outcome": "http_403",
+          "at": "23:53:58Z",
+          "model": "gemini-3.8-flash",
+          "author": "Andrei Jikh",
+          "title": "My Thoughts On Bitcoin",
+          "detail": "{\"error\":{\"message\":\"The caller does not have permission\",\"code\":\"permission_denied\"}}"
         }
+      ],
+      "skip_authors_403": [
+        "Andrei Jikh"
       ]
     }
   },
