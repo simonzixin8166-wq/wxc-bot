@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-11-13T20:28:56+00:00",
- "records": 3727,
+ "generated_at": "2026-11-14T02:37:37+00:00",
+ "records": 3781,
  "excluded": 26,
  "flag_counts": {
   "invalid_transcript": 26
  },
  "video": {
-  "records": 60,
+  "records": 61,
   "invalid_transcript": 26,
   "note": "video count follows the live feed (18 at the 10-11 inventory, 19 after a new video was captured 10-11 12:45Z)"
  },
@@ -14,7 +14,7 @@
   "near_publication_observed": 2085,
   "backfill_proven": 1397,
   "delayed_capture": 206,
-  "unprovable": 39
+  "unprovable": 93
  },
  "policy": "overlay only; feed/raw files unchanged; near_publication_observed ≠ real-time lock",
  "records_flags": {
@@ -26157,6 +26157,384 @@
    "exclude": false,
    "provenance": "near_publication_observed",
    "first_git_seen": "2026-11-13T16:21:23Z",
+   "published_at_timezone": "unknown"
+  },
+  "e4be1c3e5fd0fef9bfc9": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": "2026-11-13T23:33:24Z",
+   "published_at_timezone": "unknown"
+  },
+  "d88f2d59dd3bcbc89517": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "e02827a009b68e51475a": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "a80f8ec32a94be8c5011": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "e88f480eee190cc36ba2": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "724189c94060e896a117": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "4e2947a6b535e18341f9": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "a3ad97fa89faf9206b02": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "18ec2eb78373ea97bf8b": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "b8c14912d4c0e2183870": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "1ba832307a43a16bc1b1": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "ea80a29f144dae36731d": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "4b0830a21affab1508ff": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "77580e867d9863fb5e56": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "87bbde51f7142d69799b": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "acbfe76260a85f360d5a": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "4d585e749b4a5907c269": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "c4a67c7fa26613c0b08f": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "b878bdbb25bb52ebe2c9": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "d96da8c1e5bca92f39ab": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "2d53610504986ad0836d": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "86d0bfca7348abab28e7": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "40671c033744b1075d47": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "636403eecad9c301bee6": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "def30703a3099d6cf1f4": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "d4df646dfb029933a9cc": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "db8f62c4b317cb416891": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "87256e23dbf05610982e": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "b59d289d2e9305fe6a94": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "013cb8d1e8cdd034914b": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "9c275d343456ca14f85a": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "117e041648d92e7203cd": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "f884871659dab3855cd5": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "f16a818eb93667814d11": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "1e2720d219a5529c8209": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "5bfc3dc7e8d209663bf1": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "071d122958ecc4216ec5": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "3d4888441fa13bb432a8": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "c876db9dd82233ce4c9b": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "b11531e2924e1cb859b8": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "edc3d2872e56008b115c": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "111f558a6ba4a092487a": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "0cbc07f0fb2c8ae2b8cc": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "2153345439b34cdf6f9f": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "6367ef0abd182a22a31b": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "b6db6e271416b5e4954a": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "5615a37e85c67979e4af": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "270b88b709bef29b108b": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "e9d40c180200c6912980": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "347b915a891797bb7653": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "831922b9d3d1bc102a31": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "f0e114646c87b86624f4": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "5b4320ca9cbe7232804c": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
+   "published_at_timezone": "unknown"
+  },
+  "5b6fd64f0221fb08ff6f": {
+   "flags": [],
+   "exclude": false,
+   "provenance": "unprovable",
+   "first_git_seen": null,
    "published_at_timezone": "unknown"
   }
  }

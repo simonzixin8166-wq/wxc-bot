@@ -143847,9 +143847,3327 @@
       "intake_class_hint": "backfill",
       "capture_mode": "youtube_timestamp_unknown_learning",
       "timestamp_confidence": "missing"
+    },
+    {
+      "id": "d88f2d59dd3bcbc89517",
+      "source": "wenxuecity",
+      "source_kind": "blog",
+      "author": "BrightLine",
+      "published_at": "2026-11-13",
+      "title": "楼塌之后，我又看了一遍黄仁勋讲创业的老视频",
+      "url": "https://blog.wenxuecity.com/myblog/82458/202611/10219.html",
+      "excerpt": "今天下午什么也没干，翻出一段黄仁勋很多年前的视频，从头看到尾。\n视频里他讲自己三十岁是怎么开始的。想创业，不知道怎么办，就去书店买了一本教人创业的书，四五百页厚。翻了几页就放下了，因为他算了一下，等读完，公司早倒了，钱也花光了。他说自己很怕融资，根本不知道怎么开口跟人要钱，最后是老东家的CEO替他给红杉打了一个电话。他还说了那句后来被引用了无数次的话：How hard can it be？能有多难？如果当初知道有多难，他是绝对不会干的。\n然后是让我按下暂停的那一句：It will be hard. I am going to learn my way there. 会很难，我边走边学。\n就是这个人，这个星期被赶出了自己创办的公司。\n十一月十二号，英伟达公告，黄仁勋辞去总裁、CEO和董事，即刻生效。说是辞职，媒体",
+      "content_chars": 1145,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [
+        "NVDA",
+        "BE"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": null,
+      "source_entry_key": null,
+      "parent_post_id": null,
+      "attribution_fallback": null,
+      "thread_context": null,
+      "captured_at": "2026-11-14T02:37:29Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forward",
+      "owner_forward_item_id": "C-0900144e8426",
+      "owner_forward_retrieved_at": "2026-11-14T02:09:09+00:00",
+      "publication_lag_hours": 9.5,
+      "content_sha256": "0900144e8426d23d594f008ebaacba6a1adf322c69503f4bad1e62d9963ce17f",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forward_timely"
+    },
+    {
+      "id": "e02827a009b68e51475a",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "bogbog",
+      "published_at": "2026-11-12 21:57:00",
+      "title": "Good， 还是说特斯拉吧",
+      "url": "https://bbs.wenxuecity.com/cfzh/123505.html",
+      "excerpt": "Good， 还是说特斯拉吧\n![](images/123505_1.gif)",
+      "content_chars": 38,
+      "images_count": 0,
+      "themes_hint": [
+        "TSLA"
+      ],
+      "symbols": [
+        "TSLA"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "123505",
+      "parent_post_id": "123290",
+      "attribution_fallback": null,
+      "thread_context": {
+        "root_post_id": "123290",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "123290",
+          "author": "美股",
+          "title": "tsla up",
+          "published_at": "2026-11-12 12:35:00"
+        },
+        "reply_count": 0,
+        "replies": [],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-14T02:37:29Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "body_exported",
+      "owner_export_retrieved_at": "2026-11-14T02:09:09+00:00",
+      "publication_lag_hours": 26.1,
+      "content_sha256": "3392fc91f2661d3fc637079e3783dbf0f57320f963af3fa32f08725ad13caa60",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "a80f8ec32a94be8c5011",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-12 20:35:00",
+      "title": "回测是指QQQ日内touch甚至跌下200D均线，但在收盘时回到200D均线上方",
+      "url": "https://bbs.wenxuecity.com/cfzh/123493.html",
+      "excerpt": "回测是指QQQ日内touch甚至跌下200D均线，但在收盘时回到200D均线上方",
+      "content_chars": 40,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [
+        "QQQ"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "123493",
+      "parent_post_id": "123488",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "123331",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "123488",
+          "author": "云山青青",
+          "title": "请教回测是看收盘吗？",
+          "published_at": "2026-11-12 19:11:00"
+        },
+        "reply_count": 0,
+        "replies": [],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-14T02:37:30Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-14T02:09:09+00:00",
+      "publication_lag_hours": 27.4,
+      "content_sha256": "52982652f88de4efbbb4e1dc73cf6f1696bf504fb107a79ddf5f6c9903a56b7b",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "e88f480eee190cc36ba2",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "bogbog",
+      "published_at": "2026-11-12 21:42:00",
+      "title": "哈哈，作为我的第一个客户，为表感谢， 算命3蚊 ， 算流年1蚊，绝对优惠哈哈哈",
+      "url": "https://bbs.wenxuecity.com/cfzh/123503.html",
+      "excerpt": "哈哈，作为我的第一个客户，为表感谢， 算命3蚊 ， 算流年1蚊，绝对优惠哈哈哈\n![](images/123503_1.gif)",
+      "content_chars": 64,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "123503",
+      "parent_post_id": "123396",
+      "attribution_fallback": null,
+      "thread_context": {
+        "root_post_id": "123331",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "123396",
+          "author": "香虞",
+          "title": "I will be the first client.",
+          "published_at": "2026-11-12 15:46:00"
+        },
+        "reply_count": 1,
+        "replies": [
+          {
+            "post_id": "123518",
+            "author": "香虞",
+            "title": "这价格划算",
+            "depth": 10,
+            "in_reply_to": "123503",
+            "body_bytes": 0,
+            "published_at": "2026-11-13 04:23:00"
+          }
+        ],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-14T02:37:30Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "body_exported",
+      "owner_export_retrieved_at": "2026-11-14T02:09:09+00:00",
+      "publication_lag_hours": 26.3,
+      "content_sha256": "afefdfd9a045bd6f616d889c594c201a120771a87aaa33ea4dc1d71fd3b1cf85",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "724189c94060e896a117",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "bogbog",
+      "published_at": "2026-11-13 05:22:00",
+      "title": "lol",
+      "url": "https://bbs.wenxuecity.com/cfzh/123525.html",
+      "excerpt": "lol",
+      "content_chars": 3,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "123525",
+      "parent_post_id": "123406",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "123394",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "123406",
+          "author": "三心三意",
+          "title": "Because people believe NVDA is all but dead :)",
+          "published_at": "2026-11-12 15:54:00"
+        },
+        "reply_count": 0,
+        "replies": [],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-14T02:37:30Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-14T02:09:09+00:00",
+      "publication_lag_hours": 18.6,
+      "content_sha256": "07123e1f482356c415f684407a3b8723e10b2cbbc0b8fcd6282c49d37c9c1abc",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "4e2947a6b535e18341f9",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "低手只会用均线",
+      "published_at": "2026-11-12 18:31:00",
+      "title": "3",
+      "url": "https://bbs.wenxuecity.com/cfzh/123473.html",
+      "excerpt": "3",
+      "content_chars": 1,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "123473",
+      "parent_post_id": "123399",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "123399",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "123399",
+          "author": "云起千百度",
+          "title": "我下面的帖子，大家说AMD那么高了，不敢买。我的主帖里根本没写要现在买AMD，LOL。我的重点是说大盘想涨，",
+          "published_at": "2026-11-12 15:51:00"
+        },
+        "reply_count": 4,
+        "replies": [
+          {
+            "post_id": "123482",
+            "author": "云山青青",
+            "title": "期待，谢谢分享，旅途快乐！",
+            "depth": 2,
+            "in_reply_to": "123473",
+            "body_bytes": 0,
+            "published_at": "2026-11-12 18:53:00"
+          },
+          {
+            "post_id": "123486",
+            "author": "云起千百度",
+            "title": "好啊，开心玩",
+            "depth": 2,
+            "in_reply_to": "123473",
+            "body_bytes": 0,
+            "published_at": "2026-11-12 19:02:00"
+          },
+          {
+            "post_id": "123502",
+            "author": "Friday99",
+            "title": "期待分享，谢谢！好好玩~",
+            "depth": 2,
+            "in_reply_to": "123473",
+            "body_bytes": 0,
+            "published_at": "2026-11-12 21:41:00"
+          },
+          {
+            "post_id": "123508",
+            "author": "小松松",
+            "title": "期待分享，谢谢",
+            "depth": 2,
+            "in_reply_to": "123473",
+            "body_bytes": 0,
+            "published_at": "2026-11-12 22:44:00"
+          }
+        ],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-14T02:37:30Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-14T02:09:09+00:00",
+      "publication_lag_hours": 29.5,
+      "content_sha256": "4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "a3ad97fa89faf9206b02",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "bogbog",
+      "published_at": "2026-11-12 21:39:00",
+      "title": "有您抄底我就放心了， 我们的智慧小猪。 说NVDA都说累了， 拒绝再说NVDA, 哈哈",
+      "url": "https://bbs.wenxuecity.com/cfzh/123501.html",
+      "excerpt": "有您抄底我就放心了， 我们的智慧小猪。 说NVDA都说累了， 拒绝再说NVDA, 哈哈\n![](images/123501_1.gif)",
+      "content_chars": 68,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [
+        "NVDA"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "123501",
+      "parent_post_id": "123460",
+      "attribution_fallback": null,
+      "thread_context": {
+        "root_post_id": "123421",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "123460",
+          "author": "dancingpig",
+          "title": "我少贪心一些，想抄130的底",
+          "published_at": "2026-11-12 17:54:00"
+        },
+        "reply_count": 0,
+        "replies": [],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-14T02:37:30Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "body_exported",
+      "owner_export_retrieved_at": "2026-11-14T02:09:09+00:00",
+      "publication_lag_hours": 26.4,
+      "content_sha256": "29987398c8887bab33716e9d39cf64efa3b229350d9da6a4705185db827aff09",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "18ec2eb78373ea97bf8b",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "bogbog",
+      "published_at": "2026-11-12 22:10:00",
+      "title": "也拒绝再提AMD。AMD AMD AMD, 前几个月是INTC INTC INTC ,  j/k",
+      "url": "https://bbs.wenxuecity.com/cfzh/123506.html",
+      "excerpt": "也拒绝再提AMD。AMD AMD AMD, 前几个月是INTC INTC INTC ,  j/k",
+      "content_chars": 48,
+      "images_count": 0,
+      "themes_hint": [
+        "INTC"
+      ],
+      "symbols": [
+        "INTC",
+        "AMD"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "123506",
+      "parent_post_id": "123460",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "123421",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "123460",
+          "author": "dancingpig",
+          "title": "我少贪心一些，想抄130的底",
+          "published_at": "2026-11-12 17:54:00"
+        },
+        "reply_count": 0,
+        "replies": [],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-14T02:37:30Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-14T02:09:09+00:00",
+      "publication_lag_hours": 25.8,
+      "content_sha256": "7fe08d396d4368aa7daf1c783661813abbb3e93aff1bd252e8520cefd4a9a357",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "b8c14912d4c0e2183870",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "bogbog",
+      "published_at": "2026-11-12 17:59:00",
+      "title": "小猪好，我也只是听说的",
+      "url": "https://bbs.wenxuecity.com/cfzh/123462.html",
+      "excerpt": "小猪好，我也只是听说的",
+      "content_chars": 11,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "123462",
+      "parent_post_id": "123458",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "123421",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "123458",
+          "author": "dancingpig",
+          "title": "有道理，否则没必要连董事会的职务都撇干净",
+          "published_at": "2026-11-12 17:53:00"
+        },
+        "reply_count": 1,
+        "replies": [
+          {
+            "post_id": "123465",
+            "author": "dancingpig",
+            "title": "bog好 ：）",
+            "depth": 4,
+            "in_reply_to": "123462",
+            "body_bytes": 0,
+            "published_at": "2026-11-12 18:09:00"
+          }
+        ],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-14T02:37:30Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-14T02:09:09+00:00",
+      "publication_lag_hours": 30.0,
+      "content_sha256": "4c2d827d41d96cc442136eb79be7e00e40b7fc6631b0b5cffe7e48fabc172521",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "1ba832307a43a16bc1b1",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "dindindon",
+      "published_at": "2026-11-12 19:47:00",
+      "title": "刚说完不排除有可能看到69000, 现在已经穿过去了, 68,825.57 Wow!",
+      "url": "https://bbs.wenxuecity.com/cfzh/123489.html",
+      "excerpt": "刚说完不排除有可能看到69000, 现在已经穿过去了, 68,825.57 Wow!",
+      "content_chars": 42,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "123489",
+      "parent_post_id": "123451",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "123451",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "123451",
+          "author": "dindindon",
+          "title": "11/12 比特币",
+          "published_at": "2026-11-12 17:19:00"
+        },
+        "reply_count": 0,
+        "replies": [],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-14T02:37:31Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-14T02:09:09+00:00",
+      "publication_lag_hours": 28.2,
+      "content_sha256": "75d86bc32b7a1ade7444e4709f9259531cc0c63d3a09a5eef8e02616864758c8",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "ea80a29f144dae36731d",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "bogbog",
+      "published_at": "2026-11-12 21:25:00",
+      "title": "之前都在说比特币broke out 说过还没过冬天，一定会至少再去65000-75000才有可能真正拉起",
+      "url": "https://bbs.wenxuecity.com/cfzh/123500.html",
+      "excerpt": "之前都在说比特币broke out 说过还没过冬天，一定会至少再去65000-75000才有可能真正拉起\nhttps://bbs.wenxuecity.com/cfzh/114140.html\nhttps://bbs.wenxuecity.com/cfzh/114084.html\nhttps://bbs.wenxuecity.com/cfzh/114043.html",
+      "content_chars": 184,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "123500",
+      "parent_post_id": "123451",
+      "attribution_fallback": null,
+      "thread_context": {
+        "root_post_id": "123451",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "123451",
+          "author": "dindindon",
+          "title": "11/12 比特币",
+          "published_at": "2026-11-12 17:19:00"
+        },
+        "reply_count": 1,
+        "replies": [
+          {
+            "post_id": "123507",
+            "author": "westandingup",
+            "title": "我记得您说过 所以一直没买 神人 谢谢",
+            "depth": 2,
+            "in_reply_to": "123500",
+            "body_bytes": 0,
+            "published_at": "2026-11-12 22:14:00"
+          }
+        ],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-14T02:37:31Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "body_exported",
+      "owner_export_retrieved_at": "2026-11-14T02:09:09+00:00",
+      "publication_lag_hours": 26.6,
+      "content_sha256": "0df47d6fbb6d4c8d3e3316ae64520039ddc870e110a876ebbf27bdf653eb0d1d",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "4b0830a21affab1508ff",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-12 18:00:00",
+      "title": "TSLA above 400 overnight， again， 要注意它如果突破414, 下面是一大波",
+      "url": "https://bbs.wenxuecity.com/cfzh/123463.html",
+      "excerpt": "TSLA above 400 overnight， again， 要注意它如果突破414, 下面是一大波",
+      "content_chars": 52,
+      "images_count": 0,
+      "themes_hint": [
+        "趋势确认",
+        "TSLA"
+      ],
+      "symbols": [
+        "TSLA"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "123463",
+      "parent_post_id": null,
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "123463",
+        "is_reply": false,
+        "in_reply_to": null,
+        "reply_count": 3,
+        "replies": [
+          {
+            "post_id": "123466",
+            "author": "bogbog",
+            "title": "是不是要实现年底至少再回500的愿望",
+            "depth": 1,
+            "in_reply_to": "123463",
+            "body_bytes": 167,
+            "published_at": "2026-11-12 18:12:00"
+          },
+          {
+            "post_id": "123471",
+            "author": "天气晚来秋",
+            "title": "又是合并的消息",
+            "depth": 1,
+            "in_reply_to": "123463",
+            "body_bytes": 0,
+            "published_at": "2026-11-12 18:27:00"
+          },
+          {
+            "post_id": "123475",
+            "author": "Rey",
+            "title": "希望，冲啊",
+            "depth": 1,
+            "in_reply_to": "123463",
+            "body_bytes": 0,
+            "published_at": "2026-11-12 18:35:00"
+          }
+        ],
+        "replies_with_body": 1
+      },
+      "captured_at": "2026-11-14T02:37:31Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-14T02:09:09+00:00",
+      "publication_lag_hours": 30.0,
+      "content_sha256": "5c3b38d6e4499231f53bc774d916501dcdba9cb4ed8dc74d3b93f9532a4c5505",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "77580e867d9863fb5e56",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "bogbog",
+      "published_at": "2026-11-12 18:12:00",
+      "title": "是不是要实现年底至少再回500的愿望",
+      "url": "https://bbs.wenxuecity.com/cfzh/123466.html",
+      "excerpt": "是不是要实现年底至少再回500的愿望\n![](images/123466_1.gif)",
+      "content_chars": 43,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "123466",
+      "parent_post_id": "123463",
+      "attribution_fallback": null,
+      "thread_context": {
+        "root_post_id": "123463",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "123463",
+          "author": "三心三意",
+          "title": "TSLA above 400 overnight， again， 要注意它如果突破414, 下面是一大波",
+          "published_at": "2026-11-12 18:00:00"
+        },
+        "reply_count": 0,
+        "replies": [],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-14T02:37:31Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "body_exported",
+      "owner_export_retrieved_at": "2026-11-14T02:09:09+00:00",
+      "publication_lag_hours": 29.8,
+      "content_sha256": "d1357437a3d8aa10757c634a7c26e9bc1cea8a324500270280381de5682a74b8",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "87bbde51f7142d69799b",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "bogbog",
+      "published_at": "2026-11-12 21:44:00",
+      "title": "lol, 特斯拉靠您了， 以后跟您混了",
+      "url": "https://bbs.wenxuecity.com/cfzh/123504.html",
+      "excerpt": "lol, 特斯拉靠您了， 以后跟您混了",
+      "content_chars": 19,
+      "images_count": 0,
+      "themes_hint": [
+        "TSLA"
+      ],
+      "symbols": [
+        "TSLA"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "123504",
+      "parent_post_id": "123475",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "123463",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "123475",
+          "author": "Rey",
+          "title": "希望，冲啊",
+          "published_at": "2026-11-12 18:35:00"
+        },
+        "reply_count": 0,
+        "replies": [],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-14T02:37:31Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-14T02:09:09+00:00",
+      "publication_lag_hours": 26.3,
+      "content_sha256": "c4ad79ecaeb92453d0ccc323bc38a34ef4234783b13ef5b4cd9c1c52a075a5bd",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "acbfe76260a85f360d5a",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-13 05:32:00",
+      "title": "This is a fake news, borrowed from OpenAI open letter",
+      "url": "https://bbs.wenxuecity.com/cfzh/123528.html",
+      "excerpt": "This is a fake news, borrowed from OpenAI open letter",
+      "content_chars": 53,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "123528",
+      "parent_post_id": "123510",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "123510",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "123510",
+          "author": "Wtp003",
+          "title": "员工力挺，还有变数？",
+          "published_at": "2026-11-13 00:54:00"
+        },
+        "reply_count": 0,
+        "replies": [],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-14T02:37:31Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-14T02:09:09+00:00",
+      "publication_lag_hours": 18.5,
+      "content_sha256": "2806a27bcabd60cac2c3e46f5339bcfc3a582fe72b4ef666acf43bd793249834",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "4d585e749b4a5907c269",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-13 05:34:00",
+      "title": "PPI cooling down, 0.3 vs 0.4 expected",
+      "url": "https://bbs.wenxuecity.com/cfzh/123529.html",
+      "excerpt": "PPI cooling down, 0.3 vs 0.4 expected",
+      "content_chars": 37,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "123529",
+      "parent_post_id": null,
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "123529",
+        "is_reply": false,
+        "in_reply_to": null,
+        "reply_count": 2,
+        "replies": [
+          {
+            "post_id": "123530",
+            "author": "香虞",
+            "title": "nvda如果大幅反弹  估计上周四的低点就是local bottom了",
+            "depth": 1,
+            "in_reply_to": "123529",
+            "body_bytes": 49,
+            "published_at": "2026-11-13 05:34:00"
+          },
+          {
+            "post_id": "123532",
+            "author": "MarkUp",
+            "title": "checked us10y 5.1%, pressure lingers, stay neutral",
+            "depth": 1,
+            "in_reply_to": "123529",
+            "body_bytes": 0,
+            "published_at": "2026-11-13 05:45:00"
+          }
+        ],
+        "replies_with_body": 1
+      },
+      "captured_at": "2026-11-14T02:37:31Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-14T02:09:09+00:00",
+      "publication_lag_hours": 18.4,
+      "content_sha256": "baad40e7fa7ca379bb89c9757e1bfc43661a8d115b15d94d01a115a008b3bba8",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "c4a67c7fa26613c0b08f",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-13 06:12:00",
+      "title": "NVDA already 170 了，哈哈哈。不过，短时间内，对它不要抱太大希望",
+      "url": "https://bbs.wenxuecity.com/cfzh/123536.html",
+      "excerpt": "NVDA already 170 了，哈哈哈。不过，短时间内，对它不要抱太大希望",
+      "content_chars": 40,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [
+        "NVDA"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "123536",
+      "parent_post_id": "123530",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "123529",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "123530",
+          "author": "香虞",
+          "title": "nvda如果大幅反弹  估计上周四的低点就是local bottom了",
+          "published_at": "2026-11-13 05:34:00"
+        },
+        "reply_count": 2,
+        "replies": [
+          {
+            "post_id": "123537",
+            "author": "bogbog",
+            "title": "昨天开盘的量是大钱，大钱都是做了很多功课的， 不会乱买",
+            "depth": 3,
+            "in_reply_to": "123536",
+            "body_bytes": 0,
+            "published_at": "2026-11-13 06:16:00"
+          },
+          {
+            "post_id": "123542",
+            "author": "bogbog",
+            "title": "苹果最奇葩，每天都新高。我记得去年有段时间也是非常惨，大家都不喜欢",
+            "depth": 3,
+            "in_reply_to": "123536",
+            "body_bytes": 0,
+            "published_at": "2026-11-13 06:41:00"
+          }
+        ],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-14T02:37:31Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-14T02:09:09+00:00",
+      "publication_lag_hours": 17.8,
+      "content_sha256": "9d55a02172597bd50f75629393dc2a2a4c1fc4e518bfb6794c23a1b2bf19aa48",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "b878bdbb25bb52ebe2c9",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "bogbog",
+      "published_at": "2026-11-13 06:16:00",
+      "title": "昨天开盘的量是大钱，大钱都是做了很多功课的， 不会乱买",
+      "url": "https://bbs.wenxuecity.com/cfzh/123537.html",
+      "excerpt": "昨天开盘的量是大钱，大钱都是做了很多功课的， 不会乱买",
+      "content_chars": 27,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "123537",
+      "parent_post_id": "123536",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "123529",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "123536",
+          "author": "三心三意",
+          "title": "NVDA already 170 了，哈哈哈。不过，短时间内，对它不要抱太大希望",
+          "published_at": "2026-11-13 06:12:00"
+        },
+        "reply_count": 1,
+        "replies": [
+          {
+            "post_id": "123538",
+            "author": "三心三意",
+            "title": "我不做功课也知道140-150是必买的：）",
+            "depth": 4,
+            "in_reply_to": "123537",
+            "body_bytes": 0,
+            "published_at": "2026-11-13 06:22:00"
+          }
+        ],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-14T02:37:31Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-14T02:09:09+00:00",
+      "publication_lag_hours": 17.7,
+      "content_sha256": "a51c19c1aae333d259e4ccadb6d62cce29702f0af90f5e0f409a49dfe47f2217",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "d96da8c1e5bca92f39ab",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-13 06:22:00",
+      "title": "我不做功课也知道140-150是必买的：）",
+      "url": "https://bbs.wenxuecity.com/cfzh/123538.html",
+      "excerpt": "我不做功课也知道140-150是必买的：）",
+      "content_chars": 21,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "123538",
+      "parent_post_id": "123537",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "123529",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "123537",
+          "author": "bogbog",
+          "title": "昨天开盘的量是大钱，大钱都是做了很多功课的， 不会乱买",
+          "published_at": "2026-11-13 06:16:00"
+        },
+        "reply_count": 1,
+        "replies": [
+          {
+            "post_id": "123543",
+            "author": "Lazymm",
+            "title": "我就抄您俩作业了",
+            "depth": 5,
+            "in_reply_to": "123538",
+            "body_bytes": 0,
+            "published_at": "2026-11-13 06:42:00"
+          }
+        ],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-14T02:37:31Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-14T02:09:09+00:00",
+      "publication_lag_hours": 17.6,
+      "content_sha256": "9b71eef289fc70cd0f064dacc1ecad5ff98941493546c298ba4411e14da97361",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "2d53610504986ad0836d",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "bogbog",
+      "published_at": "2026-11-13 07:07:00",
+      "title": "AMD也变成妖股了，今天跌这么多",
+      "url": "https://bbs.wenxuecity.com/cfzh/123549.html",
+      "excerpt": "AMD也变成妖股了，今天跌这么多",
+      "content_chars": 16,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [
+        "AMD"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "123549",
+      "parent_post_id": "123543",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "123529",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "123543",
+          "author": "Lazymm",
+          "title": "我就抄您俩作业了",
+          "published_at": "2026-11-13 06:42:00"
+        },
+        "reply_count": 3,
+        "replies": [
+          {
+            "post_id": "123552",
+            "author": "yifan99",
+            "title": "是不是加仓的机会？",
+            "depth": 7,
+            "in_reply_to": "123549",
+            "body_bytes": 0,
+            "published_at": "2026-11-13 07:09:00"
+          },
+          {
+            "post_id": "123553",
+            "author": "Rey",
+            "title": "PPI不差啊 怎么又开始砸盘了",
+            "depth": 7,
+            "in_reply_to": "123549",
+            "body_bytes": 0,
+            "published_at": "2026-11-13 07:11:00"
+          },
+          {
+            "post_id": "123558",
+            "author": "小松松",
+            "title": "Bog 妹妹说要看今天的收盘，下周才有可能完成调整。你觉得SPY 去714 的可能性还大吗？还是会在上周四的底部以上回调",
+            "depth": 7,
+            "in_reply_to": "123549",
+            "body_bytes": 0,
+            "published_at": "2026-11-13 07:14:00"
+          }
+        ],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-14T02:37:31Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-14T02:09:09+00:00",
+      "publication_lag_hours": 16.9,
+      "content_sha256": "59a9fded2850c8e2b864a18c178168f26826457c85d0c65b7f4ff4b73bed46c3",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "86d0bfca7348abab28e7",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "bogbog",
+      "published_at": "2026-11-13 07:13:00",
+      "title": "我自己不加，我上周四加仓够了, 本来就很多很多AMD。 我加nbis哈哈",
+      "url": "https://bbs.wenxuecity.com/cfzh/123555.html",
+      "excerpt": "我自己不加，我上周四加仓够了, 本来就很多很多AMD。 我加nbis哈哈",
+      "content_chars": 36,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [
+        "NBIS",
+        "AMD"
+      ],
+      "operations": [
+        {
+          "symbols": [
+            "NBIS",
+            "AMD"
+          ],
+          "actions": [
+            "add"
+          ],
+          "attribution": "author_action",
+          "attribution_confidence": "high"
+        }
+      ],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [
+        {
+          "symbol": "AMD",
+          "stance": "add",
+          "stance_cues": [
+            "add"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "cf76cf3673e921778c1b5c590ef302d1a553082efeba417cc22736e935e6ea60",
+          "evidence_chars": 27
+        }
+      ],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "123555",
+      "parent_post_id": "123552",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "123529",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "123552",
+          "author": "yifan99",
+          "title": "是不是加仓的机会？",
+          "published_at": "2026-11-13 07:09:00"
+        },
+        "reply_count": 2,
+        "replies": [
+          {
+            "post_id": "123562",
+            "author": "yifan99",
+            "title": "好的，我也有很多。看来上周加的METU,会有一波。等待。AMZN也在艰难挣扎上升。",
+            "depth": 9,
+            "in_reply_to": "123555",
+            "body_bytes": 0,
+            "published_at": "2026-11-13 07:18:00"
+          },
+          {
+            "post_id": "123564",
+            "author": "Rey",
+            "title": "NBIS我刚刚也加了",
+            "depth": 9,
+            "in_reply_to": "123555",
+            "body_bytes": 0,
+            "published_at": "2026-11-13 07:19:00"
+          }
+        ],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-14T02:37:31Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-14T02:09:09+00:00",
+      "publication_lag_hours": 16.8,
+      "content_sha256": "14dfe43d95acd895b19b7bc9a69feb467f1de0e72e441f170e838eeadcd512be",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "40671c033744b1075d47",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "bogbog",
+      "published_at": "2026-11-13 07:16:00",
+      "title": "我还是觉得调整应该会到下周的后半周才会真正结束。",
+      "url": "https://bbs.wenxuecity.com/cfzh/123560.html",
+      "excerpt": "我还是觉得调整应该会到下周的后半周才会真正结束。",
+      "content_chars": 24,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "123560",
+      "parent_post_id": "123558",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "123529",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "123558",
+          "author": "小松松",
+          "title": "Bog 妹妹说要看今天的收盘，下周才有可能完成调整。你觉得SPY 去714 的可能性还大吗？还是会在上周四的底部以上回调",
+          "published_at": "2026-11-13 07:14:00"
+        },
+        "reply_count": 2,
+        "replies": [
+          {
+            "post_id": "123566",
+            "author": "小松松",
+            "title": "嗯，好的。下周有英伟达季报，ANT上市和美联储决议。大事挺多的。目前美债收益率也太高了",
+            "depth": 9,
+            "in_reply_to": "123560",
+            "body_bytes": 0,
+            "published_at": "2026-11-13 07:23:00"
+          },
+          {
+            "post_id": "123569",
+            "author": "kim333",
+            "title": "smh又到480以下了，MM看它还要跌多少，谢谢",
+            "depth": 9,
+            "in_reply_to": "123560",
+            "body_bytes": 0,
+            "published_at": "2026-11-13 07:27:00"
+          }
+        ],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-14T02:37:31Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-14T02:09:09+00:00",
+      "publication_lag_hours": 16.7,
+      "content_sha256": "0b67a0ab2f27534067e01cecfb23d36cefa4fcfa3e3766b2a89e30d08e1e252a",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "636403eecad9c301bee6",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "bogbog",
+      "published_at": "2026-11-13 07:35:00",
+      "title": "看下今天收盘吧，今天的收盘很重要",
+      "url": "https://bbs.wenxuecity.com/cfzh/123573.html",
+      "excerpt": "看下今天收盘吧，今天的收盘很重要",
+      "content_chars": 16,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "123573",
+      "parent_post_id": "123566",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "123529",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "123566",
+          "author": "小松松",
+          "title": "嗯，好的。下周有英伟达季报，ANT上市和美联储决议。大事挺多的。目前美债收益率也太高了",
+          "published_at": "2026-11-13 07:23:00"
+        },
+        "reply_count": 1,
+        "replies": [
+          {
+            "post_id": "123574",
+            "author": "bogbog",
+            "title": "等下我回来再看，现在要跟朋友们出门hang out, 又在香港了，12点夜生活才刚刚开始，哈哈哈",
+            "depth": 11,
+            "in_reply_to": "123573",
+            "body_bytes": 0,
+            "published_at": "2026-11-13 07:38:00"
+          }
+        ],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-14T02:37:31Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-14T02:09:09+00:00",
+      "publication_lag_hours": 16.4,
+      "content_sha256": "911c835a4ebcf1b17d97e410e33b8c0ebca35d1965597b1ebf478ddb056b56b8",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "def30703a3099d6cf1f4",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "bogbog",
+      "published_at": "2026-11-13 07:38:00",
+      "title": "等下我回来再看，现在要跟朋友们出门hang out, 又在香港了，12点夜生活才刚刚开始，哈哈哈",
+      "url": "https://bbs.wenxuecity.com/cfzh/123574.html",
+      "excerpt": "等下我回来再看，现在要跟朋友们出门hang out, 又在香港了，12点夜生活才刚刚开始，哈哈哈",
+      "content_chars": 48,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "123574",
+      "parent_post_id": "123573",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "123529",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "123573",
+          "author": "bogbog",
+          "title": "看下今天收盘吧，今天的收盘很重要",
+          "published_at": "2026-11-13 07:35:00"
+        },
+        "reply_count": 1,
+        "replies": [
+          {
+            "post_id": "123578",
+            "author": "小松松",
+            "title": "哈哈，玩得开心！",
+            "depth": 12,
+            "in_reply_to": "123574",
+            "body_bytes": 0,
+            "published_at": "2026-11-13 07:41:00"
+          }
+        ],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-14T02:37:31Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-14T02:09:09+00:00",
+      "publication_lag_hours": 16.4,
+      "content_sha256": "5d95e874e1270e3c1c6022fb9187f6393bad9b71a58ea4d627500d1e4dfd18e4",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "d4df646dfb029933a9cc",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "bogbog",
+      "published_at": "2026-11-13 06:41:00",
+      "title": "苹果最奇葩，每天都新高。我记得去年有段时间也是非常惨，大家都不喜欢",
+      "url": "https://bbs.wenxuecity.com/cfzh/123542.html",
+      "excerpt": "苹果最奇葩，每天都新高。我记得去年有段时间也是非常惨，大家都不喜欢",
+      "content_chars": 33,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "123542",
+      "parent_post_id": "123536",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "123529",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "123536",
+          "author": "三心三意",
+          "title": "NVDA already 170 了，哈哈哈。不过，短时间内，对它不要抱太大希望",
+          "published_at": "2026-11-13 06:12:00"
+        },
+        "reply_count": 1,
+        "replies": [
+          {
+            "post_id": "123546",
+            "author": "yifan99",
+            "title": "不是奇葩，是安心股，拿在手里，安心睡觉。",
+            "depth": 4,
+            "in_reply_to": "123542",
+            "body_bytes": 0,
+            "published_at": "2026-11-13 06:59:00"
+          }
+        ],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-14T02:37:31Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-14T02:09:09+00:00",
+      "publication_lag_hours": 17.3,
+      "content_sha256": "3612a850b397836b9f40fcbb0d1b8ca8efbef69c2a547f388354aa9a0fa54dd3",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "db8f62c4b317cb416891",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "bogbog",
+      "published_at": "2026-11-13 07:05:00",
+      "title": "也不是都安心， 去年也很惨的，都说没前途了， 关税影响大， 苹果没有创新，要被淘汰了。",
+      "url": "https://bbs.wenxuecity.com/cfzh/123547.html",
+      "excerpt": "也不是都安心， 去年也很惨的，都说没前途了， 关税影响大， 苹果没有创新，要被淘汰了。",
+      "content_chars": 43,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "123547",
+      "parent_post_id": "123546",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "123529",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "123546",
+          "author": "yifan99",
+          "title": "不是奇葩，是安心股，拿在手里，安心睡觉。",
+          "published_at": "2026-11-13 06:59:00"
+        },
+        "reply_count": 1,
+        "replies": [
+          {
+            "post_id": "123550",
+            "author": "yifan99",
+            "title": "每个票从低到高，又到底，这就是ＷＳ来收割韭菜。所以Ride on Wave!",
+            "depth": 6,
+            "in_reply_to": "123547",
+            "body_bytes": 0,
+            "published_at": "2026-11-13 07:07:00"
+          }
+        ],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-14T02:37:31Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-14T02:09:09+00:00",
+      "publication_lag_hours": 16.9,
+      "content_sha256": "becfad0e01b4aa27297b09160e9dae2e703d92181abe8f7a14a0bfe0c6a471a8",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "87256e23dbf05610982e",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "bogbog",
+      "published_at": "2026-11-13 07:18:00",
+      "title": "是",
+      "url": "https://bbs.wenxuecity.com/cfzh/123563.html",
+      "excerpt": "是",
+      "content_chars": 1,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "123563",
+      "parent_post_id": "123550",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "123529",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "123550",
+          "author": "yifan99",
+          "title": "每个票从低到高，又到底，这就是ＷＳ来收割韭菜。所以Ride on Wave!",
+          "published_at": "2026-11-13 07:07:00"
+        },
+        "reply_count": 0,
+        "replies": [],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-14T02:37:31Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-14T02:09:09+00:00",
+      "publication_lag_hours": 16.7,
+      "content_sha256": "b5141d3d19e9a04855acdb2dd5218b0924254b73d3cb663557ed0f9f73403750",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "b59d289d2e9305fe6a94",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "bogbog",
+      "published_at": "2026-11-13 07:08:00",
+      "title": "短期不好期待太多",
+      "url": "https://bbs.wenxuecity.com/cfzh/123551.html",
+      "excerpt": "短期不好期待太多",
+      "content_chars": 8,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "123551",
+      "parent_post_id": "123548",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "123529",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "123548",
+          "author": "香虞",
+          "title": "看来nvda今天不可能大幅反弹了",
+          "published_at": "2026-11-13 07:06:00"
+        },
+        "reply_count": 0,
+        "replies": [],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-14T02:37:31Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-14T02:09:09+00:00",
+      "publication_lag_hours": 16.9,
+      "content_sha256": "f494ac51896ce3d91aa955345633c7c836093abe11016acc99c828e1c344f501",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "013cb8d1e8cdd034914b",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "dindindon",
+      "published_at": "2026-11-13 07:12:00",
+      "title": "11/13 标普五百邂逅21天高点低点平均线",
+      "url": "https://bbs.wenxuecity.com/cfzh/123554.html",
+      "excerpt": "11/13 标普五百邂逅21天高点低点平均线\n[1]\n11/11/26 时序深秋\n短线态势 - 必须穿过21天高低平均线, 才有机会在十二月初创下阶段性高点,\n[2]\n11/12 标普五百 图三张\n注意标普五百的价位与21天高点的互动关系, 同时也注意两百天平均线的动向。马克吐温说，\n历史不会简单重复，但却常常押韵\n“History doesn't repeat itself, but it often rhymes.”。\n11/13 标普五百邂逅 ( flirt with ) 21天高点低点平均线, 又掉头向下。\n日内高点 7621.78,\n21天高低点平均线 7669.98 - 7615.97, 是技术分析里, 在反弹的过程中一个重要的观察区域。\n虽然可能有一点过早提出疑虑, 标普五百从10月6日高点开始下",
+      "content_chars": 464,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "123554",
+      "parent_post_id": null,
+      "attribution_fallback": null,
+      "thread_context": {
+        "root_post_id": "123554",
+        "is_reply": false,
+        "in_reply_to": null,
+        "reply_count": 1,
+        "replies": [
+          {
+            "post_id": "123591",
+            "author": "半亩园",
+            "title": "谢谢",
+            "depth": 1,
+            "in_reply_to": "123554",
+            "body_bytes": 0,
+            "published_at": "2026-11-13 08:05:00"
+          }
+        ],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-14T02:37:32Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "body_exported",
+      "owner_export_retrieved_at": "2026-11-14T02:09:09+00:00",
+      "publication_lag_hours": 16.8,
+      "content_sha256": "c4afe399280d0cb142e958009b3c2c22f59dfc477bdcd4d1ea48960883bc018e",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "9c275d343456ca14f85a",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "bogbog",
+      "published_at": "2026-11-13 07:24:00",
+      "title": "本来就还没调整完， spy.",
+      "url": "https://bbs.wenxuecity.com/cfzh/123567.html",
+      "excerpt": "本来就还没调整完， spy.\n![](images/123567_1.gif)",
+      "content_chars": 39,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [
+        "SPY"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "123567",
+      "parent_post_id": "123565",
+      "attribution_fallback": null,
+      "thread_context": {
+        "root_post_id": "123565",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "123565",
+          "author": "wavegreen",
+          "title": "刚说不做空了， 市场打脸来的好快",
+          "published_at": "2026-11-13 07:22:00"
+        },
+        "reply_count": 1,
+        "replies": [
+          {
+            "post_id": "123568",
+            "author": "家里好",
+            "title": "真要去715 啊， 那 个股没法看了",
+            "depth": 2,
+            "in_reply_to": "123567",
+            "body_bytes": 0,
+            "published_at": "2026-11-13 07:26:00"
+          }
+        ],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-14T02:37:32Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "body_exported",
+      "owner_export_retrieved_at": "2026-11-14T02:09:09+00:00",
+      "publication_lag_hours": 16.6,
+      "content_sha256": "a547a06d9bc13d6c7e1f25e4317bb12cdce9b6d26d6996a088475e2a1aae84a4",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "117e041648d92e7203cd",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-13 07:38:00",
+      "title": "What a day, 幸好作天把部分波动仓转到NVDA了",
+      "url": "https://bbs.wenxuecity.com/cfzh/123575.html",
+      "excerpt": "What a day, 幸好作天把部分波动仓转到NVDA了",
+      "content_chars": 29,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [
+        "NVDA"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "123575",
+      "parent_post_id": null,
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "123575",
+        "is_reply": false,
+        "in_reply_to": null,
+        "reply_count": 1,
+        "replies": [
+          {
+            "post_id": "123579",
+            "author": "小松松",
+            "title": "今天PPI数据还行，但盘前QQQ很弱，当时就有不祥的预感，看来不象想的那样PPI数据没事大盘就会涨。再一看美债收益率就知",
+            "depth": 1,
+            "in_reply_to": "123575",
+            "body_bytes": 24,
+            "published_at": "2026-11-13 07:46:00"
+          }
+        ],
+        "replies_with_body": 1
+      },
+      "captured_at": "2026-11-14T02:37:32Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-14T02:09:09+00:00",
+      "publication_lag_hours": 16.4,
+      "content_sha256": "7edf742dd19b1f9a568778b4130b5209dc91e6f0cd9ccee0f6e24776527a82c7",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "f884871659dab3855cd5",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-13 07:48:00",
+      "title": "I did not expect this today, was pure luck this time",
+      "url": "https://bbs.wenxuecity.com/cfzh/123580.html",
+      "excerpt": "I did not expect this today, was pure luck this time",
+      "content_chars": 52,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "123580",
+      "parent_post_id": "123579",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "123575",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "123579",
+          "author": "小松松",
+          "title": "今天PPI数据还行，但盘前QQQ很弱，当时就有不祥的预感，看来不象想的那样PPI数据没事大盘就会涨。再一看美债收益率就知",
+          "published_at": "2026-11-13 07:46:00"
+        },
+        "reply_count": 0,
+        "replies": [],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-14T02:37:32Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-14T02:09:09+00:00",
+      "publication_lag_hours": 16.2,
+      "content_sha256": "f9bd92a3d9ba20140e8b01de11d22e3e4dc877936a0a448fd0a59547145f32dc",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "f16a818eb93667814d11",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-13 07:49:00",
+      "title": "AMD down 10%,  我希望这里没有人昨天追高它",
+      "url": "https://bbs.wenxuecity.com/cfzh/123581.html",
+      "excerpt": "AMD down 10%,  我希望这里没有人昨天追高它",
+      "content_chars": 28,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [
+        "AMD"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "123581",
+      "parent_post_id": "123579",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "123575",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "123579",
+          "author": "小松松",
+          "title": "今天PPI数据还行，但盘前QQQ很弱，当时就有不祥的预感，看来不象想的那样PPI数据没事大盘就会涨。再一看美债收益率就知",
+          "published_at": "2026-11-13 07:46:00"
+        },
+        "reply_count": 4,
+        "replies": [
+          {
+            "post_id": "123583",
+            "author": "小松松",
+            "title": "是啊。昨天快到600 的时候我觉得就会有pull back",
+            "depth": 3,
+            "in_reply_to": "123581",
+            "body_bytes": 0,
+            "published_at": "2026-11-13 07:50:00"
+          },
+          {
+            "post_id": "123586",
+            "author": "Harp",
+            "title": "今天加了，像是能守住21D，希望一会儿不要被打",
+            "depth": 3,
+            "in_reply_to": "123581",
+            "body_bytes": 0,
+            "published_at": "2026-11-13 07:58:00"
+          },
+          {
+            "post_id": "123589",
+            "author": "traveleer",
+            "title": "我卖早了，今天接回来，赚了个毛钱",
+            "depth": 3,
+            "in_reply_to": "123581",
+            "body_bytes": 0,
+            "published_at": "2026-11-13 08:04:00"
+          },
+          {
+            "post_id": "123617",
+            "author": "三心三意",
+            "title": "买入SNDK搞一个短线，860 with stop loss 800",
+            "depth": 3,
+            "in_reply_to": "123581",
+            "body_bytes": 0,
+            "published_at": "2026-11-13 09:10:00"
+          }
+        ],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-14T02:37:32Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-14T02:09:09+00:00",
+      "publication_lag_hours": 16.2,
+      "content_sha256": "8b14c05a6baec5f1326e090683e5a2d0695df65e5c57bd19d158ac1b75d02bc8",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "1e2720d219a5529c8209",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-13 09:10:00",
+      "title": "买入SNDK搞一个短线，860 with stop loss 800",
+      "url": "https://bbs.wenxuecity.com/cfzh/123617.html",
+      "excerpt": "买入SNDK搞一个短线，860 with stop loss 800",
+      "content_chars": 34,
+      "images_count": 0,
+      "themes_hint": [
+        "风险管理",
+        "止损纪律"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [
+        {
+          "symbol": "SNDK",
+          "stance": "buy",
+          "stance_cues": [
+            "buy"
+          ],
+          "horizon": "short",
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "116b060ce41b5d8edb72b7944bbfdc09f19f1073a68946f04fc343a7c272286e",
+          "evidence_chars": 34
+        }
+      ],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "123617",
+      "parent_post_id": "123581",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "123575",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "123581",
+          "author": "三心三意",
+          "title": "AMD down 10%,  我希望这里没有人昨天追高它",
+          "published_at": "2026-11-13 07:49:00"
+        },
+        "reply_count": 0,
+        "replies": [],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-14T02:37:32Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-14T02:09:09+00:00",
+      "publication_lag_hours": 14.8,
+      "content_sha256": "116b060ce41b5d8edb72b7944bbfdc09f19f1073a68946f04fc343a7c272286e",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "5bfc3dc7e8d209663bf1",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-13 08:29:00",
+      "title": "我终于出手NBIS了，卖出12月115葡萄for 15",
+      "url": "https://bbs.wenxuecity.com/cfzh/123598.html",
+      "excerpt": "我终于出手NBIS了，卖出12月115葡萄for 15",
+      "content_chars": 27,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [
+        "NBIS"
+      ],
+      "operations": [
+        {
+          "symbols": [
+            "NBIS"
+          ],
+          "actions": [
+            "sell"
+          ],
+          "attribution": "author_action",
+          "attribution_confidence": "high"
+        }
+      ],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [
+        {
+          "symbol": "NBIS",
+          "stance": "sell",
+          "stance_cues": [
+            "sell"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "67c34ed8455c0427c405241e4e9476f07f4b2257b927e6654481c4e154613eaf",
+          "evidence_chars": 27
+        }
+      ],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "123598",
+      "parent_post_id": null,
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "123598",
+        "is_reply": false,
+        "in_reply_to": null,
+        "reply_count": 4,
+        "replies": [
+          {
+            "post_id": "123599",
+            "author": "三心三意",
+            "title": "短期如果有恐慌，股价可能下100，到时再看要不要加",
+            "depth": 1,
+            "in_reply_to": "123598",
+            "body_bytes": 0,
+            "published_at": "2026-11-13 08:30:00"
+          },
+          {
+            "post_id": "123602",
+            "author": "kaixintiantian",
+            "title": "LITE能抄底了吗？盲猜终止收购的可能性多大？",
+            "depth": 1,
+            "in_reply_to": "123598",
+            "body_bytes": 0,
+            "published_at": "2026-11-13 08:42:00"
+          },
+          {
+            "post_id": "123611",
+            "author": "kaixintiantian",
+            "title": "我第一波80多走的，错过主升浪。",
+            "depth": 1,
+            "in_reply_to": "123598",
+            "body_bytes": 0,
+            "published_at": "2026-11-13 08:49:00"
+          },
+          {
+            "post_id": "123620",
+            "author": "Greenhands53",
+            "title": "NBIS 怎么图形很不好？",
+            "depth": 1,
+            "in_reply_to": "123598",
+            "body_bytes": 0,
+            "published_at": "2026-11-13 09:23:00"
+          }
+        ],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-14T02:37:32Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-14T02:09:09+00:00",
+      "publication_lag_hours": 15.5,
+      "content_sha256": "67c34ed8455c0427c405241e4e9476f07f4b2257b927e6654481c4e154613eaf",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "071d122958ecc4216ec5",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-13 08:30:00",
+      "title": "短期如果有恐慌，股价可能下100，到时再看要不要加",
+      "url": "https://bbs.wenxuecity.com/cfzh/123599.html",
+      "excerpt": "短期如果有恐慌，股价可能下100，到时再看要不要加",
+      "content_chars": 25,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "123599",
+      "parent_post_id": "123598",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "123598",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "123598",
+          "author": "三心三意",
+          "title": "我终于出手NBIS了，卖出12月115葡萄for 15",
+          "published_at": "2026-11-13 08:29:00"
+        },
+        "reply_count": 0,
+        "replies": [],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-14T02:37:32Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-14T02:09:09+00:00",
+      "publication_lag_hours": 15.5,
+      "content_sha256": "96970aee0918a9426ffd7d44966d1442a5eb1268f6fe52b207ea97781cfbd7b3",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "3d4888441fa13bb432a8",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-13 08:45:00",
+      "title": "11/6， LITE 520  时说可以进不进，现在585问？",
+      "url": "https://bbs.wenxuecity.com/cfzh/123604.html",
+      "excerpt": "11/6， LITE 520  时说可以进不进，现在585问？\n我要不是已经有了一大把LITE，肯定在这个价位买入\n来源:\n三心三意\n于\n2026-11-06 15:22:00\n[\n档案\n] [\n博客\n] [\n转至博客\n] [\n旧帖\n] [\n给我悄悄话\n] 阅读数 :\n52\n(0 bytes)\n字体:\n调大\n/\n重置\n/\n调小\n|\n加入书签\n|\n打印\n|\n所有跟帖\n|\n加跟贴\n|\n当前最热讨论主题\n|\n编辑\n|\n删除\n[\n管理菜单\n]\n回答:\n530 LITE 对应117 MRVL，应该是很保险。不过看着掉了这么多后实在没有胃口继续买了\n由\nhvhp\n于\n2026-11-06 13:04:40",
+      "content_chars": 300,
+      "images_count": 0,
+      "themes_hint": [
+        "风险管理"
+      ],
+      "symbols": [
+        "MRVL",
+        "LITE"
+      ],
+      "operations": [
+        {
+          "symbols": [
+            "LITE"
+          ],
+          "actions": [
+            "buy"
+          ],
+          "attribution": "unconfirmed_author_context",
+          "attribution_confidence": "needs_review"
+        },
+        {
+          "symbols": [
+            "MRVL",
+            "LITE"
+          ],
+          "actions": [
+            "add"
+          ],
+          "attribution": "unconfirmed_author_context",
+          "attribution_confidence": "needs_review"
+        }
+      ],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [
+        {
+          "symbol": "LITE",
+          "stance": "buy",
+          "stance_cues": [
+            "buy"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "3fc95e1d08dad992d72c7ce98d42034e9afec0763cb1b1d99050ee16b168107f",
+          "evidence_chars": 25
+        }
+      ],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "123604",
+      "parent_post_id": "123602",
+      "attribution_fallback": null,
+      "thread_context": {
+        "root_post_id": "123598",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "123602",
+          "author": "kaixintiantian",
+          "title": "LITE能抄底了吗？盲猜终止收购的可能性多大？",
+          "published_at": "2026-11-13 08:42:00"
+        },
+        "reply_count": 1,
+        "replies": [
+          {
+            "post_id": "123606",
+            "author": "kaixintiantian",
+            "title": "上波套在被的票，没赶上。",
+            "depth": 3,
+            "in_reply_to": "123604",
+            "body_bytes": 0,
+            "published_at": "2026-11-13 08:47:00"
+          }
+        ],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-14T02:37:32Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "body_exported",
+      "owner_export_retrieved_at": "2026-11-14T02:09:09+00:00",
+      "publication_lag_hours": 15.2,
+      "content_sha256": "ffa093d69fde5f4ab2140f8ec903275e0c70b7f423f7bcc5fd1c86066012e12d",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "c876db9dd82233ce4c9b",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-13 08:50:00",
+      "title": "啥？这是上周5的事情",
+      "url": "https://bbs.wenxuecity.com/cfzh/123614.html",
+      "excerpt": "啥？这是上周5的事情",
+      "content_chars": 10,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "123614",
+      "parent_post_id": "123606",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "123598",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "123606",
+          "author": "kaixintiantian",
+          "title": "上波套在被的票，没赶上。",
+          "published_at": "2026-11-13 08:47:00"
+        },
+        "reply_count": 0,
+        "replies": [],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-14T02:37:32Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-14T02:09:09+00:00",
+      "publication_lag_hours": 15.2,
+      "content_sha256": "2d81ad64cdfd64d0ae6aaeb2db99a29b5c1a493bcc6c2261c1adce000be321c4",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "b11531e2924e1cb859b8",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-13 08:46:00",
+      "title": "为什么股价低的时候都没人要，涨了都想要 ：（",
+      "url": "https://bbs.wenxuecity.com/cfzh/123605.html",
+      "excerpt": "为什么股价低的时候都没人要，涨了都想要 ：（",
+      "content_chars": 22,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "123605",
+      "parent_post_id": "123602",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "123598",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "123602",
+          "author": "kaixintiantian",
+          "title": "LITE能抄底了吗？盲猜终止收购的可能性多大？",
+          "published_at": "2026-11-13 08:42:00"
+        },
+        "reply_count": 1,
+        "replies": [
+          {
+            "post_id": "123608",
+            "author": "kaixintiantian",
+            "title": "因为被套在更低的……",
+            "depth": 3,
+            "in_reply_to": "123605",
+            "body_bytes": 167,
+            "published_at": "2026-11-13 08:48:00"
+          }
+        ],
+        "replies_with_body": 1
+      },
+      "captured_at": "2026-11-14T02:37:32Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-14T02:09:09+00:00",
+      "publication_lag_hours": 15.2,
+      "content_sha256": "8b14fab704a9c0e9f097a4dd25159be59753db16e3f48aca6372f463fe8a545e",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "edc3d2872e56008b115c",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-13 08:47:00",
+      "title": "现在最好还是等QQQ回200D 均线再说吧",
+      "url": "https://bbs.wenxuecity.com/cfzh/123607.html",
+      "excerpt": "现在最好还是等QQQ回200D 均线再说吧",
+      "content_chars": 21,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [
+        "QQQ"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "123607",
+      "parent_post_id": "123602",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "123598",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "123602",
+          "author": "kaixintiantian",
+          "title": "LITE能抄底了吗？盲猜终止收购的可能性多大？",
+          "published_at": "2026-11-13 08:42:00"
+        },
+        "reply_count": 2,
+        "replies": [
+          {
+            "post_id": "123609",
+            "author": "kaixintiantian",
+            "title": "谢谢！",
+            "depth": 3,
+            "in_reply_to": "123607",
+            "body_bytes": 159,
+            "published_at": "2026-11-13 08:48:00"
+          },
+          {
+            "post_id": "123612",
+            "author": "三心三意",
+            "title": "有人能确定今天QQQ一定能回200D吗？估计没有！所以你现在进就要能够承担更大的风险",
+            "depth": 3,
+            "in_reply_to": "123607",
+            "body_bytes": 0,
+            "published_at": "2026-11-13 08:49:00"
+          }
+        ],
+        "replies_with_body": 1
+      },
+      "captured_at": "2026-11-14T02:37:32Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-14T02:09:09+00:00",
+      "publication_lag_hours": 15.2,
+      "content_sha256": "05d6b4fae3060226268314f78c6b682ae0b48d759167572632e373e6f6694e74",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "111f558a6ba4a092487a",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-13 08:49:00",
+      "title": "有人能确定今天QQQ一定能回200D吗？估计没有！所以你现在进就要能够承担更大的风险",
+      "url": "https://bbs.wenxuecity.com/cfzh/123612.html",
+      "excerpt": "有人能确定今天QQQ一定能回200D吗？估计没有！所以你现在进就要能够承担更大的风险",
+      "content_chars": 42,
+      "images_count": 0,
+      "themes_hint": [
+        "风险管理"
+      ],
+      "symbols": [
+        "QQQ"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "123612",
+      "parent_post_id": "123607",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "123598",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "123607",
+          "author": "三心三意",
+          "title": "现在最好还是等QQQ回200D 均线再说吧",
+          "published_at": "2026-11-13 08:47:00"
+        },
+        "reply_count": 0,
+        "replies": [],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-14T02:37:32Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-14T02:09:09+00:00",
+      "publication_lag_hours": 15.2,
+      "content_sha256": "e5693a3f8d6a06f23074b915038b242659c77c092836d10bcc803ed5915fc327",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "0cbc07f0fb2c8ae2b8cc",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-13 09:30:00",
+      "title": "very bad!",
+      "url": "https://bbs.wenxuecity.com/cfzh/123621.html",
+      "excerpt": "very bad!",
+      "content_chars": 9,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "123621",
+      "parent_post_id": "123620",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "123598",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "123620",
+          "author": "Greenhands53",
+          "title": "NBIS 怎么图形很不好？",
+          "published_at": "2026-11-13 09:23:00"
+        },
+        "reply_count": 0,
+        "replies": [],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-14T02:37:32Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-14T02:09:09+00:00",
+      "publication_lag_hours": 14.5,
+      "content_sha256": "09a4518296772a054703af5af627a23f266dd3e2d2fbfa950f914d483e261a5e",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "2153345439b34cdf6f9f",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-13 08:50:00",
+      "title": "就是没有调查，AMD 也“一定”会跌，昨天已经讨论过这个问题了，lol",
+      "url": "https://bbs.wenxuecity.com/cfzh/123613.html",
+      "excerpt": "就是没有调查，AMD 也“一定”会跌，昨天已经讨论过这个问题了，lol",
+      "content_chars": 35,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [
+        "AMD"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "123613",
+      "parent_post_id": "123610",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "123610",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "123610",
+          "author": "arewethereyet",
+          "title": "说是苏妈也要被调查 所以AMD大跌",
+          "published_at": "2026-11-13 08:48:00"
+        },
+        "reply_count": 1,
+        "replies": [
+          {
+            "post_id": "123615",
+            "author": "kaixintiantian",
+            "title": "一个朋友从2块拿到现在，没动。真的十分佩服了……",
+            "depth": 2,
+            "in_reply_to": "123613",
+            "body_bytes": 0,
+            "published_at": "2026-11-13 08:51:00"
+          }
+        ],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-14T02:37:33Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-14T02:09:09+00:00",
+      "publication_lag_hours": 15.2,
+      "content_sha256": "34e975e2c288331d270f52f59c669a4681447729e64153534408e06139be9ba9",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "6367ef0abd182a22a31b",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-13 10:26:00",
+      "title": "Nvidia's board approached Arm CEO Rene Haas about taking CEO",
+      "url": "https://bbs.wenxuecity.com/cfzh/123627.html",
+      "excerpt": "Nvidia's board approached Arm CEO Rene Haas about taking CEO",
+      "content_chars": 60,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "123627",
+      "parent_post_id": null,
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "123627",
+        "is_reply": false,
+        "in_reply_to": null,
+        "reply_count": 5,
+        "replies": [
+          {
+            "post_id": "123628",
+            "author": "三心三意",
+            "title": "Not sure this is best for NVDA....",
+            "depth": 1,
+            "in_reply_to": "123627",
+            "body_bytes": 0,
+            "published_at": "2026-11-13 10:27:00"
+          },
+          {
+            "post_id": "123629",
+            "author": "信子巷外",
+            "title": "三心，我下面刚发，就看到你发这个，有意思",
+            "depth": 1,
+            "in_reply_to": "123627",
+            "body_bytes": 145,
+            "published_at": "2026-11-13 10:38:00"
+          },
+          {
+            "post_id": "123630",
+            "author": "甜酒甜",
+            "title": "查了一下，是有“接触”他，没有确认..",
+            "depth": 1,
+            "in_reply_to": "123627",
+            "body_bytes": 135,
+            "published_at": "2026-11-13 10:40:00"
+          },
+          {
+            "post_id": "123642",
+            "author": "wavegreen",
+            "title": "如果是真的NVDA反弹就要撤了。",
+            "depth": 1,
+            "in_reply_to": "123627",
+            "body_bytes": 148,
+            "published_at": "2026-11-13 11:33:00"
+          },
+          {
+            "post_id": "123648",
+            "author": "使转",
+            "title": "那还不错的选择",
+            "depth": 1,
+            "in_reply_to": "123627",
+            "body_bytes": 797,
+            "published_at": "2026-11-13 12:37:00"
+          }
+        ],
+        "replies_with_body": 4
+      },
+      "captured_at": "2026-11-14T02:37:33Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-14T02:09:09+00:00",
+      "publication_lag_hours": 13.6,
+      "content_sha256": "bb820a7a511703aa61f5df786e034ad536496463fc148856cd2085cf99d02176",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "b6db6e271416b5e4954a",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-13 10:27:00",
+      "title": "Not sure this is best for NVDA....",
+      "url": "https://bbs.wenxuecity.com/cfzh/123628.html",
+      "excerpt": "Not sure this is best for NVDA....",
+      "content_chars": 34,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [
+        "NVDA"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "123628",
+      "parent_post_id": "123627",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "123627",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "123627",
+          "author": "三心三意",
+          "title": "Nvidia's board approached Arm CEO Rene Haas about taking CEO",
+          "published_at": "2026-11-13 10:26:00"
+        },
+        "reply_count": 0,
+        "replies": [],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-14T02:37:33Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-14T02:09:09+00:00",
+      "publication_lag_hours": 13.6,
+      "content_sha256": "2951cc71601f2893ce3200565b8b26b135d564ca94f1c1a8973f562fbe459875",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "5615a37e85c67979e4af",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-13 10:51:00",
+      "title": "要看台积电老板理不理他：）",
+      "url": "https://bbs.wenxuecity.com/cfzh/123632.html",
+      "excerpt": "要看台积电老板理不理他：）",
+      "content_chars": 13,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "123632",
+      "parent_post_id": "123630",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "123627",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "123630",
+          "author": "甜酒甜",
+          "title": "查了一下，是有“接触”他，没有确认..",
+          "published_at": "2026-11-13 10:40:00"
+        },
+        "reply_count": 2,
+        "replies": [
+          {
+            "post_id": "123634",
+            "author": "信子巷外",
+            "title": "不敢不理，不过长远像台积电三星海力士美国建厂计划进展会受多大影响不好说",
+            "depth": 3,
+            "in_reply_to": "123632",
+            "body_bytes": 0,
+            "published_at": "2026-11-13 10:57:00"
+          },
+          {
+            "post_id": "123661",
+            "author": "甜酒甜",
+            "title": "他不一定会放弃他现在有的，据说ARM给了他大量的长期期权啥的",
+            "depth": 3,
+            "in_reply_to": "123632",
+            "body_bytes": 0,
+            "published_at": "2026-11-13 13:31:00"
+          }
+        ],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-14T02:37:33Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-14T02:09:09+00:00",
+      "publication_lag_hours": 13.2,
+      "content_sha256": "b64af9a15b1c9276f4a30a1d7cbe3522d04195ed32d7450a8cfd69d07ed2f3f2",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "270b88b709bef29b108b",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-13 13:31:00",
+      "title": "投坛现在还是每天嘴炮？",
+      "url": "https://bbs.wenxuecity.com/cfzh/123660.html",
+      "excerpt": "投坛现在还是每天嘴炮？",
+      "content_chars": 11,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "123660",
+      "parent_post_id": "123658",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "123651",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "123658",
+          "author": "甜酒甜",
+          "title": "那坛子最逗乐的是",
+          "published_at": "2026-11-13 13:30:00"
+        },
+        "reply_count": 2,
+        "replies": [
+          {
+            "post_id": "123662",
+            "author": "甜酒甜",
+            "title": "哈哈哈，有的嘴炮就没有",
+            "depth": 5,
+            "in_reply_to": "123660",
+            "body_bytes": 173,
+            "published_at": "2026-11-13 13:32:00"
+          },
+          {
+            "post_id": "123673",
+            "author": "inet-fan",
+            "title": "坏人比例很高",
+            "depth": 5,
+            "in_reply_to": "123660",
+            "body_bytes": 0,
+            "published_at": "2026-11-13 14:02:00"
+          }
+        ],
+        "replies_with_body": 1
+      },
+      "captured_at": "2026-11-14T02:37:33Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-14T02:09:09+00:00",
+      "publication_lag_hours": 10.5,
+      "content_sha256": "d69105fb3c137b0b5eea0273cf186e21628bd84e2bd14d4403753a9630f32d23",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "e9d40c180200c6912980",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-13 13:30:00",
+      "title": "Well, everyone knows this. 供应链是半导体的生命线。 Nothing new",
+      "url": "https://bbs.wenxuecity.com/cfzh/123659.html",
+      "excerpt": "Well, everyone knows this. 供应链是半导体的生命线。 Nothing new",
+      "content_chars": 51,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "123659",
+      "parent_post_id": "123651",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "123651",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "123651",
+          "author": "inet-fan",
+          "title": "nvda，这个哥们有道理",
+          "published_at": "2026-11-13 12:44:00"
+        },
+        "reply_count": 1,
+        "replies": [
+          {
+            "post_id": "123663",
+            "author": "三心三意",
+            "title": "英伟达必须找一个镇得住台湾供应链的CEO",
+            "depth": 2,
+            "in_reply_to": "123659",
+            "body_bytes": 0,
+            "published_at": "2026-11-13 13:32:00"
+          }
+        ],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-14T02:37:33Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-14T02:09:09+00:00",
+      "publication_lag_hours": 10.5,
+      "content_sha256": "b215af913a404a9560535d94133ae78d67f1162b6cd24fd30ba6f7cbfa7e5c20",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "347b915a891797bb7653",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-13 13:32:00",
+      "title": "英伟达必须找一个镇得住台湾供应链的CEO",
+      "url": "https://bbs.wenxuecity.com/cfzh/123663.html",
+      "excerpt": "英伟达必须找一个镇得住台湾供应链的CEO",
+      "content_chars": 20,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [
+        "NVDA"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "123663",
+      "parent_post_id": "123659",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "123651",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "123659",
+          "author": "三心三意",
+          "title": "Well, everyone knows this. 供应链是半导体的生命线。 Nothing new",
+          "published_at": "2026-11-13 13:30:00"
+        },
+        "reply_count": 0,
+        "replies": [],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-14T02:37:33Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-14T02:09:09+00:00",
+      "publication_lag_hours": 10.5,
+      "content_sha256": "708ec91a32c3940a04173182c2847d5dab8afb1557e2b5a93b3a4b6584aaea1b",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "831922b9d3d1bc102a31",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-13 13:37:00",
+      "title": "跌破了200天",
+      "url": "https://bbs.wenxuecity.com/cfzh/123665.html",
+      "excerpt": "跌破了200天",
+      "content_chars": 7,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "123665",
+      "parent_post_id": "123656",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "123656",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "123656",
+          "author": "bigbadwolf",
+          "title": "翻页吧。向老黄说再见。 至少是女大",
+          "published_at": "2026-11-13 13:16:00"
+        },
+        "reply_count": 3,
+        "replies": [
+          {
+            "post_id": "123672",
+            "author": "consist26",
+            "title": "反转可能失败了？要不要得调整一下波动仓位还是等待下周初确认？",
+            "depth": 2,
+            "in_reply_to": "123665",
+            "body_bytes": 0,
+            "published_at": "2026-11-13 14:01:00"
+          },
+          {
+            "post_id": "123674",
+            "author": "小松松",
+            "title": "不知盘尾盘后的跌跟航空系统停飞的消息有没有关，911 以后这种消息会影响大盘？",
+            "depth": 2,
+            "in_reply_to": "123665",
+            "body_bytes": 0,
+            "published_at": "2026-11-13 14:06:00"
+          },
+          {
+            "post_id": "123676",
+            "author": "bigbadwolf",
+            "title": "盘后还是收盘时？",
+            "depth": 2,
+            "in_reply_to": "123665",
+            "body_bytes": 878,
+            "published_at": "2026-11-13 14:08:00"
+          }
+        ],
+        "replies_with_body": 1
+      },
+      "captured_at": "2026-11-14T02:37:33Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-14T02:09:09+00:00",
+      "publication_lag_hours": 10.4,
+      "content_sha256": "4ff446efca3f8a3911ac8b51bf33dc20ba1d3ce4ea3ee2b599941ae75ced94b2",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "f0e114646c87b86624f4",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-13 14:07:00",
+      "title": "你没看到我昨天就已经调整了吗？",
+      "url": "https://bbs.wenxuecity.com/cfzh/123675.html",
+      "excerpt": "你没看到我昨天就已经调整了吗？",
+      "content_chars": 15,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "123675",
+      "parent_post_id": "123672",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "123656",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "123672",
+          "author": "consist26",
+          "title": "反转可能失败了？要不要得调整一下波动仓位还是等待下周初确认？",
+          "published_at": "2026-11-13 14:01:00"
+        },
+        "reply_count": 1,
+        "replies": [
+          {
+            "post_id": "123677",
+            "author": "consist26",
+            "title": "Got it, thanks a lot!",
+            "depth": 4,
+            "in_reply_to": "123675",
+            "body_bytes": 0,
+            "published_at": "2026-11-13 14:09:00"
+          }
+        ],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-14T02:37:33Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-14T02:09:09+00:00",
+      "publication_lag_hours": 9.9,
+      "content_sha256": "6a6921c891f3c95452daa9409ded077365928faca05a596d686c5aadf74452fd",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "5b4320ca9cbe7232804c",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-13 14:09:00",
+      "title": "我还是那句话：等什么都确认，要不就是纸上谈兵，没有实际行动，要不就是等黄花菜凉了再行动",
+      "url": "https://bbs.wenxuecity.com/cfzh/123678.html",
+      "excerpt": "我还是那句话：等什么都确认，要不就是纸上谈兵，没有实际行动，要不就是等黄花菜凉了再行动",
+      "content_chars": 43,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "123678",
+      "parent_post_id": "123672",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "123656",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "123672",
+          "author": "consist26",
+          "title": "反转可能失败了？要不要得调整一下波动仓位还是等待下周初确认？",
+          "published_at": "2026-11-13 14:01:00"
+        },
+        "reply_count": 1,
+        "replies": [
+          {
+            "post_id": "123680",
+            "author": "小松松",
+            "title": "主要是没有那么敏锐的盘感和经验，等看到结果时就有点晚了。没及时行动的就当鸵鸟，忍一忍总会涨回来的，只不过需要的时间可能长",
+            "depth": 4,
+            "in_reply_to": "123678",
+            "body_bytes": 15,
+            "published_at": "2026-11-13 14:22:00"
+          }
+        ],
+        "replies_with_body": 1
+      },
+      "captured_at": "2026-11-14T02:37:33Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-14T02:09:09+00:00",
+      "publication_lag_hours": 9.8,
+      "content_sha256": "7594f53bff9a2e33e408cb4acdba9a3dd62e673500074b78300eb971c0e2ffd0",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "5b6fd64f0221fb08ff6f",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-13 14:23:00",
+      "title": "Maybe Outlook outage still going on. Should come back soon",
+      "url": "https://bbs.wenxuecity.com/cfzh/123681.html",
+      "excerpt": "Maybe Outlook outage still going on. Should come back soon",
+      "content_chars": 58,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "123681",
+      "parent_post_id": "123674",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "123656",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "123674",
+          "author": "小松松",
+          "title": "不知盘尾盘后的跌跟航空系统停飞的消息有没有关，911 以后这种消息会影响大盘？",
+          "published_at": "2026-11-13 14:06:00"
+        },
+        "reply_count": 1,
+        "replies": [
+          {
+            "post_id": "123684",
+            "author": "越挫越勇2",
+            "title": "It's fixed this morning, all good.",
+            "depth": 4,
+            "in_reply_to": "123681",
+            "body_bytes": 0,
+            "published_at": "2026-11-13 14:41:00"
+          }
+        ],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-14T02:37:33Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-14T02:09:09+00:00",
+      "publication_lag_hours": 9.6,
+      "content_sha256": "f9236b9d333a592e92706127b7292c7d68aee637b4f087e287edc86ab1aba22e",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
     }
   ],
-  "updated_at": "2026-11-13T23:32:43Z",
+  "updated_at": "2026-11-14T02:37:33Z",
   "retention_policy": "append_only_no_record_count_cap",
   "historical_recovery": {
     "completed_at": "2026-10-07T13:43:06.018028+00:00",
