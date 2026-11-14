@@ -1527,12 +1527,12 @@
       "calls": 3,
       "admitted": 2,
       "rejected": 1,
-      "errors": 1,
+      "errors": 3,
       "reconciliation": {
         "status": "COMPLETE",
         "calls_billed": 3,
-        "calls_refunded_503": 1,
-        "detail_rows": 4,
+        "calls_refunded_503": 3,
+        "detail_rows": 6,
         "missing_detail_rows": 0,
         "counter_mismatch": []
       },
@@ -1570,9 +1570,27 @@
           "model": "gemini-3.5-flash",
           "author": "老李玩钱",
           "title": "美股重回高位，要卖股票了吗？到底什么时候该卖出股票"
+        },
+        {
+          "video_id": "84hnnVx-8AQ",
+          "outcome": "http_503_all_models",
+          "at": "06:15:25Z",
+          "model": "gemini-3.8-flash,gemini-3.5-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 NVDA风暴继续，利好谁？持仓计划更新！大盘反弹最简单部分走完！",
+          "detail": "{\"error\":{\"message\":\"gemini-3.5-flash is currently experiencing high demand, spikes in demand are usually temporary. Please try again later.\",\"code\":\"service_unavailable\"}}"
+        },
+        {
+          "video_id": "dTQmi_hrOpU",
+          "outcome": "http_503_all_models",
+          "at": "06:15:59Z",
+          "model": "gemini-3.8-flash,gemini-3.5-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 ORCL缺乏惊喜，ADBE底气不足！SOXX遇阻、IGV破位！CTA触发标普承压，VIX苏醒！",
+          "detail": "{\"error\":{\"message\":\"gemini-3.5-flash is currently experiencing high demand, spikes in demand are usually temporary. Please try again later.\",\"code\":\"service_unavailable\"}}"
         }
       ],
-      "refunded_503": 1
+      "refunded_503": 3
     }
   },
   "version": 1,
