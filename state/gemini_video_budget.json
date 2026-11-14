@@ -1591,6 +1591,39 @@
         }
       ],
       "refunded_503": 3
+    },
+    "2026-11-14": {
+      "calls": 2,
+      "admitted": 1,
+      "rejected": 1,
+      "errors": 0,
+      "reconciliation": {
+        "status": "COMPLETE",
+        "calls_billed": 2,
+        "calls_refunded_503": 0,
+        "detail_rows": 2,
+        "missing_detail_rows": 0,
+        "counter_mismatch": []
+      },
+      "recent": [
+        {
+          "video_id": "sLKfEeiSTKs",
+          "outcome": "admitted",
+          "at": "13:33:53Z",
+          "model": "gemini-3.5-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 循环信贷、梯云纵裂痕！半导体全军覆没！黄仁勋辞职，有融资机构要跑！ AMD、AVGO、MRVL、TSM！"
+        },
+        {
+          "video_id": "84hnnVx-8AQ",
+          "outcome": "identity_mismatch",
+          "at": "13:35:04Z",
+          "model": "gemini-3.5-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 NVDA风暴继续，利好谁？持仓计划更新！大盘反弹最简单部分走完！",
+          "detail": "seen='视野环球财经' channel='视野环球财经'"
+        }
+      ]
     }
   },
   "version": 1,

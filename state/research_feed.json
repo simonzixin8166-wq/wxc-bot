@@ -147165,9 +147165,197 @@
       "content_sha256": "f9236b9d333a592e92706127b7292c7d68aee637b4f087e287edc86ab1aba22e",
       "intake_class_hint": "live_candidate",
       "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "7947cbe71e2740655283",
+      "source": "youtube",
+      "source_kind": "video",
+      "author": "RhinoFinance / 视野环球财经",
+      "published_at": "2026-11-14",
+      "title": "美股 循环信贷、梯云纵裂痕！半导体全军覆没！黄仁勋辞职，有融资机构要跑！ AMD、AVGO、MRVL、TSM！",
+      "url": "https://www.youtube.com/watch?v=sLKfEeiSTKs",
+      "excerpt": "[Gemini 视频理解 · 未验证] 本期节目分析了美国10月PPI数据及美联储加息预期，重点探讨了英伟达（NVDA）CEO离职后其庞大的循环信贷融资体系面临的风险与机构退出动向。同时对NVDA、AMD、AVGO、MRVL、TSM等半导体个股的技术面走势、关键支撑阻力位及交易应对计划进行了详细梳理。\n- [15:46 NVDA sell 172-174] NVDA清仓计划不变：若财报前反弹至172-174美元区间将清仓剩余仓位；若未达到，则在11月18日（财报后首个交易日）清仓。\n- [17:23 AMD bullish 501] AMD在501美元上方仍属于技术面波段博弈/回撤上车机会；若跌破501美元则右侧反转机会结束。\n- [18:20 AVGO watch 365] AVGO需在开盘价或收盘价站上36",
+      "content_chars": 1032,
+      "semantic_content_chars": 1032,
+      "content_filtering": {
+        "filter": "youtube_promotion_noise_v1",
+        "input_units": 14,
+        "removed_units": 0,
+        "removed_ratio": 0.0,
+        "promotion_noise_detected": false
+      },
+      "images_count": 0,
+      "themes_hint": [
+        "风险管理",
+        "趋势确认"
+      ],
+      "symbols": [
+        "AMD",
+        "AVGO",
+        "MRVL",
+        "NVDA",
+        "TSM"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "captured_at": "2026-11-14T13:33:53Z",
+      "source_role": "rule_supply",
+      "transcript_status": "available",
+      "content_quality": "Q3",
+      "content_provider": "gemini_video",
+      "content_provider_url": "https://www.youtube.com/watch?v=sLKfEeiSTKs",
+      "content_origin": "gemini_video_understanding",
+      "timestamp_evidence": true,
+      "rule_candidate_allowed": false,
+      "source_notice": "公开视频由 Gemini 读取原片（语音+画面）生成的结构化摘要；观点未验证、不可直接作为规则，等待 Owner 抽查原片核对。",
+      "claims": [
+        {
+          "symbol": "NVDA",
+          "stance": "sell",
+          "stance_cues": [
+            "sell"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "ef18cecaec0125bb517bf406bd0b9b70f5ea9ee6607af7dfe8088d9873d334cc",
+          "evidence_chars": 65
+        },
+        {
+          "symbol": "AMD",
+          "stance": "buy",
+          "stance_cues": [
+            "buy",
+            "bullish"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "88cf4ed55d9ad0deb46f9c56968137a8431774fe681144e9ba502a3628d4c19d",
+          "evidence_chars": 55
+        },
+        {
+          "symbol": "MRVL",
+          "stance": "bearish",
+          "stance_cues": [
+            "bearish"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "c8353c791327e6240496601a5dc7db57e60bb852c61ba15fc5b2f52221ee1908",
+          "evidence_chars": 69
+        },
+        {
+          "symbol": "TSM",
+          "stance": "add",
+          "stance_cues": [
+            "add",
+            "buy"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "c80d1a2e243113edc7557c61f23c7849edb6834a41eada705ac87114ed33f246",
+          "evidence_chars": 67
+        }
+      ],
+      "claims_status": "experimental_unvalidated",
+      "video_claims": [
+        {
+          "claim": "NVDA清仓计划不变：若财报前反弹至172-174美元区间将清仓剩余仓位；若未达到，则在11月18日（财报后首个交易日）清仓。",
+          "stance": "sell",
+          "price": "172-174",
+          "timestamp": "15:46",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "NVDA",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "AMD在501美元上方仍属于技术面波段博弈/回撤上车机会；若跌破501美元则右侧反转机会结束。",
+          "stance": "bullish",
+          "price": "501",
+          "timestamp": "17:23",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "AMD",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "AVGO需在开盘价或收盘价站上365美元方可确认反转；若下周跳空跌破335美元则构成岛型顶走空。",
+          "stance": "watch",
+          "price": "365",
+          "timestamp": "18:20",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "AVGO",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "MRVL未能站上172美元强阻力位，上方多重均线压制，技术面弱势，当前仅按反弹看待。",
+          "stance": "bearish",
+          "price": "172",
+          "timestamp": "20:48",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "MRVL",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "TSM加仓计划保持不变，关注360-378美元及320-350美元区间的买盘支撑；若突破424美元则低位加仓机会消失。",
+          "stance": "buy",
+          "price": "360-378",
+          "timestamp": "21:18",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "TSM",
+          "symbol_check": "listed"
+        }
+      ],
+      "video_claims_model": "gemini-3.5-flash",
+      "video_macro": [
+        {
+          "indicator": "US PPI MoM",
+          "value": "0.3%",
+          "expectation": "0.4%",
+          "period": "10月",
+          "timestamp": "01:05"
+        },
+        {
+          "indicator": "US PPI YoY",
+          "value": "6.5%",
+          "expectation": "6.6%",
+          "period": "10月",
+          "timestamp": "01:15"
+        },
+        {
+          "indicator": "US Core PPI MoM",
+          "value": "0.3%",
+          "expectation": "0.3%",
+          "period": "10月",
+          "timestamp": "01:21"
+        },
+        {
+          "indicator": "US Core PPI YoY",
+          "value": "5.0%",
+          "expectation": "5.0%",
+          "period": "10月",
+          "timestamp": "01:28"
+        }
+      ],
+      "video_observed_title": "后黄仁勋时代！NVDA会硬着陆吗？",
+      "validation_status": "pending_owner_spot_check",
+      "forward_evidence_eligible": false
     }
   ],
-  "updated_at": "2026-11-14T02:37:33Z",
+  "updated_at": "2026-11-14T13:35:32Z",
   "retention_policy": "append_only_no_record_count_cap",
   "historical_recovery": {
     "completed_at": "2026-10-07T13:43:06.018028+00:00",
