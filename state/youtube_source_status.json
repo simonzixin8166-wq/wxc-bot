@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-11-14T23:54:42Z",
+  "generated_at": "2026-11-15T06:24:44Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -19,14 +19,14 @@
           "reached_end": false
         }
       ],
-      "previous_anchor_video_id": "sLKfEeiSTKs",
+      "previous_anchor_video_id": "_2bUPesoEWo",
       "anchor_found": true,
       "reached_end": false,
       "discovery_complete": true,
       "latest": {
-        "video_id": "sLKfEeiSTKs",
-        "title": "美股 循环信贷、梯云纵裂痕！半导体全军覆没！黄仁勋辞职，有融资机构要跑！ AMD、AVGO、MRVL、TSM！",
-        "url": "https://www.youtube.com/watch?v=sLKfEeiSTKs",
+        "video_id": "_2bUPesoEWo",
+        "title": "（会员第310期）Anthropic （ANT） IPO，降估值后潜力大吗？基本面、估值、投资机会、风险！",
+        "url": "https://www.youtube.com/watch?v=_2bUPesoEWo",
         "published_at": "",
         "rss_status": "error:HTTPError",
         "flat_metadata_keys": [
@@ -64,12 +64,11 @@
         "video_id": "w8GM1mghKJc",
         "title": "中期选举尘埃落定！美股分化严重，何去何从",
         "url": "https://www.youtube.com/watch?v=w8GM1mghKJc",
-        "published_at": "2026-11-04",
-        "rss_status": "ok",
+        "published_at": "",
+        "rss_status": "error:HTTPError",
         "flat_metadata_keys": [
           "channel_id",
-          "duration",
-          "rss_published_at"
+          "duration"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -124,14 +123,14 @@
   "content_backlog_after_run": 94,
   "pending_total": 94,
   "historical_demoted_from_pending": 0,
-  "admitted_from_pending": 1,
-  "nonforward_timestamp_unknown_admitted": 1,
-  "feed_records_added": 1,
+  "admitted_from_pending": 0,
+  "nonforward_timestamp_unknown_admitted": 0,
+  "feed_records_added": 0,
   "publication_dates_resolved": 0,
   "rss_status": {
     "UCFQsi7WaF5X41tcuOryDk8w": "error:HTTPError",
     "UCGy7SkBjcIAgTiwkXEtPnYg": "error:HTTPError",
-    "UCo2gxyermsLBSCxFHvJs0Zg": "ok"
+    "UCo2gxyermsLBSCxFHvJs0Zg": "error:HTTPError"
   },
   "historical_backlog_total": 63,
   "discovery_complete": true,
@@ -148,6 +147,14 @@
       "pending_reason": "missing_learning_text"
     },
     {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "_2bUPesoEWo",
+      "title": "（会员第310期）Anthropic （ANT） IPO，降估值后潜力大吗？基本面、估值、投资机会、风险！",
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "awaiting_publication_date"
+    },
+    {
       "author": "Andrei Jikh",
       "video_id": "CRqhR0tQnKM",
       "title": "Why Bitcoin Is Collapsing",
@@ -156,20 +163,9 @@
       "pending_reason": "awaiting_publication_date"
     },
     {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "-C0B7AEwOcU",
-      "title": "（会员第308期）2026年10月26日-30日，重要公司Q3财报后2026、2027前瞻估值，强支撑点位！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "Andrei Jikh",
-      "video_id": "6BlwD59AoLM",
-      "title": "The NASDAQ Just Crashed. Here's Why",
+      "author": "老李玩钱",
+      "video_id": "0KgZcbhZoXk",
+      "title": "2支被忽略的科技巨头！分析与买入建议",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -179,8 +175,8 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "6b-ohR2Z9Z0",
-      "title": "（会员第309期）2026年11月2日-8日，重要公司Q3财报后2026、2027前瞻估值，强支撑点位！",
+      "video_id": "0w77lIBdCn0",
+      "title": "美股 机构弹药见底！下一步，暴风雨？平静？TSLA、IGV、AVGO！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -190,18 +186,14 @@
     },
     {
       "author": "Andrei Jikh",
-      "video_id": "rAgmZA4DIS0",
-      "title": "What If America Loses The AI Race?",
-      "published_at": "",
-      "transcript_status": "available",
-      "content_quality": "Q4",
-      "content_provider": "pickscribe.com",
+      "video_id": "16oTiM8o8ic",
+      "title": "My Alternative Investment Portfolio (Pokemon Edition)",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
-      "content_chars": 733,
-      "symbols": [],
-      "operations": 0,
-      "admission": "research_feed_nonforward_timestamp_unknown",
-      "was_pending": true
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
     }
   ],
   "intake_health": {

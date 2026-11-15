@@ -1593,15 +1593,15 @@
       "refunded_503": 3
     },
     "2026-11-14": {
-      "calls": 5,
-      "admitted": 1,
+      "calls": 6,
+      "admitted": 2,
       "rejected": 1,
       "errors": 3,
       "reconciliation": {
         "status": "COMPLETE",
-        "calls_billed": 5,
+        "calls_billed": 6,
         "calls_refunded_503": 0,
-        "detail_rows": 5,
+        "detail_rows": 6,
         "missing_detail_rows": 0,
         "counter_mismatch": []
       },
@@ -1649,6 +1649,14 @@
           "author": "Andrei Jikh",
           "title": "My Thoughts On Bitcoin",
           "detail": "{\"error\":{\"message\":\"The caller does not have permission\",\"code\":\"permission_denied\"}}"
+        },
+        {
+          "video_id": "lWd7zsWV-4I",
+          "outcome": "admitted",
+          "at": "06:24:09Z",
+          "model": "gemini-3.5-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 NVDA、TSM、MSFT！对冲基金：不加仓，等抬轿子！标普各种相关性瓦解！"
         }
       ],
       "skip_authors_403": [

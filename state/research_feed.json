@@ -148726,9 +148726,268 @@
       "content_sha256": "dfa9c8cee5965ec950a95c2da40dd05219ee5dce1fa8dc156c3fc36779bac25a",
       "intake_class_hint": "live_candidate",
       "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "1b336f45e9f21107d9ea",
+      "source": "youtube",
+      "source_kind": "video",
+      "author": "RhinoFinance / 视野环球财经",
+      "published_at": "2026-10-06",
+      "title": "美股 NVDA、TSM、MSFT！对冲基金：不加仓，等抬轿子！标普各种相关性瓦解！",
+      "url": "https://www.youtube.com/watch?v=lWd7zsWV-4I",
+      "excerpt": "[Gemini 视频理解 · 未验证] 本期节目解读了美国9月ISM非制造业PMI数据，指出服务业温和增长、就业重回扩张区。分析了标普500指数与等权指数及各板块相关性降至极低、市场资金高度集中于AI科技股的结构性行情，并更新了NVDA、MSFT、TSM、AMZN、GOOG、AVGO等科技龙头的技术面与估值目标。\n- [11:18 NVDA hold] 英伟达(NVDA)收盘价创历史新高，估值仍不贵，建议继续持有，近期支撑位219-232。\n- [12:45 MSFT hold 600] 微软(MSFT)股价创近期新高，中长线看好至600美元及上方，上方主要压力在519-534。\n- [14:02 TSM hold] 台积电(TSM)放量创历史新高，技术面强劲，已在车上的投资者建议持股不动。\n- [16:45 ",
+      "content_chars": 884,
+      "semantic_content_chars": 884,
+      "content_filtering": {
+        "filter": "youtube_promotion_noise_v1",
+        "input_units": 14,
+        "removed_units": 0,
+        "removed_ratio": 0.0,
+        "promotion_noise_detected": false
+      },
+      "images_count": 0,
+      "themes_hint": [
+        "风险管理",
+        "止损纪律",
+        "TSLA"
+      ],
+      "symbols": [
+        "AMZN",
+        "AVGO",
+        "GOOG",
+        "META",
+        "MSFT",
+        "NVDA",
+        "RSP",
+        "SOXX",
+        "SPCX",
+        "TSLA",
+        "TSM"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "captured_at": "2026-11-15T06:24:09Z",
+      "source_role": "rule_supply",
+      "transcript_status": "available",
+      "content_quality": "Q3",
+      "content_provider": "gemini_video",
+      "content_provider_url": "https://www.youtube.com/watch?v=lWd7zsWV-4I",
+      "content_origin": "gemini_video_understanding",
+      "timestamp_evidence": true,
+      "rule_candidate_allowed": false,
+      "source_notice": "公开视频由 Gemini 读取原片（语音+画面）生成的结构化摘要；观点未验证、不可直接作为规则，等待 Owner 抽查原片核对。",
+      "claims": [
+        {
+          "symbol": "NVDA",
+          "stance": "hold",
+          "stance_cues": [
+            "hold"
+          ],
+          "horizon": "short",
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "f366ee0adff6c0eaac5606ff98d9862b78bae4b0e57513239617137d4985ef42",
+          "evidence_chars": 64
+        },
+        {
+          "symbol": "MSFT",
+          "stance": "hold",
+          "stance_cues": [
+            "hold",
+            "bullish"
+          ],
+          "horizon": "long",
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "2abb0c3251558bac127879e4a61aaf635c749fc275f9454baed882e490eaba0c",
+          "evidence_chars": 70
+        },
+        {
+          "symbol": "TSM",
+          "stance": "hold",
+          "stance_cues": [
+            "hold"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "2f57b310c96a3685e8700dca6f9509c2c4b372787092ccaba3020e082a9e51ac",
+          "evidence_chars": 56
+        },
+        {
+          "symbol": "AMZN",
+          "stance": "buy",
+          "stance_cues": [
+            "buy"
+          ],
+          "horizon": "long",
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "ec6b1a2cd0cbed60c2c59384c0aaa95ed8f76a013de29e3a342c531da82c49e0",
+          "evidence_chars": 44
+        },
+        {
+          "symbol": "GOOG",
+          "stance": "buy",
+          "stance_cues": [
+            "buy"
+          ],
+          "horizon": "long",
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "8c63fdb5f33089ec3101ef92bd96d11d282991485373677fd2281aa1bdbd52b2",
+          "evidence_chars": 51
+        },
+        {
+          "symbol": "GOOGL",
+          "stance": "buy",
+          "stance_cues": [
+            "buy"
+          ],
+          "horizon": "long",
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "8c63fdb5f33089ec3101ef92bd96d11d282991485373677fd2281aa1bdbd52b2",
+          "evidence_chars": 51
+        },
+        {
+          "symbol": "AVGO",
+          "stance": "hold",
+          "stance_cues": [
+            "hold"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "4c383721e8275c229eefc457603bd14a793d68e8f9ce25d66514db6433541300",
+          "evidence_chars": 71
+        },
+        {
+          "symbol": "TSLA",
+          "stance": "hold",
+          "stance_cues": [
+            "hold"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "bf68105c45ecc2216830003050d4db3eccd6ac2aa1b1d098f84e5947ab27c96b",
+          "evidence_chars": 57
+        }
+      ],
+      "claims_status": "experimental_unvalidated",
+      "video_claims": [
+        {
+          "claim": "英伟达(NVDA)收盘价创历史新高，估值仍不贵，建议继续持有，近期支撑位219-232。",
+          "stance": "hold",
+          "price": null,
+          "timestamp": "11:18",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "NVDA",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "微软(MSFT)股价创近期新高，中长线看好至600美元及上方，上方主要压力在519-534。",
+          "stance": "hold",
+          "price": "600",
+          "timestamp": "12:45",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "MSFT",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "台积电(TSM)放量创历史新高，技术面强劲，已在车上的投资者建议持股不动。",
+          "stance": "hold",
+          "price": null,
+          "timestamp": "14:02",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "TSM",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "亚马逊(AMZN)现价仍属于较好的中长线进场位置。",
+          "stance": "buy",
+          "price": null,
+          "timestamp": "16:45",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "AMZN",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "谷歌(GOOG)现价属于较好的中长线布局位置，建议在启动前配置。",
+          "stance": "buy",
+          "price": null,
+          "timestamp": "16:55",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "GOOG",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "博通(AVGO)关键分水岭支撑在324-365，跌破324需注意止损避险，未跌破可继续持有。",
+          "stance": "watch",
+          "price": "324",
+          "timestamp": "17:28",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "AVGO",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "特斯拉(TSLA)处于上行趋势中，接近415-465阻力位，建议持有观望。",
+          "stance": "hold",
+          "price": null,
+          "timestamp": "16:28",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "TSLA",
+          "symbol_check": "listed"
+        }
+      ],
+      "video_claims_model": "gemini-3.5-flash",
+      "video_macro": [
+        {
+          "indicator": "美国9月ISM非制造业PMI",
+          "value": "54.9",
+          "expectation": "55.0",
+          "period": "2026年9月",
+          "timestamp": "00:56"
+        },
+        {
+          "indicator": "美国9月ISM非制造业价格指数",
+          "value": "74.0",
+          "expectation": "73.3",
+          "period": "2026年9月",
+          "timestamp": "01:30"
+        },
+        {
+          "indicator": "美国9月ISM非制造业就业指数",
+          "value": "50.1",
+          "expectation": "48.8",
+          "period": "2026年9月",
+          "timestamp": "01:43"
+        }
+      ],
+      "video_observed_title": "视野环球财经",
+      "validation_status": "pending_owner_spot_check",
+      "forward_evidence_eligible": false
     }
   ],
-  "updated_at": "2026-11-15T02:04:01Z",
+  "updated_at": "2026-11-15T06:24:15Z",
   "retention_policy": "append_only_no_record_count_cap",
   "historical_recovery": {
     "completed_at": "2026-10-07T13:43:06.018028+00:00",
