@@ -1,0 +1,8 @@
+{
+ "set": "forum_test_v1",
+ "labeler": "claude",
+ "sealed_at": "2026-11-15T03:05:00Z",
+ "sha256": "44a9c7cea596a12b28d1d15f72ddec044016eb28ad67a95e4ad2e36c87fe2570",
+ "items": 150,
+ "note_zh": "Claude 盲标答卷（150 条）的 sha256。答卷存放在私有 Project（claude/forum/forum_test_v1_claude.sealed.jsonl），GPT 与 Owner 答卷到齐前不解封、不公开计数。解封时重新计算哈希，必须与这里一致。"
+}
