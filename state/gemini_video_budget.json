@@ -1664,15 +1664,15 @@
       ]
     },
     "2026-11-15": {
-      "calls": 2,
-      "admitted": 0,
-      "rejected": 1,
+      "calls": 4,
+      "admitted": 1,
+      "rejected": 2,
       "errors": 1,
       "reconciliation": {
         "status": "COMPLETE",
-        "calls_billed": 2,
+        "calls_billed": 4,
         "calls_refunded_503": 0,
-        "detail_rows": 2,
+        "detail_rows": 4,
         "missing_detail_rows": 0,
         "counter_mismatch": []
       },
@@ -1694,6 +1694,23 @@
           "author": "RhinoFinance / 视野环球财经",
           "title": "美股 最差9月，CTA更新！JPM战术转向，减仓多头！对冲基金上周仓位！AMZN遭起诉掉块肉！",
           "detail": "seen='美东260831 周一 美东7:55pm' channel='视野环球财经'"
+        },
+        {
+          "video_id": "7IraEqi0ZKs",
+          "outcome": "identity_mismatch",
+          "at": "21:02:53Z",
+          "model": "gemini-3.8-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 机构二季度13 F，加减仓哪些！大空头Michael Burry最新操作，真的相当空！",
+          "detail": "seen='None' channel='视野环球财经'"
+        },
+        {
+          "video_id": "8DY3zEBTFZ8",
+          "outcome": "admitted",
+          "at": "21:04:34Z",
+          "model": "gemini-3.5-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 系统准备重新武装杠杆！MSFT再跌一天修复！半导体、软件，又跷跷板？ CRWV、NBIS、LITE、COHR！AP"
         }
       ]
     }

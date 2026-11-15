@@ -148985,9 +148985,172 @@
       "video_observed_title": "视野环球财经",
       "validation_status": "pending_owner_spot_check",
       "forward_evidence_eligible": false
+    },
+    {
+      "id": "fd1b52ace9e606b63252",
+      "source": "youtube",
+      "source_kind": "video",
+      "author": "RhinoFinance / 视野环球财经",
+      "published_at": "",
+      "title": "美股 系统准备重新武装杠杆！MSFT再跌一天修复！半导体、软件，又跷跷板？ CRWV、NBIS、LITE、COHR！APP再跟踪！",
+      "url": "https://www.youtube.com/watch?v=8DY3zEBTFZ8",
+      "excerpt": "[Gemini 视频理解 · 未验证] 本期节目解读了美国7月CPI数据及货币市场对美联储降息压注的变化，并针对云计算服务商（CRWV、NBIS）、光模块（LITE、COHR）以及微软（MSFT）、AppLovin（APP）等重点个股的基本面估值与技术面支撑压力位进行了详细分析，最后探讨了对冲基金去杠杆及半导体与软件板块的资金流向。\n- [06:21 CRWV watch 110] CRWV在110美元附近存在强压力，技术面需突破143美元才能重新打开新高空间，强支撑位于85.3-97.5美元。\n- [08:41 NBIS watch 208] NBIS技术面表现强于CRWV，关键防守位置在208美元，突破231美元后上方压力位于259-267美元。\n- [11:05 LITE neutral 932] LIT",
+      "content_chars": 1054,
+      "semantic_content_chars": 1054,
+      "content_filtering": {
+        "filter": "youtube_promotion_noise_v1",
+        "input_units": 17,
+        "removed_units": 0,
+        "removed_ratio": 0.0,
+        "promotion_noise_detected": false
+      },
+      "images_count": 0,
+      "themes_hint": [
+        "风险管理",
+        "趋势确认"
+      ],
+      "symbols": [
+        "APP",
+        "COHR",
+        "CRWV",
+        "IGV",
+        "LITE",
+        "MSFT",
+        "NBIS",
+        "SOXX"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "captured_at": "2026-11-15T21:04:34Z",
+      "source_role": "rule_supply",
+      "transcript_status": "available",
+      "content_quality": "Q3",
+      "content_provider": "gemini_video",
+      "content_provider_url": "https://www.youtube.com/watch?v=8DY3zEBTFZ8",
+      "content_origin": "gemini_video_understanding",
+      "timestamp_evidence": true,
+      "rule_candidate_allowed": false,
+      "source_notice": "YouTube正文可用于非Forward语义学习；可靠发布时间缺失，因此强制按backfill处理，禁止计入Forward Evidence或Promotion。",
+      "claims": [
+        {
+          "symbol": "MSFT",
+          "stance": "bullish",
+          "stance_cues": [
+            "bullish"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "6f8bc88134d69abe3e043b9b6ef7defa5213aa9666df79a9b935b4d2c7cd4b9d",
+          "evidence_chars": 70
+        }
+      ],
+      "claims_status": "experimental_unvalidated",
+      "video_claims": [
+        {
+          "claim": "CRWV在110美元附近存在强压力，技术面需突破143美元才能重新打开新高空间，强支撑位于85.3-97.5美元。",
+          "stance": "watch",
+          "price": "110",
+          "timestamp": "06:21",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "CRWV",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "NBIS技术面表现强于CRWV，关键防守位置在208美元，突破231美元后上方压力位于259-267美元。",
+          "stance": "watch",
+          "price": "208",
+          "timestamp": "08:41",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "NBIS",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "LITE业绩增长强劲，但现价已提前透支一年半的前瞻估值；技术面上突破932美元后右侧无压力，强支撑位于829-932美元。",
+          "stance": "neutral",
+          "price": "932",
+          "timestamp": "11:05",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "LITE",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "COHR前瞻估值偏高，技术面处于震荡趋势，关键支撑位328-366美元，上方强压力位372-400美元。",
+          "stance": "neutral",
+          "price": "355",
+          "timestamp": "12:37",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "COHR",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "MSFT如若继续回调一日，将完成日线级别的超买与顶背离修复，有利于后市更加稳健地上攻。",
+          "stance": "bullish",
+          "price": "469",
+          "timestamp": "14:20",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "MSFT",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "APP跌破317美元关键位置后技术面走弱，周线呈现明显头肩顶形态，若进一步跌破252-297美元强支撑，将下看180美元下方。",
+          "stance": "bearish",
+          "price": "317",
+          "timestamp": "17:34",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "APP",
+          "symbol_check": "listed"
+        }
+      ],
+      "video_claims_model": "gemini-3.5-flash",
+      "video_macro": [
+        {
+          "indicator": "美国7月CPI年率未季调",
+          "value": "3.4%",
+          "expectation": "3.4%",
+          "period": "2024-07",
+          "timestamp": "01:10"
+        },
+        {
+          "indicator": "美国7月核心CPI年率未季调",
+          "value": "2.5%",
+          "expectation": "2.5%",
+          "period": "2024-07",
+          "timestamp": "01:10"
+        },
+        {
+          "indicator": "美国7月CPI月率季调后",
+          "value": "0.1%",
+          "expectation": "0.1%",
+          "period": "2024-07",
+          "timestamp": "01:10"
+        },
+        {
+          "indicator": "美国7月核心CPI月率季调后",
+          "value": "0.2%",
+          "expectation": "0.2%",
+          "period": "2024-07",
+          "timestamp": "01:10"
+        }
+      ],
+      "video_observed_title": "声明 Disclaimer - 视野环球财经",
+      "validation_status": "pending_owner_spot_check",
+      "forward_evidence_eligible": false,
+      "intake_class_hint": "backfill",
+      "capture_mode": "youtube_timestamp_unknown_learning",
+      "timestamp_confidence": "missing"
     }
   ],
-  "updated_at": "2026-11-15T06:24:15Z",
+  "updated_at": "2026-11-15T21:04:34Z",
   "retention_policy": "append_only_no_record_count_cap",
   "historical_recovery": {
     "completed_at": "2026-10-07T13:43:06.018028+00:00",
