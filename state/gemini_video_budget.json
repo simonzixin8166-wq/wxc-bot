@@ -1662,6 +1662,40 @@
       "skip_authors_403": [
         "Andrei Jikh"
       ]
+    },
+    "2026-11-15": {
+      "calls": 2,
+      "admitted": 0,
+      "rejected": 1,
+      "errors": 1,
+      "reconciliation": {
+        "status": "COMPLETE",
+        "calls_billed": 2,
+        "calls_refunded_503": 0,
+        "detail_rows": 2,
+        "missing_detail_rows": 0,
+        "counter_mismatch": []
+      },
+      "recent": [
+        {
+          "video_id": "1QM5vfCkId0",
+          "outcome": "exception",
+          "at": "15:41:26Z",
+          "model": "gemini-3.8-flash",
+          "author": "老李玩钱",
+          "title": "当前美股的泡沫到底有多大？NVDA财报解读及操作建议",
+          "detail": "ReadTimeout"
+        },
+        {
+          "video_id": "4M7w7DR865M",
+          "outcome": "identity_mismatch",
+          "at": "15:43:01Z",
+          "model": "gemini-3.5-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 最差9月，CTA更新！JPM战术转向，减仓多头！对冲基金上周仓位！AMZN遭起诉掉块肉！",
+          "detail": "seen='美东260831 周一 美东7:55pm' channel='视野环球财经'"
+        }
+      ]
     }
   },
   "version": 1,
