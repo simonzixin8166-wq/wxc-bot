@@ -567,11 +567,15 @@
       }
     },
     "2026-11-15": {
-      "telegram:get_updates": {
-        "count": 90,
+      "myalphaview:server_action_status": {
+        "count": 3,
         "paid": false
       },
-      "myalphaview:server_action_status": {
+      "telegram:get_updates": {
+        "count": 123,
+        "paid": false
+      },
+      "telegram:send_message": {
         "count": 2,
         "paid": false
       }
