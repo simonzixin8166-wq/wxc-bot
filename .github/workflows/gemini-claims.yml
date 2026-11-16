@@ -9,8 +9,7 @@ name: gemini-claims
 # 08:00 to 12:00 UTC. A scheduled run continues the first unfinished frozen test set (test, then forum_test) and
 # does nothing once both are complete.
 on:
-  schedule:
-    - cron: "5 8 * * *"
+  # the 08:05 UTC slot now belongs to gemini-shadow.yml (both frozen test sets complete 2026-11-16); manual only
   workflow_dispatch:
     inputs:
       set:
