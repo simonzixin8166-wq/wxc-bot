@@ -49,6 +49,13 @@ jobs:
           PYTHONPATH=. python tests/test_gemini_video.py
           PYTHONPATH=. python tests/test_source_intake_completeness.py
 
+      # Quota window (Owner 2026-11-16): no Gemini video calls 08:00-12:00 UTC, right after the free-tier reset, so
+      # the scheduled gemini-claims run (08:05 UTC) labels first. Discovery and transcripts run as usual.
+      - name: Gemini video quota window
+        run: |
+          h=$(date -u +%H)
+          if [ "$h" -ge 8 ] && [ "$h" -lt 12 ]; then echo "VIDEO_RUN_CAP=0" >> "$GITHUB_ENV"; echo "Gemini video calls paused this run"; fi
+
       - name: Collect YouTube forward research
         env:
           DATA_DIR: state
@@ -56,7 +63,7 @@ jobs:
           # YT-01: Gemini video understanding fallback (free tier; off when the secret is absent)
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_VIDEO_DAILY_CAP: "10"
-          GEMINI_VIDEO_RUN_CAP: "2"
+          GEMINI_VIDEO_RUN_CAP: ${{ env.VIDEO_RUN_CAP || '2' }}
           GEMINI_VIDEO_TIMEOUT: "180"
         run: python youtube_research.py
 
