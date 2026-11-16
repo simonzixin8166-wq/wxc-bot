@@ -92,6 +92,26 @@ jobs:
           print(f"## Gemini claims challenger · v5 {s} set\n")
           print(f"- answered {d['answered']}/{d['items']} (complete: {d['complete']}), meta `{json.dumps(d['meta'])}`")
           print(f"- score vs {d['gold']} on answered posts (post x ticker): `{json.dumps(d['score'])}`")
+          # per-source breakdown (v5: A = public feed, C = Owner forwards) and per-kind (forum: reply / post); labels only
+          import sys; sys.path.insert(0, ".")
+          from gemini_claims import GOLD, GOLD_FILES, score
+          gold = {}
+          for x in (GOLD / GOLD_FILES[s]).read_text(encoding="utf-8").splitlines():
+              if x.strip():
+                  g = json.loads(x); gold[g.get("item_id") or g["post_id"]] = g
+          kind = {}
+          if s == "forum_test":
+              smp = json.load(open("research/forum/claims_gold_forum_test_v1_sample.json", encoding="utf-8"))
+              kind = {x["post_id"]: x["kind"] for x in smp["items"]}
+          ans = {k: v for k, v in d["answers"].items() if v.get("note") != "unavailable"}
+          groups = {}
+          for k, g in gold.items():
+              grp = g.get("source") or kind.get(k)
+              if grp and k in ans:
+                  groups.setdefault(grp, {})[k] = g
+          for grp, g in sorted(groups.items()):
+              print(f"- {grp}: `{json.dumps(score(ans, g))}`")
+              print(json.dumps({"group": grp, "score": score(ans, g)}), file=sys.stderr)
           PY
       - uses: actions/upload-artifact@v4
         if: always() && env.SET != 'none'
