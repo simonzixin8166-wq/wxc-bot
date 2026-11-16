@@ -1731,6 +1731,38 @@
           "detail": "ReadTimeout"
         }
       ]
+    },
+    "2026-11-16": {
+      "calls": 2,
+      "admitted": 2,
+      "rejected": 0,
+      "errors": 0,
+      "reconciliation": {
+        "status": "COMPLETE",
+        "calls_billed": 2,
+        "calls_refunded_503": 0,
+        "detail_rows": 2,
+        "missing_detail_rows": 0,
+        "counter_mismatch": []
+      },
+      "recent": [
+        {
+          "video_id": "XFCufoG9DVc",
+          "outcome": "admitted",
+          "at": "20:27:47Z",
+          "model": "gemini-3.5-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 META肉搏AMZN，别被带歪！SHOP受益！AI巨头加速推新模型！德州更严厉暂停数据中心！金融XLF怎么了？"
+        },
+        {
+          "video_id": "XdQF1csLbnk",
+          "outcome": "admitted",
+          "at": "20:32:49Z",
+          "model": "gemini-3.5-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 QQQ、IWM、SOXX、SMH、风险位置！SPY、IGV相对安全！持仓计划更新！"
+        }
+      ]
     }
   },
   "version": 1,

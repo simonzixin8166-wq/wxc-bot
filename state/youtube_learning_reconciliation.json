@@ -1,20 +1,20 @@
 {
   "version": 1,
-  "generated_at": "2026-11-16T09:36:11.835074+00:00",
+  "generated_at": "2026-11-16T20:33:28.458762+00:00",
   "principle": "seen is discovery, not learning; each video is counted once in its highest stage",
   "seen": 222,
   "stages": {
-    "formal_feed_text": 38,
+    "formal_feed_text": 40,
     "historical_backlog": 54,
-    "metadata_only": 99,
+    "metadata_only": 97,
     "pending_unprobed": 3,
     "provider_boilerplate": 27,
     "transcript_readable": 1
   },
   "stages_sum_equals_seen": true,
   "learning_layers": {
-    "text_available": 39,
-    "semantically_understood": 29,
+    "text_available": 41,
+    "semantically_understood": 31,
     "falsifiable_claims_or_rule_capable": 6,
     "matured_outcomes": 0,
     "matured_outcomes_note": "no YouTube claim outcome tracker yet; never inferred"
@@ -27,8 +27,8 @@
       "historical_backlog": 9
     },
     "RhinoFinance / 视野环球财经": {
-      "metadata_only": 43,
-      "formal_feed_text": 26,
+      "metadata_only": 41,
+      "formal_feed_text": 28,
       "historical_backlog": 7,
       "pending_unprobed": 2
     },

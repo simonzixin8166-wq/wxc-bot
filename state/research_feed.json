@@ -150500,9 +150500,615 @@
       "content_sha256": "02336d08f16c4b13012622fe5b5fa7c4b1871aa7c98bb2079efa6df991f94e84",
       "intake_class_hint": "live_candidate",
       "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "02b936daafce8a98b38f",
+      "source": "youtube",
+      "source_kind": "video",
+      "author": "RhinoFinance / 视野环球财经",
+      "published_at": "",
+      "title": "美股 META肉搏AMZN，别被带歪！SHOP受益！AI巨头加速推新模型！德州更严厉暂停数据中心！金融XLF怎么了？",
+      "url": "https://www.youtube.com/watch?v=XFCufoG9DVc",
+      "excerpt": "[Gemini 视频理解 · 未验证] 本期节目分析美股走势及板块个股。纳指与费半走强，标普道指回调。德州暂停数据中心审批加剧算力基建瓶颈；META与亚马逊产生争端并与Shopify合作；AMZN突破下降趋势线后回踩提供买点；SOXX突破趋势线但严重分化，建议聚焦NVDA、AMD、TSM龙头；金融板块XLF大跌，分析其受AI冲击逻辑及投行营收预期降温，给出关键支撑位。\n- [12:12 AMZN bullish 244-256] 亚马逊突破下降趋势线后回踩，244-256及227-240区域为强支撑与长线逢低买入区间\n- [11:10 META watch] Meta与Shopify合作推进AI购物代理，技术面上处于逢低修复路径中\n- [16:45 SHOP neutral 140-158] Shopify受合",
+      "content_chars": 921,
+      "semantic_content_chars": 921,
+      "content_filtering": {
+        "filter": "youtube_promotion_noise_v1",
+        "input_units": 13,
+        "removed_units": 0,
+        "removed_ratio": 0.0,
+        "promotion_noise_detected": false
+      },
+      "images_count": 0,
+      "themes_hint": [
+        "趋势确认"
+      ],
+      "symbols": [
+        "AMD",
+        "AMZN",
+        "GS",
+        "META",
+        "MS",
+        "NVDA",
+        "SHOP",
+        "SOXX",
+        "TSM",
+        "XLF"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "captured_at": "2026-11-16T20:27:47Z",
+      "source_role": "rule_supply",
+      "transcript_status": "available",
+      "content_quality": "Q3",
+      "content_provider": "gemini_video",
+      "content_provider_url": "https://www.youtube.com/watch?v=XFCufoG9DVc",
+      "content_origin": "gemini_video_understanding",
+      "timestamp_evidence": true,
+      "rule_candidate_allowed": false,
+      "source_notice": "YouTube正文可用于非Forward语义学习；可靠发布时间缺失，因此强制按backfill处理，禁止计入Forward Evidence或Promotion。",
+      "claims": [
+        {
+          "symbol": "AMZN",
+          "stance": "buy",
+          "stance_cues": [
+            "buy",
+            "bullish"
+          ],
+          "horizon": "long",
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "58f4c5500c93729d39a82f435aba2d00dbfb1fbae3c3105b3816c413dabeffc3",
+          "evidence_chars": 75
+        },
+        {
+          "symbol": "NVDA",
+          "stance": "bullish",
+          "stance_cues": [
+            "bullish"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "a890b582cd2b773bd0a1a2aded9145f2b030adafa92572eab76f7328c7fc13f7",
+          "evidence_chars": 61
+        },
+        {
+          "symbol": "AMD",
+          "stance": "bullish",
+          "stance_cues": [
+            "bullish"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "a890b582cd2b773bd0a1a2aded9145f2b030adafa92572eab76f7328c7fc13f7",
+          "evidence_chars": 61
+        },
+        {
+          "symbol": "TSM",
+          "stance": "bullish",
+          "stance_cues": [
+            "bullish"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "a890b582cd2b773bd0a1a2aded9145f2b030adafa92572eab76f7328c7fc13f7",
+          "evidence_chars": 61
+        }
+      ],
+      "claims_status": "experimental_unvalidated",
+      "video_claims": [
+        {
+          "claim": "亚马逊突破下降趋势线后回踩，244-256及227-240区域为强支撑与长线逢低买入区间",
+          "stance": "bullish",
+          "price": "244-256",
+          "timestamp": "12:12",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "AMZN",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "Meta与Shopify合作推进AI购物代理，技术面上处于逢低修复路径中",
+          "stance": "watch",
+          "price": null,
+          "timestamp": "11:10",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "META",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "Shopify受合作利好大涨但临近140-158强阻力区，不建议在现价高位追涨",
+          "stance": "neutral",
+          "price": "140-158",
+          "timestamp": "16:45",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "SHOP",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "费半ETF突破下降趋势线，若突破550-577将冲向新高，现价追高需谨慎，等待回踩支撑",
+          "stance": "bullish",
+          "price": "550-577",
+          "timestamp": "22:20",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "SOXX",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "费半内部严重分化，仅英伟达、AMD、台积电等龙头强劲，操作应优先选择强势龙头",
+          "stance": "bullish",
+          "price": null,
+          "timestamp": "18:42",
+          "evidence_mode": "spoken_explicit",
+          "confidence": "high",
+          "symbol": "NVDA",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "金融板块EPS增速低于标普整体，回调至52.6-54.1强支撑区，若要配置优先考虑高盛、摩根士丹利等投行",
+          "stance": "watch",
+          "price": "52.6-54.1",
+          "timestamp": "28:05",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "XLF",
+          "symbol_check": "listed"
+        }
+      ],
+      "video_claims_model": "gemini-3.5-flash",
+      "video_macro": [
+        {
+          "indicator": "WTI/Brent Crude Oil Price",
+          "value": null,
+          "expectation": null,
+          "period": null,
+          "timestamp": "01:15"
+        },
+        {
+          "indicator": "CME FedWatch Interest Rate Expectation",
+          "value": "25 bps cut",
+          "expectation": null,
+          "period": "2024",
+          "timestamp": "02:22"
+        }
+      ],
+      "video_observed_title": "声明 Disclaimer",
+      "validation_status": "pending_owner_spot_check",
+      "forward_evidence_eligible": false,
+      "intake_class_hint": "backfill",
+      "capture_mode": "youtube_timestamp_unknown_learning",
+      "timestamp_confidence": "missing"
+    },
+    {
+      "id": "5c26f8df216ee31396a2",
+      "source": "youtube",
+      "source_kind": "video",
+      "author": "RhinoFinance / 视野环球财经",
+      "published_at": "",
+      "title": "美股 QQQ、IWM、SOXX、SMH、风险位置！SPY、IGV相对安全！持仓计划更新！",
+      "url": "https://www.youtube.com/watch?v=XdQF1csLbnk",
+      "excerpt": "[Gemini 视频理解 · 未验证] 本期节目分析了美股9月首个交易日的大幅波动，国债收益率走高压制中小型股及成长股。重点介绍了罗素2000（IWM）、纳指100（QQQ）、标普500（SPY）、半导体（SOXX/SMH）及软件（IGV）等ETF的关键技术位与多空分界点，并更新了微软、英伟达、台积电、谷歌、特斯拉、直觉外科及旅行者保险的持仓与加减仓计划。\n- [12:00 SPY bullish 729] SPY在729-740及745-756为强支撑区域，处于三大股指中最高且相对最安全的位置\n- [06:36 IWM watch 288] 罗素2000 ETF (IWM) 跌至100日均线及288-301区域，288为关键防御和多空争夺位置\n- [09:47 QQQ neutral 702] QQQ跌破70",
+      "content_chars": 1112,
+      "semantic_content_chars": 1112,
+      "content_filtering": {
+        "filter": "youtube_promotion_noise_v1",
+        "input_units": 19,
+        "removed_units": 0,
+        "removed_ratio": 0.0,
+        "promotion_noise_detected": false
+      },
+      "images_count": 0,
+      "themes_hint": [
+        "风险管理",
+        "趋势确认",
+        "TSLA"
+      ],
+      "symbols": [
+        "GOOG",
+        "IGV",
+        "IWM",
+        "MSFT",
+        "NVDA",
+        "QQQ",
+        "SMH",
+        "SOXX",
+        "SPX",
+        "SPY",
+        "TSLA",
+        "TSM"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "captured_at": "2026-11-16T20:32:49Z",
+      "source_role": "rule_supply",
+      "transcript_status": "available",
+      "content_quality": "Q3",
+      "content_provider": "gemini_video",
+      "content_provider_url": "https://www.youtube.com/watch?v=XdQF1csLbnk",
+      "content_origin": "gemini_video_understanding",
+      "timestamp_evidence": true,
+      "rule_candidate_allowed": false,
+      "source_notice": "YouTube正文可用于非Forward语义学习；可靠发布时间缺失，因此强制按backfill处理，禁止计入Forward Evidence或Promotion。",
+      "claims": [
+        {
+          "symbol": "TSLA",
+          "stance": "trim",
+          "stance_cues": [
+            "trim"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "2bdae5a448e96b20922b22555da66837c8124468e14bec227915f24db03334bd",
+          "evidence_chars": 119
+        },
+        {
+          "symbol": "NVDA",
+          "stance": "trim",
+          "stance_cues": [
+            "trim"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "2bdae5a448e96b20922b22555da66837c8124468e14bec227915f24db03334bd",
+          "evidence_chars": 119
+        },
+        {
+          "symbol": "SMH",
+          "stance": "trim",
+          "stance_cues": [
+            "trim"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "2bdae5a448e96b20922b22555da66837c8124468e14bec227915f24db03334bd",
+          "evidence_chars": 119
+        },
+        {
+          "symbol": "SPY",
+          "stance": "trim",
+          "stance_cues": [
+            "trim"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "2bdae5a448e96b20922b22555da66837c8124468e14bec227915f24db03334bd",
+          "evidence_chars": 119
+        },
+        {
+          "symbol": "QQQ",
+          "stance": "trim",
+          "stance_cues": [
+            "trim"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "2bdae5a448e96b20922b22555da66837c8124468e14bec227915f24db03334bd",
+          "evidence_chars": 119
+        },
+        {
+          "symbol": "MSFT",
+          "stance": "trim",
+          "stance_cues": [
+            "trim"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "2bdae5a448e96b20922b22555da66837c8124468e14bec227915f24db03334bd",
+          "evidence_chars": 119
+        },
+        {
+          "symbol": "GOOGL",
+          "stance": "trim",
+          "stance_cues": [
+            "trim"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "2bdae5a448e96b20922b22555da66837c8124468e14bec227915f24db03334bd",
+          "evidence_chars": 119
+        },
+        {
+          "symbol": "TSM",
+          "stance": "trim",
+          "stance_cues": [
+            "trim"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "2bdae5a448e96b20922b22555da66837c8124468e14bec227915f24db03334bd",
+          "evidence_chars": 119
+        },
+        {
+          "symbol": "VOO",
+          "stance": "trim",
+          "stance_cues": [
+            "trim"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "2bdae5a448e96b20922b22555da66837c8124468e14bec227915f24db03334bd",
+          "evidence_chars": 119
+        },
+        {
+          "symbol": "SPY",
+          "stance": "bullish",
+          "stance_cues": [
+            "bullish"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "3a6caefe3604644a3f6bca4e4dc874a897d3ee74ede501d2be3822bfb2648ec4",
+          "evidence_chars": 70
+        },
+        {
+          "symbol": "MSFT",
+          "stance": "trim",
+          "stance_cues": [
+            "trim",
+            "add",
+            "hold"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "515175b4d540fa4d2902a14fe21a24b9019f80ae6edf8059540ae9013da80aba",
+          "evidence_chars": 47
+        },
+        {
+          "symbol": "NVDA",
+          "stance": "trim",
+          "stance_cues": [
+            "trim",
+            "hold",
+            "bullish"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "5adeba29226ced9e84b37cc420f239df66b072fb4bccd99d0c6441e1417c9b98",
+          "evidence_chars": 50
+        },
+        {
+          "symbol": "TSM",
+          "stance": "hold",
+          "stance_cues": [
+            "hold",
+            "trim",
+            "add"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "c3225fb0e5b5ea6cecf800715e3bcc588dcdf89057855bba916378ad25239b3b",
+          "evidence_chars": 56
+        },
+        {
+          "symbol": "GOOG",
+          "stance": "trim",
+          "stance_cues": [
+            "trim",
+            "add",
+            "hold"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "f00afec4ac11c64280db0b3bd2957d65e45cdce10eba5bb930d09fb16eafddf1",
+          "evidence_chars": 54
+        },
+        {
+          "symbol": "GOOGL",
+          "stance": "trim",
+          "stance_cues": [
+            "trim",
+            "add",
+            "hold"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "f00afec4ac11c64280db0b3bd2957d65e45cdce10eba5bb930d09fb16eafddf1",
+          "evidence_chars": 54
+        }
+      ],
+      "claims_status": "experimental_unvalidated",
+      "video_claims": [
+        {
+          "claim": "SPY在729-740及745-756为强支撑区域，处于三大股指中最高且相对最安全的位置",
+          "stance": "bullish",
+          "price": "729",
+          "timestamp": "12:00",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "SPY",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "罗素2000 ETF (IWM) 跌至100日均线及288-301区域，288为关键防御和多空争夺位置",
+          "stance": "watch",
+          "price": "288",
+          "timestamp": "06:36",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "IWM",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "QQQ跌破702-724后显着走弱，若跌破687将确认进入空头趋势",
+          "stance": "neutral",
+          "price": "702",
+          "timestamp": "09:47",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "QQQ",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "SOXX跌破486后下行风险将显着加大",
+          "stance": "watch",
+          "price": "486",
+          "timestamp": "13:36",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "SOXX",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "SMH跌破557-581走弱，跌破534将转为空头趋势",
+          "stance": "watch",
+          "price": "534",
+          "timestamp": "14:26",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "SMH",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "IGV在未跌破101之前仍维持看涨突破新高的观点",
+          "stance": "bullish",
+          "price": "101",
+          "timestamp": "15:49",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "IGV",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "微软持仓比例为14%，基本面满意，目前无加仓或减仓计划",
+          "stance": "hold",
+          "price": null,
+          "timestamp": "17:15",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "MSFT",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "英伟达维持在215上方仍看涨，持仓成本低，无减仓必要",
+          "stance": "hold",
+          "price": "215",
+          "timestamp": "18:37",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "NVDA",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "台积电不减仓，计划在358-375加仓2%，在320-350加仓4%",
+          "stance": "buy",
+          "price": "358",
+          "timestamp": "19:08",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "TSM",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "谷歌跌破200日均线呈阶段性弱势，目前无加仓或减仓计划，按原持仓持有",
+          "stance": "hold",
+          "price": null,
+          "timestamp": "21:35",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "GOOG",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "特斯拉未突破368压制，突破后方可看315-465上行波段",
+          "stance": "watch",
+          "price": "368",
+          "timestamp": "22:20",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "TSLA",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "直觉外科若回撤至313下方将考虑加仓，未到则继续持有现金等待",
+          "stance": "watch",
+          "price": "313",
+          "timestamp": "23:59",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "ISRG",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "旅行者保险加仓位上移至296-313和265-276，跌至该区间准备加仓",
+          "stance": "buy",
+          "price": "296",
+          "timestamp": "24:32",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "TRV",
+          "symbol_check": "listed"
+        }
+      ],
+      "video_claims_model": "gemini-3.5-flash",
+      "video_macro": [
+        {
+          "indicator": "US ISM Manufacturing PMI",
+          "value": "54.6",
+          "expectation": "55.2",
+          "period": "August",
+          "timestamp": "02:11"
+        },
+        {
+          "indicator": "US JOLTS Job Openings",
+          "value": "727.1万",
+          "expectation": "730万",
+          "period": "July",
+          "timestamp": "02:58"
+        }
+      ],
+      "video_observed_title": "视野环球财经 20260901 美股大跌！CTA触发卖盘！加仓减仓计划有变！各大指数与ETF关键位更新！",
+      "validation_status": "pending_owner_spot_check",
+      "forward_evidence_eligible": false,
+      "intake_class_hint": "backfill",
+      "capture_mode": "youtube_timestamp_unknown_learning",
+      "timestamp_confidence": "missing"
     }
   ],
-  "updated_at": "2026-11-16T02:20:18Z",
+  "updated_at": "2026-11-16T20:32:55Z",
   "retention_policy": "append_only_no_record_count_cap",
   "historical_recovery": {
     "completed_at": "2026-10-07T13:43:06.018028+00:00",
