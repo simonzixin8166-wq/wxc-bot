@@ -133,3 +133,13 @@ called.clear()
 gc.main(["--set", "dev", "--resume", str(out), "--out", str(Path(d) / "dev.json")])
 assert len(called) == 3, "a report of another set must not be resumed"
 print("PASS resume keeps answered posts, retries unavailable, ignores other set/version")
+
+# forum test v1 (frozen 2026-11-16): the loader rebuilds all 150 utterances from the public feed, the same text the
+# three labellers saw; the gold carries labels and ids only and covers exactly the seeded sample
+fg = [json.loads(x) for x in (gc.GOLD / gc.GOLD_FILES["forum_test"]).read_text(encoding="utf-8").splitlines() if x.strip()]
+smp = json.loads((gc.ROOT / "research" / "forum" / "claims_gold_forum_test_v1_sample.json").read_text(encoding="utf-8"))
+assert {g["post_id"] for g in fg} == {x["post_id"] for x in smp["items"]} and len(fg) == 150
+assert all(set(g) <= {"post_id", "owner_subset", "labels", "ambiguous", "provenance", "adjudication", "set", "guideline"} for g in fg)
+ft = gc.load_forum_dev("forum_test")
+assert len(ft) == 150 and all(x["text"] for x in ft) and "forum_test" in gc.FORUM_SETS
+print("PASS forum test v1: loader rebuilds 150 utterances from the feed; gold is labels and ids only")

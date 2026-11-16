@@ -1,0 +1,94 @@
+{
+ "version": "forum_test_v1_adjudication_r1",
+ "date": "2026-11-16",
+ "adjudicator": "Owner",
+ "owner_blind_raw_sha256": "05696c7bcf033f6ca615fda4ec1310ed67ef425c50bf8dac40deba21e337c032",
+ "owner_blind_note": "Owner's 30 blind answers are kept unchanged (private project copy, hash above); adjudication never rewrites them",
+ "owner_clarifications_before_unsealing": {
+  "#12": "不确定 (claim, no direction)",
+  "#16": "看多",
+  "#23": "无 (no ticker written)"
+ },
+ "decisions": [
+  {
+   "k": 1,
+   "post_id": "122083",
+   "adopted": "claude_gpt_shared"
+  },
+  {
+   "k": 2,
+   "post_id": "123612",
+   "adopted": "gpt"
+  },
+  {
+   "k": 3,
+   "post_id": "122268",
+   "adopted": "claude_gpt_shared"
+  },
+  {
+   "k": 4,
+   "post_id": "122371",
+   "adopted": "claude_gpt_shared"
+  },
+  {
+   "k": 5,
+   "post_id": "121950",
+   "adopted": "claude_gpt_shared"
+  },
+  {
+   "k": 6,
+   "post_id": "121953",
+   "adopted": "claude"
+  },
+  {
+   "k": 7,
+   "post_id": "122712",
+   "adopted": "gpt"
+  },
+  {
+   "k": 8,
+   "post_id": "122105",
+   "adopted": "gpt"
+  },
+  {
+   "k": 9,
+   "post_id": "121957",
+   "adopted": "claude"
+  },
+  {
+   "k": 10,
+   "post_id": "122085",
+   "adopted": "gpt"
+  },
+  {
+   "k": 11,
+   "post_id": "121930",
+   "adopted": "gpt"
+  },
+  {
+   "k": 12,
+   "post_id": "123086",
+   "adopted": "claude"
+  },
+  {
+   "k": 13,
+   "post_id": "122927",
+   "adopted": "claude"
+  },
+  {
+   "k": 14,
+   "post_id": "123555",
+   "adopted": "gpt"
+  },
+  {
+   "k": 15,
+   "post_id": "123466",
+   "adopted": "claude"
+  },
+  {
+   "k": 16,
+   "post_id": "123551",
+   "adopted": "gpt"
+  }
+ ]
+}
