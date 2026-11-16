@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-11-16T03:37:09Z",
+  "generated_at": "2026-11-16T09:36:11Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -28,7 +28,7 @@
         "title": "（会员第310期）Anthropic （ANT） IPO，降估值后潜力大吗？基本面、估值、投资机会、风险！",
         "url": "https://www.youtube.com/watch?v=_2bUPesoEWo",
         "published_at": "",
-        "rss_status": "error:HTTPError",
+        "rss_status": "ok",
         "flat_metadata_keys": [
           "channel_id",
           "duration"
@@ -64,11 +64,12 @@
         "video_id": "w8GM1mghKJc",
         "title": "中期选举尘埃落定！美股分化严重，何去何从",
         "url": "https://www.youtube.com/watch?v=w8GM1mghKJc",
-        "published_at": "",
-        "rss_status": "error:HTTPError",
+        "published_at": "2026-11-04",
+        "rss_status": "ok",
         "flat_metadata_keys": [
           "channel_id",
-          "duration"
+          "duration",
+          "rss_published_at"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -102,7 +103,7 @@
         "title": "Why Bitcoin Is Collapsing",
         "url": "https://www.youtube.com/watch?v=CRqhR0tQnKM",
         "published_at": "",
-        "rss_status": "error:HTTPError",
+        "rss_status": "ok",
         "flat_metadata_keys": [
           "channel_id",
           "duration"
@@ -128,9 +129,9 @@
   "feed_records_added": 0,
   "publication_dates_resolved": 0,
   "rss_status": {
-    "UCFQsi7WaF5X41tcuOryDk8w": "error:HTTPError",
-    "UCGy7SkBjcIAgTiwkXEtPnYg": "error:HTTPError",
-    "UCo2gxyermsLBSCxFHvJs0Zg": "error:HTTPError"
+    "UCFQsi7WaF5X41tcuOryDk8w": "ok",
+    "UCGy7SkBjcIAgTiwkXEtPnYg": "ok",
+    "UCo2gxyermsLBSCxFHvJs0Zg": "ok"
   },
   "historical_backlog_total": 63,
   "discovery_complete": true,
@@ -155,17 +156,9 @@
       "pending_reason": "awaiting_publication_date"
     },
     {
-      "author": "Andrei Jikh",
-      "video_id": "CRqhR0tQnKM",
-      "title": "Why Bitcoin Is Collapsing",
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "awaiting_publication_date"
-    },
-    {
       "author": "老李玩钱",
-      "video_id": "MEQ814VtkrY",
-      "title": "战火打响美股竟安然无恙，什么情况？3月行情推演及展望",
+      "video_id": "PDAHTpp2c78",
+      "title": "摩根大通：标普500今年将下跌15%",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -175,8 +168,8 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "MFB-Fp4F15A",
-      "title": "美股 罕见IGV压 SOXX一头！NFLX止跌雄起了吗？TSLA、WMT、SNDK！",
+      "video_id": "RgGeU0w9GZo",
+      "title": "美股 NVDA黄仁勋“喊单”奏效！AVGO有惊无险，PANW放缓代价！褐皮书：物价，消费，就业，增长！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -185,9 +178,20 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "Andrei Jikh",
-      "video_id": "MUUin7TkWsk",
-      "title": "How I'm Investing For What's Coming",
+      "author": "老李玩钱",
+      "video_id": "SJERXQX7tAU",
+      "title": "5大科技，机会来了，最新买入/加仓价格点位！另外准备减仓1支股",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "老李玩钱",
+      "video_id": "Ue75SpWXfjo",
+      "title": "美股最重磅的一周：美联储会议及4大科技巨头财报提前展望，买入/加仓价格点位更新",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
