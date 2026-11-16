@@ -147,7 +147,8 @@ print("PASS forum test v1: loader rebuilds 150 utterances from the feed; gold is
 # quota window (Owner 2026-11-16): claims label right after the 08:00 UTC free-tier reset; video calls pause 08-12 UTC
 wfc = (gc.ROOT / ".github" / "workflows" / "gemini-claims.yml").read_text(encoding="utf-8")
 wfy = (gc.ROOT / ".github" / "workflows" / "youtube-forward-intake.yml").read_text(encoding="utf-8")
-assert 'cron: "5 8 * * *"' in wfc and "for s in test forum_test" in wfc and "gemini-claims-${{ env.SET }}" in wfc
+wfs = (gc.ROOT / ".github" / "workflows" / "gemini-shadow.yml").read_text(encoding="utf-8")
+assert 'cron: "5 8 * * *"' in wfs and 'cron:' not in wfc and "for s in test forum_test" in wfc and "gemini-claims-${{ env.SET }}" in wfc
 assert '"$h" -ge 8 ] && [ "$h" -lt 12' in wfy and "GEMINI_VIDEO_RUN_CAP: ${{ env.VIDEO_RUN_CAP || '2' }}" in wfy
 print("PASS quota window: claims scheduled 08:05 UTC on the first unfinished test set; video Gemini calls paused 08-12 UTC")
 assert "per-source breakdown" in wfc and 'g.get("source") or kind.get(k)' in wfc

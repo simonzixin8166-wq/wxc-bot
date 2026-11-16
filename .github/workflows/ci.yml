@@ -34,6 +34,7 @@ jobs:
           PYTHONPATH=. python tests/test_claim_extractor_ce6.py
           PYTHONPATH=. python tests/test_claim_extractor_ce7.py
           PYTHONPATH=. python tests/test_gemini_claims.py
+          PYTHONPATH=. python tests/test_gemini_shadow.py
           PYTHONPATH=. python tests/test_learning_round2.py
           PYTHONPATH=. python tests/test_claims_gold.py
           PYTHONPATH=. python tests/test_gold_context.py

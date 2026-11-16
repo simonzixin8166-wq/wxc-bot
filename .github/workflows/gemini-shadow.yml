@@ -1,0 +1,61 @@
+name: gemini-shadow
+
+# Gemini understanding shadow observation (Owner 2026-11-16: option "A + fallback", 2 weeks, 11/17-11/30).
+# Runs at 08:05 UTC, right after the free-tier quota reset (00:00 Pacific); youtube-forward-intake makes no Gemini
+# video calls 08:00-12:00 UTC. Labels new feed records with Gemini, falls back to the stored ce-4 claims when
+# Gemini cannot label one, and appends labels + daily stats to research/shadow/. Shadow only: never writes the
+# feed, production_use=false, nothing feeds Daily, judgments, alerts or the brief. Labels and ids only.
+on:
+  schedule:
+    - cron: "5 8 * * *"
+  workflow_dispatch:
+    inputs:
+      max_calls:
+        description: "optional cap on Gemini calls for a small trial (empty = no cap)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: wxc-research-writer
+  cancel-in-progress: false
+
+jobs:
+  shadow:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - name: Tests
+        run: PYTHONPATH=. python tests/test_gemini_shadow.py
+      - name: Label new feed records (Gemini first, ce-4 fallback)
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          TEXTPACK_TOKEN: ${{ secrets.TEXTPACK_TOKEN }}
+          TEXTPACK_REPO: simonzixin8166-wq/myalpha-s2-textpack
+          DATA_DIR: /tmp/gemini_state
+          MAX_CALLS: ${{ inputs.max_calls }}
+        run: |
+          if [ -n "$MAX_CALLS" ]; then python gemini_shadow.py --max-calls "$MAX_CALLS"; else python gemini_shadow.py; fi
+      - name: Save shadow rows (append-only)
+        run: |
+          git config user.name "wxc-bot"
+          git config user.email "wxc-bot@users.noreply.github.com"
+          git add research/shadow/
+          if ! git diff --cached --quiet; then
+            git commit -m "gemini shadow observation"
+            pushed=0
+            for attempt in 1 2 3 4 5; do
+              git pull --rebase origin main
+              if git push origin HEAD:main; then pushed=1; break; fi
+              echo "push raced with main (attempt $attempt/5); retrying"
+              sleep $((attempt * 3))
+            done
+            test "$pushed" -eq 1
+          fi
