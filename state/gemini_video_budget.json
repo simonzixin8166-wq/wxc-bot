@@ -1664,15 +1664,15 @@
       ]
     },
     "2026-11-15": {
-      "calls": 5,
+      "calls": 6,
       "admitted": 1,
       "rejected": 2,
-      "errors": 2,
+      "errors": 3,
       "reconciliation": {
         "status": "COMPLETE",
-        "calls_billed": 5,
+        "calls_billed": 6,
         "calls_refunded_503": 0,
-        "detail_rows": 5,
+        "detail_rows": 6,
         "missing_detail_rows": 0,
         "counter_mismatch": []
       },
@@ -1719,6 +1719,15 @@
           "model": "gemini-3.8-flash",
           "author": "RhinoFinance / 视野环球财经",
           "title": "美股 NVDA、META不同意AI放缓！加息后，标普、利率走势！SPY、QQQ、SOXX、SMH较差的情况，跌至哪里？",
+          "detail": "ReadTimeout"
+        },
+        {
+          "video_id": "G_zzWcUSTfY",
+          "outcome": "exception",
+          "at": "03:36:31Z",
+          "model": "gemini-3.8-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 共识预期：半导体无路可退！QQQ、IWM、AMD、META！",
           "detail": "ReadTimeout"
         }
       ]
