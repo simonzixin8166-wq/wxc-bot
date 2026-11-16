@@ -1664,15 +1664,15 @@
       ]
     },
     "2026-11-15": {
-      "calls": 4,
+      "calls": 5,
       "admitted": 1,
       "rejected": 2,
-      "errors": 1,
+      "errors": 2,
       "reconciliation": {
         "status": "COMPLETE",
-        "calls_billed": 4,
+        "calls_billed": 5,
         "calls_refunded_503": 0,
-        "detail_rows": 4,
+        "detail_rows": 5,
         "missing_detail_rows": 0,
         "counter_mismatch": []
       },
@@ -1711,6 +1711,15 @@
           "model": "gemini-3.5-flash",
           "author": "RhinoFinance / 视野环球财经",
           "title": "美股 系统准备重新武装杠杆！MSFT再跌一天修复！半导体、软件，又跷跷板？ CRWV、NBIS、LITE、COHR！AP"
+        },
+        {
+          "video_id": "EB4-BTw4ETQ",
+          "outcome": "exception",
+          "at": "02:03:54Z",
+          "model": "gemini-3.8-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 NVDA、META不同意AI放缓！加息后，标普、利率走势！SPY、QQQ、SOXX、SMH较差的情况，跌至哪里？",
+          "detail": "ReadTimeout"
         }
       ]
     }

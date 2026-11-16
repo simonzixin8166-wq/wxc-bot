@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-11-15T21:05:00Z",
+  "generated_at": "2026-11-16T02:04:19Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -28,7 +28,7 @@
         "title": "（会员第310期）Anthropic （ANT） IPO，降估值后潜力大吗？基本面、估值、投资机会、风险！",
         "url": "https://www.youtube.com/watch?v=_2bUPesoEWo",
         "published_at": "",
-        "rss_status": "ok",
+        "rss_status": "error:HTTPError",
         "flat_metadata_keys": [
           "channel_id",
           "duration"
@@ -64,12 +64,11 @@
         "video_id": "w8GM1mghKJc",
         "title": "中期选举尘埃落定！美股分化严重，何去何从",
         "url": "https://www.youtube.com/watch?v=w8GM1mghKJc",
-        "published_at": "2026-11-04",
-        "rss_status": "ok",
+        "published_at": "",
+        "rss_status": "error:HTTPError",
         "flat_metadata_keys": [
           "channel_id",
-          "duration",
-          "rss_published_at"
+          "duration"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -100,10 +99,10 @@
       "discovery_complete": true,
       "latest": {
         "video_id": "CRqhR0tQnKM",
-        "title": "Why Bitcoin Is Collapsing",
+        "title": "Why Bitcoin Is Crashing",
         "url": "https://www.youtube.com/watch?v=CRqhR0tQnKM",
         "published_at": "",
-        "rss_status": "ok",
+        "rss_status": "error:HTTPError",
         "flat_metadata_keys": [
           "channel_id",
           "duration"
@@ -129,9 +128,9 @@
   "feed_records_added": 0,
   "publication_dates_resolved": 0,
   "rss_status": {
-    "UCFQsi7WaF5X41tcuOryDk8w": "ok",
-    "UCGy7SkBjcIAgTiwkXEtPnYg": "ok",
-    "UCo2gxyermsLBSCxFHvJs0Zg": "ok"
+    "UCFQsi7WaF5X41tcuOryDk8w": "error:HTTPError",
+    "UCGy7SkBjcIAgTiwkXEtPnYg": "error:HTTPError",
+    "UCo2gxyermsLBSCxFHvJs0Zg": "error:HTTPError"
   },
   "historical_backlog_total": 63,
   "discovery_complete": true,
@@ -158,15 +157,15 @@
     {
       "author": "Andrei Jikh",
       "video_id": "CRqhR0tQnKM",
-      "title": "Why Bitcoin Is Collapsing",
+      "title": "Why Bitcoin Is Crashing",
       "admission": "pending_content",
       "was_pending": true,
       "pending_reason": "awaiting_publication_date"
     },
     {
       "author": "老李玩钱",
-      "video_id": "8uy8c4S2BW4",
-      "title": "英伟达财报渡劫！依然长期看好",
+      "video_id": "FK_7ldpLAjI",
+      "title": "$200,000本金美股账户2周年，表现如何？复盘总结，经验心得",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -176,8 +175,8 @@
     },
     {
       "author": "老李玩钱",
-      "video_id": "9SBwuIy6KRs",
-      "title": "美股很高！但这3支股票还在地上趴着，可以买入",
+      "video_id": "FqN2N9NJ00M",
+      "title": "美股：TSLA，GOOG！财报解读，操作建议",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -186,9 +185,9 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "老李玩钱",
-      "video_id": "B9E1AdBLM24",
-      "title": "我对当前美股行情的一些思考！答疑：MU, INTC, SNDK, RKLB还能追吗",
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "Fu_h7lMTYU8",
+      "title": "美股 三个风险，现在如何？GOOG加速倒车！软件IGV，成分股跟踪！ORCL、PLTR、CRM、INTU、APP、ADBE！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
