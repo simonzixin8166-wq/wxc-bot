@@ -1,0 +1,115 @@
+{
+ "version": "forum_test_v1_extractor_scores",
+ "measured_at": "2026-11-16",
+ "gold_sha256": "af4ed9a29919718744214536d1b70e0b111ab6acbbf5e57204409203e19eea37",
+ "claim_extractor_sha256": "f44bdb331f64737ec52691c50235ac5828a8fa89d0e109e8781d58cb68dc1603",
+ "unit": "utterance x ticker; direction by polarity",
+ "results": {
+  "ce-4 (production)": {
+   "all": {
+    "gold_pairs": 48,
+    "pred_pairs": 9,
+    "matched": 8,
+    "precision": 0.889,
+    "recall": 0.167,
+    "direction_agree": 7,
+    "precision_wilson95": [
+     0.565,
+     0.98
+    ],
+    "recall_wilson95": [
+     0.087,
+     0.296
+    ]
+   },
+   "reply": {
+    "gold_pairs": 42,
+    "pred_pairs": 9,
+    "matched": 8,
+    "precision": 0.889,
+    "recall": 0.19,
+    "direction_agree": 7,
+    "precision_wilson95": [
+     0.565,
+     0.98
+    ],
+    "recall_wilson95": [
+     0.1,
+     0.333
+    ]
+   },
+   "post": {
+    "gold_pairs": 6,
+    "pred_pairs": 0,
+    "matched": 0,
+    "precision": null,
+    "recall": 0.0,
+    "direction_agree": 0,
+    "precision_wilson95": null,
+    "recall_wilson95": [
+     0.0,
+     0.39
+    ]
+   },
+   "utterance_level": {
+    "tp": 8,
+    "fp": 0,
+    "fn": 36,
+    "abstain_correct": 106
+   }
+  },
+  "ce-7 (forum shadow)": {
+   "all": {
+    "gold_pairs": 48,
+    "pred_pairs": 16,
+    "matched": 13,
+    "precision": 0.812,
+    "recall": 0.271,
+    "direction_agree": 12,
+    "precision_wilson95": [
+     0.57,
+     0.934
+    ],
+    "recall_wilson95": [
+     0.166,
+     0.41
+    ]
+   },
+   "reply": {
+    "gold_pairs": 42,
+    "pred_pairs": 16,
+    "matched": 13,
+    "precision": 0.812,
+    "recall": 0.31,
+    "direction_agree": 12,
+    "precision_wilson95": [
+     0.57,
+     0.934
+    ],
+    "recall_wilson95": [
+     0.191,
+     0.46
+    ]
+   },
+   "post": {
+    "gold_pairs": 6,
+    "pred_pairs": 0,
+    "matched": 0,
+    "precision": null,
+    "recall": 0.0,
+    "direction_agree": 0,
+    "precision_wilson95": null,
+    "recall_wilson95": [
+     0.0,
+     0.39
+    ]
+   },
+   "utterance_level": {
+    "tp": 12,
+    "fp": 2,
+    "fn": 32,
+    "abstain_correct": 104
+   }
+  }
+ }
+}

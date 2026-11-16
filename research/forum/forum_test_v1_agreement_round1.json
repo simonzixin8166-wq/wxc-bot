@@ -1,0 +1,303 @@
+{
+ "version": "forum_test_v1_agreement_round1",
+ "date": "2026-11-16",
+ "inputs_sha256": {
+  "claude": "44a9c7cea596a12b28d1d15f72ddec044016eb28ad67a95e4ad2e36c87fe2570",
+  "gpt": "773802b19a28e0404c40bdbd319a726481cf31805943acd465d2e45f88875657",
+  "owner": "9eb91feecbc7d6afcbb9adbc31d369f4e0c7e6b14706caf750e844778d9f129c",
+  "owner_raw": "05696c7bcf033f6ca615fda4ec1310ed67ef425c50bf8dac40deba21e337c032"
+ },
+ "unit": "one utterance (150; Owner subset 30)",
+ "claude_vs_gpt": {
+  "all": {
+   "post_level": {
+    "n": 150,
+    "observed_agreement": 0.947,
+    "kappa": 0.866,
+    "confusion": {
+     "both": 37,
+     "neither": 105,
+     "gpt_only": 6,
+     "claude_only": 2
+    }
+   },
+   "direction": {
+    "pairs_both": 40,
+    "agree": 39,
+    "rate": 0.975,
+    "wilson95": [
+     0.871,
+     0.996
+    ],
+    "conflicts": [
+     "123086 MRNA claude=['neg'] gpt=['pos']"
+    ],
+    "claude_only": [
+     "121953 SOXL",
+     "123466 TSLA",
+     "123555 AMD"
+    ],
+    "gpt_only": [
+     "121930 META",
+     "122085 TMF",
+     "122105 AMZN",
+     "122712 NVDA",
+     "122927 NVDA",
+     "123551 NVDA",
+     "123612 QQQ"
+    ]
+   }
+  },
+  "post": {
+   "post_level": {
+    "n": 14,
+    "observed_agreement": 1.0,
+    "kappa": 1.0,
+    "confusion": {
+     "both": 6,
+     "neither": 8
+    }
+   },
+   "direction": {
+    "pairs_both": 6,
+    "agree": 5,
+    "rate": 0.833,
+    "wilson95": [
+     0.436,
+     0.97
+    ],
+    "conflicts": [
+     "123086 MRNA claude=['neg'] gpt=['pos']"
+    ],
+    "claude_only": [],
+    "gpt_only": []
+   }
+  },
+  "reply": {
+   "post_level": {
+    "n": 136,
+    "observed_agreement": 0.941,
+    "kappa": 0.846,
+    "confusion": {
+     "neither": 97,
+     "both": 31,
+     "gpt_only": 6,
+     "claude_only": 2
+    }
+   },
+   "direction": {
+    "pairs_both": 34,
+    "agree": 34,
+    "rate": 1.0,
+    "wilson95": [
+     0.898,
+     1.0
+    ],
+    "conflicts": [],
+    "claude_only": [
+     "121953 SOXL",
+     "123466 TSLA",
+     "123555 AMD"
+    ],
+    "gpt_only": [
+     "121930 META",
+     "122085 TMF",
+     "122105 AMZN",
+     "122712 NVDA",
+     "122927 NVDA",
+     "123551 NVDA",
+     "123612 QQQ"
+    ]
+   }
+  }
+ },
+ "owner_subset": {
+  "claude_vs_owner": {
+   "post_level": {
+    "n": 30,
+    "observed_agreement": 0.867,
+    "kappa": 0.733,
+    "confusion": {
+     "claude_only": 1,
+     "neither": 14,
+     "both": 12,
+     "owner_only": 3
+    }
+   },
+   "direction": {
+    "pairs_both": 12,
+    "agree": 11,
+    "rate": 0.917,
+    "wilson95": [
+     0.646,
+     0.985
+    ],
+    "conflicts": [
+     "122268 SPY claude=['neg'] owner=['pos']"
+    ],
+    "claude_only": [
+     "122083 TMF"
+    ],
+    "owner_only": [
+     "121950 AMD",
+     "121950 AVGO",
+     "121950 SOXL",
+     "122371 HVHP",
+     "123612 QQQ"
+    ]
+   },
+   "owner_gate": {
+    "disagreements": 5,
+    "of": 30,
+    "items": [
+     {
+      "post_id": "122083",
+      "why": "claim_vs_none",
+      "owner": [],
+      "claude": [
+       "TMF"
+      ]
+     },
+     {
+      "post_id": "123612",
+      "why": "claim_vs_none",
+      "owner": [
+       "QQQ"
+      ],
+      "claude": []
+     },
+     {
+      "post_id": "122268",
+      "why": "polarity_conflict",
+      "symbols": [
+       "SPY"
+      ]
+     },
+     {
+      "post_id": "122371",
+      "why": "claim_vs_none",
+      "owner": [
+       "HVHP"
+      ],
+      "claude": []
+     },
+     {
+      "post_id": "121950",
+      "why": "claim_vs_none",
+      "owner": [
+       "AMD",
+       "AVGO",
+       "SOXL"
+      ],
+      "claude": []
+     }
+    ],
+    "strict_symbol_set_differs": 4,
+    "strict_items": [
+     "122083",
+     "123612",
+     "122371",
+     "121950"
+    ]
+   }
+  },
+  "gpt_vs_owner": {
+   "post_level": {
+    "n": 30,
+    "observed_agreement": 0.867,
+    "kappa": 0.733,
+    "confusion": {
+     "gpt_only": 1,
+     "neither": 14,
+     "both": 12,
+     "owner_only": 3
+    }
+   },
+   "direction": {
+    "pairs_both": 11,
+    "agree": 10,
+    "rate": 0.909,
+    "wilson95": [
+     0.623,
+     0.984
+    ],
+    "conflicts": [
+     "122268 SPY gpt=['neg'] owner=['pos']"
+    ],
+    "gpt_only": [
+     "122083 TMF"
+    ],
+    "owner_only": [
+     "121950 AMD",
+     "121950 AVGO",
+     "121950 SOXL",
+     "121953 SOXL",
+     "122371 HVHP"
+    ]
+   },
+   "owner_gate": {
+    "disagreements": 5,
+    "of": 30,
+    "items": [
+     {
+      "post_id": "122083",
+      "why": "claim_vs_none",
+      "owner": [],
+      "gpt": [
+       "TMF"
+      ]
+     },
+     {
+      "post_id": "122268",
+      "why": "polarity_conflict",
+      "symbols": [
+       "SPY"
+      ]
+     },
+     {
+      "post_id": "122371",
+      "why": "claim_vs_none",
+      "owner": [
+       "HVHP"
+      ],
+      "gpt": []
+     },
+     {
+      "post_id": "121950",
+      "why": "claim_vs_none",
+      "owner": [
+       "AMD",
+       "AVGO",
+       "SOXL"
+      ],
+      "gpt": []
+     },
+     {
+      "post_id": "121953",
+      "why": "claim_vs_none",
+      "owner": [
+       "SOXL"
+      ],
+      "gpt": []
+     }
+    ],
+    "strict_symbol_set_differs": 4,
+    "strict_items": [
+     "122083",
+     "122371",
+     "121950",
+     "121953"
+    ]
+   }
+  },
+  "three_way_claim_all_agree": 25
+ },
+ "gate": {
+  "kappa (claude vs gpt) >= 0.60": 0.866,
+  "direction (claude vs gpt) >= 0.85": 0.975,
+  "owner disagreements (claude) <= 3": 5,
+  "owner disagreements (gpt) <= 3": 5,
+  "result": "FAIL"
+ },
+ "not_claimed": "Not adjudicated. Engineering result only; learning stays UNPROVEN / FINAL=NO."
+}

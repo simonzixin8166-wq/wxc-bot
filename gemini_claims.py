@@ -221,11 +221,11 @@ def label_batch(items: list[dict], post=None) -> tuple[dict, dict]:
     return {it["id"]: unavailable for it in items}, {"model": None, "status": last}
 
 
-def load_forum_dev() -> list[dict]:
-    """Forum dev set (research/forum/claims_gold_forum_dev_v1): utterance text and the post it answers, both already
-    in the public feed (titles and <=360-char excerpts only)."""
-    ids = {json.loads(x)["post_id"] for x in (ROOT / "research" / "forum" / "claims_gold_forum_dev_v1.claude_first.jsonl")
-           .read_text(encoding="utf-8").splitlines() if x.strip()}
+def load_forum_dev(which: str = "forum_dev") -> list[dict]:
+    """Forum dev set (research/forum/claims_gold_forum_dev_v1) or the frozen forum test set v1: utterance text and the
+    post it answers, both already in the public feed (titles and <=360-char excerpts only; for the 150 test
+    utterances this is exactly the text the three labellers saw)."""
+    ids = {json.loads(x)["post_id"] for x in (GOLD / GOLD_FILES[which]).read_text(encoding="utf-8").splitlines() if x.strip()}
     out = []
     for r in json.loads((ROOT / "state" / "research_feed.json").read_text(encoding="utf-8"))["records"]:
         pid = str(r.get("source_entry_key") or "")
@@ -289,7 +289,9 @@ def score(answers: dict, gold: dict) -> dict:
 
 
 GOLD_FILES = {"dev": "claims_gold_dev_v5.claude_first.jsonl", "test": "claims_gold_test_v5.jsonl",
-              "forum_dev": "../forum/claims_gold_forum_dev_v1.claude_first.jsonl"}
+              "forum_dev": "../forum/claims_gold_forum_dev_v1.claude_first.jsonl",
+              "forum_test": "../forum/claims_gold_forum_test_v1.jsonl"}
+FORUM_SETS = ("forum_dev", "forum_test")
 FORUM_BATCH = int(os.getenv("GEMINI_FORUM_BATCH", "8"))
 
 
@@ -318,7 +320,7 @@ def _load_previous(path: str | None, which: str) -> dict:
 
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--set", choices=("dev", "test", "forum_dev"), default="dev")
+    ap.add_argument("--set", choices=("dev", "test", "forum_dev", "forum_test"), default="dev")
     ap.add_argument("--resume", default=None, help="previous report of the same set to continue from")
     ap.add_argument("--out", default=None)
     a = ap.parse_args(argv)
@@ -326,13 +328,13 @@ def main(argv=None) -> int:
     if not os.getenv("GEMINI_API_KEY"):
         print("GEMINI_API_KEY not set: challenger off")
         return 0
-    items = load_forum_dev() if a.set == "forum_dev" else load_set(a.set)
+    items = load_forum_dev(a.set) if a.set in FORUM_SETS else load_set(a.set)
     answers = _load_previous(a.resume, a.set)
     resumed = len(answers)
     meta = {"calls": 0, "resumed": resumed, "unavailable_text": 0, "model_unavailable": 0, "dropped_labels": 0,
             "quota_stop": False, "models": {}}
     todo = [it for it in items if it["item_id"] not in answers]
-    if a.set == "forum_dev":
+    if a.set in FORUM_SETS:
         for k in range(0, len(todo), FORUM_BATCH):
             if _budget()["calls"] >= DAILY_CAP:
                 meta["quota_stop"] = "daily_cap"
