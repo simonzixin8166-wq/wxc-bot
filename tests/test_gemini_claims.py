@@ -150,3 +150,5 @@ wfy = (gc.ROOT / ".github" / "workflows" / "youtube-forward-intake.yml").read_te
 assert 'cron: "5 8 * * *"' in wfc and "for s in test forum_test" in wfc and "gemini-claims-${{ env.SET }}" in wfc
 assert '"$h" -ge 8 ] && [ "$h" -lt 12' in wfy and "GEMINI_VIDEO_RUN_CAP: ${{ env.VIDEO_RUN_CAP || '2' }}" in wfy
 print("PASS quota window: claims scheduled 08:05 UTC on the first unfinished test set; video Gemini calls paused 08-12 UTC")
+assert "per-source breakdown" in wfc and 'g.get("source") or kind.get(k)' in wfc
+print("PASS summary prints per-source (v5 A/C) and per-kind (forum reply/post) scores")
