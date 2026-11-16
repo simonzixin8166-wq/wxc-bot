@@ -152,3 +152,10 @@ assert '"$h" -ge 8 ] && [ "$h" -lt 12' in wfy and "GEMINI_VIDEO_RUN_CAP: ${{ env
 print("PASS quota window: claims scheduled 08:05 UTC on the first unfinished test set; video Gemini calls paused 08-12 UTC")
 assert "per-source breakdown" in wfc and 'g.get("source") or kind.get(k)' in wfc
 print("PASS summary prints per-source (v5 A/C) and per-kind (forum reply/post) scores")
+
+# option B (Owner 2026-11-16): union of ce-4 and Gemini labels, scored from a finished report without a Gemini call
+import gemini_claims_union as gu
+uu = gu.union({"p1": {"labels": [{"symbol": "NVDA", "stance": "buy"}]}}, {"p1": {"labels": [{"symbol": "AMD", "stance": "sell"}]}, "p2": {"labels": []}})
+assert sorted(l["symbol"] for l in uu["p1"]["labels"]) == ["AMD", "NVDA"] and uu["p2"]["labels"] == []
+assert "gemini_claims_union.py" in wfc and "no Gemini call" in wfc
+print("PASS option B union: labels merged per post, wired after the labelling step")
