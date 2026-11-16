@@ -79,6 +79,12 @@ jobs:
           TEXTPACK_REPO: simonzixin8166-wq/myalpha-s2-textpack
           DATA_DIR: /tmp/gemini_state
         run: python gemini_claims.py --set "$SET" --resume "prev/gemini_claims_$SET.json" --out "diagnostics/gemini_claims_$SET.json"
+      - name: Option B score (ce-4 + Gemini union; no Gemini call)
+        if: env.SET == 'test' || env.SET == 'forum_test'
+        env:
+          TEXTPACK_TOKEN: ${{ secrets.TEXTPACK_TOKEN }}
+          TEXTPACK_REPO: simonzixin8166-wq/myalpha-s2-textpack
+        run: python gemini_claims_union.py --set "$SET" --report "diagnostics/gemini_claims_$SET.json"
       - name: Summary
         if: always() && env.SET != 'none'
         run: |
