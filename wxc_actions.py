@@ -13,6 +13,7 @@ import wxc_access_policy as access_policy
 import wxc_tg_agent as a
 import yt_daily_report
 import owner_forward
+import gmail_inbox
 
 META = os.path.join(a.DATA, "meta.json")
 SERVER_ACTION_URL = os.getenv("MYALPHA_SERVER_ACTION_URL", "https://myalphaview.com/research/server_action_status.json")
@@ -119,6 +120,10 @@ def _periodic(meta):
         if authors:
             a.guarded(a.check_watch, authors)
     meta = check_myalpha_server_action(meta)
+    # Owner's own e-mail exports copied into the private inbox by his Apps Script (Owner 2026-11-17)
+    got = gmail_inbox.check(a.say)
+    if got.get("processed") or got.get("failed"):
+        save_state("gmail inbox")
     return yt_daily_report.maybe_send(meta, a.say)
 
 

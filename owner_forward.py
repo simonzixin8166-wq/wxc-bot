@@ -220,7 +220,8 @@ def handle(msg: dict, say, tg_api: str = "", tg_file_base: str = "", http=reques
     if int(doc.get("file_size") or 0) > MAX_FILE_BYTES:
         say("文件太大（超过 3MB），没有收录。请改为复制正文加链接发送，或分成几个小 zip。")
         return None
-    data = _download_owner_file(doc.get("file_id", ""), tg_api, tg_file_base, http)
+    # bytes already in hand (Owner's own e-mail export picked up from the private inbox, gmail_inbox.py)
+    data = msg["_bytes"] if msg.get("_bytes") is not None else _download_owner_file(doc.get("file_id", ""), tg_api, tg_file_base, http)
     if data is None:
         say("没能下载你发的文件，没有收录。请重发一次。")
         return None
