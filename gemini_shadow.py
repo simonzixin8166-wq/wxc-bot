@@ -12,6 +12,9 @@ feeds Daily, judgments, alerts or the brief. Labels and ids only, no source text
 Same model, prompts, schema validation and 429 stop as the frozen-test measurement (gemini_claims.py, measured
 2026-11-16: v5 P 52/54 R 52/70; forum P 31/36 R 31/48).
 
+A ce-4 fallback is not final: the next run (inside the window) tries Gemini again, and a later row supersedes
+the earlier one (latest row per record wins). Daily stats record HTTP error statuses.
+
 Outputs (append-only):
   research/shadow/gemini_shadow_rows.jsonl   one row per feed record (labels, ce-4 labels, understood_by)
   research/shadow/gemini_shadow_daily.jsonl  one stats row per run day
@@ -115,13 +118,16 @@ def pairs(labels: list[dict]) -> dict:
 
 
 def run(records: list[dict], done: set, max_calls: int | None = None, label_post=None, label_batch=None,
-        textpack=None, now=None) -> tuple[list[dict], dict]:
+        textpack=None, now=None, retry: set | None = None) -> tuple[list[dict], dict]:
+    """done = records Gemini already labelled; retry = records whose latest row is a ce-4 fallback (tried again)."""
+    retry = retry or set()
     label_post = label_post or gc.label_post
     label_batch = label_batch or gc.label_batch
     textpack = textpack or gc._textpack_text
     now = now or datetime.now(timezone.utc)
     todo = eligible(records, done)
-    answers, meta, stop = {}, {"calls": 0, "quota_stop": False, "text_basis": Counter(), "models": Counter()}, False
+    answers, meta, stop = {}, {"calls": 0, "quota_stop": False, "text_basis": Counter(), "models": Counter(),
+                                "errors": Counter()}, False
 
     def budget_left():
         return max_calls is None or meta["calls"] < max_calls
@@ -138,6 +144,8 @@ def run(records: list[dict], done: set, max_calls: int | None = None, label_post
             meta["quota_stop"] = "http_429"; stop = True
             break
         meta["calls"] += 1; meta["models"][str(m.get("model"))] += 1
+        if m.get("model") is None:
+            meta["errors"][str(m.get("status"))] += 1
         for r in chunk:
             meta["text_basis"]["feed_title_excerpt"] += 1
             answers[r["id"]] = (got.get(r["id"]), m.get("model"))
@@ -154,6 +162,8 @@ def run(records: list[dict], done: set, max_calls: int | None = None, label_post
             meta["quota_stop"] = "http_429"; stop = True
             break
         meta["calls"] += 1; meta["models"][str(m.get("model"))] += 1; meta["text_basis"][basis] += 1
+        if m.get("model") is None:
+            meta["errors"][str(m.get("status"))] += 1
         answers[r["id"]] = (ans, m.get("model"))
         time.sleep(gc.PAUSE)
 
@@ -183,7 +193,8 @@ def run(records: list[dict], done: set, max_calls: int | None = None, label_post
              "gemini_pairs": st["gemini_pairs"], "ce4_pairs": st["ce4_pairs"], "both_pairs": st["both_pairs"],
              "direction_agree": st["direction_agree"], "gemini_only_pairs": st["gemini_only_pairs"],
              "ce4_only_pairs": st["ce4_only_pairs"], "calls": meta["calls"], "quota_stop": meta["quota_stop"],
-             "text_basis": dict(meta["text_basis"]), "models": dict(meta["models"]),
+             "text_basis": dict(meta["text_basis"]), "models": dict(meta["models"]), "errors": dict(meta["errors"]),
+             "retried": sum(1 for r in todo if r["id"] in retry),
              "trial": max_calls is not None, "remaining": len(todo) - n, "production_use": False}
     return rows, daily
 
@@ -196,8 +207,13 @@ def main(argv=None) -> int:
         print("GEMINI_API_KEY not set: shadow observation off")
         return 0
     records = json.loads(FEED.read_text(encoding="utf-8"))["records"]
-    done = {r["record_id"] for r in read_jsonl(ROWS)}
-    rows, daily = run(records, done, max_calls=a.max_calls)
+    # a record counts as done once Gemini labelled it; a ce-4 fallback (quota stop / model error) is retried by
+    # the next runs inside the observation window, and the newer row supersedes it (append-only, latest wins)
+    rows_all = read_jsonl(ROWS)
+    gem = {r["record_id"] for r in rows_all if r.get("understood_by") == "gemini"}
+    done = gem
+    retry = {r["record_id"] for r in rows_all if r.get("understood_by") == "ce4_fallback"} - gem
+    rows, daily = run(records, done, max_calls=a.max_calls, retry=retry)
     append_jsonl(ROWS, rows)
     append_jsonl(DAILY, [daily])
     print(json.dumps(daily, ensure_ascii=False))
