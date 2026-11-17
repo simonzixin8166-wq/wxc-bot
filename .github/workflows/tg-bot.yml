@@ -28,10 +28,11 @@ jobs:
 
       - name: Validate collector code
         run: |
-          python -m py_compile wxc_access_policy.py wxc_actions.py wxc_scraper.py wxc_tg_agent.py wxc_tg_bot.py wxc_blog.py owner_forward.py
+          python -m py_compile gmail_inbox.py wxc_access_policy.py wxc_actions.py wxc_scraper.py wxc_tg_agent.py wxc_tg_bot.py wxc_blog.py owner_forward.py
           PYTHONPATH=. python tests/test_blog_collector.py
           PYTHONPATH=. python tests/test_free_first_forward_gate.py
           PYTHONPATH=. python tests/test_owner_forward.py
+          PYTHONPATH=. python tests/test_gmail_inbox.py
           PYTHONPATH=. python tests/test_wxc_access_pause.py
 
       - name: Git identity for mid-run state saves
