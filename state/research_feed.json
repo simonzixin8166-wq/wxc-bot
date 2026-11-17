@@ -156351,9 +156351,156 @@
       "content_sha256": "ce6315596f05d999048617a1631ab47e7c0df02c7ee55003464819ae6497fac7",
       "intake_class_hint": "live_candidate",
       "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "3ab15a98330a23c4ab83",
+      "source": "youtube",
+      "source_kind": "video",
+      "author": "老李玩钱",
+      "published_at": "",
+      "title": "SpaceX即将上市！散户该如何参与？对特斯拉股价会有怎样的影响",
+      "url": "https://www.youtube.com/watch?v=mCI0-03LcvM",
+      "excerpt": "[Gemini 视频理解 · 未验证] 老李探讨了SpaceX计划IPO上市的相关细节与财务数据，分析了散户参与的两种途径：券商打新申购与上市首日二级市场追入，并给出风险建议。对于特斯拉股价的影响，老李认为将呈现“短空长多”：短期可能面临资金分流压力，回调至400美元或以下可考虑长线布局，长期两家公司具备业务协同与合并预期。\n- [12:05 TSLA bullish] SpaceX上市对特斯拉股价影响为短空长多，短期或因马斯克信仰资金分流利空特斯拉，长期因业务协同及合并预期相互促进\n- [16:17 TSLA buy 400] 如果特斯拉股价因SpaceX上市回撤到400美元或400美元以下，可以考虑开仓买入进行长期布局\n- [05:08 SPCX bullish] 散户若能通过券商平台以发行价打新申购Spa",
+      "content_chars": 546,
+      "semantic_content_chars": 546,
+      "content_filtering": {
+        "filter": "youtube_promotion_noise_v1",
+        "input_units": 7,
+        "removed_units": 0,
+        "removed_ratio": 0.0,
+        "promotion_noise_detected": false
+      },
+      "images_count": 0,
+      "themes_hint": [
+        "风险管理",
+        "长期持有纪律",
+        "TSLA"
+      ],
+      "symbols": [
+        "AMD",
+        "PLTR",
+        "SPCX",
+        "TSLA"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "captured_at": "2026-11-17T23:35:04Z",
+      "source_role": "rule_supply",
+      "transcript_status": "available",
+      "content_quality": "Q3",
+      "content_provider": "gemini_video",
+      "content_provider_url": "https://www.youtube.com/watch?v=mCI0-03LcvM",
+      "content_origin": "gemini_video_understanding",
+      "timestamp_evidence": true,
+      "rule_candidate_allowed": false,
+      "source_notice": "YouTube正文可用于非Forward语义学习；可靠发布时间缺失，因此强制按backfill处理，禁止计入Forward Evidence或Promotion。",
+      "claims": [
+        {
+          "symbol": "TSLA",
+          "stance": "bullish",
+          "stance_cues": [
+            "bullish"
+          ],
+          "horizon": "long",
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "abf23bb674a328255e6bae46d05de7be8fb42521c88245211a3430ed86822b74",
+          "evidence_chars": 80
+        },
+        {
+          "symbol": "TSLA",
+          "stance": "buy",
+          "stance_cues": [
+            "buy"
+          ],
+          "horizon": "long",
+          "conditional": true,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "91589bebe643d8f49628a9a57460326bbc478fe696bc026be5a45609c9cf9e46",
+          "evidence_chars": 70
+        },
+        {
+          "symbol": "SPCX",
+          "stance": "bullish",
+          "stance_cues": [
+            "bullish"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "58ed9337ef71ed01736002750aefb649f7e60893bc0879df0cac1a526fc9954c",
+          "evidence_chars": 68
+        }
+      ],
+      "claims_status": "experimental_unvalidated",
+      "video_claims": [
+        {
+          "claim": "SpaceX上市对特斯拉股价影响为短空长多，短期或因马斯克信仰资金分流利空特斯拉，长期因业务协同及合并预期相互促进",
+          "stance": "bullish",
+          "price": null,
+          "timestamp": "12:05",
+          "evidence_mode": "spoken_explicit",
+          "confidence": "high",
+          "symbol": "TSLA",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "如果特斯拉股价因SpaceX上市回撤到400美元或400美元以下，可以考虑开仓买入进行长期布局",
+          "stance": "buy",
+          "price": "400",
+          "timestamp": "16:17",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "TSLA",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "散户若能通过券商平台以发行价打新申购SpaceX，基本稳赚不赔，但因热度高额度有限中签率低",
+          "stance": "bullish",
+          "price": null,
+          "timestamp": "05:08",
+          "evidence_mode": "spoken_explicit",
+          "confidence": "high",
+          "symbol": "SPCX",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "SpaceX上市首日若在发行价基础上上涨50%以内，短期投机情绪高仍可轻度追涨；若已翻倍则安全边际低、性价比极低，建议谨慎追高",
+          "stance": "neutral",
+          "price": null,
+          "timestamp": "08:44",
+          "evidence_mode": "spoken_explicit",
+          "confidence": "high",
+          "symbol": "SPCX",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "PLTR当前估值倍数高得离谱",
+          "stance": "neutral",
+          "price": null,
+          "timestamp": "10:13",
+          "evidence_mode": "spoken_explicit",
+          "confidence": "medium",
+          "symbol": "PLTR",
+          "symbol_check": "listed"
+        }
+      ],
+      "video_claims_model": "gemini-3.8-flash",
+      "video_macro": [],
+      "video_observed_title": "SpaceX马上上市！散户如何参与IPO打新？对特斯拉股价有何影响？",
+      "validation_status": "pending_owner_spot_check",
+      "forward_evidence_eligible": false,
+      "intake_class_hint": "backfill",
+      "capture_mode": "youtube_timestamp_unknown_learning",
+      "timestamp_confidence": "missing"
     }
   ],
-  "updated_at": "2026-11-17T21:45:30Z",
+  "updated_at": "2026-11-17T23:35:19Z",
   "retention_policy": "append_only_no_record_count_cap",
   "historical_recovery": {
     "completed_at": "2026-10-07T13:43:06.018028+00:00",

@@ -1783,15 +1783,15 @@
       ]
     },
     "2026-11-17": {
-      "calls": 0,
-      "admitted": 0,
+      "calls": 1,
+      "admitted": 1,
       "rejected": 0,
-      "errors": 2,
+      "errors": 3,
       "reconciliation": {
         "status": "COMPLETE",
-        "calls_billed": 0,
-        "calls_refunded_503": 2,
-        "detail_rows": 2,
+        "calls_billed": 1,
+        "calls_refunded_503": 3,
+        "detail_rows": 4,
         "missing_detail_rows": 0,
         "counter_mismatch": []
       },
@@ -1813,9 +1813,26 @@
           "author": "RhinoFinance / 视野环球财经",
           "title": "美股 ORCL缺乏惊喜，ADBE底气不足！SOXX遇阻、IGV破位！CTA触发标普承压，VIX苏醒！",
           "detail": "{\"error\":{\"message\":\"gemini-3.5-flash is currently experiencing high demand, spikes in demand are usually temporary. Please try again later.\",\"code\":\"service_unavailable\"}}"
+        },
+        {
+          "video_id": "cifo3KBc3FY",
+          "outcome": "http_503_all_models",
+          "at": "23:32:28Z",
+          "model": "gemini-3.8-flash,gemini-3.5-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 曙光快出现了吗？大盘年底前波动！NVDA财报风险看点！为何继续看好TSM！",
+          "detail": "{\"error\":{\"message\":\"gemini-3.5-flash is currently experiencing high demand, spikes in demand are usually temporary. Please try again later.\",\"code\":\"service_unavailable\"}}"
+        },
+        {
+          "video_id": "mCI0-03LcvM",
+          "outcome": "admitted",
+          "at": "23:35:04Z",
+          "model": "gemini-3.8-flash",
+          "author": "老李玩钱",
+          "title": "SpaceX即将上市！散户该如何参与？对特斯拉股价会有怎样的影响"
         }
       ],
-      "refunded_503": 2
+      "refunded_503": 3
     }
   },
   "version": 1,
