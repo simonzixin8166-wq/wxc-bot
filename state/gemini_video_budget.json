@@ -1733,15 +1733,15 @@
       ]
     },
     "2026-11-16": {
-      "calls": 2,
+      "calls": 4,
       "admitted": 2,
       "rejected": 0,
-      "errors": 0,
+      "errors": 2,
       "reconciliation": {
         "status": "COMPLETE",
-        "calls_billed": 2,
+        "calls_billed": 4,
         "calls_refunded_503": 0,
-        "detail_rows": 2,
+        "detail_rows": 4,
         "missing_detail_rows": 0,
         "counter_mismatch": []
       },
@@ -1761,6 +1761,24 @@
           "model": "gemini-3.5-flash",
           "author": "RhinoFinance / 视野环球财经",
           "title": "美股 QQQ、IWM、SOXX、SMH、风险位置！SPY、IGV相对安全！持仓计划更新！"
+        },
+        {
+          "video_id": "JdXUvaBcY_E",
+          "outcome": "exception",
+          "at": "04:30:59Z",
+          "model": "gemini-3.8-flash",
+          "author": "老李玩钱",
+          "title": "Anthropic本周即将上市！要不要参与？散户该如何参与",
+          "detail": "ReadTimeout"
+        },
+        {
+          "video_id": "cifo3KBc3FY",
+          "outcome": "exception",
+          "at": "04:34:02Z",
+          "model": "gemini-3.8-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 曙光快出现了吗？大盘年底前波动！NVDA财报风险看点！为何继续看好TSM！",
+          "detail": "ReadTimeout"
         }
       ]
     }

@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "generated_at": "2026-11-16T20:33:28.458762+00:00",
+  "generated_at": "2026-11-17T04:35:17.854054+00:00",
   "principle": "seen is discovery, not learning; each video is counted once in its highest stage",
-  "seen": 222,
+  "seen": 224,
   "stages": {
     "formal_feed_text": 40,
-    "historical_backlog": 54,
-    "metadata_only": 97,
+    "historical_backlog": 55,
+    "metadata_only": 98,
     "pending_unprobed": 3,
     "provider_boilerplate": 27,
     "transcript_readable": 1
@@ -27,7 +27,7 @@
       "historical_backlog": 9
     },
     "RhinoFinance / 视野环球财经": {
-      "metadata_only": 41,
+      "metadata_only": 42,
       "formal_feed_text": 28,
       "historical_backlog": 7,
       "pending_unprobed": 2
@@ -39,7 +39,7 @@
     "老李玩钱": {
       "metadata_only": 26,
       "formal_feed_text": 12,
-      "historical_backlog": 12,
+      "historical_backlog": 13,
       "transcript_readable": 1
     }
   },

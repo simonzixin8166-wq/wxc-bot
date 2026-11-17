@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-11-16T20:33:28Z",
+  "generated_at": "2026-11-17T04:35:17Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -19,19 +19,20 @@
           "reached_end": false
         }
       ],
-      "previous_anchor_video_id": "_2bUPesoEWo",
+      "previous_anchor_video_id": "cifo3KBc3FY",
       "anchor_found": true,
       "reached_end": false,
       "discovery_complete": true,
       "latest": {
-        "video_id": "_2bUPesoEWo",
-        "title": "（会员第310期）Anthropic （ANT） IPO，降估值后潜力大吗？基本面、估值、投资机会、风险！",
-        "url": "https://www.youtube.com/watch?v=_2bUPesoEWo",
-        "published_at": "",
+        "video_id": "cifo3KBc3FY",
+        "title": "美股 曙光快出现了吗？大盘年底前波动！NVDA财报风险看点！为何继续看好TSM！",
+        "url": "https://www.youtube.com/watch?v=cifo3KBc3FY",
+        "published_at": "2026-11-17",
         "rss_status": "ok",
         "flat_metadata_keys": [
           "channel_id",
-          "duration"
+          "duration",
+          "rss_published_at"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -56,15 +57,15 @@
           "reached_end": false
         }
       ],
-      "previous_anchor_video_id": "w8GM1mghKJc",
+      "previous_anchor_video_id": "JdXUvaBcY_E",
       "anchor_found": true,
       "reached_end": false,
       "discovery_complete": true,
       "latest": {
-        "video_id": "w8GM1mghKJc",
-        "title": "中期选举尘埃落定！美股分化严重，何去何从",
-        "url": "https://www.youtube.com/watch?v=w8GM1mghKJc",
-        "published_at": "2026-11-04",
+        "video_id": "JdXUvaBcY_E",
+        "title": "Anthropic本周即将上市！要不要参与？散户该如何参与",
+        "url": "https://www.youtube.com/watch?v=JdXUvaBcY_E",
+        "published_at": "2026-11-16",
         "rss_status": "ok",
         "flat_metadata_keys": [
           "channel_id",
@@ -121,9 +122,9 @@
   "pending_retried": 6,
   "content_attempted_this_run": 6,
   "content_work_budget": 6,
-  "content_backlog_after_run": 91,
-  "pending_total": 91,
-  "historical_demoted_from_pending": 0,
+  "content_backlog_after_run": 92,
+  "pending_total": 92,
+  "historical_demoted_from_pending": 1,
   "admitted_from_pending": 0,
   "nonforward_timestamp_unknown_admitted": 0,
   "feed_records_added": 0,
@@ -133,9 +134,20 @@
     "UCGy7SkBjcIAgTiwkXEtPnYg": "ok",
     "UCo2gxyermsLBSCxFHvJs0Zg": "ok"
   },
-  "historical_backlog_total": 63,
+  "historical_backlog_total": 64,
   "discovery_complete": true,
   "new_video_diagnostics": [
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "cifo3KBc3FY",
+      "title": "美股 曙光快出现了吗？大盘年底前波动！NVDA财报风险看点！为何继续看好TSM！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
     {
       "author": "RhinoFinance / 视野环球财经",
       "video_id": "84hnnVx-8AQ",
@@ -149,8 +161,8 @@
     },
     {
       "author": "Andrei Jikh",
-      "video_id": "YBhwK-VWsxY",
-      "title": "Japan's Money Is Collapsing",
+      "video_id": "_lOVieAIvSA",
+      "title": "I Let AI Invest My Money For 3 Years",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -160,30 +172,8 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "Z9T89cdzuyo",
-      "title": "美股 NVDA、MRVL、INTU、CRWD、CRM财报波动！对冲基金上周大抛售！大逆转，Altman承认AI时间表看法错误！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "Andrei Jikh",
-      "video_id": "ZEi5tVIXWyc",
-      "title": "South Korea’s AI Bubble Just Popped",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "Andrei Jikh",
-      "video_id": "Z_xvkbGWauU",
-      "title": "China Just Shut Down Gold Trading",
+      "video_id": "bdzWer7gNII",
+      "title": "美股 OpenAI给半导体打鸡血！SOXX底部已成？ORCL、AMD、NVDA！TSLA遭行政狙击！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -193,8 +183,19 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "-e3gyj_NP7c",
-      "title": "美股 科技股、半导体失血！消费股领涨，XLP重要位置！SMH、SOXX完成修复！SPY、QQQ、XLK长线点位更新！",
+      "video_id": "cwQxqL-vC94",
+      "title": "美股 WMT糟糕前瞻大跌还债！ISRG无风起浪！NOW、SPCX！美国债务累积95天走完200年！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "Andrei Jikh",
+      "video_id": "dFjvcY9Tth0",
+      "title": "China Is Preparing For $38,000 Gold",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -207,7 +208,7 @@
     "status": "ok",
     "channel_errors": 0,
     "stuck_high_quality_pending": 0,
-    "provider_waiting_pending": 91,
+    "provider_waiting_pending": 92,
     "stuck_video_ids": [],
     "meaning": "Q1/Q2 text must not remain stuck in pending; Q3-Q5 may legitimately wait for better learning text."
   },
