@@ -163862,9 +163862,181 @@
       "content_sha256": "6b684e1923170dc02a78bb6b33c149f47d00a1df02ee7bdb3d35bbb655dd3908",
       "intake_class_hint": "live_candidate",
       "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "f77475353ae44ce9bbd6",
+      "source": "youtube",
+      "source_kind": "video",
+      "author": "RhinoFinance / 视野环球财经",
+      "published_at": "2026-11-18",
+      "title": "美股 NVDA提升采购、维持担保承诺！短拉存储、NeoCloud一把！标普SPY关键防守位置！",
+      "url": "https://www.youtube.com/watch?v=apOH0oyxUQM",
+      "excerpt": "[Gemini 视频理解 · 未验证] 视频分析了英伟达三财季财报细节、供应链采购承诺及数据中心担保情况，并展示了董事会关于前CEO黄仁勋辞职及管理层过渡的声明。宏观方面解读了10月零售销售数据。市场层面强调科技股空头仓位达历史极值，重点分析了标普500（SPY）在200日均线（728附近）的关键生死线及后续策略。\n- [17:35 NVDA sell] 作者计划在次日开盘后择机清空NVDA现有持仓，执行既定卖出计划\n- [18:31 NVDA neutral 194] NVDA强支撑区间位于132-150美元，强压力区间位于174-177美元，若突破194美元则确认止跌转右侧\n- [24:32 SPY bearish 728] 标普500 ETF（SPY）200日均线及关键支撑位在728美元，若跌破将打开下行",
+      "content_chars": 669,
+      "semantic_content_chars": 669,
+      "content_filtering": {
+        "filter": "youtube_promotion_noise_v1",
+        "input_units": 11,
+        "removed_units": 0,
+        "removed_ratio": 0.0,
+        "promotion_noise_detected": false
+      },
+      "images_count": 0,
+      "themes_hint": [
+        "趋势确认"
+      ],
+      "symbols": [
+        "NVDA",
+        "QQQ",
+        "SPY"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "captured_at": "2026-11-18T07:23:34Z",
+      "source_role": "rule_supply",
+      "transcript_status": "available",
+      "content_quality": "Q3",
+      "content_provider": "gemini_video",
+      "content_provider_url": "https://www.youtube.com/watch?v=apOH0oyxUQM",
+      "content_origin": "gemini_video_understanding",
+      "timestamp_evidence": true,
+      "rule_candidate_allowed": false,
+      "source_notice": "公开视频由 Gemini 读取原片（语音+画面）生成的结构化摘要；观点未验证、不可直接作为规则，等待 Owner 抽查原片核对。",
+      "claims": [
+        {
+          "symbol": "NVDA",
+          "stance": "sell",
+          "stance_cues": [
+            "sell"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "1c0197d30c29d60f11b8b7b0c8a6312d629c31de833ec3d5ca0813c48d3bc0d7",
+          "evidence_chars": 51
+        },
+        {
+          "symbol": "SPY",
+          "stance": "bearish",
+          "stance_cues": [
+            "bearish"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "0583cb09eb951bb6ee108cf504a6eaf408b2b9a60b4e6006e1ef96819d4e7fcd",
+          "evidence_chars": 80
+        },
+        {
+          "symbol": "VOO",
+          "stance": "bearish",
+          "stance_cues": [
+            "bearish"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "0583cb09eb951bb6ee108cf504a6eaf408b2b9a60b4e6006e1ef96819d4e7fcd",
+          "evidence_chars": 80
+        },
+        {
+          "symbol": "SPY",
+          "stance": "bullish",
+          "stance_cues": [
+            "bullish"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "75d7446a21ca693560eeeecb5f03bd14a96156f5d1446285526ec44617adfbed",
+          "evidence_chars": 76
+        },
+        {
+          "symbol": "VOO",
+          "stance": "bullish",
+          "stance_cues": [
+            "bullish"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "75d7446a21ca693560eeeecb5f03bd14a96156f5d1446285526ec44617adfbed",
+          "evidence_chars": 76
+        }
+      ],
+      "claims_status": "experimental_unvalidated",
+      "video_claims": [
+        {
+          "claim": "作者计划在次日开盘后择机清空NVDA现有持仓，执行既定卖出计划",
+          "stance": "sell",
+          "price": null,
+          "timestamp": "17:35",
+          "evidence_mode": "spoken_explicit",
+          "confidence": "high",
+          "symbol": "NVDA",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "NVDA强支撑区间位于132-150美元，强压力区间位于174-177美元，若突破194美元则确认止跌转右侧",
+          "stance": "neutral",
+          "price": "194",
+          "timestamp": "18:31",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "NVDA",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "标普500 ETF（SPY）200日均线及关键支撑位在728美元，若跌破将打开下行至700-710美元的空间",
+          "stance": "bearish",
+          "price": "728",
+          "timestamp": "24:32",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "SPY",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "若标普500指数反弹站上7550点（SPY对应约755美元附近），将逼迫CTA空头平仓并引发轧空反弹",
+          "stance": "bullish",
+          "price": "755",
+          "timestamp": "25:02",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "SPY",
+          "symbol_check": "listed"
+        }
+      ],
+      "video_claims_model": "gemini-3.5-flash",
+      "video_macro": [
+        {
+          "indicator": "美国10月零售销售月率",
+          "value": "0.2%",
+          "expectation": "0.2%",
+          "period": "10月",
+          "timestamp": "02:59"
+        },
+        {
+          "indicator": "美国10月核心零售销售月率",
+          "value": "0.6%",
+          "expectation": "0.4%",
+          "period": "10月",
+          "timestamp": "03:09"
+        }
+      ],
+      "video_observed_title": "英伟达财报披露关键信息！空头极度疯狂，标普生死线拉响！",
+      "validation_status": "pending_owner_spot_check",
+      "forward_evidence_eligible": false
     }
   ],
-  "updated_at": "2026-11-18T03:48:12Z",
+  "updated_at": "2026-11-18T07:25:35Z",
   "retention_policy": "append_only_no_record_count_cap",
   "historical_recovery": {
     "completed_at": "2026-10-07T13:43:06.018028+00:00",

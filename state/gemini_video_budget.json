@@ -1783,15 +1783,15 @@
       ]
     },
     "2026-11-17": {
-      "calls": 1,
-      "admitted": 1,
+      "calls": 2,
+      "admitted": 2,
       "rejected": 0,
-      "errors": 3,
+      "errors": 4,
       "reconciliation": {
         "status": "COMPLETE",
-        "calls_billed": 1,
-        "calls_refunded_503": 3,
-        "detail_rows": 4,
+        "calls_billed": 2,
+        "calls_refunded_503": 4,
+        "detail_rows": 6,
         "missing_detail_rows": 0,
         "counter_mismatch": []
       },
@@ -1830,9 +1830,26 @@
           "model": "gemini-3.8-flash",
           "author": "老李玩钱",
           "title": "SpaceX即将上市！散户该如何参与？对特斯拉股价会有怎样的影响"
+        },
+        {
+          "video_id": "apOH0oyxUQM",
+          "outcome": "admitted",
+          "at": "07:23:34Z",
+          "model": "gemini-3.5-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 NVDA提升采购、维持担保承诺！短拉存储、NeoCloud一把！标普SPY关键防守位置！"
+        },
+        {
+          "video_id": "cifo3KBc3FY",
+          "outcome": "http_503_all_models",
+          "at": "07:25:12Z",
+          "model": "gemini-3.8-flash,gemini-3.5-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 曙光快出现了吗？大盘年底前波动！NVDA财报风险看点！为何继续看好TSM！",
+          "detail": "{\"error\":{\"message\":\"gemini-3.5-flash is currently experiencing high demand, spikes in demand are usually temporary. Please try again later.\",\"code\":\"service_unavailable\"}}"
         }
       ],
-      "refunded_503": 3
+      "refunded_503": 4
     }
   },
   "version": 1,
