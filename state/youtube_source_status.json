@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-11-18T07:26:02Z",
+  "generated_at": "2026-11-18T17:17:09Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -101,7 +101,7 @@
       "discovery_complete": true,
       "latest": {
         "video_id": "CRqhR0tQnKM",
-        "title": "Why Bitcoin Is Crashing",
+        "title": "Why Bitcoin Is Collapsing",
         "url": "https://www.youtube.com/watch?v=CRqhR0tQnKM",
         "published_at": "",
         "rss_status": "ok",
@@ -160,9 +160,9 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "老李玩钱",
-      "video_id": "yEdijFeesTs",
-      "title": "$310,000美股账户，我加仓/减仓的4支股票！接下来美股将何去何从",
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "A4p5t_F4mQs",
+      "title": "（会员第306期）补充26年8月24-10月09，2026年10月12日-16日，重要公司Q3财报后2026、2027前瞻估值，强支撑点位！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -172,19 +172,8 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "zscZ446Irdk",
-      "title": "（会员第302期）胜率最高的9种买点！个人经验干货分享！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "xOY53crL1ZA",
-      "title": "（会员第305期）掌握数据，跟随趋势！如何追踪标普、个股、EPS业绩修正？几个隐藏的免费数据入口！使用方法！",
+      "video_id": "e-_qeTZQnkU",
+      "title": "（会员第307期）2026年10月19日-25日，重要公司Q3财报后2026、2027前瞻估值，强支撑点位！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -194,8 +183,19 @@
     },
     {
       "author": "Andrei Jikh",
-      "video_id": "7-lWx78nAQ4",
-      "title": "The Debt Spiral Has Started",
+      "video_id": "1lspa5l4kxs",
+      "title": "My Thoughts On Bitcoin",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "Andrei Jikh",
+      "video_id": "QpPf_hY_Bl8",
+      "title": "North Korea Suspected In Crypto Heist",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
