@@ -79,3 +79,14 @@ assert "加仓了" not in blob and "FULL TEXT" not in blob
 src = (ROOT / "gemini_shadow.py").read_text(encoding="utf-8")
 assert "research_feed" in src and "FEED.write" not in src and "production_use\": False" in src
 print("PASS gemini shadow: Gemini first, ce-4 fallback marked, 429 -> fallback, trial cap, append-only, no text, production_use=false")
+
+# a model error falls back now and is retried by the next run; the error status is recorded (11/17 run 2)
+def batch_err(items):
+    return {i["id"]: {"labels": [], "note": "unavailable"} for i in items}, {"model": None, "status": 503}
+rows6, d6 = gs.run(records, set(), label_post=post, label_batch=batch_err, textpack=lambda i: "x", now=NOW)
+assert d6["errors"] == {"503": 1} and {r["record_id"] for r in rows6 if r["understood_by"] == "ce4_fallback"} == {"r1", "r2"}
+retry = {r["record_id"] for r in rows6 if r["understood_by"] == "ce4_fallback"}
+done = {r["record_id"] for r in rows6 if r["understood_by"] == "gemini"}
+rows7, d7 = gs.run(records, done, label_post=post, label_batch=batch, textpack=lambda i: "x", now=NOW, retry=retry)
+assert [(r["record_id"], r["understood_by"]) for r in rows7] == [("r1", "gemini"), ("r2", "gemini")] and d7["retried"] == 2
+print("PASS shadow retry: model error -> fallback with status recorded, retried next run and superseded")
