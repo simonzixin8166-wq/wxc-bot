@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-11-19T10:16:53Z",
+  "generated_at": "2026-11-19T19:07:30Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -171,9 +171,9 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "老李玩钱",
-      "video_id": "1QM5vfCkId0",
-      "title": "当前美股的泡沫到底有多大？NVDA财报解读及操作建议",
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "7IraEqi0ZKs",
+      "title": "美股 机构二季度13 F，加减仓哪些！大空头Michael Burry最新操作，真的相当空！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -183,8 +183,8 @@
     },
     {
       "author": "Andrei Jikh",
-      "video_id": "1UIKZBGYMYI",
-      "title": "China Is Preparing For $38,000 Gold",
+      "video_id": "87NzxCEUQlw",
+      "title": "China Just Shut Down Gold Trading",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -193,9 +193,9 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "4M7w7DR865M",
-      "title": "美股 最差9月，CTA更新！JPM战术转向，减仓多头！对冲基金上周仓位！AMZN遭起诉掉块肉！",
+      "author": "老李玩钱",
+      "video_id": "8uy8c4S2BW4",
+      "title": "英伟达财报渡劫！依然长期看好",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,

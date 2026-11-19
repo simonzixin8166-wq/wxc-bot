@@ -1906,6 +1906,40 @@
       "fallback_exhausted": [
         "gemini-3.5-flash"
       ]
+    },
+    "2026-11-19": {
+      "calls": 2,
+      "admitted": 0,
+      "rejected": 0,
+      "errors": 2,
+      "reconciliation": {
+        "status": "COMPLETE",
+        "calls_billed": 2,
+        "calls_refunded_503": 0,
+        "detail_rows": 2,
+        "missing_detail_rows": 0,
+        "counter_mismatch": []
+      },
+      "recent": [
+        {
+          "video_id": "swuAt-IcoJE",
+          "outcome": "exception",
+          "at": "19:02:52Z",
+          "model": "gemini-3.8-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 好消息，CTA转向，三分之二情景买入！Anthropic IPO定价，增加募股数！PANW、DIS、NFLX！计划",
+          "detail": "ReadTimeout"
+        },
+        {
+          "video_id": "cifo3KBc3FY",
+          "outcome": "exception",
+          "at": "19:06:01Z",
+          "model": "gemini-3.8-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 曙光快出现了吗？大盘年底前波动！NVDA财报风险看点！为何继续看好TSM！",
+          "detail": "ReadTimeout"
+        }
+      ]
     }
   },
   "version": 1,
