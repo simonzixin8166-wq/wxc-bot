@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-11-19T00:22:57Z",
+  "generated_at": "2026-11-19T10:16:53Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -19,15 +19,15 @@
           "reached_end": false
         }
       ],
-      "previous_anchor_video_id": "apOH0oyxUQM",
+      "previous_anchor_video_id": "swuAt-IcoJE",
       "anchor_found": true,
       "reached_end": false,
       "discovery_complete": true,
       "latest": {
-        "video_id": "apOH0oyxUQM",
-        "title": "美股 NVDA提升采购、维持担保承诺！短拉存储、NeoCloud一把！标普SPY关键防守位置！",
-        "url": "https://www.youtube.com/watch?v=apOH0oyxUQM",
-        "published_at": "2026-11-18",
+        "video_id": "swuAt-IcoJE",
+        "title": "美股 好消息，CTA转向，三分之二情景买入！Anthropic IPO定价，增加募股数！PANW、DIS、NFLX！计划内清仓一只！",
+        "url": "https://www.youtube.com/watch?v=swuAt-IcoJE",
+        "published_at": "2026-11-19",
         "rss_status": "ok",
         "flat_metadata_keys": [
           "channel_id",
@@ -101,7 +101,7 @@
       "discovery_complete": true,
       "latest": {
         "video_id": "CRqhR0tQnKM",
-        "title": "Why Bitcoin Is Crashing",
+        "title": "Why Bitcoin Is Collapsing",
         "url": "https://www.youtube.com/watch?v=CRqhR0tQnKM",
         "published_at": "",
         "rss_status": "ok",
@@ -122,9 +122,9 @@
   "pending_retried": 6,
   "content_attempted_this_run": 6,
   "content_work_budget": 6,
-  "content_backlog_after_run": 91,
-  "pending_total": 91,
-  "historical_demoted_from_pending": 1,
+  "content_backlog_after_run": 92,
+  "pending_total": 92,
+  "historical_demoted_from_pending": 0,
   "admitted_from_pending": 0,
   "nonforward_timestamp_unknown_admitted": 0,
   "feed_records_added": 0,
@@ -137,6 +137,17 @@
   "historical_backlog_total": 65,
   "discovery_complete": true,
   "new_video_diagnostics": [
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "swuAt-IcoJE",
+      "title": "美股 好消息，CTA转向，三分之二情景买入！Anthropic IPO定价，增加募股数！PANW、DIS、NFLX！计划内清仓一只！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
     {
       "author": "RhinoFinance / 视野环球财经",
       "video_id": "cifo3KBc3FY",
@@ -160,9 +171,20 @@
       "pending_reason": "missing_learning_text"
     },
     {
+      "author": "老李玩钱",
+      "video_id": "1QM5vfCkId0",
+      "title": "当前美股的泡沫到底有多大？NVDA财报解读及操作建议",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
       "author": "Andrei Jikh",
-      "video_id": "CRqhR0tQnKM",
-      "title": "Why Bitcoin Is Crashing",
+      "video_id": "1UIKZBGYMYI",
+      "title": "China Is Preparing For $38,000 Gold",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -172,30 +194,8 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "_2bUPesoEWo",
-      "title": "（会员第310期）Anthropic （ANT） IPO，降估值后潜力大吗？基本面、估值、投资机会、风险！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "wxKcxcjSq5o",
-      "title": "美股 MRVL、AMD、ISRG、CEG！三季度财报看什么？10大公司EPS贡献超过490！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "-KAra9tD4RU",
-      "title": "（会员第297期）2026年8月03日-07日，重要公司Q2财报后2026、2027前瞻估值，强支撑点位！",
+      "video_id": "4M7w7DR865M",
+      "title": "美股 最差9月，CTA更新！JPM战术转向，减仓多头！对冲基金上周仓位！AMZN遭起诉掉块肉！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -208,7 +208,7 @@
     "status": "ok",
     "channel_errors": 0,
     "stuck_high_quality_pending": 0,
-    "provider_waiting_pending": 91,
+    "provider_waiting_pending": 92,
     "stuck_video_ids": [],
     "meaning": "Q1/Q2 text must not remain stuck in pending; Q3-Q5 may legitimately wait for better learning text."
   },
