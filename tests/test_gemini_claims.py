@@ -12,6 +12,8 @@ os.environ["GEMINI_CLAIMS_PAUSE"] = "0"
 import gemini_claims as gc  # noqa: E402
 
 gc.PAUSE = 0
+gc.RETRY_WAIT = 0
+gc.RATE_WAIT = 0
 
 
 class R:
@@ -61,8 +63,32 @@ def post_503_then_ok(url, json=None, timeout=None, headers=None):
 
 
 ans, meta = gc.label_post("t", "x", post=post_503_then_ok)
-assert calls == gc.MODELS[:2] and ans["labels"] == [] and meta["model"] == gc.MODELS[1]
-print("PASS busy model falls back")
+assert calls == [gc.MODELS[0]] * 2 and ans["labels"] == [] and meta["model"] == gc.MODELS[0]
+calls.clear()
+
+
+def post_503_twice(url, json=None, timeout=None, headers=None):
+    calls.append(json["model"])
+    return R(503) if len(calls) <= 2 else reply({"labels": [], "note": None})
+
+
+ans, meta = gc.label_post("t", "x", post=post_503_twice)
+assert calls == [gc.MODELS[0], gc.MODELS[0], gc.MODELS[1]] and meta["model"] == gc.MODELS[1]
+calls.clear()
+ans, meta = gc.label_post("t", "x", post=lambda url, json=None, **k: calls.append(json["model"]) or R(400))
+assert calls == gc.MODELS[:2] and meta == {"model": None, "status": 400}      # a client error is not retried
+calls.clear()
+
+
+def post_429_once(url, json=None, timeout=None, headers=None):
+    calls.append(json["model"])
+    return R(429) if len(calls) == 1 else reply({"labels": [], "note": None})
+
+
+ans, meta = gc.label_post("t", "x", post=post_429_once)                       # per-minute limit: one wait, then on
+assert calls == [gc.MODELS[0]] * 2 and meta["status"] == 200
+calls.clear()
+print("PASS busy model retried once after a wait, then the next model; one 429 wait")
 
 def post_timeout(url, json=None, timeout=None, headers=None):
     raise gc.requests.exceptions.ReadTimeout("slow")
@@ -81,7 +107,7 @@ def post_timeout_then_ok(url, json=None, timeout=None, headers=None):
 
 
 ans, meta = gc.label_post("t", "x", post=post_timeout_then_ok)
-assert meta["model"] == gc.MODELS[1] and meta["status"] == 200
+assert calls == [gc.MODELS[0]] * 2 and meta["model"] == gc.MODELS[0] and meta["status"] == 200
 print("PASS timeout falls back, never kills the run")
 
 assert gc._budget()["calls"] >= 4
@@ -160,3 +186,14 @@ uu = gu.union({"p1": {"labels": [{"symbol": "NVDA", "stance": "buy"}]}}, {"p1": 
 assert sorted(l["symbol"] for l in uu["p1"]["labels"]) == ["AMD", "NVDA"] and uu["p2"]["labels"] == []
 assert "gemini_claims_union.py" in wfc and "no Gemini call" in wfc
 print("PASS option B union: labels merged per post, wired after the labelling step")
+
+# a spot check with another batch size is for the forum dev set only (frozen sets are measured once, as frozen)
+try:
+    gc.main(["--set", "forum_test", "--batch", "20"])
+    raise AssertionError("frozen set must refuse --batch")
+except SystemExit as e:
+    assert e.code == 2
+wfc = (Path(__file__).resolve().parents[1] / ".github/workflows/gemini-claims.yml").read_text(encoding="utf-8")
+assert "env.TAG == ''" in wfc and "gemini-claims-${{ env.SET }}${{ env.TAG }}" in wfc
+print("PASS spot check: --batch/--limit only on forum_dev, fresh run, own artifact")
+

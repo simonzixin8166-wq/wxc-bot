@@ -12,6 +12,7 @@ sys.path.insert(0, str(ROOT))
 import gemini_shadow as gs
 
 gs.gc.PAUSE = 0
+assert gs.SHADOW_BATCH == 20      # Owner 11/19 option A
 NOW = datetime(2026, 11, 17, 8, 6, tzinfo=timezone.utc)
 
 
