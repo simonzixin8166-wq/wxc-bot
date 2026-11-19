@@ -25,7 +25,7 @@ concurrency:
 jobs:
   shadow:
     runs-on: ubuntu-latest
-    timeout-minutes: 90   # busy-model retries (11/19) can wait up to ~10 min per call
+    timeout-minutes: 150  # 20-post batches: up to 4 attempts x 240 s per call (11/19)
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -41,6 +41,8 @@ jobs:
           TEXTPACK_REPO: simonzixin8166-wq/myalpha-s2-textpack
           DATA_DIR: /tmp/gemini_state
           MAX_CALLS: ${{ inputs.max_calls }}
+          # 11/19: 6 of 8 twenty-post calls hit the 120 s read timeout; a 20-post answer needs longer
+          GEMINI_CLAIMS_TIMEOUT: "240"
         run: |
           if [ -n "$MAX_CALLS" ]; then python gemini_shadow.py --max-calls "$MAX_CALLS"; else python gemini_shadow.py; fi
       - name: Save shadow rows (append-only)
