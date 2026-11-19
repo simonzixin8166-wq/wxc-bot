@@ -91,3 +91,7 @@ done = {r["record_id"] for r in rows6 if r["understood_by"] == "gemini"}
 rows7, d7 = gs.run(records, done, label_post=post, label_batch=batch, textpack=lambda i: "x", now=NOW, retry=retry)
 assert [(r["record_id"], r["understood_by"]) for r in rows7] == [("r1", "gemini"), ("r2", "gemini")] and d7["retried"] == 2
 print("PASS shadow retry: model error -> fallback with status recorded, retried next run and superseded")
+wf = (ROOT / ".github/workflows/gemini-shadow.yml").read_text(encoding="utf-8")
+assert 'GEMINI_CLAIMS_TIMEOUT: "240"' in wf and "timeout-minutes: 150" in wf
+print("PASS shadow workflow: 240 s read timeout for 20-post batches")
+
