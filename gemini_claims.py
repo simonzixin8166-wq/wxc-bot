@@ -41,6 +41,10 @@ MODELS = [m.strip() for m in os.getenv("GEMINI_CLAIMS_MODELS", "gemini-3.5-flash
 DAILY_CAP = int(os.getenv("GEMINI_CLAIMS_DAILY_CAP", "80"))
 PAUSE = float(os.getenv("GEMINI_CLAIMS_PAUSE", "5"))
 TIMEOUT = int(os.getenv("GEMINI_CLAIMS_TIMEOUT", "120"))
+# Owner 2026-11-19 (option B): a busy model (5xx / timeout) is retried once on the same model after a wait before
+# moving to the next model; a 429 is retried once after a minute (per-minute limit) and stops the run if it repeats.
+RETRY_WAIT = float(os.getenv("GEMINI_CLAIMS_RETRY_WAIT", "30"))
+RATE_WAIT = float(os.getenv("GEMINI_CLAIMS_RATE_WAIT", "65"))
 VERSION = "gemini-claims-0.2"
 ENUMS = {"stance": {"buy", "add", "sell", "trim", "hold", "avoid", "bullish", "bearish"},
          "status": {"executed", "planned", "conditional", "opinion"},
@@ -155,29 +159,50 @@ def clean(parsed) -> tuple[dict, int]:
     return {"labels": out, "ambiguous": False, "note": note, "reply_role": None}, dropped
 
 
+def _call(post, headers: dict, prompt: str):
+    """Send one prompt: each model in turn, a busy answer (5xx, timeout, dropped connection) retried once on the same
+    model after RETRY_WAIT; a 429 waits RATE_WAIT once and raises RuntimeError('quota') if it repeats.
+    Returns (response, model, last_status); response is None when every model failed."""
+    last, rate_waited = None, False
+    for i, model in enumerate(MODELS):
+        if i:
+            time.sleep(PAUSE)
+        attempt = 0
+        while attempt < 2:
+            _budget(1)
+            try:
+                r = post(ENDPOINT, json={"model": model, "input": [{"type": "text", "text": prompt}]}, timeout=TIMEOUT,
+                         headers=headers)
+            except requests.RequestException as e:  # a timeout or dropped connection never kills the run
+                last = type(e).__name__
+            else:
+                last = r.status_code
+                if r.status_code == 200:
+                    return r, model, 200
+                if r.status_code == 429:
+                    if rate_waited:
+                        raise RuntimeError("quota")
+                    rate_waited = True
+                    time.sleep(RATE_WAIT)
+                    continue          # same model, same attempt
+                if r.status_code < 500:
+                    break             # a client error will not change on retry: next model
+            attempt += 1
+            if attempt < 2:
+                time.sleep(RETRY_WAIT)
+    return None, None, last
+
+
 def label_post(title: str, text: str, post=None) -> tuple[dict, dict]:
     """One call. Returns (answer, meta). Raises RuntimeError('quota') on 429."""
     post = post or requests.post
     headers = {"x-goog-api-key": os.environ["GEMINI_API_KEY"].strip(), "Content-Type": "application/json",
                "User-Agent": "MyAlphaView-S2-challenger/0.1"}
     prompt = PROMPT.replace("{title}", title or "").replace("{text}", text or "(no body; the title is the whole post)")
-    last = None
-    for i, model in enumerate(MODELS):
-        if i:
-            time.sleep(PAUSE)
-        _budget(1)
-        try:
-            r = post(ENDPOINT, json={"model": model, "input": [{"type": "text", "text": prompt}]}, timeout=TIMEOUT,
-                     headers=headers)
-        except requests.RequestException as e:  # a timeout or dropped connection skips to the next model, not the run
-            last = type(e).__name__
-            continue
-        last = r.status_code
-        if r.status_code == 429:
-            raise RuntimeError("quota")
-        if r.status_code == 200:
-            ans, dropped = clean(_extract_json(r.json()))
-            return ans, {"model": model, "status": 200, "dropped_labels": dropped}
+    r, model, last = _call(post, headers, prompt)
+    if r is not None:
+        ans, dropped = clean(_extract_json(r.json()))
+        return ans, {"model": model, "status": 200, "dropped_labels": dropped}
     return {"labels": [], "ambiguous": False, "note": "unavailable", "reply_role": None}, {"model": None, "status": last}
 
 
@@ -194,30 +219,17 @@ def label_batch(items: list[dict], post=None) -> tuple[dict, dict]:
             lines.append(f"  REPLYING TO: {it['context']}")
     prompt = FORUM_PROMPT.replace("{items}", "\n".join(lines))
     unavailable = {"labels": [], "ambiguous": False, "note": "unavailable", "reply_role": None}
-    last = None
-    for i, model in enumerate(MODELS):
-        if i:
-            time.sleep(PAUSE)
-        _budget(1)
-        try:
-            r = post(ENDPOINT, json={"model": model, "input": [{"type": "text", "text": prompt}]}, timeout=TIMEOUT,
-                     headers=headers)
-        except requests.RequestException as e:
-            last = type(e).__name__
-            continue
-        last = r.status_code
-        if r.status_code == 429:
-            raise RuntimeError("quota")
-        if r.status_code == 200:
-            parsed = _extract_json(r.json()) or {}
-            got, dropped = {}, 0
-            for a in parsed.get("answers") or []:
-                if isinstance(a, dict) and str(a.get("id")) in {it["id"] for it in items}:
-                    ans, d = clean(a)
-                    got[str(a["id"])] = ans
-                    dropped += d
-            return ({it["id"]: got.get(it["id"], unavailable) for it in items},
-                    {"model": model, "status": 200, "dropped_labels": dropped, "missing": len(items) - len(got)})
+    r, model, last = _call(post, headers, prompt)
+    if r is not None:
+        parsed = _extract_json(r.json()) or {}
+        got, dropped = {}, 0
+        for a in parsed.get("answers") or []:
+            if isinstance(a, dict) and str(a.get("id")) in {it["id"] for it in items}:
+                ans, d = clean(a)
+                got[str(a["id"])] = ans
+                dropped += d
+        return ({it["id"]: got.get(it["id"], unavailable) for it in items},
+                {"model": model, "status": 200, "dropped_labels": dropped, "missing": len(items) - len(got)})
     return {it["id"]: unavailable for it in items}, {"model": None, "status": last}
 
 
@@ -323,23 +335,30 @@ def main(argv=None) -> int:
     ap.add_argument("--set", choices=("dev", "test", "forum_dev", "forum_test"), default="dev")
     ap.add_argument("--resume", default=None, help="previous report of the same set to continue from")
     ap.add_argument("--out", default=None)
+    ap.add_argument("--batch", type=int, default=None, help="forum_dev only: utterances per call (default FORUM_BATCH)")
+    ap.add_argument("--limit", type=int, default=None, help="forum_dev only: first N utterances by id (spot check)")
     a = ap.parse_args(argv)
+    if (a.batch or a.limit) and a.set != "forum_dev":
+        ap.error("--batch/--limit are for the forum dev set only; frozen test sets are measured once as frozen")
+    batch = a.batch or FORUM_BATCH
     out = a.out or f"diagnostics/gemini_claims_{a.set}.json"
     if not os.getenv("GEMINI_API_KEY"):
         print("GEMINI_API_KEY not set: challenger off")
         return 0
     items = load_forum_dev(a.set) if a.set in FORUM_SETS else load_set(a.set)
+    if a.limit:
+        items = items[:a.limit]
     answers = _load_previous(a.resume, a.set)
     resumed = len(answers)
-    meta = {"calls": 0, "resumed": resumed, "unavailable_text": 0, "model_unavailable": 0, "dropped_labels": 0,
+    meta = {"calls": 0, "resumed": resumed, "batch": batch if a.set in FORUM_SETS else None, "unavailable_text": 0, "model_unavailable": 0, "dropped_labels": 0,
             "quota_stop": False, "models": {}}
     todo = [it for it in items if it["item_id"] not in answers]
     if a.set in FORUM_SETS:
-        for k in range(0, len(todo), FORUM_BATCH):
+        for k in range(0, len(todo), batch):
             if _budget()["calls"] >= DAILY_CAP:
                 meta["quota_stop"] = "daily_cap"
                 break
-            chunk = todo[k:k + FORUM_BATCH]
+            chunk = todo[k:k + batch]
             try:
                 got, m = label_batch([{"id": it["item_id"], "text": it["text"], "context": it.get("context")} for it in chunk])
             except RuntimeError:

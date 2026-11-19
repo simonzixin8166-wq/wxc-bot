@@ -9,7 +9,7 @@ production ce-4 claims already stored on the feed record. Every row says who und
 Shadow only: reads state/research_feed.json, never writes it; every row is production_use=false and nothing here
 feeds Daily, judgments, alerts or the brief. Labels and ids only, no source text is written.
 
-Same model, prompts, schema validation and 429 stop as the frozen-test measurement (gemini_claims.py, measured
+Same model, prompts and schema validation as the frozen-test measurement; forum posts go 20 per call (11/19) (gemini_claims.py, measured
 2026-11-16: v5 P 52/54 R 52/70; forum P 31/36 R 31/48).
 
 A ce-4 fallback is not final: the next run (inside the window) tries Gemini again, and a later row supersedes
@@ -45,6 +45,9 @@ VERSION = "gemini-shadow-0.1"
 SHADOW_FROM = os.getenv("GEMINI_SHADOW_FROM", "2026-11-16")      # records captured on/after this UTC date
 SHADOW_UNTIL = os.getenv("GEMINI_SHADOW_UNTIL", "2026-11-30")    # last observation day (Owner: 2 weeks)
 PROVENANCE = ("owner_forum_export", "owner_forward")
+# Owner 2026-11-19 (option A): ~86 forum posts a day at 8 per call ran out of free-tier calls; 20 per call
+# (spot-checked on the forum dev set before the December review; the frozen measurement used 8)
+SHADOW_BATCH = int(os.getenv("GEMINI_SHADOW_BATCH", "20"))
 POS = {"buy", "add", "bullish", "hold"}
 
 
@@ -134,10 +137,10 @@ def run(records: list[dict], done: set, max_calls: int | None = None, label_post
 
     forum = [r for r in todo if r["intake_provenance"] == "owner_forum_export"]
     longs = [r for r in todo if r["intake_provenance"] == "owner_forward"]
-    for k in range(0, len(forum), gc.FORUM_BATCH):
+    for k in range(0, len(forum), SHADOW_BATCH):
         if stop or not budget_left():
             break
-        chunk = forum[k:k + gc.FORUM_BATCH]
+        chunk = forum[k:k + SHADOW_BATCH]
         try:
             got, m = label_batch([_forum_item(r) for r in chunk])
         except RuntimeError:
@@ -194,7 +197,7 @@ def run(records: list[dict], done: set, max_calls: int | None = None, label_post
              "direction_agree": st["direction_agree"], "gemini_only_pairs": st["gemini_only_pairs"],
              "ce4_only_pairs": st["ce4_only_pairs"], "calls": meta["calls"], "quota_stop": meta["quota_stop"],
              "text_basis": dict(meta["text_basis"]), "models": dict(meta["models"]), "errors": dict(meta["errors"]),
-             "retried": sum(1 for r in todo if r["id"] in retry),
+             "retried": sum(1 for r in todo if r["id"] in retry), "batch": SHADOW_BATCH,
              "trial": max_calls is not None, "remaining": len(todo) - n, "production_use": False}
     return rows, daily
 

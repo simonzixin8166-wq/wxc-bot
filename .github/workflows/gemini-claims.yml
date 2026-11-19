@@ -17,6 +17,14 @@ on:
         type: choice
         options: [test, dev, forum_dev, forum_test]
         default: test
+      batch:
+        description: "forum_dev only: utterances per call for a spot check (empty = 8, as measured); no resume"
+        required: false
+        default: ""
+      limit:
+        description: "forum_dev only: first N utterances by id (empty = all)"
+        required: false
+        default: ""
 
 permissions:
   contents: read
@@ -32,6 +40,10 @@ jobs:
     timeout-minutes: 90
     env:
       INPUT_SET: ${{ inputs.set }}
+      BATCH: ${{ inputs.batch }}
+      LIMIT: ${{ inputs.limit }}
+      # a spot check (batch/limit) starts fresh and keeps its own artifact, never mixed with the measured report
+      TAG: ${{ inputs.batch != '' && format('-b{0}', inputs.batch) || '' }}${{ inputs.limit != '' && format('-n{0}', inputs.limit) || '' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -58,7 +70,7 @@ jobs:
           done
           echo "SET=none" >> "$GITHUB_ENV"; echo "test and forum_test are complete: nothing to do"
       - name: Fetch the previous report of this set (resume)
-        if: env.SET != 'none'
+        if: env.SET != 'none' && env.TAG == ''
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -77,7 +89,11 @@ jobs:
           TEXTPACK_TOKEN: ${{ secrets.TEXTPACK_TOKEN }}
           TEXTPACK_REPO: simonzixin8166-wq/myalpha-s2-textpack
           DATA_DIR: /tmp/gemini_state
-        run: python gemini_claims.py --set "$SET" --resume "prev/gemini_claims_$SET.json" --out "diagnostics/gemini_claims_$SET.json"
+        run: |
+          extra=""
+          [ -n "$BATCH" ] && extra="$extra --batch $BATCH"
+          [ -n "$LIMIT" ] && extra="$extra --limit $LIMIT"
+          python gemini_claims.py --set "$SET" --resume "prev/gemini_claims_$SET.json" --out "diagnostics/gemini_claims_$SET.json" $extra
       - name: Option B score (ce-4 + Gemini union; no Gemini call)
         if: env.SET == 'test' || env.SET == 'forum_test'
         env:
@@ -121,6 +137,6 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always() && env.SET != 'none'
         with:
-          name: gemini-claims-${{ env.SET }}
+          name: gemini-claims-${{ env.SET }}${{ env.TAG }}
           path: diagnostics/gemini_claims_${{ env.SET }}.json
           retention-days: 90
