@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-11-18T17:17:09Z",
+  "generated_at": "2026-11-19T00:22:57Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -57,15 +57,15 @@
           "reached_end": false
         }
       ],
-      "previous_anchor_video_id": "JdXUvaBcY_E",
+      "previous_anchor_video_id": "wHuinaIIt7c",
       "anchor_found": true,
       "reached_end": false,
       "discovery_complete": true,
       "latest": {
-        "video_id": "JdXUvaBcY_E",
-        "title": "Anthropic本周即将上市！要不要参与？散户该如何参与",
-        "url": "https://www.youtube.com/watch?v=JdXUvaBcY_E",
-        "published_at": "2026-11-16",
+        "video_id": "wHuinaIIt7c",
+        "title": "英伟达财报落地！后续看法及操作建议",
+        "url": "https://www.youtube.com/watch?v=wHuinaIIt7c",
+        "published_at": "2026-11-18",
         "rss_status": "ok",
         "flat_metadata_keys": [
           "channel_id",
@@ -101,7 +101,7 @@
       "discovery_complete": true,
       "latest": {
         "video_id": "CRqhR0tQnKM",
-        "title": "Why Bitcoin Is Collapsing",
+        "title": "Why Bitcoin Is Crashing",
         "url": "https://www.youtube.com/watch?v=CRqhR0tQnKM",
         "published_at": "",
         "rss_status": "ok",
@@ -124,7 +124,7 @@
   "content_work_budget": 6,
   "content_backlog_after_run": 91,
   "pending_total": 91,
-  "historical_demoted_from_pending": 0,
+  "historical_demoted_from_pending": 1,
   "admitted_from_pending": 0,
   "nonforward_timestamp_unknown_admitted": 0,
   "feed_records_added": 0,
@@ -134,7 +134,7 @@
     "UCGy7SkBjcIAgTiwkXEtPnYg": "ok",
     "UCo2gxyermsLBSCxFHvJs0Zg": "ok"
   },
-  "historical_backlog_total": 64,
+  "historical_backlog_total": 65,
   "discovery_complete": true,
   "new_video_diagnostics": [
     {
@@ -160,31 +160,9 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "A4p5t_F4mQs",
-      "title": "（会员第306期）补充26年8月24-10月09，2026年10月12日-16日，重要公司Q3财报后2026、2027前瞻估值，强支撑点位！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "e-_qeTZQnkU",
-      "title": "（会员第307期）2026年10月19日-25日，重要公司Q3财报后2026、2027前瞻估值，强支撑点位！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
       "author": "Andrei Jikh",
-      "video_id": "1lspa5l4kxs",
-      "title": "My Thoughts On Bitcoin",
+      "video_id": "CRqhR0tQnKM",
+      "title": "Why Bitcoin Is Crashing",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -193,9 +171,31 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "Andrei Jikh",
-      "video_id": "QpPf_hY_Bl8",
-      "title": "North Korea Suspected In Crypto Heist",
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "_2bUPesoEWo",
+      "title": "（会员第310期）Anthropic （ANT） IPO，降估值后潜力大吗？基本面、估值、投资机会、风险！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "wxKcxcjSq5o",
+      "title": "美股 MRVL、AMD、ISRG、CEG！三季度财报看什么？10大公司EPS贡献超过490！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "-KAra9tD4RU",
+      "title": "（会员第297期）2026年8月03日-07日，重要公司Q2财报后2026、2027前瞻估值，强支撑点位！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,

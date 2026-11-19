@@ -1855,12 +1855,12 @@
       "calls": 0,
       "admitted": 0,
       "rejected": 0,
-      "errors": 2,
+      "errors": 4,
       "reconciliation": {
         "status": "COMPLETE",
         "calls_billed": 0,
-        "calls_refunded_503": 2,
-        "detail_rows": 2,
+        "calls_refunded_503": 4,
+        "detail_rows": 4,
         "missing_detail_rows": 0,
         "counter_mismatch": []
       },
@@ -1882,9 +1882,30 @@
           "author": "RhinoFinance / 视野环球财经",
           "title": "美股 对冲基金，抛售哪些？做多哪些？META、MSFT、XLI，存储重伤，竞争加剧！MU、SNDK位置！",
           "detail": "{\"error\":{\"message\":\"gemini-3.5-flash is currently experiencing high demand, spikes in demand are usually temporary. Please try again later.\",\"code\":\"service_unavailable\"}}"
+        },
+        {
+          "video_id": "wHuinaIIt7c",
+          "outcome": "http_503_all_models",
+          "at": "00:21:23Z",
+          "model": "gemini-3.8-flash,gemini-3.5-flash",
+          "author": "老李玩钱",
+          "title": "英伟达财报落地！后续看法及操作建议",
+          "detail": "{\"error\":{\"message\":\"gemini-3.5-flash is currently experiencing high demand, spikes in demand are usually temporary. Please try again later.\",\"code\":\"service_unavailable\"}}"
+        },
+        {
+          "video_id": "cifo3KBc3FY",
+          "outcome": "http_429_fallback",
+          "at": "00:22:00Z",
+          "model": "gemini-3.5-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 曙光快出现了吗？大盘年底前波动！NVDA财报风险看点！为何继续看好TSM！",
+          "detail": "{\"error\":{\"message\":\"Rate limit exceeded for model gemini-3.6-flash (limit: 20 requests per day on Free Tier). Please retry in 7h37m59s or upgrade your tier at https://ai.dev/rate-limit.\",\"code\":\"too_"
         }
       ],
-      "refunded_503": 2
+      "refunded_503": 4,
+      "fallback_exhausted": [
+        "gemini-3.5-flash"
+      ]
     }
   },
   "version": 1,
