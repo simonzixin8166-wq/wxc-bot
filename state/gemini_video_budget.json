@@ -1908,15 +1908,15 @@
       ]
     },
     "2026-11-19": {
-      "calls": 2,
+      "calls": 4,
       "admitted": 0,
-      "rejected": 0,
+      "rejected": 1,
       "errors": 2,
       "reconciliation": {
         "status": "COMPLETE",
-        "calls_billed": 2,
+        "calls_billed": 4,
         "calls_refunded_503": 0,
-        "detail_rows": 2,
+        "detail_rows": 4,
         "missing_detail_rows": 0,
         "counter_mismatch": []
       },
@@ -1938,8 +1938,28 @@
           "author": "RhinoFinance / 视野环球财经",
           "title": "美股 曙光快出现了吗？大盘年底前波动！NVDA财报风险看点！为何继续看好TSM！",
           "detail": "ReadTimeout"
+        },
+        {
+          "video_id": "9SBwuIy6KRs",
+          "outcome": "identity_mismatch",
+          "at": "01:47:21Z",
+          "model": "gemini-3.5-flash",
+          "author": "老李玩钱",
+          "title": "美股很高！但这3支股票还在地上趴着，可以买入",
+          "detail": "seen='None' channel='一手老李'"
+        },
+        {
+          "video_id": "B9E1AdBLM24",
+          "outcome": "http_429",
+          "at": "01:47:25Z",
+          "model": "gemini-3.8-flash",
+          "author": "老李玩钱",
+          "title": "我对当前美股行情的一些思考！答疑：MU, INTC, SNDK, RKLB还能追吗",
+          "detail": "{\"error\":{\"message\":\"Rate limit exceeded for model gemini-3.8-flash (limit: 20 requests per day on Free Tier). Please retry in 6h12m34s or upgrade your tier at https://ai.dev/rate-limit.\",\"code\":\"too_"
         }
-      ]
+      ],
+      "exhausted": true,
+      "exhausted_quota_day": "2026-11-19"
     }
   },
   "version": 1,

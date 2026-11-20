@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-11-19T19:07:30Z",
+  "generated_at": "2026-11-20T01:48:07Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -95,14 +95,14 @@
           "reached_end": false
         }
       ],
-      "previous_anchor_video_id": "CRqhR0tQnKM",
+      "previous_anchor_video_id": "BXzNwnVZJHs",
       "anchor_found": true,
       "reached_end": false,
       "discovery_complete": true,
       "latest": {
-        "video_id": "CRqhR0tQnKM",
-        "title": "Why Bitcoin Is Collapsing",
-        "url": "https://www.youtube.com/watch?v=CRqhR0tQnKM",
+        "video_id": "BXzNwnVZJHs",
+        "title": "Why America Is Breaking",
+        "url": "https://www.youtube.com/watch?v=BXzNwnVZJHs",
         "published_at": "",
         "rss_status": "ok",
         "flat_metadata_keys": [
@@ -122,8 +122,8 @@
   "pending_retried": 6,
   "content_attempted_this_run": 6,
   "content_work_budget": 6,
-  "content_backlog_after_run": 92,
-  "pending_total": 92,
+  "content_backlog_after_run": 93,
+  "pending_total": 93,
   "historical_demoted_from_pending": 0,
   "admitted_from_pending": 0,
   "nonforward_timestamp_unknown_admitted": 0,
@@ -160,31 +160,28 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "84hnnVx-8AQ",
-      "title": "美股 NVDA风暴继续，利好谁？持仓计划更新！大盘反弹最简单部分走完！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
+      "author": "Andrei Jikh",
+      "video_id": "BXzNwnVZJHs",
+      "title": "Why America Is Breaking",
       "admission": "pending_content",
       "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "7IraEqi0ZKs",
-      "title": "美股 机构二季度13 F，加减仓哪些！大空头Michael Burry最新操作，真的相当空！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
+      "pending_reason": "awaiting_publication_date"
     },
     {
       "author": "Andrei Jikh",
-      "video_id": "87NzxCEUQlw",
-      "title": "China Just Shut Down Gold Trading",
+      "video_id": "DFSWsJ_y1-M",
+      "title": "China Just Won The AI Race",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "EB4-BTw4ETQ",
+      "title": "美股 NVDA、META不同意AI放缓！加息后，标普、利率走势！SPY、QQQ、SOXX、SMH较差的情况，跌至哪里？",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -194,8 +191,8 @@
     },
     {
       "author": "老李玩钱",
-      "video_id": "8uy8c4S2BW4",
-      "title": "英伟达财报渡劫！依然长期看好",
+      "video_id": "FK_7ldpLAjI",
+      "title": "$200,000本金美股账户2周年，表现如何？复盘总结，经验心得",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -208,7 +205,7 @@
     "status": "ok",
     "channel_errors": 0,
     "stuck_high_quality_pending": 0,
-    "provider_waiting_pending": 92,
+    "provider_waiting_pending": 93,
     "stuck_video_ids": [],
     "meaning": "Q1/Q2 text must not remain stuck in pending; Q3-Q5 may legitimately wait for better learning text."
   },

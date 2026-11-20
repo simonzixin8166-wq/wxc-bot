@@ -1,13 +1,13 @@
 {
   "version": 1,
-  "generated_at": "2026-11-19T19:07:30.847605+00:00",
+  "generated_at": "2026-11-20T01:48:07.633150+00:00",
   "principle": "seen is discovery, not learning; each video is counted once in its highest stage",
-  "seen": 227,
+  "seen": 228,
   "stages": {
     "formal_feed_text": 42,
     "historical_backlog": 56,
     "metadata_only": 100,
-    "pending_unprobed": 1,
+    "pending_unprobed": 2,
     "provider_boilerplate": 27,
     "transcript_readable": 1
   },
@@ -23,6 +23,7 @@
     "Andrei Jikh": {
       "provider_boilerplate": 27,
       "metadata_only": 28,
+      "pending_unprobed": 1,
       "historical_backlog": 9
     },
     "RhinoFinance / 视野环球财经": {
@@ -55,7 +56,7 @@
   },
   "backlog_eta": {
     "content_work_budget_per_run": 6,
-    "pending_unprobed": 1,
+    "pending_unprobed": 2,
     "runs_to_probe_all_pending": 1,
     "note": "free-first: bounded per-run budget, provider limits respected"
   },
