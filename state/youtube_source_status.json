@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-11-20T09:59:40Z",
+  "generated_at": "2026-11-20T18:40:46Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -95,19 +95,20 @@
           "reached_end": false
         }
       ],
-      "previous_anchor_video_id": "BXzNwnVZJHs",
+      "previous_anchor_video_id": "S1B9R_83-8c",
       "anchor_found": true,
       "reached_end": false,
       "discovery_complete": true,
       "latest": {
-        "video_id": "BXzNwnVZJHs",
-        "title": "Something Is Breaking America",
-        "url": "https://www.youtube.com/watch?v=BXzNwnVZJHs",
-        "published_at": "",
+        "video_id": "S1B9R_83-8c",
+        "title": "America Is Under Attack",
+        "url": "https://www.youtube.com/watch?v=S1B9R_83-8c",
+        "published_at": "2026-11-20",
         "rss_status": "ok",
         "flat_metadata_keys": [
           "channel_id",
-          "duration"
+          "duration",
+          "rss_published_at"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -122,8 +123,8 @@
   "pending_retried": 6,
   "content_attempted_this_run": 6,
   "content_work_budget": 6,
-  "content_backlog_after_run": 94,
-  "pending_total": 94,
+  "content_backlog_after_run": 95,
+  "pending_total": 95,
   "historical_demoted_from_pending": 0,
   "admitted_from_pending": 0,
   "nonforward_timestamp_unknown_admitted": 0,
@@ -137,6 +138,17 @@
   "historical_backlog_total": 65,
   "discovery_complete": true,
   "new_video_diagnostics": [
+    {
+      "author": "Andrei Jikh",
+      "video_id": "S1B9R_83-8c",
+      "title": "America Is Under Attack",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
     {
       "author": "RhinoFinance / 视野环球财经",
       "video_id": "5RnWY2UkmA0",
@@ -179,20 +191,9 @@
       "pending_reason": "awaiting_publication_date"
     },
     {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "G_zzWcUSTfY",
-      "title": "美股 共识预期：半导体无路可退！QQQ、IWM、AMD、META！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
       "author": "老李玩钱",
-      "video_id": "GsmAlvfOUFs",
-      "title": "6月必买3支股票",
+      "video_id": "MEQ814VtkrY",
+      "title": "战火打响美股竟安然无恙，什么情况？3月行情推演及展望",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -205,7 +206,7 @@
     "status": "ok",
     "channel_errors": 0,
     "stuck_high_quality_pending": 0,
-    "provider_waiting_pending": 94,
+    "provider_waiting_pending": 95,
     "stuck_video_ids": [],
     "meaning": "Q1/Q2 text must not remain stuck in pending; Q3-Q5 may legitimately wait for better learning text."
   },

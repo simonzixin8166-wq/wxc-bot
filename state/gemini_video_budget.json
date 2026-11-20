@@ -1960,6 +1960,44 @@
       ],
       "exhausted": true,
       "exhausted_quota_day": "2026-11-19"
+    },
+    "2026-11-20": {
+      "calls": 1,
+      "admitted": 0,
+      "rejected": 1,
+      "errors": 1,
+      "reconciliation": {
+        "status": "COMPLETE",
+        "calls_billed": 1,
+        "calls_refunded_503": 1,
+        "detail_rows": 2,
+        "missing_detail_rows": 0,
+        "counter_mismatch": []
+      },
+      "recent": [
+        {
+          "video_id": "5RnWY2UkmA0",
+          "outcome": "identity_mismatch",
+          "at": "18:39:16Z",
+          "model": "gemini-3.5-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 标普SPY反转破位！恐慌过后，关键点位！个人持仓计划一览！",
+          "detail": "seen='标普破位跌向7000？AMD遭做空！对冲基金仓位逆转！标普/QQQ/微软/台积电/谷歌/特斯拉/奈飞看点' channel='视野环球财经'"
+        },
+        {
+          "video_id": "swuAt-IcoJE",
+          "outcome": "http_429_fallback",
+          "at": "18:39:40Z",
+          "model": "gemini-3.5-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 好消息，CTA转向，三分之二情景买入！Anthropic IPO定价，增加募股数！PANW、DIS、NFLX！计划",
+          "detail": "{\"error\":{\"message\":\"Rate limit exceeded for model gemini-3.6-flash (limit: 20 requests per day on Free Tier). Please retry in 13h20m19s or upgrade your tier at https://ai.dev/rate-limit.\",\"code\":\"too"
+        }
+      ],
+      "fallback_exhausted": [
+        "gemini-3.5-flash"
+      ],
+      "refunded_503": 1
     }
   },
   "version": 1,
