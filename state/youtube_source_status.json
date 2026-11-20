@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-11-20T01:48:07Z",
+  "generated_at": "2026-11-20T09:59:40Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -19,15 +19,15 @@
           "reached_end": false
         }
       ],
-      "previous_anchor_video_id": "swuAt-IcoJE",
+      "previous_anchor_video_id": "5RnWY2UkmA0",
       "anchor_found": true,
       "reached_end": false,
       "discovery_complete": true,
       "latest": {
-        "video_id": "swuAt-IcoJE",
-        "title": "美股 好消息，CTA转向，三分之二情景买入！Anthropic IPO定价，增加募股数！PANW、DIS、NFLX！计划内清仓一只！",
-        "url": "https://www.youtube.com/watch?v=swuAt-IcoJE",
-        "published_at": "2026-11-19",
+        "video_id": "5RnWY2UkmA0",
+        "title": "美股 标普SPY反转破位！恐慌过后，关键点位！个人持仓计划一览！",
+        "url": "https://www.youtube.com/watch?v=5RnWY2UkmA0",
+        "published_at": "2026-11-20",
         "rss_status": "ok",
         "flat_metadata_keys": [
           "channel_id",
@@ -101,7 +101,7 @@
       "discovery_complete": true,
       "latest": {
         "video_id": "BXzNwnVZJHs",
-        "title": "Why America Is Breaking",
+        "title": "Something Is Breaking America",
         "url": "https://www.youtube.com/watch?v=BXzNwnVZJHs",
         "published_at": "",
         "rss_status": "ok",
@@ -122,8 +122,8 @@
   "pending_retried": 6,
   "content_attempted_this_run": 6,
   "content_work_budget": 6,
-  "content_backlog_after_run": 93,
-  "pending_total": 93,
+  "content_backlog_after_run": 94,
+  "pending_total": 94,
   "historical_demoted_from_pending": 0,
   "admitted_from_pending": 0,
   "nonforward_timestamp_unknown_admitted": 0,
@@ -137,6 +137,17 @@
   "historical_backlog_total": 65,
   "discovery_complete": true,
   "new_video_diagnostics": [
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "5RnWY2UkmA0",
+      "title": "美股 标普SPY反转破位！恐慌过后，关键点位！个人持仓计划一览！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
     {
       "author": "RhinoFinance / 视野环球财经",
       "video_id": "swuAt-IcoJE",
@@ -162,26 +173,15 @@
     {
       "author": "Andrei Jikh",
       "video_id": "BXzNwnVZJHs",
-      "title": "Why America Is Breaking",
+      "title": "Something Is Breaking America",
       "admission": "pending_content",
       "was_pending": true,
       "pending_reason": "awaiting_publication_date"
     },
     {
-      "author": "Andrei Jikh",
-      "video_id": "DFSWsJ_y1-M",
-      "title": "China Just Won The AI Race",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "EB4-BTw4ETQ",
-      "title": "美股 NVDA、META不同意AI放缓！加息后，标普、利率走势！SPY、QQQ、SOXX、SMH较差的情况，跌至哪里？",
+      "video_id": "G_zzWcUSTfY",
+      "title": "美股 共识预期：半导体无路可退！QQQ、IWM、AMD、META！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -191,8 +191,8 @@
     },
     {
       "author": "老李玩钱",
-      "video_id": "FK_7ldpLAjI",
-      "title": "$200,000本金美股账户2周年，表现如何？复盘总结，经验心得",
+      "video_id": "GsmAlvfOUFs",
+      "title": "6月必买3支股票",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -205,7 +205,7 @@
     "status": "ok",
     "channel_errors": 0,
     "stuck_high_quality_pending": 0,
-    "provider_waiting_pending": 93,
+    "provider_waiting_pending": 94,
     "stuck_video_ids": [],
     "meaning": "Q1/Q2 text must not remain stuck in pending; Q3-Q5 may legitimately wait for better learning text."
   },
