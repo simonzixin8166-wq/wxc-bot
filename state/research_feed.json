@@ -173693,9 +173693,231 @@
       "content_sha256": "2bdf4ded084890692f0b1d6759134da83d8c35582fd6628cffb37b1678bf799b",
       "intake_class_hint": "live_candidate",
       "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "c3ca7b0328e481232a84",
+      "source": "youtube",
+      "source_kind": "video",
+      "author": "RhinoFinance / 视野环球财经",
+      "published_at": "2026-11-19",
+      "title": "美股 好消息，CTA转向，三分之二情景买入！Anthropic IPO定价，增加募股数！PANW、DIS、NFLX！计划内清仓一只！",
+      "url": "https://www.youtube.com/watch?v=swuAt-IcoJE",
+      "excerpt": "[Gemini 视频理解 · 未验证] 美东时间11月18日，视野环球财经分析美股走势。道指受UNH大跌拖累，标普SPY维持在728支撑位上方。作者因治理不确定性于158美元清仓英伟达（NVDA）。PANW与迪士尼（DIS）财报超预期，PANW目标看至373-386，DIS看至142美元；奈飞（NFLX）半仓观望。更新Anthropic（ANT）IPO最终定价83美元/股。CTA资金在横盘中转为买入，叠加标普成分股回购窗口开启至12月中旬，对大盘支撑力增强。\n- [03:37 NVDA sell 158] 已于11月18日开盘后以均价158美元清仓全部英伟达（NVDA）持仓，因高管变动导致对其治理缺乏长期信心\n- [08:56 PANW bullish 373-386] PANW第一财季业绩及全年初步指引超预期",
+      "content_chars": 1142,
+      "semantic_content_chars": 1142,
+      "content_filtering": {
+        "filter": "youtube_promotion_noise_v1",
+        "input_units": 14,
+        "removed_units": 0,
+        "removed_ratio": 0.0,
+        "promotion_noise_detected": false
+      },
+      "images_count": 0,
+      "themes_hint": [
+        "长期持有纪律",
+        "趋势确认"
+      ],
+      "symbols": [
+        "AMD",
+        "ANT",
+        "AVGO",
+        "DIS",
+        "GOOGL",
+        "MSFT",
+        "MU",
+        "NFLX",
+        "NVDA",
+        "PANW",
+        "SPY",
+        "TSM"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "captured_at": "2026-11-21T17:33:18Z",
+      "source_role": "rule_supply",
+      "transcript_status": "available",
+      "content_quality": "Q3",
+      "content_provider": "gemini_video",
+      "content_provider_url": "https://www.youtube.com/watch?v=swuAt-IcoJE",
+      "content_origin": "gemini_video_understanding",
+      "timestamp_evidence": true,
+      "rule_candidate_allowed": false,
+      "source_notice": "公开视频由 Gemini 读取原片（语音+画面）生成的结构化摘要；观点未验证、不可直接作为规则，等待 Owner 抽查原片核对。",
+      "claims": [
+        {
+          "symbol": "NVDA",
+          "stance": "sell",
+          "stance_cues": [
+            "sell"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "63e9c004e4201754d1a3cc4da48367ad237a7b0eba8292a68ba66352d16b5fc2",
+          "evidence_chars": 27
+        },
+        {
+          "symbol": "VOO",
+          "stance": "buy",
+          "stance_cues": [
+            "buy"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "8c0daa7d3899a16b6c1ab8c59f7403c5762f672a99aec38dea9c545a344d7dd8",
+          "evidence_chars": 43
+        },
+        {
+          "symbol": "NVDA",
+          "stance": "sell",
+          "stance_cues": [
+            "sell"
+          ],
+          "horizon": "long",
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "942aea4ebbd3ae3f6b474ebccb03d13b5b4d831a0db3eacc5e4ae17148bad115",
+          "evidence_chars": 76
+        },
+        {
+          "symbol": "NFLX",
+          "stance": "buy",
+          "stance_cues": [
+            "buy"
+          ],
+          "horizon": "short",
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "74cbc2f1562664c1c3190bd03c40cb7afb3512c8d96eb6eae8dd0aa2406abbcf",
+          "evidence_chars": 86
+        },
+        {
+          "symbol": "SPY",
+          "stance": "bullish",
+          "stance_cues": [
+            "bullish"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "bc0d760a9fc2dd69654df8a140d0e5b7b5adb11d5e9a4351bf472b5973cf0497",
+          "evidence_chars": 54
+        },
+        {
+          "symbol": "VOO",
+          "stance": "bullish",
+          "stance_cues": [
+            "bullish"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "bc0d760a9fc2dd69654df8a140d0e5b7b5adb11d5e9a4351bf472b5973cf0497",
+          "evidence_chars": 54
+        }
+      ],
+      "claims_status": "experimental_unvalidated",
+      "video_claims": [
+        {
+          "claim": "已于11月18日开盘后以均价158美元清仓全部英伟达（NVDA）持仓，因高管变动导致对其治理缺乏长期信心",
+          "stance": "sell",
+          "price": "158",
+          "timestamp": "03:37",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "NVDA",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "PANW第一财季业绩及全年初步指引超预期，技术面重新站稳348-365支撑，上方目标看至373-386",
+          "stance": "bullish",
+          "price": "373-386",
+          "timestamp": "08:56",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "PANW",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "迪士尼（DIS）财报小幅超预期，突破116美元后呈右侧缓慢上升趋势，中长线上看中位值142美元",
+          "stance": "bullish",
+          "price": "142",
+          "timestamp": "11:42",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "DIS",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "奈飞（NFLX）保持半仓观望，若回调至54.3-58.3或向上突破短期下降趋势线（约64美元）将考虑买入另一半",
+          "stance": "watch",
+          "price": "54.3-58.3",
+          "timestamp": "13:30",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "NFLX",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "Anthropic（ANT）IPO最终定价上调至83美元/股，对应市值约1.5万亿美元，前瞻PS约18倍",
+          "stance": "neutral",
+          "price": "83",
+          "timestamp": "18:01",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "ANT",
+          "symbol_check": "listed"
+        },
+        {
+          "claim": "标普500 ETF（SPY）守住728关键支撑，尚未破位",
+          "stance": "bullish",
+          "price": "728",
+          "timestamp": "00:30",
+          "evidence_mode": "spoken_plus_onscreen",
+          "confidence": "high",
+          "symbol": "SPY",
+          "symbol_check": "listed"
+        }
+      ],
+      "video_claims_model": "gemini-3.5-flash",
+      "video_macro": [
+        {
+          "indicator": "CME FedWatch 加息/降息概率",
+          "value": "90%维持现状或25基点，10%加息50基点",
+          "expectation": "市场普遍预期25基点",
+          "period": "12月议息会议",
+          "timestamp": "01:09"
+        },
+        {
+          "indicator": "标普500成分股回购窗口",
+          "value": "窗口开放至12月13日，回购规模为上年1.3倍",
+          "expectation": null,
+          "period": "2026年Q4",
+          "timestamp": "27:31"
+        },
+        {
+          "indicator": "CTA系统资金动向",
+          "value": "横盘中由卖转买，卖压解除",
+          "expectation": "突破SPX 7549/7676触发大幅买入",
+          "period": "2026年11月",
+          "timestamp": "25:48"
+        }
+      ],
+      "video_observed_title": "视野环球财经 261118",
+      "validation_status": "pending_owner_spot_check",
+      "forward_evidence_eligible": false
     }
   ],
-  "updated_at": "2026-11-20T03:40:06Z",
+  "updated_at": "2026-11-21T17:33:24Z",
   "retention_policy": "append_only_no_record_count_cap",
   "historical_recovery": {
     "completed_at": "2026-10-07T13:43:06.018028+00:00",

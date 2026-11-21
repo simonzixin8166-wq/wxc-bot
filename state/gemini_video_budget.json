@@ -2016,6 +2016,39 @@
         "gemini-3.5-flash"
       ],
       "refunded_503": 2
+    },
+    "2026-11-21": {
+      "calls": 2,
+      "admitted": 1,
+      "rejected": 0,
+      "errors": 1,
+      "reconciliation": {
+        "status": "COMPLETE",
+        "calls_billed": 2,
+        "calls_refunded_503": 0,
+        "detail_rows": 2,
+        "missing_detail_rows": 0,
+        "counter_mismatch": []
+      },
+      "recent": [
+        {
+          "video_id": "v2KyRWv3SHc",
+          "outcome": "exception",
+          "at": "17:30:52Z",
+          "model": "gemini-3.8-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 踩踏暴跌一步到位！好消息、坏消息！后市重要判断！",
+          "detail": "ReadTimeout"
+        },
+        {
+          "video_id": "swuAt-IcoJE",
+          "outcome": "admitted",
+          "at": "17:33:18Z",
+          "model": "gemini-3.5-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 好消息，CTA转向，三分之二情景买入！Anthropic IPO定价，增加募股数！PANW、DIS、NFLX！计划"
+        }
+      ]
     }
   },
   "version": 1,
