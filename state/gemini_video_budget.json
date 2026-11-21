@@ -2018,15 +2018,15 @@
       "refunded_503": 2
     },
     "2026-11-21": {
-      "calls": 2,
-      "admitted": 1,
+      "calls": 4,
+      "admitted": 3,
       "rejected": 0,
       "errors": 1,
       "reconciliation": {
         "status": "COMPLETE",
-        "calls_billed": 2,
+        "calls_billed": 4,
         "calls_refunded_503": 0,
-        "detail_rows": 2,
+        "detail_rows": 4,
         "missing_detail_rows": 0,
         "counter_mismatch": []
       },
@@ -2047,6 +2047,22 @@
           "model": "gemini-3.5-flash",
           "author": "RhinoFinance / 视野环球财经",
           "title": "美股 好消息，CTA转向，三分之二情景买入！Anthropic IPO定价，增加募股数！PANW、DIS、NFLX！计划"
+        },
+        {
+          "video_id": "cifo3KBc3FY",
+          "outcome": "admitted",
+          "at": "23:13:23Z",
+          "model": "gemini-3.5-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 曙光快出现了吗？大盘年底前波动！NVDA财报风险看点！为何继续看好TSM！"
+        },
+        {
+          "video_id": "N8BjausuEsI",
+          "outcome": "admitted",
+          "at": "23:17:17Z",
+          "model": "gemini-3.5-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 META大招豪赌AI代理！对GOOG、AMZN影响！SOXX还需一天确认！财政部回购不及预期！AAPL开始折叠！"
         }
       ]
     }

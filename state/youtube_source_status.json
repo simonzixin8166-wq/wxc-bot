@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-11-21T17:34:05Z",
+  "generated_at": "2026-11-21T23:18:39Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -101,7 +101,7 @@
       "discovery_complete": true,
       "latest": {
         "video_id": "S1B9R_83-8c",
-        "title": "America Is Under Attack",
+        "title": "Why America Is Breaking",
         "url": "https://www.youtube.com/watch?v=S1B9R_83-8c",
         "published_at": "2026-11-20",
         "rss_status": "ok",
@@ -123,8 +123,8 @@
   "pending_retried": 6,
   "content_attempted_this_run": 6,
   "content_work_budget": 6,
-  "content_backlog_after_run": 95,
-  "pending_total": 95,
+  "content_backlog_after_run": 93,
+  "pending_total": 93,
   "historical_demoted_from_pending": 0,
   "admitted_from_pending": 0,
   "nonforward_timestamp_unknown_admitted": 0,
@@ -152,7 +152,7 @@
     {
       "author": "Andrei Jikh",
       "video_id": "S1B9R_83-8c",
-      "title": "America Is Under Attack",
+      "title": "Why America Is Breaking",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -172,9 +172,17 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "cifo3KBc3FY",
-      "title": "美股 曙光快出现了吗？大盘年底前波动！NVDA财报风险看点！为何继续看好TSM！",
+      "author": "Andrei Jikh",
+      "video_id": "BXzNwnVZJHs",
+      "title": "Something Is Breaking America",
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "awaiting_publication_date"
+    },
+    {
+      "author": "Andrei Jikh",
+      "video_id": "NZpobX6MQVA",
+      "title": "Trump Will Cause The Next Financial Crisis",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -183,17 +191,9 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "Andrei Jikh",
-      "video_id": "BXzNwnVZJHs",
-      "title": "America Is Under Attack",
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "awaiting_publication_date"
-    },
-    {
       "author": "老李玩钱",
-      "video_id": "Mv4_zIzQGLs",
-      "title": "回调周期中，非常适合买入定投的5支ETF",
+      "video_id": "PDAHTpp2c78",
+      "title": "摩根大通：标普500今年将下跌15%",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -206,7 +206,7 @@
     "status": "ok",
     "channel_errors": 0,
     "stuck_high_quality_pending": 0,
-    "provider_waiting_pending": 95,
+    "provider_waiting_pending": 93,
     "stuck_video_ids": [],
     "meaning": "Q1/Q2 text must not remain stuck in pending; Q3-Q5 may legitimately wait for better learning text."
   },
