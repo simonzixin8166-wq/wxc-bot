@@ -55,6 +55,7 @@ def run(http=requests, now=None) -> dict:
     st = json.loads(st_path.read_text(encoding="utf-8")) if st_path.exists() else {"done": {}}
     feed = json.loads(rf.FEED_PATH.read_text(encoding="utf-8")) if rf.FEED_PATH.exists() else {"records": []}
     have = {(str(x.get("author") or "").casefold(), rf._canonical(str(x.get("url") or ""))) for x in feed.get("records", [])}
+    have_keys = {(str(x.get("author") or "").casefold(), str(x.get("source_entry_key") or "")) for x in feed.get("records", [])}
     topics: dict[str, dict | None] = {}
     rows, rep = [], {"pending": 0, "appended": 0, "timely": 0, "backfill": 0, "already_in_feed": 0,
                      "text_unavailable": 0, "title_only": 0, "body_missing": 0}
@@ -65,14 +66,16 @@ def run(http=requests, now=None) -> dict:
         if r.get("textpack") != "stored" or r["post_id"] in st["done"]:
             continue
         rep["pending"] += 1
-        if (r["author"].casefold(), rf._canonical(r["url"])) in have:
+        dup = ((r["author"].casefold(), str(r["post_id"])) in have_keys if r.get("url_is_topic")
+               else (r["author"].casefold(), rf._canonical(r["url"])) in have)
+        if dup:
             st["done"][r["post_id"]] = "already_in_feed"
             rep["already_in_feed"] += 1
             continue
         path = r["textpack_path"]
         if path not in topics:
             md = fetch_topic(path, http)
-            topics[path] = forum.parse_topic(md) if md else None
+            topics[path] = forum.parse_any(md) if md else None
         t = topics[path]
         e = next((x for x in (t or {}).get("entries", []) if x["post_id"] == r["post_id"]), None)
         if e is None:
@@ -103,7 +106,10 @@ def run(http=requests, now=None) -> dict:
         rep["title_only"] += e["body_status"] == "title_only"
         rep["body_missing"] += e["body_status"] == "body_missing"
         rows.append(row)
-        have.add((e["author"].casefold(), rf._canonical(e["url"])))
+        if e.get("url_is_topic"):
+            have_keys.add((e["author"].casefold(), str(e["post_id"])))
+        else:
+            have.add((e["author"].casefold(), rf._canonical(e["url"])))
         st["done"][r["post_id"]] = row["capture_mode"]
     if rows:
         rep["appended"] = rf.append_records(rows)

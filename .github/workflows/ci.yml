@@ -29,6 +29,7 @@ jobs:
           PYTHONPATH=. python tests/test_wxc_access_pause.py
           PYTHONPATH=. python tests/test_owner_forward_feed.py
           PYTHONPATH=. python tests/test_owner_forum_export.py
+          PYTHONPATH=. python tests/test_author_digest.py
           PYTHONPATH=. python tests/test_diagnose_title_only.py
           PYTHONPATH=. python tests/test_claim_extractor.py
           PYTHONPATH=. python tests/test_claim_extractor_ce6.py

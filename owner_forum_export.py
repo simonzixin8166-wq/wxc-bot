@@ -134,6 +134,99 @@ def parse_topic(md: str) -> dict | None:
             "topic_sha256": hashlib.sha256(md.encode("utf-8")).hexdigest(), "posts": len(nodes), "entries": entries}
 
 
+# ---------------------------------------------------------------- per-author digest (Owner 2026-11-21)
+# "文学城博主整理" mail: one .md per author, his utterances grouped by topic:
+#   # <author> 的发言整理
+#   ## <topic title>
+#   楼主 <root author> · YYYY-MM-DD HH:MM · [原帖](https://bbs.wenxuecity.com/<board>/<id>.html)
+#   ### YYYY-MM-DD HH:MM · <utterance title>
+#   > 回复 <who>「<parent title>」：<parent excerpt>        (optional)
+#   <body> | （标题即全文） | （正文未抓到…） | [图片](…)
+# Replies carry no link of their own, so a reply's id is "<root id>r<YYYYMMDDHHMM>" and it is also matched to the
+# daily export by (author, minute, title) so the same utterance is never stored twice.
+DIGEST_HEAD_RE = re.compile(r"^# (?P<author>\S+) 的发言整理\s*$", re.M)
+DIGEST_TOPIC_RE = re.compile(r"^楼主 (?P<author>\S+) · (?P<time>\d{4}-\d{2}-\d{2} \d{2}:\d{2}) · \[原帖\]\((?P<url>https?://[^)\s]+)\)")
+DIGEST_UTT_RE = re.compile(r"^### (?P<time>\d{4}-\d{2}-\d{2} \d{2}:\d{2}) · (?P<title>.*)$")
+DIGEST_REPLY_RE = re.compile(r"^> 回复 (?P<who>\S+?)「(?P<title>.*?)」(?:：.*)?$")
+IMAGE_RE = re.compile(r"^!?\[[^\]]*\]\([^)]*\)\s*$")
+
+
+def is_author_digest(md: str) -> bool:
+    return bool(DIGEST_HEAD_RE.search(md or "")) and "### " in md and "楼主 " in md
+
+
+def utterance_key(author: str, published_at: str | None, title: str) -> str:
+    return f"{(author or '').casefold()}|{(published_at or '')[:16]}|{(title or '').strip()[:40]}"
+
+
+def parse_author_digest(md: str) -> dict | None:
+    head = DIGEST_HEAD_RE.search(md or "")
+    if not head or not is_author_digest(md):
+        return None
+    author = head.group("author")
+    entries, topic, cur = [], None, None
+
+    def close():
+        if cur is None:
+            return
+        lines = [l for l in cur.pop("lines") if l.strip() and not IMAGE_RE.match(l.strip())]
+        body = "\n".join(lines).strip()
+        if body.startswith("（标题即全文）"):
+            status, body = "title_only", ""
+        elif body.startswith("（") and "未抓到" in body:
+            status, body = "body_missing", ""
+        else:
+            status = "body_exported" if body else "title_only"
+        utter = (cur["title"] + ("\n" + body if body else "")).strip()
+        cur.update(text=utter, body_status=status, body_bytes=0 if status == "title_only" else len(body.encode("utf-8")),
+                   sha256=hashlib.sha256(utter.encode("utf-8")).hexdigest())
+        entries.append(cur)
+
+    for l in md.splitlines():
+        if l.startswith("## ") and not l.startswith("### "):
+            close(); cur = None
+            topic = {"title": l[3:].strip(), "root": None}
+            continue
+        m = DIGEST_TOPIC_RE.match(l)
+        if m and topic is not None:
+            board, rid = _post_id(m.group("url"))
+            topic.update(root={"post_id": rid, "board": board, "author": m.group("author"), "time": m.group("time"),
+                               "url": f"https://bbs.wenxuecity.com/{board}/{rid}.html" if rid else m.group("url")})
+            continue
+        m = DIGEST_UTT_RE.match(l)
+        if m and topic and topic["root"] and topic["root"]["post_id"]:
+            close()
+            root, t = topic["root"], m.group("time")
+            is_root = root["author"] == author and t == root["time"]
+            rid = f"{root['post_id']}r{t.replace('-', '').replace(' ', '').replace(':', '')}{hashlib.sha1(author.encode('utf-8')).hexdigest()[:4]}"
+            cur = {"post_id": root["post_id"] if is_root else rid,
+                   "url": root["url"], "board": root["board"], "author": author, "kind": "post" if is_root else "reply",
+                   "published_at": t + ":00", "title": m.group("title").strip()[:MAX_TITLE],
+                   "root_post_id": root["post_id"], "root_title": topic["title"][:MAX_TITLE],
+                   "parent": None if is_root else {"post_id": root["post_id"], "author": root["author"],
+                                                   "title": topic["title"][:MAX_TITLE], "published_at": root["time"] + ":00"},
+                   "replies": [], "url_is_topic": not is_root, "lines": []}
+            continue
+        if cur is not None:
+            r = DIGEST_REPLY_RE.match(l.strip())
+            if r and not any(x.strip() for x in cur["lines"]):
+                cur["parent"] = {"post_id": None, "author": r.group("who"), "title": r.group("title")[:MAX_TITLE],
+                                 "published_at": None}
+            else:
+                cur["lines"].append(l)
+    close()
+    if not entries:
+        return None
+    return {"digest_author": author, "board": entries[0]["board"], "root_post_id": entries[0]["root_post_id"],
+            "root_title": f"{author} 的发言整理", "topic_sha256": hashlib.sha256(md.encode("utf-8")).hexdigest(),
+            "posts": len(entries), "entries": entries}
+
+
+def parse_any(md: str) -> dict | None:
+    """A daily topic file or a per-author digest."""
+    return parse_topic(md) if is_topic(md) else parse_author_digest(md)
+
+
 if __name__ == "__main__":
     import sys
     for p in sys.argv[1:]:
@@ -153,6 +246,9 @@ def index_path() -> Path:
 
 
 def textpack_path(topic: dict) -> str:
+    if topic.get("digest_author"):
+        safe = re.sub(r"[^0-9A-Za-z_-]", "_", topic["digest_author"])
+        return f"s2_v5_textpack/F_owner_forum/digest_{safe}_{topic['topic_sha256'][:12]}.md"
     return f"s2_v5_textpack/F_owner_forum/{topic['board']}_{topic['root_post_id']}_{topic['topic_sha256'][:12]}.md"
 
 
@@ -182,14 +278,21 @@ def existing() -> dict:
     return out
 
 
+def _seen_keys(seen: dict) -> set:
+    return {utterance_key(r.get("author"), r.get("published_at"), r.get("title")) for r in seen.values()}
+
+
 def ingest_topic(md: str, retrieved_at: str, now, http, seen: dict, input_kind: str) -> dict:
-    """Store one exported topic. Returns counts {new, duplicate, failed, entries, title_only, body_missing}."""
+    """Store one exported topic (or a per-author digest). Returns counts {new, duplicate, failed, entries, ...}.
+    An utterance already stored under another id (daily export vs digest) is a duplicate: same author, minute, title."""
     c = {"new": 0, "duplicate": 0, "failed": 0, "entries": 0, "title_only": 0, "body_missing": 0}
-    t = parse_topic(md)
+    t = parse_any(md)
     if not t:
         c["failed"] += 1
         return c
-    fresh = [e for e in t["entries"] if e["post_id"] not in seen]
+    keys = _seen_keys(seen)
+    fresh = [e for e in t["entries"] if e["post_id"] not in seen
+             and utterance_key(e["author"], e["published_at"], e["title"]) not in keys]
     c["entries"], c["duplicate"] = len(t["entries"]), len(t["entries"]) - len(fresh)
     if not fresh:
         return c
@@ -204,6 +307,7 @@ def ingest_topic(md: str, retrieved_at: str, now, http, seen: dict, input_kind: 
             row.update(excerpt=e["text"][:MAX_EXCERPT], text_chars=len(e["text"]),
                        parent_post_id=(e["parent"] or {}).get("post_id"), replies_received=len(e["replies"]),
                        topic_sha256=t["topic_sha256"], textpack_path=path, textpack=status, retrieved_at=retrieved_at,
+                       url_is_topic=bool(e.get("url_is_topic")),
                        input=input_kind, collection="owner_export (exported by the Owner himself; MyAlpha does not fetch these pages)",
                        indexed_at=now.isoformat(timespec="seconds"))
             f.write(json.dumps(row, ensure_ascii=False) + "\n")
