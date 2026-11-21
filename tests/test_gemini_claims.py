@@ -198,3 +198,12 @@ assert "env.TAG == ''" in wfc and "gemini-claims-${{ env.SET }}${{ env.TAG }}" i
 print("PASS spot check: --batch/--limit only on forum_dev, fresh run, own artifact")
 assert "GEMINI_CLAIMS_TIMEOUT: ${{ inputs.batch != '' && '240' || '120' }}" in wfc
 print("PASS spot check uses the 240 s read timeout")
+# the next spot-check slice: --offset skips utterances, refused on frozen sets, own artifact name
+try:
+    gc.main(["--set", "test", "--offset", "160"])
+    raise AssertionError("frozen set must refuse --offset")
+except SystemExit as e:
+    assert e.code == 2
+assert "--offset $OFFSET" in wfc and "format('-o{0}', inputs.offset)" in wfc
+print("PASS spot check: --offset selects the next slice on forum_dev only")
+

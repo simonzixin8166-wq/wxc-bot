@@ -337,17 +337,18 @@ def main(argv=None) -> int:
     ap.add_argument("--out", default=None)
     ap.add_argument("--batch", type=int, default=None, help="forum_dev only: utterances per call (default FORUM_BATCH)")
     ap.add_argument("--limit", type=int, default=None, help="forum_dev only: first N utterances by id (spot check)")
+    ap.add_argument("--offset", type=int, default=0, help="forum_dev only: skip the first N utterances by id (next spot-check slice)")
     a = ap.parse_args(argv)
-    if (a.batch or a.limit) and a.set != "forum_dev":
-        ap.error("--batch/--limit are for the forum dev set only; frozen test sets are measured once as frozen")
+    if (a.batch or a.limit or a.offset) and a.set != "forum_dev":
+        ap.error("--batch/--limit/--offset are for the forum dev set only; frozen test sets are measured once as frozen")
     batch = a.batch or FORUM_BATCH
     out = a.out or f"diagnostics/gemini_claims_{a.set}.json"
     if not os.getenv("GEMINI_API_KEY"):
         print("GEMINI_API_KEY not set: challenger off")
         return 0
     items = load_forum_dev(a.set) if a.set in FORUM_SETS else load_set(a.set)
-    if a.limit:
-        items = items[:a.limit]
+    if a.offset or a.limit:
+        items = items[a.offset:a.offset + a.limit if a.limit else None]
     answers = _load_previous(a.resume, a.set)
     resumed = len(answers)
     meta = {"calls": 0, "resumed": resumed, "batch": batch if a.set in FORUM_SETS else None, "unavailable_text": 0, "model_unavailable": 0, "dropped_labels": 0,
