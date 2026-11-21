@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-11-21T01:33:43Z",
+  "generated_at": "2026-11-21T09:44:50Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -19,15 +19,15 @@
           "reached_end": false
         }
       ],
-      "previous_anchor_video_id": "5RnWY2UkmA0",
+      "previous_anchor_video_id": "v2KyRWv3SHc",
       "anchor_found": true,
       "reached_end": false,
       "discovery_complete": true,
       "latest": {
-        "video_id": "5RnWY2UkmA0",
-        "title": "美股 标普SPY反转破位！恐慌过后，关键点位！个人持仓计划一览！",
-        "url": "https://www.youtube.com/watch?v=5RnWY2UkmA0",
-        "published_at": "2026-11-20",
+        "video_id": "v2KyRWv3SHc",
+        "title": "美股 踩踏暴跌一步到位！好消息、坏消息！后市重要判断！",
+        "url": "https://www.youtube.com/watch?v=v2KyRWv3SHc",
+        "published_at": "2026-11-21",
         "rss_status": "ok",
         "flat_metadata_keys": [
           "channel_id",
@@ -101,7 +101,7 @@
       "discovery_complete": true,
       "latest": {
         "video_id": "S1B9R_83-8c",
-        "title": "America Is Under Attack",
+        "title": "Something Is Breaking America",
         "url": "https://www.youtube.com/watch?v=S1B9R_83-8c",
         "published_at": "2026-11-20",
         "rss_status": "ok",
@@ -123,8 +123,8 @@
   "pending_retried": 6,
   "content_attempted_this_run": 6,
   "content_work_budget": 6,
-  "content_backlog_after_run": 95,
-  "pending_total": 95,
+  "content_backlog_after_run": 96,
+  "pending_total": 96,
   "historical_demoted_from_pending": 0,
   "admitted_from_pending": 0,
   "nonforward_timestamp_unknown_admitted": 0,
@@ -139,9 +139,20 @@
   "discovery_complete": true,
   "new_video_diagnostics": [
     {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "v2KyRWv3SHc",
+      "title": "美股 踩踏暴跌一步到位！好消息、坏消息！后市重要判断！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
       "author": "Andrei Jikh",
       "video_id": "S1B9R_83-8c",
-      "title": "America Is Under Attack",
+      "title": "Something Is Breaking America",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -189,24 +200,13 @@
       "admission": "pending_content",
       "was_pending": true,
       "pending_reason": "awaiting_publication_date"
-    },
-    {
-      "author": "Andrei Jikh",
-      "video_id": "MUUin7TkWsk",
-      "title": "How I'm Investing For What's Coming",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
     }
   ],
   "intake_health": {
     "status": "ok",
     "channel_errors": 0,
     "stuck_high_quality_pending": 0,
-    "provider_waiting_pending": 95,
+    "provider_waiting_pending": 96,
     "stuck_video_ids": [],
     "meaning": "Q1/Q2 text must not remain stuck in pending; Q3-Q5 may legitimately wait for better learning text."
   },
