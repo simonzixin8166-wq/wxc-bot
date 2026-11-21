@@ -25,6 +25,10 @@ on:
         description: "forum_dev only: first N utterances by id (empty = all)"
         required: false
         default: ""
+      offset:
+        description: "forum_dev only: skip the first N utterances by id (empty = 0), e.g. 160 for the next slice"
+        required: false
+        default: ""
 
 permissions:
   contents: read
@@ -42,8 +46,9 @@ jobs:
       INPUT_SET: ${{ inputs.set }}
       BATCH: ${{ inputs.batch }}
       LIMIT: ${{ inputs.limit }}
+      OFFSET: ${{ inputs.offset }}
       # a spot check (batch/limit) starts fresh and keeps its own artifact, never mixed with the measured report
-      TAG: ${{ inputs.batch != '' && format('-b{0}', inputs.batch) || '' }}${{ inputs.limit != '' && format('-n{0}', inputs.limit) || '' }}
+      TAG: ${{ inputs.batch != '' && format('-b{0}', inputs.batch) || '' }}${{ inputs.limit != '' && format('-n{0}', inputs.limit) || '' }}${{ inputs.offset != '' && format('-o{0}', inputs.offset) || '' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -95,6 +100,7 @@ jobs:
           extra=""
           [ -n "$BATCH" ] && extra="$extra --batch $BATCH"
           [ -n "$LIMIT" ] && extra="$extra --limit $LIMIT"
+          [ -n "$OFFSET" ] && extra="$extra --offset $OFFSET"
           python gemini_claims.py --set "$SET" --resume "prev/gemini_claims_$SET.json" --out "diagnostics/gemini_claims_$SET.json" $extra
       - name: Option B score (ce-4 + Gemini union; no Gemini call)
         if: env.SET == 'test' || env.SET == 'forum_test'
