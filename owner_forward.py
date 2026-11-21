@@ -234,7 +234,7 @@ def handle(msg: dict, say, tg_api: str = "", tg_file_base: str = "", http=reques
             return None
         counts = {"stored": 0, "duplicate": 0, "no_link": 0, "no_text": 0, "failed": 0}
         problems = []
-        topics = [(f, b) for f, b in members if f.lower().endswith(".md") and forum.is_topic(b)]
+        topics = [(f, b) for f, b in members if f.lower().endswith(".md") and (forum.is_topic(b) or forum.is_author_digest(b))]
         blog_rows = []
         if forum.is_index_bundle([f for f, _ in members]):
             # structured export (index/posts.jsonl + topics.jsonl + manifest.json): rebuilt into topic files
@@ -274,6 +274,12 @@ def handle(msg: dict, say, tg_api: str = "", tg_file_base: str = "", http=reques
         fc = forum.ingest_topic(data.decode("utf-8", errors="replace"), retrieved_at, now, http, forum.existing(),
                                 "forum_topic_md")
         say(forum.summary_zh(1, fc))
+        return {"forum": fc}
+    if name.lower().endswith(".md") and forum.is_author_digest(data.decode("utf-8", errors="replace")):
+        md = data.decode("utf-8", errors="replace")
+        fc = forum.ingest_topic(md, retrieved_at, now, http, forum.existing(), "author_digest_md")
+        who = (forum.parse_author_digest(md) or {}).get("digest_author", "")
+        say(f"博主整理（{who}）：" + forum.summary_zh(1, fc).replace("论坛话题 1 个：", ""))
         return {"forum": fc}
     title, furl, published, text = _parse_file(name, data.decode("utf-8", errors="replace"), url)[:4]
     kind = _parse_file(name, "", None)[4]

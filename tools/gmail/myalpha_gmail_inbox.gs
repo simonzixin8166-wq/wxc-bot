@@ -1,7 +1,8 @@
 /**
  * MyAlpha · Gmail -> private textpack inbox (Owner 2026-11-17).
- * Runs in the Owner's OWN Google account (Apps Script). Every new mail labelled "MyAlpha" with a .zip attachment
- * (the Owner's own "文学城每日整理" export) is copied to the PRIVATE repo inbox/gmail/; the Telegram bot then
+ * Runs in the Owner's OWN Google account (Apps Script). Every new mail labelled "MyAlpha" with a .zip or .md attachment
+ * (the Owner's own "文学城每日整理" zip export, and "文学城博主整理" per-author .md since 2026-11-21) is copied to the
+ * PRIVATE repo inbox/gmail/; the Telegram bot then
  * ingests it exactly like a zip forwarded by hand and replies in Telegram. The mail is then labelled "MyAlpha/已收录".
  *
  * Setup (once):
@@ -26,7 +27,7 @@ function pushNewMail() {
       var ts = Utilities.formatDate(m.getDate(), 'UTC', "yyyyMMdd'T'HHmmss'Z'");
       m.getAttachments().forEach(function (a) {
         var name = a.getName();
-        if (!/\.zip$/i.test(name)) return;
+        if (!/\.(zip|md)$/i.test(name)) return;
         if (a.getSize() > MAX_BYTES) { ok = false; Logger.log('too large: ' + name); return; }
         var safe = name.replace(/[^0-9A-Za-z._\-一-鿿]/g, '_');
         var path = 'inbox/gmail/' + ts + '_' + m.getId() + '_' + safe;
