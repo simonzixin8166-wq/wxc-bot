@@ -1962,15 +1962,15 @@
       "exhausted_quota_day": "2026-11-19"
     },
     "2026-11-20": {
-      "calls": 1,
+      "calls": 2,
       "admitted": 0,
-      "rejected": 1,
-      "errors": 1,
+      "rejected": 2,
+      "errors": 2,
       "reconciliation": {
         "status": "COMPLETE",
-        "calls_billed": 1,
-        "calls_refunded_503": 1,
-        "detail_rows": 2,
+        "calls_billed": 2,
+        "calls_refunded_503": 2,
+        "detail_rows": 4,
         "missing_detail_rows": 0,
         "counter_mismatch": []
       },
@@ -1992,12 +1992,30 @@
           "author": "RhinoFinance / 视野环球财经",
           "title": "美股 好消息，CTA转向，三分之二情景买入！Anthropic IPO定价，增加募股数！PANW、DIS、NFLX！计划",
           "detail": "{\"error\":{\"message\":\"Rate limit exceeded for model gemini-3.6-flash (limit: 20 requests per day on Free Tier). Please retry in 13h20m19s or upgrade your tier at https://ai.dev/rate-limit.\",\"code\":\"too"
+        },
+        {
+          "video_id": "5RnWY2UkmA0",
+          "outcome": "identity_mismatch",
+          "at": "01:32:52Z",
+          "model": "gemini-3.8-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 标普SPY反转破位！恐慌过后，关键点位！个人持仓计划一览！",
+          "detail": "seen='Anthropic上市成绞肉机，AMD遭做空，标普破位大跌！机会还是更大风险？' channel='视野环球财经'"
+        },
+        {
+          "video_id": "swuAt-IcoJE",
+          "outcome": "http_503_all_models",
+          "at": "01:32:59Z",
+          "model": "gemini-3.8-flash,gemini-3.5-flash",
+          "author": "RhinoFinance / 视野环球财经",
+          "title": "美股 好消息，CTA转向，三分之二情景买入！Anthropic IPO定价，增加募股数！PANW、DIS、NFLX！计划",
+          "detail": "{\"error\":{\"message\":\"gemini-3.8-flash is currently experiencing high demand, spikes in demand are usually temporary. Please try again later.\",\"code\":\"service_unavailable\"}}"
         }
       ],
       "fallback_exhausted": [
         "gemini-3.5-flash"
       ],
-      "refunded_503": 1
+      "refunded_503": 2
     }
   },
   "version": 1,

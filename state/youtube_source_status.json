@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-11-20T18:40:46Z",
+  "generated_at": "2026-11-21T01:33:43Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -185,15 +185,15 @@
     {
       "author": "Andrei Jikh",
       "video_id": "BXzNwnVZJHs",
-      "title": "Something Is Breaking America",
+      "title": "America Is Under Attack",
       "admission": "pending_content",
       "was_pending": true,
       "pending_reason": "awaiting_publication_date"
     },
     {
-      "author": "老李玩钱",
-      "video_id": "MEQ814VtkrY",
-      "title": "战火打响美股竟安然无恙，什么情况？3月行情推演及展望",
+      "author": "Andrei Jikh",
+      "video_id": "MUUin7TkWsk",
+      "title": "How I'm Investing For What's Coming",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
