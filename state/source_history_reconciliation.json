@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-11-21T03:23:31.954809+00:00",
+  "generated_at": "2026-11-21T20:04:30.692200+00:00",
   "principle": "author x month reconciliation; unscanned history is unknown, backfill is never Genuine Forward",
   "matrix": {
     "BrightLine": {
@@ -68,10 +68,10 @@
         "backfill": 14
       },
       "2026-11": {
-        "records": 556,
-        "live_or_unclassified": 556,
-        "excerpt": 556,
-        "structured_view": 30
+        "records": 571,
+        "live_or_unclassified": 571,
+        "excerpt": 571,
+        "structured_view": 31
       }
     },
     "dindindon": {
@@ -86,6 +86,41 @@
         "records": 1,
         "backfill": 1,
         "excerpt": 1
+      }
+    },
+    "ybdddnlyglny": {
+      "2026-05": {
+        "records": 4,
+        "backfill": 4,
+        "excerpt": 4
+      },
+      "2026-06": {
+        "records": 60,
+        "backfill": 60,
+        "excerpt": 60,
+        "structured_view": 1
+      },
+      "2026-07": {
+        "records": 51,
+        "backfill": 51,
+        "excerpt": 51,
+        "structured_view": 2
+      },
+      "2026-08": {
+        "records": 41,
+        "backfill": 41,
+        "excerpt": 41,
+        "structured_view": 1
+      },
+      "2026-09": {
+        "records": 34,
+        "backfill": 34,
+        "excerpt": 34
+      },
+      "2026-11": {
+        "records": 7,
+        "live_or_unclassified": 7,
+        "excerpt": 7
       }
     },
     "yifan99": {
@@ -121,17 +156,17 @@
         "structured_view": 7
       },
       "2026-11": {
-        "records": 642,
-        "live_or_unclassified": 642,
-        "excerpt": 642,
-        "structured_view": 19
+        "records": 666,
+        "live_or_unclassified": 666,
+        "excerpt": 666,
+        "structured_view": 21
       }
     },
     "低手只会用均线": {
       "2026-11": {
-        "records": 29,
-        "live_or_unclassified": 29,
-        "excerpt": 29,
+        "records": 31,
+        "live_or_unclassified": 31,
+        "excerpt": 31,
         "structured_view": 1
       }
     },
@@ -202,13 +237,13 @@
       "kinds": [
         "forum"
       ],
-      "records": 1762,
+      "records": 1777,
       "first_month": "2026-07",
       "last_month": "2026-11",
       "watched_forum_author": true,
       "forum": {
         "seen_ids": 1179,
-        "in_feed": 1760,
+        "in_feed": 1775,
         "seen_not_in_feed": 0,
         "seen_not_in_feed_examples": [],
         "reason": null
@@ -231,6 +266,16 @@
       "records": 1,
       "first_month": "2025-07",
       "last_month": "2025-07",
+      "watched_forum_author": false,
+      "scope": "one-off research backfill (not a watched author); no history scan"
+    },
+    "ybdddnlyglny": {
+      "kinds": [
+        "forum"
+      ],
+      "records": 197,
+      "first_month": "2026-05",
+      "last_month": "2026-11",
       "watched_forum_author": false,
       "scope": "one-off research backfill (not a watched author); no history scan"
     },
@@ -271,13 +316,13 @@
       "kinds": [
         "forum"
       ],
-      "records": 1698,
+      "records": 1722,
       "first_month": "2026-09",
       "last_month": "2026-11",
       "watched_forum_author": true,
       "forum": {
         "seen_ids": 1063,
-        "in_feed": 1697,
+        "in_feed": 1721,
         "seen_not_in_feed": 79,
         "seen_not_in_feed_examples": [
           "112259",
@@ -293,7 +338,7 @@
       "kinds": [
         "forum"
       ],
-      "records": 29,
+      "records": 31,
       "first_month": "2026-11",
       "last_month": "2026-11",
       "watched_forum_author": false,
@@ -351,11 +396,11 @@
     }
   },
   "totals": {
-    "authors": 9,
-    "records": 4117,
+    "authors": 10,
+    "records": 4355,
     "text_depth": {
       "title_only": 2145,
-      "excerpt": 1972
+      "excerpt": 2210
     }
   },
   "access_policy": "no bypassing 403/429 or login walls; history fills only via bounded, rate-limited backfill"
