@@ -217,6 +217,11 @@ def parse_author_digest(md: str) -> dict | None:
     close()
     if not entries:
         return None
+    # two replies by the same author in the same topic and minute: tell them apart by title (stable per utterance)
+    ids = [x["post_id"] for x in entries]
+    for x in entries:
+        if x["kind"] == "reply" and ids.count(x["post_id"]) > 1:
+            x["post_id"] += "t" + hashlib.sha1(x["title"].encode("utf-8")).hexdigest()[:4]
     return {"digest_author": author, "board": entries[0]["board"], "root_post_id": entries[0]["root_post_id"],
             "root_title": f"{author} 的发言整理", "topic_sha256": hashlib.sha256(md.encode("utf-8")).hexdigest(),
             "posts": len(entries), "entries": entries}

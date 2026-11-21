@@ -66,6 +66,10 @@ assert r3["root_post_id"] == "900002" and r3["kind"] == "reply" and r3["body_sta
 assert r3["published_at"] == "2026-11-19 14:53:00" and r3["author"] == "zmtest"
 assert forum.parse_any(DIGEST)["digest_author"] == "zmtest"
 assert forum.textpack_path(t).startswith("s2_v5_textpack/F_owner_forum/digest_zmtest_")
+# same author, topic and minute twice -> distinct ids (11/21 real digest had 2 such pairs in 197)
+twin = DIGEST.replace("### 2026-11-20 09:08 · 恐慌指数很低了", "### 2026-11-20 08:39 · 恐慌指数很低了")
+tw = forum.parse_author_digest(twin)["entries"]
+assert len({x["post_id"] for x in tw}) == 4 and tw[1]["post_id"] != tw[2]["post_id"] and tw[1]["post_id"].startswith("900001r202611200839")
 print("PASS digest parse: one entry per utterance, root vs reply, parent from 回复, title-only / body / missing")
 
 
