@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-11-22T06:42:38Z",
+  "generated_at": "2026-11-22T16:21:00Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -100,7 +100,7 @@
       "discovery_complete": true,
       "latest": {
         "video_id": "S1B9R_83-8c",
-        "title": "Why America Is Breaking",
+        "title": "America Is Under Attack",
         "url": "https://www.youtube.com/watch?v=S1B9R_83-8c",
         "published_at": "2026-11-20",
         "rss_status": "ok",
@@ -151,7 +151,7 @@
     {
       "author": "Andrei Jikh",
       "video_id": "S1B9R_83-8c",
-      "title": "Why America Is Breaking",
+      "title": "America Is Under Attack",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -180,8 +180,8 @@
     },
     {
       "author": "Andrei Jikh",
-      "video_id": "Z_xvkbGWauU",
-      "title": "China Just Shut Down Gold Trading",
+      "video_id": "_YXDHskRP6Y",
+      "title": "Here's What Pops This Stock Bubble",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -190,9 +190,9 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "-e3gyj_NP7c",
-      "title": "美股 科技股、半导体失血！消费股领涨，XLP重要位置！SMH、SOXX完成修复！SPY、QQQ、XLK长线点位更新！",
+      "author": "Andrei Jikh",
+      "video_id": "_lOVieAIvSA",
+      "title": "I Let AI Invest My Money For 3 Years",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
