@@ -39,7 +39,7 @@ def post(title, text):
     return {"labels": [{"symbol": "AMD", "stance": "trim", "status": "executed"}, {"symbol": "TSM", "stance": "bullish", "status": "opinion"}], "note": None}, {"model": "m"}
 
 
-rows, daily = gs.run(records, set(), label_post=post, label_batch=batch, textpack=lambda i: "FULL TEXT", now=NOW)
+rows, daily = gs.run(records, set(), backfill=False, label_post=post, label_batch=batch, textpack=lambda i: "FULL TEXT", now=NOW)
 assert [r["record_id"] for r in rows] == ["r1", "r2", "r5"]          # window + provenance filter
 assert all(r["understood_by"] == "gemini" and r["production_use"] is False for r in rows)
 assert calls == [("batch", ["r1", "r2"]), ("post", "FULL TEXT")]
@@ -51,19 +51,19 @@ assert r5["ce4_labels"] == [{"symbol": "AMD", "stance": "sell"}] and {l["symbol"
 # 429 on the first call: everything falls back to the production ce-4 claims, marked as such
 def batch429(items):
     raise RuntimeError("quota")
-rows2, d2 = gs.run(records, set(), label_post=post, label_batch=batch429, textpack=lambda i: None, now=NOW)
+rows2, d2 = gs.run(records, set(), backfill=False, label_post=post, label_batch=batch429, textpack=lambda i: None, now=NOW)
 assert {r["understood_by"] for r in rows2} == {"ce4_fallback"} and d2["quota_stop"] == "http_429" and d2["coverage"] == 0.0
 assert next(r for r in rows2 if r["record_id"] == "r1")["labels"] == [{"symbol": "NVDA", "stance": "add"}]
 
 # a model answer marked unavailable falls back for that record only
 def batch_unavail(items):
     return {i["id"]: {"labels": [], "note": "unavailable"} for i in items}, {"model": None}
-rows3, d3 = gs.run(records, set(), label_post=post, label_batch=batch_unavail, textpack=lambda i: None, now=NOW)
+rows3, d3 = gs.run(records, set(), backfill=False, label_post=post, label_batch=batch_unavail, textpack=lambda i: None, now=NOW)
 assert [r["understood_by"] for r in rows3] == ["ce4_fallback", "ce4_fallback", "gemini"] and d3["text_basis"]["feed_excerpt"] == 1
 
 # trial cap: unsent records are not written (they stay for the scheduled run), no fallback
 calls.clear()
-rows4, d4 = gs.run(records, set(), max_calls=1, label_post=post, label_batch=batch, textpack=lambda i: "x", now=NOW)
+rows4, d4 = gs.run(records, set(), max_calls=1, backfill=False, label_post=post, label_batch=batch, textpack=lambda i: "x", now=NOW)
 assert [r["record_id"] for r in rows4] == ["r1", "r2"] and d4["remaining"] == 1 and d4["trial"] is True
 
 # append-only ledger: records already observed are never relabelled
@@ -71,7 +71,7 @@ with tempfile.TemporaryDirectory() as t:
     p = Path(t) / "rows.jsonl"
     gs.append_jsonl(p, rows4)
     done = {r["record_id"] for r in gs.read_jsonl(p)}
-    rows5, _ = gs.run(records, done, label_post=post, label_batch=batch, textpack=lambda i: "x", now=NOW)
+    rows5, _ = gs.run(records, done, backfill=False, label_post=post, label_batch=batch, textpack=lambda i: "x", now=NOW)
     assert [r["record_id"] for r in rows5] == ["r5"]
 
 # labels and ids only: no text field leaks into the ledger
@@ -84,14 +84,40 @@ print("PASS gemini shadow: Gemini first, ce-4 fallback marked, 429 -> fallback, 
 # a model error falls back now and is retried by the next run; the error status is recorded (11/17 run 2)
 def batch_err(items):
     return {i["id"]: {"labels": [], "note": "unavailable"} for i in items}, {"model": None, "status": 503}
-rows6, d6 = gs.run(records, set(), label_post=post, label_batch=batch_err, textpack=lambda i: "x", now=NOW)
+rows6, d6 = gs.run(records, set(), backfill=False, label_post=post, label_batch=batch_err, textpack=lambda i: "x", now=NOW)
 assert d6["errors"] == {"503": 1} and {r["record_id"] for r in rows6 if r["understood_by"] == "ce4_fallback"} == {"r1", "r2"}
 retry = {r["record_id"] for r in rows6 if r["understood_by"] == "ce4_fallback"}
 done = {r["record_id"] for r in rows6 if r["understood_by"] == "gemini"}
-rows7, d7 = gs.run(records, done, label_post=post, label_batch=batch, textpack=lambda i: "x", now=NOW, retry=retry)
+rows7, d7 = gs.run(records, done, backfill=False, label_post=post, label_batch=batch, textpack=lambda i: "x", now=NOW, retry=retry)
 assert [(r["record_id"], r["understood_by"]) for r in rows7] == [("r1", "gemini"), ("r2", "gemini")] and d7["retried"] == 2
 print("PASS shadow retry: model error -> fallback with status recorded, retried next run and superseded")
 wf = (ROOT / ".github/workflows/gemini-shadow.yml").read_text(encoding="utf-8")
 assert 'GEMINI_CLAIMS_TIMEOUT: "240"' in wf and "timeout-minutes: 150" in wf
 print("PASS shadow workflow: 240 s read timeout for 20-post batches")
+
+# backlog (Owner 11/21): records before the window are labelled after it, newest first; only Gemini-labelled rows
+# are written (basis=backfill) and they stay out of the window statistics; a per-run call cap bounds the backlog
+calls.clear()
+old = [rec(10 + k, day="2026-11-0%d" % (1 + k % 9)) for k in range(25)]
+rows8, d8 = gs.run(records + old, set(), label_post=post, label_batch=batch, textpack=lambda i: "x", now=NOW)
+win = [r for r in rows8 if r.get("basis") != "backfill"]
+back = [r for r in rows8 if r.get("basis") == "backfill"]
+assert [r["record_id"] for r in win] == ["r1", "r2", "r5"] and d8["records"] == 3 and d8["coverage"] == 1.0
+assert len(back) == 26 and all(r["understood_by"] == "gemini" for r in back)          # 25 old + r3 (11/10)
+assert d8["backfill"] == {"pending_before": 26, "labelled": 26, "calls": 2, "remaining": 0}
+assert calls[0] == ("batch", ["r1", "r2"]) and calls[1][0] == "batch" and len(calls[1][1]) == 20
+first_back = calls[1][1]
+old_ids = [r["id"] for r in sorted(old + [records[2]], key=lambda r: (r["captured_at"], r["id"]), reverse=True)]
+assert first_back == old_ids[:20]
+# unavailable answers are not written for the backlog; the cap stops backlog calls but never the window
+rows9, d9 = gs.run(records + old, set(), label_post=post, label_batch=batch_unavail, textpack=lambda i: None, now=NOW)
+assert not [r for r in rows9 if r.get("basis") == "backfill"] and d9["backfill"]["remaining"] == 26
+gs.BACKFILL_MAX_CALLS = 1
+rows10, d10 = gs.run(records + old, set(), label_post=post, label_batch=batch, textpack=lambda i: "x", now=NOW)
+assert d10["backfill"]["calls"] == 1 and d10["backfill"]["labelled"] == 20 and d10["records"] == 3
+# already labelled backlog records are not sent again
+done = {r["record_id"] for r in rows8}
+rows11, d11 = gs.run(records + old, done, label_post=post, label_batch=batch, textpack=lambda i: "x", now=NOW)
+assert rows11 == [] and d11["backfill"]["pending_before"] == 0
+print("PASS shadow backlog: window first, backlog newest first, Gemini-only rows, per-run cap, out of window stats")
 

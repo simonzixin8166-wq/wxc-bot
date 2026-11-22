@@ -19,6 +19,8 @@ Outputs (append-only):
   research/shadow/gemini_shadow_rows.jsonl   one row per feed record (labels, ce-4 labels, understood_by)
   research/shadow/gemini_shadow_daily.jsonl  one stats row per run day
 Decision gate for the Owner at the December review: coverage >= 90% and spot-checked precision >= 85%.
+Backlog (Owner 2026-11-21): records captured before SHADOW_FROM are labelled with the quota left after the
+window, newest first; their rows carry basis=backfill and stay out of the window statistics.
 
   python gemini_shadow.py                 # label every eligible record since SHADOW_FROM not yet in the ledger
   python gemini_shadow.py --max-calls 3   # small trial
@@ -48,6 +50,12 @@ PROVENANCE = ("owner_forum_export", "owner_forward")
 # Owner 2026-11-19 (option A): ~86 forum posts a day at 8 per call ran out of free-tier calls; 20 per call
 # (spot-checked on the forum dev set before the December review; the frozen measurement used 8)
 SHADOW_BATCH = int(os.getenv("GEMINI_SHADOW_BATCH", "20"))
+# Owner 2026-11-21: all Gemini quota goes to forum/blog first, the new records and every earlier one. Records
+# captured before SHADOW_FROM are labelled after the window's records with whatever quota is left (newest first,
+# at most BACKFILL_MAX_CALLS calls per run); a backfill record gets a row only once Gemini labelled it (its stored
+# ce-4 claims stay as they are until then). Backfill rows never enter the window's coverage/gate statistics.
+BACKFILL_FROM = os.getenv("GEMINI_BACKFILL_FROM", "2026-01-01")
+BACKFILL_MAX_CALLS = int(os.getenv("GEMINI_BACKFILL_MAX_CALLS", "12"))
 POS = {"buy", "add", "bullish", "hold"}
 
 
@@ -88,6 +96,12 @@ def ce4_labels(rec: dict) -> list[dict]:
     return out
 
 
+def backfill_eligible(records: list[dict], done: set) -> list[dict]:
+    out = [r for r in records if r.get("intake_provenance") in PROVENANCE and r.get("id") not in done
+           and BACKFILL_FROM <= str(r.get("captured_at") or "")[:10] < SHADOW_FROM]
+    return sorted(out, key=lambda r: (str(r.get("captured_at") or ""), r["id"]), reverse=True)
+
+
 def eligible(records: list[dict], done: set) -> list[dict]:
     out = []
     for r in records:
@@ -121,7 +135,7 @@ def pairs(labels: list[dict]) -> dict:
 
 
 def run(records: list[dict], done: set, max_calls: int | None = None, label_post=None, label_batch=None,
-        textpack=None, now=None, retry: set | None = None) -> tuple[list[dict], dict]:
+        textpack=None, now=None, retry: set | None = None, backfill: bool = True) -> tuple[list[dict], dict]:
     """done = records Gemini already labelled; retry = records whose latest row is a ce-4 fallback (tried again)."""
     retry = retry or set()
     label_post = label_post or gc.label_post
@@ -129,24 +143,35 @@ def run(records: list[dict], done: set, max_calls: int | None = None, label_post
     textpack = textpack or gc._textpack_text
     now = now or datetime.now(timezone.utc)
     todo = eligible(records, done)
+    back = backfill_eligible(records, done) if backfill else []
+    back_ids = {r["id"] for r in back}
     answers, meta, stop = {}, {"calls": 0, "quota_stop": False, "text_basis": Counter(), "models": Counter(),
-                                "errors": Counter()}, False
+                                "errors": Counter(), "backfill_calls": 0}, False
 
-    def budget_left():
+    def budget_left(is_back=False):
+        if is_back and meta["backfill_calls"] >= BACKFILL_MAX_CALLS:
+            return False
         return max_calls is None or meta["calls"] < max_calls
 
-    forum = [r for r in todo if r["intake_provenance"] == "owner_forum_export"]
-    longs = [r for r in todo if r["intake_provenance"] == "owner_forward"]
-    for k in range(0, len(forum), SHADOW_BATCH):
-        if stop or not budget_left():
+    def chunks(rows):
+        f = [r for r in rows if r["intake_provenance"] == "owner_forum_export"]
+        return [f[k:k + SHADOW_BATCH] for k in range(0, len(f), SHADOW_BATCH)]
+
+    forum_chunks = chunks(todo) + chunks(back)          # the window first, then the backlog
+    longs = [r for r in todo + back if r["intake_provenance"] == "owner_forward"]
+    longs.sort(key=lambda r: r["id"] in back_ids)        # window articles before backlog articles
+    for chunk in forum_chunks:
+        is_back = chunk[0]["id"] in back_ids
+        if stop or not budget_left(is_back):
+            if is_back:
+                continue
             break
-        chunk = forum[k:k + SHADOW_BATCH]
         try:
             got, m = label_batch([_forum_item(r) for r in chunk])
         except RuntimeError:
             meta["quota_stop"] = "http_429"; stop = True
             break
-        meta["calls"] += 1; meta["models"][str(m.get("model"))] += 1
+        meta["calls"] += 1; meta["models"][str(m.get("model"))] += 1; meta["backfill_calls"] += is_back
         if m.get("model") is None:
             meta["errors"][str(m.get("status"))] += 1
         for r in chunk:
@@ -154,7 +179,10 @@ def run(records: list[dict], done: set, max_calls: int | None = None, label_post
             answers[r["id"]] = (got.get(r["id"]), m.get("model"))
         time.sleep(gc.PAUSE)
     for r in longs:
-        if stop or not budget_left():
+        is_back = r["id"] in back_ids
+        if stop or not budget_left(is_back):
+            if is_back:
+                continue
             break
         body = textpack(r.get("owner_forward_item_id") or "") if r.get("owner_forward_item_id") else None
         basis = "full_text" if body else "feed_excerpt"
@@ -165,12 +193,24 @@ def run(records: list[dict], done: set, max_calls: int | None = None, label_post
             meta["quota_stop"] = "http_429"; stop = True
             break
         meta["calls"] += 1; meta["models"][str(m.get("model"))] += 1; meta["text_basis"][basis] += 1
+        meta["backfill_calls"] += is_back
         if m.get("model") is None:
             meta["errors"][str(m.get("status"))] += 1
         answers[r["id"]] = (ans, m.get("model"))
         time.sleep(gc.PAUSE)
 
     rows, st = [], Counter()
+    for r in back:   # backlog: a row only for what Gemini actually labelled; the rest waits for the next run
+        ans, model = answers.get(r["id"], (None, None))
+        if ans is None or ans.get("note") == "unavailable":
+            continue
+        labels = [{k: l.get(k) for k in ("symbol", "stance", "status") if l.get(k)} for l in ans["labels"]]
+        rows.append({"version": VERSION, "record_id": r["id"], "provenance": r["intake_provenance"],
+                     "source_entry_key": r.get("source_entry_key"), "author": r.get("author"),
+                     "captured_at": r.get("captured_at"), "understood_by": "gemini", "model": model, "basis": "backfill",
+                     "labels": labels, "ce4_labels": ce4_labels(r), "production_use": False,
+                     "recorded_at": now.isoformat(timespec="seconds")})
+        st["backfill_gemini"] += 1
     for r in todo:
         ce4 = ce4_labels(r)
         ans, model = answers.get(r["id"], (None, None))
@@ -198,7 +238,10 @@ def run(records: list[dict], done: set, max_calls: int | None = None, label_post
              "ce4_only_pairs": st["ce4_only_pairs"], "calls": meta["calls"], "quota_stop": meta["quota_stop"],
              "text_basis": dict(meta["text_basis"]), "models": dict(meta["models"]), "errors": dict(meta["errors"]),
              "retried": sum(1 for r in todo if r["id"] in retry), "batch": SHADOW_BATCH,
-             "trial": max_calls is not None, "remaining": len(todo) - n, "production_use": False}
+             "trial": max_calls is not None, "remaining": len(todo) - n,
+             "backfill": {"pending_before": len(back), "labelled": st["backfill_gemini"], "calls": meta["backfill_calls"],
+                          "remaining": len(back) - st["backfill_gemini"]},
+             "production_use": False}
     return rows, daily
 
 

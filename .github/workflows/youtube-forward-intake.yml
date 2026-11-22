@@ -63,7 +63,9 @@ jobs:
           # YT-01: Gemini video understanding fallback (free tier; off when the secret is absent)
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_VIDEO_DAILY_CAP: "10"
-          GEMINI_VIDEO_RUN_CAP: ${{ env.VIDEO_RUN_CAP || '2' }}
+          # Owner 2026-11-21: all Gemini quota goes to forum/blog understanding (new + backlog) first; video calls are
+          # paused (0). Re-enable later by setting the repository variable GEMINI_VIDEO_RUN_CAP (e.g. 1).
+          GEMINI_VIDEO_RUN_CAP: ${{ env.VIDEO_RUN_CAP || vars.GEMINI_VIDEO_RUN_CAP || '0' }}
           GEMINI_VIDEO_TIMEOUT: "180"
         run: python youtube_research.py
 
