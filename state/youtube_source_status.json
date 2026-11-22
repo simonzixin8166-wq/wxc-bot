@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-11-21T23:18:39Z",
+  "generated_at": "2026-11-22T01:37:53Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -101,7 +101,7 @@
       "discovery_complete": true,
       "latest": {
         "video_id": "S1B9R_83-8c",
-        "title": "Why America Is Breaking",
+        "title": "Something Is Breaking America",
         "url": "https://www.youtube.com/watch?v=S1B9R_83-8c",
         "published_at": "2026-11-20",
         "rss_status": "ok",
@@ -152,7 +152,7 @@
     {
       "author": "Andrei Jikh",
       "video_id": "S1B9R_83-8c",
-      "title": "Why America Is Breaking",
+      "title": "Something Is Breaking America",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -173,16 +173,8 @@
     },
     {
       "author": "Andrei Jikh",
-      "video_id": "BXzNwnVZJHs",
-      "title": "Something Is Breaking America",
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "awaiting_publication_date"
-    },
-    {
-      "author": "Andrei Jikh",
-      "video_id": "NZpobX6MQVA",
-      "title": "Trump Will Cause The Next Financial Crisis",
+      "video_id": "Uw84lTiD5C8",
+      "title": "Russia Just Legalized Crypto",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -191,9 +183,20 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "老李玩钱",
-      "video_id": "PDAHTpp2c78",
-      "title": "摩根大通：标普500今年将下跌15%",
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "Y7P-VOo0KTs",
+      "title": "（会员第298期）四大科技AI货币化进度（2026年Q2后），MSFT、GOOG、AMZN、META！前车之鉴，能否提前识别泡沫？",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
+    {
+      "author": "Andrei Jikh",
+      "video_id": "YBhwK-VWsxY",
+      "title": "Japan's Money Is Collapsing",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
