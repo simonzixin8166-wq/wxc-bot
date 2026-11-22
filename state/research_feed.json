@@ -187272,9 +187272,2911 @@
       "intake_class_hint": "backfill",
       "capture_mode": "youtube_timestamp_unknown_learning",
       "timestamp_confidence": "missing"
+    },
+    {
+      "id": "43f0c504fdc735171579",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-19 16:05:00",
+      "title": "This is a fake new:)",
+      "url": "https://bbs.wenxuecity.com/cfzh/125502.html",
+      "excerpt": "This is a fake new:)",
+      "content_chars": 20,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "125502",
+      "parent_post_id": "125485",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "125485",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "125485",
+          "author": "Blueview2026",
+          "title": "黄在考虑建一个新的半导体公司。大家怎么看？",
+          "published_at": "2026-11-19 15:33:00"
+        },
+        "reply_count": 2,
+        "replies": [
+          {
+            "post_id": "125504",
+            "author": "Blueview2026",
+            "title": "哈哈。 fake Again。 不过可以想一下",
+            "depth": 2,
+            "in_reply_to": "125502",
+            "body_bytes": 0,
+            "published_at": "2026-11-19 16:06:00"
+          },
+          {
+            "post_id": "125518",
+            "author": "小松松",
+            "title": "老黄还是回原来的厨房，别另起炉灶了。卖玉米饼的和卖汽水的脑子也要活分一点，该留扇门留扇门。",
+            "depth": 2,
+            "in_reply_to": "125502",
+            "body_bytes": 0,
+            "published_at": "2026-11-19 16:50:00"
+          }
+        ],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-22T02:32:51Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-22T01:41:40+00:00",
+      "publication_lag_hours": 55.9,
+      "content_sha256": "aefcd0675ad97efcccfeb1ebfdad6e9362664a8155a1a7bcede329d570456240",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "5c7a39da51d207ddcd84",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "bogbog",
+      "published_at": "2026-11-19 16:17:00",
+      "title": "他会回到英伟达",
+      "url": "https://bbs.wenxuecity.com/cfzh/125510.html",
+      "excerpt": "他会回到英伟达",
+      "content_chars": 7,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [
+        "NVDA"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "125510",
+      "parent_post_id": "125504",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "125485",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "125504",
+          "author": "Blueview2026",
+          "title": "哈哈。 fake Again。 不过可以想一下",
+          "published_at": "2026-11-19 16:06:00"
+        },
+        "reply_count": 4,
+        "replies": [
+          {
+            "post_id": "125511",
+            "author": "huahuaflower",
+            "title": "相信你说的 哈哈哈",
+            "depth": 4,
+            "in_reply_to": "125510",
+            "body_bytes": 0,
+            "published_at": "2026-11-19 16:18:00"
+          },
+          {
+            "post_id": "125535",
+            "author": "Blueview2026",
+            "title": "迫切希望你说的都变成现实。：）",
+            "depth": 4,
+            "in_reply_to": "125510",
+            "body_bytes": 0,
+            "published_at": "2026-11-19 17:37:00"
+          },
+          {
+            "post_id": "125551",
+            "author": "kaixintiantian",
+            "title": "NT太没底线了，现在开始攻击他女儿的工作风格。就很无语……",
+            "depth": 4,
+            "in_reply_to": "125510",
+            "body_bytes": 0,
+            "published_at": "2026-11-19 19:05:00"
+          },
+          {
+            "post_id": "125580",
+            "author": "阿迪2000",
+            "title": "你是不是拔萃女书院毕业的？今天经过，看到学生走出校门，素质很高的样子。我立刻想到bog 女士",
+            "depth": 4,
+            "in_reply_to": "125510",
+            "body_bytes": 102,
+            "published_at": "2026-11-20 01:24:00"
+          }
+        ],
+        "replies_with_body": 1
+      },
+      "captured_at": "2026-11-22T02:32:51Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-22T01:41:40+00:00",
+      "publication_lag_hours": 55.7,
+      "content_sha256": "709d0040108aed3afd41292c449f3cc7677d365b2907660866b194575d921e5a",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "0f7db530c423f70ad51c",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "bogbog",
+      "published_at": "2026-11-20 09:57:00",
+      "title": "除了中文课，其他都是用英语的。   您在香港吗？",
+      "url": "https://bbs.wenxuecity.com/cfzh/125749.html",
+      "excerpt": "除了中文课，其他都是用英语的。   您在香港吗？",
+      "content_chars": 24,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "125749",
+      "parent_post_id": "125580",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "125485",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "125580",
+          "author": "阿迪2000",
+          "title": "你是不是拔萃女书院毕业的？今天经过，看到学生走出校门，素质很高的样子。我立刻想到bog 女士",
+          "published_at": "2026-11-20 01:24:00"
+        },
+        "reply_count": 1,
+        "replies": [
+          {
+            "post_id": "125944",
+            "author": "阿迪2000",
+            "title": "从台湾回来住这附近，香港遇到难得的低温，女生们穿着长大衣，很优雅。也有个别不怕冷的，还是短袖。",
+            "depth": 6,
+            "in_reply_to": "125749",
+            "body_bytes": 132,
+            "published_at": "2026-11-20 14:35:00"
+          }
+        ],
+        "replies_with_body": 1
+      },
+      "captured_at": "2026-11-22T02:32:51Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-22T01:41:40+00:00",
+      "publication_lag_hours": 38.0,
+      "content_sha256": "ddb62e00569318684640072d42ba4d9ddba3b5b36f6ff84487bdb91d1d40c808",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "88bcb6134fbe6fa39b27",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "bogbog",
+      "published_at": "2026-11-21 09:43:00",
+      "title": "嗯嗯。 香港没有几天冬天，您是台湾人吗？",
+      "url": "https://bbs.wenxuecity.com/cfzh/126151.html",
+      "excerpt": "嗯嗯。 香港没有几天冬天，您是台湾人吗？",
+      "content_chars": 20,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "126151",
+      "parent_post_id": "125944",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "125485",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "125944",
+          "author": "阿迪2000",
+          "title": "从台湾回来住这附近，香港遇到难得的低温，女生们穿着长大衣，很优雅。也有个别不怕冷的，还是短袖。",
+          "published_at": "2026-11-20 14:35:00"
+        },
+        "reply_count": 0,
+        "replies": [],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-22T02:32:51Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-22T01:41:40+00:00",
+      "publication_lag_hours": 14.3,
+      "content_sha256": "dcc3cea3ae910f1005d6594524a629a020ebc8a9057589fa3bd546d386af9a7c",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "07a5f4cd95a0b7d9b699",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "dindindon",
+      "published_at": "2026-11-20 10:30:00",
+      "title": "偏离主题，已经删去。",
+      "url": "https://bbs.wenxuecity.com/cfzh/125776.html",
+      "excerpt": "偏离主题，已经删去。",
+      "content_chars": 10,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "125776",
+      "parent_post_id": null,
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "125776",
+        "is_reply": false,
+        "in_reply_to": null,
+        "reply_count": 7,
+        "replies": [
+          {
+            "post_id": "125777",
+            "author": "名校FAN",
+            "title": "哈哈",
+            "depth": 1,
+            "in_reply_to": "125776",
+            "body_bytes": 0,
+            "published_at": "2026-11-20 10:30:00"
+          },
+          {
+            "post_id": "125778",
+            "author": "fpeking",
+            "title": "快从小黑屋放人",
+            "depth": 1,
+            "in_reply_to": "125776",
+            "body_bytes": 0,
+            "published_at": "2026-11-20 10:32:00"
+          },
+          {
+            "post_id": "125782",
+            "author": "遍野无尘",
+            "title": "哈哈，需要阳刚之气。",
+            "depth": 1,
+            "in_reply_to": "125776",
+            "body_bytes": 0,
+            "published_at": "2026-11-20 10:35:00"
+          },
+          {
+            "post_id": "125783",
+            "author": "斑马斑马",
+            "title": "欢迎",
+            "depth": 1,
+            "in_reply_to": "125776",
+            "body_bytes": 0,
+            "published_at": "2026-11-20 10:36:00"
+          },
+          {
+            "post_id": "125785",
+            "author": "三心三意",
+            "title": "LOL, 关进小黑屋去",
+            "depth": 1,
+            "in_reply_to": "125776",
+            "body_bytes": 0,
+            "published_at": "2026-11-20 10:38:00"
+          },
+          {
+            "post_id": "125787",
+            "author": "Lazymm",
+            "title": "我被关好久了",
+            "depth": 1,
+            "in_reply_to": "125776",
+            "body_bytes": 0,
+            "published_at": "2026-11-20 10:41:00"
+          },
+          {
+            "post_id": "125797",
+            "author": "爸爸的草鞋",
+            "title": "我欢天喜地去迎，结果泪流满面",
+            "depth": 1,
+            "in_reply_to": "125776",
+            "body_bytes": 0,
+            "published_at": "2026-11-20 10:55:00"
+          }
+        ],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-22T02:32:51Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-22T01:41:40+00:00",
+      "publication_lag_hours": 37.5,
+      "content_sha256": "119e33e3c0ea673d70a8ec5c241d54740292f059329a9aa0880e6a0cf319c629",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "f3c63bdf81605eaa4d5f",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-20 10:38:00",
+      "title": "LOL, 关进小黑屋去",
+      "url": "https://bbs.wenxuecity.com/cfzh/125785.html",
+      "excerpt": "LOL, 关进小黑屋去",
+      "content_chars": 11,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "125785",
+      "parent_post_id": "125776",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "125776",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "125776",
+          "author": "dindindon",
+          "title": "偏离主题，已经删去。",
+          "published_at": "2026-11-20 10:30:00"
+        },
+        "reply_count": 0,
+        "replies": [],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-22T02:32:51Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-22T01:41:40+00:00",
+      "publication_lag_hours": 37.4,
+      "content_sha256": "fe54c65ec771caaa12ad09997dc476af68f02c752da4baddbbbbd10070ed8e7b",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "0c7688ed4cc8771e83d0",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-21 10:49:00",
+      "title": "肯定是需要不断调整的。比如说如果Meta回到720上方，可以roll up both cc 和葡萄来提高卖出价",
+      "url": "https://bbs.wenxuecity.com/cfzh/126164.html",
+      "excerpt": "肯定是需要不断调整的。比如说如果Meta回到720上方，可以roll up both cc 和葡萄来提高卖出价",
+      "content_chars": 55,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "126164",
+      "parent_post_id": "126067",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "125975",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "126067",
+          "author": "aloevera",
+          "title": "九月调到三月差不多六个月上820还是有可能的。 不过我了解中心思想，就是做option是需要monitor的，也是技术活",
+          "published_at": "2026-11-20 23:08:00"
+        },
+        "reply_count": 0,
+        "replies": [],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-22T02:32:51Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-22T01:41:40+00:00",
+      "publication_lag_hours": 13.2,
+      "content_sha256": "cb51c9eea753e85e5cec6182a1345d61c5432a38ae7ea7a4dbb5e145fbc9cd21",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "90a246ed0227db3bd5a4",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "bogbog",
+      "published_at": "2026-11-21 07:13:00",
+      "title": "Y兄昨天说过CNN恐慌指数11",
+      "url": "https://bbs.wenxuecity.com/cfzh/126089.html",
+      "excerpt": "Y兄昨天说过CNN恐慌指数11",
+      "content_chars": 15,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "126089",
+      "parent_post_id": "126054",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "126044",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "126054",
+          "author": "Blueview2026",
+          "title": "还没感到很多人有恐慌。",
+          "published_at": "2026-11-20 21:50:00"
+        },
+        "reply_count": 1,
+        "replies": [
+          {
+            "post_id": "126115",
+            "author": "Lazymm",
+            "title": "现在在10，关税战到过3，一般到个位数反弹或是反转就快了。这群里有三心和您及时分享，您两有策略不会恐慌，群里就很难恐慌",
+            "depth": 3,
+            "in_reply_to": "126089",
+            "body_bytes": 0,
+            "published_at": "2026-11-21 08:26:00"
+          }
+        ],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-22T02:32:51Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-22T01:41:40+00:00",
+      "publication_lag_hours": 16.8,
+      "content_sha256": "03e3b71cd1bd4e13672075789412d28649933e2371e09a10524e7d8af6e9900c",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "203da27595d7ba197ac4",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-21 08:21:00",
+      "title": "你40买的，开盘半个小时之内都在40上方，怎么会没有机会？跌下39是个明确的止损破位点，如何一开盘就完蛋了？",
+      "url": "https://bbs.wenxuecity.com/cfzh/126113.html",
+      "excerpt": "你40买的，开盘半个小时之内都在40上方，怎么会没有机会？跌下39是个明确的止损破位点，如何一开盘就完蛋了？",
+      "content_chars": 54,
+      "images_count": 0,
+      "themes_hint": [
+        "风险管理",
+        "止损纪律"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "126113",
+      "parent_post_id": "126069",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "126058",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "126069",
+          "author": "Greenhands53",
+          "title": "昨天盘后买的。今天一开盘就完蛋了。没有设止损。要死扛吗？谢谢",
+          "published_at": "2026-11-20 23:59:00"
+        },
+        "reply_count": 2,
+        "replies": [
+          {
+            "post_id": "126127",
+            "author": "小松松",
+            "title": "所以经验不足，手脚不麻利的千万不能碰3X.",
+            "depth": 4,
+            "in_reply_to": "126113",
+            "body_bytes": 0,
+            "published_at": "2026-11-21 08:55:00"
+          },
+          {
+            "post_id": "126152",
+            "author": "consist26",
+            "title": "请教三心，关于你提到的止损点39",
+            "depth": 4,
+            "in_reply_to": "126113",
+            "body_bytes": 101,
+            "published_at": "2026-11-21 10:00:00"
+          }
+        ],
+        "replies_with_body": 1
+      },
+      "captured_at": "2026-11-22T02:32:52Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-22T01:41:40+00:00",
+      "publication_lag_hours": 15.7,
+      "content_sha256": "a673d2f97191d1ca856769793ab6c864a132ec6468c44da6e37a449a919488b4",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "13fd323f3e77cb119f0f",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-21 10:38:00",
+      "title": "只要稍微有点TA基础，都能看到这个止损点。38.65 是11/5夜盘交易最低点，39是周5盘前最低点，也是周5开盘最低点",
+      "url": "https://bbs.wenxuecity.com/cfzh/126159.html",
+      "excerpt": "只要稍微有点TA基础，都能看到这个止损点。38.65 是11/5夜盘交易最低点，39是周5盘前最低点，也是周5开盘最低点",
+      "content_chars": 60,
+      "images_count": 0,
+      "themes_hint": [
+        "风险管理",
+        "止损纪律"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "126159",
+      "parent_post_id": "126152",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "126058",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "126152",
+          "author": "consist26",
+          "title": "请教三心，关于你提到的止损点39",
+          "published_at": "2026-11-21 10:00:00"
+        },
+        "reply_count": 1,
+        "replies": [
+          {
+            "post_id": "126165",
+            "author": "consist26",
+            "title": "谢谢指点",
+            "depth": 6,
+            "in_reply_to": "126159",
+            "body_bytes": 0,
+            "published_at": "2026-11-21 10:49:00"
+          }
+        ],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-22T02:32:52Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-22T01:41:40+00:00",
+      "publication_lag_hours": 13.4,
+      "content_sha256": "4badea60030ec8b5afad4858456a633bac9105673d43f5ef12f798e8b6adf76d",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "5c019f1aa844e123cc05",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-21 10:41:00",
+      "title": "但是开盘半小时后，交易量已经是“巨量”跌破39，必须立刻止损，尤其是做3x的时候",
+      "url": "https://bbs.wenxuecity.com/cfzh/126160.html",
+      "excerpt": "但是开盘半小时后，交易量已经是“巨量”跌破39，必须立刻止损，尤其是做3x的时候",
+      "content_chars": 40,
+      "images_count": 0,
+      "themes_hint": [
+        "风险管理",
+        "止损纪律"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "126160",
+      "parent_post_id": "126152",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "126058",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "126152",
+          "author": "consist26",
+          "title": "请教三心，关于你提到的止损点39",
+          "published_at": "2026-11-21 10:00:00"
+        },
+        "reply_count": 0,
+        "replies": [],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-22T02:32:52Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-22T01:41:40+00:00",
+      "publication_lag_hours": 13.3,
+      "content_sha256": "53261c43983a4f0cc7bb1dd3faa48b1a16f13be3c56dc68ca801d02663c40dd5",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "b66f1995b30898403443",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-21 10:44:00",
+      "title": "很多人说，如果止损了又涨了怎么办？如果它周5能在跌破39后马上“巨量”反弹，就是在45重新买入，也可以抓住30%的涨幅",
+      "url": "https://bbs.wenxuecity.com/cfzh/126161.html",
+      "excerpt": "很多人说，如果止损了又涨了怎么办？如果它周5能在跌破39后马上“巨量”反弹，就是在45重新买入，也可以抓住30%的涨幅",
+      "content_chars": 59,
+      "images_count": 0,
+      "themes_hint": [
+        "风险管理",
+        "止损纪律"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "126161",
+      "parent_post_id": "126152",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "126058",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "126152",
+          "author": "consist26",
+          "title": "请教三心，关于你提到的止损点39",
+          "published_at": "2026-11-21 10:00:00"
+        },
+        "reply_count": 1,
+        "replies": [
+          {
+            "post_id": "126163",
+            "author": "consist26",
+            "title": "是的，赞！",
+            "depth": 6,
+            "in_reply_to": "126161",
+            "body_bytes": 0,
+            "published_at": "2026-11-21 10:49:00"
+          }
+        ],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-22T02:32:52Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-22T01:41:40+00:00",
+      "publication_lag_hours": 13.3,
+      "content_sha256": "1e7f62ef23c5004475aaee3f2e84e6bce8e70244175afa457792520fc65cb9f1",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "bc6936d6e5533134f635",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-21 10:45:00",
+      "title": "但如上所说，如果没有TA的经验，3x股碰不得：）",
+      "url": "https://bbs.wenxuecity.com/cfzh/126162.html",
+      "excerpt": "但如上所说，如果没有TA的经验，3x股碰不得：）",
+      "content_chars": 24,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "126162",
+      "parent_post_id": "126152",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "126058",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "126152",
+          "author": "consist26",
+          "title": "请教三心，关于你提到的止损点39",
+          "published_at": "2026-11-21 10:00:00"
+        },
+        "reply_count": 1,
+        "replies": [
+          {
+            "post_id": "126166",
+            "author": "consist26",
+            "title": "难处就在：一定要懂TA，这段时间玩leverage要盯盘，还要守纪律才行！",
+            "depth": 6,
+            "in_reply_to": "126162",
+            "body_bytes": 0,
+            "published_at": "2026-11-21 10:52:00"
+          }
+        ],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-22T02:32:52Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-22T01:41:40+00:00",
+      "publication_lag_hours": 13.2,
+      "content_sha256": "5d90333fbdda26dfce02156c4a841501989de198481a4c076d6e5012ac450f40",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "031cfb55eec2aa5a52d2",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "bogbog",
+      "published_at": "2026-11-21 07:17:00",
+      "title": "I’m not convinced this is the beginning of a bear market,",
+      "url": "https://bbs.wenxuecity.com/cfzh/126091.html",
+      "excerpt": "I’m not convinced this is the beginning of a bear market,\n看一下corporate profit, 一直在增长。\n至于bubble, 看一下很多股跌了有70-80%， bubble already burst for plenty, 还是bubble吗？\n而且本来中期选举就常有10-20%的调整，再加一般新Fed chair 12%的调整。 七月份就讨论过。当时还说过，如果历史重复， 从那时算起应该还有1.5年牛市， 中期选举的调整是正常调整。\n![](images/126091_1.jpg)",
+      "content_chars": 278,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "126091",
+      "parent_post_id": "126080",
+      "attribution_fallback": null,
+      "thread_context": {
+        "root_post_id": "126076",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "126080",
+          "author": "Lazymm",
+          "title": "谢谢分享。我对AI基建的理解是要给用了几十年的data centers和系统们来个完全的更新换代，但投资风险的确要防范",
+          "published_at": "2026-11-21 06:42:00"
+        },
+        "reply_count": 7,
+        "replies": [
+          {
+            "post_id": "126095",
+            "author": "SGZ",
+            "title": "分析得好！",
+            "depth": 3,
+            "in_reply_to": "126091",
+            "body_bytes": 0,
+            "published_at": "2026-11-21 07:34:00"
+          },
+          {
+            "post_id": "126097",
+            "author": "江南雨",
+            "title": "+100! 市场的自我调节功能还在是好事情，不过有些人担心害怕也是可以理解, 过个10年20年就见多不怪了 。。。：)",
+            "depth": 3,
+            "in_reply_to": "126091",
+            "body_bytes": 0,
+            "published_at": "2026-11-21 07:36:00"
+          },
+          {
+            "post_id": "126100",
+            "author": "Lazymm",
+            "title": "对，我看到的二十年计的大图里还在上升中，目前这个2022起的中期牛市走了满4年。",
+            "depth": 3,
+            "in_reply_to": "126091",
+            "body_bytes": 364,
+            "published_at": "2026-11-21 07:42:00"
+          },
+          {
+            "post_id": "126102",
+            "author": "Harp",
+            "title": "同意，上周四五的两天大跌就是针对Fed的了，下个月如果不急着加0.5，这个情绪应该就能过去了",
+            "depth": 3,
+            "in_reply_to": "126091",
+            "body_bytes": 0,
+            "published_at": "2026-11-21 07:45:00"
+          },
+          {
+            "post_id": "126112",
+            "author": "wuwei2050",
+            "title": "半导体已在熊市了，科技股已经站在了熊市门口，就看大盘是否过来？目前至少有50%陷入熊市的可能，",
+            "depth": 3,
+            "in_reply_to": "126091",
+            "body_bytes": 0,
+            "published_at": "2026-11-21 08:18:00"
+          },
+          {
+            "post_id": "126116",
+            "author": "huahuaflower",
+            "title": "相信Bog MM的分析",
+            "depth": 3,
+            "in_reply_to": "126091",
+            "body_bytes": 0,
+            "published_at": "2026-11-21 08:35:00"
+          },
+          {
+            "post_id": "126147",
+            "author": "jingke",
+            "title": "Bogbog MM 2022年的时候预判到熊市的开始没有？",
+            "depth": 3,
+            "in_reply_to": "126091",
+            "body_bytes": 0,
+            "published_at": "2026-11-21 09:27:00"
+          }
+        ],
+        "replies_with_body": 1
+      },
+      "captured_at": "2026-11-22T02:32:52Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "body_exported",
+      "owner_export_retrieved_at": "2026-11-22T01:41:40+00:00",
+      "publication_lag_hours": 16.7,
+      "content_sha256": "e0ebdda921a37a935a348ce1fd45f4b01e8204e0e582fd89e7ee5459c8d5f424",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "fc1c4205c4cf0d81fb06",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "bogbog",
+      "published_at": "2026-11-21 08:45:00",
+      "title": "我个人认为半导体只是涨的太快太多，这次的调整是好事，也是正常的。",
+      "url": "https://bbs.wenxuecity.com/cfzh/126120.html",
+      "excerpt": "我个人认为半导体只是涨的太快太多，这次的调整是好事，也是正常的。",
+      "content_chars": 32,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "126120",
+      "parent_post_id": "126112",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "126076",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "126112",
+          "author": "wuwei2050",
+          "title": "半导体已在熊市了，科技股已经站在了熊市门口，就看大盘是否过来？目前至少有50%陷入熊市的可能，",
+          "published_at": "2026-11-21 08:18:00"
+        },
+        "reply_count": 2,
+        "replies": [
+          {
+            "post_id": "126123",
+            "author": "小松松",
+            "title": "从4 月初到6 月那个涨法不出事才怪，当初有多欢乐今天就有多堵心。每次泡沫破裂前都有大狂欢，下次",
+            "depth": 5,
+            "in_reply_to": "126120",
+            "body_bytes": 99,
+            "published_at": "2026-11-21 08:50:00"
+          },
+          {
+            "post_id": "126128",
+            "author": "wuwei2050",
+            "title": "现在是半导体拉动科技股，科技股又拉动大盘，如果",
+            "depth": 5,
+            "in_reply_to": "126120",
+            "body_bytes": 0,
+            "published_at": "2026-11-21 08:57:00"
+          }
+        ],
+        "replies_with_body": 1
+      },
+      "captured_at": "2026-11-22T02:32:52Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-22T01:41:40+00:00",
+      "publication_lag_hours": 15.2,
+      "content_sha256": "c883af47eadd7d4deb9f2cca9866660bfefa0d1e45e9b4827629780ddfc308b8",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "ccbfe4eb1b6fefe7a72f",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "bogbog",
+      "published_at": "2026-11-21 09:01:00",
+      "title": "每次洗盘其实都差不多， 大跌时洗掉那些一反弹就跑的人，",
+      "url": "https://bbs.wenxuecity.com/cfzh/126131.html",
+      "excerpt": "每次洗盘其实都差不多， 大跌时洗掉那些一反弹就跑的人，\n然后开始暴涨了，很多人冲进来，加了很多杠杠， 就会来个大调整清洗杠杆。",
+      "content_chars": 63,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "126131",
+      "parent_post_id": "126123",
+      "attribution_fallback": null,
+      "thread_context": {
+        "root_post_id": "126076",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "126123",
+          "author": "小松松",
+          "title": "从4 月初到6 月那个涨法不出事才怪，当初有多欢乐今天就有多堵心。每次泡沫破裂前都有大狂欢，下次",
+          "published_at": "2026-11-21 08:50:00"
+        },
+        "reply_count": 2,
+        "replies": [
+          {
+            "post_id": "126140",
+            "author": "小松松",
+            "title": "历史在不断地重复",
+            "depth": 7,
+            "in_reply_to": "126131",
+            "body_bytes": 0,
+            "published_at": "2026-11-21 09:06:00"
+          },
+          {
+            "post_id": "126154",
+            "author": "Blueview2026",
+            "title": "我在想。如果Jensen 3 个月以后还有回来的可能。现在应该握住NVDA的股票不动。否则又要买在$170了。",
+            "depth": 7,
+            "in_reply_to": "126131",
+            "body_bytes": 0,
+            "published_at": "2026-11-21 10:08:00"
+          }
+        ],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-22T02:32:52Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "body_exported",
+      "owner_export_retrieved_at": "2026-11-22T01:41:40+00:00",
+      "publication_lag_hours": 15.0,
+      "content_sha256": "3ada5fe3f02bbd7c6df567a28155611294625cdd4c056badf26f09a8498ca594",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "4e0c3538bc8498013df4",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-21 07:59:00",
+      "title": "熊市，牛市，泡沫，恐慌—- 股市里永恒的话题：）",
+      "url": "https://bbs.wenxuecity.com/cfzh/126109.html",
+      "excerpt": "熊市，牛市，泡沫，恐慌—- 股市里永恒的话题：）",
+      "content_chars": 24,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "126109",
+      "parent_post_id": "126076",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "126076",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "126076",
+          "author": "扫地僧人",
+          "title": "AI 这个大泡沫其实大家都心知肚明，只是不愿面对。我8月底空的NBIS周五收盘后平仓了，算是对这段时间一个了结",
+          "published_at": "2026-11-21 05:12:00"
+        },
+        "reply_count": 2,
+        "replies": [
+          {
+            "post_id": "126110",
+            "author": "三心三意",
+            "title": "牛市也好，熊市也好，还是那句话：投资里唯一有用的就是自己的买入和卖出价。管理好仓位才是最重要的策略",
+            "depth": 2,
+            "in_reply_to": "126109",
+            "body_bytes": 0,
+            "published_at": "2026-11-21 08:01:00"
+          },
+          {
+            "post_id": "126124",
+            "author": "南京姑娘",
+            "title": "就是熊市也没关系。如果2009你买了股票，现在是不是还在数钱？股票不好做，但是你不买股票肯定亏，",
+            "depth": 2,
+            "in_reply_to": "126109",
+            "body_bytes": 111,
+            "published_at": "2026-11-21 08:51:00"
+          }
+        ],
+        "replies_with_body": 1
+      },
+      "captured_at": "2026-11-22T02:32:52Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-22T01:41:40+00:00",
+      "publication_lag_hours": 16.0,
+      "content_sha256": "7e0b384765df89e5356cf06cf651442dcfc155159dc8f46e8f8386730eb4170c",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "15e3aa50ad0c1fa33ca5",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-21 08:01:00",
+      "title": "牛市也好，熊市也好，还是那句话：投资里唯一有用的就是自己的买入和卖出价。管理好仓位才是最重要的策略",
+      "url": "https://bbs.wenxuecity.com/cfzh/126110.html",
+      "excerpt": "牛市也好，熊市也好，还是那句话：投资里唯一有用的就是自己的买入和卖出价。管理好仓位才是最重要的策略",
+      "content_chars": 49,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "126110",
+      "parent_post_id": "126109",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "126076",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "126109",
+          "author": "三心三意",
+          "title": "熊市，牛市，泡沫，恐慌—- 股市里永恒的话题：）",
+          "published_at": "2026-11-21 07:59:00"
+        },
+        "reply_count": 2,
+        "replies": [
+          {
+            "post_id": "126117",
+            "author": "三心三意",
+            "title": "牛市里，如果一个人不断买在FOMO，一样亏钱。熊市里，一个人能在合理价位拿到优质股。最后一样3x-5x",
+            "depth": 3,
+            "in_reply_to": "126110",
+            "body_bytes": 0,
+            "published_at": "2026-11-21 08:35:00"
+          },
+          {
+            "post_id": "126126",
+            "author": "huahuaflower",
+            "title": "太对了 就是太急 抄底太早断粮了 以后要有纪律的抄 哈哈哈",
+            "depth": 3,
+            "in_reply_to": "126110",
+            "body_bytes": 0,
+            "published_at": "2026-11-21 08:54:00"
+          }
+        ],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-22T02:32:52Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-22T01:41:40+00:00",
+      "publication_lag_hours": 16.0,
+      "content_sha256": "5319d3ad61c843cc1248d9e7103158a4fb758bcf41b5a315070ba80a458ce233",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "63580916a49307aade3c",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-21 08:35:00",
+      "title": "牛市里，如果一个人不断买在FOMO，一样亏钱。熊市里，一个人能在合理价位拿到优质股。最后一样3x-5x",
+      "url": "https://bbs.wenxuecity.com/cfzh/126117.html",
+      "excerpt": "牛市里，如果一个人不断买在FOMO，一样亏钱。熊市里，一个人能在合理价位拿到优质股。最后一样3x-5x",
+      "content_chars": 51,
+      "images_count": 0,
+      "themes_hint": [
+        "失败复盘"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "126117",
+      "parent_post_id": "126110",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "126076",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "126110",
+          "author": "三心三意",
+          "title": "牛市也好，熊市也好，还是那句话：投资里唯一有用的就是自己的买入和卖出价。管理好仓位才是最重要的策略",
+          "published_at": "2026-11-21 08:01:00"
+        },
+        "reply_count": 1,
+        "replies": [
+          {
+            "post_id": "126122",
+            "author": "bogbog",
+            "title": "其实熊市才是大富的机会,",
+            "depth": 4,
+            "in_reply_to": "126117",
+            "body_bytes": 81,
+            "published_at": "2026-11-21 08:49:00"
+          }
+        ],
+        "replies_with_body": 1
+      },
+      "captured_at": "2026-11-22T02:32:52Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-22T01:41:40+00:00",
+      "publication_lag_hours": 15.4,
+      "content_sha256": "431a82281b4d474e4a03117fe94a319cadfe5b60f7f70971d63a33233de70247",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "0d2caa78d6ef3581a6ba",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "bogbog",
+      "published_at": "2026-11-21 08:49:00",
+      "title": "其实熊市才是大富的机会,",
+      "url": "https://bbs.wenxuecity.com/cfzh/126122.html",
+      "excerpt": "其实熊市才是大富的机会,\n![](images/126122_1.jpg)",
+      "content_chars": 37,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "126122",
+      "parent_post_id": "126117",
+      "attribution_fallback": null,
+      "thread_context": {
+        "root_post_id": "126076",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "126117",
+          "author": "三心三意",
+          "title": "牛市里，如果一个人不断买在FOMO，一样亏钱。熊市里，一个人能在合理价位拿到优质股。最后一样3x-5x",
+          "published_at": "2026-11-21 08:35:00"
+        },
+        "reply_count": 0,
+        "replies": [],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-22T02:32:52Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "body_exported",
+      "owner_export_retrieved_at": "2026-11-22T01:41:40+00:00",
+      "publication_lag_hours": 15.2,
+      "content_sha256": "66205eccd3b475e1e9c9f42b7e1b678236c2a91f5c0af1c44a277aec4c14116e",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "afa8eea1b05d6c9595c4",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "bogbog",
+      "published_at": "2026-11-21 09:05:00",
+      "title": "其实也还好， 给多点时间，只要没有判断错标的， over time, it will be fine.",
+      "url": "https://bbs.wenxuecity.com/cfzh/126138.html",
+      "excerpt": "其实也还好， 给多点时间，只要没有判断错标的， over time, it will be fine.",
+      "content_chars": 51,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [
+        "BE"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "126138",
+      "parent_post_id": "126126",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "126076",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "126126",
+          "author": "huahuaflower",
+          "title": "太对了 就是太急 抄底太早断粮了 以后要有纪律的抄 哈哈哈",
+          "published_at": "2026-11-21 08:54:00"
+        },
+        "reply_count": 0,
+        "replies": [],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-22T02:32:52Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-22T01:41:40+00:00",
+      "publication_lag_hours": 14.9,
+      "content_sha256": "fa8112d43242aebb77fd8284b3bcc090989f350f630ef83c0644ea6448fbb324",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "210834c06107820a9bcc",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-21 09:04:00",
+      "title": "我建议你还是多看看。这个坛子里藏龙卧虎，比如说opst兄就是少见的期权高手",
+      "url": "https://bbs.wenxuecity.com/cfzh/126136.html",
+      "excerpt": "我建议你还是多看看。这个坛子里藏龙卧虎，比如说opst兄就是少见的期权高手",
+      "content_chars": 37,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "126136",
+      "parent_post_id": "126132",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "126076",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "126132",
+          "author": "wuwei2050",
+          "title": "坛子里单边选手比较多，就是买长线，只做Call,不做put或者shut",
+          "published_at": "2026-11-21 09:01:00"
+        },
+        "reply_count": 2,
+        "replies": [
+          {
+            "post_id": "126141",
+            "author": "三心三意",
+            "title": "还有，在这个坛子上，我们提倡的是说出自己的实际策略（比如均线兄和BogMM就是这样的）",
+            "depth": 5,
+            "in_reply_to": "126136",
+            "body_bytes": 0,
+            "published_at": "2026-11-21 09:06:00"
+          },
+          {
+            "post_id": "126145",
+            "author": "wuwei2050",
+            "title": "一般是少数，在别的地方也是这样",
+            "depth": 5,
+            "in_reply_to": "126136",
+            "body_bytes": 0,
+            "published_at": "2026-11-21 09:18:00"
+          }
+        ],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-22T02:32:52Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-22T01:41:40+00:00",
+      "publication_lag_hours": 14.9,
+      "content_sha256": "6db0503fb03ef51f9e5d73816ef565119111640b5a6524b4d48670b7438d8009",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "8f67534ffb6b17f21707",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-21 09:06:00",
+      "title": "还有，在这个坛子上，我们提倡的是说出自己的实际策略（比如均线兄和BogMM就是这样的）",
+      "url": "https://bbs.wenxuecity.com/cfzh/126141.html",
+      "excerpt": "还有，在这个坛子上，我们提倡的是说出自己的实际策略（比如均线兄和BogMM就是这样的）",
+      "content_chars": 43,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "126141",
+      "parent_post_id": "126136",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "126076",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "126136",
+          "author": "三心三意",
+          "title": "我建议你还是多看看。这个坛子里藏龙卧虎，比如说opst兄就是少见的期权高手",
+          "published_at": "2026-11-21 09:04:00"
+        },
+        "reply_count": 1,
+        "replies": [
+          {
+            "post_id": "126146",
+            "author": "wuwei2050",
+            "title": "还没想好，先向大家学习一下",
+            "depth": 6,
+            "in_reply_to": "126141",
+            "body_bytes": 0,
+            "published_at": "2026-11-21 09:20:00"
+          }
+        ],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-22T02:32:52Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-22T01:41:40+00:00",
+      "publication_lag_hours": 14.9,
+      "content_sha256": "191643e1a284454f7e7d6c2eb6ccecbcec60fe3a0f1f2952d6e8208cdfac7044",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "d150f3294acc300864ed",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "dindindon",
+      "published_at": "2026-11-21 09:05:00",
+      "title": "11/21 宏观复盘 - 简单的延伸讨论",
+      "url": "https://bbs.wenxuecity.com/cfzh/126137.html",
+      "excerpt": "11/21 宏观复盘 - 简单的延伸讨论\n11/20\n宏观复盘 2026-11-20 08:06:56\n由於上述帖子是在昨天开盘的时候写的, 现在按照收盘后的情形, 我把有关於标普五百两张图形的部分单独拆开来, 做一个简单的延伸讨论。\n周五的低点6882.66不到位, 个人的看法是, 即使是一个短线的转折点，通常也需要能够维持在一个星期以上才能确认。\n浏览网路上一些评论员的看法, 这一波下跌是流动性资金紧俏的结果, 所以也反映在比特币以及黄金白银的抛售, 英伟达事件只是推波助澜连锁效应。一些比较枯燥又非常专业分析的视频时间太长，我找了相对较短的宋鸿兵评论: -->11/20\n美国货币市场逼近临界点！\n\"\n11月10日高盛利率策略师 Isabella Rosenberg发布报告:\n\"\n准备金已在悬崖边缘”\n![]",
+      "content_chars": 685,
+      "images_count": 0,
+      "themes_hint": [
+        "失败复盘"
+      ],
+      "symbols": [
+        "NVDA"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "126137",
+      "parent_post_id": null,
+      "attribution_fallback": null,
+      "thread_context": {
+        "root_post_id": "126137",
+        "is_reply": false,
+        "in_reply_to": null,
+        "reply_count": 3,
+        "replies": [
+          {
+            "post_id": "126157",
+            "author": "三心三意",
+            "title": "对与我的TA系统， 标普跌下7500就要谨慎了。无法知道熊市是不是一定会来，但那以后所有的交易都应该是波动仓交易",
+            "depth": 1,
+            "in_reply_to": "126137",
+            "body_bytes": 0,
+            "published_at": "2026-11-21 10:31:00"
+          },
+          {
+            "post_id": "126170",
+            "author": "江南雨",
+            "title": "谢谢，谢谢，有太多东西要学 。。。 ：）",
+            "depth": 1,
+            "in_reply_to": "126137",
+            "body_bytes": 0,
+            "published_at": "2026-11-21 11:15:00"
+          },
+          {
+            "post_id": "126181",
+            "author": "snailittle00",
+            "title": "Dindindon mm, 请教如何得出结论“周五的低点6882.66不到位“？似乎是fibonacci 0.618？",
+            "depth": 1,
+            "in_reply_to": "126137",
+            "body_bytes": 77,
+            "published_at": "2026-11-21 12:49:00"
+          }
+        ],
+        "replies_with_body": 1
+      },
+      "captured_at": "2026-11-22T02:32:52Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "body_exported",
+      "owner_export_retrieved_at": "2026-11-22T01:41:40+00:00",
+      "publication_lag_hours": 14.9,
+      "content_sha256": "88e8e38b587aab88ed6378b4fcea1c672181d52334f45cf684ffcb35123f1e36",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "50340e58c596b2b399fc",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-21 10:31:00",
+      "title": "对与我的TA系统， 标普跌下7500就要谨慎了。无法知道熊市是不是一定会来，但那以后所有的交易都应该是波动仓交易",
+      "url": "https://bbs.wenxuecity.com/cfzh/126157.html",
+      "excerpt": "对与我的TA系统， 标普跌下7500就要谨慎了。无法知道熊市是不是一定会来，但那以后所有的交易都应该是波动仓交易",
+      "content_chars": 56,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "126157",
+      "parent_post_id": "126137",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "126137",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "126137",
+          "author": "dindindon",
+          "title": "11/21 宏观复盘 - 简单的延伸讨论",
+          "published_at": "2026-11-21 09:05:00"
+        },
+        "reply_count": 3,
+        "replies": [
+          {
+            "post_id": "126158",
+            "author": "三心三意",
+            "title": "标普有4个月都在7500上方的箱体里晃动，跌破那个箱体，即使不知道后续如何走，也要调整交易策略",
+            "depth": 2,
+            "in_reply_to": "126157",
+            "body_bytes": 0,
+            "published_at": "2026-11-21 10:33:00"
+          },
+          {
+            "post_id": "126173",
+            "author": "小松松",
+            "title": "波动仓具有灵活性，防备万一。比如反弹力度减弱不过均线或波动仓已有10% 以上的盈利，那可以锁利。如果减仓减错了，还可以在",
+            "depth": 2,
+            "in_reply_to": "126157",
+            "body_bytes": 60,
+            "published_at": "2026-11-21 11:29:00"
+          },
+          {
+            "post_id": "126184",
+            "author": "MarkUp",
+            "title": "明白。那看来周五买入的position最好trade而不是core holding。要想一想",
+            "depth": 2,
+            "in_reply_to": "126157",
+            "body_bytes": 0,
+            "published_at": "2026-11-21 12:57:00"
+          }
+        ],
+        "replies_with_body": 1
+      },
+      "captured_at": "2026-11-22T02:32:52Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-22T01:41:40+00:00",
+      "publication_lag_hours": 13.5,
+      "content_sha256": "bf6c2ee83256c9eeba62a182b98aba294c4152fdc3ad82b34f1881e5a8df8f20",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "e0adc54a4bd6f56239f6",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-21 10:33:00",
+      "title": "标普有4个月都在7500上方的箱体里晃动，跌破那个箱体，即使不知道后续如何走，也要调整交易策略",
+      "url": "https://bbs.wenxuecity.com/cfzh/126158.html",
+      "excerpt": "标普有4个月都在7500上方的箱体里晃动，跌破那个箱体，即使不知道后续如何走，也要调整交易策略",
+      "content_chars": 47,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "126158",
+      "parent_post_id": "126157",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "126137",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "126157",
+          "author": "三心三意",
+          "title": "对与我的TA系统， 标普跌下7500就要谨慎了。无法知道熊市是不是一定会来，但那以后所有的交易都应该是波动仓交易",
+          "published_at": "2026-11-21 10:31:00"
+        },
+        "reply_count": 0,
+        "replies": [],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-22T02:32:52Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-22T01:41:40+00:00",
+      "publication_lag_hours": 13.4,
+      "content_sha256": "038b4c80ccb61bbf0a083d1b2f509ff47a8956cf3525443b89fc5de0fa0db38f",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "203a88b52c7b5aee6ba9",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-21 13:29:00",
+      "title": "这个自己要决定。我只是说标普跌下7500后，我自己的交易总方向就是波动仓：反复试探买入，不去死磕恋战，有盈利就拿",
+      "url": "https://bbs.wenxuecity.com/cfzh/126192.html",
+      "excerpt": "这个自己要决定。我只是说标普跌下7500后，我自己的交易总方向就是波动仓：反复试探买入，不去死磕恋战，有盈利就拿",
+      "content_chars": 56,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [
+        {
+          "symbol": "VOO",
+          "stance": "buy",
+          "stance_cues": [
+            "buy"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "16e349215a2c308d5fb19b1dea0598a98f3a6e5b441a4d39f2a78181ebe17189",
+          "evidence_chars": 48
+        }
+      ],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "126192",
+      "parent_post_id": "126184",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "126137",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "126184",
+          "author": "MarkUp",
+          "title": "明白。那看来周五买入的position最好trade而不是core holding。要想一想",
+          "published_at": "2026-11-21 12:57:00"
+        },
+        "reply_count": 1,
+        "replies": [
+          {
+            "post_id": "126215",
+            "author": "MarkUp",
+            "title": "好谢谢。接下来还是看市场是盘整，走熊，还是回牛，制定相对策略",
+            "depth": 4,
+            "in_reply_to": "126192",
+            "body_bytes": 0,
+            "published_at": "2026-11-21 16:16:00"
+          }
+        ],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-22T02:32:52Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-22T01:41:40+00:00",
+      "publication_lag_hours": 10.5,
+      "content_sha256": "009d3749e68b45e89f5aeb863cdd1f772c58c1ff3608ee59aaee73bf31c5dd79",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "e75f180cecd1b76fb5c8",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "dindindon",
+      "published_at": "2026-11-21 13:04:00",
+      "title": "没有到位的意思是周五的低点与图中列出的那些常见点偏差过多。不论是反弹或继续下行, 需要时间，才能知道真正的转折点。",
+      "url": "https://bbs.wenxuecity.com/cfzh/126185.html",
+      "excerpt": "没有到位的意思是周五的低点与图中列出的那些常见点偏差过多。不论是反弹或继续下行, 需要时间，才能知道真正的转折点。",
+      "content_chars": 57,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "126185",
+      "parent_post_id": "126181",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "126137",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "126181",
+          "author": "snailittle00",
+          "title": "Dindindon mm, 请教如何得出结论“周五的低点6882.66不到位“？似乎是fibonacci 0.618？",
+          "published_at": "2026-11-21 12:49:00"
+        },
+        "reply_count": 0,
+        "replies": [],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-22T02:32:52Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-22T01:41:40+00:00",
+      "publication_lag_hours": 10.9,
+      "content_sha256": "94384588457d3423671749c227d987440481fdcc2ab35a08948f79d6190b3438",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "cd5ce874ad09d113412a",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "dindindon",
+      "published_at": "2026-11-21 12:42:00",
+      "title": "言多必失，删除",
+      "url": "https://bbs.wenxuecity.com/cfzh/126180.html",
+      "excerpt": "言多必失，删除",
+      "content_chars": 7,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "126180",
+      "parent_post_id": "126177",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "126171",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "126177",
+          "author": "Power-US26",
+          "title": "同意，比特币反转是个很积极的现象。",
+          "published_at": "2026-11-21 12:27:00"
+        },
+        "reply_count": 1,
+        "replies": [
+          {
+            "post_id": "126187",
+            "author": "小松松",
+            "title": "2023 年比特币比大盘晚一个月反转，11 月见底，今年如果也是这个版本，比特币应该在12 月见底反转",
+            "depth": 3,
+            "in_reply_to": "126180",
+            "body_bytes": 0,
+            "published_at": "2026-11-21 13:09:00"
+          }
+        ],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-22T02:32:52Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-22T01:41:40+00:00",
+      "publication_lag_hours": 11.3,
+      "content_sha256": "984339d15c6a042d3d21cfcdd4fd6924b8586aebda39750de0b8b0fa12aee159",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "103c319bf4bdeed1e912",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "dindindon",
+      "published_at": "2026-11-21 13:18:00",
+      "title": "分析师的看法很分歧。超级大熊特别多。目前尘埃还没有落定。走一步看一步吧。",
+      "url": "https://bbs.wenxuecity.com/cfzh/126188.html",
+      "excerpt": "分析师的看法很分歧。超级大熊特别多。目前尘埃还没有落定。走一步看一步吧。",
+      "content_chars": 36,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "126188",
+      "parent_post_id": "126187",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "126171",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "126187",
+          "author": "小松松",
+          "title": "2023 年比特币比大盘晚一个月反转，11 月见底，今年如果也是这个版本，比特币应该在12 月见底反转",
+          "published_at": "2026-11-21 13:09:00"
+        },
+        "reply_count": 2,
+        "replies": [
+          {
+            "post_id": "126194",
+            "author": "GreenCheng",
+            "title": "如果四年周期还有效的话，现在应该是底部区域了。",
+            "depth": 5,
+            "in_reply_to": "126188",
+            "body_bytes": 0,
+            "published_at": "2026-11-21 13:35:00"
+          },
+          {
+            "post_id": "126195",
+            "author": "小松松",
+            "title": "嗯嗯，是的。最近币圈非常悲观，主要和AI导致的安全问题有关，币安又出了那么大的事。即使对比特币有",
+            "depth": 5,
+            "in_reply_to": "126188",
+            "body_bytes": 45,
+            "published_at": "2026-11-21 13:39:00"
+          }
+        ],
+        "replies_with_body": 1
+      },
+      "captured_at": "2026-11-22T02:32:52Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-22T01:41:40+00:00",
+      "publication_lag_hours": 10.7,
+      "content_sha256": "e4d323097c320dd88fd5c55ebf43c1f364c09eec62caf5f3f83a506f750cb666",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "7e18d279a804ea2bc8cb",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "dindindon",
+      "published_at": "2026-11-21 12:25:00",
+      "title": "124.06-123.61是一个支撑区",
+      "url": "https://bbs.wenxuecity.com/cfzh/126176.html",
+      "excerpt": "124.06-123.61是一个支撑区\n11/18\n英伟达 结尾 - 价位结构看起来仍有探底/创出新低的可能, 除非价格能够在周收盘的基础上明显站上169.63-171.12。\n11/21 受消息面的剧烈震动, 大部分的技术指标都失灵, 只有这些常见比例点给出大概的轮廓。目前指向124.06-123.61是一个支撑区。如果跌破0.866/107.62，那么见两位数的可能性就会大增。英伟达的基本面财务状况后续发展盘根错节, 超过我能够理解的范围, 不好评论。宏观的看法与马斯克的space X/特斯拉相同，也就是会遭遇到大环境的逐渐weakening,deteriorating。\n![](images/126176_1.jpg)",
+      "content_chars": 316,
+      "images_count": 0,
+      "themes_hint": [
+        "TSLA"
+      ],
+      "symbols": [
+        "TSLA",
+        "NVDA"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "126176",
+      "parent_post_id": "126174",
+      "attribution_fallback": null,
+      "thread_context": {
+        "root_post_id": "126174",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "126174",
+          "author": "cnrhm2017",
+          "title": "bog bog和3心： 我记得前几天你们说nvda会到125附近",
+          "published_at": "2026-11-21 11:30:00"
+        },
+        "reply_count": 1,
+        "replies": [
+          {
+            "post_id": "126182",
+            "author": "cnrhm2017",
+            "title": "好图，但是61.8%才是通常最有效的吧？",
+            "depth": 2,
+            "in_reply_to": "126176",
+            "body_bytes": 211,
+            "published_at": "2026-11-21 12:49:00"
+          }
+        ],
+        "replies_with_body": 1
+      },
+      "captured_at": "2026-11-22T02:32:52Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "body_exported",
+      "owner_export_retrieved_at": "2026-11-22T01:41:40+00:00",
+      "publication_lag_hours": 11.6,
+      "content_sha256": "9efa757fca3a961d12a9ca41957b15552b246463604c903fe69452de89d7a787",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "75e1ac0a92c2c1565716",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-21 13:20:00",
+      "title": "具体的比较复杂，在坛中说不清楚。但120-130附近是25年的GAP，也是从解放日上涨回撤的0.786附近",
+      "url": "https://bbs.wenxuecity.com/cfzh/126189.html",
+      "excerpt": "具体的比较复杂，在坛中说不清楚。但120-130附近是25年的GAP，也是从解放日上涨回撤的0.786附近",
+      "content_chars": 53,
+      "images_count": 0,
+      "themes_hint": [
+        "风险管理"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "126189",
+      "parent_post_id": "126174",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "126174",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "126174",
+          "author": "cnrhm2017",
+          "title": "bog bog和3心： 我记得前几天你们说nvda会到125附近",
+          "published_at": "2026-11-21 11:30:00"
+        },
+        "reply_count": 2,
+        "replies": [
+          {
+            "post_id": "126190",
+            "author": "三心三意",
+            "title": "一般来说，如果英伟达在今后1-2年还要维持ChatGPT 以来的上涨总趋势，120-130区间最好不要失去。",
+            "depth": 2,
+            "in_reply_to": "126189",
+            "body_bytes": 0,
+            "published_at": "2026-11-21 13:22:00"
+          },
+          {
+            "post_id": "126191",
+            "author": "三心三意",
+            "title": "这并不排除Panic sell and flush down to 115, 但如果机构要撑住英伟达，这里就是防线：）",
+            "depth": 2,
+            "in_reply_to": "126189",
+            "body_bytes": 0,
+            "published_at": "2026-11-21 13:23:00"
+          }
+        ],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-22T02:32:52Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-22T01:41:40+00:00",
+      "publication_lag_hours": 10.7,
+      "content_sha256": "3ac58875810c21f01ee515febe5c6efd9c67645375e9662d91ab78f0e54dbbb6",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "b68e46d53d5eb9f240b9",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-21 13:22:00",
+      "title": "一般来说，如果英伟达在今后1-2年还要维持ChatGPT 以来的上涨总趋势，120-130区间最好不要失去。",
+      "url": "https://bbs.wenxuecity.com/cfzh/126190.html",
+      "excerpt": "一般来说，如果英伟达在今后1-2年还要维持ChatGPT 以来的上涨总趋势，120-130区间最好不要失去。",
+      "content_chars": 54,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [
+        "NVDA"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "126190",
+      "parent_post_id": "126189",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "126174",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "126189",
+          "author": "三心三意",
+          "title": "具体的比较复杂，在坛中说不清楚。但120-130附近是25年的GAP，也是从解放日上涨回撤的0.786附近",
+          "published_at": "2026-11-21 13:20:00"
+        },
+        "reply_count": 1,
+        "replies": [
+          {
+            "post_id": "126201",
+            "author": "cnrhm2017",
+            "title": "好的，虽然还不太明白你说的",
+            "depth": 3,
+            "in_reply_to": "126190",
+            "body_bytes": 0,
+            "published_at": "2026-11-21 14:44:00"
+          }
+        ],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-22T02:32:52Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-22T01:41:40+00:00",
+      "publication_lag_hours": 10.6,
+      "content_sha256": "1533b07c9114b6ecfea5486191b7e3483940026b96f8b42463aab5495cbd623a",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "07eef87ad597e20ec76f",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-21 13:23:00",
+      "title": "这并不排除Panic sell and flush down to 115, 但如果机构要撑住英伟达，这里就是防线：）",
+      "url": "https://bbs.wenxuecity.com/cfzh/126191.html",
+      "excerpt": "这并不排除Panic sell and flush down to 115, 但如果机构要撑住英伟达，这里就是防线：）",
+      "content_chars": 59,
+      "images_count": 0,
+      "themes_hint": [
+        "逆向交易"
+      ],
+      "symbols": [
+        "NVDA"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [
+        {
+          "symbol": "NVDA",
+          "stance": "sell",
+          "stance_cues": [
+            "sell"
+          ],
+          "horizon": null,
+          "conditional": true,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "0b86f6381bfa1df81b1b07dfb3b158fc6c9fd6f4963dfe827ad4e11de4cacec8",
+          "evidence_chars": 59
+        }
+      ],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "126191",
+      "parent_post_id": "126189",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "126174",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "126189",
+          "author": "三心三意",
+          "title": "具体的比较复杂，在坛中说不清楚。但120-130附近是25年的GAP，也是从解放日上涨回撤的0.786附近",
+          "published_at": "2026-11-21 13:20:00"
+        },
+        "reply_count": 0,
+        "replies": [],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-22T02:32:52Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-22T01:41:40+00:00",
+      "publication_lag_hours": 10.6,
+      "content_sha256": "0b86f6381bfa1df81b1b07dfb3b158fc6c9fd6f4963dfe827ad4e11de4cacec8",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "9194964a5ef6b38fd03d",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-21 13:08:00",
+      "title": "上班没有时间可以定投啊。现在QQQdown 20%, 是定投的绝好起点",
+      "url": "https://bbs.wenxuecity.com/cfzh/126186.html",
+      "excerpt": "上班没有时间可以定投啊。现在QQQdown 20%, 是定投的绝好起点",
+      "content_chars": 35,
+      "images_count": 0,
+      "themes_hint": [
+        "长期持有纪律"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "126186",
+      "parent_post_id": "126179",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "126179",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "126179",
+          "author": "Power-US26",
+          "title": "炒股的诀窍如果是要靠跑得快，那是BS。上班的人根本做不到，",
+          "published_at": "2026-11-21 12:39:00"
+        },
+        "reply_count": 1,
+        "replies": [
+          {
+            "post_id": "126199",
+            "author": "Power-US26",
+            "title": "是的，只能定投。每年能挣点零花钱就很好了。",
+            "depth": 2,
+            "in_reply_to": "126186",
+            "body_bytes": 0,
+            "published_at": "2026-11-21 14:18:00"
+          }
+        ],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-22T02:32:53Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-22T01:41:40+00:00",
+      "publication_lag_hours": 10.9,
+      "content_sha256": "646c5e93ea8c80624d67e4c15a15dc781c6c4d789246afa049ef1181aa3e67af",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "c43765869f7b59f0b124",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "低手只会用均线",
+      "published_at": "2026-11-21 14:47:00",
+      "title": "如果只看QQQ, 到目前为止只是2025年初的翻版",
+      "url": "https://bbs.wenxuecity.com/cfzh/126202.html",
+      "excerpt": "如果只看QQQ, 到目前为止只是2025年初的翻版\n2025年初, QQQ突破前高失败然后下跌了25%. 之后, 又开启了一波上涨行情.\n这次, QQQ突破前高失败, 到目前为止下跌了20%, 下跌幅度比2025年初还稍小.\n大市大跌提供赚大钱的机会. 我特别敬重那些FA好的人(内功深厚的高手). 他们可以找出被市场错杀的好公司然后逢低买入赚大钱. 我没水平只能逢低买入SPY/QQQ.\n![](images/126202_1.jpg)\n我现在重点观察QQQ下面几个方面\n1. 待在40周200天线之下的时间长短.\n2. 回踩40周200天线能否突破.\n3. 突破能否再创新高.\n上述问题的答案决定后市是否是什么什么.",
+      "content_chars": 310,
+      "images_count": 0,
+      "themes_hint": [
+        "失败复盘",
+        "趋势确认"
+      ],
+      "symbols": [
+        "SPY",
+        "QQQ"
+      ],
+      "operations": [
+        {
+          "symbols": [
+            "SPY",
+            "QQQ"
+          ],
+          "actions": [
+            "buy"
+          ],
+          "attribution": "unconfirmed_author_context",
+          "attribution_confidence": "needs_review"
+        }
+      ],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [
+        {
+          "symbol": "SPY",
+          "stance": "buy",
+          "stance_cues": [
+            "buy"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "487c5ac2eafd8c0e50fa1c88c0e2e51f0b1daa988dedc0cd137a44d5b95916d7",
+          "evidence_chars": 18
+        },
+        {
+          "symbol": "QQQ",
+          "stance": "buy",
+          "stance_cues": [
+            "buy"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "487c5ac2eafd8c0e50fa1c88c0e2e51f0b1daa988dedc0cd137a44d5b95916d7",
+          "evidence_chars": 18
+        }
+      ],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "126202",
+      "parent_post_id": null,
+      "attribution_fallback": null,
+      "thread_context": {
+        "root_post_id": "126202",
+        "is_reply": false,
+        "in_reply_to": null,
+        "reply_count": 5,
+        "replies": [
+          {
+            "post_id": "126204",
+            "author": "Lazymm",
+            "title": "谢谢均线在大跌的时候分享您研究的TA。看您的帖子很久了，TA高手，按您的策略其实很稳健风险可控，佩服",
+            "depth": 1,
+            "in_reply_to": "126202",
+            "body_bytes": 0,
+            "published_at": "2026-11-21 15:11:00"
+          },
+          {
+            "post_id": "126206",
+            "author": "江南雨",
+            "title": "讨教一下：是不是可以在熊市时买QQQ， 在牛市时买VGT？ 前者比较多样化，比较安全；后者比较集中在动能股，但毕竟风险？",
+            "depth": 1,
+            "in_reply_to": "126202",
+            "body_bytes": 81,
+            "published_at": "2026-11-21 15:24:00"
+          },
+          {
+            "post_id": "126207",
+            "author": "简单好",
+            "title": "这次横盘时间长了很多",
+            "depth": 1,
+            "in_reply_to": "126202",
+            "body_bytes": 0,
+            "published_at": "2026-11-21 15:24:00"
+          },
+          {
+            "post_id": "126212",
+            "author": "云起千百度",
+            "title": "均线兄昨天SPY和QQQ都买了吗？",
+            "depth": 1,
+            "in_reply_to": "126202",
+            "body_bytes": 0,
+            "published_at": "2026-11-21 16:05:00"
+          },
+          {
+            "post_id": "126213",
+            "author": "wuwei2050",
+            "title": "注意不同的是：去年老川拼命挺股市，但现在他不挺了",
+            "depth": 1,
+            "in_reply_to": "126202",
+            "body_bytes": 0,
+            "published_at": "2026-11-21 16:07:00"
+          }
+        ],
+        "replies_with_body": 1
+      },
+      "captured_at": "2026-11-22T02:32:53Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "body_exported",
+      "owner_export_retrieved_at": "2026-11-22T01:41:40+00:00",
+      "publication_lag_hours": 9.2,
+      "content_sha256": "09f61f95ef2d67b610100001ab81e64c3f1476f4691d4ff4c7536c71742dde6e",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "33273bc257e83ba2572f",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "低手只会用均线",
+      "published_at": "2026-11-21 15:48:00",
+      "title": "没买过VGT. 如果你想一直待在市场里同时追求更好的回报,",
+      "url": "https://bbs.wenxuecity.com/cfzh/126210.html",
+      "excerpt": "没买过VGT. 如果你想一直待在市场里同时追求更好的回报,\n我以前在投坛曾提到一个策略: 40周线之上卖出QQQ立即换成TQQQ, 之下卖出TQQQ立即换成QQQ.",
+      "content_chars": 82,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [
+        "TQQQ",
+        "VGT",
+        "QQQ"
+      ],
+      "operations": [
+        {
+          "symbols": [
+            "TQQQ",
+            "QQQ"
+          ],
+          "actions": [
+            "sell"
+          ],
+          "attribution": "unconfirmed_author_context",
+          "attribution_confidence": "needs_review"
+        }
+      ],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [
+        {
+          "symbol": "TQQQ",
+          "stance": "sell",
+          "stance_cues": [
+            "sell"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "32eeda9d0e57a625eeddc62334a9bfa235782507a76ec160f638795ff079964b",
+          "evidence_chars": 52
+        },
+        {
+          "symbol": "QQQ",
+          "stance": "sell",
+          "stance_cues": [
+            "sell"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "32eeda9d0e57a625eeddc62334a9bfa235782507a76ec160f638795ff079964b",
+          "evidence_chars": 52
+        }
+      ],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "126210",
+      "parent_post_id": "126206",
+      "attribution_fallback": null,
+      "thread_context": {
+        "root_post_id": "126202",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "126206",
+          "author": "江南雨",
+          "title": "讨教一下：是不是可以在熊市时买QQQ， 在牛市时买VGT？ 前者比较多样化，比较安全；后者比较集中在动能股，但毕竟风险？",
+          "published_at": "2026-11-21 15:24:00"
+        },
+        "reply_count": 2,
+        "replies": [
+          {
+            "post_id": "126211",
+            "author": "江南雨",
+            "title": "喔 。。。听着有道理，一定试试，谢谢！ ：）",
+            "depth": 3,
+            "in_reply_to": "126210",
+            "body_bytes": 0,
+            "published_at": "2026-11-21 15:53:00"
+          },
+          {
+            "post_id": "126228",
+            "author": "SavageGardn7",
+            "title": "谢谢。我也好好想想。",
+            "depth": 3,
+            "in_reply_to": "126210",
+            "body_bytes": 0,
+            "published_at": "2026-11-21 17:19:00"
+          }
+        ],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-22T02:32:53Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "body_exported",
+      "owner_export_retrieved_at": "2026-11-22T01:41:40+00:00",
+      "publication_lag_hours": 8.2,
+      "content_sha256": "3f71de831894d58301509824aeacf78a747d89bd6ee62ef2e5dbbfe4514dc596",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "ad5b0b4624963f695f73",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "低手只会用均线",
+      "published_at": "2026-11-21 16:09:00",
+      "title": "周四晚都买了.",
+      "url": "https://bbs.wenxuecity.com/cfzh/126214.html",
+      "excerpt": "周四晚都买了.",
+      "content_chars": 7,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "126214",
+      "parent_post_id": "126212",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "126202",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "126212",
+          "author": "云起千百度",
+          "title": "均线兄昨天SPY和QQQ都买了吗？",
+          "published_at": "2026-11-21 16:05:00"
+        },
+        "reply_count": 0,
+        "replies": [],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-22T02:32:53Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-22T01:41:40+00:00",
+      "publication_lag_hours": 7.8,
+      "content_sha256": "d4d4c1fad9f009817de24b7fac6a899a032088bd5575e9080b49fcfc3e56089c",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "e39d9c068dd581768a86",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "低手只会用均线",
+      "published_at": "2026-11-21 16:39:00",
+      "title": "所以要盯着后市的发展, 寻求贴中三个问题的答案",
+      "url": "https://bbs.wenxuecity.com/cfzh/126222.html",
+      "excerpt": "所以要盯着后市的发展, 寻求贴中三个问题的答案",
+      "content_chars": 23,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "126222",
+      "parent_post_id": "126213",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "126202",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "126213",
+          "author": "wuwei2050",
+          "title": "注意不同的是：去年老川拼命挺股市，但现在他不挺了",
+          "published_at": "2026-11-21 16:07:00"
+        },
+        "reply_count": 1,
+        "replies": [
+          {
+            "post_id": "126223",
+            "author": "Blueberrydonut",
+            "title": "继续紧盯均线兄的帖子，非常感谢坛子里各位大佬的马前炮",
+            "depth": 3,
+            "in_reply_to": "126222",
+            "body_bytes": 0,
+            "published_at": "2026-11-21 16:53:00"
+          }
+        ],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-22T02:32:53Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-22T01:41:40+00:00",
+      "publication_lag_hours": 7.3,
+      "content_sha256": "ce7cf0c2604c732aa24bd3eda9cc770bf7093da31bd7329e3f6c224ecab530d0",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "9717f5b6ff4ef2176e59",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "低手只会用均线",
+      "published_at": "2026-11-21 16:36:00",
+      "title": "我做交易最怕最担心的时候就是QQQ突破前高的时候.",
+      "url": "https://bbs.wenxuecity.com/cfzh/126220.html",
+      "excerpt": "我做交易最怕最担心的时候就是QQQ突破前高的时候.\n近年来, QQQ每次突破前高失败之后都伴随调整, 包括2022年的大调整. 所以, 每当QQQ突破前高时就紧紧盯着. 一旦有风险就逃(优先卖出个股动能股). 相反, 在QQQ下跌15-20%并且超卖时买入QQQ, 并不担心.",
+      "content_chars": 138,
+      "images_count": 0,
+      "themes_hint": [
+        "风险管理",
+        "失败复盘",
+        "趋势确认"
+      ],
+      "symbols": [
+        "QQQ"
+      ],
+      "operations": [
+        {
+          "symbols": [
+            "QQQ"
+          ],
+          "actions": [
+            "buy",
+            "sell"
+          ],
+          "attribution": "author_action",
+          "attribution_confidence": "high"
+        }
+      ],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [
+        {
+          "symbol": "QQQ",
+          "stance": "buy",
+          "stance_cues": [
+            "buy"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "9e929b9fb75b358d1b9efd4cb04f5e7a5301f836aea0f8f6eefb7a0f15bf9a92",
+          "evidence_chars": 33
+        }
+      ],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "126220",
+      "parent_post_id": null,
+      "attribution_fallback": null,
+      "thread_context": {
+        "root_post_id": "126220",
+        "is_reply": false,
+        "in_reply_to": null,
+        "reply_count": 5,
+        "replies": [
+          {
+            "post_id": "126221",
+            "author": "名校FAN",
+            "title": "嗯，学习啦；",
+            "depth": 1,
+            "in_reply_to": "126220",
+            "body_bytes": 0,
+            "published_at": "2026-11-21 16:38:00"
+          },
+          {
+            "post_id": "126224",
+            "author": "小松松",
+            "title": "记下了。谢谢。",
+            "depth": 1,
+            "in_reply_to": "126220",
+            "body_bytes": 0,
+            "published_at": "2026-11-21 17:08:00"
+          },
+          {
+            "post_id": "126225",
+            "author": "wuwei2050",
+            "title": "谢谢。这种情况下分几次买为最佳？是否买TQQQ？到达上方大的阻力位时是否卖出？",
+            "depth": 1,
+            "in_reply_to": "126220",
+            "body_bytes": 0,
+            "published_at": "2026-11-21 17:09:00"
+          },
+          {
+            "post_id": "126226",
+            "author": "SavageGardn7",
+            "title": "这次不担心recession risk？",
+            "depth": 1,
+            "in_reply_to": "126220",
+            "body_bytes": 0,
+            "published_at": "2026-11-21 17:10:00"
+          },
+          {
+            "post_id": "126231",
+            "author": "dancingpig",
+            "title": "好经验，记住了",
+            "depth": 1,
+            "in_reply_to": "126220",
+            "body_bytes": 0,
+            "published_at": "2026-11-21 17:23:00"
+          }
+        ],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-22T02:32:53Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "body_exported",
+      "owner_export_retrieved_at": "2026-11-22T01:41:40+00:00",
+      "publication_lag_hours": 7.4,
+      "content_sha256": "58c60b55ef68a70d44df585372156c7de74da8e25a18f4b2e78aa3f5ecd06572",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "c66a13300f86ae2c1e5e",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "低手只会用均线",
+      "published_at": "2026-11-21 17:20:00",
+      "title": "我说过多次, 只在上涨行情时买TQQQ和个股",
+      "url": "https://bbs.wenxuecity.com/cfzh/126229.html",
+      "excerpt": "我说过多次, 只在上涨行情时买TQQQ和个股",
+      "content_chars": 22,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [
+        "TQQQ"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [
+        {
+          "symbol": "TQQQ",
+          "stance": "buy",
+          "stance_cues": [
+            "buy"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "58c1bf05d57afd07048086ed7bb03677255d6cfd42a2a717eeb81bfe1f8b64e2",
+          "evidence_chars": 22
+        }
+      ],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "126229",
+      "parent_post_id": "126225",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "126220",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "126225",
+          "author": "wuwei2050",
+          "title": "谢谢。这种情况下分几次买为最佳？是否买TQQQ？到达上方大的阻力位时是否卖出？",
+          "published_at": "2026-11-21 17:09:00"
+        },
+        "reply_count": 1,
+        "replies": [
+          {
+            "post_id": "126233",
+            "author": "wuwei2050",
+            "title": "谢谢！",
+            "depth": 3,
+            "in_reply_to": "126229",
+            "body_bytes": 0,
+            "published_at": "2026-11-21 17:24:00"
+          }
+        ],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-22T02:32:53Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-22T01:41:40+00:00",
+      "publication_lag_hours": 6.7,
+      "content_sha256": "58c1bf05d57afd07048086ed7bb03677255d6cfd42a2a717eeb81bfe1f8b64e2",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "35616612da9fa7da068e",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "低手只会用均线",
+      "published_at": "2026-11-21 17:24:00",
+      "title": "担心但是等确认. 看2000/2008/2022, QQQ会回测200天线一次或多次不过或突破后未创新高又下来",
+      "url": "https://bbs.wenxuecity.com/cfzh/126232.html",
+      "excerpt": "担心但是等确认. 看2000/2008/2022, QQQ会回测200天线一次或多次不过或突破后未创新高又下来\n多次出逃机会. 做交易, 好坏都必须准备好.",
+      "content_chars": 78,
+      "images_count": 0,
+      "themes_hint": [
+        "趋势确认"
+      ],
+      "symbols": [
+        "QQQ"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "126232",
+      "parent_post_id": "126226",
+      "attribution_fallback": null,
+      "thread_context": {
+        "root_post_id": "126220",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "126226",
+          "author": "SavageGardn7",
+          "title": "这次不担心recession risk？",
+          "published_at": "2026-11-21 17:10:00"
+        },
+        "reply_count": 0,
+        "replies": [],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-22T02:32:53Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "body_exported",
+      "owner_export_retrieved_at": "2026-11-22T01:41:40+00:00",
+      "publication_lag_hours": 6.6,
+      "content_sha256": "760bba9524a7d979b43b1d465fc470d5d74885be5e7b14f4ff368b80397b82a2",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
     }
   ],
-  "updated_at": "2026-11-21T23:17:17Z",
+  "updated_at": "2026-11-22T02:32:53Z",
   "retention_policy": "append_only_no_record_count_cap",
   "historical_recovery": {
     "completed_at": "2026-10-07T13:43:06.018028+00:00",
