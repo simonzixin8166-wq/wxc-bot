@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-11-22T01:37:53Z",
+  "generated_at": "2026-11-22T06:42:38Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -19,20 +19,19 @@
           "reached_end": false
         }
       ],
-      "previous_anchor_video_id": "v2KyRWv3SHc",
+      "previous_anchor_video_id": "DK_lw0iPBtc",
       "anchor_found": true,
       "reached_end": false,
       "discovery_complete": true,
       "latest": {
-        "video_id": "v2KyRWv3SHc",
-        "title": "美股 踩踏暴跌一步到位！好消息、坏消息！后市重要判断！",
-        "url": "https://www.youtube.com/watch?v=v2KyRWv3SHc",
-        "published_at": "2026-11-21",
+        "video_id": "DK_lw0iPBtc",
+        "title": "（会员第311期）2026年11月9日-20日，重要公司Q3财报后2026、2027前瞻估值，强支撑点位！",
+        "url": "https://www.youtube.com/watch?v=DK_lw0iPBtc",
+        "published_at": "",
         "rss_status": "ok",
         "flat_metadata_keys": [
           "channel_id",
-          "duration",
-          "rss_published_at"
+          "duration"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -101,7 +100,7 @@
       "discovery_complete": true,
       "latest": {
         "video_id": "S1B9R_83-8c",
-        "title": "Something Is Breaking America",
+        "title": "Why America Is Breaking",
         "url": "https://www.youtube.com/watch?v=S1B9R_83-8c",
         "published_at": "2026-11-20",
         "rss_status": "ok",
@@ -123,8 +122,8 @@
   "pending_retried": 6,
   "content_attempted_this_run": 6,
   "content_work_budget": 6,
-  "content_backlog_after_run": 93,
-  "pending_total": 93,
+  "content_backlog_after_run": 94,
+  "pending_total": 94,
   "historical_demoted_from_pending": 0,
   "admitted_from_pending": 0,
   "nonforward_timestamp_unknown_admitted": 0,
@@ -152,7 +151,7 @@
     {
       "author": "Andrei Jikh",
       "video_id": "S1B9R_83-8c",
-      "title": "Something Is Breaking America",
+      "title": "Why America Is Breaking",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -172,9 +171,17 @@
       "pending_reason": "missing_learning_text"
     },
     {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "DK_lw0iPBtc",
+      "title": "（会员第311期）2026年11月9日-20日，重要公司Q3财报后2026、2027前瞻估值，强支撑点位！",
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "awaiting_publication_date"
+    },
+    {
       "author": "Andrei Jikh",
-      "video_id": "Uw84lTiD5C8",
-      "title": "Russia Just Legalized Crypto",
+      "video_id": "Z_xvkbGWauU",
+      "title": "China Just Shut Down Gold Trading",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -184,19 +191,8 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "Y7P-VOo0KTs",
-      "title": "（会员第298期）四大科技AI货币化进度（2026年Q2后），MSFT、GOOG、AMZN、META！前车之鉴，能否提前识别泡沫？",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "Andrei Jikh",
-      "video_id": "YBhwK-VWsxY",
-      "title": "Japan's Money Is Collapsing",
+      "video_id": "-e3gyj_NP7c",
+      "title": "美股 科技股、半导体失血！消费股领涨，XLP重要位置！SMH、SOXX完成修复！SPY、QQQ、XLK长线点位更新！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -209,7 +205,7 @@
     "status": "ok",
     "channel_errors": 0,
     "stuck_high_quality_pending": 0,
-    "provider_waiting_pending": 93,
+    "provider_waiting_pending": 94,
     "stuck_video_ids": [],
     "meaning": "Q1/Q2 text must not remain stuck in pending; Q3-Q5 may legitimately wait for better learning text."
   },
