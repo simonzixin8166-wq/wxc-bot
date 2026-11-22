@@ -45,7 +45,10 @@ ROWS = OUT_DIR / "gemini_shadow_rows.jsonl"
 DAILY = OUT_DIR / "gemini_shadow_daily.jsonl"
 VERSION = "gemini-shadow-0.1"
 SHADOW_FROM = os.getenv("GEMINI_SHADOW_FROM", "2026-11-16")      # records captured on/after this UTC date
-SHADOW_UNTIL = os.getenv("GEMINI_SHADOW_UNTIL", "2026-11-30")    # last observation day (Owner: 2 weeks)
+# Owner 2026-11-21: Gemini becomes the production understanding on 11/25, so new records keep being labelled after
+# the 2-week observation (11/17-11/30); the December gate is read from rows captured inside those two weeks.
+SHADOW_UNTIL = os.getenv("GEMINI_SHADOW_UNTIL", "2099-12-31")
+GATE_FROM, GATE_UNTIL = "2026-11-17", "2026-11-30"
 PROVENANCE = ("owner_forum_export", "owner_forward")
 # Owner 2026-11-19 (option A): ~86 forum posts a day at 8 per call ran out of free-tier calls; 20 per call
 # (spot-checked on the forum dev set before the December review; the frozen measurement used 8)

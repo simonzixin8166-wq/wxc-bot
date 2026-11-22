@@ -116,6 +116,9 @@ jobs:
 
       - name: Source quality flags + daily author claims for MyAlpha research (overlay; non-gating)
         continue-on-error: true
+        env:
+          # Owner 2026-11-21: Gemini understanding for forum/blog records (ce-5 fallback). Revert: repo variable = ce5
+          UNDERSTANDING_SOURCE: ${{ vars.UNDERSTANDING_SOURCE || 'gemini' }}
         run: |
           python provenance_audit.py
           python source_quality_flags.py
