@@ -157,7 +157,8 @@ def _ingest(text: str, title: str | None, url: str | None, published: str | None
     item = {"item_id": "C-" + sha[:12], "source_family": "C_owner_forward", "source_url": url,
             "host": urlsplit(url).netloc, "title": title, "chars": len(text), "sha256": sha,
             "published_at": published, "retrieved_at": retrieved_at,
-            "retrieved_by": "owner (own browser, forwarded via Telegram)", "input": input_kind,
+            "retrieved_by": ("owner's own newsletter subscription (Gmail)" if "newsletter" in input_kind
+                             else "owner (own browser, forwarded via Telegram)"), "input": input_kind,
             "retention": "private long-term for personal non-commercial learning; never published (Owner charter 2026-11-09)",
             "claims_status": "experimental_unvalidated"}
     status = _store_textpack(item, text, http)
@@ -192,7 +193,8 @@ def _parse_file(name: str, body: str, caption_url: str | None):
     n = name.lower()
     if n.endswith((".md", ".txt")):
         title, url, published, text = parse_markdown(body)
-        return title, (url or caption_url), published, text, ("md_file" if n.endswith(".md") else "txt_file")
+        kind = "gmail_newsletter_md" if n.endswith("_newsletter.md") else ("md_file" if n.endswith(".md") else "txt_file")
+        return title, (url or caption_url), published, text, kind
     title, text = extract_html(body)
     return title, caption_url, None, text, "html_file"
 

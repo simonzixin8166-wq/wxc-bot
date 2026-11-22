@@ -62,6 +62,9 @@ def attribute(url: str) -> tuple[str, str]:
             if p["blog_id"] == m.group(1):
                 return "blog", p["author"]
         return "blog", f"wxc_blog_{m.group(1)}"
+    m = re.search(r"https?://([a-z0-9-]+)\.substack\.com/", url or "")
+    if m:  # a newsletter the Owner subscribes to (Gmail, Owner 2026-11-22)
+        return "blog", f"{m.group(1)} (Substack)"
     if "bbs.wenxuecity.com" in (url or ""):
         return "forum", "owner_forward_unattributed"
     return "owner_forward", "owner_forward_unattributed"
