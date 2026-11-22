@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-11-22T16:21:00Z",
+  "generated_at": "2026-11-22T21:46:48Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -180,8 +180,8 @@
     },
     {
       "author": "Andrei Jikh",
-      "video_id": "_YXDHskRP6Y",
-      "title": "Here's What Pops This Stock Bubble",
+      "video_id": "dFjvcY9Tth0",
+      "title": "China Is Preparing For $38,000 Gold",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -190,9 +190,9 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "Andrei Jikh",
-      "video_id": "_lOVieAIvSA",
-      "title": "I Let AI Invest My Money For 3 Years",
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "dTQmi_hrOpU",
+      "title": "美股 ORCL缺乏惊喜，ADBE底气不足！SOXX遇阻、IGV破位！CTA触发标普承压，VIX苏醒！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
