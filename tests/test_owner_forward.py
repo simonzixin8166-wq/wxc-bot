@@ -38,9 +38,10 @@ class Http:
         return Resp(content=self.file_bytes)
 
     def put(self, url, headers=None, timeout=None, json=None):
-        assert url.startswith("https://api.github.com/repos/owner/textpack/contents/s2_v5_textpack/C_owner_forward/")
+        assert url.startswith(("https://api.github.com/repos/owner/textpack/contents/s2_v5_textpack/C_owner_forward/",
+                               "https://api.github.com/repos/owner/textpack/contents/s2_v5_textpack/G_owner_images/"))
         assert headers["Authorization"] == "Bearer tok"
-        self.puts.append((url, base64.b64decode(json["content"]).decode("utf-8")))
+        self.puts.append((url, base64.b64decode(json["content"]).decode("utf-8", errors="replace")))
         return Resp(status=self.put_status)
 
 
@@ -116,9 +117,9 @@ with tempfile.TemporaryDirectory() as td:
     assert row["textpack"] == "failed (GitHub 403)"
     print("PASS textpack failure reported")
 
-    # 8. oversized file refused before download
+    # 8. oversized file (over the 20MB Telegram limit) refused before download
     h = Http()
-    row, said = run({"document": {"file_id": "F2", "file_name": "big.html", "file_size": 5_000_000}, "caption": URL}, h)
+    row, said = run({"document": {"file_id": "F2", "file_name": "big.html", "file_size": 25_000_000}, "caption": URL}, h)
     assert row is None and h.gets == []
     print("PASS oversized file refused")
 
@@ -149,8 +150,9 @@ with tempfile.TemporaryDirectory() as td:
         z.writestr("blog/img.png", "binary")
     h = Http(file_bytes=buf.getvalue())
     res, said = run({"document": {"file_id": "F4", "file_name": "b.zip", "file_size": len(buf.getvalue())}}, h)
-    assert res == {"zip": {"stored": 2, "duplicate": 1, "no_link": 1, "no_text": 0, "failed": 0}, "files": 4}, res
-    assert len(h.puts) == 4 and "新收录 2" in said[0] and "nolink.md" in said[0]
+    assert res["zip"] == {"stored": 2, "duplicate": 1, "no_link": 1, "no_text": 0, "failed": 0} and res["files"] == 4, res
+    assert res["images"]["new"] == 1 and sum("/G_owner_images/" in u for u, _ in h.puts) == 1   # blog/img.png -> private store
+    assert len(h.puts) == 5 and "新收录 2" in said[0] and "nolink.md" in said[0]
     assert all(u.startswith("https://api.telegram.org/") for u in h.gets)
     print("PASS zip: per-article storage, dedup, missing link reported")
 

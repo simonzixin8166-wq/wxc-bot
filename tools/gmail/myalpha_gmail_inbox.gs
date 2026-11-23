@@ -18,7 +18,7 @@
 var LABEL_IN = 'MyAlpha';
 var LABEL_NEWS = 'MyAlpha/Newsletter';
 var LABEL_DONE = 'MyAlpha/已收录';
-var MAX_BYTES = 3 * 1024 * 1024;   // same limit as a Telegram forward
+var MAX_BYTES = 20 * 1000 * 1000;  // same limit as a Telegram forward (zips with images/, Owner 2026-11-21)
 
 function upload_(token, repo, path, bytes, ts) {
   var res = UrlFetchApp.fetch('https://api.github.com/repos/' + repo + '/contents/' + encodeURI(path), {
