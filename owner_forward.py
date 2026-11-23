@@ -36,10 +36,11 @@ import requests
 from bs4 import BeautifulSoup
 
 import owner_forum_export as forum
+import owner_images
 
 MAX_EXCERPT = 360
 MIN_BODY_CHARS = 80          # less than this after removing the link = "link only"
-MAX_FILE_BYTES = 3_000_000
+MAX_FILE_BYTES = 20_000_000   # Telegram bot getFile limit; zips with images/ (Owner 2026-11-21)
 DOC_EXT = (".html", ".htm", ".txt", ".md", ".zip")
 ZIP_EXT = (".html", ".htm", ".txt", ".md", ".jsonl", ".json")
 MAX_ZIP_FILES = 300
@@ -220,7 +221,7 @@ def handle(msg: dict, say, tg_api: str = "", tg_file_base: str = "", http=reques
         return row if outcome not in ("duplicate", "no_link", "no_text") else None
 
     if int(doc.get("file_size") or 0) > MAX_FILE_BYTES:
-        say("文件太大（超过 3MB），没有收录。请改为复制正文加链接发送，或分成几个小 zip。")
+        say("文件太大（超过 20MB），没有收录。请改为复制正文加链接发送，或分成几个小 zip。")
         return None
     # bytes already in hand (Owner's own e-mail export picked up from the private inbox, gmail_inbox.py)
     data = msg["_bytes"] if msg.get("_bytes") is not None else _download_owner_file(doc.get("file_id", ""), tg_api, tg_file_base, http)
@@ -234,6 +235,14 @@ def handle(msg: dict, say, tg_api: str = "", tg_file_base: str = "", http=reques
         if isinstance(members, str):
             say(f"zip 没有收录：{members}。")
             return None
+        try:  # images must never block the articles in the same zip
+            ic = owner_images.ingest_zip(data, [(f, b) for f, b in members if f.lower().endswith(".md")], retrieved_at, now, http)
+        except Exception as exc:  # noqa: BLE001
+            ic = {"images": 0, "new": 0, "duplicate": 0, "failed": 1, "error": type(exc).__name__}
+        isum = owner_images.summary_zh(ic)
+        if not members:
+            say(isum or "zip 里没有可收录的文章或图片。")
+            return {"images": ic}
         counts = {"stored": 0, "duplicate": 0, "no_link": 0, "no_text": 0, "failed": 0}
         problems = []
         topics = [(f, b) for f, b in members if f.lower().endswith(".md") and (forum.is_topic(b) or forum.is_author_digest(b))]
@@ -256,9 +265,10 @@ def handle(msg: dict, say, tg_api: str = "", tg_file_base: str = "", http=reques
             fc["blog_" + ("stored" if outcome == "stored" else "skipped")] = fc.get("blog_" + ("stored" if outcome == "stored" else "skipped"), 0) + 1
         if topics:
             say(forum.summary_zh(len(topics), fc) + (f"\n博客文章 {len(blog_rows)} 篇：新收录 {fc.get('blog_stored', 0)}，"
-                                                      f"跳过 {fc.get('blog_skipped', 0)}（重复、缺链接或正文太短）。" if blog_rows else ""))
+                                                      f"跳过 {fc.get('blog_skipped', 0)}（重复、缺链接或正文太短）。" if blog_rows else "")
+                + (("\n" + isum) if isum and not members else ""))
             if not members:
-                return {"forum_zip": fc, "topics": len(topics)}
+                return {"forum_zip": fc, "topics": len(topics), "images": ic}
         for fname, body in members:
             title, furl, published, text, kind = _parse_file(fname, body, None)
             outcome, _row = _ingest(text, title, furl, published, "zip:" + kind, retrieved_at, now, http, seen, seen_urls)
@@ -269,8 +279,9 @@ def handle(msg: dict, say, tg_api: str = "", tg_file_base: str = "", http=reques
         say(f"zip 共 {len(members)} 篇：新收录 {counts['stored']}，已收录过 {counts['duplicate']}，"
             f"缺链接 {counts['no_link']}，正文太短 {counts['no_text']}，保存失败 {counts['failed']}。"
             + ("\n未收录：" + "；".join(problems[:10]) if problems else "")
-            + "\n全文只存私有仓库，公开仓库只记标题、摘录、链接和哈希。")
-        return {"zip": counts, "files": len(members)}
+            + "\n全文只存私有仓库，公开仓库只记标题、摘录、链接和哈希。"
+            + (("\n" + isum) if isum else ""))
+        return {"zip": counts, "files": len(members), "images": ic}
 
     if name.lower().endswith(".md") and forum.is_topic(data.decode("utf-8", errors="replace")):
         fc = forum.ingest_topic(data.decode("utf-8", errors="replace"), retrieved_at, now, http, forum.existing(),
