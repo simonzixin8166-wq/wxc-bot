@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-11-22T21:46:48Z",
+  "generated_at": "2026-11-23T02:43:28Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -179,9 +179,9 @@
       "pending_reason": "awaiting_publication_date"
     },
     {
-      "author": "Andrei Jikh",
-      "video_id": "dFjvcY9Tth0",
-      "title": "China Is Preparing For $38,000 Gold",
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "fLp8kUbv_u8",
+      "title": "美股 对冲基金低仓位按兵不动！AMD很猛，SOXX临门！金融XLF、医疗XLV！ADBE财报押注！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -190,9 +190,9 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "dTQmi_hrOpU",
-      "title": "美股 ORCL缺乏惊喜，ADBE底气不足！SOXX遇阻、IGV破位！CTA触发标普承压，VIX苏醒！",
+      "author": "Andrei Jikh",
+      "video_id": "hy90LdpEUvQ",
+      "title": "South Korea’s AI Bubble Just Popped",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
