@@ -622,7 +622,7 @@
         "paid": false
       },
       "telegram:get_updates": {
-        "count": 486,
+        "count": 516,
         "paid": false
       },
       "telegram:send_message": {
