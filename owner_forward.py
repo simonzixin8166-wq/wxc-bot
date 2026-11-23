@@ -193,7 +193,7 @@ def _parse_file(name: str, body: str, caption_url: str | None):
     n = name.lower()
     if n.endswith((".md", ".txt")):
         title, url, published, text = parse_markdown(body)
-        kind = "gmail_newsletter_md" if n.endswith("_newsletter.md") else ("md_file" if n.endswith(".md") else "txt_file")
+        kind = "gmail_newsletter_md" if (n == "newsletter.md" or n.endswith("_newsletter.md")) else ("md_file" if n.endswith(".md") else "txt_file")
         return title, (url or caption_url), published, text, kind
     title, text = extract_html(body)
     return title, caption_url, None, text, "html_file"

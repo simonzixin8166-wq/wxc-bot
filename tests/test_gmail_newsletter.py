@@ -50,6 +50,10 @@ assert of.handle(msg, said.append, http=Http(), now=NOW) is None and len(of.inde
 # attribution: the Substack publication becomes the author
 assert off.attribute("https://zmletter.substack.com/p/2027-test-1") == ("blog", "zmletter (Substack)")
 assert off.attribute("https://example.com/x") == ("owner_forward", "owner_forward_unattributed")
+# the inbox strips "<ts>_<msgId>_" before handing the file over: the bare name must still be a newsletter
+import gmail_inbox  # noqa: E402
+bare = gmail_inbox.PREFIX_RE.sub("", "20261122T040000Z_1a2016c716f30d2f_newsletter.md")
+assert bare == "newsletter.md" and of._parse_file(bare, MD, None)[4] == "gmail_newsletter_md"
 # a normal .md article keeps its kind
 assert of._parse_file("note.md", MD, None)[4] == "md_file"
 
