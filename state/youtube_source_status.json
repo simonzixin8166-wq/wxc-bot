@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-11-23T02:43:28Z",
+  "generated_at": "2026-11-23T14:33:50Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -179,9 +179,9 @@
       "pending_reason": "awaiting_publication_date"
     },
     {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "fLp8kUbv_u8",
-      "title": "美股 对冲基金低仓位按兵不动！AMD很猛，SOXX临门！金融XLF、医疗XLV！ADBE财报押注！",
+      "author": "Andrei Jikh",
+      "video_id": "kZDqW9hbB50",
+      "title": "How To Prepare (Gold, Silver, Oil)",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -190,9 +190,9 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "Andrei Jikh",
-      "video_id": "hy90LdpEUvQ",
-      "title": "South Korea’s AI Bubble Just Popped",
+      "author": "老李玩钱",
+      "video_id": "mR1KTb9wBT0",
+      "title": "2支新股：SPCX, SKHY 能买入吗？NFLX财报暴雷，接下来我的计划和打算",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
