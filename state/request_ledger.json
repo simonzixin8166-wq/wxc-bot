@@ -1,19 +1,5 @@
 {
   "days": {
-    "2026-10-10": {
-      "myalphaview:server_action_status": {
-        "count": 5,
-        "paid": false
-      },
-      "telegram:get_updates": {
-        "count": 5,
-        "paid": false
-      },
-      "telegram:send_message": {
-        "count": 1,
-        "paid": false
-      }
-    },
     "2026-10-11": {
       "myalphaview:server_action_status": {
         "count": 5,
@@ -627,6 +613,20 @@
       },
       "telegram:send_message": {
         "count": 7,
+        "paid": false
+      }
+    },
+    "2026-11-24": {
+      "telegram:get_updates": {
+        "count": 1,
+        "paid": false
+      },
+      "myalphaview:server_action_status": {
+        "count": 1,
+        "paid": false
+      },
+      "telegram:send_message": {
+        "count": 3,
         "paid": false
       }
     }
