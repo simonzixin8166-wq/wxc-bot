@@ -199549,9 +199549,49 @@
       "content_sha256": "c1db01fa17e8b20ebeec903d8f5dd65a7e67fc438371a8c70bf127880ed4be26",
       "intake_class_hint": "live_candidate",
       "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "a71bdd6bb31a4d223bc0",
+      "source": "wenxuecity",
+      "source_kind": "blog",
+      "author": "unclestocknotes (Substack)",
+      "published_at": "2026-11-23",
+      "title": "2027 Outlook 系列｜第 1 篇｜AI 從建設走向驗證",
+      "url": "https://unclestocknotes.substack.com/p/2027-outlook-1-ai",
+      "excerpt": "View this post on the web at https://unclestocknotes.substack.com/p/2027-outlook-1-ai\r\n\r\n2026 年，市場問的是「誰能取得算力」。\r\n2027 年，市場會問「誰能讓算力回本」。\r\nAI 資本支出還會增加，但市場獎勵的對象，會從花最多錢的公司，已經換成花的錢最快變成現金流的公司。\r\n這篇我會整理：\r\n15 家機構對 AI 價值鏈的三種押法：hyperscaler、瓶頸供應商、AI 採用者，各自的理由是什麼\r\n用最新一季財報檢查：七家 AI 資本支出大戶，誰在用自己的錢，誰在用借來的錢\r\n大叔的「AI 資本效率記分卡」，以及 2027 年上半年與下半年，我會怎麼排三層價值鏈的順序\r\n同一個月，雲端成長 48% 的漲，成長 10",
+      "content_chars": 2764,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [
+        "CRWV",
+        "NBIS"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": null,
+      "source_entry_key": null,
+      "parent_post_id": null,
+      "attribution_fallback": null,
+      "thread_context": null,
+      "captured_at": "2026-11-24T00:48:45Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forward",
+      "owner_forward_item_id": "C-6663304a77df",
+      "owner_forward_retrieved_at": "2026-11-23T06:10:23+00:00",
+      "publication_lag_hours": -6.2,
+      "content_sha256": "6663304a77df4dff0b85e554115a28e6ed20708b7b17fd5eb5e61309f06e5b72",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forward_timely"
     }
   ],
-  "updated_at": "2026-11-23T02:59:42Z",
+  "updated_at": "2026-11-24T00:48:45Z",
   "retention_policy": "append_only_no_record_count_cap",
   "historical_recovery": {
     "completed_at": "2026-10-07T13:43:06.018028+00:00",
