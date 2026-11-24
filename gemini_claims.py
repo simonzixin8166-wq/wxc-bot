@@ -193,6 +193,29 @@ def _call(post, headers: dict, prompt: str):
     return None, None, last
 
 
+TOKEN_KEYS = (("promptTokenCount", "input"), ("candidatesTokenCount", "output"), ("thoughtsTokenCount", "thinking"),
+              ("totalTokenCount", "total"))
+
+
+def usage(raw) -> dict:
+    """Token counts Gemini reports for one call (usageMetadata); missing fields count as 0. Owner 2026-11-24."""
+    u = (raw or {}).get("usageMetadata") if isinstance(raw, dict) else None
+    return {name: int((u or {}).get(k) or 0) for k, name in TOKEN_KEYS}
+
+
+def add_usage(acc: dict, u: dict | None, model=None) -> dict:
+    """Accumulate per-call usage into {input, output, thinking, total, calls_with_usage, by_model}."""
+    if not u:
+        return acc
+    for _, name in TOKEN_KEYS:
+        acc[name] = acc.get(name, 0) + u.get(name, 0)
+    acc["calls_with_usage"] = acc.get("calls_with_usage", 0) + 1
+    if model:
+        bm = acc.setdefault("by_model", {}).setdefault(str(model), {"total": 0, "calls": 0})
+        bm["total"] += u.get("total", 0); bm["calls"] += 1
+    return acc
+
+
 def label_post(title: str, text: str, post=None) -> tuple[dict, dict]:
     """One call. Returns (answer, meta). Raises RuntimeError('quota') on 429."""
     post = post or requests.post
@@ -201,8 +224,9 @@ def label_post(title: str, text: str, post=None) -> tuple[dict, dict]:
     prompt = PROMPT.replace("{title}", title or "").replace("{text}", text or "(no body; the title is the whole post)")
     r, model, last = _call(post, headers, prompt)
     if r is not None:
-        ans, dropped = clean(_extract_json(r.json()))
-        return ans, {"model": model, "status": 200, "dropped_labels": dropped}
+        raw = r.json()
+        ans, dropped = clean(_extract_json(raw))
+        return ans, {"model": model, "status": 200, "dropped_labels": dropped, "usage": usage(raw)}
     return {"labels": [], "ambiguous": False, "note": "unavailable", "reply_role": None}, {"model": None, "status": last}
 
 
@@ -221,7 +245,8 @@ def label_batch(items: list[dict], post=None) -> tuple[dict, dict]:
     unavailable = {"labels": [], "ambiguous": False, "note": "unavailable", "reply_role": None}
     r, model, last = _call(post, headers, prompt)
     if r is not None:
-        parsed = _extract_json(r.json()) or {}
+        raw = r.json()
+        parsed = _extract_json(raw) or {}
         got, dropped = {}, 0
         for a in parsed.get("answers") or []:
             if isinstance(a, dict) and str(a.get("id")) in {it["id"] for it in items}:
@@ -229,7 +254,8 @@ def label_batch(items: list[dict], post=None) -> tuple[dict, dict]:
                 got[str(a["id"])] = ans
                 dropped += d
         return ({it["id"]: got.get(it["id"], unavailable) for it in items},
-                {"model": model, "status": 200, "dropped_labels": dropped, "missing": len(items) - len(got)})
+                {"model": model, "status": 200, "dropped_labels": dropped, "missing": len(items) - len(got),
+                 "usage": usage(raw)})
     return {it["id"]: unavailable for it in items}, {"model": None, "status": last}
 
 
@@ -352,7 +378,7 @@ def main(argv=None) -> int:
     answers = _load_previous(a.resume, a.set)
     resumed = len(answers)
     meta = {"calls": 0, "resumed": resumed, "batch": batch if a.set in FORUM_SETS else None, "unavailable_text": 0, "model_unavailable": 0, "dropped_labels": 0,
-            "quota_stop": False, "models": {}}
+            "quota_stop": False, "models": {}, "tokens": {}}
     todo = [it for it in items if it["item_id"] not in answers]
     if a.set in FORUM_SETS:
         for k in range(0, len(todo), batch):
@@ -366,6 +392,7 @@ def main(argv=None) -> int:
                 meta["quota_stop"] = "http_429"
                 break
             meta["calls"] += 1
+            add_usage(meta["tokens"], m.get("usage"), m.get("model"))
             meta["dropped_labels"] += m.get("dropped_labels", 0)
             meta["models"][str(m.get("model"))] = meta["models"].get(str(m.get("model")), 0) + 1
             for iid, ans in got.items():
@@ -386,6 +413,7 @@ def main(argv=None) -> int:
             meta["quota_stop"] = "http_429"
             break
         meta["calls"] += 1
+        add_usage(meta["tokens"], m.get("usage"), m.get("model"))
         meta["dropped_labels"] += m.get("dropped_labels", 0)
         meta["models"][str(m.get("model"))] = meta["models"].get(str(m.get("model")), 0) + 1
         if ans.get("note") == "unavailable":
