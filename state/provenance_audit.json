@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-24T00:48:52+00:00",
+ "generated_at": "2026-11-24T02:08:52+00:00",
  "records": 4631,
  "without_recorded_provenance": 1252,
  "derived_for_unrecorded": {
@@ -51169,10 +51169,10 @@
    "author": "unclestocknotes (Substack)",
    "recorded_provenance": "live_candidate",
    "published_at": "2026-11-23",
-   "first_git_seen": null,
-   "first_git_commit": null,
-   "gap_hours": null,
-   "derived_provenance": "unprovable"
+   "first_git_seen": "2026-11-24T00:48:53Z",
+   "first_git_commit": "1189b1504795e4791a9162bf6fc114ac05136591",
+   "gap_hours": 24.8,
+   "derived_provenance": "near_publication_observed"
   }
  ]
 }
