@@ -149,7 +149,7 @@ def run(records: list[dict], done: set, max_calls: int | None = None, label_post
     back = backfill_eligible(records, done) if backfill else []
     back_ids = {r["id"] for r in back}
     answers, meta, stop = {}, {"calls": 0, "quota_stop": False, "text_basis": Counter(), "models": Counter(),
-                                "errors": Counter(), "backfill_calls": 0}, False
+                                "errors": Counter(), "backfill_calls": 0, "tokens": {}}, False
 
     def budget_left(is_back=False):
         if is_back and meta["backfill_calls"] >= BACKFILL_MAX_CALLS:
@@ -179,6 +179,7 @@ def run(records: list[dict], done: set, max_calls: int | None = None, label_post
                 meta["quota_stop"] = "http_429"; stop = True
                 break
             meta["calls"] += 1; meta["models"][str(m.get("model"))] += 1; meta["backfill_calls"] += is_back
+            gc.add_usage(meta["tokens"], m.get("usage"), m.get("model"))
             if m.get("model") is None:
                 meta["errors"][str(m.get("status"))] += 1
             for r in item:
@@ -195,6 +196,7 @@ def run(records: list[dict], done: set, max_calls: int | None = None, label_post
                 meta["quota_stop"] = "http_429"; stop = True
                 break
             meta["calls"] += 1; meta["models"][str(m.get("model"))] += 1; meta["text_basis"][basis] += 1
+            gc.add_usage(meta["tokens"], m.get("usage"), m.get("model"))
             meta["backfill_calls"] += is_back
             if m.get("model") is None:
                 meta["errors"][str(m.get("status"))] += 1
@@ -239,6 +241,7 @@ def run(records: list[dict], done: set, max_calls: int | None = None, label_post
              "direction_agree": st["direction_agree"], "gemini_only_pairs": st["gemini_only_pairs"],
              "ce4_only_pairs": st["ce4_only_pairs"], "calls": meta["calls"], "quota_stop": meta["quota_stop"],
              "text_basis": dict(meta["text_basis"]), "models": dict(meta["models"]), "errors": dict(meta["errors"]),
+             "tokens": meta["tokens"],
              "retried": sum(1 for r in todo if r["id"] in retry), "batch": SHADOW_BATCH,
              "trial": max_calls is not None, "remaining": len(todo) - n,
              "backfill": {"pending_before": len(back), "labelled": st["backfill_gemini"], "calls": meta["backfill_calls"],

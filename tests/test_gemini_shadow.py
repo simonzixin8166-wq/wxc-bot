@@ -122,3 +122,17 @@ rows11, d11 = gs.run(records + old, done, label_post=post, label_batch=batch, te
 assert rows11 == [] and d11["backfill"]["pending_before"] == 0
 print("PASS shadow backlog: window first, backlog newest first, Gemini-only rows, per-run cap, out of window stats")
 
+
+# token usage (Owner 2026-11-24): Gemini's reported counts are summed per run and kept in the daily row
+def batch_u(items):
+    return ({i["id"]: {"labels": [], "note": None} for i in items},
+            {"model": "m1", "usage": {"input": 5000, "output": 900, "thinking": 1500, "total": 7400}})
+def post_u(title, text):
+    return ({"labels": [], "note": None}, {"model": "m1", "usage": {"input": 2500, "output": 400, "thinking": 600, "total": 3500}})
+gs.BACKFILL_MAX_CALLS = 12
+_, du = gs.run(records, set(), backfill=False, label_post=post_u, label_batch=batch_u, textpack=lambda i: "x", now=NOW)
+assert du["tokens"] == {"input": 7500, "output": 1300, "thinking": 2100, "total": 10900, "calls_with_usage": 2,
+                        "by_model": {"m1": {"total": 10900, "calls": 2}}}, du["tokens"]
+assert gs.gc.usage({"usageMetadata": {"promptTokenCount": 10, "candidatesTokenCount": 3, "totalTokenCount": 13}}) == \
+    {"input": 10, "output": 3, "thinking": 0, "total": 13} and gs.gc.usage({}) == {"input": 0, "output": 0, "thinking": 0, "total": 0}
+print("PASS shadow tokens: usageMetadata summed per run into the daily row")
