@@ -197,10 +197,22 @@ TOKEN_KEYS = (("promptTokenCount", "input"), ("candidatesTokenCount", "output"),
               ("totalTokenCount", "total"))
 
 
-def usage(raw) -> dict:
-    """Token counts Gemini reports for one call (usageMetadata); missing fields count as 0. Owner 2026-11-24."""
-    u = (raw or {}).get("usageMetadata") if isinstance(raw, dict) else None
-    return {name: int((u or {}).get(k) or 0) for k, name in TOKEN_KEYS}
+def usage(raw) -> dict | None:
+    """Token counts Gemini reports for one call. The Interactions API (ENDPOINT) returns
+    usage{total_input_tokens, total_output_tokens, total_thought_tokens, total_tokens}; generateContent returns
+    usageMetadata{promptTokenCount, ...}. Returns None when the response carries no usage (never counted as 0)."""
+    if not isinstance(raw, dict):
+        return None
+    u = raw.get("usage")
+    if isinstance(u, dict):
+        out = {"input": int(u.get("total_input_tokens") or 0), "output": int(u.get("total_output_tokens") or 0),
+               "thinking": int(u.get("total_thought_tokens") or 0), "total": int(u.get("total_tokens") or 0)}
+    elif isinstance(raw.get("usageMetadata"), dict):
+        m = raw["usageMetadata"]
+        out = {name: int(m.get(k) or 0) for k, name in TOKEN_KEYS}
+    else:
+        return None
+    return out if any(out.values()) else None
 
 
 def add_usage(acc: dict, u: dict | None, model=None) -> dict:

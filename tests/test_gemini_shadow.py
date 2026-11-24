@@ -134,5 +134,10 @@ _, du = gs.run(records, set(), backfill=False, label_post=post_u, label_batch=ba
 assert du["tokens"] == {"input": 7500, "output": 1300, "thinking": 2100, "total": 10900, "calls_with_usage": 2,
                         "by_model": {"m1": {"total": 10900, "calls": 2}}}, du["tokens"]
 assert gs.gc.usage({"usageMetadata": {"promptTokenCount": 10, "candidatesTokenCount": 3, "totalTokenCount": 13}}) == \
-    {"input": 10, "output": 3, "thinking": 0, "total": 13} and gs.gc.usage({}) == {"input": 0, "output": 0, "thinking": 0, "total": 0}
+    {"input": 10, "output": 3, "thinking": 0, "total": 13}
+# the Interactions API (our endpoint) reports usage{total_*_tokens}; 11/24 production recorded zeros without this
+assert gs.gc.usage({"usage": {"total_input_tokens": 5200, "total_output_tokens": 800, "total_thought_tokens": 1400,
+                              "total_tokens": 7400}}) == {"input": 5200, "output": 800, "thinking": 1400, "total": 7400}
+assert gs.gc.usage({}) is None and gs.gc.usage([{"x": 1}]) is None and gs.gc.usage({"usage": {}}) is None
+acc = gs.gc.add_usage({}, None, "m"); assert acc == {}                     # no usage reported: not counted
 print("PASS shadow tokens: usageMetadata summed per run into the daily row")
