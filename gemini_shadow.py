@@ -160,46 +160,45 @@ def run(records: list[dict], done: set, max_calls: int | None = None, label_post
         f = [r for r in rows if r["intake_provenance"] == "owner_forum_export"]
         return [f[k:k + SHADOW_BATCH] for k in range(0, len(f), SHADOW_BATCH)]
 
-    forum_chunks = chunks(todo) + chunks(back)          # the window first, then the backlog
-    longs = [r for r in todo + back if r["intake_provenance"] == "owner_forward"]
-    longs.sort(key=lambda r: r["id"] in back_ids)        # window articles before backlog articles
-    for chunk in forum_chunks:
-        is_back = chunk[0]["id"] in back_ids
+    # Order (11/24): the window's forum batches, then the window's articles, then the backlog. Articles used to wait
+    # behind the backlog's forum batches, so on 11/23 the 27 new newsletter articles met the quota stop unlabelled.
+    win_longs = [r for r in todo if r["intake_provenance"] == "owner_forward"]
+    back_longs = [r for r in back if r["intake_provenance"] == "owner_forward"]
+    work = ([("batch", c) for c in chunks(todo)] + [("post", r) for r in win_longs]
+            + [("batch", c) for c in chunks(back)] + [("post", r) for r in back_longs])
+    for kind, item in work:
+        is_back = (item[0] if kind == "batch" else item)["id"] in back_ids
         if stop or not budget_left(is_back):
             if is_back:
                 continue
             break
-        try:
-            got, m = label_batch([_forum_item(r) for r in chunk])
-        except RuntimeError:
-            meta["quota_stop"] = "http_429"; stop = True
-            break
-        meta["calls"] += 1; meta["models"][str(m.get("model"))] += 1; meta["backfill_calls"] += is_back
-        if m.get("model") is None:
-            meta["errors"][str(m.get("status"))] += 1
-        for r in chunk:
-            meta["text_basis"]["feed_title_excerpt"] += 1
-            answers[r["id"]] = (got.get(r["id"]), m.get("model"))
-        time.sleep(gc.PAUSE)
-    for r in longs:
-        is_back = r["id"] in back_ids
-        if stop or not budget_left(is_back):
-            if is_back:
-                continue
-            break
-        body = textpack(r.get("owner_forward_item_id") or "") if r.get("owner_forward_item_id") else None
-        basis = "full_text" if body else "feed_excerpt"
-        body = body or (r.get("excerpt") or "")
-        try:
-            ans, m = label_post(r.get("title") or "", body)
-        except RuntimeError:
-            meta["quota_stop"] = "http_429"; stop = True
-            break
-        meta["calls"] += 1; meta["models"][str(m.get("model"))] += 1; meta["text_basis"][basis] += 1
-        meta["backfill_calls"] += is_back
-        if m.get("model") is None:
-            meta["errors"][str(m.get("status"))] += 1
-        answers[r["id"]] = (ans, m.get("model"))
+        if kind == "batch":
+            try:
+                got, m = label_batch([_forum_item(r) for r in item])
+            except RuntimeError:
+                meta["quota_stop"] = "http_429"; stop = True
+                break
+            meta["calls"] += 1; meta["models"][str(m.get("model"))] += 1; meta["backfill_calls"] += is_back
+            if m.get("model") is None:
+                meta["errors"][str(m.get("status"))] += 1
+            for r in item:
+                meta["text_basis"]["feed_title_excerpt"] += 1
+                answers[r["id"]] = (got.get(r["id"]), m.get("model"))
+        else:
+            r = item
+            body = textpack(r.get("owner_forward_item_id") or "") if r.get("owner_forward_item_id") else None
+            basis = "full_text" if body else "feed_excerpt"
+            body = body or (r.get("excerpt") or "")
+            try:
+                ans, m = label_post(r.get("title") or "", body)
+            except RuntimeError:
+                meta["quota_stop"] = "http_429"; stop = True
+                break
+            meta["calls"] += 1; meta["models"][str(m.get("model"))] += 1; meta["text_basis"][basis] += 1
+            meta["backfill_calls"] += is_back
+            if m.get("model") is None:
+                meta["errors"][str(m.get("status"))] += 1
+            answers[r["id"]] = (ans, m.get("model"))
         time.sleep(gc.PAUSE)
 
     rows, st = [], Counter()

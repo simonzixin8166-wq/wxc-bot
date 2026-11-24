@@ -105,8 +105,9 @@ back = [r for r in rows8 if r.get("basis") == "backfill"]
 assert [r["record_id"] for r in win] == ["r1", "r2", "r5"] and d8["records"] == 3 and d8["coverage"] == 1.0
 assert len(back) == 26 and all(r["understood_by"] == "gemini" for r in back)          # 25 old + r3 (11/10)
 assert d8["backfill"] == {"pending_before": 26, "labelled": 26, "calls": 2, "remaining": 0}
-assert calls[0] == ("batch", ["r1", "r2"]) and calls[1][0] == "batch" and len(calls[1][1]) == 20
-first_back = calls[1][1]
+# window articles (r5) go before any backlog batch (11/23: 27 newsletter articles were starved by the backlog)
+assert calls[0] == ("batch", ["r1", "r2"]) and calls[1][0] == "post" and calls[2][0] == "batch" and len(calls[2][1]) == 20
+first_back = calls[2][1]
 old_ids = [r["id"] for r in sorted(old + [records[2]], key=lambda r: (r["captured_at"], r["id"]), reverse=True)]
 assert first_back == old_ids[:20]
 # unavailable answers are not written for the backlog; the cap stops backlog calls but never the window
