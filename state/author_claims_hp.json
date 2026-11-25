@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-11-24T23:00:03+00:00",
+ "generated_at": "2026-11-25T04:59:26+00:00",
  "extractor": "gemini-claims-0.2+ce-5-hp",
  "understanding_source": "gemini",
  "records_by_extractor": {
   "gemini": 1126,
-  "ce5": 501
+  "ce5": 563
  },
  "lookback_days": 21,
- "records_scanned": 1627,
+ "records_scanned": 1689,
  "records_excluded_by_flags": 1,
  "claims": [
   {
@@ -113,23 +113,6 @@
    "extractor": "ce-5-hp"
   },
   {
-   "record_id": "f643328793fe75164d1e",
-   "author": "BrightLine",
-   "source_kind": "blog",
-   "url": "https://blog.wenxuecity.com/myblog/82458/202611/2625.html",
-   "published_at": "2026-11-04",
-   "first_seen": "2026-11-09T05:55:03Z",
-   "provenance": "backfill_proven",
-   "symbol": "GOOGL",
-   "stance": "sell",
-   "status": "executed",
-   "hp_gate": "first_person_executed_trade",
-   "instrument": "stock",
-   "price": null,
-   "sentence_sha256": "f686ac25f0436eaf748c555cb90c537663d3ff9b423a2b128b158836a047b9cf",
-   "extractor": "ce-5-hp"
-  },
-  {
    "record_id": "fa88ef895edd09cdbeeb",
    "author": "bogbog",
    "source_kind": "forum",
@@ -137,7 +120,7 @@
    "published_at": "2026-11-05 07:02:00",
    "first_seen": "2026-11-10T20:28:28Z",
    "provenance": "backfill_proven",
-   "symbol": "AAOI",
+   "symbol": "INTC",
    "stance": "trim",
    "status": "executed",
    "hp_gate": "first_person_executed_trade",
@@ -154,7 +137,7 @@
    "published_at": "2026-11-05 07:02:00",
    "first_seen": "2026-11-10T20:28:28Z",
    "provenance": "backfill_proven",
-   "symbol": "INTC",
+   "symbol": "AAOI",
    "stance": "trim",
    "status": "executed",
    "hp_gate": "first_person_executed_trade",
@@ -4684,6 +4667,57 @@
    "price": null,
    "sentence_sha256": "795c1df2d1c10f60aa4892614ee1c198d731566e2f1154609c63a1446938622b",
    "extractor": "gemini-claims-0.2"
+  },
+  {
+   "record_id": "7412e760fd0ab47bcc48",
+   "author": "三心三意",
+   "source_kind": "forum",
+   "url": "https://bbs.wenxuecity.com/cfzh/126907.html",
+   "published_at": "2026-11-24 08:57:00",
+   "first_seen": "2026-11-25T04:59:17Z",
+   "provenance": "unprovable",
+   "symbol": "AMD",
+   "stance": "sell",
+   "status": "executed",
+   "hp_gate": "first_person_executed_trade",
+   "instrument": "stock",
+   "price": null,
+   "sentence_sha256": "a1327f51f4a4eebc1e2391209c2e50c60b4ec94813035f2a08d5785f3456b921",
+   "extractor": "ce-5-hp"
+  },
+  {
+   "record_id": "20c18d8380dfd7d28949",
+   "author": "三心三意",
+   "source_kind": "forum",
+   "url": "https://bbs.wenxuecity.com/cfzh/126929.html",
+   "published_at": "2026-11-24 09:52:00",
+   "first_seen": "2026-11-25T04:59:17Z",
+   "provenance": "unprovable",
+   "symbol": "NVDA",
+   "stance": "buy",
+   "status": "executed",
+   "hp_gate": "first_person_executed_trade",
+   "instrument": "stock",
+   "price": null,
+   "sentence_sha256": "3c07224c893248666e4af88ce1f7339ddad442203ebac84317b8b25ac21e4792",
+   "extractor": "ce-5-hp"
+  },
+  {
+   "record_id": "20c18d8380dfd7d28949",
+   "author": "三心三意",
+   "source_kind": "forum",
+   "url": "https://bbs.wenxuecity.com/cfzh/126929.html",
+   "published_at": "2026-11-24 09:52:00",
+   "first_seen": "2026-11-25T04:59:17Z",
+   "provenance": "unprovable",
+   "symbol": "AMD",
+   "stance": "buy",
+   "status": "executed",
+   "hp_gate": "first_person_executed_trade",
+   "instrument": "stock",
+   "price": null,
+   "sentence_sha256": "3c07224c893248666e4af88ce1f7339ddad442203ebac84317b8b25ac21e4792",
+   "extractor": "ce-5-hp"
   }
  ],
  "claims_status": "experimental_unvalidated",
