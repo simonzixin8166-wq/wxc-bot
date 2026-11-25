@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-11-25T00:42:13Z",
+  "generated_at": "2026-11-25T11:15:14Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -19,15 +19,15 @@
           "reached_end": false
         }
       ],
-      "previous_anchor_video_id": "ahHigtP50So",
+      "previous_anchor_video_id": "clJ37DZg2po",
       "anchor_found": true,
       "reached_end": false,
       "discovery_complete": true,
       "latest": {
-        "video_id": "ahHigtP50So",
-        "title": "美股 黄仁勋回归，暴涨创历史！反弹陷阱还是底部？计划内加仓一只！",
-        "url": "https://www.youtube.com/watch?v=ahHigtP50So",
-        "published_at": "2026-11-24",
+        "video_id": "clJ37DZg2po",
+        "title": "美股 半导体低开低走再下套！热门个股过一下！",
+        "url": "https://www.youtube.com/watch?v=clJ37DZg2po",
+        "published_at": "2026-11-25",
         "rss_status": "ok",
         "flat_metadata_keys": [
           "channel_id",
@@ -123,8 +123,8 @@
   "pending_retried": 6,
   "content_attempted_this_run": 6,
   "content_work_budget": 6,
-  "content_backlog_after_run": 95,
-  "pending_total": 95,
+  "content_backlog_after_run": 96,
+  "pending_total": 96,
   "historical_demoted_from_pending": 0,
   "admitted_from_pending": 0,
   "nonforward_timestamp_unknown_admitted": 0,
@@ -138,6 +138,17 @@
   "historical_backlog_total": 65,
   "discovery_complete": true,
   "new_video_diagnostics": [
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "clJ37DZg2po",
+      "title": "美股 半导体低开低走再下套！热门个股过一下！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
     {
       "author": "RhinoFinance / 视野环球财经",
       "video_id": "ahHigtP50So",
@@ -183,20 +194,9 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "vXlqWhsJzxI",
-      "title": "美股 NVDA完好、NOW突破！UNH、SHOP更新！前车之鉴，直到2028，数据中心绝不能大退潮！对比互联网泡沫、房地产浪潮！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "Andrei Jikh",
-      "video_id": "w0a504L8fgs",
-      "title": "China & Japan Are Dumping US Bonds",
+      "author": "老李玩钱",
+      "video_id": "yEdijFeesTs",
+      "title": "$310,000美股账户，我加仓/减仓的4支股票！接下来美股将何去何从",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -209,7 +209,7 @@
     "status": "ok",
     "channel_errors": 0,
     "stuck_high_quality_pending": 0,
-    "provider_waiting_pending": 95,
+    "provider_waiting_pending": 96,
     "stuck_video_ids": [],
     "meaning": "Q1/Q2 text must not remain stuck in pending; Q3-Q5 may legitimately wait for better learning text."
   },
