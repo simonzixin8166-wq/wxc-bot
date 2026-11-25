@@ -92,7 +92,8 @@ rows7, d7 = gs.run(records, done, backfill=False, label_post=post, label_batch=b
 assert [(r["record_id"], r["understood_by"]) for r in rows7] == [("r1", "gemini"), ("r2", "gemini")] and d7["retried"] == 2
 print("PASS shadow retry: model error -> fallback with status recorded, retried next run and superseded")
 wf = (ROOT / ".github/workflows/gemini-shadow.yml").read_text(encoding="utf-8")
-assert 'GEMINI_CLAIMS_TIMEOUT: "240"' in wf and "timeout-minutes: 150" in wf
+assert 'GEMINI_CLAIMS_TIMEOUT: "300"' in wf and "timeout-minutes: 150" in wf
+assert "GEMINI_SHADOW_BATCH: ${{ vars.GEMINI_SHADOW_BATCH || '20' }}" in wf      # 40 after the spot check (variable)
 print("PASS shadow workflow: 240 s read timeout for 20-post batches")
 
 # backlog (Owner 11/21): records before the window are labelled after it, newest first; only Gemini-labelled rows

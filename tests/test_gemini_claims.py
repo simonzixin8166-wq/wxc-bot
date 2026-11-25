@@ -196,8 +196,8 @@ except SystemExit as e:
 wfc = (Path(__file__).resolve().parents[1] / ".github/workflows/gemini-claims.yml").read_text(encoding="utf-8")
 assert "env.TAG == ''" in wfc and "gemini-claims-${{ env.SET }}${{ env.TAG }}" in wfc
 print("PASS spot check: --batch/--limit only on forum_dev, fresh run, own artifact")
-assert "GEMINI_CLAIMS_TIMEOUT: ${{ inputs.batch != '' && '240' || '120' }}" in wfc
-print("PASS spot check uses the 240 s read timeout")
+assert "GEMINI_CLAIMS_TIMEOUT: ${{ inputs.batch != '' && '300' || '120' }}" in wfc
+print("PASS spot check uses the 300 s read timeout")
 # the next spot-check slice: --offset skips utterances, refused on frozen sets, own artifact name
 try:
     gc.main(["--set", "test", "--offset", "160"])
