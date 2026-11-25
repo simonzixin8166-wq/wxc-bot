@@ -95,7 +95,7 @@ jobs:
           TEXTPACK_REPO: simonzixin8166-wq/myalpha-s2-textpack
           DATA_DIR: /tmp/gemini_state
           # a 20-post spot check needs the same 240 s read timeout as the shadow run (11/20: 120 s gave 0/160)
-          GEMINI_CLAIMS_TIMEOUT: ${{ inputs.batch != '' && '240' || '120' }}
+          GEMINI_CLAIMS_TIMEOUT: ${{ inputs.batch != '' && '300' || '120' }}
         run: |
           extra=""
           [ -n "$BATCH" ] && extra="$extra --batch $BATCH"

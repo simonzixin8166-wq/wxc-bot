@@ -42,7 +42,10 @@ jobs:
           DATA_DIR: /tmp/gemini_state
           MAX_CALLS: ${{ inputs.max_calls }}
           # 11/19: 6 of 8 twenty-post calls hit the 120 s read timeout; a 20-post answer needs longer
-          GEMINI_CLAIMS_TIMEOUT: "240"
+          GEMINI_CLAIMS_TIMEOUT: "300"
+          # Owner 2026-11-25: the free tier limits requests per day, not tokens (11/25: 19 calls, ~4.4k tokens each).
+          # Posts per call is a repository variable so 40 can be switched on after the spot check, and back to 20.
+          GEMINI_SHADOW_BATCH: ${{ vars.GEMINI_SHADOW_BATCH || '20' }}
         run: |
           if [ -n "$MAX_CALLS" ]; then python gemini_shadow.py --max-calls "$MAX_CALLS"; else python gemini_shadow.py; fi
       - name: Save shadow rows (append-only)
