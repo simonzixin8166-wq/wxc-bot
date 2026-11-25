@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-11-24T14:51:28Z",
+  "generated_at": "2026-11-25T00:42:13Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -101,7 +101,7 @@
       "discovery_complete": true,
       "latest": {
         "video_id": "S1B9R_83-8c",
-        "title": "Why America Is Breaking",
+        "title": "Something Is Breaking America",
         "url": "https://www.youtube.com/watch?v=S1B9R_83-8c",
         "published_at": "2026-11-20",
         "rss_status": "ok",
@@ -163,7 +163,7 @@
     {
       "author": "Andrei Jikh",
       "video_id": "S1B9R_83-8c",
-      "title": "Why America Is Breaking",
+      "title": "Something Is Breaking America",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -184,8 +184,8 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "DK_lw0iPBtc",
-      "title": "（会员第311期）2026年11月9日-20日，重要公司Q3财报后2026、2027前瞻估值，强支撑点位！",
+      "video_id": "vXlqWhsJzxI",
+      "title": "美股 NVDA完好、NOW突破！UNH、SHOP更新！前车之鉴，直到2028，数据中心绝不能大退潮！对比互联网泡沫、房地产浪潮！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -194,9 +194,9 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "pkg7bdNOf88",
-      "title": "（会员第300期）板块重要前瞻26年8月29日更新，2026、2027主要13个行业版块，季度、年度EPS增速数据更新！哪些行业增速强劲？标普SPX、26、27前瞻交易范围，押注方向决定成败！",
+      "author": "Andrei Jikh",
+      "video_id": "w0a504L8fgs",
+      "title": "China & Japan Are Dumping US Bonds",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
