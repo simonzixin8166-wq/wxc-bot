@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-11-25T21:39:40Z",
+  "generated_at": "2026-11-26T04:09:37Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -19,15 +19,15 @@
           "reached_end": false
         }
       ],
-      "previous_anchor_video_id": "clJ37DZg2po",
+      "previous_anchor_video_id": "aa5ps8bjF1o",
       "anchor_found": true,
       "reached_end": false,
       "discovery_complete": true,
       "latest": {
-        "video_id": "clJ37DZg2po",
-        "title": "美股 半导体低开低走再下套！热门个股过一下！",
-        "url": "https://www.youtube.com/watch?v=clJ37DZg2po",
-        "published_at": "2026-11-25",
+        "video_id": "aa5ps8bjF1o",
+        "title": "美股 盘中V起来，发生了什么！多空不对称改善，后市看法！SOXX第一和第二目标位！",
+        "url": "https://www.youtube.com/watch?v=aa5ps8bjF1o",
+        "published_at": "2026-11-26",
         "rss_status": "ok",
         "flat_metadata_keys": [
           "channel_id",
@@ -101,7 +101,7 @@
       "discovery_complete": true,
       "latest": {
         "video_id": "S1B9R_83-8c",
-        "title": "Why America Is Breaking",
+        "title": "America Is Under Attack",
         "url": "https://www.youtube.com/watch?v=S1B9R_83-8c",
         "published_at": "2026-11-20",
         "rss_status": "ok",
@@ -123,8 +123,8 @@
   "pending_retried": 6,
   "content_attempted_this_run": 6,
   "content_work_budget": 6,
-  "content_backlog_after_run": 96,
-  "pending_total": 96,
+  "content_backlog_after_run": 97,
+  "pending_total": 97,
   "historical_demoted_from_pending": 0,
   "admitted_from_pending": 0,
   "nonforward_timestamp_unknown_admitted": 0,
@@ -138,6 +138,17 @@
   "historical_backlog_total": 65,
   "discovery_complete": true,
   "new_video_diagnostics": [
+    {
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "aa5ps8bjF1o",
+      "title": "美股 盘中V起来，发生了什么！多空不对称改善，后市看法！SOXX第一和第二目标位！",
+      "content_quality": "Q5",
+      "content_provider": "metadata_only",
+      "rule_candidate_allowed": false,
+      "admission": "pending_content",
+      "was_pending": true,
+      "pending_reason": "missing_learning_text"
+    },
     {
       "author": "RhinoFinance / 视野环球财经",
       "video_id": "clJ37DZg2po",
@@ -174,7 +185,7 @@
     {
       "author": "Andrei Jikh",
       "video_id": "S1B9R_83-8c",
-      "title": "Why America Is Breaking",
+      "title": "America Is Under Attack",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -192,24 +203,13 @@
       "admission": "pending_content",
       "was_pending": true,
       "pending_reason": "missing_learning_text"
-    },
-    {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "xOY53crL1ZA",
-      "title": "（会员第305期）掌握数据，跟随趋势！如何追踪标普、个股、EPS业绩修正？几个隐藏的免费数据入口！使用方法！",
-      "content_quality": "Q5",
-      "content_provider": "metadata_only",
-      "rule_candidate_allowed": false,
-      "admission": "pending_content",
-      "was_pending": true,
-      "pending_reason": "missing_learning_text"
     }
   ],
   "intake_health": {
     "status": "ok",
     "channel_errors": 0,
     "stuck_high_quality_pending": 0,
-    "provider_waiting_pending": 96,
+    "provider_waiting_pending": 97,
     "stuck_video_ids": [],
     "meaning": "Q1/Q2 text must not remain stuck in pending; Q3-Q5 may legitimately wait for better learning text."
   },
