@@ -216305,9 +216305,1721 @@
       "content_sha256": "e435a01ba03329ad57ffca198dcc78d92abdce9e61bbed9000098c86a34debac",
       "intake_class_hint": "live_candidate",
       "capture_mode": "owner_forward_timely"
+    },
+    {
+      "id": "0acfed467678044344e2",
+      "source": "wenxuecity",
+      "source_kind": "blog",
+      "author": "wxc_blog_83266",
+      "published_at": "2026-11-25",
+      "title": "claude: 为什么今天会\"突然暴跌、再拉回来\"",
+      "url": "https://blog.wenxuecity.com/myblog/83266/202611/20457.html",
+      "excerpt": "先看今天实际是怎么走的\n┌─────────────┬──────────────────┬─────────────────┬───────────────┬───────────────────────────────────────────────────────────────────┐\n│ 时间 (ET) │   QQQ    │   VIX   │   HYG   │              发生了什么              │\n├─────────────┼──────────────────┼─────────────────┼───────────────┼──────────────────────────────────────────────────────────────────",
+      "content_chars": 2225,
+      "images_count": 0,
+      "themes_hint": [
+        "风险管理",
+        "止损纪律"
+      ],
+      "symbols": [
+        "CRWV",
+        "QQQ"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": null,
+      "source_entry_key": null,
+      "parent_post_id": null,
+      "attribution_fallback": null,
+      "thread_context": null,
+      "captured_at": "2026-11-27T04:26:44Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forward",
+      "owner_forward_item_id": "C-409eff4c7fdb",
+      "owner_forward_retrieved_at": "2026-11-26T23:44:55+00:00",
+      "publication_lag_hours": 5.8,
+      "content_sha256": "409eff4c7fdb21094552ee44efd7f87a384b3c9a8438d6ddd3f3f2e9a0eb074f",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forward_timely"
+    },
+    {
+      "id": "242edb1573ea1943933a",
+      "source": "wenxuecity",
+      "source_kind": "blog",
+      "author": "unclestocknotes (Substack)",
+      "published_at": "2026-11-27",
+      "title": "每日重點 261126 Substack 大叔留言重點",
+      "url": "https://unclestocknotes.substack.com/p/261126-1127-substack",
+      "excerpt": "View this post on the web at https://unclestocknotes.substack.com/p/261126-1127-substack\r\n\r\n內容皆為當日聊天紀錄，沒提到的股票只是沒提及\r\n⠀\r\n大叔的六大主線及主要標的最新看法，持續更新，請看 個股快速掃描 https://unclestocknotes.substack.com/p/2026-11 [ https://substack.com/redirect/10a8a98d-d6a5-4de7-8df8-cd09d305eeb0?j=eyJ1IjoiOTAzeDE2In0.jtEJ7SQ9BR0r_VTcHKWur6IizpYZ8axzMRv_-lhGYRU ]\r\n⠀\r\n歡迎到付費聊天室討論 \r\n⠀\r\n📢 社群公",
+      "content_chars": 504,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": null,
+      "source_entry_key": null,
+      "parent_post_id": null,
+      "attribution_fallback": null,
+      "thread_context": null,
+      "captured_at": "2026-11-27T04:26:44Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forward",
+      "owner_forward_item_id": "C-27fc949adfb9",
+      "owner_forward_retrieved_at": "2026-11-27T02:42:59+00:00",
+      "publication_lag_hours": -2.7,
+      "content_sha256": "27fc949adfb9971efe7b7ae50e9c5eb0a9e5c9871007381cf2146867ed8cd2e5",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forward_timely"
+    },
+    {
+      "id": "a55e400b0ebc6796c91b",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-25 15:49:00",
+      "title": "SPCX will stay as the ticker. 你的两倍还是track SPCX",
+      "url": "https://bbs.wenxuecity.com/cfzh/127303.html",
+      "excerpt": "SPCX will stay as the ticker. 你的两倍还是track SPCX",
+      "content_chars": 46,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [
+        "SPCX"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "127303",
+      "parent_post_id": "127298",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "127227",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "127298",
+          "author": "甜酒甜",
+          "title": "我是说那两合并了以后？",
+          "published_at": "2026-11-25 15:43:00"
+        },
+        "reply_count": 1,
+        "replies": [
+          {
+            "post_id": "127322",
+            "author": "甜酒甜",
+            "title": "明白了一些：）….你的意思是说合并后",
+            "depth": 6,
+            "in_reply_to": "127303",
+            "body_bytes": 236,
+            "published_at": "2026-11-25 16:09:00"
+          }
+        ],
+        "replies_with_body": 1
+      },
+      "captured_at": "2026-11-27T04:26:45Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-26T23:44:55+00:00",
+      "publication_lag_hours": 8.2,
+      "content_sha256": "89aa14c09d581a6839a61b6ece4fe867775d00b7ce16d05ceb339707fda3868d",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "0a11c439a8964fd26ffa",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-25 17:38:00",
+      "title": "即使有个新的ticker，现在的SPCX也会以相应的比例换到新的ticker，你的2倍也会跟着走",
+      "url": "https://bbs.wenxuecity.com/cfzh/127349.html",
+      "excerpt": "即使有个新的ticker，现在的SPCX也会以相应的比例换到新的ticker，你的2倍也会跟着走",
+      "content_chars": 48,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [
+        "SPCX"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "127349",
+      "parent_post_id": "127322",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "127227",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "127322",
+          "author": "甜酒甜",
+          "title": "明白了一些：）….你的意思是说合并后",
+          "published_at": "2026-11-25 16:09:00"
+        },
+        "reply_count": 0,
+        "replies": [],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-27T04:26:45Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-26T23:44:55+00:00",
+      "publication_lag_hours": 6.4,
+      "content_sha256": "dfbdcf136ede44c52cb20f3a3daa66090b9f57c0debc68eaf3fea12b197baeb9",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "d664ed273320244a18e7",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "低手只会用均线",
+      "published_at": "2026-11-25 16:34:00",
+      "title": "感恩节快乐!",
+      "url": "https://bbs.wenxuecity.com/cfzh/127331.html",
+      "excerpt": "感恩节快乐!\n最后一站在金泽. 前几天下雨, 现在金泽的红叶不是最好.",
+      "content_chars": 35,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "127331",
+      "parent_post_id": null,
+      "attribution_fallback": null,
+      "thread_context": {
+        "root_post_id": "127331",
+        "is_reply": false,
+        "in_reply_to": null,
+        "reply_count": 33,
+        "replies": [
+          {
+            "post_id": "127332",
+            "author": "云青青",
+            "title": "祝您感恩节快乐！",
+            "depth": 1,
+            "in_reply_to": "127331",
+            "body_bytes": 0,
+            "published_at": "2026-11-25 16:46:00"
+          },
+          {
+            "post_id": "127333",
+            "author": "gastank1289",
+            "title": "均线哥感恩节快乐！",
+            "depth": 1,
+            "in_reply_to": "127331",
+            "body_bytes": 0,
+            "published_at": "2026-11-25 16:47:00"
+          },
+          {
+            "post_id": "127335",
+            "author": "名校FAN",
+            "title": "喜欢金泽，有个漂亮的兼六园；下周我们也去亚洲：香港，深圳，云南",
+            "depth": 1,
+            "in_reply_to": "127331",
+            "body_bytes": 0,
+            "published_at": "2026-11-25 16:56:00"
+          },
+          {
+            "post_id": "127337",
+            "author": "童谣",
+            "title": "去白川乡吗？那里很特别…… 感恩节快乐！",
+            "depth": 1,
+            "in_reply_to": "127331",
+            "body_bytes": 0,
+            "published_at": "2026-11-25 17:05:00"
+          },
+          {
+            "post_id": "127338",
+            "author": "小松松",
+            "title": "祝均线兄感恩节快乐！",
+            "depth": 1,
+            "in_reply_to": "127331",
+            "body_bytes": 0,
+            "published_at": "2026-11-25 17:08:00"
+          },
+          {
+            "post_id": "127341",
+            "author": "ht842",
+            "title": "均线哥感恩节快乐!",
+            "depth": 1,
+            "in_reply_to": "127331",
+            "body_bytes": 0,
+            "published_at": "2026-11-25 17:12:00"
+          },
+          {
+            "post_id": "127342",
+            "author": "chyang98",
+            "title": "各位感恩节快乐",
+            "depth": 1,
+            "in_reply_to": "127331",
+            "body_bytes": 0,
+            "published_at": "2026-11-25 17:14:00"
+          },
+          {
+            "post_id": "127343",
+            "author": "券海拾贝",
+            "title": "祝均线兄，及各位朋友感恩节快乐！",
+            "depth": 1,
+            "in_reply_to": "127331",
+            "body_bytes": 0,
+            "published_at": "2026-11-25 17:15:00"
+          },
+          {
+            "post_id": "127344",
+            "author": "三心三意",
+            "title": "感恩节快乐!",
+            "depth": 1,
+            "in_reply_to": "127331",
+            "body_bytes": 0,
+            "published_at": "2026-11-25 17:25:00"
+          },
+          {
+            "post_id": "127345",
+            "author": "香虞",
+            "title": "均线兄感恩节快乐",
+            "depth": 1,
+            "in_reply_to": "127331",
+            "body_bytes": 0,
+            "published_at": "2026-11-25 17:27:00"
+          },
+          {
+            "post_id": "127348",
+            "author": "snailittle00",
+            "title": "感恩节快乐，感恩大家的分享！",
+            "depth": 1,
+            "in_reply_to": "127331",
+            "body_bytes": 0,
+            "published_at": "2026-11-25 17:36:00"
+          },
+          {
+            "post_id": "127350",
+            "author": "annie313",
+            "title": "均线哥，各位兄弟姐妹们感恩节快乐！",
+            "depth": 1,
+            "in_reply_to": "127331",
+            "body_bytes": 0,
+            "published_at": "2026-11-25 17:55:00"
+          },
+          {
+            "post_id": "127351",
+            "author": "牛油果88",
+            "title": "感恩节快乐！",
+            "depth": 1,
+            "in_reply_to": "127331",
+            "body_bytes": 0,
+            "published_at": "2026-11-25 18:02:00"
+          },
+          {
+            "post_id": "127352",
+            "author": "桃花源里人家",
+            "title": "均线兄和财富坦各位兄弟姐妹感恩节快乐！",
+            "depth": 1,
+            "in_reply_to": "127331",
+            "body_bytes": 0,
+            "published_at": "2026-11-25 18:15:00"
+          },
+          {
+            "post_id": "127354",
+            "author": "wxyz14",
+            "title": "感恩节快乐！",
+            "depth": 1,
+            "in_reply_to": "127331",
+            "body_bytes": 0,
+            "published_at": "2026-11-25 18:29:00"
+          },
+          {
+            "post_id": "127357",
+            "author": "huahuaflower",
+            "title": "各位感恩节快乐!",
+            "depth": 1,
+            "in_reply_to": "127331",
+            "body_bytes": 0,
+            "published_at": "2026-11-25 18:34:00"
+          },
+          {
+            "post_id": "127358",
+            "author": "Lazymm",
+            "title": "大家感恩节快乐！",
+            "depth": 1,
+            "in_reply_to": "127331",
+            "body_bytes": 0,
+            "published_at": "2026-11-25 18:36:00"
+          },
+          {
+            "post_id": "127362",
+            "author": "甜酒甜",
+            "title": "也祝各位感恩节快乐",
+            "depth": 1,
+            "in_reply_to": "127331",
+            "body_bytes": 45,
+            "published_at": "2026-11-25 18:57:00"
+          },
+          {
+            "post_id": "127364",
+            "author": "yirihuan",
+            "title": "感恩节快乐！",
+            "depth": 1,
+            "in_reply_to": "127331",
+            "body_bytes": 0,
+            "published_at": "2026-11-25 19:02:00"
+          },
+          {
+            "post_id": "127371",
+            "author": "砚雨",
+            "title": "祝均线兄，版主和坛友们感恩节快乐！",
+            "depth": 1,
+            "in_reply_to": "127331",
+            "body_bytes": 0,
+            "published_at": "2026-11-25 19:49:00"
+          },
+          {
+            "post_id": "127373",
+            "author": "Zaplet",
+            "title": "均线大哥感恩节快乐！",
+            "depth": 1,
+            "in_reply_to": "127331",
+            "body_bytes": 0,
+            "published_at": "2026-11-25 19:57:00"
+          },
+          {
+            "post_id": "127377",
+            "author": "mfsiv",
+            "title": "均线哥感恩节快乐！",
+            "depth": 1,
+            "in_reply_to": "127331",
+            "body_bytes": 0,
+            "published_at": "2026-11-25 20:24:00"
+          },
+          {
+            "post_id": "127379",
+            "author": "地铺西",
+            "title": "感恩节快乐！",
+            "depth": 1,
+            "in_reply_to": "127331",
+            "body_bytes": 0,
+            "published_at": "2026-11-25 20:44:00"
+          },
+          {
+            "post_id": "127381",
+            "author": "wavegreen",
+            "title": "感恩节快乐！",
+            "depth": 1,
+            "in_reply_to": "127331",
+            "body_bytes": 0,
+            "published_at": "2026-11-25 20:51:00"
+          },
+          {
+            "post_id": "127387",
+            "author": "逍遥游泳的鱼",
+            "title": "感恩节快乐！感恩大家的无私分享！",
+            "depth": 1,
+            "in_reply_to": "127331",
+            "body_bytes": 0,
+            "published_at": "2026-11-25 22:15:00"
+          },
+          {
+            "post_id": "127391",
+            "author": "LBIN",
+            "title": "祝均线兄节日快乐",
+            "depth": 1,
+            "in_reply_to": "127331",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 00:29:00"
+          },
+          {
+            "post_id": "127392",
+            "author": "consist26",
+            "title": "感恩节快乐!",
+            "depth": 1,
+            "in_reply_to": "127331",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 00:35:00"
+          },
+          {
+            "post_id": "127393",
+            "author": "aloevera",
+            "title": "祝均线兄和大家感恩节快乐！",
+            "depth": 1,
+            "in_reply_to": "127331",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 01:41:00"
+          },
+          {
+            "post_id": "127402",
+            "author": "pittrecon888",
+            "title": "祝大家感恩节快乐",
+            "depth": 1,
+            "in_reply_to": "127331",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 06:25:00"
+          },
+          {
+            "post_id": "127410",
+            "author": "小學生",
+            "title": "感恩节快乐!",
+            "depth": 1,
+            "in_reply_to": "127331",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 07:04:00"
+          },
+          {
+            "post_id": "127415",
+            "author": "村妮子",
+            "title": "感恩节快乐！感谢高手只会用均线介绍的方法论！",
+            "depth": 1,
+            "in_reply_to": "127331",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 07:08:00"
+          },
+          {
+            "post_id": "127456",
+            "author": "千岩泉",
+            "title": "祝均线兄节日快乐",
+            "depth": 1,
+            "in_reply_to": "127331",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 08:31:00"
+          },
+          {
+            "post_id": "127495",
+            "author": "SavageGardn7",
+            "title": "节日快乐！谢谢always sharing your strategies",
+            "depth": 1,
+            "in_reply_to": "127331",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 11:38:00"
+          }
+        ],
+        "replies_with_body": 1
+      },
+      "captured_at": "2026-11-27T04:26:45Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "body_exported",
+      "owner_export_retrieved_at": "2026-11-26T23:44:55+00:00",
+      "publication_lag_hours": 7.4,
+      "content_sha256": "6d1bb26733639dff56e2eaea091820720e7f95ab02e9bd5ab8f6755b7ccbfe96",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "1a1d4c20a537bdb2b8aa",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-25 17:25:00",
+      "title": "感恩节快乐!",
+      "url": "https://bbs.wenxuecity.com/cfzh/127344.html",
+      "excerpt": "感恩节快乐!",
+      "content_chars": 6,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "127344",
+      "parent_post_id": "127331",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "127331",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "127331",
+          "author": "低手只会用均线",
+          "title": "感恩节快乐!",
+          "published_at": "2026-11-25 16:34:00"
+        },
+        "reply_count": 0,
+        "replies": [],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-27T04:26:45Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-26T23:44:55+00:00",
+      "publication_lag_hours": 6.6,
+      "content_sha256": "21edce682c0656c1d45ca9704aaf01f58a1e313305bde943c4bfe0b5a60342fb",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "fb1e46f6894013895325",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-25 18:58:00",
+      "title": "Because of the fear of recession coming",
+      "url": "https://bbs.wenxuecity.com/cfzh/127363.html",
+      "excerpt": "Because of the fear of recession coming",
+      "content_chars": 39,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "127363",
+      "parent_post_id": "127355",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "127353",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "127355",
+          "author": "bigbadwolf",
+          "title": "10年利率因为投资者避险跌了",
+          "published_at": "2026-11-25 18:31:00"
+        },
+        "reply_count": 0,
+        "replies": [],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-27T04:26:45Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-26T23:44:55+00:00",
+      "publication_lag_hours": 5.0,
+      "content_sha256": "163d2b17a97b338def1680a42ba9c7b2771c74943be9cb1d82a0b0e61ff768d1",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "54a6571f8c17a922bc09",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-25 19:32:00",
+      "title": "怎么在这个坛子这么久了还没搞清楚10年利率跟Fed加息不是一回事",
+      "url": "https://bbs.wenxuecity.com/cfzh/127369.html",
+      "excerpt": "怎么在这个坛子这么久了还没搞清楚10年利率跟Fed加息不是一回事",
+      "content_chars": 32,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "127369",
+      "parent_post_id": "127366",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "127353",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "127366",
+          "author": "mdTrader",
+          "title": "可是预期12月要加息",
+          "published_at": "2026-11-25 19:23:00"
+        },
+        "reply_count": 0,
+        "replies": [],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-27T04:26:45Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-26T23:44:55+00:00",
+      "publication_lag_hours": 4.5,
+      "content_sha256": "10a2e10735963db1a33f4ec3a5ade066ba3d55287531bbb2799cebc93eed14d8",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "b3a5987f4c9c2d73e81a",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-26 09:06:00",
+      "title": "This is because it IPO'ed in Q3:) I bet ANT will be #1 in Q4",
+      "url": "https://bbs.wenxuecity.com/cfzh/127467.html",
+      "excerpt": "This is because it IPO'ed in Q3:) I bet ANT will be #1 in Q4",
+      "content_chars": 60,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [
+        "BE"
+      ],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "127467",
+      "parent_post_id": "127420",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "127380",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "127420",
+          "author": "BigMountain6",
+          "title": "机构最近披露的13F持仓报告显示，SKHY是很多机构Q3第一大新增持仓",
+          "published_at": "2026-11-26 07:24:00"
+        },
+        "reply_count": 0,
+        "replies": [],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-27T04:26:45Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-26T23:44:55+00:00",
+      "publication_lag_hours": -9.1,
+      "content_sha256": "341cdbc9e2cbf4d18df68930484cecbda408656e011a04dd370cad27b8572790",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "567d2ff10dbf55481152",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-26 07:54:00",
+      "title": "哇兄感恩节快乐",
+      "url": "https://bbs.wenxuecity.com/cfzh/127435.html",
+      "excerpt": "哇兄感恩节快乐",
+      "content_chars": 7,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "127435",
+      "parent_post_id": "127394",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "127394",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "127394",
+          "author": "我是一只井底蛙",
+          "title": "感恩节快乐！SP 500 长线周线参考图：",
+          "published_at": "2026-11-26 05:29:00"
+        },
+        "reply_count": 0,
+        "replies": [],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-27T04:26:46Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-26T23:44:55+00:00",
+      "publication_lag_hours": -7.9,
+      "content_sha256": "ca3cdd331646c56c90b075fbc79dd80e2053b43106265bbdfab1f5fd8890ec08",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "68cd775c29326d6b8004",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-26 07:53:00",
+      "title": "好漂亮。感恩节快乐",
+      "url": "https://bbs.wenxuecity.com/cfzh/127434.html",
+      "excerpt": "好漂亮。感恩节快乐",
+      "content_chars": 9,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "127434",
+      "parent_post_id": "127400",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "127400",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "127400",
+          "author": "yifan99",
+          "title": "祝大家感恩节快乐！分享Sedona美丽的早晨，让神的灵气朝晖照亮前方",
+          "published_at": "2026-11-26 06:16:00"
+        },
+        "reply_count": 0,
+        "replies": [],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-27T04:26:46Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-26T23:44:55+00:00",
+      "publication_lag_hours": -7.9,
+      "content_sha256": "af925c934d31518292b2b5ebb826f8dafcb00057972ab83e03c3fc4450992d08",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "9c2cfb5362f21a26eb0c",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-26 07:37:00",
+      "title": "祝大家感恩节快乐, 财源滚滚",
+      "url": "https://bbs.wenxuecity.com/cfzh/127423.html",
+      "excerpt": "祝大家感恩节快乐, 财源滚滚",
+      "content_chars": 14,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "127423",
+      "parent_post_id": null,
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "127423",
+        "is_reply": false,
+        "in_reply_to": null,
+        "reply_count": 49,
+        "replies": [
+          {
+            "post_id": "127424",
+            "author": "kaimu",
+            "title": "祝三心哥节日快乐！希望您身体健康，万事如意，感恩您的无私分享，受益良多！当然也要祝您顺风顺水 赚得盆满钵满",
+            "depth": 1,
+            "in_reply_to": "127423",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 07:39:00"
+          },
+          {
+            "post_id": "127425",
+            "author": "小松松",
+            "title": "祝三心兄感恩节快乐！",
+            "depth": 1,
+            "in_reply_to": "127423",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 07:42:00"
+          },
+          {
+            "post_id": "127427",
+            "author": "越挫越勇2",
+            "title": "三心哥感恩节快乐！谢谢你并送上祝福！",
+            "depth": 1,
+            "in_reply_to": "127423",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 07:45:00"
+          },
+          {
+            "post_id": "127428",
+            "author": "huahuaflower",
+            "title": "祝三心版主感恩节快乐！",
+            "depth": 1,
+            "in_reply_to": "127423",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 07:46:00"
+          },
+          {
+            "post_id": "127430",
+            "author": "silentvalley",
+            "title": "祝版主感恩节快乐 祝大家财源滚滚  感恩本坛 ！",
+            "depth": 1,
+            "in_reply_to": "127423",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 07:48:00"
+          },
+          {
+            "post_id": "127431",
+            "author": "yifan99",
+            "title": "感恩节快乐！谢谢你的无私分享！",
+            "depth": 1,
+            "in_reply_to": "127423",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 07:49:00"
+          },
+          {
+            "post_id": "127436",
+            "author": "jingke",
+            "title": "非常感谢三心的指导，感谢三心和BOGBOG给我们吃的定心丸。",
+            "depth": 1,
+            "in_reply_to": "127423",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 07:55:00"
+          },
+          {
+            "post_id": "127442",
+            "author": "pittrecon888",
+            "title": "感恩节快乐，感谢无私分享",
+            "depth": 1,
+            "in_reply_to": "127423",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 08:07:00"
+          },
+          {
+            "post_id": "127444",
+            "author": "AppleLL",
+            "title": "感恩节快乐",
+            "depth": 1,
+            "in_reply_to": "127423",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 08:08:00"
+          },
+          {
+            "post_id": "127445",
+            "author": "砚雨",
+            "title": "谢谢三心版主无私分享，感恩节快乐！",
+            "depth": 1,
+            "in_reply_to": "127423",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 08:09:00"
+          },
+          {
+            "post_id": "127447",
+            "author": "我是一只井底蛙",
+            "title": "感恩节快乐！",
+            "depth": 1,
+            "in_reply_to": "127423",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 08:14:00"
+          },
+          {
+            "post_id": "127448",
+            "author": "七月徐风",
+            "title": "节日快乐！",
+            "depth": 1,
+            "in_reply_to": "127423",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 08:19:00"
+          },
+          {
+            "post_id": "127450",
+            "author": "地铺西",
+            "title": "感恩节快乐！",
+            "depth": 1,
+            "in_reply_to": "127423",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 08:21:00"
+          },
+          {
+            "post_id": "127451",
+            "author": "Zaplet",
+            "title": "祝三心和兄弟姐妹们节日快乐！感恩！",
+            "depth": 1,
+            "in_reply_to": "127423",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 08:27:00"
+          },
+          {
+            "post_id": "127453",
+            "author": "千岩泉",
+            "title": "祝三心版主节日快乐！",
+            "depth": 1,
+            "in_reply_to": "127423",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 08:28:00"
+          },
+          {
+            "post_id": "127454",
+            "author": "信子巷外",
+            "title": "祝三心感恩节快乐，版友们感恩节快乐！",
+            "depth": 1,
+            "in_reply_to": "127423",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 08:28:00"
+          },
+          {
+            "post_id": "127459",
+            "author": "joozen",
+            "title": "谢三心哥！！ 感恩节快乐！也真心感谢板板上的各位大卡无私分享，感恩节快乐！！",
+            "depth": 1,
+            "in_reply_to": "127423",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 08:36:00"
+          },
+          {
+            "post_id": "127461",
+            "author": "天气晚来秋",
+            "title": "祝三心和版友们感恩节快乐",
+            "depth": 1,
+            "in_reply_to": "127423",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 08:40:00"
+          },
+          {
+            "post_id": "127462",
+            "author": "ht842",
+            "title": "祝三心版主节日快乐！感恩满满！",
+            "depth": 1,
+            "in_reply_to": "127423",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 08:40:00"
+          },
+          {
+            "post_id": "127463",
+            "author": "Blueview2026",
+            "title": "祝 三心和所以在论坛分享，参与的朋友们节日快乐",
+            "depth": 1,
+            "in_reply_to": "127423",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 08:42:00"
+          },
+          {
+            "post_id": "127465",
+            "author": "smilelucky68",
+            "title": "祝三心兄节日快乐,同祝bogbogMM, 均线兄，蛙兄，字母兄，云MM，其他乐于分享的大侠节日快乐，感恩有你们！",
+            "depth": 1,
+            "in_reply_to": "127423",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 08:57:00"
+          },
+          {
+            "post_id": "127468",
+            "author": "Lazymm",
+            "title": "感恩节快乐！感恩有这个群！",
+            "depth": 1,
+            "in_reply_to": "127423",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 09:12:00"
+          },
+          {
+            "post_id": "127475",
+            "author": "mobius",
+            "title": "也谢谢三心服务大家",
+            "depth": 1,
+            "in_reply_to": "127423",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 09:58:00"
+          },
+          {
+            "post_id": "127476",
+            "author": "hvhp",
+            "title": "祝三心和全版朋友感恩节快乐！米缸一个接一个",
+            "depth": 1,
+            "in_reply_to": "127423",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 10:01:00"
+          },
+          {
+            "post_id": "127478",
+            "author": "fpeking",
+            "title": "节日快乐，夹个大鸡腿",
+            "depth": 1,
+            "in_reply_to": "127423",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 10:18:00"
+          },
+          {
+            "post_id": "127479",
+            "author": "yirihuan",
+            "title": "感恩节快乐！！！",
+            "depth": 1,
+            "in_reply_to": "127423",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 10:23:00"
+          },
+          {
+            "post_id": "127480",
+            "author": "nmyj",
+            "title": "祝三心和各位感恩节快乐！",
+            "depth": 1,
+            "in_reply_to": "127423",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 10:26:00"
+          },
+          {
+            "post_id": "127481",
+            "author": "chyang98",
+            "title": "感恩节快乐！",
+            "depth": 1,
+            "in_reply_to": "127423",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 10:43:00"
+          },
+          {
+            "post_id": "127483",
+            "author": "LBIN",
+            "title": "节日快乐！",
+            "depth": 1,
+            "in_reply_to": "127423",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 10:52:00"
+          },
+          {
+            "post_id": "127485",
+            "author": "萍水相逢7",
+            "title": "祝版主和各位感恩节快乐！感恩有这个群和热心分享的朋友",
+            "depth": 1,
+            "in_reply_to": "127423",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 10:54:00"
+          },
+          {
+            "post_id": "127487",
+            "author": "平安乐",
+            "title": "感恩版主，维护这个宝地，每一次耐心答疑解惑！",
+            "depth": 1,
+            "in_reply_to": "127423",
+            "body_bytes": 167,
+            "published_at": "2026-11-26 10:58:00"
+          },
+          {
+            "post_id": "127488",
+            "author": "10miDream",
+            "title": "祝三心哥和众坛友，感恩节快乐，财运亨通",
+            "depth": 1,
+            "in_reply_to": "127423",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 11:05:00"
+          },
+          {
+            "post_id": "127489",
+            "author": "甜酒甜",
+            "title": "感恩节快乐！",
+            "depth": 1,
+            "in_reply_to": "127423",
+            "body_bytes": 256,
+            "published_at": "2026-11-26 11:07:00"
+          },
+          {
+            "post_id": "127491",
+            "author": "新手008",
+            "title": "祝版主和大家全家感恩节快乐",
+            "depth": 1,
+            "in_reply_to": "127423",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 11:35:00"
+          },
+          {
+            "post_id": "127492",
+            "author": "musicfuture123",
+            "title": "祝三心大侠感恩节快乐。 感谢一年以来无私的分享。",
+            "depth": 1,
+            "in_reply_to": "127423",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 11:35:00"
+          },
+          {
+            "post_id": "127496",
+            "author": "村妮子",
+            "title": "祝三心版主感恩节快乐！",
+            "depth": 1,
+            "in_reply_to": "127423",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 11:41:00"
+          },
+          {
+            "post_id": "127497",
+            "author": "yalipp2",
+            "title": "感恩节快乐！",
+            "depth": 1,
+            "in_reply_to": "127423",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 11:44:00"
+          },
+          {
+            "post_id": "127499",
+            "author": "小伙伴2",
+            "title": "感谢版主的用心付出。感恩节快乐",
+            "depth": 1,
+            "in_reply_to": "127423",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 11:51:00"
+          },
+          {
+            "post_id": "127500",
+            "author": "兔快跑吧",
+            "title": "感谢版主指点和宝贵经验分享",
+            "depth": 1,
+            "in_reply_to": "127423",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 11:51:00"
+          },
+          {
+            "post_id": "127501",
+            "author": "yoyo2",
+            "title": "感恩节快乐！感谢无私分享",
+            "depth": 1,
+            "in_reply_to": "127423",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 11:58:00"
+          },
+          {
+            "post_id": "127503",
+            "author": "桃花源里人家",
+            "title": "三心兄和财富坛的朋友们节日快乐！",
+            "depth": 1,
+            "in_reply_to": "127423",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 12:05:00"
+          },
+          {
+            "post_id": "127507",
+            "author": "littlepotato2025",
+            "title": "感激版主和各位大咖的无私分享，非常感恩有你们和这块财富宝地！",
+            "depth": 1,
+            "in_reply_to": "127423",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 12:17:00"
+          },
+          {
+            "post_id": "127511",
+            "author": "Betterif",
+            "title": "谢谢版主无私分享，让小白的我学到很多东西！",
+            "depth": 1,
+            "in_reply_to": "127423",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 12:43:00"
+          },
+          {
+            "post_id": "127512",
+            "author": "Jeney2023",
+            "title": "感谢三心老师一直以来的无私分享和指导！! 感恩节快乐！",
+            "depth": 1,
+            "in_reply_to": "127423",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 12:46:00"
+          },
+          {
+            "post_id": "127513",
+            "author": "KC28",
+            "title": "谢谢三心版主无私分享，感恩节快乐!",
+            "depth": 1,
+            "in_reply_to": "127423",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 13:02:00"
+          },
+          {
+            "post_id": "127515",
+            "author": "mfsiv",
+            "title": "祝三心和财富坦朋友们节日快乐！",
+            "depth": 1,
+            "in_reply_to": "127423",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 13:06:00"
+          },
+          {
+            "post_id": "127516",
+            "author": "Y2eagleHVAC",
+            "title": "Happy Thanksgiving !",
+            "depth": 1,
+            "in_reply_to": "127423",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 13:08:00"
+          },
+          {
+            "post_id": "127521",
+            "author": "2013&2016",
+            "title": "感恩节快乐！谢谢你的无私分享！",
+            "depth": 1,
+            "in_reply_to": "127423",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 14:44:00"
+          },
+          {
+            "post_id": "127523",
+            "author": "面条",
+            "title": "感恩节快乐！感恩版主和各位朋友的无私奉献！",
+            "depth": 1,
+            "in_reply_to": "127423",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 15:42:00"
+          }
+        ],
+        "replies_with_body": 2
+      },
+      "captured_at": "2026-11-27T04:26:46Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-26T23:44:55+00:00",
+      "publication_lag_hours": -7.6,
+      "content_sha256": "40b8cd055d5aeb4026f2f99948ba6ec24443252dff5d53d18b7948d36ff28a26",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "2497beb69062eb56a75e",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-26 09:15:00",
+      "title": "投资的成功之道，不是预测股市，而是根据市场的变化来调整自己的交易策略。",
+      "url": "https://bbs.wenxuecity.com/cfzh/127469.html",
+      "excerpt": "投资的成功之道，不是预测股市，而是根据市场的变化来调整自己的交易策略。",
+      "content_chars": 35,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "127469",
+      "parent_post_id": "127437",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "127423",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "127437",
+          "author": "jingke",
+          "title": "在X和DISCORD看到太多的熊论，难免不让人迷茫。有三心站在后面给我们指导方向，感觉好很多。",
+          "published_at": "2026-11-26 07:56:00"
+        },
+        "reply_count": 2,
+        "replies": [
+          {
+            "post_id": "127470",
+            "author": "三心三意",
+            "title": "标普的7500，就是这次策略调整的分水岭。下面如果熊市来了，策略又需要调整，如果牛市重启，也需要调整",
+            "depth": 4,
+            "in_reply_to": "127469",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 09:18:00"
+          },
+          {
+            "post_id": "127471",
+            "author": "三心三意",
+            "title": "但无论什么策略，只要明白任何人都不可能买在最低/卖在最高这个简单的道理，你的投资道路就会轻松的多",
+            "depth": 4,
+            "in_reply_to": "127469",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 09:20:00"
+          }
+        ],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-27T04:26:46Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-26T23:44:55+00:00",
+      "publication_lag_hours": -9.2,
+      "content_sha256": "9be5947215856ff4219e77f71bfcc283bec15f058da023da0f33f6cee5c8cb04",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "3a49816d2a616978fa56",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-26 09:18:00",
+      "title": "标普的7500，就是这次策略调整的分水岭。下面如果熊市来了，策略又需要调整，如果牛市重启，也需要调整",
+      "url": "https://bbs.wenxuecity.com/cfzh/127470.html",
+      "excerpt": "标普的7500，就是这次策略调整的分水岭。下面如果熊市来了，策略又需要调整，如果牛市重启，也需要调整",
+      "content_chars": 50,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "127470",
+      "parent_post_id": "127469",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "127423",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "127469",
+          "author": "三心三意",
+          "title": "投资的成功之道，不是预测股市，而是根据市场的变化来调整自己的交易策略。",
+          "published_at": "2026-11-26 09:15:00"
+        },
+        "reply_count": 0,
+        "replies": [],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-27T04:26:46Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-26T23:44:55+00:00",
+      "publication_lag_hours": -9.3,
+      "content_sha256": "56da6549792f38c3538b1a199e9681f86da9fa421cb76483474df6c0224996f3",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "99e6e78c706039ab9c75",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-26 09:20:00",
+      "title": "但无论什么策略，只要明白任何人都不可能买在最低/卖在最高这个简单的道理，你的投资道路就会轻松的多",
+      "url": "https://bbs.wenxuecity.com/cfzh/127471.html",
+      "excerpt": "但无论什么策略，只要明白任何人都不可能买在最低/卖在最高这个简单的道理，你的投资道路就会轻松的多",
+      "content_chars": 48,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "127471",
+      "parent_post_id": "127469",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "127423",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "127469",
+          "author": "三心三意",
+          "title": "投资的成功之道，不是预测股市，而是根据市场的变化来调整自己的交易策略。",
+          "published_at": "2026-11-26 09:15:00"
+        },
+        "reply_count": 0,
+        "replies": [],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-27T04:26:46Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-26T23:44:55+00:00",
+      "publication_lag_hours": -9.3,
+      "content_sha256": "53d2072807085561e885f7dae91cd849dbc126741721de31856379c4211adb20",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "49b6d97c17fb51131582",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "mobius",
+      "published_at": "2026-11-26 09:58:00",
+      "title": "也谢谢三心服务大家",
+      "url": "https://bbs.wenxuecity.com/cfzh/127475.html",
+      "excerpt": "也谢谢三心服务大家",
+      "content_chars": 9,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "127475",
+      "parent_post_id": "127423",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "127423",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "127423",
+          "author": "三心三意",
+          "title": "祝大家感恩节快乐, 财源滚滚",
+          "published_at": "2026-11-26 07:37:00"
+        },
+        "reply_count": 0,
+        "replies": [],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-27T04:26:46Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-26T23:44:55+00:00",
+      "publication_lag_hours": -10.0,
+      "content_sha256": "087bb5f67f851b9ad88f135c283aee0af7297f4ce2c4895e2c8e9bbcde511b9a",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "d44511f17907cb0ccbd7",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-26 12:13:00",
+      "title": "我知道很多人非常担心股市，每天都希望有一个明确的方向趋势，但是更关健的3点",
+      "url": "https://bbs.wenxuecity.com/cfzh/127506.html",
+      "excerpt": "我知道很多人非常担心股市，每天都希望有一个明确的方向趋势，但是更关健的3点\n第1: 任何从目前位置直接掉下去的走势都是买入机会，无论下一步是牛还是熊\n第2: 任何反弹都要谨慎。如果没有短线和TA的经验，最好避免在情绪面的影响下买入\n第3: 把时间拉长，现在是非常好的积累阶段。即使熊市来临，AI是不会停止的。优质公司的股价是可以穿越牛熊的\n具体策略、每个人千变万化。但投资的基本策略，万变不离其宗",
+      "content_chars": 198,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [],
+      "operations": [],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "post",
+      "source_entry_key": "127506",
+      "parent_post_id": null,
+      "attribution_fallback": null,
+      "thread_context": {
+        "root_post_id": "127506",
+        "is_reply": false,
+        "in_reply_to": null,
+        "reply_count": 4,
+        "replies": [
+          {
+            "post_id": "127508",
+            "author": "hahaha2025",
+            "title": "多谢。节日愉快！希望qqq两周掉到560，全仓买入soxx 的3年leap",
+            "depth": 1,
+            "in_reply_to": "127506",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 12:40:00"
+          },
+          {
+            "post_id": "127509",
+            "author": "家里好",
+            "title": "多谢三心老师的分享。我想，我这样的韭菜最担心的是如何度过 熊市。没有真的经历过熊市",
+            "depth": 1,
+            "in_reply_to": "127506",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 12:42:00"
+          },
+          {
+            "post_id": "127518",
+            "author": "Texan2022",
+            "title": "谢谢三心过节给大家送超大火鸡 ：）",
+            "depth": 1,
+            "in_reply_to": "127506",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 13:37:00"
+          },
+          {
+            "post_id": "127519",
+            "author": "huahuaflower",
+            "title": "投资鸡汤！",
+            "depth": 1,
+            "in_reply_to": "127506",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 14:31:00"
+          }
+        ],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-27T04:26:46Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "body_exported",
+      "owner_export_retrieved_at": "2026-11-26T23:44:55+00:00",
+      "publication_lag_hours": -12.2,
+      "content_sha256": "4fabd21f23b9d8f51c350d51b1bc7768ebed77a2270eea52c01adec8970c811e",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
+    },
+    {
+      "id": "f1ba1c296de21859bab2",
+      "source": "wenxuecity",
+      "source_kind": "forum",
+      "author": "三心三意",
+      "published_at": "2026-11-26 13:03:00",
+      "title": "2022 年QQQ掉20%以后买入的，现在基本上都是2x-3x的回报",
+      "url": "https://bbs.wenxuecity.com/cfzh/127514.html",
+      "excerpt": "2022 年QQQ掉20%以后买入的，现在基本上都是2x-3x的回报",
+      "content_chars": 34,
+      "images_count": 0,
+      "themes_hint": [
+        "其他研究"
+      ],
+      "symbols": [
+        "QQQ"
+      ],
+      "operations": [
+        {
+          "symbols": [
+            "QQQ"
+          ],
+          "actions": [
+            "buy"
+          ],
+          "attribution": "unconfirmed_author_context",
+          "attribution_confidence": "needs_review"
+        }
+      ],
+      "portfolio_rules": [],
+      "lessons": [],
+      "method_signals": [],
+      "claims": [
+        {
+          "symbol": "QQQ",
+          "stance": "buy",
+          "stance_cues": [
+            "buy"
+          ],
+          "horizon": null,
+          "conditional": false,
+          "question": false,
+          "price": null,
+          "evidence_sha256": "c1db4f1efe86a0f56f985f6877a8409a02667bb53770fdd896e380338a36ab86",
+          "evidence_chars": 34
+        }
+      ],
+      "claims_status": "experimental_unvalidated",
+      "author_actions": [],
+      "forum_entry_kind": "reply",
+      "source_entry_key": "127514",
+      "parent_post_id": "127510",
+      "attribution_fallback": "owner_export_title_only",
+      "thread_context": {
+        "root_post_id": "127506",
+        "is_reply": true,
+        "in_reply_to": {
+          "post_id": "127510",
+          "author": "家里好",
+          "title": "2022 年 吓坏了，当时基本就是空仓在边上等。回头看是错误的，因为完全错过了23年的。但是当时不知道怎么办",
+          "published_at": "2026-11-26 12:43:00"
+        },
+        "reply_count": 1,
+        "replies": [
+          {
+            "post_id": "127517",
+            "author": "家里好",
+            "title": "是。 但是21年才接触股票，22年真的是吓坏了， 然后错过了特别好的两年。所以感激版上老师的分享",
+            "depth": 4,
+            "in_reply_to": "127514",
+            "body_bytes": 0,
+            "published_at": "2026-11-26 13:11:00"
+          }
+        ],
+        "replies_with_body": 0
+      },
+      "captured_at": "2026-11-27T04:26:46Z",
+      "source_notice": "作者原始观点/操作记录，仅作研究来源；公开归档仅保留短摘录与原文链接，MyAlpha需独立验证后才形成本站判断。",
+      "intake_provenance": "owner_forum_export",
+      "forum_board": "cfzh",
+      "body_status": "title_only",
+      "owner_export_retrieved_at": "2026-11-26T23:44:55+00:00",
+      "publication_lag_hours": -13.1,
+      "content_sha256": "c1db4f1efe86a0f56f985f6877a8409a02667bb53770fdd896e380338a36ab86",
+      "intake_class_hint": "live_candidate",
+      "capture_mode": "owner_forum_export_timely"
     }
   ],
-  "updated_at": "2026-11-26T22:18:46Z",
+  "updated_at": "2026-11-27T04:26:46Z",
   "retention_policy": "append_only_no_record_count_cap",
   "historical_recovery": {
     "completed_at": "2026-10-07T13:43:06.018028+00:00",
