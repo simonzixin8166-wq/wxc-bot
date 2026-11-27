@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-11-26T22:59:51Z",
+  "generated_at": "2026-11-27T08:23:19Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -101,14 +101,13 @@
       "discovery_complete": true,
       "latest": {
         "video_id": "S1B9R_83-8c",
-        "title": "America Is Under Attack",
+        "title": "Something Is Breaking America",
         "url": "https://www.youtube.com/watch?v=S1B9R_83-8c",
-        "published_at": "2026-11-20",
+        "published_at": "",
         "rss_status": "ok",
         "flat_metadata_keys": [
           "channel_id",
-          "duration",
-          "rss_published_at"
+          "duration"
         ],
         "transcript_available": false,
         "transcript_chars": 0,
@@ -185,7 +184,7 @@
     {
       "author": "Andrei Jikh",
       "video_id": "S1B9R_83-8c",
-      "title": "America Is Under Attack",
+      "title": "Something Is Breaking America",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
