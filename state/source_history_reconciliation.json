@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-11-27T21:56:40.500053+00:00",
+  "generated_at": "2026-11-28T04:08:17.590278+00:00",
   "principle": "author x month reconciliation; unscanned history is unknown, backfill is never Genuine Forward",
   "matrix": {
     "BrightLine": {
@@ -24,10 +24,10 @@
         "structured_view": 10
       },
       "2026-11": {
-        "records": 11,
+        "records": 13,
         "backfill": 1,
-        "excerpt": 11,
-        "live_or_unclassified": 10,
+        "excerpt": 13,
+        "live_or_unclassified": 12,
         "structured_view": 5
       },
       "unknown": {
@@ -68,17 +68,17 @@
         "backfill": 14
       },
       "2026-11": {
-        "records": 715,
-        "live_or_unclassified": 715,
-        "excerpt": 715,
+        "records": 723,
+        "live_or_unclassified": 723,
+        "excerpt": 723,
         "structured_view": 34
       }
     },
     "dindindon": {
       "2026-11": {
-        "records": 54,
-        "live_or_unclassified": 54,
-        "excerpt": 54
+        "records": 57,
+        "live_or_unclassified": 57,
+        "excerpt": 57
       }
     },
     "jenning": {
@@ -97,9 +97,9 @@
     },
     "unclestocknotes (Substack)": {
       "2026-11": {
-        "records": 34,
-        "live_or_unclassified": 34,
-        "excerpt": 34,
+        "records": 35,
+        "live_or_unclassified": 35,
+        "excerpt": 35,
         "structured_view": 2
       }
     },
@@ -197,17 +197,17 @@
         "structured_view": 7
       },
       "2026-11": {
-        "records": 919,
-        "live_or_unclassified": 919,
-        "excerpt": 919,
-        "structured_view": 28
+        "records": 952,
+        "live_or_unclassified": 952,
+        "excerpt": 952,
+        "structured_view": 29
       }
     },
     "低手只会用均线": {
       "2026-11": {
-        "records": 42,
-        "live_or_unclassified": 42,
-        "excerpt": 42,
+        "records": 43,
+        "live_or_unclassified": 43,
+        "excerpt": 43,
         "structured_view": 4
       }
     },
@@ -258,7 +258,7 @@
       "kinds": [
         "blog"
       ],
-      "records": 66,
+      "records": 68,
       "first_month": "2026-08",
       "last_month": "2026-11",
       "watched_forum_author": false,
@@ -278,13 +278,13 @@
       "kinds": [
         "forum"
       ],
-      "records": 1921,
+      "records": 1929,
       "first_month": "2026-07",
       "last_month": "2026-11",
       "watched_forum_author": true,
       "forum": {
         "seen_ids": 1179,
-        "in_feed": 1919,
+        "in_feed": 1927,
         "seen_not_in_feed": 0,
         "seen_not_in_feed_examples": [],
         "reason": null
@@ -294,7 +294,7 @@
       "kinds": [
         "forum"
       ],
-      "records": 54,
+      "records": 57,
       "first_month": "2026-11",
       "last_month": "2026-11",
       "watched_forum_author": false,
@@ -324,7 +324,7 @@
       "kinds": [
         "blog"
       ],
-      "records": 34,
+      "records": 35,
       "first_month": "2026-11",
       "last_month": "2026-11",
       "watched_forum_author": false,
@@ -387,13 +387,13 @@
       "kinds": [
         "forum"
       ],
-      "records": 1975,
+      "records": 2008,
       "first_month": "2026-09",
       "last_month": "2026-11",
       "watched_forum_author": true,
       "forum": {
         "seen_ids": 1063,
-        "in_feed": 1974,
+        "in_feed": 2007,
         "seen_not_in_feed": 79,
         "seen_not_in_feed_examples": [
           "112259",
@@ -409,7 +409,7 @@
       "kinds": [
         "forum"
       ],
-      "records": 42,
+      "records": 43,
       "first_month": "2026-11",
       "last_month": "2026-11",
       "watched_forum_author": false,
@@ -468,10 +468,10 @@
   },
   "totals": {
     "authors": 13,
-    "records": 4850,
+    "records": 4898,
     "text_depth": {
       "title_only": 2145,
-      "excerpt": 2705
+      "excerpt": 2753
     }
   },
   "access_policy": "no bypassing 403/429 or login walls; history fills only via bounded, rate-limited backfill"
