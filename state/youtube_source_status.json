@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-11-28T02:41:21Z",
+  "generated_at": "2026-11-28T12:57:49Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -183,8 +183,8 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "cr3MV3KTHRE",
-      "title": "美股 对冲基金，抛售哪些？做多哪些？META、MSFT、XLI，存储重伤，竞争加剧！MU、SNDK位置！",
+      "video_id": "e-_qeTZQnkU",
+      "title": "（会员第307期）2026年10月19日-25日，重要公司Q3财报后2026、2027前瞻估值，强支撑点位！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -193,9 +193,9 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "RhinoFinance / 视野环球财经",
-      "video_id": "ttrjfdl-Ne4",
-      "title": "美股 短期洗牌，还是大跌开始？CRWV信贷引发AI交易混乱！ASML财报粗犷，叫好不叫座！",
+      "author": "Andrei Jikh",
+      "video_id": "1lspa5l4kxs",
+      "title": "My Thoughts On Bitcoin",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
