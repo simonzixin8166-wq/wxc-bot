@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "generated_at": "2026-11-27T19:28:02Z",
+  "generated_at": "2026-11-28T02:41:21Z",
   "status": "ok",
   "first_run": false,
   "channels": [
@@ -101,7 +101,7 @@
       "discovery_complete": true,
       "latest": {
         "video_id": "S1B9R_83-8c",
-        "title": "Something Is Breaking America",
+        "title": "America Is Under Attack",
         "url": "https://www.youtube.com/watch?v=S1B9R_83-8c",
         "published_at": "",
         "rss_status": "ok",
@@ -182,9 +182,9 @@
       "pending_reason": "missing_learning_text"
     },
     {
-      "author": "Andrei Jikh",
-      "video_id": "S1B9R_83-8c",
-      "title": "Something Is Breaking America",
+      "author": "RhinoFinance / 视野环球财经",
+      "video_id": "cr3MV3KTHRE",
+      "title": "美股 对冲基金，抛售哪些？做多哪些？META、MSFT、XLI，存储重伤，竞争加剧！MU、SNDK位置！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
@@ -194,8 +194,8 @@
     },
     {
       "author": "RhinoFinance / 视野环球财经",
-      "video_id": "5RnWY2UkmA0",
-      "title": "美股 标普SPY反转破位！恐慌过后，关键点位！个人持仓计划一览！",
+      "video_id": "ttrjfdl-Ne4",
+      "title": "美股 短期洗牌，还是大跌开始？CRWV信贷引发AI交易混乱！ASML财报粗犷，叫好不叫座！",
       "content_quality": "Q5",
       "content_provider": "metadata_only",
       "rule_candidate_allowed": false,
